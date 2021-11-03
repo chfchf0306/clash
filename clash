@@ -5,527 +5,1165 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: NG（欢迎订阅YouTube：8度科技）, server: 102.165.23.4, port: 38742, type: ss, cipher: aes-256-gcm, password: DKXfWwc4ebscpXTKpbt85rSH}
-  - {name: NG（欢迎订阅YouTube：8度科技） 2, server: 102.165.23.4, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
-  - {name: 🇦🇺 澳大利亚（欢迎订阅YouTube：8度科技）, server: 103.25.59.53, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
-  - {name: 🇦🇺 澳大利亚（欢迎订阅YouTube：8度科技） 2, server: 118.107.244.112, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 🇦🇺 悉尼（欢迎订阅youtube：8度科技）, server: 118.107.244.112, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: 🇨🇦 加拿大（欢迎订阅YouTube：8度科技）, server: 134.195.196.91, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 🇳🇱 阿姆斯特丹（欢迎订阅YouTube：8度科技）, server: 145.239.1.137, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: 🇳🇱 阿姆斯特丹（欢迎订阅YouTube：8度科技） 2, server: 145.239.1.137, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 🇳🇱 阿姆斯特丹（欢迎订阅YouTube：8度科技） 3, server: 145.239.1.137, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: 🇺🇸 美国（欢迎订阅YouTube：8度科技）, server: 154.16.171.213, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
-  - {name: 🇺🇸 美国（欢迎订阅YouTube：8度科技） 2, server: 154.16.171.213, port: 43893, type: ss, cipher: aes-256-gcm, password: YyCBeDdYX4cadHpCkkmdJLq8}
-  - {name: 亚特兰大（欢迎订阅youtube：8度科技）, server: 167.88.63.11, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: 亚特兰大（欢迎订阅youtube：8度科技） 2, server: 167.88.63.11, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: 🇺🇸 美国洛杉矶（欢迎订阅youtube：8度科%, server: 167.88.63.11, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇨🇳 台湾(感谢订阅youtube：8度科技), server: twn01.ip4.ddns.acg.photos, port: 80, type: vmess, uuid: 50477ef8-f6c9-484e-ad8a-54e26c4b87d1, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: twn01.ip4.ddns.acg.photos}}
+  - {name: 🇺🇸 US(感谢订阅youtube：8度科技), server: usdll2.jjyun.ren, port: 80, type: vmess, uuid: 8c7c1292-766c-417d-9bf5-7e12a68ef158, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /jjyunml, ws-headers: {Host: usdll2.jjyun.ren}}
+  - {name: 🇺🇸 US(感谢订阅youtube：8度科技) 2, server: usdll2.jjyun.ren, port: 80, type: vmess, uuid: d59e8d54-4914-4a07-80df-33fe2a7776ac, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /jjyunml, ws-headers: {Host: usdll2.jjyun.ren}}
+  - {name: 🇭🇰 Pool_🇭🇰HK(感谢订阅youtube：8度科技), server: 118.107.244.112, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 🇨🇦 加拿大(感谢订阅youtube：8度科技), server: 134.195.196.179, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: 🇨🇦 加拿大(感谢订阅youtube：8度科技) 2, server: 134.195.196.179, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 🇨🇦 加拿大(感谢订阅youtube：8度科技) 3, server: 134.195.196.179, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 🇨🇦 加拿大(感谢订阅youtube：8度科技) 4, server: 134.195.196.202, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 🇨🇦 加拿大(感谢订阅youtube：8度科技) 5, server: 134.195.196.202, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 🇨🇦 加拿大(感谢订阅youtube：8度科技) 6, server: 134.195.196.202, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: 🇨🇦 加拿大(感谢订阅youtube：8度科技) 7, server: 134.195.196.202, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 🇨🇦 加拿大(感谢订阅youtube：8度科技) 8, server: 134.195.196.202, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 🇨🇦 加拿大(感谢订阅youtube：8度科技) 9, server: 134.195.196.202, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇨🇦 加拿大(感谢订阅youtube：8度科技) 10, server: 134.195.196.202, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: 🇨🇦 加拿大(感谢订阅youtube：8度科技) 11, server: 134.195.196.50, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 🇨🇦 加拿大(感谢订阅youtube：8度科技) 12, server: 134.195.196.50, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 🇨🇦 加拿大(感谢订阅youtube：8度科技) 13, server: 134.195.196.50, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 🇨🇦 加拿大(感谢订阅youtube：8度科技) 14, server: 134.195.196.50, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇨🇦 加拿大(感谢订阅youtube：8度科技) 15, server: 134.195.196.50, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: 🇨🇦 加拿大(感谢订阅youtube：8度科技) 16, server: 134.195.196.50, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: 🇨🇦 加拿大(感谢订阅youtube：8度科技) 17, server: 134.195.196.50, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: 🇨🇦 加拿大(感谢订阅youtube：8度科技) 18, server: 134.195.196.50, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 🇨🇦 加拿大(感谢订阅youtube：8度科技) 19, server: 134.195.196.60, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 🇨🇦 加拿大(感谢订阅youtube：8度科技) 20, server: 134.195.196.60, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 🇨🇦 加拿大(感谢订阅youtube：8度科技) 21, server: 134.195.196.60, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 🇨🇦 加拿大(感谢订阅youtube：8度科技) 22, server: 134.195.196.60, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: 🇨🇦 加拿大(感谢订阅youtube：8度科技) 23, server: 134.195.196.60, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇨🇦 加拿大(感谢订阅youtube：8度科技) 24, server: 134.195.196.60, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: 🇨🇦 加拿大(感谢订阅youtube：8度科技) 25, server: 134.195.196.60, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: 🇩🇪 DE_01+@WangCai_1, server: 156.146.33.74, port: 31572, type: ss, cipher: aes-256-gcm, password: n8w4StnbVD9dmXYn4Ajt87EA}
+  - {name: 🇩🇪 DE_02+@WangCai_1, server: 156.146.33.74, port: 31757, type: ss, cipher: aes-256-gcm, password: wj7nDCuNARchSeKNCN8VFK62}
+  - {name: 🇩🇪 DE_03+@WangCai_1, server: 156.146.33.74, port: 31764, type: ss, cipher: aes-256-gcm, password: YgusH2MWA8PWc3p2VDsR7AVv}
+  - {name: 🇩🇪 DE_06+@WangCai_1, server: 156.146.33.74, port: 32843, type: ss, cipher: aes-256-gcm, password: G35YSR2LFNEM9bq2dkjmKQRr}
+  - {name: 🇩🇪 DE_20+@WangCai_1, server: 156.146.33.74, port: 38620, type: ss, cipher: aes-256-gcm, password: Kquv5UhvZXNMemAQy8DxZ7qn}
+  - {name: 🇩🇪 DE_22+@WangCai_1, server: 156.146.33.74, port: 38747, type: ss, cipher: aes-256-gcm, password: RtbLkxbJZpUQ6m8y4qAeLYZj}
+  - {name: 🇩🇪 DE_33+@WangCai_1, server: 156.146.33.74, port: 42166, type: ss, cipher: aes-256-gcm, password: H9Dbn3szZMqLR3NpgEFEPCKb}
+  - {name: 🇩🇪 DE_49+@WangCai_1, server: 156.146.33.74, port: 45948, type: ss, cipher: aes-256-gcm, password: j76EXqJcQhuQTr3EvUf7xaK9}
+  - {name: 🇩🇪 DE_53+@WangCai_1, server: 156.146.33.74, port: 46726, type: ss, cipher: aes-256-gcm, password: 2fqKbFPGHpcmMTJzGsUbsfYf}
+  - {name: 🇩🇪 DE_56+@WangCai_1, server: 156.146.33.74, port: 47553, type: ss, cipher: aes-256-gcm, password: t2JnnFqjDMmzWurseJPgBsYY}
+  - {name: 🇩🇪 DE_57+@WangCai_1, server: 156.146.33.74, port: 47861, type: ss, cipher: aes-256-gcm, password: LJcChRsGQRhywrtXUU55TLTu}
+  - {name: 🇩🇪 DE_58+@WangCai_1, server: 156.146.33.74, port: 48089, type: ss, cipher: aes-256-gcm, password: apqQgXJyVDsdJMAYV4xspRFK}
+  - {name: 🇩🇪 DE_59+@WangCai_1, server: 156.146.33.74, port: 48794, type: ss, cipher: aes-256-gcm, password: r9Q3adc3ru9sfBDPEj4yp6U6}
+  - {name: 🇩🇪 DE_60+@WangCai_1, server: 156.146.33.74, port: 48938, type: ss, cipher: aes-256-gcm, password: 4ejJ8n5ddLuYDUHGXJre2ufJ}
+  - {name: 🇩🇪 DE_65+@WangCai_1, server: 156.146.33.74, port: 49396, type: ss, cipher: aes-256-gcm, password: BdRWC38L5JUDMTYNNxJGcUwB}
+  - {name: 🇩🇪 DE_66+@WangCai_1, server: 156.146.33.74, port: 49468, type: ss, cipher: aes-256-gcm, password: LsYSQDxmPj9AcWpSX5HrYfu6}
+  - {name: 🇩🇪 DE_69+@WangCai_1, server: 156.146.33.74, port: 49719, type: ss, cipher: aes-256-gcm, password: 42SjT9vBF6ma9eFF3URaJpQ4}
+  - {name: 🇩🇪 DE_72+@WangCai_1, server: 156.146.33.74, port: 50181, type: ss, cipher: aes-256-gcm, password: d9adRr9UxymNSysYahMtpFpd}
+  - {name: 🇩🇪 DE_78+@WangCai_1, server: 156.146.33.74, port: 31216, type: ss, cipher: aes-256-gcm, password: wJwXatAGZ8xX5K8C7mruf84x}
+  - {name: 🇩🇪 DE_80+@WangCai_1, server: 156.146.33.74, port: 40711, type: ss, cipher: aes-256-gcm, password: rnngxSTJrXWKXHkvrF3npp9B}
+  - {name: 🇩🇪 DE_81+@WangCai_1, server: 156.146.33.74, port: 44102, type: ss, cipher: aes-256-gcm, password: zHKYS9DeAjvv43EwgDfyEg4d}
+  - {name: 🇩🇪 DE_82+@WangCai_1, server: 156.146.33.74, port: 39171, type: ss, cipher: aes-256-gcm, password: z4pM2gA9QEEC6NRmqTQubm6Z}
+  - {name: 🇩🇪 DE_83+@WangCai_1, server: 156.146.33.74, port: 41306, type: ss, cipher: aes-256-gcm, password: pzB5Y2twNtqFzWhEbBsPJMjj}
+  - {name: CH_13+@WangCai_1, server: 156.146.62.37, port: 35294, type: ss, cipher: aes-256-gcm, password: J9Y2ncrdPEC38gwydNFFGBna}
+  - {name: CH_14+@WangCai_1, server: 156.146.62.37, port: 35371, type: ss, cipher: aes-256-gcm, password: pjeDhAJGuML8xKUxcjRqq6a9}
+  - {name: CH_15+@WangCai_1, server: 156.146.62.37, port: 36460, type: ss, cipher: aes-256-gcm, password: yUXad7DGF8L5cTShEpnp2N6z}
+  - {name: CH_16+@WangCai_1, server: 156.146.62.37, port: 37473, type: ss, cipher: aes-256-gcm, password: enctdKyJfSu76VqznKwTt6Ap}
+  - {name: CH_17+@WangCai_1, server: 156.146.62.37, port: 37559, type: ss, cipher: aes-256-gcm, password: Qbt22F6JsxzFGqcsK5SaR8q3}
+  - {name: CH_18+@WangCai_1, server: 156.146.62.37, port: 37588, type: ss, cipher: aes-256-gcm, password: kD9vkjnE6dsUzwQfvKkPkQAd}
+  - {name: CH_19+@WangCai_1, server: 156.146.62.37, port: 38033, type: ss, cipher: aes-256-gcm, password: xpQwyV4W5FdA6NMANJJx73US}
+  - {name: CH_20+@WangCai_1, server: 156.146.62.37, port: 38620, type: ss, cipher: aes-256-gcm, password: Kquv5UhvZXNMemAQy8DxZ7qn}
+  - {name: CH_21+@WangCai_1, server: 156.146.62.37, port: 38742, type: ss, cipher: aes-256-gcm, password: DKXfWwc4ebscpXTKpbt85rSH}
+  - {name: CH_22+@WangCai_1, server: 156.146.62.37, port: 38747, type: ss, cipher: aes-256-gcm, password: RtbLkxbJZpUQ6m8y4qAeLYZj}
+  - {name: CH_23+@WangCai_1, server: 156.146.62.37, port: 39556, type: ss, cipher: aes-256-gcm, password: g4AfpNELpdYEeLYhM8XCX9se}
+  - {name: CH_24+@WangCai_1, server: 156.146.62.37, port: 39720, type: ss, cipher: aes-256-gcm, password: kq8xQKC3K4jYQPwLXTNbJjm6}
+  - {name: CH_26+@WangCai_1, server: 156.146.62.37, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp}
+  - {name: CH_27+@WangCai_1, server: 156.146.62.37, port: 40220, type: ss, cipher: aes-256-gcm, password: ugyBkSEFxVEmUYSHyvxmWNj9}
+  - {name: CH_28+@WangCai_1, server: 156.146.62.37, port: 40282, type: ss, cipher: aes-256-gcm, password: Pvvaw486867D2w4yctL2ULTQ}
+  - {name: CH_29+@WangCai_1, server: 156.146.62.37, port: 41372, type: ss, cipher: aes-256-gcm, password: 5kGAhC3AmVC35GbruHjSrZf2}
+  - {name: CH_30+@WangCai_1, server: 156.146.62.37, port: 41676, type: ss, cipher: aes-256-gcm, password: z6pH3RyttkRWhJ5tpRyt6dYk}
+  - {name: CH_31+@WangCai_1, server: 156.146.62.37, port: 41738, type: ss, cipher: aes-256-gcm, password: X6yMGXnfUsuKTvEDYZSLPk4d}
+  - {name: CH_32+@WangCai_1, server: 156.146.62.37, port: 41992, type: ss, cipher: aes-256-gcm, password: XmQSxDCn5ehpcq6DBYms8FJf}
+  - {name: CH_33+@WangCai_1, server: 156.146.62.37, port: 42166, type: ss, cipher: aes-256-gcm, password: H9Dbn3szZMqLR3NpgEFEPCKb}
+  - {name: CH_34+@WangCai_1, server: 156.146.62.37, port: 42185, type: ss, cipher: aes-256-gcm, password: FaTG4zALZru72gxjgSHQ7Jdh}
+  - {name: CH_35+@WangCai_1, server: 156.146.62.37, port: 42304, type: ss, cipher: aes-256-gcm, password: p26v2JwhQVHDHsXk66fXt56r}
+  - {name: CH_36+@WangCai_1, server: 156.146.62.37, port: 42816, type: ss, cipher: aes-256-gcm, password: tBKBf4pVzNCFKdbPgvwrNXq3}
+  - {name: CH_37+@WangCai_1, server: 156.146.62.37, port: 43893, type: ss, cipher: aes-256-gcm, password: YyCBeDdYX4cadHpCkkmdJLq8}
+  - {name: CH_38+@WangCai_1, server: 156.146.62.37, port: 43963, type: ss, cipher: aes-256-gcm, password: Tuw6zzZM6JwWNZyYF9ckC4JZ}
+  - {name: CH_39+@WangCai_1, server: 156.146.62.37, port: 44236, type: ss, cipher: aes-256-gcm, password: FWrXcxPZjJxAN89xLgqY3Acp}
+  - {name: CH_40+@WangCai_1, server: 156.146.62.37, port: 44539, type: ss, cipher: aes-256-gcm, password: r6hDrkP4Et6EENTS8Qy7Tcmg}
+  - {name: CH_41+@WangCai_1, server: 156.146.62.37, port: 44628, type: ss, cipher: aes-256-gcm, password: VASQbVcukHfdBGmeS9L7Z8TT}
+  - {name: CH_42+@WangCai_1, server: 156.146.62.37, port: 44742, type: ss, cipher: aes-256-gcm, password: QCStKzZ56SHBc4tL7stCEqqd}
+  - {name: CH_43+@WangCai_1, server: 156.146.62.37, port: 44745, type: ss, cipher: aes-256-gcm, password: fyXdw87yCH9SAmFkPvsvLVqC}
+  - {name: CH_44+@WangCai_1, server: 156.146.62.37, port: 44820, type: ss, cipher: aes-256-gcm, password: jspgz9G3VmvBMCgMUWLBaZHu}
+  - {name: CH_46+@WangCai_1, server: 156.146.62.37, port: 45291, type: ss, cipher: aes-256-gcm, password: ecfJrNtBZwT748hxJ3ZyzZj2}
+  - {name: CH_47+@WangCai_1, server: 156.146.62.37, port: 45329, type: ss, cipher: aes-256-gcm, password: CXSjgD7u7Ar7GxkZ4CgTMUsj}
+  - {name: CH_48+@WangCai_1, server: 156.146.62.37, port: 45746, type: ss, cipher: aes-256-gcm, password: wEsFcHCvbL4eJkL4DZQa7RgR}
+  - {name: CH_49+@WangCai_1, server: 156.146.62.37, port: 45948, type: ss, cipher: aes-256-gcm, password: j76EXqJcQhuQTr3EvUf7xaK9}
+  - {name: CH_50+@WangCai_1, server: 156.146.62.37, port: 46354, type: ss, cipher: aes-256-gcm, password: MYPKdC7n6qjL6xmJBBcrzzqS}
+  - {name: CH_51+@WangCai_1, server: 156.146.62.37, port: 46412, type: ss, cipher: aes-256-gcm, password: GEqk9WGyybeyXW97YEdanDYs}
+  - {name: CH_52+@WangCai_1, server: 156.146.62.37, port: 46642, type: ss, cipher: aes-256-gcm, password: gYL83DQWXuDbxmZAVVtUTXaK}
+  - {name: CH_53+@WangCai_1, server: 156.146.62.37, port: 46726, type: ss, cipher: aes-256-gcm, password: 2fqKbFPGHpcmMTJzGsUbsfYf}
+  - {name: CH_54+@WangCai_1, server: 156.146.62.37, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z}
+  - {name: CH_55+@WangCai_1, server: 156.146.62.37, port: 47121, type: ss, cipher: aes-256-gcm, password: CTK8GXFQgKYQErrghPJfZ6tk}
+  - {name: CH_56+@WangCai_1, server: 156.146.62.37, port: 47553, type: ss, cipher: aes-256-gcm, password: t2JnnFqjDMmzWurseJPgBsYY}
+  - {name: CH_57+@WangCai_1, server: 156.146.62.37, port: 47861, type: ss, cipher: aes-256-gcm, password: LJcChRsGQRhywrtXUU55TLTu}
+  - {name: CH_58+@WangCai_1, server: 156.146.62.37, port: 48089, type: ss, cipher: aes-256-gcm, password: apqQgXJyVDsdJMAYV4xspRFK}
+  - {name: CH_59+@WangCai_1, server: 156.146.62.37, port: 48794, type: ss, cipher: aes-256-gcm, password: r9Q3adc3ru9sfBDPEj4yp6U6}
+  - {name: CH_60+@WangCai_1, server: 156.146.62.37, port: 48938, type: ss, cipher: aes-256-gcm, password: 4ejJ8n5ddLuYDUHGXJre2ufJ}
+  - {name: CH_61+@WangCai_1, server: 156.146.62.37, port: 48970, type: ss, cipher: aes-256-gcm, password: ZKEsXkFbUZ2z667YA8A7cEDP}
+  - {name: CH_62+@WangCai_1, server: 156.146.62.37, port: 49126, type: ss, cipher: aes-256-gcm, password: wrCaGtrUbzeRqQLdc8Kmk3Nd}
+  - {name: CH_63+@WangCai_1, server: 156.146.62.37, port: 49202, type: ss, cipher: aes-256-gcm, password: btzEYXKZxnR7g6H2vFTQK5TD}
+  - {name: CH_64+@WangCai_1, server: 156.146.62.37, port: 49339, type: ss, cipher: aes-256-gcm, password: suucSeVLmt6PQKAP77NtGw9x}
+  - {name: CH_65+@WangCai_1, server: 156.146.62.37, port: 49396, type: ss, cipher: aes-256-gcm, password: BdRWC38L5JUDMTYNNxJGcUwB}
+  - {name: CH_66+@WangCai_1, server: 156.146.62.37, port: 49468, type: ss, cipher: aes-256-gcm, password: LsYSQDxmPj9AcWpSX5HrYfu6}
+  - {name: CH_67+@WangCai_1, server: 156.146.62.37, port: 49514, type: ss, cipher: aes-256-gcm, password: dpGjA4GkzV28QPDYzEp94cTe}
+  - {name: CH_68+@WangCai_1, server: 156.146.62.37, port: 49653, type: ss, cipher: aes-256-gcm, password: Y9GcTPemHMKEkrfGQPJqFDNr}
+  - {name: CH_69+@WangCai_1, server: 156.146.62.37, port: 49719, type: ss, cipher: aes-256-gcm, password: 42SjT9vBF6ma9eFF3URaJpQ4}
+  - {name: CH_70+@WangCai_1, server: 156.146.62.37, port: 50024, type: ss, cipher: aes-256-gcm, password: b2jDPHUQxCNa2KmGHZjy7C4B}
+  - {name: CH_72+@WangCai_1, server: 156.146.62.37, port: 50181, type: ss, cipher: aes-256-gcm, password: d9adRr9UxymNSysYahMtpFpd}
+  - {name: CH_75+@WangCai_1, server: 156.146.62.37, port: 50232, type: ss, cipher: aes-256-gcm, password: CjchzpwdSjRtDjezYMwx9BKM}
+  - {name: CH_76+@WangCai_1, server: 156.146.62.37, port: 50695, type: ss, cipher: aes-256-gcm, password: gqtwGu9bVreJqL3FTHSVKGzy}
+  - {name: CH_78+@WangCai_1, server: 156.146.62.37, port: 31216, type: ss, cipher: aes-256-gcm, password: wJwXatAGZ8xX5K8C7mruf84x}
+  - {name: CH_79+@WangCai_1, server: 156.146.62.37, port: 32971, type: ss, cipher: aes-256-gcm, password: vwS65ZXyZg85ApwZ2bBh6zFZ}
+  - {name: CH_80+@WangCai_1, server: 156.146.62.37, port: 40711, type: ss, cipher: aes-256-gcm, password: rnngxSTJrXWKXHkvrF3npp9B}
+  - {name: CH_81+@WangCai_1, server: 156.146.62.37, port: 44102, type: ss, cipher: aes-256-gcm, password: zHKYS9DeAjvv43EwgDfyEg4d}
+  - {name: CH_82+@WangCai_1, server: 156.146.62.37, port: 39171, type: ss, cipher: aes-256-gcm, password: z4pM2gA9QEEC6NRmqTQubm6Z}
+  - {name: CH_83+@WangCai_1, server: 156.146.62.37, port: 41306, type: ss, cipher: aes-256-gcm, password: pzB5Y2twNtqFzWhEbBsPJMjj}
+  - {name: 🇺🇸 美国洛杉矶（欢迎订阅youtube：8度科%, server: 167.88.63.11, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
   - {name: 🇺🇸 美国洛杉矶（欢迎订阅youtube：8度科% 2, server: 167.88.63.11, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 🇺🇸 美国洛杉矶（欢迎订阅youtube：8度科% 3, server: 167.88.63.11, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 亚特兰大（欢迎订阅youtube：8度科技） 3, server: 167.88.63.119, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: 亚特兰大（欢迎订阅youtube：8度科技） 4, server: 167.88.63.119, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: 🇺🇸 美国洛杉矶（欢迎订阅youtube：8度科% 4, server: 167.88.63.119, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 🇺🇸 美国洛杉矶（欢迎订阅youtube：8度科% 5, server: 167.88.63.119, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: 🇺🇸 美国洛杉矶（欢迎订阅youtube：8度科% 6, server: 167.88.63.119, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: 🇺🇸 美国洛杉矶（欢迎订阅youtube：8度科% 7, server: 167.88.63.82, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 🇺🇸 美国洛杉矶（欢迎订阅youtube：8度科% 8, server: 167.88.63.82, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 🇺🇸 美国洛杉矶（欢迎订阅youtube：8度科% 9, server: 167.88.63.82, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: 🇺🇸 美国洛杉矶（欢迎订阅youtube：8度科% 10, server: 167.88.63.82, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: 亚特兰大（欢迎订阅youtube：8度科技） 5, server: 167.88.63.99, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: 亚特兰大（欢迎订阅youtube：8度科技） 6, server: 167.88.63.99, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 🇺🇸 美国洛杉矶（欢迎订阅youtube：8度科% 11, server: 167.88.63.99, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 🇦🇺 悉尼（欢迎订阅YouTube：8度科技）, server: 172.105.167.214, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 🇦🇺 悉尼（欢迎订阅YouTube：8度科技） 2, server: 172.105.167.214, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: 🇦🇺 悉尼（欢迎订阅YouTube：8度科技） 3, server: 172.105.167.214, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 🇦🇺 悉尼（欢迎订阅youtube：8度科技） 2, server: 172.105.167.214, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: 🇦🇺 悉尼（欢迎订阅youtube：8度科技） 3, server: 172.105.167.214, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: 🇦🇺 悉尼（欢迎订阅YouTube：8度科技） 4, server: 172.105.172.41, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: 🇦🇺 悉尼（欢迎订阅youtube：8度科技） 4, server: 172.105.172.41, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: 🇦🇺 悉尼（欢迎订阅youtube：8度科技） 5, server: 172.105.172.41, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: 🇦🇺 悉尼（欢迎订阅youtube：8度科技） 6, server: 172.105.172.41, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 🇦🇺 悉尼（欢迎订阅youtube：8度科技） 7, server: 172.105.172.41, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 亚特兰大（欢迎订阅youtube：8度科技）, server: 167.88.63.11, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇺🇸 US(感谢订阅youtube：8度科技) 3, server: 167.88.63.119, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 🇺🇸 美国洛杉矶（欢迎订阅youtube：8度科% 3, server: 167.88.63.119, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 亚特兰大（欢迎订阅youtube：8度科技） 2, server: 167.88.63.119, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 亚特兰大（欢迎订阅youtube：8度科技） 3, server: 167.88.63.82, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 🇺🇸 US(感谢订阅youtube：8度科技) 4, server: 167.88.63.82, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 🇺🇸 美国洛杉矶（欢迎订阅youtube：8度科), server: 167.88.63.82, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 🇺🇸 美国洛杉矶（欢迎订阅youtube：8度科) 2, server: 167.88.63.99, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 🇺🇸 美国洛杉矶（欢迎订阅youtube：8度科) 3, server: 167.88.63.99, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 🇺🇸 美国洛杉矶（欢迎订阅youtube：8度科) 4, server: 167.88.63.99, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 亚特兰大（欢迎订阅youtube：8度科技） 4, server: 167.88.63.99, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 🇺🇸 美国洛杉矶（欢迎订阅youtube：8度科) 5, server: 172.99.190.139, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
   - {name: 🇬🇧 伦敦（欢迎订阅YouTube：8度科技）, server: 172.99.190.139, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: 🇬🇧 伦敦（欢迎订阅YouTube：8度科技） 2, server: 172.99.190.139, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: 🇬🇧 伦敦（欢迎订阅YouTube：8度科技） 3, server: 172.99.190.149, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 🇬🇧 伦敦（欢迎订阅YouTube：8度科技） 4, server: 172.99.190.149, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: 🇬🇧 伦敦（欢迎订阅YouTube：8度科技） 5, server: 172.99.190.153, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: 🇬🇧 伦敦（欢迎订阅YouTube：8度科技） 6, server: 172.99.190.153, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: 🇬🇧 伦敦（欢迎订阅YouTube：8度科技） 7, server: 172.99.190.158, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: 🇬🇧 伦敦（欢迎订阅YouTube：8度科技） 8, server: 172.99.190.158, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: 🇬🇧 伦敦（欢迎订阅YouTube：8度科技） 9, server: 172.99.190.158, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: 🇬🇧 伦敦（欢迎订阅YouTube：8度科技） 10, server: 172.99.190.35, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 🇬🇧 伦敦（欢迎订阅youtube：8度科), server: 172.99.190.149, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 🇬🇧 伦敦（欢迎订阅YouTube：8度科技） 2, server: 172.99.190.149, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 🇬🇧 伦敦（欢迎订阅YouTube：8度科技） 3, server: 172.99.190.149, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 🇬🇧 伦敦（欢迎订阅youtube：8度科) 2, server: 172.99.190.158, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 🇬🇧 伦敦（欢迎订阅youtube：8度科) 3, server: 172.99.190.158, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 🇬🇧 伦敦（欢迎订阅YouTube：8度科技） 4, server: 172.99.190.158, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 🇬🇧 伦敦（欢迎订阅YouTube：8度科技） 5, server: 172.99.190.158, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇬🇧 伦敦（欢迎订阅YouTube：8度科技） 6, server: 172.99.190.158, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 🇬🇧 伦敦（欢迎订阅youtube：8度科) 4, server: 172.99.190.35, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 🇬🇧 伦敦（欢迎订阅youtube：8度科) 5, server: 172.99.190.35, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 🇬🇧 伦敦（欢迎订阅youtube：8度科) 6, server: 172.99.190.35, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇬🇧 伦敦（欢迎订阅YouTube：8度科技） 7, server: 172.99.190.35, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
   - {name: 🇬🇧 英国 （欢迎订阅youtube：8度科技）, server: 172.99.190.35, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: 🇩🇪 德国（欢迎订阅YouTube：8度科技）, server: 176.227.241.24, port: 37588, type: ss, cipher: aes-256-gcm, password: kD9vkjnE6dsUzwQfvKkPkQAd}
-  - {name: 🇺🇸 美国（欢迎订阅youtube：8度科技）, server: 198.57.27.218, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 🇺🇸 美国（欢迎订阅youtube：8度科技） 2, server: 198.57.27.218, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: 🇺🇸 美国（欢迎订阅youtube：8度科技） 3, server: 198.57.27.218, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: 🇺🇸 美国（欢迎订阅youtube：8度科技） 4, server: 198.57.27.218, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 🇺🇸 美国（欢迎订阅youtube：8度科技） 5, server: 198.57.27.218, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: 🇺🇸 美国（欢迎订阅youtube：8度科技） 6, server: 198.57.27.218, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: 🇺🇸 美国（欢迎订阅youtube：8度科技） 7, server: 198.57.27.225, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 🇺🇸 美国（欢迎订阅youtube：8度科技） 8, server: 198.57.27.225, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: 🇺🇸 美国（欢迎订阅youtube：8度科技） 9, server: 199.58.187.69, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp}
-  - {name: 🇺🇸 美国（欢迎订阅youtube：8度科技） 10, server: 209.216.92.3, port: 34815, type: ss, cipher: aes-256-gcm, password: LkFAzkzXkSCRYa2CsRdL8cGb}
-  - {name: 🇮🇹 意大利 米兰（欢迎订阅YouTube：8度科技）, server: 212.102.54.155, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
-  - {name: 哥伦比亚(欢迎订阅youtube：8度科技), server: 45.129.32.36, port: 48938, type: ss, cipher: aes-256-gcm, password: 4ejJ8n5ddLuYDUHGXJre2ufJ}
-  - {name: 🇺🇸 美国（欢迎订阅YouTube：8度科技） 3, server: 45.43.19.74, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
-  - {name: 挪威（欢迎订阅YouTube：8度科技）, server: 46.29.218.6, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: 挪威（欢迎订阅youtube：8度科技）, server: 46.29.218.6, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: 挪威（欢迎订阅youtube：8度科技） 2, server: 46.29.218.6, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 挪威（欢迎订阅youtube：8度科技） 3, server: 46.29.218.6, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 🇺🇸 美国（欢迎订阅youtube：8度科技）, server: 198.57.27.218, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇺🇸 美国（欢迎订阅youtube：8度科技） 2, server: 198.57.27.218, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 🇺🇸 美国（欢迎订阅youtube：8度科技） 3, server: 198.57.27.218, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 🇺🇸 美国（欢迎订阅youtube：8度科技） 4, server: 198.57.27.218, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 🇺🇸 美国（欢迎订阅youtube：8度科技） 5, server: 198.57.27.225, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 🇺🇸 美国(感谢订阅youtube：8度科技), server: 38.107.226.146, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 🇺🇸 美国(感谢订阅youtube：8度科技) 2, server: 38.107.226.146, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: 🇺🇸 美国(感谢订阅youtube：8度科技) 3, server: 38.107.226.146, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 🇺🇸 美国(感谢订阅youtube：8度科技) 4, server: 38.107.226.146, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 🇺🇸 美国(感谢订阅youtube：8度科技) 5, server: 38.107.226.49, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: 🇺🇸 美国(感谢订阅youtube：8度科技) 6, server: 38.107.226.49, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 🇺🇸 美国(感谢订阅youtube：8度科技) 7, server: 38.107.226.49, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 挪威（欢迎订阅YouTube：8度科技）, server: 46.29.218.6, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 挪威（欢迎订阅YouTube：8度科技） 2, server: 46.29.218.6, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
   - {name: ITZZ（欢迎订阅youtube：8度科技）, server: 82.102.26.94, port: 38742, type: ss, cipher: aes-256-gcm, password: DKXfWwc4ebscpXTKpbt85rSH}
-  - {name: 🇫🇷 法国 巴黎（欢迎订阅YouTube：8度科技）, server: 84.17.43.185, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - NG（欢迎订阅YouTube：8度科技）
-      - NG（欢迎订阅YouTube：8度科技） 2
-      - 🇦🇺 澳大利亚（欢迎订阅YouTube：8度科技）
-      - 🇦🇺 澳大利亚（欢迎订阅YouTube：8度科技） 2
-      - 🇦🇺 悉尼（欢迎订阅youtube：8度科技）
-      - 🇨🇦 加拿大（欢迎订阅YouTube：8度科技）
-      - 🇳🇱 阿姆斯特丹（欢迎订阅YouTube：8度科技）
-      - 🇳🇱 阿姆斯特丹（欢迎订阅YouTube：8度科技） 2
-      - 🇳🇱 阿姆斯特丹（欢迎订阅YouTube：8度科技） 3
-      - 🇺🇸 美国（欢迎订阅YouTube：8度科技）
-      - 🇺🇸 美国（欢迎订阅YouTube：8度科技） 2
-      - 亚特兰大（欢迎订阅youtube：8度科技）
-      - 亚特兰大（欢迎订阅youtube：8度科技） 2
+      - 🇨🇳 台湾(感谢订阅youtube：8度科技)
+      - 🇺🇸 US(感谢订阅youtube：8度科技)
+      - 🇺🇸 US(感谢订阅youtube：8度科技) 2
+      - 🇭🇰 Pool_🇭🇰HK(感谢订阅youtube：8度科技)
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技)
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技) 2
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技) 3
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技) 4
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技) 5
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技) 6
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技) 7
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技) 8
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技) 9
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技) 10
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技) 11
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技) 12
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技) 13
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技) 14
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技) 15
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技) 16
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技) 17
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技) 18
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技) 19
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技) 20
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技) 21
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技) 22
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技) 23
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技) 24
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技) 25
+      - 🇩🇪 DE_01+@WangCai_1
+      - 🇩🇪 DE_02+@WangCai_1
+      - 🇩🇪 DE_03+@WangCai_1
+      - 🇩🇪 DE_06+@WangCai_1
+      - 🇩🇪 DE_20+@WangCai_1
+      - 🇩🇪 DE_22+@WangCai_1
+      - 🇩🇪 DE_33+@WangCai_1
+      - 🇩🇪 DE_49+@WangCai_1
+      - 🇩🇪 DE_53+@WangCai_1
+      - 🇩🇪 DE_56+@WangCai_1
+      - 🇩🇪 DE_57+@WangCai_1
+      - 🇩🇪 DE_58+@WangCai_1
+      - 🇩🇪 DE_59+@WangCai_1
+      - 🇩🇪 DE_60+@WangCai_1
+      - 🇩🇪 DE_65+@WangCai_1
+      - 🇩🇪 DE_66+@WangCai_1
+      - 🇩🇪 DE_69+@WangCai_1
+      - 🇩🇪 DE_72+@WangCai_1
+      - 🇩🇪 DE_78+@WangCai_1
+      - 🇩🇪 DE_80+@WangCai_1
+      - 🇩🇪 DE_81+@WangCai_1
+      - 🇩🇪 DE_82+@WangCai_1
+      - 🇩🇪 DE_83+@WangCai_1
+      - CH_13+@WangCai_1
+      - CH_14+@WangCai_1
+      - CH_15+@WangCai_1
+      - CH_16+@WangCai_1
+      - CH_17+@WangCai_1
+      - CH_18+@WangCai_1
+      - CH_19+@WangCai_1
+      - CH_20+@WangCai_1
+      - CH_21+@WangCai_1
+      - CH_22+@WangCai_1
+      - CH_23+@WangCai_1
+      - CH_24+@WangCai_1
+      - CH_26+@WangCai_1
+      - CH_27+@WangCai_1
+      - CH_28+@WangCai_1
+      - CH_29+@WangCai_1
+      - CH_30+@WangCai_1
+      - CH_31+@WangCai_1
+      - CH_32+@WangCai_1
+      - CH_33+@WangCai_1
+      - CH_34+@WangCai_1
+      - CH_35+@WangCai_1
+      - CH_36+@WangCai_1
+      - CH_37+@WangCai_1
+      - CH_38+@WangCai_1
+      - CH_39+@WangCai_1
+      - CH_40+@WangCai_1
+      - CH_41+@WangCai_1
+      - CH_42+@WangCai_1
+      - CH_43+@WangCai_1
+      - CH_44+@WangCai_1
+      - CH_46+@WangCai_1
+      - CH_47+@WangCai_1
+      - CH_48+@WangCai_1
+      - CH_49+@WangCai_1
+      - CH_50+@WangCai_1
+      - CH_51+@WangCai_1
+      - CH_52+@WangCai_1
+      - CH_53+@WangCai_1
+      - CH_54+@WangCai_1
+      - CH_55+@WangCai_1
+      - CH_56+@WangCai_1
+      - CH_57+@WangCai_1
+      - CH_58+@WangCai_1
+      - CH_59+@WangCai_1
+      - CH_60+@WangCai_1
+      - CH_61+@WangCai_1
+      - CH_62+@WangCai_1
+      - CH_63+@WangCai_1
+      - CH_64+@WangCai_1
+      - CH_65+@WangCai_1
+      - CH_66+@WangCai_1
+      - CH_67+@WangCai_1
+      - CH_68+@WangCai_1
+      - CH_69+@WangCai_1
+      - CH_70+@WangCai_1
+      - CH_72+@WangCai_1
+      - CH_75+@WangCai_1
+      - CH_76+@WangCai_1
+      - CH_78+@WangCai_1
+      - CH_79+@WangCai_1
+      - CH_80+@WangCai_1
+      - CH_81+@WangCai_1
+      - CH_82+@WangCai_1
+      - CH_83+@WangCai_1
       - 🇺🇸 美国洛杉矶（欢迎订阅youtube：8度科%
       - 🇺🇸 美国洛杉矶（欢迎订阅youtube：8度科% 2
+      - 亚特兰大（欢迎订阅youtube：8度科技）
+      - 🇺🇸 US(感谢订阅youtube：8度科技) 3
       - 🇺🇸 美国洛杉矶（欢迎订阅youtube：8度科% 3
+      - 亚特兰大（欢迎订阅youtube：8度科技） 2
       - 亚特兰大（欢迎订阅youtube：8度科技） 3
+      - 🇺🇸 US(感谢订阅youtube：8度科技) 4
+      - 🇺🇸 美国洛杉矶（欢迎订阅youtube：8度科)
+      - 🇺🇸 美国洛杉矶（欢迎订阅youtube：8度科) 2
+      - 🇺🇸 美国洛杉矶（欢迎订阅youtube：8度科) 3
+      - 🇺🇸 美国洛杉矶（欢迎订阅youtube：8度科) 4
       - 亚特兰大（欢迎订阅youtube：8度科技） 4
-      - 🇺🇸 美国洛杉矶（欢迎订阅youtube：8度科% 4
-      - 🇺🇸 美国洛杉矶（欢迎订阅youtube：8度科% 5
-      - 🇺🇸 美国洛杉矶（欢迎订阅youtube：8度科% 6
-      - 🇺🇸 美国洛杉矶（欢迎订阅youtube：8度科% 7
-      - 🇺🇸 美国洛杉矶（欢迎订阅youtube：8度科% 8
-      - 🇺🇸 美国洛杉矶（欢迎订阅youtube：8度科% 9
-      - 🇺🇸 美国洛杉矶（欢迎订阅youtube：8度科% 10
-      - 亚特兰大（欢迎订阅youtube：8度科技） 5
-      - 亚特兰大（欢迎订阅youtube：8度科技） 6
-      - 🇺🇸 美国洛杉矶（欢迎订阅youtube：8度科% 11
-      - 🇦🇺 悉尼（欢迎订阅YouTube：8度科技）
-      - 🇦🇺 悉尼（欢迎订阅YouTube：8度科技） 2
-      - 🇦🇺 悉尼（欢迎订阅YouTube：8度科技） 3
-      - 🇦🇺 悉尼（欢迎订阅youtube：8度科技） 2
-      - 🇦🇺 悉尼（欢迎订阅youtube：8度科技） 3
-      - 🇦🇺 悉尼（欢迎订阅YouTube：8度科技） 4
-      - 🇦🇺 悉尼（欢迎订阅youtube：8度科技） 4
-      - 🇦🇺 悉尼（欢迎订阅youtube：8度科技） 5
-      - 🇦🇺 悉尼（欢迎订阅youtube：8度科技） 6
-      - 🇦🇺 悉尼（欢迎订阅youtube：8度科技） 7
+      - 🇺🇸 美国洛杉矶（欢迎订阅youtube：8度科) 5
       - 🇬🇧 伦敦（欢迎订阅YouTube：8度科技）
+      - 🇬🇧 伦敦（欢迎订阅youtube：8度科)
       - 🇬🇧 伦敦（欢迎订阅YouTube：8度科技） 2
       - 🇬🇧 伦敦（欢迎订阅YouTube：8度科技） 3
+      - 🇬🇧 伦敦（欢迎订阅youtube：8度科) 2
+      - 🇬🇧 伦敦（欢迎订阅youtube：8度科) 3
       - 🇬🇧 伦敦（欢迎订阅YouTube：8度科技） 4
       - 🇬🇧 伦敦（欢迎订阅YouTube：8度科技） 5
       - 🇬🇧 伦敦（欢迎订阅YouTube：8度科技） 6
+      - 🇬🇧 伦敦（欢迎订阅youtube：8度科) 4
+      - 🇬🇧 伦敦（欢迎订阅youtube：8度科) 5
+      - 🇬🇧 伦敦（欢迎订阅youtube：8度科) 6
       - 🇬🇧 伦敦（欢迎订阅YouTube：8度科技） 7
-      - 🇬🇧 伦敦（欢迎订阅YouTube：8度科技） 8
-      - 🇬🇧 伦敦（欢迎订阅YouTube：8度科技） 9
-      - 🇬🇧 伦敦（欢迎订阅YouTube：8度科技） 10
       - 🇬🇧 英国 （欢迎订阅youtube：8度科技）
-      - 🇩🇪 德国（欢迎订阅YouTube：8度科技）
       - 🇺🇸 美国（欢迎订阅youtube：8度科技）
       - 🇺🇸 美国（欢迎订阅youtube：8度科技） 2
       - 🇺🇸 美国（欢迎订阅youtube：8度科技） 3
       - 🇺🇸 美国（欢迎订阅youtube：8度科技） 4
       - 🇺🇸 美国（欢迎订阅youtube：8度科技） 5
-      - 🇺🇸 美国（欢迎订阅youtube：8度科技） 6
-      - 🇺🇸 美国（欢迎订阅youtube：8度科技） 7
-      - 🇺🇸 美国（欢迎订阅youtube：8度科技） 8
-      - 🇺🇸 美国（欢迎订阅youtube：8度科技） 9
-      - 🇺🇸 美国（欢迎订阅youtube：8度科技） 10
-      - 🇮🇹 意大利 米兰（欢迎订阅YouTube：8度科技）
-      - 哥伦比亚(欢迎订阅youtube：8度科技)
-      - 🇺🇸 美国（欢迎订阅YouTube：8度科技） 3
+      - 🇺🇸 美国(感谢订阅youtube：8度科技)
+      - 🇺🇸 美国(感谢订阅youtube：8度科技) 2
+      - 🇺🇸 美国(感谢订阅youtube：8度科技) 3
+      - 🇺🇸 美国(感谢订阅youtube：8度科技) 4
+      - 🇺🇸 美国(感谢订阅youtube：8度科技) 5
+      - 🇺🇸 美国(感谢订阅youtube：8度科技) 6
+      - 🇺🇸 美国(感谢订阅youtube：8度科技) 7
       - 挪威（欢迎订阅YouTube：8度科技）
-      - 挪威（欢迎订阅youtube：8度科技）
-      - 挪威（欢迎订阅youtube：8度科技） 2
-      - 挪威（欢迎订阅youtube：8度科技） 3
+      - 挪威（欢迎订阅YouTube：8度科技） 2
       - ITZZ（欢迎订阅youtube：8度科技）
-      - 🇫🇷 法国 巴黎（欢迎订阅YouTube：8度科技）
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - NG（欢迎订阅YouTube：8度科技）
-      - NG（欢迎订阅YouTube：8度科技） 2
-      - 🇦🇺 澳大利亚（欢迎订阅YouTube：8度科技）
-      - 🇦🇺 澳大利亚（欢迎订阅YouTube：8度科技） 2
-      - 🇦🇺 悉尼（欢迎订阅youtube：8度科技）
-      - 🇨🇦 加拿大（欢迎订阅YouTube：8度科技）
-      - 🇳🇱 阿姆斯特丹（欢迎订阅YouTube：8度科技）
-      - 🇳🇱 阿姆斯特丹（欢迎订阅YouTube：8度科技） 2
-      - 🇳🇱 阿姆斯特丹（欢迎订阅YouTube：8度科技） 3
-      - 🇺🇸 美国（欢迎订阅YouTube：8度科技）
-      - 🇺🇸 美国（欢迎订阅YouTube：8度科技） 2
-      - 亚特兰大（欢迎订阅youtube：8度科技）
-      - 亚特兰大（欢迎订阅youtube：8度科技） 2
+      - 🇨🇳 台湾(感谢订阅youtube：8度科技)
+      - 🇺🇸 US(感谢订阅youtube：8度科技)
+      - 🇺🇸 US(感谢订阅youtube：8度科技) 2
+      - 🇭🇰 Pool_🇭🇰HK(感谢订阅youtube：8度科技)
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技)
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技) 2
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技) 3
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技) 4
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技) 5
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技) 6
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技) 7
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技) 8
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技) 9
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技) 10
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技) 11
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技) 12
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技) 13
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技) 14
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技) 15
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技) 16
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技) 17
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技) 18
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技) 19
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技) 20
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技) 21
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技) 22
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技) 23
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技) 24
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技) 25
+      - 🇩🇪 DE_01+@WangCai_1
+      - 🇩🇪 DE_02+@WangCai_1
+      - 🇩🇪 DE_03+@WangCai_1
+      - 🇩🇪 DE_06+@WangCai_1
+      - 🇩🇪 DE_20+@WangCai_1
+      - 🇩🇪 DE_22+@WangCai_1
+      - 🇩🇪 DE_33+@WangCai_1
+      - 🇩🇪 DE_49+@WangCai_1
+      - 🇩🇪 DE_53+@WangCai_1
+      - 🇩🇪 DE_56+@WangCai_1
+      - 🇩🇪 DE_57+@WangCai_1
+      - 🇩🇪 DE_58+@WangCai_1
+      - 🇩🇪 DE_59+@WangCai_1
+      - 🇩🇪 DE_60+@WangCai_1
+      - 🇩🇪 DE_65+@WangCai_1
+      - 🇩🇪 DE_66+@WangCai_1
+      - 🇩🇪 DE_69+@WangCai_1
+      - 🇩🇪 DE_72+@WangCai_1
+      - 🇩🇪 DE_78+@WangCai_1
+      - 🇩🇪 DE_80+@WangCai_1
+      - 🇩🇪 DE_81+@WangCai_1
+      - 🇩🇪 DE_82+@WangCai_1
+      - 🇩🇪 DE_83+@WangCai_1
+      - CH_13+@WangCai_1
+      - CH_14+@WangCai_1
+      - CH_15+@WangCai_1
+      - CH_16+@WangCai_1
+      - CH_17+@WangCai_1
+      - CH_18+@WangCai_1
+      - CH_19+@WangCai_1
+      - CH_20+@WangCai_1
+      - CH_21+@WangCai_1
+      - CH_22+@WangCai_1
+      - CH_23+@WangCai_1
+      - CH_24+@WangCai_1
+      - CH_26+@WangCai_1
+      - CH_27+@WangCai_1
+      - CH_28+@WangCai_1
+      - CH_29+@WangCai_1
+      - CH_30+@WangCai_1
+      - CH_31+@WangCai_1
+      - CH_32+@WangCai_1
+      - CH_33+@WangCai_1
+      - CH_34+@WangCai_1
+      - CH_35+@WangCai_1
+      - CH_36+@WangCai_1
+      - CH_37+@WangCai_1
+      - CH_38+@WangCai_1
+      - CH_39+@WangCai_1
+      - CH_40+@WangCai_1
+      - CH_41+@WangCai_1
+      - CH_42+@WangCai_1
+      - CH_43+@WangCai_1
+      - CH_44+@WangCai_1
+      - CH_46+@WangCai_1
+      - CH_47+@WangCai_1
+      - CH_48+@WangCai_1
+      - CH_49+@WangCai_1
+      - CH_50+@WangCai_1
+      - CH_51+@WangCai_1
+      - CH_52+@WangCai_1
+      - CH_53+@WangCai_1
+      - CH_54+@WangCai_1
+      - CH_55+@WangCai_1
+      - CH_56+@WangCai_1
+      - CH_57+@WangCai_1
+      - CH_58+@WangCai_1
+      - CH_59+@WangCai_1
+      - CH_60+@WangCai_1
+      - CH_61+@WangCai_1
+      - CH_62+@WangCai_1
+      - CH_63+@WangCai_1
+      - CH_64+@WangCai_1
+      - CH_65+@WangCai_1
+      - CH_66+@WangCai_1
+      - CH_67+@WangCai_1
+      - CH_68+@WangCai_1
+      - CH_69+@WangCai_1
+      - CH_70+@WangCai_1
+      - CH_72+@WangCai_1
+      - CH_75+@WangCai_1
+      - CH_76+@WangCai_1
+      - CH_78+@WangCai_1
+      - CH_79+@WangCai_1
+      - CH_80+@WangCai_1
+      - CH_81+@WangCai_1
+      - CH_82+@WangCai_1
+      - CH_83+@WangCai_1
       - 🇺🇸 美国洛杉矶（欢迎订阅youtube：8度科%
       - 🇺🇸 美国洛杉矶（欢迎订阅youtube：8度科% 2
+      - 亚特兰大（欢迎订阅youtube：8度科技）
+      - 🇺🇸 US(感谢订阅youtube：8度科技) 3
       - 🇺🇸 美国洛杉矶（欢迎订阅youtube：8度科% 3
+      - 亚特兰大（欢迎订阅youtube：8度科技） 2
       - 亚特兰大（欢迎订阅youtube：8度科技） 3
+      - 🇺🇸 US(感谢订阅youtube：8度科技) 4
+      - 🇺🇸 美国洛杉矶（欢迎订阅youtube：8度科)
+      - 🇺🇸 美国洛杉矶（欢迎订阅youtube：8度科) 2
+      - 🇺🇸 美国洛杉矶（欢迎订阅youtube：8度科) 3
+      - 🇺🇸 美国洛杉矶（欢迎订阅youtube：8度科) 4
       - 亚特兰大（欢迎订阅youtube：8度科技） 4
-      - 🇺🇸 美国洛杉矶（欢迎订阅youtube：8度科% 4
-      - 🇺🇸 美国洛杉矶（欢迎订阅youtube：8度科% 5
-      - 🇺🇸 美国洛杉矶（欢迎订阅youtube：8度科% 6
-      - 🇺🇸 美国洛杉矶（欢迎订阅youtube：8度科% 7
-      - 🇺🇸 美国洛杉矶（欢迎订阅youtube：8度科% 8
-      - 🇺🇸 美国洛杉矶（欢迎订阅youtube：8度科% 9
-      - 🇺🇸 美国洛杉矶（欢迎订阅youtube：8度科% 10
-      - 亚特兰大（欢迎订阅youtube：8度科技） 5
-      - 亚特兰大（欢迎订阅youtube：8度科技） 6
-      - 🇺🇸 美国洛杉矶（欢迎订阅youtube：8度科% 11
-      - 🇦🇺 悉尼（欢迎订阅YouTube：8度科技）
-      - 🇦🇺 悉尼（欢迎订阅YouTube：8度科技） 2
-      - 🇦🇺 悉尼（欢迎订阅YouTube：8度科技） 3
-      - 🇦🇺 悉尼（欢迎订阅youtube：8度科技） 2
-      - 🇦🇺 悉尼（欢迎订阅youtube：8度科技） 3
-      - 🇦🇺 悉尼（欢迎订阅YouTube：8度科技） 4
-      - 🇦🇺 悉尼（欢迎订阅youtube：8度科技） 4
-      - 🇦🇺 悉尼（欢迎订阅youtube：8度科技） 5
-      - 🇦🇺 悉尼（欢迎订阅youtube：8度科技） 6
-      - 🇦🇺 悉尼（欢迎订阅youtube：8度科技） 7
+      - 🇺🇸 美国洛杉矶（欢迎订阅youtube：8度科) 5
       - 🇬🇧 伦敦（欢迎订阅YouTube：8度科技）
+      - 🇬🇧 伦敦（欢迎订阅youtube：8度科)
       - 🇬🇧 伦敦（欢迎订阅YouTube：8度科技） 2
       - 🇬🇧 伦敦（欢迎订阅YouTube：8度科技） 3
+      - 🇬🇧 伦敦（欢迎订阅youtube：8度科) 2
+      - 🇬🇧 伦敦（欢迎订阅youtube：8度科) 3
       - 🇬🇧 伦敦（欢迎订阅YouTube：8度科技） 4
       - 🇬🇧 伦敦（欢迎订阅YouTube：8度科技） 5
       - 🇬🇧 伦敦（欢迎订阅YouTube：8度科技） 6
+      - 🇬🇧 伦敦（欢迎订阅youtube：8度科) 4
+      - 🇬🇧 伦敦（欢迎订阅youtube：8度科) 5
+      - 🇬🇧 伦敦（欢迎订阅youtube：8度科) 6
       - 🇬🇧 伦敦（欢迎订阅YouTube：8度科技） 7
-      - 🇬🇧 伦敦（欢迎订阅YouTube：8度科技） 8
-      - 🇬🇧 伦敦（欢迎订阅YouTube：8度科技） 9
-      - 🇬🇧 伦敦（欢迎订阅YouTube：8度科技） 10
       - 🇬🇧 英国 （欢迎订阅youtube：8度科技）
-      - 🇩🇪 德国（欢迎订阅YouTube：8度科技）
       - 🇺🇸 美国（欢迎订阅youtube：8度科技）
       - 🇺🇸 美国（欢迎订阅youtube：8度科技） 2
       - 🇺🇸 美国（欢迎订阅youtube：8度科技） 3
       - 🇺🇸 美国（欢迎订阅youtube：8度科技） 4
       - 🇺🇸 美国（欢迎订阅youtube：8度科技） 5
-      - 🇺🇸 美国（欢迎订阅youtube：8度科技） 6
-      - 🇺🇸 美国（欢迎订阅youtube：8度科技） 7
-      - 🇺🇸 美国（欢迎订阅youtube：8度科技） 8
-      - 🇺🇸 美国（欢迎订阅youtube：8度科技） 9
-      - 🇺🇸 美国（欢迎订阅youtube：8度科技） 10
-      - 🇮🇹 意大利 米兰（欢迎订阅YouTube：8度科技）
-      - 哥伦比亚(欢迎订阅youtube：8度科技)
-      - 🇺🇸 美国（欢迎订阅YouTube：8度科技） 3
+      - 🇺🇸 美国(感谢订阅youtube：8度科技)
+      - 🇺🇸 美国(感谢订阅youtube：8度科技) 2
+      - 🇺🇸 美国(感谢订阅youtube：8度科技) 3
+      - 🇺🇸 美国(感谢订阅youtube：8度科技) 4
+      - 🇺🇸 美国(感谢订阅youtube：8度科技) 5
+      - 🇺🇸 美国(感谢订阅youtube：8度科技) 6
+      - 🇺🇸 美国(感谢订阅youtube：8度科技) 7
       - 挪威（欢迎订阅YouTube：8度科技）
-      - 挪威（欢迎订阅youtube：8度科技）
-      - 挪威（欢迎订阅youtube：8度科技） 2
-      - 挪威（欢迎订阅youtube：8度科技） 3
+      - 挪威（欢迎订阅YouTube：8度科技） 2
       - ITZZ（欢迎订阅youtube：8度科技）
-      - 🇫🇷 法国 巴黎（欢迎订阅YouTube：8度科技）
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - NG（欢迎订阅YouTube：8度科技）
-      - NG（欢迎订阅YouTube：8度科技） 2
-      - 🇦🇺 澳大利亚（欢迎订阅YouTube：8度科技）
-      - 🇦🇺 澳大利亚（欢迎订阅YouTube：8度科技） 2
-      - 🇦🇺 悉尼（欢迎订阅youtube：8度科技）
-      - 🇨🇦 加拿大（欢迎订阅YouTube：8度科技）
-      - 🇳🇱 阿姆斯特丹（欢迎订阅YouTube：8度科技）
-      - 🇳🇱 阿姆斯特丹（欢迎订阅YouTube：8度科技） 2
-      - 🇳🇱 阿姆斯特丹（欢迎订阅YouTube：8度科技） 3
-      - 🇺🇸 美国（欢迎订阅YouTube：8度科技）
-      - 🇺🇸 美国（欢迎订阅YouTube：8度科技） 2
-      - 亚特兰大（欢迎订阅youtube：8度科技）
-      - 亚特兰大（欢迎订阅youtube：8度科技） 2
+      - 🇨🇳 台湾(感谢订阅youtube：8度科技)
+      - 🇺🇸 US(感谢订阅youtube：8度科技)
+      - 🇺🇸 US(感谢订阅youtube：8度科技) 2
+      - 🇭🇰 Pool_🇭🇰HK(感谢订阅youtube：8度科技)
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技)
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技) 2
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技) 3
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技) 4
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技) 5
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技) 6
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技) 7
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技) 8
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技) 9
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技) 10
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技) 11
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技) 12
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技) 13
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技) 14
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技) 15
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技) 16
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技) 17
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技) 18
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技) 19
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技) 20
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技) 21
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技) 22
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技) 23
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技) 24
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技) 25
+      - 🇩🇪 DE_01+@WangCai_1
+      - 🇩🇪 DE_02+@WangCai_1
+      - 🇩🇪 DE_03+@WangCai_1
+      - 🇩🇪 DE_06+@WangCai_1
+      - 🇩🇪 DE_20+@WangCai_1
+      - 🇩🇪 DE_22+@WangCai_1
+      - 🇩🇪 DE_33+@WangCai_1
+      - 🇩🇪 DE_49+@WangCai_1
+      - 🇩🇪 DE_53+@WangCai_1
+      - 🇩🇪 DE_56+@WangCai_1
+      - 🇩🇪 DE_57+@WangCai_1
+      - 🇩🇪 DE_58+@WangCai_1
+      - 🇩🇪 DE_59+@WangCai_1
+      - 🇩🇪 DE_60+@WangCai_1
+      - 🇩🇪 DE_65+@WangCai_1
+      - 🇩🇪 DE_66+@WangCai_1
+      - 🇩🇪 DE_69+@WangCai_1
+      - 🇩🇪 DE_72+@WangCai_1
+      - 🇩🇪 DE_78+@WangCai_1
+      - 🇩🇪 DE_80+@WangCai_1
+      - 🇩🇪 DE_81+@WangCai_1
+      - 🇩🇪 DE_82+@WangCai_1
+      - 🇩🇪 DE_83+@WangCai_1
+      - CH_13+@WangCai_1
+      - CH_14+@WangCai_1
+      - CH_15+@WangCai_1
+      - CH_16+@WangCai_1
+      - CH_17+@WangCai_1
+      - CH_18+@WangCai_1
+      - CH_19+@WangCai_1
+      - CH_20+@WangCai_1
+      - CH_21+@WangCai_1
+      - CH_22+@WangCai_1
+      - CH_23+@WangCai_1
+      - CH_24+@WangCai_1
+      - CH_26+@WangCai_1
+      - CH_27+@WangCai_1
+      - CH_28+@WangCai_1
+      - CH_29+@WangCai_1
+      - CH_30+@WangCai_1
+      - CH_31+@WangCai_1
+      - CH_32+@WangCai_1
+      - CH_33+@WangCai_1
+      - CH_34+@WangCai_1
+      - CH_35+@WangCai_1
+      - CH_36+@WangCai_1
+      - CH_37+@WangCai_1
+      - CH_38+@WangCai_1
+      - CH_39+@WangCai_1
+      - CH_40+@WangCai_1
+      - CH_41+@WangCai_1
+      - CH_42+@WangCai_1
+      - CH_43+@WangCai_1
+      - CH_44+@WangCai_1
+      - CH_46+@WangCai_1
+      - CH_47+@WangCai_1
+      - CH_48+@WangCai_1
+      - CH_49+@WangCai_1
+      - CH_50+@WangCai_1
+      - CH_51+@WangCai_1
+      - CH_52+@WangCai_1
+      - CH_53+@WangCai_1
+      - CH_54+@WangCai_1
+      - CH_55+@WangCai_1
+      - CH_56+@WangCai_1
+      - CH_57+@WangCai_1
+      - CH_58+@WangCai_1
+      - CH_59+@WangCai_1
+      - CH_60+@WangCai_1
+      - CH_61+@WangCai_1
+      - CH_62+@WangCai_1
+      - CH_63+@WangCai_1
+      - CH_64+@WangCai_1
+      - CH_65+@WangCai_1
+      - CH_66+@WangCai_1
+      - CH_67+@WangCai_1
+      - CH_68+@WangCai_1
+      - CH_69+@WangCai_1
+      - CH_70+@WangCai_1
+      - CH_72+@WangCai_1
+      - CH_75+@WangCai_1
+      - CH_76+@WangCai_1
+      - CH_78+@WangCai_1
+      - CH_79+@WangCai_1
+      - CH_80+@WangCai_1
+      - CH_81+@WangCai_1
+      - CH_82+@WangCai_1
+      - CH_83+@WangCai_1
       - 🇺🇸 美国洛杉矶（欢迎订阅youtube：8度科%
       - 🇺🇸 美国洛杉矶（欢迎订阅youtube：8度科% 2
+      - 亚特兰大（欢迎订阅youtube：8度科技）
+      - 🇺🇸 US(感谢订阅youtube：8度科技) 3
       - 🇺🇸 美国洛杉矶（欢迎订阅youtube：8度科% 3
+      - 亚特兰大（欢迎订阅youtube：8度科技） 2
       - 亚特兰大（欢迎订阅youtube：8度科技） 3
+      - 🇺🇸 US(感谢订阅youtube：8度科技) 4
+      - 🇺🇸 美国洛杉矶（欢迎订阅youtube：8度科)
+      - 🇺🇸 美国洛杉矶（欢迎订阅youtube：8度科) 2
+      - 🇺🇸 美国洛杉矶（欢迎订阅youtube：8度科) 3
+      - 🇺🇸 美国洛杉矶（欢迎订阅youtube：8度科) 4
       - 亚特兰大（欢迎订阅youtube：8度科技） 4
-      - 🇺🇸 美国洛杉矶（欢迎订阅youtube：8度科% 4
-      - 🇺🇸 美国洛杉矶（欢迎订阅youtube：8度科% 5
-      - 🇺🇸 美国洛杉矶（欢迎订阅youtube：8度科% 6
-      - 🇺🇸 美国洛杉矶（欢迎订阅youtube：8度科% 7
-      - 🇺🇸 美国洛杉矶（欢迎订阅youtube：8度科% 8
-      - 🇺🇸 美国洛杉矶（欢迎订阅youtube：8度科% 9
-      - 🇺🇸 美国洛杉矶（欢迎订阅youtube：8度科% 10
-      - 亚特兰大（欢迎订阅youtube：8度科技） 5
-      - 亚特兰大（欢迎订阅youtube：8度科技） 6
-      - 🇺🇸 美国洛杉矶（欢迎订阅youtube：8度科% 11
-      - 🇦🇺 悉尼（欢迎订阅YouTube：8度科技）
-      - 🇦🇺 悉尼（欢迎订阅YouTube：8度科技） 2
-      - 🇦🇺 悉尼（欢迎订阅YouTube：8度科技） 3
-      - 🇦🇺 悉尼（欢迎订阅youtube：8度科技） 2
-      - 🇦🇺 悉尼（欢迎订阅youtube：8度科技） 3
-      - 🇦🇺 悉尼（欢迎订阅YouTube：8度科技） 4
-      - 🇦🇺 悉尼（欢迎订阅youtube：8度科技） 4
-      - 🇦🇺 悉尼（欢迎订阅youtube：8度科技） 5
-      - 🇦🇺 悉尼（欢迎订阅youtube：8度科技） 6
-      - 🇦🇺 悉尼（欢迎订阅youtube：8度科技） 7
+      - 🇺🇸 美国洛杉矶（欢迎订阅youtube：8度科) 5
       - 🇬🇧 伦敦（欢迎订阅YouTube：8度科技）
+      - 🇬🇧 伦敦（欢迎订阅youtube：8度科)
       - 🇬🇧 伦敦（欢迎订阅YouTube：8度科技） 2
       - 🇬🇧 伦敦（欢迎订阅YouTube：8度科技） 3
+      - 🇬🇧 伦敦（欢迎订阅youtube：8度科) 2
+      - 🇬🇧 伦敦（欢迎订阅youtube：8度科) 3
       - 🇬🇧 伦敦（欢迎订阅YouTube：8度科技） 4
       - 🇬🇧 伦敦（欢迎订阅YouTube：8度科技） 5
       - 🇬🇧 伦敦（欢迎订阅YouTube：8度科技） 6
+      - 🇬🇧 伦敦（欢迎订阅youtube：8度科) 4
+      - 🇬🇧 伦敦（欢迎订阅youtube：8度科) 5
+      - 🇬🇧 伦敦（欢迎订阅youtube：8度科) 6
       - 🇬🇧 伦敦（欢迎订阅YouTube：8度科技） 7
-      - 🇬🇧 伦敦（欢迎订阅YouTube：8度科技） 8
-      - 🇬🇧 伦敦（欢迎订阅YouTube：8度科技） 9
-      - 🇬🇧 伦敦（欢迎订阅YouTube：8度科技） 10
       - 🇬🇧 英国 （欢迎订阅youtube：8度科技）
-      - 🇩🇪 德国（欢迎订阅YouTube：8度科技）
       - 🇺🇸 美国（欢迎订阅youtube：8度科技）
       - 🇺🇸 美国（欢迎订阅youtube：8度科技） 2
       - 🇺🇸 美国（欢迎订阅youtube：8度科技） 3
       - 🇺🇸 美国（欢迎订阅youtube：8度科技） 4
       - 🇺🇸 美国（欢迎订阅youtube：8度科技） 5
-      - 🇺🇸 美国（欢迎订阅youtube：8度科技） 6
-      - 🇺🇸 美国（欢迎订阅youtube：8度科技） 7
-      - 🇺🇸 美国（欢迎订阅youtube：8度科技） 8
-      - 🇺🇸 美国（欢迎订阅youtube：8度科技） 9
-      - 🇺🇸 美国（欢迎订阅youtube：8度科技） 10
-      - 🇮🇹 意大利 米兰（欢迎订阅YouTube：8度科技）
-      - 哥伦比亚(欢迎订阅youtube：8度科技)
-      - 🇺🇸 美国（欢迎订阅YouTube：8度科技） 3
+      - 🇺🇸 美国(感谢订阅youtube：8度科技)
+      - 🇺🇸 美国(感谢订阅youtube：8度科技) 2
+      - 🇺🇸 美国(感谢订阅youtube：8度科技) 3
+      - 🇺🇸 美国(感谢订阅youtube：8度科技) 4
+      - 🇺🇸 美国(感谢订阅youtube：8度科技) 5
+      - 🇺🇸 美国(感谢订阅youtube：8度科技) 6
+      - 🇺🇸 美国(感谢订阅youtube：8度科技) 7
       - 挪威（欢迎订阅YouTube：8度科技）
-      - 挪威（欢迎订阅youtube：8度科技）
-      - 挪威（欢迎订阅youtube：8度科技） 2
-      - 挪威（欢迎订阅youtube：8度科技） 3
+      - 挪威（欢迎订阅YouTube：8度科技） 2
       - ITZZ（欢迎订阅youtube：8度科技）
-      - 🇫🇷 法国 巴黎（欢迎订阅YouTube：8度科技）
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
+      - 🇨🇳 台湾(感谢订阅youtube：8度科技)
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - NG（欢迎订阅YouTube：8度科技）
-      - NG（欢迎订阅YouTube：8度科技） 2
-      - 🇦🇺 澳大利亚（欢迎订阅YouTube：8度科技）
-      - 🇦🇺 澳大利亚（欢迎订阅YouTube：8度科技） 2
-      - 🇦🇺 悉尼（欢迎订阅youtube：8度科技）
-      - 🇨🇦 加拿大（欢迎订阅YouTube：8度科技）
-      - 🇳🇱 阿姆斯特丹（欢迎订阅YouTube：8度科技）
-      - 🇳🇱 阿姆斯特丹（欢迎订阅YouTube：8度科技） 2
-      - 🇳🇱 阿姆斯特丹（欢迎订阅YouTube：8度科技） 3
-      - 🇺🇸 美国（欢迎订阅YouTube：8度科技）
-      - 🇺🇸 美国（欢迎订阅YouTube：8度科技） 2
-      - 亚特兰大（欢迎订阅youtube：8度科技）
-      - 亚特兰大（欢迎订阅youtube：8度科技） 2
+      - 🇨🇳 台湾(感谢订阅youtube：8度科技)
+      - 🇺🇸 US(感谢订阅youtube：8度科技)
+      - 🇺🇸 US(感谢订阅youtube：8度科技) 2
+      - 🇭🇰 Pool_🇭🇰HK(感谢订阅youtube：8度科技)
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技)
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技) 2
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技) 3
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技) 4
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技) 5
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技) 6
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技) 7
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技) 8
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技) 9
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技) 10
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技) 11
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技) 12
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技) 13
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技) 14
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技) 15
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技) 16
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技) 17
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技) 18
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技) 19
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技) 20
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技) 21
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技) 22
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技) 23
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技) 24
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技) 25
+      - 🇩🇪 DE_01+@WangCai_1
+      - 🇩🇪 DE_02+@WangCai_1
+      - 🇩🇪 DE_03+@WangCai_1
+      - 🇩🇪 DE_06+@WangCai_1
+      - 🇩🇪 DE_20+@WangCai_1
+      - 🇩🇪 DE_22+@WangCai_1
+      - 🇩🇪 DE_33+@WangCai_1
+      - 🇩🇪 DE_49+@WangCai_1
+      - 🇩🇪 DE_53+@WangCai_1
+      - 🇩🇪 DE_56+@WangCai_1
+      - 🇩🇪 DE_57+@WangCai_1
+      - 🇩🇪 DE_58+@WangCai_1
+      - 🇩🇪 DE_59+@WangCai_1
+      - 🇩🇪 DE_60+@WangCai_1
+      - 🇩🇪 DE_65+@WangCai_1
+      - 🇩🇪 DE_66+@WangCai_1
+      - 🇩🇪 DE_69+@WangCai_1
+      - 🇩🇪 DE_72+@WangCai_1
+      - 🇩🇪 DE_78+@WangCai_1
+      - 🇩🇪 DE_80+@WangCai_1
+      - 🇩🇪 DE_81+@WangCai_1
+      - 🇩🇪 DE_82+@WangCai_1
+      - 🇩🇪 DE_83+@WangCai_1
+      - CH_13+@WangCai_1
+      - CH_14+@WangCai_1
+      - CH_15+@WangCai_1
+      - CH_16+@WangCai_1
+      - CH_17+@WangCai_1
+      - CH_18+@WangCai_1
+      - CH_19+@WangCai_1
+      - CH_20+@WangCai_1
+      - CH_21+@WangCai_1
+      - CH_22+@WangCai_1
+      - CH_23+@WangCai_1
+      - CH_24+@WangCai_1
+      - CH_26+@WangCai_1
+      - CH_27+@WangCai_1
+      - CH_28+@WangCai_1
+      - CH_29+@WangCai_1
+      - CH_30+@WangCai_1
+      - CH_31+@WangCai_1
+      - CH_32+@WangCai_1
+      - CH_33+@WangCai_1
+      - CH_34+@WangCai_1
+      - CH_35+@WangCai_1
+      - CH_36+@WangCai_1
+      - CH_37+@WangCai_1
+      - CH_38+@WangCai_1
+      - CH_39+@WangCai_1
+      - CH_40+@WangCai_1
+      - CH_41+@WangCai_1
+      - CH_42+@WangCai_1
+      - CH_43+@WangCai_1
+      - CH_44+@WangCai_1
+      - CH_46+@WangCai_1
+      - CH_47+@WangCai_1
+      - CH_48+@WangCai_1
+      - CH_49+@WangCai_1
+      - CH_50+@WangCai_1
+      - CH_51+@WangCai_1
+      - CH_52+@WangCai_1
+      - CH_53+@WangCai_1
+      - CH_54+@WangCai_1
+      - CH_55+@WangCai_1
+      - CH_56+@WangCai_1
+      - CH_57+@WangCai_1
+      - CH_58+@WangCai_1
+      - CH_59+@WangCai_1
+      - CH_60+@WangCai_1
+      - CH_61+@WangCai_1
+      - CH_62+@WangCai_1
+      - CH_63+@WangCai_1
+      - CH_64+@WangCai_1
+      - CH_65+@WangCai_1
+      - CH_66+@WangCai_1
+      - CH_67+@WangCai_1
+      - CH_68+@WangCai_1
+      - CH_69+@WangCai_1
+      - CH_70+@WangCai_1
+      - CH_72+@WangCai_1
+      - CH_75+@WangCai_1
+      - CH_76+@WangCai_1
+      - CH_78+@WangCai_1
+      - CH_79+@WangCai_1
+      - CH_80+@WangCai_1
+      - CH_81+@WangCai_1
+      - CH_82+@WangCai_1
+      - CH_83+@WangCai_1
       - 🇺🇸 美国洛杉矶（欢迎订阅youtube：8度科%
       - 🇺🇸 美国洛杉矶（欢迎订阅youtube：8度科% 2
+      - 亚特兰大（欢迎订阅youtube：8度科技）
+      - 🇺🇸 US(感谢订阅youtube：8度科技) 3
       - 🇺🇸 美国洛杉矶（欢迎订阅youtube：8度科% 3
+      - 亚特兰大（欢迎订阅youtube：8度科技） 2
       - 亚特兰大（欢迎订阅youtube：8度科技） 3
+      - 🇺🇸 US(感谢订阅youtube：8度科技) 4
+      - 🇺🇸 美国洛杉矶（欢迎订阅youtube：8度科)
+      - 🇺🇸 美国洛杉矶（欢迎订阅youtube：8度科) 2
+      - 🇺🇸 美国洛杉矶（欢迎订阅youtube：8度科) 3
+      - 🇺🇸 美国洛杉矶（欢迎订阅youtube：8度科) 4
       - 亚特兰大（欢迎订阅youtube：8度科技） 4
-      - 🇺🇸 美国洛杉矶（欢迎订阅youtube：8度科% 4
-      - 🇺🇸 美国洛杉矶（欢迎订阅youtube：8度科% 5
-      - 🇺🇸 美国洛杉矶（欢迎订阅youtube：8度科% 6
-      - 🇺🇸 美国洛杉矶（欢迎订阅youtube：8度科% 7
-      - 🇺🇸 美国洛杉矶（欢迎订阅youtube：8度科% 8
-      - 🇺🇸 美国洛杉矶（欢迎订阅youtube：8度科% 9
-      - 🇺🇸 美国洛杉矶（欢迎订阅youtube：8度科% 10
-      - 亚特兰大（欢迎订阅youtube：8度科技） 5
-      - 亚特兰大（欢迎订阅youtube：8度科技） 6
-      - 🇺🇸 美国洛杉矶（欢迎订阅youtube：8度科% 11
-      - 🇦🇺 悉尼（欢迎订阅YouTube：8度科技）
-      - 🇦🇺 悉尼（欢迎订阅YouTube：8度科技） 2
-      - 🇦🇺 悉尼（欢迎订阅YouTube：8度科技） 3
-      - 🇦🇺 悉尼（欢迎订阅youtube：8度科技） 2
-      - 🇦🇺 悉尼（欢迎订阅youtube：8度科技） 3
-      - 🇦🇺 悉尼（欢迎订阅YouTube：8度科技） 4
-      - 🇦🇺 悉尼（欢迎订阅youtube：8度科技） 4
-      - 🇦🇺 悉尼（欢迎订阅youtube：8度科技） 5
-      - 🇦🇺 悉尼（欢迎订阅youtube：8度科技） 6
-      - 🇦🇺 悉尼（欢迎订阅youtube：8度科技） 7
+      - 🇺🇸 美国洛杉矶（欢迎订阅youtube：8度科) 5
       - 🇬🇧 伦敦（欢迎订阅YouTube：8度科技）
+      - 🇬🇧 伦敦（欢迎订阅youtube：8度科)
       - 🇬🇧 伦敦（欢迎订阅YouTube：8度科技） 2
       - 🇬🇧 伦敦（欢迎订阅YouTube：8度科技） 3
+      - 🇬🇧 伦敦（欢迎订阅youtube：8度科) 2
+      - 🇬🇧 伦敦（欢迎订阅youtube：8度科) 3
       - 🇬🇧 伦敦（欢迎订阅YouTube：8度科技） 4
       - 🇬🇧 伦敦（欢迎订阅YouTube：8度科技） 5
       - 🇬🇧 伦敦（欢迎订阅YouTube：8度科技） 6
+      - 🇬🇧 伦敦（欢迎订阅youtube：8度科) 4
+      - 🇬🇧 伦敦（欢迎订阅youtube：8度科) 5
+      - 🇬🇧 伦敦（欢迎订阅youtube：8度科) 6
       - 🇬🇧 伦敦（欢迎订阅YouTube：8度科技） 7
-      - 🇬🇧 伦敦（欢迎订阅YouTube：8度科技） 8
-      - 🇬🇧 伦敦（欢迎订阅YouTube：8度科技） 9
-      - 🇬🇧 伦敦（欢迎订阅YouTube：8度科技） 10
       - 🇬🇧 英国 （欢迎订阅youtube：8度科技）
-      - 🇩🇪 德国（欢迎订阅YouTube：8度科技）
       - 🇺🇸 美国（欢迎订阅youtube：8度科技）
       - 🇺🇸 美国（欢迎订阅youtube：8度科技） 2
       - 🇺🇸 美国（欢迎订阅youtube：8度科技） 3
       - 🇺🇸 美国（欢迎订阅youtube：8度科技） 4
       - 🇺🇸 美国（欢迎订阅youtube：8度科技） 5
-      - 🇺🇸 美国（欢迎订阅youtube：8度科技） 6
-      - 🇺🇸 美国（欢迎订阅youtube：8度科技） 7
-      - 🇺🇸 美国（欢迎订阅youtube：8度科技） 8
-      - 🇺🇸 美国（欢迎订阅youtube：8度科技） 9
-      - 🇺🇸 美国（欢迎订阅youtube：8度科技） 10
-      - 🇮🇹 意大利 米兰（欢迎订阅YouTube：8度科技）
-      - 哥伦比亚(欢迎订阅youtube：8度科技)
-      - 🇺🇸 美国（欢迎订阅YouTube：8度科技） 3
+      - 🇺🇸 美国(感谢订阅youtube：8度科技)
+      - 🇺🇸 美国(感谢订阅youtube：8度科技) 2
+      - 🇺🇸 美国(感谢订阅youtube：8度科技) 3
+      - 🇺🇸 美国(感谢订阅youtube：8度科技) 4
+      - 🇺🇸 美国(感谢订阅youtube：8度科技) 5
+      - 🇺🇸 美国(感谢订阅youtube：8度科技) 6
+      - 🇺🇸 美国(感谢订阅youtube：8度科技) 7
       - 挪威（欢迎订阅YouTube：8度科技）
-      - 挪威（欢迎订阅youtube：8度科技）
-      - 挪威（欢迎订阅youtube：8度科技） 2
-      - 挪威（欢迎订阅youtube：8度科技） 3
+      - 挪威（欢迎订阅YouTube：8度科技） 2
       - ITZZ（欢迎订阅youtube：8度科技）
-      - 🇫🇷 法国 巴黎（欢迎订阅YouTube：8度科技）
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - NG（欢迎订阅YouTube：8度科技）
-      - NG（欢迎订阅YouTube：8度科技） 2
-      - 🇦🇺 澳大利亚（欢迎订阅YouTube：8度科技）
-      - 🇦🇺 澳大利亚（欢迎订阅YouTube：8度科技） 2
-      - 🇦🇺 悉尼（欢迎订阅youtube：8度科技）
-      - 🇨🇦 加拿大（欢迎订阅YouTube：8度科技）
-      - 🇳🇱 阿姆斯特丹（欢迎订阅YouTube：8度科技）
-      - 🇳🇱 阿姆斯特丹（欢迎订阅YouTube：8度科技） 2
-      - 🇳🇱 阿姆斯特丹（欢迎订阅YouTube：8度科技） 3
-      - 🇺🇸 美国（欢迎订阅YouTube：8度科技）
-      - 🇺🇸 美国（欢迎订阅YouTube：8度科技） 2
-      - 亚特兰大（欢迎订阅youtube：8度科技）
-      - 亚特兰大（欢迎订阅youtube：8度科技） 2
+      - 🇨🇳 台湾(感谢订阅youtube：8度科技)
+      - 🇺🇸 US(感谢订阅youtube：8度科技)
+      - 🇺🇸 US(感谢订阅youtube：8度科技) 2
+      - 🇭🇰 Pool_🇭🇰HK(感谢订阅youtube：8度科技)
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技)
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技) 2
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技) 3
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技) 4
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技) 5
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技) 6
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技) 7
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技) 8
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技) 9
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技) 10
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技) 11
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技) 12
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技) 13
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技) 14
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技) 15
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技) 16
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技) 17
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技) 18
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技) 19
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技) 20
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技) 21
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技) 22
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技) 23
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技) 24
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技) 25
+      - 🇩🇪 DE_01+@WangCai_1
+      - 🇩🇪 DE_02+@WangCai_1
+      - 🇩🇪 DE_03+@WangCai_1
+      - 🇩🇪 DE_06+@WangCai_1
+      - 🇩🇪 DE_20+@WangCai_1
+      - 🇩🇪 DE_22+@WangCai_1
+      - 🇩🇪 DE_33+@WangCai_1
+      - 🇩🇪 DE_49+@WangCai_1
+      - 🇩🇪 DE_53+@WangCai_1
+      - 🇩🇪 DE_56+@WangCai_1
+      - 🇩🇪 DE_57+@WangCai_1
+      - 🇩🇪 DE_58+@WangCai_1
+      - 🇩🇪 DE_59+@WangCai_1
+      - 🇩🇪 DE_60+@WangCai_1
+      - 🇩🇪 DE_65+@WangCai_1
+      - 🇩🇪 DE_66+@WangCai_1
+      - 🇩🇪 DE_69+@WangCai_1
+      - 🇩🇪 DE_72+@WangCai_1
+      - 🇩🇪 DE_78+@WangCai_1
+      - 🇩🇪 DE_80+@WangCai_1
+      - 🇩🇪 DE_81+@WangCai_1
+      - 🇩🇪 DE_82+@WangCai_1
+      - 🇩🇪 DE_83+@WangCai_1
+      - CH_13+@WangCai_1
+      - CH_14+@WangCai_1
+      - CH_15+@WangCai_1
+      - CH_16+@WangCai_1
+      - CH_17+@WangCai_1
+      - CH_18+@WangCai_1
+      - CH_19+@WangCai_1
+      - CH_20+@WangCai_1
+      - CH_21+@WangCai_1
+      - CH_22+@WangCai_1
+      - CH_23+@WangCai_1
+      - CH_24+@WangCai_1
+      - CH_26+@WangCai_1
+      - CH_27+@WangCai_1
+      - CH_28+@WangCai_1
+      - CH_29+@WangCai_1
+      - CH_30+@WangCai_1
+      - CH_31+@WangCai_1
+      - CH_32+@WangCai_1
+      - CH_33+@WangCai_1
+      - CH_34+@WangCai_1
+      - CH_35+@WangCai_1
+      - CH_36+@WangCai_1
+      - CH_37+@WangCai_1
+      - CH_38+@WangCai_1
+      - CH_39+@WangCai_1
+      - CH_40+@WangCai_1
+      - CH_41+@WangCai_1
+      - CH_42+@WangCai_1
+      - CH_43+@WangCai_1
+      - CH_44+@WangCai_1
+      - CH_46+@WangCai_1
+      - CH_47+@WangCai_1
+      - CH_48+@WangCai_1
+      - CH_49+@WangCai_1
+      - CH_50+@WangCai_1
+      - CH_51+@WangCai_1
+      - CH_52+@WangCai_1
+      - CH_53+@WangCai_1
+      - CH_54+@WangCai_1
+      - CH_55+@WangCai_1
+      - CH_56+@WangCai_1
+      - CH_57+@WangCai_1
+      - CH_58+@WangCai_1
+      - CH_59+@WangCai_1
+      - CH_60+@WangCai_1
+      - CH_61+@WangCai_1
+      - CH_62+@WangCai_1
+      - CH_63+@WangCai_1
+      - CH_64+@WangCai_1
+      - CH_65+@WangCai_1
+      - CH_66+@WangCai_1
+      - CH_67+@WangCai_1
+      - CH_68+@WangCai_1
+      - CH_69+@WangCai_1
+      - CH_70+@WangCai_1
+      - CH_72+@WangCai_1
+      - CH_75+@WangCai_1
+      - CH_76+@WangCai_1
+      - CH_78+@WangCai_1
+      - CH_79+@WangCai_1
+      - CH_80+@WangCai_1
+      - CH_81+@WangCai_1
+      - CH_82+@WangCai_1
+      - CH_83+@WangCai_1
       - 🇺🇸 美国洛杉矶（欢迎订阅youtube：8度科%
       - 🇺🇸 美国洛杉矶（欢迎订阅youtube：8度科% 2
+      - 亚特兰大（欢迎订阅youtube：8度科技）
+      - 🇺🇸 US(感谢订阅youtube：8度科技) 3
       - 🇺🇸 美国洛杉矶（欢迎订阅youtube：8度科% 3
+      - 亚特兰大（欢迎订阅youtube：8度科技） 2
       - 亚特兰大（欢迎订阅youtube：8度科技） 3
+      - 🇺🇸 US(感谢订阅youtube：8度科技) 4
+      - 🇺🇸 美国洛杉矶（欢迎订阅youtube：8度科)
+      - 🇺🇸 美国洛杉矶（欢迎订阅youtube：8度科) 2
+      - 🇺🇸 美国洛杉矶（欢迎订阅youtube：8度科) 3
+      - 🇺🇸 美国洛杉矶（欢迎订阅youtube：8度科) 4
       - 亚特兰大（欢迎订阅youtube：8度科技） 4
-      - 🇺🇸 美国洛杉矶（欢迎订阅youtube：8度科% 4
-      - 🇺🇸 美国洛杉矶（欢迎订阅youtube：8度科% 5
-      - 🇺🇸 美国洛杉矶（欢迎订阅youtube：8度科% 6
-      - 🇺🇸 美国洛杉矶（欢迎订阅youtube：8度科% 7
-      - 🇺🇸 美国洛杉矶（欢迎订阅youtube：8度科% 8
-      - 🇺🇸 美国洛杉矶（欢迎订阅youtube：8度科% 9
-      - 🇺🇸 美国洛杉矶（欢迎订阅youtube：8度科% 10
-      - 亚特兰大（欢迎订阅youtube：8度科技） 5
-      - 亚特兰大（欢迎订阅youtube：8度科技） 6
-      - 🇺🇸 美国洛杉矶（欢迎订阅youtube：8度科% 11
-      - 🇦🇺 悉尼（欢迎订阅YouTube：8度科技）
-      - 🇦🇺 悉尼（欢迎订阅YouTube：8度科技） 2
-      - 🇦🇺 悉尼（欢迎订阅YouTube：8度科技） 3
-      - 🇦🇺 悉尼（欢迎订阅youtube：8度科技） 2
-      - 🇦🇺 悉尼（欢迎订阅youtube：8度科技） 3
-      - 🇦🇺 悉尼（欢迎订阅YouTube：8度科技） 4
-      - 🇦🇺 悉尼（欢迎订阅youtube：8度科技） 4
-      - 🇦🇺 悉尼（欢迎订阅youtube：8度科技） 5
-      - 🇦🇺 悉尼（欢迎订阅youtube：8度科技） 6
-      - 🇦🇺 悉尼（欢迎订阅youtube：8度科技） 7
+      - 🇺🇸 美国洛杉矶（欢迎订阅youtube：8度科) 5
       - 🇬🇧 伦敦（欢迎订阅YouTube：8度科技）
+      - 🇬🇧 伦敦（欢迎订阅youtube：8度科)
       - 🇬🇧 伦敦（欢迎订阅YouTube：8度科技） 2
       - 🇬🇧 伦敦（欢迎订阅YouTube：8度科技） 3
+      - 🇬🇧 伦敦（欢迎订阅youtube：8度科) 2
+      - 🇬🇧 伦敦（欢迎订阅youtube：8度科) 3
       - 🇬🇧 伦敦（欢迎订阅YouTube：8度科技） 4
       - 🇬🇧 伦敦（欢迎订阅YouTube：8度科技） 5
       - 🇬🇧 伦敦（欢迎订阅YouTube：8度科技） 6
+      - 🇬🇧 伦敦（欢迎订阅youtube：8度科) 4
+      - 🇬🇧 伦敦（欢迎订阅youtube：8度科) 5
+      - 🇬🇧 伦敦（欢迎订阅youtube：8度科) 6
       - 🇬🇧 伦敦（欢迎订阅YouTube：8度科技） 7
-      - 🇬🇧 伦敦（欢迎订阅YouTube：8度科技） 8
-      - 🇬🇧 伦敦（欢迎订阅YouTube：8度科技） 9
-      - 🇬🇧 伦敦（欢迎订阅YouTube：8度科技） 10
       - 🇬🇧 英国 （欢迎订阅youtube：8度科技）
-      - 🇩🇪 德国（欢迎订阅YouTube：8度科技）
       - 🇺🇸 美国（欢迎订阅youtube：8度科技）
       - 🇺🇸 美国（欢迎订阅youtube：8度科技） 2
       - 🇺🇸 美国（欢迎订阅youtube：8度科技） 3
       - 🇺🇸 美国（欢迎订阅youtube：8度科技） 4
       - 🇺🇸 美国（欢迎订阅youtube：8度科技） 5
-      - 🇺🇸 美国（欢迎订阅youtube：8度科技） 6
-      - 🇺🇸 美国（欢迎订阅youtube：8度科技） 7
-      - 🇺🇸 美国（欢迎订阅youtube：8度科技） 8
-      - 🇺🇸 美国（欢迎订阅youtube：8度科技） 9
-      - 🇺🇸 美国（欢迎订阅youtube：8度科技） 10
-      - 🇮🇹 意大利 米兰（欢迎订阅YouTube：8度科技）
-      - 哥伦比亚(欢迎订阅youtube：8度科技)
-      - 🇺🇸 美国（欢迎订阅YouTube：8度科技） 3
+      - 🇺🇸 美国(感谢订阅youtube：8度科技)
+      - 🇺🇸 美国(感谢订阅youtube：8度科技) 2
+      - 🇺🇸 美国(感谢订阅youtube：8度科技) 3
+      - 🇺🇸 美国(感谢订阅youtube：8度科技) 4
+      - 🇺🇸 美国(感谢订阅youtube：8度科技) 5
+      - 🇺🇸 美国(感谢订阅youtube：8度科技) 6
+      - 🇺🇸 美国(感谢订阅youtube：8度科技) 7
       - 挪威（欢迎订阅YouTube：8度科技）
-      - 挪威（欢迎订阅youtube：8度科技）
-      - 挪威（欢迎订阅youtube：8度科技） 2
-      - 挪威（欢迎订阅youtube：8度科技） 3
+      - 挪威（欢迎订阅YouTube：8度科技） 2
       - ITZZ（欢迎订阅youtube：8度科技）
-      - 🇫🇷 法国 巴黎（欢迎订阅YouTube：8度科技）
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - NG（欢迎订阅YouTube：8度科技）
-      - NG（欢迎订阅YouTube：8度科技） 2
-      - 🇦🇺 澳大利亚（欢迎订阅YouTube：8度科技）
-      - 🇦🇺 澳大利亚（欢迎订阅YouTube：8度科技） 2
-      - 🇦🇺 悉尼（欢迎订阅youtube：8度科技）
-      - 🇨🇦 加拿大（欢迎订阅YouTube：8度科技）
-      - 🇳🇱 阿姆斯特丹（欢迎订阅YouTube：8度科技）
-      - 🇳🇱 阿姆斯特丹（欢迎订阅YouTube：8度科技） 2
-      - 🇳🇱 阿姆斯特丹（欢迎订阅YouTube：8度科技） 3
-      - 🇺🇸 美国（欢迎订阅YouTube：8度科技）
-      - 🇺🇸 美国（欢迎订阅YouTube：8度科技） 2
-      - 亚特兰大（欢迎订阅youtube：8度科技）
-      - 亚特兰大（欢迎订阅youtube：8度科技） 2
+      - 🇨🇳 台湾(感谢订阅youtube：8度科技)
+      - 🇺🇸 US(感谢订阅youtube：8度科技)
+      - 🇺🇸 US(感谢订阅youtube：8度科技) 2
+      - 🇭🇰 Pool_🇭🇰HK(感谢订阅youtube：8度科技)
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技)
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技) 2
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技) 3
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技) 4
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技) 5
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技) 6
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技) 7
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技) 8
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技) 9
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技) 10
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技) 11
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技) 12
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技) 13
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技) 14
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技) 15
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技) 16
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技) 17
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技) 18
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技) 19
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技) 20
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技) 21
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技) 22
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技) 23
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技) 24
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技) 25
+      - 🇩🇪 DE_01+@WangCai_1
+      - 🇩🇪 DE_02+@WangCai_1
+      - 🇩🇪 DE_03+@WangCai_1
+      - 🇩🇪 DE_06+@WangCai_1
+      - 🇩🇪 DE_20+@WangCai_1
+      - 🇩🇪 DE_22+@WangCai_1
+      - 🇩🇪 DE_33+@WangCai_1
+      - 🇩🇪 DE_49+@WangCai_1
+      - 🇩🇪 DE_53+@WangCai_1
+      - 🇩🇪 DE_56+@WangCai_1
+      - 🇩🇪 DE_57+@WangCai_1
+      - 🇩🇪 DE_58+@WangCai_1
+      - 🇩🇪 DE_59+@WangCai_1
+      - 🇩🇪 DE_60+@WangCai_1
+      - 🇩🇪 DE_65+@WangCai_1
+      - 🇩🇪 DE_66+@WangCai_1
+      - 🇩🇪 DE_69+@WangCai_1
+      - 🇩🇪 DE_72+@WangCai_1
+      - 🇩🇪 DE_78+@WangCai_1
+      - 🇩🇪 DE_80+@WangCai_1
+      - 🇩🇪 DE_81+@WangCai_1
+      - 🇩🇪 DE_82+@WangCai_1
+      - 🇩🇪 DE_83+@WangCai_1
+      - CH_13+@WangCai_1
+      - CH_14+@WangCai_1
+      - CH_15+@WangCai_1
+      - CH_16+@WangCai_1
+      - CH_17+@WangCai_1
+      - CH_18+@WangCai_1
+      - CH_19+@WangCai_1
+      - CH_20+@WangCai_1
+      - CH_21+@WangCai_1
+      - CH_22+@WangCai_1
+      - CH_23+@WangCai_1
+      - CH_24+@WangCai_1
+      - CH_26+@WangCai_1
+      - CH_27+@WangCai_1
+      - CH_28+@WangCai_1
+      - CH_29+@WangCai_1
+      - CH_30+@WangCai_1
+      - CH_31+@WangCai_1
+      - CH_32+@WangCai_1
+      - CH_33+@WangCai_1
+      - CH_34+@WangCai_1
+      - CH_35+@WangCai_1
+      - CH_36+@WangCai_1
+      - CH_37+@WangCai_1
+      - CH_38+@WangCai_1
+      - CH_39+@WangCai_1
+      - CH_40+@WangCai_1
+      - CH_41+@WangCai_1
+      - CH_42+@WangCai_1
+      - CH_43+@WangCai_1
+      - CH_44+@WangCai_1
+      - CH_46+@WangCai_1
+      - CH_47+@WangCai_1
+      - CH_48+@WangCai_1
+      - CH_49+@WangCai_1
+      - CH_50+@WangCai_1
+      - CH_51+@WangCai_1
+      - CH_52+@WangCai_1
+      - CH_53+@WangCai_1
+      - CH_54+@WangCai_1
+      - CH_55+@WangCai_1
+      - CH_56+@WangCai_1
+      - CH_57+@WangCai_1
+      - CH_58+@WangCai_1
+      - CH_59+@WangCai_1
+      - CH_60+@WangCai_1
+      - CH_61+@WangCai_1
+      - CH_62+@WangCai_1
+      - CH_63+@WangCai_1
+      - CH_64+@WangCai_1
+      - CH_65+@WangCai_1
+      - CH_66+@WangCai_1
+      - CH_67+@WangCai_1
+      - CH_68+@WangCai_1
+      - CH_69+@WangCai_1
+      - CH_70+@WangCai_1
+      - CH_72+@WangCai_1
+      - CH_75+@WangCai_1
+      - CH_76+@WangCai_1
+      - CH_78+@WangCai_1
+      - CH_79+@WangCai_1
+      - CH_80+@WangCai_1
+      - CH_81+@WangCai_1
+      - CH_82+@WangCai_1
+      - CH_83+@WangCai_1
       - 🇺🇸 美国洛杉矶（欢迎订阅youtube：8度科%
       - 🇺🇸 美国洛杉矶（欢迎订阅youtube：8度科% 2
+      - 亚特兰大（欢迎订阅youtube：8度科技）
+      - 🇺🇸 US(感谢订阅youtube：8度科技) 3
       - 🇺🇸 美国洛杉矶（欢迎订阅youtube：8度科% 3
+      - 亚特兰大（欢迎订阅youtube：8度科技） 2
       - 亚特兰大（欢迎订阅youtube：8度科技） 3
+      - 🇺🇸 US(感谢订阅youtube：8度科技) 4
+      - 🇺🇸 美国洛杉矶（欢迎订阅youtube：8度科)
+      - 🇺🇸 美国洛杉矶（欢迎订阅youtube：8度科) 2
+      - 🇺🇸 美国洛杉矶（欢迎订阅youtube：8度科) 3
+      - 🇺🇸 美国洛杉矶（欢迎订阅youtube：8度科) 4
       - 亚特兰大（欢迎订阅youtube：8度科技） 4
-      - 🇺🇸 美国洛杉矶（欢迎订阅youtube：8度科% 4
-      - 🇺🇸 美国洛杉矶（欢迎订阅youtube：8度科% 5
-      - 🇺🇸 美国洛杉矶（欢迎订阅youtube：8度科% 6
-      - 🇺🇸 美国洛杉矶（欢迎订阅youtube：8度科% 7
-      - 🇺🇸 美国洛杉矶（欢迎订阅youtube：8度科% 8
-      - 🇺🇸 美国洛杉矶（欢迎订阅youtube：8度科% 9
-      - 🇺🇸 美国洛杉矶（欢迎订阅youtube：8度科% 10
-      - 亚特兰大（欢迎订阅youtube：8度科技） 5
-      - 亚特兰大（欢迎订阅youtube：8度科技） 6
-      - 🇺🇸 美国洛杉矶（欢迎订阅youtube：8度科% 11
-      - 🇦🇺 悉尼（欢迎订阅YouTube：8度科技）
-      - 🇦🇺 悉尼（欢迎订阅YouTube：8度科技） 2
-      - 🇦🇺 悉尼（欢迎订阅YouTube：8度科技） 3
-      - 🇦🇺 悉尼（欢迎订阅youtube：8度科技） 2
-      - 🇦🇺 悉尼（欢迎订阅youtube：8度科技） 3
-      - 🇦🇺 悉尼（欢迎订阅YouTube：8度科技） 4
-      - 🇦🇺 悉尼（欢迎订阅youtube：8度科技） 4
-      - 🇦🇺 悉尼（欢迎订阅youtube：8度科技） 5
-      - 🇦🇺 悉尼（欢迎订阅youtube：8度科技） 6
-      - 🇦🇺 悉尼（欢迎订阅youtube：8度科技） 7
+      - 🇺🇸 美国洛杉矶（欢迎订阅youtube：8度科) 5
       - 🇬🇧 伦敦（欢迎订阅YouTube：8度科技）
+      - 🇬🇧 伦敦（欢迎订阅youtube：8度科)
       - 🇬🇧 伦敦（欢迎订阅YouTube：8度科技） 2
       - 🇬🇧 伦敦（欢迎订阅YouTube：8度科技） 3
+      - 🇬🇧 伦敦（欢迎订阅youtube：8度科) 2
+      - 🇬🇧 伦敦（欢迎订阅youtube：8度科) 3
       - 🇬🇧 伦敦（欢迎订阅YouTube：8度科技） 4
       - 🇬🇧 伦敦（欢迎订阅YouTube：8度科技） 5
       - 🇬🇧 伦敦（欢迎订阅YouTube：8度科技） 6
+      - 🇬🇧 伦敦（欢迎订阅youtube：8度科) 4
+      - 🇬🇧 伦敦（欢迎订阅youtube：8度科) 5
+      - 🇬🇧 伦敦（欢迎订阅youtube：8度科) 6
       - 🇬🇧 伦敦（欢迎订阅YouTube：8度科技） 7
-      - 🇬🇧 伦敦（欢迎订阅YouTube：8度科技） 8
-      - 🇬🇧 伦敦（欢迎订阅YouTube：8度科技） 9
-      - 🇬🇧 伦敦（欢迎订阅YouTube：8度科技） 10
       - 🇬🇧 英国 （欢迎订阅youtube：8度科技）
-      - 🇩🇪 德国（欢迎订阅YouTube：8度科技）
       - 🇺🇸 美国（欢迎订阅youtube：8度科技）
       - 🇺🇸 美国（欢迎订阅youtube：8度科技） 2
       - 🇺🇸 美国（欢迎订阅youtube：8度科技） 3
       - 🇺🇸 美国（欢迎订阅youtube：8度科技） 4
       - 🇺🇸 美国（欢迎订阅youtube：8度科技） 5
-      - 🇺🇸 美国（欢迎订阅youtube：8度科技） 6
-      - 🇺🇸 美国（欢迎订阅youtube：8度科技） 7
-      - 🇺🇸 美国（欢迎订阅youtube：8度科技） 8
-      - 🇺🇸 美国（欢迎订阅youtube：8度科技） 9
-      - 🇺🇸 美国（欢迎订阅youtube：8度科技） 10
-      - 🇮🇹 意大利 米兰（欢迎订阅YouTube：8度科技）
-      - 哥伦比亚(欢迎订阅youtube：8度科技)
-      - 🇺🇸 美国（欢迎订阅YouTube：8度科技） 3
+      - 🇺🇸 美国(感谢订阅youtube：8度科技)
+      - 🇺🇸 美国(感谢订阅youtube：8度科技) 2
+      - 🇺🇸 美国(感谢订阅youtube：8度科技) 3
+      - 🇺🇸 美国(感谢订阅youtube：8度科技) 4
+      - 🇺🇸 美国(感谢订阅youtube：8度科技) 5
+      - 🇺🇸 美国(感谢订阅youtube：8度科技) 6
+      - 🇺🇸 美国(感谢订阅youtube：8度科技) 7
       - 挪威（欢迎订阅YouTube：8度科技）
-      - 挪威（欢迎订阅youtube：8度科技）
-      - 挪威（欢迎订阅youtube：8度科技） 2
-      - 挪威（欢迎订阅youtube：8度科技） 3
+      - 挪威（欢迎订阅YouTube：8度科技） 2
       - ITZZ（欢迎订阅youtube：8度科技）
-      - 🇫🇷 法国 巴黎（欢迎订阅YouTube：8度科技）
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -541,75 +1179,166 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - NG（欢迎订阅YouTube：8度科技）
-      - NG（欢迎订阅YouTube：8度科技） 2
-      - 🇦🇺 澳大利亚（欢迎订阅YouTube：8度科技）
-      - 🇦🇺 澳大利亚（欢迎订阅YouTube：8度科技） 2
-      - 🇦🇺 悉尼（欢迎订阅youtube：8度科技）
-      - 🇨🇦 加拿大（欢迎订阅YouTube：8度科技）
-      - 🇳🇱 阿姆斯特丹（欢迎订阅YouTube：8度科技）
-      - 🇳🇱 阿姆斯特丹（欢迎订阅YouTube：8度科技） 2
-      - 🇳🇱 阿姆斯特丹（欢迎订阅YouTube：8度科技） 3
-      - 🇺🇸 美国（欢迎订阅YouTube：8度科技）
-      - 🇺🇸 美国（欢迎订阅YouTube：8度科技） 2
-      - 亚特兰大（欢迎订阅youtube：8度科技）
-      - 亚特兰大（欢迎订阅youtube：8度科技） 2
+      - 🇨🇳 台湾(感谢订阅youtube：8度科技)
+      - 🇺🇸 US(感谢订阅youtube：8度科技)
+      - 🇺🇸 US(感谢订阅youtube：8度科技) 2
+      - 🇭🇰 Pool_🇭🇰HK(感谢订阅youtube：8度科技)
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技)
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技) 2
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技) 3
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技) 4
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技) 5
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技) 6
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技) 7
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技) 8
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技) 9
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技) 10
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技) 11
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技) 12
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技) 13
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技) 14
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技) 15
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技) 16
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技) 17
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技) 18
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技) 19
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技) 20
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技) 21
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技) 22
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技) 23
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技) 24
+      - 🇨🇦 加拿大(感谢订阅youtube：8度科技) 25
+      - 🇩🇪 DE_01+@WangCai_1
+      - 🇩🇪 DE_02+@WangCai_1
+      - 🇩🇪 DE_03+@WangCai_1
+      - 🇩🇪 DE_06+@WangCai_1
+      - 🇩🇪 DE_20+@WangCai_1
+      - 🇩🇪 DE_22+@WangCai_1
+      - 🇩🇪 DE_33+@WangCai_1
+      - 🇩🇪 DE_49+@WangCai_1
+      - 🇩🇪 DE_53+@WangCai_1
+      - 🇩🇪 DE_56+@WangCai_1
+      - 🇩🇪 DE_57+@WangCai_1
+      - 🇩🇪 DE_58+@WangCai_1
+      - 🇩🇪 DE_59+@WangCai_1
+      - 🇩🇪 DE_60+@WangCai_1
+      - 🇩🇪 DE_65+@WangCai_1
+      - 🇩🇪 DE_66+@WangCai_1
+      - 🇩🇪 DE_69+@WangCai_1
+      - 🇩🇪 DE_72+@WangCai_1
+      - 🇩🇪 DE_78+@WangCai_1
+      - 🇩🇪 DE_80+@WangCai_1
+      - 🇩🇪 DE_81+@WangCai_1
+      - 🇩🇪 DE_82+@WangCai_1
+      - 🇩🇪 DE_83+@WangCai_1
+      - CH_13+@WangCai_1
+      - CH_14+@WangCai_1
+      - CH_15+@WangCai_1
+      - CH_16+@WangCai_1
+      - CH_17+@WangCai_1
+      - CH_18+@WangCai_1
+      - CH_19+@WangCai_1
+      - CH_20+@WangCai_1
+      - CH_21+@WangCai_1
+      - CH_22+@WangCai_1
+      - CH_23+@WangCai_1
+      - CH_24+@WangCai_1
+      - CH_26+@WangCai_1
+      - CH_27+@WangCai_1
+      - CH_28+@WangCai_1
+      - CH_29+@WangCai_1
+      - CH_30+@WangCai_1
+      - CH_31+@WangCai_1
+      - CH_32+@WangCai_1
+      - CH_33+@WangCai_1
+      - CH_34+@WangCai_1
+      - CH_35+@WangCai_1
+      - CH_36+@WangCai_1
+      - CH_37+@WangCai_1
+      - CH_38+@WangCai_1
+      - CH_39+@WangCai_1
+      - CH_40+@WangCai_1
+      - CH_41+@WangCai_1
+      - CH_42+@WangCai_1
+      - CH_43+@WangCai_1
+      - CH_44+@WangCai_1
+      - CH_46+@WangCai_1
+      - CH_47+@WangCai_1
+      - CH_48+@WangCai_1
+      - CH_49+@WangCai_1
+      - CH_50+@WangCai_1
+      - CH_51+@WangCai_1
+      - CH_52+@WangCai_1
+      - CH_53+@WangCai_1
+      - CH_54+@WangCai_1
+      - CH_55+@WangCai_1
+      - CH_56+@WangCai_1
+      - CH_57+@WangCai_1
+      - CH_58+@WangCai_1
+      - CH_59+@WangCai_1
+      - CH_60+@WangCai_1
+      - CH_61+@WangCai_1
+      - CH_62+@WangCai_1
+      - CH_63+@WangCai_1
+      - CH_64+@WangCai_1
+      - CH_65+@WangCai_1
+      - CH_66+@WangCai_1
+      - CH_67+@WangCai_1
+      - CH_68+@WangCai_1
+      - CH_69+@WangCai_1
+      - CH_70+@WangCai_1
+      - CH_72+@WangCai_1
+      - CH_75+@WangCai_1
+      - CH_76+@WangCai_1
+      - CH_78+@WangCai_1
+      - CH_79+@WangCai_1
+      - CH_80+@WangCai_1
+      - CH_81+@WangCai_1
+      - CH_82+@WangCai_1
+      - CH_83+@WangCai_1
       - 🇺🇸 美国洛杉矶（欢迎订阅youtube：8度科%
       - 🇺🇸 美国洛杉矶（欢迎订阅youtube：8度科% 2
+      - 亚特兰大（欢迎订阅youtube：8度科技）
+      - 🇺🇸 US(感谢订阅youtube：8度科技) 3
       - 🇺🇸 美国洛杉矶（欢迎订阅youtube：8度科% 3
+      - 亚特兰大（欢迎订阅youtube：8度科技） 2
       - 亚特兰大（欢迎订阅youtube：8度科技） 3
+      - 🇺🇸 US(感谢订阅youtube：8度科技) 4
+      - 🇺🇸 美国洛杉矶（欢迎订阅youtube：8度科)
+      - 🇺🇸 美国洛杉矶（欢迎订阅youtube：8度科) 2
+      - 🇺🇸 美国洛杉矶（欢迎订阅youtube：8度科) 3
+      - 🇺🇸 美国洛杉矶（欢迎订阅youtube：8度科) 4
       - 亚特兰大（欢迎订阅youtube：8度科技） 4
-      - 🇺🇸 美国洛杉矶（欢迎订阅youtube：8度科% 4
-      - 🇺🇸 美国洛杉矶（欢迎订阅youtube：8度科% 5
-      - 🇺🇸 美国洛杉矶（欢迎订阅youtube：8度科% 6
-      - 🇺🇸 美国洛杉矶（欢迎订阅youtube：8度科% 7
-      - 🇺🇸 美国洛杉矶（欢迎订阅youtube：8度科% 8
-      - 🇺🇸 美国洛杉矶（欢迎订阅youtube：8度科% 9
-      - 🇺🇸 美国洛杉矶（欢迎订阅youtube：8度科% 10
-      - 亚特兰大（欢迎订阅youtube：8度科技） 5
-      - 亚特兰大（欢迎订阅youtube：8度科技） 6
-      - 🇺🇸 美国洛杉矶（欢迎订阅youtube：8度科% 11
-      - 🇦🇺 悉尼（欢迎订阅YouTube：8度科技）
-      - 🇦🇺 悉尼（欢迎订阅YouTube：8度科技） 2
-      - 🇦🇺 悉尼（欢迎订阅YouTube：8度科技） 3
-      - 🇦🇺 悉尼（欢迎订阅youtube：8度科技） 2
-      - 🇦🇺 悉尼（欢迎订阅youtube：8度科技） 3
-      - 🇦🇺 悉尼（欢迎订阅YouTube：8度科技） 4
-      - 🇦🇺 悉尼（欢迎订阅youtube：8度科技） 4
-      - 🇦🇺 悉尼（欢迎订阅youtube：8度科技） 5
-      - 🇦🇺 悉尼（欢迎订阅youtube：8度科技） 6
-      - 🇦🇺 悉尼（欢迎订阅youtube：8度科技） 7
+      - 🇺🇸 美国洛杉矶（欢迎订阅youtube：8度科) 5
       - 🇬🇧 伦敦（欢迎订阅YouTube：8度科技）
+      - 🇬🇧 伦敦（欢迎订阅youtube：8度科)
       - 🇬🇧 伦敦（欢迎订阅YouTube：8度科技） 2
       - 🇬🇧 伦敦（欢迎订阅YouTube：8度科技） 3
+      - 🇬🇧 伦敦（欢迎订阅youtube：8度科) 2
+      - 🇬🇧 伦敦（欢迎订阅youtube：8度科) 3
       - 🇬🇧 伦敦（欢迎订阅YouTube：8度科技） 4
       - 🇬🇧 伦敦（欢迎订阅YouTube：8度科技） 5
       - 🇬🇧 伦敦（欢迎订阅YouTube：8度科技） 6
+      - 🇬🇧 伦敦（欢迎订阅youtube：8度科) 4
+      - 🇬🇧 伦敦（欢迎订阅youtube：8度科) 5
+      - 🇬🇧 伦敦（欢迎订阅youtube：8度科) 6
       - 🇬🇧 伦敦（欢迎订阅YouTube：8度科技） 7
-      - 🇬🇧 伦敦（欢迎订阅YouTube：8度科技） 8
-      - 🇬🇧 伦敦（欢迎订阅YouTube：8度科技） 9
-      - 🇬🇧 伦敦（欢迎订阅YouTube：8度科技） 10
       - 🇬🇧 英国 （欢迎订阅youtube：8度科技）
-      - 🇩🇪 德国（欢迎订阅YouTube：8度科技）
       - 🇺🇸 美国（欢迎订阅youtube：8度科技）
       - 🇺🇸 美国（欢迎订阅youtube：8度科技） 2
       - 🇺🇸 美国（欢迎订阅youtube：8度科技） 3
       - 🇺🇸 美国（欢迎订阅youtube：8度科技） 4
       - 🇺🇸 美国（欢迎订阅youtube：8度科技） 5
-      - 🇺🇸 美国（欢迎订阅youtube：8度科技） 6
-      - 🇺🇸 美国（欢迎订阅youtube：8度科技） 7
-      - 🇺🇸 美国（欢迎订阅youtube：8度科技） 8
-      - 🇺🇸 美国（欢迎订阅youtube：8度科技） 9
-      - 🇺🇸 美国（欢迎订阅youtube：8度科技） 10
-      - 🇮🇹 意大利 米兰（欢迎订阅YouTube：8度科技）
-      - 哥伦比亚(欢迎订阅youtube：8度科技)
-      - 🇺🇸 美国（欢迎订阅YouTube：8度科技） 3
+      - 🇺🇸 美国(感谢订阅youtube：8度科技)
+      - 🇺🇸 美国(感谢订阅youtube：8度科技) 2
+      - 🇺🇸 美国(感谢订阅youtube：8度科技) 3
+      - 🇺🇸 美国(感谢订阅youtube：8度科技) 4
+      - 🇺🇸 美国(感谢订阅youtube：8度科技) 5
+      - 🇺🇸 美国(感谢订阅youtube：8度科技) 6
+      - 🇺🇸 美国(感谢订阅youtube：8度科技) 7
       - 挪威（欢迎订阅YouTube：8度科技）
-      - 挪威（欢迎订阅youtube：8度科技）
-      - 挪威（欢迎订阅youtube：8度科技） 2
-      - 挪威（欢迎订阅youtube：8度科技） 3
+      - 挪威（欢迎订阅YouTube：8度科技） 2
       - ITZZ（欢迎订阅youtube：8度科技）
-      - 🇫🇷 法国 巴黎（欢迎订阅YouTube：8度科技）
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
