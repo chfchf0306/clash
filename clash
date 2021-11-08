@@ -6,71 +6,110 @@ log-level: info
 external-controller: :9090
 proxies:
   - {name: 匈牙利 佩斯（感谢关注youtube：8度科技）, server: 185.225.69.134, port: 45081, type: vmess, uuid: 3c3bfd75-dc30-4e76-8940-47e1137e21f9, alterId: 64, cipher: auto, tls: false}
-  - {name: CH_37+@WangCai_1, server: 156.146.62.37, port: 43893, type: ss, cipher: aes-256-gcm, password: YyCBeDdYX4cadHpCkkmdJLq8}
-  - {name: CH_40+@WangCai_1, server: 156.146.62.37, port: 44539, type: ss, cipher: aes-256-gcm, password: r6hDrkP4Et6EENTS8Qy7Tcmg}
-  - {name: CH_43+@WangCai_1, server: 156.146.62.37, port: 44745, type: ss, cipher: aes-256-gcm, password: fyXdw87yCH9SAmFkPvsvLVqC}
-  - {name: CH_60+@WangCai_1, server: 156.146.62.37, port: 48938, type: ss, cipher: aes-256-gcm, password: 4ejJ8n5ddLuYDUHGXJre2ufJ}
-  - {name: CH_13+@WangCai_1, server: 156.146.62.37, port: 35294, type: ss, cipher: aes-256-gcm, password: J9Y2ncrdPEC38gwydNFFGBna}
-  - {name: CH_59+@WangCai_1, server: 156.146.62.37, port: 48794, type: ss, cipher: aes-256-gcm, password: r9Q3adc3ru9sfBDPEj4yp6U6}
-  - {name: CH_68+@WangCai_1, server: 156.146.62.37, port: 49653, type: ss, cipher: aes-256-gcm, password: Y9GcTPemHMKEkrfGQPJqFDNr}
-  - {name: CH_39+@WangCai_1, server: 156.146.62.37, port: 44236, type: ss, cipher: aes-256-gcm, password: FWrXcxPZjJxAN89xLgqY3Acp}
-  - {name: CH_41+@WangCai_1, server: 156.146.62.37, port: 44628, type: ss, cipher: aes-256-gcm, password: VASQbVcukHfdBGmeS9L7Z8TT}
-  - {name: CH_38+@WangCai_1, server: 156.146.62.37, port: 43963, type: ss, cipher: aes-256-gcm, password: Tuw6zzZM6JwWNZyYF9ckC4JZ}
-  - {name: CH_44+@WangCai_1, server: 156.146.62.37, port: 44820, type: ss, cipher: aes-256-gcm, password: jspgz9G3VmvBMCgMUWLBaZHu}
-  - {name: CH_66+@WangCai_1, server: 156.146.62.37, port: 49468, type: ss, cipher: aes-256-gcm, password: LsYSQDxmPj9AcWpSX5HrYfu6}
-  - {name: CH_15+@WangCai_1, server: 156.146.62.37, port: 36460, type: ss, cipher: aes-256-gcm, password: yUXad7DGF8L5cTShEpnp2N6z}
-  - {name: CH_18+@WangCai_1, server: 156.146.62.37, port: 37588, type: ss, cipher: aes-256-gcm, password: kD9vkjnE6dsUzwQfvKkPkQAd}
-  - {name: CH_61+@WangCai_1, server: 156.146.62.37, port: 48970, type: ss, cipher: aes-256-gcm, password: ZKEsXkFbUZ2z667YA8A7cEDP}
-  - {name: CH_32+@WangCai_1, server: 156.146.62.37, port: 41992, type: ss, cipher: aes-256-gcm, password: XmQSxDCn5ehpcq6DBYms8FJf}
-  - {name: CH_14+@WangCai_1, server: 156.146.62.37, port: 35371, type: ss, cipher: aes-256-gcm, password: pjeDhAJGuML8xKUxcjRqq6a9}
-  - {name: CH_42+@WangCai_1, server: 156.146.62.37, port: 44742, type: ss, cipher: aes-256-gcm, password: QCStKzZ56SHBc4tL7stCEqqd}
-  - {name: CH_64+@WangCai_1, server: 156.146.62.37, port: 49339, type: ss, cipher: aes-256-gcm, password: suucSeVLmt6PQKAP77NtGw9x}
-  - {name: CH_58+@WangCai_1, server: 156.146.62.37, port: 48089, type: ss, cipher: aes-256-gcm, password: apqQgXJyVDsdJMAYV4xspRFK}
-  - {name: CH_46+@WangCai_1, server: 156.146.62.37, port: 45291, type: ss, cipher: aes-256-gcm, password: ecfJrNtBZwT748hxJ3ZyzZj2}
-  - {name: CH_57+@WangCai_1, server: 156.146.62.37, port: 47861, type: ss, cipher: aes-256-gcm, password: LJcChRsGQRhywrtXUU55TLTu}
-  - {name: CH_65+@WangCai_1, server: 156.146.62.37, port: 49396, type: ss, cipher: aes-256-gcm, password: BdRWC38L5JUDMTYNNxJGcUwB}
-  - {name: CH_19+@WangCai_1, server: 156.146.62.37, port: 38033, type: ss, cipher: aes-256-gcm, password: xpQwyV4W5FdA6NMANJJx73US}
-  - {name: CH_67+@WangCai_1, server: 156.146.62.37, port: 49514, type: ss, cipher: aes-256-gcm, password: dpGjA4GkzV28QPDYzEp94cTe}
-  - {name: CH_36+@WangCai_1, server: 156.146.62.37, port: 42816, type: ss, cipher: aes-256-gcm, password: tBKBf4pVzNCFKdbPgvwrNXq3}
-  - {name: CH_49+@WangCai_1, server: 156.146.62.37, port: 45948, type: ss, cipher: aes-256-gcm, password: j76EXqJcQhuQTr3EvUf7xaK9}
-  - {name: CH_82+@WangCai_1, server: 156.146.62.37, port: 39171, type: ss, cipher: aes-256-gcm, password: z4pM2gA9QEEC6NRmqTQubm6Z}
-  - {name: CH_62+@WangCai_1, server: 156.146.62.37, port: 49126, type: ss, cipher: aes-256-gcm, password: wrCaGtrUbzeRqQLdc8Kmk3Nd}
-  - {name: CH_56+@WangCai_1, server: 156.146.62.37, port: 47553, type: ss, cipher: aes-256-gcm, password: t2JnnFqjDMmzWurseJPgBsYY}
-  - {name: CH_20+@WangCai_1, server: 156.146.62.37, port: 38620, type: ss, cipher: aes-256-gcm, password: Kquv5UhvZXNMemAQy8DxZ7qn}
-  - {name: CH_75+@WangCai_1, server: 156.146.62.37, port: 50232, type: ss, cipher: aes-256-gcm, password: CjchzpwdSjRtDjezYMwx9BKM}
-  - {name: CH_83+@WangCai_1, server: 156.146.62.37, port: 41306, type: ss, cipher: aes-256-gcm, password: pzB5Y2twNtqFzWhEbBsPJMjj}
-  - {name: CH_78+@WangCai_1, server: 156.146.62.37, port: 31216, type: ss, cipher: aes-256-gcm, password: wJwXatAGZ8xX5K8C7mruf84x}
-  - {name: CH_47+@WangCai_1, server: 156.146.62.37, port: 45329, type: ss, cipher: aes-256-gcm, password: CXSjgD7u7Ar7GxkZ4CgTMUsj}
-  - {name: CH_52+@WangCai_1, server: 156.146.62.37, port: 46642, type: ss, cipher: aes-256-gcm, password: gYL83DQWXuDbxmZAVVtUTXaK}
-  - {name: CH_34+@WangCai_1, server: 156.146.62.37, port: 42185, type: ss, cipher: aes-256-gcm, password: FaTG4zALZru72gxjgSHQ7Jdh}
-  - {name: CH_48+@WangCai_1, server: 156.146.62.37, port: 45746, type: ss, cipher: aes-256-gcm, password: wEsFcHCvbL4eJkL4DZQa7RgR}
+  - {name: 匈牙利 佩斯（感谢关注youtube：8度科技） 2, server: 185.225.69.134, port: 45081, type: vmess, uuid: 3c3bfd75-dc30-4e76-8940-47e1137e21f9, alterId: 64, cipher: auto, tls: false}
   - {name: 🇬🇧 英国（感谢关注youtube：8度科技）, server: 91.206.168.68, port: 49339, type: ss, cipher: aes-256-gcm, password: suucSeVLmt6PQKAP77NtGw9x}
-  - {name: CH_16+@WangCai_1, server: 156.146.62.37, port: 37473, type: ss, cipher: aes-256-gcm, password: enctdKyJfSu76VqznKwTt6Ap}
-  - {name: CH_17+@WangCai_1, server: 156.146.62.37, port: 37559, type: ss, cipher: aes-256-gcm, password: Qbt22F6JsxzFGqcsK5SaR8q3}
-  - {name: CH_35+@WangCai_1, server: 156.146.62.37, port: 42304, type: ss, cipher: aes-256-gcm, password: p26v2JwhQVHDHsXk66fXt56r}
-  - {name: CH_51+@WangCai_1, server: 156.146.62.37, port: 46412, type: ss, cipher: aes-256-gcm, password: GEqk9WGyybeyXW97YEdanDYs}
-  - {name: CH_76+@WangCai_1, server: 156.146.62.37, port: 50695, type: ss, cipher: aes-256-gcm, password: gqtwGu9bVreJqL3FTHSVKGzy}
-  - {name: CH_80+@WangCai_1, server: 156.146.62.37, port: 40711, type: ss, cipher: aes-256-gcm, password: rnngxSTJrXWKXHkvrF3npp9B}
+  - {name: CH_83+@WangCai_1, server: 156.146.62.37, port: 41306, type: ss, cipher: aes-256-gcm, password: pzB5Y2twNtqFzWhEbBsPJMjj}
+  - {name: CH_82+@WangCai_1, server: 156.146.62.37, port: 39171, type: ss, cipher: aes-256-gcm, password: z4pM2gA9QEEC6NRmqTQubm6Z}
   - {name: CH_81+@WangCai_1, server: 156.146.62.37, port: 44102, type: ss, cipher: aes-256-gcm, password: zHKYS9DeAjvv43EwgDfyEg4d}
-  - {name: CH_27+@WangCai_1, server: 156.146.62.37, port: 40220, type: ss, cipher: aes-256-gcm, password: ugyBkSEFxVEmUYSHyvxmWNj9}
-  - {name: CH_30+@WangCai_1, server: 156.146.62.37, port: 41676, type: ss, cipher: aes-256-gcm, password: z6pH3RyttkRWhJ5tpRyt6dYk}
-  - {name: CH_69+@WangCai_1, server: 156.146.62.37, port: 49719, type: ss, cipher: aes-256-gcm, password: 42SjT9vBF6ma9eFF3URaJpQ4}
-  - {name: CH_28+@WangCai_1, server: 156.146.62.37, port: 40282, type: ss, cipher: aes-256-gcm, password: Pvvaw486867D2w4yctL2ULTQ}
-  - {name: CH_53+@WangCai_1, server: 156.146.62.37, port: 46726, type: ss, cipher: aes-256-gcm, password: 2fqKbFPGHpcmMTJzGsUbsfYf}
-  - {name: CH_54+@WangCai_1, server: 156.146.62.37, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z}
-  - {name: CH_70+@WangCai_1, server: 156.146.62.37, port: 50024, type: ss, cipher: aes-256-gcm, password: b2jDPHUQxCNa2KmGHZjy7C4B}
-  - {name: CH_22+@WangCai_1, server: 156.146.62.37, port: 38747, type: ss, cipher: aes-256-gcm, password: RtbLkxbJZpUQ6m8y4qAeLYZj}
-  - {name: CH_23+@WangCai_1, server: 156.146.62.37, port: 39556, type: ss, cipher: aes-256-gcm, password: g4AfpNELpdYEeLYhM8XCX9se}
-  - {name: CH_24+@WangCai_1, server: 156.146.62.37, port: 39720, type: ss, cipher: aes-256-gcm, password: kq8xQKC3K4jYQPwLXTNbJjm6}
-  - {name: CH_29+@WangCai_1, server: 156.146.62.37, port: 41372, type: ss, cipher: aes-256-gcm, password: 5kGAhC3AmVC35GbruHjSrZf2}
-  - {name: CH_31+@WangCai_1, server: 156.146.62.37, port: 41738, type: ss, cipher: aes-256-gcm, password: X6yMGXnfUsuKTvEDYZSLPk4d}
-  - {name: CH_50+@WangCai_1, server: 156.146.62.37, port: 46354, type: ss, cipher: aes-256-gcm, password: MYPKdC7n6qjL6xmJBBcrzzqS}
-  - {name: CH_55+@WangCai_1, server: 156.146.62.37, port: 47121, type: ss, cipher: aes-256-gcm, password: CTK8GXFQgKYQErrghPJfZ6tk}
-  - {name: CH_72+@WangCai_1, server: 156.146.62.37, port: 50181, type: ss, cipher: aes-256-gcm, password: d9adRr9UxymNSysYahMtpFpd}
-  - {name: CH_26+@WangCai_1, server: 156.146.62.37, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp}
-  - {name: CH_33+@WangCai_1, server: 156.146.62.37, port: 42166, type: ss, cipher: aes-256-gcm, password: H9Dbn3szZMqLR3NpgEFEPCKb}
+  - {name: CH_80+@WangCai_1, server: 156.146.62.37, port: 40711, type: ss, cipher: aes-256-gcm, password: rnngxSTJrXWKXHkvrF3npp9B}
   - {name: CH_79+@WangCai_1, server: 156.146.62.37, port: 32971, type: ss, cipher: aes-256-gcm, password: vwS65ZXyZg85ApwZ2bBh6zFZ}
+  - {name: CH_78+@WangCai_1, server: 156.146.62.37, port: 31216, type: ss, cipher: aes-256-gcm, password: wJwXatAGZ8xX5K8C7mruf84x}
+  - {name: CH_76+@WangCai_1, server: 156.146.62.37, port: 50695, type: ss, cipher: aes-256-gcm, password: gqtwGu9bVreJqL3FTHSVKGzy}
+  - {name: CH_75+@WangCai_1, server: 156.146.62.37, port: 50232, type: ss, cipher: aes-256-gcm, password: CjchzpwdSjRtDjezYMwx9BKM}
+  - {name: CH_72+@WangCai_1, server: 156.146.62.37, port: 50181, type: ss, cipher: aes-256-gcm, password: d9adRr9UxymNSysYahMtpFpd}
+  - {name: CH_70+@WangCai_1, server: 156.146.62.37, port: 50024, type: ss, cipher: aes-256-gcm, password: b2jDPHUQxCNa2KmGHZjy7C4B}
+  - {name: CH_69+@WangCai_1, server: 156.146.62.37, port: 49719, type: ss, cipher: aes-256-gcm, password: 42SjT9vBF6ma9eFF3URaJpQ4}
+  - {name: CH_68+@WangCai_1, server: 156.146.62.37, port: 49653, type: ss, cipher: aes-256-gcm, password: Y9GcTPemHMKEkrfGQPJqFDNr}
+  - {name: CH_67+@WangCai_1, server: 156.146.62.37, port: 49514, type: ss, cipher: aes-256-gcm, password: dpGjA4GkzV28QPDYzEp94cTe}
+  - {name: CH_66+@WangCai_1, server: 156.146.62.37, port: 49468, type: ss, cipher: aes-256-gcm, password: LsYSQDxmPj9AcWpSX5HrYfu6}
+  - {name: CH_65+@WangCai_1, server: 156.146.62.37, port: 49396, type: ss, cipher: aes-256-gcm, password: BdRWC38L5JUDMTYNNxJGcUwB}
+  - {name: CH_64+@WangCai_1, server: 156.146.62.37, port: 49339, type: ss, cipher: aes-256-gcm, password: suucSeVLmt6PQKAP77NtGw9x}
+  - {name: CH_62+@WangCai_1, server: 156.146.62.37, port: 49126, type: ss, cipher: aes-256-gcm, password: wrCaGtrUbzeRqQLdc8Kmk3Nd}
+  - {name: CH_61+@WangCai_1, server: 156.146.62.37, port: 48970, type: ss, cipher: aes-256-gcm, password: ZKEsXkFbUZ2z667YA8A7cEDP}
+  - {name: CH_60+@WangCai_1, server: 156.146.62.37, port: 48938, type: ss, cipher: aes-256-gcm, password: 4ejJ8n5ddLuYDUHGXJre2ufJ}
+  - {name: CH_59+@WangCai_1, server: 156.146.62.37, port: 48794, type: ss, cipher: aes-256-gcm, password: r9Q3adc3ru9sfBDPEj4yp6U6}
+  - {name: CH_58+@WangCai_1, server: 156.146.62.37, port: 48089, type: ss, cipher: aes-256-gcm, password: apqQgXJyVDsdJMAYV4xspRFK}
+  - {name: CH_57+@WangCai_1, server: 156.146.62.37, port: 47861, type: ss, cipher: aes-256-gcm, password: LJcChRsGQRhywrtXUU55TLTu}
+  - {name: CH_56+@WangCai_1, server: 156.146.62.37, port: 47553, type: ss, cipher: aes-256-gcm, password: t2JnnFqjDMmzWurseJPgBsYY}
+  - {name: CH_55+@WangCai_1, server: 156.146.62.37, port: 47121, type: ss, cipher: aes-256-gcm, password: CTK8GXFQgKYQErrghPJfZ6tk}
+  - {name: CH_54+@WangCai_1, server: 156.146.62.37, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z}
+  - {name: CH_53+@WangCai_1, server: 156.146.62.37, port: 46726, type: ss, cipher: aes-256-gcm, password: 2fqKbFPGHpcmMTJzGsUbsfYf}
+  - {name: CH_52+@WangCai_1, server: 156.146.62.37, port: 46642, type: ss, cipher: aes-256-gcm, password: gYL83DQWXuDbxmZAVVtUTXaK}
+  - {name: CH_51+@WangCai_1, server: 156.146.62.37, port: 46412, type: ss, cipher: aes-256-gcm, password: GEqk9WGyybeyXW97YEdanDYs}
+  - {name: CH_50+@WangCai_1, server: 156.146.62.37, port: 46354, type: ss, cipher: aes-256-gcm, password: MYPKdC7n6qjL6xmJBBcrzzqS}
+  - {name: CH_49+@WangCai_1, server: 156.146.62.37, port: 45948, type: ss, cipher: aes-256-gcm, password: j76EXqJcQhuQTr3EvUf7xaK9}
+  - {name: CH_48+@WangCai_1, server: 156.146.62.37, port: 45746, type: ss, cipher: aes-256-gcm, password: wEsFcHCvbL4eJkL4DZQa7RgR}
+  - {name: CH_47+@WangCai_1, server: 156.146.62.37, port: 45329, type: ss, cipher: aes-256-gcm, password: CXSjgD7u7Ar7GxkZ4CgTMUsj}
+  - {name: CH_46+@WangCai_1, server: 156.146.62.37, port: 45291, type: ss, cipher: aes-256-gcm, password: ecfJrNtBZwT748hxJ3ZyzZj2}
+  - {name: CH_44+@WangCai_1, server: 156.146.62.37, port: 44820, type: ss, cipher: aes-256-gcm, password: jspgz9G3VmvBMCgMUWLBaZHu}
+  - {name: CH_43+@WangCai_1, server: 156.146.62.37, port: 44745, type: ss, cipher: aes-256-gcm, password: fyXdw87yCH9SAmFkPvsvLVqC}
+  - {name: CH_42+@WangCai_1, server: 156.146.62.37, port: 44742, type: ss, cipher: aes-256-gcm, password: QCStKzZ56SHBc4tL7stCEqqd}
+  - {name: CH_41+@WangCai_1, server: 156.146.62.37, port: 44628, type: ss, cipher: aes-256-gcm, password: VASQbVcukHfdBGmeS9L7Z8TT}
+  - {name: CH_40+@WangCai_1, server: 156.146.62.37, port: 44539, type: ss, cipher: aes-256-gcm, password: r6hDrkP4Et6EENTS8Qy7Tcmg}
+  - {name: CH_39+@WangCai_1, server: 156.146.62.37, port: 44236, type: ss, cipher: aes-256-gcm, password: FWrXcxPZjJxAN89xLgqY3Acp}
+  - {name: CH_38+@WangCai_1, server: 156.146.62.37, port: 43963, type: ss, cipher: aes-256-gcm, password: Tuw6zzZM6JwWNZyYF9ckC4JZ}
+  - {name: CH_37+@WangCai_1, server: 156.146.62.37, port: 43893, type: ss, cipher: aes-256-gcm, password: YyCBeDdYX4cadHpCkkmdJLq8}
+  - {name: CH_36+@WangCai_1, server: 156.146.62.37, port: 42816, type: ss, cipher: aes-256-gcm, password: tBKBf4pVzNCFKdbPgvwrNXq3}
+  - {name: CH_35+@WangCai_1, server: 156.146.62.37, port: 42304, type: ss, cipher: aes-256-gcm, password: p26v2JwhQVHDHsXk66fXt56r}
+  - {name: CH_34+@WangCai_1, server: 156.146.62.37, port: 42185, type: ss, cipher: aes-256-gcm, password: FaTG4zALZru72gxjgSHQ7Jdh}
+  - {name: CH_33+@WangCai_1, server: 156.146.62.37, port: 42166, type: ss, cipher: aes-256-gcm, password: H9Dbn3szZMqLR3NpgEFEPCKb}
+  - {name: CH_32+@WangCai_1, server: 156.146.62.37, port: 41992, type: ss, cipher: aes-256-gcm, password: XmQSxDCn5ehpcq6DBYms8FJf}
+  - {name: CH_31+@WangCai_1, server: 156.146.62.37, port: 41738, type: ss, cipher: aes-256-gcm, password: X6yMGXnfUsuKTvEDYZSLPk4d}
+  - {name: CH_30+@WangCai_1, server: 156.146.62.37, port: 41676, type: ss, cipher: aes-256-gcm, password: z6pH3RyttkRWhJ5tpRyt6dYk}
+  - {name: CH_29+@WangCai_1, server: 156.146.62.37, port: 41372, type: ss, cipher: aes-256-gcm, password: 5kGAhC3AmVC35GbruHjSrZf2}
+  - {name: CH_28+@WangCai_1, server: 156.146.62.37, port: 40282, type: ss, cipher: aes-256-gcm, password: Pvvaw486867D2w4yctL2ULTQ}
+  - {name: CH_27+@WangCai_1, server: 156.146.62.37, port: 40220, type: ss, cipher: aes-256-gcm, password: ugyBkSEFxVEmUYSHyvxmWNj9}
+  - {name: CH_26+@WangCai_1, server: 156.146.62.37, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp}
+  - {name: CH_24+@WangCai_1, server: 156.146.62.37, port: 39720, type: ss, cipher: aes-256-gcm, password: kq8xQKC3K4jYQPwLXTNbJjm6}
+  - {name: CH_23+@WangCai_1, server: 156.146.62.37, port: 39556, type: ss, cipher: aes-256-gcm, password: g4AfpNELpdYEeLYhM8XCX9se}
+  - {name: CH_22+@WangCai_1, server: 156.146.62.37, port: 38747, type: ss, cipher: aes-256-gcm, password: RtbLkxbJZpUQ6m8y4qAeLYZj}
   - {name: CH_21+@WangCai_1, server: 156.146.62.37, port: 38742, type: ss, cipher: aes-256-gcm, password: DKXfWwc4ebscpXTKpbt85rSH}
+  - {name: CH_20+@WangCai_1, server: 156.146.62.37, port: 38620, type: ss, cipher: aes-256-gcm, password: Kquv5UhvZXNMemAQy8DxZ7qn}
+  - {name: CH_19+@WangCai_1, server: 156.146.62.37, port: 38033, type: ss, cipher: aes-256-gcm, password: xpQwyV4W5FdA6NMANJJx73US}
+  - {name: CH_18+@WangCai_1, server: 156.146.62.37, port: 37588, type: ss, cipher: aes-256-gcm, password: kD9vkjnE6dsUzwQfvKkPkQAd}
+  - {name: CH_17+@WangCai_1, server: 156.146.62.37, port: 37559, type: ss, cipher: aes-256-gcm, password: Qbt22F6JsxzFGqcsK5SaR8q3}
+  - {name: CH_16+@WangCai_1, server: 156.146.62.37, port: 37473, type: ss, cipher: aes-256-gcm, password: enctdKyJfSu76VqznKwTt6Ap}
+  - {name: CH_15+@WangCai_1, server: 156.146.62.37, port: 36460, type: ss, cipher: aes-256-gcm, password: yUXad7DGF8L5cTShEpnp2N6z}
+  - {name: CH_14+@WangCai_1, server: 156.146.62.37, port: 35371, type: ss, cipher: aes-256-gcm, password: pjeDhAJGuML8xKUxcjRqq6a9}
+  - {name: CH_13+@WangCai_1, server: 156.146.62.37, port: 35294, type: ss, cipher: aes-256-gcm, password: J9Y2ncrdPEC38gwydNFFGBna}
+  - {name: 🇺🇸 US(欢迎订阅YouTube：8度科技）, server: 156.146.62.37, port: 46354, type: ss, cipher: aes-256-gcm, password: MYPKdC7n6qjL6xmJBBcrzzqS}
+  - {name: 🇺🇸 US(欢迎订阅YouTube：8度科技） 2, server: 156.146.62.37, port: 41372, type: ss, cipher: aes-256-gcm, password: 5kGAhC3AmVC35GbruHjSrZf2}
+  - {name: 🇺🇸 US(欢迎订阅YouTube：8度科技） 3, server: 156.146.62.37, port: 38747, type: ss, cipher: aes-256-gcm, password: RtbLkxbJZpUQ6m8y4qAeLYZj}
+  - {name: 🇺🇸 US(欢迎订阅YouTube：8度科技） 4, server: 156.146.62.37, port: 49396, type: ss, cipher: aes-256-gcm, password: BdRWC38L5JUDMTYNNxJGcUwB}
+  - {name: 🇺🇸 US(欢迎订阅YouTube：8度科技） 5, server: 156.146.62.37, port: 35371, type: ss, cipher: aes-256-gcm, password: pjeDhAJGuML8xKUxcjRqq6a9}
+  - {name: 🇺🇸 US(欢迎订阅YouTube：8度科技） 6, server: 156.146.62.37, port: 39720, type: ss, cipher: aes-256-gcm, password: kq8xQKC3K4jYQPwLXTNbJjm6}
+  - {name: 🇺🇸 US(欢迎订阅YouTube：8度科技） 7, server: 156.146.62.37, port: 49339, type: ss, cipher: aes-256-gcm, password: suucSeVLmt6PQKAP77NtGw9x}
+  - {name: 🇺🇸 US(欢迎订阅YouTube：8度科技） 8, server: 156.146.62.37, port: 50181, type: ss, cipher: aes-256-gcm, password: d9adRr9UxymNSysYahMtpFpd}
+  - {name: 🇺🇸 US(欢迎订阅YouTube：8度科技） 9, server: 156.146.62.37, port: 40711, type: ss, cipher: aes-256-gcm, password: rnngxSTJrXWKXHkvrF3npp9B}
+  - {name: 🇺🇸 US(欢迎订阅YouTube：8度科技） 10, server: 156.146.62.37, port: 44745, type: ss, cipher: aes-256-gcm, password: fyXdw87yCH9SAmFkPvsvLVqC}
+  - {name: 🇺🇸 US(欢迎订阅YouTube：8度科技） 11, server: 156.146.62.37, port: 46642, type: ss, cipher: aes-256-gcm, password: gYL83DQWXuDbxmZAVVtUTXaK}
+  - {name: 🇺🇸 US(欢迎订阅YouTube：8度科技） 12, server: 156.146.62.37, port: 50024, type: ss, cipher: aes-256-gcm, password: b2jDPHUQxCNa2KmGHZjy7C4B}
+  - {name: 🇺🇸 US(欢迎订阅YouTube：8度科技） 13, server: 156.146.62.37, port: 45291, type: ss, cipher: aes-256-gcm, password: ecfJrNtBZwT748hxJ3ZyzZj2}
+  - {name: 🇺🇸 US(欢迎订阅YouTube：8度科技） 14, server: 156.146.62.37, port: 41992, type: ss, cipher: aes-256-gcm, password: XmQSxDCn5ehpcq6DBYms8FJf}
+  - {name: 🇺🇸 US(欢迎订阅YouTube：8度科技） 15, server: 156.146.62.37, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp}
+  - {name: 🇺🇸 US(欢迎订阅YouTube：8度科技） 16, server: 156.146.62.37, port: 38620, type: ss, cipher: aes-256-gcm, password: Kquv5UhvZXNMemAQy8DxZ7qn}
+  - {name: 🇺🇸 US(欢迎订阅YouTube：8度科技） 17, server: 156.146.62.37, port: 36460, type: ss, cipher: aes-256-gcm, password: yUXad7DGF8L5cTShEpnp2N6z}
+  - {name: 🇺🇸 US(欢迎订阅YouTube：8度科技） 18, server: 156.146.33.74, port: 44102, type: ss, cipher: aes-256-gcm, password: zHKYS9DeAjvv43EwgDfyEg4d}
+  - {name: 🇺🇸 US(欢迎订阅YouTube：8度科技） 19, server: 156.146.62.37, port: 45746, type: ss, cipher: aes-256-gcm, password: wEsFcHCvbL4eJkL4DZQa7RgR}
+  - {name: 🇺🇸 US(欢迎订阅YouTube：8度科技） 20, server: 156.146.62.37, port: 41676, type: ss, cipher: aes-256-gcm, password: z6pH3RyttkRWhJ5tpRyt6dYk}
+  - {name: 🇺🇸 US(欢迎订阅YouTube：8度科技） 21, server: 156.146.62.37, port: 43963, type: ss, cipher: aes-256-gcm, password: Tuw6zzZM6JwWNZyYF9ckC4JZ}
+  - {name: 🇺🇸 US(欢迎订阅YouTube：8度科技） 22, server: 156.146.62.37, port: 37588, type: ss, cipher: aes-256-gcm, password: kD9vkjnE6dsUzwQfvKkPkQAd}
+  - {name: 🇺🇸 US(欢迎订阅YouTube：8度科技） 23, server: 156.146.62.37, port: 50232, type: ss, cipher: aes-256-gcm, password: CjchzpwdSjRtDjezYMwx9BKM}
+  - {name: 🇺🇸 US(欢迎订阅YouTube：8度科技） 24, server: 156.146.62.37, port: 46726, type: ss, cipher: aes-256-gcm, password: 2fqKbFPGHpcmMTJzGsUbsfYf}
+  - {name: 🇺🇸 US(欢迎订阅YouTube：8度科技） 25, server: 156.146.62.37, port: 47553, type: ss, cipher: aes-256-gcm, password: t2JnnFqjDMmzWurseJPgBsYY}
+  - {name: 🇺🇸 US(欢迎订阅YouTube：8度科技） 26, server: 156.146.62.37, port: 42304, type: ss, cipher: aes-256-gcm, password: p26v2JwhQVHDHsXk66fXt56r}
+  - {name: 🇺🇸 US(欢迎订阅YouTube：8度科技） 27, server: 156.146.62.37, port: 49126, type: ss, cipher: aes-256-gcm, password: wrCaGtrUbzeRqQLdc8Kmk3Nd}
+  - {name: 🇺🇸 US(欢迎订阅YouTube：8度科技） 28, server: 156.146.62.37, port: 50695, type: ss, cipher: aes-256-gcm, password: gqtwGu9bVreJqL3FTHSVKGzy}
+  - {name: 🇺🇸 US(欢迎订阅YouTube：8度科技） 29, server: 156.146.62.37, port: 38033, type: ss, cipher: aes-256-gcm, password: xpQwyV4W5FdA6NMANJJx73US}
+  - {name: 🇺🇸 US(欢迎订阅YouTube：8度科技） 30, server: 156.146.62.37, port: 48970, type: ss, cipher: aes-256-gcm, password: ZKEsXkFbUZ2z667YA8A7cEDP}
+  - {name: 🇺🇸 US(欢迎订阅YouTube：8度科技） 31, server: 156.146.62.37, port: 44820, type: ss, cipher: aes-256-gcm, password: jspgz9G3VmvBMCgMUWLBaZHu}
+  - {name: 🇺🇸 US(欢迎订阅YouTube：8度科技） 32, server: 156.146.62.37, port: 41738, type: ss, cipher: aes-256-gcm, password: X6yMGXnfUsuKTvEDYZSLPk4d}
+  - {name: 🇺🇸 US(欢迎订阅YouTube：8度科技） 33, server: 156.146.33.74, port: 49396, type: ss, cipher: aes-256-gcm, password: BdRWC38L5JUDMTYNNxJGcUwB}
+  - {name: 🇺🇸 US(欢迎订阅YouTube：8度科技） 34, server: 156.146.62.37, port: 38742, type: ss, cipher: aes-256-gcm, password: DKXfWwc4ebscpXTKpbt85rSH}
+  - {name: 🇺🇸 US(欢迎订阅YouTube：8度科技） 35, server: 156.146.62.37, port: 45329, type: ss, cipher: aes-256-gcm, password: CXSjgD7u7Ar7GxkZ4CgTMUsj}
+  - {name: 🇺🇸 US(欢迎订阅YouTube：8度科技） 36, server: 156.146.62.37, port: 40282, type: ss, cipher: aes-256-gcm, password: Pvvaw486867D2w4yctL2ULTQ}
+  - {name: 🇺🇸 US(欢迎订阅YouTube：8度科技） 37, server: 156.146.62.37, port: 48938, type: ss, cipher: aes-256-gcm, password: 4ejJ8n5ddLuYDUHGXJre2ufJ}
+  - {name: 🇺🇸 US(欢迎订阅YouTube：8度科技） 38, server: 156.146.62.37, port: 44628, type: ss, cipher: aes-256-gcm, password: VASQbVcukHfdBGmeS9L7Z8TT}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
@@ -78,142 +117,220 @@ proxy-groups:
       - ♻️ 自动选择
       - 🎯 全球直连
       - 匈牙利 佩斯（感谢关注youtube：8度科技）
-      - CH_37+@WangCai_1
-      - CH_40+@WangCai_1
-      - CH_43+@WangCai_1
-      - CH_60+@WangCai_1
-      - CH_13+@WangCai_1
-      - CH_59+@WangCai_1
-      - CH_68+@WangCai_1
-      - CH_39+@WangCai_1
-      - CH_41+@WangCai_1
-      - CH_38+@WangCai_1
-      - CH_44+@WangCai_1
-      - CH_66+@WangCai_1
-      - CH_15+@WangCai_1
-      - CH_18+@WangCai_1
-      - CH_61+@WangCai_1
-      - CH_32+@WangCai_1
-      - CH_14+@WangCai_1
-      - CH_42+@WangCai_1
-      - CH_64+@WangCai_1
-      - CH_58+@WangCai_1
-      - CH_46+@WangCai_1
-      - CH_57+@WangCai_1
-      - CH_65+@WangCai_1
-      - CH_19+@WangCai_1
-      - CH_67+@WangCai_1
-      - CH_36+@WangCai_1
-      - CH_49+@WangCai_1
-      - CH_82+@WangCai_1
-      - CH_62+@WangCai_1
-      - CH_56+@WangCai_1
-      - CH_20+@WangCai_1
-      - CH_75+@WangCai_1
-      - CH_83+@WangCai_1
-      - CH_78+@WangCai_1
-      - CH_47+@WangCai_1
-      - CH_52+@WangCai_1
-      - CH_34+@WangCai_1
-      - CH_48+@WangCai_1
+      - 匈牙利 佩斯（感谢关注youtube：8度科技） 2
       - 🇬🇧 英国（感谢关注youtube：8度科技）
-      - CH_16+@WangCai_1
-      - CH_17+@WangCai_1
-      - CH_35+@WangCai_1
-      - CH_51+@WangCai_1
-      - CH_76+@WangCai_1
-      - CH_80+@WangCai_1
+      - CH_83+@WangCai_1
+      - CH_82+@WangCai_1
       - CH_81+@WangCai_1
-      - CH_27+@WangCai_1
-      - CH_30+@WangCai_1
-      - CH_69+@WangCai_1
-      - CH_28+@WangCai_1
-      - CH_53+@WangCai_1
-      - CH_54+@WangCai_1
-      - CH_70+@WangCai_1
-      - CH_22+@WangCai_1
-      - CH_23+@WangCai_1
-      - CH_24+@WangCai_1
-      - CH_29+@WangCai_1
-      - CH_31+@WangCai_1
-      - CH_50+@WangCai_1
-      - CH_55+@WangCai_1
-      - CH_72+@WangCai_1
-      - CH_26+@WangCai_1
-      - CH_33+@WangCai_1
+      - CH_80+@WangCai_1
       - CH_79+@WangCai_1
+      - CH_78+@WangCai_1
+      - CH_76+@WangCai_1
+      - CH_75+@WangCai_1
+      - CH_72+@WangCai_1
+      - CH_70+@WangCai_1
+      - CH_69+@WangCai_1
+      - CH_68+@WangCai_1
+      - CH_67+@WangCai_1
+      - CH_66+@WangCai_1
+      - CH_65+@WangCai_1
+      - CH_64+@WangCai_1
+      - CH_62+@WangCai_1
+      - CH_61+@WangCai_1
+      - CH_60+@WangCai_1
+      - CH_59+@WangCai_1
+      - CH_58+@WangCai_1
+      - CH_57+@WangCai_1
+      - CH_56+@WangCai_1
+      - CH_55+@WangCai_1
+      - CH_54+@WangCai_1
+      - CH_53+@WangCai_1
+      - CH_52+@WangCai_1
+      - CH_51+@WangCai_1
+      - CH_50+@WangCai_1
+      - CH_49+@WangCai_1
+      - CH_48+@WangCai_1
+      - CH_47+@WangCai_1
+      - CH_46+@WangCai_1
+      - CH_44+@WangCai_1
+      - CH_43+@WangCai_1
+      - CH_42+@WangCai_1
+      - CH_41+@WangCai_1
+      - CH_40+@WangCai_1
+      - CH_39+@WangCai_1
+      - CH_38+@WangCai_1
+      - CH_37+@WangCai_1
+      - CH_36+@WangCai_1
+      - CH_35+@WangCai_1
+      - CH_34+@WangCai_1
+      - CH_33+@WangCai_1
+      - CH_32+@WangCai_1
+      - CH_31+@WangCai_1
+      - CH_30+@WangCai_1
+      - CH_29+@WangCai_1
+      - CH_28+@WangCai_1
+      - CH_27+@WangCai_1
+      - CH_26+@WangCai_1
+      - CH_24+@WangCai_1
+      - CH_23+@WangCai_1
+      - CH_22+@WangCai_1
       - CH_21+@WangCai_1
+      - CH_20+@WangCai_1
+      - CH_19+@WangCai_1
+      - CH_18+@WangCai_1
+      - CH_17+@WangCai_1
+      - CH_16+@WangCai_1
+      - CH_15+@WangCai_1
+      - CH_14+@WangCai_1
+      - CH_13+@WangCai_1
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技）
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 2
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 3
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 4
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 5
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 6
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 7
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 8
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 9
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 10
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 11
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 12
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 13
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 14
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 15
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 16
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 17
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 18
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 19
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 20
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 21
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 22
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 23
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 24
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 25
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 26
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 27
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 28
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 29
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 30
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 31
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 32
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 33
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 34
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 35
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 36
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 37
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 38
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
       - 匈牙利 佩斯（感谢关注youtube：8度科技）
-      - CH_37+@WangCai_1
-      - CH_40+@WangCai_1
-      - CH_43+@WangCai_1
-      - CH_60+@WangCai_1
-      - CH_13+@WangCai_1
-      - CH_59+@WangCai_1
-      - CH_68+@WangCai_1
-      - CH_39+@WangCai_1
-      - CH_41+@WangCai_1
-      - CH_38+@WangCai_1
-      - CH_44+@WangCai_1
-      - CH_66+@WangCai_1
-      - CH_15+@WangCai_1
-      - CH_18+@WangCai_1
-      - CH_61+@WangCai_1
-      - CH_32+@WangCai_1
-      - CH_14+@WangCai_1
-      - CH_42+@WangCai_1
-      - CH_64+@WangCai_1
-      - CH_58+@WangCai_1
-      - CH_46+@WangCai_1
-      - CH_57+@WangCai_1
-      - CH_65+@WangCai_1
-      - CH_19+@WangCai_1
-      - CH_67+@WangCai_1
-      - CH_36+@WangCai_1
-      - CH_49+@WangCai_1
-      - CH_82+@WangCai_1
-      - CH_62+@WangCai_1
-      - CH_56+@WangCai_1
-      - CH_20+@WangCai_1
-      - CH_75+@WangCai_1
-      - CH_83+@WangCai_1
-      - CH_78+@WangCai_1
-      - CH_47+@WangCai_1
-      - CH_52+@WangCai_1
-      - CH_34+@WangCai_1
-      - CH_48+@WangCai_1
+      - 匈牙利 佩斯（感谢关注youtube：8度科技） 2
       - 🇬🇧 英国（感谢关注youtube：8度科技）
-      - CH_16+@WangCai_1
-      - CH_17+@WangCai_1
-      - CH_35+@WangCai_1
-      - CH_51+@WangCai_1
-      - CH_76+@WangCai_1
-      - CH_80+@WangCai_1
+      - CH_83+@WangCai_1
+      - CH_82+@WangCai_1
       - CH_81+@WangCai_1
-      - CH_27+@WangCai_1
-      - CH_30+@WangCai_1
-      - CH_69+@WangCai_1
-      - CH_28+@WangCai_1
-      - CH_53+@WangCai_1
-      - CH_54+@WangCai_1
-      - CH_70+@WangCai_1
-      - CH_22+@WangCai_1
-      - CH_23+@WangCai_1
-      - CH_24+@WangCai_1
-      - CH_29+@WangCai_1
-      - CH_31+@WangCai_1
-      - CH_50+@WangCai_1
-      - CH_55+@WangCai_1
-      - CH_72+@WangCai_1
-      - CH_26+@WangCai_1
-      - CH_33+@WangCai_1
+      - CH_80+@WangCai_1
       - CH_79+@WangCai_1
+      - CH_78+@WangCai_1
+      - CH_76+@WangCai_1
+      - CH_75+@WangCai_1
+      - CH_72+@WangCai_1
+      - CH_70+@WangCai_1
+      - CH_69+@WangCai_1
+      - CH_68+@WangCai_1
+      - CH_67+@WangCai_1
+      - CH_66+@WangCai_1
+      - CH_65+@WangCai_1
+      - CH_64+@WangCai_1
+      - CH_62+@WangCai_1
+      - CH_61+@WangCai_1
+      - CH_60+@WangCai_1
+      - CH_59+@WangCai_1
+      - CH_58+@WangCai_1
+      - CH_57+@WangCai_1
+      - CH_56+@WangCai_1
+      - CH_55+@WangCai_1
+      - CH_54+@WangCai_1
+      - CH_53+@WangCai_1
+      - CH_52+@WangCai_1
+      - CH_51+@WangCai_1
+      - CH_50+@WangCai_1
+      - CH_49+@WangCai_1
+      - CH_48+@WangCai_1
+      - CH_47+@WangCai_1
+      - CH_46+@WangCai_1
+      - CH_44+@WangCai_1
+      - CH_43+@WangCai_1
+      - CH_42+@WangCai_1
+      - CH_41+@WangCai_1
+      - CH_40+@WangCai_1
+      - CH_39+@WangCai_1
+      - CH_38+@WangCai_1
+      - CH_37+@WangCai_1
+      - CH_36+@WangCai_1
+      - CH_35+@WangCai_1
+      - CH_34+@WangCai_1
+      - CH_33+@WangCai_1
+      - CH_32+@WangCai_1
+      - CH_31+@WangCai_1
+      - CH_30+@WangCai_1
+      - CH_29+@WangCai_1
+      - CH_28+@WangCai_1
+      - CH_27+@WangCai_1
+      - CH_26+@WangCai_1
+      - CH_24+@WangCai_1
+      - CH_23+@WangCai_1
+      - CH_22+@WangCai_1
       - CH_21+@WangCai_1
+      - CH_20+@WangCai_1
+      - CH_19+@WangCai_1
+      - CH_18+@WangCai_1
+      - CH_17+@WangCai_1
+      - CH_16+@WangCai_1
+      - CH_15+@WangCai_1
+      - CH_14+@WangCai_1
+      - CH_13+@WangCai_1
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技）
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 2
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 3
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 4
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 5
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 6
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 7
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 8
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 9
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 10
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 11
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 12
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 13
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 14
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 15
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 16
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 17
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 18
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 19
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 20
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 21
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 22
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 23
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 24
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 25
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 26
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 27
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 28
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 29
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 30
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 31
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 32
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 33
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 34
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 35
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 36
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 37
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 38
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -221,71 +338,110 @@ proxy-groups:
       - ♻️ 自动选择
       - 🎯 全球直连
       - 匈牙利 佩斯（感谢关注youtube：8度科技）
-      - CH_37+@WangCai_1
-      - CH_40+@WangCai_1
-      - CH_43+@WangCai_1
-      - CH_60+@WangCai_1
-      - CH_13+@WangCai_1
-      - CH_59+@WangCai_1
-      - CH_68+@WangCai_1
-      - CH_39+@WangCai_1
-      - CH_41+@WangCai_1
-      - CH_38+@WangCai_1
-      - CH_44+@WangCai_1
-      - CH_66+@WangCai_1
-      - CH_15+@WangCai_1
-      - CH_18+@WangCai_1
-      - CH_61+@WangCai_1
-      - CH_32+@WangCai_1
-      - CH_14+@WangCai_1
-      - CH_42+@WangCai_1
-      - CH_64+@WangCai_1
-      - CH_58+@WangCai_1
-      - CH_46+@WangCai_1
-      - CH_57+@WangCai_1
-      - CH_65+@WangCai_1
-      - CH_19+@WangCai_1
-      - CH_67+@WangCai_1
-      - CH_36+@WangCai_1
-      - CH_49+@WangCai_1
-      - CH_82+@WangCai_1
-      - CH_62+@WangCai_1
-      - CH_56+@WangCai_1
-      - CH_20+@WangCai_1
-      - CH_75+@WangCai_1
-      - CH_83+@WangCai_1
-      - CH_78+@WangCai_1
-      - CH_47+@WangCai_1
-      - CH_52+@WangCai_1
-      - CH_34+@WangCai_1
-      - CH_48+@WangCai_1
+      - 匈牙利 佩斯（感谢关注youtube：8度科技） 2
       - 🇬🇧 英国（感谢关注youtube：8度科技）
-      - CH_16+@WangCai_1
-      - CH_17+@WangCai_1
-      - CH_35+@WangCai_1
-      - CH_51+@WangCai_1
-      - CH_76+@WangCai_1
-      - CH_80+@WangCai_1
+      - CH_83+@WangCai_1
+      - CH_82+@WangCai_1
       - CH_81+@WangCai_1
-      - CH_27+@WangCai_1
-      - CH_30+@WangCai_1
-      - CH_69+@WangCai_1
-      - CH_28+@WangCai_1
-      - CH_53+@WangCai_1
-      - CH_54+@WangCai_1
-      - CH_70+@WangCai_1
-      - CH_22+@WangCai_1
-      - CH_23+@WangCai_1
-      - CH_24+@WangCai_1
-      - CH_29+@WangCai_1
-      - CH_31+@WangCai_1
-      - CH_50+@WangCai_1
-      - CH_55+@WangCai_1
-      - CH_72+@WangCai_1
-      - CH_26+@WangCai_1
-      - CH_33+@WangCai_1
+      - CH_80+@WangCai_1
       - CH_79+@WangCai_1
+      - CH_78+@WangCai_1
+      - CH_76+@WangCai_1
+      - CH_75+@WangCai_1
+      - CH_72+@WangCai_1
+      - CH_70+@WangCai_1
+      - CH_69+@WangCai_1
+      - CH_68+@WangCai_1
+      - CH_67+@WangCai_1
+      - CH_66+@WangCai_1
+      - CH_65+@WangCai_1
+      - CH_64+@WangCai_1
+      - CH_62+@WangCai_1
+      - CH_61+@WangCai_1
+      - CH_60+@WangCai_1
+      - CH_59+@WangCai_1
+      - CH_58+@WangCai_1
+      - CH_57+@WangCai_1
+      - CH_56+@WangCai_1
+      - CH_55+@WangCai_1
+      - CH_54+@WangCai_1
+      - CH_53+@WangCai_1
+      - CH_52+@WangCai_1
+      - CH_51+@WangCai_1
+      - CH_50+@WangCai_1
+      - CH_49+@WangCai_1
+      - CH_48+@WangCai_1
+      - CH_47+@WangCai_1
+      - CH_46+@WangCai_1
+      - CH_44+@WangCai_1
+      - CH_43+@WangCai_1
+      - CH_42+@WangCai_1
+      - CH_41+@WangCai_1
+      - CH_40+@WangCai_1
+      - CH_39+@WangCai_1
+      - CH_38+@WangCai_1
+      - CH_37+@WangCai_1
+      - CH_36+@WangCai_1
+      - CH_35+@WangCai_1
+      - CH_34+@WangCai_1
+      - CH_33+@WangCai_1
+      - CH_32+@WangCai_1
+      - CH_31+@WangCai_1
+      - CH_30+@WangCai_1
+      - CH_29+@WangCai_1
+      - CH_28+@WangCai_1
+      - CH_27+@WangCai_1
+      - CH_26+@WangCai_1
+      - CH_24+@WangCai_1
+      - CH_23+@WangCai_1
+      - CH_22+@WangCai_1
       - CH_21+@WangCai_1
+      - CH_20+@WangCai_1
+      - CH_19+@WangCai_1
+      - CH_18+@WangCai_1
+      - CH_17+@WangCai_1
+      - CH_16+@WangCai_1
+      - CH_15+@WangCai_1
+      - CH_14+@WangCai_1
+      - CH_13+@WangCai_1
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技）
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 2
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 3
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 4
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 5
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 6
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 7
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 8
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 9
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 10
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 11
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 12
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 13
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 14
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 15
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 16
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 17
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 18
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 19
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 20
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 21
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 22
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 23
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 24
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 25
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 26
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 27
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 28
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 29
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 30
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 31
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 32
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 33
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 34
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 35
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 36
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 37
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 38
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -297,142 +453,220 @@ proxy-groups:
       - 🎯 全球直连
       - 🔰 节点选择
       - 匈牙利 佩斯（感谢关注youtube：8度科技）
-      - CH_37+@WangCai_1
-      - CH_40+@WangCai_1
-      - CH_43+@WangCai_1
-      - CH_60+@WangCai_1
-      - CH_13+@WangCai_1
-      - CH_59+@WangCai_1
-      - CH_68+@WangCai_1
-      - CH_39+@WangCai_1
-      - CH_41+@WangCai_1
-      - CH_38+@WangCai_1
-      - CH_44+@WangCai_1
-      - CH_66+@WangCai_1
-      - CH_15+@WangCai_1
-      - CH_18+@WangCai_1
-      - CH_61+@WangCai_1
-      - CH_32+@WangCai_1
-      - CH_14+@WangCai_1
-      - CH_42+@WangCai_1
-      - CH_64+@WangCai_1
-      - CH_58+@WangCai_1
-      - CH_46+@WangCai_1
-      - CH_57+@WangCai_1
-      - CH_65+@WangCai_1
-      - CH_19+@WangCai_1
-      - CH_67+@WangCai_1
-      - CH_36+@WangCai_1
-      - CH_49+@WangCai_1
-      - CH_82+@WangCai_1
-      - CH_62+@WangCai_1
-      - CH_56+@WangCai_1
-      - CH_20+@WangCai_1
-      - CH_75+@WangCai_1
-      - CH_83+@WangCai_1
-      - CH_78+@WangCai_1
-      - CH_47+@WangCai_1
-      - CH_52+@WangCai_1
-      - CH_34+@WangCai_1
-      - CH_48+@WangCai_1
+      - 匈牙利 佩斯（感谢关注youtube：8度科技） 2
       - 🇬🇧 英国（感谢关注youtube：8度科技）
-      - CH_16+@WangCai_1
-      - CH_17+@WangCai_1
-      - CH_35+@WangCai_1
-      - CH_51+@WangCai_1
-      - CH_76+@WangCai_1
-      - CH_80+@WangCai_1
+      - CH_83+@WangCai_1
+      - CH_82+@WangCai_1
       - CH_81+@WangCai_1
-      - CH_27+@WangCai_1
-      - CH_30+@WangCai_1
-      - CH_69+@WangCai_1
-      - CH_28+@WangCai_1
-      - CH_53+@WangCai_1
-      - CH_54+@WangCai_1
-      - CH_70+@WangCai_1
-      - CH_22+@WangCai_1
-      - CH_23+@WangCai_1
-      - CH_24+@WangCai_1
-      - CH_29+@WangCai_1
-      - CH_31+@WangCai_1
-      - CH_50+@WangCai_1
-      - CH_55+@WangCai_1
-      - CH_72+@WangCai_1
-      - CH_26+@WangCai_1
-      - CH_33+@WangCai_1
+      - CH_80+@WangCai_1
       - CH_79+@WangCai_1
+      - CH_78+@WangCai_1
+      - CH_76+@WangCai_1
+      - CH_75+@WangCai_1
+      - CH_72+@WangCai_1
+      - CH_70+@WangCai_1
+      - CH_69+@WangCai_1
+      - CH_68+@WangCai_1
+      - CH_67+@WangCai_1
+      - CH_66+@WangCai_1
+      - CH_65+@WangCai_1
+      - CH_64+@WangCai_1
+      - CH_62+@WangCai_1
+      - CH_61+@WangCai_1
+      - CH_60+@WangCai_1
+      - CH_59+@WangCai_1
+      - CH_58+@WangCai_1
+      - CH_57+@WangCai_1
+      - CH_56+@WangCai_1
+      - CH_55+@WangCai_1
+      - CH_54+@WangCai_1
+      - CH_53+@WangCai_1
+      - CH_52+@WangCai_1
+      - CH_51+@WangCai_1
+      - CH_50+@WangCai_1
+      - CH_49+@WangCai_1
+      - CH_48+@WangCai_1
+      - CH_47+@WangCai_1
+      - CH_46+@WangCai_1
+      - CH_44+@WangCai_1
+      - CH_43+@WangCai_1
+      - CH_42+@WangCai_1
+      - CH_41+@WangCai_1
+      - CH_40+@WangCai_1
+      - CH_39+@WangCai_1
+      - CH_38+@WangCai_1
+      - CH_37+@WangCai_1
+      - CH_36+@WangCai_1
+      - CH_35+@WangCai_1
+      - CH_34+@WangCai_1
+      - CH_33+@WangCai_1
+      - CH_32+@WangCai_1
+      - CH_31+@WangCai_1
+      - CH_30+@WangCai_1
+      - CH_29+@WangCai_1
+      - CH_28+@WangCai_1
+      - CH_27+@WangCai_1
+      - CH_26+@WangCai_1
+      - CH_24+@WangCai_1
+      - CH_23+@WangCai_1
+      - CH_22+@WangCai_1
       - CH_21+@WangCai_1
+      - CH_20+@WangCai_1
+      - CH_19+@WangCai_1
+      - CH_18+@WangCai_1
+      - CH_17+@WangCai_1
+      - CH_16+@WangCai_1
+      - CH_15+@WangCai_1
+      - CH_14+@WangCai_1
+      - CH_13+@WangCai_1
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技）
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 2
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 3
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 4
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 5
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 6
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 7
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 8
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 9
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 10
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 11
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 12
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 13
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 14
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 15
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 16
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 17
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 18
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 19
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 20
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 21
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 22
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 23
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 24
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 25
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 26
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 27
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 28
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 29
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 30
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 31
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 32
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 33
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 34
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 35
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 36
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 37
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 38
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - 匈牙利 佩斯（感谢关注youtube：8度科技）
-      - CH_37+@WangCai_1
-      - CH_40+@WangCai_1
-      - CH_43+@WangCai_1
-      - CH_60+@WangCai_1
-      - CH_13+@WangCai_1
-      - CH_59+@WangCai_1
-      - CH_68+@WangCai_1
-      - CH_39+@WangCai_1
-      - CH_41+@WangCai_1
-      - CH_38+@WangCai_1
-      - CH_44+@WangCai_1
-      - CH_66+@WangCai_1
-      - CH_15+@WangCai_1
-      - CH_18+@WangCai_1
-      - CH_61+@WangCai_1
-      - CH_32+@WangCai_1
-      - CH_14+@WangCai_1
-      - CH_42+@WangCai_1
-      - CH_64+@WangCai_1
-      - CH_58+@WangCai_1
-      - CH_46+@WangCai_1
-      - CH_57+@WangCai_1
-      - CH_65+@WangCai_1
-      - CH_19+@WangCai_1
-      - CH_67+@WangCai_1
-      - CH_36+@WangCai_1
-      - CH_49+@WangCai_1
-      - CH_82+@WangCai_1
-      - CH_62+@WangCai_1
-      - CH_56+@WangCai_1
-      - CH_20+@WangCai_1
-      - CH_75+@WangCai_1
-      - CH_83+@WangCai_1
-      - CH_78+@WangCai_1
-      - CH_47+@WangCai_1
-      - CH_52+@WangCai_1
-      - CH_34+@WangCai_1
-      - CH_48+@WangCai_1
+      - 匈牙利 佩斯（感谢关注youtube：8度科技） 2
       - 🇬🇧 英国（感谢关注youtube：8度科技）
-      - CH_16+@WangCai_1
-      - CH_17+@WangCai_1
-      - CH_35+@WangCai_1
-      - CH_51+@WangCai_1
-      - CH_76+@WangCai_1
-      - CH_80+@WangCai_1
+      - CH_83+@WangCai_1
+      - CH_82+@WangCai_1
       - CH_81+@WangCai_1
-      - CH_27+@WangCai_1
-      - CH_30+@WangCai_1
-      - CH_69+@WangCai_1
-      - CH_28+@WangCai_1
-      - CH_53+@WangCai_1
-      - CH_54+@WangCai_1
-      - CH_70+@WangCai_1
-      - CH_22+@WangCai_1
-      - CH_23+@WangCai_1
-      - CH_24+@WangCai_1
-      - CH_29+@WangCai_1
-      - CH_31+@WangCai_1
-      - CH_50+@WangCai_1
-      - CH_55+@WangCai_1
-      - CH_72+@WangCai_1
-      - CH_26+@WangCai_1
-      - CH_33+@WangCai_1
+      - CH_80+@WangCai_1
       - CH_79+@WangCai_1
+      - CH_78+@WangCai_1
+      - CH_76+@WangCai_1
+      - CH_75+@WangCai_1
+      - CH_72+@WangCai_1
+      - CH_70+@WangCai_1
+      - CH_69+@WangCai_1
+      - CH_68+@WangCai_1
+      - CH_67+@WangCai_1
+      - CH_66+@WangCai_1
+      - CH_65+@WangCai_1
+      - CH_64+@WangCai_1
+      - CH_62+@WangCai_1
+      - CH_61+@WangCai_1
+      - CH_60+@WangCai_1
+      - CH_59+@WangCai_1
+      - CH_58+@WangCai_1
+      - CH_57+@WangCai_1
+      - CH_56+@WangCai_1
+      - CH_55+@WangCai_1
+      - CH_54+@WangCai_1
+      - CH_53+@WangCai_1
+      - CH_52+@WangCai_1
+      - CH_51+@WangCai_1
+      - CH_50+@WangCai_1
+      - CH_49+@WangCai_1
+      - CH_48+@WangCai_1
+      - CH_47+@WangCai_1
+      - CH_46+@WangCai_1
+      - CH_44+@WangCai_1
+      - CH_43+@WangCai_1
+      - CH_42+@WangCai_1
+      - CH_41+@WangCai_1
+      - CH_40+@WangCai_1
+      - CH_39+@WangCai_1
+      - CH_38+@WangCai_1
+      - CH_37+@WangCai_1
+      - CH_36+@WangCai_1
+      - CH_35+@WangCai_1
+      - CH_34+@WangCai_1
+      - CH_33+@WangCai_1
+      - CH_32+@WangCai_1
+      - CH_31+@WangCai_1
+      - CH_30+@WangCai_1
+      - CH_29+@WangCai_1
+      - CH_28+@WangCai_1
+      - CH_27+@WangCai_1
+      - CH_26+@WangCai_1
+      - CH_24+@WangCai_1
+      - CH_23+@WangCai_1
+      - CH_22+@WangCai_1
       - CH_21+@WangCai_1
+      - CH_20+@WangCai_1
+      - CH_19+@WangCai_1
+      - CH_18+@WangCai_1
+      - CH_17+@WangCai_1
+      - CH_16+@WangCai_1
+      - CH_15+@WangCai_1
+      - CH_14+@WangCai_1
+      - CH_13+@WangCai_1
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技）
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 2
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 3
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 4
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 5
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 6
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 7
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 8
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 9
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 10
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 11
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 12
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 13
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 14
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 15
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 16
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 17
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 18
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 19
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 20
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 21
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 22
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 23
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 24
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 25
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 26
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 27
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 28
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 29
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 30
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 31
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 32
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 33
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 34
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 35
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 36
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 37
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 38
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -440,71 +674,110 @@ proxy-groups:
       - 🎯 全球直连
       - ♻️ 自动选择
       - 匈牙利 佩斯（感谢关注youtube：8度科技）
-      - CH_37+@WangCai_1
-      - CH_40+@WangCai_1
-      - CH_43+@WangCai_1
-      - CH_60+@WangCai_1
-      - CH_13+@WangCai_1
-      - CH_59+@WangCai_1
-      - CH_68+@WangCai_1
-      - CH_39+@WangCai_1
-      - CH_41+@WangCai_1
-      - CH_38+@WangCai_1
-      - CH_44+@WangCai_1
-      - CH_66+@WangCai_1
-      - CH_15+@WangCai_1
-      - CH_18+@WangCai_1
-      - CH_61+@WangCai_1
-      - CH_32+@WangCai_1
-      - CH_14+@WangCai_1
-      - CH_42+@WangCai_1
-      - CH_64+@WangCai_1
-      - CH_58+@WangCai_1
-      - CH_46+@WangCai_1
-      - CH_57+@WangCai_1
-      - CH_65+@WangCai_1
-      - CH_19+@WangCai_1
-      - CH_67+@WangCai_1
-      - CH_36+@WangCai_1
-      - CH_49+@WangCai_1
-      - CH_82+@WangCai_1
-      - CH_62+@WangCai_1
-      - CH_56+@WangCai_1
-      - CH_20+@WangCai_1
-      - CH_75+@WangCai_1
-      - CH_83+@WangCai_1
-      - CH_78+@WangCai_1
-      - CH_47+@WangCai_1
-      - CH_52+@WangCai_1
-      - CH_34+@WangCai_1
-      - CH_48+@WangCai_1
+      - 匈牙利 佩斯（感谢关注youtube：8度科技） 2
       - 🇬🇧 英国（感谢关注youtube：8度科技）
-      - CH_16+@WangCai_1
-      - CH_17+@WangCai_1
-      - CH_35+@WangCai_1
-      - CH_51+@WangCai_1
-      - CH_76+@WangCai_1
-      - CH_80+@WangCai_1
+      - CH_83+@WangCai_1
+      - CH_82+@WangCai_1
       - CH_81+@WangCai_1
-      - CH_27+@WangCai_1
-      - CH_30+@WangCai_1
-      - CH_69+@WangCai_1
-      - CH_28+@WangCai_1
-      - CH_53+@WangCai_1
-      - CH_54+@WangCai_1
-      - CH_70+@WangCai_1
-      - CH_22+@WangCai_1
-      - CH_23+@WangCai_1
-      - CH_24+@WangCai_1
-      - CH_29+@WangCai_1
-      - CH_31+@WangCai_1
-      - CH_50+@WangCai_1
-      - CH_55+@WangCai_1
-      - CH_72+@WangCai_1
-      - CH_26+@WangCai_1
-      - CH_33+@WangCai_1
+      - CH_80+@WangCai_1
       - CH_79+@WangCai_1
+      - CH_78+@WangCai_1
+      - CH_76+@WangCai_1
+      - CH_75+@WangCai_1
+      - CH_72+@WangCai_1
+      - CH_70+@WangCai_1
+      - CH_69+@WangCai_1
+      - CH_68+@WangCai_1
+      - CH_67+@WangCai_1
+      - CH_66+@WangCai_1
+      - CH_65+@WangCai_1
+      - CH_64+@WangCai_1
+      - CH_62+@WangCai_1
+      - CH_61+@WangCai_1
+      - CH_60+@WangCai_1
+      - CH_59+@WangCai_1
+      - CH_58+@WangCai_1
+      - CH_57+@WangCai_1
+      - CH_56+@WangCai_1
+      - CH_55+@WangCai_1
+      - CH_54+@WangCai_1
+      - CH_53+@WangCai_1
+      - CH_52+@WangCai_1
+      - CH_51+@WangCai_1
+      - CH_50+@WangCai_1
+      - CH_49+@WangCai_1
+      - CH_48+@WangCai_1
+      - CH_47+@WangCai_1
+      - CH_46+@WangCai_1
+      - CH_44+@WangCai_1
+      - CH_43+@WangCai_1
+      - CH_42+@WangCai_1
+      - CH_41+@WangCai_1
+      - CH_40+@WangCai_1
+      - CH_39+@WangCai_1
+      - CH_38+@WangCai_1
+      - CH_37+@WangCai_1
+      - CH_36+@WangCai_1
+      - CH_35+@WangCai_1
+      - CH_34+@WangCai_1
+      - CH_33+@WangCai_1
+      - CH_32+@WangCai_1
+      - CH_31+@WangCai_1
+      - CH_30+@WangCai_1
+      - CH_29+@WangCai_1
+      - CH_28+@WangCai_1
+      - CH_27+@WangCai_1
+      - CH_26+@WangCai_1
+      - CH_24+@WangCai_1
+      - CH_23+@WangCai_1
+      - CH_22+@WangCai_1
       - CH_21+@WangCai_1
+      - CH_20+@WangCai_1
+      - CH_19+@WangCai_1
+      - CH_18+@WangCai_1
+      - CH_17+@WangCai_1
+      - CH_16+@WangCai_1
+      - CH_15+@WangCai_1
+      - CH_14+@WangCai_1
+      - CH_13+@WangCai_1
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技）
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 2
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 3
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 4
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 5
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 6
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 7
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 8
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 9
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 10
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 11
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 12
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 13
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 14
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 15
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 16
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 17
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 18
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 19
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 20
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 21
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 22
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 23
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 24
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 25
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 26
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 27
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 28
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 29
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 30
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 31
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 32
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 33
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 34
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 35
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 36
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 37
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 38
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -521,71 +794,110 @@ proxy-groups:
       - 🎯 全球直连
       - ♻️ 自动选择
       - 匈牙利 佩斯（感谢关注youtube：8度科技）
-      - CH_37+@WangCai_1
-      - CH_40+@WangCai_1
-      - CH_43+@WangCai_1
-      - CH_60+@WangCai_1
-      - CH_13+@WangCai_1
-      - CH_59+@WangCai_1
-      - CH_68+@WangCai_1
-      - CH_39+@WangCai_1
-      - CH_41+@WangCai_1
-      - CH_38+@WangCai_1
-      - CH_44+@WangCai_1
-      - CH_66+@WangCai_1
-      - CH_15+@WangCai_1
-      - CH_18+@WangCai_1
-      - CH_61+@WangCai_1
-      - CH_32+@WangCai_1
-      - CH_14+@WangCai_1
-      - CH_42+@WangCai_1
-      - CH_64+@WangCai_1
-      - CH_58+@WangCai_1
-      - CH_46+@WangCai_1
-      - CH_57+@WangCai_1
-      - CH_65+@WangCai_1
-      - CH_19+@WangCai_1
-      - CH_67+@WangCai_1
-      - CH_36+@WangCai_1
-      - CH_49+@WangCai_1
-      - CH_82+@WangCai_1
-      - CH_62+@WangCai_1
-      - CH_56+@WangCai_1
-      - CH_20+@WangCai_1
-      - CH_75+@WangCai_1
-      - CH_83+@WangCai_1
-      - CH_78+@WangCai_1
-      - CH_47+@WangCai_1
-      - CH_52+@WangCai_1
-      - CH_34+@WangCai_1
-      - CH_48+@WangCai_1
+      - 匈牙利 佩斯（感谢关注youtube：8度科技） 2
       - 🇬🇧 英国（感谢关注youtube：8度科技）
-      - CH_16+@WangCai_1
-      - CH_17+@WangCai_1
-      - CH_35+@WangCai_1
-      - CH_51+@WangCai_1
-      - CH_76+@WangCai_1
-      - CH_80+@WangCai_1
+      - CH_83+@WangCai_1
+      - CH_82+@WangCai_1
       - CH_81+@WangCai_1
-      - CH_27+@WangCai_1
-      - CH_30+@WangCai_1
-      - CH_69+@WangCai_1
-      - CH_28+@WangCai_1
-      - CH_53+@WangCai_1
-      - CH_54+@WangCai_1
-      - CH_70+@WangCai_1
-      - CH_22+@WangCai_1
-      - CH_23+@WangCai_1
-      - CH_24+@WangCai_1
-      - CH_29+@WangCai_1
-      - CH_31+@WangCai_1
-      - CH_50+@WangCai_1
-      - CH_55+@WangCai_1
-      - CH_72+@WangCai_1
-      - CH_26+@WangCai_1
-      - CH_33+@WangCai_1
+      - CH_80+@WangCai_1
       - CH_79+@WangCai_1
+      - CH_78+@WangCai_1
+      - CH_76+@WangCai_1
+      - CH_75+@WangCai_1
+      - CH_72+@WangCai_1
+      - CH_70+@WangCai_1
+      - CH_69+@WangCai_1
+      - CH_68+@WangCai_1
+      - CH_67+@WangCai_1
+      - CH_66+@WangCai_1
+      - CH_65+@WangCai_1
+      - CH_64+@WangCai_1
+      - CH_62+@WangCai_1
+      - CH_61+@WangCai_1
+      - CH_60+@WangCai_1
+      - CH_59+@WangCai_1
+      - CH_58+@WangCai_1
+      - CH_57+@WangCai_1
+      - CH_56+@WangCai_1
+      - CH_55+@WangCai_1
+      - CH_54+@WangCai_1
+      - CH_53+@WangCai_1
+      - CH_52+@WangCai_1
+      - CH_51+@WangCai_1
+      - CH_50+@WangCai_1
+      - CH_49+@WangCai_1
+      - CH_48+@WangCai_1
+      - CH_47+@WangCai_1
+      - CH_46+@WangCai_1
+      - CH_44+@WangCai_1
+      - CH_43+@WangCai_1
+      - CH_42+@WangCai_1
+      - CH_41+@WangCai_1
+      - CH_40+@WangCai_1
+      - CH_39+@WangCai_1
+      - CH_38+@WangCai_1
+      - CH_37+@WangCai_1
+      - CH_36+@WangCai_1
+      - CH_35+@WangCai_1
+      - CH_34+@WangCai_1
+      - CH_33+@WangCai_1
+      - CH_32+@WangCai_1
+      - CH_31+@WangCai_1
+      - CH_30+@WangCai_1
+      - CH_29+@WangCai_1
+      - CH_28+@WangCai_1
+      - CH_27+@WangCai_1
+      - CH_26+@WangCai_1
+      - CH_24+@WangCai_1
+      - CH_23+@WangCai_1
+      - CH_22+@WangCai_1
       - CH_21+@WangCai_1
+      - CH_20+@WangCai_1
+      - CH_19+@WangCai_1
+      - CH_18+@WangCai_1
+      - CH_17+@WangCai_1
+      - CH_16+@WangCai_1
+      - CH_15+@WangCai_1
+      - CH_14+@WangCai_1
+      - CH_13+@WangCai_1
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技）
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 2
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 3
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 4
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 5
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 6
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 7
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 8
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 9
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 10
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 11
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 12
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 13
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 14
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 15
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 16
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 17
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 18
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 19
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 20
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 21
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 22
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 23
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 24
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 25
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 26
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 27
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 28
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 29
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 30
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 31
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 32
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 33
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 34
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 35
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 36
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 37
+      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 38
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
