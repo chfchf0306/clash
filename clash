@@ -5,779 +5,1925 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 匈牙利 佩斯（感谢关注youtube：8度科技）, server: 185.225.69.134, port: 45081, type: vmess, uuid: 3c3bfd75-dc30-4e76-8940-47e1137e21f9, alterId: 64, cipher: auto, tls: false}
-  - {name: 匈牙利 佩斯（感谢关注youtube：8度科技） 2, server: 185.225.69.134, port: 45081, type: vmess, uuid: 3c3bfd75-dc30-4e76-8940-47e1137e21f9, alterId: 64, cipher: auto, tls: false}
-  - {name: 🇬🇧 英国（感谢关注youtube：8度科技）, server: 91.206.168.68, port: 49339, type: ss, cipher: aes-256-gcm, password: suucSeVLmt6PQKAP77NtGw9x}
-  - {name: CH_83+@WangCai_1, server: 156.146.62.37, port: 41306, type: ss, cipher: aes-256-gcm, password: pzB5Y2twNtqFzWhEbBsPJMjj}
-  - {name: CH_82+@WangCai_1, server: 156.146.62.37, port: 39171, type: ss, cipher: aes-256-gcm, password: z4pM2gA9QEEC6NRmqTQubm6Z}
-  - {name: CH_81+@WangCai_1, server: 156.146.62.37, port: 44102, type: ss, cipher: aes-256-gcm, password: zHKYS9DeAjvv43EwgDfyEg4d}
-  - {name: CH_80+@WangCai_1, server: 156.146.62.37, port: 40711, type: ss, cipher: aes-256-gcm, password: rnngxSTJrXWKXHkvrF3npp9B}
-  - {name: CH_79+@WangCai_1, server: 156.146.62.37, port: 32971, type: ss, cipher: aes-256-gcm, password: vwS65ZXyZg85ApwZ2bBh6zFZ}
-  - {name: CH_78+@WangCai_1, server: 156.146.62.37, port: 31216, type: ss, cipher: aes-256-gcm, password: wJwXatAGZ8xX5K8C7mruf84x}
-  - {name: CH_76+@WangCai_1, server: 156.146.62.37, port: 50695, type: ss, cipher: aes-256-gcm, password: gqtwGu9bVreJqL3FTHSVKGzy}
-  - {name: CH_75+@WangCai_1, server: 156.146.62.37, port: 50232, type: ss, cipher: aes-256-gcm, password: CjchzpwdSjRtDjezYMwx9BKM}
-  - {name: CH_72+@WangCai_1, server: 156.146.62.37, port: 50181, type: ss, cipher: aes-256-gcm, password: d9adRr9UxymNSysYahMtpFpd}
-  - {name: CH_70+@WangCai_1, server: 156.146.62.37, port: 50024, type: ss, cipher: aes-256-gcm, password: b2jDPHUQxCNa2KmGHZjy7C4B}
-  - {name: CH_69+@WangCai_1, server: 156.146.62.37, port: 49719, type: ss, cipher: aes-256-gcm, password: 42SjT9vBF6ma9eFF3URaJpQ4}
-  - {name: CH_68+@WangCai_1, server: 156.146.62.37, port: 49653, type: ss, cipher: aes-256-gcm, password: Y9GcTPemHMKEkrfGQPJqFDNr}
-  - {name: CH_67+@WangCai_1, server: 156.146.62.37, port: 49514, type: ss, cipher: aes-256-gcm, password: dpGjA4GkzV28QPDYzEp94cTe}
-  - {name: CH_66+@WangCai_1, server: 156.146.62.37, port: 49468, type: ss, cipher: aes-256-gcm, password: LsYSQDxmPj9AcWpSX5HrYfu6}
-  - {name: CH_65+@WangCai_1, server: 156.146.62.37, port: 49396, type: ss, cipher: aes-256-gcm, password: BdRWC38L5JUDMTYNNxJGcUwB}
-  - {name: CH_64+@WangCai_1, server: 156.146.62.37, port: 49339, type: ss, cipher: aes-256-gcm, password: suucSeVLmt6PQKAP77NtGw9x}
-  - {name: CH_62+@WangCai_1, server: 156.146.62.37, port: 49126, type: ss, cipher: aes-256-gcm, password: wrCaGtrUbzeRqQLdc8Kmk3Nd}
-  - {name: CH_61+@WangCai_1, server: 156.146.62.37, port: 48970, type: ss, cipher: aes-256-gcm, password: ZKEsXkFbUZ2z667YA8A7cEDP}
-  - {name: CH_60+@WangCai_1, server: 156.146.62.37, port: 48938, type: ss, cipher: aes-256-gcm, password: 4ejJ8n5ddLuYDUHGXJre2ufJ}
-  - {name: CH_59+@WangCai_1, server: 156.146.62.37, port: 48794, type: ss, cipher: aes-256-gcm, password: r9Q3adc3ru9sfBDPEj4yp6U6}
-  - {name: CH_58+@WangCai_1, server: 156.146.62.37, port: 48089, type: ss, cipher: aes-256-gcm, password: apqQgXJyVDsdJMAYV4xspRFK}
-  - {name: CH_57+@WangCai_1, server: 156.146.62.37, port: 47861, type: ss, cipher: aes-256-gcm, password: LJcChRsGQRhywrtXUU55TLTu}
-  - {name: CH_56+@WangCai_1, server: 156.146.62.37, port: 47553, type: ss, cipher: aes-256-gcm, password: t2JnnFqjDMmzWurseJPgBsYY}
-  - {name: CH_55+@WangCai_1, server: 156.146.62.37, port: 47121, type: ss, cipher: aes-256-gcm, password: CTK8GXFQgKYQErrghPJfZ6tk}
-  - {name: CH_54+@WangCai_1, server: 156.146.62.37, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z}
-  - {name: CH_53+@WangCai_1, server: 156.146.62.37, port: 46726, type: ss, cipher: aes-256-gcm, password: 2fqKbFPGHpcmMTJzGsUbsfYf}
-  - {name: CH_52+@WangCai_1, server: 156.146.62.37, port: 46642, type: ss, cipher: aes-256-gcm, password: gYL83DQWXuDbxmZAVVtUTXaK}
-  - {name: CH_51+@WangCai_1, server: 156.146.62.37, port: 46412, type: ss, cipher: aes-256-gcm, password: GEqk9WGyybeyXW97YEdanDYs}
-  - {name: CH_50+@WangCai_1, server: 156.146.62.37, port: 46354, type: ss, cipher: aes-256-gcm, password: MYPKdC7n6qjL6xmJBBcrzzqS}
-  - {name: CH_49+@WangCai_1, server: 156.146.62.37, port: 45948, type: ss, cipher: aes-256-gcm, password: j76EXqJcQhuQTr3EvUf7xaK9}
-  - {name: CH_48+@WangCai_1, server: 156.146.62.37, port: 45746, type: ss, cipher: aes-256-gcm, password: wEsFcHCvbL4eJkL4DZQa7RgR}
-  - {name: CH_47+@WangCai_1, server: 156.146.62.37, port: 45329, type: ss, cipher: aes-256-gcm, password: CXSjgD7u7Ar7GxkZ4CgTMUsj}
-  - {name: CH_46+@WangCai_1, server: 156.146.62.37, port: 45291, type: ss, cipher: aes-256-gcm, password: ecfJrNtBZwT748hxJ3ZyzZj2}
-  - {name: CH_44+@WangCai_1, server: 156.146.62.37, port: 44820, type: ss, cipher: aes-256-gcm, password: jspgz9G3VmvBMCgMUWLBaZHu}
-  - {name: CH_43+@WangCai_1, server: 156.146.62.37, port: 44745, type: ss, cipher: aes-256-gcm, password: fyXdw87yCH9SAmFkPvsvLVqC}
-  - {name: CH_42+@WangCai_1, server: 156.146.62.37, port: 44742, type: ss, cipher: aes-256-gcm, password: QCStKzZ56SHBc4tL7stCEqqd}
-  - {name: CH_41+@WangCai_1, server: 156.146.62.37, port: 44628, type: ss, cipher: aes-256-gcm, password: VASQbVcukHfdBGmeS9L7Z8TT}
+  - {name: 🇸🇬 新加坡_002 关注Tg交流群_@Mshare_T, server: 00.cn3.rocketdns.xyz, port: 65017, type: vmess, uuid: 1a1a1583-8416-3009-b6de-46f911472d73, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /rocket, ws-headers: {Host: 00.cn3.rocketdns.xyz}}
+  - {name: 🇭🇰 香港_001 Tg交流群 @Mshare_T, server: 00.cn1.rocketdns.xyz, port: 65003, type: vmess, uuid: 1a1a1583-8416-3009-b6de-46f911472d73, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /rocket, ws-headers: {Host: 00.cn1.rocketdns.xyz}}
+  - {name: 🇭🇰 香港_002 Tg交流群 @Mshare_T, server: 00.cn3.rocketdns.xyz, port: 65002, type: vmess, uuid: 1a1a1583-8416-3009-b6de-46f911472d73, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /rocket, ws-headers: {Host: 00.cn3.rocketdns.xyz}}
+  - {name: 🇭🇰 香港_019 Tg交流群 @Mshare_T, server: hkaz5.biteb.club, port: 10257, type: vmess, uuid: db0da82d-d7bf-3978-b541-55132f08de15, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: index, ws-headers: {Host: hkaz5.biteb.club}}
+  - {name: 🇯🇵 日本_002 关注Tg交流群_@Mshare_T, server: 00.cn1.rocketdns.xyz, port: 65006, type: vmess, uuid: 1a1a1583-8416-3009-b6de-46f911472d73, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /rocket, ws-headers: {Host: 00.cn1.rocketdns.xyz}}
+  - {name: 🇮🇩 印尼_001 Tg交流群 @Mshare_T, server: jmyd2.nkeo.top, port: 61780, type: vmess, uuid: 765040cb-15f4-43da-9e07-4b92c767d222, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /id-dnf7328g, ws-headers: {Host: mdid.jsdelivr.net}}
+  - {name: 🇸🇬 新加坡_004 关注Tg交流群_@Mshare_T, server: 00.cn1.rocketdns.xyz, port: 65015, type: vmess, uuid: 1a1a1583-8416-3009-b6de-46f911472d73, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /rocket, ws-headers: {Host: 00.cn1.rocketdns.xyz}}
+  - {name: 🇯🇵 日本_003 关注Tg交流群_@Mshare_T, server: 00.cn2.rocketdns.xyz, port: 65004, type: vmess, uuid: 1a1a1583-8416-3009-b6de-46f911472d73, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /rocket, ws-headers: {Host: 00.cn2.rocketdns.xyz}}
+  - {name: 🇸🇬 新加坡_003 关注Tg交流群_@Mshare_T, server: 00.cn2.rocketdns.xyz, port: 65016, type: vmess, uuid: 1a1a1583-8416-3009-b6de-46f911472d73, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /rocket, ws-headers: {Host: 00.cn2.rocketdns.xyz}}
+  - {name: 🇯🇵 日本_007 关注Tg交流群_@Mshare_T, server: 00.cn3.rocketdns.xyz, port: 65005, type: vmess, uuid: 1a1a1583-8416-3009-b6de-46f911472d73, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /rocket, ws-headers: {Host: 00.cn3.rocketdns.xyz}}
+  - {name: 🇭🇰 香港_003 Tg交流群 @Mshare_T, server: 00.cn2.rocketdns.xyz, port: 65001, type: vmess, uuid: 1a1a1583-8416-3009-b6de-46f911472d73, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /rocket, ws-headers: {Host: 00.cn2.rocketdns.xyz}}
+  - {name: 澳門_001 关注Tg交流群_@Mshare_T, server: jmyd2.nkeo.top, port: 61780, type: vmess, uuid: 765040cb-15f4-43da-9e07-4b92c767d222, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /dgfdh/45sg, ws-headers: {Host: slhk.jsdelivr.net}}
+  - {name: 🇯🇵 日本_009 关注Tg交流群_@Mshare_T, server: cm-jm.okvpn.xyz, port: 20015, type: vmess, uuid: 1a26ac9c-2e11-469b-ba86-9970c6cc7b3e, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: cm-jm.okvpn.xyz}}
+  - {name: 🇲🇾 马来西亚_001 关注Tg交流群_@Mshare_T, server: 00.cn1.rocketdns.xyz, port: 65018, type: vmess, uuid: 1a1a1583-8416-3009-b6de-46f911472d73, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /rocket, ws-headers: {Host: 00.cn1.rocketdns.xyz}}
+  - {name: 🇭🇰 香港_011 Tg交流群 @Mshare_T, server: cmjm2.xhbao.me, port: 58965, type: vmess, uuid: 6ae2e994-2018-4f9f-a5bb-4639c14ba05f, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: cmjm2.xhbao.me}}
+  - {name: 🇭🇰 香港_004 Tg交流群 @Mshare_T, server: 00.cn1.rocketdns.xyz, port: 65000, type: vmess, uuid: 1a1a1583-8416-3009-b6de-46f911472d73, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /rocket, ws-headers: {Host: 00.cn1.rocketdns.xyz}}
+  - {name: 🇹🇼 台湾_004 关注Tg交流群_@Mshare_T, server: 00.cn3.rocketdns.xyz, port: 65014, type: vmess, uuid: 1a1a1583-8416-3009-b6de-46f911472d73, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /rocket, ws-headers: {Host: 00.cn3.rocketdns.xyz}}
+  - {name: 🇭🇰 香港_010 Tg交流群 @Mshare_T, server: aws.774.gs, port: 8888, type: vmess, uuid: 6ae2e994-2018-4f9f-a5bb-4639c14ba05f, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: aws.774.gs}}
+  - {name: 🇺🇸 美国_006 关注Tg交流群_@Mshare_T, server: jpaz3.biteb.club, port: 10020, type: vmess, uuid: db0da82d-d7bf-3978-b541-55132f08de15, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: index, ws-headers: {Host: jpaz3.biteb.club}}
+  - {name: 🇯🇵 日本_006 关注Tg交流群_@Mshare_T, server: cu-cs.okvpn.xyz, port: 30019, type: vmess, uuid: 1a26ac9c-2e11-469b-ba86-9970c6cc7b3e, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: cu-cs.okvpn.xyz}}
+  - {name: 🇹🇼 台湾_001 关注Tg交流群_@Mshare_T, server: 00.cn2.rocketdns.xyz, port: 65013, type: vmess, uuid: 1a1a1583-8416-3009-b6de-46f911472d73, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /rocket, ws-headers: {Host: 00.cn2.rocketdns.xyz}}
+  - {name: 🇺🇸 美国_002 关注Tg交流群_@Mshare_T, server: 00.cn2.rocketdns.xyz, port: 65010, type: vmess, uuid: 1a1a1583-8416-3009-b6de-46f911472d73, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /rocket, ws-headers: {Host: 00.cn2.rocketdns.xyz}}
+  - {name: 🇺🇸 美国_003 关注Tg交流群_@Mshare_T, server: 00.cn3.rocketdns.xyz, port: 65011, type: vmess, uuid: 1a1a1583-8416-3009-b6de-46f911472d73, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /rocket, ws-headers: {Host: 00.cn3.rocketdns.xyz}}
+  - {name: 🇷🇺 俄罗斯_001 关注Tg交流群_@Mshare_T, server: 00.cn2.rocketdns.xyz, port: 65019, type: vmess, uuid: 1a1a1583-8416-3009-b6de-46f911472d73, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /rocket, ws-headers: {Host: 00.cn2.rocketdns.xyz}}
+  - {name: 🇹🇼 台湾 05(欢迎订阅youtube：8度科技）, server: bgp.okvpn.xyz, port: 33501, type: vmess, uuid: 1a26ac9c-2e11-469b-ba86-9970c6cc7b3e, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: bgp.okvpn.xyz}}
+  - {name: 🇩🇪 德国(欢迎订阅youtube：8度科技), server: 00.cn3.rocketdns.xyz, port: 65008, type: vmess, uuid: 1a1a1583-8416-3009-b6de-46f911472d73, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /rocket, ws-headers: {Host: 00.cn3.rocketdns.xyz}}
+  - {name: 🇯🇵 日本_005 关注Tg交流群_@Mshare_T, server: jp-tokyo-node2.ycgyg.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, network: ws, ws-path: /ws, ws-headers: {Host: jp-tokyo-node2.ycgyg.com}}
+  - {name: 🇺🇸 美国_040 关注Tg交流群_@Mshare_T, server: cu-cs.okvpn.xyz, port: 30013, type: vmess, uuid: 1a26ac9c-2e11-469b-ba86-9970c6cc7b3e, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: cu-cs.okvpn.xyz}}
+  - {name: 🇹🇼 台湾 06(欢迎订阅youtube：8度科技）, server: cm-jm.okvpn.xyz, port: 20047, type: vmess, uuid: 1a26ac9c-2e11-469b-ba86-9970c6cc7b3e, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: cm-jm.okvpn.xyz}}
+  - {name: 🇬🇧 英国(欢迎订阅youtube：8度科技), server: 00.cn1.rocketdns.xyz, port: 65009, type: vmess, uuid: 1a1a1583-8416-3009-b6de-46f911472d73, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /rocket, ws-headers: {Host: 00.cn1.rocketdns.xyz}}
+  - {name: 🇺🇸 美国_001 关注Tg交流群_@Mshare_T, server: 00.cn1.rocketdns.xyz, port: 65012, type: vmess, uuid: 1a1a1583-8416-3009-b6de-46f911472d73, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /rocket, ws-headers: {Host: 00.cn1.rocketdns.xyz}}
+  - {name: 🇹🇼 台湾 07(欢迎订阅youtube：8度科技）, server: cu-cs.okvpn.xyz, port: 30021, type: vmess, uuid: 1a26ac9c-2e11-469b-ba86-9970c6cc7b3e, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: cu-cs.okvpn.xyz}}
+  - {name: 🇺🇸 美国_041 关注Tg交流群_@Mshare_T, server: cm-jm.okvpn.xyz, port: 20004, type: vmess, uuid: 1a26ac9c-2e11-469b-ba86-9970c6cc7b3e, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: cm-jm.okvpn.xyz}}
+  - {name: 🇸🇬 新加坡_006 关注Tg交流群_@Mshare_T, server: bgp.okvpn.xyz, port: 33508, type: vmess, uuid: 1a26ac9c-2e11-469b-ba86-9970c6cc7b3e, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: bgp.okvpn.xyz}}
+  - {name: 🇬🇧 英国(欢迎订阅youtube：8度科技) 2, server: cm-jm.okvpn.xyz, port: 20005, type: vmess, uuid: 1a26ac9c-2e11-469b-ba86-9970c6cc7b3e, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: cm-jm.okvpn.xyz}}
+  - {name: 🇬🇧 英国(欢迎订阅youtube：8度科技) 3, server: cu-cs.okvpn.xyz, port: 30016, type: vmess, uuid: 1a26ac9c-2e11-469b-ba86-9970c6cc7b3e, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: cu-cs.okvpn.xyz}}
+  - {name: 🇬🇧 英国(欢迎订阅youtube：8度科技) 4, server: bgp.okvpn.xyz, port: 33506, type: vmess, uuid: 1a26ac9c-2e11-469b-ba86-9970c6cc7b3e, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: bgp.okvpn.xyz}}
+  - {name: 🇹🇼 台湾 04(欢迎订阅youtube：8度科技）, server: cu-cs.okvpn.xyz, port: 30012, type: vmess, uuid: 1a26ac9c-2e11-469b-ba86-9970c6cc7b3e, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: cu-cs.okvpn.xyz}}
+  - {name: 🇯🇵 日本_008 关注Tg交流群_@Mshare_T, server: bgp.okvpn.xyz, port: 33507, type: vmess, uuid: 1a26ac9c-2e11-469b-ba86-9970c6cc7b3e, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: bgp.okvpn.xyz}}
+  - {name: 🇹🇼 台湾 03(欢迎订阅youtube：8度科技）, server: cm-jm.okvpn.xyz, port: 20002, type: vmess, uuid: 1a26ac9c-2e11-469b-ba86-9970c6cc7b3e, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: cm-jm.okvpn.xyz}}
+  - {name: 🇸🇬 新加坡_008 关注Tg交流群_@Mshare_T, server: cu-cs.okvpn.xyz, port: 30014, type: vmess, uuid: 1a26ac9c-2e11-469b-ba86-9970c6cc7b3e, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: cu-cs.okvpn.xyz}}
+  - {name: 🇸🇬 新加坡_009 关注Tg交流群_@Mshare_T, server: cm-jm.okvpn.xyz, port: 20049, type: vmess, uuid: 1a26ac9c-2e11-469b-ba86-9970c6cc7b3e, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: cm-jm.okvpn.xyz}}
+  - {name: 🇹🇼 台湾 02(欢迎订阅youtube：8度科技）, server: cu-cs.okvpn.xyz, port: 30015, type: vmess, uuid: 1a26ac9c-2e11-469b-ba86-9970c6cc7b3e, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: cu-cs.okvpn.xyz}}
+  - {name: 🇯🇵 日本_004 关注Tg交流群_@Mshare_T, server: ycgyg.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, network: ws, ws-path: /ws, ws-headers: {Host: ycgyg.com}}
+  - {name: 🇭🇰 香港_017 Tg交流群 @Mshare_T, server: cm-jm.okvpn.xyz, port: 20001, type: vmess, uuid: 1a26ac9c-2e11-469b-ba86-9970c6cc7b3e, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: cm-jm.okvpn.xyz}}
+  - {name: 🇭🇰 中转|香港CMHK07|微信：ddly000, server: cu-cs.okvpn.xyz, port: 30011, type: vmess, uuid: 1a26ac9c-2e11-469b-ba86-9970c6cc7b3e, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: cu-cs.okvpn.xyz}}
+  - {name: 🇹🇼 台湾_005 关注Tg交流群_@Mshare_T, server: bgp.okvpn.xyz, port: 33505, type: vmess, uuid: 1a26ac9c-2e11-469b-ba86-9970c6cc7b3e, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: bgp.okvpn.xyz}}
+  - {name: 🇹🇼 台湾 01(欢迎订阅youtube：8度科技）, server: cm-jm.okvpn.xyz, port: 20000, type: vmess, uuid: 1a26ac9c-2e11-469b-ba86-9970c6cc7b3e, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: cm-jm.okvpn.xyz}}
+  - {name: 🇸🇬 新加坡_001 关注Tg交流群_@Mshare_T, server: d91.v2s8.2223.pub, port: 8080, type: vmess, uuid: c77e573d-74b7-d04d-dcdd-4ee7c6e4f47a, alterId: 0, cipher: auto, tls: false, network: ws, ws-path: /iklsajwed, ws-headers: {Host: cdn91v2.sg1.51jump.co}}
+  - {name: 🇭🇰 香港_020 Tg交流群 @Mshare_T, server: d91.v1a2.2223.pub, port: 8080, type: vmess, uuid: c77e573d-74b7-d04d-dcdd-4ee7c6e4f47a, alterId: 0, cipher: auto, tls: false, network: ws, ws-path: /iklsajwed, ws-headers: {Host: t.me/vpnhat}}
+  - {name: 🇭🇰 香港_022 Tg交流群 @Mshare_T, server: d91.v2s2.2223.pub, port: 8080, type: vmess, uuid: c77e573d-74b7-d04d-dcdd-4ee7c6e4f47a, alterId: 0, cipher: auto, tls: false, network: ws, ws-path: /iklsajwed, ws-headers: {Host: t.me/vpnhat}}
+  - {name: 🇭🇰 香港_023 Tg交流群 @Mshare_T, server: d91.v2s3.2223.pub, port: 8080, type: vmess, uuid: c77e573d-74b7-d04d-dcdd-4ee7c6e4f47a, alterId: 0, cipher: auto, tls: false, network: ws, ws-path: /iklsajwed, ws-headers: {Host: t.me/vpnhat}}
+  - {name: 🇯🇵 日本_001 关注Tg交流群_@Mshare_T, server: d91.v2s5.2223.pub, port: 8080, type: vmess, uuid: c77e573d-74b7-d04d-dcdd-4ee7c6e4f47a, alterId: 0, cipher: auto, tls: false, network: ws, ws-path: /iklsajwed, ws-headers: {Host: t.me/vpnhat}}
+  - {name: 🇺🇸 美国_008 关注Tg交流群_@Mshare_T, server: bgp.okvpn.xyz, port: 33502, type: vmess, uuid: 1a26ac9c-2e11-469b-ba86-9970c6cc7b3e, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: bgp.okvpn.xyz}}
+  - {name: 🇭🇰 香港_021 Tg交流群 @Mshare_T, server: d91.v2s1.2223.pub, port: 8080, type: vmess, uuid: c77e573d-74b7-d04d-dcdd-4ee7c6e4f47a, alterId: 0, cipher: auto, tls: false, network: ws, ws-path: /iklsajwed, ws-headers: {Host: t.me/vpnhat}}
+  - {name: 🇩🇪 德国(欢迎订阅youtube：8度科技) 2, server: 18.196.13.200, port: 9999, type: vmess, uuid: 6ae2e994-2018-4f9f-a5bb-4639c14ba05f, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 18.196.13.200}}
+  - {name: 🇭🇰 香港_006 Tg交流群 @Mshare_T, server: d91.v1a1.2223.pub, port: 8080, type: vmess, uuid: c77e573d-74b7-d04d-dcdd-4ee7c6e4f47a, alterId: 0, cipher: auto, tls: false, network: ws, ws-path: /iklsajwed, ws-headers: {Host: t.me/vpnhat}}
+  - {name: 🇮🇳 印度_001 关注Tg交流群_@Mshare_T, server: 00.cn2.rocketdns.xyz, port: 65007, type: vmess, uuid: 1a1a1583-8416-3009-b6de-46f911472d73, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /rocket, ws-headers: {Host: 00.cn2.rocketdns.xyz}}
+  - {name: 🇭🇰 香港_024 Tg交流群 @Mshare_T, server: cm-jm.okvpn.cc, port: 20001, type: vmess, uuid: 1a26ac9c-2e11-469b-ba86-9970c6cc7b3e, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: cm-jm.okvpn.cc}}
+  - {name: 🇭🇰 香港_018 Tg交流群 @Mshare_T, server: bgp.okvpn.xyz, port: 33504, type: vmess, uuid: 1a26ac9c-2e11-469b-ba86-9970c6cc7b3e, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: bgp.okvpn.xyz}}
+  - {name: 🇰🇷 韩国_002 关注Tg交流群_@Mshare_T, server: d91.v2s7.2223.pub, port: 8080, type: vmess, uuid: c77e573d-74b7-d04d-dcdd-4ee7c6e4f47a, alterId: 0, cipher: auto, tls: false, network: ws, ws-path: /iklsajwed, ws-headers: {Host: t.me/vpnhat}}
+  - {name: 🇺🇸 美国_016 关注Tg交流群_@Mshare_T, server: v1-do-ua-03.niaoyun.online, port: 666, type: vmess, uuid: 9abca0dd-b438-3bd9-b5db-487af35082d0, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /niaocloud, ws-headers: {Host: v1-do-ua-03.niaoyun.online}}
+  - {name: 🇯🇵 日本 02(欢迎订阅youtube：8度科技), server: 74.servermoa.com, port: 10039, type: ss, cipher: aes-256-gcm, password: 6c21f43e}
+  - {name: 🇯🇵 日本 01(欢迎订阅youtube：8度科技), server: 7.servermoa.com, port: 10039, type: ss, cipher: aes-256-gcm, password: 6c21f43e}
+  - {name: 🇯🇵 日本 03(欢迎订阅youtube：8度科技), server: 76.zikgu.com, port: 10039, type: ss, cipher: chacha20-ietf-poly1305, password: 6c21f43e}
+  - {name: 🇯🇵 日本 02(欢迎订阅youtube：8度科技) 2, server: 73.servermoa.com, port: 10039, type: ss, cipher: aes-256-gcm, password: 6c21f43e}
+  - {name: 🇺🇸 US(欢迎订阅youtube：8度科技), server: 153.zikgu.com, port: 10039, type: ss, cipher: chacha20-ietf-poly1305, password: 6c21f43e}
+  - {name: 🇮🇳 印度(欢迎订阅youtube：8度科技), server: 142.zikgu.com, port: 10039, type: ss, cipher: chacha20-ietf-poly1305, password: 6c21f43e}
+  - {name: 🇮🇳 印度(欢迎订阅youtube：8度科技) 2, server: 14.servermoa.com, port: 10039, type: ss, cipher: aes-256-gcm, password: 6c21f43e}
+  - {name: 🇰🇷 韩国_001 关注Tg交流群_@Mshare_T, server: 1.fbplay.net, port: 10039, type: ss, cipher: aes-256-gcm, password: 6c21f43e}
+  - {name: 🇰🇷 韩国_017 关注Tg交流群_@Mshare_T, server: 23.fbplay.net, port: 10039, type: ss, cipher: aes-256-gcm, password: 6c21f43e}
   - {name: CH_40+@WangCai_1, server: 156.146.62.37, port: 44539, type: ss, cipher: aes-256-gcm, password: r6hDrkP4Et6EENTS8Qy7Tcmg}
-  - {name: CH_39+@WangCai_1, server: 156.146.62.37, port: 44236, type: ss, cipher: aes-256-gcm, password: FWrXcxPZjJxAN89xLgqY3Acp}
-  - {name: CH_38+@WangCai_1, server: 156.146.62.37, port: 43963, type: ss, cipher: aes-256-gcm, password: Tuw6zzZM6JwWNZyYF9ckC4JZ}
-  - {name: CH_37+@WangCai_1, server: 156.146.62.37, port: 43893, type: ss, cipher: aes-256-gcm, password: YyCBeDdYX4cadHpCkkmdJLq8}
-  - {name: CH_36+@WangCai_1, server: 156.146.62.37, port: 42816, type: ss, cipher: aes-256-gcm, password: tBKBf4pVzNCFKdbPgvwrNXq3}
-  - {name: CH_35+@WangCai_1, server: 156.146.62.37, port: 42304, type: ss, cipher: aes-256-gcm, password: p26v2JwhQVHDHsXk66fXt56r}
-  - {name: CH_34+@WangCai_1, server: 156.146.62.37, port: 42185, type: ss, cipher: aes-256-gcm, password: FaTG4zALZru72gxjgSHQ7Jdh}
-  - {name: CH_33+@WangCai_1, server: 156.146.62.37, port: 42166, type: ss, cipher: aes-256-gcm, password: H9Dbn3szZMqLR3NpgEFEPCKb}
-  - {name: CH_32+@WangCai_1, server: 156.146.62.37, port: 41992, type: ss, cipher: aes-256-gcm, password: XmQSxDCn5ehpcq6DBYms8FJf}
-  - {name: CH_31+@WangCai_1, server: 156.146.62.37, port: 41738, type: ss, cipher: aes-256-gcm, password: X6yMGXnfUsuKTvEDYZSLPk4d}
-  - {name: CH_30+@WangCai_1, server: 156.146.62.37, port: 41676, type: ss, cipher: aes-256-gcm, password: z6pH3RyttkRWhJ5tpRyt6dYk}
-  - {name: CH_29+@WangCai_1, server: 156.146.62.37, port: 41372, type: ss, cipher: aes-256-gcm, password: 5kGAhC3AmVC35GbruHjSrZf2}
-  - {name: CH_28+@WangCai_1, server: 156.146.62.37, port: 40282, type: ss, cipher: aes-256-gcm, password: Pvvaw486867D2w4yctL2ULTQ}
-  - {name: CH_27+@WangCai_1, server: 156.146.62.37, port: 40220, type: ss, cipher: aes-256-gcm, password: ugyBkSEFxVEmUYSHyvxmWNj9}
-  - {name: CH_26+@WangCai_1, server: 156.146.62.37, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp}
-  - {name: CH_24+@WangCai_1, server: 156.146.62.37, port: 39720, type: ss, cipher: aes-256-gcm, password: kq8xQKC3K4jYQPwLXTNbJjm6}
-  - {name: CH_23+@WangCai_1, server: 156.146.62.37, port: 39556, type: ss, cipher: aes-256-gcm, password: g4AfpNELpdYEeLYhM8XCX9se}
-  - {name: CH_22+@WangCai_1, server: 156.146.62.37, port: 38747, type: ss, cipher: aes-256-gcm, password: RtbLkxbJZpUQ6m8y4qAeLYZj}
+  - {name: CH_61+@WangCai_1, server: 156.146.62.37, port: 48970, type: ss, cipher: aes-256-gcm, password: ZKEsXkFbUZ2z667YA8A7cEDP}
+  - {name: 🇰🇷 韩国_004 关注Tg交流群_@Mshare_T, server: 108.fbplay.net, port: 10039, type: ss, cipher: aes-256-gcm, password: 6c21f43e}
+  - {name: 🇸🇪 瑞典_025 关注Tg交流群_@Mshare_T, server: 195.181.166.225, port: 49396, type: ss, cipher: aes-256-gcm, password: BdRWC38L5JUDMTYNNxJGcUwB}
+  - {name: 🇺🇸 US(欢迎订阅youtube：8度科技) 2, server: 132.zikgu.com, port: 10039, type: ss, cipher: chacha20-ietf-poly1305, password: 6c21f43e}
+  - {name: 🇸🇪 瑞典_024 关注Tg交流群_@Mshare_T, server: 195.181.166.225, port: 48089, type: ss, cipher: aes-256-gcm, password: apqQgXJyVDsdJMAYV4xspRFK}
+  - {name: 🇺🇸 美国_013 关注Tg交流群_@Mshare_T, server: 185.124.240.146, port: 35371, type: ss, cipher: aes-256-gcm, password: pjeDhAJGuML8xKUxcjRqq6a9}
+  - {name: 🇺🇸 美国(欢迎订阅youtube：8度科技), server: 167.88.61.204, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
   - {name: CH_21+@WangCai_1, server: 156.146.62.37, port: 38742, type: ss, cipher: aes-256-gcm, password: DKXfWwc4ebscpXTKpbt85rSH}
+  - {name: CH_56+@WangCai_1, server: 156.146.62.37, port: 47553, type: ss, cipher: aes-256-gcm, password: t2JnnFqjDMmzWurseJPgBsYY}
+  - {name: 🇸🇪 瑞典_017 关注Tg交流群_@Mshare_T, server: 185.76.9.56, port: 32843, type: ss, cipher: aes-256-gcm, password: G35YSR2LFNEM9bq2dkjmKQRr}
+  - {name: CH_44+@WangCai_1, server: 156.146.62.37, port: 44820, type: ss, cipher: aes-256-gcm, password: jspgz9G3VmvBMCgMUWLBaZHu}
+  - {name: 🇸🇪 瑞典_004 关注Tg交流群_@Mshare_T, server: 195.181.166.225, port: 33148, type: ss, cipher: aes-256-gcm, password: CMduaFXddcQbwNAAs7xFDnc8}
+  - {name: 🇸🇪 瑞典_010 关注Tg交流群_@Mshare_T, server: 195.181.166.225, port: 34815, type: ss, cipher: aes-256-gcm, password: LkFAzkzXkSCRYa2CsRdL8cGb}
+  - {name: 🇸🇪 瑞典_011 关注Tg交流群_@Mshare_T, server: 195.181.166.225, port: 35294, type: ss, cipher: aes-256-gcm, password: J9Y2ncrdPEC38gwydNFFGBna}
+  - {name: CH_54+@WangCai_1, server: 156.146.62.37, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z}
+  - {name: CH_59+@WangCai_1, server: 156.146.62.37, port: 48794, type: ss, cipher: aes-256-gcm, password: r9Q3adc3ru9sfBDPEj4yp6U6}
+  - {name: 🇸🇪 瑞典_003 关注Tg交流群_@Mshare_T, server: 185.76.9.56, port: 37588, type: ss, cipher: aes-256-gcm, password: kD9vkjnE6dsUzwQfvKkPkQAd}
+  - {name: 🇸🇪 瑞典_008 关注Tg交流群_@Mshare_T, server: 195.181.166.225, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
+  - {name: 🇸🇪 瑞典_009 关注Tg交流群_@Mshare_T, server: 195.181.166.225, port: 34687, type: ss, cipher: aes-256-gcm, password: txmK9WhwP6WPhP7hqSBLVxpN}
+  - {name: 🇸🇪 瑞典_019 关注Tg交流群_@Mshare_T, server: 195.181.166.225, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
+  - {name: 🇸🇪 瑞典_022 关注Tg交流群_@Mshare_T, server: 185.76.9.56, port: 48794, type: ss, cipher: aes-256-gcm, password: r9Q3adc3ru9sfBDPEj4yp6U6}
+  - {name: 🇷🇴 罗马尼亚(欢迎订阅youtube：8度科技), server: 193.176.86.198, port: 44236, type: ss, cipher: aes-256-gcm, password: FWrXcxPZjJxAN89xLgqY3Acp}
+  - {name: 🇸🇪 瑞典_005 关注Tg交流群_@Mshare_T, server: 195.181.166.225, port: 31944, type: ss, cipher: aes-256-gcm, password: aYNeKDMzYQYw4KbUbJA8Wszq}
+  - {name: 🇸🇪 瑞典_007 关注Tg交流群_@Mshare_T, server: 195.181.166.225, port: 32558, type: ss, cipher: aes-256-gcm, password: gJYzm3TLbdL495ryQptaJXQk}
+  - {name: 🇸🇪 瑞典_014 关注Tg交流群_@Mshare_T, server: 195.181.166.225, port: 45329, type: ss, cipher: aes-256-gcm, password: CXSjgD7u7Ar7GxkZ4CgTMUsj}
+  - {name: 🇩🇪 德国(欢迎订阅youtube：8度科技) 3, server: 156.146.62.45, port: 38747, type: ss, cipher: aes-256-gcm, password: RtbLkxbJZpUQ6m8y4qAeLYZj}
+  - {name: 🇺🇸 美国(欢迎订阅youtube：8度科技) 2, server: 138.199.42.170, port: 38747, type: ss, cipher: aes-256-gcm, password: RtbLkxbJZpUQ6m8y4qAeLYZj}
+  - {name: 🇺🇸 US(欢迎订阅youtube：8度科技) 3, server: 201.fbplay.net, port: 10100, type: ss, cipher: aes-256-gcm, password: a78172b3}
   - {name: CH_20+@WangCai_1, server: 156.146.62.37, port: 38620, type: ss, cipher: aes-256-gcm, password: Kquv5UhvZXNMemAQy8DxZ7qn}
-  - {name: CH_19+@WangCai_1, server: 156.146.62.37, port: 38033, type: ss, cipher: aes-256-gcm, password: xpQwyV4W5FdA6NMANJJx73US}
-  - {name: CH_18+@WangCai_1, server: 156.146.62.37, port: 37588, type: ss, cipher: aes-256-gcm, password: kD9vkjnE6dsUzwQfvKkPkQAd}
-  - {name: CH_17+@WangCai_1, server: 156.146.62.37, port: 37559, type: ss, cipher: aes-256-gcm, password: Qbt22F6JsxzFGqcsK5SaR8q3}
-  - {name: CH_16+@WangCai_1, server: 156.146.62.37, port: 37473, type: ss, cipher: aes-256-gcm, password: enctdKyJfSu76VqznKwTt6Ap}
-  - {name: CH_15+@WangCai_1, server: 156.146.62.37, port: 36460, type: ss, cipher: aes-256-gcm, password: yUXad7DGF8L5cTShEpnp2N6z}
-  - {name: CH_14+@WangCai_1, server: 156.146.62.37, port: 35371, type: ss, cipher: aes-256-gcm, password: pjeDhAJGuML8xKUxcjRqq6a9}
-  - {name: CH_13+@WangCai_1, server: 156.146.62.37, port: 35294, type: ss, cipher: aes-256-gcm, password: J9Y2ncrdPEC38gwydNFFGBna}
-  - {name: 🇺🇸 US(欢迎订阅YouTube：8度科技）, server: 156.146.62.37, port: 46354, type: ss, cipher: aes-256-gcm, password: MYPKdC7n6qjL6xmJBBcrzzqS}
-  - {name: 🇺🇸 US(欢迎订阅YouTube：8度科技） 2, server: 156.146.62.37, port: 41372, type: ss, cipher: aes-256-gcm, password: 5kGAhC3AmVC35GbruHjSrZf2}
+  - {name: CH_39+@WangCai_1, server: 156.146.62.37, port: 44236, type: ss, cipher: aes-256-gcm, password: FWrXcxPZjJxAN89xLgqY3Acp}
+  - {name: CH_58+@WangCai_1, server: 156.146.62.37, port: 48089, type: ss, cipher: aes-256-gcm, password: apqQgXJyVDsdJMAYV4xspRFK}
+  - {name: CH_60+@WangCai_1, server: 156.146.62.37, port: 48938, type: ss, cipher: aes-256-gcm, password: 4ejJ8n5ddLuYDUHGXJre2ufJ}
+  - {name: 🇰🇷 韩国_005 关注Tg交流群_@Mshare_T, server: 103.fbplay.net, port: 10039, type: ss, cipher: aes-256-gcm, password: 6c21f43e}
+  - {name: 🇰🇷 韩国_007 关注Tg交流群_@Mshare_T, server: 204.fbplay.net, port: 10039, type: ss, cipher: aes-256-gcm, password: 6c21f43e}
+  - {name: 🇸🇪 瑞典_013 关注Tg交流群_@Mshare_T, server: 185.76.9.56, port: 36460, type: ss, cipher: aes-256-gcm, password: yUXad7DGF8L5cTShEpnp2N6z}
+  - {name: 🇸🇪 瑞典_015 关注Tg交流群_@Mshare_T, server: 195.181.166.225, port: 31757, type: ss, cipher: aes-256-gcm, password: wj7nDCuNARchSeKNCN8VFK62}
+  - {name: 🇸🇪 瑞典_018 关注Tg交流群_@Mshare_T, server: 195.181.166.225, port: 39720, type: ss, cipher: aes-256-gcm, password: kq8xQKC3K4jYQPwLXTNbJjm6}
+  - {name: 🇨🇭 瑞士 04(欢迎订阅youtube：8度科技), server: 37.120.213.4, port: 44236, type: ss, cipher: aes-256-gcm, password: FWrXcxPZjJxAN89xLgqY3Acp}
+  - {name: 🇸🇪 瑞典_026 关注Tg交流群_@Mshare_T, server: 185.76.9.56, port: 34815, type: ss, cipher: aes-256-gcm, password: LkFAzkzXkSCRYa2CsRdL8cGb}
+  - {name: 🇹🇷 土耳其_001 关注Tg交流群_@Mshare_T, server: 107.150.94.12, port: 38742, type: ss, cipher: aes-256-gcm, password: DKXfWwc4ebscpXTKpbt85rSH}
+  - {name: 🇺🇸 美国(欢迎订阅youtube：8度科技) 3, server: 167.88.61.50, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: CH_38+@WangCai_1, server: 156.146.62.37, port: 43963, type: ss, cipher: aes-256-gcm, password: Tuw6zzZM6JwWNZyYF9ckC4JZ}
+  - {name: 🇰🇷 韩国_015 关注Tg交流群_@Mshare_T, server: 302.fbplay.net, port: 10039, type: ss, cipher: aes-256-gcm, password: 6c21f43e}
+  - {name: 🇸🇪 瑞典_001 关注Tg交流群_@Mshare_T, server: 185.76.9.56, port: 48089, type: ss, cipher: aes-256-gcm, password: apqQgXJyVDsdJMAYV4xspRFK}
+  - {name: 🇸🇪 瑞典_006 关注Tg交流群_@Mshare_T, server: 185.76.9.56, port: 40282, type: ss, cipher: aes-256-gcm, password: Pvvaw486867D2w4yctL2ULTQ}
+  - {name: 🇸🇪 瑞典_012 关注Tg交流群_@Mshare_T, server: 185.76.9.56, port: 46726, type: ss, cipher: aes-256-gcm, password: 2fqKbFPGHpcmMTJzGsUbsfYf}
+  - {name: 🇮🇪 爱尔兰(欢迎订阅youtube：8度科技), server: 10.servermoa.com, port: 10039, type: ss, cipher: aes-256-gcm, password: 6c21f43e}
+  - {name: 🇸🇪 瑞典(欢迎订阅youtube：8度科技), server: 195.181.166.225, port: 38742, type: ss, cipher: aes-256-gcm, password: DKXfWwc4ebscpXTKpbt85rSH}
+  - {name: 🇹🇷 土耳其_004 关注Tg交流群_@Mshare_T, server: 107.150.94.12, port: 41992, type: ss, cipher: aes-256-gcm, password: XmQSxDCn5ehpcq6DBYms8FJf}
+  - {name: 🇨🇦 加拿大(欢迎订阅youtube：8度科技), server: 134.195.196.50, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: 🇺🇸 US(欢迎订阅YouTube：8度科技）, server: 156.146.62.37, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp}
+  - {name: CH_51+@WangCai_1, server: 156.146.62.37, port: 46412, type: ss, cipher: aes-256-gcm, password: GEqk9WGyybeyXW97YEdanDYs}
+  - {name: 🇷🇴 罗马尼亚_001 关注Tg交流群_@Mshare_T, server: 193.176.86.196, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z}
+  - {name: 🇸🇪 瑞典_016 关注Tg交流群_@Mshare_T, server: 195.181.166.225, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp}
+  - {name: 🇸🇪 瑞典_023 关注Tg交流群_@Mshare_T, server: 185.76.9.56, port: 44742, type: ss, cipher: aes-256-gcm, password: QCStKzZ56SHBc4tL7stCEqqd}
+  - {name: 🇫🇷 法国(欢迎订阅youtube：8度科技), server: 122.zikgu.com, port: 10039, type: ss, cipher: chacha20-ietf-poly1305, password: 6c21f43e}
+  - {name: CH_52+@WangCai_1, server: 156.146.62.37, port: 46642, type: ss, cipher: aes-256-gcm, password: gYL83DQWXuDbxmZAVVtUTXaK}
+  - {name: 🇷🇴 罗马尼亚_002 关注Tg交流群_@Mshare_T, server: 193.176.86.196, port: 49202, type: ss, cipher: aes-256-gcm, password: btzEYXKZxnR7g6H2vFTQK5TD}
+  - {name: 🇺🇸 US(欢迎订阅YouTube：8度科技） 2, server: 156.146.62.37, port: 40711, type: ss, cipher: aes-256-gcm, password: rnngxSTJrXWKXHkvrF3npp9B}
+  - {name: CH_46+@WangCai_1, server: 156.146.62.37, port: 45291, type: ss, cipher: aes-256-gcm, password: ecfJrNtBZwT748hxJ3ZyzZj2}
+  - {name: CH_57+@WangCai_1, server: 156.146.62.37, port: 47861, type: ss, cipher: aes-256-gcm, password: LJcChRsGQRhywrtXUU55TLTu}
+  - {name: 🇸🇪 瑞典_014 关注Tg交流群_@Mshare_T 2, server: 195.181.166.225, port: 44820, type: ss, cipher: aes-256-gcm, password: jspgz9G3VmvBMCgMUWLBaZHu}
+  - {name: 🇸🇪 瑞典_020 关注Tg交流群_@Mshare_T, server: 185.76.9.56, port: 39556, type: ss, cipher: aes-256-gcm, password: g4AfpNELpdYEeLYhM8XCX9se}
+  - {name: 🇬🇧 英国(欢迎订阅youtube：8度科技) 5, server: 112.zikgu.com, port: 10039, type: ss, cipher: chacha20-ietf-poly1305, password: 6c21f43e}
+  - {name: 🇺🇸 US(欢迎订阅youtube：8度科技) 4, server: 66.115.182.68, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
+  - {name: 🇺🇸 美国(欢迎订阅youtube：8度科技) 4, server: 167.88.61.204, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: 🇰🇷 韩国_009 关注Tg交流群_@Mshare_T, server: 202.fbplay.net, port: 10039, type: ss, cipher: aes-256-gcm, password: 6c21f43e}
+  - {name: 🇰🇷 韩国_016 关注Tg交流群_@Mshare_T, server: 301.fbplay.net, port: 10039, type: ss, cipher: aes-256-gcm, password: 6c21f43e}
+  - {name: 🇨🇭 瑞士 01(欢迎订阅youtube：8度科技), server: 37.120.213.4, port: 49202, type: ss, cipher: aes-256-gcm, password: btzEYXKZxnR7g6H2vFTQK5TD}
+  - {name: CH_55+@WangCai_1, server: 156.146.62.37, port: 47121, type: ss, cipher: aes-256-gcm, password: CTK8GXFQgKYQErrghPJfZ6tk}
+  - {name: 🇰🇷 韩国_008 关注Tg交流群_@Mshare_T, server: 203.fbplay.net, port: 10039, type: ss, cipher: aes-256-gcm, password: 6c21f43e}
+  - {name: 🇸🇪 瑞典_021 关注Tg交流群_@Mshare_T, server: 185.76.9.56, port: 44102, type: ss, cipher: aes-256-gcm, password: zHKYS9DeAjvv43EwgDfyEg4d}
+  - {name: 🇨🇭 瑞士 03(欢迎订阅youtube：8度科技), server: 37.120.213.4, port: 49396, type: ss, cipher: aes-256-gcm, password: BdRWC38L5JUDMTYNNxJGcUwB}
+  - {name: 🇺🇸 US(欢迎订阅youtube：8度科技) 5, server: 92.zikgu.com, port: 10039, type: ss, cipher: chacha20-ietf-poly1305, password: 6c21f43e}
+  - {name: CH_23+@WangCai_1, server: 156.146.62.37, port: 39556, type: ss, cipher: aes-256-gcm, password: g4AfpNELpdYEeLYhM8XCX9se}
+  - {name: 🇰🇷 韩国_011 关注Tg交流群_@Mshare_T, server: 501.fbplay.net, port: 10039, type: ss, cipher: chacha20-ietf-poly1305, password: 6c21f43e}
+  - {name: 🇩🇪 德国(欢迎订阅youtube：8度科技) 4, server: 13.servermoa.com, port: 10039, type: ss, cipher: aes-256-gcm, password: 6c21f43e}
+  - {name: 🇺🇸 美国_017 关注Tg交流群_@Mshare_T, server: 85.zikgu.com, port: 10039, type: ss, cipher: chacha20-ietf-poly1305, password: 6c21f43e}
+  - {name: CH_43+@WangCai_1, server: 156.146.62.37, port: 44745, type: ss, cipher: aes-256-gcm, password: fyXdw87yCH9SAmFkPvsvLVqC}
+  - {name: 🇺🇸 美国_021 关注Tg交流群_@Mshare_T, server: 185.124.240.146, port: 33998, type: ss, cipher: aes-256-gcm, password: NHwQTPLCfaTMSqTnU3mjcSxe}
+  - {name: 🇮🇹 意大利 米兰(欢迎订阅youtube：8度科技), server: 212.102.54.163, port: 49126, type: ss, cipher: aes-256-gcm, password: wrCaGtrUbzeRqQLdc8Kmk3Nd}
+  - {name: CH_41+@WangCai_1, server: 156.146.62.37, port: 44628, type: ss, cipher: aes-256-gcm, password: VASQbVcukHfdBGmeS9L7Z8TT}
+  - {name: CH_42+@WangCai_1, server: 156.146.62.37, port: 44742, type: ss, cipher: aes-256-gcm, password: QCStKzZ56SHBc4tL7stCEqqd}
+  - {name: 🇮🇹 意大利_007 关注Tg交流群_@Mshare_T, server: 212.102.54.163, port: 31764, type: ss, cipher: aes-256-gcm, password: YgusH2MWA8PWc3p2VDsR7AVv}
+  - {name: 🇰🇷 韩国_014 关注Tg交流群_@Mshare_T, server: 303.fbplay.net, port: 10039, type: ss, cipher: aes-256-gcm, password: 6c21f43e}
+  - {name: 🇮🇪 爱尔兰 02(欢迎订阅youtube：8度科技), server: 102.zikgu.com, port: 10039, type: ss, cipher: chacha20-ietf-poly1305, password: 6c21f43e}
+  - {name: 🇩🇪 德国(欢迎订阅youtube：8度科技) 5, server: 156.146.33.66, port: 48794, type: ss, cipher: aes-256-gcm, password: r9Q3adc3ru9sfBDPEj4yp6U6}
+  - {name: 🇩🇪 德国(欢迎订阅youtube：8度科技) 6, server: 156.146.33.66, port: 41992, type: ss, cipher: aes-256-gcm, password: XmQSxDCn5ehpcq6DBYms8FJf}
+  - {name: 🇩🇪 德国(欢迎订阅youtube：8度科技) 7, server: 156.146.33.66, port: 49126, type: ss, cipher: aes-256-gcm, password: wrCaGtrUbzeRqQLdc8Kmk3Nd}
+  - {name: 🇩🇪 德国(欢迎订阅youtube：8度科技) 8, server: 156.146.33.66, port: 49468, type: ss, cipher: aes-256-gcm, password: LsYSQDxmPj9AcWpSX5HrYfu6}
+  - {name: 🇮🇹 意大利_005 关注Tg交流群_@Mshare_T, server: 212.102.54.163, port: 42166, type: ss, cipher: aes-256-gcm, password: H9Dbn3szZMqLR3NpgEFEPCKb}
+  - {name: 🇩🇪 德国(欢迎订阅youtube：8度科技) 9, server: 156.146.33.86, port: 35200, type: ss, cipher: aes-256-gcm, password: WBLAbN6AwtV5avBx73hFRLB3}
+  - {name: 🇩🇪 德国(欢迎订阅youtube：8度科技) 10, server: 156.146.33.66, port: 48938, type: ss, cipher: aes-256-gcm, password: 4ejJ8n5ddLuYDUHGXJre2ufJ}
+  - {name: 🇩🇪 德国(欢迎订阅youtube：8度科技) 11, server: 156.146.33.66, port: 49396, type: ss, cipher: aes-256-gcm, password: BdRWC38L5JUDMTYNNxJGcUwB}
+  - {name: 🇩🇪 德国(欢迎订阅youtube：8度科技) 12, server: 156.146.33.74, port: 49396, type: ss, cipher: aes-256-gcm, password: BdRWC38L5JUDMTYNNxJGcUwB}
+  - {name: 🇩🇪 德国(欢迎订阅youtube：8度科技) 13, server: 156.146.33.86, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
+  - {name: CH_24+@WangCai_1, server: 156.146.62.37, port: 39720, type: ss, cipher: aes-256-gcm, password: kq8xQKC3K4jYQPwLXTNbJjm6}
+  - {name: CH_27+@WangCai_1, server: 156.146.62.37, port: 40220, type: ss, cipher: aes-256-gcm, password: ugyBkSEFxVEmUYSHyvxmWNj9}
+  - {name: CH_69+@WangCai_1, server: 156.146.62.37, port: 49719, type: ss, cipher: aes-256-gcm, password: 42SjT9vBF6ma9eFF3URaJpQ4}
+  - {name: 🇩🇪 德国 02(欢迎订阅youtube：8度科技), server: 156.146.33.66, port: 47861, type: ss, cipher: aes-256-gcm, password: LJcChRsGQRhywrtXUU55TLTu}
+  - {name: 🇩🇪 德国(欢迎订阅youtube：8度科技) 14, server: 156.146.33.66, port: 34687, type: ss, cipher: aes-256-gcm, password: txmK9WhwP6WPhP7hqSBLVxpN}
+  - {name: 🇩🇪 德国(欢迎订阅youtube：8度科技) 15, server: 156.146.33.66, port: 38742, type: ss, cipher: aes-256-gcm, password: DKXfWwc4ebscpXTKpbt85rSH}
+  - {name: 伊朗_016 Tg交流群 @Mshare_T, server: 185.108.106.175, port: 48938, type: ss, cipher: aes-256-gcm, password: 4ejJ8n5ddLuYDUHGXJre2ufJ}
+  - {name: 🇮🇹 意大利_001 关注Tg交流群_@Mshare_T, server: 212.102.54.163, port: 41738, type: ss, cipher: aes-256-gcm, password: X6yMGXnfUsuKTvEDYZSLPk4d}
+  - {name: 🇮🇹 意大利_002 关注Tg交流群_@Mshare_T, server: 212.102.54.163, port: 47861, type: ss, cipher: aes-256-gcm, password: LJcChRsGQRhywrtXUU55TLTu}
+  - {name: 🇩🇪 德国(欢迎订阅youtube：8度科技) 16, server: 156.146.33.66, port: 45329, type: ss, cipher: aes-256-gcm, password: CXSjgD7u7Ar7GxkZ4CgTMUsj}
+  - {name: 🇩🇪 德国(欢迎订阅youtube：8度科技) 17, server: 156.146.33.66, port: 44628, type: ss, cipher: aes-256-gcm, password: VASQbVcukHfdBGmeS9L7Z8TT}
+  - {name: 🇩🇪 德国(欢迎订阅youtube：8度科技) 18, server: 156.146.33.74, port: 31216, type: ss, cipher: aes-256-gcm, password: wJwXatAGZ8xX5K8C7mruf84x}
+  - {name: 🇺🇸 美国(欢迎订阅youtube：8度科技) 5, server: 167.88.61.50, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
   - {name: 🇺🇸 US(欢迎订阅YouTube：8度科技） 3, server: 156.146.62.37, port: 38747, type: ss, cipher: aes-256-gcm, password: RtbLkxbJZpUQ6m8y4qAeLYZj}
-  - {name: 🇺🇸 US(欢迎订阅YouTube：8度科技） 4, server: 156.146.62.37, port: 49396, type: ss, cipher: aes-256-gcm, password: BdRWC38L5JUDMTYNNxJGcUwB}
-  - {name: 🇺🇸 US(欢迎订阅YouTube：8度科技） 5, server: 156.146.62.37, port: 35371, type: ss, cipher: aes-256-gcm, password: pjeDhAJGuML8xKUxcjRqq6a9}
-  - {name: 🇺🇸 US(欢迎订阅YouTube：8度科技） 6, server: 156.146.62.37, port: 39720, type: ss, cipher: aes-256-gcm, password: kq8xQKC3K4jYQPwLXTNbJjm6}
-  - {name: 🇺🇸 US(欢迎订阅YouTube：8度科技） 7, server: 156.146.62.37, port: 49339, type: ss, cipher: aes-256-gcm, password: suucSeVLmt6PQKAP77NtGw9x}
-  - {name: 🇺🇸 US(欢迎订阅YouTube：8度科技） 8, server: 156.146.62.37, port: 50181, type: ss, cipher: aes-256-gcm, password: d9adRr9UxymNSysYahMtpFpd}
-  - {name: 🇺🇸 US(欢迎订阅YouTube：8度科技） 9, server: 156.146.62.37, port: 40711, type: ss, cipher: aes-256-gcm, password: rnngxSTJrXWKXHkvrF3npp9B}
-  - {name: 🇺🇸 US(欢迎订阅YouTube：8度科技） 10, server: 156.146.62.37, port: 44745, type: ss, cipher: aes-256-gcm, password: fyXdw87yCH9SAmFkPvsvLVqC}
-  - {name: 🇺🇸 US(欢迎订阅YouTube：8度科技） 11, server: 156.146.62.37, port: 46642, type: ss, cipher: aes-256-gcm, password: gYL83DQWXuDbxmZAVVtUTXaK}
-  - {name: 🇺🇸 US(欢迎订阅YouTube：8度科技） 12, server: 156.146.62.37, port: 50024, type: ss, cipher: aes-256-gcm, password: b2jDPHUQxCNa2KmGHZjy7C4B}
-  - {name: 🇺🇸 US(欢迎订阅YouTube：8度科技） 13, server: 156.146.62.37, port: 45291, type: ss, cipher: aes-256-gcm, password: ecfJrNtBZwT748hxJ3ZyzZj2}
-  - {name: 🇺🇸 US(欢迎订阅YouTube：8度科技） 14, server: 156.146.62.37, port: 41992, type: ss, cipher: aes-256-gcm, password: XmQSxDCn5ehpcq6DBYms8FJf}
-  - {name: 🇺🇸 US(欢迎订阅YouTube：8度科技） 15, server: 156.146.62.37, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp}
-  - {name: 🇺🇸 US(欢迎订阅YouTube：8度科技） 16, server: 156.146.62.37, port: 38620, type: ss, cipher: aes-256-gcm, password: Kquv5UhvZXNMemAQy8DxZ7qn}
-  - {name: 🇺🇸 US(欢迎订阅YouTube：8度科技） 17, server: 156.146.62.37, port: 36460, type: ss, cipher: aes-256-gcm, password: yUXad7DGF8L5cTShEpnp2N6z}
-  - {name: 🇺🇸 US(欢迎订阅YouTube：8度科技） 18, server: 156.146.33.74, port: 44102, type: ss, cipher: aes-256-gcm, password: zHKYS9DeAjvv43EwgDfyEg4d}
-  - {name: 🇺🇸 US(欢迎订阅YouTube：8度科技） 19, server: 156.146.62.37, port: 45746, type: ss, cipher: aes-256-gcm, password: wEsFcHCvbL4eJkL4DZQa7RgR}
-  - {name: 🇺🇸 US(欢迎订阅YouTube：8度科技） 20, server: 156.146.62.37, port: 41676, type: ss, cipher: aes-256-gcm, password: z6pH3RyttkRWhJ5tpRyt6dYk}
-  - {name: 🇺🇸 US(欢迎订阅YouTube：8度科技） 21, server: 156.146.62.37, port: 43963, type: ss, cipher: aes-256-gcm, password: Tuw6zzZM6JwWNZyYF9ckC4JZ}
-  - {name: 🇺🇸 US(欢迎订阅YouTube：8度科技） 22, server: 156.146.62.37, port: 37588, type: ss, cipher: aes-256-gcm, password: kD9vkjnE6dsUzwQfvKkPkQAd}
-  - {name: 🇺🇸 US(欢迎订阅YouTube：8度科技） 23, server: 156.146.62.37, port: 50232, type: ss, cipher: aes-256-gcm, password: CjchzpwdSjRtDjezYMwx9BKM}
-  - {name: 🇺🇸 US(欢迎订阅YouTube：8度科技） 24, server: 156.146.62.37, port: 46726, type: ss, cipher: aes-256-gcm, password: 2fqKbFPGHpcmMTJzGsUbsfYf}
-  - {name: 🇺🇸 US(欢迎订阅YouTube：8度科技） 25, server: 156.146.62.37, port: 47553, type: ss, cipher: aes-256-gcm, password: t2JnnFqjDMmzWurseJPgBsYY}
-  - {name: 🇺🇸 US(欢迎订阅YouTube：8度科技） 26, server: 156.146.62.37, port: 42304, type: ss, cipher: aes-256-gcm, password: p26v2JwhQVHDHsXk66fXt56r}
-  - {name: 🇺🇸 US(欢迎订阅YouTube：8度科技） 27, server: 156.146.62.37, port: 49126, type: ss, cipher: aes-256-gcm, password: wrCaGtrUbzeRqQLdc8Kmk3Nd}
-  - {name: 🇺🇸 US(欢迎订阅YouTube：8度科技） 28, server: 156.146.62.37, port: 50695, type: ss, cipher: aes-256-gcm, password: gqtwGu9bVreJqL3FTHSVKGzy}
-  - {name: 🇺🇸 US(欢迎订阅YouTube：8度科技） 29, server: 156.146.62.37, port: 38033, type: ss, cipher: aes-256-gcm, password: xpQwyV4W5FdA6NMANJJx73US}
-  - {name: 🇺🇸 US(欢迎订阅YouTube：8度科技） 30, server: 156.146.62.37, port: 48970, type: ss, cipher: aes-256-gcm, password: ZKEsXkFbUZ2z667YA8A7cEDP}
-  - {name: 🇺🇸 US(欢迎订阅YouTube：8度科技） 31, server: 156.146.62.37, port: 44820, type: ss, cipher: aes-256-gcm, password: jspgz9G3VmvBMCgMUWLBaZHu}
-  - {name: 🇺🇸 US(欢迎订阅YouTube：8度科技） 32, server: 156.146.62.37, port: 41738, type: ss, cipher: aes-256-gcm, password: X6yMGXnfUsuKTvEDYZSLPk4d}
-  - {name: 🇺🇸 US(欢迎订阅YouTube：8度科技） 33, server: 156.146.33.74, port: 49396, type: ss, cipher: aes-256-gcm, password: BdRWC38L5JUDMTYNNxJGcUwB}
-  - {name: 🇺🇸 US(欢迎订阅YouTube：8度科技） 34, server: 156.146.62.37, port: 38742, type: ss, cipher: aes-256-gcm, password: DKXfWwc4ebscpXTKpbt85rSH}
-  - {name: 🇺🇸 US(欢迎订阅YouTube：8度科技） 35, server: 156.146.62.37, port: 45329, type: ss, cipher: aes-256-gcm, password: CXSjgD7u7Ar7GxkZ4CgTMUsj}
-  - {name: 🇺🇸 US(欢迎订阅YouTube：8度科技） 36, server: 156.146.62.37, port: 40282, type: ss, cipher: aes-256-gcm, password: Pvvaw486867D2w4yctL2ULTQ}
-  - {name: 🇺🇸 US(欢迎订阅YouTube：8度科技） 37, server: 156.146.62.37, port: 48938, type: ss, cipher: aes-256-gcm, password: 4ejJ8n5ddLuYDUHGXJre2ufJ}
-  - {name: 🇺🇸 US(欢迎订阅YouTube：8度科技） 38, server: 156.146.62.37, port: 44628, type: ss, cipher: aes-256-gcm, password: VASQbVcukHfdBGmeS9L7Z8TT}
+  - {name: 🇩🇪 德国(欢迎订阅youtube：8度科技) 19, server: 156.146.33.66, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp}
+  - {name: 🇩🇪 德国(欢迎订阅youtube：8度科技) 20, server: 156.146.33.66, port: 38620, type: ss, cipher: aes-256-gcm, password: Kquv5UhvZXNMemAQy8DxZ7qn}
+  - {name: 🇩🇪 德国(欢迎订阅youtube：8度科技) 21, server: 156.146.33.74, port: 32558, type: ss, cipher: aes-256-gcm, password: gJYzm3TLbdL495ryQptaJXQk}
+  - {name: 🇩🇪 德国(欢迎订阅youtube：8度科技) 22, server: 156.146.33.86, port: 31572, type: ss, cipher: aes-256-gcm, password: n8w4StnbVD9dmXYn4Ajt87EA}
+  - {name: 🇺🇸 US(欢迎订阅YouTube：8度科技） 4, server: 156.146.62.37, port: 41372, type: ss, cipher: aes-256-gcm, password: 5kGAhC3AmVC35GbruHjSrZf2}
+  - {name: CH(欢迎订阅youtube：8度科技), server: 156.146.62.37, port: 49396, type: ss, cipher: aes-256-gcm, password: BdRWC38L5JUDMTYNNxJGcUwB}
+  - {name: 🇩🇪 德国(欢迎订阅youtube：8度科技) 23, server: 156.146.33.66, port: 44742, type: ss, cipher: aes-256-gcm, password: QCStKzZ56SHBc4tL7stCEqqd}
+  - {name: 🇩🇪 德国(欢迎订阅youtube：8度科技) 24, server: 156.146.33.66, port: 46642, type: ss, cipher: aes-256-gcm, password: gYL83DQWXuDbxmZAVVtUTXaK}
+  - {name: 🇺🇸 美国(欢迎订阅youtube：8度科技) 6, server: 167.88.61.204, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 🇩🇪 德国 03(欢迎订阅youtube：8度科技), server: 156.146.33.66, port: 33148, type: ss, cipher: aes-256-gcm, password: CMduaFXddcQbwNAAs7xFDnc8}
+  - {name: 🇩🇪 德国(欢迎订阅youtube：8度科技) 25, server: 156.146.33.66, port: 44236, type: ss, cipher: aes-256-gcm, password: FWrXcxPZjJxAN89xLgqY3Acp}
+  - {name: 🇺🇸 美国_012 关注Tg交流群_@Mshare_T, server: 185.124.240.146, port: 37588, type: ss, cipher: aes-256-gcm, password: kD9vkjnE6dsUzwQfvKkPkQAd}
+  - {name: 🇺🇸 美国(欢迎订阅youtube：8度科技) 7, server: 167.88.61.50, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 🇺🇸 美国(欢迎订阅youtube：8度科技) 8, server: 167.88.61.50, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: CH(欢迎订阅youtube：8度科技) 2, server: 156.146.62.37, port: 35371, type: ss, cipher: aes-256-gcm, password: pjeDhAJGuML8xKUxcjRqq6a9}
+  - {name: 🇨🇭 瑞士 02(欢迎订阅youtube：8度科技), server: 156.146.62.37, port: 31944, type: ss, cipher: aes-256-gcm, password: aYNeKDMzYQYw4KbUbJA8Wszq}
+  - {name: 🇺🇸 US(欢迎订阅YouTube：8度科技） 5, server: 156.146.62.37, port: 41676, type: ss, cipher: aes-256-gcm, password: z6pH3RyttkRWhJ5tpRyt6dYk}
+  - {name: CH_70+@WangCai_1, server: 156.146.62.37, port: 50024, type: ss, cipher: aes-256-gcm, password: b2jDPHUQxCNa2KmGHZjy7C4B}
+  - {name: CH_78+@WangCai_1, server: 156.146.62.37, port: 31216, type: ss, cipher: aes-256-gcm, password: wJwXatAGZ8xX5K8C7mruf84x}
+  - {name: 🇩🇪 德国(欢迎订阅youtube：8度科技) 26, server: 156.146.33.66, port: 48970, type: ss, cipher: aes-256-gcm, password: ZKEsXkFbUZ2z667YA8A7cEDP}
+  - {name: 🇩🇪 德国(欢迎订阅youtube：8度科技) 27, server: 156.146.33.74, port: 44102, type: ss, cipher: aes-256-gcm, password: zHKYS9DeAjvv43EwgDfyEg4d}
+  - {name: 🇺🇸 美国_014 关注Tg交流群_@Mshare_T, server: 185.124.240.146, port: 42166, type: ss, cipher: aes-256-gcm, password: H9Dbn3szZMqLR3NpgEFEPCKb}
+  - {name: 🇺🇸 美国_036 关注Tg交流群_@Mshare_T, server: 185.124.240.146, port: 32971, type: ss, cipher: aes-256-gcm, password: vwS65ZXyZg85ApwZ2bBh6zFZ}
+  - {name: CH_34+@WangCai_1, server: 156.146.62.37, port: 42185, type: ss, cipher: aes-256-gcm, password: FaTG4zALZru72gxjgSHQ7Jdh}
+  - {name: CH_49+@WangCai_1, server: 156.146.62.37, port: 45948, type: ss, cipher: aes-256-gcm, password: j76EXqJcQhuQTr3EvUf7xaK9}
+  - {name: 🇮🇹 意大利_003 关注Tg交流群_@Mshare_T, server: 212.102.54.161, port: 40282, type: ss, cipher: aes-256-gcm, password: Pvvaw486867D2w4yctL2ULTQ}
+  - {name: 🇹🇷 土耳其_003 关注Tg交流群_@Mshare_T, server: 107.150.94.12, port: 31572, type: ss, cipher: aes-256-gcm, password: n8w4StnbVD9dmXYn4Ajt87EA}
+  - {name: 🇺🇸 美国(欢迎订阅youtube：8度科技) 9, server: 167.88.61.50, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: CH_18+@WangCai_1, server: 156.146.62.37, port: 37588, type: ss, cipher: aes-256-gcm, password: kD9vkjnE6dsUzwQfvKkPkQAd}
+  - {name: CH_19+@WangCai_1, server: 156.146.62.37, port: 38033, type: ss, cipher: aes-256-gcm, password: xpQwyV4W5FdA6NMANJJx73US}
+  - {name: CH_35+@WangCai_1, server: 156.146.62.37, port: 42304, type: ss, cipher: aes-256-gcm, password: p26v2JwhQVHDHsXk66fXt56r}
+  - {name: CH_36+@WangCai_1, server: 156.146.62.37, port: 42816, type: ss, cipher: aes-256-gcm, password: tBKBf4pVzNCFKdbPgvwrNXq3}
+  - {name: CH_50+@WangCai_1, server: 156.146.62.37, port: 46354, type: ss, cipher: aes-256-gcm, password: MYPKdC7n6qjL6xmJBBcrzzqS}
+  - {name: CH_75+@WangCai_1, server: 156.146.62.37, port: 50232, type: ss, cipher: aes-256-gcm, password: CjchzpwdSjRtDjezYMwx9BKM}
+  - {name: 🇺🇸 美国(欢迎订阅youtube：8度科技) 10, server: 167.88.61.50, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: CH(欢迎订阅youtube：8度科技) 3, server: 156.146.62.37, port: 50695, type: ss, cipher: aes-256-gcm, password: gqtwGu9bVreJqL3FTHSVKGzy}
+  - {name: CH_37+@WangCai_1, server: 156.146.62.37, port: 43893, type: ss, cipher: aes-256-gcm, password: YyCBeDdYX4cadHpCkkmdJLq8}
+  - {name: 伊朗_028 Tg交流群 @Mshare_T, server: 185.108.106.175, port: 44820, type: ss, cipher: aes-256-gcm, password: jspgz9G3VmvBMCgMUWLBaZHu}
+  - {name: 🇮🇹 意大利_009 关注Tg交流群_@Mshare_T, server: 212.102.54.161, port: 42166, type: ss, cipher: aes-256-gcm, password: H9Dbn3szZMqLR3NpgEFEPCKb}
+  - {name: 🇰🇷 韩国_010 关注Tg交流群_@Mshare_T, server: 201.fbplay.net, port: 10039, type: ss, cipher: aes-256-gcm, password: 6c21f43e}
+  - {name: 伊朗_008 Tg交流群 @Mshare_T, server: 185.108.106.172, port: 45948, type: ss, cipher: aes-256-gcm, password: j76EXqJcQhuQTr3EvUf7xaK9}
+  - {name: 伊朗_010 Tg交流群 @Mshare_T, server: 185.108.106.172, port: 44236, type: ss, cipher: aes-256-gcm, password: FWrXcxPZjJxAN89xLgqY3Acp}
+  - {name: 伊朗_027 Tg交流群 @Mshare_T, server: 185.108.106.175, port: 44539, type: ss, cipher: aes-256-gcm, password: r6hDrkP4Et6EENTS8Qy7Tcmg}
+  - {name: CH(欢迎订阅youtube：8度科技) 4, server: 156.146.62.37, port: 45746, type: ss, cipher: aes-256-gcm, password: wEsFcHCvbL4eJkL4DZQa7RgR}
+  - {name: 🇺🇸 US(欢迎订阅YouTube：8度科技） 6, server: 156.146.62.37, port: 46726, type: ss, cipher: aes-256-gcm, password: 2fqKbFPGHpcmMTJzGsUbsfYf}
+  - {name: 🇺🇸 US(欢迎订阅YouTube：8度科技） 7, server: 156.146.62.37, port: 50181, type: ss, cipher: aes-256-gcm, password: d9adRr9UxymNSysYahMtpFpd}
+  - {name: CH_13+@WangCai_1, server: 156.146.62.37, port: 35294, type: ss, cipher: aes-256-gcm, password: J9Y2ncrdPEC38gwydNFFGBna}
+  - {name: 伊朗_007 Tg交流群 @Mshare_T, server: 185.108.106.175, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
+  - {name: 🇺🇸 美国_015 关注Tg交流群_@Mshare_T, server: 84.zikgu.com, port: 10039, type: ss, cipher: chacha20-ietf-poly1305, password: 6c21f43e}
+  - {name: CH(欢迎订阅youtube：8度科技) 5, server: 156.146.62.37, port: 41306, type: ss, cipher: aes-256-gcm, password: pzB5Y2twNtqFzWhEbBsPJMjj}
+  - {name: CH(欢迎订阅youtube：8度科技) 6, server: 156.146.62.37, port: 44102, type: ss, cipher: aes-256-gcm, password: zHKYS9DeAjvv43EwgDfyEg4d}
+  - {name: CH_17+@WangCai_1, server: 156.146.62.37, port: 37559, type: ss, cipher: aes-256-gcm, password: Qbt22F6JsxzFGqcsK5SaR8q3}
+  - {name: CH_82+@WangCai_1, server: 156.146.62.37, port: 39171, type: ss, cipher: aes-256-gcm, password: z4pM2gA9QEEC6NRmqTQubm6Z}
+  - {name: 伊朗_004 Tg交流群 @Mshare_T, server: 185.108.106.172, port: 49468, type: ss, cipher: aes-256-gcm, password: LsYSQDxmPj9AcWpSX5HrYfu6}
+  - {name: 🇰🇷 韩国_012 关注Tg交流群_@Mshare_T, server: 305.fbplay.net, port: 10039, type: ss, cipher: aes-256-gcm, password: 6c21f43e}
+  - {name: 🇺🇸 US(欢迎订阅YouTube：8度科技） 8, server: 156.146.62.37, port: 49339, type: ss, cipher: aes-256-gcm, password: suucSeVLmt6PQKAP77NtGw9x}
+  - {name: CH_15+@WangCai_1, server: 156.146.62.37, port: 36460, type: ss, cipher: aes-256-gcm, password: yUXad7DGF8L5cTShEpnp2N6z}
+  - {name: 🇫🇷 法国(欢迎订阅youtube：8度科技) 2, server: 185.108.106.175, port: 31572, type: ss, cipher: aes-256-gcm, password: n8w4StnbVD9dmXYn4Ajt87EA}
+  - {name: 🇰🇷 韩国_006 关注Tg交流群_@Mshare_T, server: 101.fbplay.net, port: 10039, type: ss, cipher: aes-256-gcm, password: 6c21f43e}
+  - {name: 🇩🇪 德国(欢迎订阅youtube：8度科技) 28, server: 156.146.33.66, port: 33998, type: ss, cipher: aes-256-gcm, password: NHwQTPLCfaTMSqTnU3mjcSxe}
+  - {name: 🇺🇸 US(欢迎订阅YouTube：8度科技） 9, server: 156.146.62.37, port: 41992, type: ss, cipher: aes-256-gcm, password: XmQSxDCn5ehpcq6DBYms8FJf}
+  - {name: CH_79+@WangCai_1, server: 156.146.62.37, port: 32971, type: ss, cipher: aes-256-gcm, password: vwS65ZXyZg85ApwZ2bBh6zFZ}
+  - {name: 🇨🇦 加拿大(欢迎订阅youtube：8度科技) 2, server: 198.57.27.218, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 🇰🇷 韩国_003 关注Tg交流群_@Mshare_T, server: 109.fbplay.net, port: 10039, type: ss, cipher: aes-256-gcm, password: 6c21f43e}
+  - {name: 🇺🇸 US(欢迎订阅YouTube：8度科技） 10, server: 156.146.62.37, port: 49126, type: ss, cipher: aes-256-gcm, password: wrCaGtrUbzeRqQLdc8Kmk3Nd}
+  - {name: CH_16+@WangCai_1, server: 156.146.62.37, port: 37473, type: ss, cipher: aes-256-gcm, password: enctdKyJfSu76VqznKwTt6Ap}
+  - {name: 🇮🇹 意大利_011 关注Tg交流群_@Mshare_T, server: 212.102.54.161, port: 42304, type: ss, cipher: aes-256-gcm, password: p26v2JwhQVHDHsXk66fXt56r}
+  - {name: 伊朗_005 Tg交流群 @Mshare_T, server: 185.108.106.175, port: 46726, type: ss, cipher: aes-256-gcm, password: 2fqKbFPGHpcmMTJzGsUbsfYf}
+  - {name: NO(欢迎订阅youtube：8度科技), server: 46.29.218.6, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 伊朗_003 Tg交流群 @Mshare_T, server: 185.108.106.172, port: 42304, type: ss, cipher: aes-256-gcm, password: p26v2JwhQVHDHsXk66fXt56r}
+  - {name: 伊朗_025 Tg交流群 @Mshare_T, server: 185.108.106.172, port: 49396, type: ss, cipher: aes-256-gcm, password: BdRWC38L5JUDMTYNNxJGcUwB}
+  - {name: 🇨🇦 加拿大(欢迎订阅youtube：8度科技) 3, server: 198.57.27.218, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 伊朗_006 Tg交流群 @Mshare_T, server: 185.108.106.172, port: 42816, type: ss, cipher: aes-256-gcm, password: tBKBf4pVzNCFKdbPgvwrNXq3}
+  - {name: 伊朗(欢迎订阅youtube：8度科技), server: 185.108.106.175, port: 42166, type: ss, cipher: aes-256-gcm, password: H9Dbn3szZMqLR3NpgEFEPCKb}
+  - {name: 伊朗_002 Tg交流群 @Mshare_T, server: 185.108.106.172, port: 42166, type: ss, cipher: aes-256-gcm, password: H9Dbn3szZMqLR3NpgEFEPCKb}
+  - {name: 🇪🇺 欧洲(欢迎订阅youtube：8度科技), server: 46.29.218.6, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇮🇳 印度_002 关注Tg交流群_@Mshare_T, server: azhk.alink123.com, port: 446, type: trojan, password: 765040cb-15f4-43da-9e07-4b92c767d222, sni: azhk.alink123.com}
+  - {name: 🇮🇳 印度_003 关注Tg交流群_@Mshare_T, server: azhk.alink123.com, port: 11045, type: trojan, password: 765040cb-15f4-43da-9e07-4b92c767d222, sni: azhk.alink123.com}
+  - {name: 🇺🇸 美国_019 关注Tg交流群_@Mshare_T, server: azhk.alink123.com, port: 444, type: trojan, password: 765040cb-15f4-43da-9e07-4b92c767d222, sni: azhk.alink123.com}
+  - {name: 🇩🇪 德国(欢迎订阅youtube：8度科技) 29, server: azhk.alink123.com, port: 447, type: trojan, password: 765040cb-15f4-43da-9e07-4b92c767d222, sni: azhk.alink123.com}
+  - {name: 🇩🇪 德国_037 Tg交流群 @Mshare_T, server: azhk.alink123.com, port: 448, type: trojan, password: 765040cb-15f4-43da-9e07-4b92c767d222, sni: azhk.alink123.com}
+  - {name: 🇳🇱 荷兰_001 关注Tg交流群_@Mshare_T, server: azhk.alink123.com, port: 449, type: trojan, password: 765040cb-15f4-43da-9e07-4b92c767d222, sni: azhk.alink123.com}
+  - {name: 🇬🇧 英国(欢迎订阅youtube：8度科技) 6, server: uk2.alink.qchwnd.moe, port: 10184, type: trojan, password: 765040cb-15f4-43da-9e07-4b92c767d222, sni: uk2.alink.qchwnd.moe}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 匈牙利 佩斯（感谢关注youtube：8度科技）
-      - 匈牙利 佩斯（感谢关注youtube：8度科技） 2
-      - 🇬🇧 英国（感谢关注youtube：8度科技）
-      - CH_83+@WangCai_1
-      - CH_82+@WangCai_1
-      - CH_81+@WangCai_1
-      - CH_80+@WangCai_1
-      - CH_79+@WangCai_1
-      - CH_78+@WangCai_1
-      - CH_76+@WangCai_1
-      - CH_75+@WangCai_1
-      - CH_72+@WangCai_1
-      - CH_70+@WangCai_1
-      - CH_69+@WangCai_1
-      - CH_68+@WangCai_1
-      - CH_67+@WangCai_1
-      - CH_66+@WangCai_1
-      - CH_65+@WangCai_1
-      - CH_64+@WangCai_1
-      - CH_62+@WangCai_1
-      - CH_61+@WangCai_1
-      - CH_60+@WangCai_1
-      - CH_59+@WangCai_1
-      - CH_58+@WangCai_1
-      - CH_57+@WangCai_1
-      - CH_56+@WangCai_1
-      - CH_55+@WangCai_1
-      - CH_54+@WangCai_1
-      - CH_53+@WangCai_1
-      - CH_52+@WangCai_1
-      - CH_51+@WangCai_1
-      - CH_50+@WangCai_1
-      - CH_49+@WangCai_1
-      - CH_48+@WangCai_1
-      - CH_47+@WangCai_1
-      - CH_46+@WangCai_1
-      - CH_44+@WangCai_1
-      - CH_43+@WangCai_1
-      - CH_42+@WangCai_1
-      - CH_41+@WangCai_1
+      - 🇸🇬 新加坡_002 关注Tg交流群_@Mshare_T
+      - 🇭🇰 香港_001 Tg交流群 @Mshare_T
+      - 🇭🇰 香港_002 Tg交流群 @Mshare_T
+      - 🇭🇰 香港_019 Tg交流群 @Mshare_T
+      - 🇯🇵 日本_002 关注Tg交流群_@Mshare_T
+      - 🇮🇩 印尼_001 Tg交流群 @Mshare_T
+      - 🇸🇬 新加坡_004 关注Tg交流群_@Mshare_T
+      - 🇯🇵 日本_003 关注Tg交流群_@Mshare_T
+      - 🇸🇬 新加坡_003 关注Tg交流群_@Mshare_T
+      - 🇯🇵 日本_007 关注Tg交流群_@Mshare_T
+      - 🇭🇰 香港_003 Tg交流群 @Mshare_T
+      - 澳門_001 关注Tg交流群_@Mshare_T
+      - 🇯🇵 日本_009 关注Tg交流群_@Mshare_T
+      - 🇲🇾 马来西亚_001 关注Tg交流群_@Mshare_T
+      - 🇭🇰 香港_011 Tg交流群 @Mshare_T
+      - 🇭🇰 香港_004 Tg交流群 @Mshare_T
+      - 🇹🇼 台湾_004 关注Tg交流群_@Mshare_T
+      - 🇭🇰 香港_010 Tg交流群 @Mshare_T
+      - 🇺🇸 美国_006 关注Tg交流群_@Mshare_T
+      - 🇯🇵 日本_006 关注Tg交流群_@Mshare_T
+      - 🇹🇼 台湾_001 关注Tg交流群_@Mshare_T
+      - 🇺🇸 美国_002 关注Tg交流群_@Mshare_T
+      - 🇺🇸 美国_003 关注Tg交流群_@Mshare_T
+      - 🇷🇺 俄罗斯_001 关注Tg交流群_@Mshare_T
+      - 🇹🇼 台湾 05(欢迎订阅youtube：8度科技）
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技)
+      - 🇯🇵 日本_005 关注Tg交流群_@Mshare_T
+      - 🇺🇸 美国_040 关注Tg交流群_@Mshare_T
+      - 🇹🇼 台湾 06(欢迎订阅youtube：8度科技）
+      - 🇬🇧 英国(欢迎订阅youtube：8度科技)
+      - 🇺🇸 美国_001 关注Tg交流群_@Mshare_T
+      - 🇹🇼 台湾 07(欢迎订阅youtube：8度科技）
+      - 🇺🇸 美国_041 关注Tg交流群_@Mshare_T
+      - 🇸🇬 新加坡_006 关注Tg交流群_@Mshare_T
+      - 🇬🇧 英国(欢迎订阅youtube：8度科技) 2
+      - 🇬🇧 英国(欢迎订阅youtube：8度科技) 3
+      - 🇬🇧 英国(欢迎订阅youtube：8度科技) 4
+      - 🇹🇼 台湾 04(欢迎订阅youtube：8度科技）
+      - 🇯🇵 日本_008 关注Tg交流群_@Mshare_T
+      - 🇹🇼 台湾 03(欢迎订阅youtube：8度科技）
+      - 🇸🇬 新加坡_008 关注Tg交流群_@Mshare_T
+      - 🇸🇬 新加坡_009 关注Tg交流群_@Mshare_T
+      - 🇹🇼 台湾 02(欢迎订阅youtube：8度科技）
+      - 🇯🇵 日本_004 关注Tg交流群_@Mshare_T
+      - 🇭🇰 香港_017 Tg交流群 @Mshare_T
+      - 🇭🇰 中转|香港CMHK07|微信：ddly000
+      - 🇹🇼 台湾_005 关注Tg交流群_@Mshare_T
+      - 🇹🇼 台湾 01(欢迎订阅youtube：8度科技）
+      - 🇸🇬 新加坡_001 关注Tg交流群_@Mshare_T
+      - 🇭🇰 香港_020 Tg交流群 @Mshare_T
+      - 🇭🇰 香港_022 Tg交流群 @Mshare_T
+      - 🇭🇰 香港_023 Tg交流群 @Mshare_T
+      - 🇯🇵 日本_001 关注Tg交流群_@Mshare_T
+      - 🇺🇸 美国_008 关注Tg交流群_@Mshare_T
+      - 🇭🇰 香港_021 Tg交流群 @Mshare_T
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 2
+      - 🇭🇰 香港_006 Tg交流群 @Mshare_T
+      - 🇮🇳 印度_001 关注Tg交流群_@Mshare_T
+      - 🇭🇰 香港_024 Tg交流群 @Mshare_T
+      - 🇭🇰 香港_018 Tg交流群 @Mshare_T
+      - 🇰🇷 韩国_002 关注Tg交流群_@Mshare_T
+      - 🇺🇸 美国_016 关注Tg交流群_@Mshare_T
+      - 🇯🇵 日本 02(欢迎订阅youtube：8度科技)
+      - 🇯🇵 日本 01(欢迎订阅youtube：8度科技)
+      - 🇯🇵 日本 03(欢迎订阅youtube：8度科技)
+      - 🇯🇵 日本 02(欢迎订阅youtube：8度科技) 2
+      - 🇺🇸 US(欢迎订阅youtube：8度科技)
+      - 🇮🇳 印度(欢迎订阅youtube：8度科技)
+      - 🇮🇳 印度(欢迎订阅youtube：8度科技) 2
+      - 🇰🇷 韩国_001 关注Tg交流群_@Mshare_T
+      - 🇰🇷 韩国_017 关注Tg交流群_@Mshare_T
       - CH_40+@WangCai_1
-      - CH_39+@WangCai_1
-      - CH_38+@WangCai_1
-      - CH_37+@WangCai_1
-      - CH_36+@WangCai_1
-      - CH_35+@WangCai_1
-      - CH_34+@WangCai_1
-      - CH_33+@WangCai_1
-      - CH_32+@WangCai_1
-      - CH_31+@WangCai_1
-      - CH_30+@WangCai_1
-      - CH_29+@WangCai_1
-      - CH_28+@WangCai_1
-      - CH_27+@WangCai_1
-      - CH_26+@WangCai_1
-      - CH_24+@WangCai_1
-      - CH_23+@WangCai_1
-      - CH_22+@WangCai_1
+      - CH_61+@WangCai_1
+      - 🇰🇷 韩国_004 关注Tg交流群_@Mshare_T
+      - 🇸🇪 瑞典_025 关注Tg交流群_@Mshare_T
+      - 🇺🇸 US(欢迎订阅youtube：8度科技) 2
+      - 🇸🇪 瑞典_024 关注Tg交流群_@Mshare_T
+      - 🇺🇸 美国_013 关注Tg交流群_@Mshare_T
+      - 🇺🇸 美国(欢迎订阅youtube：8度科技)
       - CH_21+@WangCai_1
+      - CH_56+@WangCai_1
+      - 🇸🇪 瑞典_017 关注Tg交流群_@Mshare_T
+      - CH_44+@WangCai_1
+      - 🇸🇪 瑞典_004 关注Tg交流群_@Mshare_T
+      - 🇸🇪 瑞典_010 关注Tg交流群_@Mshare_T
+      - 🇸🇪 瑞典_011 关注Tg交流群_@Mshare_T
+      - CH_54+@WangCai_1
+      - CH_59+@WangCai_1
+      - 🇸🇪 瑞典_003 关注Tg交流群_@Mshare_T
+      - 🇸🇪 瑞典_008 关注Tg交流群_@Mshare_T
+      - 🇸🇪 瑞典_009 关注Tg交流群_@Mshare_T
+      - 🇸🇪 瑞典_019 关注Tg交流群_@Mshare_T
+      - 🇸🇪 瑞典_022 关注Tg交流群_@Mshare_T
+      - 🇷🇴 罗马尼亚(欢迎订阅youtube：8度科技)
+      - 🇸🇪 瑞典_005 关注Tg交流群_@Mshare_T
+      - 🇸🇪 瑞典_007 关注Tg交流群_@Mshare_T
+      - 🇸🇪 瑞典_014 关注Tg交流群_@Mshare_T
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 3
+      - 🇺🇸 美国(欢迎订阅youtube：8度科技) 2
+      - 🇺🇸 US(欢迎订阅youtube：8度科技) 3
       - CH_20+@WangCai_1
-      - CH_19+@WangCai_1
-      - CH_18+@WangCai_1
-      - CH_17+@WangCai_1
-      - CH_16+@WangCai_1
-      - CH_15+@WangCai_1
-      - CH_14+@WangCai_1
-      - CH_13+@WangCai_1
+      - CH_39+@WangCai_1
+      - CH_58+@WangCai_1
+      - CH_60+@WangCai_1
+      - 🇰🇷 韩国_005 关注Tg交流群_@Mshare_T
+      - 🇰🇷 韩国_007 关注Tg交流群_@Mshare_T
+      - 🇸🇪 瑞典_013 关注Tg交流群_@Mshare_T
+      - 🇸🇪 瑞典_015 关注Tg交流群_@Mshare_T
+      - 🇸🇪 瑞典_018 关注Tg交流群_@Mshare_T
+      - 🇨🇭 瑞士 04(欢迎订阅youtube：8度科技)
+      - 🇸🇪 瑞典_026 关注Tg交流群_@Mshare_T
+      - 🇹🇷 土耳其_001 关注Tg交流群_@Mshare_T
+      - 🇺🇸 美国(欢迎订阅youtube：8度科技) 3
+      - CH_38+@WangCai_1
+      - 🇰🇷 韩国_015 关注Tg交流群_@Mshare_T
+      - 🇸🇪 瑞典_001 关注Tg交流群_@Mshare_T
+      - 🇸🇪 瑞典_006 关注Tg交流群_@Mshare_T
+      - 🇸🇪 瑞典_012 关注Tg交流群_@Mshare_T
+      - 🇮🇪 爱尔兰(欢迎订阅youtube：8度科技)
+      - 🇸🇪 瑞典(欢迎订阅youtube：8度科技)
+      - 🇹🇷 土耳其_004 关注Tg交流群_@Mshare_T
+      - 🇨🇦 加拿大(欢迎订阅youtube：8度科技)
       - 🇺🇸 US(欢迎订阅YouTube：8度科技）
+      - CH_51+@WangCai_1
+      - 🇷🇴 罗马尼亚_001 关注Tg交流群_@Mshare_T
+      - 🇸🇪 瑞典_016 关注Tg交流群_@Mshare_T
+      - 🇸🇪 瑞典_023 关注Tg交流群_@Mshare_T
+      - 🇫🇷 法国(欢迎订阅youtube：8度科技)
+      - CH_52+@WangCai_1
+      - 🇷🇴 罗马尼亚_002 关注Tg交流群_@Mshare_T
       - 🇺🇸 US(欢迎订阅YouTube：8度科技） 2
+      - CH_46+@WangCai_1
+      - CH_57+@WangCai_1
+      - 🇸🇪 瑞典_014 关注Tg交流群_@Mshare_T 2
+      - 🇸🇪 瑞典_020 关注Tg交流群_@Mshare_T
+      - 🇬🇧 英国(欢迎订阅youtube：8度科技) 5
+      - 🇺🇸 US(欢迎订阅youtube：8度科技) 4
+      - 🇺🇸 美国(欢迎订阅youtube：8度科技) 4
+      - 🇰🇷 韩国_009 关注Tg交流群_@Mshare_T
+      - 🇰🇷 韩国_016 关注Tg交流群_@Mshare_T
+      - 🇨🇭 瑞士 01(欢迎订阅youtube：8度科技)
+      - CH_55+@WangCai_1
+      - 🇰🇷 韩国_008 关注Tg交流群_@Mshare_T
+      - 🇸🇪 瑞典_021 关注Tg交流群_@Mshare_T
+      - 🇨🇭 瑞士 03(欢迎订阅youtube：8度科技)
+      - 🇺🇸 US(欢迎订阅youtube：8度科技) 5
+      - CH_23+@WangCai_1
+      - 🇰🇷 韩国_011 关注Tg交流群_@Mshare_T
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 4
+      - 🇺🇸 美国_017 关注Tg交流群_@Mshare_T
+      - CH_43+@WangCai_1
+      - 🇺🇸 美国_021 关注Tg交流群_@Mshare_T
+      - 🇮🇹 意大利 米兰(欢迎订阅youtube：8度科技)
+      - CH_41+@WangCai_1
+      - CH_42+@WangCai_1
+      - 🇮🇹 意大利_007 关注Tg交流群_@Mshare_T
+      - 🇰🇷 韩国_014 关注Tg交流群_@Mshare_T
+      - 🇮🇪 爱尔兰 02(欢迎订阅youtube：8度科技)
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 5
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 6
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 7
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 8
+      - 🇮🇹 意大利_005 关注Tg交流群_@Mshare_T
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 9
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 10
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 11
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 12
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 13
+      - CH_24+@WangCai_1
+      - CH_27+@WangCai_1
+      - CH_69+@WangCai_1
+      - 🇩🇪 德国 02(欢迎订阅youtube：8度科技)
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 14
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 15
+      - 伊朗_016 Tg交流群 @Mshare_T
+      - 🇮🇹 意大利_001 关注Tg交流群_@Mshare_T
+      - 🇮🇹 意大利_002 关注Tg交流群_@Mshare_T
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 16
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 17
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 18
+      - 🇺🇸 美国(欢迎订阅youtube：8度科技) 5
       - 🇺🇸 US(欢迎订阅YouTube：8度科技） 3
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 19
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 20
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 21
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 22
       - 🇺🇸 US(欢迎订阅YouTube：8度科技） 4
+      - CH(欢迎订阅youtube：8度科技)
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 23
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 24
+      - 🇺🇸 美国(欢迎订阅youtube：8度科技) 6
+      - 🇩🇪 德国 03(欢迎订阅youtube：8度科技)
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 25
+      - 🇺🇸 美国_012 关注Tg交流群_@Mshare_T
+      - 🇺🇸 美国(欢迎订阅youtube：8度科技) 7
+      - 🇺🇸 美国(欢迎订阅youtube：8度科技) 8
+      - CH(欢迎订阅youtube：8度科技) 2
+      - 🇨🇭 瑞士 02(欢迎订阅youtube：8度科技)
       - 🇺🇸 US(欢迎订阅YouTube：8度科技） 5
+      - CH_70+@WangCai_1
+      - CH_78+@WangCai_1
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 26
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 27
+      - 🇺🇸 美国_014 关注Tg交流群_@Mshare_T
+      - 🇺🇸 美国_036 关注Tg交流群_@Mshare_T
+      - CH_34+@WangCai_1
+      - CH_49+@WangCai_1
+      - 🇮🇹 意大利_003 关注Tg交流群_@Mshare_T
+      - 🇹🇷 土耳其_003 关注Tg交流群_@Mshare_T
+      - 🇺🇸 美国(欢迎订阅youtube：8度科技) 9
+      - CH_18+@WangCai_1
+      - CH_19+@WangCai_1
+      - CH_35+@WangCai_1
+      - CH_36+@WangCai_1
+      - CH_50+@WangCai_1
+      - CH_75+@WangCai_1
+      - 🇺🇸 美国(欢迎订阅youtube：8度科技) 10
+      - CH(欢迎订阅youtube：8度科技) 3
+      - CH_37+@WangCai_1
+      - 伊朗_028 Tg交流群 @Mshare_T
+      - 🇮🇹 意大利_009 关注Tg交流群_@Mshare_T
+      - 🇰🇷 韩国_010 关注Tg交流群_@Mshare_T
+      - 伊朗_008 Tg交流群 @Mshare_T
+      - 伊朗_010 Tg交流群 @Mshare_T
+      - 伊朗_027 Tg交流群 @Mshare_T
+      - CH(欢迎订阅youtube：8度科技) 4
       - 🇺🇸 US(欢迎订阅YouTube：8度科技） 6
       - 🇺🇸 US(欢迎订阅YouTube：8度科技） 7
+      - CH_13+@WangCai_1
+      - 伊朗_007 Tg交流群 @Mshare_T
+      - 🇺🇸 美国_015 关注Tg交流群_@Mshare_T
+      - CH(欢迎订阅youtube：8度科技) 5
+      - CH(欢迎订阅youtube：8度科技) 6
+      - CH_17+@WangCai_1
+      - CH_82+@WangCai_1
+      - 伊朗_004 Tg交流群 @Mshare_T
+      - 🇰🇷 韩国_012 关注Tg交流群_@Mshare_T
       - 🇺🇸 US(欢迎订阅YouTube：8度科技） 8
+      - CH_15+@WangCai_1
+      - 🇫🇷 法国(欢迎订阅youtube：8度科技) 2
+      - 🇰🇷 韩国_006 关注Tg交流群_@Mshare_T
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 28
       - 🇺🇸 US(欢迎订阅YouTube：8度科技） 9
+      - CH_79+@WangCai_1
+      - 🇨🇦 加拿大(欢迎订阅youtube：8度科技) 2
+      - 🇰🇷 韩国_003 关注Tg交流群_@Mshare_T
       - 🇺🇸 US(欢迎订阅YouTube：8度科技） 10
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 11
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 12
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 13
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 14
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 15
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 16
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 17
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 18
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 19
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 20
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 21
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 22
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 23
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 24
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 25
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 26
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 27
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 28
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 29
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 30
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 31
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 32
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 33
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 34
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 35
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 36
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 37
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 38
+      - CH_16+@WangCai_1
+      - 🇮🇹 意大利_011 关注Tg交流群_@Mshare_T
+      - 伊朗_005 Tg交流群 @Mshare_T
+      - NO(欢迎订阅youtube：8度科技)
+      - 伊朗_003 Tg交流群 @Mshare_T
+      - 伊朗_025 Tg交流群 @Mshare_T
+      - 🇨🇦 加拿大(欢迎订阅youtube：8度科技) 3
+      - 伊朗_006 Tg交流群 @Mshare_T
+      - 伊朗(欢迎订阅youtube：8度科技)
+      - 伊朗_002 Tg交流群 @Mshare_T
+      - 🇪🇺 欧洲(欢迎订阅youtube：8度科技)
+      - 🇮🇳 印度_002 关注Tg交流群_@Mshare_T
+      - 🇮🇳 印度_003 关注Tg交流群_@Mshare_T
+      - 🇺🇸 美国_019 关注Tg交流群_@Mshare_T
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 29
+      - 🇩🇪 德国_037 Tg交流群 @Mshare_T
+      - 🇳🇱 荷兰_001 关注Tg交流群_@Mshare_T
+      - 🇬🇧 英国(欢迎订阅youtube：8度科技) 6
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 匈牙利 佩斯（感谢关注youtube：8度科技）
-      - 匈牙利 佩斯（感谢关注youtube：8度科技） 2
-      - 🇬🇧 英国（感谢关注youtube：8度科技）
-      - CH_83+@WangCai_1
-      - CH_82+@WangCai_1
-      - CH_81+@WangCai_1
-      - CH_80+@WangCai_1
-      - CH_79+@WangCai_1
-      - CH_78+@WangCai_1
-      - CH_76+@WangCai_1
-      - CH_75+@WangCai_1
-      - CH_72+@WangCai_1
-      - CH_70+@WangCai_1
-      - CH_69+@WangCai_1
-      - CH_68+@WangCai_1
-      - CH_67+@WangCai_1
-      - CH_66+@WangCai_1
-      - CH_65+@WangCai_1
-      - CH_64+@WangCai_1
-      - CH_62+@WangCai_1
-      - CH_61+@WangCai_1
-      - CH_60+@WangCai_1
-      - CH_59+@WangCai_1
-      - CH_58+@WangCai_1
-      - CH_57+@WangCai_1
-      - CH_56+@WangCai_1
-      - CH_55+@WangCai_1
-      - CH_54+@WangCai_1
-      - CH_53+@WangCai_1
-      - CH_52+@WangCai_1
-      - CH_51+@WangCai_1
-      - CH_50+@WangCai_1
-      - CH_49+@WangCai_1
-      - CH_48+@WangCai_1
-      - CH_47+@WangCai_1
-      - CH_46+@WangCai_1
-      - CH_44+@WangCai_1
-      - CH_43+@WangCai_1
-      - CH_42+@WangCai_1
-      - CH_41+@WangCai_1
+      - 🇸🇬 新加坡_002 关注Tg交流群_@Mshare_T
+      - 🇭🇰 香港_001 Tg交流群 @Mshare_T
+      - 🇭🇰 香港_002 Tg交流群 @Mshare_T
+      - 🇭🇰 香港_019 Tg交流群 @Mshare_T
+      - 🇯🇵 日本_002 关注Tg交流群_@Mshare_T
+      - 🇮🇩 印尼_001 Tg交流群 @Mshare_T
+      - 🇸🇬 新加坡_004 关注Tg交流群_@Mshare_T
+      - 🇯🇵 日本_003 关注Tg交流群_@Mshare_T
+      - 🇸🇬 新加坡_003 关注Tg交流群_@Mshare_T
+      - 🇯🇵 日本_007 关注Tg交流群_@Mshare_T
+      - 🇭🇰 香港_003 Tg交流群 @Mshare_T
+      - 澳門_001 关注Tg交流群_@Mshare_T
+      - 🇯🇵 日本_009 关注Tg交流群_@Mshare_T
+      - 🇲🇾 马来西亚_001 关注Tg交流群_@Mshare_T
+      - 🇭🇰 香港_011 Tg交流群 @Mshare_T
+      - 🇭🇰 香港_004 Tg交流群 @Mshare_T
+      - 🇹🇼 台湾_004 关注Tg交流群_@Mshare_T
+      - 🇭🇰 香港_010 Tg交流群 @Mshare_T
+      - 🇺🇸 美国_006 关注Tg交流群_@Mshare_T
+      - 🇯🇵 日本_006 关注Tg交流群_@Mshare_T
+      - 🇹🇼 台湾_001 关注Tg交流群_@Mshare_T
+      - 🇺🇸 美国_002 关注Tg交流群_@Mshare_T
+      - 🇺🇸 美国_003 关注Tg交流群_@Mshare_T
+      - 🇷🇺 俄罗斯_001 关注Tg交流群_@Mshare_T
+      - 🇹🇼 台湾 05(欢迎订阅youtube：8度科技）
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技)
+      - 🇯🇵 日本_005 关注Tg交流群_@Mshare_T
+      - 🇺🇸 美国_040 关注Tg交流群_@Mshare_T
+      - 🇹🇼 台湾 06(欢迎订阅youtube：8度科技）
+      - 🇬🇧 英国(欢迎订阅youtube：8度科技)
+      - 🇺🇸 美国_001 关注Tg交流群_@Mshare_T
+      - 🇹🇼 台湾 07(欢迎订阅youtube：8度科技）
+      - 🇺🇸 美国_041 关注Tg交流群_@Mshare_T
+      - 🇸🇬 新加坡_006 关注Tg交流群_@Mshare_T
+      - 🇬🇧 英国(欢迎订阅youtube：8度科技) 2
+      - 🇬🇧 英国(欢迎订阅youtube：8度科技) 3
+      - 🇬🇧 英国(欢迎订阅youtube：8度科技) 4
+      - 🇹🇼 台湾 04(欢迎订阅youtube：8度科技）
+      - 🇯🇵 日本_008 关注Tg交流群_@Mshare_T
+      - 🇹🇼 台湾 03(欢迎订阅youtube：8度科技）
+      - 🇸🇬 新加坡_008 关注Tg交流群_@Mshare_T
+      - 🇸🇬 新加坡_009 关注Tg交流群_@Mshare_T
+      - 🇹🇼 台湾 02(欢迎订阅youtube：8度科技）
+      - 🇯🇵 日本_004 关注Tg交流群_@Mshare_T
+      - 🇭🇰 香港_017 Tg交流群 @Mshare_T
+      - 🇭🇰 中转|香港CMHK07|微信：ddly000
+      - 🇹🇼 台湾_005 关注Tg交流群_@Mshare_T
+      - 🇹🇼 台湾 01(欢迎订阅youtube：8度科技）
+      - 🇸🇬 新加坡_001 关注Tg交流群_@Mshare_T
+      - 🇭🇰 香港_020 Tg交流群 @Mshare_T
+      - 🇭🇰 香港_022 Tg交流群 @Mshare_T
+      - 🇭🇰 香港_023 Tg交流群 @Mshare_T
+      - 🇯🇵 日本_001 关注Tg交流群_@Mshare_T
+      - 🇺🇸 美国_008 关注Tg交流群_@Mshare_T
+      - 🇭🇰 香港_021 Tg交流群 @Mshare_T
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 2
+      - 🇭🇰 香港_006 Tg交流群 @Mshare_T
+      - 🇮🇳 印度_001 关注Tg交流群_@Mshare_T
+      - 🇭🇰 香港_024 Tg交流群 @Mshare_T
+      - 🇭🇰 香港_018 Tg交流群 @Mshare_T
+      - 🇰🇷 韩国_002 关注Tg交流群_@Mshare_T
+      - 🇺🇸 美国_016 关注Tg交流群_@Mshare_T
+      - 🇯🇵 日本 02(欢迎订阅youtube：8度科技)
+      - 🇯🇵 日本 01(欢迎订阅youtube：8度科技)
+      - 🇯🇵 日本 03(欢迎订阅youtube：8度科技)
+      - 🇯🇵 日本 02(欢迎订阅youtube：8度科技) 2
+      - 🇺🇸 US(欢迎订阅youtube：8度科技)
+      - 🇮🇳 印度(欢迎订阅youtube：8度科技)
+      - 🇮🇳 印度(欢迎订阅youtube：8度科技) 2
+      - 🇰🇷 韩国_001 关注Tg交流群_@Mshare_T
+      - 🇰🇷 韩国_017 关注Tg交流群_@Mshare_T
       - CH_40+@WangCai_1
-      - CH_39+@WangCai_1
-      - CH_38+@WangCai_1
-      - CH_37+@WangCai_1
-      - CH_36+@WangCai_1
-      - CH_35+@WangCai_1
-      - CH_34+@WangCai_1
-      - CH_33+@WangCai_1
-      - CH_32+@WangCai_1
-      - CH_31+@WangCai_1
-      - CH_30+@WangCai_1
-      - CH_29+@WangCai_1
-      - CH_28+@WangCai_1
-      - CH_27+@WangCai_1
-      - CH_26+@WangCai_1
-      - CH_24+@WangCai_1
-      - CH_23+@WangCai_1
-      - CH_22+@WangCai_1
+      - CH_61+@WangCai_1
+      - 🇰🇷 韩国_004 关注Tg交流群_@Mshare_T
+      - 🇸🇪 瑞典_025 关注Tg交流群_@Mshare_T
+      - 🇺🇸 US(欢迎订阅youtube：8度科技) 2
+      - 🇸🇪 瑞典_024 关注Tg交流群_@Mshare_T
+      - 🇺🇸 美国_013 关注Tg交流群_@Mshare_T
+      - 🇺🇸 美国(欢迎订阅youtube：8度科技)
       - CH_21+@WangCai_1
+      - CH_56+@WangCai_1
+      - 🇸🇪 瑞典_017 关注Tg交流群_@Mshare_T
+      - CH_44+@WangCai_1
+      - 🇸🇪 瑞典_004 关注Tg交流群_@Mshare_T
+      - 🇸🇪 瑞典_010 关注Tg交流群_@Mshare_T
+      - 🇸🇪 瑞典_011 关注Tg交流群_@Mshare_T
+      - CH_54+@WangCai_1
+      - CH_59+@WangCai_1
+      - 🇸🇪 瑞典_003 关注Tg交流群_@Mshare_T
+      - 🇸🇪 瑞典_008 关注Tg交流群_@Mshare_T
+      - 🇸🇪 瑞典_009 关注Tg交流群_@Mshare_T
+      - 🇸🇪 瑞典_019 关注Tg交流群_@Mshare_T
+      - 🇸🇪 瑞典_022 关注Tg交流群_@Mshare_T
+      - 🇷🇴 罗马尼亚(欢迎订阅youtube：8度科技)
+      - 🇸🇪 瑞典_005 关注Tg交流群_@Mshare_T
+      - 🇸🇪 瑞典_007 关注Tg交流群_@Mshare_T
+      - 🇸🇪 瑞典_014 关注Tg交流群_@Mshare_T
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 3
+      - 🇺🇸 美国(欢迎订阅youtube：8度科技) 2
+      - 🇺🇸 US(欢迎订阅youtube：8度科技) 3
       - CH_20+@WangCai_1
-      - CH_19+@WangCai_1
-      - CH_18+@WangCai_1
-      - CH_17+@WangCai_1
-      - CH_16+@WangCai_1
-      - CH_15+@WangCai_1
-      - CH_14+@WangCai_1
-      - CH_13+@WangCai_1
+      - CH_39+@WangCai_1
+      - CH_58+@WangCai_1
+      - CH_60+@WangCai_1
+      - 🇰🇷 韩国_005 关注Tg交流群_@Mshare_T
+      - 🇰🇷 韩国_007 关注Tg交流群_@Mshare_T
+      - 🇸🇪 瑞典_013 关注Tg交流群_@Mshare_T
+      - 🇸🇪 瑞典_015 关注Tg交流群_@Mshare_T
+      - 🇸🇪 瑞典_018 关注Tg交流群_@Mshare_T
+      - 🇨🇭 瑞士 04(欢迎订阅youtube：8度科技)
+      - 🇸🇪 瑞典_026 关注Tg交流群_@Mshare_T
+      - 🇹🇷 土耳其_001 关注Tg交流群_@Mshare_T
+      - 🇺🇸 美国(欢迎订阅youtube：8度科技) 3
+      - CH_38+@WangCai_1
+      - 🇰🇷 韩国_015 关注Tg交流群_@Mshare_T
+      - 🇸🇪 瑞典_001 关注Tg交流群_@Mshare_T
+      - 🇸🇪 瑞典_006 关注Tg交流群_@Mshare_T
+      - 🇸🇪 瑞典_012 关注Tg交流群_@Mshare_T
+      - 🇮🇪 爱尔兰(欢迎订阅youtube：8度科技)
+      - 🇸🇪 瑞典(欢迎订阅youtube：8度科技)
+      - 🇹🇷 土耳其_004 关注Tg交流群_@Mshare_T
+      - 🇨🇦 加拿大(欢迎订阅youtube：8度科技)
       - 🇺🇸 US(欢迎订阅YouTube：8度科技）
+      - CH_51+@WangCai_1
+      - 🇷🇴 罗马尼亚_001 关注Tg交流群_@Mshare_T
+      - 🇸🇪 瑞典_016 关注Tg交流群_@Mshare_T
+      - 🇸🇪 瑞典_023 关注Tg交流群_@Mshare_T
+      - 🇫🇷 法国(欢迎订阅youtube：8度科技)
+      - CH_52+@WangCai_1
+      - 🇷🇴 罗马尼亚_002 关注Tg交流群_@Mshare_T
       - 🇺🇸 US(欢迎订阅YouTube：8度科技） 2
+      - CH_46+@WangCai_1
+      - CH_57+@WangCai_1
+      - 🇸🇪 瑞典_014 关注Tg交流群_@Mshare_T 2
+      - 🇸🇪 瑞典_020 关注Tg交流群_@Mshare_T
+      - 🇬🇧 英国(欢迎订阅youtube：8度科技) 5
+      - 🇺🇸 US(欢迎订阅youtube：8度科技) 4
+      - 🇺🇸 美国(欢迎订阅youtube：8度科技) 4
+      - 🇰🇷 韩国_009 关注Tg交流群_@Mshare_T
+      - 🇰🇷 韩国_016 关注Tg交流群_@Mshare_T
+      - 🇨🇭 瑞士 01(欢迎订阅youtube：8度科技)
+      - CH_55+@WangCai_1
+      - 🇰🇷 韩国_008 关注Tg交流群_@Mshare_T
+      - 🇸🇪 瑞典_021 关注Tg交流群_@Mshare_T
+      - 🇨🇭 瑞士 03(欢迎订阅youtube：8度科技)
+      - 🇺🇸 US(欢迎订阅youtube：8度科技) 5
+      - CH_23+@WangCai_1
+      - 🇰🇷 韩国_011 关注Tg交流群_@Mshare_T
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 4
+      - 🇺🇸 美国_017 关注Tg交流群_@Mshare_T
+      - CH_43+@WangCai_1
+      - 🇺🇸 美国_021 关注Tg交流群_@Mshare_T
+      - 🇮🇹 意大利 米兰(欢迎订阅youtube：8度科技)
+      - CH_41+@WangCai_1
+      - CH_42+@WangCai_1
+      - 🇮🇹 意大利_007 关注Tg交流群_@Mshare_T
+      - 🇰🇷 韩国_014 关注Tg交流群_@Mshare_T
+      - 🇮🇪 爱尔兰 02(欢迎订阅youtube：8度科技)
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 5
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 6
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 7
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 8
+      - 🇮🇹 意大利_005 关注Tg交流群_@Mshare_T
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 9
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 10
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 11
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 12
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 13
+      - CH_24+@WangCai_1
+      - CH_27+@WangCai_1
+      - CH_69+@WangCai_1
+      - 🇩🇪 德国 02(欢迎订阅youtube：8度科技)
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 14
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 15
+      - 伊朗_016 Tg交流群 @Mshare_T
+      - 🇮🇹 意大利_001 关注Tg交流群_@Mshare_T
+      - 🇮🇹 意大利_002 关注Tg交流群_@Mshare_T
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 16
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 17
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 18
+      - 🇺🇸 美国(欢迎订阅youtube：8度科技) 5
       - 🇺🇸 US(欢迎订阅YouTube：8度科技） 3
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 19
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 20
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 21
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 22
       - 🇺🇸 US(欢迎订阅YouTube：8度科技） 4
+      - CH(欢迎订阅youtube：8度科技)
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 23
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 24
+      - 🇺🇸 美国(欢迎订阅youtube：8度科技) 6
+      - 🇩🇪 德国 03(欢迎订阅youtube：8度科技)
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 25
+      - 🇺🇸 美国_012 关注Tg交流群_@Mshare_T
+      - 🇺🇸 美国(欢迎订阅youtube：8度科技) 7
+      - 🇺🇸 美国(欢迎订阅youtube：8度科技) 8
+      - CH(欢迎订阅youtube：8度科技) 2
+      - 🇨🇭 瑞士 02(欢迎订阅youtube：8度科技)
       - 🇺🇸 US(欢迎订阅YouTube：8度科技） 5
+      - CH_70+@WangCai_1
+      - CH_78+@WangCai_1
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 26
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 27
+      - 🇺🇸 美国_014 关注Tg交流群_@Mshare_T
+      - 🇺🇸 美国_036 关注Tg交流群_@Mshare_T
+      - CH_34+@WangCai_1
+      - CH_49+@WangCai_1
+      - 🇮🇹 意大利_003 关注Tg交流群_@Mshare_T
+      - 🇹🇷 土耳其_003 关注Tg交流群_@Mshare_T
+      - 🇺🇸 美国(欢迎订阅youtube：8度科技) 9
+      - CH_18+@WangCai_1
+      - CH_19+@WangCai_1
+      - CH_35+@WangCai_1
+      - CH_36+@WangCai_1
+      - CH_50+@WangCai_1
+      - CH_75+@WangCai_1
+      - 🇺🇸 美国(欢迎订阅youtube：8度科技) 10
+      - CH(欢迎订阅youtube：8度科技) 3
+      - CH_37+@WangCai_1
+      - 伊朗_028 Tg交流群 @Mshare_T
+      - 🇮🇹 意大利_009 关注Tg交流群_@Mshare_T
+      - 🇰🇷 韩国_010 关注Tg交流群_@Mshare_T
+      - 伊朗_008 Tg交流群 @Mshare_T
+      - 伊朗_010 Tg交流群 @Mshare_T
+      - 伊朗_027 Tg交流群 @Mshare_T
+      - CH(欢迎订阅youtube：8度科技) 4
       - 🇺🇸 US(欢迎订阅YouTube：8度科技） 6
       - 🇺🇸 US(欢迎订阅YouTube：8度科技） 7
+      - CH_13+@WangCai_1
+      - 伊朗_007 Tg交流群 @Mshare_T
+      - 🇺🇸 美国_015 关注Tg交流群_@Mshare_T
+      - CH(欢迎订阅youtube：8度科技) 5
+      - CH(欢迎订阅youtube：8度科技) 6
+      - CH_17+@WangCai_1
+      - CH_82+@WangCai_1
+      - 伊朗_004 Tg交流群 @Mshare_T
+      - 🇰🇷 韩国_012 关注Tg交流群_@Mshare_T
       - 🇺🇸 US(欢迎订阅YouTube：8度科技） 8
+      - CH_15+@WangCai_1
+      - 🇫🇷 法国(欢迎订阅youtube：8度科技) 2
+      - 🇰🇷 韩国_006 关注Tg交流群_@Mshare_T
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 28
       - 🇺🇸 US(欢迎订阅YouTube：8度科技） 9
+      - CH_79+@WangCai_1
+      - 🇨🇦 加拿大(欢迎订阅youtube：8度科技) 2
+      - 🇰🇷 韩国_003 关注Tg交流群_@Mshare_T
       - 🇺🇸 US(欢迎订阅YouTube：8度科技） 10
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 11
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 12
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 13
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 14
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 15
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 16
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 17
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 18
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 19
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 20
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 21
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 22
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 23
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 24
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 25
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 26
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 27
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 28
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 29
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 30
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 31
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 32
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 33
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 34
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 35
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 36
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 37
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 38
+      - CH_16+@WangCai_1
+      - 🇮🇹 意大利_011 关注Tg交流群_@Mshare_T
+      - 伊朗_005 Tg交流群 @Mshare_T
+      - NO(欢迎订阅youtube：8度科技)
+      - 伊朗_003 Tg交流群 @Mshare_T
+      - 伊朗_025 Tg交流群 @Mshare_T
+      - 🇨🇦 加拿大(欢迎订阅youtube：8度科技) 3
+      - 伊朗_006 Tg交流群 @Mshare_T
+      - 伊朗(欢迎订阅youtube：8度科技)
+      - 伊朗_002 Tg交流群 @Mshare_T
+      - 🇪🇺 欧洲(欢迎订阅youtube：8度科技)
+      - 🇮🇳 印度_002 关注Tg交流群_@Mshare_T
+      - 🇮🇳 印度_003 关注Tg交流群_@Mshare_T
+      - 🇺🇸 美国_019 关注Tg交流群_@Mshare_T
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 29
+      - 🇩🇪 德国_037 Tg交流群 @Mshare_T
+      - 🇳🇱 荷兰_001 关注Tg交流群_@Mshare_T
+      - 🇬🇧 英国(欢迎订阅youtube：8度科技) 6
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 匈牙利 佩斯（感谢关注youtube：8度科技）
-      - 匈牙利 佩斯（感谢关注youtube：8度科技） 2
-      - 🇬🇧 英国（感谢关注youtube：8度科技）
-      - CH_83+@WangCai_1
-      - CH_82+@WangCai_1
-      - CH_81+@WangCai_1
-      - CH_80+@WangCai_1
-      - CH_79+@WangCai_1
-      - CH_78+@WangCai_1
-      - CH_76+@WangCai_1
-      - CH_75+@WangCai_1
-      - CH_72+@WangCai_1
-      - CH_70+@WangCai_1
-      - CH_69+@WangCai_1
-      - CH_68+@WangCai_1
-      - CH_67+@WangCai_1
-      - CH_66+@WangCai_1
-      - CH_65+@WangCai_1
-      - CH_64+@WangCai_1
-      - CH_62+@WangCai_1
-      - CH_61+@WangCai_1
-      - CH_60+@WangCai_1
-      - CH_59+@WangCai_1
-      - CH_58+@WangCai_1
-      - CH_57+@WangCai_1
-      - CH_56+@WangCai_1
-      - CH_55+@WangCai_1
-      - CH_54+@WangCai_1
-      - CH_53+@WangCai_1
-      - CH_52+@WangCai_1
-      - CH_51+@WangCai_1
-      - CH_50+@WangCai_1
-      - CH_49+@WangCai_1
-      - CH_48+@WangCai_1
-      - CH_47+@WangCai_1
-      - CH_46+@WangCai_1
-      - CH_44+@WangCai_1
-      - CH_43+@WangCai_1
-      - CH_42+@WangCai_1
-      - CH_41+@WangCai_1
+      - 🇸🇬 新加坡_002 关注Tg交流群_@Mshare_T
+      - 🇭🇰 香港_001 Tg交流群 @Mshare_T
+      - 🇭🇰 香港_002 Tg交流群 @Mshare_T
+      - 🇭🇰 香港_019 Tg交流群 @Mshare_T
+      - 🇯🇵 日本_002 关注Tg交流群_@Mshare_T
+      - 🇮🇩 印尼_001 Tg交流群 @Mshare_T
+      - 🇸🇬 新加坡_004 关注Tg交流群_@Mshare_T
+      - 🇯🇵 日本_003 关注Tg交流群_@Mshare_T
+      - 🇸🇬 新加坡_003 关注Tg交流群_@Mshare_T
+      - 🇯🇵 日本_007 关注Tg交流群_@Mshare_T
+      - 🇭🇰 香港_003 Tg交流群 @Mshare_T
+      - 澳門_001 关注Tg交流群_@Mshare_T
+      - 🇯🇵 日本_009 关注Tg交流群_@Mshare_T
+      - 🇲🇾 马来西亚_001 关注Tg交流群_@Mshare_T
+      - 🇭🇰 香港_011 Tg交流群 @Mshare_T
+      - 🇭🇰 香港_004 Tg交流群 @Mshare_T
+      - 🇹🇼 台湾_004 关注Tg交流群_@Mshare_T
+      - 🇭🇰 香港_010 Tg交流群 @Mshare_T
+      - 🇺🇸 美国_006 关注Tg交流群_@Mshare_T
+      - 🇯🇵 日本_006 关注Tg交流群_@Mshare_T
+      - 🇹🇼 台湾_001 关注Tg交流群_@Mshare_T
+      - 🇺🇸 美国_002 关注Tg交流群_@Mshare_T
+      - 🇺🇸 美国_003 关注Tg交流群_@Mshare_T
+      - 🇷🇺 俄罗斯_001 关注Tg交流群_@Mshare_T
+      - 🇹🇼 台湾 05(欢迎订阅youtube：8度科技）
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技)
+      - 🇯🇵 日本_005 关注Tg交流群_@Mshare_T
+      - 🇺🇸 美国_040 关注Tg交流群_@Mshare_T
+      - 🇹🇼 台湾 06(欢迎订阅youtube：8度科技）
+      - 🇬🇧 英国(欢迎订阅youtube：8度科技)
+      - 🇺🇸 美国_001 关注Tg交流群_@Mshare_T
+      - 🇹🇼 台湾 07(欢迎订阅youtube：8度科技）
+      - 🇺🇸 美国_041 关注Tg交流群_@Mshare_T
+      - 🇸🇬 新加坡_006 关注Tg交流群_@Mshare_T
+      - 🇬🇧 英国(欢迎订阅youtube：8度科技) 2
+      - 🇬🇧 英国(欢迎订阅youtube：8度科技) 3
+      - 🇬🇧 英国(欢迎订阅youtube：8度科技) 4
+      - 🇹🇼 台湾 04(欢迎订阅youtube：8度科技）
+      - 🇯🇵 日本_008 关注Tg交流群_@Mshare_T
+      - 🇹🇼 台湾 03(欢迎订阅youtube：8度科技）
+      - 🇸🇬 新加坡_008 关注Tg交流群_@Mshare_T
+      - 🇸🇬 新加坡_009 关注Tg交流群_@Mshare_T
+      - 🇹🇼 台湾 02(欢迎订阅youtube：8度科技）
+      - 🇯🇵 日本_004 关注Tg交流群_@Mshare_T
+      - 🇭🇰 香港_017 Tg交流群 @Mshare_T
+      - 🇭🇰 中转|香港CMHK07|微信：ddly000
+      - 🇹🇼 台湾_005 关注Tg交流群_@Mshare_T
+      - 🇹🇼 台湾 01(欢迎订阅youtube：8度科技）
+      - 🇸🇬 新加坡_001 关注Tg交流群_@Mshare_T
+      - 🇭🇰 香港_020 Tg交流群 @Mshare_T
+      - 🇭🇰 香港_022 Tg交流群 @Mshare_T
+      - 🇭🇰 香港_023 Tg交流群 @Mshare_T
+      - 🇯🇵 日本_001 关注Tg交流群_@Mshare_T
+      - 🇺🇸 美国_008 关注Tg交流群_@Mshare_T
+      - 🇭🇰 香港_021 Tg交流群 @Mshare_T
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 2
+      - 🇭🇰 香港_006 Tg交流群 @Mshare_T
+      - 🇮🇳 印度_001 关注Tg交流群_@Mshare_T
+      - 🇭🇰 香港_024 Tg交流群 @Mshare_T
+      - 🇭🇰 香港_018 Tg交流群 @Mshare_T
+      - 🇰🇷 韩国_002 关注Tg交流群_@Mshare_T
+      - 🇺🇸 美国_016 关注Tg交流群_@Mshare_T
+      - 🇯🇵 日本 02(欢迎订阅youtube：8度科技)
+      - 🇯🇵 日本 01(欢迎订阅youtube：8度科技)
+      - 🇯🇵 日本 03(欢迎订阅youtube：8度科技)
+      - 🇯🇵 日本 02(欢迎订阅youtube：8度科技) 2
+      - 🇺🇸 US(欢迎订阅youtube：8度科技)
+      - 🇮🇳 印度(欢迎订阅youtube：8度科技)
+      - 🇮🇳 印度(欢迎订阅youtube：8度科技) 2
+      - 🇰🇷 韩国_001 关注Tg交流群_@Mshare_T
+      - 🇰🇷 韩国_017 关注Tg交流群_@Mshare_T
       - CH_40+@WangCai_1
-      - CH_39+@WangCai_1
-      - CH_38+@WangCai_1
-      - CH_37+@WangCai_1
-      - CH_36+@WangCai_1
-      - CH_35+@WangCai_1
-      - CH_34+@WangCai_1
-      - CH_33+@WangCai_1
-      - CH_32+@WangCai_1
-      - CH_31+@WangCai_1
-      - CH_30+@WangCai_1
-      - CH_29+@WangCai_1
-      - CH_28+@WangCai_1
-      - CH_27+@WangCai_1
-      - CH_26+@WangCai_1
-      - CH_24+@WangCai_1
-      - CH_23+@WangCai_1
-      - CH_22+@WangCai_1
+      - CH_61+@WangCai_1
+      - 🇰🇷 韩国_004 关注Tg交流群_@Mshare_T
+      - 🇸🇪 瑞典_025 关注Tg交流群_@Mshare_T
+      - 🇺🇸 US(欢迎订阅youtube：8度科技) 2
+      - 🇸🇪 瑞典_024 关注Tg交流群_@Mshare_T
+      - 🇺🇸 美国_013 关注Tg交流群_@Mshare_T
+      - 🇺🇸 美国(欢迎订阅youtube：8度科技)
       - CH_21+@WangCai_1
+      - CH_56+@WangCai_1
+      - 🇸🇪 瑞典_017 关注Tg交流群_@Mshare_T
+      - CH_44+@WangCai_1
+      - 🇸🇪 瑞典_004 关注Tg交流群_@Mshare_T
+      - 🇸🇪 瑞典_010 关注Tg交流群_@Mshare_T
+      - 🇸🇪 瑞典_011 关注Tg交流群_@Mshare_T
+      - CH_54+@WangCai_1
+      - CH_59+@WangCai_1
+      - 🇸🇪 瑞典_003 关注Tg交流群_@Mshare_T
+      - 🇸🇪 瑞典_008 关注Tg交流群_@Mshare_T
+      - 🇸🇪 瑞典_009 关注Tg交流群_@Mshare_T
+      - 🇸🇪 瑞典_019 关注Tg交流群_@Mshare_T
+      - 🇸🇪 瑞典_022 关注Tg交流群_@Mshare_T
+      - 🇷🇴 罗马尼亚(欢迎订阅youtube：8度科技)
+      - 🇸🇪 瑞典_005 关注Tg交流群_@Mshare_T
+      - 🇸🇪 瑞典_007 关注Tg交流群_@Mshare_T
+      - 🇸🇪 瑞典_014 关注Tg交流群_@Mshare_T
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 3
+      - 🇺🇸 美国(欢迎订阅youtube：8度科技) 2
+      - 🇺🇸 US(欢迎订阅youtube：8度科技) 3
       - CH_20+@WangCai_1
-      - CH_19+@WangCai_1
-      - CH_18+@WangCai_1
-      - CH_17+@WangCai_1
-      - CH_16+@WangCai_1
-      - CH_15+@WangCai_1
-      - CH_14+@WangCai_1
-      - CH_13+@WangCai_1
+      - CH_39+@WangCai_1
+      - CH_58+@WangCai_1
+      - CH_60+@WangCai_1
+      - 🇰🇷 韩国_005 关注Tg交流群_@Mshare_T
+      - 🇰🇷 韩国_007 关注Tg交流群_@Mshare_T
+      - 🇸🇪 瑞典_013 关注Tg交流群_@Mshare_T
+      - 🇸🇪 瑞典_015 关注Tg交流群_@Mshare_T
+      - 🇸🇪 瑞典_018 关注Tg交流群_@Mshare_T
+      - 🇨🇭 瑞士 04(欢迎订阅youtube：8度科技)
+      - 🇸🇪 瑞典_026 关注Tg交流群_@Mshare_T
+      - 🇹🇷 土耳其_001 关注Tg交流群_@Mshare_T
+      - 🇺🇸 美国(欢迎订阅youtube：8度科技) 3
+      - CH_38+@WangCai_1
+      - 🇰🇷 韩国_015 关注Tg交流群_@Mshare_T
+      - 🇸🇪 瑞典_001 关注Tg交流群_@Mshare_T
+      - 🇸🇪 瑞典_006 关注Tg交流群_@Mshare_T
+      - 🇸🇪 瑞典_012 关注Tg交流群_@Mshare_T
+      - 🇮🇪 爱尔兰(欢迎订阅youtube：8度科技)
+      - 🇸🇪 瑞典(欢迎订阅youtube：8度科技)
+      - 🇹🇷 土耳其_004 关注Tg交流群_@Mshare_T
+      - 🇨🇦 加拿大(欢迎订阅youtube：8度科技)
       - 🇺🇸 US(欢迎订阅YouTube：8度科技）
+      - CH_51+@WangCai_1
+      - 🇷🇴 罗马尼亚_001 关注Tg交流群_@Mshare_T
+      - 🇸🇪 瑞典_016 关注Tg交流群_@Mshare_T
+      - 🇸🇪 瑞典_023 关注Tg交流群_@Mshare_T
+      - 🇫🇷 法国(欢迎订阅youtube：8度科技)
+      - CH_52+@WangCai_1
+      - 🇷🇴 罗马尼亚_002 关注Tg交流群_@Mshare_T
       - 🇺🇸 US(欢迎订阅YouTube：8度科技） 2
+      - CH_46+@WangCai_1
+      - CH_57+@WangCai_1
+      - 🇸🇪 瑞典_014 关注Tg交流群_@Mshare_T 2
+      - 🇸🇪 瑞典_020 关注Tg交流群_@Mshare_T
+      - 🇬🇧 英国(欢迎订阅youtube：8度科技) 5
+      - 🇺🇸 US(欢迎订阅youtube：8度科技) 4
+      - 🇺🇸 美国(欢迎订阅youtube：8度科技) 4
+      - 🇰🇷 韩国_009 关注Tg交流群_@Mshare_T
+      - 🇰🇷 韩国_016 关注Tg交流群_@Mshare_T
+      - 🇨🇭 瑞士 01(欢迎订阅youtube：8度科技)
+      - CH_55+@WangCai_1
+      - 🇰🇷 韩国_008 关注Tg交流群_@Mshare_T
+      - 🇸🇪 瑞典_021 关注Tg交流群_@Mshare_T
+      - 🇨🇭 瑞士 03(欢迎订阅youtube：8度科技)
+      - 🇺🇸 US(欢迎订阅youtube：8度科技) 5
+      - CH_23+@WangCai_1
+      - 🇰🇷 韩国_011 关注Tg交流群_@Mshare_T
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 4
+      - 🇺🇸 美国_017 关注Tg交流群_@Mshare_T
+      - CH_43+@WangCai_1
+      - 🇺🇸 美国_021 关注Tg交流群_@Mshare_T
+      - 🇮🇹 意大利 米兰(欢迎订阅youtube：8度科技)
+      - CH_41+@WangCai_1
+      - CH_42+@WangCai_1
+      - 🇮🇹 意大利_007 关注Tg交流群_@Mshare_T
+      - 🇰🇷 韩国_014 关注Tg交流群_@Mshare_T
+      - 🇮🇪 爱尔兰 02(欢迎订阅youtube：8度科技)
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 5
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 6
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 7
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 8
+      - 🇮🇹 意大利_005 关注Tg交流群_@Mshare_T
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 9
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 10
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 11
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 12
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 13
+      - CH_24+@WangCai_1
+      - CH_27+@WangCai_1
+      - CH_69+@WangCai_1
+      - 🇩🇪 德国 02(欢迎订阅youtube：8度科技)
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 14
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 15
+      - 伊朗_016 Tg交流群 @Mshare_T
+      - 🇮🇹 意大利_001 关注Tg交流群_@Mshare_T
+      - 🇮🇹 意大利_002 关注Tg交流群_@Mshare_T
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 16
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 17
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 18
+      - 🇺🇸 美国(欢迎订阅youtube：8度科技) 5
       - 🇺🇸 US(欢迎订阅YouTube：8度科技） 3
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 19
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 20
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 21
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 22
       - 🇺🇸 US(欢迎订阅YouTube：8度科技） 4
+      - CH(欢迎订阅youtube：8度科技)
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 23
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 24
+      - 🇺🇸 美国(欢迎订阅youtube：8度科技) 6
+      - 🇩🇪 德国 03(欢迎订阅youtube：8度科技)
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 25
+      - 🇺🇸 美国_012 关注Tg交流群_@Mshare_T
+      - 🇺🇸 美国(欢迎订阅youtube：8度科技) 7
+      - 🇺🇸 美国(欢迎订阅youtube：8度科技) 8
+      - CH(欢迎订阅youtube：8度科技) 2
+      - 🇨🇭 瑞士 02(欢迎订阅youtube：8度科技)
       - 🇺🇸 US(欢迎订阅YouTube：8度科技） 5
+      - CH_70+@WangCai_1
+      - CH_78+@WangCai_1
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 26
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 27
+      - 🇺🇸 美国_014 关注Tg交流群_@Mshare_T
+      - 🇺🇸 美国_036 关注Tg交流群_@Mshare_T
+      - CH_34+@WangCai_1
+      - CH_49+@WangCai_1
+      - 🇮🇹 意大利_003 关注Tg交流群_@Mshare_T
+      - 🇹🇷 土耳其_003 关注Tg交流群_@Mshare_T
+      - 🇺🇸 美国(欢迎订阅youtube：8度科技) 9
+      - CH_18+@WangCai_1
+      - CH_19+@WangCai_1
+      - CH_35+@WangCai_1
+      - CH_36+@WangCai_1
+      - CH_50+@WangCai_1
+      - CH_75+@WangCai_1
+      - 🇺🇸 美国(欢迎订阅youtube：8度科技) 10
+      - CH(欢迎订阅youtube：8度科技) 3
+      - CH_37+@WangCai_1
+      - 伊朗_028 Tg交流群 @Mshare_T
+      - 🇮🇹 意大利_009 关注Tg交流群_@Mshare_T
+      - 🇰🇷 韩国_010 关注Tg交流群_@Mshare_T
+      - 伊朗_008 Tg交流群 @Mshare_T
+      - 伊朗_010 Tg交流群 @Mshare_T
+      - 伊朗_027 Tg交流群 @Mshare_T
+      - CH(欢迎订阅youtube：8度科技) 4
       - 🇺🇸 US(欢迎订阅YouTube：8度科技） 6
       - 🇺🇸 US(欢迎订阅YouTube：8度科技） 7
+      - CH_13+@WangCai_1
+      - 伊朗_007 Tg交流群 @Mshare_T
+      - 🇺🇸 美国_015 关注Tg交流群_@Mshare_T
+      - CH(欢迎订阅youtube：8度科技) 5
+      - CH(欢迎订阅youtube：8度科技) 6
+      - CH_17+@WangCai_1
+      - CH_82+@WangCai_1
+      - 伊朗_004 Tg交流群 @Mshare_T
+      - 🇰🇷 韩国_012 关注Tg交流群_@Mshare_T
       - 🇺🇸 US(欢迎订阅YouTube：8度科技） 8
+      - CH_15+@WangCai_1
+      - 🇫🇷 法国(欢迎订阅youtube：8度科技) 2
+      - 🇰🇷 韩国_006 关注Tg交流群_@Mshare_T
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 28
       - 🇺🇸 US(欢迎订阅YouTube：8度科技） 9
+      - CH_79+@WangCai_1
+      - 🇨🇦 加拿大(欢迎订阅youtube：8度科技) 2
+      - 🇰🇷 韩国_003 关注Tg交流群_@Mshare_T
       - 🇺🇸 US(欢迎订阅YouTube：8度科技） 10
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 11
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 12
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 13
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 14
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 15
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 16
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 17
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 18
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 19
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 20
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 21
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 22
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 23
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 24
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 25
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 26
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 27
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 28
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 29
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 30
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 31
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 32
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 33
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 34
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 35
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 36
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 37
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 38
+      - CH_16+@WangCai_1
+      - 🇮🇹 意大利_011 关注Tg交流群_@Mshare_T
+      - 伊朗_005 Tg交流群 @Mshare_T
+      - NO(欢迎订阅youtube：8度科技)
+      - 伊朗_003 Tg交流群 @Mshare_T
+      - 伊朗_025 Tg交流群 @Mshare_T
+      - 🇨🇦 加拿大(欢迎订阅youtube：8度科技) 3
+      - 伊朗_006 Tg交流群 @Mshare_T
+      - 伊朗(欢迎订阅youtube：8度科技)
+      - 伊朗_002 Tg交流群 @Mshare_T
+      - 🇪🇺 欧洲(欢迎订阅youtube：8度科技)
+      - 🇮🇳 印度_002 关注Tg交流群_@Mshare_T
+      - 🇮🇳 印度_003 关注Tg交流群_@Mshare_T
+      - 🇺🇸 美国_019 关注Tg交流群_@Mshare_T
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 29
+      - 🇩🇪 德国_037 Tg交流群 @Mshare_T
+      - 🇳🇱 荷兰_001 关注Tg交流群_@Mshare_T
+      - 🇬🇧 英国(欢迎订阅youtube：8度科技) 6
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
+      - 🇭🇰 香港_001 Tg交流群 @Mshare_T
+      - 🇭🇰 香港_002 Tg交流群 @Mshare_T
+      - 🇭🇰 香港_019 Tg交流群 @Mshare_T
+      - 🇭🇰 香港_003 Tg交流群 @Mshare_T
+      - 🇭🇰 香港_011 Tg交流群 @Mshare_T
+      - 🇭🇰 香港_004 Tg交流群 @Mshare_T
+      - 🇹🇼 台湾_004 关注Tg交流群_@Mshare_T
+      - 🇭🇰 香港_010 Tg交流群 @Mshare_T
+      - 🇹🇼 台湾_001 关注Tg交流群_@Mshare_T
+      - 🇹🇼 台湾 05(欢迎订阅youtube：8度科技）
+      - 🇹🇼 台湾 06(欢迎订阅youtube：8度科技）
+      - 🇹🇼 台湾 07(欢迎订阅youtube：8度科技）
+      - 🇹🇼 台湾 04(欢迎订阅youtube：8度科技）
+      - 🇹🇼 台湾 03(欢迎订阅youtube：8度科技）
+      - 🇹🇼 台湾 02(欢迎订阅youtube：8度科技）
+      - 🇭🇰 香港_017 Tg交流群 @Mshare_T
+      - 🇭🇰 中转|香港CMHK07|微信：ddly000
+      - 🇹🇼 台湾_005 关注Tg交流群_@Mshare_T
+      - 🇹🇼 台湾 01(欢迎订阅youtube：8度科技）
+      - 🇭🇰 香港_020 Tg交流群 @Mshare_T
+      - 🇭🇰 香港_022 Tg交流群 @Mshare_T
+      - 🇭🇰 香港_023 Tg交流群 @Mshare_T
+      - 🇭🇰 香港_021 Tg交流群 @Mshare_T
+      - 🇭🇰 香港_006 Tg交流群 @Mshare_T
+      - 🇭🇰 香港_024 Tg交流群 @Mshare_T
+      - 🇭🇰 香港_018 Tg交流群 @Mshare_T
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 匈牙利 佩斯（感谢关注youtube：8度科技）
-      - 匈牙利 佩斯（感谢关注youtube：8度科技） 2
-      - 🇬🇧 英国（感谢关注youtube：8度科技）
-      - CH_83+@WangCai_1
-      - CH_82+@WangCai_1
-      - CH_81+@WangCai_1
-      - CH_80+@WangCai_1
-      - CH_79+@WangCai_1
-      - CH_78+@WangCai_1
-      - CH_76+@WangCai_1
-      - CH_75+@WangCai_1
-      - CH_72+@WangCai_1
-      - CH_70+@WangCai_1
-      - CH_69+@WangCai_1
-      - CH_68+@WangCai_1
-      - CH_67+@WangCai_1
-      - CH_66+@WangCai_1
-      - CH_65+@WangCai_1
-      - CH_64+@WangCai_1
-      - CH_62+@WangCai_1
-      - CH_61+@WangCai_1
-      - CH_60+@WangCai_1
-      - CH_59+@WangCai_1
-      - CH_58+@WangCai_1
-      - CH_57+@WangCai_1
-      - CH_56+@WangCai_1
-      - CH_55+@WangCai_1
-      - CH_54+@WangCai_1
-      - CH_53+@WangCai_1
-      - CH_52+@WangCai_1
-      - CH_51+@WangCai_1
-      - CH_50+@WangCai_1
-      - CH_49+@WangCai_1
-      - CH_48+@WangCai_1
-      - CH_47+@WangCai_1
-      - CH_46+@WangCai_1
-      - CH_44+@WangCai_1
-      - CH_43+@WangCai_1
-      - CH_42+@WangCai_1
-      - CH_41+@WangCai_1
+      - 🇸🇬 新加坡_002 关注Tg交流群_@Mshare_T
+      - 🇭🇰 香港_001 Tg交流群 @Mshare_T
+      - 🇭🇰 香港_002 Tg交流群 @Mshare_T
+      - 🇭🇰 香港_019 Tg交流群 @Mshare_T
+      - 🇯🇵 日本_002 关注Tg交流群_@Mshare_T
+      - 🇮🇩 印尼_001 Tg交流群 @Mshare_T
+      - 🇸🇬 新加坡_004 关注Tg交流群_@Mshare_T
+      - 🇯🇵 日本_003 关注Tg交流群_@Mshare_T
+      - 🇸🇬 新加坡_003 关注Tg交流群_@Mshare_T
+      - 🇯🇵 日本_007 关注Tg交流群_@Mshare_T
+      - 🇭🇰 香港_003 Tg交流群 @Mshare_T
+      - 澳門_001 关注Tg交流群_@Mshare_T
+      - 🇯🇵 日本_009 关注Tg交流群_@Mshare_T
+      - 🇲🇾 马来西亚_001 关注Tg交流群_@Mshare_T
+      - 🇭🇰 香港_011 Tg交流群 @Mshare_T
+      - 🇭🇰 香港_004 Tg交流群 @Mshare_T
+      - 🇹🇼 台湾_004 关注Tg交流群_@Mshare_T
+      - 🇭🇰 香港_010 Tg交流群 @Mshare_T
+      - 🇺🇸 美国_006 关注Tg交流群_@Mshare_T
+      - 🇯🇵 日本_006 关注Tg交流群_@Mshare_T
+      - 🇹🇼 台湾_001 关注Tg交流群_@Mshare_T
+      - 🇺🇸 美国_002 关注Tg交流群_@Mshare_T
+      - 🇺🇸 美国_003 关注Tg交流群_@Mshare_T
+      - 🇷🇺 俄罗斯_001 关注Tg交流群_@Mshare_T
+      - 🇹🇼 台湾 05(欢迎订阅youtube：8度科技）
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技)
+      - 🇯🇵 日本_005 关注Tg交流群_@Mshare_T
+      - 🇺🇸 美国_040 关注Tg交流群_@Mshare_T
+      - 🇹🇼 台湾 06(欢迎订阅youtube：8度科技）
+      - 🇬🇧 英国(欢迎订阅youtube：8度科技)
+      - 🇺🇸 美国_001 关注Tg交流群_@Mshare_T
+      - 🇹🇼 台湾 07(欢迎订阅youtube：8度科技）
+      - 🇺🇸 美国_041 关注Tg交流群_@Mshare_T
+      - 🇸🇬 新加坡_006 关注Tg交流群_@Mshare_T
+      - 🇬🇧 英国(欢迎订阅youtube：8度科技) 2
+      - 🇬🇧 英国(欢迎订阅youtube：8度科技) 3
+      - 🇬🇧 英国(欢迎订阅youtube：8度科技) 4
+      - 🇹🇼 台湾 04(欢迎订阅youtube：8度科技）
+      - 🇯🇵 日本_008 关注Tg交流群_@Mshare_T
+      - 🇹🇼 台湾 03(欢迎订阅youtube：8度科技）
+      - 🇸🇬 新加坡_008 关注Tg交流群_@Mshare_T
+      - 🇸🇬 新加坡_009 关注Tg交流群_@Mshare_T
+      - 🇹🇼 台湾 02(欢迎订阅youtube：8度科技）
+      - 🇯🇵 日本_004 关注Tg交流群_@Mshare_T
+      - 🇭🇰 香港_017 Tg交流群 @Mshare_T
+      - 🇭🇰 中转|香港CMHK07|微信：ddly000
+      - 🇹🇼 台湾_005 关注Tg交流群_@Mshare_T
+      - 🇹🇼 台湾 01(欢迎订阅youtube：8度科技）
+      - 🇸🇬 新加坡_001 关注Tg交流群_@Mshare_T
+      - 🇭🇰 香港_020 Tg交流群 @Mshare_T
+      - 🇭🇰 香港_022 Tg交流群 @Mshare_T
+      - 🇭🇰 香港_023 Tg交流群 @Mshare_T
+      - 🇯🇵 日本_001 关注Tg交流群_@Mshare_T
+      - 🇺🇸 美国_008 关注Tg交流群_@Mshare_T
+      - 🇭🇰 香港_021 Tg交流群 @Mshare_T
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 2
+      - 🇭🇰 香港_006 Tg交流群 @Mshare_T
+      - 🇮🇳 印度_001 关注Tg交流群_@Mshare_T
+      - 🇭🇰 香港_024 Tg交流群 @Mshare_T
+      - 🇭🇰 香港_018 Tg交流群 @Mshare_T
+      - 🇰🇷 韩国_002 关注Tg交流群_@Mshare_T
+      - 🇺🇸 美国_016 关注Tg交流群_@Mshare_T
+      - 🇯🇵 日本 02(欢迎订阅youtube：8度科技)
+      - 🇯🇵 日本 01(欢迎订阅youtube：8度科技)
+      - 🇯🇵 日本 03(欢迎订阅youtube：8度科技)
+      - 🇯🇵 日本 02(欢迎订阅youtube：8度科技) 2
+      - 🇺🇸 US(欢迎订阅youtube：8度科技)
+      - 🇮🇳 印度(欢迎订阅youtube：8度科技)
+      - 🇮🇳 印度(欢迎订阅youtube：8度科技) 2
+      - 🇰🇷 韩国_001 关注Tg交流群_@Mshare_T
+      - 🇰🇷 韩国_017 关注Tg交流群_@Mshare_T
       - CH_40+@WangCai_1
-      - CH_39+@WangCai_1
-      - CH_38+@WangCai_1
-      - CH_37+@WangCai_1
-      - CH_36+@WangCai_1
-      - CH_35+@WangCai_1
-      - CH_34+@WangCai_1
-      - CH_33+@WangCai_1
-      - CH_32+@WangCai_1
-      - CH_31+@WangCai_1
-      - CH_30+@WangCai_1
-      - CH_29+@WangCai_1
-      - CH_28+@WangCai_1
-      - CH_27+@WangCai_1
-      - CH_26+@WangCai_1
-      - CH_24+@WangCai_1
-      - CH_23+@WangCai_1
-      - CH_22+@WangCai_1
+      - CH_61+@WangCai_1
+      - 🇰🇷 韩国_004 关注Tg交流群_@Mshare_T
+      - 🇸🇪 瑞典_025 关注Tg交流群_@Mshare_T
+      - 🇺🇸 US(欢迎订阅youtube：8度科技) 2
+      - 🇸🇪 瑞典_024 关注Tg交流群_@Mshare_T
+      - 🇺🇸 美国_013 关注Tg交流群_@Mshare_T
+      - 🇺🇸 美国(欢迎订阅youtube：8度科技)
       - CH_21+@WangCai_1
+      - CH_56+@WangCai_1
+      - 🇸🇪 瑞典_017 关注Tg交流群_@Mshare_T
+      - CH_44+@WangCai_1
+      - 🇸🇪 瑞典_004 关注Tg交流群_@Mshare_T
+      - 🇸🇪 瑞典_010 关注Tg交流群_@Mshare_T
+      - 🇸🇪 瑞典_011 关注Tg交流群_@Mshare_T
+      - CH_54+@WangCai_1
+      - CH_59+@WangCai_1
+      - 🇸🇪 瑞典_003 关注Tg交流群_@Mshare_T
+      - 🇸🇪 瑞典_008 关注Tg交流群_@Mshare_T
+      - 🇸🇪 瑞典_009 关注Tg交流群_@Mshare_T
+      - 🇸🇪 瑞典_019 关注Tg交流群_@Mshare_T
+      - 🇸🇪 瑞典_022 关注Tg交流群_@Mshare_T
+      - 🇷🇴 罗马尼亚(欢迎订阅youtube：8度科技)
+      - 🇸🇪 瑞典_005 关注Tg交流群_@Mshare_T
+      - 🇸🇪 瑞典_007 关注Tg交流群_@Mshare_T
+      - 🇸🇪 瑞典_014 关注Tg交流群_@Mshare_T
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 3
+      - 🇺🇸 美国(欢迎订阅youtube：8度科技) 2
+      - 🇺🇸 US(欢迎订阅youtube：8度科技) 3
       - CH_20+@WangCai_1
-      - CH_19+@WangCai_1
-      - CH_18+@WangCai_1
-      - CH_17+@WangCai_1
-      - CH_16+@WangCai_1
-      - CH_15+@WangCai_1
-      - CH_14+@WangCai_1
-      - CH_13+@WangCai_1
+      - CH_39+@WangCai_1
+      - CH_58+@WangCai_1
+      - CH_60+@WangCai_1
+      - 🇰🇷 韩国_005 关注Tg交流群_@Mshare_T
+      - 🇰🇷 韩国_007 关注Tg交流群_@Mshare_T
+      - 🇸🇪 瑞典_013 关注Tg交流群_@Mshare_T
+      - 🇸🇪 瑞典_015 关注Tg交流群_@Mshare_T
+      - 🇸🇪 瑞典_018 关注Tg交流群_@Mshare_T
+      - 🇨🇭 瑞士 04(欢迎订阅youtube：8度科技)
+      - 🇸🇪 瑞典_026 关注Tg交流群_@Mshare_T
+      - 🇹🇷 土耳其_001 关注Tg交流群_@Mshare_T
+      - 🇺🇸 美国(欢迎订阅youtube：8度科技) 3
+      - CH_38+@WangCai_1
+      - 🇰🇷 韩国_015 关注Tg交流群_@Mshare_T
+      - 🇸🇪 瑞典_001 关注Tg交流群_@Mshare_T
+      - 🇸🇪 瑞典_006 关注Tg交流群_@Mshare_T
+      - 🇸🇪 瑞典_012 关注Tg交流群_@Mshare_T
+      - 🇮🇪 爱尔兰(欢迎订阅youtube：8度科技)
+      - 🇸🇪 瑞典(欢迎订阅youtube：8度科技)
+      - 🇹🇷 土耳其_004 关注Tg交流群_@Mshare_T
+      - 🇨🇦 加拿大(欢迎订阅youtube：8度科技)
       - 🇺🇸 US(欢迎订阅YouTube：8度科技）
+      - CH_51+@WangCai_1
+      - 🇷🇴 罗马尼亚_001 关注Tg交流群_@Mshare_T
+      - 🇸🇪 瑞典_016 关注Tg交流群_@Mshare_T
+      - 🇸🇪 瑞典_023 关注Tg交流群_@Mshare_T
+      - 🇫🇷 法国(欢迎订阅youtube：8度科技)
+      - CH_52+@WangCai_1
+      - 🇷🇴 罗马尼亚_002 关注Tg交流群_@Mshare_T
       - 🇺🇸 US(欢迎订阅YouTube：8度科技） 2
+      - CH_46+@WangCai_1
+      - CH_57+@WangCai_1
+      - 🇸🇪 瑞典_014 关注Tg交流群_@Mshare_T 2
+      - 🇸🇪 瑞典_020 关注Tg交流群_@Mshare_T
+      - 🇬🇧 英国(欢迎订阅youtube：8度科技) 5
+      - 🇺🇸 US(欢迎订阅youtube：8度科技) 4
+      - 🇺🇸 美国(欢迎订阅youtube：8度科技) 4
+      - 🇰🇷 韩国_009 关注Tg交流群_@Mshare_T
+      - 🇰🇷 韩国_016 关注Tg交流群_@Mshare_T
+      - 🇨🇭 瑞士 01(欢迎订阅youtube：8度科技)
+      - CH_55+@WangCai_1
+      - 🇰🇷 韩国_008 关注Tg交流群_@Mshare_T
+      - 🇸🇪 瑞典_021 关注Tg交流群_@Mshare_T
+      - 🇨🇭 瑞士 03(欢迎订阅youtube：8度科技)
+      - 🇺🇸 US(欢迎订阅youtube：8度科技) 5
+      - CH_23+@WangCai_1
+      - 🇰🇷 韩国_011 关注Tg交流群_@Mshare_T
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 4
+      - 🇺🇸 美国_017 关注Tg交流群_@Mshare_T
+      - CH_43+@WangCai_1
+      - 🇺🇸 美国_021 关注Tg交流群_@Mshare_T
+      - 🇮🇹 意大利 米兰(欢迎订阅youtube：8度科技)
+      - CH_41+@WangCai_1
+      - CH_42+@WangCai_1
+      - 🇮🇹 意大利_007 关注Tg交流群_@Mshare_T
+      - 🇰🇷 韩国_014 关注Tg交流群_@Mshare_T
+      - 🇮🇪 爱尔兰 02(欢迎订阅youtube：8度科技)
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 5
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 6
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 7
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 8
+      - 🇮🇹 意大利_005 关注Tg交流群_@Mshare_T
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 9
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 10
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 11
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 12
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 13
+      - CH_24+@WangCai_1
+      - CH_27+@WangCai_1
+      - CH_69+@WangCai_1
+      - 🇩🇪 德国 02(欢迎订阅youtube：8度科技)
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 14
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 15
+      - 伊朗_016 Tg交流群 @Mshare_T
+      - 🇮🇹 意大利_001 关注Tg交流群_@Mshare_T
+      - 🇮🇹 意大利_002 关注Tg交流群_@Mshare_T
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 16
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 17
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 18
+      - 🇺🇸 美国(欢迎订阅youtube：8度科技) 5
       - 🇺🇸 US(欢迎订阅YouTube：8度科技） 3
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 19
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 20
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 21
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 22
       - 🇺🇸 US(欢迎订阅YouTube：8度科技） 4
+      - CH(欢迎订阅youtube：8度科技)
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 23
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 24
+      - 🇺🇸 美国(欢迎订阅youtube：8度科技) 6
+      - 🇩🇪 德国 03(欢迎订阅youtube：8度科技)
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 25
+      - 🇺🇸 美国_012 关注Tg交流群_@Mshare_T
+      - 🇺🇸 美国(欢迎订阅youtube：8度科技) 7
+      - 🇺🇸 美国(欢迎订阅youtube：8度科技) 8
+      - CH(欢迎订阅youtube：8度科技) 2
+      - 🇨🇭 瑞士 02(欢迎订阅youtube：8度科技)
       - 🇺🇸 US(欢迎订阅YouTube：8度科技） 5
+      - CH_70+@WangCai_1
+      - CH_78+@WangCai_1
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 26
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 27
+      - 🇺🇸 美国_014 关注Tg交流群_@Mshare_T
+      - 🇺🇸 美国_036 关注Tg交流群_@Mshare_T
+      - CH_34+@WangCai_1
+      - CH_49+@WangCai_1
+      - 🇮🇹 意大利_003 关注Tg交流群_@Mshare_T
+      - 🇹🇷 土耳其_003 关注Tg交流群_@Mshare_T
+      - 🇺🇸 美国(欢迎订阅youtube：8度科技) 9
+      - CH_18+@WangCai_1
+      - CH_19+@WangCai_1
+      - CH_35+@WangCai_1
+      - CH_36+@WangCai_1
+      - CH_50+@WangCai_1
+      - CH_75+@WangCai_1
+      - 🇺🇸 美国(欢迎订阅youtube：8度科技) 10
+      - CH(欢迎订阅youtube：8度科技) 3
+      - CH_37+@WangCai_1
+      - 伊朗_028 Tg交流群 @Mshare_T
+      - 🇮🇹 意大利_009 关注Tg交流群_@Mshare_T
+      - 🇰🇷 韩国_010 关注Tg交流群_@Mshare_T
+      - 伊朗_008 Tg交流群 @Mshare_T
+      - 伊朗_010 Tg交流群 @Mshare_T
+      - 伊朗_027 Tg交流群 @Mshare_T
+      - CH(欢迎订阅youtube：8度科技) 4
       - 🇺🇸 US(欢迎订阅YouTube：8度科技） 6
       - 🇺🇸 US(欢迎订阅YouTube：8度科技） 7
+      - CH_13+@WangCai_1
+      - 伊朗_007 Tg交流群 @Mshare_T
+      - 🇺🇸 美国_015 关注Tg交流群_@Mshare_T
+      - CH(欢迎订阅youtube：8度科技) 5
+      - CH(欢迎订阅youtube：8度科技) 6
+      - CH_17+@WangCai_1
+      - CH_82+@WangCai_1
+      - 伊朗_004 Tg交流群 @Mshare_T
+      - 🇰🇷 韩国_012 关注Tg交流群_@Mshare_T
       - 🇺🇸 US(欢迎订阅YouTube：8度科技） 8
+      - CH_15+@WangCai_1
+      - 🇫🇷 法国(欢迎订阅youtube：8度科技) 2
+      - 🇰🇷 韩国_006 关注Tg交流群_@Mshare_T
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 28
       - 🇺🇸 US(欢迎订阅YouTube：8度科技） 9
+      - CH_79+@WangCai_1
+      - 🇨🇦 加拿大(欢迎订阅youtube：8度科技) 2
+      - 🇰🇷 韩国_003 关注Tg交流群_@Mshare_T
       - 🇺🇸 US(欢迎订阅YouTube：8度科技） 10
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 11
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 12
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 13
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 14
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 15
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 16
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 17
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 18
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 19
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 20
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 21
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 22
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 23
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 24
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 25
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 26
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 27
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 28
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 29
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 30
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 31
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 32
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 33
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 34
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 35
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 36
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 37
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 38
+      - CH_16+@WangCai_1
+      - 🇮🇹 意大利_011 关注Tg交流群_@Mshare_T
+      - 伊朗_005 Tg交流群 @Mshare_T
+      - NO(欢迎订阅youtube：8度科技)
+      - 伊朗_003 Tg交流群 @Mshare_T
+      - 伊朗_025 Tg交流群 @Mshare_T
+      - 🇨🇦 加拿大(欢迎订阅youtube：8度科技) 3
+      - 伊朗_006 Tg交流群 @Mshare_T
+      - 伊朗(欢迎订阅youtube：8度科技)
+      - 伊朗_002 Tg交流群 @Mshare_T
+      - 🇪🇺 欧洲(欢迎订阅youtube：8度科技)
+      - 🇮🇳 印度_002 关注Tg交流群_@Mshare_T
+      - 🇮🇳 印度_003 关注Tg交流群_@Mshare_T
+      - 🇺🇸 美国_019 关注Tg交流群_@Mshare_T
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 29
+      - 🇩🇪 德国_037 Tg交流群 @Mshare_T
+      - 🇳🇱 荷兰_001 关注Tg交流群_@Mshare_T
+      - 🇬🇧 英国(欢迎订阅youtube：8度科技) 6
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 匈牙利 佩斯（感谢关注youtube：8度科技）
-      - 匈牙利 佩斯（感谢关注youtube：8度科技） 2
-      - 🇬🇧 英国（感谢关注youtube：8度科技）
-      - CH_83+@WangCai_1
-      - CH_82+@WangCai_1
-      - CH_81+@WangCai_1
-      - CH_80+@WangCai_1
-      - CH_79+@WangCai_1
-      - CH_78+@WangCai_1
-      - CH_76+@WangCai_1
-      - CH_75+@WangCai_1
-      - CH_72+@WangCai_1
-      - CH_70+@WangCai_1
-      - CH_69+@WangCai_1
-      - CH_68+@WangCai_1
-      - CH_67+@WangCai_1
-      - CH_66+@WangCai_1
-      - CH_65+@WangCai_1
-      - CH_64+@WangCai_1
-      - CH_62+@WangCai_1
-      - CH_61+@WangCai_1
-      - CH_60+@WangCai_1
-      - CH_59+@WangCai_1
-      - CH_58+@WangCai_1
-      - CH_57+@WangCai_1
-      - CH_56+@WangCai_1
-      - CH_55+@WangCai_1
-      - CH_54+@WangCai_1
-      - CH_53+@WangCai_1
-      - CH_52+@WangCai_1
-      - CH_51+@WangCai_1
-      - CH_50+@WangCai_1
-      - CH_49+@WangCai_1
-      - CH_48+@WangCai_1
-      - CH_47+@WangCai_1
-      - CH_46+@WangCai_1
-      - CH_44+@WangCai_1
-      - CH_43+@WangCai_1
-      - CH_42+@WangCai_1
-      - CH_41+@WangCai_1
+      - 🇸🇬 新加坡_002 关注Tg交流群_@Mshare_T
+      - 🇭🇰 香港_001 Tg交流群 @Mshare_T
+      - 🇭🇰 香港_002 Tg交流群 @Mshare_T
+      - 🇭🇰 香港_019 Tg交流群 @Mshare_T
+      - 🇯🇵 日本_002 关注Tg交流群_@Mshare_T
+      - 🇮🇩 印尼_001 Tg交流群 @Mshare_T
+      - 🇸🇬 新加坡_004 关注Tg交流群_@Mshare_T
+      - 🇯🇵 日本_003 关注Tg交流群_@Mshare_T
+      - 🇸🇬 新加坡_003 关注Tg交流群_@Mshare_T
+      - 🇯🇵 日本_007 关注Tg交流群_@Mshare_T
+      - 🇭🇰 香港_003 Tg交流群 @Mshare_T
+      - 澳門_001 关注Tg交流群_@Mshare_T
+      - 🇯🇵 日本_009 关注Tg交流群_@Mshare_T
+      - 🇲🇾 马来西亚_001 关注Tg交流群_@Mshare_T
+      - 🇭🇰 香港_011 Tg交流群 @Mshare_T
+      - 🇭🇰 香港_004 Tg交流群 @Mshare_T
+      - 🇹🇼 台湾_004 关注Tg交流群_@Mshare_T
+      - 🇭🇰 香港_010 Tg交流群 @Mshare_T
+      - 🇺🇸 美国_006 关注Tg交流群_@Mshare_T
+      - 🇯🇵 日本_006 关注Tg交流群_@Mshare_T
+      - 🇹🇼 台湾_001 关注Tg交流群_@Mshare_T
+      - 🇺🇸 美国_002 关注Tg交流群_@Mshare_T
+      - 🇺🇸 美国_003 关注Tg交流群_@Mshare_T
+      - 🇷🇺 俄罗斯_001 关注Tg交流群_@Mshare_T
+      - 🇹🇼 台湾 05(欢迎订阅youtube：8度科技）
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技)
+      - 🇯🇵 日本_005 关注Tg交流群_@Mshare_T
+      - 🇺🇸 美国_040 关注Tg交流群_@Mshare_T
+      - 🇹🇼 台湾 06(欢迎订阅youtube：8度科技）
+      - 🇬🇧 英国(欢迎订阅youtube：8度科技)
+      - 🇺🇸 美国_001 关注Tg交流群_@Mshare_T
+      - 🇹🇼 台湾 07(欢迎订阅youtube：8度科技）
+      - 🇺🇸 美国_041 关注Tg交流群_@Mshare_T
+      - 🇸🇬 新加坡_006 关注Tg交流群_@Mshare_T
+      - 🇬🇧 英国(欢迎订阅youtube：8度科技) 2
+      - 🇬🇧 英国(欢迎订阅youtube：8度科技) 3
+      - 🇬🇧 英国(欢迎订阅youtube：8度科技) 4
+      - 🇹🇼 台湾 04(欢迎订阅youtube：8度科技）
+      - 🇯🇵 日本_008 关注Tg交流群_@Mshare_T
+      - 🇹🇼 台湾 03(欢迎订阅youtube：8度科技）
+      - 🇸🇬 新加坡_008 关注Tg交流群_@Mshare_T
+      - 🇸🇬 新加坡_009 关注Tg交流群_@Mshare_T
+      - 🇹🇼 台湾 02(欢迎订阅youtube：8度科技）
+      - 🇯🇵 日本_004 关注Tg交流群_@Mshare_T
+      - 🇭🇰 香港_017 Tg交流群 @Mshare_T
+      - 🇭🇰 中转|香港CMHK07|微信：ddly000
+      - 🇹🇼 台湾_005 关注Tg交流群_@Mshare_T
+      - 🇹🇼 台湾 01(欢迎订阅youtube：8度科技）
+      - 🇸🇬 新加坡_001 关注Tg交流群_@Mshare_T
+      - 🇭🇰 香港_020 Tg交流群 @Mshare_T
+      - 🇭🇰 香港_022 Tg交流群 @Mshare_T
+      - 🇭🇰 香港_023 Tg交流群 @Mshare_T
+      - 🇯🇵 日本_001 关注Tg交流群_@Mshare_T
+      - 🇺🇸 美国_008 关注Tg交流群_@Mshare_T
+      - 🇭🇰 香港_021 Tg交流群 @Mshare_T
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 2
+      - 🇭🇰 香港_006 Tg交流群 @Mshare_T
+      - 🇮🇳 印度_001 关注Tg交流群_@Mshare_T
+      - 🇭🇰 香港_024 Tg交流群 @Mshare_T
+      - 🇭🇰 香港_018 Tg交流群 @Mshare_T
+      - 🇰🇷 韩国_002 关注Tg交流群_@Mshare_T
+      - 🇺🇸 美国_016 关注Tg交流群_@Mshare_T
+      - 🇯🇵 日本 02(欢迎订阅youtube：8度科技)
+      - 🇯🇵 日本 01(欢迎订阅youtube：8度科技)
+      - 🇯🇵 日本 03(欢迎订阅youtube：8度科技)
+      - 🇯🇵 日本 02(欢迎订阅youtube：8度科技) 2
+      - 🇺🇸 US(欢迎订阅youtube：8度科技)
+      - 🇮🇳 印度(欢迎订阅youtube：8度科技)
+      - 🇮🇳 印度(欢迎订阅youtube：8度科技) 2
+      - 🇰🇷 韩国_001 关注Tg交流群_@Mshare_T
+      - 🇰🇷 韩国_017 关注Tg交流群_@Mshare_T
       - CH_40+@WangCai_1
-      - CH_39+@WangCai_1
-      - CH_38+@WangCai_1
-      - CH_37+@WangCai_1
-      - CH_36+@WangCai_1
-      - CH_35+@WangCai_1
-      - CH_34+@WangCai_1
-      - CH_33+@WangCai_1
-      - CH_32+@WangCai_1
-      - CH_31+@WangCai_1
-      - CH_30+@WangCai_1
-      - CH_29+@WangCai_1
-      - CH_28+@WangCai_1
-      - CH_27+@WangCai_1
-      - CH_26+@WangCai_1
-      - CH_24+@WangCai_1
-      - CH_23+@WangCai_1
-      - CH_22+@WangCai_1
+      - CH_61+@WangCai_1
+      - 🇰🇷 韩国_004 关注Tg交流群_@Mshare_T
+      - 🇸🇪 瑞典_025 关注Tg交流群_@Mshare_T
+      - 🇺🇸 US(欢迎订阅youtube：8度科技) 2
+      - 🇸🇪 瑞典_024 关注Tg交流群_@Mshare_T
+      - 🇺🇸 美国_013 关注Tg交流群_@Mshare_T
+      - 🇺🇸 美国(欢迎订阅youtube：8度科技)
       - CH_21+@WangCai_1
+      - CH_56+@WangCai_1
+      - 🇸🇪 瑞典_017 关注Tg交流群_@Mshare_T
+      - CH_44+@WangCai_1
+      - 🇸🇪 瑞典_004 关注Tg交流群_@Mshare_T
+      - 🇸🇪 瑞典_010 关注Tg交流群_@Mshare_T
+      - 🇸🇪 瑞典_011 关注Tg交流群_@Mshare_T
+      - CH_54+@WangCai_1
+      - CH_59+@WangCai_1
+      - 🇸🇪 瑞典_003 关注Tg交流群_@Mshare_T
+      - 🇸🇪 瑞典_008 关注Tg交流群_@Mshare_T
+      - 🇸🇪 瑞典_009 关注Tg交流群_@Mshare_T
+      - 🇸🇪 瑞典_019 关注Tg交流群_@Mshare_T
+      - 🇸🇪 瑞典_022 关注Tg交流群_@Mshare_T
+      - 🇷🇴 罗马尼亚(欢迎订阅youtube：8度科技)
+      - 🇸🇪 瑞典_005 关注Tg交流群_@Mshare_T
+      - 🇸🇪 瑞典_007 关注Tg交流群_@Mshare_T
+      - 🇸🇪 瑞典_014 关注Tg交流群_@Mshare_T
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 3
+      - 🇺🇸 美国(欢迎订阅youtube：8度科技) 2
+      - 🇺🇸 US(欢迎订阅youtube：8度科技) 3
       - CH_20+@WangCai_1
-      - CH_19+@WangCai_1
-      - CH_18+@WangCai_1
-      - CH_17+@WangCai_1
-      - CH_16+@WangCai_1
-      - CH_15+@WangCai_1
-      - CH_14+@WangCai_1
-      - CH_13+@WangCai_1
+      - CH_39+@WangCai_1
+      - CH_58+@WangCai_1
+      - CH_60+@WangCai_1
+      - 🇰🇷 韩国_005 关注Tg交流群_@Mshare_T
+      - 🇰🇷 韩国_007 关注Tg交流群_@Mshare_T
+      - 🇸🇪 瑞典_013 关注Tg交流群_@Mshare_T
+      - 🇸🇪 瑞典_015 关注Tg交流群_@Mshare_T
+      - 🇸🇪 瑞典_018 关注Tg交流群_@Mshare_T
+      - 🇨🇭 瑞士 04(欢迎订阅youtube：8度科技)
+      - 🇸🇪 瑞典_026 关注Tg交流群_@Mshare_T
+      - 🇹🇷 土耳其_001 关注Tg交流群_@Mshare_T
+      - 🇺🇸 美国(欢迎订阅youtube：8度科技) 3
+      - CH_38+@WangCai_1
+      - 🇰🇷 韩国_015 关注Tg交流群_@Mshare_T
+      - 🇸🇪 瑞典_001 关注Tg交流群_@Mshare_T
+      - 🇸🇪 瑞典_006 关注Tg交流群_@Mshare_T
+      - 🇸🇪 瑞典_012 关注Tg交流群_@Mshare_T
+      - 🇮🇪 爱尔兰(欢迎订阅youtube：8度科技)
+      - 🇸🇪 瑞典(欢迎订阅youtube：8度科技)
+      - 🇹🇷 土耳其_004 关注Tg交流群_@Mshare_T
+      - 🇨🇦 加拿大(欢迎订阅youtube：8度科技)
       - 🇺🇸 US(欢迎订阅YouTube：8度科技）
+      - CH_51+@WangCai_1
+      - 🇷🇴 罗马尼亚_001 关注Tg交流群_@Mshare_T
+      - 🇸🇪 瑞典_016 关注Tg交流群_@Mshare_T
+      - 🇸🇪 瑞典_023 关注Tg交流群_@Mshare_T
+      - 🇫🇷 法国(欢迎订阅youtube：8度科技)
+      - CH_52+@WangCai_1
+      - 🇷🇴 罗马尼亚_002 关注Tg交流群_@Mshare_T
       - 🇺🇸 US(欢迎订阅YouTube：8度科技） 2
+      - CH_46+@WangCai_1
+      - CH_57+@WangCai_1
+      - 🇸🇪 瑞典_014 关注Tg交流群_@Mshare_T 2
+      - 🇸🇪 瑞典_020 关注Tg交流群_@Mshare_T
+      - 🇬🇧 英国(欢迎订阅youtube：8度科技) 5
+      - 🇺🇸 US(欢迎订阅youtube：8度科技) 4
+      - 🇺🇸 美国(欢迎订阅youtube：8度科技) 4
+      - 🇰🇷 韩国_009 关注Tg交流群_@Mshare_T
+      - 🇰🇷 韩国_016 关注Tg交流群_@Mshare_T
+      - 🇨🇭 瑞士 01(欢迎订阅youtube：8度科技)
+      - CH_55+@WangCai_1
+      - 🇰🇷 韩国_008 关注Tg交流群_@Mshare_T
+      - 🇸🇪 瑞典_021 关注Tg交流群_@Mshare_T
+      - 🇨🇭 瑞士 03(欢迎订阅youtube：8度科技)
+      - 🇺🇸 US(欢迎订阅youtube：8度科技) 5
+      - CH_23+@WangCai_1
+      - 🇰🇷 韩国_011 关注Tg交流群_@Mshare_T
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 4
+      - 🇺🇸 美国_017 关注Tg交流群_@Mshare_T
+      - CH_43+@WangCai_1
+      - 🇺🇸 美国_021 关注Tg交流群_@Mshare_T
+      - 🇮🇹 意大利 米兰(欢迎订阅youtube：8度科技)
+      - CH_41+@WangCai_1
+      - CH_42+@WangCai_1
+      - 🇮🇹 意大利_007 关注Tg交流群_@Mshare_T
+      - 🇰🇷 韩国_014 关注Tg交流群_@Mshare_T
+      - 🇮🇪 爱尔兰 02(欢迎订阅youtube：8度科技)
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 5
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 6
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 7
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 8
+      - 🇮🇹 意大利_005 关注Tg交流群_@Mshare_T
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 9
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 10
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 11
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 12
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 13
+      - CH_24+@WangCai_1
+      - CH_27+@WangCai_1
+      - CH_69+@WangCai_1
+      - 🇩🇪 德国 02(欢迎订阅youtube：8度科技)
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 14
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 15
+      - 伊朗_016 Tg交流群 @Mshare_T
+      - 🇮🇹 意大利_001 关注Tg交流群_@Mshare_T
+      - 🇮🇹 意大利_002 关注Tg交流群_@Mshare_T
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 16
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 17
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 18
+      - 🇺🇸 美国(欢迎订阅youtube：8度科技) 5
       - 🇺🇸 US(欢迎订阅YouTube：8度科技） 3
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 19
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 20
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 21
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 22
       - 🇺🇸 US(欢迎订阅YouTube：8度科技） 4
+      - CH(欢迎订阅youtube：8度科技)
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 23
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 24
+      - 🇺🇸 美国(欢迎订阅youtube：8度科技) 6
+      - 🇩🇪 德国 03(欢迎订阅youtube：8度科技)
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 25
+      - 🇺🇸 美国_012 关注Tg交流群_@Mshare_T
+      - 🇺🇸 美国(欢迎订阅youtube：8度科技) 7
+      - 🇺🇸 美国(欢迎订阅youtube：8度科技) 8
+      - CH(欢迎订阅youtube：8度科技) 2
+      - 🇨🇭 瑞士 02(欢迎订阅youtube：8度科技)
       - 🇺🇸 US(欢迎订阅YouTube：8度科技） 5
+      - CH_70+@WangCai_1
+      - CH_78+@WangCai_1
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 26
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 27
+      - 🇺🇸 美国_014 关注Tg交流群_@Mshare_T
+      - 🇺🇸 美国_036 关注Tg交流群_@Mshare_T
+      - CH_34+@WangCai_1
+      - CH_49+@WangCai_1
+      - 🇮🇹 意大利_003 关注Tg交流群_@Mshare_T
+      - 🇹🇷 土耳其_003 关注Tg交流群_@Mshare_T
+      - 🇺🇸 美国(欢迎订阅youtube：8度科技) 9
+      - CH_18+@WangCai_1
+      - CH_19+@WangCai_1
+      - CH_35+@WangCai_1
+      - CH_36+@WangCai_1
+      - CH_50+@WangCai_1
+      - CH_75+@WangCai_1
+      - 🇺🇸 美国(欢迎订阅youtube：8度科技) 10
+      - CH(欢迎订阅youtube：8度科技) 3
+      - CH_37+@WangCai_1
+      - 伊朗_028 Tg交流群 @Mshare_T
+      - 🇮🇹 意大利_009 关注Tg交流群_@Mshare_T
+      - 🇰🇷 韩国_010 关注Tg交流群_@Mshare_T
+      - 伊朗_008 Tg交流群 @Mshare_T
+      - 伊朗_010 Tg交流群 @Mshare_T
+      - 伊朗_027 Tg交流群 @Mshare_T
+      - CH(欢迎订阅youtube：8度科技) 4
       - 🇺🇸 US(欢迎订阅YouTube：8度科技） 6
       - 🇺🇸 US(欢迎订阅YouTube：8度科技） 7
+      - CH_13+@WangCai_1
+      - 伊朗_007 Tg交流群 @Mshare_T
+      - 🇺🇸 美国_015 关注Tg交流群_@Mshare_T
+      - CH(欢迎订阅youtube：8度科技) 5
+      - CH(欢迎订阅youtube：8度科技) 6
+      - CH_17+@WangCai_1
+      - CH_82+@WangCai_1
+      - 伊朗_004 Tg交流群 @Mshare_T
+      - 🇰🇷 韩国_012 关注Tg交流群_@Mshare_T
       - 🇺🇸 US(欢迎订阅YouTube：8度科技） 8
+      - CH_15+@WangCai_1
+      - 🇫🇷 法国(欢迎订阅youtube：8度科技) 2
+      - 🇰🇷 韩国_006 关注Tg交流群_@Mshare_T
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 28
       - 🇺🇸 US(欢迎订阅YouTube：8度科技） 9
+      - CH_79+@WangCai_1
+      - 🇨🇦 加拿大(欢迎订阅youtube：8度科技) 2
+      - 🇰🇷 韩国_003 关注Tg交流群_@Mshare_T
       - 🇺🇸 US(欢迎订阅YouTube：8度科技） 10
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 11
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 12
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 13
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 14
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 15
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 16
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 17
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 18
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 19
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 20
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 21
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 22
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 23
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 24
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 25
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 26
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 27
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 28
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 29
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 30
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 31
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 32
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 33
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 34
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 35
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 36
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 37
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 38
+      - CH_16+@WangCai_1
+      - 🇮🇹 意大利_011 关注Tg交流群_@Mshare_T
+      - 伊朗_005 Tg交流群 @Mshare_T
+      - NO(欢迎订阅youtube：8度科技)
+      - 伊朗_003 Tg交流群 @Mshare_T
+      - 伊朗_025 Tg交流群 @Mshare_T
+      - 🇨🇦 加拿大(欢迎订阅youtube：8度科技) 3
+      - 伊朗_006 Tg交流群 @Mshare_T
+      - 伊朗(欢迎订阅youtube：8度科技)
+      - 伊朗_002 Tg交流群 @Mshare_T
+      - 🇪🇺 欧洲(欢迎订阅youtube：8度科技)
+      - 🇮🇳 印度_002 关注Tg交流群_@Mshare_T
+      - 🇮🇳 印度_003 关注Tg交流群_@Mshare_T
+      - 🇺🇸 美国_019 关注Tg交流群_@Mshare_T
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 29
+      - 🇩🇪 德国_037 Tg交流群 @Mshare_T
+      - 🇳🇱 荷兰_001 关注Tg交流群_@Mshare_T
+      - 🇬🇧 英国(欢迎订阅youtube：8度科技) 6
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 匈牙利 佩斯（感谢关注youtube：8度科技）
-      - 匈牙利 佩斯（感谢关注youtube：8度科技） 2
-      - 🇬🇧 英国（感谢关注youtube：8度科技）
-      - CH_83+@WangCai_1
-      - CH_82+@WangCai_1
-      - CH_81+@WangCai_1
-      - CH_80+@WangCai_1
-      - CH_79+@WangCai_1
-      - CH_78+@WangCai_1
-      - CH_76+@WangCai_1
-      - CH_75+@WangCai_1
-      - CH_72+@WangCai_1
-      - CH_70+@WangCai_1
-      - CH_69+@WangCai_1
-      - CH_68+@WangCai_1
-      - CH_67+@WangCai_1
-      - CH_66+@WangCai_1
-      - CH_65+@WangCai_1
-      - CH_64+@WangCai_1
-      - CH_62+@WangCai_1
-      - CH_61+@WangCai_1
-      - CH_60+@WangCai_1
-      - CH_59+@WangCai_1
-      - CH_58+@WangCai_1
-      - CH_57+@WangCai_1
-      - CH_56+@WangCai_1
-      - CH_55+@WangCai_1
-      - CH_54+@WangCai_1
-      - CH_53+@WangCai_1
-      - CH_52+@WangCai_1
-      - CH_51+@WangCai_1
-      - CH_50+@WangCai_1
-      - CH_49+@WangCai_1
-      - CH_48+@WangCai_1
-      - CH_47+@WangCai_1
-      - CH_46+@WangCai_1
-      - CH_44+@WangCai_1
-      - CH_43+@WangCai_1
-      - CH_42+@WangCai_1
-      - CH_41+@WangCai_1
+      - 🇸🇬 新加坡_002 关注Tg交流群_@Mshare_T
+      - 🇭🇰 香港_001 Tg交流群 @Mshare_T
+      - 🇭🇰 香港_002 Tg交流群 @Mshare_T
+      - 🇭🇰 香港_019 Tg交流群 @Mshare_T
+      - 🇯🇵 日本_002 关注Tg交流群_@Mshare_T
+      - 🇮🇩 印尼_001 Tg交流群 @Mshare_T
+      - 🇸🇬 新加坡_004 关注Tg交流群_@Mshare_T
+      - 🇯🇵 日本_003 关注Tg交流群_@Mshare_T
+      - 🇸🇬 新加坡_003 关注Tg交流群_@Mshare_T
+      - 🇯🇵 日本_007 关注Tg交流群_@Mshare_T
+      - 🇭🇰 香港_003 Tg交流群 @Mshare_T
+      - 澳門_001 关注Tg交流群_@Mshare_T
+      - 🇯🇵 日本_009 关注Tg交流群_@Mshare_T
+      - 🇲🇾 马来西亚_001 关注Tg交流群_@Mshare_T
+      - 🇭🇰 香港_011 Tg交流群 @Mshare_T
+      - 🇭🇰 香港_004 Tg交流群 @Mshare_T
+      - 🇹🇼 台湾_004 关注Tg交流群_@Mshare_T
+      - 🇭🇰 香港_010 Tg交流群 @Mshare_T
+      - 🇺🇸 美国_006 关注Tg交流群_@Mshare_T
+      - 🇯🇵 日本_006 关注Tg交流群_@Mshare_T
+      - 🇹🇼 台湾_001 关注Tg交流群_@Mshare_T
+      - 🇺🇸 美国_002 关注Tg交流群_@Mshare_T
+      - 🇺🇸 美国_003 关注Tg交流群_@Mshare_T
+      - 🇷🇺 俄罗斯_001 关注Tg交流群_@Mshare_T
+      - 🇹🇼 台湾 05(欢迎订阅youtube：8度科技）
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技)
+      - 🇯🇵 日本_005 关注Tg交流群_@Mshare_T
+      - 🇺🇸 美国_040 关注Tg交流群_@Mshare_T
+      - 🇹🇼 台湾 06(欢迎订阅youtube：8度科技）
+      - 🇬🇧 英国(欢迎订阅youtube：8度科技)
+      - 🇺🇸 美国_001 关注Tg交流群_@Mshare_T
+      - 🇹🇼 台湾 07(欢迎订阅youtube：8度科技）
+      - 🇺🇸 美国_041 关注Tg交流群_@Mshare_T
+      - 🇸🇬 新加坡_006 关注Tg交流群_@Mshare_T
+      - 🇬🇧 英国(欢迎订阅youtube：8度科技) 2
+      - 🇬🇧 英国(欢迎订阅youtube：8度科技) 3
+      - 🇬🇧 英国(欢迎订阅youtube：8度科技) 4
+      - 🇹🇼 台湾 04(欢迎订阅youtube：8度科技）
+      - 🇯🇵 日本_008 关注Tg交流群_@Mshare_T
+      - 🇹🇼 台湾 03(欢迎订阅youtube：8度科技）
+      - 🇸🇬 新加坡_008 关注Tg交流群_@Mshare_T
+      - 🇸🇬 新加坡_009 关注Tg交流群_@Mshare_T
+      - 🇹🇼 台湾 02(欢迎订阅youtube：8度科技）
+      - 🇯🇵 日本_004 关注Tg交流群_@Mshare_T
+      - 🇭🇰 香港_017 Tg交流群 @Mshare_T
+      - 🇭🇰 中转|香港CMHK07|微信：ddly000
+      - 🇹🇼 台湾_005 关注Tg交流群_@Mshare_T
+      - 🇹🇼 台湾 01(欢迎订阅youtube：8度科技）
+      - 🇸🇬 新加坡_001 关注Tg交流群_@Mshare_T
+      - 🇭🇰 香港_020 Tg交流群 @Mshare_T
+      - 🇭🇰 香港_022 Tg交流群 @Mshare_T
+      - 🇭🇰 香港_023 Tg交流群 @Mshare_T
+      - 🇯🇵 日本_001 关注Tg交流群_@Mshare_T
+      - 🇺🇸 美国_008 关注Tg交流群_@Mshare_T
+      - 🇭🇰 香港_021 Tg交流群 @Mshare_T
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 2
+      - 🇭🇰 香港_006 Tg交流群 @Mshare_T
+      - 🇮🇳 印度_001 关注Tg交流群_@Mshare_T
+      - 🇭🇰 香港_024 Tg交流群 @Mshare_T
+      - 🇭🇰 香港_018 Tg交流群 @Mshare_T
+      - 🇰🇷 韩国_002 关注Tg交流群_@Mshare_T
+      - 🇺🇸 美国_016 关注Tg交流群_@Mshare_T
+      - 🇯🇵 日本 02(欢迎订阅youtube：8度科技)
+      - 🇯🇵 日本 01(欢迎订阅youtube：8度科技)
+      - 🇯🇵 日本 03(欢迎订阅youtube：8度科技)
+      - 🇯🇵 日本 02(欢迎订阅youtube：8度科技) 2
+      - 🇺🇸 US(欢迎订阅youtube：8度科技)
+      - 🇮🇳 印度(欢迎订阅youtube：8度科技)
+      - 🇮🇳 印度(欢迎订阅youtube：8度科技) 2
+      - 🇰🇷 韩国_001 关注Tg交流群_@Mshare_T
+      - 🇰🇷 韩国_017 关注Tg交流群_@Mshare_T
       - CH_40+@WangCai_1
-      - CH_39+@WangCai_1
-      - CH_38+@WangCai_1
-      - CH_37+@WangCai_1
-      - CH_36+@WangCai_1
-      - CH_35+@WangCai_1
-      - CH_34+@WangCai_1
-      - CH_33+@WangCai_1
-      - CH_32+@WangCai_1
-      - CH_31+@WangCai_1
-      - CH_30+@WangCai_1
-      - CH_29+@WangCai_1
-      - CH_28+@WangCai_1
-      - CH_27+@WangCai_1
-      - CH_26+@WangCai_1
-      - CH_24+@WangCai_1
-      - CH_23+@WangCai_1
-      - CH_22+@WangCai_1
+      - CH_61+@WangCai_1
+      - 🇰🇷 韩国_004 关注Tg交流群_@Mshare_T
+      - 🇸🇪 瑞典_025 关注Tg交流群_@Mshare_T
+      - 🇺🇸 US(欢迎订阅youtube：8度科技) 2
+      - 🇸🇪 瑞典_024 关注Tg交流群_@Mshare_T
+      - 🇺🇸 美国_013 关注Tg交流群_@Mshare_T
+      - 🇺🇸 美国(欢迎订阅youtube：8度科技)
       - CH_21+@WangCai_1
+      - CH_56+@WangCai_1
+      - 🇸🇪 瑞典_017 关注Tg交流群_@Mshare_T
+      - CH_44+@WangCai_1
+      - 🇸🇪 瑞典_004 关注Tg交流群_@Mshare_T
+      - 🇸🇪 瑞典_010 关注Tg交流群_@Mshare_T
+      - 🇸🇪 瑞典_011 关注Tg交流群_@Mshare_T
+      - CH_54+@WangCai_1
+      - CH_59+@WangCai_1
+      - 🇸🇪 瑞典_003 关注Tg交流群_@Mshare_T
+      - 🇸🇪 瑞典_008 关注Tg交流群_@Mshare_T
+      - 🇸🇪 瑞典_009 关注Tg交流群_@Mshare_T
+      - 🇸🇪 瑞典_019 关注Tg交流群_@Mshare_T
+      - 🇸🇪 瑞典_022 关注Tg交流群_@Mshare_T
+      - 🇷🇴 罗马尼亚(欢迎订阅youtube：8度科技)
+      - 🇸🇪 瑞典_005 关注Tg交流群_@Mshare_T
+      - 🇸🇪 瑞典_007 关注Tg交流群_@Mshare_T
+      - 🇸🇪 瑞典_014 关注Tg交流群_@Mshare_T
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 3
+      - 🇺🇸 美国(欢迎订阅youtube：8度科技) 2
+      - 🇺🇸 US(欢迎订阅youtube：8度科技) 3
       - CH_20+@WangCai_1
-      - CH_19+@WangCai_1
-      - CH_18+@WangCai_1
-      - CH_17+@WangCai_1
-      - CH_16+@WangCai_1
-      - CH_15+@WangCai_1
-      - CH_14+@WangCai_1
-      - CH_13+@WangCai_1
+      - CH_39+@WangCai_1
+      - CH_58+@WangCai_1
+      - CH_60+@WangCai_1
+      - 🇰🇷 韩国_005 关注Tg交流群_@Mshare_T
+      - 🇰🇷 韩国_007 关注Tg交流群_@Mshare_T
+      - 🇸🇪 瑞典_013 关注Tg交流群_@Mshare_T
+      - 🇸🇪 瑞典_015 关注Tg交流群_@Mshare_T
+      - 🇸🇪 瑞典_018 关注Tg交流群_@Mshare_T
+      - 🇨🇭 瑞士 04(欢迎订阅youtube：8度科技)
+      - 🇸🇪 瑞典_026 关注Tg交流群_@Mshare_T
+      - 🇹🇷 土耳其_001 关注Tg交流群_@Mshare_T
+      - 🇺🇸 美国(欢迎订阅youtube：8度科技) 3
+      - CH_38+@WangCai_1
+      - 🇰🇷 韩国_015 关注Tg交流群_@Mshare_T
+      - 🇸🇪 瑞典_001 关注Tg交流群_@Mshare_T
+      - 🇸🇪 瑞典_006 关注Tg交流群_@Mshare_T
+      - 🇸🇪 瑞典_012 关注Tg交流群_@Mshare_T
+      - 🇮🇪 爱尔兰(欢迎订阅youtube：8度科技)
+      - 🇸🇪 瑞典(欢迎订阅youtube：8度科技)
+      - 🇹🇷 土耳其_004 关注Tg交流群_@Mshare_T
+      - 🇨🇦 加拿大(欢迎订阅youtube：8度科技)
       - 🇺🇸 US(欢迎订阅YouTube：8度科技）
+      - CH_51+@WangCai_1
+      - 🇷🇴 罗马尼亚_001 关注Tg交流群_@Mshare_T
+      - 🇸🇪 瑞典_016 关注Tg交流群_@Mshare_T
+      - 🇸🇪 瑞典_023 关注Tg交流群_@Mshare_T
+      - 🇫🇷 法国(欢迎订阅youtube：8度科技)
+      - CH_52+@WangCai_1
+      - 🇷🇴 罗马尼亚_002 关注Tg交流群_@Mshare_T
       - 🇺🇸 US(欢迎订阅YouTube：8度科技） 2
+      - CH_46+@WangCai_1
+      - CH_57+@WangCai_1
+      - 🇸🇪 瑞典_014 关注Tg交流群_@Mshare_T 2
+      - 🇸🇪 瑞典_020 关注Tg交流群_@Mshare_T
+      - 🇬🇧 英国(欢迎订阅youtube：8度科技) 5
+      - 🇺🇸 US(欢迎订阅youtube：8度科技) 4
+      - 🇺🇸 美国(欢迎订阅youtube：8度科技) 4
+      - 🇰🇷 韩国_009 关注Tg交流群_@Mshare_T
+      - 🇰🇷 韩国_016 关注Tg交流群_@Mshare_T
+      - 🇨🇭 瑞士 01(欢迎订阅youtube：8度科技)
+      - CH_55+@WangCai_1
+      - 🇰🇷 韩国_008 关注Tg交流群_@Mshare_T
+      - 🇸🇪 瑞典_021 关注Tg交流群_@Mshare_T
+      - 🇨🇭 瑞士 03(欢迎订阅youtube：8度科技)
+      - 🇺🇸 US(欢迎订阅youtube：8度科技) 5
+      - CH_23+@WangCai_1
+      - 🇰🇷 韩国_011 关注Tg交流群_@Mshare_T
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 4
+      - 🇺🇸 美国_017 关注Tg交流群_@Mshare_T
+      - CH_43+@WangCai_1
+      - 🇺🇸 美国_021 关注Tg交流群_@Mshare_T
+      - 🇮🇹 意大利 米兰(欢迎订阅youtube：8度科技)
+      - CH_41+@WangCai_1
+      - CH_42+@WangCai_1
+      - 🇮🇹 意大利_007 关注Tg交流群_@Mshare_T
+      - 🇰🇷 韩国_014 关注Tg交流群_@Mshare_T
+      - 🇮🇪 爱尔兰 02(欢迎订阅youtube：8度科技)
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 5
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 6
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 7
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 8
+      - 🇮🇹 意大利_005 关注Tg交流群_@Mshare_T
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 9
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 10
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 11
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 12
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 13
+      - CH_24+@WangCai_1
+      - CH_27+@WangCai_1
+      - CH_69+@WangCai_1
+      - 🇩🇪 德国 02(欢迎订阅youtube：8度科技)
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 14
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 15
+      - 伊朗_016 Tg交流群 @Mshare_T
+      - 🇮🇹 意大利_001 关注Tg交流群_@Mshare_T
+      - 🇮🇹 意大利_002 关注Tg交流群_@Mshare_T
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 16
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 17
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 18
+      - 🇺🇸 美国(欢迎订阅youtube：8度科技) 5
       - 🇺🇸 US(欢迎订阅YouTube：8度科技） 3
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 19
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 20
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 21
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 22
       - 🇺🇸 US(欢迎订阅YouTube：8度科技） 4
+      - CH(欢迎订阅youtube：8度科技)
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 23
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 24
+      - 🇺🇸 美国(欢迎订阅youtube：8度科技) 6
+      - 🇩🇪 德国 03(欢迎订阅youtube：8度科技)
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 25
+      - 🇺🇸 美国_012 关注Tg交流群_@Mshare_T
+      - 🇺🇸 美国(欢迎订阅youtube：8度科技) 7
+      - 🇺🇸 美国(欢迎订阅youtube：8度科技) 8
+      - CH(欢迎订阅youtube：8度科技) 2
+      - 🇨🇭 瑞士 02(欢迎订阅youtube：8度科技)
       - 🇺🇸 US(欢迎订阅YouTube：8度科技） 5
+      - CH_70+@WangCai_1
+      - CH_78+@WangCai_1
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 26
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 27
+      - 🇺🇸 美国_014 关注Tg交流群_@Mshare_T
+      - 🇺🇸 美国_036 关注Tg交流群_@Mshare_T
+      - CH_34+@WangCai_1
+      - CH_49+@WangCai_1
+      - 🇮🇹 意大利_003 关注Tg交流群_@Mshare_T
+      - 🇹🇷 土耳其_003 关注Tg交流群_@Mshare_T
+      - 🇺🇸 美国(欢迎订阅youtube：8度科技) 9
+      - CH_18+@WangCai_1
+      - CH_19+@WangCai_1
+      - CH_35+@WangCai_1
+      - CH_36+@WangCai_1
+      - CH_50+@WangCai_1
+      - CH_75+@WangCai_1
+      - 🇺🇸 美国(欢迎订阅youtube：8度科技) 10
+      - CH(欢迎订阅youtube：8度科技) 3
+      - CH_37+@WangCai_1
+      - 伊朗_028 Tg交流群 @Mshare_T
+      - 🇮🇹 意大利_009 关注Tg交流群_@Mshare_T
+      - 🇰🇷 韩国_010 关注Tg交流群_@Mshare_T
+      - 伊朗_008 Tg交流群 @Mshare_T
+      - 伊朗_010 Tg交流群 @Mshare_T
+      - 伊朗_027 Tg交流群 @Mshare_T
+      - CH(欢迎订阅youtube：8度科技) 4
       - 🇺🇸 US(欢迎订阅YouTube：8度科技） 6
       - 🇺🇸 US(欢迎订阅YouTube：8度科技） 7
+      - CH_13+@WangCai_1
+      - 伊朗_007 Tg交流群 @Mshare_T
+      - 🇺🇸 美国_015 关注Tg交流群_@Mshare_T
+      - CH(欢迎订阅youtube：8度科技) 5
+      - CH(欢迎订阅youtube：8度科技) 6
+      - CH_17+@WangCai_1
+      - CH_82+@WangCai_1
+      - 伊朗_004 Tg交流群 @Mshare_T
+      - 🇰🇷 韩国_012 关注Tg交流群_@Mshare_T
       - 🇺🇸 US(欢迎订阅YouTube：8度科技） 8
+      - CH_15+@WangCai_1
+      - 🇫🇷 法国(欢迎订阅youtube：8度科技) 2
+      - 🇰🇷 韩国_006 关注Tg交流群_@Mshare_T
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 28
       - 🇺🇸 US(欢迎订阅YouTube：8度科技） 9
+      - CH_79+@WangCai_1
+      - 🇨🇦 加拿大(欢迎订阅youtube：8度科技) 2
+      - 🇰🇷 韩国_003 关注Tg交流群_@Mshare_T
       - 🇺🇸 US(欢迎订阅YouTube：8度科技） 10
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 11
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 12
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 13
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 14
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 15
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 16
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 17
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 18
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 19
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 20
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 21
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 22
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 23
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 24
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 25
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 26
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 27
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 28
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 29
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 30
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 31
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 32
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 33
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 34
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 35
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 36
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 37
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 38
+      - CH_16+@WangCai_1
+      - 🇮🇹 意大利_011 关注Tg交流群_@Mshare_T
+      - 伊朗_005 Tg交流群 @Mshare_T
+      - NO(欢迎订阅youtube：8度科技)
+      - 伊朗_003 Tg交流群 @Mshare_T
+      - 伊朗_025 Tg交流群 @Mshare_T
+      - 🇨🇦 加拿大(欢迎订阅youtube：8度科技) 3
+      - 伊朗_006 Tg交流群 @Mshare_T
+      - 伊朗(欢迎订阅youtube：8度科技)
+      - 伊朗_002 Tg交流群 @Mshare_T
+      - 🇪🇺 欧洲(欢迎订阅youtube：8度科技)
+      - 🇮🇳 印度_002 关注Tg交流群_@Mshare_T
+      - 🇮🇳 印度_003 关注Tg交流群_@Mshare_T
+      - 🇺🇸 美国_019 关注Tg交流群_@Mshare_T
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 29
+      - 🇩🇪 德国_037 Tg交流群 @Mshare_T
+      - 🇳🇱 荷兰_001 关注Tg交流群_@Mshare_T
+      - 🇬🇧 英国(欢迎订阅youtube：8度科技) 6
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -793,111 +1939,271 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 匈牙利 佩斯（感谢关注youtube：8度科技）
-      - 匈牙利 佩斯（感谢关注youtube：8度科技） 2
-      - 🇬🇧 英国（感谢关注youtube：8度科技）
-      - CH_83+@WangCai_1
-      - CH_82+@WangCai_1
-      - CH_81+@WangCai_1
-      - CH_80+@WangCai_1
-      - CH_79+@WangCai_1
-      - CH_78+@WangCai_1
-      - CH_76+@WangCai_1
-      - CH_75+@WangCai_1
-      - CH_72+@WangCai_1
-      - CH_70+@WangCai_1
-      - CH_69+@WangCai_1
-      - CH_68+@WangCai_1
-      - CH_67+@WangCai_1
-      - CH_66+@WangCai_1
-      - CH_65+@WangCai_1
-      - CH_64+@WangCai_1
-      - CH_62+@WangCai_1
-      - CH_61+@WangCai_1
-      - CH_60+@WangCai_1
-      - CH_59+@WangCai_1
-      - CH_58+@WangCai_1
-      - CH_57+@WangCai_1
-      - CH_56+@WangCai_1
-      - CH_55+@WangCai_1
-      - CH_54+@WangCai_1
-      - CH_53+@WangCai_1
-      - CH_52+@WangCai_1
-      - CH_51+@WangCai_1
-      - CH_50+@WangCai_1
-      - CH_49+@WangCai_1
-      - CH_48+@WangCai_1
-      - CH_47+@WangCai_1
-      - CH_46+@WangCai_1
-      - CH_44+@WangCai_1
-      - CH_43+@WangCai_1
-      - CH_42+@WangCai_1
-      - CH_41+@WangCai_1
+      - 🇸🇬 新加坡_002 关注Tg交流群_@Mshare_T
+      - 🇭🇰 香港_001 Tg交流群 @Mshare_T
+      - 🇭🇰 香港_002 Tg交流群 @Mshare_T
+      - 🇭🇰 香港_019 Tg交流群 @Mshare_T
+      - 🇯🇵 日本_002 关注Tg交流群_@Mshare_T
+      - 🇮🇩 印尼_001 Tg交流群 @Mshare_T
+      - 🇸🇬 新加坡_004 关注Tg交流群_@Mshare_T
+      - 🇯🇵 日本_003 关注Tg交流群_@Mshare_T
+      - 🇸🇬 新加坡_003 关注Tg交流群_@Mshare_T
+      - 🇯🇵 日本_007 关注Tg交流群_@Mshare_T
+      - 🇭🇰 香港_003 Tg交流群 @Mshare_T
+      - 澳門_001 关注Tg交流群_@Mshare_T
+      - 🇯🇵 日本_009 关注Tg交流群_@Mshare_T
+      - 🇲🇾 马来西亚_001 关注Tg交流群_@Mshare_T
+      - 🇭🇰 香港_011 Tg交流群 @Mshare_T
+      - 🇭🇰 香港_004 Tg交流群 @Mshare_T
+      - 🇹🇼 台湾_004 关注Tg交流群_@Mshare_T
+      - 🇭🇰 香港_010 Tg交流群 @Mshare_T
+      - 🇺🇸 美国_006 关注Tg交流群_@Mshare_T
+      - 🇯🇵 日本_006 关注Tg交流群_@Mshare_T
+      - 🇹🇼 台湾_001 关注Tg交流群_@Mshare_T
+      - 🇺🇸 美国_002 关注Tg交流群_@Mshare_T
+      - 🇺🇸 美国_003 关注Tg交流群_@Mshare_T
+      - 🇷🇺 俄罗斯_001 关注Tg交流群_@Mshare_T
+      - 🇹🇼 台湾 05(欢迎订阅youtube：8度科技）
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技)
+      - 🇯🇵 日本_005 关注Tg交流群_@Mshare_T
+      - 🇺🇸 美国_040 关注Tg交流群_@Mshare_T
+      - 🇹🇼 台湾 06(欢迎订阅youtube：8度科技）
+      - 🇬🇧 英国(欢迎订阅youtube：8度科技)
+      - 🇺🇸 美国_001 关注Tg交流群_@Mshare_T
+      - 🇹🇼 台湾 07(欢迎订阅youtube：8度科技）
+      - 🇺🇸 美国_041 关注Tg交流群_@Mshare_T
+      - 🇸🇬 新加坡_006 关注Tg交流群_@Mshare_T
+      - 🇬🇧 英国(欢迎订阅youtube：8度科技) 2
+      - 🇬🇧 英国(欢迎订阅youtube：8度科技) 3
+      - 🇬🇧 英国(欢迎订阅youtube：8度科技) 4
+      - 🇹🇼 台湾 04(欢迎订阅youtube：8度科技）
+      - 🇯🇵 日本_008 关注Tg交流群_@Mshare_T
+      - 🇹🇼 台湾 03(欢迎订阅youtube：8度科技）
+      - 🇸🇬 新加坡_008 关注Tg交流群_@Mshare_T
+      - 🇸🇬 新加坡_009 关注Tg交流群_@Mshare_T
+      - 🇹🇼 台湾 02(欢迎订阅youtube：8度科技）
+      - 🇯🇵 日本_004 关注Tg交流群_@Mshare_T
+      - 🇭🇰 香港_017 Tg交流群 @Mshare_T
+      - 🇭🇰 中转|香港CMHK07|微信：ddly000
+      - 🇹🇼 台湾_005 关注Tg交流群_@Mshare_T
+      - 🇹🇼 台湾 01(欢迎订阅youtube：8度科技）
+      - 🇸🇬 新加坡_001 关注Tg交流群_@Mshare_T
+      - 🇭🇰 香港_020 Tg交流群 @Mshare_T
+      - 🇭🇰 香港_022 Tg交流群 @Mshare_T
+      - 🇭🇰 香港_023 Tg交流群 @Mshare_T
+      - 🇯🇵 日本_001 关注Tg交流群_@Mshare_T
+      - 🇺🇸 美国_008 关注Tg交流群_@Mshare_T
+      - 🇭🇰 香港_021 Tg交流群 @Mshare_T
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 2
+      - 🇭🇰 香港_006 Tg交流群 @Mshare_T
+      - 🇮🇳 印度_001 关注Tg交流群_@Mshare_T
+      - 🇭🇰 香港_024 Tg交流群 @Mshare_T
+      - 🇭🇰 香港_018 Tg交流群 @Mshare_T
+      - 🇰🇷 韩国_002 关注Tg交流群_@Mshare_T
+      - 🇺🇸 美国_016 关注Tg交流群_@Mshare_T
+      - 🇯🇵 日本 02(欢迎订阅youtube：8度科技)
+      - 🇯🇵 日本 01(欢迎订阅youtube：8度科技)
+      - 🇯🇵 日本 03(欢迎订阅youtube：8度科技)
+      - 🇯🇵 日本 02(欢迎订阅youtube：8度科技) 2
+      - 🇺🇸 US(欢迎订阅youtube：8度科技)
+      - 🇮🇳 印度(欢迎订阅youtube：8度科技)
+      - 🇮🇳 印度(欢迎订阅youtube：8度科技) 2
+      - 🇰🇷 韩国_001 关注Tg交流群_@Mshare_T
+      - 🇰🇷 韩国_017 关注Tg交流群_@Mshare_T
       - CH_40+@WangCai_1
-      - CH_39+@WangCai_1
-      - CH_38+@WangCai_1
-      - CH_37+@WangCai_1
-      - CH_36+@WangCai_1
-      - CH_35+@WangCai_1
-      - CH_34+@WangCai_1
-      - CH_33+@WangCai_1
-      - CH_32+@WangCai_1
-      - CH_31+@WangCai_1
-      - CH_30+@WangCai_1
-      - CH_29+@WangCai_1
-      - CH_28+@WangCai_1
-      - CH_27+@WangCai_1
-      - CH_26+@WangCai_1
-      - CH_24+@WangCai_1
-      - CH_23+@WangCai_1
-      - CH_22+@WangCai_1
+      - CH_61+@WangCai_1
+      - 🇰🇷 韩国_004 关注Tg交流群_@Mshare_T
+      - 🇸🇪 瑞典_025 关注Tg交流群_@Mshare_T
+      - 🇺🇸 US(欢迎订阅youtube：8度科技) 2
+      - 🇸🇪 瑞典_024 关注Tg交流群_@Mshare_T
+      - 🇺🇸 美国_013 关注Tg交流群_@Mshare_T
+      - 🇺🇸 美国(欢迎订阅youtube：8度科技)
       - CH_21+@WangCai_1
+      - CH_56+@WangCai_1
+      - 🇸🇪 瑞典_017 关注Tg交流群_@Mshare_T
+      - CH_44+@WangCai_1
+      - 🇸🇪 瑞典_004 关注Tg交流群_@Mshare_T
+      - 🇸🇪 瑞典_010 关注Tg交流群_@Mshare_T
+      - 🇸🇪 瑞典_011 关注Tg交流群_@Mshare_T
+      - CH_54+@WangCai_1
+      - CH_59+@WangCai_1
+      - 🇸🇪 瑞典_003 关注Tg交流群_@Mshare_T
+      - 🇸🇪 瑞典_008 关注Tg交流群_@Mshare_T
+      - 🇸🇪 瑞典_009 关注Tg交流群_@Mshare_T
+      - 🇸🇪 瑞典_019 关注Tg交流群_@Mshare_T
+      - 🇸🇪 瑞典_022 关注Tg交流群_@Mshare_T
+      - 🇷🇴 罗马尼亚(欢迎订阅youtube：8度科技)
+      - 🇸🇪 瑞典_005 关注Tg交流群_@Mshare_T
+      - 🇸🇪 瑞典_007 关注Tg交流群_@Mshare_T
+      - 🇸🇪 瑞典_014 关注Tg交流群_@Mshare_T
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 3
+      - 🇺🇸 美国(欢迎订阅youtube：8度科技) 2
+      - 🇺🇸 US(欢迎订阅youtube：8度科技) 3
       - CH_20+@WangCai_1
-      - CH_19+@WangCai_1
-      - CH_18+@WangCai_1
-      - CH_17+@WangCai_1
-      - CH_16+@WangCai_1
-      - CH_15+@WangCai_1
-      - CH_14+@WangCai_1
-      - CH_13+@WangCai_1
+      - CH_39+@WangCai_1
+      - CH_58+@WangCai_1
+      - CH_60+@WangCai_1
+      - 🇰🇷 韩国_005 关注Tg交流群_@Mshare_T
+      - 🇰🇷 韩国_007 关注Tg交流群_@Mshare_T
+      - 🇸🇪 瑞典_013 关注Tg交流群_@Mshare_T
+      - 🇸🇪 瑞典_015 关注Tg交流群_@Mshare_T
+      - 🇸🇪 瑞典_018 关注Tg交流群_@Mshare_T
+      - 🇨🇭 瑞士 04(欢迎订阅youtube：8度科技)
+      - 🇸🇪 瑞典_026 关注Tg交流群_@Mshare_T
+      - 🇹🇷 土耳其_001 关注Tg交流群_@Mshare_T
+      - 🇺🇸 美国(欢迎订阅youtube：8度科技) 3
+      - CH_38+@WangCai_1
+      - 🇰🇷 韩国_015 关注Tg交流群_@Mshare_T
+      - 🇸🇪 瑞典_001 关注Tg交流群_@Mshare_T
+      - 🇸🇪 瑞典_006 关注Tg交流群_@Mshare_T
+      - 🇸🇪 瑞典_012 关注Tg交流群_@Mshare_T
+      - 🇮🇪 爱尔兰(欢迎订阅youtube：8度科技)
+      - 🇸🇪 瑞典(欢迎订阅youtube：8度科技)
+      - 🇹🇷 土耳其_004 关注Tg交流群_@Mshare_T
+      - 🇨🇦 加拿大(欢迎订阅youtube：8度科技)
       - 🇺🇸 US(欢迎订阅YouTube：8度科技）
+      - CH_51+@WangCai_1
+      - 🇷🇴 罗马尼亚_001 关注Tg交流群_@Mshare_T
+      - 🇸🇪 瑞典_016 关注Tg交流群_@Mshare_T
+      - 🇸🇪 瑞典_023 关注Tg交流群_@Mshare_T
+      - 🇫🇷 法国(欢迎订阅youtube：8度科技)
+      - CH_52+@WangCai_1
+      - 🇷🇴 罗马尼亚_002 关注Tg交流群_@Mshare_T
       - 🇺🇸 US(欢迎订阅YouTube：8度科技） 2
+      - CH_46+@WangCai_1
+      - CH_57+@WangCai_1
+      - 🇸🇪 瑞典_014 关注Tg交流群_@Mshare_T 2
+      - 🇸🇪 瑞典_020 关注Tg交流群_@Mshare_T
+      - 🇬🇧 英国(欢迎订阅youtube：8度科技) 5
+      - 🇺🇸 US(欢迎订阅youtube：8度科技) 4
+      - 🇺🇸 美国(欢迎订阅youtube：8度科技) 4
+      - 🇰🇷 韩国_009 关注Tg交流群_@Mshare_T
+      - 🇰🇷 韩国_016 关注Tg交流群_@Mshare_T
+      - 🇨🇭 瑞士 01(欢迎订阅youtube：8度科技)
+      - CH_55+@WangCai_1
+      - 🇰🇷 韩国_008 关注Tg交流群_@Mshare_T
+      - 🇸🇪 瑞典_021 关注Tg交流群_@Mshare_T
+      - 🇨🇭 瑞士 03(欢迎订阅youtube：8度科技)
+      - 🇺🇸 US(欢迎订阅youtube：8度科技) 5
+      - CH_23+@WangCai_1
+      - 🇰🇷 韩国_011 关注Tg交流群_@Mshare_T
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 4
+      - 🇺🇸 美国_017 关注Tg交流群_@Mshare_T
+      - CH_43+@WangCai_1
+      - 🇺🇸 美国_021 关注Tg交流群_@Mshare_T
+      - 🇮🇹 意大利 米兰(欢迎订阅youtube：8度科技)
+      - CH_41+@WangCai_1
+      - CH_42+@WangCai_1
+      - 🇮🇹 意大利_007 关注Tg交流群_@Mshare_T
+      - 🇰🇷 韩国_014 关注Tg交流群_@Mshare_T
+      - 🇮🇪 爱尔兰 02(欢迎订阅youtube：8度科技)
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 5
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 6
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 7
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 8
+      - 🇮🇹 意大利_005 关注Tg交流群_@Mshare_T
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 9
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 10
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 11
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 12
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 13
+      - CH_24+@WangCai_1
+      - CH_27+@WangCai_1
+      - CH_69+@WangCai_1
+      - 🇩🇪 德国 02(欢迎订阅youtube：8度科技)
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 14
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 15
+      - 伊朗_016 Tg交流群 @Mshare_T
+      - 🇮🇹 意大利_001 关注Tg交流群_@Mshare_T
+      - 🇮🇹 意大利_002 关注Tg交流群_@Mshare_T
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 16
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 17
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 18
+      - 🇺🇸 美国(欢迎订阅youtube：8度科技) 5
       - 🇺🇸 US(欢迎订阅YouTube：8度科技） 3
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 19
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 20
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 21
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 22
       - 🇺🇸 US(欢迎订阅YouTube：8度科技） 4
+      - CH(欢迎订阅youtube：8度科技)
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 23
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 24
+      - 🇺🇸 美国(欢迎订阅youtube：8度科技) 6
+      - 🇩🇪 德国 03(欢迎订阅youtube：8度科技)
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 25
+      - 🇺🇸 美国_012 关注Tg交流群_@Mshare_T
+      - 🇺🇸 美国(欢迎订阅youtube：8度科技) 7
+      - 🇺🇸 美国(欢迎订阅youtube：8度科技) 8
+      - CH(欢迎订阅youtube：8度科技) 2
+      - 🇨🇭 瑞士 02(欢迎订阅youtube：8度科技)
       - 🇺🇸 US(欢迎订阅YouTube：8度科技） 5
+      - CH_70+@WangCai_1
+      - CH_78+@WangCai_1
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 26
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 27
+      - 🇺🇸 美国_014 关注Tg交流群_@Mshare_T
+      - 🇺🇸 美国_036 关注Tg交流群_@Mshare_T
+      - CH_34+@WangCai_1
+      - CH_49+@WangCai_1
+      - 🇮🇹 意大利_003 关注Tg交流群_@Mshare_T
+      - 🇹🇷 土耳其_003 关注Tg交流群_@Mshare_T
+      - 🇺🇸 美国(欢迎订阅youtube：8度科技) 9
+      - CH_18+@WangCai_1
+      - CH_19+@WangCai_1
+      - CH_35+@WangCai_1
+      - CH_36+@WangCai_1
+      - CH_50+@WangCai_1
+      - CH_75+@WangCai_1
+      - 🇺🇸 美国(欢迎订阅youtube：8度科技) 10
+      - CH(欢迎订阅youtube：8度科技) 3
+      - CH_37+@WangCai_1
+      - 伊朗_028 Tg交流群 @Mshare_T
+      - 🇮🇹 意大利_009 关注Tg交流群_@Mshare_T
+      - 🇰🇷 韩国_010 关注Tg交流群_@Mshare_T
+      - 伊朗_008 Tg交流群 @Mshare_T
+      - 伊朗_010 Tg交流群 @Mshare_T
+      - 伊朗_027 Tg交流群 @Mshare_T
+      - CH(欢迎订阅youtube：8度科技) 4
       - 🇺🇸 US(欢迎订阅YouTube：8度科技） 6
       - 🇺🇸 US(欢迎订阅YouTube：8度科技） 7
+      - CH_13+@WangCai_1
+      - 伊朗_007 Tg交流群 @Mshare_T
+      - 🇺🇸 美国_015 关注Tg交流群_@Mshare_T
+      - CH(欢迎订阅youtube：8度科技) 5
+      - CH(欢迎订阅youtube：8度科技) 6
+      - CH_17+@WangCai_1
+      - CH_82+@WangCai_1
+      - 伊朗_004 Tg交流群 @Mshare_T
+      - 🇰🇷 韩国_012 关注Tg交流群_@Mshare_T
       - 🇺🇸 US(欢迎订阅YouTube：8度科技） 8
+      - CH_15+@WangCai_1
+      - 🇫🇷 法国(欢迎订阅youtube：8度科技) 2
+      - 🇰🇷 韩国_006 关注Tg交流群_@Mshare_T
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 28
       - 🇺🇸 US(欢迎订阅YouTube：8度科技） 9
+      - CH_79+@WangCai_1
+      - 🇨🇦 加拿大(欢迎订阅youtube：8度科技) 2
+      - 🇰🇷 韩国_003 关注Tg交流群_@Mshare_T
       - 🇺🇸 US(欢迎订阅YouTube：8度科技） 10
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 11
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 12
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 13
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 14
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 15
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 16
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 17
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 18
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 19
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 20
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 21
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 22
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 23
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 24
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 25
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 26
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 27
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 28
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 29
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 30
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 31
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 32
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 33
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 34
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 35
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 36
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 37
-      - 🇺🇸 US(欢迎订阅YouTube：8度科技） 38
+      - CH_16+@WangCai_1
+      - 🇮🇹 意大利_011 关注Tg交流群_@Mshare_T
+      - 伊朗_005 Tg交流群 @Mshare_T
+      - NO(欢迎订阅youtube：8度科技)
+      - 伊朗_003 Tg交流群 @Mshare_T
+      - 伊朗_025 Tg交流群 @Mshare_T
+      - 🇨🇦 加拿大(欢迎订阅youtube：8度科技) 3
+      - 伊朗_006 Tg交流群 @Mshare_T
+      - 伊朗(欢迎订阅youtube：8度科技)
+      - 伊朗_002 Tg交流群 @Mshare_T
+      - 🇪🇺 欧洲(欢迎订阅youtube：8度科技)
+      - 🇮🇳 印度_002 关注Tg交流群_@Mshare_T
+      - 🇮🇳 印度_003 关注Tg交流群_@Mshare_T
+      - 🇺🇸 美国_019 关注Tg交流群_@Mshare_T
+      - 🇩🇪 德国(欢迎订阅youtube：8度科技) 29
+      - 🇩🇪 德国_037 Tg交流群 @Mshare_T
+      - 🇳🇱 荷兰_001 关注Tg交流群_@Mshare_T
+      - 🇬🇧 英国(欢迎订阅youtube：8度科技) 6
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
