@@ -5,720 +5,450 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: (欢迎订阅youtube：8度科技), server: 38.68.134.202, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
-  - {name: 🇺🇸 _US_美国, server: usa-sanfrancisco.lvuft.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, network: ws, ws-path: /ws, ws-headers: {Host: usa-sanfrancisco.lvuft.com}}
-  - {name: 🇩🇪 _DE_德国, server: 146.0.36.23, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: 🇨🇦 _CA_加拿大, server: 198.57.27.218, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
-  - {name: 🇺🇸 _US_美国 2, server: 209.58.139.41, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, network: ws, ws-path: /ws, ws-headers: {Host: usa-sanfrancisco.lvuft.com}}
-  - {name: 🇷🇺 _RU_俄罗斯联邦, server: 45.89.228.53, port: 443, type: vmess, uuid: e64c6f7c-48eb-4852-9b29-778faef14212, alterId: 233, cipher: auto, tls: true, network: ws, ws-path: /319285eb2d/, ws-headers: {Host: free-russian-cdn.xiaohouzi.club}}
-  - {name: 🇨🇦 _CA_加拿大 2, server: 198.57.27.184, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 🇺🇸 _US_美国 3, server: 142.202.48.34, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: 🇺🇸 _US_美国 4, server: usa-dallas.lvuft.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, network: ws, ws-path: /ws, ws-headers: {Host: usa-dallas.lvuft.com}}
-  - {name: (欢迎订阅youtube：8度科技) 2, server: 107.161.50.42, port: 22401, type: vmess, uuid: d064d11b-477c-4c5d-a2d8-9fd599ef8e79, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 107.161.50.42}}
-  - {name: 🇭🇰 _HK_香港, server: 118.107.244.112, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: 🇺🇸 _US_美国 5, server: us1nhg-node.aiqiche123.com, port: 13723, type: vmess, uuid: a90597c1-bab3-4217-ad6f-0838675c8634, alterId: 10, cipher: auto, tls: true, network: ws, ws-path: ray, ws-headers: {Host: us1nhg-node.aiqiche123.com}}
-  - {name: 🇫🇷 _FR_法国, server: 145.239.1.137, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
-  - {name: 🇨🇦 _CA_加拿大 3, server: 198.57.27.218, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 🇭🇰 _HK_香港 2, server: 118.107.244.112, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: 🇺🇸 _US_美国, server: 147.182.249.191, port: 44036, type: vmess, uuid: 586782d0-3568-4b5b-ff5e-9291906ad6a1, alterId: 2, cipher: auto, tls: true, network: ws, ws-path: /1145141919, ws-headers: {Host: domeixi.nbczl233.ml}}
+  - {name: 🇩🇪 _DE_德国, server: 172.105.251.193, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
   - {name: 🇩🇪 _DE_德国 2, server: 146.0.36.23, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: (欢迎订阅youtube：8度科技) 3, server: t2.ssrsub.com, port: 8443, type: trojan, password: 1b89d065-8640-4010-a80e-dc0c46a72aaf, sni: t2.ssrsub.com}
-  - {name: 🇨🇦 _CA_加拿大 4, server: 134.195.196.3, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: 🇰🇷 _KR_韩国, server: 146.56.156.227, port: 2053, type: vmess, uuid: fec5fd62-56e7-431a-99b3-c1f76c5cbe8d, alterId: 1, cipher: auto, tls: true, network: ws, ws-path: /, ws-headers: {Host: kr2.futi.online}}
-  - {name: (欢迎订阅youtube：8度科技) 4, server: 5.183.177.111, port: 443, type: trojan, password: a3fa58b581353bb375d2ddad0f327938}
-  - {name: (欢迎订阅youtube：8度科技) 5, server: usa-buffalo.lvuft.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, network: ws, ws-path: /ws, ws-headers: {Host: usa-buffalo.lvuft.com}}
-  - {name: 🇺🇸 _US_美国 6, server: 38.114.114.69, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: _NO_挪威, server: 46.29.218.6, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: 🇫🇷 _FR_法国 2, server: ahdaeph8.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, network: ws, ws-path: /ws, ws-headers: {Host: ahdaeph8.com}}
-  - {name: (欢迎订阅youtube：8度科技) 6, server: shcu01.iplc188.com, port: 10004, type: vmess, uuid: 65cac56d-4155-43c8-bae0-f368cb21f771, alterId: 1, cipher: auto, tls: false}
-  - {name: 🇺🇸 _US_美国 7, server: 192.96.204.250, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, network: ws, ws-path: /ws, ws-headers: {Host: usa-washington.lvuft.com}}
-  - {name: (欢迎订阅youtube：8度科技) 7, server: 192.186.129.66, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, network: ws, ws-path: /ws, ws-headers: {Host: usa-buffalo.lvuft.com}}
-  - {name: 🇺🇸 _US_美国 8, server: 38.68.134.190, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: _NO_挪威 2, server: 46.29.218.6, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: (欢迎订阅youtube：8度科技) 8, server: 172.104.98.216, port: 80, type: vmess, uuid: e5af0cad-295c-37b2-b601-f35d13f6b1bb, alterId: 64, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: www.gov.hk}}
-  - {name: 🇺🇸 _US_美国 9, server: 38.68.134.190, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: 🇺🇸 _US_美国 10, server: 167.88.63.71, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: 🇷🇺 _RU_俄罗斯联邦 2, server: 82.202.220.242, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: Kw6hMXQ2Z7ey7mf2Uqyr}
-  - {name: (欢迎订阅youtube：8度科技) 9, server: 38.68.134.202, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 🇺🇸 _US_美国 11, server: 38.68.134.37, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: (欢迎订阅youtube：8度科技) 10, server: 38.68.134.202, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: 🇺🇸 _US_美国 12, server: 38.91.100.130, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 🇨🇦 _CA_加拿大 5, server: 134.195.196.3, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 🇺🇸 _US_美国 13, server: 167.88.63.71, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: 🇨🇦 _CA_加拿大 6, server: 198.57.27.184, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: 🇨🇦 _CA_加拿大 7, server: 71.19.249.109, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: QBLw4rLXQ6ebxpWwSKDL}
-  - {name: 🇨🇦 _CA_加拿大 8, server: 198.57.27.184, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: 🇨🇦 _CA_加拿大 9, server: 198.57.27.184, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: 🇺🇸 _US_美国 14, server: 142.202.48.34, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: 🇨🇦 _CA_加拿大 10, server: 198.57.27.184, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: 🇺🇸 _US_美国 15, server: 142.202.48.34, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: 🇺🇸 _US_美国 16, server: 167.88.63.61, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: 🇺🇸 _US_美国 17, server: 38.91.100.130, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 🇨🇦 _CA_加拿大 11, server: 198.57.27.184, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 🇫🇷 _FR_法国 3, server: 145.239.1.137, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: 🇺🇸 _US_美国 18, server: 142.202.48.34, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: (欢迎订阅youtube：8度科技) 11, server: 167.88.63.61, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: 🇺🇸 _US_美国 19, server: 142.202.48.34, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: 🇺🇸 _US_美国 20, server: 38.91.100.200, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: 🇰🇷 _HK_香港->🇰🇷_KR_韩国, server: xe3rayu3.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, network: ws, ws-path: /ws, ws-headers: {Host: xe3rayu3.com}}
-  - {name: (欢迎订阅youtube：8度科技) 12, server: 37.19.218.197, port: 8388, type: ss, cipher: chacha20-ietf-poly1305, password: Mx6DztQqZb7j34FdWjER}
-  - {name: 🇨🇦 _CA_加拿大 12, server: 198.57.27.218, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: 🇨🇦 _CA_加拿大 13, server: 134.195.196.3, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: 🇺🇸 _US_美国 21, server: 142.202.48.34, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: _NO_挪威 3, server: 46.29.218.6, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: _NO_挪威 4, server: 46.29.218.6, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 🇺🇸 _US_美国 22, server: 38.91.100.200, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: 🇨🇦 _CA_加拿大 14, server: 184.75.208.234, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: 47GH3wQRw7V4Zhd35bFs}
-  - {name: 🇺🇸 _US_美国 23, server: 142.202.48.34, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 🇺🇸 _US_美国 24, server: 167.88.63.74, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: (欢迎订阅youtube：8度科技) 13, server: 172.105.251.193, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: (欢迎订阅youtube：8度科技) 14, server: 45.8.159.221, port: 443, type: vmess, uuid: e5af0cad-295c-37b2-b601-f35d13f6b1bb, alterId: 32, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: pull.free.video.10010.com}}
-  - {name: (欢迎订阅youtube：8度科技) 15, server: 193.108.118.2, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: (欢迎订阅youtube：8度科技) 16, server: 45.8.159.221, port: 443, type: vmess, uuid: e5af0cad-295c-37b2-b601-f35d13f6b1bb, alterId: 32, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 45.8.159.221}}
-  - {name: 🇨🇦 _CA_加拿大 15, server: 198.57.27.184, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: 🇺🇸 _US_美国 25, server: 142.202.48.34, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 🇺🇸 _US_美国 2, server: usa-sanfrancisco.lvuft.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, network: ws, ws-path: /ws, ws-headers: {Host: usa-sanfrancisco.lvuft.com}}
+  - {name: 🇷🇺 _RU_俄罗斯联邦, server: 45.89.228.53, port: 443, type: vmess, uuid: e64c6f7c-48eb-4852-9b29-778faef14212, alterId: 233, cipher: auto, tls: true, network: ws, ws-path: /319285eb2d/, ws-headers: {Host: free-russian-cdn.xiaohouzi.club}}
+  - {name: (欢迎订阅youtube：8度科技), server: 194.135.32.208, port: 32551, type: vmess, uuid: 9d40aefc-54d9-11ec-af2d-f2c157360b1e, alterId: 0, cipher: auto, tls: false, network: ws, ws-path: /W9s28k1i/, ws-headers: {Host: 194.135.32.208}}
+  - {name: 🇺🇸 _US_美国 3, server: usa-dallas.lvuft.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, network: ws, ws-path: /ws, ws-headers: {Host: usa-dallas.lvuft.com}}
+  - {name: 🇨🇦 _CA_加拿大, server: 198.57.27.218, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 🇨🇦 _CA_加拿大 2, server: 71.19.249.109, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: QBLw4rLXQ6ebxpWwSKDL}
+  - {name: (欢迎订阅youtube：8度科技) 2, server: usa-miami.lvuft.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, network: ws, ws-path: /ws, ws-headers: {Host: usa-miami.lvuft.com}}
+  - {name: 🇰🇷 _KR_韩国, server: kr2.futi.online, port: 2053, type: vmess, uuid: fec5fd62-56e7-431a-99b3-c1f76c5cbe8d, alterId: 1, cipher: auto, tls: true, network: ws, ws-path: /, ws-headers: {Host: kr2.futi.online}}
   - {name: 🇩🇪 _DE_德国 3, server: 146.0.36.23, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: (欢迎订阅youtube：8度科技) 17, server: 172.105.251.193, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: 🇨🇦 _CA_加拿大 16, server: 198.57.27.184, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: 🇩🇪 _DE_德国 4, server: 172.105.251.193, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: 🇩🇪 _DE_德国 5, server: 172.105.251.193, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: 🇩🇪 _DE_德国 6, server: 172.105.251.193, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: 🇰🇷 _KR_韩国 2, server: kr2.futi.online, port: 2053, type: vmess, uuid: fec5fd62-56e7-431a-99b3-c1f76c5cbe8d, alterId: 1, cipher: auto, tls: true, network: ws, ws-path: /, ws-headers: {Host: kr2.futi.online}}
+  - {name: 🇺🇸 _US_美国 4, server: 192.96.204.250, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, network: ws, ws-path: /ws, ws-headers: {Host: usa-washington.lvuft.com}}
+  - {name: 🇺🇸 _US_美国 5, server: us1nhg-node.aiqiche123.com, port: 13723, type: vmess, uuid: a90597c1-bab3-4217-ad6f-0838675c8634, alterId: 10, cipher: auto, tls: true, network: ws, ws-path: ray, ws-headers: {Host: us1nhg-node.aiqiche123.com}}
+  - {name: 🇺🇸 US_1394, server: 38.114.114.49, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: (欢迎订阅youtube：8度科技) 3, server: 192.186.129.66, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, network: ws, ws-path: /ws, ws-headers: {Host: usa-buffalo.lvuft.com}}
+  - {name: 🇺🇸 _US_美国 6, server: 38.114.114.69, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: 🇺🇸 US_1012 |35.06Mb, server: 38.75.136.102, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇫🇷 _FR_法国, server: 145.239.1.137, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 🇰🇷 _KR_韩国 2, server: 146.56.156.227, port: 2053, type: vmess, uuid: fec5fd62-56e7-431a-99b3-c1f76c5cbe8d, alterId: 1, cipher: auto, tls: true, network: ws, ws-path: /, ws-headers: {Host: kr2.futi.online}}
+  - {name: 🇺🇸 US_1203 |34.84Mb, server: 38.75.136.102, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 🇩🇪 _DE_德国 4, server: 146.0.36.23, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 🇺🇸 US_1463 |35.45Mb, server: 38.75.136.102, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: 🇺🇸 US_951 |33.28Mb, server: 38.75.136.102, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 🇺🇸 US_1354 |35.02Mb, server: 38.75.136.102, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: 🇺🇸 US_1206 |35.70Mb, server: 38.75.136.102, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
+  - {name: NO_609, server: 46.29.219.246, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 🇨🇦 _CA_加拿大 3, server: 184.75.208.234, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: 47GH3wQRw7V4Zhd35bFs}
+  - {name: (欢迎订阅youtube：8度科技) 4, server: 5.183.177.111, port: 443, type: trojan, password: a3fa58b581353bb375d2ddad0f327938}
+  - {name: _NO_挪威, server: 46.29.218.6, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: (欢迎订阅youtube：8度科技) 5, server: 172.104.98.216, port: 80, type: vmess, uuid: e5af0cad-295c-37b2-b601-f35d13f6b1bb, alterId: 64, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: www.gov.hk}}
+  - {name: 🇨🇦 _CA_加拿大 4, server: 198.57.27.218, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: (欢迎订阅youtube：8度科技) 6, server: 146.0.36.23, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 🇺🇸 _US_美国 7, server: 38.91.100.200, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: 🇺🇸 _US_美国 8, server: 142.202.48.34, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
   - {name: _MX_墨西哥, server: 169.57.35.97, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: 3Q5yYEGGMu8jU2p25aWL}
-  - {name: 🇺🇦 _UA_乌克兰, server: 37.19.218.197, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: Mx6DztQqZb7j34FdWjER}
-  - {name: 🇩🇪 _DE_德国 7, server: 172.105.251.193, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: 🇩🇪 _DE_德国 8, server: 172.105.251.193, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: _NO_挪威 2, server: 46.29.218.6, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 🇺🇸 _US_美国 9, server: 142.202.48.34, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: (欢迎订阅youtube：8度科技) 7, server: usa-buffalo.lvuft.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, network: ws, ws-path: /ws, ws-headers: {Host: usa-buffalo.lvuft.com}}
+  - {name: _NO_挪威 3, server: 46.29.218.6, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 🇺🇸 _US_美国 10, server: 142.202.48.34, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: 🇩🇪 _DE_德国 5, server: 172.105.251.193, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇩🇪 _DE_德国 6, server: 172.105.251.193, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: (欢迎订阅youtube：8度科技) 8, server: 37.19.218.197, port: 8388, type: ss, cipher: chacha20-ietf-poly1305, password: Mx6DztQqZb7j34FdWjER}
+  - {name: 🇫🇷 _FR_法国 2, server: 145.239.1.137, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
+  - {name: 🇩🇪 _DE_德国 7, server: 172.105.251.193, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 🇩🇪 _DE_德国 8, server: 172.105.251.193, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: (欢迎订阅youtube：8度科技) 9, server: 172.105.251.193, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: (欢迎订阅youtube：8度科技) 10, server: 141.95.0.26, port: 826, type: ss, cipher: chacha20-ietf-poly1305, password: sF43Xt2gONqcgFX563}
+  - {name: (欢迎订阅youtube：8度科技) 11, server: 172.105.251.193, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 🇩🇪 _DE_德国 9, server: 172.105.251.193, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
   - {name: 🇯🇵 _JP_日本, server: 84.17.34.8, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: FuynHKjkzhBnmcLpaLKm}
-  - {name: 🇩🇪 _DE_德国 9, server: 172.105.251.193, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 🇰🇷 _KR_韩国 3, server: kr3.futi.online, port: 2053, type: vmess, uuid: fec5fd62-56e7-431a-99b3-c1f76c5cbe8d, alterId: 1, cipher: auto, tls: true, network: ws, ws-path: /, ws-headers: {Host: kr3.futi.online}}
-  - {name: (欢迎订阅youtube：8度科技) 18, server: usa-miami.lvuft.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, network: ws, ws-path: /ws, ws-headers: {Host: usa-miami.lvuft.com}}
-  - {name: 🇩🇪 _DE_德国 10, server: 172.105.251.193, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 🇺🇸 _US_美国 26, server: domeixi.nbczl233.ml, port: 44036, type: vmess, uuid: 586782d0-3568-4b5b-ff5e-9291906ad6a1, alterId: 2, cipher: auto, tls: true, network: ws, ws-path: /1145141919, ws-headers: {Host: domeixi.nbczl233.ml}}
-  - {name: 🇺🇸 _US_美国 27, server: 147.182.249.191, port: 44036, type: vmess, uuid: 586782d0-3568-4b5b-ff5e-9291906ad6a1, alterId: 2, cipher: auto, tls: true, network: ws, ws-path: /1145141919, ws-headers: {Host: domeixi.nbczl233.ml}}
-  - {name: 🇫🇷 _FR_法国 4, server: 62.210.90.75, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, network: ws, ws-path: /ws, ws-headers: {Host: ahdaeph8.com}}
-  - {name: 🇨🇦 _CA_加拿大 17, server: 134.195.196.3, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: (欢迎订阅youtube：8度科技) 19, server: 194.135.32.208, port: 32551, type: vmess, uuid: 9d40aefc-54d9-11ec-af2d-f2c157360b1e, alterId: 0, cipher: auto, tls: false, network: ws, ws-path: /W9s28k1i/, ws-headers: {Host: 194.135.32.208}}
-  - {name: 🇰🇷 _HK_香港->🇰🇷_KR_韩国 2, server: 156.234.95.72, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, network: ws, ws-path: /ws, ws-headers: {Host: xe3rayu3.com}}
-  - {name: 🇺🇸 _US_美国 28, server: chuch3go.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, network: ws, ws-path: /ws, ws-headers: {Host: chuch3go.com}}
-  - {name: 🇨🇦 _CA_加拿大 18, server: 198.57.27.218, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
   - {name: 🇪🇸 _ES_西班牙, server: 172.107.233.234, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: _NO_挪威 4, server: 46.29.218.6, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇺🇸 _US_美国 11, server: 209.58.139.41, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, network: ws, ws-path: /ws, ws-headers: {Host: usa-sanfrancisco.lvuft.com}}
+  - {name: 🇺🇸 _US_美国 12, server: chuch3go.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, network: ws, ws-path: /ws, ws-headers: {Host: chuch3go.com}}
+  - {name: 🇨🇦 _CA_加拿大 5, server: 198.57.27.218, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: (欢迎订阅youtube：8度科技) 12, server: 107.161.50.42, port: 22401, type: vmess, uuid: d064d11b-477c-4c5d-a2d8-9fd599ef8e79, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 107.161.50.42}}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - (欢迎订阅youtube：8度科技)
       - 🇺🇸 _US_美国
       - 🇩🇪 _DE_德国
-      - 🇨🇦 _CA_加拿大
+      - 🇩🇪 _DE_德国 2
       - 🇺🇸 _US_美国 2
       - 🇷🇺 _RU_俄罗斯联邦
-      - 🇨🇦 _CA_加拿大 2
+      - (欢迎订阅youtube：8度科技)
       - 🇺🇸 _US_美国 3
-      - 🇺🇸 _US_美国 4
+      - 🇨🇦 _CA_加拿大
+      - 🇨🇦 _CA_加拿大 2
       - (欢迎订阅youtube：8度科技) 2
-      - 🇭🇰 _HK_香港
-      - 🇺🇸 _US_美国 5
-      - 🇫🇷 _FR_法国
-      - 🇨🇦 _CA_加拿大 3
-      - 🇭🇰 _HK_香港 2
-      - 🇩🇪 _DE_德国 2
-      - (欢迎订阅youtube：8度科技) 3
-      - 🇨🇦 _CA_加拿大 4
       - 🇰🇷 _KR_韩国
-      - (欢迎订阅youtube：8度科技) 4
-      - (欢迎订阅youtube：8度科技) 5
+      - 🇩🇪 _DE_德国 3
+      - 🇺🇸 _US_美国 4
+      - 🇺🇸 _US_美国 5
+      - 🇺🇸 US_1394
+      - (欢迎订阅youtube：8度科技) 3
       - 🇺🇸 _US_美国 6
+      - 🇺🇸 US_1012 |35.06Mb
+      - 🇫🇷 _FR_法国
+      - 🇰🇷 _KR_韩国 2
+      - 🇺🇸 US_1203 |34.84Mb
+      - 🇩🇪 _DE_德国 4
+      - 🇺🇸 US_1463 |35.45Mb
+      - 🇺🇸 US_951 |33.28Mb
+      - 🇺🇸 US_1354 |35.02Mb
+      - 🇺🇸 US_1206 |35.70Mb
+      - NO_609
+      - 🇨🇦 _CA_加拿大 3
+      - (欢迎订阅youtube：8度科技) 4
       - _NO_挪威
-      - 🇫🇷 _FR_法国 2
+      - (欢迎订阅youtube：8度科技) 5
+      - 🇨🇦 _CA_加拿大 4
       - (欢迎订阅youtube：8度科技) 6
       - 🇺🇸 _US_美国 7
-      - (欢迎订阅youtube：8度科技) 7
       - 🇺🇸 _US_美国 8
+      - _MX_墨西哥
       - _NO_挪威 2
-      - (欢迎订阅youtube：8度科技) 8
       - 🇺🇸 _US_美国 9
-      - 🇺🇸 _US_美国 10
-      - 🇷🇺 _RU_俄罗斯联邦 2
-      - (欢迎订阅youtube：8度科技) 9
-      - 🇺🇸 _US_美国 11
-      - (欢迎订阅youtube：8度科技) 10
-      - 🇺🇸 _US_美国 12
-      - 🇨🇦 _CA_加拿大 5
-      - 🇺🇸 _US_美国 13
-      - 🇨🇦 _CA_加拿大 6
-      - 🇨🇦 _CA_加拿大 7
-      - 🇨🇦 _CA_加拿大 8
-      - 🇨🇦 _CA_加拿大 9
-      - 🇺🇸 _US_美国 14
-      - 🇨🇦 _CA_加拿大 10
-      - 🇺🇸 _US_美国 15
-      - 🇺🇸 _US_美国 16
-      - 🇺🇸 _US_美国 17
-      - 🇨🇦 _CA_加拿大 11
-      - 🇫🇷 _FR_法国 3
-      - 🇺🇸 _US_美国 18
-      - (欢迎订阅youtube：8度科技) 11
-      - 🇺🇸 _US_美国 19
-      - 🇺🇸 _US_美国 20
-      - 🇰🇷 _HK_香港->🇰🇷_KR_韩国
-      - (欢迎订阅youtube：8度科技) 12
-      - 🇨🇦 _CA_加拿大 12
-      - 🇨🇦 _CA_加拿大 13
-      - 🇺🇸 _US_美国 21
+      - (欢迎订阅youtube：8度科技) 7
       - _NO_挪威 3
-      - _NO_挪威 4
-      - 🇺🇸 _US_美国 22
-      - 🇨🇦 _CA_加拿大 14
-      - 🇺🇸 _US_美国 23
-      - 🇺🇸 _US_美国 24
-      - (欢迎订阅youtube：8度科技) 13
-      - (欢迎订阅youtube：8度科技) 14
-      - (欢迎订阅youtube：8度科技) 15
-      - (欢迎订阅youtube：8度科技) 16
-      - 🇨🇦 _CA_加拿大 15
-      - 🇺🇸 _US_美国 25
-      - 🇩🇪 _DE_德国 3
-      - (欢迎订阅youtube：8度科技) 17
-      - 🇨🇦 _CA_加拿大 16
-      - 🇩🇪 _DE_德国 4
+      - 🇺🇸 _US_美国 10
       - 🇩🇪 _DE_德国 5
       - 🇩🇪 _DE_德国 6
-      - 🇰🇷 _KR_韩国 2
-      - _MX_墨西哥
-      - 🇺🇦 _UA_乌克兰
+      - (欢迎订阅youtube：8度科技) 8
+      - 🇫🇷 _FR_法国 2
       - 🇩🇪 _DE_德国 7
       - 🇩🇪 _DE_德国 8
-      - 🇯🇵 _JP_日本
+      - (欢迎订阅youtube：8度科技) 9
+      - (欢迎订阅youtube：8度科技) 10
+      - (欢迎订阅youtube：8度科技) 11
       - 🇩🇪 _DE_德国 9
-      - 🇰🇷 _KR_韩国 3
-      - (欢迎订阅youtube：8度科技) 18
-      - 🇩🇪 _DE_德国 10
-      - 🇺🇸 _US_美国 26
-      - 🇺🇸 _US_美国 27
-      - 🇫🇷 _FR_法国 4
-      - 🇨🇦 _CA_加拿大 17
-      - (欢迎订阅youtube：8度科技) 19
-      - 🇰🇷 _HK_香港->🇰🇷_KR_韩国 2
-      - 🇺🇸 _US_美国 28
-      - 🇨🇦 _CA_加拿大 18
+      - 🇯🇵 _JP_日本
       - 🇪🇸 _ES_西班牙
+      - _NO_挪威 4
+      - 🇺🇸 _US_美国 11
+      - 🇺🇸 _US_美国 12
+      - 🇨🇦 _CA_加拿大 5
+      - (欢迎订阅youtube：8度科技) 12
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - (欢迎订阅youtube：8度科技)
       - 🇺🇸 _US_美国
       - 🇩🇪 _DE_德国
-      - 🇨🇦 _CA_加拿大
+      - 🇩🇪 _DE_德国 2
       - 🇺🇸 _US_美国 2
       - 🇷🇺 _RU_俄罗斯联邦
-      - 🇨🇦 _CA_加拿大 2
+      - (欢迎订阅youtube：8度科技)
       - 🇺🇸 _US_美国 3
-      - 🇺🇸 _US_美国 4
+      - 🇨🇦 _CA_加拿大
+      - 🇨🇦 _CA_加拿大 2
       - (欢迎订阅youtube：8度科技) 2
-      - 🇭🇰 _HK_香港
-      - 🇺🇸 _US_美国 5
-      - 🇫🇷 _FR_法国
-      - 🇨🇦 _CA_加拿大 3
-      - 🇭🇰 _HK_香港 2
-      - 🇩🇪 _DE_德国 2
-      - (欢迎订阅youtube：8度科技) 3
-      - 🇨🇦 _CA_加拿大 4
       - 🇰🇷 _KR_韩国
-      - (欢迎订阅youtube：8度科技) 4
-      - (欢迎订阅youtube：8度科技) 5
+      - 🇩🇪 _DE_德国 3
+      - 🇺🇸 _US_美国 4
+      - 🇺🇸 _US_美国 5
+      - 🇺🇸 US_1394
+      - (欢迎订阅youtube：8度科技) 3
       - 🇺🇸 _US_美国 6
+      - 🇺🇸 US_1012 |35.06Mb
+      - 🇫🇷 _FR_法国
+      - 🇰🇷 _KR_韩国 2
+      - 🇺🇸 US_1203 |34.84Mb
+      - 🇩🇪 _DE_德国 4
+      - 🇺🇸 US_1463 |35.45Mb
+      - 🇺🇸 US_951 |33.28Mb
+      - 🇺🇸 US_1354 |35.02Mb
+      - 🇺🇸 US_1206 |35.70Mb
+      - NO_609
+      - 🇨🇦 _CA_加拿大 3
+      - (欢迎订阅youtube：8度科技) 4
       - _NO_挪威
-      - 🇫🇷 _FR_法国 2
+      - (欢迎订阅youtube：8度科技) 5
+      - 🇨🇦 _CA_加拿大 4
       - (欢迎订阅youtube：8度科技) 6
       - 🇺🇸 _US_美国 7
-      - (欢迎订阅youtube：8度科技) 7
       - 🇺🇸 _US_美国 8
+      - _MX_墨西哥
       - _NO_挪威 2
-      - (欢迎订阅youtube：8度科技) 8
       - 🇺🇸 _US_美国 9
-      - 🇺🇸 _US_美国 10
-      - 🇷🇺 _RU_俄罗斯联邦 2
-      - (欢迎订阅youtube：8度科技) 9
-      - 🇺🇸 _US_美国 11
-      - (欢迎订阅youtube：8度科技) 10
-      - 🇺🇸 _US_美国 12
-      - 🇨🇦 _CA_加拿大 5
-      - 🇺🇸 _US_美国 13
-      - 🇨🇦 _CA_加拿大 6
-      - 🇨🇦 _CA_加拿大 7
-      - 🇨🇦 _CA_加拿大 8
-      - 🇨🇦 _CA_加拿大 9
-      - 🇺🇸 _US_美国 14
-      - 🇨🇦 _CA_加拿大 10
-      - 🇺🇸 _US_美国 15
-      - 🇺🇸 _US_美国 16
-      - 🇺🇸 _US_美国 17
-      - 🇨🇦 _CA_加拿大 11
-      - 🇫🇷 _FR_法国 3
-      - 🇺🇸 _US_美国 18
-      - (欢迎订阅youtube：8度科技) 11
-      - 🇺🇸 _US_美国 19
-      - 🇺🇸 _US_美国 20
-      - 🇰🇷 _HK_香港->🇰🇷_KR_韩国
-      - (欢迎订阅youtube：8度科技) 12
-      - 🇨🇦 _CA_加拿大 12
-      - 🇨🇦 _CA_加拿大 13
-      - 🇺🇸 _US_美国 21
+      - (欢迎订阅youtube：8度科技) 7
       - _NO_挪威 3
-      - _NO_挪威 4
-      - 🇺🇸 _US_美国 22
-      - 🇨🇦 _CA_加拿大 14
-      - 🇺🇸 _US_美国 23
-      - 🇺🇸 _US_美国 24
-      - (欢迎订阅youtube：8度科技) 13
-      - (欢迎订阅youtube：8度科技) 14
-      - (欢迎订阅youtube：8度科技) 15
-      - (欢迎订阅youtube：8度科技) 16
-      - 🇨🇦 _CA_加拿大 15
-      - 🇺🇸 _US_美国 25
-      - 🇩🇪 _DE_德国 3
-      - (欢迎订阅youtube：8度科技) 17
-      - 🇨🇦 _CA_加拿大 16
-      - 🇩🇪 _DE_德国 4
+      - 🇺🇸 _US_美国 10
       - 🇩🇪 _DE_德国 5
       - 🇩🇪 _DE_德国 6
-      - 🇰🇷 _KR_韩国 2
-      - _MX_墨西哥
-      - 🇺🇦 _UA_乌克兰
+      - (欢迎订阅youtube：8度科技) 8
+      - 🇫🇷 _FR_法国 2
       - 🇩🇪 _DE_德国 7
       - 🇩🇪 _DE_德国 8
-      - 🇯🇵 _JP_日本
+      - (欢迎订阅youtube：8度科技) 9
+      - (欢迎订阅youtube：8度科技) 10
+      - (欢迎订阅youtube：8度科技) 11
       - 🇩🇪 _DE_德国 9
-      - 🇰🇷 _KR_韩国 3
-      - (欢迎订阅youtube：8度科技) 18
-      - 🇩🇪 _DE_德国 10
-      - 🇺🇸 _US_美国 26
-      - 🇺🇸 _US_美国 27
-      - 🇫🇷 _FR_法国 4
-      - 🇨🇦 _CA_加拿大 17
-      - (欢迎订阅youtube：8度科技) 19
-      - 🇰🇷 _HK_香港->🇰🇷_KR_韩国 2
-      - 🇺🇸 _US_美国 28
-      - 🇨🇦 _CA_加拿大 18
+      - 🇯🇵 _JP_日本
       - 🇪🇸 _ES_西班牙
+      - _NO_挪威 4
+      - 🇺🇸 _US_美国 11
+      - 🇺🇸 _US_美国 12
+      - 🇨🇦 _CA_加拿大 5
+      - (欢迎订阅youtube：8度科技) 12
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - (欢迎订阅youtube：8度科技)
       - 🇺🇸 _US_美国
       - 🇩🇪 _DE_德国
-      - 🇨🇦 _CA_加拿大
+      - 🇩🇪 _DE_德国 2
       - 🇺🇸 _US_美国 2
       - 🇷🇺 _RU_俄罗斯联邦
-      - 🇨🇦 _CA_加拿大 2
+      - (欢迎订阅youtube：8度科技)
       - 🇺🇸 _US_美国 3
-      - 🇺🇸 _US_美国 4
+      - 🇨🇦 _CA_加拿大
+      - 🇨🇦 _CA_加拿大 2
       - (欢迎订阅youtube：8度科技) 2
-      - 🇭🇰 _HK_香港
-      - 🇺🇸 _US_美国 5
-      - 🇫🇷 _FR_法国
-      - 🇨🇦 _CA_加拿大 3
-      - 🇭🇰 _HK_香港 2
-      - 🇩🇪 _DE_德国 2
-      - (欢迎订阅youtube：8度科技) 3
-      - 🇨🇦 _CA_加拿大 4
       - 🇰🇷 _KR_韩国
-      - (欢迎订阅youtube：8度科技) 4
-      - (欢迎订阅youtube：8度科技) 5
+      - 🇩🇪 _DE_德国 3
+      - 🇺🇸 _US_美国 4
+      - 🇺🇸 _US_美国 5
+      - 🇺🇸 US_1394
+      - (欢迎订阅youtube：8度科技) 3
       - 🇺🇸 _US_美国 6
+      - 🇺🇸 US_1012 |35.06Mb
+      - 🇫🇷 _FR_法国
+      - 🇰🇷 _KR_韩国 2
+      - 🇺🇸 US_1203 |34.84Mb
+      - 🇩🇪 _DE_德国 4
+      - 🇺🇸 US_1463 |35.45Mb
+      - 🇺🇸 US_951 |33.28Mb
+      - 🇺🇸 US_1354 |35.02Mb
+      - 🇺🇸 US_1206 |35.70Mb
+      - NO_609
+      - 🇨🇦 _CA_加拿大 3
+      - (欢迎订阅youtube：8度科技) 4
       - _NO_挪威
-      - 🇫🇷 _FR_法国 2
+      - (欢迎订阅youtube：8度科技) 5
+      - 🇨🇦 _CA_加拿大 4
       - (欢迎订阅youtube：8度科技) 6
       - 🇺🇸 _US_美国 7
-      - (欢迎订阅youtube：8度科技) 7
       - 🇺🇸 _US_美国 8
+      - _MX_墨西哥
       - _NO_挪威 2
-      - (欢迎订阅youtube：8度科技) 8
       - 🇺🇸 _US_美国 9
-      - 🇺🇸 _US_美国 10
-      - 🇷🇺 _RU_俄罗斯联邦 2
-      - (欢迎订阅youtube：8度科技) 9
-      - 🇺🇸 _US_美国 11
-      - (欢迎订阅youtube：8度科技) 10
-      - 🇺🇸 _US_美国 12
-      - 🇨🇦 _CA_加拿大 5
-      - 🇺🇸 _US_美国 13
-      - 🇨🇦 _CA_加拿大 6
-      - 🇨🇦 _CA_加拿大 7
-      - 🇨🇦 _CA_加拿大 8
-      - 🇨🇦 _CA_加拿大 9
-      - 🇺🇸 _US_美国 14
-      - 🇨🇦 _CA_加拿大 10
-      - 🇺🇸 _US_美国 15
-      - 🇺🇸 _US_美国 16
-      - 🇺🇸 _US_美国 17
-      - 🇨🇦 _CA_加拿大 11
-      - 🇫🇷 _FR_法国 3
-      - 🇺🇸 _US_美国 18
-      - (欢迎订阅youtube：8度科技) 11
-      - 🇺🇸 _US_美国 19
-      - 🇺🇸 _US_美国 20
-      - 🇰🇷 _HK_香港->🇰🇷_KR_韩国
-      - (欢迎订阅youtube：8度科技) 12
-      - 🇨🇦 _CA_加拿大 12
-      - 🇨🇦 _CA_加拿大 13
-      - 🇺🇸 _US_美国 21
+      - (欢迎订阅youtube：8度科技) 7
       - _NO_挪威 3
-      - _NO_挪威 4
-      - 🇺🇸 _US_美国 22
-      - 🇨🇦 _CA_加拿大 14
-      - 🇺🇸 _US_美国 23
-      - 🇺🇸 _US_美国 24
-      - (欢迎订阅youtube：8度科技) 13
-      - (欢迎订阅youtube：8度科技) 14
-      - (欢迎订阅youtube：8度科技) 15
-      - (欢迎订阅youtube：8度科技) 16
-      - 🇨🇦 _CA_加拿大 15
-      - 🇺🇸 _US_美国 25
-      - 🇩🇪 _DE_德国 3
-      - (欢迎订阅youtube：8度科技) 17
-      - 🇨🇦 _CA_加拿大 16
-      - 🇩🇪 _DE_德国 4
+      - 🇺🇸 _US_美国 10
       - 🇩🇪 _DE_德国 5
       - 🇩🇪 _DE_德国 6
-      - 🇰🇷 _KR_韩国 2
-      - _MX_墨西哥
-      - 🇺🇦 _UA_乌克兰
+      - (欢迎订阅youtube：8度科技) 8
+      - 🇫🇷 _FR_法国 2
       - 🇩🇪 _DE_德国 7
       - 🇩🇪 _DE_德国 8
-      - 🇯🇵 _JP_日本
+      - (欢迎订阅youtube：8度科技) 9
+      - (欢迎订阅youtube：8度科技) 10
+      - (欢迎订阅youtube：8度科技) 11
       - 🇩🇪 _DE_德国 9
-      - 🇰🇷 _KR_韩国 3
-      - (欢迎订阅youtube：8度科技) 18
-      - 🇩🇪 _DE_德国 10
-      - 🇺🇸 _US_美国 26
-      - 🇺🇸 _US_美国 27
-      - 🇫🇷 _FR_法国 4
-      - 🇨🇦 _CA_加拿大 17
-      - (欢迎订阅youtube：8度科技) 19
-      - 🇰🇷 _HK_香港->🇰🇷_KR_韩国 2
-      - 🇺🇸 _US_美国 28
-      - 🇨🇦 _CA_加拿大 18
+      - 🇯🇵 _JP_日本
       - 🇪🇸 _ES_西班牙
+      - _NO_挪威 4
+      - 🇺🇸 _US_美国 11
+      - 🇺🇸 _US_美国 12
+      - 🇨🇦 _CA_加拿大 5
+      - (欢迎订阅youtube：8度科技) 12
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 🇭🇰 _HK_香港
-      - 🇭🇰 _HK_香港 2
-      - 🇰🇷 _HK_香港->🇰🇷_KR_韩国
-      - 🇰🇷 _HK_香港->🇰🇷_KR_韩国 2
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - (欢迎订阅youtube：8度科技)
       - 🇺🇸 _US_美国
       - 🇩🇪 _DE_德国
-      - 🇨🇦 _CA_加拿大
+      - 🇩🇪 _DE_德国 2
       - 🇺🇸 _US_美国 2
       - 🇷🇺 _RU_俄罗斯联邦
-      - 🇨🇦 _CA_加拿大 2
+      - (欢迎订阅youtube：8度科技)
       - 🇺🇸 _US_美国 3
-      - 🇺🇸 _US_美国 4
+      - 🇨🇦 _CA_加拿大
+      - 🇨🇦 _CA_加拿大 2
       - (欢迎订阅youtube：8度科技) 2
-      - 🇭🇰 _HK_香港
-      - 🇺🇸 _US_美国 5
-      - 🇫🇷 _FR_法国
-      - 🇨🇦 _CA_加拿大 3
-      - 🇭🇰 _HK_香港 2
-      - 🇩🇪 _DE_德国 2
-      - (欢迎订阅youtube：8度科技) 3
-      - 🇨🇦 _CA_加拿大 4
       - 🇰🇷 _KR_韩国
-      - (欢迎订阅youtube：8度科技) 4
-      - (欢迎订阅youtube：8度科技) 5
+      - 🇩🇪 _DE_德国 3
+      - 🇺🇸 _US_美国 4
+      - 🇺🇸 _US_美国 5
+      - 🇺🇸 US_1394
+      - (欢迎订阅youtube：8度科技) 3
       - 🇺🇸 _US_美国 6
+      - 🇺🇸 US_1012 |35.06Mb
+      - 🇫🇷 _FR_法国
+      - 🇰🇷 _KR_韩国 2
+      - 🇺🇸 US_1203 |34.84Mb
+      - 🇩🇪 _DE_德国 4
+      - 🇺🇸 US_1463 |35.45Mb
+      - 🇺🇸 US_951 |33.28Mb
+      - 🇺🇸 US_1354 |35.02Mb
+      - 🇺🇸 US_1206 |35.70Mb
+      - NO_609
+      - 🇨🇦 _CA_加拿大 3
+      - (欢迎订阅youtube：8度科技) 4
       - _NO_挪威
-      - 🇫🇷 _FR_法国 2
+      - (欢迎订阅youtube：8度科技) 5
+      - 🇨🇦 _CA_加拿大 4
       - (欢迎订阅youtube：8度科技) 6
       - 🇺🇸 _US_美国 7
-      - (欢迎订阅youtube：8度科技) 7
       - 🇺🇸 _US_美国 8
+      - _MX_墨西哥
       - _NO_挪威 2
-      - (欢迎订阅youtube：8度科技) 8
       - 🇺🇸 _US_美国 9
-      - 🇺🇸 _US_美国 10
-      - 🇷🇺 _RU_俄罗斯联邦 2
-      - (欢迎订阅youtube：8度科技) 9
-      - 🇺🇸 _US_美国 11
-      - (欢迎订阅youtube：8度科技) 10
-      - 🇺🇸 _US_美国 12
-      - 🇨🇦 _CA_加拿大 5
-      - 🇺🇸 _US_美国 13
-      - 🇨🇦 _CA_加拿大 6
-      - 🇨🇦 _CA_加拿大 7
-      - 🇨🇦 _CA_加拿大 8
-      - 🇨🇦 _CA_加拿大 9
-      - 🇺🇸 _US_美国 14
-      - 🇨🇦 _CA_加拿大 10
-      - 🇺🇸 _US_美国 15
-      - 🇺🇸 _US_美国 16
-      - 🇺🇸 _US_美国 17
-      - 🇨🇦 _CA_加拿大 11
-      - 🇫🇷 _FR_法国 3
-      - 🇺🇸 _US_美国 18
-      - (欢迎订阅youtube：8度科技) 11
-      - 🇺🇸 _US_美国 19
-      - 🇺🇸 _US_美国 20
-      - 🇰🇷 _HK_香港->🇰🇷_KR_韩国
-      - (欢迎订阅youtube：8度科技) 12
-      - 🇨🇦 _CA_加拿大 12
-      - 🇨🇦 _CA_加拿大 13
-      - 🇺🇸 _US_美国 21
+      - (欢迎订阅youtube：8度科技) 7
       - _NO_挪威 3
-      - _NO_挪威 4
-      - 🇺🇸 _US_美国 22
-      - 🇨🇦 _CA_加拿大 14
-      - 🇺🇸 _US_美国 23
-      - 🇺🇸 _US_美国 24
-      - (欢迎订阅youtube：8度科技) 13
-      - (欢迎订阅youtube：8度科技) 14
-      - (欢迎订阅youtube：8度科技) 15
-      - (欢迎订阅youtube：8度科技) 16
-      - 🇨🇦 _CA_加拿大 15
-      - 🇺🇸 _US_美国 25
-      - 🇩🇪 _DE_德国 3
-      - (欢迎订阅youtube：8度科技) 17
-      - 🇨🇦 _CA_加拿大 16
-      - 🇩🇪 _DE_德国 4
+      - 🇺🇸 _US_美国 10
       - 🇩🇪 _DE_德国 5
       - 🇩🇪 _DE_德国 6
-      - 🇰🇷 _KR_韩国 2
-      - _MX_墨西哥
-      - 🇺🇦 _UA_乌克兰
+      - (欢迎订阅youtube：8度科技) 8
+      - 🇫🇷 _FR_法国 2
       - 🇩🇪 _DE_德国 7
       - 🇩🇪 _DE_德国 8
-      - 🇯🇵 _JP_日本
+      - (欢迎订阅youtube：8度科技) 9
+      - (欢迎订阅youtube：8度科技) 10
+      - (欢迎订阅youtube：8度科技) 11
       - 🇩🇪 _DE_德国 9
-      - 🇰🇷 _KR_韩国 3
-      - (欢迎订阅youtube：8度科技) 18
-      - 🇩🇪 _DE_德国 10
-      - 🇺🇸 _US_美国 26
-      - 🇺🇸 _US_美国 27
-      - 🇫🇷 _FR_法国 4
-      - 🇨🇦 _CA_加拿大 17
-      - (欢迎订阅youtube：8度科技) 19
-      - 🇰🇷 _HK_香港->🇰🇷_KR_韩国 2
-      - 🇺🇸 _US_美国 28
-      - 🇨🇦 _CA_加拿大 18
+      - 🇯🇵 _JP_日本
       - 🇪🇸 _ES_西班牙
+      - _NO_挪威 4
+      - 🇺🇸 _US_美国 11
+      - 🇺🇸 _US_美国 12
+      - 🇨🇦 _CA_加拿大 5
+      - (欢迎订阅youtube：8度科技) 12
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - (欢迎订阅youtube：8度科技)
       - 🇺🇸 _US_美国
       - 🇩🇪 _DE_德国
-      - 🇨🇦 _CA_加拿大
+      - 🇩🇪 _DE_德国 2
       - 🇺🇸 _US_美国 2
       - 🇷🇺 _RU_俄罗斯联邦
-      - 🇨🇦 _CA_加拿大 2
+      - (欢迎订阅youtube：8度科技)
       - 🇺🇸 _US_美国 3
-      - 🇺🇸 _US_美国 4
+      - 🇨🇦 _CA_加拿大
+      - 🇨🇦 _CA_加拿大 2
       - (欢迎订阅youtube：8度科技) 2
-      - 🇭🇰 _HK_香港
-      - 🇺🇸 _US_美国 5
-      - 🇫🇷 _FR_法国
-      - 🇨🇦 _CA_加拿大 3
-      - 🇭🇰 _HK_香港 2
-      - 🇩🇪 _DE_德国 2
-      - (欢迎订阅youtube：8度科技) 3
-      - 🇨🇦 _CA_加拿大 4
       - 🇰🇷 _KR_韩国
-      - (欢迎订阅youtube：8度科技) 4
-      - (欢迎订阅youtube：8度科技) 5
+      - 🇩🇪 _DE_德国 3
+      - 🇺🇸 _US_美国 4
+      - 🇺🇸 _US_美国 5
+      - 🇺🇸 US_1394
+      - (欢迎订阅youtube：8度科技) 3
       - 🇺🇸 _US_美国 6
+      - 🇺🇸 US_1012 |35.06Mb
+      - 🇫🇷 _FR_法国
+      - 🇰🇷 _KR_韩国 2
+      - 🇺🇸 US_1203 |34.84Mb
+      - 🇩🇪 _DE_德国 4
+      - 🇺🇸 US_1463 |35.45Mb
+      - 🇺🇸 US_951 |33.28Mb
+      - 🇺🇸 US_1354 |35.02Mb
+      - 🇺🇸 US_1206 |35.70Mb
+      - NO_609
+      - 🇨🇦 _CA_加拿大 3
+      - (欢迎订阅youtube：8度科技) 4
       - _NO_挪威
-      - 🇫🇷 _FR_法国 2
+      - (欢迎订阅youtube：8度科技) 5
+      - 🇨🇦 _CA_加拿大 4
       - (欢迎订阅youtube：8度科技) 6
       - 🇺🇸 _US_美国 7
-      - (欢迎订阅youtube：8度科技) 7
       - 🇺🇸 _US_美国 8
+      - _MX_墨西哥
       - _NO_挪威 2
-      - (欢迎订阅youtube：8度科技) 8
       - 🇺🇸 _US_美国 9
-      - 🇺🇸 _US_美国 10
-      - 🇷🇺 _RU_俄罗斯联邦 2
-      - (欢迎订阅youtube：8度科技) 9
-      - 🇺🇸 _US_美国 11
-      - (欢迎订阅youtube：8度科技) 10
-      - 🇺🇸 _US_美国 12
-      - 🇨🇦 _CA_加拿大 5
-      - 🇺🇸 _US_美国 13
-      - 🇨🇦 _CA_加拿大 6
-      - 🇨🇦 _CA_加拿大 7
-      - 🇨🇦 _CA_加拿大 8
-      - 🇨🇦 _CA_加拿大 9
-      - 🇺🇸 _US_美国 14
-      - 🇨🇦 _CA_加拿大 10
-      - 🇺🇸 _US_美国 15
-      - 🇺🇸 _US_美国 16
-      - 🇺🇸 _US_美国 17
-      - 🇨🇦 _CA_加拿大 11
-      - 🇫🇷 _FR_法国 3
-      - 🇺🇸 _US_美国 18
-      - (欢迎订阅youtube：8度科技) 11
-      - 🇺🇸 _US_美国 19
-      - 🇺🇸 _US_美国 20
-      - 🇰🇷 _HK_香港->🇰🇷_KR_韩国
-      - (欢迎订阅youtube：8度科技) 12
-      - 🇨🇦 _CA_加拿大 12
-      - 🇨🇦 _CA_加拿大 13
-      - 🇺🇸 _US_美国 21
+      - (欢迎订阅youtube：8度科技) 7
       - _NO_挪威 3
-      - _NO_挪威 4
-      - 🇺🇸 _US_美国 22
-      - 🇨🇦 _CA_加拿大 14
-      - 🇺🇸 _US_美国 23
-      - 🇺🇸 _US_美国 24
-      - (欢迎订阅youtube：8度科技) 13
-      - (欢迎订阅youtube：8度科技) 14
-      - (欢迎订阅youtube：8度科技) 15
-      - (欢迎订阅youtube：8度科技) 16
-      - 🇨🇦 _CA_加拿大 15
-      - 🇺🇸 _US_美国 25
-      - 🇩🇪 _DE_德国 3
-      - (欢迎订阅youtube：8度科技) 17
-      - 🇨🇦 _CA_加拿大 16
-      - 🇩🇪 _DE_德国 4
+      - 🇺🇸 _US_美国 10
       - 🇩🇪 _DE_德国 5
       - 🇩🇪 _DE_德国 6
-      - 🇰🇷 _KR_韩国 2
-      - _MX_墨西哥
-      - 🇺🇦 _UA_乌克兰
+      - (欢迎订阅youtube：8度科技) 8
+      - 🇫🇷 _FR_法国 2
       - 🇩🇪 _DE_德国 7
       - 🇩🇪 _DE_德国 8
-      - 🇯🇵 _JP_日本
+      - (欢迎订阅youtube：8度科技) 9
+      - (欢迎订阅youtube：8度科技) 10
+      - (欢迎订阅youtube：8度科技) 11
       - 🇩🇪 _DE_德国 9
-      - 🇰🇷 _KR_韩国 3
-      - (欢迎订阅youtube：8度科技) 18
-      - 🇩🇪 _DE_德国 10
-      - 🇺🇸 _US_美国 26
-      - 🇺🇸 _US_美国 27
-      - 🇫🇷 _FR_法国 4
-      - 🇨🇦 _CA_加拿大 17
-      - (欢迎订阅youtube：8度科技) 19
-      - 🇰🇷 _HK_香港->🇰🇷_KR_韩国 2
-      - 🇺🇸 _US_美国 28
-      - 🇨🇦 _CA_加拿大 18
+      - 🇯🇵 _JP_日本
       - 🇪🇸 _ES_西班牙
+      - _NO_挪威 4
+      - 🇺🇸 _US_美国 11
+      - 🇺🇸 _US_美国 12
+      - 🇨🇦 _CA_加拿大 5
+      - (欢迎订阅youtube：8度科技) 12
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - (欢迎订阅youtube：8度科技)
       - 🇺🇸 _US_美国
       - 🇩🇪 _DE_德国
-      - 🇨🇦 _CA_加拿大
+      - 🇩🇪 _DE_德国 2
       - 🇺🇸 _US_美国 2
       - 🇷🇺 _RU_俄罗斯联邦
-      - 🇨🇦 _CA_加拿大 2
+      - (欢迎订阅youtube：8度科技)
       - 🇺🇸 _US_美国 3
-      - 🇺🇸 _US_美国 4
+      - 🇨🇦 _CA_加拿大
+      - 🇨🇦 _CA_加拿大 2
       - (欢迎订阅youtube：8度科技) 2
-      - 🇭🇰 _HK_香港
-      - 🇺🇸 _US_美国 5
-      - 🇫🇷 _FR_法国
-      - 🇨🇦 _CA_加拿大 3
-      - 🇭🇰 _HK_香港 2
-      - 🇩🇪 _DE_德国 2
-      - (欢迎订阅youtube：8度科技) 3
-      - 🇨🇦 _CA_加拿大 4
       - 🇰🇷 _KR_韩国
-      - (欢迎订阅youtube：8度科技) 4
-      - (欢迎订阅youtube：8度科技) 5
+      - 🇩🇪 _DE_德国 3
+      - 🇺🇸 _US_美国 4
+      - 🇺🇸 _US_美国 5
+      - 🇺🇸 US_1394
+      - (欢迎订阅youtube：8度科技) 3
       - 🇺🇸 _US_美国 6
+      - 🇺🇸 US_1012 |35.06Mb
+      - 🇫🇷 _FR_法国
+      - 🇰🇷 _KR_韩国 2
+      - 🇺🇸 US_1203 |34.84Mb
+      - 🇩🇪 _DE_德国 4
+      - 🇺🇸 US_1463 |35.45Mb
+      - 🇺🇸 US_951 |33.28Mb
+      - 🇺🇸 US_1354 |35.02Mb
+      - 🇺🇸 US_1206 |35.70Mb
+      - NO_609
+      - 🇨🇦 _CA_加拿大 3
+      - (欢迎订阅youtube：8度科技) 4
       - _NO_挪威
-      - 🇫🇷 _FR_法国 2
+      - (欢迎订阅youtube：8度科技) 5
+      - 🇨🇦 _CA_加拿大 4
       - (欢迎订阅youtube：8度科技) 6
       - 🇺🇸 _US_美国 7
-      - (欢迎订阅youtube：8度科技) 7
       - 🇺🇸 _US_美国 8
+      - _MX_墨西哥
       - _NO_挪威 2
-      - (欢迎订阅youtube：8度科技) 8
       - 🇺🇸 _US_美国 9
-      - 🇺🇸 _US_美国 10
-      - 🇷🇺 _RU_俄罗斯联邦 2
-      - (欢迎订阅youtube：8度科技) 9
-      - 🇺🇸 _US_美国 11
-      - (欢迎订阅youtube：8度科技) 10
-      - 🇺🇸 _US_美国 12
-      - 🇨🇦 _CA_加拿大 5
-      - 🇺🇸 _US_美国 13
-      - 🇨🇦 _CA_加拿大 6
-      - 🇨🇦 _CA_加拿大 7
-      - 🇨🇦 _CA_加拿大 8
-      - 🇨🇦 _CA_加拿大 9
-      - 🇺🇸 _US_美国 14
-      - 🇨🇦 _CA_加拿大 10
-      - 🇺🇸 _US_美国 15
-      - 🇺🇸 _US_美国 16
-      - 🇺🇸 _US_美国 17
-      - 🇨🇦 _CA_加拿大 11
-      - 🇫🇷 _FR_法国 3
-      - 🇺🇸 _US_美国 18
-      - (欢迎订阅youtube：8度科技) 11
-      - 🇺🇸 _US_美国 19
-      - 🇺🇸 _US_美国 20
-      - 🇰🇷 _HK_香港->🇰🇷_KR_韩国
-      - (欢迎订阅youtube：8度科技) 12
-      - 🇨🇦 _CA_加拿大 12
-      - 🇨🇦 _CA_加拿大 13
-      - 🇺🇸 _US_美国 21
+      - (欢迎订阅youtube：8度科技) 7
       - _NO_挪威 3
-      - _NO_挪威 4
-      - 🇺🇸 _US_美国 22
-      - 🇨🇦 _CA_加拿大 14
-      - 🇺🇸 _US_美国 23
-      - 🇺🇸 _US_美国 24
-      - (欢迎订阅youtube：8度科技) 13
-      - (欢迎订阅youtube：8度科技) 14
-      - (欢迎订阅youtube：8度科技) 15
-      - (欢迎订阅youtube：8度科技) 16
-      - 🇨🇦 _CA_加拿大 15
-      - 🇺🇸 _US_美国 25
-      - 🇩🇪 _DE_德国 3
-      - (欢迎订阅youtube：8度科技) 17
-      - 🇨🇦 _CA_加拿大 16
-      - 🇩🇪 _DE_德国 4
+      - 🇺🇸 _US_美国 10
       - 🇩🇪 _DE_德国 5
       - 🇩🇪 _DE_德国 6
-      - 🇰🇷 _KR_韩国 2
-      - _MX_墨西哥
-      - 🇺🇦 _UA_乌克兰
+      - (欢迎订阅youtube：8度科技) 8
+      - 🇫🇷 _FR_法国 2
       - 🇩🇪 _DE_德国 7
       - 🇩🇪 _DE_德国 8
-      - 🇯🇵 _JP_日本
+      - (欢迎订阅youtube：8度科技) 9
+      - (欢迎订阅youtube：8度科技) 10
+      - (欢迎订阅youtube：8度科技) 11
       - 🇩🇪 _DE_德国 9
-      - 🇰🇷 _KR_韩国 3
-      - (欢迎订阅youtube：8度科技) 18
-      - 🇩🇪 _DE_德国 10
-      - 🇺🇸 _US_美国 26
-      - 🇺🇸 _US_美国 27
-      - 🇫🇷 _FR_法国 4
-      - 🇨🇦 _CA_加拿大 17
-      - (欢迎订阅youtube：8度科技) 19
-      - 🇰🇷 _HK_香港->🇰🇷_KR_韩国 2
-      - 🇺🇸 _US_美国 28
-      - 🇨🇦 _CA_加拿大 18
+      - 🇯🇵 _JP_日本
       - 🇪🇸 _ES_西班牙
+      - _NO_挪威 4
+      - 🇺🇸 _US_美国 11
+      - 🇺🇸 _US_美国 12
+      - 🇨🇦 _CA_加拿大 5
+      - (欢迎订阅youtube：8度科技) 12
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -734,102 +464,64 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - (欢迎订阅youtube：8度科技)
       - 🇺🇸 _US_美国
       - 🇩🇪 _DE_德国
-      - 🇨🇦 _CA_加拿大
+      - 🇩🇪 _DE_德国 2
       - 🇺🇸 _US_美国 2
       - 🇷🇺 _RU_俄罗斯联邦
-      - 🇨🇦 _CA_加拿大 2
+      - (欢迎订阅youtube：8度科技)
       - 🇺🇸 _US_美国 3
-      - 🇺🇸 _US_美国 4
+      - 🇨🇦 _CA_加拿大
+      - 🇨🇦 _CA_加拿大 2
       - (欢迎订阅youtube：8度科技) 2
-      - 🇭🇰 _HK_香港
-      - 🇺🇸 _US_美国 5
-      - 🇫🇷 _FR_法国
-      - 🇨🇦 _CA_加拿大 3
-      - 🇭🇰 _HK_香港 2
-      - 🇩🇪 _DE_德国 2
-      - (欢迎订阅youtube：8度科技) 3
-      - 🇨🇦 _CA_加拿大 4
       - 🇰🇷 _KR_韩国
-      - (欢迎订阅youtube：8度科技) 4
-      - (欢迎订阅youtube：8度科技) 5
+      - 🇩🇪 _DE_德国 3
+      - 🇺🇸 _US_美国 4
+      - 🇺🇸 _US_美国 5
+      - 🇺🇸 US_1394
+      - (欢迎订阅youtube：8度科技) 3
       - 🇺🇸 _US_美国 6
+      - 🇺🇸 US_1012 |35.06Mb
+      - 🇫🇷 _FR_法国
+      - 🇰🇷 _KR_韩国 2
+      - 🇺🇸 US_1203 |34.84Mb
+      - 🇩🇪 _DE_德国 4
+      - 🇺🇸 US_1463 |35.45Mb
+      - 🇺🇸 US_951 |33.28Mb
+      - 🇺🇸 US_1354 |35.02Mb
+      - 🇺🇸 US_1206 |35.70Mb
+      - NO_609
+      - 🇨🇦 _CA_加拿大 3
+      - (欢迎订阅youtube：8度科技) 4
       - _NO_挪威
-      - 🇫🇷 _FR_法国 2
+      - (欢迎订阅youtube：8度科技) 5
+      - 🇨🇦 _CA_加拿大 4
       - (欢迎订阅youtube：8度科技) 6
       - 🇺🇸 _US_美国 7
-      - (欢迎订阅youtube：8度科技) 7
       - 🇺🇸 _US_美国 8
+      - _MX_墨西哥
       - _NO_挪威 2
-      - (欢迎订阅youtube：8度科技) 8
       - 🇺🇸 _US_美国 9
-      - 🇺🇸 _US_美国 10
-      - 🇷🇺 _RU_俄罗斯联邦 2
-      - (欢迎订阅youtube：8度科技) 9
-      - 🇺🇸 _US_美国 11
-      - (欢迎订阅youtube：8度科技) 10
-      - 🇺🇸 _US_美国 12
-      - 🇨🇦 _CA_加拿大 5
-      - 🇺🇸 _US_美国 13
-      - 🇨🇦 _CA_加拿大 6
-      - 🇨🇦 _CA_加拿大 7
-      - 🇨🇦 _CA_加拿大 8
-      - 🇨🇦 _CA_加拿大 9
-      - 🇺🇸 _US_美国 14
-      - 🇨🇦 _CA_加拿大 10
-      - 🇺🇸 _US_美国 15
-      - 🇺🇸 _US_美国 16
-      - 🇺🇸 _US_美国 17
-      - 🇨🇦 _CA_加拿大 11
-      - 🇫🇷 _FR_法国 3
-      - 🇺🇸 _US_美国 18
-      - (欢迎订阅youtube：8度科技) 11
-      - 🇺🇸 _US_美国 19
-      - 🇺🇸 _US_美国 20
-      - 🇰🇷 _HK_香港->🇰🇷_KR_韩国
-      - (欢迎订阅youtube：8度科技) 12
-      - 🇨🇦 _CA_加拿大 12
-      - 🇨🇦 _CA_加拿大 13
-      - 🇺🇸 _US_美国 21
+      - (欢迎订阅youtube：8度科技) 7
       - _NO_挪威 3
-      - _NO_挪威 4
-      - 🇺🇸 _US_美国 22
-      - 🇨🇦 _CA_加拿大 14
-      - 🇺🇸 _US_美国 23
-      - 🇺🇸 _US_美国 24
-      - (欢迎订阅youtube：8度科技) 13
-      - (欢迎订阅youtube：8度科技) 14
-      - (欢迎订阅youtube：8度科技) 15
-      - (欢迎订阅youtube：8度科技) 16
-      - 🇨🇦 _CA_加拿大 15
-      - 🇺🇸 _US_美国 25
-      - 🇩🇪 _DE_德国 3
-      - (欢迎订阅youtube：8度科技) 17
-      - 🇨🇦 _CA_加拿大 16
-      - 🇩🇪 _DE_德国 4
+      - 🇺🇸 _US_美国 10
       - 🇩🇪 _DE_德国 5
       - 🇩🇪 _DE_德国 6
-      - 🇰🇷 _KR_韩国 2
-      - _MX_墨西哥
-      - 🇺🇦 _UA_乌克兰
+      - (欢迎订阅youtube：8度科技) 8
+      - 🇫🇷 _FR_法国 2
       - 🇩🇪 _DE_德国 7
       - 🇩🇪 _DE_德国 8
-      - 🇯🇵 _JP_日本
+      - (欢迎订阅youtube：8度科技) 9
+      - (欢迎订阅youtube：8度科技) 10
+      - (欢迎订阅youtube：8度科技) 11
       - 🇩🇪 _DE_德国 9
-      - 🇰🇷 _KR_韩国 3
-      - (欢迎订阅youtube：8度科技) 18
-      - 🇩🇪 _DE_德国 10
-      - 🇺🇸 _US_美国 26
-      - 🇺🇸 _US_美国 27
-      - 🇫🇷 _FR_法国 4
-      - 🇨🇦 _CA_加拿大 17
-      - (欢迎订阅youtube：8度科技) 19
-      - 🇰🇷 _HK_香港->🇰🇷_KR_韩国 2
-      - 🇺🇸 _US_美国 28
-      - 🇨🇦 _CA_加拿大 18
+      - 🇯🇵 _JP_日本
       - 🇪🇸 _ES_西班牙
+      - _NO_挪威 4
+      - 🇺🇸 _US_美国 11
+      - 🇺🇸 _US_美国 12
+      - 🇨🇦 _CA_加拿大 5
+      - (欢迎订阅youtube：8度科技) 12
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
