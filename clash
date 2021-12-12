@@ -5,6 +5,138 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
+  - {name: youtube：8度科技, server: 120.232.141.59, port: 10060, type: ss, cipher: chacha20-ietf-poly1305, password: ddbd798e-6e91-40f9-9c03-5dd13e6499de}
+  - {name: youtube：8度科技 2, server: 183.232.13.71, port: 20031, type: ss, cipher: chacha20-ietf-poly1305, password: ddbd798e-6e91-40f9-9c03-5dd13e6499de}
+  - {name: youtube：8度科技 3, server: 120.232.141.59, port: 10027, type: ss, cipher: chacha20-ietf-poly1305, password: ddbd798e-6e91-40f9-9c03-5dd13e6499de}
+  - {name: youtube：8度科技 4, server: 183.232.13.71, port: 20004, type: ss, cipher: chacha20-ietf-poly1305, password: ddbd798e-6e91-40f9-9c03-5dd13e6499de}
+  - {name: youtube：8度科技 5, server: 111.2.178.230, port: 20004, type: ss, cipher: chacha20-ietf-poly1305, password: ddbd798e-6e91-40f9-9c03-5dd13e6499de}
+  - {name: youtube：8度科技 6, server: 183.232.13.71, port: 20018, type: ss, cipher: chacha20-ietf-poly1305, password: ddbd798e-6e91-40f9-9c03-5dd13e6499de}
+  - {name: youtube：8度科技 7, server: 120.197.130.77, port: 31003, type: ss, cipher: chacha20-ietf-poly1305, password: 3bd5135f-88e6-488f-87aa-87687bc51b4b}
+  - {name: youtube：8度科技 8, server: 120.232.141.59, port: 10042, type: ss, cipher: chacha20-ietf-poly1305, password: ddbd798e-6e91-40f9-9c03-5dd13e6499de}
+  - {name: youtube：8度科技 9, server: 183.232.13.71, port: 20009, type: ss, cipher: chacha20-ietf-poly1305, password: ddbd798e-6e91-40f9-9c03-5dd13e6499de}
+  - {name: youtube：8度科技 10, server: 120.197.130.77, port: 31001, type: ss, cipher: chacha20-ietf-poly1305, password: 3bd5135f-88e6-488f-87aa-87687bc51b4b}
+  - {name: youtube：8度科技 11, server: 120.232.174.94, port: 31003, type: ss, cipher: chacha20-ietf-poly1305, password: 3bd5135f-88e6-488f-87aa-87687bc51b4b}
+  - {name: youtube：8度科技 12, server: 120.197.130.77, port: 31004, type: ss, cipher: chacha20-ietf-poly1305, password: 3bd5135f-88e6-488f-87aa-87687bc51b4b}
+  - {name: youtube：8度科技 13, server: 120.197.130.77, port: 31002, type: ss, cipher: chacha20-ietf-poly1305, password: 3bd5135f-88e6-488f-87aa-87687bc51b4b}
+  - {name: youtube：8度科技 14, server: 120.232.174.94, port: 31002, type: ss, cipher: chacha20-ietf-poly1305, password: 3bd5135f-88e6-488f-87aa-87687bc51b4b}
+  - {name: youtube：8度科技 15, server: 183.232.13.71, port: 20007, type: ss, cipher: chacha20-ietf-poly1305, password: ddbd798e-6e91-40f9-9c03-5dd13e6499de}
+  - {name: youtube：8度科技 16, server: 183.232.13.71, port: 20014, type: ss, cipher: chacha20-ietf-poly1305, password: ddbd798e-6e91-40f9-9c03-5dd13e6499de}
+  - {name: youtube：8度科技 17, server: 120.232.174.94, port: 31001, type: ss, cipher: chacha20-ietf-poly1305, password: 3bd5135f-88e6-488f-87aa-87687bc51b4b}
+  - {name: youtube：8度科技 18, server: 120.232.141.59, port: 10096, type: ss, cipher: chacha20-ietf-poly1305, password: ddbd798e-6e91-40f9-9c03-5dd13e6499de}
+  - {name: youtube：8度科技 19, server: 120.232.174.94, port: 31004, type: ss, cipher: chacha20-ietf-poly1305, password: 3bd5135f-88e6-488f-87aa-87687bc51b4b}
+  - {name: youtube：8度科技 20, server: 120.232.141.59, port: 10012, type: ss, cipher: chacha20-ietf-poly1305, password: ddbd798e-6e91-40f9-9c03-5dd13e6499de}
+  - {name: youtube：8度科技 21, server: 120.232.174.94, port: 31011, type: ss, cipher: chacha20-ietf-poly1305, password: 3bd5135f-88e6-488f-87aa-87687bc51b4b}
+  - {name: youtube：8度科技 22, server: 120.197.130.77, port: 31012, type: ss, cipher: chacha20-ietf-poly1305, password: 3bd5135f-88e6-488f-87aa-87687bc51b4b}
+  - {name: youtube：8度科技 23, server: 111.2.178.230, port: 20000, type: ss, cipher: chacha20-ietf-poly1305, password: ddbd798e-6e91-40f9-9c03-5dd13e6499de}
+  - {name: youtube：8度科技 24, server: 120.232.174.94, port: 31012, type: ss, cipher: chacha20-ietf-poly1305, password: 3bd5135f-88e6-488f-87aa-87687bc51b4b}
+  - {name: youtube：8度科技 25, server: 120.232.141.59, port: 10015, type: ss, cipher: chacha20-ietf-poly1305, password: ddbd798e-6e91-40f9-9c03-5dd13e6499de}
+  - {name: youtube：8度科技 26, server: 120.232.141.59, port: 10067, type: ss, cipher: chacha20-ietf-poly1305, password: ddbd798e-6e91-40f9-9c03-5dd13e6499de}
+  - {name: youtube：8度科技 27, server: 183.232.13.71, port: 20012, type: ss, cipher: chacha20-ietf-poly1305, password: ddbd798e-6e91-40f9-9c03-5dd13e6499de}
+  - {name: youtube：8度科技 28, server: 120.197.130.77, port: 31011, type: ss, cipher: chacha20-ietf-poly1305, password: 3bd5135f-88e6-488f-87aa-87687bc51b4b}
+  - {name: youtube：8度科技 29, server: 183.232.13.71, port: 20020, type: ss, cipher: chacha20-ietf-poly1305, password: ddbd798e-6e91-40f9-9c03-5dd13e6499de}
+  - {name: youtube：8度科技 30, server: 183.232.13.71, port: 20006, type: ss, cipher: chacha20-ietf-poly1305, password: ddbd798e-6e91-40f9-9c03-5dd13e6499de}
+  - {name: youtube：8度科技 31, server: 183.232.13.71, port: 20027, type: ss, cipher: chacha20-ietf-poly1305, password: ddbd798e-6e91-40f9-9c03-5dd13e6499de}
+  - {name: youtube：8度科技 32, server: 120.232.141.59, port: 10056, type: ss, cipher: chacha20-ietf-poly1305, password: ddbd798e-6e91-40f9-9c03-5dd13e6499de}
+  - {name: youtube：8度科技 33, server: 183.232.13.71, port: 10003, type: ss, cipher: chacha20-ietf-poly1305, password: ddbd798e-6e91-40f9-9c03-5dd13e6499de}
+  - {name: youtube：8度科技 34, server: 120.232.141.59, port: 10073, type: ss, cipher: chacha20-ietf-poly1305, password: ddbd798e-6e91-40f9-9c03-5dd13e6499de}
+  - {name: youtube：8度科技 35, server: 120.197.130.77, port: 31007, type: ss, cipher: chacha20-ietf-poly1305, password: 3bd5135f-88e6-488f-87aa-87687bc51b4b}
+  - {name: youtube：8度科技 36, server: 120.197.130.77, port: 32004, type: ss, cipher: chacha20-ietf-poly1305, password: 3bd5135f-88e6-488f-87aa-87687bc51b4b}
+  - {name: youtube：8度科技 37, server: 120.232.174.94, port: 31007, type: ss, cipher: chacha20-ietf-poly1305, password: 3bd5135f-88e6-488f-87aa-87687bc51b4b}
+  - {name: youtube：8度科技 38, server: 120.232.141.59, port: 10070, type: ss, cipher: chacha20-ietf-poly1305, password: ddbd798e-6e91-40f9-9c03-5dd13e6499de}
+  - {name: youtube：8度科技 39, server: 183.232.13.71, port: 20029, type: ss, cipher: chacha20-ietf-poly1305, password: ddbd798e-6e91-40f9-9c03-5dd13e6499de}
+  - {name: youtube：8度科技 40, server: 120.197.130.77, port: 31008, type: ss, cipher: chacha20-ietf-poly1305, password: 3bd5135f-88e6-488f-87aa-87687bc51b4b}
+  - {name: youtube：8度科技 41, server: 183.232.13.71, port: 20032, type: ss, cipher: chacha20-ietf-poly1305, password: ddbd798e-6e91-40f9-9c03-5dd13e6499de}
+  - {name: youtube：8度科技 42, server: 111.2.178.230, port: 20006, type: ss, cipher: chacha20-ietf-poly1305, password: ddbd798e-6e91-40f9-9c03-5dd13e6499de}
+  - {name: youtube：8度科技 43, server: 120.232.174.94, port: 32003, type: ss, cipher: chacha20-ietf-poly1305, password: 3bd5135f-88e6-488f-87aa-87687bc51b4b}
+  - {name: youtube：8度科技 44, server: 183.232.13.71, port: 10002, type: ss, cipher: chacha20-ietf-poly1305, password: ddbd798e-6e91-40f9-9c03-5dd13e6499de}
+  - {name: youtube：8度科技 45, server: 120.232.174.94, port: 32004, type: ss, cipher: chacha20-ietf-poly1305, password: 3bd5135f-88e6-488f-87aa-87687bc51b4b}
+  - {name: youtube：8度科技 46, server: 120.232.174.94, port: 31008, type: ss, cipher: chacha20-ietf-poly1305, password: 3bd5135f-88e6-488f-87aa-87687bc51b4b}
+  - {name: youtube：8度科技 47, server: 183.232.13.71, port: 10004, type: ss, cipher: chacha20-ietf-poly1305, password: ddbd798e-6e91-40f9-9c03-5dd13e6499de}
+  - {name: youtube：8度科技 48, server: 120.232.141.59, port: 10057, type: ss, cipher: chacha20-ietf-poly1305, password: ddbd798e-6e91-40f9-9c03-5dd13e6499de}
+  - {name: youtube：8度科技 49, server: 120.232.141.59, port: 10050, type: ss, cipher: chacha20-ietf-poly1305, password: ddbd798e-6e91-40f9-9c03-5dd13e6499de}
+  - {name: youtube：8度科技 50, server: 120.232.141.59, port: 10082, type: ss, cipher: chacha20-ietf-poly1305, password: ddbd798e-6e91-40f9-9c03-5dd13e6499de}
+  - {name: youtube：8度科技 51, server: 120.232.141.59, port: 10089, type: ss, cipher: chacha20-ietf-poly1305, password: ddbd798e-6e91-40f9-9c03-5dd13e6499de}
+  - {name: youtube：8度科技 52, server: 120.197.130.77, port: 32003, type: ss, cipher: chacha20-ietf-poly1305, password: 3bd5135f-88e6-488f-87aa-87687bc51b4b}
+  - {name: youtube：8度科技 53, server: 120.232.141.59, port: 10079, type: ss, cipher: chacha20-ietf-poly1305, password: ddbd798e-6e91-40f9-9c03-5dd13e6499de}
+  - {name: youtube：8度科技 54, server: 120.232.141.59, port: 10059, type: ss, cipher: chacha20-ietf-poly1305, password: ddbd798e-6e91-40f9-9c03-5dd13e6499de}
+  - {name: youtube：8度科技 55, server: 183.232.13.71, port: 20003, type: ss, cipher: chacha20-ietf-poly1305, password: ddbd798e-6e91-40f9-9c03-5dd13e6499de}
+  - {name: youtube：8度科技 56, server: 183.232.13.71, port: 20026, type: ss, cipher: chacha20-ietf-poly1305, password: ddbd798e-6e91-40f9-9c03-5dd13e6499de}
+  - {name: youtube：8度科技 57, server: 183.232.13.71, port: 20028, type: ss, cipher: chacha20-ietf-poly1305, password: ddbd798e-6e91-40f9-9c03-5dd13e6499de}
+  - {name: youtube：8度科技 58, server: 120.232.141.59, port: 10074, type: ss, cipher: chacha20-ietf-poly1305, password: ddbd798e-6e91-40f9-9c03-5dd13e6499de}
+  - {name: youtube：8度科技 59, server: 111.2.178.230, port: 20005, type: ss, cipher: chacha20-ietf-poly1305, password: ddbd798e-6e91-40f9-9c03-5dd13e6499de}
+  - {name: youtube：8度科技 60, server: 120.232.141.59, port: 10000, type: ss, cipher: chacha20-ietf-poly1305, password: ddbd798e-6e91-40f9-9c03-5dd13e6499de}
+  - {name: youtube：8度科技 61, server: 120.232.141.59, port: 10068, type: ss, cipher: chacha20-ietf-poly1305, password: ddbd798e-6e91-40f9-9c03-5dd13e6499de}
+  - {name: youtube：8度科技 62, server: 120.232.141.59, port: 10071, type: ss, cipher: chacha20-ietf-poly1305, password: ddbd798e-6e91-40f9-9c03-5dd13e6499de}
+  - {name: youtube：8度科技 63, server: 183.232.13.71, port: 20011, type: ss, cipher: chacha20-ietf-poly1305, password: ddbd798e-6e91-40f9-9c03-5dd13e6499de}
+  - {name: youtube：8度科技 64, server: 120.232.141.59, port: 10011, type: ss, cipher: chacha20-ietf-poly1305, password: ddbd798e-6e91-40f9-9c03-5dd13e6499de}
+  - {name: youtube：8度科技 65, server: 120.232.174.94, port: 31006, type: ss, cipher: chacha20-ietf-poly1305, password: 3bd5135f-88e6-488f-87aa-87687bc51b4b}
+  - {name: youtube：8度科技 66, server: 120.232.141.59, port: 10048, type: ss, cipher: chacha20-ietf-poly1305, password: ddbd798e-6e91-40f9-9c03-5dd13e6499de}
+  - {name: youtube：8度科技 67, server: 120.232.174.94, port: 31009, type: ss, cipher: chacha20-ietf-poly1305, password: 3bd5135f-88e6-488f-87aa-87687bc51b4b}
+  - {name: youtube：8度科技 68, server: 120.232.174.94, port: 31005, type: ss, cipher: chacha20-ietf-poly1305, password: 3bd5135f-88e6-488f-87aa-87687bc51b4b}
+  - {name: youtube：8度科技 69, server: 120.197.130.77, port: 31009, type: ss, cipher: chacha20-ietf-poly1305, password: 3bd5135f-88e6-488f-87aa-87687bc51b4b}
+  - {name: youtube：8度科技 70, server: 120.197.130.77, port: 31005, type: ss, cipher: chacha20-ietf-poly1305, password: 3bd5135f-88e6-488f-87aa-87687bc51b4b}
+  - {name: youtube：8度科技 71, server: 120.197.130.77, port: 31006, type: ss, cipher: chacha20-ietf-poly1305, password: 3bd5135f-88e6-488f-87aa-87687bc51b4b}
+  - {name: youtube：8度科技 72, server: 183.232.13.71, port: 20013, type: ss, cipher: chacha20-ietf-poly1305, password: ddbd798e-6e91-40f9-9c03-5dd13e6499de}
+  - {name: youtube：8度科技 73, server: 120.232.141.59, port: 10001, type: ss, cipher: chacha20-ietf-poly1305, password: ddbd798e-6e91-40f9-9c03-5dd13e6499de}
+  - {name: youtube：8度科技 74, server: 120.232.141.59, port: 10010, type: ss, cipher: chacha20-ietf-poly1305, password: ddbd798e-6e91-40f9-9c03-5dd13e6499de}
+  - {name: youtube：8度科技 75, server: 183.232.13.71, port: 20005, type: ss, cipher: chacha20-ietf-poly1305, password: ddbd798e-6e91-40f9-9c03-5dd13e6499de}
+  - {name: youtube：8度科技 76, server: 183.232.13.71, port: 20010, type: ss, cipher: chacha20-ietf-poly1305, password: ddbd798e-6e91-40f9-9c03-5dd13e6499de}
+  - {name: youtube：8度科技 77, server: 120.232.141.59, port: 10036, type: ss, cipher: chacha20-ietf-poly1305, password: ddbd798e-6e91-40f9-9c03-5dd13e6499de}
+  - {name: youtube：8度科技 78, server: 183.232.13.71, port: 20016, type: ss, cipher: chacha20-ietf-poly1305, password: ddbd798e-6e91-40f9-9c03-5dd13e6499de}
+  - {name: youtube：8度科技 79, server: 120.232.141.59, port: 10033, type: ss, cipher: chacha20-ietf-poly1305, password: ddbd798e-6e91-40f9-9c03-5dd13e6499de}
+  - {name: youtube：8度科技 80, server: 120.232.141.59, port: 10031, type: ss, cipher: chacha20-ietf-poly1305, password: ddbd798e-6e91-40f9-9c03-5dd13e6499de}
+  - {name: youtube：8度科技 81, server: 183.232.13.71, port: 20008, type: ss, cipher: chacha20-ietf-poly1305, password: ddbd798e-6e91-40f9-9c03-5dd13e6499de}
+  - {name: youtube：8度科技 82, server: 183.232.13.71, port: 20015, type: ss, cipher: chacha20-ietf-poly1305, password: ddbd798e-6e91-40f9-9c03-5dd13e6499de}
+  - {name: youtube：8度科技 83, server: 120.232.141.59, port: 10046, type: ss, cipher: chacha20-ietf-poly1305, password: ddbd798e-6e91-40f9-9c03-5dd13e6499de}
+  - {name: youtube：8度科技 84, server: 120.232.141.59, port: 10045, type: ss, cipher: chacha20-ietf-poly1305, password: ddbd798e-6e91-40f9-9c03-5dd13e6499de}
+  - {name: youtube：8度科技 85, server: 120.232.141.59, port: 10083, type: ss, cipher: chacha20-ietf-poly1305, password: ddbd798e-6e91-40f9-9c03-5dd13e6499de}
+  - {name: youtube：8度科技 86, server: 120.232.141.59, port: 10030, type: ss, cipher: chacha20-ietf-poly1305, password: ddbd798e-6e91-40f9-9c03-5dd13e6499de}
+  - {name: youtube：8度科技 87, server: 120.232.141.59, port: 10037, type: ss, cipher: chacha20-ietf-poly1305, password: ddbd798e-6e91-40f9-9c03-5dd13e6499de}
+  - {name: youtube：8度科技 88, server: 120.232.141.59, port: 10080, type: ss, cipher: chacha20-ietf-poly1305, password: ddbd798e-6e91-40f9-9c03-5dd13e6499de}
+  - {name: youtube：8度科技 89, server: 183.232.13.71, port: 20017, type: ss, cipher: chacha20-ietf-poly1305, password: ddbd798e-6e91-40f9-9c03-5dd13e6499de}
+  - {name: 🇺🇸 US_youtube：8度科技, server: 104.19.101.3, port: 2053, type: vmess, uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /gdo93qerwtyuo, ws-headers: {Host: e.fovi.tk}}
+  - {name: 🇺🇸 US_youtube：8度科技 2, server: 20.205.125.221, port: 30203, type: vmess, uuid: 222ce280-0cc7-43c1-b71d-db0246636ef4, alterId: 0, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: pull.free.video.10010.com}}
+  - {name: 🇺🇸 US_youtube：8度科技 3, server: 172.104.98.216, port: 80, type: vmess, uuid: e5af0cad-295c-37b2-b601-f35d13f6b1bb, alterId: 64, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 172.104.98.216}}
+  - {name: 🇺🇸 US_youtube：8度科技 4, server: 45.35.84.162, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, network: ws, ws-path: /ws, ws-headers: {Host: usa-dallas.lvuft.com}}
+  - {name: 🇺🇸 US_youtube：8度科技 5, server: 172.105.41.63, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 🇺🇸 US_youtube：8度科技 6, server: 172.105.35.61, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
+  - {name: 🇺🇸 US_youtube：8度科技 7, server: 172.105.35.61, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇺🇸 US_youtube：8度科技 8, server: 192.46.209.215, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: 🇺🇸 US_youtube：8度科技 9, server: 172.99.190.87, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74}
+  - {name: 🇺🇸 US_youtube：8度科技 10, server: 192.46.209.215, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: NON_youtube：8度科技, server: us1nhg-node.aiqiche123.com, port: 13723, type: vmess, uuid: a90597c1-bab3-4217-ad6f-0838675c8634, alterId: 10, cipher: auto, tls: true, network: ws, ws-path: ray, ws-headers: {Host: us1nhg-node.aiqiche123.com}}
+  - {name: NON_youtube：8度科技 2, server: hkf1.dior.bar, port: 80, type: vmess, uuid: 579934ab-0b50-4e7f-b3c5-3923bbbaf41f, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: hkf1.dior.bar}}
+  - {name: NON_youtube：8度科技 3, server: zhuzhu12.com, port: 12819, type: vmess, uuid: dd627432-9996-3673-809e-599d953c45fb, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /zz, ws-headers: {Host: t.me/vpnhat}}
+  - {name: NON_youtube：8度科技 4, server: zhuzhu12.com, port: 62274, type: vmess, uuid: c7805113-7bd9-3d10-91d6-ea46c4adfab4, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /zz, ws-headers: {Host: zhuzhu12.com}}
+  - {name: NON_youtube：8度科技 5, server: 1005jp.fans8.xyz, port: 80, type: vmess, uuid: fbf53107-1b42-3da5-a77d-6ad22544c0e9, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /v2ray, ws-headers: {Host: 1005jp.fans8.xyz}}
+  - {name: NON_youtube：8度科技 6, server: v1.369855.xyz, port: 11443, type: vmess, uuid: ccf19408-1911-40b1-82c1-e9528ce3c2f4, alterId: 1, cipher: auto, tls: true, network: ws, ws-path: /api/sg, ws-headers: {Host: sgav2.ddns.tjiasu.xyz}}
+  - {name: NON_youtube：8度科技 7, server: cm-jm.okvpn.xyz, port: 20001, type: vmess, uuid: be0acefb-485f-4395-adb9-f15428d10ca4, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: cm-jm.okvpn.xyz}}
+  - {name: NON_youtube：8度科技 8, server: v1.369855.xyz, port: 11443, type: vmess, uuid: ccf19408-1911-40b1-82c1-e9528ce3c2f4, alterId: 1, cipher: auto, tls: true, network: ws, ws-path: /api/shop, ws-headers: {Host: shopv3.ddns.tjiasu.xyz}}
+  - {name: NON_youtube：8度科技 9, server: 033.AP.POP.BIGAIRPORT.NET, port: 12356, type: vmess, uuid: 1d02ebd0-a7c8-43b1-ba74-dd5b421e2295, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 033.AP.POP.BIGAIRPORT.NET}}
+  - {name: NON_youtube：8度科技 10, server: 036.AP.POP.BIGAIRPORT.NET, port: 12356, type: vmess, uuid: 1d02ebd0-a7c8-43b1-ba74-dd5b421e2295, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 036.AP.POP.BIGAIRPORT.NET}}
+  - {name: NON_youtube：8度科技 11, server: cm-jm.okvpn.xyz, port: 20049, type: vmess, uuid: be0acefb-485f-4395-adb9-f15428d10ca4, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: cm-jm.okvpn.xyz}}
+  - {name: NON_youtube：8度科技 12, server: 034.AP.POP.BIGAIRPORT.NET, port: 12356, type: vmess, uuid: 1d02ebd0-a7c8-43b1-ba74-dd5b421e2295, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 034.AP.POP.BIGAIRPORT.NET}}
+  - {name: NON_youtube：8度科技 13, server: cm-jm.okvpn.xyz, port: 20015, type: vmess, uuid: be0acefb-485f-4395-adb9-f15428d10ca4, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: cm-jm.okvpn.xyz}}
+  - {name: NON_youtube：8度科技 14, server: usa-dallas.lvuft.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, network: ws, ws-path: /ws, ws-headers: {Host: usa-dallas.lvuft.com}}
+  - {name: NON_youtube：8度科技 15, server: v4.ssrsub.com, port: 8443, type: vmess, uuid: e795f820-9391-4a9d-bfaf-b5329386f82f, alterId: 0, cipher: auto, tls: true, network: ws, ws-path: /ssrsub, ws-headers: {Host: v4.ssrsub.com}}
+  - {name: NON_youtube：8度科技 16, server: azhk.1166.ml, port: 23361, type: vmess, uuid: 222ce280-0cc7-43c1-b71d-db0246636ef4, alterId: 0, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: pull.free.video.10010.com}}
+  - {name: NON_youtube：8度科技 17, server: cm-jm.okvpn.xyz, port: 20006, type: vmess, uuid: be0acefb-485f-4395-adb9-f15428d10ca4, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: cm-jm.okvpn.xyz}}
+  - {name: NON_youtube：8度科技 18, server: v1.369855.xyz, port: 11443, type: vmess, uuid: ccf19408-1911-40b1-82c1-e9528ce3c2f4, alterId: 1, cipher: auto, tls: true, network: ws, ws-path: /api/rn, ws-headers: {Host: usbv2.ddns.tjiasu.xyz}}
+  - {name: NON_youtube：8度科技 19, server: germany-dusseldorf.mah3Hoet.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, network: ws, ws-path: /ws, ws-headers: {Host: germany-dusseldorf.mah3Hoet.com}}
+  - {name: NON_youtube：8度科技 20, server: ukml.52jjyun.top, port: 88, type: vmess, uuid: 13f16b00-81f2-48e1-904b-722aed52a86c, alterId: 10, cipher: auto, tls: false, network: ws, ws-path: /jjyun, ws-headers: {Host: ukml.52jjyun.top}}
+  - {name: NON_youtube：8度科技 21, server: 7704d818-78e5-471a-a1d6-655c4d79f662.1c5f5adf-a6ce-4066-b318-fa7eb97f68c8.xn--9kq764g2xn.com, port: 30016, type: vmess, uuid: 5efeb899-e8bd-446f-b0be-863d30331174, alterId: 0, cipher: auto, tls: false}
+  - {name: NON_youtube：8度科技 22, server: us1nhg-node.aiqiche123.com, port: 13723, type: vmess, uuid: a90597c1-bab3-4217-ad6f-0838675c8634, alterId: 10, cipher: auto, tls: true, network: ws, ws-path: ray, ws-headers: {Host: us1nhg-node.aiqiche123.com}}
+  - {name: NON_youtube：8度科技 23, server: cm-jm.okvpn.xyz, port: 20005, type: vmess, uuid: be0acefb-485f-4395-adb9-f15428d10ca4, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: cm-jm.okvpn.xyz}}
+  - {name: NON_youtube：8度科技 24, server: user.plusyun.com, port: 10031, type: ss, cipher: chacha20-ietf-poly1305, password: 7f168637-1680-4cd4-9901-d42d59ea679f}
+  - {name: NON_youtube：8度科技 25, server: n20.emovpn.xyz, port: 44333, type: ss, cipher: chacha20-ietf-poly1305, password: 7f168637-1680-4cd4-9901-d42d59ea679f}
+  - {name: NON_youtube：8度科技 26, server: jp10.holiganfan.com, port: 10088, type: trojan, password: 8ce38f17-b2be-453a-8d25-deec1a0aabba, sni: jp10.holiganfan.com}
+  - {name: NL_youtube：8度科技, server: 139.162.139.42, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 🇭🇰 HK_youtube：8度科技, server: 118.107.244.112, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: GB_youtube：8度科技, server: 37.19.218.197, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: Mx6DztQqZb7j34FdWjER}
+  - {name: FR_youtube：8度科技, server: 62.210.209.50, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
+  - {name: FR_youtube：8度科技 2, server: 149.202.82.153, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: FR_youtube：8度科技 3, server: 141.95.0.26, port: 826, type: ss, cipher: chacha20-ietf-poly1305, password: sF43Xt2gONqcgFX563}
+  - {name: 🇨🇳 CN_youtube：8度科技, server: 139.227.161.129, port: 10002, type: vmess, uuid: 65cac56d-4155-43c8-bae0-f368cb21f771, alterId: 1, cipher: auto, tls: false}
   - {name: (欢迎订阅youtube：8度科技), server: 172.99.190.230, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
   - {name: (欢迎订阅youtube：8度科技) 2, server: 142.202.48.34, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v}
   - {name: (欢迎订阅youtube：8度科技) 3, server: 42.157.8.162, port: 48106, type: vmess, uuid: 3959477e-55c4-453f-bc80-3b13e64891ac, alterId: 64, cipher: auto, tls: false}
@@ -42,6 +174,138 @@ proxy-groups:
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
+      - youtube：8度科技
+      - youtube：8度科技 2
+      - youtube：8度科技 3
+      - youtube：8度科技 4
+      - youtube：8度科技 5
+      - youtube：8度科技 6
+      - youtube：8度科技 7
+      - youtube：8度科技 8
+      - youtube：8度科技 9
+      - youtube：8度科技 10
+      - youtube：8度科技 11
+      - youtube：8度科技 12
+      - youtube：8度科技 13
+      - youtube：8度科技 14
+      - youtube：8度科技 15
+      - youtube：8度科技 16
+      - youtube：8度科技 17
+      - youtube：8度科技 18
+      - youtube：8度科技 19
+      - youtube：8度科技 20
+      - youtube：8度科技 21
+      - youtube：8度科技 22
+      - youtube：8度科技 23
+      - youtube：8度科技 24
+      - youtube：8度科技 25
+      - youtube：8度科技 26
+      - youtube：8度科技 27
+      - youtube：8度科技 28
+      - youtube：8度科技 29
+      - youtube：8度科技 30
+      - youtube：8度科技 31
+      - youtube：8度科技 32
+      - youtube：8度科技 33
+      - youtube：8度科技 34
+      - youtube：8度科技 35
+      - youtube：8度科技 36
+      - youtube：8度科技 37
+      - youtube：8度科技 38
+      - youtube：8度科技 39
+      - youtube：8度科技 40
+      - youtube：8度科技 41
+      - youtube：8度科技 42
+      - youtube：8度科技 43
+      - youtube：8度科技 44
+      - youtube：8度科技 45
+      - youtube：8度科技 46
+      - youtube：8度科技 47
+      - youtube：8度科技 48
+      - youtube：8度科技 49
+      - youtube：8度科技 50
+      - youtube：8度科技 51
+      - youtube：8度科技 52
+      - youtube：8度科技 53
+      - youtube：8度科技 54
+      - youtube：8度科技 55
+      - youtube：8度科技 56
+      - youtube：8度科技 57
+      - youtube：8度科技 58
+      - youtube：8度科技 59
+      - youtube：8度科技 60
+      - youtube：8度科技 61
+      - youtube：8度科技 62
+      - youtube：8度科技 63
+      - youtube：8度科技 64
+      - youtube：8度科技 65
+      - youtube：8度科技 66
+      - youtube：8度科技 67
+      - youtube：8度科技 68
+      - youtube：8度科技 69
+      - youtube：8度科技 70
+      - youtube：8度科技 71
+      - youtube：8度科技 72
+      - youtube：8度科技 73
+      - youtube：8度科技 74
+      - youtube：8度科技 75
+      - youtube：8度科技 76
+      - youtube：8度科技 77
+      - youtube：8度科技 78
+      - youtube：8度科技 79
+      - youtube：8度科技 80
+      - youtube：8度科技 81
+      - youtube：8度科技 82
+      - youtube：8度科技 83
+      - youtube：8度科技 84
+      - youtube：8度科技 85
+      - youtube：8度科技 86
+      - youtube：8度科技 87
+      - youtube：8度科技 88
+      - youtube：8度科技 89
+      - 🇺🇸 US_youtube：8度科技
+      - 🇺🇸 US_youtube：8度科技 2
+      - 🇺🇸 US_youtube：8度科技 3
+      - 🇺🇸 US_youtube：8度科技 4
+      - 🇺🇸 US_youtube：8度科技 5
+      - 🇺🇸 US_youtube：8度科技 6
+      - 🇺🇸 US_youtube：8度科技 7
+      - 🇺🇸 US_youtube：8度科技 8
+      - 🇺🇸 US_youtube：8度科技 9
+      - 🇺🇸 US_youtube：8度科技 10
+      - NON_youtube：8度科技
+      - NON_youtube：8度科技 2
+      - NON_youtube：8度科技 3
+      - NON_youtube：8度科技 4
+      - NON_youtube：8度科技 5
+      - NON_youtube：8度科技 6
+      - NON_youtube：8度科技 7
+      - NON_youtube：8度科技 8
+      - NON_youtube：8度科技 9
+      - NON_youtube：8度科技 10
+      - NON_youtube：8度科技 11
+      - NON_youtube：8度科技 12
+      - NON_youtube：8度科技 13
+      - NON_youtube：8度科技 14
+      - NON_youtube：8度科技 15
+      - NON_youtube：8度科技 16
+      - NON_youtube：8度科技 17
+      - NON_youtube：8度科技 18
+      - NON_youtube：8度科技 19
+      - NON_youtube：8度科技 20
+      - NON_youtube：8度科技 21
+      - NON_youtube：8度科技 22
+      - NON_youtube：8度科技 23
+      - NON_youtube：8度科技 24
+      - NON_youtube：8度科技 25
+      - NON_youtube：8度科技 26
+      - NL_youtube：8度科技
+      - 🇭🇰 HK_youtube：8度科技
+      - GB_youtube：8度科技
+      - FR_youtube：8度科技
+      - FR_youtube：8度科技 2
+      - FR_youtube：8度科技 3
+      - 🇨🇳 CN_youtube：8度科技
       - (欢迎订阅youtube：8度科技)
       - (欢迎订阅youtube：8度科技) 2
       - (欢迎订阅youtube：8度科技) 3
@@ -78,6 +342,138 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
+      - youtube：8度科技
+      - youtube：8度科技 2
+      - youtube：8度科技 3
+      - youtube：8度科技 4
+      - youtube：8度科技 5
+      - youtube：8度科技 6
+      - youtube：8度科技 7
+      - youtube：8度科技 8
+      - youtube：8度科技 9
+      - youtube：8度科技 10
+      - youtube：8度科技 11
+      - youtube：8度科技 12
+      - youtube：8度科技 13
+      - youtube：8度科技 14
+      - youtube：8度科技 15
+      - youtube：8度科技 16
+      - youtube：8度科技 17
+      - youtube：8度科技 18
+      - youtube：8度科技 19
+      - youtube：8度科技 20
+      - youtube：8度科技 21
+      - youtube：8度科技 22
+      - youtube：8度科技 23
+      - youtube：8度科技 24
+      - youtube：8度科技 25
+      - youtube：8度科技 26
+      - youtube：8度科技 27
+      - youtube：8度科技 28
+      - youtube：8度科技 29
+      - youtube：8度科技 30
+      - youtube：8度科技 31
+      - youtube：8度科技 32
+      - youtube：8度科技 33
+      - youtube：8度科技 34
+      - youtube：8度科技 35
+      - youtube：8度科技 36
+      - youtube：8度科技 37
+      - youtube：8度科技 38
+      - youtube：8度科技 39
+      - youtube：8度科技 40
+      - youtube：8度科技 41
+      - youtube：8度科技 42
+      - youtube：8度科技 43
+      - youtube：8度科技 44
+      - youtube：8度科技 45
+      - youtube：8度科技 46
+      - youtube：8度科技 47
+      - youtube：8度科技 48
+      - youtube：8度科技 49
+      - youtube：8度科技 50
+      - youtube：8度科技 51
+      - youtube：8度科技 52
+      - youtube：8度科技 53
+      - youtube：8度科技 54
+      - youtube：8度科技 55
+      - youtube：8度科技 56
+      - youtube：8度科技 57
+      - youtube：8度科技 58
+      - youtube：8度科技 59
+      - youtube：8度科技 60
+      - youtube：8度科技 61
+      - youtube：8度科技 62
+      - youtube：8度科技 63
+      - youtube：8度科技 64
+      - youtube：8度科技 65
+      - youtube：8度科技 66
+      - youtube：8度科技 67
+      - youtube：8度科技 68
+      - youtube：8度科技 69
+      - youtube：8度科技 70
+      - youtube：8度科技 71
+      - youtube：8度科技 72
+      - youtube：8度科技 73
+      - youtube：8度科技 74
+      - youtube：8度科技 75
+      - youtube：8度科技 76
+      - youtube：8度科技 77
+      - youtube：8度科技 78
+      - youtube：8度科技 79
+      - youtube：8度科技 80
+      - youtube：8度科技 81
+      - youtube：8度科技 82
+      - youtube：8度科技 83
+      - youtube：8度科技 84
+      - youtube：8度科技 85
+      - youtube：8度科技 86
+      - youtube：8度科技 87
+      - youtube：8度科技 88
+      - youtube：8度科技 89
+      - 🇺🇸 US_youtube：8度科技
+      - 🇺🇸 US_youtube：8度科技 2
+      - 🇺🇸 US_youtube：8度科技 3
+      - 🇺🇸 US_youtube：8度科技 4
+      - 🇺🇸 US_youtube：8度科技 5
+      - 🇺🇸 US_youtube：8度科技 6
+      - 🇺🇸 US_youtube：8度科技 7
+      - 🇺🇸 US_youtube：8度科技 8
+      - 🇺🇸 US_youtube：8度科技 9
+      - 🇺🇸 US_youtube：8度科技 10
+      - NON_youtube：8度科技
+      - NON_youtube：8度科技 2
+      - NON_youtube：8度科技 3
+      - NON_youtube：8度科技 4
+      - NON_youtube：8度科技 5
+      - NON_youtube：8度科技 6
+      - NON_youtube：8度科技 7
+      - NON_youtube：8度科技 8
+      - NON_youtube：8度科技 9
+      - NON_youtube：8度科技 10
+      - NON_youtube：8度科技 11
+      - NON_youtube：8度科技 12
+      - NON_youtube：8度科技 13
+      - NON_youtube：8度科技 14
+      - NON_youtube：8度科技 15
+      - NON_youtube：8度科技 16
+      - NON_youtube：8度科技 17
+      - NON_youtube：8度科技 18
+      - NON_youtube：8度科技 19
+      - NON_youtube：8度科技 20
+      - NON_youtube：8度科技 21
+      - NON_youtube：8度科技 22
+      - NON_youtube：8度科技 23
+      - NON_youtube：8度科技 24
+      - NON_youtube：8度科技 25
+      - NON_youtube：8度科技 26
+      - NL_youtube：8度科技
+      - 🇭🇰 HK_youtube：8度科技
+      - GB_youtube：8度科技
+      - FR_youtube：8度科技
+      - FR_youtube：8度科技 2
+      - FR_youtube：8度科技 3
+      - 🇨🇳 CN_youtube：8度科技
       - (欢迎订阅youtube：8度科技)
       - (欢迎订阅youtube：8度科技) 2
       - (欢迎订阅youtube：8度科技) 3
@@ -115,6 +511,138 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - youtube：8度科技
+      - youtube：8度科技 2
+      - youtube：8度科技 3
+      - youtube：8度科技 4
+      - youtube：8度科技 5
+      - youtube：8度科技 6
+      - youtube：8度科技 7
+      - youtube：8度科技 8
+      - youtube：8度科技 9
+      - youtube：8度科技 10
+      - youtube：8度科技 11
+      - youtube：8度科技 12
+      - youtube：8度科技 13
+      - youtube：8度科技 14
+      - youtube：8度科技 15
+      - youtube：8度科技 16
+      - youtube：8度科技 17
+      - youtube：8度科技 18
+      - youtube：8度科技 19
+      - youtube：8度科技 20
+      - youtube：8度科技 21
+      - youtube：8度科技 22
+      - youtube：8度科技 23
+      - youtube：8度科技 24
+      - youtube：8度科技 25
+      - youtube：8度科技 26
+      - youtube：8度科技 27
+      - youtube：8度科技 28
+      - youtube：8度科技 29
+      - youtube：8度科技 30
+      - youtube：8度科技 31
+      - youtube：8度科技 32
+      - youtube：8度科技 33
+      - youtube：8度科技 34
+      - youtube：8度科技 35
+      - youtube：8度科技 36
+      - youtube：8度科技 37
+      - youtube：8度科技 38
+      - youtube：8度科技 39
+      - youtube：8度科技 40
+      - youtube：8度科技 41
+      - youtube：8度科技 42
+      - youtube：8度科技 43
+      - youtube：8度科技 44
+      - youtube：8度科技 45
+      - youtube：8度科技 46
+      - youtube：8度科技 47
+      - youtube：8度科技 48
+      - youtube：8度科技 49
+      - youtube：8度科技 50
+      - youtube：8度科技 51
+      - youtube：8度科技 52
+      - youtube：8度科技 53
+      - youtube：8度科技 54
+      - youtube：8度科技 55
+      - youtube：8度科技 56
+      - youtube：8度科技 57
+      - youtube：8度科技 58
+      - youtube：8度科技 59
+      - youtube：8度科技 60
+      - youtube：8度科技 61
+      - youtube：8度科技 62
+      - youtube：8度科技 63
+      - youtube：8度科技 64
+      - youtube：8度科技 65
+      - youtube：8度科技 66
+      - youtube：8度科技 67
+      - youtube：8度科技 68
+      - youtube：8度科技 69
+      - youtube：8度科技 70
+      - youtube：8度科技 71
+      - youtube：8度科技 72
+      - youtube：8度科技 73
+      - youtube：8度科技 74
+      - youtube：8度科技 75
+      - youtube：8度科技 76
+      - youtube：8度科技 77
+      - youtube：8度科技 78
+      - youtube：8度科技 79
+      - youtube：8度科技 80
+      - youtube：8度科技 81
+      - youtube：8度科技 82
+      - youtube：8度科技 83
+      - youtube：8度科技 84
+      - youtube：8度科技 85
+      - youtube：8度科技 86
+      - youtube：8度科技 87
+      - youtube：8度科技 88
+      - youtube：8度科技 89
+      - 🇺🇸 US_youtube：8度科技
+      - 🇺🇸 US_youtube：8度科技 2
+      - 🇺🇸 US_youtube：8度科技 3
+      - 🇺🇸 US_youtube：8度科技 4
+      - 🇺🇸 US_youtube：8度科技 5
+      - 🇺🇸 US_youtube：8度科技 6
+      - 🇺🇸 US_youtube：8度科技 7
+      - 🇺🇸 US_youtube：8度科技 8
+      - 🇺🇸 US_youtube：8度科技 9
+      - 🇺🇸 US_youtube：8度科技 10
+      - NON_youtube：8度科技
+      - NON_youtube：8度科技 2
+      - NON_youtube：8度科技 3
+      - NON_youtube：8度科技 4
+      - NON_youtube：8度科技 5
+      - NON_youtube：8度科技 6
+      - NON_youtube：8度科技 7
+      - NON_youtube：8度科技 8
+      - NON_youtube：8度科技 9
+      - NON_youtube：8度科技 10
+      - NON_youtube：8度科技 11
+      - NON_youtube：8度科技 12
+      - NON_youtube：8度科技 13
+      - NON_youtube：8度科技 14
+      - NON_youtube：8度科技 15
+      - NON_youtube：8度科技 16
+      - NON_youtube：8度科技 17
+      - NON_youtube：8度科技 18
+      - NON_youtube：8度科技 19
+      - NON_youtube：8度科技 20
+      - NON_youtube：8度科技 21
+      - NON_youtube：8度科技 22
+      - NON_youtube：8度科技 23
+      - NON_youtube：8度科技 24
+      - NON_youtube：8度科技 25
+      - NON_youtube：8度科技 26
+      - NL_youtube：8度科技
+      - 🇭🇰 HK_youtube：8度科技
+      - GB_youtube：8度科技
+      - FR_youtube：8度科技
+      - FR_youtube：8度科技 2
+      - FR_youtube：8度科技 3
+      - 🇨🇳 CN_youtube：8度科技
       - (欢迎订阅youtube：8度科技)
       - (欢迎订阅youtube：8度科技) 2
       - (欢迎订阅youtube：8度科技) 3
@@ -156,6 +684,138 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
+      - youtube：8度科技
+      - youtube：8度科技 2
+      - youtube：8度科技 3
+      - youtube：8度科技 4
+      - youtube：8度科技 5
+      - youtube：8度科技 6
+      - youtube：8度科技 7
+      - youtube：8度科技 8
+      - youtube：8度科技 9
+      - youtube：8度科技 10
+      - youtube：8度科技 11
+      - youtube：8度科技 12
+      - youtube：8度科技 13
+      - youtube：8度科技 14
+      - youtube：8度科技 15
+      - youtube：8度科技 16
+      - youtube：8度科技 17
+      - youtube：8度科技 18
+      - youtube：8度科技 19
+      - youtube：8度科技 20
+      - youtube：8度科技 21
+      - youtube：8度科技 22
+      - youtube：8度科技 23
+      - youtube：8度科技 24
+      - youtube：8度科技 25
+      - youtube：8度科技 26
+      - youtube：8度科技 27
+      - youtube：8度科技 28
+      - youtube：8度科技 29
+      - youtube：8度科技 30
+      - youtube：8度科技 31
+      - youtube：8度科技 32
+      - youtube：8度科技 33
+      - youtube：8度科技 34
+      - youtube：8度科技 35
+      - youtube：8度科技 36
+      - youtube：8度科技 37
+      - youtube：8度科技 38
+      - youtube：8度科技 39
+      - youtube：8度科技 40
+      - youtube：8度科技 41
+      - youtube：8度科技 42
+      - youtube：8度科技 43
+      - youtube：8度科技 44
+      - youtube：8度科技 45
+      - youtube：8度科技 46
+      - youtube：8度科技 47
+      - youtube：8度科技 48
+      - youtube：8度科技 49
+      - youtube：8度科技 50
+      - youtube：8度科技 51
+      - youtube：8度科技 52
+      - youtube：8度科技 53
+      - youtube：8度科技 54
+      - youtube：8度科技 55
+      - youtube：8度科技 56
+      - youtube：8度科技 57
+      - youtube：8度科技 58
+      - youtube：8度科技 59
+      - youtube：8度科技 60
+      - youtube：8度科技 61
+      - youtube：8度科技 62
+      - youtube：8度科技 63
+      - youtube：8度科技 64
+      - youtube：8度科技 65
+      - youtube：8度科技 66
+      - youtube：8度科技 67
+      - youtube：8度科技 68
+      - youtube：8度科技 69
+      - youtube：8度科技 70
+      - youtube：8度科技 71
+      - youtube：8度科技 72
+      - youtube：8度科技 73
+      - youtube：8度科技 74
+      - youtube：8度科技 75
+      - youtube：8度科技 76
+      - youtube：8度科技 77
+      - youtube：8度科技 78
+      - youtube：8度科技 79
+      - youtube：8度科技 80
+      - youtube：8度科技 81
+      - youtube：8度科技 82
+      - youtube：8度科技 83
+      - youtube：8度科技 84
+      - youtube：8度科技 85
+      - youtube：8度科技 86
+      - youtube：8度科技 87
+      - youtube：8度科技 88
+      - youtube：8度科技 89
+      - 🇺🇸 US_youtube：8度科技
+      - 🇺🇸 US_youtube：8度科技 2
+      - 🇺🇸 US_youtube：8度科技 3
+      - 🇺🇸 US_youtube：8度科技 4
+      - 🇺🇸 US_youtube：8度科技 5
+      - 🇺🇸 US_youtube：8度科技 6
+      - 🇺🇸 US_youtube：8度科技 7
+      - 🇺🇸 US_youtube：8度科技 8
+      - 🇺🇸 US_youtube：8度科技 9
+      - 🇺🇸 US_youtube：8度科技 10
+      - NON_youtube：8度科技
+      - NON_youtube：8度科技 2
+      - NON_youtube：8度科技 3
+      - NON_youtube：8度科技 4
+      - NON_youtube：8度科技 5
+      - NON_youtube：8度科技 6
+      - NON_youtube：8度科技 7
+      - NON_youtube：8度科技 8
+      - NON_youtube：8度科技 9
+      - NON_youtube：8度科技 10
+      - NON_youtube：8度科技 11
+      - NON_youtube：8度科技 12
+      - NON_youtube：8度科技 13
+      - NON_youtube：8度科技 14
+      - NON_youtube：8度科技 15
+      - NON_youtube：8度科技 16
+      - NON_youtube：8度科技 17
+      - NON_youtube：8度科技 18
+      - NON_youtube：8度科技 19
+      - NON_youtube：8度科技 20
+      - NON_youtube：8度科技 21
+      - NON_youtube：8度科技 22
+      - NON_youtube：8度科技 23
+      - NON_youtube：8度科技 24
+      - NON_youtube：8度科技 25
+      - NON_youtube：8度科技 26
+      - NL_youtube：8度科技
+      - 🇭🇰 HK_youtube：8度科技
+      - GB_youtube：8度科技
+      - FR_youtube：8度科技
+      - FR_youtube：8度科技 2
+      - FR_youtube：8度科技 3
+      - 🇨🇳 CN_youtube：8度科技
       - (欢迎订阅youtube：8度科技)
       - (欢迎订阅youtube：8度科技) 2
       - (欢迎订阅youtube：8度科技) 3
@@ -192,6 +852,138 @@ proxy-groups:
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
+      - youtube：8度科技
+      - youtube：8度科技 2
+      - youtube：8度科技 3
+      - youtube：8度科技 4
+      - youtube：8度科技 5
+      - youtube：8度科技 6
+      - youtube：8度科技 7
+      - youtube：8度科技 8
+      - youtube：8度科技 9
+      - youtube：8度科技 10
+      - youtube：8度科技 11
+      - youtube：8度科技 12
+      - youtube：8度科技 13
+      - youtube：8度科技 14
+      - youtube：8度科技 15
+      - youtube：8度科技 16
+      - youtube：8度科技 17
+      - youtube：8度科技 18
+      - youtube：8度科技 19
+      - youtube：8度科技 20
+      - youtube：8度科技 21
+      - youtube：8度科技 22
+      - youtube：8度科技 23
+      - youtube：8度科技 24
+      - youtube：8度科技 25
+      - youtube：8度科技 26
+      - youtube：8度科技 27
+      - youtube：8度科技 28
+      - youtube：8度科技 29
+      - youtube：8度科技 30
+      - youtube：8度科技 31
+      - youtube：8度科技 32
+      - youtube：8度科技 33
+      - youtube：8度科技 34
+      - youtube：8度科技 35
+      - youtube：8度科技 36
+      - youtube：8度科技 37
+      - youtube：8度科技 38
+      - youtube：8度科技 39
+      - youtube：8度科技 40
+      - youtube：8度科技 41
+      - youtube：8度科技 42
+      - youtube：8度科技 43
+      - youtube：8度科技 44
+      - youtube：8度科技 45
+      - youtube：8度科技 46
+      - youtube：8度科技 47
+      - youtube：8度科技 48
+      - youtube：8度科技 49
+      - youtube：8度科技 50
+      - youtube：8度科技 51
+      - youtube：8度科技 52
+      - youtube：8度科技 53
+      - youtube：8度科技 54
+      - youtube：8度科技 55
+      - youtube：8度科技 56
+      - youtube：8度科技 57
+      - youtube：8度科技 58
+      - youtube：8度科技 59
+      - youtube：8度科技 60
+      - youtube：8度科技 61
+      - youtube：8度科技 62
+      - youtube：8度科技 63
+      - youtube：8度科技 64
+      - youtube：8度科技 65
+      - youtube：8度科技 66
+      - youtube：8度科技 67
+      - youtube：8度科技 68
+      - youtube：8度科技 69
+      - youtube：8度科技 70
+      - youtube：8度科技 71
+      - youtube：8度科技 72
+      - youtube：8度科技 73
+      - youtube：8度科技 74
+      - youtube：8度科技 75
+      - youtube：8度科技 76
+      - youtube：8度科技 77
+      - youtube：8度科技 78
+      - youtube：8度科技 79
+      - youtube：8度科技 80
+      - youtube：8度科技 81
+      - youtube：8度科技 82
+      - youtube：8度科技 83
+      - youtube：8度科技 84
+      - youtube：8度科技 85
+      - youtube：8度科技 86
+      - youtube：8度科技 87
+      - youtube：8度科技 88
+      - youtube：8度科技 89
+      - 🇺🇸 US_youtube：8度科技
+      - 🇺🇸 US_youtube：8度科技 2
+      - 🇺🇸 US_youtube：8度科技 3
+      - 🇺🇸 US_youtube：8度科技 4
+      - 🇺🇸 US_youtube：8度科技 5
+      - 🇺🇸 US_youtube：8度科技 6
+      - 🇺🇸 US_youtube：8度科技 7
+      - 🇺🇸 US_youtube：8度科技 8
+      - 🇺🇸 US_youtube：8度科技 9
+      - 🇺🇸 US_youtube：8度科技 10
+      - NON_youtube：8度科技
+      - NON_youtube：8度科技 2
+      - NON_youtube：8度科技 3
+      - NON_youtube：8度科技 4
+      - NON_youtube：8度科技 5
+      - NON_youtube：8度科技 6
+      - NON_youtube：8度科技 7
+      - NON_youtube：8度科技 8
+      - NON_youtube：8度科技 9
+      - NON_youtube：8度科技 10
+      - NON_youtube：8度科技 11
+      - NON_youtube：8度科技 12
+      - NON_youtube：8度科技 13
+      - NON_youtube：8度科技 14
+      - NON_youtube：8度科技 15
+      - NON_youtube：8度科技 16
+      - NON_youtube：8度科技 17
+      - NON_youtube：8度科技 18
+      - NON_youtube：8度科技 19
+      - NON_youtube：8度科技 20
+      - NON_youtube：8度科技 21
+      - NON_youtube：8度科技 22
+      - NON_youtube：8度科技 23
+      - NON_youtube：8度科技 24
+      - NON_youtube：8度科技 25
+      - NON_youtube：8度科技 26
+      - NL_youtube：8度科技
+      - 🇭🇰 HK_youtube：8度科技
+      - GB_youtube：8度科技
+      - FR_youtube：8度科技
+      - FR_youtube：8度科技 2
+      - FR_youtube：8度科技 3
+      - 🇨🇳 CN_youtube：8度科技
       - (欢迎订阅youtube：8度科技)
       - (欢迎订阅youtube：8度科技) 2
       - (欢迎订阅youtube：8度科技) 3
@@ -229,6 +1021,138 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - youtube：8度科技
+      - youtube：8度科技 2
+      - youtube：8度科技 3
+      - youtube：8度科技 4
+      - youtube：8度科技 5
+      - youtube：8度科技 6
+      - youtube：8度科技 7
+      - youtube：8度科技 8
+      - youtube：8度科技 9
+      - youtube：8度科技 10
+      - youtube：8度科技 11
+      - youtube：8度科技 12
+      - youtube：8度科技 13
+      - youtube：8度科技 14
+      - youtube：8度科技 15
+      - youtube：8度科技 16
+      - youtube：8度科技 17
+      - youtube：8度科技 18
+      - youtube：8度科技 19
+      - youtube：8度科技 20
+      - youtube：8度科技 21
+      - youtube：8度科技 22
+      - youtube：8度科技 23
+      - youtube：8度科技 24
+      - youtube：8度科技 25
+      - youtube：8度科技 26
+      - youtube：8度科技 27
+      - youtube：8度科技 28
+      - youtube：8度科技 29
+      - youtube：8度科技 30
+      - youtube：8度科技 31
+      - youtube：8度科技 32
+      - youtube：8度科技 33
+      - youtube：8度科技 34
+      - youtube：8度科技 35
+      - youtube：8度科技 36
+      - youtube：8度科技 37
+      - youtube：8度科技 38
+      - youtube：8度科技 39
+      - youtube：8度科技 40
+      - youtube：8度科技 41
+      - youtube：8度科技 42
+      - youtube：8度科技 43
+      - youtube：8度科技 44
+      - youtube：8度科技 45
+      - youtube：8度科技 46
+      - youtube：8度科技 47
+      - youtube：8度科技 48
+      - youtube：8度科技 49
+      - youtube：8度科技 50
+      - youtube：8度科技 51
+      - youtube：8度科技 52
+      - youtube：8度科技 53
+      - youtube：8度科技 54
+      - youtube：8度科技 55
+      - youtube：8度科技 56
+      - youtube：8度科技 57
+      - youtube：8度科技 58
+      - youtube：8度科技 59
+      - youtube：8度科技 60
+      - youtube：8度科技 61
+      - youtube：8度科技 62
+      - youtube：8度科技 63
+      - youtube：8度科技 64
+      - youtube：8度科技 65
+      - youtube：8度科技 66
+      - youtube：8度科技 67
+      - youtube：8度科技 68
+      - youtube：8度科技 69
+      - youtube：8度科技 70
+      - youtube：8度科技 71
+      - youtube：8度科技 72
+      - youtube：8度科技 73
+      - youtube：8度科技 74
+      - youtube：8度科技 75
+      - youtube：8度科技 76
+      - youtube：8度科技 77
+      - youtube：8度科技 78
+      - youtube：8度科技 79
+      - youtube：8度科技 80
+      - youtube：8度科技 81
+      - youtube：8度科技 82
+      - youtube：8度科技 83
+      - youtube：8度科技 84
+      - youtube：8度科技 85
+      - youtube：8度科技 86
+      - youtube：8度科技 87
+      - youtube：8度科技 88
+      - youtube：8度科技 89
+      - 🇺🇸 US_youtube：8度科技
+      - 🇺🇸 US_youtube：8度科技 2
+      - 🇺🇸 US_youtube：8度科技 3
+      - 🇺🇸 US_youtube：8度科技 4
+      - 🇺🇸 US_youtube：8度科技 5
+      - 🇺🇸 US_youtube：8度科技 6
+      - 🇺🇸 US_youtube：8度科技 7
+      - 🇺🇸 US_youtube：8度科技 8
+      - 🇺🇸 US_youtube：8度科技 9
+      - 🇺🇸 US_youtube：8度科技 10
+      - NON_youtube：8度科技
+      - NON_youtube：8度科技 2
+      - NON_youtube：8度科技 3
+      - NON_youtube：8度科技 4
+      - NON_youtube：8度科技 5
+      - NON_youtube：8度科技 6
+      - NON_youtube：8度科技 7
+      - NON_youtube：8度科技 8
+      - NON_youtube：8度科技 9
+      - NON_youtube：8度科技 10
+      - NON_youtube：8度科技 11
+      - NON_youtube：8度科技 12
+      - NON_youtube：8度科技 13
+      - NON_youtube：8度科技 14
+      - NON_youtube：8度科技 15
+      - NON_youtube：8度科技 16
+      - NON_youtube：8度科技 17
+      - NON_youtube：8度科技 18
+      - NON_youtube：8度科技 19
+      - NON_youtube：8度科技 20
+      - NON_youtube：8度科技 21
+      - NON_youtube：8度科技 22
+      - NON_youtube：8度科技 23
+      - NON_youtube：8度科技 24
+      - NON_youtube：8度科技 25
+      - NON_youtube：8度科技 26
+      - NL_youtube：8度科技
+      - 🇭🇰 HK_youtube：8度科技
+      - GB_youtube：8度科技
+      - FR_youtube：8度科技
+      - FR_youtube：8度科技 2
+      - FR_youtube：8度科技 3
+      - 🇨🇳 CN_youtube：8度科技
       - (欢迎订阅youtube：8度科技)
       - (欢迎订阅youtube：8度科技) 2
       - (欢迎订阅youtube：8度科技) 3
@@ -275,6 +1199,138 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - youtube：8度科技
+      - youtube：8度科技 2
+      - youtube：8度科技 3
+      - youtube：8度科技 4
+      - youtube：8度科技 5
+      - youtube：8度科技 6
+      - youtube：8度科技 7
+      - youtube：8度科技 8
+      - youtube：8度科技 9
+      - youtube：8度科技 10
+      - youtube：8度科技 11
+      - youtube：8度科技 12
+      - youtube：8度科技 13
+      - youtube：8度科技 14
+      - youtube：8度科技 15
+      - youtube：8度科技 16
+      - youtube：8度科技 17
+      - youtube：8度科技 18
+      - youtube：8度科技 19
+      - youtube：8度科技 20
+      - youtube：8度科技 21
+      - youtube：8度科技 22
+      - youtube：8度科技 23
+      - youtube：8度科技 24
+      - youtube：8度科技 25
+      - youtube：8度科技 26
+      - youtube：8度科技 27
+      - youtube：8度科技 28
+      - youtube：8度科技 29
+      - youtube：8度科技 30
+      - youtube：8度科技 31
+      - youtube：8度科技 32
+      - youtube：8度科技 33
+      - youtube：8度科技 34
+      - youtube：8度科技 35
+      - youtube：8度科技 36
+      - youtube：8度科技 37
+      - youtube：8度科技 38
+      - youtube：8度科技 39
+      - youtube：8度科技 40
+      - youtube：8度科技 41
+      - youtube：8度科技 42
+      - youtube：8度科技 43
+      - youtube：8度科技 44
+      - youtube：8度科技 45
+      - youtube：8度科技 46
+      - youtube：8度科技 47
+      - youtube：8度科技 48
+      - youtube：8度科技 49
+      - youtube：8度科技 50
+      - youtube：8度科技 51
+      - youtube：8度科技 52
+      - youtube：8度科技 53
+      - youtube：8度科技 54
+      - youtube：8度科技 55
+      - youtube：8度科技 56
+      - youtube：8度科技 57
+      - youtube：8度科技 58
+      - youtube：8度科技 59
+      - youtube：8度科技 60
+      - youtube：8度科技 61
+      - youtube：8度科技 62
+      - youtube：8度科技 63
+      - youtube：8度科技 64
+      - youtube：8度科技 65
+      - youtube：8度科技 66
+      - youtube：8度科技 67
+      - youtube：8度科技 68
+      - youtube：8度科技 69
+      - youtube：8度科技 70
+      - youtube：8度科技 71
+      - youtube：8度科技 72
+      - youtube：8度科技 73
+      - youtube：8度科技 74
+      - youtube：8度科技 75
+      - youtube：8度科技 76
+      - youtube：8度科技 77
+      - youtube：8度科技 78
+      - youtube：8度科技 79
+      - youtube：8度科技 80
+      - youtube：8度科技 81
+      - youtube：8度科技 82
+      - youtube：8度科技 83
+      - youtube：8度科技 84
+      - youtube：8度科技 85
+      - youtube：8度科技 86
+      - youtube：8度科技 87
+      - youtube：8度科技 88
+      - youtube：8度科技 89
+      - 🇺🇸 US_youtube：8度科技
+      - 🇺🇸 US_youtube：8度科技 2
+      - 🇺🇸 US_youtube：8度科技 3
+      - 🇺🇸 US_youtube：8度科技 4
+      - 🇺🇸 US_youtube：8度科技 5
+      - 🇺🇸 US_youtube：8度科技 6
+      - 🇺🇸 US_youtube：8度科技 7
+      - 🇺🇸 US_youtube：8度科技 8
+      - 🇺🇸 US_youtube：8度科技 9
+      - 🇺🇸 US_youtube：8度科技 10
+      - NON_youtube：8度科技
+      - NON_youtube：8度科技 2
+      - NON_youtube：8度科技 3
+      - NON_youtube：8度科技 4
+      - NON_youtube：8度科技 5
+      - NON_youtube：8度科技 6
+      - NON_youtube：8度科技 7
+      - NON_youtube：8度科技 8
+      - NON_youtube：8度科技 9
+      - NON_youtube：8度科技 10
+      - NON_youtube：8度科技 11
+      - NON_youtube：8度科技 12
+      - NON_youtube：8度科技 13
+      - NON_youtube：8度科技 14
+      - NON_youtube：8度科技 15
+      - NON_youtube：8度科技 16
+      - NON_youtube：8度科技 17
+      - NON_youtube：8度科技 18
+      - NON_youtube：8度科技 19
+      - NON_youtube：8度科技 20
+      - NON_youtube：8度科技 21
+      - NON_youtube：8度科技 22
+      - NON_youtube：8度科技 23
+      - NON_youtube：8度科技 24
+      - NON_youtube：8度科技 25
+      - NON_youtube：8度科技 26
+      - NL_youtube：8度科技
+      - 🇭🇰 HK_youtube：8度科技
+      - GB_youtube：8度科技
+      - FR_youtube：8度科技
+      - FR_youtube：8度科技 2
+      - FR_youtube：8度科技 3
+      - 🇨🇳 CN_youtube：8度科技
       - (欢迎订阅youtube：8度科技)
       - (欢迎订阅youtube：8度科技) 2
       - (欢迎订阅youtube：8度科技) 3
