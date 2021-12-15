@@ -5,837 +5,796 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 🇬🇧 广州移动-London-GTHost-nf@vpnpool, server: 183.232.56.106, port: 11005, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 2489:xnf3AY, obfs-param: t.me/vpnhat}
-  - {name: 🇨🇳 广州移动-Novosibirsk-Baxet-nf@vpnhat, server: 183.232.56.106, port: 22848, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 1065:5ucWfo, obfs-param: t.me/vpnhat}
-  - {name: 🇬🇧 广州移动-London-GTHost-nf@vpnpool 2, server: 183.232.56.106, port: 11005, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 1065:5ucWfo, obfs-param: t.me/vpnhat}
-  - {name: 🇬🇧 广州移动-London-GTHost-nf@vpnpool 3, server: 183.232.56.106, port: 11005, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 2487:ivxvKM, obfs-param: t.me/vpnhat}
-  - {name: 🇨🇳 广州移动-LAX-DMIT-nf@vpnpool, server: 183.232.56.106, port: 11805, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 2487:ivxvKM, obfs-param: t.me/vpnhat}
-  - {name: 🇨🇳 广州移动-LAX-DMIT-nf@vpnpool 2, server: 183.232.56.106, port: 35247, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 2489:xnf3AY, obfs-param: t.me/vpnhat}
-  - {name: 🇨🇳 广州移动-LAX-DMIT-nf@vpnpool 3, server: 183.232.56.106, port: 35247, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 2487:ivxvKM, obfs-param: t.me/vpnhat}
-  - {name: 🇨🇳 广州移动-LAX-DMIT-nf@vpnpool 4, server: 183.232.56.106, port: 11805, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 2489:xnf3AY, obfs-param: t.me/vpnhat}
-  - {name: 🇨🇳 广州移动-LAX-DMIT-nf@vpnpool 5, server: 183.232.56.106, port: 11805, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 1065:5ucWfo, obfs-param: t.me/vpnhat}
-  - {name: 🇺🇸 美国(欢迎订阅youtube：8度科技), server: 192.46.209.215, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: 🇨🇳 广州移动-LAX-DMIT-nf@vpnpool 6, server: 183.232.56.106, port: 35247, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 1065:5ucWfo, obfs-param: t.me/vpnhat}
   - {name: (欢迎订阅youtube：8度科技), server: v1.ssrsub.com, port: 8443, type: vmess, uuid: 13b36e17-e869-4b77-bf33-e5a431eac496, alterId: 0, cipher: auto, tls: true, network: ws, ws-path: /ssrsub, ws-headers: {Host: v1.ssrsub.com}}
-  - {name: 🇨🇳 广州移动-Santa Clara-Tencent-nf@EXTM3U, server: 183.232.56.106, port: 11804, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 2489:xnf3AY, obfs-param: t.me/vpnhat}
-  - {name: _NO_挪威, server: 46.29.218.6, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: 🇨🇳 广州移动-Santa Clara-Tencent-nf@EXTM3U 2, server: 183.232.56.106, port: 11804, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 2487:ivxvKM, obfs-param: t.me/vpnhat}
-  - {name: 🇭🇰 广州移动-香港HKT-nf@vpnpool, server: 183.232.56.106, port: 11845, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 2489:xnf3AY, obfs-param: t.me/vpnhat}
-  - {name: 🇭🇰 广州移动-香港HKT-nf@vpnpool 2, server: 183.232.56.106, port: 11845, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 1065:5ucWfo, obfs-param: t.me/vpnhat}
-  - {name: 🇭🇰 广州移动-香港HKT-nf@vpnpool 3, server: 183.232.56.106, port: 11845, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 2487:ivxvKM, obfs-param: t.me/vpnhat}
-  - {name: 🇺🇸 美国(欢迎订阅youtube：8度科技) 2, server: 192.46.209.215, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: 🇭🇰 广州移动-香港HKT-nf@vpnpool 4, server: 183.232.56.106, port: 11802, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 1065:5ucWfo, obfs-param: t.me/vpnhat}
-  - {name: _IL_以色列, server: 212.199.61.55, port: 8388, type: ss, cipher: chacha20-ietf-poly1305, password: scDj68fv6xkMg2np9RgW}
-  - {name: 🇬🇧 英国(欢迎订阅youtube：8度科技), server: us1nhg-node.aiqiche123.com, port: 13723, type: vmess, uuid: a90597c1-bab3-4217-ad6f-0838675c8634, alterId: 10, cipher: auto, tls: true, network: ws, ws-path: ray, ws-headers: {Host: us1nhg-node.aiqiche123.com}}
-  - {name: 🇨🇳 广州移动-Santa Clara-Tencent-nf@EXTM3U 3, server: 183.232.56.106, port: 11804, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 1065:5ucWfo, obfs-param: t.me/vpnhat}
-  - {name: 浦东电信-LAX-DMIT-nf@vpnpool, server: 58.32.9.209, port: 11423, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 2489:xnf3AY, obfs-param: t.me/vpnhat}
-  - {name: 浦东电信-LAX-DMIT-nf@vpnpool 2, server: 58.32.9.209, port: 11423, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 2487:ivxvKM, obfs-param: t.me/vpnhat}
-  - {name: 浦东电信-LAX-DMIT-nf@vpnpool 3, server: 58.32.9.209, port: 11423, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 1065:5ucWfo, obfs-param: t.me/vpnhat}
-  - {name: 🇹🇼 浦东电信-台北Hinet-nf@vpnpool, server: 58.32.9.209, port: 11428, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 2489:xnf3AY, obfs-param: t.me/vpnhat}
-  - {name: _PT_葡萄牙, server: 185.90.57.152, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: qSnstpCypymLvPeyLRqf}
-  - {name: 🇸🇪 _SE_瑞典, server: 45.83.91.66, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: fAmKHf3Dft78ZyzL9kYF}
-  - {name: 🇨🇦 _CA_加拿大, server: 198.57.27.218, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 🇬🇧 _GB_英国, server: 172.99.190.87, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 🇫🇷 _FR_法国, server: 145.239.1.137, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: 🇫🇷 _FR_法国 2, server: 141.95.0.26, port: 826, type: ss, cipher: chacha20-ietf-poly1305, password: sF43Xt2gONqcgFX563}
-  - {name: 🇫🇷 _FR_法国 3, server: 145.239.1.137, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: 🇨🇦 _CA_加拿大 2, server: 198.57.27.218, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: 🇫🇷 _FR_法国 4, server: 145.239.1.137, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: 🇫🇷 _FR_法国 5, server: 145.239.1.137, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: _PT_葡萄牙 2, server: 185.90.57.152, port: 8388, type: ss, cipher: chacha20-ietf-poly1305, password: qSnstpCypymLvPeyLRqf}
-  - {name: _NO_挪威 2, server: 46.29.218.6, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74}
-  - {name: 🇫🇷 _FR_法国 6, server: 145.239.1.137, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: 🇨🇦 _CA_加拿大 3, server: 184.75.208.234, port: 8388, type: ss, cipher: chacha20-ietf-poly1305, password: 47GH3wQRw7V4Zhd35bFs}
-  - {name: 🇫🇷 _FR_法国 7, server: 145.239.1.137, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: "[12.12] TG频道@Jsnzk", server: hinet.rdns.link, port: 50027, type: ssr, cipher: aes-256-cfb, password: Getfree.Cloud, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 18290:9WA1gd, obfs-param: e3cf218290.software-download.microsoft.com}
-  - {name: 🇫🇷 _FR_法国 8, server: 145.239.1.137, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: 🇺🇸 US(欢迎订阅youtube：8度科技), server: 172.99.190.87, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74}
-  - {name: 🇬🇧 _GB_英国 2, server: 172.99.190.87, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 🇫🇷 _FR_法国 9, server: 145.239.1.137, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
-  - {name: 🇨🇦 _CA_加拿大 4, server: 198.57.27.218, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
-  - {name: 🇯🇵 日本(欢迎订阅youtube：8度科技), server: 172.104.98.216, port: 80, type: vmess, uuid: e5af0cad-295c-37b2-b601-f35d13f6b1bb, alterId: 64, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 172.104.98.216}}
-  - {name: 🇫🇷 _FR_法国 10, server: 145.239.1.137, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: 🇨🇦 _CA_加拿大 5, server: 184.75.208.234, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: 47GH3wQRw7V4Zhd35bFs}
-  - {name: 🇸🇬 广州移动-SG-Nerocloud-nf@vpnpool, server: 183.232.56.106, port: 11807, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 1065:5ucWfo, obfs-param: t.me/vpnhat}
-  - {name: 🇺🇦 _UA_乌克兰, server: 37.19.218.197, port: 8388, type: ss, cipher: chacha20-ietf-poly1305, password: Mx6DztQqZb7j34FdWjER}
-  - {name: 🇯🇵 广州移动-Tokyo-DMIT-nf@vpnpool, server: 183.232.56.106, port: 11812, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 2489:xnf3AY, obfs-param: t.me/vpnhat}
-  - {name: 🇯🇵 广州移动-Tokyo-DMIT-nf@vpnpool 2, server: 183.232.56.106, port: 11803, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 1065:5ucWfo, obfs-param: t.me/vpnhat}
-  - {name: 🇯🇵 广州移动-Tokyo-DMIT-nf@vpnpool 3, server: 183.232.56.106, port: 11842, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 1065:5ucWfo, obfs-param: t.me/vpnhat}
-  - {name: 🇸🇬 广州移动-SG-Nerocloud-nf@vpnpool 2, server: 183.232.56.106, port: 11846, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 1065:5ucWfo, obfs-param: t.me/vpnhat}
-  - {name: 🇯🇵 广州移动-Tokyo-DMIT-nf@vpnpool 4, server: 183.232.56.106, port: 11812, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 2487:ivxvKM, obfs-param: t.me/vpnhat}
-  - {name: 🇯🇵 广州移动-Tokyo-DMIT-nf@vpnpool 5, server: 183.232.56.106, port: 11812, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 1065:5ucWfo, obfs-param: t.me/vpnhat}
-  - {name: 🇸🇬 广州移动-SG-Nerocloud-nf@vpnpool 3, server: 183.232.56.106, port: 11841, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 1065:5ucWfo, obfs-param: t.me/vpnhat}
-  - {name: "[12.12] TG频道@Jsnzk 2", server: hinet.rdns.link, port: 50024, type: ssr, cipher: aes-256-cfb, password: Getfree.Cloud, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 18290:9WA1gd, obfs-param: e3cf218290.software-download.microsoft.com}
-  - {name: 🇯🇵 广州移动-Tokyo-DMIT-nf@vpnpool 6, server: 183.232.56.106, port: 11803, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 2487:ivxvKM, obfs-param: t.me/vpnhat}
-  - {name: 🇺🇸 美国(欢迎订阅youtube：8度科技) 3, server: 192.186.129.66, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, network: ws, ws-path: /ws, ws-headers: {Host: usa-buffalo.lvuft.com}}
-  - {name: 🇺🇸 美国(欢迎订阅youtube：8度科技) 4, server: usa-buffalo.lvuft.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, network: ws, ws-path: /ws, ws-headers: {Host: usa-buffalo.lvuft.com}}
-  - {name: 🇯🇵 广州移动-Tokyo-DMIT-nf@vpnpool 7, server: 183.232.56.106, port: 11842, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 2487:ivxvKM, obfs-param: t.me/vpnhat}
-  - {name: 🇯🇵 广州移动-Tokyo-DMIT-nf@vpnpool 8, server: 183.232.56.106, port: 11803, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 2489:xnf3AY, obfs-param: t.me/vpnhat}
-  - {name: 🇯🇵 广州移动-Tokyo-DMIT-nf@vpnpool 9, server: 183.232.56.106, port: 11842, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 2489:xnf3AY, obfs-param: t.me/vpnhat}
-  - {name: 🇸🇬 浦东电信-SG-Nerocloud-nf@vpnpool, server: 58.32.9.209, port: 11422, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 2487:ivxvKM, obfs-param: t.me/vpnhat}
-  - {name: 🇸🇬 浦东电信-SG-Nerocloud-nf@vpnpool 2, server: 58.32.9.209, port: 11422, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 1065:5ucWfo, obfs-param: t.me/vpnhat}
-  - {name: 🇸🇬 浦东电信-SG-Nerocloud-nf@vpnpool 3, server: 58.32.9.209, port: 11422, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 2489:xnf3AY, obfs-param: t.me/vpnhat}
-  - {name: 🇸🇬 浦东电信-SG-Nerocloud-nf@vpnpool 4, server: 58.32.9.209, port: 11429, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 2489:xnf3AY, obfs-param: t.me/vpnhat}
-  - {name: 🇸🇬 浦东电信-SG-Nerocloud-nf@vpnpool 5, server: 58.32.9.209, port: 11429, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 2487:ivxvKM, obfs-param: t.me/vpnhat}
-  - {name: 🇮🇳 印度(欢迎订阅youtube：8度科技), server: zhuzhu12.com, port: 13959, type: vmess, uuid: dd627432-9996-3673-809e-599d953c45fb, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /zz, ws-headers: {Host: t.me/vpnhat}}
   - {name: (欢迎订阅youtube：8度科技) 2, server: cm-jm.okvpn.xyz, port: 20004, type: vmess, uuid: be0acefb-485f-4395-adb9-f15428d10ca4, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: cm-jm.okvpn.xyz}}
-  - {name: 🇫🇷 _FR_法国 11, server: 217.182.199.168, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: 🇹🇼 广州移动-台北Hinet-nf@vpnpool, server: 183.232.56.106, port: 11814, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 2487:ivxvKM, obfs-param: t.me/vpnhat}
-  - {name: 🇨🇦 _CA_加拿大 6, server: 198.57.27.218, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: 🇸🇬 广州移动-SG-Tencent-nf@vpnpool, server: 183.232.56.106, port: 11806, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 2489:xnf3AY, obfs-param: t.me/vpnhat}
-  - {name: 🇸🇬 广州移动-SG-Tencent-nf@vpnpool 2, server: 183.232.56.106, port: 11806, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 2487:ivxvKM, obfs-param: t.me/vpnhat}
-  - {name: 🇸🇬 广州移动-SG-Tencent-nf@vpnpool 3, server: 183.232.56.106, port: 11806, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 1065:5ucWfo, obfs-param: t.me/vpnhat}
-  - {name: 🇬🇧 _GB_英国 3, server: 172.99.190.87, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY}
-  - {name: 🇨🇦 _CA_加拿大 7, server: 198.57.27.218, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: 🇹🇼 广州移动-台北Hinet-nf@vpnpool 2, server: 183.232.56.106, port: 11814, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 1065:5ucWfo, obfs-param: t.me/vpnhat}
-  - {name: 🇯🇵 浦东电信-Tokyo-DMIT-nf@vpnpool, server: 58.32.9.209, port: 11424, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 2489:xnf3AY, obfs-param: t.me/vpnhat}
-  - {name: 🇯🇵 浦东电信-Tokyo-DMIT-nf@vpnpool 2, server: 58.32.9.209, port: 11424, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 1065:5ucWfo, obfs-param: t.me/vpnhat}
-  - {name: 🇨🇦 _CA_加拿大 8, server: 198.57.27.218, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: 🇯🇵 _JP_日本, server: 172.105.232.147, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: "[12.12] TG频道@Jsnzk 3", server: hinet.rdns.link, port: 50028, type: ssr, cipher: aes-256-cfb, password: Getfree.Cloud, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 18290:9WA1gd, obfs-param: e3cf218290.software-download.microsoft.com}
-  - {name: "[12.12] TG频道@Jsnzk 4", server: hinet.rdns.link, port: 50026, type: ssr, cipher: aes-256-cfb, password: Getfree.Cloud, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 18290:9WA1gd, obfs-param: e3cf218290.software-download.microsoft.com}
-  - {name: (欢迎订阅youtube：8度科技) 3, server: v4.ssrsub.com, port: 8443, type: vmess, uuid: 13b36e17-e869-4b77-bf33-e5a431eac496, alterId: 0, cipher: auto, tls: true, network: ws, ws-path: /ssrsub, ws-headers: {Host: v4.ssrsub.com}}
-  - {name: "[12.12] TG频道@Jsnzk 5", server: hinet.rdns.link, port: 50022, type: ssr, cipher: aes-256-cfb, password: Getfree.Cloud, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 18290:9WA1gd, obfs-param: e3cf218290.software-download.microsoft.com}
-  - {name: 🇨🇳 广州移动-Novosibirsk-Baxet-nf@vpnhat 2, server: 183.232.56.106, port: 22848, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 2487:ivxvKM, obfs-param: t.me/vpnhat}
-  - {name: DE(欢迎订阅youtube：8度科技), server: germany-dusseldorf.mah3Hoet.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, network: ws, ws-path: /ws, ws-headers: {Host: germany-dusseldorf.mah3Hoet.com}}
-  - {name: 🇺🇸 美国(欢迎订阅youtube：8度科技) 5, server: us1nhg-node.aiqiche123.com, port: 13723, type: vmess, uuid: a90597c1-bab3-4217-ad6f-0838675c8634, alterId: 10, cipher: auto, tls: true, network: ws, ws-path: ray, ws-headers: {Host: us1nhg-node.aiqiche123.com}}
-  - {name: 🇬🇧 _GB_英国 4, server: 172.99.190.87, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: 🇭🇰 _HK_香港, server: 118.107.244.112, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: 🇭🇰 广州移动-香港DMIT-nf@vpnpool, server: 183.232.56.106, port: 11810, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 2489:xnf3AY, obfs-param: t.me/vpnhat}
-  - {name: 🇫🇷 _FR_法国 12, server: 145.239.1.137, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: 浦东电信-LAX-DediPath-nf@vpnpool, server: 58.32.9.209, port: 11427, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 1065:5ucWfo, obfs-param: t.me/vpnhat}
-  - {name: 浦东电信-LAX-DediPath-nf@vpnpool 2, server: 58.32.9.209, port: 11427, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 1065:5ucWfo, obfs-param: t.me/vpnhat}
-  - {name: 浦东电信-LAX-DediPath-nf@vpnpool 3, server: 58.32.9.209, port: 11427, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 2487:ivxvKM, obfs-param: t.me/vpnhat}
-  - {name: 浦东电信-LAX-DediPath-nf@vpnpool 4, server: 58.32.9.209, port: 11427, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 2489:xnf3AY, obfs-param: t.me/vpnhat}
-  - {name: 🇨🇦 _CA_加拿大 9, server: 198.57.27.218, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: "[12.12] TG频道@Jsnzk 6", server: hinet.rdns.link, port: 50023, type: ssr, cipher: aes-256-cfb, password: Getfree.Cloud, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 18290:9WA1gd, obfs-param: e3cf218290.software-download.microsoft.com}
-  - {name: 🇬🇧 浦东电信-London-GTHost-nf@vpnpool, server: 58.32.9.209, port: 11501, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 2487:ivxvKM, obfs-param: t.me/vpnhat}
-  - {name: 🇬🇧 浦东电信-London-GTHost-nf@vpnpool 2, server: 58.32.9.209, port: 11501, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 2489:xnf3AY, obfs-param: t.me/vpnhat}
-  - {name: 🇨🇳 广州移动-Novosibirsk-Baxet-nf@vpnhat 3, server: 183.232.56.106, port: 22848, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 2489:xnf3AY, obfs-param: t.me/vpnhat}
-  - {name: 🇺🇸 _US_美国, server: 45.35.84.162, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, network: ws, ws-path: /ws, ws-headers: {Host: usa-dallas.lvuft.com}}
-  - {name: _NO_挪威 3, server: 46.29.218.6, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: 🇬🇧 浦东电信-London-GTHost-nf@vpnpool 3, server: 58.32.9.209, port: 11501, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 1065:5ucWfo, obfs-param: t.me/vpnhat}
+  - {name: 🇯🇵 日本(欢迎订阅youtube：8度科技), server: 1005jp.fans8.xyz, port: 80, type: vmess, uuid: fbf53107-1b42-3da5-a77d-6ad22544c0e9, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /v2ray, ws-headers: {Host: 1005jp.fans8.xyz}}
   - {name: KR(欢迎订阅youtube：8度科技), server: 139.227.161.129, port: 10002, type: vmess, uuid: 65cac56d-4155-43c8-bae0-f368cb21f771, alterId: 1, cipher: auto, tls: false}
-  - {name: 🇨🇦 _CA_加拿大 10, server: v3.ssrsub.com, port: 8443, type: vmess, uuid: 13b36e17-e869-4b77-bf33-e5a431eac496, alterId: 0, cipher: auto, tls: true, network: ws, ws-path: /ssrsub, ws-headers: {Host: v3.ssrsub.com}}
+  - {name: 🇬🇧 英国(欢迎订阅youtube：8度科技), server: us1nhg-node.aiqiche123.com, port: 13723, type: vmess, uuid: a90597c1-bab3-4217-ad6f-0838675c8634, alterId: 10, cipher: auto, tls: true, network: ws, ws-path: ray, ws-headers: {Host: us1nhg-node.aiqiche123.com}}
+  - {name: 🇯🇵 日本(欢迎订阅youtube：8度科技) 2, server: 172.104.98.216, port: 80, type: vmess, uuid: e5af0cad-295c-37b2-b601-f35d13f6b1bb, alterId: 64, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 172.104.98.216}}
+  - {name: 🇰🇷 _HK_香港->🇰🇷_KR_韩国, server: 156.234.95.72, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, network: ws, ws-path: /ws, ws-headers: {Host: xe3rayu3.com}}
+  - {name: 🇺🇸 _US_美国, server: 45.35.84.162, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, network: ws, ws-path: /ws, ws-headers: {Host: usa-dallas.lvuft.com}}
+  - {name: 🇺🇸 _US_美国 2, server: usa-dallas.lvuft.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, network: ws, ws-path: /ws, ws-headers: {Host: usa-dallas.lvuft.com}}
+  - {name: 🇺🇸 美国(欢迎订阅youtube：8度科技), server: us1nhg-node.aiqiche123.com, port: 13723, type: vmess, uuid: a90597c1-bab3-4217-ad6f-0838675c8634, alterId: 10, cipher: auto, tls: true, network: ws, ws-path: ray, ws-headers: {Host: us1nhg-node.aiqiche123.com}}
+  - {name: 🇷🇺 _US_美国->🇷🇺_RU_俄罗斯联邦, server: 172.67.176.114, port: 443, type: vmess, uuid: f84136de-e03e-4b19-abb0-388d5c8614b9, alterId: 233, cipher: auto, tls: true, network: ws, ws-path: /0459ac88c41c8f/, ws-headers: {Host: free-russian02-cdn.xiaohouzi.club}}
+  - {name: 🇷🇺 _US_美国->🇷🇺_RU_俄罗斯联邦 2, server: v5.ssrsub.com, port: 8443, type: vmess, uuid: 13b36e17-e869-4b77-bf33-e5a431eac496, alterId: 0, cipher: auto, tls: true, network: ws, ws-path: /ssrsub, ws-headers: {Host: v5.ssrsub.com}}
+  - {name: 🇺🇸 美国(欢迎订阅youtube：8度科技) 2, server: usa-buffalo.lvuft.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, network: ws, ws-path: /ws, ws-headers: {Host: usa-buffalo.lvuft.com}}
+  - {name: 🇺🇸 _US_美国 3, server: 45.58.150.130, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, network: ws, ws-path: /ws, ws-headers: {Host: dax6ujai.com}}
+  - {name: 🇺🇸 美国(欢迎订阅youtube：8度科技) 3, server: 192.186.129.66, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, network: ws, ws-path: /ws, ws-headers: {Host: usa-buffalo.lvuft.com}}
+  - {name: DE(欢迎订阅youtube：8度科技), server: germany-dusseldorf.mah3Hoet.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, network: ws, ws-path: /ws, ws-headers: {Host: germany-dusseldorf.mah3Hoet.com}}
+  - {name: 🇰🇷 _HK_香港->🇰🇷_KR_韩国 2, server: xe3rayu3.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, network: ws, ws-path: /ws, ws-headers: {Host: xe3rayu3.com}}
+  - {name: default_name, server: 1.0.0.1, port: 443, type: vmess, uuid: ffffffff-ffff-ffff-ffff-ffffffffffff, alterId: 0, cipher: auto, tls: true, network: ws, ws-path: /ffffffff-ffff-ffff-ffff-ffffffffffff-vmess, ws-headers: {Host: us-aws1.payday501.workers.dev}}
+  - {name: 🇩🇪 _DE_德国, server: 146.0.42.87, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, network: ws, ws-path: /ws, ws-headers: {Host: germany-dusseldorf.mah3Hoet.com}}
+  - {name: 🇺🇸 _US_美国 4, server: dax6ujai.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, network: ws, ws-path: /ws, ws-headers: {Host: dax6ujai.com}}
+  - {name: 🇫🇷 _FR_法国, server: 145.239.1.137, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: _IL_以色列, server: 212.199.61.55, port: 8388, type: ss, cipher: chacha20-ietf-poly1305, password: scDj68fv6xkMg2np9RgW}
+  - {name: (欢迎订阅youtube：8度科技) 3, server: 192.46.210.73, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: _IL_以色列 2, server: 212.199.61.55, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: scDj68fv6xkMg2np9RgW}
+  - {name: 🇸🇬 _SG_新加坡, server: 84.17.38.144, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: gTYdduTTEBBdVZ4LcBnT}
+  - {name: _NO_挪威, server: 46.29.218.6, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 🇹🇼 _TW_台湾, server: 188.214.106.98, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: cNbqVVyUfbJFZ6S8EgRH}
+  - {name: 🇭🇰 _HK_香港, server: 84.17.37.55, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: tjwRqQvteAjt3xFmbZTA}
+  - {name: 🇫🇷 _FR_法国 2, server: 217.182.199.168, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: _PT_葡萄牙, server: 185.90.57.152, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: qSnstpCypymLvPeyLRqf}
+  - {name: 🇫🇷 _FR_法国 3, server: 141.95.0.26, port: 826, type: ss, cipher: chacha20-ietf-poly1305, password: sF43Xt2gONqcgFX563}
+  - {name: 🇫🇷 _FR_法国 4, server: 145.239.1.137, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: 🇫🇷 _FR_法国 5, server: 145.239.1.137, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 🇫🇷 _FR_法国 6, server: 145.239.1.137, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
+  - {name: 🇫🇷 _FR_法国 7, server: 145.239.1.137, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: 🇫🇷 _FR_法国 8, server: 145.239.1.137, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 🇫🇷 _FR_法国 9, server: 145.239.1.137, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 🇫🇷 _FR_法国 10, server: 145.239.1.137, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: 🇩🇪 _DE_德国 2, server: 93.186.201.124, port: 803, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: 🇦🇺 _AU_澳大利亚, server: 172.105.180.227, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 🇺🇦 乌克兰(欢迎订阅youtube：8度科技), server: 37.19.218.197, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: Mx6DztQqZb7j34FdWjER}
+  - {name: 🇸🇪 _SE_瑞典, server: 45.83.91.66, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: fAmKHf3Dft78ZyzL9kYF}
+  - {name: _PT_葡萄牙 2, server: 185.90.57.152, port: 8388, type: ss, cipher: chacha20-ietf-poly1305, password: qSnstpCypymLvPeyLRqf}
+  - {name: 🇨🇦 _CA_加拿大, server: 198.57.27.218, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
+  - {name: 🇩🇪 _DE_德国 3, server: 93.186.201.124, port: 812, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: 🇨🇦 _CA_加拿大 2, server: 198.57.27.218, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 🇩🇪 _DE_德国 4, server: 93.186.201.124, port: 808, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: 🇩🇪 _DE_德国 5, server: 93.186.201.124, port: 800, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: 🇫🇷 _FR_法国 11, server: 198.244.150.26, port: 826, type: ss, cipher: chacha20-ietf-poly1305, password: sF43Xt2gONqcgFX563}
+  - {name: _NO_挪威 2, server: 46.29.218.6, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v}
+  - {name: _NO_挪威 3, server: 46.29.218.6, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: 🇬🇧 _GB_英国, server: 172.99.190.87, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: _NO_挪威 4, server: 46.29.218.6, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 🇬🇧 _GB_英国 2, server: 172.99.190.87, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 🇨🇦 _CA_加拿大 3, server: 198.57.27.218, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇩🇪 _DE_德国 6, server: 93.186.201.124, port: 804, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: 🇩🇪 _DE_德国 7, server: 93.186.201.124, port: 810, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: default_name 2, server: 46.29.218.6, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: _NO_挪威 5, server: 46.29.218.6, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
+  - {name: 🇨🇦 _CA_加拿大 4, server: 198.57.27.218, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 🇨🇦 _CA_加拿大 5, server: 198.57.27.218, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇩🇪 _DE_德国 8, server: 93.186.201.124, port: 805, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: _NO_挪威 6, server: 46.29.218.6, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
+  - {name: 🇩🇪 _DE_德国 9, server: 93.186.201.124, port: 811, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: 🇧🇪 _BE_比利时, server: 77.243.191.178, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: 47GH3wQRw7V4Zhd35bFs}
+  - {name: 🇩🇪 _DE_德国 10, server: 93.186.201.124, port: 802, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: _NO_挪威 7, server: 46.29.218.6, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 🇬🇧 _GB_英国 3, server: 172.99.190.87, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY}
+  - {name: 🇺🇸 US(欢迎订阅youtube：8度科技), server: 172.99.190.87, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74}
+  - {name: _NO_挪威 8, server: 46.29.218.6, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: _NO_挪威 9, server: 46.29.218.6, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 🇺🇦 _UA_乌克兰, server: 37.19.218.197, port: 8388, type: ss, cipher: chacha20-ietf-poly1305, password: Mx6DztQqZb7j34FdWjER}
+  - {name: 🇩🇪 _DE_德国 11, server: 45.141.152.178, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: FTvsfXCvXLPFEMKNSADr}
+  - {name: 🇨🇦 _CA_加拿大 6, server: 184.75.208.234, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: 47GH3wQRw7V4Zhd35bFs}
+  - {name: 🇨🇦 _CA_加拿大 7, server: 184.75.208.234, port: 8388, type: ss, cipher: chacha20-ietf-poly1305, password: 47GH3wQRw7V4Zhd35bFs}
+  - {name: 🇺🇸 _US_美国 5, server: 66.55.92.101, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: NK4wZejCzDfPdWXTK4FW}
+  - {name: 🇺🇸 _US_美国 6, server: 66.55.92.101, port: 8388, type: ss, cipher: chacha20-ietf-poly1305, password: NK4wZejCzDfPdWXTK4FW}
+  - {name: 🇨🇦 _CA_加拿大 8, server: 198.57.27.218, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: 🇭🇰 _HK_香港 2, server: 118.107.244.112, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: 🇭🇰 _HK_香港 3, server: 118.107.244.112, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇯🇵 _JP_日本, server: 172.105.232.147, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 🇭🇰 _HK_香港 4, server: 118.107.244.112, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: 🇫🇷 _FR_法国 12, server: 217.182.199.168, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 🇫🇷 _FR_法国 13, server: 145.239.1.137, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 🇫🇷 _FR_法国 14, server: 145.239.1.137, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: _NO_挪威 10, server: 46.29.218.6, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 🇫🇷 _FR_法国 15, server: 145.239.1.137, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 🇬🇧 _GB_英国 4, server: 172.99.190.87, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: 🇬🇧 广州移动-London-GTHost-nf@vpnpool, server: 183.232.56.106, port: 11005, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 2489:xnf3AY, obfs-param: t.me/vpnhat}
+  - {name: 🇨🇳 广州移动-LAX-DMIT-nf@vpnpool, server: 183.232.56.106, port: 35247, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 2489:xnf3AY, obfs-param: t.me/vpnhat}
+  - {name: 🇨🇳 广州移动-Santa Clara-Tencent-nf@EXTM3U, server: 183.232.56.106, port: 11804, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 2489:xnf3AY, obfs-param: t.me/vpnhat}
+  - {name: 🇭🇰 广州移动-香港HKT-nf@vpnpool, server: 183.232.56.106, port: 11845, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 2489:xnf3AY, obfs-param: t.me/vpnhat}
+  - {name: 🇨🇳 广州移动-LAX-DMIT-nf@vpnpool 2, server: 183.232.56.106, port: 11805, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 2489:xnf3AY, obfs-param: t.me/vpnhat}
+  - {name: 浦东电信-LAX-DMIT-nf@vpnpool, server: 58.32.9.209, port: 11423, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 2489:xnf3AY, obfs-param: t.me/vpnhat}
+  - {name: 🇯🇵 广州移动-Tokyo-DMIT-nf@vpnpool, server: 183.232.56.106, port: 11812, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 2489:xnf3AY, obfs-param: t.me/vpnhat}
+  - {name: 🇸🇬 广州移动-SG-Nerocloud-nf@vpnpool, server: 183.232.56.106, port: 11846, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 2489:xnf3AY, obfs-param: t.me/vpnhat}
+  - {name: 🇯🇵 广州移动-Tokyo-DMIT-nf@vpnpool 2, server: 183.232.56.106, port: 11803, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 2489:xnf3AY, obfs-param: t.me/vpnhat}
+  - {name: 🇸🇬 浦东电信-SG-Nerocloud-nf@vpnpool, server: 58.32.9.209, port: 11422, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 2489:xnf3AY, obfs-param: t.me/vpnhat}
+  - {name: 🇸🇬 浦东电信-SG-Nerocloud-nf@vpnpool 2, server: 58.32.9.209, port: 11429, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 2489:xnf3AY, obfs-param: t.me/vpnhat}
+  - {name: 🇯🇵 广州移动-Tokyo-DMIT-nf@vpnpool 3, server: 183.232.56.106, port: 11842, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 2489:xnf3AY, obfs-param: t.me/vpnhat}
+  - {name: 🇹🇼 浦东电信-台北Hinet-nf@vpnpool, server: 58.32.9.209, port: 11428, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 2489:xnf3AY, obfs-param: t.me/vpnhat}
+  - {name: 🇸🇬 广州移动-SG-Tencent-nf@vpnpool, server: 183.232.56.106, port: 11806, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 2489:xnf3AY, obfs-param: t.me/vpnhat}
+  - {name: 🇭🇰 浦东电信-香港HKT-nf@vpnpool, server: 58.32.9.209, port: 11421, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 2489:xnf3AY, obfs-param: t.me/vpnhat}
+  - {name: 🇨🇳 广州移动-Novosibirsk-Baxet-nf@vpnhat, server: 183.232.56.106, port: 22848, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 2489:xnf3AY, obfs-param: t.me/vpnhat}
+  - {name: 🇬🇧 浦东电信-London-GTHost-nf@vpnpool, server: 58.32.9.209, port: 11501, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 2489:xnf3AY, obfs-param: t.me/vpnhat}
+  - {name: 浦东电信-LAX-DediPath-nf@vpnpool, server: 58.32.9.209, port: 11427, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 2489:xnf3AY, obfs-param: t.me/vpnhat}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇬🇧 广州移动-London-GTHost-nf@vpnpool
-      - 🇨🇳 广州移动-Novosibirsk-Baxet-nf@vpnhat
-      - 🇬🇧 广州移动-London-GTHost-nf@vpnpool 2
-      - 🇬🇧 广州移动-London-GTHost-nf@vpnpool 3
-      - 🇨🇳 广州移动-LAX-DMIT-nf@vpnpool
-      - 🇨🇳 广州移动-LAX-DMIT-nf@vpnpool 2
-      - 🇨🇳 广州移动-LAX-DMIT-nf@vpnpool 3
-      - 🇨🇳 广州移动-LAX-DMIT-nf@vpnpool 4
-      - 🇨🇳 广州移动-LAX-DMIT-nf@vpnpool 5
-      - 🇺🇸 美国(欢迎订阅youtube：8度科技)
-      - 🇨🇳 广州移动-LAX-DMIT-nf@vpnpool 6
       - (欢迎订阅youtube：8度科技)
-      - 🇨🇳 广州移动-Santa Clara-Tencent-nf@EXTM3U
-      - _NO_挪威
-      - 🇨🇳 广州移动-Santa Clara-Tencent-nf@EXTM3U 2
-      - 🇭🇰 广州移动-香港HKT-nf@vpnpool
-      - 🇭🇰 广州移动-香港HKT-nf@vpnpool 2
-      - 🇭🇰 广州移动-香港HKT-nf@vpnpool 3
-      - 🇺🇸 美国(欢迎订阅youtube：8度科技) 2
-      - 🇭🇰 广州移动-香港HKT-nf@vpnpool 4
-      - _IL_以色列
+      - (欢迎订阅youtube：8度科技) 2
+      - 🇯🇵 日本(欢迎订阅youtube：8度科技)
+      - KR(欢迎订阅youtube：8度科技)
       - 🇬🇧 英国(欢迎订阅youtube：8度科技)
-      - 🇨🇳 广州移动-Santa Clara-Tencent-nf@EXTM3U 3
-      - 浦东电信-LAX-DMIT-nf@vpnpool
-      - 浦东电信-LAX-DMIT-nf@vpnpool 2
-      - 浦东电信-LAX-DMIT-nf@vpnpool 3
-      - 🇹🇼 浦东电信-台北Hinet-nf@vpnpool
-      - _PT_葡萄牙
-      - 🇸🇪 _SE_瑞典
-      - 🇨🇦 _CA_加拿大
-      - 🇬🇧 _GB_英国
+      - 🇯🇵 日本(欢迎订阅youtube：8度科技) 2
+      - 🇰🇷 _HK_香港->🇰🇷_KR_韩国
+      - 🇺🇸 _US_美国
+      - 🇺🇸 _US_美国 2
+      - 🇺🇸 美国(欢迎订阅youtube：8度科技)
+      - 🇷🇺 _US_美国->🇷🇺_RU_俄罗斯联邦
+      - 🇷🇺 _US_美国->🇷🇺_RU_俄罗斯联邦 2
+      - 🇺🇸 美国(欢迎订阅youtube：8度科技) 2
+      - 🇺🇸 _US_美国 3
+      - 🇺🇸 美国(欢迎订阅youtube：8度科技) 3
+      - DE(欢迎订阅youtube：8度科技)
+      - 🇰🇷 _HK_香港->🇰🇷_KR_韩国 2
+      - default_name
+      - 🇩🇪 _DE_德国
+      - 🇺🇸 _US_美国 4
       - 🇫🇷 _FR_法国
+      - _IL_以色列
+      - (欢迎订阅youtube：8度科技) 3
+      - _IL_以色列 2
+      - 🇸🇬 _SG_新加坡
+      - _NO_挪威
+      - 🇹🇼 _TW_台湾
+      - 🇭🇰 _HK_香港
       - 🇫🇷 _FR_法国 2
+      - _PT_葡萄牙
       - 🇫🇷 _FR_法国 3
-      - 🇨🇦 _CA_加拿大 2
       - 🇫🇷 _FR_法国 4
       - 🇫🇷 _FR_法国 5
-      - _PT_葡萄牙 2
-      - _NO_挪威 2
       - 🇫🇷 _FR_法国 6
-      - 🇨🇦 _CA_加拿大 3
       - 🇫🇷 _FR_法国 7
-      - "[12.12] TG频道@Jsnzk"
       - 🇫🇷 _FR_法国 8
-      - 🇺🇸 US(欢迎订阅youtube：8度科技)
-      - 🇬🇧 _GB_英国 2
       - 🇫🇷 _FR_法国 9
-      - 🇨🇦 _CA_加拿大 4
-      - 🇯🇵 日本(欢迎订阅youtube：8度科技)
       - 🇫🇷 _FR_法国 10
+      - 🇩🇪 _DE_德国 2
+      - 🇦🇺 _AU_澳大利亚
+      - 🇺🇦 乌克兰(欢迎订阅youtube：8度科技)
+      - 🇸🇪 _SE_瑞典
+      - _PT_葡萄牙 2
+      - 🇨🇦 _CA_加拿大
+      - 🇩🇪 _DE_德国 3
+      - 🇨🇦 _CA_加拿大 2
+      - 🇩🇪 _DE_德国 4
+      - 🇩🇪 _DE_德国 5
+      - 🇫🇷 _FR_法国 11
+      - _NO_挪威 2
+      - _NO_挪威 3
+      - 🇬🇧 _GB_英国
+      - _NO_挪威 4
+      - 🇬🇧 _GB_英国 2
+      - 🇨🇦 _CA_加拿大 3
+      - 🇩🇪 _DE_德国 6
+      - 🇩🇪 _DE_德国 7
+      - default_name 2
+      - _NO_挪威 5
+      - 🇨🇦 _CA_加拿大 4
       - 🇨🇦 _CA_加拿大 5
-      - 🇸🇬 广州移动-SG-Nerocloud-nf@vpnpool
+      - 🇩🇪 _DE_德国 8
+      - _NO_挪威 6
+      - 🇩🇪 _DE_德国 9
+      - 🇧🇪 _BE_比利时
+      - 🇩🇪 _DE_德国 10
+      - _NO_挪威 7
+      - 🇬🇧 _GB_英国 3
+      - 🇺🇸 US(欢迎订阅youtube：8度科技)
+      - _NO_挪威 8
+      - _NO_挪威 9
       - 🇺🇦 _UA_乌克兰
+      - 🇩🇪 _DE_德国 11
+      - 🇨🇦 _CA_加拿大 6
+      - 🇨🇦 _CA_加拿大 7
+      - 🇺🇸 _US_美国 5
+      - 🇺🇸 _US_美国 6
+      - 🇨🇦 _CA_加拿大 8
+      - 🇭🇰 _HK_香港 2
+      - 🇭🇰 _HK_香港 3
+      - 🇯🇵 _JP_日本
+      - 🇭🇰 _HK_香港 4
+      - 🇫🇷 _FR_法国 12
+      - 🇫🇷 _FR_法国 13
+      - 🇫🇷 _FR_法国 14
+      - _NO_挪威 10
+      - 🇫🇷 _FR_法国 15
+      - 🇬🇧 _GB_英国 4
+      - 🇬🇧 广州移动-London-GTHost-nf@vpnpool
+      - 🇨🇳 广州移动-LAX-DMIT-nf@vpnpool
+      - 🇨🇳 广州移动-Santa Clara-Tencent-nf@EXTM3U
+      - 🇭🇰 广州移动-香港HKT-nf@vpnpool
+      - 🇨🇳 广州移动-LAX-DMIT-nf@vpnpool 2
+      - 浦东电信-LAX-DMIT-nf@vpnpool
       - 🇯🇵 广州移动-Tokyo-DMIT-nf@vpnpool
+      - 🇸🇬 广州移动-SG-Nerocloud-nf@vpnpool
       - 🇯🇵 广州移动-Tokyo-DMIT-nf@vpnpool 2
-      - 🇯🇵 广州移动-Tokyo-DMIT-nf@vpnpool 3
-      - 🇸🇬 广州移动-SG-Nerocloud-nf@vpnpool 2
-      - 🇯🇵 广州移动-Tokyo-DMIT-nf@vpnpool 4
-      - 🇯🇵 广州移动-Tokyo-DMIT-nf@vpnpool 5
-      - 🇸🇬 广州移动-SG-Nerocloud-nf@vpnpool 3
-      - "[12.12] TG频道@Jsnzk 2"
-      - 🇯🇵 广州移动-Tokyo-DMIT-nf@vpnpool 6
-      - 🇺🇸 美国(欢迎订阅youtube：8度科技) 3
-      - 🇺🇸 美国(欢迎订阅youtube：8度科技) 4
-      - 🇯🇵 广州移动-Tokyo-DMIT-nf@vpnpool 7
-      - 🇯🇵 广州移动-Tokyo-DMIT-nf@vpnpool 8
-      - 🇯🇵 广州移动-Tokyo-DMIT-nf@vpnpool 9
       - 🇸🇬 浦东电信-SG-Nerocloud-nf@vpnpool
       - 🇸🇬 浦东电信-SG-Nerocloud-nf@vpnpool 2
-      - 🇸🇬 浦东电信-SG-Nerocloud-nf@vpnpool 3
-      - 🇸🇬 浦东电信-SG-Nerocloud-nf@vpnpool 4
-      - 🇸🇬 浦东电信-SG-Nerocloud-nf@vpnpool 5
-      - 🇮🇳 印度(欢迎订阅youtube：8度科技)
-      - (欢迎订阅youtube：8度科技) 2
-      - 🇫🇷 _FR_法国 11
-      - 🇹🇼 广州移动-台北Hinet-nf@vpnpool
-      - 🇨🇦 _CA_加拿大 6
+      - 🇯🇵 广州移动-Tokyo-DMIT-nf@vpnpool 3
+      - 🇹🇼 浦东电信-台北Hinet-nf@vpnpool
       - 🇸🇬 广州移动-SG-Tencent-nf@vpnpool
-      - 🇸🇬 广州移动-SG-Tencent-nf@vpnpool 2
-      - 🇸🇬 广州移动-SG-Tencent-nf@vpnpool 3
-      - 🇬🇧 _GB_英国 3
-      - 🇨🇦 _CA_加拿大 7
-      - 🇹🇼 广州移动-台北Hinet-nf@vpnpool 2
-      - 🇯🇵 浦东电信-Tokyo-DMIT-nf@vpnpool
-      - 🇯🇵 浦东电信-Tokyo-DMIT-nf@vpnpool 2
-      - 🇨🇦 _CA_加拿大 8
-      - 🇯🇵 _JP_日本
-      - "[12.12] TG频道@Jsnzk 3"
-      - "[12.12] TG频道@Jsnzk 4"
-      - (欢迎订阅youtube：8度科技) 3
-      - "[12.12] TG频道@Jsnzk 5"
-      - 🇨🇳 广州移动-Novosibirsk-Baxet-nf@vpnhat 2
-      - DE(欢迎订阅youtube：8度科技)
-      - 🇺🇸 美国(欢迎订阅youtube：8度科技) 5
-      - 🇬🇧 _GB_英国 4
-      - 🇭🇰 _HK_香港
-      - 🇭🇰 广州移动-香港DMIT-nf@vpnpool
-      - 🇫🇷 _FR_法国 12
-      - 浦东电信-LAX-DediPath-nf@vpnpool
-      - 浦东电信-LAX-DediPath-nf@vpnpool 2
-      - 浦东电信-LAX-DediPath-nf@vpnpool 3
-      - 浦东电信-LAX-DediPath-nf@vpnpool 4
-      - 🇨🇦 _CA_加拿大 9
-      - "[12.12] TG频道@Jsnzk 6"
+      - 🇭🇰 浦东电信-香港HKT-nf@vpnpool
+      - 🇨🇳 广州移动-Novosibirsk-Baxet-nf@vpnhat
       - 🇬🇧 浦东电信-London-GTHost-nf@vpnpool
-      - 🇬🇧 浦东电信-London-GTHost-nf@vpnpool 2
-      - 🇨🇳 广州移动-Novosibirsk-Baxet-nf@vpnhat 3
-      - 🇺🇸 _US_美国
-      - _NO_挪威 3
-      - 🇬🇧 浦东电信-London-GTHost-nf@vpnpool 3
-      - KR(欢迎订阅youtube：8度科技)
-      - 🇨🇦 _CA_加拿大 10
+      - 浦东电信-LAX-DediPath-nf@vpnpool
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 🇬🇧 广州移动-London-GTHost-nf@vpnpool
-      - 🇨🇳 广州移动-Novosibirsk-Baxet-nf@vpnhat
-      - 🇬🇧 广州移动-London-GTHost-nf@vpnpool 2
-      - 🇬🇧 广州移动-London-GTHost-nf@vpnpool 3
-      - 🇨🇳 广州移动-LAX-DMIT-nf@vpnpool
-      - 🇨🇳 广州移动-LAX-DMIT-nf@vpnpool 2
-      - 🇨🇳 广州移动-LAX-DMIT-nf@vpnpool 3
-      - 🇨🇳 广州移动-LAX-DMIT-nf@vpnpool 4
-      - 🇨🇳 广州移动-LAX-DMIT-nf@vpnpool 5
-      - 🇺🇸 美国(欢迎订阅youtube：8度科技)
-      - 🇨🇳 广州移动-LAX-DMIT-nf@vpnpool 6
       - (欢迎订阅youtube：8度科技)
-      - 🇨🇳 广州移动-Santa Clara-Tencent-nf@EXTM3U
-      - _NO_挪威
-      - 🇨🇳 广州移动-Santa Clara-Tencent-nf@EXTM3U 2
-      - 🇭🇰 广州移动-香港HKT-nf@vpnpool
-      - 🇭🇰 广州移动-香港HKT-nf@vpnpool 2
-      - 🇭🇰 广州移动-香港HKT-nf@vpnpool 3
-      - 🇺🇸 美国(欢迎订阅youtube：8度科技) 2
-      - 🇭🇰 广州移动-香港HKT-nf@vpnpool 4
-      - _IL_以色列
+      - (欢迎订阅youtube：8度科技) 2
+      - 🇯🇵 日本(欢迎订阅youtube：8度科技)
+      - KR(欢迎订阅youtube：8度科技)
       - 🇬🇧 英国(欢迎订阅youtube：8度科技)
-      - 🇨🇳 广州移动-Santa Clara-Tencent-nf@EXTM3U 3
-      - 浦东电信-LAX-DMIT-nf@vpnpool
-      - 浦东电信-LAX-DMIT-nf@vpnpool 2
-      - 浦东电信-LAX-DMIT-nf@vpnpool 3
-      - 🇹🇼 浦东电信-台北Hinet-nf@vpnpool
-      - _PT_葡萄牙
-      - 🇸🇪 _SE_瑞典
-      - 🇨🇦 _CA_加拿大
-      - 🇬🇧 _GB_英国
+      - 🇯🇵 日本(欢迎订阅youtube：8度科技) 2
+      - 🇰🇷 _HK_香港->🇰🇷_KR_韩国
+      - 🇺🇸 _US_美国
+      - 🇺🇸 _US_美国 2
+      - 🇺🇸 美国(欢迎订阅youtube：8度科技)
+      - 🇷🇺 _US_美国->🇷🇺_RU_俄罗斯联邦
+      - 🇷🇺 _US_美国->🇷🇺_RU_俄罗斯联邦 2
+      - 🇺🇸 美国(欢迎订阅youtube：8度科技) 2
+      - 🇺🇸 _US_美国 3
+      - 🇺🇸 美国(欢迎订阅youtube：8度科技) 3
+      - DE(欢迎订阅youtube：8度科技)
+      - 🇰🇷 _HK_香港->🇰🇷_KR_韩国 2
+      - default_name
+      - 🇩🇪 _DE_德国
+      - 🇺🇸 _US_美国 4
       - 🇫🇷 _FR_法国
+      - _IL_以色列
+      - (欢迎订阅youtube：8度科技) 3
+      - _IL_以色列 2
+      - 🇸🇬 _SG_新加坡
+      - _NO_挪威
+      - 🇹🇼 _TW_台湾
+      - 🇭🇰 _HK_香港
       - 🇫🇷 _FR_法国 2
+      - _PT_葡萄牙
       - 🇫🇷 _FR_法国 3
-      - 🇨🇦 _CA_加拿大 2
       - 🇫🇷 _FR_法国 4
       - 🇫🇷 _FR_法国 5
-      - _PT_葡萄牙 2
-      - _NO_挪威 2
       - 🇫🇷 _FR_法国 6
-      - 🇨🇦 _CA_加拿大 3
       - 🇫🇷 _FR_法国 7
-      - "[12.12] TG频道@Jsnzk"
       - 🇫🇷 _FR_法国 8
-      - 🇺🇸 US(欢迎订阅youtube：8度科技)
-      - 🇬🇧 _GB_英国 2
       - 🇫🇷 _FR_法国 9
-      - 🇨🇦 _CA_加拿大 4
-      - 🇯🇵 日本(欢迎订阅youtube：8度科技)
       - 🇫🇷 _FR_法国 10
+      - 🇩🇪 _DE_德国 2
+      - 🇦🇺 _AU_澳大利亚
+      - 🇺🇦 乌克兰(欢迎订阅youtube：8度科技)
+      - 🇸🇪 _SE_瑞典
+      - _PT_葡萄牙 2
+      - 🇨🇦 _CA_加拿大
+      - 🇩🇪 _DE_德国 3
+      - 🇨🇦 _CA_加拿大 2
+      - 🇩🇪 _DE_德国 4
+      - 🇩🇪 _DE_德国 5
+      - 🇫🇷 _FR_法国 11
+      - _NO_挪威 2
+      - _NO_挪威 3
+      - 🇬🇧 _GB_英国
+      - _NO_挪威 4
+      - 🇬🇧 _GB_英国 2
+      - 🇨🇦 _CA_加拿大 3
+      - 🇩🇪 _DE_德国 6
+      - 🇩🇪 _DE_德国 7
+      - default_name 2
+      - _NO_挪威 5
+      - 🇨🇦 _CA_加拿大 4
       - 🇨🇦 _CA_加拿大 5
-      - 🇸🇬 广州移动-SG-Nerocloud-nf@vpnpool
+      - 🇩🇪 _DE_德国 8
+      - _NO_挪威 6
+      - 🇩🇪 _DE_德国 9
+      - 🇧🇪 _BE_比利时
+      - 🇩🇪 _DE_德国 10
+      - _NO_挪威 7
+      - 🇬🇧 _GB_英国 3
+      - 🇺🇸 US(欢迎订阅youtube：8度科技)
+      - _NO_挪威 8
+      - _NO_挪威 9
       - 🇺🇦 _UA_乌克兰
+      - 🇩🇪 _DE_德国 11
+      - 🇨🇦 _CA_加拿大 6
+      - 🇨🇦 _CA_加拿大 7
+      - 🇺🇸 _US_美国 5
+      - 🇺🇸 _US_美国 6
+      - 🇨🇦 _CA_加拿大 8
+      - 🇭🇰 _HK_香港 2
+      - 🇭🇰 _HK_香港 3
+      - 🇯🇵 _JP_日本
+      - 🇭🇰 _HK_香港 4
+      - 🇫🇷 _FR_法国 12
+      - 🇫🇷 _FR_法国 13
+      - 🇫🇷 _FR_法国 14
+      - _NO_挪威 10
+      - 🇫🇷 _FR_法国 15
+      - 🇬🇧 _GB_英国 4
+      - 🇬🇧 广州移动-London-GTHost-nf@vpnpool
+      - 🇨🇳 广州移动-LAX-DMIT-nf@vpnpool
+      - 🇨🇳 广州移动-Santa Clara-Tencent-nf@EXTM3U
+      - 🇭🇰 广州移动-香港HKT-nf@vpnpool
+      - 🇨🇳 广州移动-LAX-DMIT-nf@vpnpool 2
+      - 浦东电信-LAX-DMIT-nf@vpnpool
       - 🇯🇵 广州移动-Tokyo-DMIT-nf@vpnpool
+      - 🇸🇬 广州移动-SG-Nerocloud-nf@vpnpool
       - 🇯🇵 广州移动-Tokyo-DMIT-nf@vpnpool 2
-      - 🇯🇵 广州移动-Tokyo-DMIT-nf@vpnpool 3
-      - 🇸🇬 广州移动-SG-Nerocloud-nf@vpnpool 2
-      - 🇯🇵 广州移动-Tokyo-DMIT-nf@vpnpool 4
-      - 🇯🇵 广州移动-Tokyo-DMIT-nf@vpnpool 5
-      - 🇸🇬 广州移动-SG-Nerocloud-nf@vpnpool 3
-      - "[12.12] TG频道@Jsnzk 2"
-      - 🇯🇵 广州移动-Tokyo-DMIT-nf@vpnpool 6
-      - 🇺🇸 美国(欢迎订阅youtube：8度科技) 3
-      - 🇺🇸 美国(欢迎订阅youtube：8度科技) 4
-      - 🇯🇵 广州移动-Tokyo-DMIT-nf@vpnpool 7
-      - 🇯🇵 广州移动-Tokyo-DMIT-nf@vpnpool 8
-      - 🇯🇵 广州移动-Tokyo-DMIT-nf@vpnpool 9
       - 🇸🇬 浦东电信-SG-Nerocloud-nf@vpnpool
       - 🇸🇬 浦东电信-SG-Nerocloud-nf@vpnpool 2
-      - 🇸🇬 浦东电信-SG-Nerocloud-nf@vpnpool 3
-      - 🇸🇬 浦东电信-SG-Nerocloud-nf@vpnpool 4
-      - 🇸🇬 浦东电信-SG-Nerocloud-nf@vpnpool 5
-      - 🇮🇳 印度(欢迎订阅youtube：8度科技)
-      - (欢迎订阅youtube：8度科技) 2
-      - 🇫🇷 _FR_法国 11
-      - 🇹🇼 广州移动-台北Hinet-nf@vpnpool
-      - 🇨🇦 _CA_加拿大 6
+      - 🇯🇵 广州移动-Tokyo-DMIT-nf@vpnpool 3
+      - 🇹🇼 浦东电信-台北Hinet-nf@vpnpool
       - 🇸🇬 广州移动-SG-Tencent-nf@vpnpool
-      - 🇸🇬 广州移动-SG-Tencent-nf@vpnpool 2
-      - 🇸🇬 广州移动-SG-Tencent-nf@vpnpool 3
-      - 🇬🇧 _GB_英国 3
-      - 🇨🇦 _CA_加拿大 7
-      - 🇹🇼 广州移动-台北Hinet-nf@vpnpool 2
-      - 🇯🇵 浦东电信-Tokyo-DMIT-nf@vpnpool
-      - 🇯🇵 浦东电信-Tokyo-DMIT-nf@vpnpool 2
-      - 🇨🇦 _CA_加拿大 8
-      - 🇯🇵 _JP_日本
-      - "[12.12] TG频道@Jsnzk 3"
-      - "[12.12] TG频道@Jsnzk 4"
-      - (欢迎订阅youtube：8度科技) 3
-      - "[12.12] TG频道@Jsnzk 5"
-      - 🇨🇳 广州移动-Novosibirsk-Baxet-nf@vpnhat 2
-      - DE(欢迎订阅youtube：8度科技)
-      - 🇺🇸 美国(欢迎订阅youtube：8度科技) 5
-      - 🇬🇧 _GB_英国 4
-      - 🇭🇰 _HK_香港
-      - 🇭🇰 广州移动-香港DMIT-nf@vpnpool
-      - 🇫🇷 _FR_法国 12
-      - 浦东电信-LAX-DediPath-nf@vpnpool
-      - 浦东电信-LAX-DediPath-nf@vpnpool 2
-      - 浦东电信-LAX-DediPath-nf@vpnpool 3
-      - 浦东电信-LAX-DediPath-nf@vpnpool 4
-      - 🇨🇦 _CA_加拿大 9
-      - "[12.12] TG频道@Jsnzk 6"
+      - 🇭🇰 浦东电信-香港HKT-nf@vpnpool
+      - 🇨🇳 广州移动-Novosibirsk-Baxet-nf@vpnhat
       - 🇬🇧 浦东电信-London-GTHost-nf@vpnpool
-      - 🇬🇧 浦东电信-London-GTHost-nf@vpnpool 2
-      - 🇨🇳 广州移动-Novosibirsk-Baxet-nf@vpnhat 3
-      - 🇺🇸 _US_美国
-      - _NO_挪威 3
-      - 🇬🇧 浦东电信-London-GTHost-nf@vpnpool 3
-      - KR(欢迎订阅youtube：8度科技)
-      - 🇨🇦 _CA_加拿大 10
+      - 浦东电信-LAX-DediPath-nf@vpnpool
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇬🇧 广州移动-London-GTHost-nf@vpnpool
-      - 🇨🇳 广州移动-Novosibirsk-Baxet-nf@vpnhat
-      - 🇬🇧 广州移动-London-GTHost-nf@vpnpool 2
-      - 🇬🇧 广州移动-London-GTHost-nf@vpnpool 3
-      - 🇨🇳 广州移动-LAX-DMIT-nf@vpnpool
-      - 🇨🇳 广州移动-LAX-DMIT-nf@vpnpool 2
-      - 🇨🇳 广州移动-LAX-DMIT-nf@vpnpool 3
-      - 🇨🇳 广州移动-LAX-DMIT-nf@vpnpool 4
-      - 🇨🇳 广州移动-LAX-DMIT-nf@vpnpool 5
-      - 🇺🇸 美国(欢迎订阅youtube：8度科技)
-      - 🇨🇳 广州移动-LAX-DMIT-nf@vpnpool 6
       - (欢迎订阅youtube：8度科技)
-      - 🇨🇳 广州移动-Santa Clara-Tencent-nf@EXTM3U
-      - _NO_挪威
-      - 🇨🇳 广州移动-Santa Clara-Tencent-nf@EXTM3U 2
-      - 🇭🇰 广州移动-香港HKT-nf@vpnpool
-      - 🇭🇰 广州移动-香港HKT-nf@vpnpool 2
-      - 🇭🇰 广州移动-香港HKT-nf@vpnpool 3
-      - 🇺🇸 美国(欢迎订阅youtube：8度科技) 2
-      - 🇭🇰 广州移动-香港HKT-nf@vpnpool 4
-      - _IL_以色列
+      - (欢迎订阅youtube：8度科技) 2
+      - 🇯🇵 日本(欢迎订阅youtube：8度科技)
+      - KR(欢迎订阅youtube：8度科技)
       - 🇬🇧 英国(欢迎订阅youtube：8度科技)
-      - 🇨🇳 广州移动-Santa Clara-Tencent-nf@EXTM3U 3
-      - 浦东电信-LAX-DMIT-nf@vpnpool
-      - 浦东电信-LAX-DMIT-nf@vpnpool 2
-      - 浦东电信-LAX-DMIT-nf@vpnpool 3
-      - 🇹🇼 浦东电信-台北Hinet-nf@vpnpool
-      - _PT_葡萄牙
-      - 🇸🇪 _SE_瑞典
-      - 🇨🇦 _CA_加拿大
-      - 🇬🇧 _GB_英国
+      - 🇯🇵 日本(欢迎订阅youtube：8度科技) 2
+      - 🇰🇷 _HK_香港->🇰🇷_KR_韩国
+      - 🇺🇸 _US_美国
+      - 🇺🇸 _US_美国 2
+      - 🇺🇸 美国(欢迎订阅youtube：8度科技)
+      - 🇷🇺 _US_美国->🇷🇺_RU_俄罗斯联邦
+      - 🇷🇺 _US_美国->🇷🇺_RU_俄罗斯联邦 2
+      - 🇺🇸 美国(欢迎订阅youtube：8度科技) 2
+      - 🇺🇸 _US_美国 3
+      - 🇺🇸 美国(欢迎订阅youtube：8度科技) 3
+      - DE(欢迎订阅youtube：8度科技)
+      - 🇰🇷 _HK_香港->🇰🇷_KR_韩国 2
+      - default_name
+      - 🇩🇪 _DE_德国
+      - 🇺🇸 _US_美国 4
       - 🇫🇷 _FR_法国
+      - _IL_以色列
+      - (欢迎订阅youtube：8度科技) 3
+      - _IL_以色列 2
+      - 🇸🇬 _SG_新加坡
+      - _NO_挪威
+      - 🇹🇼 _TW_台湾
+      - 🇭🇰 _HK_香港
       - 🇫🇷 _FR_法国 2
+      - _PT_葡萄牙
       - 🇫🇷 _FR_法国 3
-      - 🇨🇦 _CA_加拿大 2
       - 🇫🇷 _FR_法国 4
       - 🇫🇷 _FR_法国 5
-      - _PT_葡萄牙 2
-      - _NO_挪威 2
       - 🇫🇷 _FR_法国 6
-      - 🇨🇦 _CA_加拿大 3
       - 🇫🇷 _FR_法国 7
-      - "[12.12] TG频道@Jsnzk"
       - 🇫🇷 _FR_法国 8
-      - 🇺🇸 US(欢迎订阅youtube：8度科技)
-      - 🇬🇧 _GB_英国 2
       - 🇫🇷 _FR_法国 9
-      - 🇨🇦 _CA_加拿大 4
-      - 🇯🇵 日本(欢迎订阅youtube：8度科技)
       - 🇫🇷 _FR_法国 10
+      - 🇩🇪 _DE_德国 2
+      - 🇦🇺 _AU_澳大利亚
+      - 🇺🇦 乌克兰(欢迎订阅youtube：8度科技)
+      - 🇸🇪 _SE_瑞典
+      - _PT_葡萄牙 2
+      - 🇨🇦 _CA_加拿大
+      - 🇩🇪 _DE_德国 3
+      - 🇨🇦 _CA_加拿大 2
+      - 🇩🇪 _DE_德国 4
+      - 🇩🇪 _DE_德国 5
+      - 🇫🇷 _FR_法国 11
+      - _NO_挪威 2
+      - _NO_挪威 3
+      - 🇬🇧 _GB_英国
+      - _NO_挪威 4
+      - 🇬🇧 _GB_英国 2
+      - 🇨🇦 _CA_加拿大 3
+      - 🇩🇪 _DE_德国 6
+      - 🇩🇪 _DE_德国 7
+      - default_name 2
+      - _NO_挪威 5
+      - 🇨🇦 _CA_加拿大 4
       - 🇨🇦 _CA_加拿大 5
-      - 🇸🇬 广州移动-SG-Nerocloud-nf@vpnpool
+      - 🇩🇪 _DE_德国 8
+      - _NO_挪威 6
+      - 🇩🇪 _DE_德国 9
+      - 🇧🇪 _BE_比利时
+      - 🇩🇪 _DE_德国 10
+      - _NO_挪威 7
+      - 🇬🇧 _GB_英国 3
+      - 🇺🇸 US(欢迎订阅youtube：8度科技)
+      - _NO_挪威 8
+      - _NO_挪威 9
       - 🇺🇦 _UA_乌克兰
+      - 🇩🇪 _DE_德国 11
+      - 🇨🇦 _CA_加拿大 6
+      - 🇨🇦 _CA_加拿大 7
+      - 🇺🇸 _US_美国 5
+      - 🇺🇸 _US_美国 6
+      - 🇨🇦 _CA_加拿大 8
+      - 🇭🇰 _HK_香港 2
+      - 🇭🇰 _HK_香港 3
+      - 🇯🇵 _JP_日本
+      - 🇭🇰 _HK_香港 4
+      - 🇫🇷 _FR_法国 12
+      - 🇫🇷 _FR_法国 13
+      - 🇫🇷 _FR_法国 14
+      - _NO_挪威 10
+      - 🇫🇷 _FR_法国 15
+      - 🇬🇧 _GB_英国 4
+      - 🇬🇧 广州移动-London-GTHost-nf@vpnpool
+      - 🇨🇳 广州移动-LAX-DMIT-nf@vpnpool
+      - 🇨🇳 广州移动-Santa Clara-Tencent-nf@EXTM3U
+      - 🇭🇰 广州移动-香港HKT-nf@vpnpool
+      - 🇨🇳 广州移动-LAX-DMIT-nf@vpnpool 2
+      - 浦东电信-LAX-DMIT-nf@vpnpool
       - 🇯🇵 广州移动-Tokyo-DMIT-nf@vpnpool
+      - 🇸🇬 广州移动-SG-Nerocloud-nf@vpnpool
       - 🇯🇵 广州移动-Tokyo-DMIT-nf@vpnpool 2
-      - 🇯🇵 广州移动-Tokyo-DMIT-nf@vpnpool 3
-      - 🇸🇬 广州移动-SG-Nerocloud-nf@vpnpool 2
-      - 🇯🇵 广州移动-Tokyo-DMIT-nf@vpnpool 4
-      - 🇯🇵 广州移动-Tokyo-DMIT-nf@vpnpool 5
-      - 🇸🇬 广州移动-SG-Nerocloud-nf@vpnpool 3
-      - "[12.12] TG频道@Jsnzk 2"
-      - 🇯🇵 广州移动-Tokyo-DMIT-nf@vpnpool 6
-      - 🇺🇸 美国(欢迎订阅youtube：8度科技) 3
-      - 🇺🇸 美国(欢迎订阅youtube：8度科技) 4
-      - 🇯🇵 广州移动-Tokyo-DMIT-nf@vpnpool 7
-      - 🇯🇵 广州移动-Tokyo-DMIT-nf@vpnpool 8
-      - 🇯🇵 广州移动-Tokyo-DMIT-nf@vpnpool 9
       - 🇸🇬 浦东电信-SG-Nerocloud-nf@vpnpool
       - 🇸🇬 浦东电信-SG-Nerocloud-nf@vpnpool 2
-      - 🇸🇬 浦东电信-SG-Nerocloud-nf@vpnpool 3
-      - 🇸🇬 浦东电信-SG-Nerocloud-nf@vpnpool 4
-      - 🇸🇬 浦东电信-SG-Nerocloud-nf@vpnpool 5
-      - 🇮🇳 印度(欢迎订阅youtube：8度科技)
-      - (欢迎订阅youtube：8度科技) 2
-      - 🇫🇷 _FR_法国 11
-      - 🇹🇼 广州移动-台北Hinet-nf@vpnpool
-      - 🇨🇦 _CA_加拿大 6
+      - 🇯🇵 广州移动-Tokyo-DMIT-nf@vpnpool 3
+      - 🇹🇼 浦东电信-台北Hinet-nf@vpnpool
       - 🇸🇬 广州移动-SG-Tencent-nf@vpnpool
-      - 🇸🇬 广州移动-SG-Tencent-nf@vpnpool 2
-      - 🇸🇬 广州移动-SG-Tencent-nf@vpnpool 3
-      - 🇬🇧 _GB_英国 3
-      - 🇨🇦 _CA_加拿大 7
-      - 🇹🇼 广州移动-台北Hinet-nf@vpnpool 2
-      - 🇯🇵 浦东电信-Tokyo-DMIT-nf@vpnpool
-      - 🇯🇵 浦东电信-Tokyo-DMIT-nf@vpnpool 2
-      - 🇨🇦 _CA_加拿大 8
-      - 🇯🇵 _JP_日本
-      - "[12.12] TG频道@Jsnzk 3"
-      - "[12.12] TG频道@Jsnzk 4"
-      - (欢迎订阅youtube：8度科技) 3
-      - "[12.12] TG频道@Jsnzk 5"
-      - 🇨🇳 广州移动-Novosibirsk-Baxet-nf@vpnhat 2
-      - DE(欢迎订阅youtube：8度科技)
-      - 🇺🇸 美国(欢迎订阅youtube：8度科技) 5
-      - 🇬🇧 _GB_英国 4
-      - 🇭🇰 _HK_香港
-      - 🇭🇰 广州移动-香港DMIT-nf@vpnpool
-      - 🇫🇷 _FR_法国 12
-      - 浦东电信-LAX-DediPath-nf@vpnpool
-      - 浦东电信-LAX-DediPath-nf@vpnpool 2
-      - 浦东电信-LAX-DediPath-nf@vpnpool 3
-      - 浦东电信-LAX-DediPath-nf@vpnpool 4
-      - 🇨🇦 _CA_加拿大 9
-      - "[12.12] TG频道@Jsnzk 6"
+      - 🇭🇰 浦东电信-香港HKT-nf@vpnpool
+      - 🇨🇳 广州移动-Novosibirsk-Baxet-nf@vpnhat
       - 🇬🇧 浦东电信-London-GTHost-nf@vpnpool
-      - 🇬🇧 浦东电信-London-GTHost-nf@vpnpool 2
-      - 🇨🇳 广州移动-Novosibirsk-Baxet-nf@vpnhat 3
-      - 🇺🇸 _US_美国
-      - _NO_挪威 3
-      - 🇬🇧 浦东电信-London-GTHost-nf@vpnpool 3
-      - KR(欢迎订阅youtube：8度科技)
-      - 🇨🇦 _CA_加拿大 10
+      - 浦东电信-LAX-DediPath-nf@vpnpool
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 🇭🇰 广州移动-香港HKT-nf@vpnpool
-      - 🇭🇰 广州移动-香港HKT-nf@vpnpool 2
-      - 🇭🇰 广州移动-香港HKT-nf@vpnpool 3
-      - 🇭🇰 广州移动-香港HKT-nf@vpnpool 4
-      - 🇹🇼 浦东电信-台北Hinet-nf@vpnpool
-      - 🇹🇼 广州移动-台北Hinet-nf@vpnpool
-      - 🇹🇼 广州移动-台北Hinet-nf@vpnpool 2
+      - 🇰🇷 _HK_香港->🇰🇷_KR_韩国
+      - 🇰🇷 _HK_香港->🇰🇷_KR_韩国 2
+      - 🇹🇼 _TW_台湾
       - 🇭🇰 _HK_香港
-      - 🇭🇰 广州移动-香港DMIT-nf@vpnpool
+      - 🇭🇰 _HK_香港 2
+      - 🇭🇰 _HK_香港 3
+      - 🇭🇰 _HK_香港 4
+      - 🇭🇰 广州移动-香港HKT-nf@vpnpool
+      - 🇹🇼 浦东电信-台北Hinet-nf@vpnpool
+      - 🇭🇰 浦东电信-香港HKT-nf@vpnpool
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 🇬🇧 广州移动-London-GTHost-nf@vpnpool
-      - 🇨🇳 广州移动-Novosibirsk-Baxet-nf@vpnhat
-      - 🇬🇧 广州移动-London-GTHost-nf@vpnpool 2
-      - 🇬🇧 广州移动-London-GTHost-nf@vpnpool 3
-      - 🇨🇳 广州移动-LAX-DMIT-nf@vpnpool
-      - 🇨🇳 广州移动-LAX-DMIT-nf@vpnpool 2
-      - 🇨🇳 广州移动-LAX-DMIT-nf@vpnpool 3
-      - 🇨🇳 广州移动-LAX-DMIT-nf@vpnpool 4
-      - 🇨🇳 广州移动-LAX-DMIT-nf@vpnpool 5
-      - 🇺🇸 美国(欢迎订阅youtube：8度科技)
-      - 🇨🇳 广州移动-LAX-DMIT-nf@vpnpool 6
       - (欢迎订阅youtube：8度科技)
-      - 🇨🇳 广州移动-Santa Clara-Tencent-nf@EXTM3U
-      - _NO_挪威
-      - 🇨🇳 广州移动-Santa Clara-Tencent-nf@EXTM3U 2
-      - 🇭🇰 广州移动-香港HKT-nf@vpnpool
-      - 🇭🇰 广州移动-香港HKT-nf@vpnpool 2
-      - 🇭🇰 广州移动-香港HKT-nf@vpnpool 3
-      - 🇺🇸 美国(欢迎订阅youtube：8度科技) 2
-      - 🇭🇰 广州移动-香港HKT-nf@vpnpool 4
-      - _IL_以色列
+      - (欢迎订阅youtube：8度科技) 2
+      - 🇯🇵 日本(欢迎订阅youtube：8度科技)
+      - KR(欢迎订阅youtube：8度科技)
       - 🇬🇧 英国(欢迎订阅youtube：8度科技)
-      - 🇨🇳 广州移动-Santa Clara-Tencent-nf@EXTM3U 3
-      - 浦东电信-LAX-DMIT-nf@vpnpool
-      - 浦东电信-LAX-DMIT-nf@vpnpool 2
-      - 浦东电信-LAX-DMIT-nf@vpnpool 3
-      - 🇹🇼 浦东电信-台北Hinet-nf@vpnpool
-      - _PT_葡萄牙
-      - 🇸🇪 _SE_瑞典
-      - 🇨🇦 _CA_加拿大
-      - 🇬🇧 _GB_英国
+      - 🇯🇵 日本(欢迎订阅youtube：8度科技) 2
+      - 🇰🇷 _HK_香港->🇰🇷_KR_韩国
+      - 🇺🇸 _US_美国
+      - 🇺🇸 _US_美国 2
+      - 🇺🇸 美国(欢迎订阅youtube：8度科技)
+      - 🇷🇺 _US_美国->🇷🇺_RU_俄罗斯联邦
+      - 🇷🇺 _US_美国->🇷🇺_RU_俄罗斯联邦 2
+      - 🇺🇸 美国(欢迎订阅youtube：8度科技) 2
+      - 🇺🇸 _US_美国 3
+      - 🇺🇸 美国(欢迎订阅youtube：8度科技) 3
+      - DE(欢迎订阅youtube：8度科技)
+      - 🇰🇷 _HK_香港->🇰🇷_KR_韩国 2
+      - default_name
+      - 🇩🇪 _DE_德国
+      - 🇺🇸 _US_美国 4
       - 🇫🇷 _FR_法国
+      - _IL_以色列
+      - (欢迎订阅youtube：8度科技) 3
+      - _IL_以色列 2
+      - 🇸🇬 _SG_新加坡
+      - _NO_挪威
+      - 🇹🇼 _TW_台湾
+      - 🇭🇰 _HK_香港
       - 🇫🇷 _FR_法国 2
+      - _PT_葡萄牙
       - 🇫🇷 _FR_法国 3
-      - 🇨🇦 _CA_加拿大 2
       - 🇫🇷 _FR_法国 4
       - 🇫🇷 _FR_法国 5
-      - _PT_葡萄牙 2
-      - _NO_挪威 2
       - 🇫🇷 _FR_法国 6
-      - 🇨🇦 _CA_加拿大 3
       - 🇫🇷 _FR_法国 7
-      - "[12.12] TG频道@Jsnzk"
       - 🇫🇷 _FR_法国 8
-      - 🇺🇸 US(欢迎订阅youtube：8度科技)
-      - 🇬🇧 _GB_英国 2
       - 🇫🇷 _FR_法国 9
-      - 🇨🇦 _CA_加拿大 4
-      - 🇯🇵 日本(欢迎订阅youtube：8度科技)
       - 🇫🇷 _FR_法国 10
+      - 🇩🇪 _DE_德国 2
+      - 🇦🇺 _AU_澳大利亚
+      - 🇺🇦 乌克兰(欢迎订阅youtube：8度科技)
+      - 🇸🇪 _SE_瑞典
+      - _PT_葡萄牙 2
+      - 🇨🇦 _CA_加拿大
+      - 🇩🇪 _DE_德国 3
+      - 🇨🇦 _CA_加拿大 2
+      - 🇩🇪 _DE_德国 4
+      - 🇩🇪 _DE_德国 5
+      - 🇫🇷 _FR_法国 11
+      - _NO_挪威 2
+      - _NO_挪威 3
+      - 🇬🇧 _GB_英国
+      - _NO_挪威 4
+      - 🇬🇧 _GB_英国 2
+      - 🇨🇦 _CA_加拿大 3
+      - 🇩🇪 _DE_德国 6
+      - 🇩🇪 _DE_德国 7
+      - default_name 2
+      - _NO_挪威 5
+      - 🇨🇦 _CA_加拿大 4
       - 🇨🇦 _CA_加拿大 5
-      - 🇸🇬 广州移动-SG-Nerocloud-nf@vpnpool
+      - 🇩🇪 _DE_德国 8
+      - _NO_挪威 6
+      - 🇩🇪 _DE_德国 9
+      - 🇧🇪 _BE_比利时
+      - 🇩🇪 _DE_德国 10
+      - _NO_挪威 7
+      - 🇬🇧 _GB_英国 3
+      - 🇺🇸 US(欢迎订阅youtube：8度科技)
+      - _NO_挪威 8
+      - _NO_挪威 9
       - 🇺🇦 _UA_乌克兰
+      - 🇩🇪 _DE_德国 11
+      - 🇨🇦 _CA_加拿大 6
+      - 🇨🇦 _CA_加拿大 7
+      - 🇺🇸 _US_美国 5
+      - 🇺🇸 _US_美国 6
+      - 🇨🇦 _CA_加拿大 8
+      - 🇭🇰 _HK_香港 2
+      - 🇭🇰 _HK_香港 3
+      - 🇯🇵 _JP_日本
+      - 🇭🇰 _HK_香港 4
+      - 🇫🇷 _FR_法国 12
+      - 🇫🇷 _FR_法国 13
+      - 🇫🇷 _FR_法国 14
+      - _NO_挪威 10
+      - 🇫🇷 _FR_法国 15
+      - 🇬🇧 _GB_英国 4
+      - 🇬🇧 广州移动-London-GTHost-nf@vpnpool
+      - 🇨🇳 广州移动-LAX-DMIT-nf@vpnpool
+      - 🇨🇳 广州移动-Santa Clara-Tencent-nf@EXTM3U
+      - 🇭🇰 广州移动-香港HKT-nf@vpnpool
+      - 🇨🇳 广州移动-LAX-DMIT-nf@vpnpool 2
+      - 浦东电信-LAX-DMIT-nf@vpnpool
       - 🇯🇵 广州移动-Tokyo-DMIT-nf@vpnpool
+      - 🇸🇬 广州移动-SG-Nerocloud-nf@vpnpool
       - 🇯🇵 广州移动-Tokyo-DMIT-nf@vpnpool 2
-      - 🇯🇵 广州移动-Tokyo-DMIT-nf@vpnpool 3
-      - 🇸🇬 广州移动-SG-Nerocloud-nf@vpnpool 2
-      - 🇯🇵 广州移动-Tokyo-DMIT-nf@vpnpool 4
-      - 🇯🇵 广州移动-Tokyo-DMIT-nf@vpnpool 5
-      - 🇸🇬 广州移动-SG-Nerocloud-nf@vpnpool 3
-      - "[12.12] TG频道@Jsnzk 2"
-      - 🇯🇵 广州移动-Tokyo-DMIT-nf@vpnpool 6
-      - 🇺🇸 美国(欢迎订阅youtube：8度科技) 3
-      - 🇺🇸 美国(欢迎订阅youtube：8度科技) 4
-      - 🇯🇵 广州移动-Tokyo-DMIT-nf@vpnpool 7
-      - 🇯🇵 广州移动-Tokyo-DMIT-nf@vpnpool 8
-      - 🇯🇵 广州移动-Tokyo-DMIT-nf@vpnpool 9
       - 🇸🇬 浦东电信-SG-Nerocloud-nf@vpnpool
       - 🇸🇬 浦东电信-SG-Nerocloud-nf@vpnpool 2
-      - 🇸🇬 浦东电信-SG-Nerocloud-nf@vpnpool 3
-      - 🇸🇬 浦东电信-SG-Nerocloud-nf@vpnpool 4
-      - 🇸🇬 浦东电信-SG-Nerocloud-nf@vpnpool 5
-      - 🇮🇳 印度(欢迎订阅youtube：8度科技)
-      - (欢迎订阅youtube：8度科技) 2
-      - 🇫🇷 _FR_法国 11
-      - 🇹🇼 广州移动-台北Hinet-nf@vpnpool
-      - 🇨🇦 _CA_加拿大 6
+      - 🇯🇵 广州移动-Tokyo-DMIT-nf@vpnpool 3
+      - 🇹🇼 浦东电信-台北Hinet-nf@vpnpool
       - 🇸🇬 广州移动-SG-Tencent-nf@vpnpool
-      - 🇸🇬 广州移动-SG-Tencent-nf@vpnpool 2
-      - 🇸🇬 广州移动-SG-Tencent-nf@vpnpool 3
-      - 🇬🇧 _GB_英国 3
-      - 🇨🇦 _CA_加拿大 7
-      - 🇹🇼 广州移动-台北Hinet-nf@vpnpool 2
-      - 🇯🇵 浦东电信-Tokyo-DMIT-nf@vpnpool
-      - 🇯🇵 浦东电信-Tokyo-DMIT-nf@vpnpool 2
-      - 🇨🇦 _CA_加拿大 8
-      - 🇯🇵 _JP_日本
-      - "[12.12] TG频道@Jsnzk 3"
-      - "[12.12] TG频道@Jsnzk 4"
-      - (欢迎订阅youtube：8度科技) 3
-      - "[12.12] TG频道@Jsnzk 5"
-      - 🇨🇳 广州移动-Novosibirsk-Baxet-nf@vpnhat 2
-      - DE(欢迎订阅youtube：8度科技)
-      - 🇺🇸 美国(欢迎订阅youtube：8度科技) 5
-      - 🇬🇧 _GB_英国 4
-      - 🇭🇰 _HK_香港
-      - 🇭🇰 广州移动-香港DMIT-nf@vpnpool
-      - 🇫🇷 _FR_法国 12
-      - 浦东电信-LAX-DediPath-nf@vpnpool
-      - 浦东电信-LAX-DediPath-nf@vpnpool 2
-      - 浦东电信-LAX-DediPath-nf@vpnpool 3
-      - 浦东电信-LAX-DediPath-nf@vpnpool 4
-      - 🇨🇦 _CA_加拿大 9
-      - "[12.12] TG频道@Jsnzk 6"
+      - 🇭🇰 浦东电信-香港HKT-nf@vpnpool
+      - 🇨🇳 广州移动-Novosibirsk-Baxet-nf@vpnhat
       - 🇬🇧 浦东电信-London-GTHost-nf@vpnpool
-      - 🇬🇧 浦东电信-London-GTHost-nf@vpnpool 2
-      - 🇨🇳 广州移动-Novosibirsk-Baxet-nf@vpnhat 3
-      - 🇺🇸 _US_美国
-      - _NO_挪威 3
-      - 🇬🇧 浦东电信-London-GTHost-nf@vpnpool 3
-      - KR(欢迎订阅youtube：8度科技)
-      - 🇨🇦 _CA_加拿大 10
+      - 浦东电信-LAX-DediPath-nf@vpnpool
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 🇬🇧 广州移动-London-GTHost-nf@vpnpool
-      - 🇨🇳 广州移动-Novosibirsk-Baxet-nf@vpnhat
-      - 🇬🇧 广州移动-London-GTHost-nf@vpnpool 2
-      - 🇬🇧 广州移动-London-GTHost-nf@vpnpool 3
-      - 🇨🇳 广州移动-LAX-DMIT-nf@vpnpool
-      - 🇨🇳 广州移动-LAX-DMIT-nf@vpnpool 2
-      - 🇨🇳 广州移动-LAX-DMIT-nf@vpnpool 3
-      - 🇨🇳 广州移动-LAX-DMIT-nf@vpnpool 4
-      - 🇨🇳 广州移动-LAX-DMIT-nf@vpnpool 5
-      - 🇺🇸 美国(欢迎订阅youtube：8度科技)
-      - 🇨🇳 广州移动-LAX-DMIT-nf@vpnpool 6
       - (欢迎订阅youtube：8度科技)
-      - 🇨🇳 广州移动-Santa Clara-Tencent-nf@EXTM3U
-      - _NO_挪威
-      - 🇨🇳 广州移动-Santa Clara-Tencent-nf@EXTM3U 2
-      - 🇭🇰 广州移动-香港HKT-nf@vpnpool
-      - 🇭🇰 广州移动-香港HKT-nf@vpnpool 2
-      - 🇭🇰 广州移动-香港HKT-nf@vpnpool 3
-      - 🇺🇸 美国(欢迎订阅youtube：8度科技) 2
-      - 🇭🇰 广州移动-香港HKT-nf@vpnpool 4
-      - _IL_以色列
+      - (欢迎订阅youtube：8度科技) 2
+      - 🇯🇵 日本(欢迎订阅youtube：8度科技)
+      - KR(欢迎订阅youtube：8度科技)
       - 🇬🇧 英国(欢迎订阅youtube：8度科技)
-      - 🇨🇳 广州移动-Santa Clara-Tencent-nf@EXTM3U 3
-      - 浦东电信-LAX-DMIT-nf@vpnpool
-      - 浦东电信-LAX-DMIT-nf@vpnpool 2
-      - 浦东电信-LAX-DMIT-nf@vpnpool 3
-      - 🇹🇼 浦东电信-台北Hinet-nf@vpnpool
-      - _PT_葡萄牙
-      - 🇸🇪 _SE_瑞典
-      - 🇨🇦 _CA_加拿大
-      - 🇬🇧 _GB_英国
+      - 🇯🇵 日本(欢迎订阅youtube：8度科技) 2
+      - 🇰🇷 _HK_香港->🇰🇷_KR_韩国
+      - 🇺🇸 _US_美国
+      - 🇺🇸 _US_美国 2
+      - 🇺🇸 美国(欢迎订阅youtube：8度科技)
+      - 🇷🇺 _US_美国->🇷🇺_RU_俄罗斯联邦
+      - 🇷🇺 _US_美国->🇷🇺_RU_俄罗斯联邦 2
+      - 🇺🇸 美国(欢迎订阅youtube：8度科技) 2
+      - 🇺🇸 _US_美国 3
+      - 🇺🇸 美国(欢迎订阅youtube：8度科技) 3
+      - DE(欢迎订阅youtube：8度科技)
+      - 🇰🇷 _HK_香港->🇰🇷_KR_韩国 2
+      - default_name
+      - 🇩🇪 _DE_德国
+      - 🇺🇸 _US_美国 4
       - 🇫🇷 _FR_法国
+      - _IL_以色列
+      - (欢迎订阅youtube：8度科技) 3
+      - _IL_以色列 2
+      - 🇸🇬 _SG_新加坡
+      - _NO_挪威
+      - 🇹🇼 _TW_台湾
+      - 🇭🇰 _HK_香港
       - 🇫🇷 _FR_法国 2
+      - _PT_葡萄牙
       - 🇫🇷 _FR_法国 3
-      - 🇨🇦 _CA_加拿大 2
       - 🇫🇷 _FR_法国 4
       - 🇫🇷 _FR_法国 5
-      - _PT_葡萄牙 2
-      - _NO_挪威 2
       - 🇫🇷 _FR_法国 6
-      - 🇨🇦 _CA_加拿大 3
       - 🇫🇷 _FR_法国 7
-      - "[12.12] TG频道@Jsnzk"
       - 🇫🇷 _FR_法国 8
-      - 🇺🇸 US(欢迎订阅youtube：8度科技)
-      - 🇬🇧 _GB_英国 2
       - 🇫🇷 _FR_法国 9
-      - 🇨🇦 _CA_加拿大 4
-      - 🇯🇵 日本(欢迎订阅youtube：8度科技)
       - 🇫🇷 _FR_法国 10
+      - 🇩🇪 _DE_德国 2
+      - 🇦🇺 _AU_澳大利亚
+      - 🇺🇦 乌克兰(欢迎订阅youtube：8度科技)
+      - 🇸🇪 _SE_瑞典
+      - _PT_葡萄牙 2
+      - 🇨🇦 _CA_加拿大
+      - 🇩🇪 _DE_德国 3
+      - 🇨🇦 _CA_加拿大 2
+      - 🇩🇪 _DE_德国 4
+      - 🇩🇪 _DE_德国 5
+      - 🇫🇷 _FR_法国 11
+      - _NO_挪威 2
+      - _NO_挪威 3
+      - 🇬🇧 _GB_英国
+      - _NO_挪威 4
+      - 🇬🇧 _GB_英国 2
+      - 🇨🇦 _CA_加拿大 3
+      - 🇩🇪 _DE_德国 6
+      - 🇩🇪 _DE_德国 7
+      - default_name 2
+      - _NO_挪威 5
+      - 🇨🇦 _CA_加拿大 4
       - 🇨🇦 _CA_加拿大 5
-      - 🇸🇬 广州移动-SG-Nerocloud-nf@vpnpool
+      - 🇩🇪 _DE_德国 8
+      - _NO_挪威 6
+      - 🇩🇪 _DE_德国 9
+      - 🇧🇪 _BE_比利时
+      - 🇩🇪 _DE_德国 10
+      - _NO_挪威 7
+      - 🇬🇧 _GB_英国 3
+      - 🇺🇸 US(欢迎订阅youtube：8度科技)
+      - _NO_挪威 8
+      - _NO_挪威 9
       - 🇺🇦 _UA_乌克兰
+      - 🇩🇪 _DE_德国 11
+      - 🇨🇦 _CA_加拿大 6
+      - 🇨🇦 _CA_加拿大 7
+      - 🇺🇸 _US_美国 5
+      - 🇺🇸 _US_美国 6
+      - 🇨🇦 _CA_加拿大 8
+      - 🇭🇰 _HK_香港 2
+      - 🇭🇰 _HK_香港 3
+      - 🇯🇵 _JP_日本
+      - 🇭🇰 _HK_香港 4
+      - 🇫🇷 _FR_法国 12
+      - 🇫🇷 _FR_法国 13
+      - 🇫🇷 _FR_法国 14
+      - _NO_挪威 10
+      - 🇫🇷 _FR_法国 15
+      - 🇬🇧 _GB_英国 4
+      - 🇬🇧 广州移动-London-GTHost-nf@vpnpool
+      - 🇨🇳 广州移动-LAX-DMIT-nf@vpnpool
+      - 🇨🇳 广州移动-Santa Clara-Tencent-nf@EXTM3U
+      - 🇭🇰 广州移动-香港HKT-nf@vpnpool
+      - 🇨🇳 广州移动-LAX-DMIT-nf@vpnpool 2
+      - 浦东电信-LAX-DMIT-nf@vpnpool
       - 🇯🇵 广州移动-Tokyo-DMIT-nf@vpnpool
+      - 🇸🇬 广州移动-SG-Nerocloud-nf@vpnpool
       - 🇯🇵 广州移动-Tokyo-DMIT-nf@vpnpool 2
-      - 🇯🇵 广州移动-Tokyo-DMIT-nf@vpnpool 3
-      - 🇸🇬 广州移动-SG-Nerocloud-nf@vpnpool 2
-      - 🇯🇵 广州移动-Tokyo-DMIT-nf@vpnpool 4
-      - 🇯🇵 广州移动-Tokyo-DMIT-nf@vpnpool 5
-      - 🇸🇬 广州移动-SG-Nerocloud-nf@vpnpool 3
-      - "[12.12] TG频道@Jsnzk 2"
-      - 🇯🇵 广州移动-Tokyo-DMIT-nf@vpnpool 6
-      - 🇺🇸 美国(欢迎订阅youtube：8度科技) 3
-      - 🇺🇸 美国(欢迎订阅youtube：8度科技) 4
-      - 🇯🇵 广州移动-Tokyo-DMIT-nf@vpnpool 7
-      - 🇯🇵 广州移动-Tokyo-DMIT-nf@vpnpool 8
-      - 🇯🇵 广州移动-Tokyo-DMIT-nf@vpnpool 9
       - 🇸🇬 浦东电信-SG-Nerocloud-nf@vpnpool
       - 🇸🇬 浦东电信-SG-Nerocloud-nf@vpnpool 2
-      - 🇸🇬 浦东电信-SG-Nerocloud-nf@vpnpool 3
-      - 🇸🇬 浦东电信-SG-Nerocloud-nf@vpnpool 4
-      - 🇸🇬 浦东电信-SG-Nerocloud-nf@vpnpool 5
-      - 🇮🇳 印度(欢迎订阅youtube：8度科技)
-      - (欢迎订阅youtube：8度科技) 2
-      - 🇫🇷 _FR_法国 11
-      - 🇹🇼 广州移动-台北Hinet-nf@vpnpool
-      - 🇨🇦 _CA_加拿大 6
+      - 🇯🇵 广州移动-Tokyo-DMIT-nf@vpnpool 3
+      - 🇹🇼 浦东电信-台北Hinet-nf@vpnpool
       - 🇸🇬 广州移动-SG-Tencent-nf@vpnpool
-      - 🇸🇬 广州移动-SG-Tencent-nf@vpnpool 2
-      - 🇸🇬 广州移动-SG-Tencent-nf@vpnpool 3
-      - 🇬🇧 _GB_英国 3
-      - 🇨🇦 _CA_加拿大 7
-      - 🇹🇼 广州移动-台北Hinet-nf@vpnpool 2
-      - 🇯🇵 浦东电信-Tokyo-DMIT-nf@vpnpool
-      - 🇯🇵 浦东电信-Tokyo-DMIT-nf@vpnpool 2
-      - 🇨🇦 _CA_加拿大 8
-      - 🇯🇵 _JP_日本
-      - "[12.12] TG频道@Jsnzk 3"
-      - "[12.12] TG频道@Jsnzk 4"
-      - (欢迎订阅youtube：8度科技) 3
-      - "[12.12] TG频道@Jsnzk 5"
-      - 🇨🇳 广州移动-Novosibirsk-Baxet-nf@vpnhat 2
-      - DE(欢迎订阅youtube：8度科技)
-      - 🇺🇸 美国(欢迎订阅youtube：8度科技) 5
-      - 🇬🇧 _GB_英国 4
-      - 🇭🇰 _HK_香港
-      - 🇭🇰 广州移动-香港DMIT-nf@vpnpool
-      - 🇫🇷 _FR_法国 12
-      - 浦东电信-LAX-DediPath-nf@vpnpool
-      - 浦东电信-LAX-DediPath-nf@vpnpool 2
-      - 浦东电信-LAX-DediPath-nf@vpnpool 3
-      - 浦东电信-LAX-DediPath-nf@vpnpool 4
-      - 🇨🇦 _CA_加拿大 9
-      - "[12.12] TG频道@Jsnzk 6"
+      - 🇭🇰 浦东电信-香港HKT-nf@vpnpool
+      - 🇨🇳 广州移动-Novosibirsk-Baxet-nf@vpnhat
       - 🇬🇧 浦东电信-London-GTHost-nf@vpnpool
-      - 🇬🇧 浦东电信-London-GTHost-nf@vpnpool 2
-      - 🇨🇳 广州移动-Novosibirsk-Baxet-nf@vpnhat 3
-      - 🇺🇸 _US_美国
-      - _NO_挪威 3
-      - 🇬🇧 浦东电信-London-GTHost-nf@vpnpool 3
-      - KR(欢迎订阅youtube：8度科技)
-      - 🇨🇦 _CA_加拿大 10
+      - 浦东电信-LAX-DediPath-nf@vpnpool
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇬🇧 广州移动-London-GTHost-nf@vpnpool
-      - 🇨🇳 广州移动-Novosibirsk-Baxet-nf@vpnhat
-      - 🇬🇧 广州移动-London-GTHost-nf@vpnpool 2
-      - 🇬🇧 广州移动-London-GTHost-nf@vpnpool 3
-      - 🇨🇳 广州移动-LAX-DMIT-nf@vpnpool
-      - 🇨🇳 广州移动-LAX-DMIT-nf@vpnpool 2
-      - 🇨🇳 广州移动-LAX-DMIT-nf@vpnpool 3
-      - 🇨🇳 广州移动-LAX-DMIT-nf@vpnpool 4
-      - 🇨🇳 广州移动-LAX-DMIT-nf@vpnpool 5
-      - 🇺🇸 美国(欢迎订阅youtube：8度科技)
-      - 🇨🇳 广州移动-LAX-DMIT-nf@vpnpool 6
       - (欢迎订阅youtube：8度科技)
-      - 🇨🇳 广州移动-Santa Clara-Tencent-nf@EXTM3U
-      - _NO_挪威
-      - 🇨🇳 广州移动-Santa Clara-Tencent-nf@EXTM3U 2
-      - 🇭🇰 广州移动-香港HKT-nf@vpnpool
-      - 🇭🇰 广州移动-香港HKT-nf@vpnpool 2
-      - 🇭🇰 广州移动-香港HKT-nf@vpnpool 3
-      - 🇺🇸 美国(欢迎订阅youtube：8度科技) 2
-      - 🇭🇰 广州移动-香港HKT-nf@vpnpool 4
-      - _IL_以色列
+      - (欢迎订阅youtube：8度科技) 2
+      - 🇯🇵 日本(欢迎订阅youtube：8度科技)
+      - KR(欢迎订阅youtube：8度科技)
       - 🇬🇧 英国(欢迎订阅youtube：8度科技)
-      - 🇨🇳 广州移动-Santa Clara-Tencent-nf@EXTM3U 3
-      - 浦东电信-LAX-DMIT-nf@vpnpool
-      - 浦东电信-LAX-DMIT-nf@vpnpool 2
-      - 浦东电信-LAX-DMIT-nf@vpnpool 3
-      - 🇹🇼 浦东电信-台北Hinet-nf@vpnpool
-      - _PT_葡萄牙
-      - 🇸🇪 _SE_瑞典
-      - 🇨🇦 _CA_加拿大
-      - 🇬🇧 _GB_英国
+      - 🇯🇵 日本(欢迎订阅youtube：8度科技) 2
+      - 🇰🇷 _HK_香港->🇰🇷_KR_韩国
+      - 🇺🇸 _US_美国
+      - 🇺🇸 _US_美国 2
+      - 🇺🇸 美国(欢迎订阅youtube：8度科技)
+      - 🇷🇺 _US_美国->🇷🇺_RU_俄罗斯联邦
+      - 🇷🇺 _US_美国->🇷🇺_RU_俄罗斯联邦 2
+      - 🇺🇸 美国(欢迎订阅youtube：8度科技) 2
+      - 🇺🇸 _US_美国 3
+      - 🇺🇸 美国(欢迎订阅youtube：8度科技) 3
+      - DE(欢迎订阅youtube：8度科技)
+      - 🇰🇷 _HK_香港->🇰🇷_KR_韩国 2
+      - default_name
+      - 🇩🇪 _DE_德国
+      - 🇺🇸 _US_美国 4
       - 🇫🇷 _FR_法国
+      - _IL_以色列
+      - (欢迎订阅youtube：8度科技) 3
+      - _IL_以色列 2
+      - 🇸🇬 _SG_新加坡
+      - _NO_挪威
+      - 🇹🇼 _TW_台湾
+      - 🇭🇰 _HK_香港
       - 🇫🇷 _FR_法国 2
+      - _PT_葡萄牙
       - 🇫🇷 _FR_法国 3
-      - 🇨🇦 _CA_加拿大 2
       - 🇫🇷 _FR_法国 4
       - 🇫🇷 _FR_法国 5
-      - _PT_葡萄牙 2
-      - _NO_挪威 2
       - 🇫🇷 _FR_法国 6
-      - 🇨🇦 _CA_加拿大 3
       - 🇫🇷 _FR_法国 7
-      - "[12.12] TG频道@Jsnzk"
       - 🇫🇷 _FR_法国 8
-      - 🇺🇸 US(欢迎订阅youtube：8度科技)
-      - 🇬🇧 _GB_英国 2
       - 🇫🇷 _FR_法国 9
-      - 🇨🇦 _CA_加拿大 4
-      - 🇯🇵 日本(欢迎订阅youtube：8度科技)
       - 🇫🇷 _FR_法国 10
+      - 🇩🇪 _DE_德国 2
+      - 🇦🇺 _AU_澳大利亚
+      - 🇺🇦 乌克兰(欢迎订阅youtube：8度科技)
+      - 🇸🇪 _SE_瑞典
+      - _PT_葡萄牙 2
+      - 🇨🇦 _CA_加拿大
+      - 🇩🇪 _DE_德国 3
+      - 🇨🇦 _CA_加拿大 2
+      - 🇩🇪 _DE_德国 4
+      - 🇩🇪 _DE_德国 5
+      - 🇫🇷 _FR_法国 11
+      - _NO_挪威 2
+      - _NO_挪威 3
+      - 🇬🇧 _GB_英国
+      - _NO_挪威 4
+      - 🇬🇧 _GB_英国 2
+      - 🇨🇦 _CA_加拿大 3
+      - 🇩🇪 _DE_德国 6
+      - 🇩🇪 _DE_德国 7
+      - default_name 2
+      - _NO_挪威 5
+      - 🇨🇦 _CA_加拿大 4
       - 🇨🇦 _CA_加拿大 5
-      - 🇸🇬 广州移动-SG-Nerocloud-nf@vpnpool
+      - 🇩🇪 _DE_德国 8
+      - _NO_挪威 6
+      - 🇩🇪 _DE_德国 9
+      - 🇧🇪 _BE_比利时
+      - 🇩🇪 _DE_德国 10
+      - _NO_挪威 7
+      - 🇬🇧 _GB_英国 3
+      - 🇺🇸 US(欢迎订阅youtube：8度科技)
+      - _NO_挪威 8
+      - _NO_挪威 9
       - 🇺🇦 _UA_乌克兰
+      - 🇩🇪 _DE_德国 11
+      - 🇨🇦 _CA_加拿大 6
+      - 🇨🇦 _CA_加拿大 7
+      - 🇺🇸 _US_美国 5
+      - 🇺🇸 _US_美国 6
+      - 🇨🇦 _CA_加拿大 8
+      - 🇭🇰 _HK_香港 2
+      - 🇭🇰 _HK_香港 3
+      - 🇯🇵 _JP_日本
+      - 🇭🇰 _HK_香港 4
+      - 🇫🇷 _FR_法国 12
+      - 🇫🇷 _FR_法国 13
+      - 🇫🇷 _FR_法国 14
+      - _NO_挪威 10
+      - 🇫🇷 _FR_法国 15
+      - 🇬🇧 _GB_英国 4
+      - 🇬🇧 广州移动-London-GTHost-nf@vpnpool
+      - 🇨🇳 广州移动-LAX-DMIT-nf@vpnpool
+      - 🇨🇳 广州移动-Santa Clara-Tencent-nf@EXTM3U
+      - 🇭🇰 广州移动-香港HKT-nf@vpnpool
+      - 🇨🇳 广州移动-LAX-DMIT-nf@vpnpool 2
+      - 浦东电信-LAX-DMIT-nf@vpnpool
       - 🇯🇵 广州移动-Tokyo-DMIT-nf@vpnpool
+      - 🇸🇬 广州移动-SG-Nerocloud-nf@vpnpool
       - 🇯🇵 广州移动-Tokyo-DMIT-nf@vpnpool 2
-      - 🇯🇵 广州移动-Tokyo-DMIT-nf@vpnpool 3
-      - 🇸🇬 广州移动-SG-Nerocloud-nf@vpnpool 2
-      - 🇯🇵 广州移动-Tokyo-DMIT-nf@vpnpool 4
-      - 🇯🇵 广州移动-Tokyo-DMIT-nf@vpnpool 5
-      - 🇸🇬 广州移动-SG-Nerocloud-nf@vpnpool 3
-      - "[12.12] TG频道@Jsnzk 2"
-      - 🇯🇵 广州移动-Tokyo-DMIT-nf@vpnpool 6
-      - 🇺🇸 美国(欢迎订阅youtube：8度科技) 3
-      - 🇺🇸 美国(欢迎订阅youtube：8度科技) 4
-      - 🇯🇵 广州移动-Tokyo-DMIT-nf@vpnpool 7
-      - 🇯🇵 广州移动-Tokyo-DMIT-nf@vpnpool 8
-      - 🇯🇵 广州移动-Tokyo-DMIT-nf@vpnpool 9
       - 🇸🇬 浦东电信-SG-Nerocloud-nf@vpnpool
       - 🇸🇬 浦东电信-SG-Nerocloud-nf@vpnpool 2
-      - 🇸🇬 浦东电信-SG-Nerocloud-nf@vpnpool 3
-      - 🇸🇬 浦东电信-SG-Nerocloud-nf@vpnpool 4
-      - 🇸🇬 浦东电信-SG-Nerocloud-nf@vpnpool 5
-      - 🇮🇳 印度(欢迎订阅youtube：8度科技)
-      - (欢迎订阅youtube：8度科技) 2
-      - 🇫🇷 _FR_法国 11
-      - 🇹🇼 广州移动-台北Hinet-nf@vpnpool
-      - 🇨🇦 _CA_加拿大 6
+      - 🇯🇵 广州移动-Tokyo-DMIT-nf@vpnpool 3
+      - 🇹🇼 浦东电信-台北Hinet-nf@vpnpool
       - 🇸🇬 广州移动-SG-Tencent-nf@vpnpool
-      - 🇸🇬 广州移动-SG-Tencent-nf@vpnpool 2
-      - 🇸🇬 广州移动-SG-Tencent-nf@vpnpool 3
-      - 🇬🇧 _GB_英国 3
-      - 🇨🇦 _CA_加拿大 7
-      - 🇹🇼 广州移动-台北Hinet-nf@vpnpool 2
-      - 🇯🇵 浦东电信-Tokyo-DMIT-nf@vpnpool
-      - 🇯🇵 浦东电信-Tokyo-DMIT-nf@vpnpool 2
-      - 🇨🇦 _CA_加拿大 8
-      - 🇯🇵 _JP_日本
-      - "[12.12] TG频道@Jsnzk 3"
-      - "[12.12] TG频道@Jsnzk 4"
-      - (欢迎订阅youtube：8度科技) 3
-      - "[12.12] TG频道@Jsnzk 5"
-      - 🇨🇳 广州移动-Novosibirsk-Baxet-nf@vpnhat 2
-      - DE(欢迎订阅youtube：8度科技)
-      - 🇺🇸 美国(欢迎订阅youtube：8度科技) 5
-      - 🇬🇧 _GB_英国 4
-      - 🇭🇰 _HK_香港
-      - 🇭🇰 广州移动-香港DMIT-nf@vpnpool
-      - 🇫🇷 _FR_法国 12
-      - 浦东电信-LAX-DediPath-nf@vpnpool
-      - 浦东电信-LAX-DediPath-nf@vpnpool 2
-      - 浦东电信-LAX-DediPath-nf@vpnpool 3
-      - 浦东电信-LAX-DediPath-nf@vpnpool 4
-      - 🇨🇦 _CA_加拿大 9
-      - "[12.12] TG频道@Jsnzk 6"
+      - 🇭🇰 浦东电信-香港HKT-nf@vpnpool
+      - 🇨🇳 广州移动-Novosibirsk-Baxet-nf@vpnhat
       - 🇬🇧 浦东电信-London-GTHost-nf@vpnpool
-      - 🇬🇧 浦东电信-London-GTHost-nf@vpnpool 2
-      - 🇨🇳 广州移动-Novosibirsk-Baxet-nf@vpnhat 3
-      - 🇺🇸 _US_美国
-      - _NO_挪威 3
-      - 🇬🇧 浦东电信-London-GTHost-nf@vpnpool 3
-      - KR(欢迎订阅youtube：8度科技)
-      - 🇨🇦 _CA_加拿大 10
+      - 浦东电信-LAX-DediPath-nf@vpnpool
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -851,118 +810,112 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇬🇧 广州移动-London-GTHost-nf@vpnpool
-      - 🇨🇳 广州移动-Novosibirsk-Baxet-nf@vpnhat
-      - 🇬🇧 广州移动-London-GTHost-nf@vpnpool 2
-      - 🇬🇧 广州移动-London-GTHost-nf@vpnpool 3
-      - 🇨🇳 广州移动-LAX-DMIT-nf@vpnpool
-      - 🇨🇳 广州移动-LAX-DMIT-nf@vpnpool 2
-      - 🇨🇳 广州移动-LAX-DMIT-nf@vpnpool 3
-      - 🇨🇳 广州移动-LAX-DMIT-nf@vpnpool 4
-      - 🇨🇳 广州移动-LAX-DMIT-nf@vpnpool 5
-      - 🇺🇸 美国(欢迎订阅youtube：8度科技)
-      - 🇨🇳 广州移动-LAX-DMIT-nf@vpnpool 6
       - (欢迎订阅youtube：8度科技)
-      - 🇨🇳 广州移动-Santa Clara-Tencent-nf@EXTM3U
-      - _NO_挪威
-      - 🇨🇳 广州移动-Santa Clara-Tencent-nf@EXTM3U 2
-      - 🇭🇰 广州移动-香港HKT-nf@vpnpool
-      - 🇭🇰 广州移动-香港HKT-nf@vpnpool 2
-      - 🇭🇰 广州移动-香港HKT-nf@vpnpool 3
-      - 🇺🇸 美国(欢迎订阅youtube：8度科技) 2
-      - 🇭🇰 广州移动-香港HKT-nf@vpnpool 4
-      - _IL_以色列
+      - (欢迎订阅youtube：8度科技) 2
+      - 🇯🇵 日本(欢迎订阅youtube：8度科技)
+      - KR(欢迎订阅youtube：8度科技)
       - 🇬🇧 英国(欢迎订阅youtube：8度科技)
-      - 🇨🇳 广州移动-Santa Clara-Tencent-nf@EXTM3U 3
-      - 浦东电信-LAX-DMIT-nf@vpnpool
-      - 浦东电信-LAX-DMIT-nf@vpnpool 2
-      - 浦东电信-LAX-DMIT-nf@vpnpool 3
-      - 🇹🇼 浦东电信-台北Hinet-nf@vpnpool
-      - _PT_葡萄牙
-      - 🇸🇪 _SE_瑞典
-      - 🇨🇦 _CA_加拿大
-      - 🇬🇧 _GB_英国
+      - 🇯🇵 日本(欢迎订阅youtube：8度科技) 2
+      - 🇰🇷 _HK_香港->🇰🇷_KR_韩国
+      - 🇺🇸 _US_美国
+      - 🇺🇸 _US_美国 2
+      - 🇺🇸 美国(欢迎订阅youtube：8度科技)
+      - 🇷🇺 _US_美国->🇷🇺_RU_俄罗斯联邦
+      - 🇷🇺 _US_美国->🇷🇺_RU_俄罗斯联邦 2
+      - 🇺🇸 美国(欢迎订阅youtube：8度科技) 2
+      - 🇺🇸 _US_美国 3
+      - 🇺🇸 美国(欢迎订阅youtube：8度科技) 3
+      - DE(欢迎订阅youtube：8度科技)
+      - 🇰🇷 _HK_香港->🇰🇷_KR_韩国 2
+      - default_name
+      - 🇩🇪 _DE_德国
+      - 🇺🇸 _US_美国 4
       - 🇫🇷 _FR_法国
+      - _IL_以色列
+      - (欢迎订阅youtube：8度科技) 3
+      - _IL_以色列 2
+      - 🇸🇬 _SG_新加坡
+      - _NO_挪威
+      - 🇹🇼 _TW_台湾
+      - 🇭🇰 _HK_香港
       - 🇫🇷 _FR_法国 2
+      - _PT_葡萄牙
       - 🇫🇷 _FR_法国 3
-      - 🇨🇦 _CA_加拿大 2
       - 🇫🇷 _FR_法国 4
       - 🇫🇷 _FR_法国 5
-      - _PT_葡萄牙 2
-      - _NO_挪威 2
       - 🇫🇷 _FR_法国 6
-      - 🇨🇦 _CA_加拿大 3
       - 🇫🇷 _FR_法国 7
-      - "[12.12] TG频道@Jsnzk"
       - 🇫🇷 _FR_法国 8
-      - 🇺🇸 US(欢迎订阅youtube：8度科技)
-      - 🇬🇧 _GB_英国 2
       - 🇫🇷 _FR_法国 9
-      - 🇨🇦 _CA_加拿大 4
-      - 🇯🇵 日本(欢迎订阅youtube：8度科技)
       - 🇫🇷 _FR_法国 10
+      - 🇩🇪 _DE_德国 2
+      - 🇦🇺 _AU_澳大利亚
+      - 🇺🇦 乌克兰(欢迎订阅youtube：8度科技)
+      - 🇸🇪 _SE_瑞典
+      - _PT_葡萄牙 2
+      - 🇨🇦 _CA_加拿大
+      - 🇩🇪 _DE_德国 3
+      - 🇨🇦 _CA_加拿大 2
+      - 🇩🇪 _DE_德国 4
+      - 🇩🇪 _DE_德国 5
+      - 🇫🇷 _FR_法国 11
+      - _NO_挪威 2
+      - _NO_挪威 3
+      - 🇬🇧 _GB_英国
+      - _NO_挪威 4
+      - 🇬🇧 _GB_英国 2
+      - 🇨🇦 _CA_加拿大 3
+      - 🇩🇪 _DE_德国 6
+      - 🇩🇪 _DE_德国 7
+      - default_name 2
+      - _NO_挪威 5
+      - 🇨🇦 _CA_加拿大 4
       - 🇨🇦 _CA_加拿大 5
-      - 🇸🇬 广州移动-SG-Nerocloud-nf@vpnpool
+      - 🇩🇪 _DE_德国 8
+      - _NO_挪威 6
+      - 🇩🇪 _DE_德国 9
+      - 🇧🇪 _BE_比利时
+      - 🇩🇪 _DE_德国 10
+      - _NO_挪威 7
+      - 🇬🇧 _GB_英国 3
+      - 🇺🇸 US(欢迎订阅youtube：8度科技)
+      - _NO_挪威 8
+      - _NO_挪威 9
       - 🇺🇦 _UA_乌克兰
+      - 🇩🇪 _DE_德国 11
+      - 🇨🇦 _CA_加拿大 6
+      - 🇨🇦 _CA_加拿大 7
+      - 🇺🇸 _US_美国 5
+      - 🇺🇸 _US_美国 6
+      - 🇨🇦 _CA_加拿大 8
+      - 🇭🇰 _HK_香港 2
+      - 🇭🇰 _HK_香港 3
+      - 🇯🇵 _JP_日本
+      - 🇭🇰 _HK_香港 4
+      - 🇫🇷 _FR_法国 12
+      - 🇫🇷 _FR_法国 13
+      - 🇫🇷 _FR_法国 14
+      - _NO_挪威 10
+      - 🇫🇷 _FR_法国 15
+      - 🇬🇧 _GB_英国 4
+      - 🇬🇧 广州移动-London-GTHost-nf@vpnpool
+      - 🇨🇳 广州移动-LAX-DMIT-nf@vpnpool
+      - 🇨🇳 广州移动-Santa Clara-Tencent-nf@EXTM3U
+      - 🇭🇰 广州移动-香港HKT-nf@vpnpool
+      - 🇨🇳 广州移动-LAX-DMIT-nf@vpnpool 2
+      - 浦东电信-LAX-DMIT-nf@vpnpool
       - 🇯🇵 广州移动-Tokyo-DMIT-nf@vpnpool
+      - 🇸🇬 广州移动-SG-Nerocloud-nf@vpnpool
       - 🇯🇵 广州移动-Tokyo-DMIT-nf@vpnpool 2
-      - 🇯🇵 广州移动-Tokyo-DMIT-nf@vpnpool 3
-      - 🇸🇬 广州移动-SG-Nerocloud-nf@vpnpool 2
-      - 🇯🇵 广州移动-Tokyo-DMIT-nf@vpnpool 4
-      - 🇯🇵 广州移动-Tokyo-DMIT-nf@vpnpool 5
-      - 🇸🇬 广州移动-SG-Nerocloud-nf@vpnpool 3
-      - "[12.12] TG频道@Jsnzk 2"
-      - 🇯🇵 广州移动-Tokyo-DMIT-nf@vpnpool 6
-      - 🇺🇸 美国(欢迎订阅youtube：8度科技) 3
-      - 🇺🇸 美国(欢迎订阅youtube：8度科技) 4
-      - 🇯🇵 广州移动-Tokyo-DMIT-nf@vpnpool 7
-      - 🇯🇵 广州移动-Tokyo-DMIT-nf@vpnpool 8
-      - 🇯🇵 广州移动-Tokyo-DMIT-nf@vpnpool 9
       - 🇸🇬 浦东电信-SG-Nerocloud-nf@vpnpool
       - 🇸🇬 浦东电信-SG-Nerocloud-nf@vpnpool 2
-      - 🇸🇬 浦东电信-SG-Nerocloud-nf@vpnpool 3
-      - 🇸🇬 浦东电信-SG-Nerocloud-nf@vpnpool 4
-      - 🇸🇬 浦东电信-SG-Nerocloud-nf@vpnpool 5
-      - 🇮🇳 印度(欢迎订阅youtube：8度科技)
-      - (欢迎订阅youtube：8度科技) 2
-      - 🇫🇷 _FR_法国 11
-      - 🇹🇼 广州移动-台北Hinet-nf@vpnpool
-      - 🇨🇦 _CA_加拿大 6
+      - 🇯🇵 广州移动-Tokyo-DMIT-nf@vpnpool 3
+      - 🇹🇼 浦东电信-台北Hinet-nf@vpnpool
       - 🇸🇬 广州移动-SG-Tencent-nf@vpnpool
-      - 🇸🇬 广州移动-SG-Tencent-nf@vpnpool 2
-      - 🇸🇬 广州移动-SG-Tencent-nf@vpnpool 3
-      - 🇬🇧 _GB_英国 3
-      - 🇨🇦 _CA_加拿大 7
-      - 🇹🇼 广州移动-台北Hinet-nf@vpnpool 2
-      - 🇯🇵 浦东电信-Tokyo-DMIT-nf@vpnpool
-      - 🇯🇵 浦东电信-Tokyo-DMIT-nf@vpnpool 2
-      - 🇨🇦 _CA_加拿大 8
-      - 🇯🇵 _JP_日本
-      - "[12.12] TG频道@Jsnzk 3"
-      - "[12.12] TG频道@Jsnzk 4"
-      - (欢迎订阅youtube：8度科技) 3
-      - "[12.12] TG频道@Jsnzk 5"
-      - 🇨🇳 广州移动-Novosibirsk-Baxet-nf@vpnhat 2
-      - DE(欢迎订阅youtube：8度科技)
-      - 🇺🇸 美国(欢迎订阅youtube：8度科技) 5
-      - 🇬🇧 _GB_英国 4
-      - 🇭🇰 _HK_香港
-      - 🇭🇰 广州移动-香港DMIT-nf@vpnpool
-      - 🇫🇷 _FR_法国 12
-      - 浦东电信-LAX-DediPath-nf@vpnpool
-      - 浦东电信-LAX-DediPath-nf@vpnpool 2
-      - 浦东电信-LAX-DediPath-nf@vpnpool 3
-      - 浦东电信-LAX-DediPath-nf@vpnpool 4
-      - 🇨🇦 _CA_加拿大 9
-      - "[12.12] TG频道@Jsnzk 6"
+      - 🇭🇰 浦东电信-香港HKT-nf@vpnpool
+      - 🇨🇳 广州移动-Novosibirsk-Baxet-nf@vpnhat
       - 🇬🇧 浦东电信-London-GTHost-nf@vpnpool
-      - 🇬🇧 浦东电信-London-GTHost-nf@vpnpool 2
-      - 🇨🇳 广州移动-Novosibirsk-Baxet-nf@vpnhat 3
-      - 🇺🇸 _US_美国
-      - _NO_挪威 3
-      - 🇬🇧 浦东电信-London-GTHost-nf@vpnpool 3
-      - KR(欢迎订阅youtube：8度科技)
-      - 🇨🇦 _CA_加拿大 10
+      - 浦东电信-LAX-DediPath-nf@vpnpool
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
