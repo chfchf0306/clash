@@ -5,195 +5,112 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 8度科技 67, server: 139.227.161.129, port: 10002, type: vmess, uuid: 65cac56d-4155-43c8-bae0-f368cb21f771, alterId: 1, cipher: auto, tls: false}
-  - {name: 8度科技 87, server: 183.232.163.3, port: 2626, type: vmess, uuid: 865601be-0e00-3a7f-8da3-c92ac3ed6ddd, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}}
   - {name: 8度科技 242, server: 183.232.163.3, port: 5254, type: vmess, uuid: 865601be-0e00-3a7f-8da3-c92ac3ed6ddd, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}}
-  - {name: 8度科技 100, server: 142.4.123.249, port: 500, type: vmess, uuid: 0dcea9f2-10ac-11ec-a0bc-00163cf00cd9, alterId: 0, cipher: auto, tls: false}
-  - {name: 8度科技 36, server: 183.232.163.3, port: 1313, type: vmess, uuid: 865601be-0e00-3a7f-8da3-c92ac3ed6ddd, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}}
-  - {name: 8度科技 96, server: 1031kr.fans8.xyz, port: 80, type: vmess, uuid: fbf53107-1b42-3da5-a77d-6ad22544c0e9, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}}
-  - {name: 8度科技 21, server: 139.227.161.129, port: 10004, type: vmess, uuid: 65cac56d-4155-43c8-bae0-f368cb21f771, alterId: 1, cipher: auto, tls: false}
-  - {name: 8度科技 163, server: 1031kr.fans8.xyz, port: 80, type: vmess, uuid: fbf53107-1b42-3da5-a77d-6ad22544c0e9, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /v2ray, ws-headers: {Host: 1031kr.fans8.xyz}}
-  - {name: v2cross.com, server: shcn2-06b.iplc188.com, port: 10001, type: vmess, uuid: 65cac56d-4155-43c8-bae0-f368cb21f771, alterId: 0, cipher: auto, tls: false}
-  - {name: 8度科技 76, server: 183.232.163.3, port: 6262, type: vmess, uuid: 865601be-0e00-3a7f-8da3-c92ac3ed6ddd, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}}
-  - {name: 8度科技 147, server: 183.232.163.3, port: 1717, type: vmess, uuid: 865601be-0e00-3a7f-8da3-c92ac3ed6ddd, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}}
-  - {name: 8度科技 127, server: 1031kr.fans8.xyz, port: 80, type: vmess, uuid: fbf53107-1b42-3da5-a77d-6ad22544c0e9, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /v2ray, ws-headers: {Host: youtube-awekji}}
-  - {name: 8度科技 99, server: 42.157.8.162, port: 48106, type: vmess, uuid: 3959477e-55c4-453f-bc80-3b13e64891ac, alterId: 64, cipher: auto, tls: false}
-  - {name: 🇺🇸 _US_美国, server: 45.58.150.130, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, network: ws, ws-path: /ws, ws-headers: {Host: dax6ujai.com}}
-  - {name: 8度科技 69, server: 146.56.177.34, port: 80, type: vmess, uuid: fbf53107-1b42-3da5-a77d-6ad22544c0e9, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}}
-  - {name: 8度科技 132, server: 183.232.163.3, port: 5152, type: vmess, uuid: 865601be-0e00-3a7f-8da3-c92ac3ed6ddd, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}}
-  - {name: 8度科技 162, server: 146.56.177.34, port: 80, type: vmess, uuid: fbf53107-1b42-3da5-a77d-6ad22544c0e9, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /v2ray, ws-headers: {Host: 146.56.177.34}}
-  - {name: 8度科技 174, server: 1116yn.fans8.xyz, port: 80, type: vmess, uuid: fbf53107-1b42-3da5-a77d-6ad22544c0e9, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /v2ray, ws-headers: {Host: youtube-aweikeji}}
-  - {name: 8度科技 160, server: 165.154.229.22, port: 80, type: vmess, uuid: fbf53107-1b42-3da5-a77d-6ad22544c0e9, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /v2ray, ws-headers: {Host: 165.154.229.22}}
-  - {name: 8度科技 94, server: 1116yn.fans8.xyz, port: 80, type: vmess, uuid: fbf53107-1b42-3da5-a77d-6ad22544c0e9, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /v2ray, ws-headers: {Host: 1116yn.fans8.xyz}}
-  - {name: 匈牙利, server: 185.252.223.203, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /path/243535322906, ws-headers: {Host: www.16675463.xyz}}
-  - {name: 🇸🇬 【新鸟免费】美国UA -DO 02 免流 1.0x, server: mf-do-ua-02.xncloud.xyz, port: 80, type: vmess, uuid: bc7abdaa-1152-3ed2-a571-a993b064569c, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /niaoyun, ws-headers: {Host: mf-do-ua-02.xncloud.xyz}}
-  - {name: 🇸🇬 【新鸟免费】美国UA -DO 05 免流 1.0x, server: mf-do-ua-05.xncloud.xyz, port: 80, type: vmess, uuid: bc7abdaa-1152-3ed2-a571-a993b064569c, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /niaoyun, ws-headers: {Host: mf-do-ua-05.xncloud.xyz}}
-  - {name: 🇸🇬 【新鸟免费】美国UA -DO 08 免流 1.0x, server: mf-do-ua-08.xncloud.xyz, port: 80, type: vmess, uuid: bc7abdaa-1152-3ed2-a571-a993b064569c, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /niaoyun, ws-headers: {Host: mf-do-ua-08.xncloud.xyz}}
-  - {name: 🇸🇬 【新鸟免费】美国UA -DO 04 免流 1.0x, server: mf-do-ua-04.xncloud.xyz, port: 80, type: vmess, uuid: bc7abdaa-1152-3ed2-a571-a993b064569c, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /niaoyun, ws-headers: {Host: mf-do-ua-04.xncloud.xyz}}
-  - {name: 8度科技 205, server: zj.haojiahuo.club, port: 30044, type: vmess, uuid: 4a6ada0c-e453-3217-8210-8556f9c92494, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /videos, ws-headers: {Host: xuexi.cn}}
-  - {name: 🇸🇬 【新鸟免费】美国UA -DO 01 免流 1.0x, server: mf-do-ua-01.xncloud.xyz, port: 80, type: vmess, uuid: bc7abdaa-1152-3ed2-a571-a993b064569c, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /niaoyun, ws-headers: {Host: mf-do-ua-01.xncloud.xyz}}
-  - {name: 🇸🇬 【新鸟免费】美国UA -DO 03 免流 1.0x, server: mf-do-ua-03.xncloud.xyz, port: 80, type: vmess, uuid: bc7abdaa-1152-3ed2-a571-a993b064569c, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /niaoyun, ws-headers: {Host: mf-do-ua-03.xncloud.xyz}}
-  - {name: 🇸🇬 【新鸟免费】美国UA -DO 06 免流 1.0x, server: mf-do-ua-06.xncloud.xyz, port: 80, type: vmess, uuid: bc7abdaa-1152-3ed2-a571-a993b064569c, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /niaoyun, ws-headers: {Host: mf-do-ua-06.xncloud.xyz}}
-  - {name: 🇺🇸 _US_美国 2, server: usa-dallas.lvuft.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, network: ws, ws-path: /ws, ws-headers: {Host: usa-dallas.lvuft.com}}
-  - {name: 🇸🇬 【新鸟免费】美国UA -DO 07 免流 1.0x, server: mf-do-ua-07.xncloud.xyz, port: 80, type: vmess, uuid: bc7abdaa-1152-3ed2-a571-a993b064569c, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /niaoyun, ws-headers: {Host: mf-do-ua-07.xncloud.xyz}}
-  - {name: 🇺🇸 美国(欢迎订阅youtube：8度科技), server: 192.186.129.66, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, network: ws, ws-path: /ws, ws-headers: {Host: usa-buffalo.lvuft.com}}
-  - {name: 🇺🇸 _US_美国 3, server: 45.35.84.162, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, network: ws, ws-path: /ws, ws-headers: {Host: usa-dallas.lvuft.com}}
-  - {name: 🇸🇬 【新鸟免费】美国UA -DO 10 免流 1.0x, server: mf-do-ua-10.xncloud.xyz, port: 80, type: vmess, uuid: bc7abdaa-1152-3ed2-a571-a993b064569c, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /niaoyun, ws-headers: {Host: mf-do-ua-10.xncloud.xyz}}
-  - {name: 8度科技 90, server: zj.haojiahuo.club, port: 30052, type: vmess, uuid: 4a6ada0c-e453-3217-8210-8556f9c92494, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /videos, ws-headers: {Host: xuexi.cn}}
-  - {name: 8度科技 54, server: zhuzhu12.com, port: 20618, type: vmess, uuid: d92988cf-6fac-3be1-af06-e48a7f975649, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /zz, ws-headers: {Host: zhuzhu12.com}}
-  - {name: 8度科技 34, server: zj.haojiahuo.club, port: 30077, type: vmess, uuid: 4a6ada0c-e453-3217-8210-8556f9c92494, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /videos, ws-headers: {Host: xuexi.cn}}
-  - {name: 8度科技 206, server: zj.haojiahuo.club, port: 30077, type: vmess, uuid: 4a6ada0c-e453-3217-8210-8556f9c92494, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /videos, ws-headers: {Host: zj.haojiahuo.club}}
-  - {name: 8度科技 53, server: zhuzhu12.com, port: 46101, type: vmess, uuid: d92988cf-6fac-3be1-af06-e48a7f975649, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /zz, ws-headers: {Host: zhuzhu12.com}}
-  - {name: 🇺🇸 美国加州C, server: 23.224.69.12, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /path/243535322906, ws-headers: {Host: www.35354710.xyz}}
-  - {name: 8度科技 97, server: mf-aws-kr-02.xncloud.xyz, port: 18000, type: vmess, uuid: fcb03748-d0ae-3a8c-8557-a6835cff733d, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /niaoyun, ws-headers: {Host: mf-aws-kr-02.xncloud.xyz}}
-  - {name: 8度科技 245, server: 112.33.32.136, port: 10003, type: vmess, uuid: 65cac56d-4155-43c8-bae0-f368cb21f771, alterId: 0, cipher: auto, tls: false}
-  - {name: 8度科技 153, server: 112.33.32.136, port: 10003, type: vmess, uuid: 65cac56d-4155-43c8-bae0-f368cb21f771, alterId: 1, cipher: auto, tls: false}
-  - {name: 8度科技 98, server: zj.haojiahuo.club, port: 30041, type: vmess, uuid: 4a6ada0c-e453-3217-8210-8556f9c92494, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /videos, ws-headers: {Host: zj.haojiahuo.club}}
-  - {name: 🇰🇷 【新鸟免费】韩国KR-AWS 05 1.0x, server: mf-aws-kr-05.xncloud.xyz, port: 18000, type: vmess, uuid: bc7abdaa-1152-3ed2-a571-a993b064569c, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /niaoyun, ws-headers: {Host: mf-aws-kr-05.xncloud.xyz}}
-  - {name: 🇰🇷 【新鸟免费】韩国KR-AWS 10 1.0x, server: mf-aws-kr-10.xncloud.xyz, port: 18000, type: vmess, uuid: bc7abdaa-1152-3ed2-a571-a993b064569c, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /niaoyun, ws-headers: {Host: mf-aws-kr-10.xncloud.xyz}}
-  - {name: 8度科技 158, server: mf-aws-sg-06.xncloud.xyz, port: 18000, type: vmess, uuid: 9d65783f-2802-3500-8058-c5e0d8bfdb3a, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /niaoyun, ws-headers: {Host: mf-aws-sg-06.xncloud.xyz}}
-  - {name: 8度科技 202, server: mf-aws-kr-07.xncloud.xyz, port: 18000, type: vmess, uuid: 8a23fd8b-30d5-3839-b831-b4eababaa3a0, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /niaoyun, ws-headers: {Host: mf-aws-kr-07.xncloud.xyz}}
-  - {name: 🇸🇬 【新鸟免费】新加坡SG-AWS 12 1.0x, server: mf-aws-sg-12.xncloud.xyz, port: 18000, type: vmess, uuid: bc7abdaa-1152-3ed2-a571-a993b064569c, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /niaoyun, ws-headers: {Host: mf-aws-sg-12.xncloud.xyz}}
-  - {name: 🇸🇬 【新鸟免费】新加坡SG-AWS 03 1.0x, server: mf-aws-sg-03.xncloud.xyz, port: 18000, type: vmess, uuid: bc7abdaa-1152-3ed2-a571-a993b064569c, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /niaoyun, ws-headers: {Host: mf-aws-sg-03.xncloud.xyz}}
-  - {name: 🇸🇬 【新鸟免费】新加坡SG-AWS 11 1.0x, server: mf-aws-sg-11.xncloud.xyz, port: 18000, type: vmess, uuid: bc7abdaa-1152-3ed2-a571-a993b064569c, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /niaoyun, ws-headers: {Host: mf-aws-sg-11.xncloud.xyz}}
-  - {name: 8度科技 232, server: mf-aws-sg-14.xncloud.xyz, port: 18000, type: vmess, uuid: fcb03748-d0ae-3a8c-8557-a6835cff733d, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /niaoyun, ws-headers: {Host: mf-aws-sg-14.xncloud.xyz}}
-  - {name: 🇯🇵 【新鸟免费】日本JP-AWS 08 1.0x, server: mf-aws-jp-08.xncloud.xyz, port: 18000, type: vmess, uuid: bc7abdaa-1152-3ed2-a571-a993b064569c, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /niaoyun, ws-headers: {Host: mf-aws-jp-08.xncloud.xyz}}
-  - {name: 8度科技 250, server: mf-aws-kr-09.xncloud.xyz, port: 18000, type: vmess, uuid: 59ffe178-4542-3730-8b86-8603520afbb0, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /niaoyun, ws-headers: {Host: mf-aws-kr-09.xncloud.xyz}}
-  - {name: 🇰🇷 【新鸟免费】韩国KR-AWS 08 1.0x, server: mf-aws-kr-08.xncloud.xyz, port: 18000, type: vmess, uuid: bc7abdaa-1152-3ed2-a571-a993b064569c, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /niaoyun, ws-headers: {Host: mf-aws-kr-08.xncloud.xyz}}
-  - {name: 🇸🇬 【新鸟免费】新加坡SG-AWS 13 1.0x, server: mf-aws-sg-13.xncloud.xyz, port: 18000, type: vmess, uuid: bc7abdaa-1152-3ed2-a571-a993b064569c, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /niaoyun, ws-headers: {Host: mf-aws-sg-13.xncloud.xyz}}
-  - {name: 8度科技 110, server: mf-aws-kr-01.xncloud.xyz, port: 18000, type: vmess, uuid: 59ffe178-4542-3730-8b86-8603520afbb0, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /niaoyun, ws-headers: {Host: mf-aws-kr-01.xncloud.xyz}}
-  - {name: 8度科技 120, server: mf-aws-sg-04.xncloud.xyz, port: 18000, type: vmess, uuid: 9d65783f-2802-3500-8058-c5e0d8bfdb3a, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /niaoyun, ws-headers: {Host: mf-aws-sg-04.xncloud.xyz}}
-  - {name: 8度科技 251, server: mf-aws-kr-05.xncloud.xyz, port: 18000, type: vmess, uuid: fcb03748-d0ae-3a8c-8557-a6835cff733d, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /niaoyun, ws-headers: {Host: mf-aws-kr-05.xncloud.xyz}}
-  - {name: 8度科技 253, server: mf-aws-sg-08.xncloud.xyz, port: 18000, type: vmess, uuid: 9d65783f-2802-3500-8058-c5e0d8bfdb3a, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /niaoyun, ws-headers: {Host: mf-aws-sg-08.xncloud.xyz}}
-  - {name: 8度科技 212, server: mf-aws-jp-07.xncloud.xyz, port: 18000, type: vmess, uuid: 59ffe178-4542-3730-8b86-8603520afbb0, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /niaoyun, ws-headers: {Host: mf-aws-jp-07.xncloud.xyz}}
-  - {name: 8度科技 157, server: mf-aws-kr-06.xncloud.xyz, port: 18000, type: vmess, uuid: 59ffe178-4542-3730-8b86-8603520afbb0, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /niaoyun, ws-headers: {Host: mf-aws-kr-06.xncloud.xyz}}
-  - {name: 8度科技 219, server: mf-aws-sg-12.xncloud.xyz, port: 18000, type: vmess, uuid: 59ffe178-4542-3730-8b86-8603520afbb0, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /niaoyun, ws-headers: {Host: mf-aws-sg-12.xncloud.xyz}}
-  - {name: 8度科技 8, server: zhuzhu12.com, port: 13959, type: vmess, uuid: d92988cf-6fac-3be1-af06-e48a7f975649, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /zz, ws-headers: {Host: zhuzhu12.com}}
-  - {name: 🇸🇬 【新鸟免费】新加坡SG-AWS 08 1.0x, server: mf-aws-sg-08.xncloud.xyz, port: 18000, type: vmess, uuid: bc7abdaa-1152-3ed2-a571-a993b064569c, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /niaoyun, ws-headers: {Host: mf-aws-sg-08.xncloud.xyz}}
-  - {name: 🇸🇬 【新鸟免费】新加坡SG-AWS 06 1.0x, server: mf-aws-sg-06.xncloud.xyz, port: 18000, type: vmess, uuid: bc7abdaa-1152-3ed2-a571-a993b064569c, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /niaoyun, ws-headers: {Host: mf-aws-sg-06.xncloud.xyz}}
-  - {name: 8度科技 168, server: mf-aws-sg-12.xncloud.xyz, port: 18000, type: vmess, uuid: 9d65783f-2802-3500-8058-c5e0d8bfdb3a, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /niaoyun, ws-headers: {Host: mf-aws-sg-12.xncloud.xyz}}
-  - {name: 8度科技 214, server: mf-aws-jp-05.xncloud.xyz, port: 18000, type: vmess, uuid: 9d65783f-2802-3500-8058-c5e0d8bfdb3a, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /niaoyun, ws-headers: {Host: mf-aws-jp-05.xncloud.xyz}}
-  - {name: 🇯🇵 【新鸟免费】日本JP-AWS 10 1.0x, server: mf-aws-jp-10.xncloud.xyz, port: 18000, type: vmess, uuid: bc7abdaa-1152-3ed2-a571-a993b064569c, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /niaoyun, ws-headers: {Host: mf-aws-jp-10.xncloud.xyz}}
-  - {name: 8度科技 136, server: mf-aws-jp-01.xncloud.xyz, port: 18000, type: vmess, uuid: fcb03748-d0ae-3a8c-8557-a6835cff733d, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /niaoyun, ws-headers: {Host: mf-aws-jp-01.xncloud.xyz}}
   - {name: 8度科技 14, server: shcn2-06b.iplc188.com, port: 10001, type: vmess, uuid: 65cac56d-4155-43c8-bae0-f368cb21f771, alterId: 1, cipher: auto, tls: false}
-  - {name: 🇸🇬 【新鸟免费】新加坡SG-AWS 09 1.0x, server: mf-aws-sg-09.xncloud.xyz, port: 18000, type: vmess, uuid: bc7abdaa-1152-3ed2-a571-a993b064569c, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /niaoyun, ws-headers: {Host: mf-aws-sg-09.xncloud.xyz}}
+  - {name: 🇺🇸 _US_美国, server: 45.58.150.130, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, network: ws, ws-path: /ws, ws-headers: {Host: dax6ujai.com}}
+  - {name: 8度科技 127, server: 1031kr.fans8.xyz, port: 80, type: vmess, uuid: fbf53107-1b42-3da5-a77d-6ad22544c0e9, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /v2ray, ws-headers: {Host: youtube-awekji}}
+  - {name: 8度科技 100, server: 142.4.123.249, port: 500, type: vmess, uuid: 0dcea9f2-10ac-11ec-a0bc-00163cf00cd9, alterId: 0, cipher: auto, tls: false}
+  - {name: 8度科技 21, server: 139.227.161.129, port: 10004, type: vmess, uuid: 65cac56d-4155-43c8-bae0-f368cb21f771, alterId: 1, cipher: auto, tls: false}
+  - {name: 8度科技 174, server: 1116yn.fans8.xyz, port: 80, type: vmess, uuid: fbf53107-1b42-3da5-a77d-6ad22544c0e9, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /v2ray, ws-headers: {Host: youtube-aweikeji}}
+  - {name: 8度科技 99, server: 42.157.8.162, port: 48106, type: vmess, uuid: 3959477e-55c4-453f-bc80-3b13e64891ac, alterId: 64, cipher: auto, tls: false}
+  - {name: 匈牙利, server: 185.252.223.203, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /path/243535322906, ws-headers: {Host: www.16675463.xyz}}
+  - {name: 8度科技 162, server: 146.56.177.34, port: 80, type: vmess, uuid: fbf53107-1b42-3da5-a77d-6ad22544c0e9, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /v2ray, ws-headers: {Host: 146.56.177.34}}
+  - {name: 🇸🇬 【新鸟免费】美国UA -DO 02 免流 1.0x, server: mf-do-ua-02.xncloud.xyz, port: 80, type: vmess, uuid: bc7abdaa-1152-3ed2-a571-a993b064569c, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /niaoyun, ws-headers: {Host: mf-do-ua-02.xncloud.xyz}}
+  - {name: 🇺🇸 美国(欢迎订阅youtube：8度科技), server: 192.186.129.66, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, network: ws, ws-path: /ws, ws-headers: {Host: usa-buffalo.lvuft.com}}
+  - {name: 🇺🇸 _US_美国 2, server: usa-dallas.lvuft.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, network: ws, ws-path: /ws, ws-headers: {Host: usa-dallas.lvuft.com}}
+  - {name: 🇺🇸 _US_美国 3, server: 45.35.84.162, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, network: ws, ws-path: /ws, ws-headers: {Host: usa-dallas.lvuft.com}}
+  - {name: 8度科技 157, server: mf-aws-kr-06.xncloud.xyz, port: 18000, type: vmess, uuid: 59ffe178-4542-3730-8b86-8603520afbb0, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /niaoyun, ws-headers: {Host: mf-aws-kr-06.xncloud.xyz}}
+  - {name: 🇸🇬 【新鸟免费】美国UA -DO 10 免流 1.0x, server: mf-do-ua-10.xncloud.xyz, port: 80, type: vmess, uuid: bc7abdaa-1152-3ed2-a571-a993b064569c, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /niaoyun, ws-headers: {Host: mf-do-ua-10.xncloud.xyz}}
+  - {name: 🇰🇷 【新鸟免费】韩国KR-AWS 10 1.0x, server: mf-aws-kr-10.xncloud.xyz, port: 18000, type: vmess, uuid: bc7abdaa-1152-3ed2-a571-a993b064569c, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /niaoyun, ws-headers: {Host: mf-aws-kr-10.xncloud.xyz}}
   - {name: 8度科技 119, server: mf-aws-jp-08.xncloud.xyz, port: 18000, type: vmess, uuid: fcb03748-d0ae-3a8c-8557-a6835cff733d, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /niaoyun, ws-headers: {Host: mf-aws-jp-08.xncloud.xyz}}
   - {name: 8度科技 32, server: shcu01.iplc188.com, port: 10004, type: vmess, uuid: 65cac56d-4155-43c8-bae0-f368cb21f771, alterId: 1, cipher: auto, tls: false}
-  - {name: 8度科技 146, server: mf-aws-jp-10.xncloud.xyz, port: 18000, type: vmess, uuid: 9d65783f-2802-3500-8058-c5e0d8bfdb3a, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /niaoyun, ws-headers: {Host: mf-aws-jp-10.xncloud.xyz}}
-  - {name: 🇯🇵 【新鸟免费】日本JP-AWS 01 1.0x, server: mf-aws-jp-01.xncloud.xyz, port: 18000, type: vmess, uuid: bc7abdaa-1152-3ed2-a571-a993b064569c, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /niaoyun, ws-headers: {Host: mf-aws-jp-01.xncloud.xyz}}
-  - {name: _NO_挪威, server: 46.29.218.6, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: default_name, server: 46.29.218.6, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: 🇨🇦 _CA_加拿大, server: 198.57.27.218, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: _NO_挪威 2, server: 46.29.218.6, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
-  - {name: 🇨🇦 _CA_加拿大 2, server: 198.57.27.218, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: 8度科技 231, server: 45.140.169.176, port: 10055, type: ss, cipher: aes-256-gcm, password: dongtaiwang.com}
-  - {name: 🇹🇼 _TW_台湾, server: 188.214.106.98, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: cNbqVVyUfbJFZ6S8EgRH}
-  - {name: 🇨🇦 _CA_加拿大 3, server: 184.75.208.234, port: 8388, type: ss, cipher: chacha20-ietf-poly1305, password: 47GH3wQRw7V4Zhd35bFs}
-  - {name: 8度科技 82, server: 198.244.150.26, port: 826, type: ss, cipher: chacha20-ietf-poly1305, password: sF43Xt2gONqcgFX563}
-  - {name: 🇫🇷 _FR_法国, server: 217.182.199.168, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: 8度科技 256, server: 172.99.190.87, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 8度科技 244, server: 66.55.92.101, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: NK4wZejCzDfPdWXTK4FW}
-  - {name: 🇺🇸 US(欢迎订阅youtube：8度科技), server: 172.99.190.87, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74}
-  - {name: 🇨🇦 _CA_加拿大 4, server: 184.75.208.234, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: 47GH3wQRw7V4Zhd35bFs}
-  - {name: 8度科技 199, server: 172.99.190.87, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: v2cross.com, server: shcn2-06b.iplc188.com, port: 10001, type: vmess, uuid: 65cac56d-4155-43c8-bae0-f368cb21f771, alterId: 0, cipher: auto, tls: false}
   - {name: 🇬🇧 _GB_英国, server: 172.99.190.87, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY}
-  - {name: 8度科技 81, server: 192.46.210.73, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
+  - {name: 🇺🇸 US(欢迎订阅youtube：8度科技), server: 172.99.190.87, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74}
+  - {name: t.me/AzadNet, server: 46.29.218.6, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v}
+  - {name: 🇨🇦 _CA_加拿大, server: 198.57.27.218, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: _29 | 6.78Mb#t.me/AzadNet, server: 46.29.218.6, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: FR_26#t.me/AzadNet, server: 145.239.1.137, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: _NO_挪威, server: 46.29.218.6, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
+  - {name: 8度科技 82, server: 198.244.150.26, port: 826, type: ss, cipher: chacha20-ietf-poly1305, password: sF43Xt2gONqcgFX563}
+  - {name: t.me/AzadNet 2, server: 46.29.218.6, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: default_name, server: 46.29.218.6, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: CA_7#t.me/AzadNet, server: 198.57.27.218, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: _26 | 7.95Mb#t.me/AzadNet, server: 145.239.1.137, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: AE_53 |28.63Mb#t.me/AzadNet, server: 217.138.193.42, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: kGm85U8ewgPXbKr5LGxc}
+  - {name: _NO_挪威 2, server: 46.29.218.6, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 🇨🇦 _CA_加拿大 2, server: 198.57.27.218, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: _28 | 3.40Mb#t.me/AzadNet, server: 46.29.218.6, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 8度科技 256, server: 172.99.190.87, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 8度科技 199, server: 172.99.190.87, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 8度科技 244, server: 66.55.92.101, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: NK4wZejCzDfPdWXTK4FW}
+  - {name: 🇨🇦 _CA_加拿大 3, server: 184.75.208.234, port: 8388, type: ss, cipher: chacha20-ietf-poly1305, password: 47GH3wQRw7V4Zhd35bFs}
+  - {name: JP_40#t.me/AzadNet, server: 172.105.232.147, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
   - {name: 🇬🇧 _GB_英国 2, server: 172.99.190.87, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: _PT_葡萄牙, server: 185.90.57.152, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: qSnstpCypymLvPeyLRqf}
-  - {name: 8度科技 105, server: 62.210.209.50, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
   - {name: 🇧🇪 _BE_比利时, server: 77.243.191.178, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: 47GH3wQRw7V4Zhd35bFs}
-  - {name: 🇭🇰 Play2 香港 - 遊戲專用|視頻限速 | 倍率:20, server: loe5aeno.nodeinfo.icu, port: 520, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: plain, protocol-param: 155402:h6F10T, obfs-param: 078e5155402.www.gov.hk}
+  - {name: 8度科技 231, server: 45.140.169.176, port: 10055, type: ss, cipher: aes-256-gcm, password: dongtaiwang.com}
+  - {name: 🇭🇰 HK_34#t.me/AzadNet, server: 118.107.244.112, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇭🇰 Large 香港05 - allmedia | MIEPL | 倍率:1.8, server: keixai3u.nodeinfo.icu, port: 6005, type: ssr, cipher: chacha20-ietf, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 155402:h6F10T, obfs-param: 078e5155402.www.gov.hk}
+  - {name: 🇭🇰 Large 香港17 - all | AIA | 倍率:1.8, server: inu8azei.nodeinfo.icu, port: 6017, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: plain, protocol-param: 155402:h6F10T, obfs-param: 078e5155402.www.gov.hk}
+  - {name: 🇭🇰 Large 香港18 - nf | AIA | 倍率:1.8, server: vieghei0.nodeinfo.icu, port: 6018, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 155402:h6F10T, obfs-param: 078e5155402.www.gov.hk}
+  - {name: 🇭🇰 Large 香港16 - allmedia | MIEPL | 倍率:1.6, server: quohvop8.nodeinfo.icu, port: 6016, type: ssr, cipher: chacha20-ietf, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 155402:h6F10T, obfs-param: 078e5155402.www.gov.hk}
   - {name: 🇬🇧 Super 英国01  | IEPL | 倍率:1.5, server: ahch4moo.nodeinfo.icu, port: 1124, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 155402:h6F10T, obfs-param: 078e5155402.www.gov.hk}
   - {name: 🇹🇼 Play3 台湾 - 遊戲專用|視頻限速 | 倍率:20, server: di0amoxu.nodeinfo.icu, port: 11130, type: ssr, cipher: chacha20-ietf, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 155402:h6F10T, obfs-param: 078e5155402.www.gov.hk}
-  - {name: 🇸🇬 Large 新加坡10 - all | IEPL | 倍率:1.5, server: aes7oosi.nodeinfo.icu, port: 3210, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 155402:h6F10T, obfs-param: 078e5155402.www.gov.hk}
-  - {name: 🇯🇵 Large 日本03 - allmedia | IEPL | 倍率:1.5, server: eeth0aey.nodeinfo.icu, port: 6303, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 155402:h6F10T, obfs-param: 078e5155402.www.gov.hk}
-  - {name: 胜天大佬赞助👍🐮80, server: 120.232.214.210, port: 19032, type: ssr, cipher: aes-128-cfb, password: qwQm0B, protocol: auth_aes128_md5, obfs: plain, protocol-param: 129134:cxCjTt, obfs-param: ""}
-  - {name: 🇸🇬 Large 新加坡09 - all | IEPL | 倍率:1.5, server: meeku3zi.nodeinfo.icu, port: 3209, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 155402:h6F10T, obfs-param: 078e5155402.www.gov.hk}
-  - {name: 胜天大佬赞助🐮80, server: 120.232.214.210, port: 19018, type: ssr, cipher: aes-128-cfb, password: qwQm0B, protocol: auth_aes128_md5, obfs: plain, protocol-param: 129134:cxCjTt, obfs-param: ""}
+  - {name: 🇸🇬 Large 新加坡12 - all | IEPL | 倍率:1.5, server: iephu5so.nodeinfo.icu, port: 3212, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 155402:h6F10T, obfs-param: 078e5155402.www.gov.hk}
   - {name: 🇺🇸 Large 美国05 - allmedia | IEPL | 倍率:1.5, server: athe0ugh.nodeinfo.icu, port: 1801, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 155402:h6F10T, obfs-param: 078e5155402.www.gov.hk}
   - {name: 🇸🇬 Large 新加坡08 - all | IEPL | 倍率:1.5, server: eu7aish2.nodeinfo.icu, port: 1004, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: plain, protocol-param: 155402:h6F10T, obfs-param: 078e5155402.www.gov.hk}
-  - {name: 🇭🇰 Super 香港03  | MIEPL | 倍率:2.5, server: vahv9diw.nodeinfo.icu, port: 7003, type: ssr, cipher: chacha20-ietf, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 155402:h6F10T, obfs-param: 078e5155402.www.gov.hk}
-  - {name: 胜天大佬赞助82, server: 120.232.40.42, port: 19001, type: ssr, cipher: aes-128-cfb, password: qwQm0B, protocol: auth_aes128_md5, obfs: plain, protocol-param: 129134:cxCjTt, obfs-param: ""}
-  - {name: 🇭🇰 Large 香港13 - all | AIA | 倍率:1.6, server: koo3cuiz.nodeinfo.icu, port: 6013, type: ssr, cipher: chacha20-ietf, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 155402:h6F10T, obfs-param: 078e5155402.www.gov.hk}
-  - {name: 🇭🇰 Super 香港07  | AIA| 倍率:2.3, server: jaibio5c.nodeinfo.icu, port: 7007, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 155402:h6F10T, obfs-param: 078e5155402.www.gov.hk}
-  - {name: 🇭🇰 Large 香港09 - nf | AIA | 倍率:1.6, server: eevahb9v.nodeinfo.icu, port: 6009, type: ssr, cipher: chacha20-ietf, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 155402:h6F10T, obfs-param: 078e5155402.www.gov.hk}
-  - {name: 🇭🇰 Large 香港11 - nf | AIA | 倍率:1.6, server: aezee4ea.nodeinfo.icu, port: 6011, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 155402:h6F10T, obfs-param: 078e5155402.www.gov.hk}
-  - {name: 🇭🇰 Large 香港20 - nf | AIA | 倍率:1.6, server: ti5mulix.nodeinfo.icu, port: 6020, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 155402:h6F10T, obfs-param: 078e5155402.www.gov.hk}
-  - {name: 🇭🇰 Large 香港18 - nf | AIA | 倍率:1.8, server: vieghei0.nodeinfo.icu, port: 6018, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 155402:h6F10T, obfs-param: 078e5155402.www.gov.hk}
-  - {name: 🇭🇰 Large 香港21 - nfo | MIEPL | 倍率:1.6, server: aic5ucu1.nodeinfo.icu, port: 6021, type: ssr, cipher: chacha20-ietf, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 155402:h6F10T, obfs-param: 078e5155402.www.gov.hk}
-  - {name: 🇭🇰 Large 香港05 - allmedia | MIEPL | 倍率:1.8, server: keixai3u.nodeinfo.icu, port: 6005, type: ssr, cipher: chacha20-ietf, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 155402:h6F10T, obfs-param: 078e5155402.www.gov.hk}
-  - {name: 🇭🇰 Large 香港12 - nf | AIA | 倍率:1.6, server: ahheil5u.nodeinfo.icu, port: 6012, type: ssr, cipher: chacha20-ietf, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 155402:h6F10T, obfs-param: 078e5155402.www.gov.hk}
-  - {name: 🇭🇰 Super 香港02  | MIEPL | 倍率:2.5, server: feeco8oo.nodeinfo.icu, port: 7002, type: ssr, cipher: chacha20-ietf, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 155402:h6F10T, obfs-param: 078e5155402.www.gov.hk}
-  - {name: 🇭🇰 Large 香港16 - allmedia | MIEPL | 倍率:1.6, server: quohvop8.nodeinfo.icu, port: 6016, type: ssr, cipher: chacha20-ietf, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 155402:h6F10T, obfs-param: 078e5155402.www.gov.hk}
-  - {name: 🇭🇰 Super 香港05  | AIA| 倍率:2.5, server: quaex7oo.nodeinfo.icu, port: 7005, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 155402:h6F10T, obfs-param: 078e5155402.www.gov.hk}
-  - {name: 🇭🇰 Super 香港01  | MIEPL | 倍率:2.8, server: ota2wier.nodeinfo.icu, port: 7001, type: ssr, cipher: chacha20-ietf, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 155402:h6F10T, obfs-param: 078e5155402.www.gov.hk}
-  - {name: 🇭🇰 Super 香港04  | MIEPL | 倍率:2.5, server: vureuva3.nodeinfo.icu, port: 7004, type: ssr, cipher: chacha20-ietf, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 155402:h6F10T, obfs-param: 078e5155402.www.gov.hk}
-  - {name: 🇭🇰 Super 香港08  | AIA| 倍率:2.3, server: aemoo9wi.nodeinfo.icu, port: 7008, type: ssr, cipher: chacha20-ietf, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 155402:h6F10T, obfs-param: 078e5155402.www.gov.hk}
-  - {name: 🇭🇰 Large 香港01 - allmedia | MIEPL | 倍率:1.8, server: phahw1un.nodeinfo.icu, port: 6001, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 155402:h6F10T, obfs-param: 078e5155402.www.gov.hk}
-  - {name: 🇭🇰 Large 香港10 - nf | AIA | 倍率:1.6, server: thoo6foh.nodeinfo.icu, port: 6010, type: ssr, cipher: chacha20-ietf, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 155402:h6F10T, obfs-param: 078e5155402.www.gov.hk}
-  - {name: 🇭🇰 Super 香港06  | AIA| 倍率:2.5, server: iqu5ujio.nodeinfo.icu, port: 7006, type: ssr, cipher: chacha20-ietf, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 155402:h6F10T, obfs-param: 078e5155402.www.gov.hk}
-  - {name: 🇭🇰 Large 香港15 - allmedia | MIEPL | 倍率:1.6, server: phu8iej2.nodeinfo.icu, port: 6015, type: ssr, cipher: chacha20-ietf, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 155402:h6F10T, obfs-param: 078e5155402.www.gov.hk}
-  - {name: 🇭🇰 Large 香港03 - allmedia | MIEPL | 倍率:1.8, server: wu3gadam.nodeinfo.icu, port: 6003, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 155402:h6F10T, obfs-param: 078e5155402.www.gov.hk}
-  - {name: 🇭🇰 Large 香港14 - nf | MIEPL | 倍率:1.6, server: utai3iw1.nodeinfo.icu, port: 6014, type: ssr, cipher: chacha20-ietf, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 155402:h6F10T, obfs-param: 078e5155402.www.gov.hk}
-  - {name: 🇭🇰 Large 香港04 - allmedia | MIEPL | 倍率:1.8, server: queigh5h.nodeinfo.icu, port: 6004, type: ssr, cipher: chacha20-ietf, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 155402:h6F10T, obfs-param: 078e5155402.www.gov.hk}
-  - {name: 🇭🇰 Large 香港17 - all | AIA | 倍率:1.8, server: inu8azei.nodeinfo.icu, port: 6017, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: plain, protocol-param: 155402:h6F10T, obfs-param: 078e5155402.www.gov.hk}
-  - {name: 🇭🇰 Large 香港02 - nf | MIEPL | 倍率:1.8, server: ooqu0eep.nodeinfo.icu, port: 6002, type: ssr, cipher: chacha20-ietf, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 155402:h6F10T, obfs-param: 078e5155402.www.gov.hk}
-  - {name: 胜天大佬赞助🐮83, server: 112.14.22.104, port: 19018, type: ssr, cipher: aes-128-cfb, password: qwQm0B, protocol: auth_aes128_md5, obfs: plain, protocol-param: 129134:cxCjTt, obfs-param: ""}
-  - {name: 胜天大佬赞助🐮82, server: 120.232.40.42, port: 19018, type: ssr, cipher: aes-128-cfb, password: qwQm0B, protocol: auth_aes128_md5, obfs: plain, protocol-param: 129134:cxCjTt, obfs-param: ""}
-  - {name: 胜天大佬赞助🐮79, server: 120.232.41.124, port: 19018, type: ssr, cipher: aes-128-cfb, password: qwQm0B, protocol: auth_aes128_md5, obfs: plain, protocol-param: 129134:cxCjTt, obfs-param: ""}
-  - {name: 胜天大佬赞助🐮78, server: 120.232.182.5, port: 19018, type: ssr, cipher: aes-128-cfb, password: qwQm0B, protocol: auth_aes128_md5, obfs: plain, protocol-param: 129134:cxCjTt, obfs-param: ""}
-  - {name: 胜天大佬赞助80, server: 120.232.214.210, port: 19001, type: ssr, cipher: aes-128-cfb, password: qwQm0B, protocol: auth_aes128_md5, obfs: plain, protocol-param: 129134:cxCjTt, obfs-param: ""}
-  - {name: 胜天大佬赞助😂👍🐮81, server: 120.232.182.190, port: 19056, type: ssr, cipher: aes-128-cfb, password: qwQm0B, protocol: auth_aes128_md5, obfs: plain, protocol-param: 129134:cxCjTt, obfs-param: ""}
-  - {name: 胜天大佬赞助👍🐮81, server: 120.232.182.190, port: 19032, type: ssr, cipher: aes-128-cfb, password: qwQm0B, protocol: auth_aes128_md5, obfs: plain, protocol-param: 129134:cxCjTt, obfs-param: ""}
-  - {name: 胜天大佬赞助💰82, server: 120.232.40.42, port: 19002, type: ssr, cipher: aes-128-cfb, password: qwQm0B, protocol: auth_aes128_md5, obfs: plain, protocol-param: 129134:cxCjTt, obfs-param: ""}
-  - {name: 胜天大佬赞助🐮81, server: 120.232.182.190, port: 19018, type: ssr, cipher: aes-128-cfb, password: qwQm0B, protocol: auth_aes128_md5, obfs: plain, protocol-param: 129134:cxCjTt, obfs-param: ""}
-  - {name: 🇭🇰 Large 香港07 - nf | MIEPL | 倍率:1.8, server: ac5mahye.nodeinfo.icu, port: 6007, type: ssr, cipher: chacha20-ietf, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 155402:h6F10T, obfs-param: 078e5155402.www.gov.hk}
-  - {name: 胜天大佬赞助💰81, server: 120.232.182.190, port: 19002, type: ssr, cipher: aes-128-cfb, password: qwQm0B, protocol: auth_aes128_md5, obfs: plain, protocol-param: 129134:cxCjTt, obfs-param: ""}
-  - {name: 胜天大佬赞助👍🐮82, server: 120.232.40.42, port: 19032, type: ssr, cipher: aes-128-cfb, password: qwQm0B, protocol: auth_aes128_md5, obfs: plain, protocol-param: 129134:cxCjTt, obfs-param: ""}
-  - {name: 🇺🇸 Super 美国01  | MIEPL | 倍率:1.8, server: ic8iz5xu.nodeinfo.icu, port: 1120, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 155402:h6F10T, obfs-param: 078e5155402.www.gov.hk}
-  - {name: 🇺🇸 Super 美国04  | MIEPL | 倍率:1.8, server: meb1aibe.nodeinfo.icu, port: 1133, type: ssr, cipher: chacha20-ietf, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 155402:h6F10T, obfs-param: 078e5155402.www.gov.hk}
-  - {name: 🇺🇸 Super 美国02  | MIEPL | 倍率:1.8, server: euchei9j.nodeinfo.icu, port: 1121, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 155402:h6F10T, obfs-param: 078e5155402.www.gov.hk}
-  - {name: 🇺🇸 Super 美国03  | MIEPL| 倍率:2, server: ahc1beib.nodeinfo.icu, port: 1132, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 155402:h6F10T, obfs-param: 078e5155402.www.gov.hk}
-  - {name: 胜天大佬赞助81, server: 120.232.182.190, port: 19001, type: ssr, cipher: aes-128-cfb, password: qwQm0B, protocol: auth_aes128_md5, obfs: plain, protocol-param: 129134:cxCjTt, obfs-param: ""}
-  - {name: 🇸🇬 Super 新加坡02  | IEPL | 倍率:2, server: gee3ahy3.nodeinfo.icu, port: 1128, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 155402:h6F10T, obfs-param: 078e5155402.www.gov.hk}
-  - {name: 🇰🇷 Large 韩国01 - nf | MIEPL | 倍率:1.6, server: peev0eey.nodeinfo.icu, port: 6101, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 155402:h6F10T, obfs-param: 078e5155402.www.gov.hk}
-  - {name: 胜天大佬赞助👍🐮83, server: 112.14.22.104, port: 19032, type: ssr, cipher: aes-128-cfb, password: qwQm0B, protocol: auth_aes128_md5, obfs: plain, protocol-param: 129134:cxCjTt, obfs-param: ""}
-  - {name: 胜天大佬赞助83, server: 112.14.22.104, port: 19001, type: ssr, cipher: aes-128-cfb, password: qwQm0B, protocol: auth_aes128_md5, obfs: plain, protocol-param: 129134:cxCjTt, obfs-param: ""}
-  - {name: 胜天大佬赞助😂👍🐮83, server: 112.14.22.104, port: 19056, type: ssr, cipher: aes-128-cfb, password: qwQm0B, protocol: auth_aes128_md5, obfs: plain, protocol-param: 129134:cxCjTt, obfs-param: ""}
-  - {name: 🇹🇼 Super 台湾03  | IEPL | 倍率:2.1, server: aedah1ch.nodeinfo.icu, port: 1130, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 155402:h6F10T, obfs-param: 078e5155402.www.gov.hk}
-  - {name: 胜天大佬赞助💰79, server: 120.232.41.124, port: 19002, type: ssr, cipher: aes-128-cfb, password: qwQm0B, protocol: auth_aes128_md5, obfs: plain, protocol-param: 129134:cxCjTt, obfs-param: ""}
-  - {name: 胜天大佬赞助😂👍🐮82, server: 120.232.40.42, port: 19056, type: ssr, cipher: aes-128-cfb, password: qwQm0B, protocol: auth_aes128_md5, obfs: plain, protocol-param: 129134:cxCjTt, obfs-param: ""}
-  - {name: 🇸🇬 Super 新加坡01  | MIEPL | 倍率:2, server: oexu8yee.nodeinfo.icu, port: 1125, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 155402:h6F10T, obfs-param: 078e5155402.www.gov.hk}
-  - {name: 🇭🇰 Large 香港08 - all | AIA | 倍率:1.6, server: ie2ohyai.nodeinfo.icu, port: 6008, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 155402:h6F10T, obfs-param: 078e5155402.www.gov.hk}
-  - {name: 胜天大佬赞助💰78, server: 120.232.182.5, port: 19002, type: ssr, cipher: aes-128-cfb, password: qwQm0B, protocol: auth_aes128_md5, obfs: plain, protocol-param: 129134:cxCjTt, obfs-param: ""}
-  - {name: 🇯🇵 Super 日本01  | MIEPL | 倍率:2, server: meiphen0.nodeinfo.icu, port: 1126, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: plain, protocol-param: 155402:h6F10T, obfs-param: 078e5155402.www.gov.hk}
-  - {name: 胜天大佬赞助👍🐮79, server: 120.232.41.124, port: 19032, type: ssr, cipher: aes-128-cfb, password: qwQm0B, protocol: auth_aes128_md5, obfs: plain, protocol-param: 129134:cxCjTt, obfs-param: ""}
-  - {name: 🇯🇵 Large 日本04 - allmedia | IEPL | 倍率:1.3, server: ib7uge9u.nodeinfo.icu, port: 6304, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 155402:h6F10T, obfs-param: 078e5155402.www.gov.hk}
-  - {name: 胜天大佬赞助😂👍🐮79, server: 120.232.41.124, port: 19056, type: ssr, cipher: aes-128-cfb, password: qwQm0B, protocol: auth_aes128_md5, obfs: plain, protocol-param: 129134:cxCjTt, obfs-param: ""}
-  - {name: 胜天大佬赞助79, server: 120.232.41.124, port: 19001, type: ssr, cipher: aes-128-cfb, password: qwQm0B, protocol: auth_aes128_md5, obfs: plain, protocol-param: 129134:cxCjTt, obfs-param: ""}
-  - {name: 🇯🇵 Large 日本05 - allmedia | IEPL | 倍率:1.3, server: powa8agh.nodeinfo.icu, port: 6305, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 155402:h6F10T, obfs-param: 078e5155402.www.gov.hk}
-  - {name: 胜天大佬赞助👍🐮78, server: 120.232.182.5, port: 19032, type: ssr, cipher: aes-128-cfb, password: qwQm0B, protocol: auth_aes128_md5, obfs: plain, protocol-param: 129134:cxCjTt, obfs-param: ""}
-  - {name: 🇹🇼 Large 台灣03 - all | MIEPL | 倍率:1.6, server: keem9bov.nodeinfo.icu, port: 6503, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 155402:h6F10T, obfs-param: 078e5155402.www.gov.hk}
-  - {name: 胜天大佬赞助😂👍🐮80, server: 120.232.214.210, port: 19056, type: ssr, cipher: aes-128-cfb, password: qwQm0B, protocol: auth_aes128_md5, obfs: plain, protocol-param: 129134:cxCjTt, obfs-param: ""}
   - {name: 🇹🇼 Large 台灣05 - all | IEPL | 倍率:1.5, server: eu1she3s.nodeinfo.icu, port: 700, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 155402:h6F10T, obfs-param: 078e5155402.www.gov.hk}
-  - {name: 🇸🇬 Large 新加坡01 - all | IEPL | 倍率:1.5, server: aigha5ay.nodeinfo.icu, port: 3201, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: plain, protocol-param: 155402:h6F10T, obfs-param: 078e5155402.www.gov.hk}
-  - {name: 胜天大佬赞助78, server: 120.232.182.5, port: 19001, type: ssr, cipher: aes-128-cfb, password: qwQm0B, protocol: auth_aes128_md5, obfs: plain, protocol-param: 129134:cxCjTt, obfs-param: ""}
-  - {name: 🇸🇬 Large 新加坡02 - all | IEPL | 倍率:1.5, server: roog5tee.nodeinfo.icu, port: 3202, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: plain, protocol-param: 155402:h6F10T, obfs-param: 078e5155402.www.gov.hk}
-  - {name: 🇹🇼 Super 台湾01  | MIEPL | 倍率:2.1, server: ohm9aizu.nodeinfo.icu, port: 1122, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: plain, protocol-param: 155402:h6F10T, obfs-param: 078e5155402.www.gov.hk}
-  - {name: 🇸🇬 Large 新加坡12 - all | IEPL | 倍率:1.5, server: iephu5so.nodeinfo.icu, port: 3212, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 155402:h6F10T, obfs-param: 078e5155402.www.gov.hk}
-  - {name: 胜天大佬赞助💰80, server: 120.232.214.210, port: 19002, type: ssr, cipher: aes-128-cfb, password: qwQm0B, protocol: auth_aes128_md5, obfs: plain, protocol-param: 129134:cxCjTt, obfs-param: ""}
   - {name: 🇹🇼 Large 台灣02 - all | IEPL | 倍率:1.8, server: yeen3opa.nodeinfo.icu, port: 6502, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 155402:h6F10T, obfs-param: 078e5155402.www.gov.hk}
-  - {name: 胜天大佬赞助😂👍🐮78, server: 120.232.182.5, port: 19056, type: ssr, cipher: aes-128-cfb, password: qwQm0B, protocol: auth_aes128_md5, obfs: plain, protocol-param: 129134:cxCjTt, obfs-param: ""}
+  - {name: 🇭🇰 Super 香港02  | MIEPL | 倍率:2.5, server: feeco8oo.nodeinfo.icu, port: 7002, type: ssr, cipher: chacha20-ietf, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 155402:h6F10T, obfs-param: 078e5155402.www.gov.hk}
+  - {name: 🇹🇼 Super 台湾03  | IEPL | 倍率:2.1, server: aedah1ch.nodeinfo.icu, port: 1130, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 155402:h6F10T, obfs-param: 078e5155402.www.gov.hk}
+  - {name: 🇭🇰 Large 香港02 - nf | MIEPL | 倍率:1.8, server: ooqu0eep.nodeinfo.icu, port: 6002, type: ssr, cipher: chacha20-ietf, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 155402:h6F10T, obfs-param: 078e5155402.www.gov.hk}
+  - {name: 🇭🇰 Large 香港03 - allmedia | MIEPL | 倍率:1.8, server: wu3gadam.nodeinfo.icu, port: 6003, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 155402:h6F10T, obfs-param: 078e5155402.www.gov.hk}
+  - {name: 🇭🇰 Large 香港21 - nfo | MIEPL | 倍率:1.6, server: aic5ucu1.nodeinfo.icu, port: 6021, type: ssr, cipher: chacha20-ietf, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 155402:h6F10T, obfs-param: 078e5155402.www.gov.hk}
+  - {name: 🇭🇰 Large 香港04 - allmedia | MIEPL | 倍率:1.8, server: queigh5h.nodeinfo.icu, port: 6004, type: ssr, cipher: chacha20-ietf, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 155402:h6F10T, obfs-param: 078e5155402.www.gov.hk}
+  - {name: 🇭🇰 Large 香港14 - nf | MIEPL | 倍率:1.6, server: utai3iw1.nodeinfo.icu, port: 6014, type: ssr, cipher: chacha20-ietf, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 155402:h6F10T, obfs-param: 078e5155402.www.gov.hk}
+  - {name: 🇭🇰 Large 香港15 - allmedia | MIEPL | 倍率:1.6, server: phu8iej2.nodeinfo.icu, port: 6015, type: ssr, cipher: chacha20-ietf, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 155402:h6F10T, obfs-param: 078e5155402.www.gov.hk}
+  - {name: 🇭🇰 Super 香港01  | MIEPL | 倍率:2.8, server: ota2wier.nodeinfo.icu, port: 7001, type: ssr, cipher: chacha20-ietf, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 155402:h6F10T, obfs-param: 078e5155402.www.gov.hk}
+  - {name: 🇭🇰 Large 香港22 - nf | AIA | 倍率:1.8, server: aquoh8xi.nodeinfo.icu, port: 6022, type: ssr, cipher: chacha20-ietf, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 155402:h6F10T, obfs-param: 078e5155402.www.gov.hk}
+  - {name: 🇭🇰 Super 香港05  | AIA| 倍率:2.5, server: quaex7oo.nodeinfo.icu, port: 7005, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 155402:h6F10T, obfs-param: 078e5155402.www.gov.hk}
+  - {name: 🇭🇰 Super 香港06  | AIA| 倍率:2.5, server: iqu5ujio.nodeinfo.icu, port: 7006, type: ssr, cipher: chacha20-ietf, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 155402:h6F10T, obfs-param: 078e5155402.www.gov.hk}
+  - {name: 🇭🇰 Super 香港08  | AIA| 倍率:2.3, server: aemoo9wi.nodeinfo.icu, port: 7008, type: ssr, cipher: chacha20-ietf, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 155402:h6F10T, obfs-param: 078e5155402.www.gov.hk}
+  - {name: 🇭🇰 Large 香港08 - all | AIA | 倍率:1.6, server: ie2ohyai.nodeinfo.icu, port: 6008, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 155402:h6F10T, obfs-param: 078e5155402.www.gov.hk}
+  - {name: 🇭🇰 Large 香港09 - nf | AIA | 倍率:1.6, server: eevahb9v.nodeinfo.icu, port: 6009, type: ssr, cipher: chacha20-ietf, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 155402:h6F10T, obfs-param: 078e5155402.www.gov.hk}
+  - {name: 🇭🇰 Large 香港10 - nf | AIA | 倍率:1.6, server: thoo6foh.nodeinfo.icu, port: 6010, type: ssr, cipher: chacha20-ietf, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 155402:h6F10T, obfs-param: 078e5155402.www.gov.hk}
+  - {name: 🇭🇰 Super 香港07  | AIA| 倍率:2.3, server: jaibio5c.nodeinfo.icu, port: 7007, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 155402:h6F10T, obfs-param: 078e5155402.www.gov.hk}
+  - {name: 🇭🇰 Large 香港11 - nf | AIA | 倍率:1.6, server: aezee4ea.nodeinfo.icu, port: 6011, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 155402:h6F10T, obfs-param: 078e5155402.www.gov.hk}
+  - {name: 🇭🇰 Large 香港12 - nf | AIA | 倍率:1.6, server: ahheil5u.nodeinfo.icu, port: 6012, type: ssr, cipher: chacha20-ietf, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 155402:h6F10T, obfs-param: 078e5155402.www.gov.hk}
+  - {name: 🇭🇰 Large 香港13 - all | AIA | 倍率:1.6, server: koo3cuiz.nodeinfo.icu, port: 6013, type: ssr, cipher: chacha20-ietf, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 155402:h6F10T, obfs-param: 078e5155402.www.gov.hk}
+  - {name: 🇭🇰 Large 香港07 - nf | MIEPL | 倍率:1.8, server: ac5mahye.nodeinfo.icu, port: 6007, type: ssr, cipher: chacha20-ietf, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 155402:h6F10T, obfs-param: 078e5155402.www.gov.hk}
+  - {name: 🇭🇰 Large 香港20 - nf | AIA | 倍率:1.6, server: ti5mulix.nodeinfo.icu, port: 6020, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 155402:h6F10T, obfs-param: 078e5155402.www.gov.hk}
+  - {name: 🇭🇰 Super 香港03  | MIEPL | 倍率:2.5, server: vahv9diw.nodeinfo.icu, port: 7003, type: ssr, cipher: chacha20-ietf, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 155402:h6F10T, obfs-param: 078e5155402.www.gov.hk}
+  - {name: 🇺🇸 Super 美国01  | MIEPL | 倍率:1.8, server: ic8iz5xu.nodeinfo.icu, port: 1120, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 155402:h6F10T, obfs-param: 078e5155402.www.gov.hk}
+  - {name: 🇭🇰 Super 香港04  | MIEPL | 倍率:2.5, server: vureuva3.nodeinfo.icu, port: 7004, type: ssr, cipher: chacha20-ietf, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 155402:h6F10T, obfs-param: 078e5155402.www.gov.hk}
+  - {name: 🇺🇸 Super 美国02  | MIEPL | 倍率:1.8, server: euchei9j.nodeinfo.icu, port: 1121, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 155402:h6F10T, obfs-param: 078e5155402.www.gov.hk}
+  - {name: 🇺🇸 Super 美国04  | MIEPL | 倍率:1.8, server: meb1aibe.nodeinfo.icu, port: 1133, type: ssr, cipher: chacha20-ietf, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 155402:h6F10T, obfs-param: 078e5155402.www.gov.hk}
+  - {name: 🇺🇸 Super 美国03  | MIEPL| 倍率:2, server: ahc1beib.nodeinfo.icu, port: 1132, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 155402:h6F10T, obfs-param: 078e5155402.www.gov.hk}
+  - {name: 🇰🇷 Large 韩国01 - nf | MIEPL | 倍率:1.6, server: peev0eey.nodeinfo.icu, port: 6101, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 155402:h6F10T, obfs-param: 078e5155402.www.gov.hk}
+  - {name: 🇭🇰 Large 香港01 - allmedia | MIEPL | 倍率:1.8, server: phahw1un.nodeinfo.icu, port: 6001, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 155402:h6F10T, obfs-param: 078e5155402.www.gov.hk}
+  - {name: 🇯🇵 Large 日本03 - allmedia | IEPL | 倍率:1.5, server: eeth0aey.nodeinfo.icu, port: 6303, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 155402:h6F10T, obfs-param: 078e5155402.www.gov.hk}
+  - {name: 🇯🇵 Large 日本04 - allmedia | IEPL | 倍率:1.3, server: ib7uge9u.nodeinfo.icu, port: 6304, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 155402:h6F10T, obfs-param: 078e5155402.www.gov.hk}
+  - {name: 🇯🇵 Super 日本01  | MIEPL | 倍率:2, server: meiphen0.nodeinfo.icu, port: 1126, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: plain, protocol-param: 155402:h6F10T, obfs-param: 078e5155402.www.gov.hk}
+  - {name: 🇯🇵 Large 日本05 - allmedia | IEPL | 倍率:1.3, server: powa8agh.nodeinfo.icu, port: 6305, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 155402:h6F10T, obfs-param: 078e5155402.www.gov.hk}
   - {name: 🇹🇼 Large 台灣04 - all | IEPL | 倍率:1.5, server: zahre8ai.nodeinfo.icu, port: 699, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 155402:h6F10T, obfs-param: 078e5155402.www.gov.hk}
-  - {name: 🇸🇬 Large 新加坡03 - all | MIEPL | 倍率:1.6, server: eim1kae9.nodeinfo.icu, port: 3203, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 155402:h6F10T, obfs-param: 078e5155402.www.gov.hk}
+  - {name: 🇸🇬 Large 新加坡10 - all | IEPL | 倍率:1.5, server: aes7oosi.nodeinfo.icu, port: 3210, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 155402:h6F10T, obfs-param: 078e5155402.www.gov.hk}
+  - {name: 🇸🇬 Large 新加坡07 - all | IEPL | 倍率:1.5, server: eer9iqu7.nodeinfo.icu, port: 1003, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: plain, protocol-param: 155402:h6F10T, obfs-param: 078e5155402.www.gov.hk}
+  - {name: 🇸🇬 Large 新加坡09 - all | IEPL | 倍率:1.5, server: meeku3zi.nodeinfo.icu, port: 3209, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 155402:h6F10T, obfs-param: 078e5155402.www.gov.hk}
+  - {name: 🇹🇼 Super 台湾04  | IEPL | 倍率:2.1, server: piizoh3x.nodeinfo.icu, port: 1131, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 155402:h6F10T, obfs-param: 078e5155402.www.gov.hk}
+  - {name: 🇸🇬 Super 新加坡02  | IEPL | 倍率:2, server: gee3ahy3.nodeinfo.icu, port: 1128, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 155402:h6F10T, obfs-param: 078e5155402.www.gov.hk}
   - {name: 🇹🇼 Super 台湾02  | MIEPL | 倍率:2.1, server: yoo5hoog.nodeinfo.icu, port: 1123, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 155402:h6F10T, obfs-param: 078e5155402.www.gov.hk}
+  - {name: 🇹🇼 Large 台灣01 - all | IEPL | 倍率:1.8, server: oogha1za.nodeinfo.icu, port: 6501, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 155402:h6F10T, obfs-param: 078e5155402.www.gov.hk}
+  - {name: 🇸🇬 Large 新加坡04 - all | MIEPL | 倍率:1.6, server: ainetu9e.nodeinfo.icu, port: 3204, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 155402:h6F10T, obfs-param: 078e5155402.www.gov.hk}
+  - {name: 🇸🇬 Large 新加坡02 - all | IEPL | 倍率:1.5, server: roog5tee.nodeinfo.icu, port: 3202, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: plain, protocol-param: 155402:h6F10T, obfs-param: 078e5155402.www.gov.hk}
+  - {name: 🇸🇬 Super 新加坡01  | MIEPL | 倍率:2, server: oexu8yee.nodeinfo.icu, port: 1125, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 155402:h6F10T, obfs-param: 078e5155402.www.gov.hk}
   - {name: 🇸🇬 Large 新加坡11 - all | IEPL | 倍率:1.5, server: quo7chie.nodeinfo.icu, port: 3211, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 155402:h6F10T, obfs-param: 078e5155402.www.gov.hk}
   - {name: 🇸🇬 Large 新加坡05 - all | IEPL | 倍率:1.5, server: aebek1oo.nodeinfo.icu, port: 1001, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: plain, protocol-param: 155402:h6F10T, obfs-param: 078e5155402.www.gov.hk}
-  - {name: 🇹🇼 Large 台灣01 - all | IEPL | 倍率:1.8, server: oogha1za.nodeinfo.icu, port: 6501, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 155402:h6F10T, obfs-param: 078e5155402.www.gov.hk}
-  - {name: 🇸🇬 Large 新加坡07 - all | IEPL | 倍率:1.5, server: eer9iqu7.nodeinfo.icu, port: 1003, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: plain, protocol-param: 155402:h6F10T, obfs-param: 078e5155402.www.gov.hk}
-  - {name: 🇸🇬 Large 新加坡04 - all | MIEPL | 倍率:1.6, server: ainetu9e.nodeinfo.icu, port: 3204, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 155402:h6F10T, obfs-param: 078e5155402.www.gov.hk}
-  - {name: 🇹🇼 Super 台湾04  | IEPL | 倍率:2.1, server: piizoh3x.nodeinfo.icu, port: 1131, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 155402:h6F10T, obfs-param: 078e5155402.www.gov.hk}
-  - {name: 🇭🇰 Large 香港22 - nf | AIA | 倍率:1.8, server: aquoh8xi.nodeinfo.icu, port: 6022, type: ssr, cipher: chacha20-ietf, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 155402:h6F10T, obfs-param: 078e5155402.www.gov.hk}
+  - {name: 🇹🇼 Large 台灣03 - all | MIEPL | 倍率:1.6, server: keem9bov.nodeinfo.icu, port: 6503, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 155402:h6F10T, obfs-param: 078e5155402.www.gov.hk}
+  - {name: 🇹🇼 Super 台湾01  | MIEPL | 倍率:2.1, server: ohm9aizu.nodeinfo.icu, port: 1122, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: plain, protocol-param: 155402:h6F10T, obfs-param: 078e5155402.www.gov.hk}
+  - {name: 🇸🇬 Large 新加坡01 - all | IEPL | 倍率:1.5, server: aigha5ay.nodeinfo.icu, port: 3201, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: plain, protocol-param: 155402:h6F10T, obfs-param: 078e5155402.www.gov.hk}
   - {name: 🇸🇬 Large 新加坡06 - all | IEPL | 倍率:1.5, server: phoo6aem.nodeinfo.icu, port: 1002, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: plain, protocol-param: 155402:h6F10T, obfs-param: 078e5155402.www.gov.hk}
 proxy-groups:
   - name: 🔰 节点选择
@@ -201,390 +118,224 @@ proxy-groups:
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 8度科技 67
-      - 8度科技 87
       - 8度科技 242
-      - 8度科技 100
-      - 8度科技 36
-      - 8度科技 96
-      - 8度科技 21
-      - 8度科技 163
-      - v2cross.com
-      - 8度科技 76
-      - 8度科技 147
-      - 8度科技 127
-      - 8度科技 99
-      - 🇺🇸 _US_美国
-      - 8度科技 69
-      - 8度科技 132
-      - 8度科技 162
-      - 8度科技 174
-      - 8度科技 160
-      - 8度科技 94
-      - 匈牙利
-      - 🇸🇬 【新鸟免费】美国UA -DO 02 免流 1.0x
-      - 🇸🇬 【新鸟免费】美国UA -DO 05 免流 1.0x
-      - 🇸🇬 【新鸟免费】美国UA -DO 08 免流 1.0x
-      - 🇸🇬 【新鸟免费】美国UA -DO 04 免流 1.0x
-      - 8度科技 205
-      - 🇸🇬 【新鸟免费】美国UA -DO 01 免流 1.0x
-      - 🇸🇬 【新鸟免费】美国UA -DO 03 免流 1.0x
-      - 🇸🇬 【新鸟免费】美国UA -DO 06 免流 1.0x
-      - 🇺🇸 _US_美国 2
-      - 🇸🇬 【新鸟免费】美国UA -DO 07 免流 1.0x
-      - 🇺🇸 美国(欢迎订阅youtube：8度科技)
-      - 🇺🇸 _US_美国 3
-      - 🇸🇬 【新鸟免费】美国UA -DO 10 免流 1.0x
-      - 8度科技 90
-      - 8度科技 54
-      - 8度科技 34
-      - 8度科技 206
-      - 8度科技 53
-      - 🇺🇸 美国加州C
-      - 8度科技 97
-      - 8度科技 245
-      - 8度科技 153
-      - 8度科技 98
-      - 🇰🇷 【新鸟免费】韩国KR-AWS 05 1.0x
-      - 🇰🇷 【新鸟免费】韩国KR-AWS 10 1.0x
-      - 8度科技 158
-      - 8度科技 202
-      - 🇸🇬 【新鸟免费】新加坡SG-AWS 12 1.0x
-      - 🇸🇬 【新鸟免费】新加坡SG-AWS 03 1.0x
-      - 🇸🇬 【新鸟免费】新加坡SG-AWS 11 1.0x
-      - 8度科技 232
-      - 🇯🇵 【新鸟免费】日本JP-AWS 08 1.0x
-      - 8度科技 250
-      - 🇰🇷 【新鸟免费】韩国KR-AWS 08 1.0x
-      - 🇸🇬 【新鸟免费】新加坡SG-AWS 13 1.0x
-      - 8度科技 110
-      - 8度科技 120
-      - 8度科技 251
-      - 8度科技 253
-      - 8度科技 212
-      - 8度科技 157
-      - 8度科技 219
-      - 8度科技 8
-      - 🇸🇬 【新鸟免费】新加坡SG-AWS 08 1.0x
-      - 🇸🇬 【新鸟免费】新加坡SG-AWS 06 1.0x
-      - 8度科技 168
-      - 8度科技 214
-      - 🇯🇵 【新鸟免费】日本JP-AWS 10 1.0x
-      - 8度科技 136
       - 8度科技 14
-      - 🇸🇬 【新鸟免费】新加坡SG-AWS 09 1.0x
+      - 🇺🇸 _US_美国
+      - 8度科技 127
+      - 8度科技 100
+      - 8度科技 21
+      - 8度科技 174
+      - 8度科技 99
+      - 匈牙利
+      - 8度科技 162
+      - 🇸🇬 【新鸟免费】美国UA -DO 02 免流 1.0x
+      - 🇺🇸 美国(欢迎订阅youtube：8度科技)
+      - 🇺🇸 _US_美国 2
+      - 🇺🇸 _US_美国 3
+      - 8度科技 157
+      - 🇸🇬 【新鸟免费】美国UA -DO 10 免流 1.0x
+      - 🇰🇷 【新鸟免费】韩国KR-AWS 10 1.0x
       - 8度科技 119
       - 8度科技 32
-      - 8度科技 146
-      - 🇯🇵 【新鸟免费】日本JP-AWS 01 1.0x
-      - _NO_挪威
-      - default_name
+      - v2cross.com
+      - 🇬🇧 _GB_英国
+      - 🇺🇸 US(欢迎订阅youtube：8度科技)
+      - t.me/AzadNet
       - 🇨🇦 _CA_加拿大
+      - _29 | 6.78Mb#t.me/AzadNet
+      - FR_26#t.me/AzadNet
+      - _NO_挪威
+      - 8度科技 82
+      - t.me/AzadNet 2
+      - default_name
+      - CA_7#t.me/AzadNet
+      - _26 | 7.95Mb#t.me/AzadNet
+      - AE_53 |28.63Mb#t.me/AzadNet
       - _NO_挪威 2
       - 🇨🇦 _CA_加拿大 2
-      - 8度科技 231
-      - 🇹🇼 _TW_台湾
-      - 🇨🇦 _CA_加拿大 3
-      - 8度科技 82
-      - 🇫🇷 _FR_法国
+      - _28 | 3.40Mb#t.me/AzadNet
       - 8度科技 256
-      - 8度科技 244
-      - 🇺🇸 US(欢迎订阅youtube：8度科技)
-      - 🇨🇦 _CA_加拿大 4
       - 8度科技 199
-      - 🇬🇧 _GB_英国
-      - 8度科技 81
+      - 8度科技 244
+      - 🇨🇦 _CA_加拿大 3
+      - JP_40#t.me/AzadNet
       - 🇬🇧 _GB_英国 2
-      - _PT_葡萄牙
-      - 8度科技 105
       - 🇧🇪 _BE_比利时
-      - 🇭🇰 Play2 香港 - 遊戲專用|視頻限速 | 倍率:20
+      - 8度科技 231
+      - 🇭🇰 HK_34#t.me/AzadNet
+      - 🇭🇰 Large 香港05 - allmedia | MIEPL | 倍率:1.8
+      - 🇭🇰 Large 香港17 - all | AIA | 倍率:1.8
+      - 🇭🇰 Large 香港18 - nf | AIA | 倍率:1.8
+      - 🇭🇰 Large 香港16 - allmedia | MIEPL | 倍率:1.6
       - 🇬🇧 Super 英国01  | IEPL | 倍率:1.5
       - 🇹🇼 Play3 台湾 - 遊戲專用|視頻限速 | 倍率:20
-      - 🇸🇬 Large 新加坡10 - all | IEPL | 倍率:1.5
-      - 🇯🇵 Large 日本03 - allmedia | IEPL | 倍率:1.5
-      - 胜天大佬赞助👍🐮80
-      - 🇸🇬 Large 新加坡09 - all | IEPL | 倍率:1.5
-      - 胜天大佬赞助🐮80
+      - 🇸🇬 Large 新加坡12 - all | IEPL | 倍率:1.5
       - 🇺🇸 Large 美国05 - allmedia | IEPL | 倍率:1.5
       - 🇸🇬 Large 新加坡08 - all | IEPL | 倍率:1.5
-      - 🇭🇰 Super 香港03  | MIEPL | 倍率:2.5
-      - 胜天大佬赞助82
-      - 🇭🇰 Large 香港13 - all | AIA | 倍率:1.6
-      - 🇭🇰 Super 香港07  | AIA| 倍率:2.3
-      - 🇭🇰 Large 香港09 - nf | AIA | 倍率:1.6
-      - 🇭🇰 Large 香港11 - nf | AIA | 倍率:1.6
-      - 🇭🇰 Large 香港20 - nf | AIA | 倍率:1.6
-      - 🇭🇰 Large 香港18 - nf | AIA | 倍率:1.8
-      - 🇭🇰 Large 香港21 - nfo | MIEPL | 倍率:1.6
-      - 🇭🇰 Large 香港05 - allmedia | MIEPL | 倍率:1.8
-      - 🇭🇰 Large 香港12 - nf | AIA | 倍率:1.6
-      - 🇭🇰 Super 香港02  | MIEPL | 倍率:2.5
-      - 🇭🇰 Large 香港16 - allmedia | MIEPL | 倍率:1.6
-      - 🇭🇰 Super 香港05  | AIA| 倍率:2.5
-      - 🇭🇰 Super 香港01  | MIEPL | 倍率:2.8
-      - 🇭🇰 Super 香港04  | MIEPL | 倍率:2.5
-      - 🇭🇰 Super 香港08  | AIA| 倍率:2.3
-      - 🇭🇰 Large 香港01 - allmedia | MIEPL | 倍率:1.8
-      - 🇭🇰 Large 香港10 - nf | AIA | 倍率:1.6
-      - 🇭🇰 Super 香港06  | AIA| 倍率:2.5
-      - 🇭🇰 Large 香港15 - allmedia | MIEPL | 倍率:1.6
-      - 🇭🇰 Large 香港03 - allmedia | MIEPL | 倍率:1.8
-      - 🇭🇰 Large 香港14 - nf | MIEPL | 倍率:1.6
-      - 🇭🇰 Large 香港04 - allmedia | MIEPL | 倍率:1.8
-      - 🇭🇰 Large 香港17 - all | AIA | 倍率:1.8
-      - 🇭🇰 Large 香港02 - nf | MIEPL | 倍率:1.8
-      - 胜天大佬赞助🐮83
-      - 胜天大佬赞助🐮82
-      - 胜天大佬赞助🐮79
-      - 胜天大佬赞助🐮78
-      - 胜天大佬赞助80
-      - 胜天大佬赞助😂👍🐮81
-      - 胜天大佬赞助👍🐮81
-      - 胜天大佬赞助💰82
-      - 胜天大佬赞助🐮81
-      - 🇭🇰 Large 香港07 - nf | MIEPL | 倍率:1.8
-      - 胜天大佬赞助💰81
-      - 胜天大佬赞助👍🐮82
-      - 🇺🇸 Super 美国01  | MIEPL | 倍率:1.8
-      - 🇺🇸 Super 美国04  | MIEPL | 倍率:1.8
-      - 🇺🇸 Super 美国02  | MIEPL | 倍率:1.8
-      - 🇺🇸 Super 美国03  | MIEPL| 倍率:2
-      - 胜天大佬赞助81
-      - 🇸🇬 Super 新加坡02  | IEPL | 倍率:2
-      - 🇰🇷 Large 韩国01 - nf | MIEPL | 倍率:1.6
-      - 胜天大佬赞助👍🐮83
-      - 胜天大佬赞助83
-      - 胜天大佬赞助😂👍🐮83
-      - 🇹🇼 Super 台湾03  | IEPL | 倍率:2.1
-      - 胜天大佬赞助💰79
-      - 胜天大佬赞助😂👍🐮82
-      - 🇸🇬 Super 新加坡01  | MIEPL | 倍率:2
-      - 🇭🇰 Large 香港08 - all | AIA | 倍率:1.6
-      - 胜天大佬赞助💰78
-      - 🇯🇵 Super 日本01  | MIEPL | 倍率:2
-      - 胜天大佬赞助👍🐮79
-      - 🇯🇵 Large 日本04 - allmedia | IEPL | 倍率:1.3
-      - 胜天大佬赞助😂👍🐮79
-      - 胜天大佬赞助79
-      - 🇯🇵 Large 日本05 - allmedia | IEPL | 倍率:1.3
-      - 胜天大佬赞助👍🐮78
-      - 🇹🇼 Large 台灣03 - all | MIEPL | 倍率:1.6
-      - 胜天大佬赞助😂👍🐮80
       - 🇹🇼 Large 台灣05 - all | IEPL | 倍率:1.5
-      - 🇸🇬 Large 新加坡01 - all | IEPL | 倍率:1.5
-      - 胜天大佬赞助78
-      - 🇸🇬 Large 新加坡02 - all | IEPL | 倍率:1.5
-      - 🇹🇼 Super 台湾01  | MIEPL | 倍率:2.1
-      - 🇸🇬 Large 新加坡12 - all | IEPL | 倍率:1.5
-      - 胜天大佬赞助💰80
       - 🇹🇼 Large 台灣02 - all | IEPL | 倍率:1.8
-      - 胜天大佬赞助😂👍🐮78
+      - 🇭🇰 Super 香港02  | MIEPL | 倍率:2.5
+      - 🇹🇼 Super 台湾03  | IEPL | 倍率:2.1
+      - 🇭🇰 Large 香港02 - nf | MIEPL | 倍率:1.8
+      - 🇭🇰 Large 香港03 - allmedia | MIEPL | 倍率:1.8
+      - 🇭🇰 Large 香港21 - nfo | MIEPL | 倍率:1.6
+      - 🇭🇰 Large 香港04 - allmedia | MIEPL | 倍率:1.8
+      - 🇭🇰 Large 香港14 - nf | MIEPL | 倍率:1.6
+      - 🇭🇰 Large 香港15 - allmedia | MIEPL | 倍率:1.6
+      - 🇭🇰 Super 香港01  | MIEPL | 倍率:2.8
+      - 🇭🇰 Large 香港22 - nf | AIA | 倍率:1.8
+      - 🇭🇰 Super 香港05  | AIA| 倍率:2.5
+      - 🇭🇰 Super 香港06  | AIA| 倍率:2.5
+      - 🇭🇰 Super 香港08  | AIA| 倍率:2.3
+      - 🇭🇰 Large 香港08 - all | AIA | 倍率:1.6
+      - 🇭🇰 Large 香港09 - nf | AIA | 倍率:1.6
+      - 🇭🇰 Large 香港10 - nf | AIA | 倍率:1.6
+      - 🇭🇰 Super 香港07  | AIA| 倍率:2.3
+      - 🇭🇰 Large 香港11 - nf | AIA | 倍率:1.6
+      - 🇭🇰 Large 香港12 - nf | AIA | 倍率:1.6
+      - 🇭🇰 Large 香港13 - all | AIA | 倍率:1.6
+      - 🇭🇰 Large 香港07 - nf | MIEPL | 倍率:1.8
+      - 🇭🇰 Large 香港20 - nf | AIA | 倍率:1.6
+      - 🇭🇰 Super 香港03  | MIEPL | 倍率:2.5
+      - 🇺🇸 Super 美国01  | MIEPL | 倍率:1.8
+      - 🇭🇰 Super 香港04  | MIEPL | 倍率:2.5
+      - 🇺🇸 Super 美国02  | MIEPL | 倍率:1.8
+      - 🇺🇸 Super 美国04  | MIEPL | 倍率:1.8
+      - 🇺🇸 Super 美国03  | MIEPL| 倍率:2
+      - 🇰🇷 Large 韩国01 - nf | MIEPL | 倍率:1.6
+      - 🇭🇰 Large 香港01 - allmedia | MIEPL | 倍率:1.8
+      - 🇯🇵 Large 日本03 - allmedia | IEPL | 倍率:1.5
+      - 🇯🇵 Large 日本04 - allmedia | IEPL | 倍率:1.3
+      - 🇯🇵 Super 日本01  | MIEPL | 倍率:2
+      - 🇯🇵 Large 日本05 - allmedia | IEPL | 倍率:1.3
       - 🇹🇼 Large 台灣04 - all | IEPL | 倍率:1.5
-      - 🇸🇬 Large 新加坡03 - all | MIEPL | 倍率:1.6
+      - 🇸🇬 Large 新加坡10 - all | IEPL | 倍率:1.5
+      - 🇸🇬 Large 新加坡07 - all | IEPL | 倍率:1.5
+      - 🇸🇬 Large 新加坡09 - all | IEPL | 倍率:1.5
+      - 🇹🇼 Super 台湾04  | IEPL | 倍率:2.1
+      - 🇸🇬 Super 新加坡02  | IEPL | 倍率:2
       - 🇹🇼 Super 台湾02  | MIEPL | 倍率:2.1
+      - 🇹🇼 Large 台灣01 - all | IEPL | 倍率:1.8
+      - 🇸🇬 Large 新加坡04 - all | MIEPL | 倍率:1.6
+      - 🇸🇬 Large 新加坡02 - all | IEPL | 倍率:1.5
+      - 🇸🇬 Super 新加坡01  | MIEPL | 倍率:2
       - 🇸🇬 Large 新加坡11 - all | IEPL | 倍率:1.5
       - 🇸🇬 Large 新加坡05 - all | IEPL | 倍率:1.5
-      - 🇹🇼 Large 台灣01 - all | IEPL | 倍率:1.8
-      - 🇸🇬 Large 新加坡07 - all | IEPL | 倍率:1.5
-      - 🇸🇬 Large 新加坡04 - all | MIEPL | 倍率:1.6
-      - 🇹🇼 Super 台湾04  | IEPL | 倍率:2.1
-      - 🇭🇰 Large 香港22 - nf | AIA | 倍率:1.8
+      - 🇹🇼 Large 台灣03 - all | MIEPL | 倍率:1.6
+      - 🇹🇼 Super 台湾01  | MIEPL | 倍率:2.1
+      - 🇸🇬 Large 新加坡01 - all | IEPL | 倍率:1.5
       - 🇸🇬 Large 新加坡06 - all | IEPL | 倍率:1.5
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 8度科技 67
-      - 8度科技 87
       - 8度科技 242
-      - 8度科技 100
-      - 8度科技 36
-      - 8度科技 96
-      - 8度科技 21
-      - 8度科技 163
-      - v2cross.com
-      - 8度科技 76
-      - 8度科技 147
-      - 8度科技 127
-      - 8度科技 99
-      - 🇺🇸 _US_美国
-      - 8度科技 69
-      - 8度科技 132
-      - 8度科技 162
-      - 8度科技 174
-      - 8度科技 160
-      - 8度科技 94
-      - 匈牙利
-      - 🇸🇬 【新鸟免费】美国UA -DO 02 免流 1.0x
-      - 🇸🇬 【新鸟免费】美国UA -DO 05 免流 1.0x
-      - 🇸🇬 【新鸟免费】美国UA -DO 08 免流 1.0x
-      - 🇸🇬 【新鸟免费】美国UA -DO 04 免流 1.0x
-      - 8度科技 205
-      - 🇸🇬 【新鸟免费】美国UA -DO 01 免流 1.0x
-      - 🇸🇬 【新鸟免费】美国UA -DO 03 免流 1.0x
-      - 🇸🇬 【新鸟免费】美国UA -DO 06 免流 1.0x
-      - 🇺🇸 _US_美国 2
-      - 🇸🇬 【新鸟免费】美国UA -DO 07 免流 1.0x
-      - 🇺🇸 美国(欢迎订阅youtube：8度科技)
-      - 🇺🇸 _US_美国 3
-      - 🇸🇬 【新鸟免费】美国UA -DO 10 免流 1.0x
-      - 8度科技 90
-      - 8度科技 54
-      - 8度科技 34
-      - 8度科技 206
-      - 8度科技 53
-      - 🇺🇸 美国加州C
-      - 8度科技 97
-      - 8度科技 245
-      - 8度科技 153
-      - 8度科技 98
-      - 🇰🇷 【新鸟免费】韩国KR-AWS 05 1.0x
-      - 🇰🇷 【新鸟免费】韩国KR-AWS 10 1.0x
-      - 8度科技 158
-      - 8度科技 202
-      - 🇸🇬 【新鸟免费】新加坡SG-AWS 12 1.0x
-      - 🇸🇬 【新鸟免费】新加坡SG-AWS 03 1.0x
-      - 🇸🇬 【新鸟免费】新加坡SG-AWS 11 1.0x
-      - 8度科技 232
-      - 🇯🇵 【新鸟免费】日本JP-AWS 08 1.0x
-      - 8度科技 250
-      - 🇰🇷 【新鸟免费】韩国KR-AWS 08 1.0x
-      - 🇸🇬 【新鸟免费】新加坡SG-AWS 13 1.0x
-      - 8度科技 110
-      - 8度科技 120
-      - 8度科技 251
-      - 8度科技 253
-      - 8度科技 212
-      - 8度科技 157
-      - 8度科技 219
-      - 8度科技 8
-      - 🇸🇬 【新鸟免费】新加坡SG-AWS 08 1.0x
-      - 🇸🇬 【新鸟免费】新加坡SG-AWS 06 1.0x
-      - 8度科技 168
-      - 8度科技 214
-      - 🇯🇵 【新鸟免费】日本JP-AWS 10 1.0x
-      - 8度科技 136
       - 8度科技 14
-      - 🇸🇬 【新鸟免费】新加坡SG-AWS 09 1.0x
+      - 🇺🇸 _US_美国
+      - 8度科技 127
+      - 8度科技 100
+      - 8度科技 21
+      - 8度科技 174
+      - 8度科技 99
+      - 匈牙利
+      - 8度科技 162
+      - 🇸🇬 【新鸟免费】美国UA -DO 02 免流 1.0x
+      - 🇺🇸 美国(欢迎订阅youtube：8度科技)
+      - 🇺🇸 _US_美国 2
+      - 🇺🇸 _US_美国 3
+      - 8度科技 157
+      - 🇸🇬 【新鸟免费】美国UA -DO 10 免流 1.0x
+      - 🇰🇷 【新鸟免费】韩国KR-AWS 10 1.0x
       - 8度科技 119
       - 8度科技 32
-      - 8度科技 146
-      - 🇯🇵 【新鸟免费】日本JP-AWS 01 1.0x
-      - _NO_挪威
-      - default_name
+      - v2cross.com
+      - 🇬🇧 _GB_英国
+      - 🇺🇸 US(欢迎订阅youtube：8度科技)
+      - t.me/AzadNet
       - 🇨🇦 _CA_加拿大
+      - _29 | 6.78Mb#t.me/AzadNet
+      - FR_26#t.me/AzadNet
+      - _NO_挪威
+      - 8度科技 82
+      - t.me/AzadNet 2
+      - default_name
+      - CA_7#t.me/AzadNet
+      - _26 | 7.95Mb#t.me/AzadNet
+      - AE_53 |28.63Mb#t.me/AzadNet
       - _NO_挪威 2
       - 🇨🇦 _CA_加拿大 2
-      - 8度科技 231
-      - 🇹🇼 _TW_台湾
-      - 🇨🇦 _CA_加拿大 3
-      - 8度科技 82
-      - 🇫🇷 _FR_法国
+      - _28 | 3.40Mb#t.me/AzadNet
       - 8度科技 256
-      - 8度科技 244
-      - 🇺🇸 US(欢迎订阅youtube：8度科技)
-      - 🇨🇦 _CA_加拿大 4
       - 8度科技 199
-      - 🇬🇧 _GB_英国
-      - 8度科技 81
+      - 8度科技 244
+      - 🇨🇦 _CA_加拿大 3
+      - JP_40#t.me/AzadNet
       - 🇬🇧 _GB_英国 2
-      - _PT_葡萄牙
-      - 8度科技 105
       - 🇧🇪 _BE_比利时
-      - 🇭🇰 Play2 香港 - 遊戲專用|視頻限速 | 倍率:20
+      - 8度科技 231
+      - 🇭🇰 HK_34#t.me/AzadNet
+      - 🇭🇰 Large 香港05 - allmedia | MIEPL | 倍率:1.8
+      - 🇭🇰 Large 香港17 - all | AIA | 倍率:1.8
+      - 🇭🇰 Large 香港18 - nf | AIA | 倍率:1.8
+      - 🇭🇰 Large 香港16 - allmedia | MIEPL | 倍率:1.6
       - 🇬🇧 Super 英国01  | IEPL | 倍率:1.5
       - 🇹🇼 Play3 台湾 - 遊戲專用|視頻限速 | 倍率:20
-      - 🇸🇬 Large 新加坡10 - all | IEPL | 倍率:1.5
-      - 🇯🇵 Large 日本03 - allmedia | IEPL | 倍率:1.5
-      - 胜天大佬赞助👍🐮80
-      - 🇸🇬 Large 新加坡09 - all | IEPL | 倍率:1.5
-      - 胜天大佬赞助🐮80
+      - 🇸🇬 Large 新加坡12 - all | IEPL | 倍率:1.5
       - 🇺🇸 Large 美国05 - allmedia | IEPL | 倍率:1.5
       - 🇸🇬 Large 新加坡08 - all | IEPL | 倍率:1.5
-      - 🇭🇰 Super 香港03  | MIEPL | 倍率:2.5
-      - 胜天大佬赞助82
-      - 🇭🇰 Large 香港13 - all | AIA | 倍率:1.6
-      - 🇭🇰 Super 香港07  | AIA| 倍率:2.3
-      - 🇭🇰 Large 香港09 - nf | AIA | 倍率:1.6
-      - 🇭🇰 Large 香港11 - nf | AIA | 倍率:1.6
-      - 🇭🇰 Large 香港20 - nf | AIA | 倍率:1.6
-      - 🇭🇰 Large 香港18 - nf | AIA | 倍率:1.8
-      - 🇭🇰 Large 香港21 - nfo | MIEPL | 倍率:1.6
-      - 🇭🇰 Large 香港05 - allmedia | MIEPL | 倍率:1.8
-      - 🇭🇰 Large 香港12 - nf | AIA | 倍率:1.6
-      - 🇭🇰 Super 香港02  | MIEPL | 倍率:2.5
-      - 🇭🇰 Large 香港16 - allmedia | MIEPL | 倍率:1.6
-      - 🇭🇰 Super 香港05  | AIA| 倍率:2.5
-      - 🇭🇰 Super 香港01  | MIEPL | 倍率:2.8
-      - 🇭🇰 Super 香港04  | MIEPL | 倍率:2.5
-      - 🇭🇰 Super 香港08  | AIA| 倍率:2.3
-      - 🇭🇰 Large 香港01 - allmedia | MIEPL | 倍率:1.8
-      - 🇭🇰 Large 香港10 - nf | AIA | 倍率:1.6
-      - 🇭🇰 Super 香港06  | AIA| 倍率:2.5
-      - 🇭🇰 Large 香港15 - allmedia | MIEPL | 倍率:1.6
-      - 🇭🇰 Large 香港03 - allmedia | MIEPL | 倍率:1.8
-      - 🇭🇰 Large 香港14 - nf | MIEPL | 倍率:1.6
-      - 🇭🇰 Large 香港04 - allmedia | MIEPL | 倍率:1.8
-      - 🇭🇰 Large 香港17 - all | AIA | 倍率:1.8
-      - 🇭🇰 Large 香港02 - nf | MIEPL | 倍率:1.8
-      - 胜天大佬赞助🐮83
-      - 胜天大佬赞助🐮82
-      - 胜天大佬赞助🐮79
-      - 胜天大佬赞助🐮78
-      - 胜天大佬赞助80
-      - 胜天大佬赞助😂👍🐮81
-      - 胜天大佬赞助👍🐮81
-      - 胜天大佬赞助💰82
-      - 胜天大佬赞助🐮81
-      - 🇭🇰 Large 香港07 - nf | MIEPL | 倍率:1.8
-      - 胜天大佬赞助💰81
-      - 胜天大佬赞助👍🐮82
-      - 🇺🇸 Super 美国01  | MIEPL | 倍率:1.8
-      - 🇺🇸 Super 美国04  | MIEPL | 倍率:1.8
-      - 🇺🇸 Super 美国02  | MIEPL | 倍率:1.8
-      - 🇺🇸 Super 美国03  | MIEPL| 倍率:2
-      - 胜天大佬赞助81
-      - 🇸🇬 Super 新加坡02  | IEPL | 倍率:2
-      - 🇰🇷 Large 韩国01 - nf | MIEPL | 倍率:1.6
-      - 胜天大佬赞助👍🐮83
-      - 胜天大佬赞助83
-      - 胜天大佬赞助😂👍🐮83
-      - 🇹🇼 Super 台湾03  | IEPL | 倍率:2.1
-      - 胜天大佬赞助💰79
-      - 胜天大佬赞助😂👍🐮82
-      - 🇸🇬 Super 新加坡01  | MIEPL | 倍率:2
-      - 🇭🇰 Large 香港08 - all | AIA | 倍率:1.6
-      - 胜天大佬赞助💰78
-      - 🇯🇵 Super 日本01  | MIEPL | 倍率:2
-      - 胜天大佬赞助👍🐮79
-      - 🇯🇵 Large 日本04 - allmedia | IEPL | 倍率:1.3
-      - 胜天大佬赞助😂👍🐮79
-      - 胜天大佬赞助79
-      - 🇯🇵 Large 日本05 - allmedia | IEPL | 倍率:1.3
-      - 胜天大佬赞助👍🐮78
-      - 🇹🇼 Large 台灣03 - all | MIEPL | 倍率:1.6
-      - 胜天大佬赞助😂👍🐮80
       - 🇹🇼 Large 台灣05 - all | IEPL | 倍率:1.5
-      - 🇸🇬 Large 新加坡01 - all | IEPL | 倍率:1.5
-      - 胜天大佬赞助78
-      - 🇸🇬 Large 新加坡02 - all | IEPL | 倍率:1.5
-      - 🇹🇼 Super 台湾01  | MIEPL | 倍率:2.1
-      - 🇸🇬 Large 新加坡12 - all | IEPL | 倍率:1.5
-      - 胜天大佬赞助💰80
       - 🇹🇼 Large 台灣02 - all | IEPL | 倍率:1.8
-      - 胜天大佬赞助😂👍🐮78
+      - 🇭🇰 Super 香港02  | MIEPL | 倍率:2.5
+      - 🇹🇼 Super 台湾03  | IEPL | 倍率:2.1
+      - 🇭🇰 Large 香港02 - nf | MIEPL | 倍率:1.8
+      - 🇭🇰 Large 香港03 - allmedia | MIEPL | 倍率:1.8
+      - 🇭🇰 Large 香港21 - nfo | MIEPL | 倍率:1.6
+      - 🇭🇰 Large 香港04 - allmedia | MIEPL | 倍率:1.8
+      - 🇭🇰 Large 香港14 - nf | MIEPL | 倍率:1.6
+      - 🇭🇰 Large 香港15 - allmedia | MIEPL | 倍率:1.6
+      - 🇭🇰 Super 香港01  | MIEPL | 倍率:2.8
+      - 🇭🇰 Large 香港22 - nf | AIA | 倍率:1.8
+      - 🇭🇰 Super 香港05  | AIA| 倍率:2.5
+      - 🇭🇰 Super 香港06  | AIA| 倍率:2.5
+      - 🇭🇰 Super 香港08  | AIA| 倍率:2.3
+      - 🇭🇰 Large 香港08 - all | AIA | 倍率:1.6
+      - 🇭🇰 Large 香港09 - nf | AIA | 倍率:1.6
+      - 🇭🇰 Large 香港10 - nf | AIA | 倍率:1.6
+      - 🇭🇰 Super 香港07  | AIA| 倍率:2.3
+      - 🇭🇰 Large 香港11 - nf | AIA | 倍率:1.6
+      - 🇭🇰 Large 香港12 - nf | AIA | 倍率:1.6
+      - 🇭🇰 Large 香港13 - all | AIA | 倍率:1.6
+      - 🇭🇰 Large 香港07 - nf | MIEPL | 倍率:1.8
+      - 🇭🇰 Large 香港20 - nf | AIA | 倍率:1.6
+      - 🇭🇰 Super 香港03  | MIEPL | 倍率:2.5
+      - 🇺🇸 Super 美国01  | MIEPL | 倍率:1.8
+      - 🇭🇰 Super 香港04  | MIEPL | 倍率:2.5
+      - 🇺🇸 Super 美国02  | MIEPL | 倍率:1.8
+      - 🇺🇸 Super 美国04  | MIEPL | 倍率:1.8
+      - 🇺🇸 Super 美国03  | MIEPL| 倍率:2
+      - 🇰🇷 Large 韩国01 - nf | MIEPL | 倍率:1.6
+      - 🇭🇰 Large 香港01 - allmedia | MIEPL | 倍率:1.8
+      - 🇯🇵 Large 日本03 - allmedia | IEPL | 倍率:1.5
+      - 🇯🇵 Large 日本04 - allmedia | IEPL | 倍率:1.3
+      - 🇯🇵 Super 日本01  | MIEPL | 倍率:2
+      - 🇯🇵 Large 日本05 - allmedia | IEPL | 倍率:1.3
       - 🇹🇼 Large 台灣04 - all | IEPL | 倍率:1.5
-      - 🇸🇬 Large 新加坡03 - all | MIEPL | 倍率:1.6
+      - 🇸🇬 Large 新加坡10 - all | IEPL | 倍率:1.5
+      - 🇸🇬 Large 新加坡07 - all | IEPL | 倍率:1.5
+      - 🇸🇬 Large 新加坡09 - all | IEPL | 倍率:1.5
+      - 🇹🇼 Super 台湾04  | IEPL | 倍率:2.1
+      - 🇸🇬 Super 新加坡02  | IEPL | 倍率:2
       - 🇹🇼 Super 台湾02  | MIEPL | 倍率:2.1
+      - 🇹🇼 Large 台灣01 - all | IEPL | 倍率:1.8
+      - 🇸🇬 Large 新加坡04 - all | MIEPL | 倍率:1.6
+      - 🇸🇬 Large 新加坡02 - all | IEPL | 倍率:1.5
+      - 🇸🇬 Super 新加坡01  | MIEPL | 倍率:2
       - 🇸🇬 Large 新加坡11 - all | IEPL | 倍率:1.5
       - 🇸🇬 Large 新加坡05 - all | IEPL | 倍率:1.5
-      - 🇹🇼 Large 台灣01 - all | IEPL | 倍率:1.8
-      - 🇸🇬 Large 新加坡07 - all | IEPL | 倍率:1.5
-      - 🇸🇬 Large 新加坡04 - all | MIEPL | 倍率:1.6
-      - 🇹🇼 Super 台湾04  | IEPL | 倍率:2.1
-      - 🇭🇰 Large 香港22 - nf | AIA | 倍率:1.8
+      - 🇹🇼 Large 台灣03 - all | MIEPL | 倍率:1.6
+      - 🇹🇼 Super 台湾01  | MIEPL | 倍率:2.1
+      - 🇸🇬 Large 新加坡01 - all | IEPL | 倍率:1.5
       - 🇸🇬 Large 新加坡06 - all | IEPL | 倍率:1.5
   - name: 🌍 国外媒体
     type: select
@@ -592,630 +343,379 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 8度科技 67
-      - 8度科技 87
       - 8度科技 242
-      - 8度科技 100
-      - 8度科技 36
-      - 8度科技 96
-      - 8度科技 21
-      - 8度科技 163
-      - v2cross.com
-      - 8度科技 76
-      - 8度科技 147
-      - 8度科技 127
-      - 8度科技 99
-      - 🇺🇸 _US_美国
-      - 8度科技 69
-      - 8度科技 132
-      - 8度科技 162
-      - 8度科技 174
-      - 8度科技 160
-      - 8度科技 94
-      - 匈牙利
-      - 🇸🇬 【新鸟免费】美国UA -DO 02 免流 1.0x
-      - 🇸🇬 【新鸟免费】美国UA -DO 05 免流 1.0x
-      - 🇸🇬 【新鸟免费】美国UA -DO 08 免流 1.0x
-      - 🇸🇬 【新鸟免费】美国UA -DO 04 免流 1.0x
-      - 8度科技 205
-      - 🇸🇬 【新鸟免费】美国UA -DO 01 免流 1.0x
-      - 🇸🇬 【新鸟免费】美国UA -DO 03 免流 1.0x
-      - 🇸🇬 【新鸟免费】美国UA -DO 06 免流 1.0x
-      - 🇺🇸 _US_美国 2
-      - 🇸🇬 【新鸟免费】美国UA -DO 07 免流 1.0x
-      - 🇺🇸 美国(欢迎订阅youtube：8度科技)
-      - 🇺🇸 _US_美国 3
-      - 🇸🇬 【新鸟免费】美国UA -DO 10 免流 1.0x
-      - 8度科技 90
-      - 8度科技 54
-      - 8度科技 34
-      - 8度科技 206
-      - 8度科技 53
-      - 🇺🇸 美国加州C
-      - 8度科技 97
-      - 8度科技 245
-      - 8度科技 153
-      - 8度科技 98
-      - 🇰🇷 【新鸟免费】韩国KR-AWS 05 1.0x
-      - 🇰🇷 【新鸟免费】韩国KR-AWS 10 1.0x
-      - 8度科技 158
-      - 8度科技 202
-      - 🇸🇬 【新鸟免费】新加坡SG-AWS 12 1.0x
-      - 🇸🇬 【新鸟免费】新加坡SG-AWS 03 1.0x
-      - 🇸🇬 【新鸟免费】新加坡SG-AWS 11 1.0x
-      - 8度科技 232
-      - 🇯🇵 【新鸟免费】日本JP-AWS 08 1.0x
-      - 8度科技 250
-      - 🇰🇷 【新鸟免费】韩国KR-AWS 08 1.0x
-      - 🇸🇬 【新鸟免费】新加坡SG-AWS 13 1.0x
-      - 8度科技 110
-      - 8度科技 120
-      - 8度科技 251
-      - 8度科技 253
-      - 8度科技 212
-      - 8度科技 157
-      - 8度科技 219
-      - 8度科技 8
-      - 🇸🇬 【新鸟免费】新加坡SG-AWS 08 1.0x
-      - 🇸🇬 【新鸟免费】新加坡SG-AWS 06 1.0x
-      - 8度科技 168
-      - 8度科技 214
-      - 🇯🇵 【新鸟免费】日本JP-AWS 10 1.0x
-      - 8度科技 136
       - 8度科技 14
-      - 🇸🇬 【新鸟免费】新加坡SG-AWS 09 1.0x
+      - 🇺🇸 _US_美国
+      - 8度科技 127
+      - 8度科技 100
+      - 8度科技 21
+      - 8度科技 174
+      - 8度科技 99
+      - 匈牙利
+      - 8度科技 162
+      - 🇸🇬 【新鸟免费】美国UA -DO 02 免流 1.0x
+      - 🇺🇸 美国(欢迎订阅youtube：8度科技)
+      - 🇺🇸 _US_美国 2
+      - 🇺🇸 _US_美国 3
+      - 8度科技 157
+      - 🇸🇬 【新鸟免费】美国UA -DO 10 免流 1.0x
+      - 🇰🇷 【新鸟免费】韩国KR-AWS 10 1.0x
       - 8度科技 119
       - 8度科技 32
-      - 8度科技 146
-      - 🇯🇵 【新鸟免费】日本JP-AWS 01 1.0x
-      - _NO_挪威
-      - default_name
+      - v2cross.com
+      - 🇬🇧 _GB_英国
+      - 🇺🇸 US(欢迎订阅youtube：8度科技)
+      - t.me/AzadNet
       - 🇨🇦 _CA_加拿大
+      - _29 | 6.78Mb#t.me/AzadNet
+      - FR_26#t.me/AzadNet
+      - _NO_挪威
+      - 8度科技 82
+      - t.me/AzadNet 2
+      - default_name
+      - CA_7#t.me/AzadNet
+      - _26 | 7.95Mb#t.me/AzadNet
+      - AE_53 |28.63Mb#t.me/AzadNet
       - _NO_挪威 2
       - 🇨🇦 _CA_加拿大 2
-      - 8度科技 231
-      - 🇹🇼 _TW_台湾
-      - 🇨🇦 _CA_加拿大 3
-      - 8度科技 82
-      - 🇫🇷 _FR_法国
+      - _28 | 3.40Mb#t.me/AzadNet
       - 8度科技 256
-      - 8度科技 244
-      - 🇺🇸 US(欢迎订阅youtube：8度科技)
-      - 🇨🇦 _CA_加拿大 4
       - 8度科技 199
-      - 🇬🇧 _GB_英国
-      - 8度科技 81
+      - 8度科技 244
+      - 🇨🇦 _CA_加拿大 3
+      - JP_40#t.me/AzadNet
       - 🇬🇧 _GB_英国 2
-      - _PT_葡萄牙
-      - 8度科技 105
       - 🇧🇪 _BE_比利时
-      - 🇭🇰 Play2 香港 - 遊戲專用|視頻限速 | 倍率:20
+      - 8度科技 231
+      - 🇭🇰 HK_34#t.me/AzadNet
+      - 🇭🇰 Large 香港05 - allmedia | MIEPL | 倍率:1.8
+      - 🇭🇰 Large 香港17 - all | AIA | 倍率:1.8
+      - 🇭🇰 Large 香港18 - nf | AIA | 倍率:1.8
+      - 🇭🇰 Large 香港16 - allmedia | MIEPL | 倍率:1.6
       - 🇬🇧 Super 英国01  | IEPL | 倍率:1.5
       - 🇹🇼 Play3 台湾 - 遊戲專用|視頻限速 | 倍率:20
-      - 🇸🇬 Large 新加坡10 - all | IEPL | 倍率:1.5
-      - 🇯🇵 Large 日本03 - allmedia | IEPL | 倍率:1.5
-      - 胜天大佬赞助👍🐮80
-      - 🇸🇬 Large 新加坡09 - all | IEPL | 倍率:1.5
-      - 胜天大佬赞助🐮80
+      - 🇸🇬 Large 新加坡12 - all | IEPL | 倍率:1.5
       - 🇺🇸 Large 美国05 - allmedia | IEPL | 倍率:1.5
       - 🇸🇬 Large 新加坡08 - all | IEPL | 倍率:1.5
-      - 🇭🇰 Super 香港03  | MIEPL | 倍率:2.5
-      - 胜天大佬赞助82
-      - 🇭🇰 Large 香港13 - all | AIA | 倍率:1.6
-      - 🇭🇰 Super 香港07  | AIA| 倍率:2.3
-      - 🇭🇰 Large 香港09 - nf | AIA | 倍率:1.6
-      - 🇭🇰 Large 香港11 - nf | AIA | 倍率:1.6
-      - 🇭🇰 Large 香港20 - nf | AIA | 倍率:1.6
-      - 🇭🇰 Large 香港18 - nf | AIA | 倍率:1.8
-      - 🇭🇰 Large 香港21 - nfo | MIEPL | 倍率:1.6
-      - 🇭🇰 Large 香港05 - allmedia | MIEPL | 倍率:1.8
-      - 🇭🇰 Large 香港12 - nf | AIA | 倍率:1.6
-      - 🇭🇰 Super 香港02  | MIEPL | 倍率:2.5
-      - 🇭🇰 Large 香港16 - allmedia | MIEPL | 倍率:1.6
-      - 🇭🇰 Super 香港05  | AIA| 倍率:2.5
-      - 🇭🇰 Super 香港01  | MIEPL | 倍率:2.8
-      - 🇭🇰 Super 香港04  | MIEPL | 倍率:2.5
-      - 🇭🇰 Super 香港08  | AIA| 倍率:2.3
-      - 🇭🇰 Large 香港01 - allmedia | MIEPL | 倍率:1.8
-      - 🇭🇰 Large 香港10 - nf | AIA | 倍率:1.6
-      - 🇭🇰 Super 香港06  | AIA| 倍率:2.5
-      - 🇭🇰 Large 香港15 - allmedia | MIEPL | 倍率:1.6
-      - 🇭🇰 Large 香港03 - allmedia | MIEPL | 倍率:1.8
-      - 🇭🇰 Large 香港14 - nf | MIEPL | 倍率:1.6
-      - 🇭🇰 Large 香港04 - allmedia | MIEPL | 倍率:1.8
-      - 🇭🇰 Large 香港17 - all | AIA | 倍率:1.8
-      - 🇭🇰 Large 香港02 - nf | MIEPL | 倍率:1.8
-      - 胜天大佬赞助🐮83
-      - 胜天大佬赞助🐮82
-      - 胜天大佬赞助🐮79
-      - 胜天大佬赞助🐮78
-      - 胜天大佬赞助80
-      - 胜天大佬赞助😂👍🐮81
-      - 胜天大佬赞助👍🐮81
-      - 胜天大佬赞助💰82
-      - 胜天大佬赞助🐮81
-      - 🇭🇰 Large 香港07 - nf | MIEPL | 倍率:1.8
-      - 胜天大佬赞助💰81
-      - 胜天大佬赞助👍🐮82
-      - 🇺🇸 Super 美国01  | MIEPL | 倍率:1.8
-      - 🇺🇸 Super 美国04  | MIEPL | 倍率:1.8
-      - 🇺🇸 Super 美国02  | MIEPL | 倍率:1.8
-      - 🇺🇸 Super 美国03  | MIEPL| 倍率:2
-      - 胜天大佬赞助81
-      - 🇸🇬 Super 新加坡02  | IEPL | 倍率:2
-      - 🇰🇷 Large 韩国01 - nf | MIEPL | 倍率:1.6
-      - 胜天大佬赞助👍🐮83
-      - 胜天大佬赞助83
-      - 胜天大佬赞助😂👍🐮83
-      - 🇹🇼 Super 台湾03  | IEPL | 倍率:2.1
-      - 胜天大佬赞助💰79
-      - 胜天大佬赞助😂👍🐮82
-      - 🇸🇬 Super 新加坡01  | MIEPL | 倍率:2
-      - 🇭🇰 Large 香港08 - all | AIA | 倍率:1.6
-      - 胜天大佬赞助💰78
-      - 🇯🇵 Super 日本01  | MIEPL | 倍率:2
-      - 胜天大佬赞助👍🐮79
-      - 🇯🇵 Large 日本04 - allmedia | IEPL | 倍率:1.3
-      - 胜天大佬赞助😂👍🐮79
-      - 胜天大佬赞助79
-      - 🇯🇵 Large 日本05 - allmedia | IEPL | 倍率:1.3
-      - 胜天大佬赞助👍🐮78
-      - 🇹🇼 Large 台灣03 - all | MIEPL | 倍率:1.6
-      - 胜天大佬赞助😂👍🐮80
       - 🇹🇼 Large 台灣05 - all | IEPL | 倍率:1.5
-      - 🇸🇬 Large 新加坡01 - all | IEPL | 倍率:1.5
-      - 胜天大佬赞助78
-      - 🇸🇬 Large 新加坡02 - all | IEPL | 倍率:1.5
-      - 🇹🇼 Super 台湾01  | MIEPL | 倍率:2.1
-      - 🇸🇬 Large 新加坡12 - all | IEPL | 倍率:1.5
-      - 胜天大佬赞助💰80
       - 🇹🇼 Large 台灣02 - all | IEPL | 倍率:1.8
-      - 胜天大佬赞助😂👍🐮78
+      - 🇭🇰 Super 香港02  | MIEPL | 倍率:2.5
+      - 🇹🇼 Super 台湾03  | IEPL | 倍率:2.1
+      - 🇭🇰 Large 香港02 - nf | MIEPL | 倍率:1.8
+      - 🇭🇰 Large 香港03 - allmedia | MIEPL | 倍率:1.8
+      - 🇭🇰 Large 香港21 - nfo | MIEPL | 倍率:1.6
+      - 🇭🇰 Large 香港04 - allmedia | MIEPL | 倍率:1.8
+      - 🇭🇰 Large 香港14 - nf | MIEPL | 倍率:1.6
+      - 🇭🇰 Large 香港15 - allmedia | MIEPL | 倍率:1.6
+      - 🇭🇰 Super 香港01  | MIEPL | 倍率:2.8
+      - 🇭🇰 Large 香港22 - nf | AIA | 倍率:1.8
+      - 🇭🇰 Super 香港05  | AIA| 倍率:2.5
+      - 🇭🇰 Super 香港06  | AIA| 倍率:2.5
+      - 🇭🇰 Super 香港08  | AIA| 倍率:2.3
+      - 🇭🇰 Large 香港08 - all | AIA | 倍率:1.6
+      - 🇭🇰 Large 香港09 - nf | AIA | 倍率:1.6
+      - 🇭🇰 Large 香港10 - nf | AIA | 倍率:1.6
+      - 🇭🇰 Super 香港07  | AIA| 倍率:2.3
+      - 🇭🇰 Large 香港11 - nf | AIA | 倍率:1.6
+      - 🇭🇰 Large 香港12 - nf | AIA | 倍率:1.6
+      - 🇭🇰 Large 香港13 - all | AIA | 倍率:1.6
+      - 🇭🇰 Large 香港07 - nf | MIEPL | 倍率:1.8
+      - 🇭🇰 Large 香港20 - nf | AIA | 倍率:1.6
+      - 🇭🇰 Super 香港03  | MIEPL | 倍率:2.5
+      - 🇺🇸 Super 美国01  | MIEPL | 倍率:1.8
+      - 🇭🇰 Super 香港04  | MIEPL | 倍率:2.5
+      - 🇺🇸 Super 美国02  | MIEPL | 倍率:1.8
+      - 🇺🇸 Super 美国04  | MIEPL | 倍率:1.8
+      - 🇺🇸 Super 美国03  | MIEPL| 倍率:2
+      - 🇰🇷 Large 韩国01 - nf | MIEPL | 倍率:1.6
+      - 🇭🇰 Large 香港01 - allmedia | MIEPL | 倍率:1.8
+      - 🇯🇵 Large 日本03 - allmedia | IEPL | 倍率:1.5
+      - 🇯🇵 Large 日本04 - allmedia | IEPL | 倍率:1.3
+      - 🇯🇵 Super 日本01  | MIEPL | 倍率:2
+      - 🇯🇵 Large 日本05 - allmedia | IEPL | 倍率:1.3
       - 🇹🇼 Large 台灣04 - all | IEPL | 倍率:1.5
-      - 🇸🇬 Large 新加坡03 - all | MIEPL | 倍率:1.6
+      - 🇸🇬 Large 新加坡10 - all | IEPL | 倍率:1.5
+      - 🇸🇬 Large 新加坡07 - all | IEPL | 倍率:1.5
+      - 🇸🇬 Large 新加坡09 - all | IEPL | 倍率:1.5
+      - 🇹🇼 Super 台湾04  | IEPL | 倍率:2.1
+      - 🇸🇬 Super 新加坡02  | IEPL | 倍率:2
       - 🇹🇼 Super 台湾02  | MIEPL | 倍率:2.1
+      - 🇹🇼 Large 台灣01 - all | IEPL | 倍率:1.8
+      - 🇸🇬 Large 新加坡04 - all | MIEPL | 倍率:1.6
+      - 🇸🇬 Large 新加坡02 - all | IEPL | 倍率:1.5
+      - 🇸🇬 Super 新加坡01  | MIEPL | 倍率:2
       - 🇸🇬 Large 新加坡11 - all | IEPL | 倍率:1.5
       - 🇸🇬 Large 新加坡05 - all | IEPL | 倍率:1.5
-      - 🇹🇼 Large 台灣01 - all | IEPL | 倍率:1.8
-      - 🇸🇬 Large 新加坡07 - all | IEPL | 倍率:1.5
-      - 🇸🇬 Large 新加坡04 - all | MIEPL | 倍率:1.6
-      - 🇹🇼 Super 台湾04  | IEPL | 倍率:2.1
-      - 🇭🇰 Large 香港22 - nf | AIA | 倍率:1.8
+      - 🇹🇼 Large 台灣03 - all | MIEPL | 倍率:1.6
+      - 🇹🇼 Super 台湾01  | MIEPL | 倍率:2.1
+      - 🇸🇬 Large 新加坡01 - all | IEPL | 倍率:1.5
       - 🇸🇬 Large 新加坡06 - all | IEPL | 倍率:1.5
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 🇹🇼 _TW_台湾
-      - 🇭🇰 Play2 香港 - 遊戲專用|視頻限速 | 倍率:20
-      - 🇹🇼 Play3 台湾 - 遊戲專用|視頻限速 | 倍率:20
-      - 🇭🇰 Super 香港03  | MIEPL | 倍率:2.5
-      - 🇭🇰 Large 香港13 - all | AIA | 倍率:1.6
-      - 🇭🇰 Super 香港07  | AIA| 倍率:2.3
-      - 🇭🇰 Large 香港09 - nf | AIA | 倍率:1.6
-      - 🇭🇰 Large 香港11 - nf | AIA | 倍率:1.6
-      - 🇭🇰 Large 香港20 - nf | AIA | 倍率:1.6
-      - 🇭🇰 Large 香港18 - nf | AIA | 倍率:1.8
-      - 🇭🇰 Large 香港21 - nfo | MIEPL | 倍率:1.6
       - 🇭🇰 Large 香港05 - allmedia | MIEPL | 倍率:1.8
-      - 🇭🇰 Large 香港12 - nf | AIA | 倍率:1.6
-      - 🇭🇰 Super 香港02  | MIEPL | 倍率:2.5
-      - 🇭🇰 Large 香港16 - allmedia | MIEPL | 倍率:1.6
-      - 🇭🇰 Super 香港05  | AIA| 倍率:2.5
-      - 🇭🇰 Super 香港01  | MIEPL | 倍率:2.8
-      - 🇭🇰 Super 香港04  | MIEPL | 倍率:2.5
-      - 🇭🇰 Super 香港08  | AIA| 倍率:2.3
-      - 🇭🇰 Large 香港01 - allmedia | MIEPL | 倍率:1.8
-      - 🇭🇰 Large 香港10 - nf | AIA | 倍率:1.6
-      - 🇭🇰 Super 香港06  | AIA| 倍率:2.5
-      - 🇭🇰 Large 香港15 - allmedia | MIEPL | 倍率:1.6
-      - 🇭🇰 Large 香港03 - allmedia | MIEPL | 倍率:1.8
-      - 🇭🇰 Large 香港14 - nf | MIEPL | 倍率:1.6
-      - 🇭🇰 Large 香港04 - allmedia | MIEPL | 倍率:1.8
       - 🇭🇰 Large 香港17 - all | AIA | 倍率:1.8
-      - 🇭🇰 Large 香港02 - nf | MIEPL | 倍率:1.8
-      - 🇭🇰 Large 香港07 - nf | MIEPL | 倍率:1.8
-      - 🇹🇼 Super 台湾03  | IEPL | 倍率:2.1
-      - 🇭🇰 Large 香港08 - all | AIA | 倍率:1.6
-      - 🇹🇼 Large 台灣03 - all | MIEPL | 倍率:1.6
+      - 🇭🇰 Large 香港18 - nf | AIA | 倍率:1.8
+      - 🇭🇰 Large 香港16 - allmedia | MIEPL | 倍率:1.6
+      - 🇹🇼 Play3 台湾 - 遊戲專用|視頻限速 | 倍率:20
       - 🇹🇼 Large 台灣05 - all | IEPL | 倍率:1.5
-      - 🇹🇼 Super 台湾01  | MIEPL | 倍率:2.1
       - 🇹🇼 Large 台灣02 - all | IEPL | 倍率:1.8
+      - 🇭🇰 Super 香港02  | MIEPL | 倍率:2.5
+      - 🇹🇼 Super 台湾03  | IEPL | 倍率:2.1
+      - 🇭🇰 Large 香港02 - nf | MIEPL | 倍率:1.8
+      - 🇭🇰 Large 香港03 - allmedia | MIEPL | 倍率:1.8
+      - 🇭🇰 Large 香港21 - nfo | MIEPL | 倍率:1.6
+      - 🇭🇰 Large 香港04 - allmedia | MIEPL | 倍率:1.8
+      - 🇭🇰 Large 香港14 - nf | MIEPL | 倍率:1.6
+      - 🇭🇰 Large 香港15 - allmedia | MIEPL | 倍率:1.6
+      - 🇭🇰 Super 香港01  | MIEPL | 倍率:2.8
+      - 🇭🇰 Large 香港22 - nf | AIA | 倍率:1.8
+      - 🇭🇰 Super 香港05  | AIA| 倍率:2.5
+      - 🇭🇰 Super 香港06  | AIA| 倍率:2.5
+      - 🇭🇰 Super 香港08  | AIA| 倍率:2.3
+      - 🇭🇰 Large 香港08 - all | AIA | 倍率:1.6
+      - 🇭🇰 Large 香港09 - nf | AIA | 倍率:1.6
+      - 🇭🇰 Large 香港10 - nf | AIA | 倍率:1.6
+      - 🇭🇰 Super 香港07  | AIA| 倍率:2.3
+      - 🇭🇰 Large 香港11 - nf | AIA | 倍率:1.6
+      - 🇭🇰 Large 香港12 - nf | AIA | 倍率:1.6
+      - 🇭🇰 Large 香港13 - all | AIA | 倍率:1.6
+      - 🇭🇰 Large 香港07 - nf | MIEPL | 倍率:1.8
+      - 🇭🇰 Large 香港20 - nf | AIA | 倍率:1.6
+      - 🇭🇰 Super 香港03  | MIEPL | 倍率:2.5
+      - 🇭🇰 Super 香港04  | MIEPL | 倍率:2.5
+      - 🇭🇰 Large 香港01 - allmedia | MIEPL | 倍率:1.8
       - 🇹🇼 Large 台灣04 - all | IEPL | 倍率:1.5
+      - 🇹🇼 Super 台湾04  | IEPL | 倍率:2.1
       - 🇹🇼 Super 台湾02  | MIEPL | 倍率:2.1
       - 🇹🇼 Large 台灣01 - all | IEPL | 倍率:1.8
-      - 🇹🇼 Super 台湾04  | IEPL | 倍率:2.1
-      - 🇭🇰 Large 香港22 - nf | AIA | 倍率:1.8
+      - 🇹🇼 Large 台灣03 - all | MIEPL | 倍率:1.6
+      - 🇹🇼 Super 台湾01  | MIEPL | 倍率:2.1
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 8度科技 67
-      - 8度科技 87
       - 8度科技 242
-      - 8度科技 100
-      - 8度科技 36
-      - 8度科技 96
-      - 8度科技 21
-      - 8度科技 163
-      - v2cross.com
-      - 8度科技 76
-      - 8度科技 147
-      - 8度科技 127
-      - 8度科技 99
-      - 🇺🇸 _US_美国
-      - 8度科技 69
-      - 8度科技 132
-      - 8度科技 162
-      - 8度科技 174
-      - 8度科技 160
-      - 8度科技 94
-      - 匈牙利
-      - 🇸🇬 【新鸟免费】美国UA -DO 02 免流 1.0x
-      - 🇸🇬 【新鸟免费】美国UA -DO 05 免流 1.0x
-      - 🇸🇬 【新鸟免费】美国UA -DO 08 免流 1.0x
-      - 🇸🇬 【新鸟免费】美国UA -DO 04 免流 1.0x
-      - 8度科技 205
-      - 🇸🇬 【新鸟免费】美国UA -DO 01 免流 1.0x
-      - 🇸🇬 【新鸟免费】美国UA -DO 03 免流 1.0x
-      - 🇸🇬 【新鸟免费】美国UA -DO 06 免流 1.0x
-      - 🇺🇸 _US_美国 2
-      - 🇸🇬 【新鸟免费】美国UA -DO 07 免流 1.0x
-      - 🇺🇸 美国(欢迎订阅youtube：8度科技)
-      - 🇺🇸 _US_美国 3
-      - 🇸🇬 【新鸟免费】美国UA -DO 10 免流 1.0x
-      - 8度科技 90
-      - 8度科技 54
-      - 8度科技 34
-      - 8度科技 206
-      - 8度科技 53
-      - 🇺🇸 美国加州C
-      - 8度科技 97
-      - 8度科技 245
-      - 8度科技 153
-      - 8度科技 98
-      - 🇰🇷 【新鸟免费】韩国KR-AWS 05 1.0x
-      - 🇰🇷 【新鸟免费】韩国KR-AWS 10 1.0x
-      - 8度科技 158
-      - 8度科技 202
-      - 🇸🇬 【新鸟免费】新加坡SG-AWS 12 1.0x
-      - 🇸🇬 【新鸟免费】新加坡SG-AWS 03 1.0x
-      - 🇸🇬 【新鸟免费】新加坡SG-AWS 11 1.0x
-      - 8度科技 232
-      - 🇯🇵 【新鸟免费】日本JP-AWS 08 1.0x
-      - 8度科技 250
-      - 🇰🇷 【新鸟免费】韩国KR-AWS 08 1.0x
-      - 🇸🇬 【新鸟免费】新加坡SG-AWS 13 1.0x
-      - 8度科技 110
-      - 8度科技 120
-      - 8度科技 251
-      - 8度科技 253
-      - 8度科技 212
-      - 8度科技 157
-      - 8度科技 219
-      - 8度科技 8
-      - 🇸🇬 【新鸟免费】新加坡SG-AWS 08 1.0x
-      - 🇸🇬 【新鸟免费】新加坡SG-AWS 06 1.0x
-      - 8度科技 168
-      - 8度科技 214
-      - 🇯🇵 【新鸟免费】日本JP-AWS 10 1.0x
-      - 8度科技 136
       - 8度科技 14
-      - 🇸🇬 【新鸟免费】新加坡SG-AWS 09 1.0x
+      - 🇺🇸 _US_美国
+      - 8度科技 127
+      - 8度科技 100
+      - 8度科技 21
+      - 8度科技 174
+      - 8度科技 99
+      - 匈牙利
+      - 8度科技 162
+      - 🇸🇬 【新鸟免费】美国UA -DO 02 免流 1.0x
+      - 🇺🇸 美国(欢迎订阅youtube：8度科技)
+      - 🇺🇸 _US_美国 2
+      - 🇺🇸 _US_美国 3
+      - 8度科技 157
+      - 🇸🇬 【新鸟免费】美国UA -DO 10 免流 1.0x
+      - 🇰🇷 【新鸟免费】韩国KR-AWS 10 1.0x
       - 8度科技 119
       - 8度科技 32
-      - 8度科技 146
-      - 🇯🇵 【新鸟免费】日本JP-AWS 01 1.0x
-      - _NO_挪威
-      - default_name
+      - v2cross.com
+      - 🇬🇧 _GB_英国
+      - 🇺🇸 US(欢迎订阅youtube：8度科技)
+      - t.me/AzadNet
       - 🇨🇦 _CA_加拿大
+      - _29 | 6.78Mb#t.me/AzadNet
+      - FR_26#t.me/AzadNet
+      - _NO_挪威
+      - 8度科技 82
+      - t.me/AzadNet 2
+      - default_name
+      - CA_7#t.me/AzadNet
+      - _26 | 7.95Mb#t.me/AzadNet
+      - AE_53 |28.63Mb#t.me/AzadNet
       - _NO_挪威 2
       - 🇨🇦 _CA_加拿大 2
-      - 8度科技 231
-      - 🇹🇼 _TW_台湾
-      - 🇨🇦 _CA_加拿大 3
-      - 8度科技 82
-      - 🇫🇷 _FR_法国
+      - _28 | 3.40Mb#t.me/AzadNet
       - 8度科技 256
-      - 8度科技 244
-      - 🇺🇸 US(欢迎订阅youtube：8度科技)
-      - 🇨🇦 _CA_加拿大 4
       - 8度科技 199
-      - 🇬🇧 _GB_英国
-      - 8度科技 81
+      - 8度科技 244
+      - 🇨🇦 _CA_加拿大 3
+      - JP_40#t.me/AzadNet
       - 🇬🇧 _GB_英国 2
-      - _PT_葡萄牙
-      - 8度科技 105
       - 🇧🇪 _BE_比利时
-      - 🇭🇰 Play2 香港 - 遊戲專用|視頻限速 | 倍率:20
+      - 8度科技 231
+      - 🇭🇰 HK_34#t.me/AzadNet
+      - 🇭🇰 Large 香港05 - allmedia | MIEPL | 倍率:1.8
+      - 🇭🇰 Large 香港17 - all | AIA | 倍率:1.8
+      - 🇭🇰 Large 香港18 - nf | AIA | 倍率:1.8
+      - 🇭🇰 Large 香港16 - allmedia | MIEPL | 倍率:1.6
       - 🇬🇧 Super 英国01  | IEPL | 倍率:1.5
       - 🇹🇼 Play3 台湾 - 遊戲專用|視頻限速 | 倍率:20
-      - 🇸🇬 Large 新加坡10 - all | IEPL | 倍率:1.5
-      - 🇯🇵 Large 日本03 - allmedia | IEPL | 倍率:1.5
-      - 胜天大佬赞助👍🐮80
-      - 🇸🇬 Large 新加坡09 - all | IEPL | 倍率:1.5
-      - 胜天大佬赞助🐮80
+      - 🇸🇬 Large 新加坡12 - all | IEPL | 倍率:1.5
       - 🇺🇸 Large 美国05 - allmedia | IEPL | 倍率:1.5
       - 🇸🇬 Large 新加坡08 - all | IEPL | 倍率:1.5
-      - 🇭🇰 Super 香港03  | MIEPL | 倍率:2.5
-      - 胜天大佬赞助82
-      - 🇭🇰 Large 香港13 - all | AIA | 倍率:1.6
-      - 🇭🇰 Super 香港07  | AIA| 倍率:2.3
-      - 🇭🇰 Large 香港09 - nf | AIA | 倍率:1.6
-      - 🇭🇰 Large 香港11 - nf | AIA | 倍率:1.6
-      - 🇭🇰 Large 香港20 - nf | AIA | 倍率:1.6
-      - 🇭🇰 Large 香港18 - nf | AIA | 倍率:1.8
-      - 🇭🇰 Large 香港21 - nfo | MIEPL | 倍率:1.6
-      - 🇭🇰 Large 香港05 - allmedia | MIEPL | 倍率:1.8
-      - 🇭🇰 Large 香港12 - nf | AIA | 倍率:1.6
-      - 🇭🇰 Super 香港02  | MIEPL | 倍率:2.5
-      - 🇭🇰 Large 香港16 - allmedia | MIEPL | 倍率:1.6
-      - 🇭🇰 Super 香港05  | AIA| 倍率:2.5
-      - 🇭🇰 Super 香港01  | MIEPL | 倍率:2.8
-      - 🇭🇰 Super 香港04  | MIEPL | 倍率:2.5
-      - 🇭🇰 Super 香港08  | AIA| 倍率:2.3
-      - 🇭🇰 Large 香港01 - allmedia | MIEPL | 倍率:1.8
-      - 🇭🇰 Large 香港10 - nf | AIA | 倍率:1.6
-      - 🇭🇰 Super 香港06  | AIA| 倍率:2.5
-      - 🇭🇰 Large 香港15 - allmedia | MIEPL | 倍率:1.6
-      - 🇭🇰 Large 香港03 - allmedia | MIEPL | 倍率:1.8
-      - 🇭🇰 Large 香港14 - nf | MIEPL | 倍率:1.6
-      - 🇭🇰 Large 香港04 - allmedia | MIEPL | 倍率:1.8
-      - 🇭🇰 Large 香港17 - all | AIA | 倍率:1.8
-      - 🇭🇰 Large 香港02 - nf | MIEPL | 倍率:1.8
-      - 胜天大佬赞助🐮83
-      - 胜天大佬赞助🐮82
-      - 胜天大佬赞助🐮79
-      - 胜天大佬赞助🐮78
-      - 胜天大佬赞助80
-      - 胜天大佬赞助😂👍🐮81
-      - 胜天大佬赞助👍🐮81
-      - 胜天大佬赞助💰82
-      - 胜天大佬赞助🐮81
-      - 🇭🇰 Large 香港07 - nf | MIEPL | 倍率:1.8
-      - 胜天大佬赞助💰81
-      - 胜天大佬赞助👍🐮82
-      - 🇺🇸 Super 美国01  | MIEPL | 倍率:1.8
-      - 🇺🇸 Super 美国04  | MIEPL | 倍率:1.8
-      - 🇺🇸 Super 美国02  | MIEPL | 倍率:1.8
-      - 🇺🇸 Super 美国03  | MIEPL| 倍率:2
-      - 胜天大佬赞助81
-      - 🇸🇬 Super 新加坡02  | IEPL | 倍率:2
-      - 🇰🇷 Large 韩国01 - nf | MIEPL | 倍率:1.6
-      - 胜天大佬赞助👍🐮83
-      - 胜天大佬赞助83
-      - 胜天大佬赞助😂👍🐮83
-      - 🇹🇼 Super 台湾03  | IEPL | 倍率:2.1
-      - 胜天大佬赞助💰79
-      - 胜天大佬赞助😂👍🐮82
-      - 🇸🇬 Super 新加坡01  | MIEPL | 倍率:2
-      - 🇭🇰 Large 香港08 - all | AIA | 倍率:1.6
-      - 胜天大佬赞助💰78
-      - 🇯🇵 Super 日本01  | MIEPL | 倍率:2
-      - 胜天大佬赞助👍🐮79
-      - 🇯🇵 Large 日本04 - allmedia | IEPL | 倍率:1.3
-      - 胜天大佬赞助😂👍🐮79
-      - 胜天大佬赞助79
-      - 🇯🇵 Large 日本05 - allmedia | IEPL | 倍率:1.3
-      - 胜天大佬赞助👍🐮78
-      - 🇹🇼 Large 台灣03 - all | MIEPL | 倍率:1.6
-      - 胜天大佬赞助😂👍🐮80
       - 🇹🇼 Large 台灣05 - all | IEPL | 倍率:1.5
-      - 🇸🇬 Large 新加坡01 - all | IEPL | 倍率:1.5
-      - 胜天大佬赞助78
-      - 🇸🇬 Large 新加坡02 - all | IEPL | 倍率:1.5
-      - 🇹🇼 Super 台湾01  | MIEPL | 倍率:2.1
-      - 🇸🇬 Large 新加坡12 - all | IEPL | 倍率:1.5
-      - 胜天大佬赞助💰80
       - 🇹🇼 Large 台灣02 - all | IEPL | 倍率:1.8
-      - 胜天大佬赞助😂👍🐮78
+      - 🇭🇰 Super 香港02  | MIEPL | 倍率:2.5
+      - 🇹🇼 Super 台湾03  | IEPL | 倍率:2.1
+      - 🇭🇰 Large 香港02 - nf | MIEPL | 倍率:1.8
+      - 🇭🇰 Large 香港03 - allmedia | MIEPL | 倍率:1.8
+      - 🇭🇰 Large 香港21 - nfo | MIEPL | 倍率:1.6
+      - 🇭🇰 Large 香港04 - allmedia | MIEPL | 倍率:1.8
+      - 🇭🇰 Large 香港14 - nf | MIEPL | 倍率:1.6
+      - 🇭🇰 Large 香港15 - allmedia | MIEPL | 倍率:1.6
+      - 🇭🇰 Super 香港01  | MIEPL | 倍率:2.8
+      - 🇭🇰 Large 香港22 - nf | AIA | 倍率:1.8
+      - 🇭🇰 Super 香港05  | AIA| 倍率:2.5
+      - 🇭🇰 Super 香港06  | AIA| 倍率:2.5
+      - 🇭🇰 Super 香港08  | AIA| 倍率:2.3
+      - 🇭🇰 Large 香港08 - all | AIA | 倍率:1.6
+      - 🇭🇰 Large 香港09 - nf | AIA | 倍率:1.6
+      - 🇭🇰 Large 香港10 - nf | AIA | 倍率:1.6
+      - 🇭🇰 Super 香港07  | AIA| 倍率:2.3
+      - 🇭🇰 Large 香港11 - nf | AIA | 倍率:1.6
+      - 🇭🇰 Large 香港12 - nf | AIA | 倍率:1.6
+      - 🇭🇰 Large 香港13 - all | AIA | 倍率:1.6
+      - 🇭🇰 Large 香港07 - nf | MIEPL | 倍率:1.8
+      - 🇭🇰 Large 香港20 - nf | AIA | 倍率:1.6
+      - 🇭🇰 Super 香港03  | MIEPL | 倍率:2.5
+      - 🇺🇸 Super 美国01  | MIEPL | 倍率:1.8
+      - 🇭🇰 Super 香港04  | MIEPL | 倍率:2.5
+      - 🇺🇸 Super 美国02  | MIEPL | 倍率:1.8
+      - 🇺🇸 Super 美国04  | MIEPL | 倍率:1.8
+      - 🇺🇸 Super 美国03  | MIEPL| 倍率:2
+      - 🇰🇷 Large 韩国01 - nf | MIEPL | 倍率:1.6
+      - 🇭🇰 Large 香港01 - allmedia | MIEPL | 倍率:1.8
+      - 🇯🇵 Large 日本03 - allmedia | IEPL | 倍率:1.5
+      - 🇯🇵 Large 日本04 - allmedia | IEPL | 倍率:1.3
+      - 🇯🇵 Super 日本01  | MIEPL | 倍率:2
+      - 🇯🇵 Large 日本05 - allmedia | IEPL | 倍率:1.3
       - 🇹🇼 Large 台灣04 - all | IEPL | 倍率:1.5
-      - 🇸🇬 Large 新加坡03 - all | MIEPL | 倍率:1.6
+      - 🇸🇬 Large 新加坡10 - all | IEPL | 倍率:1.5
+      - 🇸🇬 Large 新加坡07 - all | IEPL | 倍率:1.5
+      - 🇸🇬 Large 新加坡09 - all | IEPL | 倍率:1.5
+      - 🇹🇼 Super 台湾04  | IEPL | 倍率:2.1
+      - 🇸🇬 Super 新加坡02  | IEPL | 倍率:2
       - 🇹🇼 Super 台湾02  | MIEPL | 倍率:2.1
+      - 🇹🇼 Large 台灣01 - all | IEPL | 倍率:1.8
+      - 🇸🇬 Large 新加坡04 - all | MIEPL | 倍率:1.6
+      - 🇸🇬 Large 新加坡02 - all | IEPL | 倍率:1.5
+      - 🇸🇬 Super 新加坡01  | MIEPL | 倍率:2
       - 🇸🇬 Large 新加坡11 - all | IEPL | 倍率:1.5
       - 🇸🇬 Large 新加坡05 - all | IEPL | 倍率:1.5
-      - 🇹🇼 Large 台灣01 - all | IEPL | 倍率:1.8
-      - 🇸🇬 Large 新加坡07 - all | IEPL | 倍率:1.5
-      - 🇸🇬 Large 新加坡04 - all | MIEPL | 倍率:1.6
-      - 🇹🇼 Super 台湾04  | IEPL | 倍率:2.1
-      - 🇭🇰 Large 香港22 - nf | AIA | 倍率:1.8
+      - 🇹🇼 Large 台灣03 - all | MIEPL | 倍率:1.6
+      - 🇹🇼 Super 台湾01  | MIEPL | 倍率:2.1
+      - 🇸🇬 Large 新加坡01 - all | IEPL | 倍率:1.5
       - 🇸🇬 Large 新加坡06 - all | IEPL | 倍率:1.5
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 8度科技 67
-      - 8度科技 87
       - 8度科技 242
-      - 8度科技 100
-      - 8度科技 36
-      - 8度科技 96
-      - 8度科技 21
-      - 8度科技 163
-      - v2cross.com
-      - 8度科技 76
-      - 8度科技 147
-      - 8度科技 127
-      - 8度科技 99
-      - 🇺🇸 _US_美国
-      - 8度科技 69
-      - 8度科技 132
-      - 8度科技 162
-      - 8度科技 174
-      - 8度科技 160
-      - 8度科技 94
-      - 匈牙利
-      - 🇸🇬 【新鸟免费】美国UA -DO 02 免流 1.0x
-      - 🇸🇬 【新鸟免费】美国UA -DO 05 免流 1.0x
-      - 🇸🇬 【新鸟免费】美国UA -DO 08 免流 1.0x
-      - 🇸🇬 【新鸟免费】美国UA -DO 04 免流 1.0x
-      - 8度科技 205
-      - 🇸🇬 【新鸟免费】美国UA -DO 01 免流 1.0x
-      - 🇸🇬 【新鸟免费】美国UA -DO 03 免流 1.0x
-      - 🇸🇬 【新鸟免费】美国UA -DO 06 免流 1.0x
-      - 🇺🇸 _US_美国 2
-      - 🇸🇬 【新鸟免费】美国UA -DO 07 免流 1.0x
-      - 🇺🇸 美国(欢迎订阅youtube：8度科技)
-      - 🇺🇸 _US_美国 3
-      - 🇸🇬 【新鸟免费】美国UA -DO 10 免流 1.0x
-      - 8度科技 90
-      - 8度科技 54
-      - 8度科技 34
-      - 8度科技 206
-      - 8度科技 53
-      - 🇺🇸 美国加州C
-      - 8度科技 97
-      - 8度科技 245
-      - 8度科技 153
-      - 8度科技 98
-      - 🇰🇷 【新鸟免费】韩国KR-AWS 05 1.0x
-      - 🇰🇷 【新鸟免费】韩国KR-AWS 10 1.0x
-      - 8度科技 158
-      - 8度科技 202
-      - 🇸🇬 【新鸟免费】新加坡SG-AWS 12 1.0x
-      - 🇸🇬 【新鸟免费】新加坡SG-AWS 03 1.0x
-      - 🇸🇬 【新鸟免费】新加坡SG-AWS 11 1.0x
-      - 8度科技 232
-      - 🇯🇵 【新鸟免费】日本JP-AWS 08 1.0x
-      - 8度科技 250
-      - 🇰🇷 【新鸟免费】韩国KR-AWS 08 1.0x
-      - 🇸🇬 【新鸟免费】新加坡SG-AWS 13 1.0x
-      - 8度科技 110
-      - 8度科技 120
-      - 8度科技 251
-      - 8度科技 253
-      - 8度科技 212
-      - 8度科技 157
-      - 8度科技 219
-      - 8度科技 8
-      - 🇸🇬 【新鸟免费】新加坡SG-AWS 08 1.0x
-      - 🇸🇬 【新鸟免费】新加坡SG-AWS 06 1.0x
-      - 8度科技 168
-      - 8度科技 214
-      - 🇯🇵 【新鸟免费】日本JP-AWS 10 1.0x
-      - 8度科技 136
       - 8度科技 14
-      - 🇸🇬 【新鸟免费】新加坡SG-AWS 09 1.0x
+      - 🇺🇸 _US_美国
+      - 8度科技 127
+      - 8度科技 100
+      - 8度科技 21
+      - 8度科技 174
+      - 8度科技 99
+      - 匈牙利
+      - 8度科技 162
+      - 🇸🇬 【新鸟免费】美国UA -DO 02 免流 1.0x
+      - 🇺🇸 美国(欢迎订阅youtube：8度科技)
+      - 🇺🇸 _US_美国 2
+      - 🇺🇸 _US_美国 3
+      - 8度科技 157
+      - 🇸🇬 【新鸟免费】美国UA -DO 10 免流 1.0x
+      - 🇰🇷 【新鸟免费】韩国KR-AWS 10 1.0x
       - 8度科技 119
       - 8度科技 32
-      - 8度科技 146
-      - 🇯🇵 【新鸟免费】日本JP-AWS 01 1.0x
-      - _NO_挪威
-      - default_name
+      - v2cross.com
+      - 🇬🇧 _GB_英国
+      - 🇺🇸 US(欢迎订阅youtube：8度科技)
+      - t.me/AzadNet
       - 🇨🇦 _CA_加拿大
+      - _29 | 6.78Mb#t.me/AzadNet
+      - FR_26#t.me/AzadNet
+      - _NO_挪威
+      - 8度科技 82
+      - t.me/AzadNet 2
+      - default_name
+      - CA_7#t.me/AzadNet
+      - _26 | 7.95Mb#t.me/AzadNet
+      - AE_53 |28.63Mb#t.me/AzadNet
       - _NO_挪威 2
       - 🇨🇦 _CA_加拿大 2
-      - 8度科技 231
-      - 🇹🇼 _TW_台湾
-      - 🇨🇦 _CA_加拿大 3
-      - 8度科技 82
-      - 🇫🇷 _FR_法国
+      - _28 | 3.40Mb#t.me/AzadNet
       - 8度科技 256
-      - 8度科技 244
-      - 🇺🇸 US(欢迎订阅youtube：8度科技)
-      - 🇨🇦 _CA_加拿大 4
       - 8度科技 199
-      - 🇬🇧 _GB_英国
-      - 8度科技 81
+      - 8度科技 244
+      - 🇨🇦 _CA_加拿大 3
+      - JP_40#t.me/AzadNet
       - 🇬🇧 _GB_英国 2
-      - _PT_葡萄牙
-      - 8度科技 105
       - 🇧🇪 _BE_比利时
-      - 🇭🇰 Play2 香港 - 遊戲專用|視頻限速 | 倍率:20
+      - 8度科技 231
+      - 🇭🇰 HK_34#t.me/AzadNet
+      - 🇭🇰 Large 香港05 - allmedia | MIEPL | 倍率:1.8
+      - 🇭🇰 Large 香港17 - all | AIA | 倍率:1.8
+      - 🇭🇰 Large 香港18 - nf | AIA | 倍率:1.8
+      - 🇭🇰 Large 香港16 - allmedia | MIEPL | 倍率:1.6
       - 🇬🇧 Super 英国01  | IEPL | 倍率:1.5
       - 🇹🇼 Play3 台湾 - 遊戲專用|視頻限速 | 倍率:20
-      - 🇸🇬 Large 新加坡10 - all | IEPL | 倍率:1.5
-      - 🇯🇵 Large 日本03 - allmedia | IEPL | 倍率:1.5
-      - 胜天大佬赞助👍🐮80
-      - 🇸🇬 Large 新加坡09 - all | IEPL | 倍率:1.5
-      - 胜天大佬赞助🐮80
+      - 🇸🇬 Large 新加坡12 - all | IEPL | 倍率:1.5
       - 🇺🇸 Large 美国05 - allmedia | IEPL | 倍率:1.5
       - 🇸🇬 Large 新加坡08 - all | IEPL | 倍率:1.5
-      - 🇭🇰 Super 香港03  | MIEPL | 倍率:2.5
-      - 胜天大佬赞助82
-      - 🇭🇰 Large 香港13 - all | AIA | 倍率:1.6
-      - 🇭🇰 Super 香港07  | AIA| 倍率:2.3
-      - 🇭🇰 Large 香港09 - nf | AIA | 倍率:1.6
-      - 🇭🇰 Large 香港11 - nf | AIA | 倍率:1.6
-      - 🇭🇰 Large 香港20 - nf | AIA | 倍率:1.6
-      - 🇭🇰 Large 香港18 - nf | AIA | 倍率:1.8
-      - 🇭🇰 Large 香港21 - nfo | MIEPL | 倍率:1.6
-      - 🇭🇰 Large 香港05 - allmedia | MIEPL | 倍率:1.8
-      - 🇭🇰 Large 香港12 - nf | AIA | 倍率:1.6
-      - 🇭🇰 Super 香港02  | MIEPL | 倍率:2.5
-      - 🇭🇰 Large 香港16 - allmedia | MIEPL | 倍率:1.6
-      - 🇭🇰 Super 香港05  | AIA| 倍率:2.5
-      - 🇭🇰 Super 香港01  | MIEPL | 倍率:2.8
-      - 🇭🇰 Super 香港04  | MIEPL | 倍率:2.5
-      - 🇭🇰 Super 香港08  | AIA| 倍率:2.3
-      - 🇭🇰 Large 香港01 - allmedia | MIEPL | 倍率:1.8
-      - 🇭🇰 Large 香港10 - nf | AIA | 倍率:1.6
-      - 🇭🇰 Super 香港06  | AIA| 倍率:2.5
-      - 🇭🇰 Large 香港15 - allmedia | MIEPL | 倍率:1.6
-      - 🇭🇰 Large 香港03 - allmedia | MIEPL | 倍率:1.8
-      - 🇭🇰 Large 香港14 - nf | MIEPL | 倍率:1.6
-      - 🇭🇰 Large 香港04 - allmedia | MIEPL | 倍率:1.8
-      - 🇭🇰 Large 香港17 - all | AIA | 倍率:1.8
-      - 🇭🇰 Large 香港02 - nf | MIEPL | 倍率:1.8
-      - 胜天大佬赞助🐮83
-      - 胜天大佬赞助🐮82
-      - 胜天大佬赞助🐮79
-      - 胜天大佬赞助🐮78
-      - 胜天大佬赞助80
-      - 胜天大佬赞助😂👍🐮81
-      - 胜天大佬赞助👍🐮81
-      - 胜天大佬赞助💰82
-      - 胜天大佬赞助🐮81
-      - 🇭🇰 Large 香港07 - nf | MIEPL | 倍率:1.8
-      - 胜天大佬赞助💰81
-      - 胜天大佬赞助👍🐮82
-      - 🇺🇸 Super 美国01  | MIEPL | 倍率:1.8
-      - 🇺🇸 Super 美国04  | MIEPL | 倍率:1.8
-      - 🇺🇸 Super 美国02  | MIEPL | 倍率:1.8
-      - 🇺🇸 Super 美国03  | MIEPL| 倍率:2
-      - 胜天大佬赞助81
-      - 🇸🇬 Super 新加坡02  | IEPL | 倍率:2
-      - 🇰🇷 Large 韩国01 - nf | MIEPL | 倍率:1.6
-      - 胜天大佬赞助👍🐮83
-      - 胜天大佬赞助83
-      - 胜天大佬赞助😂👍🐮83
-      - 🇹🇼 Super 台湾03  | IEPL | 倍率:2.1
-      - 胜天大佬赞助💰79
-      - 胜天大佬赞助😂👍🐮82
-      - 🇸🇬 Super 新加坡01  | MIEPL | 倍率:2
-      - 🇭🇰 Large 香港08 - all | AIA | 倍率:1.6
-      - 胜天大佬赞助💰78
-      - 🇯🇵 Super 日本01  | MIEPL | 倍率:2
-      - 胜天大佬赞助👍🐮79
-      - 🇯🇵 Large 日本04 - allmedia | IEPL | 倍率:1.3
-      - 胜天大佬赞助😂👍🐮79
-      - 胜天大佬赞助79
-      - 🇯🇵 Large 日本05 - allmedia | IEPL | 倍率:1.3
-      - 胜天大佬赞助👍🐮78
-      - 🇹🇼 Large 台灣03 - all | MIEPL | 倍率:1.6
-      - 胜天大佬赞助😂👍🐮80
       - 🇹🇼 Large 台灣05 - all | IEPL | 倍率:1.5
-      - 🇸🇬 Large 新加坡01 - all | IEPL | 倍率:1.5
-      - 胜天大佬赞助78
-      - 🇸🇬 Large 新加坡02 - all | IEPL | 倍率:1.5
-      - 🇹🇼 Super 台湾01  | MIEPL | 倍率:2.1
-      - 🇸🇬 Large 新加坡12 - all | IEPL | 倍率:1.5
-      - 胜天大佬赞助💰80
       - 🇹🇼 Large 台灣02 - all | IEPL | 倍率:1.8
-      - 胜天大佬赞助😂👍🐮78
+      - 🇭🇰 Super 香港02  | MIEPL | 倍率:2.5
+      - 🇹🇼 Super 台湾03  | IEPL | 倍率:2.1
+      - 🇭🇰 Large 香港02 - nf | MIEPL | 倍率:1.8
+      - 🇭🇰 Large 香港03 - allmedia | MIEPL | 倍率:1.8
+      - 🇭🇰 Large 香港21 - nfo | MIEPL | 倍率:1.6
+      - 🇭🇰 Large 香港04 - allmedia | MIEPL | 倍率:1.8
+      - 🇭🇰 Large 香港14 - nf | MIEPL | 倍率:1.6
+      - 🇭🇰 Large 香港15 - allmedia | MIEPL | 倍率:1.6
+      - 🇭🇰 Super 香港01  | MIEPL | 倍率:2.8
+      - 🇭🇰 Large 香港22 - nf | AIA | 倍率:1.8
+      - 🇭🇰 Super 香港05  | AIA| 倍率:2.5
+      - 🇭🇰 Super 香港06  | AIA| 倍率:2.5
+      - 🇭🇰 Super 香港08  | AIA| 倍率:2.3
+      - 🇭🇰 Large 香港08 - all | AIA | 倍率:1.6
+      - 🇭🇰 Large 香港09 - nf | AIA | 倍率:1.6
+      - 🇭🇰 Large 香港10 - nf | AIA | 倍率:1.6
+      - 🇭🇰 Super 香港07  | AIA| 倍率:2.3
+      - 🇭🇰 Large 香港11 - nf | AIA | 倍率:1.6
+      - 🇭🇰 Large 香港12 - nf | AIA | 倍率:1.6
+      - 🇭🇰 Large 香港13 - all | AIA | 倍率:1.6
+      - 🇭🇰 Large 香港07 - nf | MIEPL | 倍率:1.8
+      - 🇭🇰 Large 香港20 - nf | AIA | 倍率:1.6
+      - 🇭🇰 Super 香港03  | MIEPL | 倍率:2.5
+      - 🇺🇸 Super 美国01  | MIEPL | 倍率:1.8
+      - 🇭🇰 Super 香港04  | MIEPL | 倍率:2.5
+      - 🇺🇸 Super 美国02  | MIEPL | 倍率:1.8
+      - 🇺🇸 Super 美国04  | MIEPL | 倍率:1.8
+      - 🇺🇸 Super 美国03  | MIEPL| 倍率:2
+      - 🇰🇷 Large 韩国01 - nf | MIEPL | 倍率:1.6
+      - 🇭🇰 Large 香港01 - allmedia | MIEPL | 倍率:1.8
+      - 🇯🇵 Large 日本03 - allmedia | IEPL | 倍率:1.5
+      - 🇯🇵 Large 日本04 - allmedia | IEPL | 倍率:1.3
+      - 🇯🇵 Super 日本01  | MIEPL | 倍率:2
+      - 🇯🇵 Large 日本05 - allmedia | IEPL | 倍率:1.3
       - 🇹🇼 Large 台灣04 - all | IEPL | 倍率:1.5
-      - 🇸🇬 Large 新加坡03 - all | MIEPL | 倍率:1.6
+      - 🇸🇬 Large 新加坡10 - all | IEPL | 倍率:1.5
+      - 🇸🇬 Large 新加坡07 - all | IEPL | 倍率:1.5
+      - 🇸🇬 Large 新加坡09 - all | IEPL | 倍率:1.5
+      - 🇹🇼 Super 台湾04  | IEPL | 倍率:2.1
+      - 🇸🇬 Super 新加坡02  | IEPL | 倍率:2
       - 🇹🇼 Super 台湾02  | MIEPL | 倍率:2.1
+      - 🇹🇼 Large 台灣01 - all | IEPL | 倍率:1.8
+      - 🇸🇬 Large 新加坡04 - all | MIEPL | 倍率:1.6
+      - 🇸🇬 Large 新加坡02 - all | IEPL | 倍率:1.5
+      - 🇸🇬 Super 新加坡01  | MIEPL | 倍率:2
       - 🇸🇬 Large 新加坡11 - all | IEPL | 倍率:1.5
       - 🇸🇬 Large 新加坡05 - all | IEPL | 倍率:1.5
-      - 🇹🇼 Large 台灣01 - all | IEPL | 倍率:1.8
-      - 🇸🇬 Large 新加坡07 - all | IEPL | 倍率:1.5
-      - 🇸🇬 Large 新加坡04 - all | MIEPL | 倍率:1.6
-      - 🇹🇼 Super 台湾04  | IEPL | 倍率:2.1
-      - 🇭🇰 Large 香港22 - nf | AIA | 倍率:1.8
+      - 🇹🇼 Large 台灣03 - all | MIEPL | 倍率:1.6
+      - 🇹🇼 Super 台湾01  | MIEPL | 倍率:2.1
+      - 🇸🇬 Large 新加坡01 - all | IEPL | 倍率:1.5
       - 🇸🇬 Large 新加坡06 - all | IEPL | 倍率:1.5
   - name: 🍎 苹果服务
     type: select
@@ -1223,195 +723,112 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 8度科技 67
-      - 8度科技 87
       - 8度科技 242
-      - 8度科技 100
-      - 8度科技 36
-      - 8度科技 96
-      - 8度科技 21
-      - 8度科技 163
-      - v2cross.com
-      - 8度科技 76
-      - 8度科技 147
-      - 8度科技 127
-      - 8度科技 99
-      - 🇺🇸 _US_美国
-      - 8度科技 69
-      - 8度科技 132
-      - 8度科技 162
-      - 8度科技 174
-      - 8度科技 160
-      - 8度科技 94
-      - 匈牙利
-      - 🇸🇬 【新鸟免费】美国UA -DO 02 免流 1.0x
-      - 🇸🇬 【新鸟免费】美国UA -DO 05 免流 1.0x
-      - 🇸🇬 【新鸟免费】美国UA -DO 08 免流 1.0x
-      - 🇸🇬 【新鸟免费】美国UA -DO 04 免流 1.0x
-      - 8度科技 205
-      - 🇸🇬 【新鸟免费】美国UA -DO 01 免流 1.0x
-      - 🇸🇬 【新鸟免费】美国UA -DO 03 免流 1.0x
-      - 🇸🇬 【新鸟免费】美国UA -DO 06 免流 1.0x
-      - 🇺🇸 _US_美国 2
-      - 🇸🇬 【新鸟免费】美国UA -DO 07 免流 1.0x
-      - 🇺🇸 美国(欢迎订阅youtube：8度科技)
-      - 🇺🇸 _US_美国 3
-      - 🇸🇬 【新鸟免费】美国UA -DO 10 免流 1.0x
-      - 8度科技 90
-      - 8度科技 54
-      - 8度科技 34
-      - 8度科技 206
-      - 8度科技 53
-      - 🇺🇸 美国加州C
-      - 8度科技 97
-      - 8度科技 245
-      - 8度科技 153
-      - 8度科技 98
-      - 🇰🇷 【新鸟免费】韩国KR-AWS 05 1.0x
-      - 🇰🇷 【新鸟免费】韩国KR-AWS 10 1.0x
-      - 8度科技 158
-      - 8度科技 202
-      - 🇸🇬 【新鸟免费】新加坡SG-AWS 12 1.0x
-      - 🇸🇬 【新鸟免费】新加坡SG-AWS 03 1.0x
-      - 🇸🇬 【新鸟免费】新加坡SG-AWS 11 1.0x
-      - 8度科技 232
-      - 🇯🇵 【新鸟免费】日本JP-AWS 08 1.0x
-      - 8度科技 250
-      - 🇰🇷 【新鸟免费】韩国KR-AWS 08 1.0x
-      - 🇸🇬 【新鸟免费】新加坡SG-AWS 13 1.0x
-      - 8度科技 110
-      - 8度科技 120
-      - 8度科技 251
-      - 8度科技 253
-      - 8度科技 212
-      - 8度科技 157
-      - 8度科技 219
-      - 8度科技 8
-      - 🇸🇬 【新鸟免费】新加坡SG-AWS 08 1.0x
-      - 🇸🇬 【新鸟免费】新加坡SG-AWS 06 1.0x
-      - 8度科技 168
-      - 8度科技 214
-      - 🇯🇵 【新鸟免费】日本JP-AWS 10 1.0x
-      - 8度科技 136
       - 8度科技 14
-      - 🇸🇬 【新鸟免费】新加坡SG-AWS 09 1.0x
+      - 🇺🇸 _US_美国
+      - 8度科技 127
+      - 8度科技 100
+      - 8度科技 21
+      - 8度科技 174
+      - 8度科技 99
+      - 匈牙利
+      - 8度科技 162
+      - 🇸🇬 【新鸟免费】美国UA -DO 02 免流 1.0x
+      - 🇺🇸 美国(欢迎订阅youtube：8度科技)
+      - 🇺🇸 _US_美国 2
+      - 🇺🇸 _US_美国 3
+      - 8度科技 157
+      - 🇸🇬 【新鸟免费】美国UA -DO 10 免流 1.0x
+      - 🇰🇷 【新鸟免费】韩国KR-AWS 10 1.0x
       - 8度科技 119
       - 8度科技 32
-      - 8度科技 146
-      - 🇯🇵 【新鸟免费】日本JP-AWS 01 1.0x
-      - _NO_挪威
-      - default_name
+      - v2cross.com
+      - 🇬🇧 _GB_英国
+      - 🇺🇸 US(欢迎订阅youtube：8度科技)
+      - t.me/AzadNet
       - 🇨🇦 _CA_加拿大
+      - _29 | 6.78Mb#t.me/AzadNet
+      - FR_26#t.me/AzadNet
+      - _NO_挪威
+      - 8度科技 82
+      - t.me/AzadNet 2
+      - default_name
+      - CA_7#t.me/AzadNet
+      - _26 | 7.95Mb#t.me/AzadNet
+      - AE_53 |28.63Mb#t.me/AzadNet
       - _NO_挪威 2
       - 🇨🇦 _CA_加拿大 2
-      - 8度科技 231
-      - 🇹🇼 _TW_台湾
-      - 🇨🇦 _CA_加拿大 3
-      - 8度科技 82
-      - 🇫🇷 _FR_法国
+      - _28 | 3.40Mb#t.me/AzadNet
       - 8度科技 256
-      - 8度科技 244
-      - 🇺🇸 US(欢迎订阅youtube：8度科技)
-      - 🇨🇦 _CA_加拿大 4
       - 8度科技 199
-      - 🇬🇧 _GB_英国
-      - 8度科技 81
+      - 8度科技 244
+      - 🇨🇦 _CA_加拿大 3
+      - JP_40#t.me/AzadNet
       - 🇬🇧 _GB_英国 2
-      - _PT_葡萄牙
-      - 8度科技 105
       - 🇧🇪 _BE_比利时
-      - 🇭🇰 Play2 香港 - 遊戲專用|視頻限速 | 倍率:20
+      - 8度科技 231
+      - 🇭🇰 HK_34#t.me/AzadNet
+      - 🇭🇰 Large 香港05 - allmedia | MIEPL | 倍率:1.8
+      - 🇭🇰 Large 香港17 - all | AIA | 倍率:1.8
+      - 🇭🇰 Large 香港18 - nf | AIA | 倍率:1.8
+      - 🇭🇰 Large 香港16 - allmedia | MIEPL | 倍率:1.6
       - 🇬🇧 Super 英国01  | IEPL | 倍率:1.5
       - 🇹🇼 Play3 台湾 - 遊戲專用|視頻限速 | 倍率:20
-      - 🇸🇬 Large 新加坡10 - all | IEPL | 倍率:1.5
-      - 🇯🇵 Large 日本03 - allmedia | IEPL | 倍率:1.5
-      - 胜天大佬赞助👍🐮80
-      - 🇸🇬 Large 新加坡09 - all | IEPL | 倍率:1.5
-      - 胜天大佬赞助🐮80
+      - 🇸🇬 Large 新加坡12 - all | IEPL | 倍率:1.5
       - 🇺🇸 Large 美国05 - allmedia | IEPL | 倍率:1.5
       - 🇸🇬 Large 新加坡08 - all | IEPL | 倍率:1.5
-      - 🇭🇰 Super 香港03  | MIEPL | 倍率:2.5
-      - 胜天大佬赞助82
-      - 🇭🇰 Large 香港13 - all | AIA | 倍率:1.6
-      - 🇭🇰 Super 香港07  | AIA| 倍率:2.3
-      - 🇭🇰 Large 香港09 - nf | AIA | 倍率:1.6
-      - 🇭🇰 Large 香港11 - nf | AIA | 倍率:1.6
-      - 🇭🇰 Large 香港20 - nf | AIA | 倍率:1.6
-      - 🇭🇰 Large 香港18 - nf | AIA | 倍率:1.8
-      - 🇭🇰 Large 香港21 - nfo | MIEPL | 倍率:1.6
-      - 🇭🇰 Large 香港05 - allmedia | MIEPL | 倍率:1.8
-      - 🇭🇰 Large 香港12 - nf | AIA | 倍率:1.6
-      - 🇭🇰 Super 香港02  | MIEPL | 倍率:2.5
-      - 🇭🇰 Large 香港16 - allmedia | MIEPL | 倍率:1.6
-      - 🇭🇰 Super 香港05  | AIA| 倍率:2.5
-      - 🇭🇰 Super 香港01  | MIEPL | 倍率:2.8
-      - 🇭🇰 Super 香港04  | MIEPL | 倍率:2.5
-      - 🇭🇰 Super 香港08  | AIA| 倍率:2.3
-      - 🇭🇰 Large 香港01 - allmedia | MIEPL | 倍率:1.8
-      - 🇭🇰 Large 香港10 - nf | AIA | 倍率:1.6
-      - 🇭🇰 Super 香港06  | AIA| 倍率:2.5
-      - 🇭🇰 Large 香港15 - allmedia | MIEPL | 倍率:1.6
-      - 🇭🇰 Large 香港03 - allmedia | MIEPL | 倍率:1.8
-      - 🇭🇰 Large 香港14 - nf | MIEPL | 倍率:1.6
-      - 🇭🇰 Large 香港04 - allmedia | MIEPL | 倍率:1.8
-      - 🇭🇰 Large 香港17 - all | AIA | 倍率:1.8
-      - 🇭🇰 Large 香港02 - nf | MIEPL | 倍率:1.8
-      - 胜天大佬赞助🐮83
-      - 胜天大佬赞助🐮82
-      - 胜天大佬赞助🐮79
-      - 胜天大佬赞助🐮78
-      - 胜天大佬赞助80
-      - 胜天大佬赞助😂👍🐮81
-      - 胜天大佬赞助👍🐮81
-      - 胜天大佬赞助💰82
-      - 胜天大佬赞助🐮81
-      - 🇭🇰 Large 香港07 - nf | MIEPL | 倍率:1.8
-      - 胜天大佬赞助💰81
-      - 胜天大佬赞助👍🐮82
-      - 🇺🇸 Super 美国01  | MIEPL | 倍率:1.8
-      - 🇺🇸 Super 美国04  | MIEPL | 倍率:1.8
-      - 🇺🇸 Super 美国02  | MIEPL | 倍率:1.8
-      - 🇺🇸 Super 美国03  | MIEPL| 倍率:2
-      - 胜天大佬赞助81
-      - 🇸🇬 Super 新加坡02  | IEPL | 倍率:2
-      - 🇰🇷 Large 韩国01 - nf | MIEPL | 倍率:1.6
-      - 胜天大佬赞助👍🐮83
-      - 胜天大佬赞助83
-      - 胜天大佬赞助😂👍🐮83
-      - 🇹🇼 Super 台湾03  | IEPL | 倍率:2.1
-      - 胜天大佬赞助💰79
-      - 胜天大佬赞助😂👍🐮82
-      - 🇸🇬 Super 新加坡01  | MIEPL | 倍率:2
-      - 🇭🇰 Large 香港08 - all | AIA | 倍率:1.6
-      - 胜天大佬赞助💰78
-      - 🇯🇵 Super 日本01  | MIEPL | 倍率:2
-      - 胜天大佬赞助👍🐮79
-      - 🇯🇵 Large 日本04 - allmedia | IEPL | 倍率:1.3
-      - 胜天大佬赞助😂👍🐮79
-      - 胜天大佬赞助79
-      - 🇯🇵 Large 日本05 - allmedia | IEPL | 倍率:1.3
-      - 胜天大佬赞助👍🐮78
-      - 🇹🇼 Large 台灣03 - all | MIEPL | 倍率:1.6
-      - 胜天大佬赞助😂👍🐮80
       - 🇹🇼 Large 台灣05 - all | IEPL | 倍率:1.5
-      - 🇸🇬 Large 新加坡01 - all | IEPL | 倍率:1.5
-      - 胜天大佬赞助78
-      - 🇸🇬 Large 新加坡02 - all | IEPL | 倍率:1.5
-      - 🇹🇼 Super 台湾01  | MIEPL | 倍率:2.1
-      - 🇸🇬 Large 新加坡12 - all | IEPL | 倍率:1.5
-      - 胜天大佬赞助💰80
       - 🇹🇼 Large 台灣02 - all | IEPL | 倍率:1.8
-      - 胜天大佬赞助😂👍🐮78
+      - 🇭🇰 Super 香港02  | MIEPL | 倍率:2.5
+      - 🇹🇼 Super 台湾03  | IEPL | 倍率:2.1
+      - 🇭🇰 Large 香港02 - nf | MIEPL | 倍率:1.8
+      - 🇭🇰 Large 香港03 - allmedia | MIEPL | 倍率:1.8
+      - 🇭🇰 Large 香港21 - nfo | MIEPL | 倍率:1.6
+      - 🇭🇰 Large 香港04 - allmedia | MIEPL | 倍率:1.8
+      - 🇭🇰 Large 香港14 - nf | MIEPL | 倍率:1.6
+      - 🇭🇰 Large 香港15 - allmedia | MIEPL | 倍率:1.6
+      - 🇭🇰 Super 香港01  | MIEPL | 倍率:2.8
+      - 🇭🇰 Large 香港22 - nf | AIA | 倍率:1.8
+      - 🇭🇰 Super 香港05  | AIA| 倍率:2.5
+      - 🇭🇰 Super 香港06  | AIA| 倍率:2.5
+      - 🇭🇰 Super 香港08  | AIA| 倍率:2.3
+      - 🇭🇰 Large 香港08 - all | AIA | 倍率:1.6
+      - 🇭🇰 Large 香港09 - nf | AIA | 倍率:1.6
+      - 🇭🇰 Large 香港10 - nf | AIA | 倍率:1.6
+      - 🇭🇰 Super 香港07  | AIA| 倍率:2.3
+      - 🇭🇰 Large 香港11 - nf | AIA | 倍率:1.6
+      - 🇭🇰 Large 香港12 - nf | AIA | 倍率:1.6
+      - 🇭🇰 Large 香港13 - all | AIA | 倍率:1.6
+      - 🇭🇰 Large 香港07 - nf | MIEPL | 倍率:1.8
+      - 🇭🇰 Large 香港20 - nf | AIA | 倍率:1.6
+      - 🇭🇰 Super 香港03  | MIEPL | 倍率:2.5
+      - 🇺🇸 Super 美国01  | MIEPL | 倍率:1.8
+      - 🇭🇰 Super 香港04  | MIEPL | 倍率:2.5
+      - 🇺🇸 Super 美国02  | MIEPL | 倍率:1.8
+      - 🇺🇸 Super 美国04  | MIEPL | 倍率:1.8
+      - 🇺🇸 Super 美国03  | MIEPL| 倍率:2
+      - 🇰🇷 Large 韩国01 - nf | MIEPL | 倍率:1.6
+      - 🇭🇰 Large 香港01 - allmedia | MIEPL | 倍率:1.8
+      - 🇯🇵 Large 日本03 - allmedia | IEPL | 倍率:1.5
+      - 🇯🇵 Large 日本04 - allmedia | IEPL | 倍率:1.3
+      - 🇯🇵 Super 日本01  | MIEPL | 倍率:2
+      - 🇯🇵 Large 日本05 - allmedia | IEPL | 倍率:1.3
       - 🇹🇼 Large 台灣04 - all | IEPL | 倍率:1.5
-      - 🇸🇬 Large 新加坡03 - all | MIEPL | 倍率:1.6
+      - 🇸🇬 Large 新加坡10 - all | IEPL | 倍率:1.5
+      - 🇸🇬 Large 新加坡07 - all | IEPL | 倍率:1.5
+      - 🇸🇬 Large 新加坡09 - all | IEPL | 倍率:1.5
+      - 🇹🇼 Super 台湾04  | IEPL | 倍率:2.1
+      - 🇸🇬 Super 新加坡02  | IEPL | 倍率:2
       - 🇹🇼 Super 台湾02  | MIEPL | 倍率:2.1
+      - 🇹🇼 Large 台灣01 - all | IEPL | 倍率:1.8
+      - 🇸🇬 Large 新加坡04 - all | MIEPL | 倍率:1.6
+      - 🇸🇬 Large 新加坡02 - all | IEPL | 倍率:1.5
+      - 🇸🇬 Super 新加坡01  | MIEPL | 倍率:2
       - 🇸🇬 Large 新加坡11 - all | IEPL | 倍率:1.5
       - 🇸🇬 Large 新加坡05 - all | IEPL | 倍率:1.5
-      - 🇹🇼 Large 台灣01 - all | IEPL | 倍率:1.8
-      - 🇸🇬 Large 新加坡07 - all | IEPL | 倍率:1.5
-      - 🇸🇬 Large 新加坡04 - all | MIEPL | 倍率:1.6
-      - 🇹🇼 Super 台湾04  | IEPL | 倍率:2.1
-      - 🇭🇰 Large 香港22 - nf | AIA | 倍率:1.8
+      - 🇹🇼 Large 台灣03 - all | MIEPL | 倍率:1.6
+      - 🇹🇼 Super 台湾01  | MIEPL | 倍率:2.1
+      - 🇸🇬 Large 新加坡01 - all | IEPL | 倍率:1.5
       - 🇸🇬 Large 新加坡06 - all | IEPL | 倍率:1.5
   - name: 🎯 全球直连
     type: select
@@ -1428,195 +845,112 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 8度科技 67
-      - 8度科技 87
       - 8度科技 242
-      - 8度科技 100
-      - 8度科技 36
-      - 8度科技 96
-      - 8度科技 21
-      - 8度科技 163
-      - v2cross.com
-      - 8度科技 76
-      - 8度科技 147
-      - 8度科技 127
-      - 8度科技 99
-      - 🇺🇸 _US_美国
-      - 8度科技 69
-      - 8度科技 132
-      - 8度科技 162
-      - 8度科技 174
-      - 8度科技 160
-      - 8度科技 94
-      - 匈牙利
-      - 🇸🇬 【新鸟免费】美国UA -DO 02 免流 1.0x
-      - 🇸🇬 【新鸟免费】美国UA -DO 05 免流 1.0x
-      - 🇸🇬 【新鸟免费】美国UA -DO 08 免流 1.0x
-      - 🇸🇬 【新鸟免费】美国UA -DO 04 免流 1.0x
-      - 8度科技 205
-      - 🇸🇬 【新鸟免费】美国UA -DO 01 免流 1.0x
-      - 🇸🇬 【新鸟免费】美国UA -DO 03 免流 1.0x
-      - 🇸🇬 【新鸟免费】美国UA -DO 06 免流 1.0x
-      - 🇺🇸 _US_美国 2
-      - 🇸🇬 【新鸟免费】美国UA -DO 07 免流 1.0x
-      - 🇺🇸 美国(欢迎订阅youtube：8度科技)
-      - 🇺🇸 _US_美国 3
-      - 🇸🇬 【新鸟免费】美国UA -DO 10 免流 1.0x
-      - 8度科技 90
-      - 8度科技 54
-      - 8度科技 34
-      - 8度科技 206
-      - 8度科技 53
-      - 🇺🇸 美国加州C
-      - 8度科技 97
-      - 8度科技 245
-      - 8度科技 153
-      - 8度科技 98
-      - 🇰🇷 【新鸟免费】韩国KR-AWS 05 1.0x
-      - 🇰🇷 【新鸟免费】韩国KR-AWS 10 1.0x
-      - 8度科技 158
-      - 8度科技 202
-      - 🇸🇬 【新鸟免费】新加坡SG-AWS 12 1.0x
-      - 🇸🇬 【新鸟免费】新加坡SG-AWS 03 1.0x
-      - 🇸🇬 【新鸟免费】新加坡SG-AWS 11 1.0x
-      - 8度科技 232
-      - 🇯🇵 【新鸟免费】日本JP-AWS 08 1.0x
-      - 8度科技 250
-      - 🇰🇷 【新鸟免费】韩国KR-AWS 08 1.0x
-      - 🇸🇬 【新鸟免费】新加坡SG-AWS 13 1.0x
-      - 8度科技 110
-      - 8度科技 120
-      - 8度科技 251
-      - 8度科技 253
-      - 8度科技 212
-      - 8度科技 157
-      - 8度科技 219
-      - 8度科技 8
-      - 🇸🇬 【新鸟免费】新加坡SG-AWS 08 1.0x
-      - 🇸🇬 【新鸟免费】新加坡SG-AWS 06 1.0x
-      - 8度科技 168
-      - 8度科技 214
-      - 🇯🇵 【新鸟免费】日本JP-AWS 10 1.0x
-      - 8度科技 136
       - 8度科技 14
-      - 🇸🇬 【新鸟免费】新加坡SG-AWS 09 1.0x
+      - 🇺🇸 _US_美国
+      - 8度科技 127
+      - 8度科技 100
+      - 8度科技 21
+      - 8度科技 174
+      - 8度科技 99
+      - 匈牙利
+      - 8度科技 162
+      - 🇸🇬 【新鸟免费】美国UA -DO 02 免流 1.0x
+      - 🇺🇸 美国(欢迎订阅youtube：8度科技)
+      - 🇺🇸 _US_美国 2
+      - 🇺🇸 _US_美国 3
+      - 8度科技 157
+      - 🇸🇬 【新鸟免费】美国UA -DO 10 免流 1.0x
+      - 🇰🇷 【新鸟免费】韩国KR-AWS 10 1.0x
       - 8度科技 119
       - 8度科技 32
-      - 8度科技 146
-      - 🇯🇵 【新鸟免费】日本JP-AWS 01 1.0x
-      - _NO_挪威
-      - default_name
+      - v2cross.com
+      - 🇬🇧 _GB_英国
+      - 🇺🇸 US(欢迎订阅youtube：8度科技)
+      - t.me/AzadNet
       - 🇨🇦 _CA_加拿大
+      - _29 | 6.78Mb#t.me/AzadNet
+      - FR_26#t.me/AzadNet
+      - _NO_挪威
+      - 8度科技 82
+      - t.me/AzadNet 2
+      - default_name
+      - CA_7#t.me/AzadNet
+      - _26 | 7.95Mb#t.me/AzadNet
+      - AE_53 |28.63Mb#t.me/AzadNet
       - _NO_挪威 2
       - 🇨🇦 _CA_加拿大 2
-      - 8度科技 231
-      - 🇹🇼 _TW_台湾
-      - 🇨🇦 _CA_加拿大 3
-      - 8度科技 82
-      - 🇫🇷 _FR_法国
+      - _28 | 3.40Mb#t.me/AzadNet
       - 8度科技 256
-      - 8度科技 244
-      - 🇺🇸 US(欢迎订阅youtube：8度科技)
-      - 🇨🇦 _CA_加拿大 4
       - 8度科技 199
-      - 🇬🇧 _GB_英国
-      - 8度科技 81
+      - 8度科技 244
+      - 🇨🇦 _CA_加拿大 3
+      - JP_40#t.me/AzadNet
       - 🇬🇧 _GB_英国 2
-      - _PT_葡萄牙
-      - 8度科技 105
       - 🇧🇪 _BE_比利时
-      - 🇭🇰 Play2 香港 - 遊戲專用|視頻限速 | 倍率:20
+      - 8度科技 231
+      - 🇭🇰 HK_34#t.me/AzadNet
+      - 🇭🇰 Large 香港05 - allmedia | MIEPL | 倍率:1.8
+      - 🇭🇰 Large 香港17 - all | AIA | 倍率:1.8
+      - 🇭🇰 Large 香港18 - nf | AIA | 倍率:1.8
+      - 🇭🇰 Large 香港16 - allmedia | MIEPL | 倍率:1.6
       - 🇬🇧 Super 英国01  | IEPL | 倍率:1.5
       - 🇹🇼 Play3 台湾 - 遊戲專用|視頻限速 | 倍率:20
-      - 🇸🇬 Large 新加坡10 - all | IEPL | 倍率:1.5
-      - 🇯🇵 Large 日本03 - allmedia | IEPL | 倍率:1.5
-      - 胜天大佬赞助👍🐮80
-      - 🇸🇬 Large 新加坡09 - all | IEPL | 倍率:1.5
-      - 胜天大佬赞助🐮80
+      - 🇸🇬 Large 新加坡12 - all | IEPL | 倍率:1.5
       - 🇺🇸 Large 美国05 - allmedia | IEPL | 倍率:1.5
       - 🇸🇬 Large 新加坡08 - all | IEPL | 倍率:1.5
-      - 🇭🇰 Super 香港03  | MIEPL | 倍率:2.5
-      - 胜天大佬赞助82
-      - 🇭🇰 Large 香港13 - all | AIA | 倍率:1.6
-      - 🇭🇰 Super 香港07  | AIA| 倍率:2.3
-      - 🇭🇰 Large 香港09 - nf | AIA | 倍率:1.6
-      - 🇭🇰 Large 香港11 - nf | AIA | 倍率:1.6
-      - 🇭🇰 Large 香港20 - nf | AIA | 倍率:1.6
-      - 🇭🇰 Large 香港18 - nf | AIA | 倍率:1.8
-      - 🇭🇰 Large 香港21 - nfo | MIEPL | 倍率:1.6
-      - 🇭🇰 Large 香港05 - allmedia | MIEPL | 倍率:1.8
-      - 🇭🇰 Large 香港12 - nf | AIA | 倍率:1.6
-      - 🇭🇰 Super 香港02  | MIEPL | 倍率:2.5
-      - 🇭🇰 Large 香港16 - allmedia | MIEPL | 倍率:1.6
-      - 🇭🇰 Super 香港05  | AIA| 倍率:2.5
-      - 🇭🇰 Super 香港01  | MIEPL | 倍率:2.8
-      - 🇭🇰 Super 香港04  | MIEPL | 倍率:2.5
-      - 🇭🇰 Super 香港08  | AIA| 倍率:2.3
-      - 🇭🇰 Large 香港01 - allmedia | MIEPL | 倍率:1.8
-      - 🇭🇰 Large 香港10 - nf | AIA | 倍率:1.6
-      - 🇭🇰 Super 香港06  | AIA| 倍率:2.5
-      - 🇭🇰 Large 香港15 - allmedia | MIEPL | 倍率:1.6
-      - 🇭🇰 Large 香港03 - allmedia | MIEPL | 倍率:1.8
-      - 🇭🇰 Large 香港14 - nf | MIEPL | 倍率:1.6
-      - 🇭🇰 Large 香港04 - allmedia | MIEPL | 倍率:1.8
-      - 🇭🇰 Large 香港17 - all | AIA | 倍率:1.8
-      - 🇭🇰 Large 香港02 - nf | MIEPL | 倍率:1.8
-      - 胜天大佬赞助🐮83
-      - 胜天大佬赞助🐮82
-      - 胜天大佬赞助🐮79
-      - 胜天大佬赞助🐮78
-      - 胜天大佬赞助80
-      - 胜天大佬赞助😂👍🐮81
-      - 胜天大佬赞助👍🐮81
-      - 胜天大佬赞助💰82
-      - 胜天大佬赞助🐮81
-      - 🇭🇰 Large 香港07 - nf | MIEPL | 倍率:1.8
-      - 胜天大佬赞助💰81
-      - 胜天大佬赞助👍🐮82
-      - 🇺🇸 Super 美国01  | MIEPL | 倍率:1.8
-      - 🇺🇸 Super 美国04  | MIEPL | 倍率:1.8
-      - 🇺🇸 Super 美国02  | MIEPL | 倍率:1.8
-      - 🇺🇸 Super 美国03  | MIEPL| 倍率:2
-      - 胜天大佬赞助81
-      - 🇸🇬 Super 新加坡02  | IEPL | 倍率:2
-      - 🇰🇷 Large 韩国01 - nf | MIEPL | 倍率:1.6
-      - 胜天大佬赞助👍🐮83
-      - 胜天大佬赞助83
-      - 胜天大佬赞助😂👍🐮83
-      - 🇹🇼 Super 台湾03  | IEPL | 倍率:2.1
-      - 胜天大佬赞助💰79
-      - 胜天大佬赞助😂👍🐮82
-      - 🇸🇬 Super 新加坡01  | MIEPL | 倍率:2
-      - 🇭🇰 Large 香港08 - all | AIA | 倍率:1.6
-      - 胜天大佬赞助💰78
-      - 🇯🇵 Super 日本01  | MIEPL | 倍率:2
-      - 胜天大佬赞助👍🐮79
-      - 🇯🇵 Large 日本04 - allmedia | IEPL | 倍率:1.3
-      - 胜天大佬赞助😂👍🐮79
-      - 胜天大佬赞助79
-      - 🇯🇵 Large 日本05 - allmedia | IEPL | 倍率:1.3
-      - 胜天大佬赞助👍🐮78
-      - 🇹🇼 Large 台灣03 - all | MIEPL | 倍率:1.6
-      - 胜天大佬赞助😂👍🐮80
       - 🇹🇼 Large 台灣05 - all | IEPL | 倍率:1.5
-      - 🇸🇬 Large 新加坡01 - all | IEPL | 倍率:1.5
-      - 胜天大佬赞助78
-      - 🇸🇬 Large 新加坡02 - all | IEPL | 倍率:1.5
-      - 🇹🇼 Super 台湾01  | MIEPL | 倍率:2.1
-      - 🇸🇬 Large 新加坡12 - all | IEPL | 倍率:1.5
-      - 胜天大佬赞助💰80
       - 🇹🇼 Large 台灣02 - all | IEPL | 倍率:1.8
-      - 胜天大佬赞助😂👍🐮78
+      - 🇭🇰 Super 香港02  | MIEPL | 倍率:2.5
+      - 🇹🇼 Super 台湾03  | IEPL | 倍率:2.1
+      - 🇭🇰 Large 香港02 - nf | MIEPL | 倍率:1.8
+      - 🇭🇰 Large 香港03 - allmedia | MIEPL | 倍率:1.8
+      - 🇭🇰 Large 香港21 - nfo | MIEPL | 倍率:1.6
+      - 🇭🇰 Large 香港04 - allmedia | MIEPL | 倍率:1.8
+      - 🇭🇰 Large 香港14 - nf | MIEPL | 倍率:1.6
+      - 🇭🇰 Large 香港15 - allmedia | MIEPL | 倍率:1.6
+      - 🇭🇰 Super 香港01  | MIEPL | 倍率:2.8
+      - 🇭🇰 Large 香港22 - nf | AIA | 倍率:1.8
+      - 🇭🇰 Super 香港05  | AIA| 倍率:2.5
+      - 🇭🇰 Super 香港06  | AIA| 倍率:2.5
+      - 🇭🇰 Super 香港08  | AIA| 倍率:2.3
+      - 🇭🇰 Large 香港08 - all | AIA | 倍率:1.6
+      - 🇭🇰 Large 香港09 - nf | AIA | 倍率:1.6
+      - 🇭🇰 Large 香港10 - nf | AIA | 倍率:1.6
+      - 🇭🇰 Super 香港07  | AIA| 倍率:2.3
+      - 🇭🇰 Large 香港11 - nf | AIA | 倍率:1.6
+      - 🇭🇰 Large 香港12 - nf | AIA | 倍率:1.6
+      - 🇭🇰 Large 香港13 - all | AIA | 倍率:1.6
+      - 🇭🇰 Large 香港07 - nf | MIEPL | 倍率:1.8
+      - 🇭🇰 Large 香港20 - nf | AIA | 倍率:1.6
+      - 🇭🇰 Super 香港03  | MIEPL | 倍率:2.5
+      - 🇺🇸 Super 美国01  | MIEPL | 倍率:1.8
+      - 🇭🇰 Super 香港04  | MIEPL | 倍率:2.5
+      - 🇺🇸 Super 美国02  | MIEPL | 倍率:1.8
+      - 🇺🇸 Super 美国04  | MIEPL | 倍率:1.8
+      - 🇺🇸 Super 美国03  | MIEPL| 倍率:2
+      - 🇰🇷 Large 韩国01 - nf | MIEPL | 倍率:1.6
+      - 🇭🇰 Large 香港01 - allmedia | MIEPL | 倍率:1.8
+      - 🇯🇵 Large 日本03 - allmedia | IEPL | 倍率:1.5
+      - 🇯🇵 Large 日本04 - allmedia | IEPL | 倍率:1.3
+      - 🇯🇵 Super 日本01  | MIEPL | 倍率:2
+      - 🇯🇵 Large 日本05 - allmedia | IEPL | 倍率:1.3
       - 🇹🇼 Large 台灣04 - all | IEPL | 倍率:1.5
-      - 🇸🇬 Large 新加坡03 - all | MIEPL | 倍率:1.6
+      - 🇸🇬 Large 新加坡10 - all | IEPL | 倍率:1.5
+      - 🇸🇬 Large 新加坡07 - all | IEPL | 倍率:1.5
+      - 🇸🇬 Large 新加坡09 - all | IEPL | 倍率:1.5
+      - 🇹🇼 Super 台湾04  | IEPL | 倍率:2.1
+      - 🇸🇬 Super 新加坡02  | IEPL | 倍率:2
       - 🇹🇼 Super 台湾02  | MIEPL | 倍率:2.1
+      - 🇹🇼 Large 台灣01 - all | IEPL | 倍率:1.8
+      - 🇸🇬 Large 新加坡04 - all | MIEPL | 倍率:1.6
+      - 🇸🇬 Large 新加坡02 - all | IEPL | 倍率:1.5
+      - 🇸🇬 Super 新加坡01  | MIEPL | 倍率:2
       - 🇸🇬 Large 新加坡11 - all | IEPL | 倍率:1.5
       - 🇸🇬 Large 新加坡05 - all | IEPL | 倍率:1.5
-      - 🇹🇼 Large 台灣01 - all | IEPL | 倍率:1.8
-      - 🇸🇬 Large 新加坡07 - all | IEPL | 倍率:1.5
-      - 🇸🇬 Large 新加坡04 - all | MIEPL | 倍率:1.6
-      - 🇹🇼 Super 台湾04  | IEPL | 倍率:2.1
-      - 🇭🇰 Large 香港22 - nf | AIA | 倍率:1.8
+      - 🇹🇼 Large 台灣03 - all | MIEPL | 倍率:1.6
+      - 🇹🇼 Super 台湾01  | MIEPL | 倍率:2.1
+      - 🇸🇬 Large 新加坡01 - all | IEPL | 倍率:1.5
       - 🇸🇬 Large 新加坡06 - all | IEPL | 倍率:1.5
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
