@@ -5,218 +5,627 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 🇭🇰 A香港05|流媒体|V2|GZ, server: zz-hk-v5.laov888.win, port: 21705, type: vmess, uuid: 67b1589b-473a-3875-9174-ed5e314fa41a, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: www.baidu.com}}
-  - {name: default_name, server: v9.ssrsub.com, port: 8443, type: vmess, uuid: 1de99090-4bd5-4670-9cec-05f55b4c6917, alterId: 0, cipher: auto, tls: true, network: ws, ws-path: /ssrsub, ws-headers: {Host: v9.ssrsub.com}}
-  - {name: default_name 2, server: 1.0.0.1, port: 443, type: vmess, uuid: ffffffff-ffff-ffff-ffff-ffffffffffff, alterId: 0, cipher: auto, tls: true, network: ws, ws-path: /ffffffff-ffff-ffff-ffff-ffffffffffff-vmess, ws-headers: {Host: us-aws1.payday501.workers.dev}}
-  - {name: 🇺🇸 Relay_🇺🇸US-🇺🇸US_1674, server: v1.ssrsub.com, port: 8443, type: vmess, uuid: 8cf83f44-79ff-4e50-be1a-585c82338912, alterId: 0, cipher: auto, tls: true, network: ws, ws-path: /ssrsub, ws-headers: {Host: v1.ssrsub.com}}
-  - {name: TG YouTube:8度科技, server: v4.ssrsub.com, port: 8443, type: vmess, uuid: 1de99090-4bd5-4670-9cec-05f55b4c6917, alterId: 0, cipher: auto, tls: true, network: ws, ws-path: /ssrsub, ws-headers: {Host: v4.ssrsub.com}}
-  - {name: TG YouTube:8度科技 2, server: tky3.ssgnode.ga, port: 443, type: trojan, password: bcYWVzLTI1Ni1nY206Q1VuZFNabll23115_5a451f03, sni: tky3.ssgnode.ga}
-  - {name: TG YouTube:8度科技 3, server: vincent-jackson2021.ga, port: 443, type: trojan, password: 5f4b2e42-ff2b-4342-86fc-b7ba1b5361e8, sni: vincent-jackson2021.ga}
-  - {name: TG YouTube:8度科技 4, server: tky3.ssgnode.ga, port: 443, type: trojan, password: lWNFc1RmRBNk5NQU5KSnga3fa58ac5a3ef0-b4ab-11eb-b65e-1239d0255272, sni: tky3.ssgnode.ga}
-  - {name: TG YouTube:8度科技 5, server: tky3.ssgnode.ga, port: 443, type: trojan, password: 82a115db-6e59-4319-9730-8f5638908d59YWVzLTI1Ni1nY2023115_5a451f03, sni: tky3.ssgnode.ga}
-  - {name: TG YouTube:8度科技 6, server: tky3.ssgnode.ga, port: 443, type: trojan, password: 82lWNFc1RmRBNk5NQU5KSnga3fa58ac5a3ef0-b4ab-11eb-b65e-1239d0255272, sni: tky3.ssgnode.ga}
-  - {name: TG YouTube:8度科技 7, server: tky3.ssgnode.ga, port: 443, type: trojan, password: 23115_5a451f03, sni: tky3.ssgnode.ga}
-  - {name: TG YouTube:8度科技 8, server: tky3.ssgnode.ga, port: 443, type: trojan, password: 82a115db-6e59-4319-973lWNFc1RmRBNk5NQU5KSnga3fa58ac5a3ef0-b4ab-11eb-b65e-1239d0255272, sni: tky3.ssgnode.ga}
-  - {name: TG YouTube:8度科技 9, server: hk31.ssgnode.ga, port: 443, type: trojan, password: 41742_920c8caa, sni: hk31.ssgnode.ga}
-  - {name: 🇦🇺 TG YouTube:8度科技_澳大利亚, server: 46.102.153.106, port: 8388, type: ss, cipher: chacha20-ietf-poly1305, password: dsHq7JmRFhSkvxzCuMFy}
-  - {name: 🇩🇰 TG YouTube:8度科技_丹麦, server: 37.120.194.82, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: 2V7N5kGUghaLxF4aUqTw}
-  - {name: 🇷🇺 TG YouTube:8度科技_俄罗斯联邦, server: 194.156.120.52, port: 41002, type: vmess, uuid: ebb93e84-5bb7-11ec-8bc6-6a5c6e054e4d, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇫🇷 TG YouTube:8度科技_法国, server: 141.95.0.26, port: 826, type: ss, cipher: chacha20-ietf-poly1305, password: sF43Xt2gONqcgFX563}
-  - {name: 🇫🇷 TG YouTube:8度科技_法国 2, server: 145.239.1.137, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: 🇫🇷 TG YouTube:8度科技_法国 3, server: 145.239.1.137, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: 🇫🇷 TG YouTube:8度科技_法国 4, server: 145.239.1.137, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: 🇫🇷 TG YouTube:8度科技_法国 5, server: 145.239.1.137, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: 🇫🇷 TG YouTube:8度科技_法国 6, server: 145.239.1.137, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 🇫🇷 TG YouTube:8度科技_法国 7, server: 145.239.1.137, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: 🇫🇷 TG YouTube:8度科技_法国 8, server: 62.210.209.50, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
-  - {name: 🇫🇷 TG YouTube:8度科技_法国 9, server: 145.239.1.137, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: 🇫🇷 TG YouTube:8度科技_法国 10, server: 145.239.1.137, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: 🇵🇭 TG YouTube:8度科技_菲律宾, server: 188.214.125.106, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: Zq4srheW4eeqMfGeWMTG}
-  - {name: 🇨🇦 TG YouTube:8度科技_加拿大, server: 198.57.27.218, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 🇨🇦 TG YouTube:8度科技_加拿大 2, server: 198.57.27.218, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: 🇨🇦 TG YouTube:8度科技_加拿大 3, server: 217.138.200.242, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: EGTHtnGhcnggx5yBYSqS}
-  - {name: 🇨🇦 TG YouTube:8度科技_加拿大 4, server: 198.57.27.218, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: 🇨🇦 TG YouTube:8度科技_加拿大 5, server: 198.57.27.218, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 🇨🇦 TG YouTube:8度科技_加拿大 6, server: 198.57.27.218, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: 🇨🇦 TG YouTube:8度科技_加拿大 7, server: 198.57.27.218, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
-  - {name: 🇨🇦 TG YouTube:8度科技_加拿大 8, server: 198.57.27.218, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: 🇨🇦 TG YouTube:8度科技_加拿大 9, server: 198.57.27.218, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: 🇨🇦 TG YouTube:8度科技_加拿大 10, server: ca-trojan.bonds.id, port: 443, type: trojan, password: YWVzLlWNFc1RmRBNk5NQU5KSnga3fa58ac5a3ef0-b4ab-11eb-b65e-1239d0255272, sni: ca-trojan.bonds.id}
-  - {name: 🇨🇦 TG YouTube:8度科技_加拿大 11, server: ca-trojan.bonds.id, port: 443, type: trojan, password: YWVzLTI1Ni1nY206WWd1c0gyTac5a3ef0-b4ablWNFc1RmRBNk5NQU5KSnga3fa58ac5a3ef0-b4ab-11eb-b65e-1239d0255272, sni: ca-trojan.bonds.id}
-  - {name: 🇨🇦 TG YouTube:8度科技_加拿大 12, server: ca-trojan.bonds.id, port: 443, type: trojan, password: bc7593fe-0604-4fbe-a70bYWVzLTI1Ni1nY2ac5a3ef0-b4ab-11eb-b65e-1239d0255272, sni: ca-trojan.bonds.id}
-  - {name: 🇨🇦 TG YouTube:8度科技_加拿大 13, server: ca-trojan.bonds.id, port: 443, type: trojan, password: YWVzLTI1Ni1nY206eHBRd3lWNFc1RmRBNk5NQU5KSnga3fa58ac5a3ef0-b4ab-11eb-b65e-1239d0255272, sni: ca-trojan.bonds.id}
-  - {name: 🇨🇦 TG YouTube:8度科技_加拿大 14, server: ca-trojan.bonds.id, port: 443, type: trojan, password: bc7593fe-0604-4fbe-a70bYWVzLTI1Ni1nY206Q1VuZFNabllzUEtjdTZLajhUac5a3ef0-b4ab-11eb-b65e-1239d0255272, sni: ca-trojan.bonds.id}
-  - {name: 🇨🇦 TG YouTube:8度科技_加拿大 15, server: ca-trojan.bonds.id, port: 443, type: trojan, password: bc7593fe-0604-4fbe-a70bYWVzLTI1Ni1nY206Q1VuZFNabllzUEtjdTaclWNFc1RmRBNk5NQU5KSnga3fa58ac5a3ef0-b4ab-11eb-b65e-1239d0255272, sni: ca-trojan.bonds.id}
-  - {name: 🇨🇦 TG YouTube:8度科技_加拿大 16, server: ca-trojan.bonds.id, port: 443, type: trojan, password: YWVzLTI1Ni1nY206WWd1c0gyTac5a3ef0-b4ab-11eb-b65e-1239d0255272, sni: ca-trojan.bonds.id}
-  - {name: 🇨🇦 TG YouTube:8度科技_加拿大 17, server: ca-trojan.bonds.id, port: 443, type: trojan, password: ac5a3ef0-b4ab-11eb-b65e-1239d0255272, sni: ca-trojan.bonds.id}
-  - {name: 🇨🇦 TG YouTube:8度科技_加拿大 18, server: ca-trojan.bonds.id, port: 443, type: trojan, password: YWVzLTI1NlWNFc1RmRBNk5NQU5KSnga3fa58ac5a3ef0-b4ab-11eb-b65e-1239d0255272, sni: ca-trojan.bonds.id}
-  - {name: 🇨🇦 TG YouTube:8度科技_加拿大 19, server: ca-trojan.bonds.id, port: 443, type: trojan, password: a3fa58b581353bb375d2ddad0f327938ac5a3ef0-b4ab-11eb-b65e-1239d0255272, sni: ca-trojan.bonds.id}
-  - {name: 🇨🇦 TG YouTube:8度科技_加拿大 20, server: ca-trojan.bonds.id, port: 443, type: trojan, password: YWVzLTI1lWNFc1RmRBNk5NQU5KSnga3fa58ac5a3ef0-b4ab-11eb-b65e-1239d0255272, sni: ca-trojan.bonds.id}
-  - {name: 🇨🇦 TG YouTube:8度科技_加拿大 21, server: ca-trojan.bonds.id, port: 443, type: trojan, password: a3fa58b581353bb375d2ddad0fac5a3ef0-b4ab-11eb-b65e-1239d0255272, sni: ca-trojan.bonds.id}
-  - {name: 🇨🇦 TG YouTube:8度科技_加拿大 22, server: ca-trojan.bonds.id, port: 443, type: trojan, password: bc7593fe-0604-4fbe-a70bYWVzLTI1Ni1nYlWNFc1RmRBNk5NQU5KSnga3fa58ac5a3ef0-b4ab-11eb-b65e-1239d0255272, sni: ca-trojan.bonds.id}
-  - {name: 🇨🇦 TG YouTube:8度科技_加拿大 23, server: ca-trojan.bonds.id, port: 443, type: trojan, password: bc7593fe-0604-4fbe-a70bYWVzLTI1Ni1nY2ac5a3ef0-lWNFc1RmRBNk5NQU5KSnga3fa58ac5a3ef0-b4ab-11eb-b65e-1239d0255272, sni: ca-trojan.bonds.id}
-  - {name: 🇨🇦 TG YouTube:8度科技_加拿大 24, server: ca-trojan.bonds.id, port: 443, type: trojan, password: bc7593fe-0604-4fbe-a70bYWVzLTIlWNFc1RmRBNk5NQU5KSnga3fa58ac5a3ef0-b4ab-11eb-b65e-1239d0255272, sni: ca-trojan.bonds.id}
-  - {name: 🇨🇦 TG YouTube:8度科技_加拿大 25, server: ca-trojan.bonds.id, port: 443, type: trojan, password: a3fa5lWNFc1RmRBNk5NQU5KSnga3fa58ac5a3ef0-b4ab-11eb-b65e-1239d0255272, sni: ca-trojan.bonds.id}
-  - {name: 🇨🇦 TG YouTube:8度科技_加拿大 26, server: ca-trojan.bonds.id, port: 443, type: trojan, password: 28d98ac5a3ef0-b4ab-11eb-b65e-1239d0255272, sni: ca-trojan.bonds.id}
-  - {name: 🇨🇦 TG YouTube:8度科技_加拿大 27, server: ca-trojan.bonds.id, port: 443, type: trojan, password: YWVzLTI1Ni1nY206WWlWNFc1RmRBNk5NQU5KSnga3fa58ac5a3ef0-b4ab-11eb-b65e-1239d0255272, sni: ca-trojan.bonds.id}
-  - {name: 🇨🇦 TG YouTube:8度科技_加拿大 28, server: ca-trojan.bonds.id, port: 443, type: trojan, password: bc7593fe-0lWNFc1RmRBNk5NQU5KSnga3fa58ac5a3ef0-b4ab-11eb-b65e-1239d0255272, sni: ca-trojan.bonds.id}
-  - {name: 🇨🇦 TG YouTube:8度科技_加拿大 29, server: ca-trojan.bonds.id, port: 443, type: trojan, password: 36ebefac5a3ef0-b4ab-11eb-b65e-1239d0255272, sni: ca-trojan.bonds.id}
-  - {name: 🇨🇦 TG YouTube:8度科技_加拿大 30, server: ca-trojan.bonds.id, port: 443, type: trojan, password: a3fa58ac5a3ef0-b4ab-11eb-b65e-1239d0255272, sni: ca-trojan.bonds.id}
-  - {name: 🇨🇦 TG YouTube:8度科技_加拿大 31, server: ca-trojan.bonds.id, port: 443, type: trojan, password: bc7593fe-0604-4fbe-a70bYWVzLTI1Ni1nY206Q1VuZFNabllzUEtjdTac5a3ef0-b4ab-11eb-b65e-1239d0255272, sni: ca-trojan.bonds.id}
-  - {name: 🇨🇦 TG YouTube:8度科技_加拿大 32, server: ca-trojan.bonds.id, port: 443, type: trojan, password: bc7593fe-0604-4fbe-a70bYWVzLTI1Ni1nY206lWNFc1RmRBNk5NQU5KSnga3fa58ac5a3ef0-b4ab-11eb-b65e-1239d0255272, sni: ca-trojan.bonds.id}
-  - {name: 🇨🇦 TG YouTube:8度科技_加拿大 33, server: ca-trojan.bonds.id, port: 443, type: trojan, password: TZLajhUSac5a3ef0-b4ab-11eb-b65e-1239d0255272, sni: ca-trojan.bonds.id}
-  - {name: TG YouTube:8度科技_捷克, server: 195.133.53.192, port: 27182, type: vmess, uuid: a22df2ec-6200-11ec-9070-fecccc2333dc, alterId: 0, cipher: auto, tls: false, network: ws, ws-path: /AmrTCtbk/, ws-headers: {Host: 195.133.53.192}}
-  - {name: 🇲🇾 TG YouTube:8度科技_马来西亚, server: 223.25.246.4, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: w4GUD28Bw9uCMdbc2pqA}
   - {name: 🇺🇸 TG YouTube:8度科技_美国, server: usa-miami.lvuft.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, network: ws, ws-path: /ws, ws-headers: {Host: usa-miami.lvuft.com}}
-  - {name: 🇺🇸 TG YouTube:8度科技_美国 2, server: usa-dallas.lvuft.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, network: ws, ws-path: /ws, ws-headers: {Host: usa-dallas.lvuft.com}}
-  - {name: 🇺🇸 TG YouTube:8度科技_美国 3, server: 192.186.129.66, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, network: ws, ws-path: /ws, ws-headers: {Host: usa-buffalo.lvuft.com}}
-  - {name: 🇺🇸 TG YouTube:8度科技_美国 4, server: usa-buffalo.lvuft.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, network: ws, ws-path: /ws, ws-headers: {Host: usa-buffalo.lvuft.com}}
-  - {name: 🇺🇸 TG YouTube:8度科技_美国 5, server: 23.82.136.151, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, network: ws, ws-path: /ws, ws-headers: {Host: usa-miami.lvuft.com}}
-  - {name: 🇺🇸 TG YouTube:8度科技_美国 6, server: 208.98.48.2, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, network: ws, ws-path: /ws, ws-headers: {Host: iesei1ei.com}}
-  - {name: 🇺🇸 TG YouTube:8度科技_美国 7, server: 45.35.84.162, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, network: ws, ws-path: /ws, ws-headers: {Host: usa-dallas.lvuft.com}}
-  - {name: 🇺🇸 TG YouTube:8度科技_美国 8, server: 198.200.51.18, port: 27962, type: vmess, uuid: b660c4a6-50df-11ec-9676-00163caf481c, alterId: 0, cipher: auto, tls: false, network: ws, ws-path: /jZyaImnU/, ws-headers: {Host: 198.200.51.18}}
-  - {name: 🇺🇸 TG YouTube:8度科技_美国 9, server: 23.226.131.146, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: ckX2YfENbjCtVzVJphFP}
-  - {name: 🇺🇸 TG YouTube:8度科技_美国 10, server: 96.47.224.2, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: YDNYJcNdH5xuLrhyr7Fj}
-  - {name: 🇺🇸 TG YouTube:8度科技_美国 11, server: 70.32.0.208, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: q4apPAjyY9knqKS4e9xZ}
-  - {name: 🇺🇸 TG YouTube:8度科技_美国 12, server: 23.226.131.146, port: 8388, type: ss, cipher: chacha20-ietf-poly1305, password: ckX2YfENbjCtVzVJphFP}
-  - {name: 🇺🇸 TG YouTube:8度科技_美国 13, server: 23.19.26.246, port: 10515, type: ss, cipher: aes-256-gcm, password: dongtaiwang.com}
-  - {name: 🇺🇸 TG YouTube:8度科技_美国 14, server: 38.75.136.93, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: 🇺🇸 TG YouTube:8度科技_美国 15, server: 107.182.234.233, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: XkH8z99cQguQ8ywK5jhV}
-  - {name: 🇺🇸 TG YouTube:8度科技_美国 16, server: 66.55.92.101, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: NK4wZejCzDfPdWXTK4FW}
-  - {name: 🇺🇸 TG YouTube:8度科技_美国 17, server: 66.55.92.101, port: 8388, type: ss, cipher: chacha20-ietf-poly1305, password: NK4wZejCzDfPdWXTK4FW}
-  - {name: TG YouTube:8度科技_挪威, server: 46.29.218.6, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: TG YouTube:8度科技_挪威 2, server: 84.247.50.10, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: AsLgDbA45KTMXumtzWhf}
-  - {name: TG YouTube:8度科技_挪威 3, server: 46.29.218.6, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
-  - {name: TG YouTube:8度科技_挪威 4, server: 46.29.218.6, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v}
-  - {name: TG YouTube:8度科技_挪威 5, server: 46.29.218.6, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: TG YouTube:8度科技_挪威 6, server: 46.29.218.6, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: TG YouTube:8度科技_挪威 7, server: 46.29.218.6, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
-  - {name: TG YouTube:8度科技_挪威 8, server: 46.29.218.6, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: TG YouTube:8度科技_挪威 9, server: 46.29.218.6, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: TG YouTube:8度科技_挪威 10, server: 46.29.218.6, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: TG YouTube:8度科技_挪威 11, server: 46.29.218.6, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74}
-  - {name: TG YouTube:8度科技_挪威 12, server: 46.29.218.6, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: TG YouTube:8度科技_挪威 13, server: 46.29.218.6, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: TG YouTube:8度科技_挪威 14, server: 46.29.218.6, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: TG YouTube:8度科技_葡萄牙, server: 185.90.57.152, port: 8388, type: ss, cipher: chacha20-ietf-poly1305, password: qSnstpCypymLvPeyLRqf}
-  - {name: TG YouTube:8度科技_葡萄牙 2, server: 185.90.57.152, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: qSnstpCypymLvPeyLRqf}
-  - {name: 🇯🇵 TG YouTube:8度科技_日本, server: 172.105.232.147, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: 🇯🇵 TG YouTube:8度科技_日本 2, server: 139.162.116.154, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG}
-  - {name: 🇸🇪 TG YouTube:8度科技_瑞典, server: 45.83.91.66, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: fAmKHf3Dft78ZyzL9kYF}
-  - {name: 🇹🇼 TG YouTube:8度科技_台湾, server: 188.214.106.98, port: 8388, type: ss, cipher: chacha20-ietf-poly1305, password: cNbqVVyUfbJFZ6S8EgRH}
-  - {name: 🇹🇼 TG YouTube:8度科技_台湾 2, server: 188.214.106.98, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: cNbqVVyUfbJFZ6S8EgRH}
-  - {name: TG YouTube:8度科技_希腊, server: 185.51.134.210, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: mTrN2fMYeWJwrkWpTnL2}
-  - {name: 🇭🇰 TG YouTube:8度科技_香港, server: 129.227.201.234, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, network: ws, ws-path: /ws, ws-headers: {Host: aicoo6du.com}}
-  - {name: 🇭🇰 TG YouTube:8度科技_香港 2, server: 8.210.55.79, port: 80, type: vmess, uuid: d064d11b-477c-4c5d-a2d8-9fd599ef8e79, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 8.210.55.79}}
-  - {name: 🇭🇰 TG YouTube:8度科技_香港 3, server: 84.17.37.55, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: tjwRqQvteAjt3xFmbZTA}
-  - {name: 🇭🇰 TG YouTube:8度科技_香港 4, server: 84.17.37.55, port: 8388, type: ss, cipher: chacha20-ietf-poly1305, password: tjwRqQvteAjt3xFmbZTA}
-  - {name: 🇭🇰 TG YouTube:8度科技_香港 5, server: 118.107.244.110, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: 🇭🇰 TG YouTube:8度科技_香港 6, server: 118.107.244.110, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: 🇭🇰 TG YouTube:8度科技_香港 7, server: 58.152.85.196, port: 2808, type: ss, cipher: aes-256-gcm, password: dbbdb5625d0268ef28240da6d67eb4c0}
-  - {name: 🇭🇰 TG YouTube:8度科技_香港 8, server: www.zx07.top, port: 443, type: trojan, password: L1qNeGrY58ApwrRA, sni: www.zx07.top}
-  - {name: 🇸🇬 TG YouTube:8度科技_新加坡, server: 139.99.62.207, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
-  - {name: 🇸🇬 TG YouTube:8度科技_新加坡 2, server: 139.99.62.207, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: 🇸🇬 TG YouTube:8度科技_新加坡 3, server: 139.99.62.207, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: TG YouTube:8度科技_以色列, server: 212.199.61.55, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: scDj68fv6xkMg2np9RgW}
-  - {name: 🇮🇳 TG YouTube:8度科技_印度, server: 172.105.35.61, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
-  - {name: 🇬🇧 TG YouTube:8度科技_英国, server: 172.99.190.87, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 🇬🇧 TG YouTube:8度科技_英国 2, server: 172.99.190.87, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 🇬🇧 TG YouTube:8度科技_英国 3, server: 172.99.190.87, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: 🇬🇧 TG YouTube:8度科技_英国 4, server: 172.99.190.87, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY}
-  - {name: 🇻🇳 TG YouTube:8度科技_越南, server: 165.154.229.22, port: 80, type: vmess, uuid: fbf53107-1b42-3da5-a77d-6ad22544c0e9, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /v2ray, ws-headers: {Host: 165.154.229.22}}
-  - {name: 🇻🇳 TG YouTube:8度科技_越南 2, server: 1116yn.fans8.xyz, port: 80, type: vmess, uuid: fbf53107-1b42-3da5-a77d-6ad22544c0e9, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}}
-  - {name: 🇻🇳 TG YouTube:8度科技_越南 3, server: 188.214.152.194, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: t8BFcaM3GSCw5FHbph27}
-  - {name: 🇨🇳 TG YouTube:8度科技_中国, server: cm-jm.okvpn.xyz, port: 20005, type: vmess, uuid: fa2c02cf-bbc1-4da0-b051-3731d87ec785, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: youtube-aweikeji}}
-  - {name: 🇨🇳 TG YouTube:8度科技_中国 2, server: 112.33.32.136, port: 10003, type: vmess, uuid: 65cac56d-4155-43c8-bae0-f368cb21f771, alterId: 1, cipher: auto, tls: false}
-  - {name: 🇨🇳 TG YouTube:8度科技_中国 3, server: 112.33.32.136, port: 10003, type: vmess, uuid: 65cac56d-4155-43c8-bae0-f368cb21f771, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇨🇳 TG YouTube:8度科技_中国 4, server: cm-jm.okvpn.xyz, port: 20047, type: vmess, uuid: fa2c02cf-bbc1-4da0-b051-3731d87ec785, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: youtube-aweikeji}}
-  - {name: 🇨🇳 TG YouTube:8度科技_中国 5, server: 120.232.82.190, port: 2008, type: ss, cipher: aes-256-gcm, password: 8e2bb8a49c86c76d7876bb61d44f40d9}
-  - {name: 🇨🇳 TG YouTube:8度科技_中国 6, server: music.desperadoj.com, port: 30003, type: ss, cipher: aes-128-gcm, password: desperadoj.com_free_proxy_d39m}
-  - {name: 🇨🇳 TG YouTube:8度科技_中国 7, server: 101.132.192.212, port: 30003, type: ss, cipher: aes-128-gcm, password: desperadoj.com_free_proxy_d39m}
-  - {name: 🇨🇳 TG YouTube:8度科技_中国 8, server: jp-tyo-04-tr.cdn.savoy.click, port: 889, type: trojan, password: UiLPqefVfielqkDjEwBV, sni: jp-tyo-04-tr.cdn.savoy.click}
-  - {name: 🇦🇺 _AU_澳大利亚, server: 172.105.180.227, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: _BG_保加利亚, server: 217.138.221.42, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: r4MP5DzDNmAqbBHzbSXw}
-  - {name: 🇯🇵 _CN_中国->🇯🇵_JP_日本, server: 120.232.82.190, port: 4001, type: ss, cipher: aes-256-gcm, password: 43e27d84de893cced5b4d6adfd087cff}
-  - {name: 🇹🇼 _CN_中国->🇹🇼_TW_台湾, server: 211.99.96.40, port: 11316, type: ss, cipher: aes-256-gcm, password: gTVvCY}
-  - {name: 🇫🇷 _FR_法国, server: 145.239.1.137, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: 🇫🇷 _FR_法国 2, server: 145.239.1.137, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: 🇫🇷 _FR_法国 3, server: 145.239.1.137, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 🇫🇷 _FR_法国 4, server: 37.120.136.234, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: Xd2xnHT8tYkVt5BDk92b}
-  - {name: 🇫🇷 _FR_法国 5, server: 145.239.1.137, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
-  - {name: 🇬🇧 _GB_英国, server: 172.99.190.87, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74}
-  - {name: 🇭🇰 _HK_香港, server: 118.107.244.110, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: 🇭🇰 _HK_香港 2, server: 118.107.244.112, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: 🇭🇰 _HK_香港 3, server: 118.107.244.112, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: 🇭🇰 _HK_香港 4, server: 118.107.244.110, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: 🇮🇳 _HK_香港->🇮🇳_IN_印度, server: aicoo6du.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, network: ws, ws-path: /ws, ws-headers: {Host: aicoo6du.com}}
-  - {name: 🇭🇰 HK TG YouTube:8度科技, server: shcn2-06b.iplc188.com, port: 10001, type: vmess, uuid: 65cac56d-4155-43c8-bae0-f368cb21f771, alterId: 1, cipher: auto, tls: false}
-  - {name: 🇭🇰 香港TG YouTube:8度科技, server: 3.zhuzhu12.com, port: 80, type: vmess, uuid: 163deea7-d7c3-321d-8c60-9409ad990e1f, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /zz, ws-headers: {Host: a.189.cn}}
-  - {name: 🇮🇩 _ID_印度尼西亚, server: 45.133.181.58, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: qzj5NqakK4YvYYU87eFF}
-  - {name: JP TG YouTube:8度科技, server: 1031kr.fans8.xyz, port: 80, type: vmess, uuid: fbf53107-1b42-3da5-a77d-6ad22544c0e9, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /v2ray, ws-headers: {Host: youtube-aweikeji}}
-  - {name: JPTG YouTube:8度科技, server: 146.56.177.34, port: 80, type: vmess, uuid: fbf53107-1b42-3da5-a77d-6ad22544c0e9, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /v2ray, ws-headers: {Host: youtube-aweikeji}}
-  - {name: 🇳🇱 _NL_荷兰, server: 89.238.177.234, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: VPPqaR4qpLmNw37jaJg6}
-  - {name: _NO_挪威, server: 46.29.218.6, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 🇷🇺 RU TG YouTube:8度科技, server: 82.202.220.242, port: 8388, type: ss, cipher: chacha20-ietf-poly1305, password: Kw6hMXQ2Z7ey7mf2Uqyr}
-  - {name: 🇸🇬 SG TG YouTube:8度科技, server: 134.209.96.184, port: 36450, type: ss, cipher: chacha20-ietf-poly1305, password: AXy2RnSRP2iBNkH4}
-  - {name: 🇹🇼 TW TG YouTube:8度科技, server: 112.33.32.136, port: 10003, type: vmess, uuid: 65cac56d-4155-43c8-bae0-f368cb21f771, alterId: 1, cipher: auto, tls: false}
+  - {name: 🇭🇰 TG YouTube:8度科技_香港, server: 8.210.55.79, port: 80, type: vmess, uuid: d064d11b-477c-4c5d-a2d8-9fd599ef8e79, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 8.210.55.79}}
+  - {name: 🇰🇷 _HK_香港->🇰🇷_KR_韩国, server: xe3rayu3.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, network: ws, ws-path: /ws, ws-headers: {Host: xe3rayu3.com}}
+  - {name: 🇺🇸 Relay_🇺🇸US-🇺🇸US_1674, server: v1.ssrsub.com, port: 8443, type: vmess, uuid: 8cf83f44-79ff-4e50-be1a-585c82338912, alterId: 0, cipher: auto, tls: true, network: ws, ws-path: /ssrsub, ws-headers: {Host: v1.ssrsub.com}}
   - {name: 🇺🇸 _US_美国, server: v1.ssrsub.com, port: 8443, type: vmess, uuid: 1de99090-4bd5-4670-9cec-05f55b4c6917, alterId: 0, cipher: auto, tls: true, network: ws, ws-path: /ssrsub, ws-headers: {Host: v1.ssrsub.com}}
-  - {name: 🇺🇸 _US_美国 2, server: dax6ujai.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, network: ws, ws-path: /ws, ws-headers: {Host: dax6ujai.com}}
-  - {name: 🇺🇸 _US_美国 3, server: 38.75.136.93, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: 🇺🇸 _US_美国 4, server: 38.75.136.93, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: 🇺🇸 _US_美国 5, server: 38.75.136.93, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 🇺🇸 _US_美国 6, server: 38.75.136.93, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: 🇺🇸 _US_美国 7, server: 70.39.71.2, port: 8388, type: ss, cipher: chacha20-ietf-poly1305, password: XkH8z99cQguQ8ywK5jhV}
-  - {name: 🇺🇸 _US_美国 8, server: 38.75.136.93, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: 🇺🇸 _US_美国->🇨🇿_CZ_捷克, server: v9.ssrsub.com, port: 8443, type: vmess, uuid: 8cf83f44-79ff-4e50-be1a-585c82338912, alterId: 0, cipher: auto, tls: true, network: ws, ws-path: /ssrsub, ws-headers: {Host: v9.ssrsub.com}}
+  - {name: 🇷🇺 TG YouTube:8度科技_俄罗斯联邦, server: 194.156.120.52, port: 41002, type: vmess, uuid: ebb93e84-5bb7-11ec-8bc6-6a5c6e054e4d, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇺🇸 TG YouTube:8度科技_美国 2, server: 45.35.84.162, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, network: ws, ws-path: /ws, ws-headers: {Host: usa-dallas.lvuft.com}}
+  - {name: 🇰🇷 _HK_香港->🇰🇷_KR_韩国 2, server: 156.234.95.72, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, network: ws, ws-path: /ws, ws-headers: {Host: xe3rayu3.com}}
+  - {name: TG YouTube:8度科技_捷克, server: 195.133.53.192, port: 27182, type: vmess, uuid: a22df2ec-6200-11ec-9070-fecccc2333dc, alterId: 0, cipher: auto, tls: false, network: ws, ws-path: /AmrTCtbk/, ws-headers: {Host: 195.133.53.192}}
+  - {name: 🇭🇰 TG YouTube:8度科技_香港 2, server: 129.227.201.234, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, network: ws, ws-path: /ws, ws-headers: {Host: aicoo6du.com}}
+  - {name: TG YouTube:8度科技, server: v4.ssrsub.com, port: 8443, type: vmess, uuid: 1de99090-4bd5-4670-9cec-05f55b4c6917, alterId: 0, cipher: auto, tls: true, network: ws, ws-path: /ssrsub, ws-headers: {Host: v4.ssrsub.com}}
+  - {name: 🇮🇳 _HK_香港->🇮🇳_IN_印度, server: aicoo6du.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, network: ws, ws-path: /ws, ws-headers: {Host: aicoo6du.com}}
   - {name: 🇷🇺 _US_美国->🇷🇺_RU_俄罗斯联邦, server: v6.ssrsub.com, port: 8443, type: vmess, uuid: 1de99090-4bd5-4670-9cec-05f55b4c6917, alterId: 0, cipher: auto, tls: true, network: ws, ws-path: /ssrsub, ws-headers: {Host: v6.ssrsub.com}}
-  - {name: 🇺🇸 US TG YouTube:8度科技, server: 185.203.6.225, port: 80, type: vmess, uuid: 1154cfae-be38-4564-840a-46a9e023922b, alterId: 0, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 185.203.6.225}}
-  - {name: 🇺🇸 US TG YouTube:8度科技 2, server: us01.eelvee.org, port: 3389, type: vmess, uuid: e5eedfed-5872-336c-a6bf-7dc91759db63, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: us01.eelvee.org}}
-  - {name: 🇺🇸 US TG YouTube:8度科技 3, server: us02.eelvee.org, port: 3389, type: vmess, uuid: e5eedfed-5872-336c-a6bf-7dc91759db63, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: us02.eelvee.org}}
+  - {name: default_name, server: v9.ssrsub.com, port: 8443, type: vmess, uuid: 1de99090-4bd5-4670-9cec-05f55b4c6917, alterId: 0, cipher: auto, tls: true, network: ws, ws-path: /ssrsub, ws-headers: {Host: v9.ssrsub.com}}
+  - {name: 🇺🇸 _US_美国->🇨🇿_CZ_捷克, server: v9.ssrsub.com, port: 8443, type: vmess, uuid: 8cf83f44-79ff-4e50-be1a-585c82338912, alterId: 0, cipher: auto, tls: true, network: ws, ws-path: /ssrsub, ws-headers: {Host: v9.ssrsub.com}}
+  - {name: 🇺🇸 TG YouTube:8度科技_美国 3, server: usa-dallas.lvuft.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, network: ws, ws-path: /ws, ws-headers: {Host: usa-dallas.lvuft.com}}
+  - {name: 🇺🇸 TG YouTube:8度科技_美国 4, server: usa-buffalo.lvuft.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, network: ws, ws-path: /ws, ws-headers: {Host: usa-buffalo.lvuft.com}}
+  - {name: 🇺🇸 TG YouTube:8度科技_美国 5, server: 208.98.48.2, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, network: ws, ws-path: /ws, ws-headers: {Host: iesei1ei.com}}
+  - {name: 🇺🇸 TG YouTube:8度科技_美国 6, server: 192.186.129.66, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, network: ws, ws-path: /ws, ws-headers: {Host: usa-buffalo.lvuft.com}}
+  - {name: 🇺🇸 _US_美国 2, server: 167.88.61.60, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
+  - {name: 🇮🇳 _IN_印度, server: 192.46.210.73, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: 🇮🇳 _IN_印度 2, server: 192.46.210.73, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
+  - {name: TG YouTube:8度科技_挪威, server: 46.29.218.6, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 🇮🇳 _IN_印度 3, server: 192.46.210.73, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 🇦🇺 TG YouTube:8度科技_澳大利亚, server: 46.102.153.106, port: 8388, type: ss, cipher: chacha20-ietf-poly1305, password: dsHq7JmRFhSkvxzCuMFy}
+  - {name: 🇫🇷 TG YouTube:8度科技_法国, server: 145.239.1.137, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: 🇮🇳 _IN_印度 4, server: 192.46.210.73, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: 🇮🇳 _IN_印度 5, server: 192.46.210.73, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 🇫🇷 TG YouTube:8度科技_法国 2, server: 145.239.1.137, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 🇮🇳 _IN_印度 6, server: 192.46.210.73, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: 🇮🇳 TG YouTube:8度科技_印度, server: 172.105.35.61, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
+  - {name: 🇻🇳 TG YouTube:8度科技_越南, server: 188.214.152.194, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: t8BFcaM3GSCw5FHbph27}
+  - {name: 🇸🇬 TG YouTube:8度科技_新加坡, server: 139.99.62.207, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 🇺🇸 _US_美国 3, server: 169.197.141.24, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: 🇮🇩 _ID_印度尼西亚, server: 45.133.181.58, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: qzj5NqakK4YvYYU87eFF}
+  - {name: 🇹🇼 TG YouTube:8度科技_台湾, server: 188.214.106.98, port: 8388, type: ss, cipher: chacha20-ietf-poly1305, password: cNbqVVyUfbJFZ6S8EgRH}
+  - {name: 🇦🇺 _AU_澳大利亚, server: 172.105.180.227, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 🇦🇺 _AU_澳大利亚 2, server: 172.105.180.227, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 🇦🇺 _AU_澳大利亚 3, server: 172.105.180.227, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY}
+  - {name: 🇦🇺 _AU_澳大利亚 4, server: 172.105.180.227, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇦🇺 _AU_澳大利亚 5, server: 172.105.180.227, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
+  - {name: 🇦🇺 _AU_澳大利亚 6, server: 172.105.180.227, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 🇦🇺 _AU_澳大利亚 7, server: 172.105.180.227, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
+  - {name: TG YouTube:8度科技_挪威 2, server: 46.29.218.6, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 🇦🇺 _AU_澳大利亚 8, server: 172.105.180.227, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: 🇦🇺 _AU_澳大利亚 9, server: 172.105.180.227, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
+  - {name: 🇦🇺 _AU_澳大利亚 10, server: 172.105.180.227, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 🇦🇺 _AU_澳大利亚 11, server: 172.105.180.227, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: 🇦🇺 _AU_澳大利亚 12, server: 172.105.180.227, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 🇦🇺 _AU_澳大利亚 13, server: 172.105.180.227, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 🇦🇺 _AU_澳大利亚 14, server: 172.105.180.227, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 🇦🇺 _AU_澳大利亚 15, server: 172.105.180.227, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
+  - {name: TG YouTube:8度科技_葡萄牙, server: 185.90.57.152, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: qSnstpCypymLvPeyLRqf}
+  - {name: 🇦🇺 _AU_澳大利亚 16, server: 172.105.180.227, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 🇦🇺 _AU_澳大利亚 17, server: 172.105.180.227, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
+  - {name: 🇸🇬 TG YouTube:8度科技_新加坡 2, server: 139.99.62.207, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
+  - {name: 🇦🇺 _AU_澳大利亚 18, server: 172.105.180.227, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: 🇦🇺 _AU_澳大利亚 19, server: 172.105.180.227, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: TG YouTube:8度科技_挪威 3, server: 46.29.218.6, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74}
+  - {name: 🇦🇺 _AU_澳大利亚 20, server: 172.105.180.227, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: 🇦🇺 _AU_澳大利亚 21, server: 172.105.180.227, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG}
+  - {name: 🇦🇺 _AU_澳大利亚 22, server: 172.105.180.227, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG}
+  - {name: 🇦🇺 _AU_澳大利亚 23, server: 172.105.180.227, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74}
+  - {name: 🇭🇰 TG YouTube:8度科技_香港 3, server: 84.17.37.55, port: 8388, type: ss, cipher: chacha20-ietf-poly1305, password: tjwRqQvteAjt3xFmbZTA}
+  - {name: 🇸🇪 TG YouTube:8度科技_瑞典, server: 45.83.91.66, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: fAmKHf3Dft78ZyzL9kYF}
+  - {name: 🇫🇷 _FR_法国, server: 145.239.1.137, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: TG YouTube:8度科技_葡萄牙 2, server: 185.90.57.152, port: 8388, type: ss, cipher: chacha20-ietf-poly1305, password: qSnstpCypymLvPeyLRqf}
+  - {name: 🇺🇸 TG YouTube:8度科技_美国 7, server: 23.226.131.146, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: ckX2YfENbjCtVzVJphFP}
+  - {name: TG YouTube:8度科技_挪威 4, server: 46.29.218.6, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 🇫🇷 TG YouTube:8度科技_法国 3, server: 145.239.1.137, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 🇫🇷 TG YouTube:8度科技_法国 4, server: 145.239.1.137, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 🇺🇸 _US_美国 4, server: 169.197.141.24, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: TG YouTube:8度科技_挪威 5, server: 84.247.50.10, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: AsLgDbA45KTMXumtzWhf}
+  - {name: TG YouTube:8度科技_挪威 6, server: 46.29.218.6, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
+  - {name: 🇨🇦 _CA_加拿大, server: 134.195.196.68, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: TG YouTube:8度科技_挪威 7, server: 46.29.218.6, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 🇺🇸 _US_美国 5, server: 38.64.138.145, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 🇬🇧 TG YouTube:8度科技_英国, server: 172.99.190.87, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY}
+  - {name: 🇨🇦 TG YouTube:8度科技_加拿大, server: 217.138.200.242, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: EGTHtnGhcnggx5yBYSqS}
+  - {name: _BG_保加利亚, server: 217.138.221.42, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: r4MP5DzDNmAqbBHzbSXw}
+  - {name: 🇺🇸 _US_美国 6, server: 38.64.138.145, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74}
+  - {name: 🇺🇸 TG YouTube:8度科技_美国 8, server: 23.226.131.146, port: 8388, type: ss, cipher: chacha20-ietf-poly1305, password: ckX2YfENbjCtVzVJphFP}
+  - {name: 🇺🇸 _US_美国 7, server: 38.64.138.145, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: _NO_挪威, server: 46.29.218.6, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 🇺🇸 _US_美国 8, server: 169.197.141.24, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG}
+  - {name: 🇫🇷 TG YouTube:8度科技_法国 5, server: 62.210.209.50, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
+  - {name: TG YouTube:8度科技_挪威 8, server: 46.29.218.6, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
+  - {name: 🇫🇷 TG YouTube:8度科技_法国 6, server: 141.95.0.26, port: 826, type: ss, cipher: chacha20-ietf-poly1305, password: sF43Xt2gONqcgFX563}
+  - {name: 🇨🇦 _CA_加拿大 2, server: 198.57.27.218, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 🇨🇦 TG YouTube:8度科技_加拿大 2, server: 198.57.27.218, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: 🇺🇸 _US_美国 9, server: 38.64.138.145, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 🇺🇸 _US_美国 10, server: 169.197.141.24, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
+  - {name: 🇫🇷 _FR_法国 2, server: 62.210.209.50, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
+  - {name: 🇺🇸 _US_美国 11, server: 38.64.138.145, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 🇬🇧 TG YouTube:8度科技_英国 2, server: 172.99.190.87, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 🇺🇸 _US_美国 12, server: 38.64.138.145, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
+  - {name: 🇺🇸 _US_美国 13, server: 38.64.138.145, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
+  - {name: 🇺🇸 _US_美国 14, server: 38.64.138.145, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇺🇸 _US_美国 15, server: 169.197.141.24, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
+  - {name: 🇺🇸 _US_美国 16, server: 169.197.141.24, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: 🇨🇦 _CA_加拿大 3, server: 134.195.196.68, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 🇺🇸 _US_美国 17, server: 38.64.138.145, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: 🇨🇦 TG YouTube:8度科技_加拿大 3, server: 198.57.27.218, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇨🇦 TG YouTube:8度科技_加拿大 4, server: 198.57.27.218, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 🇲🇾 _MY_马来西亚, server: 223.25.246.4, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: w4GUD28Bw9uCMdbc2pqA}
+  - {name: 🇨🇦 _CA_加拿大 4, server: 134.195.196.68, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
+  - {name: 🇺🇸 _US_美国 18, server: 38.64.138.145, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
+  - {name: 🇺🇸 _US_美国 19, server: 38.64.138.145, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74}
+  - {name: 🇺🇸 _US_美国 20, server: 169.197.141.24, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 🇨🇦 TG YouTube:8度科技_加拿大 5, server: 198.57.27.218, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 🇺🇸 _US_美国 21, server: 38.64.138.145, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: 🇺🇸 _US_美国 22, server: 169.197.141.24, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v}
+  - {name: 🇺🇸 _US_美国 23, server: 169.197.141.24, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 🇺🇸 _US_美国 24, server: 169.197.141.24, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 🇺🇸 _US_美国 25, server: 38.64.138.145, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG}
+  - {name: 🇺🇸 _US_美国 26, server: 38.64.138.145, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 🇺🇸 _US_美国 27, server: 38.64.138.145, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇺🇸 _US_美国 28, server: 169.197.141.24, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74}
+  - {name: 🇺🇸 _US_美国 29, server: 38.75.136.93, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 🇺🇸 _US_美国 30, server: 38.64.138.145, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG}
+  - {name: 🇺🇸 TG YouTube:8度科技_美国 9, server: 70.32.0.208, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: q4apPAjyY9knqKS4e9xZ}
+  - {name: 🇺🇸 _US_美国 31, server: 38.64.138.145, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: 🇺🇸 _US_美国 32, server: 38.64.138.145, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v}
+  - {name: 🇺🇸 _US_美国 33, server: 169.197.141.24, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 🇷🇺 _RU_俄罗斯联邦, server: 45.140.169.176, port: 10055, type: ss, cipher: aes-256-gcm, password: dongtaiwang.com}
+  - {name: 🇺🇸 _US_美国 34, server: 169.197.141.24, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇺🇸 _US_美国 35, server: 38.75.136.93, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 🇺🇸 _US_美国 36, server: 38.75.136.93, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: 🇺🇸 _US_美国 37, server: 38.64.138.145, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 🇺🇸 _US_美国 38, server: 169.197.141.24, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
+  - {name: 🇺🇸 TG YouTube:8度科技_美国 10, server: 38.75.136.93, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: 🇺🇸 _US_美国 39, server: 38.75.136.93, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
+  - {name: 🇺🇸 _US_美国 40, server: 70.39.71.2, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: XkH8z99cQguQ8ywK5jhV}
+  - {name: 🇺🇸 _US_美国 41, server: 169.197.142.39, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v}
+  - {name: 🇺🇸 _US_美国 42, server: 169.197.141.24, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY}
+  - {name: 🇺🇸 _US_美国 43, server: 38.75.136.93, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 🇺🇸 _US_美国 44, server: 169.197.143.157, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 🇺🇸 _US_美国 45, server: 167.88.61.60, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 🇺🇸 _US_美国 46, server: 167.88.61.60, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 🇺🇸 _US_美国 47, server: 38.91.102.86, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 🇺🇸 _US_美国 48, server: 38.91.102.86, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
+  - {name: 🇺🇸 _US_美国 49, server: 169.197.143.157, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 🇺🇸 _US_美国 50, server: 169.197.143.157, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG}
+  - {name: 🇺🇸 _US_美国 51, server: 38.91.102.86, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: 🇺🇸 _US_美国 52, server: 38.91.102.86, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 🇺🇸 _US_美国 53, server: 169.197.143.157, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇺🇸 _US_美国 54, server: 38.143.66.71, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY}
+  - {name: 🇺🇸 _US_美国 55, server: 169.197.142.39, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇺🇸 _US_美国 56, server: 169.197.142.39, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 🇺🇸 _US_美国 57, server: 169.197.143.157, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v}
+  - {name: 🇺🇸 _US_美国 58, server: 38.91.102.86, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
+  - {name: 🇺🇸 _US_美国 59, server: 167.88.61.60, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: 🇺🇸 _US_美国 60, server: 169.197.143.157, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
+  - {name: 🇺🇸 _US_美国 61, server: 169.197.143.157, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
+  - {name: 🇺🇸 _US_美国 62, server: 169.197.143.157, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: 🇺🇸 _US_美国 63, server: 167.88.61.60, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
+  - {name: 🇺🇸 _US_美国 64, server: 38.91.102.86, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
+  - {name: 🇺🇸 _US_美国 65, server: 169.197.143.157, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: 🇺🇸 _US_美国 66, server: 167.88.61.60, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
+  - {name: 🇺🇸 _US_美国 67, server: 169.197.143.157, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74}
+  - {name: 🇺🇸 _US_美国 68, server: 169.197.142.39, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: 🇺🇸 _US_美国 69, server: 169.197.142.39, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74}
+  - {name: 🇺🇸 _US_美国 70, server: 38.91.102.96, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
+  - {name: 🇺🇸 _US_美国 71, server: 167.88.61.60, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 🇺🇸 _US_美国 72, server: 167.88.61.60, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: 🇺🇸 _US_美国 73, server: 38.91.102.96, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: 🇺🇸 _US_美国 74, server: 167.88.61.60, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
+  - {name: 🇺🇸 _US_美国 75, server: 169.197.142.39, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: 🇺🇸 _US_美国 76, server: 169.197.143.157, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY}
+  - {name: 🇺🇸 _US_美国 77, server: 169.197.143.157, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
+  - {name: 🇺🇸 _US_美国 78, server: 38.91.102.96, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 🇺🇸 _US_美国 79, server: 38.91.102.86, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 🇺🇸 _US_美国 80, server: 38.91.102.86, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇺🇸 _US_美国 81, server: 38.91.102.96, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 🇺🇸 _US_美国 82, server: 38.91.102.86, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG}
+  - {name: 🇺🇸 _US_美国 83, server: 167.88.61.60, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 🇺🇸 _US_美国 84, server: 38.143.66.71, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG}
+  - {name: 🇺🇸 _US_美国 85, server: 38.91.102.86, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 🇺🇸 _US_美国 86, server: 167.88.61.60, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74}
+  - {name: 🇺🇸 _US_美国 87, server: 38.91.102.86, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 🇺🇸 _US_美国 88, server: 169.197.143.157, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY}
+  - {name: 🇺🇸 _US_美国 89, server: 38.91.102.86, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: 🇺🇸 _US_美国 90, server: 167.88.61.60, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: 🇺🇸 _US_美国 91, server: 38.91.102.96, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 🇺🇸 _US_美国 92, server: 169.197.143.157, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 🇺🇸 _US_美国 93, server: 167.88.61.60, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 🇺🇸 _US_美国 94, server: 169.197.143.157, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74}
+  - {name: 🇫🇷 _FR_法国 3, server: 145.239.1.137, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 🇺🇸 _US_美国 95, server: 169.197.142.39, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
+  - {name: 🇺🇸 _US_美国 96, server: 38.91.102.96, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 🇺🇸 _US_美国 97, server: 38.91.102.86, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 🇺🇸 _US_美国 98, server: 38.91.102.96, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
+  - {name: 🇺🇸 _US_美国 99, server: 38.91.102.86, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74}
+  - {name: 🇺🇸 _US_美国 100, server: 169.197.143.157, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: 🇺🇸 _US_美国 101, server: 167.88.61.60, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG}
+  - {name: 🇺🇸 _US_美国 102, server: 38.143.66.71, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
+  - {name: 🇺🇸 _US_美国 103, server: 169.197.142.39, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 🇺🇸 _US_美国 104, server: 169.197.143.157, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 🇺🇸 _US_美国 105, server: 38.91.102.86, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: 🇺🇸 _US_美国 106, server: 169.197.142.39, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: 🇺🇸 _US_美国 107, server: 169.197.142.39, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
+  - {name: 🇺🇸 _US_美国 108, server: 169.197.143.157, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
+  - {name: 🇺🇸 _US_美国 109, server: 169.197.142.39, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 🇺🇸 _US_美国 110, server: 167.88.61.60, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇺🇸 _US_美国 111, server: 169.197.143.157, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
+  - {name: 🇺🇸 _US_美国 112, server: 38.91.102.86, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: 🇺🇸 _US_美国 113, server: 38.91.102.96, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 🇺🇸 _US_美国 114, server: 167.88.61.60, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 🇺🇸 _US_美国 115, server: 38.143.66.71, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
+  - {name: 🇺🇸 _US_美国 116, server: 38.143.66.71, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
+  - {name: 🇺🇸 _US_美国 117, server: 169.197.143.157, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 🇺🇸 _US_美国 118, server: 70.39.71.2, port: 8388, type: ss, cipher: chacha20-ietf-poly1305, password: XkH8z99cQguQ8ywK5jhV}
+  - {name: 🇺🇸 _US_美国 119, server: 169.197.142.39, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
+  - {name: 🇺🇸 _US_美国 120, server: 38.91.102.86, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 🇺🇸 _US_美国 121, server: 167.88.61.60, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇺🇸 _US_美国 122, server: 169.197.142.39, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 🇺🇸 _US_美国 123, server: 167.88.61.60, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74}
+  - {name: 🇺🇸 _US_美国 124, server: 38.143.66.71, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 🇺🇸 _US_美国 125, server: 38.91.102.86, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
+  - {name: 🇺🇸 TG YouTube:8度科技_美国 11, server: 66.55.92.101, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: NK4wZejCzDfPdWXTK4FW}
+  - {name: 🇺🇸 _US_美国 126, server: 169.197.143.157, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
+  - {name: 🇺🇸 _US_美国 127, server: 38.91.102.86, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG}
+  - {name: 🇺🇸 _US_美国 128, server: 169.197.143.157, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 🇺🇸 _US_美国 129, server: 167.88.61.60, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 🇺🇸 _US_美国 130, server: 169.197.143.157, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 🇺🇸 _US_美国 131, server: 38.91.102.86, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 🇺🇸 _US_美国 132, server: 167.88.61.60, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 🇺🇸 _US_美国 133, server: 167.88.61.60, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 🇺🇸 _US_美国 134, server: 169.197.142.39, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG}
+  - {name: 🇺🇸 _US_美国 135, server: 169.197.143.157, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 🇺🇸 _US_美国 136, server: 167.88.61.60, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: 🇺🇸 _US_美国 137, server: 38.91.102.86, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 🇺🇸 _US_美国 138, server: 169.197.143.157, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: 🇺🇸 _US_美国 139, server: 169.197.142.39, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 🇺🇸 _US_美国 140, server: 167.88.61.60, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG}
+  - {name: 🇺🇸 _US_美国 141, server: 38.91.102.96, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG}
+  - {name: 🇺🇸 _US_美国 142, server: 38.91.102.86, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 🇺🇸 _US_美国 143, server: 38.91.102.96, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74}
+  - {name: 🇹🇼 _CN_中国->🇹🇼_TW_台湾, server: 211.99.96.40, port: 11316, type: ss, cipher: aes-256-gcm, password: gTVvCY}
+  - {name: 🇺🇸 _US_美国 144, server: 38.91.102.86, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: 🇺🇸 _US_美国 145, server: 38.91.102.86, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 🇺🇸 _US_美国 146, server: 169.197.142.39, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY}
+  - {name: 🇺🇸 _US_美国 147, server: 167.88.61.60, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY}
+  - {name: 🇺🇸 _US_美国 148, server: 38.91.102.86, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY}
+  - {name: 🇺🇸 _US_美国 149, server: 169.197.142.39, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 🇺🇸 _US_美国 150, server: 38.143.66.71, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 🇺🇸 TG YouTube:8度科技_美国 12, server: 66.55.92.101, port: 8388, type: ss, cipher: chacha20-ietf-poly1305, password: NK4wZejCzDfPdWXTK4FW}
+  - {name: 🇺🇸 _US_美国 151, server: 38.91.102.86, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74}
+  - {name: 🇺🇸 _US_美国 152, server: 38.143.66.71, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 🇺🇸 _US_美国 153, server: 169.197.142.39, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
+  - {name: 🇺🇸 _US_美国 154, server: 169.197.142.39, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG}
+  - {name: 🇺🇸 _US_美国 155, server: 169.197.142.39, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇺🇸 _US_美国 156, server: 169.197.142.39, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 🇰🇷 _KR_韩国, server: 141.164.52.21, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG}
+  - {name: TG YouTube:8度科技_挪威 9, server: 46.29.218.6, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v}
+  - {name: 🇭🇰 TG YouTube:8度科技_香港 4, server: 118.107.244.110, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 🇺🇸 _US_美国 157, server: 167.88.61.60, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
+  - {name: 🇭🇰 _HK_香港, server: 118.107.244.112, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 🇺🇸 _US_美国 158, server: 169.197.142.39, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: 🇺🇸 _US_美国 159, server: 167.88.61.60, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: 🇭🇰 _HK_香港 2, server: 118.107.244.112, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 🇨🇦 TG YouTube:8度科技_加拿大 6, server: 198.57.27.218, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 🇭🇰 _HK_香港 3, server: 118.107.244.112, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: 🇭🇰 _HK_香港 4, server: 118.107.244.112, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 🇭🇰 _HK_香港 5, server: 118.107.244.112, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY}
+  - {name: 🇭🇰 _HK_香港 6, server: 118.107.244.112, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
+  - {name: 🇫🇷 TG YouTube:8度科技_法国 7, server: 145.239.1.137, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇫🇷 TG YouTube:8度科技_法国 8, server: 145.239.1.137, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: 🇯🇵 TG YouTube:8度科技_日本, server: 172.105.232.147, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: 🇸🇬 TG YouTube:8度科技_新加坡 3, server: 139.99.62.207, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: TG YouTube:8度科技_挪威 10, server: 46.29.218.6, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 🇫🇷 _FR_法国 4, server: 145.239.1.137, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
+  - {name: TG YouTube:8度科技_挪威 11, server: 46.29.218.6, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 🇨🇳 TG YouTube:8度科技_中国, server: music.desperadoj.com, port: 30003, type: ss, cipher: aes-128-gcm, password: desperadoj.com_free_proxy_d39m}
+  - {name: 🇬🇧 TG YouTube:8度科技_英国 3, server: 172.99.190.87, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: 🇺🇸 _US_美国 160, server: 169.197.141.24, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74}
+  - {name: 🇨🇳 TG YouTube:8度科技_中国 2, server: 101.132.192.212, port: 30003, type: ss, cipher: aes-128-gcm, password: desperadoj.com_free_proxy_d39m}
+  - {name: TG YouTube:8度科技_挪威 12, server: 46.29.218.6, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: 🇺🇸 _US_美国 161, server: 169.197.143.157, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 🇺🇸 _US_美国 162, server: 169.197.142.39, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY}
+  - {name: 🇨🇦 TG YouTube:8度科技_加拿大 7, server: 198.57.27.218, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 🇬🇧 TG YouTube:8度科技_英国 4, server: 172.99.190.87, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: TG YouTube:8度科技_挪威 13, server: 46.29.218.6, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: TG YouTube:8度科技_挪威 14, server: 46.29.218.6, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇨🇦 TG YouTube:8度科技_加拿大 8, server: 198.57.27.218, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇬🇧 _GB_英国, server: 172.99.190.87, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74}
+  - {name: 🇨🇦 _CA_加拿大 5, server: 134.195.196.68, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 🇨🇦 TG YouTube:8度科技_加拿大 9, server: 198.57.27.218, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
+  - {name: 🇨🇦 TG YouTube:8度科技_加拿大 10, server: ca-trojan.bonds.id, port: 443, type: trojan, password: a3fa58b581353bb375d2ddad0fac5a3ef0-b4ab-11eb-b65e-1239d0255272, sni: ca-trojan.bonds.id}
+  - {name: 🇭🇰 TG YouTube:8度科技_香港 5, server: www.zx07.top, port: 443, type: trojan, password: L1qNeGrY58ApwrRA, sni: www.zx07.top}
+  - {name: 🇨🇦 TG YouTube:8度科技_加拿大 11, server: ca-trojan.bonds.id, port: 443, type: trojan, password: TZLajhUSac5a3ef0-b4ab-11eb-b65e-1239d0255272, sni: ca-trojan.bonds.id}
+  - {name: 🇨🇦 TG YouTube:8度科技_加拿大 12, server: ca-trojan.bonds.id, port: 443, type: trojan, password: bc7593fe-0604-4fbe-a70bYWVzLTI1Ni1nY206Q1VuZFNabllzUEtjdTZLajhUac5a3ef0-b4ab-11eb-b65e-1239d0255272, sni: ca-trojan.bonds.id}
+  - {name: TG YouTube:8度科技 2, server: tky3.ssgnode.ga, port: 443, type: trojan, password: bcYWVzLTI1Ni1nY206Q1VuZFNabll23115_5a451f03, sni: tky3.ssgnode.ga}
+  - {name: 🇨🇦 TG YouTube:8度科技_加拿大 13, server: ca-trojan.bonds.id, port: 443, type: trojan, password: a3fa58b581353bb375d2ddad0f327938ac5a3ef0-b4ab-11eb-b65e-1239d0255272, sni: ca-trojan.bonds.id}
+  - {name: 🇨🇦 TG YouTube:8度科技_加拿大 14, server: ca-trojan.bonds.id, port: 443, type: trojan, password: YWVzLTI1Ni1nY206eHBRd3lWNFc1RmRBNk5NQU5KSnga3fa58ac5a3ef0-b4ab-11eb-b65e-1239d0255272, sni: ca-trojan.bonds.id}
+  - {name: 🇨🇦 TG YouTube:8度科技_加拿大 15, server: ca-trojan.bonds.id, port: 443, type: trojan, password: bc7593fe-0604-4fbe-a70bYWVzLTI1Ni1nY2ac5a3ef0-lWNFc1RmRBNk5NQU5KSnga3fa58ac5a3ef0-b4ab-11eb-b65e-1239d0255272, sni: ca-trojan.bonds.id}
+  - {name: 🇨🇦 TG YouTube:8度科技_加拿大 16, server: ca-trojan.bonds.id, port: 443, type: trojan, password: ac5a3ef0-b4ab-11eb-b65e-1239d0255272, sni: ca-trojan.bonds.id}
+  - {name: 🇨🇦 TG YouTube:8度科技_加拿大 17, server: ca-trojan.bonds.id, port: 443, type: trojan, password: 36ebefac5a3ef0-b4ab-11eb-b65e-1239d0255272, sni: ca-trojan.bonds.id}
+  - {name: 🇨🇦 TG YouTube:8度科技_加拿大 18, server: ca-trojan.bonds.id, port: 443, type: trojan, password: a3fa5lWNFc1RmRBNk5NQU5KSnga3fa58ac5a3ef0-b4ab-11eb-b65e-1239d0255272, sni: ca-trojan.bonds.id}
+  - {name: 🇨🇦 TG YouTube:8度科技_加拿大 19, server: ca-trojan.bonds.id, port: 443, type: trojan, password: 28d98ac5a3ef0-b4ab-11eb-b65e-1239d0255272, sni: ca-trojan.bonds.id}
+  - {name: 🇨🇦 TG YouTube:8度科技_加拿大 20, server: ca-trojan.bonds.id, port: 443, type: trojan, password: bc7593fe-0604-4fbe-a70bYWVzLTI1Ni1nYlWNFc1RmRBNk5NQU5KSnga3fa58ac5a3ef0-b4ab-11eb-b65e-1239d0255272, sni: ca-trojan.bonds.id}
+  - {name: 🇨🇦 TG YouTube:8度科技_加拿大 21, server: ca-trojan.bonds.id, port: 443, type: trojan, password: bc7593fe-0604-4fbe-a70bYWVzLTI1Ni1nY206Q1VuZFNabllzUEtjdTac5a3ef0-b4ab-11eb-b65e-1239d0255272, sni: ca-trojan.bonds.id}
+  - {name: 🇨🇦 TG YouTube:8度科技_加拿大 22, server: ca-trojan.bonds.id, port: 443, type: trojan, password: bc7593fe-0604-4fbe-a70bYWVzLTI1Ni1nY206Q1VuZFNabllzUEtjdTaclWNFc1RmRBNk5NQU5KSnga3fa58ac5a3ef0-b4ab-11eb-b65e-1239d0255272, sni: ca-trojan.bonds.id}
+  - {name: 🇨🇦 TG YouTube:8度科技_加拿大 23, server: ca-trojan.bonds.id, port: 443, type: trojan, password: YWVzLTI1Ni1nY206WWd1c0gyTac5a3ef0-b4ablWNFc1RmRBNk5NQU5KSnga3fa58ac5a3ef0-b4ab-11eb-b65e-1239d0255272, sni: ca-trojan.bonds.id}
+  - {name: 🇨🇦 TG YouTube:8度科技_加拿大 24, server: ca-trojan.bonds.id, port: 443, type: trojan, password: bc7593fe-0604-4fbe-a70bYWVzLTIlWNFc1RmRBNk5NQU5KSnga3fa58ac5a3ef0-b4ab-11eb-b65e-1239d0255272, sni: ca-trojan.bonds.id}
+  - {name: 🇨🇦 TG YouTube:8度科技_加拿大 25, server: ca-trojan.bonds.id, port: 443, type: trojan, password: YWVzLTI1lWNFc1RmRBNk5NQU5KSnga3fa58ac5a3ef0-b4ab-11eb-b65e-1239d0255272, sni: ca-trojan.bonds.id}
+  - {name: 🇨🇦 TG YouTube:8度科技_加拿大 26, server: ca-trojan.bonds.id, port: 443, type: trojan, password: a3fa58ac5a3ef0-b4ab-11eb-b65e-1239d0255272, sni: ca-trojan.bonds.id}
+  - {name: 🇨🇦 TG YouTube:8度科技_加拿大 27, server: ca-trojan.bonds.id, port: 443, type: trojan, password: bc7593fe-0604-4fbe-a70bYWVzLTI1Ni1nY206lWNFc1RmRBNk5NQU5KSnga3fa58ac5a3ef0-b4ab-11eb-b65e-1239d0255272, sni: ca-trojan.bonds.id}
+  - {name: 🇨🇦 TG YouTube:8度科技_加拿大 28, server: ca-trojan.bonds.id, port: 443, type: trojan, password: YWVzLTI1Ni1nY206WWlWNFc1RmRBNk5NQU5KSnga3fa58ac5a3ef0-b4ab-11eb-b65e-1239d0255272, sni: ca-trojan.bonds.id}
+  - {name: 🇨🇦 TG YouTube:8度科技_加拿大 29, server: ca-trojan.bonds.id, port: 443, type: trojan, password: YWVzLlWNFc1RmRBNk5NQU5KSnga3fa58ac5a3ef0-b4ab-11eb-b65e-1239d0255272, sni: ca-trojan.bonds.id}
+  - {name: 🇨🇦 TG YouTube:8度科技_加拿大 30, server: ca-trojan.bonds.id, port: 443, type: trojan, password: YWVzLTI1NlWNFc1RmRBNk5NQU5KSnga3fa58ac5a3ef0-b4ab-11eb-b65e-1239d0255272, sni: ca-trojan.bonds.id}
+  - {name: 🇨🇦 TG YouTube:8度科技_加拿大 31, server: ca-trojan.bonds.id, port: 443, type: trojan, password: bc7593fe-0lWNFc1RmRBNk5NQU5KSnga3fa58ac5a3ef0-b4ab-11eb-b65e-1239d0255272, sni: ca-trojan.bonds.id}
+  - {name: 🇨🇦 TG YouTube:8度科技_加拿大 32, server: ca-trojan.bonds.id, port: 443, type: trojan, password: bc7593fe-0604-4fbe-a70bYWVzLTI1Ni1nY2ac5a3ef0-b4ab-11eb-b65e-1239d0255272, sni: ca-trojan.bonds.id}
+  - {name: 🇨🇦 TG YouTube:8度科技_加拿大 33, server: ca-trojan.bonds.id, port: 443, type: trojan, password: YWVzLTI1Ni1nY206WWd1c0gyTac5a3ef0-b4ab-11eb-b65e-1239d0255272, sni: ca-trojan.bonds.id}
+  - {name: TG YouTube:8度科技 3, server: tky3.ssgnode.ga, port: 443, type: trojan, password: 82a115db-6e59-4319-9730-8f5638908d59YWVzLTI1Ni1nY2023115_5a451f03, sni: tky3.ssgnode.ga}
+  - {name: TG YouTube:8度科技 4, server: tky3.ssgnode.ga, port: 443, type: trojan, password: 82a115db-6e59-4319-973lWNFc1RmRBNk5NQU5KSnga3fa58ac5a3ef0-b4ab-11eb-b65e-1239d0255272, sni: tky3.ssgnode.ga}
+  - {name: TG YouTube:8度科技 5, server: tky3.ssgnode.ga, port: 443, type: trojan, password: 82lWNFc1RmRBNk5NQU5KSnga3fa58ac5a3ef0-b4ab-11eb-b65e-1239d0255272, sni: tky3.ssgnode.ga}
+  - {name: 🇨🇳 TG YouTube:8度科技_中国 3, server: jp-tyo-04-tr.cdn.savoy.click, port: 889, type: trojan, password: UiLPqefVfielqkDjEwBV, sni: jp-tyo-04-tr.cdn.savoy.click}
+  - {name: TG YouTube:8度科技 6, server: tky3.ssgnode.ga, port: 443, type: trojan, password: 23115_5a451f03, sni: tky3.ssgnode.ga}
+  - {name: _55 | 3.63Mb, server: t3.ssrsub.com, port: 156, type: trojan, password: 1de99090-4bd5-4670-9cec-05f55b4c6917, sni: t3.ssrsub.com}
+  - {name: TG YouTube:8度科技 7, server: tky3.ssgnode.ga, port: 443, type: trojan, password: lWNFc1RmRBNk5NQU5KSnga3fa58ac5a3ef0-b4ab-11eb-b65e-1239d0255272, sni: tky3.ssgnode.ga}
+  - {name: TG YouTube:8度科技 8, server: hk31.ssgnode.ga, port: 443, type: trojan, password: 41742_920c8caa, sni: hk31.ssgnode.ga}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇭🇰 A香港05|流媒体|V2|GZ
-      - default_name
-      - default_name 2
+      - 🇺🇸 TG YouTube:8度科技_美国
+      - 🇭🇰 TG YouTube:8度科技_香港
+      - 🇰🇷 _HK_香港->🇰🇷_KR_韩国
       - 🇺🇸 Relay_🇺🇸US-🇺🇸US_1674
-      - TG YouTube:8度科技
-      - TG YouTube:8度科技 2
-      - TG YouTube:8度科技 3
-      - TG YouTube:8度科技 4
-      - TG YouTube:8度科技 5
-      - TG YouTube:8度科技 6
-      - TG YouTube:8度科技 7
-      - TG YouTube:8度科技 8
-      - TG YouTube:8度科技 9
-      - 🇦🇺 TG YouTube:8度科技_澳大利亚
-      - 🇩🇰 TG YouTube:8度科技_丹麦
+      - 🇺🇸 _US_美国
       - 🇷🇺 TG YouTube:8度科技_俄罗斯联邦
+      - 🇺🇸 TG YouTube:8度科技_美国 2
+      - 🇰🇷 _HK_香港->🇰🇷_KR_韩国 2
+      - TG YouTube:8度科技_捷克
+      - 🇭🇰 TG YouTube:8度科技_香港 2
+      - TG YouTube:8度科技
+      - 🇮🇳 _HK_香港->🇮🇳_IN_印度
+      - 🇷🇺 _US_美国->🇷🇺_RU_俄罗斯联邦
+      - default_name
+      - 🇺🇸 _US_美国->🇨🇿_CZ_捷克
+      - 🇺🇸 TG YouTube:8度科技_美国 3
+      - 🇺🇸 TG YouTube:8度科技_美国 4
+      - 🇺🇸 TG YouTube:8度科技_美国 5
+      - 🇺🇸 TG YouTube:8度科技_美国 6
+      - 🇺🇸 _US_美国 2
+      - 🇮🇳 _IN_印度
+      - 🇮🇳 _IN_印度 2
+      - TG YouTube:8度科技_挪威
+      - 🇮🇳 _IN_印度 3
+      - 🇦🇺 TG YouTube:8度科技_澳大利亚
       - 🇫🇷 TG YouTube:8度科技_法国
+      - 🇮🇳 _IN_印度 4
+      - 🇮🇳 _IN_印度 5
       - 🇫🇷 TG YouTube:8度科技_法国 2
+      - 🇮🇳 _IN_印度 6
+      - 🇮🇳 TG YouTube:8度科技_印度
+      - 🇻🇳 TG YouTube:8度科技_越南
+      - 🇸🇬 TG YouTube:8度科技_新加坡
+      - 🇺🇸 _US_美国 3
+      - 🇮🇩 _ID_印度尼西亚
+      - 🇹🇼 TG YouTube:8度科技_台湾
+      - 🇦🇺 _AU_澳大利亚
+      - 🇦🇺 _AU_澳大利亚 2
+      - 🇦🇺 _AU_澳大利亚 3
+      - 🇦🇺 _AU_澳大利亚 4
+      - 🇦🇺 _AU_澳大利亚 5
+      - 🇦🇺 _AU_澳大利亚 6
+      - 🇦🇺 _AU_澳大利亚 7
+      - TG YouTube:8度科技_挪威 2
+      - 🇦🇺 _AU_澳大利亚 8
+      - 🇦🇺 _AU_澳大利亚 9
+      - 🇦🇺 _AU_澳大利亚 10
+      - 🇦🇺 _AU_澳大利亚 11
+      - 🇦🇺 _AU_澳大利亚 12
+      - 🇦🇺 _AU_澳大利亚 13
+      - 🇦🇺 _AU_澳大利亚 14
+      - 🇦🇺 _AU_澳大利亚 15
+      - TG YouTube:8度科技_葡萄牙
+      - 🇦🇺 _AU_澳大利亚 16
+      - 🇦🇺 _AU_澳大利亚 17
+      - 🇸🇬 TG YouTube:8度科技_新加坡 2
+      - 🇦🇺 _AU_澳大利亚 18
+      - 🇦🇺 _AU_澳大利亚 19
+      - TG YouTube:8度科技_挪威 3
+      - 🇦🇺 _AU_澳大利亚 20
+      - 🇦🇺 _AU_澳大利亚 21
+      - 🇦🇺 _AU_澳大利亚 22
+      - 🇦🇺 _AU_澳大利亚 23
+      - 🇭🇰 TG YouTube:8度科技_香港 3
+      - 🇸🇪 TG YouTube:8度科技_瑞典
+      - 🇫🇷 _FR_法国
+      - TG YouTube:8度科技_葡萄牙 2
+      - 🇺🇸 TG YouTube:8度科技_美国 7
+      - TG YouTube:8度科技_挪威 4
       - 🇫🇷 TG YouTube:8度科技_法国 3
       - 🇫🇷 TG YouTube:8度科技_法国 4
-      - 🇫🇷 TG YouTube:8度科技_法国 5
-      - 🇫🇷 TG YouTube:8度科技_法国 6
-      - 🇫🇷 TG YouTube:8度科技_法国 7
-      - 🇫🇷 TG YouTube:8度科技_法国 8
-      - 🇫🇷 TG YouTube:8度科技_法国 9
-      - 🇫🇷 TG YouTube:8度科技_法国 10
-      - 🇵🇭 TG YouTube:8度科技_菲律宾
+      - 🇺🇸 _US_美国 4
+      - TG YouTube:8度科技_挪威 5
+      - TG YouTube:8度科技_挪威 6
+      - 🇨🇦 _CA_加拿大
+      - TG YouTube:8度科技_挪威 7
+      - 🇺🇸 _US_美国 5
+      - 🇬🇧 TG YouTube:8度科技_英国
       - 🇨🇦 TG YouTube:8度科技_加拿大
+      - _BG_保加利亚
+      - 🇺🇸 _US_美国 6
+      - 🇺🇸 TG YouTube:8度科技_美国 8
+      - 🇺🇸 _US_美国 7
+      - _NO_挪威
+      - 🇺🇸 _US_美国 8
+      - 🇫🇷 TG YouTube:8度科技_法国 5
+      - TG YouTube:8度科技_挪威 8
+      - 🇫🇷 TG YouTube:8度科技_法国 6
+      - 🇨🇦 _CA_加拿大 2
       - 🇨🇦 TG YouTube:8度科技_加拿大 2
+      - 🇺🇸 _US_美国 9
+      - 🇺🇸 _US_美国 10
+      - 🇫🇷 _FR_法国 2
+      - 🇺🇸 _US_美国 11
+      - 🇬🇧 TG YouTube:8度科技_英国 2
+      - 🇺🇸 _US_美国 12
+      - 🇺🇸 _US_美国 13
+      - 🇺🇸 _US_美国 14
+      - 🇺🇸 _US_美国 15
+      - 🇺🇸 _US_美国 16
+      - 🇨🇦 _CA_加拿大 3
+      - 🇺🇸 _US_美国 17
       - 🇨🇦 TG YouTube:8度科技_加拿大 3
       - 🇨🇦 TG YouTube:8度科技_加拿大 4
+      - 🇲🇾 _MY_马来西亚
+      - 🇨🇦 _CA_加拿大 4
+      - 🇺🇸 _US_美国 18
+      - 🇺🇸 _US_美国 19
+      - 🇺🇸 _US_美国 20
       - 🇨🇦 TG YouTube:8度科技_加拿大 5
+      - 🇺🇸 _US_美国 21
+      - 🇺🇸 _US_美国 22
+      - 🇺🇸 _US_美国 23
+      - 🇺🇸 _US_美国 24
+      - 🇺🇸 _US_美国 25
+      - 🇺🇸 _US_美国 26
+      - 🇺🇸 _US_美国 27
+      - 🇺🇸 _US_美国 28
+      - 🇺🇸 _US_美国 29
+      - 🇺🇸 _US_美国 30
+      - 🇺🇸 TG YouTube:8度科技_美国 9
+      - 🇺🇸 _US_美国 31
+      - 🇺🇸 _US_美国 32
+      - 🇺🇸 _US_美国 33
+      - 🇷🇺 _RU_俄罗斯联邦
+      - 🇺🇸 _US_美国 34
+      - 🇺🇸 _US_美国 35
+      - 🇺🇸 _US_美国 36
+      - 🇺🇸 _US_美国 37
+      - 🇺🇸 _US_美国 38
+      - 🇺🇸 TG YouTube:8度科技_美国 10
+      - 🇺🇸 _US_美国 39
+      - 🇺🇸 _US_美国 40
+      - 🇺🇸 _US_美国 41
+      - 🇺🇸 _US_美国 42
+      - 🇺🇸 _US_美国 43
+      - 🇺🇸 _US_美国 44
+      - 🇺🇸 _US_美国 45
+      - 🇺🇸 _US_美国 46
+      - 🇺🇸 _US_美国 47
+      - 🇺🇸 _US_美国 48
+      - 🇺🇸 _US_美国 49
+      - 🇺🇸 _US_美国 50
+      - 🇺🇸 _US_美国 51
+      - 🇺🇸 _US_美国 52
+      - 🇺🇸 _US_美国 53
+      - 🇺🇸 _US_美国 54
+      - 🇺🇸 _US_美国 55
+      - 🇺🇸 _US_美国 56
+      - 🇺🇸 _US_美国 57
+      - 🇺🇸 _US_美国 58
+      - 🇺🇸 _US_美国 59
+      - 🇺🇸 _US_美国 60
+      - 🇺🇸 _US_美国 61
+      - 🇺🇸 _US_美国 62
+      - 🇺🇸 _US_美国 63
+      - 🇺🇸 _US_美国 64
+      - 🇺🇸 _US_美国 65
+      - 🇺🇸 _US_美国 66
+      - 🇺🇸 _US_美国 67
+      - 🇺🇸 _US_美国 68
+      - 🇺🇸 _US_美国 69
+      - 🇺🇸 _US_美国 70
+      - 🇺🇸 _US_美国 71
+      - 🇺🇸 _US_美国 72
+      - 🇺🇸 _US_美国 73
+      - 🇺🇸 _US_美国 74
+      - 🇺🇸 _US_美国 75
+      - 🇺🇸 _US_美国 76
+      - 🇺🇸 _US_美国 77
+      - 🇺🇸 _US_美国 78
+      - 🇺🇸 _US_美国 79
+      - 🇺🇸 _US_美国 80
+      - 🇺🇸 _US_美国 81
+      - 🇺🇸 _US_美国 82
+      - 🇺🇸 _US_美国 83
+      - 🇺🇸 _US_美国 84
+      - 🇺🇸 _US_美国 85
+      - 🇺🇸 _US_美国 86
+      - 🇺🇸 _US_美国 87
+      - 🇺🇸 _US_美国 88
+      - 🇺🇸 _US_美国 89
+      - 🇺🇸 _US_美国 90
+      - 🇺🇸 _US_美国 91
+      - 🇺🇸 _US_美国 92
+      - 🇺🇸 _US_美国 93
+      - 🇺🇸 _US_美国 94
+      - 🇫🇷 _FR_法国 3
+      - 🇺🇸 _US_美国 95
+      - 🇺🇸 _US_美国 96
+      - 🇺🇸 _US_美国 97
+      - 🇺🇸 _US_美国 98
+      - 🇺🇸 _US_美国 99
+      - 🇺🇸 _US_美国 100
+      - 🇺🇸 _US_美国 101
+      - 🇺🇸 _US_美国 102
+      - 🇺🇸 _US_美国 103
+      - 🇺🇸 _US_美国 104
+      - 🇺🇸 _US_美国 105
+      - 🇺🇸 _US_美国 106
+      - 🇺🇸 _US_美国 107
+      - 🇺🇸 _US_美国 108
+      - 🇺🇸 _US_美国 109
+      - 🇺🇸 _US_美国 110
+      - 🇺🇸 _US_美国 111
+      - 🇺🇸 _US_美国 112
+      - 🇺🇸 _US_美国 113
+      - 🇺🇸 _US_美国 114
+      - 🇺🇸 _US_美国 115
+      - 🇺🇸 _US_美国 116
+      - 🇺🇸 _US_美国 117
+      - 🇺🇸 _US_美国 118
+      - 🇺🇸 _US_美国 119
+      - 🇺🇸 _US_美国 120
+      - 🇺🇸 _US_美国 121
+      - 🇺🇸 _US_美国 122
+      - 🇺🇸 _US_美国 123
+      - 🇺🇸 _US_美国 124
+      - 🇺🇸 _US_美国 125
+      - 🇺🇸 TG YouTube:8度科技_美国 11
+      - 🇺🇸 _US_美国 126
+      - 🇺🇸 _US_美国 127
+      - 🇺🇸 _US_美国 128
+      - 🇺🇸 _US_美国 129
+      - 🇺🇸 _US_美国 130
+      - 🇺🇸 _US_美国 131
+      - 🇺🇸 _US_美国 132
+      - 🇺🇸 _US_美国 133
+      - 🇺🇸 _US_美国 134
+      - 🇺🇸 _US_美国 135
+      - 🇺🇸 _US_美国 136
+      - 🇺🇸 _US_美国 137
+      - 🇺🇸 _US_美国 138
+      - 🇺🇸 _US_美国 139
+      - 🇺🇸 _US_美国 140
+      - 🇺🇸 _US_美国 141
+      - 🇺🇸 _US_美国 142
+      - 🇺🇸 _US_美国 143
+      - 🇹🇼 _CN_中国->🇹🇼_TW_台湾
+      - 🇺🇸 _US_美国 144
+      - 🇺🇸 _US_美国 145
+      - 🇺🇸 _US_美国 146
+      - 🇺🇸 _US_美国 147
+      - 🇺🇸 _US_美国 148
+      - 🇺🇸 _US_美国 149
+      - 🇺🇸 _US_美国 150
+      - 🇺🇸 TG YouTube:8度科技_美国 12
+      - 🇺🇸 _US_美国 151
+      - 🇺🇸 _US_美国 152
+      - 🇺🇸 _US_美国 153
+      - 🇺🇸 _US_美国 154
+      - 🇺🇸 _US_美国 155
+      - 🇺🇸 _US_美国 156
+      - 🇰🇷 _KR_韩国
+      - TG YouTube:8度科技_挪威 9
+      - 🇭🇰 TG YouTube:8度科技_香港 4
+      - 🇺🇸 _US_美国 157
+      - 🇭🇰 _HK_香港
+      - 🇺🇸 _US_美国 158
+      - 🇺🇸 _US_美国 159
+      - 🇭🇰 _HK_香港 2
       - 🇨🇦 TG YouTube:8度科技_加拿大 6
+      - 🇭🇰 _HK_香港 3
+      - 🇭🇰 _HK_香港 4
+      - 🇭🇰 _HK_香港 5
+      - 🇭🇰 _HK_香港 6
+      - 🇫🇷 TG YouTube:8度科技_法国 7
+      - 🇫🇷 TG YouTube:8度科技_法国 8
+      - 🇯🇵 TG YouTube:8度科技_日本
+      - 🇸🇬 TG YouTube:8度科技_新加坡 3
+      - TG YouTube:8度科技_挪威 10
+      - 🇫🇷 _FR_法国 4
+      - TG YouTube:8度科技_挪威 11
+      - 🇨🇳 TG YouTube:8度科技_中国
+      - 🇬🇧 TG YouTube:8度科技_英国 3
+      - 🇺🇸 _US_美国 160
+      - 🇨🇳 TG YouTube:8度科技_中国 2
+      - TG YouTube:8度科技_挪威 12
+      - 🇺🇸 _US_美国 161
+      - 🇺🇸 _US_美国 162
       - 🇨🇦 TG YouTube:8度科技_加拿大 7
+      - 🇬🇧 TG YouTube:8度科技_英国 4
+      - TG YouTube:8度科技_挪威 13
+      - TG YouTube:8度科技_挪威 14
       - 🇨🇦 TG YouTube:8度科技_加拿大 8
+      - 🇬🇧 _GB_英国
+      - 🇨🇦 _CA_加拿大 5
       - 🇨🇦 TG YouTube:8度科技_加拿大 9
       - 🇨🇦 TG YouTube:8度科技_加拿大 10
+      - 🇭🇰 TG YouTube:8度科技_香港 5
       - 🇨🇦 TG YouTube:8度科技_加拿大 11
       - 🇨🇦 TG YouTube:8度科技_加拿大 12
+      - TG YouTube:8度科技 2
       - 🇨🇦 TG YouTube:8度科技_加拿大 13
       - 🇨🇦 TG YouTube:8度科技_加拿大 14
       - 🇨🇦 TG YouTube:8度科技_加拿大 15
@@ -238,157 +647,312 @@ proxy-groups:
       - 🇨🇦 TG YouTube:8度科技_加拿大 31
       - 🇨🇦 TG YouTube:8度科技_加拿大 32
       - 🇨🇦 TG YouTube:8度科技_加拿大 33
-      - TG YouTube:8度科技_捷克
-      - 🇲🇾 TG YouTube:8度科技_马来西亚
-      - 🇺🇸 TG YouTube:8度科技_美国
-      - 🇺🇸 TG YouTube:8度科技_美国 2
-      - 🇺🇸 TG YouTube:8度科技_美国 3
-      - 🇺🇸 TG YouTube:8度科技_美国 4
-      - 🇺🇸 TG YouTube:8度科技_美国 5
-      - 🇺🇸 TG YouTube:8度科技_美国 6
-      - 🇺🇸 TG YouTube:8度科技_美国 7
-      - 🇺🇸 TG YouTube:8度科技_美国 8
-      - 🇺🇸 TG YouTube:8度科技_美国 9
-      - 🇺🇸 TG YouTube:8度科技_美国 10
-      - 🇺🇸 TG YouTube:8度科技_美国 11
-      - 🇺🇸 TG YouTube:8度科技_美国 12
-      - 🇺🇸 TG YouTube:8度科技_美国 13
-      - 🇺🇸 TG YouTube:8度科技_美国 14
-      - 🇺🇸 TG YouTube:8度科技_美国 15
-      - 🇺🇸 TG YouTube:8度科技_美国 16
-      - 🇺🇸 TG YouTube:8度科技_美国 17
-      - TG YouTube:8度科技_挪威
-      - TG YouTube:8度科技_挪威 2
-      - TG YouTube:8度科技_挪威 3
-      - TG YouTube:8度科技_挪威 4
-      - TG YouTube:8度科技_挪威 5
-      - TG YouTube:8度科技_挪威 6
-      - TG YouTube:8度科技_挪威 7
-      - TG YouTube:8度科技_挪威 8
-      - TG YouTube:8度科技_挪威 9
-      - TG YouTube:8度科技_挪威 10
-      - TG YouTube:8度科技_挪威 11
-      - TG YouTube:8度科技_挪威 12
-      - TG YouTube:8度科技_挪威 13
-      - TG YouTube:8度科技_挪威 14
-      - TG YouTube:8度科技_葡萄牙
-      - TG YouTube:8度科技_葡萄牙 2
-      - 🇯🇵 TG YouTube:8度科技_日本
-      - 🇯🇵 TG YouTube:8度科技_日本 2
-      - 🇸🇪 TG YouTube:8度科技_瑞典
-      - 🇹🇼 TG YouTube:8度科技_台湾
-      - 🇹🇼 TG YouTube:8度科技_台湾 2
-      - TG YouTube:8度科技_希腊
-      - 🇭🇰 TG YouTube:8度科技_香港
-      - 🇭🇰 TG YouTube:8度科技_香港 2
-      - 🇭🇰 TG YouTube:8度科技_香港 3
-      - 🇭🇰 TG YouTube:8度科技_香港 4
-      - 🇭🇰 TG YouTube:8度科技_香港 5
-      - 🇭🇰 TG YouTube:8度科技_香港 6
-      - 🇭🇰 TG YouTube:8度科技_香港 7
-      - 🇭🇰 TG YouTube:8度科技_香港 8
-      - 🇸🇬 TG YouTube:8度科技_新加坡
-      - 🇸🇬 TG YouTube:8度科技_新加坡 2
-      - 🇸🇬 TG YouTube:8度科技_新加坡 3
-      - TG YouTube:8度科技_以色列
-      - 🇮🇳 TG YouTube:8度科技_印度
-      - 🇬🇧 TG YouTube:8度科技_英国
-      - 🇬🇧 TG YouTube:8度科技_英国 2
-      - 🇬🇧 TG YouTube:8度科技_英国 3
-      - 🇬🇧 TG YouTube:8度科技_英国 4
-      - 🇻🇳 TG YouTube:8度科技_越南
-      - 🇻🇳 TG YouTube:8度科技_越南 2
-      - 🇻🇳 TG YouTube:8度科技_越南 3
-      - 🇨🇳 TG YouTube:8度科技_中国
-      - 🇨🇳 TG YouTube:8度科技_中国 2
+      - TG YouTube:8度科技 3
+      - TG YouTube:8度科技 4
+      - TG YouTube:8度科技 5
       - 🇨🇳 TG YouTube:8度科技_中国 3
-      - 🇨🇳 TG YouTube:8度科技_中国 4
-      - 🇨🇳 TG YouTube:8度科技_中国 5
-      - 🇨🇳 TG YouTube:8度科技_中国 6
-      - 🇨🇳 TG YouTube:8度科技_中国 7
-      - 🇨🇳 TG YouTube:8度科技_中国 8
-      - 🇦🇺 _AU_澳大利亚
-      - _BG_保加利亚
-      - 🇯🇵 _CN_中国->🇯🇵_JP_日本
-      - 🇹🇼 _CN_中国->🇹🇼_TW_台湾
-      - 🇫🇷 _FR_法国
-      - 🇫🇷 _FR_法国 2
-      - 🇫🇷 _FR_法国 3
-      - 🇫🇷 _FR_法国 4
-      - 🇫🇷 _FR_法国 5
-      - 🇬🇧 _GB_英国
-      - 🇭🇰 _HK_香港
-      - 🇭🇰 _HK_香港 2
-      - 🇭🇰 _HK_香港 3
-      - 🇭🇰 _HK_香港 4
-      - 🇮🇳 _HK_香港->🇮🇳_IN_印度
-      - 🇭🇰 HK TG YouTube:8度科技
-      - 🇭🇰 香港TG YouTube:8度科技
-      - 🇮🇩 _ID_印度尼西亚
-      - JP TG YouTube:8度科技
-      - JPTG YouTube:8度科技
-      - 🇳🇱 _NL_荷兰
-      - _NO_挪威
-      - 🇷🇺 RU TG YouTube:8度科技
-      - 🇸🇬 SG TG YouTube:8度科技
-      - 🇹🇼 TW TG YouTube:8度科技
-      - 🇺🇸 _US_美国
-      - 🇺🇸 _US_美国 2
-      - 🇺🇸 _US_美国 3
-      - 🇺🇸 _US_美国 4
-      - 🇺🇸 _US_美国 5
-      - 🇺🇸 _US_美国 6
-      - 🇺🇸 _US_美国 7
-      - 🇺🇸 _US_美国 8
-      - 🇺🇸 _US_美国->🇨🇿_CZ_捷克
-      - 🇷🇺 _US_美国->🇷🇺_RU_俄罗斯联邦
-      - 🇺🇸 US TG YouTube:8度科技
-      - 🇺🇸 US TG YouTube:8度科技 2
-      - 🇺🇸 US TG YouTube:8度科技 3
+      - TG YouTube:8度科技 6
+      - _55 | 3.63Mb
+      - TG YouTube:8度科技 7
+      - TG YouTube:8度科技 8
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 🇭🇰 A香港05|流媒体|V2|GZ
-      - default_name
-      - default_name 2
+      - 🇺🇸 TG YouTube:8度科技_美国
+      - 🇭🇰 TG YouTube:8度科技_香港
+      - 🇰🇷 _HK_香港->🇰🇷_KR_韩国
       - 🇺🇸 Relay_🇺🇸US-🇺🇸US_1674
-      - TG YouTube:8度科技
-      - TG YouTube:8度科技 2
-      - TG YouTube:8度科技 3
-      - TG YouTube:8度科技 4
-      - TG YouTube:8度科技 5
-      - TG YouTube:8度科技 6
-      - TG YouTube:8度科技 7
-      - TG YouTube:8度科技 8
-      - TG YouTube:8度科技 9
-      - 🇦🇺 TG YouTube:8度科技_澳大利亚
-      - 🇩🇰 TG YouTube:8度科技_丹麦
+      - 🇺🇸 _US_美国
       - 🇷🇺 TG YouTube:8度科技_俄罗斯联邦
+      - 🇺🇸 TG YouTube:8度科技_美国 2
+      - 🇰🇷 _HK_香港->🇰🇷_KR_韩国 2
+      - TG YouTube:8度科技_捷克
+      - 🇭🇰 TG YouTube:8度科技_香港 2
+      - TG YouTube:8度科技
+      - 🇮🇳 _HK_香港->🇮🇳_IN_印度
+      - 🇷🇺 _US_美国->🇷🇺_RU_俄罗斯联邦
+      - default_name
+      - 🇺🇸 _US_美国->🇨🇿_CZ_捷克
+      - 🇺🇸 TG YouTube:8度科技_美国 3
+      - 🇺🇸 TG YouTube:8度科技_美国 4
+      - 🇺🇸 TG YouTube:8度科技_美国 5
+      - 🇺🇸 TG YouTube:8度科技_美国 6
+      - 🇺🇸 _US_美国 2
+      - 🇮🇳 _IN_印度
+      - 🇮🇳 _IN_印度 2
+      - TG YouTube:8度科技_挪威
+      - 🇮🇳 _IN_印度 3
+      - 🇦🇺 TG YouTube:8度科技_澳大利亚
       - 🇫🇷 TG YouTube:8度科技_法国
+      - 🇮🇳 _IN_印度 4
+      - 🇮🇳 _IN_印度 5
       - 🇫🇷 TG YouTube:8度科技_法国 2
+      - 🇮🇳 _IN_印度 6
+      - 🇮🇳 TG YouTube:8度科技_印度
+      - 🇻🇳 TG YouTube:8度科技_越南
+      - 🇸🇬 TG YouTube:8度科技_新加坡
+      - 🇺🇸 _US_美国 3
+      - 🇮🇩 _ID_印度尼西亚
+      - 🇹🇼 TG YouTube:8度科技_台湾
+      - 🇦🇺 _AU_澳大利亚
+      - 🇦🇺 _AU_澳大利亚 2
+      - 🇦🇺 _AU_澳大利亚 3
+      - 🇦🇺 _AU_澳大利亚 4
+      - 🇦🇺 _AU_澳大利亚 5
+      - 🇦🇺 _AU_澳大利亚 6
+      - 🇦🇺 _AU_澳大利亚 7
+      - TG YouTube:8度科技_挪威 2
+      - 🇦🇺 _AU_澳大利亚 8
+      - 🇦🇺 _AU_澳大利亚 9
+      - 🇦🇺 _AU_澳大利亚 10
+      - 🇦🇺 _AU_澳大利亚 11
+      - 🇦🇺 _AU_澳大利亚 12
+      - 🇦🇺 _AU_澳大利亚 13
+      - 🇦🇺 _AU_澳大利亚 14
+      - 🇦🇺 _AU_澳大利亚 15
+      - TG YouTube:8度科技_葡萄牙
+      - 🇦🇺 _AU_澳大利亚 16
+      - 🇦🇺 _AU_澳大利亚 17
+      - 🇸🇬 TG YouTube:8度科技_新加坡 2
+      - 🇦🇺 _AU_澳大利亚 18
+      - 🇦🇺 _AU_澳大利亚 19
+      - TG YouTube:8度科技_挪威 3
+      - 🇦🇺 _AU_澳大利亚 20
+      - 🇦🇺 _AU_澳大利亚 21
+      - 🇦🇺 _AU_澳大利亚 22
+      - 🇦🇺 _AU_澳大利亚 23
+      - 🇭🇰 TG YouTube:8度科技_香港 3
+      - 🇸🇪 TG YouTube:8度科技_瑞典
+      - 🇫🇷 _FR_法国
+      - TG YouTube:8度科技_葡萄牙 2
+      - 🇺🇸 TG YouTube:8度科技_美国 7
+      - TG YouTube:8度科技_挪威 4
       - 🇫🇷 TG YouTube:8度科技_法国 3
       - 🇫🇷 TG YouTube:8度科技_法国 4
-      - 🇫🇷 TG YouTube:8度科技_法国 5
-      - 🇫🇷 TG YouTube:8度科技_法国 6
-      - 🇫🇷 TG YouTube:8度科技_法国 7
-      - 🇫🇷 TG YouTube:8度科技_法国 8
-      - 🇫🇷 TG YouTube:8度科技_法国 9
-      - 🇫🇷 TG YouTube:8度科技_法国 10
-      - 🇵🇭 TG YouTube:8度科技_菲律宾
+      - 🇺🇸 _US_美国 4
+      - TG YouTube:8度科技_挪威 5
+      - TG YouTube:8度科技_挪威 6
+      - 🇨🇦 _CA_加拿大
+      - TG YouTube:8度科技_挪威 7
+      - 🇺🇸 _US_美国 5
+      - 🇬🇧 TG YouTube:8度科技_英国
       - 🇨🇦 TG YouTube:8度科技_加拿大
+      - _BG_保加利亚
+      - 🇺🇸 _US_美国 6
+      - 🇺🇸 TG YouTube:8度科技_美国 8
+      - 🇺🇸 _US_美国 7
+      - _NO_挪威
+      - 🇺🇸 _US_美国 8
+      - 🇫🇷 TG YouTube:8度科技_法国 5
+      - TG YouTube:8度科技_挪威 8
+      - 🇫🇷 TG YouTube:8度科技_法国 6
+      - 🇨🇦 _CA_加拿大 2
       - 🇨🇦 TG YouTube:8度科技_加拿大 2
+      - 🇺🇸 _US_美国 9
+      - 🇺🇸 _US_美国 10
+      - 🇫🇷 _FR_法国 2
+      - 🇺🇸 _US_美国 11
+      - 🇬🇧 TG YouTube:8度科技_英国 2
+      - 🇺🇸 _US_美国 12
+      - 🇺🇸 _US_美国 13
+      - 🇺🇸 _US_美国 14
+      - 🇺🇸 _US_美国 15
+      - 🇺🇸 _US_美国 16
+      - 🇨🇦 _CA_加拿大 3
+      - 🇺🇸 _US_美国 17
       - 🇨🇦 TG YouTube:8度科技_加拿大 3
       - 🇨🇦 TG YouTube:8度科技_加拿大 4
+      - 🇲🇾 _MY_马来西亚
+      - 🇨🇦 _CA_加拿大 4
+      - 🇺🇸 _US_美国 18
+      - 🇺🇸 _US_美国 19
+      - 🇺🇸 _US_美国 20
       - 🇨🇦 TG YouTube:8度科技_加拿大 5
+      - 🇺🇸 _US_美国 21
+      - 🇺🇸 _US_美国 22
+      - 🇺🇸 _US_美国 23
+      - 🇺🇸 _US_美国 24
+      - 🇺🇸 _US_美国 25
+      - 🇺🇸 _US_美国 26
+      - 🇺🇸 _US_美国 27
+      - 🇺🇸 _US_美国 28
+      - 🇺🇸 _US_美国 29
+      - 🇺🇸 _US_美国 30
+      - 🇺🇸 TG YouTube:8度科技_美国 9
+      - 🇺🇸 _US_美国 31
+      - 🇺🇸 _US_美国 32
+      - 🇺🇸 _US_美国 33
+      - 🇷🇺 _RU_俄罗斯联邦
+      - 🇺🇸 _US_美国 34
+      - 🇺🇸 _US_美国 35
+      - 🇺🇸 _US_美国 36
+      - 🇺🇸 _US_美国 37
+      - 🇺🇸 _US_美国 38
+      - 🇺🇸 TG YouTube:8度科技_美国 10
+      - 🇺🇸 _US_美国 39
+      - 🇺🇸 _US_美国 40
+      - 🇺🇸 _US_美国 41
+      - 🇺🇸 _US_美国 42
+      - 🇺🇸 _US_美国 43
+      - 🇺🇸 _US_美国 44
+      - 🇺🇸 _US_美国 45
+      - 🇺🇸 _US_美国 46
+      - 🇺🇸 _US_美国 47
+      - 🇺🇸 _US_美国 48
+      - 🇺🇸 _US_美国 49
+      - 🇺🇸 _US_美国 50
+      - 🇺🇸 _US_美国 51
+      - 🇺🇸 _US_美国 52
+      - 🇺🇸 _US_美国 53
+      - 🇺🇸 _US_美国 54
+      - 🇺🇸 _US_美国 55
+      - 🇺🇸 _US_美国 56
+      - 🇺🇸 _US_美国 57
+      - 🇺🇸 _US_美国 58
+      - 🇺🇸 _US_美国 59
+      - 🇺🇸 _US_美国 60
+      - 🇺🇸 _US_美国 61
+      - 🇺🇸 _US_美国 62
+      - 🇺🇸 _US_美国 63
+      - 🇺🇸 _US_美国 64
+      - 🇺🇸 _US_美国 65
+      - 🇺🇸 _US_美国 66
+      - 🇺🇸 _US_美国 67
+      - 🇺🇸 _US_美国 68
+      - 🇺🇸 _US_美国 69
+      - 🇺🇸 _US_美国 70
+      - 🇺🇸 _US_美国 71
+      - 🇺🇸 _US_美国 72
+      - 🇺🇸 _US_美国 73
+      - 🇺🇸 _US_美国 74
+      - 🇺🇸 _US_美国 75
+      - 🇺🇸 _US_美国 76
+      - 🇺🇸 _US_美国 77
+      - 🇺🇸 _US_美国 78
+      - 🇺🇸 _US_美国 79
+      - 🇺🇸 _US_美国 80
+      - 🇺🇸 _US_美国 81
+      - 🇺🇸 _US_美国 82
+      - 🇺🇸 _US_美国 83
+      - 🇺🇸 _US_美国 84
+      - 🇺🇸 _US_美国 85
+      - 🇺🇸 _US_美国 86
+      - 🇺🇸 _US_美国 87
+      - 🇺🇸 _US_美国 88
+      - 🇺🇸 _US_美国 89
+      - 🇺🇸 _US_美国 90
+      - 🇺🇸 _US_美国 91
+      - 🇺🇸 _US_美国 92
+      - 🇺🇸 _US_美国 93
+      - 🇺🇸 _US_美国 94
+      - 🇫🇷 _FR_法国 3
+      - 🇺🇸 _US_美国 95
+      - 🇺🇸 _US_美国 96
+      - 🇺🇸 _US_美国 97
+      - 🇺🇸 _US_美国 98
+      - 🇺🇸 _US_美国 99
+      - 🇺🇸 _US_美国 100
+      - 🇺🇸 _US_美国 101
+      - 🇺🇸 _US_美国 102
+      - 🇺🇸 _US_美国 103
+      - 🇺🇸 _US_美国 104
+      - 🇺🇸 _US_美国 105
+      - 🇺🇸 _US_美国 106
+      - 🇺🇸 _US_美国 107
+      - 🇺🇸 _US_美国 108
+      - 🇺🇸 _US_美国 109
+      - 🇺🇸 _US_美国 110
+      - 🇺🇸 _US_美国 111
+      - 🇺🇸 _US_美国 112
+      - 🇺🇸 _US_美国 113
+      - 🇺🇸 _US_美国 114
+      - 🇺🇸 _US_美国 115
+      - 🇺🇸 _US_美国 116
+      - 🇺🇸 _US_美国 117
+      - 🇺🇸 _US_美国 118
+      - 🇺🇸 _US_美国 119
+      - 🇺🇸 _US_美国 120
+      - 🇺🇸 _US_美国 121
+      - 🇺🇸 _US_美国 122
+      - 🇺🇸 _US_美国 123
+      - 🇺🇸 _US_美国 124
+      - 🇺🇸 _US_美国 125
+      - 🇺🇸 TG YouTube:8度科技_美国 11
+      - 🇺🇸 _US_美国 126
+      - 🇺🇸 _US_美国 127
+      - 🇺🇸 _US_美国 128
+      - 🇺🇸 _US_美国 129
+      - 🇺🇸 _US_美国 130
+      - 🇺🇸 _US_美国 131
+      - 🇺🇸 _US_美国 132
+      - 🇺🇸 _US_美国 133
+      - 🇺🇸 _US_美国 134
+      - 🇺🇸 _US_美国 135
+      - 🇺🇸 _US_美国 136
+      - 🇺🇸 _US_美国 137
+      - 🇺🇸 _US_美国 138
+      - 🇺🇸 _US_美国 139
+      - 🇺🇸 _US_美国 140
+      - 🇺🇸 _US_美国 141
+      - 🇺🇸 _US_美国 142
+      - 🇺🇸 _US_美国 143
+      - 🇹🇼 _CN_中国->🇹🇼_TW_台湾
+      - 🇺🇸 _US_美国 144
+      - 🇺🇸 _US_美国 145
+      - 🇺🇸 _US_美国 146
+      - 🇺🇸 _US_美国 147
+      - 🇺🇸 _US_美国 148
+      - 🇺🇸 _US_美国 149
+      - 🇺🇸 _US_美国 150
+      - 🇺🇸 TG YouTube:8度科技_美国 12
+      - 🇺🇸 _US_美国 151
+      - 🇺🇸 _US_美国 152
+      - 🇺🇸 _US_美国 153
+      - 🇺🇸 _US_美国 154
+      - 🇺🇸 _US_美国 155
+      - 🇺🇸 _US_美国 156
+      - 🇰🇷 _KR_韩国
+      - TG YouTube:8度科技_挪威 9
+      - 🇭🇰 TG YouTube:8度科技_香港 4
+      - 🇺🇸 _US_美国 157
+      - 🇭🇰 _HK_香港
+      - 🇺🇸 _US_美国 158
+      - 🇺🇸 _US_美国 159
+      - 🇭🇰 _HK_香港 2
       - 🇨🇦 TG YouTube:8度科技_加拿大 6
+      - 🇭🇰 _HK_香港 3
+      - 🇭🇰 _HK_香港 4
+      - 🇭🇰 _HK_香港 5
+      - 🇭🇰 _HK_香港 6
+      - 🇫🇷 TG YouTube:8度科技_法国 7
+      - 🇫🇷 TG YouTube:8度科技_法国 8
+      - 🇯🇵 TG YouTube:8度科技_日本
+      - 🇸🇬 TG YouTube:8度科技_新加坡 3
+      - TG YouTube:8度科技_挪威 10
+      - 🇫🇷 _FR_法国 4
+      - TG YouTube:8度科技_挪威 11
+      - 🇨🇳 TG YouTube:8度科技_中国
+      - 🇬🇧 TG YouTube:8度科技_英国 3
+      - 🇺🇸 _US_美国 160
+      - 🇨🇳 TG YouTube:8度科技_中国 2
+      - TG YouTube:8度科技_挪威 12
+      - 🇺🇸 _US_美国 161
+      - 🇺🇸 _US_美国 162
       - 🇨🇦 TG YouTube:8度科技_加拿大 7
+      - 🇬🇧 TG YouTube:8度科技_英国 4
+      - TG YouTube:8度科技_挪威 13
+      - TG YouTube:8度科技_挪威 14
       - 🇨🇦 TG YouTube:8度科技_加拿大 8
+      - 🇬🇧 _GB_英国
+      - 🇨🇦 _CA_加拿大 5
       - 🇨🇦 TG YouTube:8度科技_加拿大 9
       - 🇨🇦 TG YouTube:8度科技_加拿大 10
+      - 🇭🇰 TG YouTube:8度科技_香港 5
       - 🇨🇦 TG YouTube:8度科技_加拿大 11
       - 🇨🇦 TG YouTube:8度科技_加拿大 12
+      - TG YouTube:8度科技 2
       - 🇨🇦 TG YouTube:8度科技_加拿大 13
       - 🇨🇦 TG YouTube:8度科技_加拿大 14
       - 🇨🇦 TG YouTube:8度科技_加拿大 15
@@ -410,158 +974,313 @@ proxy-groups:
       - 🇨🇦 TG YouTube:8度科技_加拿大 31
       - 🇨🇦 TG YouTube:8度科技_加拿大 32
       - 🇨🇦 TG YouTube:8度科技_加拿大 33
-      - TG YouTube:8度科技_捷克
-      - 🇲🇾 TG YouTube:8度科技_马来西亚
-      - 🇺🇸 TG YouTube:8度科技_美国
-      - 🇺🇸 TG YouTube:8度科技_美国 2
-      - 🇺🇸 TG YouTube:8度科技_美国 3
-      - 🇺🇸 TG YouTube:8度科技_美国 4
-      - 🇺🇸 TG YouTube:8度科技_美国 5
-      - 🇺🇸 TG YouTube:8度科技_美国 6
-      - 🇺🇸 TG YouTube:8度科技_美国 7
-      - 🇺🇸 TG YouTube:8度科技_美国 8
-      - 🇺🇸 TG YouTube:8度科技_美国 9
-      - 🇺🇸 TG YouTube:8度科技_美国 10
-      - 🇺🇸 TG YouTube:8度科技_美国 11
-      - 🇺🇸 TG YouTube:8度科技_美国 12
-      - 🇺🇸 TG YouTube:8度科技_美国 13
-      - 🇺🇸 TG YouTube:8度科技_美国 14
-      - 🇺🇸 TG YouTube:8度科技_美国 15
-      - 🇺🇸 TG YouTube:8度科技_美国 16
-      - 🇺🇸 TG YouTube:8度科技_美国 17
-      - TG YouTube:8度科技_挪威
-      - TG YouTube:8度科技_挪威 2
-      - TG YouTube:8度科技_挪威 3
-      - TG YouTube:8度科技_挪威 4
-      - TG YouTube:8度科技_挪威 5
-      - TG YouTube:8度科技_挪威 6
-      - TG YouTube:8度科技_挪威 7
-      - TG YouTube:8度科技_挪威 8
-      - TG YouTube:8度科技_挪威 9
-      - TG YouTube:8度科技_挪威 10
-      - TG YouTube:8度科技_挪威 11
-      - TG YouTube:8度科技_挪威 12
-      - TG YouTube:8度科技_挪威 13
-      - TG YouTube:8度科技_挪威 14
-      - TG YouTube:8度科技_葡萄牙
-      - TG YouTube:8度科技_葡萄牙 2
-      - 🇯🇵 TG YouTube:8度科技_日本
-      - 🇯🇵 TG YouTube:8度科技_日本 2
-      - 🇸🇪 TG YouTube:8度科技_瑞典
-      - 🇹🇼 TG YouTube:8度科技_台湾
-      - 🇹🇼 TG YouTube:8度科技_台湾 2
-      - TG YouTube:8度科技_希腊
-      - 🇭🇰 TG YouTube:8度科技_香港
-      - 🇭🇰 TG YouTube:8度科技_香港 2
-      - 🇭🇰 TG YouTube:8度科技_香港 3
-      - 🇭🇰 TG YouTube:8度科技_香港 4
-      - 🇭🇰 TG YouTube:8度科技_香港 5
-      - 🇭🇰 TG YouTube:8度科技_香港 6
-      - 🇭🇰 TG YouTube:8度科技_香港 7
-      - 🇭🇰 TG YouTube:8度科技_香港 8
-      - 🇸🇬 TG YouTube:8度科技_新加坡
-      - 🇸🇬 TG YouTube:8度科技_新加坡 2
-      - 🇸🇬 TG YouTube:8度科技_新加坡 3
-      - TG YouTube:8度科技_以色列
-      - 🇮🇳 TG YouTube:8度科技_印度
-      - 🇬🇧 TG YouTube:8度科技_英国
-      - 🇬🇧 TG YouTube:8度科技_英国 2
-      - 🇬🇧 TG YouTube:8度科技_英国 3
-      - 🇬🇧 TG YouTube:8度科技_英国 4
-      - 🇻🇳 TG YouTube:8度科技_越南
-      - 🇻🇳 TG YouTube:8度科技_越南 2
-      - 🇻🇳 TG YouTube:8度科技_越南 3
-      - 🇨🇳 TG YouTube:8度科技_中国
-      - 🇨🇳 TG YouTube:8度科技_中国 2
+      - TG YouTube:8度科技 3
+      - TG YouTube:8度科技 4
+      - TG YouTube:8度科技 5
       - 🇨🇳 TG YouTube:8度科技_中国 3
-      - 🇨🇳 TG YouTube:8度科技_中国 4
-      - 🇨🇳 TG YouTube:8度科技_中国 5
-      - 🇨🇳 TG YouTube:8度科技_中国 6
-      - 🇨🇳 TG YouTube:8度科技_中国 7
-      - 🇨🇳 TG YouTube:8度科技_中国 8
-      - 🇦🇺 _AU_澳大利亚
-      - _BG_保加利亚
-      - 🇯🇵 _CN_中国->🇯🇵_JP_日本
-      - 🇹🇼 _CN_中国->🇹🇼_TW_台湾
-      - 🇫🇷 _FR_法国
-      - 🇫🇷 _FR_法国 2
-      - 🇫🇷 _FR_法国 3
-      - 🇫🇷 _FR_法国 4
-      - 🇫🇷 _FR_法国 5
-      - 🇬🇧 _GB_英国
-      - 🇭🇰 _HK_香港
-      - 🇭🇰 _HK_香港 2
-      - 🇭🇰 _HK_香港 3
-      - 🇭🇰 _HK_香港 4
-      - 🇮🇳 _HK_香港->🇮🇳_IN_印度
-      - 🇭🇰 HK TG YouTube:8度科技
-      - 🇭🇰 香港TG YouTube:8度科技
-      - 🇮🇩 _ID_印度尼西亚
-      - JP TG YouTube:8度科技
-      - JPTG YouTube:8度科技
-      - 🇳🇱 _NL_荷兰
-      - _NO_挪威
-      - 🇷🇺 RU TG YouTube:8度科技
-      - 🇸🇬 SG TG YouTube:8度科技
-      - 🇹🇼 TW TG YouTube:8度科技
-      - 🇺🇸 _US_美国
-      - 🇺🇸 _US_美国 2
-      - 🇺🇸 _US_美国 3
-      - 🇺🇸 _US_美国 4
-      - 🇺🇸 _US_美国 5
-      - 🇺🇸 _US_美国 6
-      - 🇺🇸 _US_美国 7
-      - 🇺🇸 _US_美国 8
-      - 🇺🇸 _US_美国->🇨🇿_CZ_捷克
-      - 🇷🇺 _US_美国->🇷🇺_RU_俄罗斯联邦
-      - 🇺🇸 US TG YouTube:8度科技
-      - 🇺🇸 US TG YouTube:8度科技 2
-      - 🇺🇸 US TG YouTube:8度科技 3
+      - TG YouTube:8度科技 6
+      - _55 | 3.63Mb
+      - TG YouTube:8度科技 7
+      - TG YouTube:8度科技 8
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇭🇰 A香港05|流媒体|V2|GZ
-      - default_name
-      - default_name 2
+      - 🇺🇸 TG YouTube:8度科技_美国
+      - 🇭🇰 TG YouTube:8度科技_香港
+      - 🇰🇷 _HK_香港->🇰🇷_KR_韩国
       - 🇺🇸 Relay_🇺🇸US-🇺🇸US_1674
-      - TG YouTube:8度科技
-      - TG YouTube:8度科技 2
-      - TG YouTube:8度科技 3
-      - TG YouTube:8度科技 4
-      - TG YouTube:8度科技 5
-      - TG YouTube:8度科技 6
-      - TG YouTube:8度科技 7
-      - TG YouTube:8度科技 8
-      - TG YouTube:8度科技 9
-      - 🇦🇺 TG YouTube:8度科技_澳大利亚
-      - 🇩🇰 TG YouTube:8度科技_丹麦
+      - 🇺🇸 _US_美国
       - 🇷🇺 TG YouTube:8度科技_俄罗斯联邦
+      - 🇺🇸 TG YouTube:8度科技_美国 2
+      - 🇰🇷 _HK_香港->🇰🇷_KR_韩国 2
+      - TG YouTube:8度科技_捷克
+      - 🇭🇰 TG YouTube:8度科技_香港 2
+      - TG YouTube:8度科技
+      - 🇮🇳 _HK_香港->🇮🇳_IN_印度
+      - 🇷🇺 _US_美国->🇷🇺_RU_俄罗斯联邦
+      - default_name
+      - 🇺🇸 _US_美国->🇨🇿_CZ_捷克
+      - 🇺🇸 TG YouTube:8度科技_美国 3
+      - 🇺🇸 TG YouTube:8度科技_美国 4
+      - 🇺🇸 TG YouTube:8度科技_美国 5
+      - 🇺🇸 TG YouTube:8度科技_美国 6
+      - 🇺🇸 _US_美国 2
+      - 🇮🇳 _IN_印度
+      - 🇮🇳 _IN_印度 2
+      - TG YouTube:8度科技_挪威
+      - 🇮🇳 _IN_印度 3
+      - 🇦🇺 TG YouTube:8度科技_澳大利亚
       - 🇫🇷 TG YouTube:8度科技_法国
+      - 🇮🇳 _IN_印度 4
+      - 🇮🇳 _IN_印度 5
       - 🇫🇷 TG YouTube:8度科技_法国 2
+      - 🇮🇳 _IN_印度 6
+      - 🇮🇳 TG YouTube:8度科技_印度
+      - 🇻🇳 TG YouTube:8度科技_越南
+      - 🇸🇬 TG YouTube:8度科技_新加坡
+      - 🇺🇸 _US_美国 3
+      - 🇮🇩 _ID_印度尼西亚
+      - 🇹🇼 TG YouTube:8度科技_台湾
+      - 🇦🇺 _AU_澳大利亚
+      - 🇦🇺 _AU_澳大利亚 2
+      - 🇦🇺 _AU_澳大利亚 3
+      - 🇦🇺 _AU_澳大利亚 4
+      - 🇦🇺 _AU_澳大利亚 5
+      - 🇦🇺 _AU_澳大利亚 6
+      - 🇦🇺 _AU_澳大利亚 7
+      - TG YouTube:8度科技_挪威 2
+      - 🇦🇺 _AU_澳大利亚 8
+      - 🇦🇺 _AU_澳大利亚 9
+      - 🇦🇺 _AU_澳大利亚 10
+      - 🇦🇺 _AU_澳大利亚 11
+      - 🇦🇺 _AU_澳大利亚 12
+      - 🇦🇺 _AU_澳大利亚 13
+      - 🇦🇺 _AU_澳大利亚 14
+      - 🇦🇺 _AU_澳大利亚 15
+      - TG YouTube:8度科技_葡萄牙
+      - 🇦🇺 _AU_澳大利亚 16
+      - 🇦🇺 _AU_澳大利亚 17
+      - 🇸🇬 TG YouTube:8度科技_新加坡 2
+      - 🇦🇺 _AU_澳大利亚 18
+      - 🇦🇺 _AU_澳大利亚 19
+      - TG YouTube:8度科技_挪威 3
+      - 🇦🇺 _AU_澳大利亚 20
+      - 🇦🇺 _AU_澳大利亚 21
+      - 🇦🇺 _AU_澳大利亚 22
+      - 🇦🇺 _AU_澳大利亚 23
+      - 🇭🇰 TG YouTube:8度科技_香港 3
+      - 🇸🇪 TG YouTube:8度科技_瑞典
+      - 🇫🇷 _FR_法国
+      - TG YouTube:8度科技_葡萄牙 2
+      - 🇺🇸 TG YouTube:8度科技_美国 7
+      - TG YouTube:8度科技_挪威 4
       - 🇫🇷 TG YouTube:8度科技_法国 3
       - 🇫🇷 TG YouTube:8度科技_法国 4
-      - 🇫🇷 TG YouTube:8度科技_法国 5
-      - 🇫🇷 TG YouTube:8度科技_法国 6
-      - 🇫🇷 TG YouTube:8度科技_法国 7
-      - 🇫🇷 TG YouTube:8度科技_法国 8
-      - 🇫🇷 TG YouTube:8度科技_法国 9
-      - 🇫🇷 TG YouTube:8度科技_法国 10
-      - 🇵🇭 TG YouTube:8度科技_菲律宾
+      - 🇺🇸 _US_美国 4
+      - TG YouTube:8度科技_挪威 5
+      - TG YouTube:8度科技_挪威 6
+      - 🇨🇦 _CA_加拿大
+      - TG YouTube:8度科技_挪威 7
+      - 🇺🇸 _US_美国 5
+      - 🇬🇧 TG YouTube:8度科技_英国
       - 🇨🇦 TG YouTube:8度科技_加拿大
+      - _BG_保加利亚
+      - 🇺🇸 _US_美国 6
+      - 🇺🇸 TG YouTube:8度科技_美国 8
+      - 🇺🇸 _US_美国 7
+      - _NO_挪威
+      - 🇺🇸 _US_美国 8
+      - 🇫🇷 TG YouTube:8度科技_法国 5
+      - TG YouTube:8度科技_挪威 8
+      - 🇫🇷 TG YouTube:8度科技_法国 6
+      - 🇨🇦 _CA_加拿大 2
       - 🇨🇦 TG YouTube:8度科技_加拿大 2
+      - 🇺🇸 _US_美国 9
+      - 🇺🇸 _US_美国 10
+      - 🇫🇷 _FR_法国 2
+      - 🇺🇸 _US_美国 11
+      - 🇬🇧 TG YouTube:8度科技_英国 2
+      - 🇺🇸 _US_美国 12
+      - 🇺🇸 _US_美国 13
+      - 🇺🇸 _US_美国 14
+      - 🇺🇸 _US_美国 15
+      - 🇺🇸 _US_美国 16
+      - 🇨🇦 _CA_加拿大 3
+      - 🇺🇸 _US_美国 17
       - 🇨🇦 TG YouTube:8度科技_加拿大 3
       - 🇨🇦 TG YouTube:8度科技_加拿大 4
+      - 🇲🇾 _MY_马来西亚
+      - 🇨🇦 _CA_加拿大 4
+      - 🇺🇸 _US_美国 18
+      - 🇺🇸 _US_美国 19
+      - 🇺🇸 _US_美国 20
       - 🇨🇦 TG YouTube:8度科技_加拿大 5
+      - 🇺🇸 _US_美国 21
+      - 🇺🇸 _US_美国 22
+      - 🇺🇸 _US_美国 23
+      - 🇺🇸 _US_美国 24
+      - 🇺🇸 _US_美国 25
+      - 🇺🇸 _US_美国 26
+      - 🇺🇸 _US_美国 27
+      - 🇺🇸 _US_美国 28
+      - 🇺🇸 _US_美国 29
+      - 🇺🇸 _US_美国 30
+      - 🇺🇸 TG YouTube:8度科技_美国 9
+      - 🇺🇸 _US_美国 31
+      - 🇺🇸 _US_美国 32
+      - 🇺🇸 _US_美国 33
+      - 🇷🇺 _RU_俄罗斯联邦
+      - 🇺🇸 _US_美国 34
+      - 🇺🇸 _US_美国 35
+      - 🇺🇸 _US_美国 36
+      - 🇺🇸 _US_美国 37
+      - 🇺🇸 _US_美国 38
+      - 🇺🇸 TG YouTube:8度科技_美国 10
+      - 🇺🇸 _US_美国 39
+      - 🇺🇸 _US_美国 40
+      - 🇺🇸 _US_美国 41
+      - 🇺🇸 _US_美国 42
+      - 🇺🇸 _US_美国 43
+      - 🇺🇸 _US_美国 44
+      - 🇺🇸 _US_美国 45
+      - 🇺🇸 _US_美国 46
+      - 🇺🇸 _US_美国 47
+      - 🇺🇸 _US_美国 48
+      - 🇺🇸 _US_美国 49
+      - 🇺🇸 _US_美国 50
+      - 🇺🇸 _US_美国 51
+      - 🇺🇸 _US_美国 52
+      - 🇺🇸 _US_美国 53
+      - 🇺🇸 _US_美国 54
+      - 🇺🇸 _US_美国 55
+      - 🇺🇸 _US_美国 56
+      - 🇺🇸 _US_美国 57
+      - 🇺🇸 _US_美国 58
+      - 🇺🇸 _US_美国 59
+      - 🇺🇸 _US_美国 60
+      - 🇺🇸 _US_美国 61
+      - 🇺🇸 _US_美国 62
+      - 🇺🇸 _US_美国 63
+      - 🇺🇸 _US_美国 64
+      - 🇺🇸 _US_美国 65
+      - 🇺🇸 _US_美国 66
+      - 🇺🇸 _US_美国 67
+      - 🇺🇸 _US_美国 68
+      - 🇺🇸 _US_美国 69
+      - 🇺🇸 _US_美国 70
+      - 🇺🇸 _US_美国 71
+      - 🇺🇸 _US_美国 72
+      - 🇺🇸 _US_美国 73
+      - 🇺🇸 _US_美国 74
+      - 🇺🇸 _US_美国 75
+      - 🇺🇸 _US_美国 76
+      - 🇺🇸 _US_美国 77
+      - 🇺🇸 _US_美国 78
+      - 🇺🇸 _US_美国 79
+      - 🇺🇸 _US_美国 80
+      - 🇺🇸 _US_美国 81
+      - 🇺🇸 _US_美国 82
+      - 🇺🇸 _US_美国 83
+      - 🇺🇸 _US_美国 84
+      - 🇺🇸 _US_美国 85
+      - 🇺🇸 _US_美国 86
+      - 🇺🇸 _US_美国 87
+      - 🇺🇸 _US_美国 88
+      - 🇺🇸 _US_美国 89
+      - 🇺🇸 _US_美国 90
+      - 🇺🇸 _US_美国 91
+      - 🇺🇸 _US_美国 92
+      - 🇺🇸 _US_美国 93
+      - 🇺🇸 _US_美国 94
+      - 🇫🇷 _FR_法国 3
+      - 🇺🇸 _US_美国 95
+      - 🇺🇸 _US_美国 96
+      - 🇺🇸 _US_美国 97
+      - 🇺🇸 _US_美国 98
+      - 🇺🇸 _US_美国 99
+      - 🇺🇸 _US_美国 100
+      - 🇺🇸 _US_美国 101
+      - 🇺🇸 _US_美国 102
+      - 🇺🇸 _US_美国 103
+      - 🇺🇸 _US_美国 104
+      - 🇺🇸 _US_美国 105
+      - 🇺🇸 _US_美国 106
+      - 🇺🇸 _US_美国 107
+      - 🇺🇸 _US_美国 108
+      - 🇺🇸 _US_美国 109
+      - 🇺🇸 _US_美国 110
+      - 🇺🇸 _US_美国 111
+      - 🇺🇸 _US_美国 112
+      - 🇺🇸 _US_美国 113
+      - 🇺🇸 _US_美国 114
+      - 🇺🇸 _US_美国 115
+      - 🇺🇸 _US_美国 116
+      - 🇺🇸 _US_美国 117
+      - 🇺🇸 _US_美国 118
+      - 🇺🇸 _US_美国 119
+      - 🇺🇸 _US_美国 120
+      - 🇺🇸 _US_美国 121
+      - 🇺🇸 _US_美国 122
+      - 🇺🇸 _US_美国 123
+      - 🇺🇸 _US_美国 124
+      - 🇺🇸 _US_美国 125
+      - 🇺🇸 TG YouTube:8度科技_美国 11
+      - 🇺🇸 _US_美国 126
+      - 🇺🇸 _US_美国 127
+      - 🇺🇸 _US_美国 128
+      - 🇺🇸 _US_美国 129
+      - 🇺🇸 _US_美国 130
+      - 🇺🇸 _US_美国 131
+      - 🇺🇸 _US_美国 132
+      - 🇺🇸 _US_美国 133
+      - 🇺🇸 _US_美国 134
+      - 🇺🇸 _US_美国 135
+      - 🇺🇸 _US_美国 136
+      - 🇺🇸 _US_美国 137
+      - 🇺🇸 _US_美国 138
+      - 🇺🇸 _US_美国 139
+      - 🇺🇸 _US_美国 140
+      - 🇺🇸 _US_美国 141
+      - 🇺🇸 _US_美国 142
+      - 🇺🇸 _US_美国 143
+      - 🇹🇼 _CN_中国->🇹🇼_TW_台湾
+      - 🇺🇸 _US_美国 144
+      - 🇺🇸 _US_美国 145
+      - 🇺🇸 _US_美国 146
+      - 🇺🇸 _US_美国 147
+      - 🇺🇸 _US_美国 148
+      - 🇺🇸 _US_美国 149
+      - 🇺🇸 _US_美国 150
+      - 🇺🇸 TG YouTube:8度科技_美国 12
+      - 🇺🇸 _US_美国 151
+      - 🇺🇸 _US_美国 152
+      - 🇺🇸 _US_美国 153
+      - 🇺🇸 _US_美国 154
+      - 🇺🇸 _US_美国 155
+      - 🇺🇸 _US_美国 156
+      - 🇰🇷 _KR_韩国
+      - TG YouTube:8度科技_挪威 9
+      - 🇭🇰 TG YouTube:8度科技_香港 4
+      - 🇺🇸 _US_美国 157
+      - 🇭🇰 _HK_香港
+      - 🇺🇸 _US_美国 158
+      - 🇺🇸 _US_美国 159
+      - 🇭🇰 _HK_香港 2
       - 🇨🇦 TG YouTube:8度科技_加拿大 6
+      - 🇭🇰 _HK_香港 3
+      - 🇭🇰 _HK_香港 4
+      - 🇭🇰 _HK_香港 5
+      - 🇭🇰 _HK_香港 6
+      - 🇫🇷 TG YouTube:8度科技_法国 7
+      - 🇫🇷 TG YouTube:8度科技_法国 8
+      - 🇯🇵 TG YouTube:8度科技_日本
+      - 🇸🇬 TG YouTube:8度科技_新加坡 3
+      - TG YouTube:8度科技_挪威 10
+      - 🇫🇷 _FR_法国 4
+      - TG YouTube:8度科技_挪威 11
+      - 🇨🇳 TG YouTube:8度科技_中国
+      - 🇬🇧 TG YouTube:8度科技_英国 3
+      - 🇺🇸 _US_美国 160
+      - 🇨🇳 TG YouTube:8度科技_中国 2
+      - TG YouTube:8度科技_挪威 12
+      - 🇺🇸 _US_美国 161
+      - 🇺🇸 _US_美国 162
       - 🇨🇦 TG YouTube:8度科技_加拿大 7
+      - 🇬🇧 TG YouTube:8度科技_英国 4
+      - TG YouTube:8度科技_挪威 13
+      - TG YouTube:8度科技_挪威 14
       - 🇨🇦 TG YouTube:8度科技_加拿大 8
+      - 🇬🇧 _GB_英国
+      - 🇨🇦 _CA_加拿大 5
       - 🇨🇦 TG YouTube:8度科技_加拿大 9
       - 🇨🇦 TG YouTube:8度科技_加拿大 10
+      - 🇭🇰 TG YouTube:8度科技_香港 5
       - 🇨🇦 TG YouTube:8度科技_加拿大 11
       - 🇨🇦 TG YouTube:8度科技_加拿大 12
+      - TG YouTube:8度科技 2
       - 🇨🇦 TG YouTube:8度科技_加拿大 13
       - 🇨🇦 TG YouTube:8度科技_加拿大 14
       - 🇨🇦 TG YouTube:8度科技_加拿大 15
@@ -583,180 +1302,333 @@ proxy-groups:
       - 🇨🇦 TG YouTube:8度科技_加拿大 31
       - 🇨🇦 TG YouTube:8度科技_加拿大 32
       - 🇨🇦 TG YouTube:8度科技_加拿大 33
-      - TG YouTube:8度科技_捷克
-      - 🇲🇾 TG YouTube:8度科技_马来西亚
-      - 🇺🇸 TG YouTube:8度科技_美国
-      - 🇺🇸 TG YouTube:8度科技_美国 2
-      - 🇺🇸 TG YouTube:8度科技_美国 3
-      - 🇺🇸 TG YouTube:8度科技_美国 4
-      - 🇺🇸 TG YouTube:8度科技_美国 5
-      - 🇺🇸 TG YouTube:8度科技_美国 6
-      - 🇺🇸 TG YouTube:8度科技_美国 7
-      - 🇺🇸 TG YouTube:8度科技_美国 8
-      - 🇺🇸 TG YouTube:8度科技_美国 9
-      - 🇺🇸 TG YouTube:8度科技_美国 10
-      - 🇺🇸 TG YouTube:8度科技_美国 11
-      - 🇺🇸 TG YouTube:8度科技_美国 12
-      - 🇺🇸 TG YouTube:8度科技_美国 13
-      - 🇺🇸 TG YouTube:8度科技_美国 14
-      - 🇺🇸 TG YouTube:8度科技_美国 15
-      - 🇺🇸 TG YouTube:8度科技_美国 16
-      - 🇺🇸 TG YouTube:8度科技_美国 17
-      - TG YouTube:8度科技_挪威
-      - TG YouTube:8度科技_挪威 2
-      - TG YouTube:8度科技_挪威 3
-      - TG YouTube:8度科技_挪威 4
-      - TG YouTube:8度科技_挪威 5
-      - TG YouTube:8度科技_挪威 6
-      - TG YouTube:8度科技_挪威 7
-      - TG YouTube:8度科技_挪威 8
-      - TG YouTube:8度科技_挪威 9
-      - TG YouTube:8度科技_挪威 10
-      - TG YouTube:8度科技_挪威 11
-      - TG YouTube:8度科技_挪威 12
-      - TG YouTube:8度科技_挪威 13
-      - TG YouTube:8度科技_挪威 14
-      - TG YouTube:8度科技_葡萄牙
-      - TG YouTube:8度科技_葡萄牙 2
-      - 🇯🇵 TG YouTube:8度科技_日本
-      - 🇯🇵 TG YouTube:8度科技_日本 2
-      - 🇸🇪 TG YouTube:8度科技_瑞典
-      - 🇹🇼 TG YouTube:8度科技_台湾
-      - 🇹🇼 TG YouTube:8度科技_台湾 2
-      - TG YouTube:8度科技_希腊
-      - 🇭🇰 TG YouTube:8度科技_香港
-      - 🇭🇰 TG YouTube:8度科技_香港 2
-      - 🇭🇰 TG YouTube:8度科技_香港 3
-      - 🇭🇰 TG YouTube:8度科技_香港 4
-      - 🇭🇰 TG YouTube:8度科技_香港 5
-      - 🇭🇰 TG YouTube:8度科技_香港 6
-      - 🇭🇰 TG YouTube:8度科技_香港 7
-      - 🇭🇰 TG YouTube:8度科技_香港 8
-      - 🇸🇬 TG YouTube:8度科技_新加坡
-      - 🇸🇬 TG YouTube:8度科技_新加坡 2
-      - 🇸🇬 TG YouTube:8度科技_新加坡 3
-      - TG YouTube:8度科技_以色列
-      - 🇮🇳 TG YouTube:8度科技_印度
-      - 🇬🇧 TG YouTube:8度科技_英国
-      - 🇬🇧 TG YouTube:8度科技_英国 2
-      - 🇬🇧 TG YouTube:8度科技_英国 3
-      - 🇬🇧 TG YouTube:8度科技_英国 4
-      - 🇻🇳 TG YouTube:8度科技_越南
-      - 🇻🇳 TG YouTube:8度科技_越南 2
-      - 🇻🇳 TG YouTube:8度科技_越南 3
-      - 🇨🇳 TG YouTube:8度科技_中国
-      - 🇨🇳 TG YouTube:8度科技_中国 2
+      - TG YouTube:8度科技 3
+      - TG YouTube:8度科技 4
+      - TG YouTube:8度科技 5
       - 🇨🇳 TG YouTube:8度科技_中国 3
-      - 🇨🇳 TG YouTube:8度科技_中国 4
-      - 🇨🇳 TG YouTube:8度科技_中国 5
-      - 🇨🇳 TG YouTube:8度科技_中国 6
-      - 🇨🇳 TG YouTube:8度科技_中国 7
-      - 🇨🇳 TG YouTube:8度科技_中国 8
-      - 🇦🇺 _AU_澳大利亚
-      - _BG_保加利亚
-      - 🇯🇵 _CN_中国->🇯🇵_JP_日本
-      - 🇹🇼 _CN_中国->🇹🇼_TW_台湾
-      - 🇫🇷 _FR_法国
-      - 🇫🇷 _FR_法国 2
-      - 🇫🇷 _FR_法国 3
-      - 🇫🇷 _FR_法国 4
-      - 🇫🇷 _FR_法国 5
-      - 🇬🇧 _GB_英国
-      - 🇭🇰 _HK_香港
-      - 🇭🇰 _HK_香港 2
-      - 🇭🇰 _HK_香港 3
-      - 🇭🇰 _HK_香港 4
-      - 🇮🇳 _HK_香港->🇮🇳_IN_印度
-      - 🇭🇰 HK TG YouTube:8度科技
-      - 🇭🇰 香港TG YouTube:8度科技
-      - 🇮🇩 _ID_印度尼西亚
-      - JP TG YouTube:8度科技
-      - JPTG YouTube:8度科技
-      - 🇳🇱 _NL_荷兰
-      - _NO_挪威
-      - 🇷🇺 RU TG YouTube:8度科技
-      - 🇸🇬 SG TG YouTube:8度科技
-      - 🇹🇼 TW TG YouTube:8度科技
-      - 🇺🇸 _US_美国
-      - 🇺🇸 _US_美国 2
-      - 🇺🇸 _US_美国 3
-      - 🇺🇸 _US_美国 4
-      - 🇺🇸 _US_美国 5
-      - 🇺🇸 _US_美国 6
-      - 🇺🇸 _US_美国 7
-      - 🇺🇸 _US_美国 8
-      - 🇺🇸 _US_美国->🇨🇿_CZ_捷克
-      - 🇷🇺 _US_美国->🇷🇺_RU_俄罗斯联邦
-      - 🇺🇸 US TG YouTube:8度科技
-      - 🇺🇸 US TG YouTube:8度科技 2
-      - 🇺🇸 US TG YouTube:8度科技 3
+      - TG YouTube:8度科技 6
+      - _55 | 3.63Mb
+      - TG YouTube:8度科技 7
+      - TG YouTube:8度科技 8
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 🇭🇰 A香港05|流媒体|V2|GZ
-      - 🇹🇼 TG YouTube:8度科技_台湾
-      - 🇹🇼 TG YouTube:8度科技_台湾 2
       - 🇭🇰 TG YouTube:8度科技_香港
+      - 🇰🇷 _HK_香港->🇰🇷_KR_韩国
+      - 🇰🇷 _HK_香港->🇰🇷_KR_韩国 2
       - 🇭🇰 TG YouTube:8度科技_香港 2
+      - 🇮🇳 _HK_香港->🇮🇳_IN_印度
+      - 🇹🇼 TG YouTube:8度科技_台湾
       - 🇭🇰 TG YouTube:8度科技_香港 3
-      - 🇭🇰 TG YouTube:8度科技_香港 4
-      - 🇭🇰 TG YouTube:8度科技_香港 5
-      - 🇭🇰 TG YouTube:8度科技_香港 6
-      - 🇭🇰 TG YouTube:8度科技_香港 7
-      - 🇭🇰 TG YouTube:8度科技_香港 8
       - 🇹🇼 _CN_中国->🇹🇼_TW_台湾
+      - 🇭🇰 TG YouTube:8度科技_香港 4
       - 🇭🇰 _HK_香港
       - 🇭🇰 _HK_香港 2
       - 🇭🇰 _HK_香港 3
       - 🇭🇰 _HK_香港 4
-      - 🇮🇳 _HK_香港->🇮🇳_IN_印度
-      - 🇭🇰 香港TG YouTube:8度科技
+      - 🇭🇰 _HK_香港 5
+      - 🇭🇰 _HK_香港 6
+      - 🇭🇰 TG YouTube:8度科技_香港 5
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 🇭🇰 A香港05|流媒体|V2|GZ
-      - default_name
-      - default_name 2
+      - 🇺🇸 TG YouTube:8度科技_美国
+      - 🇭🇰 TG YouTube:8度科技_香港
+      - 🇰🇷 _HK_香港->🇰🇷_KR_韩国
       - 🇺🇸 Relay_🇺🇸US-🇺🇸US_1674
-      - TG YouTube:8度科技
-      - TG YouTube:8度科技 2
-      - TG YouTube:8度科技 3
-      - TG YouTube:8度科技 4
-      - TG YouTube:8度科技 5
-      - TG YouTube:8度科技 6
-      - TG YouTube:8度科技 7
-      - TG YouTube:8度科技 8
-      - TG YouTube:8度科技 9
-      - 🇦🇺 TG YouTube:8度科技_澳大利亚
-      - 🇩🇰 TG YouTube:8度科技_丹麦
+      - 🇺🇸 _US_美国
       - 🇷🇺 TG YouTube:8度科技_俄罗斯联邦
+      - 🇺🇸 TG YouTube:8度科技_美国 2
+      - 🇰🇷 _HK_香港->🇰🇷_KR_韩国 2
+      - TG YouTube:8度科技_捷克
+      - 🇭🇰 TG YouTube:8度科技_香港 2
+      - TG YouTube:8度科技
+      - 🇮🇳 _HK_香港->🇮🇳_IN_印度
+      - 🇷🇺 _US_美国->🇷🇺_RU_俄罗斯联邦
+      - default_name
+      - 🇺🇸 _US_美国->🇨🇿_CZ_捷克
+      - 🇺🇸 TG YouTube:8度科技_美国 3
+      - 🇺🇸 TG YouTube:8度科技_美国 4
+      - 🇺🇸 TG YouTube:8度科技_美国 5
+      - 🇺🇸 TG YouTube:8度科技_美国 6
+      - 🇺🇸 _US_美国 2
+      - 🇮🇳 _IN_印度
+      - 🇮🇳 _IN_印度 2
+      - TG YouTube:8度科技_挪威
+      - 🇮🇳 _IN_印度 3
+      - 🇦🇺 TG YouTube:8度科技_澳大利亚
       - 🇫🇷 TG YouTube:8度科技_法国
+      - 🇮🇳 _IN_印度 4
+      - 🇮🇳 _IN_印度 5
       - 🇫🇷 TG YouTube:8度科技_法国 2
+      - 🇮🇳 _IN_印度 6
+      - 🇮🇳 TG YouTube:8度科技_印度
+      - 🇻🇳 TG YouTube:8度科技_越南
+      - 🇸🇬 TG YouTube:8度科技_新加坡
+      - 🇺🇸 _US_美国 3
+      - 🇮🇩 _ID_印度尼西亚
+      - 🇹🇼 TG YouTube:8度科技_台湾
+      - 🇦🇺 _AU_澳大利亚
+      - 🇦🇺 _AU_澳大利亚 2
+      - 🇦🇺 _AU_澳大利亚 3
+      - 🇦🇺 _AU_澳大利亚 4
+      - 🇦🇺 _AU_澳大利亚 5
+      - 🇦🇺 _AU_澳大利亚 6
+      - 🇦🇺 _AU_澳大利亚 7
+      - TG YouTube:8度科技_挪威 2
+      - 🇦🇺 _AU_澳大利亚 8
+      - 🇦🇺 _AU_澳大利亚 9
+      - 🇦🇺 _AU_澳大利亚 10
+      - 🇦🇺 _AU_澳大利亚 11
+      - 🇦🇺 _AU_澳大利亚 12
+      - 🇦🇺 _AU_澳大利亚 13
+      - 🇦🇺 _AU_澳大利亚 14
+      - 🇦🇺 _AU_澳大利亚 15
+      - TG YouTube:8度科技_葡萄牙
+      - 🇦🇺 _AU_澳大利亚 16
+      - 🇦🇺 _AU_澳大利亚 17
+      - 🇸🇬 TG YouTube:8度科技_新加坡 2
+      - 🇦🇺 _AU_澳大利亚 18
+      - 🇦🇺 _AU_澳大利亚 19
+      - TG YouTube:8度科技_挪威 3
+      - 🇦🇺 _AU_澳大利亚 20
+      - 🇦🇺 _AU_澳大利亚 21
+      - 🇦🇺 _AU_澳大利亚 22
+      - 🇦🇺 _AU_澳大利亚 23
+      - 🇭🇰 TG YouTube:8度科技_香港 3
+      - 🇸🇪 TG YouTube:8度科技_瑞典
+      - 🇫🇷 _FR_法国
+      - TG YouTube:8度科技_葡萄牙 2
+      - 🇺🇸 TG YouTube:8度科技_美国 7
+      - TG YouTube:8度科技_挪威 4
       - 🇫🇷 TG YouTube:8度科技_法国 3
       - 🇫🇷 TG YouTube:8度科技_法国 4
-      - 🇫🇷 TG YouTube:8度科技_法国 5
-      - 🇫🇷 TG YouTube:8度科技_法国 6
-      - 🇫🇷 TG YouTube:8度科技_法国 7
-      - 🇫🇷 TG YouTube:8度科技_法国 8
-      - 🇫🇷 TG YouTube:8度科技_法国 9
-      - 🇫🇷 TG YouTube:8度科技_法国 10
-      - 🇵🇭 TG YouTube:8度科技_菲律宾
+      - 🇺🇸 _US_美国 4
+      - TG YouTube:8度科技_挪威 5
+      - TG YouTube:8度科技_挪威 6
+      - 🇨🇦 _CA_加拿大
+      - TG YouTube:8度科技_挪威 7
+      - 🇺🇸 _US_美国 5
+      - 🇬🇧 TG YouTube:8度科技_英国
       - 🇨🇦 TG YouTube:8度科技_加拿大
+      - _BG_保加利亚
+      - 🇺🇸 _US_美国 6
+      - 🇺🇸 TG YouTube:8度科技_美国 8
+      - 🇺🇸 _US_美国 7
+      - _NO_挪威
+      - 🇺🇸 _US_美国 8
+      - 🇫🇷 TG YouTube:8度科技_法国 5
+      - TG YouTube:8度科技_挪威 8
+      - 🇫🇷 TG YouTube:8度科技_法国 6
+      - 🇨🇦 _CA_加拿大 2
       - 🇨🇦 TG YouTube:8度科技_加拿大 2
+      - 🇺🇸 _US_美国 9
+      - 🇺🇸 _US_美国 10
+      - 🇫🇷 _FR_法国 2
+      - 🇺🇸 _US_美国 11
+      - 🇬🇧 TG YouTube:8度科技_英国 2
+      - 🇺🇸 _US_美国 12
+      - 🇺🇸 _US_美国 13
+      - 🇺🇸 _US_美国 14
+      - 🇺🇸 _US_美国 15
+      - 🇺🇸 _US_美国 16
+      - 🇨🇦 _CA_加拿大 3
+      - 🇺🇸 _US_美国 17
       - 🇨🇦 TG YouTube:8度科技_加拿大 3
       - 🇨🇦 TG YouTube:8度科技_加拿大 4
+      - 🇲🇾 _MY_马来西亚
+      - 🇨🇦 _CA_加拿大 4
+      - 🇺🇸 _US_美国 18
+      - 🇺🇸 _US_美国 19
+      - 🇺🇸 _US_美国 20
       - 🇨🇦 TG YouTube:8度科技_加拿大 5
+      - 🇺🇸 _US_美国 21
+      - 🇺🇸 _US_美国 22
+      - 🇺🇸 _US_美国 23
+      - 🇺🇸 _US_美国 24
+      - 🇺🇸 _US_美国 25
+      - 🇺🇸 _US_美国 26
+      - 🇺🇸 _US_美国 27
+      - 🇺🇸 _US_美国 28
+      - 🇺🇸 _US_美国 29
+      - 🇺🇸 _US_美国 30
+      - 🇺🇸 TG YouTube:8度科技_美国 9
+      - 🇺🇸 _US_美国 31
+      - 🇺🇸 _US_美国 32
+      - 🇺🇸 _US_美国 33
+      - 🇷🇺 _RU_俄罗斯联邦
+      - 🇺🇸 _US_美国 34
+      - 🇺🇸 _US_美国 35
+      - 🇺🇸 _US_美国 36
+      - 🇺🇸 _US_美国 37
+      - 🇺🇸 _US_美国 38
+      - 🇺🇸 TG YouTube:8度科技_美国 10
+      - 🇺🇸 _US_美国 39
+      - 🇺🇸 _US_美国 40
+      - 🇺🇸 _US_美国 41
+      - 🇺🇸 _US_美国 42
+      - 🇺🇸 _US_美国 43
+      - 🇺🇸 _US_美国 44
+      - 🇺🇸 _US_美国 45
+      - 🇺🇸 _US_美国 46
+      - 🇺🇸 _US_美国 47
+      - 🇺🇸 _US_美国 48
+      - 🇺🇸 _US_美国 49
+      - 🇺🇸 _US_美国 50
+      - 🇺🇸 _US_美国 51
+      - 🇺🇸 _US_美国 52
+      - 🇺🇸 _US_美国 53
+      - 🇺🇸 _US_美国 54
+      - 🇺🇸 _US_美国 55
+      - 🇺🇸 _US_美国 56
+      - 🇺🇸 _US_美国 57
+      - 🇺🇸 _US_美国 58
+      - 🇺🇸 _US_美国 59
+      - 🇺🇸 _US_美国 60
+      - 🇺🇸 _US_美国 61
+      - 🇺🇸 _US_美国 62
+      - 🇺🇸 _US_美国 63
+      - 🇺🇸 _US_美国 64
+      - 🇺🇸 _US_美国 65
+      - 🇺🇸 _US_美国 66
+      - 🇺🇸 _US_美国 67
+      - 🇺🇸 _US_美国 68
+      - 🇺🇸 _US_美国 69
+      - 🇺🇸 _US_美国 70
+      - 🇺🇸 _US_美国 71
+      - 🇺🇸 _US_美国 72
+      - 🇺🇸 _US_美国 73
+      - 🇺🇸 _US_美国 74
+      - 🇺🇸 _US_美国 75
+      - 🇺🇸 _US_美国 76
+      - 🇺🇸 _US_美国 77
+      - 🇺🇸 _US_美国 78
+      - 🇺🇸 _US_美国 79
+      - 🇺🇸 _US_美国 80
+      - 🇺🇸 _US_美国 81
+      - 🇺🇸 _US_美国 82
+      - 🇺🇸 _US_美国 83
+      - 🇺🇸 _US_美国 84
+      - 🇺🇸 _US_美国 85
+      - 🇺🇸 _US_美国 86
+      - 🇺🇸 _US_美国 87
+      - 🇺🇸 _US_美国 88
+      - 🇺🇸 _US_美国 89
+      - 🇺🇸 _US_美国 90
+      - 🇺🇸 _US_美国 91
+      - 🇺🇸 _US_美国 92
+      - 🇺🇸 _US_美国 93
+      - 🇺🇸 _US_美国 94
+      - 🇫🇷 _FR_法国 3
+      - 🇺🇸 _US_美国 95
+      - 🇺🇸 _US_美国 96
+      - 🇺🇸 _US_美国 97
+      - 🇺🇸 _US_美国 98
+      - 🇺🇸 _US_美国 99
+      - 🇺🇸 _US_美国 100
+      - 🇺🇸 _US_美国 101
+      - 🇺🇸 _US_美国 102
+      - 🇺🇸 _US_美国 103
+      - 🇺🇸 _US_美国 104
+      - 🇺🇸 _US_美国 105
+      - 🇺🇸 _US_美国 106
+      - 🇺🇸 _US_美国 107
+      - 🇺🇸 _US_美国 108
+      - 🇺🇸 _US_美国 109
+      - 🇺🇸 _US_美国 110
+      - 🇺🇸 _US_美国 111
+      - 🇺🇸 _US_美国 112
+      - 🇺🇸 _US_美国 113
+      - 🇺🇸 _US_美国 114
+      - 🇺🇸 _US_美国 115
+      - 🇺🇸 _US_美国 116
+      - 🇺🇸 _US_美国 117
+      - 🇺🇸 _US_美国 118
+      - 🇺🇸 _US_美国 119
+      - 🇺🇸 _US_美国 120
+      - 🇺🇸 _US_美国 121
+      - 🇺🇸 _US_美国 122
+      - 🇺🇸 _US_美国 123
+      - 🇺🇸 _US_美国 124
+      - 🇺🇸 _US_美国 125
+      - 🇺🇸 TG YouTube:8度科技_美国 11
+      - 🇺🇸 _US_美国 126
+      - 🇺🇸 _US_美国 127
+      - 🇺🇸 _US_美国 128
+      - 🇺🇸 _US_美国 129
+      - 🇺🇸 _US_美国 130
+      - 🇺🇸 _US_美国 131
+      - 🇺🇸 _US_美国 132
+      - 🇺🇸 _US_美国 133
+      - 🇺🇸 _US_美国 134
+      - 🇺🇸 _US_美国 135
+      - 🇺🇸 _US_美国 136
+      - 🇺🇸 _US_美国 137
+      - 🇺🇸 _US_美国 138
+      - 🇺🇸 _US_美国 139
+      - 🇺🇸 _US_美国 140
+      - 🇺🇸 _US_美国 141
+      - 🇺🇸 _US_美国 142
+      - 🇺🇸 _US_美国 143
+      - 🇹🇼 _CN_中国->🇹🇼_TW_台湾
+      - 🇺🇸 _US_美国 144
+      - 🇺🇸 _US_美国 145
+      - 🇺🇸 _US_美国 146
+      - 🇺🇸 _US_美国 147
+      - 🇺🇸 _US_美国 148
+      - 🇺🇸 _US_美国 149
+      - 🇺🇸 _US_美国 150
+      - 🇺🇸 TG YouTube:8度科技_美国 12
+      - 🇺🇸 _US_美国 151
+      - 🇺🇸 _US_美国 152
+      - 🇺🇸 _US_美国 153
+      - 🇺🇸 _US_美国 154
+      - 🇺🇸 _US_美国 155
+      - 🇺🇸 _US_美国 156
+      - 🇰🇷 _KR_韩国
+      - TG YouTube:8度科技_挪威 9
+      - 🇭🇰 TG YouTube:8度科技_香港 4
+      - 🇺🇸 _US_美国 157
+      - 🇭🇰 _HK_香港
+      - 🇺🇸 _US_美国 158
+      - 🇺🇸 _US_美国 159
+      - 🇭🇰 _HK_香港 2
       - 🇨🇦 TG YouTube:8度科技_加拿大 6
+      - 🇭🇰 _HK_香港 3
+      - 🇭🇰 _HK_香港 4
+      - 🇭🇰 _HK_香港 5
+      - 🇭🇰 _HK_香港 6
+      - 🇫🇷 TG YouTube:8度科技_法国 7
+      - 🇫🇷 TG YouTube:8度科技_法国 8
+      - 🇯🇵 TG YouTube:8度科技_日本
+      - 🇸🇬 TG YouTube:8度科技_新加坡 3
+      - TG YouTube:8度科技_挪威 10
+      - 🇫🇷 _FR_法国 4
+      - TG YouTube:8度科技_挪威 11
+      - 🇨🇳 TG YouTube:8度科技_中国
+      - 🇬🇧 TG YouTube:8度科技_英国 3
+      - 🇺🇸 _US_美国 160
+      - 🇨🇳 TG YouTube:8度科技_中国 2
+      - TG YouTube:8度科技_挪威 12
+      - 🇺🇸 _US_美国 161
+      - 🇺🇸 _US_美国 162
       - 🇨🇦 TG YouTube:8度科技_加拿大 7
+      - 🇬🇧 TG YouTube:8度科技_英国 4
+      - TG YouTube:8度科技_挪威 13
+      - TG YouTube:8度科技_挪威 14
       - 🇨🇦 TG YouTube:8度科技_加拿大 8
+      - 🇬🇧 _GB_英国
+      - 🇨🇦 _CA_加拿大 5
       - 🇨🇦 TG YouTube:8度科技_加拿大 9
       - 🇨🇦 TG YouTube:8度科技_加拿大 10
+      - 🇭🇰 TG YouTube:8度科技_香港 5
       - 🇨🇦 TG YouTube:8度科技_加拿大 11
       - 🇨🇦 TG YouTube:8度科技_加拿大 12
+      - TG YouTube:8度科技 2
       - 🇨🇦 TG YouTube:8度科技_加拿大 13
       - 🇨🇦 TG YouTube:8度科技_加拿大 14
       - 🇨🇦 TG YouTube:8度科技_加拿大 15
@@ -778,157 +1650,312 @@ proxy-groups:
       - 🇨🇦 TG YouTube:8度科技_加拿大 31
       - 🇨🇦 TG YouTube:8度科技_加拿大 32
       - 🇨🇦 TG YouTube:8度科技_加拿大 33
-      - TG YouTube:8度科技_捷克
-      - 🇲🇾 TG YouTube:8度科技_马来西亚
-      - 🇺🇸 TG YouTube:8度科技_美国
-      - 🇺🇸 TG YouTube:8度科技_美国 2
-      - 🇺🇸 TG YouTube:8度科技_美国 3
-      - 🇺🇸 TG YouTube:8度科技_美国 4
-      - 🇺🇸 TG YouTube:8度科技_美国 5
-      - 🇺🇸 TG YouTube:8度科技_美国 6
-      - 🇺🇸 TG YouTube:8度科技_美国 7
-      - 🇺🇸 TG YouTube:8度科技_美国 8
-      - 🇺🇸 TG YouTube:8度科技_美国 9
-      - 🇺🇸 TG YouTube:8度科技_美国 10
-      - 🇺🇸 TG YouTube:8度科技_美国 11
-      - 🇺🇸 TG YouTube:8度科技_美国 12
-      - 🇺🇸 TG YouTube:8度科技_美国 13
-      - 🇺🇸 TG YouTube:8度科技_美国 14
-      - 🇺🇸 TG YouTube:8度科技_美国 15
-      - 🇺🇸 TG YouTube:8度科技_美国 16
-      - 🇺🇸 TG YouTube:8度科技_美国 17
-      - TG YouTube:8度科技_挪威
-      - TG YouTube:8度科技_挪威 2
-      - TG YouTube:8度科技_挪威 3
-      - TG YouTube:8度科技_挪威 4
-      - TG YouTube:8度科技_挪威 5
-      - TG YouTube:8度科技_挪威 6
-      - TG YouTube:8度科技_挪威 7
-      - TG YouTube:8度科技_挪威 8
-      - TG YouTube:8度科技_挪威 9
-      - TG YouTube:8度科技_挪威 10
-      - TG YouTube:8度科技_挪威 11
-      - TG YouTube:8度科技_挪威 12
-      - TG YouTube:8度科技_挪威 13
-      - TG YouTube:8度科技_挪威 14
-      - TG YouTube:8度科技_葡萄牙
-      - TG YouTube:8度科技_葡萄牙 2
-      - 🇯🇵 TG YouTube:8度科技_日本
-      - 🇯🇵 TG YouTube:8度科技_日本 2
-      - 🇸🇪 TG YouTube:8度科技_瑞典
-      - 🇹🇼 TG YouTube:8度科技_台湾
-      - 🇹🇼 TG YouTube:8度科技_台湾 2
-      - TG YouTube:8度科技_希腊
-      - 🇭🇰 TG YouTube:8度科技_香港
-      - 🇭🇰 TG YouTube:8度科技_香港 2
-      - 🇭🇰 TG YouTube:8度科技_香港 3
-      - 🇭🇰 TG YouTube:8度科技_香港 4
-      - 🇭🇰 TG YouTube:8度科技_香港 5
-      - 🇭🇰 TG YouTube:8度科技_香港 6
-      - 🇭🇰 TG YouTube:8度科技_香港 7
-      - 🇭🇰 TG YouTube:8度科技_香港 8
-      - 🇸🇬 TG YouTube:8度科技_新加坡
-      - 🇸🇬 TG YouTube:8度科技_新加坡 2
-      - 🇸🇬 TG YouTube:8度科技_新加坡 3
-      - TG YouTube:8度科技_以色列
-      - 🇮🇳 TG YouTube:8度科技_印度
-      - 🇬🇧 TG YouTube:8度科技_英国
-      - 🇬🇧 TG YouTube:8度科技_英国 2
-      - 🇬🇧 TG YouTube:8度科技_英国 3
-      - 🇬🇧 TG YouTube:8度科技_英国 4
-      - 🇻🇳 TG YouTube:8度科技_越南
-      - 🇻🇳 TG YouTube:8度科技_越南 2
-      - 🇻🇳 TG YouTube:8度科技_越南 3
-      - 🇨🇳 TG YouTube:8度科技_中国
-      - 🇨🇳 TG YouTube:8度科技_中国 2
+      - TG YouTube:8度科技 3
+      - TG YouTube:8度科技 4
+      - TG YouTube:8度科技 5
       - 🇨🇳 TG YouTube:8度科技_中国 3
-      - 🇨🇳 TG YouTube:8度科技_中国 4
-      - 🇨🇳 TG YouTube:8度科技_中国 5
-      - 🇨🇳 TG YouTube:8度科技_中国 6
-      - 🇨🇳 TG YouTube:8度科技_中国 7
-      - 🇨🇳 TG YouTube:8度科技_中国 8
-      - 🇦🇺 _AU_澳大利亚
-      - _BG_保加利亚
-      - 🇯🇵 _CN_中国->🇯🇵_JP_日本
-      - 🇹🇼 _CN_中国->🇹🇼_TW_台湾
-      - 🇫🇷 _FR_法国
-      - 🇫🇷 _FR_法国 2
-      - 🇫🇷 _FR_法国 3
-      - 🇫🇷 _FR_法国 4
-      - 🇫🇷 _FR_法国 5
-      - 🇬🇧 _GB_英国
-      - 🇭🇰 _HK_香港
-      - 🇭🇰 _HK_香港 2
-      - 🇭🇰 _HK_香港 3
-      - 🇭🇰 _HK_香港 4
-      - 🇮🇳 _HK_香港->🇮🇳_IN_印度
-      - 🇭🇰 HK TG YouTube:8度科技
-      - 🇭🇰 香港TG YouTube:8度科技
-      - 🇮🇩 _ID_印度尼西亚
-      - JP TG YouTube:8度科技
-      - JPTG YouTube:8度科技
-      - 🇳🇱 _NL_荷兰
-      - _NO_挪威
-      - 🇷🇺 RU TG YouTube:8度科技
-      - 🇸🇬 SG TG YouTube:8度科技
-      - 🇹🇼 TW TG YouTube:8度科技
-      - 🇺🇸 _US_美国
-      - 🇺🇸 _US_美国 2
-      - 🇺🇸 _US_美国 3
-      - 🇺🇸 _US_美国 4
-      - 🇺🇸 _US_美国 5
-      - 🇺🇸 _US_美国 6
-      - 🇺🇸 _US_美国 7
-      - 🇺🇸 _US_美国 8
-      - 🇺🇸 _US_美国->🇨🇿_CZ_捷克
-      - 🇷🇺 _US_美国->🇷🇺_RU_俄罗斯联邦
-      - 🇺🇸 US TG YouTube:8度科技
-      - 🇺🇸 US TG YouTube:8度科技 2
-      - 🇺🇸 US TG YouTube:8度科技 3
+      - TG YouTube:8度科技 6
+      - _55 | 3.63Mb
+      - TG YouTube:8度科技 7
+      - TG YouTube:8度科技 8
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 🇭🇰 A香港05|流媒体|V2|GZ
-      - default_name
-      - default_name 2
+      - 🇺🇸 TG YouTube:8度科技_美国
+      - 🇭🇰 TG YouTube:8度科技_香港
+      - 🇰🇷 _HK_香港->🇰🇷_KR_韩国
       - 🇺🇸 Relay_🇺🇸US-🇺🇸US_1674
-      - TG YouTube:8度科技
-      - TG YouTube:8度科技 2
-      - TG YouTube:8度科技 3
-      - TG YouTube:8度科技 4
-      - TG YouTube:8度科技 5
-      - TG YouTube:8度科技 6
-      - TG YouTube:8度科技 7
-      - TG YouTube:8度科技 8
-      - TG YouTube:8度科技 9
-      - 🇦🇺 TG YouTube:8度科技_澳大利亚
-      - 🇩🇰 TG YouTube:8度科技_丹麦
+      - 🇺🇸 _US_美国
       - 🇷🇺 TG YouTube:8度科技_俄罗斯联邦
+      - 🇺🇸 TG YouTube:8度科技_美国 2
+      - 🇰🇷 _HK_香港->🇰🇷_KR_韩国 2
+      - TG YouTube:8度科技_捷克
+      - 🇭🇰 TG YouTube:8度科技_香港 2
+      - TG YouTube:8度科技
+      - 🇮🇳 _HK_香港->🇮🇳_IN_印度
+      - 🇷🇺 _US_美国->🇷🇺_RU_俄罗斯联邦
+      - default_name
+      - 🇺🇸 _US_美国->🇨🇿_CZ_捷克
+      - 🇺🇸 TG YouTube:8度科技_美国 3
+      - 🇺🇸 TG YouTube:8度科技_美国 4
+      - 🇺🇸 TG YouTube:8度科技_美国 5
+      - 🇺🇸 TG YouTube:8度科技_美国 6
+      - 🇺🇸 _US_美国 2
+      - 🇮🇳 _IN_印度
+      - 🇮🇳 _IN_印度 2
+      - TG YouTube:8度科技_挪威
+      - 🇮🇳 _IN_印度 3
+      - 🇦🇺 TG YouTube:8度科技_澳大利亚
       - 🇫🇷 TG YouTube:8度科技_法国
+      - 🇮🇳 _IN_印度 4
+      - 🇮🇳 _IN_印度 5
       - 🇫🇷 TG YouTube:8度科技_法国 2
+      - 🇮🇳 _IN_印度 6
+      - 🇮🇳 TG YouTube:8度科技_印度
+      - 🇻🇳 TG YouTube:8度科技_越南
+      - 🇸🇬 TG YouTube:8度科技_新加坡
+      - 🇺🇸 _US_美国 3
+      - 🇮🇩 _ID_印度尼西亚
+      - 🇹🇼 TG YouTube:8度科技_台湾
+      - 🇦🇺 _AU_澳大利亚
+      - 🇦🇺 _AU_澳大利亚 2
+      - 🇦🇺 _AU_澳大利亚 3
+      - 🇦🇺 _AU_澳大利亚 4
+      - 🇦🇺 _AU_澳大利亚 5
+      - 🇦🇺 _AU_澳大利亚 6
+      - 🇦🇺 _AU_澳大利亚 7
+      - TG YouTube:8度科技_挪威 2
+      - 🇦🇺 _AU_澳大利亚 8
+      - 🇦🇺 _AU_澳大利亚 9
+      - 🇦🇺 _AU_澳大利亚 10
+      - 🇦🇺 _AU_澳大利亚 11
+      - 🇦🇺 _AU_澳大利亚 12
+      - 🇦🇺 _AU_澳大利亚 13
+      - 🇦🇺 _AU_澳大利亚 14
+      - 🇦🇺 _AU_澳大利亚 15
+      - TG YouTube:8度科技_葡萄牙
+      - 🇦🇺 _AU_澳大利亚 16
+      - 🇦🇺 _AU_澳大利亚 17
+      - 🇸🇬 TG YouTube:8度科技_新加坡 2
+      - 🇦🇺 _AU_澳大利亚 18
+      - 🇦🇺 _AU_澳大利亚 19
+      - TG YouTube:8度科技_挪威 3
+      - 🇦🇺 _AU_澳大利亚 20
+      - 🇦🇺 _AU_澳大利亚 21
+      - 🇦🇺 _AU_澳大利亚 22
+      - 🇦🇺 _AU_澳大利亚 23
+      - 🇭🇰 TG YouTube:8度科技_香港 3
+      - 🇸🇪 TG YouTube:8度科技_瑞典
+      - 🇫🇷 _FR_法国
+      - TG YouTube:8度科技_葡萄牙 2
+      - 🇺🇸 TG YouTube:8度科技_美国 7
+      - TG YouTube:8度科技_挪威 4
       - 🇫🇷 TG YouTube:8度科技_法国 3
       - 🇫🇷 TG YouTube:8度科技_法国 4
-      - 🇫🇷 TG YouTube:8度科技_法国 5
-      - 🇫🇷 TG YouTube:8度科技_法国 6
-      - 🇫🇷 TG YouTube:8度科技_法国 7
-      - 🇫🇷 TG YouTube:8度科技_法国 8
-      - 🇫🇷 TG YouTube:8度科技_法国 9
-      - 🇫🇷 TG YouTube:8度科技_法国 10
-      - 🇵🇭 TG YouTube:8度科技_菲律宾
+      - 🇺🇸 _US_美国 4
+      - TG YouTube:8度科技_挪威 5
+      - TG YouTube:8度科技_挪威 6
+      - 🇨🇦 _CA_加拿大
+      - TG YouTube:8度科技_挪威 7
+      - 🇺🇸 _US_美国 5
+      - 🇬🇧 TG YouTube:8度科技_英国
       - 🇨🇦 TG YouTube:8度科技_加拿大
+      - _BG_保加利亚
+      - 🇺🇸 _US_美国 6
+      - 🇺🇸 TG YouTube:8度科技_美国 8
+      - 🇺🇸 _US_美国 7
+      - _NO_挪威
+      - 🇺🇸 _US_美国 8
+      - 🇫🇷 TG YouTube:8度科技_法国 5
+      - TG YouTube:8度科技_挪威 8
+      - 🇫🇷 TG YouTube:8度科技_法国 6
+      - 🇨🇦 _CA_加拿大 2
       - 🇨🇦 TG YouTube:8度科技_加拿大 2
+      - 🇺🇸 _US_美国 9
+      - 🇺🇸 _US_美国 10
+      - 🇫🇷 _FR_法国 2
+      - 🇺🇸 _US_美国 11
+      - 🇬🇧 TG YouTube:8度科技_英国 2
+      - 🇺🇸 _US_美国 12
+      - 🇺🇸 _US_美国 13
+      - 🇺🇸 _US_美国 14
+      - 🇺🇸 _US_美国 15
+      - 🇺🇸 _US_美国 16
+      - 🇨🇦 _CA_加拿大 3
+      - 🇺🇸 _US_美国 17
       - 🇨🇦 TG YouTube:8度科技_加拿大 3
       - 🇨🇦 TG YouTube:8度科技_加拿大 4
+      - 🇲🇾 _MY_马来西亚
+      - 🇨🇦 _CA_加拿大 4
+      - 🇺🇸 _US_美国 18
+      - 🇺🇸 _US_美国 19
+      - 🇺🇸 _US_美国 20
       - 🇨🇦 TG YouTube:8度科技_加拿大 5
+      - 🇺🇸 _US_美国 21
+      - 🇺🇸 _US_美国 22
+      - 🇺🇸 _US_美国 23
+      - 🇺🇸 _US_美国 24
+      - 🇺🇸 _US_美国 25
+      - 🇺🇸 _US_美国 26
+      - 🇺🇸 _US_美国 27
+      - 🇺🇸 _US_美国 28
+      - 🇺🇸 _US_美国 29
+      - 🇺🇸 _US_美国 30
+      - 🇺🇸 TG YouTube:8度科技_美国 9
+      - 🇺🇸 _US_美国 31
+      - 🇺🇸 _US_美国 32
+      - 🇺🇸 _US_美国 33
+      - 🇷🇺 _RU_俄罗斯联邦
+      - 🇺🇸 _US_美国 34
+      - 🇺🇸 _US_美国 35
+      - 🇺🇸 _US_美国 36
+      - 🇺🇸 _US_美国 37
+      - 🇺🇸 _US_美国 38
+      - 🇺🇸 TG YouTube:8度科技_美国 10
+      - 🇺🇸 _US_美国 39
+      - 🇺🇸 _US_美国 40
+      - 🇺🇸 _US_美国 41
+      - 🇺🇸 _US_美国 42
+      - 🇺🇸 _US_美国 43
+      - 🇺🇸 _US_美国 44
+      - 🇺🇸 _US_美国 45
+      - 🇺🇸 _US_美国 46
+      - 🇺🇸 _US_美国 47
+      - 🇺🇸 _US_美国 48
+      - 🇺🇸 _US_美国 49
+      - 🇺🇸 _US_美国 50
+      - 🇺🇸 _US_美国 51
+      - 🇺🇸 _US_美国 52
+      - 🇺🇸 _US_美国 53
+      - 🇺🇸 _US_美国 54
+      - 🇺🇸 _US_美国 55
+      - 🇺🇸 _US_美国 56
+      - 🇺🇸 _US_美国 57
+      - 🇺🇸 _US_美国 58
+      - 🇺🇸 _US_美国 59
+      - 🇺🇸 _US_美国 60
+      - 🇺🇸 _US_美国 61
+      - 🇺🇸 _US_美国 62
+      - 🇺🇸 _US_美国 63
+      - 🇺🇸 _US_美国 64
+      - 🇺🇸 _US_美国 65
+      - 🇺🇸 _US_美国 66
+      - 🇺🇸 _US_美国 67
+      - 🇺🇸 _US_美国 68
+      - 🇺🇸 _US_美国 69
+      - 🇺🇸 _US_美国 70
+      - 🇺🇸 _US_美国 71
+      - 🇺🇸 _US_美国 72
+      - 🇺🇸 _US_美国 73
+      - 🇺🇸 _US_美国 74
+      - 🇺🇸 _US_美国 75
+      - 🇺🇸 _US_美国 76
+      - 🇺🇸 _US_美国 77
+      - 🇺🇸 _US_美国 78
+      - 🇺🇸 _US_美国 79
+      - 🇺🇸 _US_美国 80
+      - 🇺🇸 _US_美国 81
+      - 🇺🇸 _US_美国 82
+      - 🇺🇸 _US_美国 83
+      - 🇺🇸 _US_美国 84
+      - 🇺🇸 _US_美国 85
+      - 🇺🇸 _US_美国 86
+      - 🇺🇸 _US_美国 87
+      - 🇺🇸 _US_美国 88
+      - 🇺🇸 _US_美国 89
+      - 🇺🇸 _US_美国 90
+      - 🇺🇸 _US_美国 91
+      - 🇺🇸 _US_美国 92
+      - 🇺🇸 _US_美国 93
+      - 🇺🇸 _US_美国 94
+      - 🇫🇷 _FR_法国 3
+      - 🇺🇸 _US_美国 95
+      - 🇺🇸 _US_美国 96
+      - 🇺🇸 _US_美国 97
+      - 🇺🇸 _US_美国 98
+      - 🇺🇸 _US_美国 99
+      - 🇺🇸 _US_美国 100
+      - 🇺🇸 _US_美国 101
+      - 🇺🇸 _US_美国 102
+      - 🇺🇸 _US_美国 103
+      - 🇺🇸 _US_美国 104
+      - 🇺🇸 _US_美国 105
+      - 🇺🇸 _US_美国 106
+      - 🇺🇸 _US_美国 107
+      - 🇺🇸 _US_美国 108
+      - 🇺🇸 _US_美国 109
+      - 🇺🇸 _US_美国 110
+      - 🇺🇸 _US_美国 111
+      - 🇺🇸 _US_美国 112
+      - 🇺🇸 _US_美国 113
+      - 🇺🇸 _US_美国 114
+      - 🇺🇸 _US_美国 115
+      - 🇺🇸 _US_美国 116
+      - 🇺🇸 _US_美国 117
+      - 🇺🇸 _US_美国 118
+      - 🇺🇸 _US_美国 119
+      - 🇺🇸 _US_美国 120
+      - 🇺🇸 _US_美国 121
+      - 🇺🇸 _US_美国 122
+      - 🇺🇸 _US_美国 123
+      - 🇺🇸 _US_美国 124
+      - 🇺🇸 _US_美国 125
+      - 🇺🇸 TG YouTube:8度科技_美国 11
+      - 🇺🇸 _US_美国 126
+      - 🇺🇸 _US_美国 127
+      - 🇺🇸 _US_美国 128
+      - 🇺🇸 _US_美国 129
+      - 🇺🇸 _US_美国 130
+      - 🇺🇸 _US_美国 131
+      - 🇺🇸 _US_美国 132
+      - 🇺🇸 _US_美国 133
+      - 🇺🇸 _US_美国 134
+      - 🇺🇸 _US_美国 135
+      - 🇺🇸 _US_美国 136
+      - 🇺🇸 _US_美国 137
+      - 🇺🇸 _US_美国 138
+      - 🇺🇸 _US_美国 139
+      - 🇺🇸 _US_美国 140
+      - 🇺🇸 _US_美国 141
+      - 🇺🇸 _US_美国 142
+      - 🇺🇸 _US_美国 143
+      - 🇹🇼 _CN_中国->🇹🇼_TW_台湾
+      - 🇺🇸 _US_美国 144
+      - 🇺🇸 _US_美国 145
+      - 🇺🇸 _US_美国 146
+      - 🇺🇸 _US_美国 147
+      - 🇺🇸 _US_美国 148
+      - 🇺🇸 _US_美国 149
+      - 🇺🇸 _US_美国 150
+      - 🇺🇸 TG YouTube:8度科技_美国 12
+      - 🇺🇸 _US_美国 151
+      - 🇺🇸 _US_美国 152
+      - 🇺🇸 _US_美国 153
+      - 🇺🇸 _US_美国 154
+      - 🇺🇸 _US_美国 155
+      - 🇺🇸 _US_美国 156
+      - 🇰🇷 _KR_韩国
+      - TG YouTube:8度科技_挪威 9
+      - 🇭🇰 TG YouTube:8度科技_香港 4
+      - 🇺🇸 _US_美国 157
+      - 🇭🇰 _HK_香港
+      - 🇺🇸 _US_美国 158
+      - 🇺🇸 _US_美国 159
+      - 🇭🇰 _HK_香港 2
       - 🇨🇦 TG YouTube:8度科技_加拿大 6
+      - 🇭🇰 _HK_香港 3
+      - 🇭🇰 _HK_香港 4
+      - 🇭🇰 _HK_香港 5
+      - 🇭🇰 _HK_香港 6
+      - 🇫🇷 TG YouTube:8度科技_法国 7
+      - 🇫🇷 TG YouTube:8度科技_法国 8
+      - 🇯🇵 TG YouTube:8度科技_日本
+      - 🇸🇬 TG YouTube:8度科技_新加坡 3
+      - TG YouTube:8度科技_挪威 10
+      - 🇫🇷 _FR_法国 4
+      - TG YouTube:8度科技_挪威 11
+      - 🇨🇳 TG YouTube:8度科技_中国
+      - 🇬🇧 TG YouTube:8度科技_英国 3
+      - 🇺🇸 _US_美国 160
+      - 🇨🇳 TG YouTube:8度科技_中国 2
+      - TG YouTube:8度科技_挪威 12
+      - 🇺🇸 _US_美国 161
+      - 🇺🇸 _US_美国 162
       - 🇨🇦 TG YouTube:8度科技_加拿大 7
+      - 🇬🇧 TG YouTube:8度科技_英国 4
+      - TG YouTube:8度科技_挪威 13
+      - TG YouTube:8度科技_挪威 14
       - 🇨🇦 TG YouTube:8度科技_加拿大 8
+      - 🇬🇧 _GB_英国
+      - 🇨🇦 _CA_加拿大 5
       - 🇨🇦 TG YouTube:8度科技_加拿大 9
       - 🇨🇦 TG YouTube:8度科技_加拿大 10
+      - 🇭🇰 TG YouTube:8度科技_香港 5
       - 🇨🇦 TG YouTube:8度科技_加拿大 11
       - 🇨🇦 TG YouTube:8度科技_加拿大 12
+      - TG YouTube:8度科技 2
       - 🇨🇦 TG YouTube:8度科技_加拿大 13
       - 🇨🇦 TG YouTube:8度科技_加拿大 14
       - 🇨🇦 TG YouTube:8度科技_加拿大 15
@@ -950,158 +1977,313 @@ proxy-groups:
       - 🇨🇦 TG YouTube:8度科技_加拿大 31
       - 🇨🇦 TG YouTube:8度科技_加拿大 32
       - 🇨🇦 TG YouTube:8度科技_加拿大 33
-      - TG YouTube:8度科技_捷克
-      - 🇲🇾 TG YouTube:8度科技_马来西亚
-      - 🇺🇸 TG YouTube:8度科技_美国
-      - 🇺🇸 TG YouTube:8度科技_美国 2
-      - 🇺🇸 TG YouTube:8度科技_美国 3
-      - 🇺🇸 TG YouTube:8度科技_美国 4
-      - 🇺🇸 TG YouTube:8度科技_美国 5
-      - 🇺🇸 TG YouTube:8度科技_美国 6
-      - 🇺🇸 TG YouTube:8度科技_美国 7
-      - 🇺🇸 TG YouTube:8度科技_美国 8
-      - 🇺🇸 TG YouTube:8度科技_美国 9
-      - 🇺🇸 TG YouTube:8度科技_美国 10
-      - 🇺🇸 TG YouTube:8度科技_美国 11
-      - 🇺🇸 TG YouTube:8度科技_美国 12
-      - 🇺🇸 TG YouTube:8度科技_美国 13
-      - 🇺🇸 TG YouTube:8度科技_美国 14
-      - 🇺🇸 TG YouTube:8度科技_美国 15
-      - 🇺🇸 TG YouTube:8度科技_美国 16
-      - 🇺🇸 TG YouTube:8度科技_美国 17
-      - TG YouTube:8度科技_挪威
-      - TG YouTube:8度科技_挪威 2
-      - TG YouTube:8度科技_挪威 3
-      - TG YouTube:8度科技_挪威 4
-      - TG YouTube:8度科技_挪威 5
-      - TG YouTube:8度科技_挪威 6
-      - TG YouTube:8度科技_挪威 7
-      - TG YouTube:8度科技_挪威 8
-      - TG YouTube:8度科技_挪威 9
-      - TG YouTube:8度科技_挪威 10
-      - TG YouTube:8度科技_挪威 11
-      - TG YouTube:8度科技_挪威 12
-      - TG YouTube:8度科技_挪威 13
-      - TG YouTube:8度科技_挪威 14
-      - TG YouTube:8度科技_葡萄牙
-      - TG YouTube:8度科技_葡萄牙 2
-      - 🇯🇵 TG YouTube:8度科技_日本
-      - 🇯🇵 TG YouTube:8度科技_日本 2
-      - 🇸🇪 TG YouTube:8度科技_瑞典
-      - 🇹🇼 TG YouTube:8度科技_台湾
-      - 🇹🇼 TG YouTube:8度科技_台湾 2
-      - TG YouTube:8度科技_希腊
-      - 🇭🇰 TG YouTube:8度科技_香港
-      - 🇭🇰 TG YouTube:8度科技_香港 2
-      - 🇭🇰 TG YouTube:8度科技_香港 3
-      - 🇭🇰 TG YouTube:8度科技_香港 4
-      - 🇭🇰 TG YouTube:8度科技_香港 5
-      - 🇭🇰 TG YouTube:8度科技_香港 6
-      - 🇭🇰 TG YouTube:8度科技_香港 7
-      - 🇭🇰 TG YouTube:8度科技_香港 8
-      - 🇸🇬 TG YouTube:8度科技_新加坡
-      - 🇸🇬 TG YouTube:8度科技_新加坡 2
-      - 🇸🇬 TG YouTube:8度科技_新加坡 3
-      - TG YouTube:8度科技_以色列
-      - 🇮🇳 TG YouTube:8度科技_印度
-      - 🇬🇧 TG YouTube:8度科技_英国
-      - 🇬🇧 TG YouTube:8度科技_英国 2
-      - 🇬🇧 TG YouTube:8度科技_英国 3
-      - 🇬🇧 TG YouTube:8度科技_英国 4
-      - 🇻🇳 TG YouTube:8度科技_越南
-      - 🇻🇳 TG YouTube:8度科技_越南 2
-      - 🇻🇳 TG YouTube:8度科技_越南 3
-      - 🇨🇳 TG YouTube:8度科技_中国
-      - 🇨🇳 TG YouTube:8度科技_中国 2
+      - TG YouTube:8度科技 3
+      - TG YouTube:8度科技 4
+      - TG YouTube:8度科技 5
       - 🇨🇳 TG YouTube:8度科技_中国 3
-      - 🇨🇳 TG YouTube:8度科技_中国 4
-      - 🇨🇳 TG YouTube:8度科技_中国 5
-      - 🇨🇳 TG YouTube:8度科技_中国 6
-      - 🇨🇳 TG YouTube:8度科技_中国 7
-      - 🇨🇳 TG YouTube:8度科技_中国 8
-      - 🇦🇺 _AU_澳大利亚
-      - _BG_保加利亚
-      - 🇯🇵 _CN_中国->🇯🇵_JP_日本
-      - 🇹🇼 _CN_中国->🇹🇼_TW_台湾
-      - 🇫🇷 _FR_法国
-      - 🇫🇷 _FR_法国 2
-      - 🇫🇷 _FR_法国 3
-      - 🇫🇷 _FR_法国 4
-      - 🇫🇷 _FR_法国 5
-      - 🇬🇧 _GB_英国
-      - 🇭🇰 _HK_香港
-      - 🇭🇰 _HK_香港 2
-      - 🇭🇰 _HK_香港 3
-      - 🇭🇰 _HK_香港 4
-      - 🇮🇳 _HK_香港->🇮🇳_IN_印度
-      - 🇭🇰 HK TG YouTube:8度科技
-      - 🇭🇰 香港TG YouTube:8度科技
-      - 🇮🇩 _ID_印度尼西亚
-      - JP TG YouTube:8度科技
-      - JPTG YouTube:8度科技
-      - 🇳🇱 _NL_荷兰
-      - _NO_挪威
-      - 🇷🇺 RU TG YouTube:8度科技
-      - 🇸🇬 SG TG YouTube:8度科技
-      - 🇹🇼 TW TG YouTube:8度科技
-      - 🇺🇸 _US_美国
-      - 🇺🇸 _US_美国 2
-      - 🇺🇸 _US_美国 3
-      - 🇺🇸 _US_美国 4
-      - 🇺🇸 _US_美国 5
-      - 🇺🇸 _US_美国 6
-      - 🇺🇸 _US_美国 7
-      - 🇺🇸 _US_美国 8
-      - 🇺🇸 _US_美国->🇨🇿_CZ_捷克
-      - 🇷🇺 _US_美国->🇷🇺_RU_俄罗斯联邦
-      - 🇺🇸 US TG YouTube:8度科技
-      - 🇺🇸 US TG YouTube:8度科技 2
-      - 🇺🇸 US TG YouTube:8度科技 3
+      - TG YouTube:8度科技 6
+      - _55 | 3.63Mb
+      - TG YouTube:8度科技 7
+      - TG YouTube:8度科技 8
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇭🇰 A香港05|流媒体|V2|GZ
-      - default_name
-      - default_name 2
+      - 🇺🇸 TG YouTube:8度科技_美国
+      - 🇭🇰 TG YouTube:8度科技_香港
+      - 🇰🇷 _HK_香港->🇰🇷_KR_韩国
       - 🇺🇸 Relay_🇺🇸US-🇺🇸US_1674
-      - TG YouTube:8度科技
-      - TG YouTube:8度科技 2
-      - TG YouTube:8度科技 3
-      - TG YouTube:8度科技 4
-      - TG YouTube:8度科技 5
-      - TG YouTube:8度科技 6
-      - TG YouTube:8度科技 7
-      - TG YouTube:8度科技 8
-      - TG YouTube:8度科技 9
-      - 🇦🇺 TG YouTube:8度科技_澳大利亚
-      - 🇩🇰 TG YouTube:8度科技_丹麦
+      - 🇺🇸 _US_美国
       - 🇷🇺 TG YouTube:8度科技_俄罗斯联邦
+      - 🇺🇸 TG YouTube:8度科技_美国 2
+      - 🇰🇷 _HK_香港->🇰🇷_KR_韩国 2
+      - TG YouTube:8度科技_捷克
+      - 🇭🇰 TG YouTube:8度科技_香港 2
+      - TG YouTube:8度科技
+      - 🇮🇳 _HK_香港->🇮🇳_IN_印度
+      - 🇷🇺 _US_美国->🇷🇺_RU_俄罗斯联邦
+      - default_name
+      - 🇺🇸 _US_美国->🇨🇿_CZ_捷克
+      - 🇺🇸 TG YouTube:8度科技_美国 3
+      - 🇺🇸 TG YouTube:8度科技_美国 4
+      - 🇺🇸 TG YouTube:8度科技_美国 5
+      - 🇺🇸 TG YouTube:8度科技_美国 6
+      - 🇺🇸 _US_美国 2
+      - 🇮🇳 _IN_印度
+      - 🇮🇳 _IN_印度 2
+      - TG YouTube:8度科技_挪威
+      - 🇮🇳 _IN_印度 3
+      - 🇦🇺 TG YouTube:8度科技_澳大利亚
       - 🇫🇷 TG YouTube:8度科技_法国
+      - 🇮🇳 _IN_印度 4
+      - 🇮🇳 _IN_印度 5
       - 🇫🇷 TG YouTube:8度科技_法国 2
+      - 🇮🇳 _IN_印度 6
+      - 🇮🇳 TG YouTube:8度科技_印度
+      - 🇻🇳 TG YouTube:8度科技_越南
+      - 🇸🇬 TG YouTube:8度科技_新加坡
+      - 🇺🇸 _US_美国 3
+      - 🇮🇩 _ID_印度尼西亚
+      - 🇹🇼 TG YouTube:8度科技_台湾
+      - 🇦🇺 _AU_澳大利亚
+      - 🇦🇺 _AU_澳大利亚 2
+      - 🇦🇺 _AU_澳大利亚 3
+      - 🇦🇺 _AU_澳大利亚 4
+      - 🇦🇺 _AU_澳大利亚 5
+      - 🇦🇺 _AU_澳大利亚 6
+      - 🇦🇺 _AU_澳大利亚 7
+      - TG YouTube:8度科技_挪威 2
+      - 🇦🇺 _AU_澳大利亚 8
+      - 🇦🇺 _AU_澳大利亚 9
+      - 🇦🇺 _AU_澳大利亚 10
+      - 🇦🇺 _AU_澳大利亚 11
+      - 🇦🇺 _AU_澳大利亚 12
+      - 🇦🇺 _AU_澳大利亚 13
+      - 🇦🇺 _AU_澳大利亚 14
+      - 🇦🇺 _AU_澳大利亚 15
+      - TG YouTube:8度科技_葡萄牙
+      - 🇦🇺 _AU_澳大利亚 16
+      - 🇦🇺 _AU_澳大利亚 17
+      - 🇸🇬 TG YouTube:8度科技_新加坡 2
+      - 🇦🇺 _AU_澳大利亚 18
+      - 🇦🇺 _AU_澳大利亚 19
+      - TG YouTube:8度科技_挪威 3
+      - 🇦🇺 _AU_澳大利亚 20
+      - 🇦🇺 _AU_澳大利亚 21
+      - 🇦🇺 _AU_澳大利亚 22
+      - 🇦🇺 _AU_澳大利亚 23
+      - 🇭🇰 TG YouTube:8度科技_香港 3
+      - 🇸🇪 TG YouTube:8度科技_瑞典
+      - 🇫🇷 _FR_法国
+      - TG YouTube:8度科技_葡萄牙 2
+      - 🇺🇸 TG YouTube:8度科技_美国 7
+      - TG YouTube:8度科技_挪威 4
       - 🇫🇷 TG YouTube:8度科技_法国 3
       - 🇫🇷 TG YouTube:8度科技_法国 4
-      - 🇫🇷 TG YouTube:8度科技_法国 5
-      - 🇫🇷 TG YouTube:8度科技_法国 6
-      - 🇫🇷 TG YouTube:8度科技_法国 7
-      - 🇫🇷 TG YouTube:8度科技_法国 8
-      - 🇫🇷 TG YouTube:8度科技_法国 9
-      - 🇫🇷 TG YouTube:8度科技_法国 10
-      - 🇵🇭 TG YouTube:8度科技_菲律宾
+      - 🇺🇸 _US_美国 4
+      - TG YouTube:8度科技_挪威 5
+      - TG YouTube:8度科技_挪威 6
+      - 🇨🇦 _CA_加拿大
+      - TG YouTube:8度科技_挪威 7
+      - 🇺🇸 _US_美国 5
+      - 🇬🇧 TG YouTube:8度科技_英国
       - 🇨🇦 TG YouTube:8度科技_加拿大
+      - _BG_保加利亚
+      - 🇺🇸 _US_美国 6
+      - 🇺🇸 TG YouTube:8度科技_美国 8
+      - 🇺🇸 _US_美国 7
+      - _NO_挪威
+      - 🇺🇸 _US_美国 8
+      - 🇫🇷 TG YouTube:8度科技_法国 5
+      - TG YouTube:8度科技_挪威 8
+      - 🇫🇷 TG YouTube:8度科技_法国 6
+      - 🇨🇦 _CA_加拿大 2
       - 🇨🇦 TG YouTube:8度科技_加拿大 2
+      - 🇺🇸 _US_美国 9
+      - 🇺🇸 _US_美国 10
+      - 🇫🇷 _FR_法国 2
+      - 🇺🇸 _US_美国 11
+      - 🇬🇧 TG YouTube:8度科技_英国 2
+      - 🇺🇸 _US_美国 12
+      - 🇺🇸 _US_美国 13
+      - 🇺🇸 _US_美国 14
+      - 🇺🇸 _US_美国 15
+      - 🇺🇸 _US_美国 16
+      - 🇨🇦 _CA_加拿大 3
+      - 🇺🇸 _US_美国 17
       - 🇨🇦 TG YouTube:8度科技_加拿大 3
       - 🇨🇦 TG YouTube:8度科技_加拿大 4
+      - 🇲🇾 _MY_马来西亚
+      - 🇨🇦 _CA_加拿大 4
+      - 🇺🇸 _US_美国 18
+      - 🇺🇸 _US_美国 19
+      - 🇺🇸 _US_美国 20
       - 🇨🇦 TG YouTube:8度科技_加拿大 5
+      - 🇺🇸 _US_美国 21
+      - 🇺🇸 _US_美国 22
+      - 🇺🇸 _US_美国 23
+      - 🇺🇸 _US_美国 24
+      - 🇺🇸 _US_美国 25
+      - 🇺🇸 _US_美国 26
+      - 🇺🇸 _US_美国 27
+      - 🇺🇸 _US_美国 28
+      - 🇺🇸 _US_美国 29
+      - 🇺🇸 _US_美国 30
+      - 🇺🇸 TG YouTube:8度科技_美国 9
+      - 🇺🇸 _US_美国 31
+      - 🇺🇸 _US_美国 32
+      - 🇺🇸 _US_美国 33
+      - 🇷🇺 _RU_俄罗斯联邦
+      - 🇺🇸 _US_美国 34
+      - 🇺🇸 _US_美国 35
+      - 🇺🇸 _US_美国 36
+      - 🇺🇸 _US_美国 37
+      - 🇺🇸 _US_美国 38
+      - 🇺🇸 TG YouTube:8度科技_美国 10
+      - 🇺🇸 _US_美国 39
+      - 🇺🇸 _US_美国 40
+      - 🇺🇸 _US_美国 41
+      - 🇺🇸 _US_美国 42
+      - 🇺🇸 _US_美国 43
+      - 🇺🇸 _US_美国 44
+      - 🇺🇸 _US_美国 45
+      - 🇺🇸 _US_美国 46
+      - 🇺🇸 _US_美国 47
+      - 🇺🇸 _US_美国 48
+      - 🇺🇸 _US_美国 49
+      - 🇺🇸 _US_美国 50
+      - 🇺🇸 _US_美国 51
+      - 🇺🇸 _US_美国 52
+      - 🇺🇸 _US_美国 53
+      - 🇺🇸 _US_美国 54
+      - 🇺🇸 _US_美国 55
+      - 🇺🇸 _US_美国 56
+      - 🇺🇸 _US_美国 57
+      - 🇺🇸 _US_美国 58
+      - 🇺🇸 _US_美国 59
+      - 🇺🇸 _US_美国 60
+      - 🇺🇸 _US_美国 61
+      - 🇺🇸 _US_美国 62
+      - 🇺🇸 _US_美国 63
+      - 🇺🇸 _US_美国 64
+      - 🇺🇸 _US_美国 65
+      - 🇺🇸 _US_美国 66
+      - 🇺🇸 _US_美国 67
+      - 🇺🇸 _US_美国 68
+      - 🇺🇸 _US_美国 69
+      - 🇺🇸 _US_美国 70
+      - 🇺🇸 _US_美国 71
+      - 🇺🇸 _US_美国 72
+      - 🇺🇸 _US_美国 73
+      - 🇺🇸 _US_美国 74
+      - 🇺🇸 _US_美国 75
+      - 🇺🇸 _US_美国 76
+      - 🇺🇸 _US_美国 77
+      - 🇺🇸 _US_美国 78
+      - 🇺🇸 _US_美国 79
+      - 🇺🇸 _US_美国 80
+      - 🇺🇸 _US_美国 81
+      - 🇺🇸 _US_美国 82
+      - 🇺🇸 _US_美国 83
+      - 🇺🇸 _US_美国 84
+      - 🇺🇸 _US_美国 85
+      - 🇺🇸 _US_美国 86
+      - 🇺🇸 _US_美国 87
+      - 🇺🇸 _US_美国 88
+      - 🇺🇸 _US_美国 89
+      - 🇺🇸 _US_美国 90
+      - 🇺🇸 _US_美国 91
+      - 🇺🇸 _US_美国 92
+      - 🇺🇸 _US_美国 93
+      - 🇺🇸 _US_美国 94
+      - 🇫🇷 _FR_法国 3
+      - 🇺🇸 _US_美国 95
+      - 🇺🇸 _US_美国 96
+      - 🇺🇸 _US_美国 97
+      - 🇺🇸 _US_美国 98
+      - 🇺🇸 _US_美国 99
+      - 🇺🇸 _US_美国 100
+      - 🇺🇸 _US_美国 101
+      - 🇺🇸 _US_美国 102
+      - 🇺🇸 _US_美国 103
+      - 🇺🇸 _US_美国 104
+      - 🇺🇸 _US_美国 105
+      - 🇺🇸 _US_美国 106
+      - 🇺🇸 _US_美国 107
+      - 🇺🇸 _US_美国 108
+      - 🇺🇸 _US_美国 109
+      - 🇺🇸 _US_美国 110
+      - 🇺🇸 _US_美国 111
+      - 🇺🇸 _US_美国 112
+      - 🇺🇸 _US_美国 113
+      - 🇺🇸 _US_美国 114
+      - 🇺🇸 _US_美国 115
+      - 🇺🇸 _US_美国 116
+      - 🇺🇸 _US_美国 117
+      - 🇺🇸 _US_美国 118
+      - 🇺🇸 _US_美国 119
+      - 🇺🇸 _US_美国 120
+      - 🇺🇸 _US_美国 121
+      - 🇺🇸 _US_美国 122
+      - 🇺🇸 _US_美国 123
+      - 🇺🇸 _US_美国 124
+      - 🇺🇸 _US_美国 125
+      - 🇺🇸 TG YouTube:8度科技_美国 11
+      - 🇺🇸 _US_美国 126
+      - 🇺🇸 _US_美国 127
+      - 🇺🇸 _US_美国 128
+      - 🇺🇸 _US_美国 129
+      - 🇺🇸 _US_美国 130
+      - 🇺🇸 _US_美国 131
+      - 🇺🇸 _US_美国 132
+      - 🇺🇸 _US_美国 133
+      - 🇺🇸 _US_美国 134
+      - 🇺🇸 _US_美国 135
+      - 🇺🇸 _US_美国 136
+      - 🇺🇸 _US_美国 137
+      - 🇺🇸 _US_美国 138
+      - 🇺🇸 _US_美国 139
+      - 🇺🇸 _US_美国 140
+      - 🇺🇸 _US_美国 141
+      - 🇺🇸 _US_美国 142
+      - 🇺🇸 _US_美国 143
+      - 🇹🇼 _CN_中国->🇹🇼_TW_台湾
+      - 🇺🇸 _US_美国 144
+      - 🇺🇸 _US_美国 145
+      - 🇺🇸 _US_美国 146
+      - 🇺🇸 _US_美国 147
+      - 🇺🇸 _US_美国 148
+      - 🇺🇸 _US_美国 149
+      - 🇺🇸 _US_美国 150
+      - 🇺🇸 TG YouTube:8度科技_美国 12
+      - 🇺🇸 _US_美国 151
+      - 🇺🇸 _US_美国 152
+      - 🇺🇸 _US_美国 153
+      - 🇺🇸 _US_美国 154
+      - 🇺🇸 _US_美国 155
+      - 🇺🇸 _US_美国 156
+      - 🇰🇷 _KR_韩国
+      - TG YouTube:8度科技_挪威 9
+      - 🇭🇰 TG YouTube:8度科技_香港 4
+      - 🇺🇸 _US_美国 157
+      - 🇭🇰 _HK_香港
+      - 🇺🇸 _US_美国 158
+      - 🇺🇸 _US_美国 159
+      - 🇭🇰 _HK_香港 2
       - 🇨🇦 TG YouTube:8度科技_加拿大 6
+      - 🇭🇰 _HK_香港 3
+      - 🇭🇰 _HK_香港 4
+      - 🇭🇰 _HK_香港 5
+      - 🇭🇰 _HK_香港 6
+      - 🇫🇷 TG YouTube:8度科技_法国 7
+      - 🇫🇷 TG YouTube:8度科技_法国 8
+      - 🇯🇵 TG YouTube:8度科技_日本
+      - 🇸🇬 TG YouTube:8度科技_新加坡 3
+      - TG YouTube:8度科技_挪威 10
+      - 🇫🇷 _FR_法国 4
+      - TG YouTube:8度科技_挪威 11
+      - 🇨🇳 TG YouTube:8度科技_中国
+      - 🇬🇧 TG YouTube:8度科技_英国 3
+      - 🇺🇸 _US_美国 160
+      - 🇨🇳 TG YouTube:8度科技_中国 2
+      - TG YouTube:8度科技_挪威 12
+      - 🇺🇸 _US_美国 161
+      - 🇺🇸 _US_美国 162
       - 🇨🇦 TG YouTube:8度科技_加拿大 7
+      - 🇬🇧 TG YouTube:8度科技_英国 4
+      - TG YouTube:8度科技_挪威 13
+      - TG YouTube:8度科技_挪威 14
       - 🇨🇦 TG YouTube:8度科技_加拿大 8
+      - 🇬🇧 _GB_英国
+      - 🇨🇦 _CA_加拿大 5
       - 🇨🇦 TG YouTube:8度科技_加拿大 9
       - 🇨🇦 TG YouTube:8度科技_加拿大 10
+      - 🇭🇰 TG YouTube:8度科技_香港 5
       - 🇨🇦 TG YouTube:8度科技_加拿大 11
       - 🇨🇦 TG YouTube:8度科技_加拿大 12
+      - TG YouTube:8度科技 2
       - 🇨🇦 TG YouTube:8度科技_加拿大 13
       - 🇨🇦 TG YouTube:8度科技_加拿大 14
       - 🇨🇦 TG YouTube:8度科技_加拿大 15
@@ -1123,113 +2305,14 @@ proxy-groups:
       - 🇨🇦 TG YouTube:8度科技_加拿大 31
       - 🇨🇦 TG YouTube:8度科技_加拿大 32
       - 🇨🇦 TG YouTube:8度科技_加拿大 33
-      - TG YouTube:8度科技_捷克
-      - 🇲🇾 TG YouTube:8度科技_马来西亚
-      - 🇺🇸 TG YouTube:8度科技_美国
-      - 🇺🇸 TG YouTube:8度科技_美国 2
-      - 🇺🇸 TG YouTube:8度科技_美国 3
-      - 🇺🇸 TG YouTube:8度科技_美国 4
-      - 🇺🇸 TG YouTube:8度科技_美国 5
-      - 🇺🇸 TG YouTube:8度科技_美国 6
-      - 🇺🇸 TG YouTube:8度科技_美国 7
-      - 🇺🇸 TG YouTube:8度科技_美国 8
-      - 🇺🇸 TG YouTube:8度科技_美国 9
-      - 🇺🇸 TG YouTube:8度科技_美国 10
-      - 🇺🇸 TG YouTube:8度科技_美国 11
-      - 🇺🇸 TG YouTube:8度科技_美国 12
-      - 🇺🇸 TG YouTube:8度科技_美国 13
-      - 🇺🇸 TG YouTube:8度科技_美国 14
-      - 🇺🇸 TG YouTube:8度科技_美国 15
-      - 🇺🇸 TG YouTube:8度科技_美国 16
-      - 🇺🇸 TG YouTube:8度科技_美国 17
-      - TG YouTube:8度科技_挪威
-      - TG YouTube:8度科技_挪威 2
-      - TG YouTube:8度科技_挪威 3
-      - TG YouTube:8度科技_挪威 4
-      - TG YouTube:8度科技_挪威 5
-      - TG YouTube:8度科技_挪威 6
-      - TG YouTube:8度科技_挪威 7
-      - TG YouTube:8度科技_挪威 8
-      - TG YouTube:8度科技_挪威 9
-      - TG YouTube:8度科技_挪威 10
-      - TG YouTube:8度科技_挪威 11
-      - TG YouTube:8度科技_挪威 12
-      - TG YouTube:8度科技_挪威 13
-      - TG YouTube:8度科技_挪威 14
-      - TG YouTube:8度科技_葡萄牙
-      - TG YouTube:8度科技_葡萄牙 2
-      - 🇯🇵 TG YouTube:8度科技_日本
-      - 🇯🇵 TG YouTube:8度科技_日本 2
-      - 🇸🇪 TG YouTube:8度科技_瑞典
-      - 🇹🇼 TG YouTube:8度科技_台湾
-      - 🇹🇼 TG YouTube:8度科技_台湾 2
-      - TG YouTube:8度科技_希腊
-      - 🇭🇰 TG YouTube:8度科技_香港
-      - 🇭🇰 TG YouTube:8度科技_香港 2
-      - 🇭🇰 TG YouTube:8度科技_香港 3
-      - 🇭🇰 TG YouTube:8度科技_香港 4
-      - 🇭🇰 TG YouTube:8度科技_香港 5
-      - 🇭🇰 TG YouTube:8度科技_香港 6
-      - 🇭🇰 TG YouTube:8度科技_香港 7
-      - 🇭🇰 TG YouTube:8度科技_香港 8
-      - 🇸🇬 TG YouTube:8度科技_新加坡
-      - 🇸🇬 TG YouTube:8度科技_新加坡 2
-      - 🇸🇬 TG YouTube:8度科技_新加坡 3
-      - TG YouTube:8度科技_以色列
-      - 🇮🇳 TG YouTube:8度科技_印度
-      - 🇬🇧 TG YouTube:8度科技_英国
-      - 🇬🇧 TG YouTube:8度科技_英国 2
-      - 🇬🇧 TG YouTube:8度科技_英国 3
-      - 🇬🇧 TG YouTube:8度科技_英国 4
-      - 🇻🇳 TG YouTube:8度科技_越南
-      - 🇻🇳 TG YouTube:8度科技_越南 2
-      - 🇻🇳 TG YouTube:8度科技_越南 3
-      - 🇨🇳 TG YouTube:8度科技_中国
-      - 🇨🇳 TG YouTube:8度科技_中国 2
+      - TG YouTube:8度科技 3
+      - TG YouTube:8度科技 4
+      - TG YouTube:8度科技 5
       - 🇨🇳 TG YouTube:8度科技_中国 3
-      - 🇨🇳 TG YouTube:8度科技_中国 4
-      - 🇨🇳 TG YouTube:8度科技_中国 5
-      - 🇨🇳 TG YouTube:8度科技_中国 6
-      - 🇨🇳 TG YouTube:8度科技_中国 7
-      - 🇨🇳 TG YouTube:8度科技_中国 8
-      - 🇦🇺 _AU_澳大利亚
-      - _BG_保加利亚
-      - 🇯🇵 _CN_中国->🇯🇵_JP_日本
-      - 🇹🇼 _CN_中国->🇹🇼_TW_台湾
-      - 🇫🇷 _FR_法国
-      - 🇫🇷 _FR_法国 2
-      - 🇫🇷 _FR_法国 3
-      - 🇫🇷 _FR_法国 4
-      - 🇫🇷 _FR_法国 5
-      - 🇬🇧 _GB_英国
-      - 🇭🇰 _HK_香港
-      - 🇭🇰 _HK_香港 2
-      - 🇭🇰 _HK_香港 3
-      - 🇭🇰 _HK_香港 4
-      - 🇮🇳 _HK_香港->🇮🇳_IN_印度
-      - 🇭🇰 HK TG YouTube:8度科技
-      - 🇭🇰 香港TG YouTube:8度科技
-      - 🇮🇩 _ID_印度尼西亚
-      - JP TG YouTube:8度科技
-      - JPTG YouTube:8度科技
-      - 🇳🇱 _NL_荷兰
-      - _NO_挪威
-      - 🇷🇺 RU TG YouTube:8度科技
-      - 🇸🇬 SG TG YouTube:8度科技
-      - 🇹🇼 TW TG YouTube:8度科技
-      - 🇺🇸 _US_美国
-      - 🇺🇸 _US_美国 2
-      - 🇺🇸 _US_美国 3
-      - 🇺🇸 _US_美国 4
-      - 🇺🇸 _US_美国 5
-      - 🇺🇸 _US_美国 6
-      - 🇺🇸 _US_美国 7
-      - 🇺🇸 _US_美国 8
-      - 🇺🇸 _US_美国->🇨🇿_CZ_捷克
-      - 🇷🇺 _US_美国->🇷🇺_RU_俄罗斯联邦
-      - 🇺🇸 US TG YouTube:8度科技
-      - 🇺🇸 US TG YouTube:8度科技 2
-      - 🇺🇸 US TG YouTube:8度科技 3
+      - TG YouTube:8度科技 6
+      - _55 | 3.63Mb
+      - TG YouTube:8度科技 7
+      - TG YouTube:8度科技 8
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -1245,45 +2328,299 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇭🇰 A香港05|流媒体|V2|GZ
-      - default_name
-      - default_name 2
+      - 🇺🇸 TG YouTube:8度科技_美国
+      - 🇭🇰 TG YouTube:8度科技_香港
+      - 🇰🇷 _HK_香港->🇰🇷_KR_韩国
       - 🇺🇸 Relay_🇺🇸US-🇺🇸US_1674
-      - TG YouTube:8度科技
-      - TG YouTube:8度科技 2
-      - TG YouTube:8度科技 3
-      - TG YouTube:8度科技 4
-      - TG YouTube:8度科技 5
-      - TG YouTube:8度科技 6
-      - TG YouTube:8度科技 7
-      - TG YouTube:8度科技 8
-      - TG YouTube:8度科技 9
-      - 🇦🇺 TG YouTube:8度科技_澳大利亚
-      - 🇩🇰 TG YouTube:8度科技_丹麦
+      - 🇺🇸 _US_美国
       - 🇷🇺 TG YouTube:8度科技_俄罗斯联邦
+      - 🇺🇸 TG YouTube:8度科技_美国 2
+      - 🇰🇷 _HK_香港->🇰🇷_KR_韩国 2
+      - TG YouTube:8度科技_捷克
+      - 🇭🇰 TG YouTube:8度科技_香港 2
+      - TG YouTube:8度科技
+      - 🇮🇳 _HK_香港->🇮🇳_IN_印度
+      - 🇷🇺 _US_美国->🇷🇺_RU_俄罗斯联邦
+      - default_name
+      - 🇺🇸 _US_美国->🇨🇿_CZ_捷克
+      - 🇺🇸 TG YouTube:8度科技_美国 3
+      - 🇺🇸 TG YouTube:8度科技_美国 4
+      - 🇺🇸 TG YouTube:8度科技_美国 5
+      - 🇺🇸 TG YouTube:8度科技_美国 6
+      - 🇺🇸 _US_美国 2
+      - 🇮🇳 _IN_印度
+      - 🇮🇳 _IN_印度 2
+      - TG YouTube:8度科技_挪威
+      - 🇮🇳 _IN_印度 3
+      - 🇦🇺 TG YouTube:8度科技_澳大利亚
       - 🇫🇷 TG YouTube:8度科技_法国
+      - 🇮🇳 _IN_印度 4
+      - 🇮🇳 _IN_印度 5
       - 🇫🇷 TG YouTube:8度科技_法国 2
+      - 🇮🇳 _IN_印度 6
+      - 🇮🇳 TG YouTube:8度科技_印度
+      - 🇻🇳 TG YouTube:8度科技_越南
+      - 🇸🇬 TG YouTube:8度科技_新加坡
+      - 🇺🇸 _US_美国 3
+      - 🇮🇩 _ID_印度尼西亚
+      - 🇹🇼 TG YouTube:8度科技_台湾
+      - 🇦🇺 _AU_澳大利亚
+      - 🇦🇺 _AU_澳大利亚 2
+      - 🇦🇺 _AU_澳大利亚 3
+      - 🇦🇺 _AU_澳大利亚 4
+      - 🇦🇺 _AU_澳大利亚 5
+      - 🇦🇺 _AU_澳大利亚 6
+      - 🇦🇺 _AU_澳大利亚 7
+      - TG YouTube:8度科技_挪威 2
+      - 🇦🇺 _AU_澳大利亚 8
+      - 🇦🇺 _AU_澳大利亚 9
+      - 🇦🇺 _AU_澳大利亚 10
+      - 🇦🇺 _AU_澳大利亚 11
+      - 🇦🇺 _AU_澳大利亚 12
+      - 🇦🇺 _AU_澳大利亚 13
+      - 🇦🇺 _AU_澳大利亚 14
+      - 🇦🇺 _AU_澳大利亚 15
+      - TG YouTube:8度科技_葡萄牙
+      - 🇦🇺 _AU_澳大利亚 16
+      - 🇦🇺 _AU_澳大利亚 17
+      - 🇸🇬 TG YouTube:8度科技_新加坡 2
+      - 🇦🇺 _AU_澳大利亚 18
+      - 🇦🇺 _AU_澳大利亚 19
+      - TG YouTube:8度科技_挪威 3
+      - 🇦🇺 _AU_澳大利亚 20
+      - 🇦🇺 _AU_澳大利亚 21
+      - 🇦🇺 _AU_澳大利亚 22
+      - 🇦🇺 _AU_澳大利亚 23
+      - 🇭🇰 TG YouTube:8度科技_香港 3
+      - 🇸🇪 TG YouTube:8度科技_瑞典
+      - 🇫🇷 _FR_法国
+      - TG YouTube:8度科技_葡萄牙 2
+      - 🇺🇸 TG YouTube:8度科技_美国 7
+      - TG YouTube:8度科技_挪威 4
       - 🇫🇷 TG YouTube:8度科技_法国 3
       - 🇫🇷 TG YouTube:8度科技_法国 4
-      - 🇫🇷 TG YouTube:8度科技_法国 5
-      - 🇫🇷 TG YouTube:8度科技_法国 6
-      - 🇫🇷 TG YouTube:8度科技_法国 7
-      - 🇫🇷 TG YouTube:8度科技_法国 8
-      - 🇫🇷 TG YouTube:8度科技_法国 9
-      - 🇫🇷 TG YouTube:8度科技_法国 10
-      - 🇵🇭 TG YouTube:8度科技_菲律宾
+      - 🇺🇸 _US_美国 4
+      - TG YouTube:8度科技_挪威 5
+      - TG YouTube:8度科技_挪威 6
+      - 🇨🇦 _CA_加拿大
+      - TG YouTube:8度科技_挪威 7
+      - 🇺🇸 _US_美国 5
+      - 🇬🇧 TG YouTube:8度科技_英国
       - 🇨🇦 TG YouTube:8度科技_加拿大
+      - _BG_保加利亚
+      - 🇺🇸 _US_美国 6
+      - 🇺🇸 TG YouTube:8度科技_美国 8
+      - 🇺🇸 _US_美国 7
+      - _NO_挪威
+      - 🇺🇸 _US_美国 8
+      - 🇫🇷 TG YouTube:8度科技_法国 5
+      - TG YouTube:8度科技_挪威 8
+      - 🇫🇷 TG YouTube:8度科技_法国 6
+      - 🇨🇦 _CA_加拿大 2
       - 🇨🇦 TG YouTube:8度科技_加拿大 2
+      - 🇺🇸 _US_美国 9
+      - 🇺🇸 _US_美国 10
+      - 🇫🇷 _FR_法国 2
+      - 🇺🇸 _US_美国 11
+      - 🇬🇧 TG YouTube:8度科技_英国 2
+      - 🇺🇸 _US_美国 12
+      - 🇺🇸 _US_美国 13
+      - 🇺🇸 _US_美国 14
+      - 🇺🇸 _US_美国 15
+      - 🇺🇸 _US_美国 16
+      - 🇨🇦 _CA_加拿大 3
+      - 🇺🇸 _US_美国 17
       - 🇨🇦 TG YouTube:8度科技_加拿大 3
       - 🇨🇦 TG YouTube:8度科技_加拿大 4
+      - 🇲🇾 _MY_马来西亚
+      - 🇨🇦 _CA_加拿大 4
+      - 🇺🇸 _US_美国 18
+      - 🇺🇸 _US_美国 19
+      - 🇺🇸 _US_美国 20
       - 🇨🇦 TG YouTube:8度科技_加拿大 5
+      - 🇺🇸 _US_美国 21
+      - 🇺🇸 _US_美国 22
+      - 🇺🇸 _US_美国 23
+      - 🇺🇸 _US_美国 24
+      - 🇺🇸 _US_美国 25
+      - 🇺🇸 _US_美国 26
+      - 🇺🇸 _US_美国 27
+      - 🇺🇸 _US_美国 28
+      - 🇺🇸 _US_美国 29
+      - 🇺🇸 _US_美国 30
+      - 🇺🇸 TG YouTube:8度科技_美国 9
+      - 🇺🇸 _US_美国 31
+      - 🇺🇸 _US_美国 32
+      - 🇺🇸 _US_美国 33
+      - 🇷🇺 _RU_俄罗斯联邦
+      - 🇺🇸 _US_美国 34
+      - 🇺🇸 _US_美国 35
+      - 🇺🇸 _US_美国 36
+      - 🇺🇸 _US_美国 37
+      - 🇺🇸 _US_美国 38
+      - 🇺🇸 TG YouTube:8度科技_美国 10
+      - 🇺🇸 _US_美国 39
+      - 🇺🇸 _US_美国 40
+      - 🇺🇸 _US_美国 41
+      - 🇺🇸 _US_美国 42
+      - 🇺🇸 _US_美国 43
+      - 🇺🇸 _US_美国 44
+      - 🇺🇸 _US_美国 45
+      - 🇺🇸 _US_美国 46
+      - 🇺🇸 _US_美国 47
+      - 🇺🇸 _US_美国 48
+      - 🇺🇸 _US_美国 49
+      - 🇺🇸 _US_美国 50
+      - 🇺🇸 _US_美国 51
+      - 🇺🇸 _US_美国 52
+      - 🇺🇸 _US_美国 53
+      - 🇺🇸 _US_美国 54
+      - 🇺🇸 _US_美国 55
+      - 🇺🇸 _US_美国 56
+      - 🇺🇸 _US_美国 57
+      - 🇺🇸 _US_美国 58
+      - 🇺🇸 _US_美国 59
+      - 🇺🇸 _US_美国 60
+      - 🇺🇸 _US_美国 61
+      - 🇺🇸 _US_美国 62
+      - 🇺🇸 _US_美国 63
+      - 🇺🇸 _US_美国 64
+      - 🇺🇸 _US_美国 65
+      - 🇺🇸 _US_美国 66
+      - 🇺🇸 _US_美国 67
+      - 🇺🇸 _US_美国 68
+      - 🇺🇸 _US_美国 69
+      - 🇺🇸 _US_美国 70
+      - 🇺🇸 _US_美国 71
+      - 🇺🇸 _US_美国 72
+      - 🇺🇸 _US_美国 73
+      - 🇺🇸 _US_美国 74
+      - 🇺🇸 _US_美国 75
+      - 🇺🇸 _US_美国 76
+      - 🇺🇸 _US_美国 77
+      - 🇺🇸 _US_美国 78
+      - 🇺🇸 _US_美国 79
+      - 🇺🇸 _US_美国 80
+      - 🇺🇸 _US_美国 81
+      - 🇺🇸 _US_美国 82
+      - 🇺🇸 _US_美国 83
+      - 🇺🇸 _US_美国 84
+      - 🇺🇸 _US_美国 85
+      - 🇺🇸 _US_美国 86
+      - 🇺🇸 _US_美国 87
+      - 🇺🇸 _US_美国 88
+      - 🇺🇸 _US_美国 89
+      - 🇺🇸 _US_美国 90
+      - 🇺🇸 _US_美国 91
+      - 🇺🇸 _US_美国 92
+      - 🇺🇸 _US_美国 93
+      - 🇺🇸 _US_美国 94
+      - 🇫🇷 _FR_法国 3
+      - 🇺🇸 _US_美国 95
+      - 🇺🇸 _US_美国 96
+      - 🇺🇸 _US_美国 97
+      - 🇺🇸 _US_美国 98
+      - 🇺🇸 _US_美国 99
+      - 🇺🇸 _US_美国 100
+      - 🇺🇸 _US_美国 101
+      - 🇺🇸 _US_美国 102
+      - 🇺🇸 _US_美国 103
+      - 🇺🇸 _US_美国 104
+      - 🇺🇸 _US_美国 105
+      - 🇺🇸 _US_美国 106
+      - 🇺🇸 _US_美国 107
+      - 🇺🇸 _US_美国 108
+      - 🇺🇸 _US_美国 109
+      - 🇺🇸 _US_美国 110
+      - 🇺🇸 _US_美国 111
+      - 🇺🇸 _US_美国 112
+      - 🇺🇸 _US_美国 113
+      - 🇺🇸 _US_美国 114
+      - 🇺🇸 _US_美国 115
+      - 🇺🇸 _US_美国 116
+      - 🇺🇸 _US_美国 117
+      - 🇺🇸 _US_美国 118
+      - 🇺🇸 _US_美国 119
+      - 🇺🇸 _US_美国 120
+      - 🇺🇸 _US_美国 121
+      - 🇺🇸 _US_美国 122
+      - 🇺🇸 _US_美国 123
+      - 🇺🇸 _US_美国 124
+      - 🇺🇸 _US_美国 125
+      - 🇺🇸 TG YouTube:8度科技_美国 11
+      - 🇺🇸 _US_美国 126
+      - 🇺🇸 _US_美国 127
+      - 🇺🇸 _US_美国 128
+      - 🇺🇸 _US_美国 129
+      - 🇺🇸 _US_美国 130
+      - 🇺🇸 _US_美国 131
+      - 🇺🇸 _US_美国 132
+      - 🇺🇸 _US_美国 133
+      - 🇺🇸 _US_美国 134
+      - 🇺🇸 _US_美国 135
+      - 🇺🇸 _US_美国 136
+      - 🇺🇸 _US_美国 137
+      - 🇺🇸 _US_美国 138
+      - 🇺🇸 _US_美国 139
+      - 🇺🇸 _US_美国 140
+      - 🇺🇸 _US_美国 141
+      - 🇺🇸 _US_美国 142
+      - 🇺🇸 _US_美国 143
+      - 🇹🇼 _CN_中国->🇹🇼_TW_台湾
+      - 🇺🇸 _US_美国 144
+      - 🇺🇸 _US_美国 145
+      - 🇺🇸 _US_美国 146
+      - 🇺🇸 _US_美国 147
+      - 🇺🇸 _US_美国 148
+      - 🇺🇸 _US_美国 149
+      - 🇺🇸 _US_美国 150
+      - 🇺🇸 TG YouTube:8度科技_美国 12
+      - 🇺🇸 _US_美国 151
+      - 🇺🇸 _US_美国 152
+      - 🇺🇸 _US_美国 153
+      - 🇺🇸 _US_美国 154
+      - 🇺🇸 _US_美国 155
+      - 🇺🇸 _US_美国 156
+      - 🇰🇷 _KR_韩国
+      - TG YouTube:8度科技_挪威 9
+      - 🇭🇰 TG YouTube:8度科技_香港 4
+      - 🇺🇸 _US_美国 157
+      - 🇭🇰 _HK_香港
+      - 🇺🇸 _US_美国 158
+      - 🇺🇸 _US_美国 159
+      - 🇭🇰 _HK_香港 2
       - 🇨🇦 TG YouTube:8度科技_加拿大 6
+      - 🇭🇰 _HK_香港 3
+      - 🇭🇰 _HK_香港 4
+      - 🇭🇰 _HK_香港 5
+      - 🇭🇰 _HK_香港 6
+      - 🇫🇷 TG YouTube:8度科技_法国 7
+      - 🇫🇷 TG YouTube:8度科技_法国 8
+      - 🇯🇵 TG YouTube:8度科技_日本
+      - 🇸🇬 TG YouTube:8度科技_新加坡 3
+      - TG YouTube:8度科技_挪威 10
+      - 🇫🇷 _FR_法国 4
+      - TG YouTube:8度科技_挪威 11
+      - 🇨🇳 TG YouTube:8度科技_中国
+      - 🇬🇧 TG YouTube:8度科技_英国 3
+      - 🇺🇸 _US_美国 160
+      - 🇨🇳 TG YouTube:8度科技_中国 2
+      - TG YouTube:8度科技_挪威 12
+      - 🇺🇸 _US_美国 161
+      - 🇺🇸 _US_美国 162
       - 🇨🇦 TG YouTube:8度科技_加拿大 7
+      - 🇬🇧 TG YouTube:8度科技_英国 4
+      - TG YouTube:8度科技_挪威 13
+      - TG YouTube:8度科技_挪威 14
       - 🇨🇦 TG YouTube:8度科技_加拿大 8
+      - 🇬🇧 _GB_英国
+      - 🇨🇦 _CA_加拿大 5
       - 🇨🇦 TG YouTube:8度科技_加拿大 9
       - 🇨🇦 TG YouTube:8度科技_加拿大 10
+      - 🇭🇰 TG YouTube:8度科技_香港 5
       - 🇨🇦 TG YouTube:8度科技_加拿大 11
       - 🇨🇦 TG YouTube:8度科技_加拿大 12
+      - TG YouTube:8度科技 2
       - 🇨🇦 TG YouTube:8度科技_加拿大 13
       - 🇨🇦 TG YouTube:8度科技_加拿大 14
       - 🇨🇦 TG YouTube:8度科技_加拿大 15
@@ -1305,113 +2642,14 @@ proxy-groups:
       - 🇨🇦 TG YouTube:8度科技_加拿大 31
       - 🇨🇦 TG YouTube:8度科技_加拿大 32
       - 🇨🇦 TG YouTube:8度科技_加拿大 33
-      - TG YouTube:8度科技_捷克
-      - 🇲🇾 TG YouTube:8度科技_马来西亚
-      - 🇺🇸 TG YouTube:8度科技_美国
-      - 🇺🇸 TG YouTube:8度科技_美国 2
-      - 🇺🇸 TG YouTube:8度科技_美国 3
-      - 🇺🇸 TG YouTube:8度科技_美国 4
-      - 🇺🇸 TG YouTube:8度科技_美国 5
-      - 🇺🇸 TG YouTube:8度科技_美国 6
-      - 🇺🇸 TG YouTube:8度科技_美国 7
-      - 🇺🇸 TG YouTube:8度科技_美国 8
-      - 🇺🇸 TG YouTube:8度科技_美国 9
-      - 🇺🇸 TG YouTube:8度科技_美国 10
-      - 🇺🇸 TG YouTube:8度科技_美国 11
-      - 🇺🇸 TG YouTube:8度科技_美国 12
-      - 🇺🇸 TG YouTube:8度科技_美国 13
-      - 🇺🇸 TG YouTube:8度科技_美国 14
-      - 🇺🇸 TG YouTube:8度科技_美国 15
-      - 🇺🇸 TG YouTube:8度科技_美国 16
-      - 🇺🇸 TG YouTube:8度科技_美国 17
-      - TG YouTube:8度科技_挪威
-      - TG YouTube:8度科技_挪威 2
-      - TG YouTube:8度科技_挪威 3
-      - TG YouTube:8度科技_挪威 4
-      - TG YouTube:8度科技_挪威 5
-      - TG YouTube:8度科技_挪威 6
-      - TG YouTube:8度科技_挪威 7
-      - TG YouTube:8度科技_挪威 8
-      - TG YouTube:8度科技_挪威 9
-      - TG YouTube:8度科技_挪威 10
-      - TG YouTube:8度科技_挪威 11
-      - TG YouTube:8度科技_挪威 12
-      - TG YouTube:8度科技_挪威 13
-      - TG YouTube:8度科技_挪威 14
-      - TG YouTube:8度科技_葡萄牙
-      - TG YouTube:8度科技_葡萄牙 2
-      - 🇯🇵 TG YouTube:8度科技_日本
-      - 🇯🇵 TG YouTube:8度科技_日本 2
-      - 🇸🇪 TG YouTube:8度科技_瑞典
-      - 🇹🇼 TG YouTube:8度科技_台湾
-      - 🇹🇼 TG YouTube:8度科技_台湾 2
-      - TG YouTube:8度科技_希腊
-      - 🇭🇰 TG YouTube:8度科技_香港
-      - 🇭🇰 TG YouTube:8度科技_香港 2
-      - 🇭🇰 TG YouTube:8度科技_香港 3
-      - 🇭🇰 TG YouTube:8度科技_香港 4
-      - 🇭🇰 TG YouTube:8度科技_香港 5
-      - 🇭🇰 TG YouTube:8度科技_香港 6
-      - 🇭🇰 TG YouTube:8度科技_香港 7
-      - 🇭🇰 TG YouTube:8度科技_香港 8
-      - 🇸🇬 TG YouTube:8度科技_新加坡
-      - 🇸🇬 TG YouTube:8度科技_新加坡 2
-      - 🇸🇬 TG YouTube:8度科技_新加坡 3
-      - TG YouTube:8度科技_以色列
-      - 🇮🇳 TG YouTube:8度科技_印度
-      - 🇬🇧 TG YouTube:8度科技_英国
-      - 🇬🇧 TG YouTube:8度科技_英国 2
-      - 🇬🇧 TG YouTube:8度科技_英国 3
-      - 🇬🇧 TG YouTube:8度科技_英国 4
-      - 🇻🇳 TG YouTube:8度科技_越南
-      - 🇻🇳 TG YouTube:8度科技_越南 2
-      - 🇻🇳 TG YouTube:8度科技_越南 3
-      - 🇨🇳 TG YouTube:8度科技_中国
-      - 🇨🇳 TG YouTube:8度科技_中国 2
+      - TG YouTube:8度科技 3
+      - TG YouTube:8度科技 4
+      - TG YouTube:8度科技 5
       - 🇨🇳 TG YouTube:8度科技_中国 3
-      - 🇨🇳 TG YouTube:8度科技_中国 4
-      - 🇨🇳 TG YouTube:8度科技_中国 5
-      - 🇨🇳 TG YouTube:8度科技_中国 6
-      - 🇨🇳 TG YouTube:8度科技_中国 7
-      - 🇨🇳 TG YouTube:8度科技_中国 8
-      - 🇦🇺 _AU_澳大利亚
-      - _BG_保加利亚
-      - 🇯🇵 _CN_中国->🇯🇵_JP_日本
-      - 🇹🇼 _CN_中国->🇹🇼_TW_台湾
-      - 🇫🇷 _FR_法国
-      - 🇫🇷 _FR_法国 2
-      - 🇫🇷 _FR_法国 3
-      - 🇫🇷 _FR_法国 4
-      - 🇫🇷 _FR_法国 5
-      - 🇬🇧 _GB_英国
-      - 🇭🇰 _HK_香港
-      - 🇭🇰 _HK_香港 2
-      - 🇭🇰 _HK_香港 3
-      - 🇭🇰 _HK_香港 4
-      - 🇮🇳 _HK_香港->🇮🇳_IN_印度
-      - 🇭🇰 HK TG YouTube:8度科技
-      - 🇭🇰 香港TG YouTube:8度科技
-      - 🇮🇩 _ID_印度尼西亚
-      - JP TG YouTube:8度科技
-      - JPTG YouTube:8度科技
-      - 🇳🇱 _NL_荷兰
-      - _NO_挪威
-      - 🇷🇺 RU TG YouTube:8度科技
-      - 🇸🇬 SG TG YouTube:8度科技
-      - 🇹🇼 TW TG YouTube:8度科技
-      - 🇺🇸 _US_美国
-      - 🇺🇸 _US_美国 2
-      - 🇺🇸 _US_美国 3
-      - 🇺🇸 _US_美国 4
-      - 🇺🇸 _US_美国 5
-      - 🇺🇸 _US_美国 6
-      - 🇺🇸 _US_美国 7
-      - 🇺🇸 _US_美国 8
-      - 🇺🇸 _US_美国->🇨🇿_CZ_捷克
-      - 🇷🇺 _US_美国->🇷🇺_RU_俄罗斯联邦
-      - 🇺🇸 US TG YouTube:8度科技
-      - 🇺🇸 US TG YouTube:8度科技 2
-      - 🇺🇸 US TG YouTube:8度科技 3
+      - TG YouTube:8度科技 6
+      - _55 | 3.63Mb
+      - TG YouTube:8度科技 7
+      - TG YouTube:8度科技 8
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
