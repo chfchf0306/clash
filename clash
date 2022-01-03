@@ -5,1459 +5,686 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 🇺🇸 _US_美国, server: 38.75.136.93, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: TG+YouTube:8度科技_挪威, server: 46.29.218.6, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: 🇦🇺 TG+YouTube:8度科技_澳大利亚, server: 46.102.153.106, port: 8388, type: ss, cipher: chacha20-ietf-poly1305, password: dsHq7JmRFhSkvxzCuMFy}
-  - {name: +|22.46Mb, server: 38.91.102.96, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: +|22.10Mb, server: 62.210.209.50, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: TG+YouTube:8度科技_挪威 2, server: 46.29.218.6, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
-  - {name: TG+YouTube:8度科技_挪威 3, server: 46.29.218.6, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v}
-  - {name: TG+YouTube:8度科技_挪威 4, server: 46.29.218.6, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74}
-  - {name: 🇨🇦 TG+YouTube:8度科技_加拿大, server: 198.57.27.218, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: +|14.54Mb, server: 38.91.102.96, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: TG+YouTube:8度科技_挪威 5, server: 46.29.218.6, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: +|15.90Mb, server: 38.91.102.86, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: 🇨🇦 TG+YouTube:8度科技_加拿大 2, server: 198.57.27.218, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: 🇫🇷 TG+YouTube:8度科技_法国, server: 141.95.0.26, port: 826, type: ss, cipher: chacha20-ietf-poly1305, password: sF43Xt2gONqcgFX563}
-  - {name: +|20.07Mb, server: 38.91.102.86, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY}
-  - {name: 🇨🇦 TG+YouTube:8度科技_加拿大 3, server: 198.57.27.218, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: +|24.24Mb, server: 167.88.61.60, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
-  - {name: +|+5.53Mb, server: 172.105.180.227, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: +|25.64Mb, server: 167.88.61.60, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
-  - {name: +|26.70Mb, server: 167.88.61.60, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
-  - {name: TG+YouTube:8度科技_葡萄牙, server: 185.90.57.152, port: 8388, type: ss, cipher: chacha20-ietf-poly1305, password: qSnstpCypymLvPeyLRqf}
-  - {name: 🇺🇸 _US_美国 2, server: 38.75.136.93, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: +|13.69Mb, server: 167.88.61.60, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: +|31.37Mb, server: 62.210.209.50, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74}
-  - {name: 🇺🇸 _US_美国 3, server: 38.75.136.93, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: +|14.45Mb, server: 38.91.102.96, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: +|14.62Mb, server: 38.91.102.96, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: 🇫🇷 TG+YouTube:8度科技_法国 2, server: 62.210.209.50, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
-  - {name: 🇺🇸 TG YouTube:8度科技_美国, server: usa-buffalo.lvuft.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, network: ws, ws-path: /ws, ws-headers: {Host: usa-buffalo.lvuft.com}}
-  - {name: +|26.03Mb, server: 167.88.61.60, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: 🇺🇸 _US_美国 4, server: 38.75.136.93, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: 🇺🇸 TG+YouTube:8度科技_美国, server: 38.75.136.93, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: 🇮🇳 TG+YouTube:8度科技_印度, server: 172.105.35.61, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
-  - {name: +|27.07Mb, server: 62.210.209.50, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
-  - {name: +|+4.51Mb, server: 172.105.180.227, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 🇺🇸 TG YouTube:8度科技_美国 2, server: 208.98.48.2, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, network: ws, ws-path: /ws, ws-headers: {Host: iesei1ei.com}}
-  - {name: +|+4.73Mb, server: 172.105.180.227, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: +|+5.29Mb, server: 172.105.180.227, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: +|12.65Mb, server: 38.143.66.71, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY}
-  - {name: +|26.14Mb, server: 167.88.61.60, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
-  - {name: 🇬🇧 TG+YouTube:8度科技_英国, server: 172.99.190.87, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: +|24.31Mb, server: 38.91.102.96, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG}
-  - {name: +|22.08Mb, server: 38.143.66.71, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74}
-  - {name: 🇺🇸 TG YouTube:8度科技_美国 3, server: 23.82.136.151, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, network: ws, ws-path: /ws, ws-headers: {Host: usa-miami.lvuft.com}}
-  - {name: +|16.64Mb, server: 62.210.209.50, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: TG+YouTube:8度科技_葡萄牙 2, server: 185.90.57.152, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: qSnstpCypymLvPeyLRqf}
-  - {name: +|20.56Mb, server: 62.210.209.50, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
-  - {name: +|25.19Mb, server: 38.91.102.96, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
-  - {name: +|23.72Mb, server: 38.91.102.86, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: +|23.87Mb, server: 38.91.102.96, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: +|26.35Mb, server: 62.210.209.50, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY}
-  - {name: 🇬🇧 TG+YouTube:8度科技_英国 2, server: 172.99.190.87, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: +|24.43Mb, server: 38.91.102.86, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: +|23.68Mb, server: 38.91.102.96, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
-  - {name: +|+4.70Mb, server: 172.105.180.227, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
-  - {name: +|18.59Mb, server: 38.91.102.86, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: +|13.04Mb, server: 38.91.102.86, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
-  - {name: +|18.95Mb, server: 167.88.61.60, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
-  - {name: +|23.68Mb 2, server: 38.143.66.71, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG}
-  - {name: 🇺🇸 _US_美国 5, server: 167.88.61.60, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY}
-  - {name: 🇺🇸 _US_美国 6, server: 167.88.61.60, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY}
-  - {name: 🇺🇸 _US_美国 7, server: 167.88.61.60, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v}
-  - {name: 🇺🇸 _US_美国 8, server: 38.143.66.71, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG}
-  - {name: 🇺🇸 _US_美国 9, server: 38.143.66.71, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
-  - {name: 🇺🇸 _US_美国 10, server: 107.182.234.233, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: XkH8z99cQguQ8ywK5jhV}
-  - {name: 🇺🇸 _US_美国 11, server: 38.91.102.86, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: 🇺🇸 _US_美国 12, server: 38.91.102.86, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: 🇺🇸 _US_美国 13, server: 38.91.102.86, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: 🇺🇸 _US_美国 14, server: 167.88.61.60, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG}
-  - {name: 🇺🇸 _US_美国 15, server: 38.143.66.71, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
-  - {name: 🇺🇸 _US_美国 16, server: 38.91.102.96, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: 🇺🇸 _US_美国 17, server: v1.ssrsub.com, port: 8443, type: vmess, uuid: da8ad13d-19e6-4a28-82a6-da15bbc0a968, alterId: 0, cipher: auto, tls: true, network: ws, ws-path: /ssrsub, ws-headers: {Host: v1.ssrsub.com}}
-  - {name: 🇺🇸 _US_美国 18, server: 38.143.66.71, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
-  - {name: 🇺🇸 _US_美国 19, server: 38.91.102.96, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74}
-  - {name: 🇺🇸 _US_美国 20, server: 38.91.102.86, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: 🇺🇸 _US_美国 21, server: ff6.uuv2.co.uk, port: 443, type: vmess, uuid: d0ce51d5-b4de-4f99-ac7c-c5c1a123bd94, alterId: 0, cipher: auto, tls: true, network: ws, ws-path: /bb2b34a1, ws-headers: {Host: www.ltzs.buzz}}
-  - {name: 🇺🇸 _US_美国 22, server: 167.88.61.60, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74}
-  - {name: 🇺🇸 _US_美国 23, server: 167.88.61.60, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: 🇺🇸 _US_美国 24, server: 38.91.102.86, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v}
-  - {name: 🇺🇸 _US_美国 25, server: 167.88.61.60, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: 🇺🇸 _US_美国 26, server: 167.88.61.60, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 🇺🇸 _US_美国 27, server: 167.88.61.60, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: 🇺🇸 _US_美国 28, server: 167.88.61.60, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: 🇺🇸 _US_美国 29, server: 167.88.61.60, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: 🇺🇸 _US_美国 30, server: 167.88.61.60, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
-  - {name: 🇺🇸 _US_美国 31, server: 169.197.142.39, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v}
-  - {name: 🇺🇸 _US_美国 32, server: 38.91.102.86, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: 🇺🇸 _US_美国 33, server: 167.88.61.60, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG}
-  - {name: 🇺🇸 _US_美国 34, server: 38.143.66.71, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: 🇺🇸 _US_美国 35, server: 38.91.102.86, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
-  - {name: 🇺🇸 _US_美国 36, server: 38.91.102.86, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY}
-  - {name: 🇱🇺 _LU_卢森堡, server: 5.253.204.194, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: qLzS7DF9qRYxJTHfckhC}
-  - {name: 🇺🇸 _US_美国 37, server: 38.91.102.86, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
-  - {name: 🇺🇸 _US_美国 38, server: 167.88.61.60, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: 🇺🇸 _US_美国 39, server: 169.197.142.39, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY}
-  - {name: 🇺🇸 _US_美国 40, server: 38.91.102.86, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 🇺🇸 _US_美国 41, server: 167.88.61.60, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
-  - {name: 🇺🇸 _US_美国 42, server: 167.88.61.60, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: 🇺🇸 _US_美国 43, server: 38.91.102.86, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: 🇺🇸 _US_美国 44, server: 38.91.102.86, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
-  - {name: 🇩🇰 _DK_丹麦, server: 37.120.194.82, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: 2V7N5kGUghaLxF4aUqTw}
-  - {name: 🇺🇸 _US_美国 45, server: usa-miami.lvuft.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, network: ws, ws-path: /ws, ws-headers: {Host: usa-miami.lvuft.com}}
-  - {name: 🇺🇸 _US_美国 46, server: 169.197.142.39, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
-  - {name: 🇺🇸 _US_美国 47, server: 38.91.102.86, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74}
-  - {name: 🇺🇸 _US_美国 48, server: 38.91.102.86, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74}
-  - {name: 🇺🇸 _US_美国 49, server: 167.88.61.60, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: 🇦🇺 _AU_澳大利亚, server: 172.105.180.227, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
-  - {name: 🇦🇺 _AU_澳大利亚 2, server: 172.105.180.227, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
-  - {name: 🇦🇺 _AU_澳大利亚 3, server: 172.105.180.227, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: 🇺🇸 _US_美国 50, server: 169.197.142.39, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: 🇦🇺 _AU_澳大利亚 4, server: 172.105.180.227, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: 🇦🇺 _AU_澳大利亚 5, server: 172.105.180.227, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: 🇦🇺 _AU_澳大利亚 6, server: 172.105.180.227, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: 🇦🇺 _AU_澳大利亚 7, server: 172.105.180.227, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v}
-  - {name: 🇦🇺 _AU_澳大利亚 8, server: 172.105.180.227, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG}
-  - {name: 🇦🇺 _AU_澳大利亚 9, server: 172.105.180.227, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: 🇺🇸 _US_美国 51, server: 167.88.61.60, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: 🇦🇺 _AU_澳大利亚 10, server: 172.105.180.227, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
-  - {name: 🇦🇺 _AU_澳大利亚 11, server: 172.105.180.227, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: 🇦🇺 _AU_澳大利亚 12, server: 172.105.180.227, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: 🇦🇺 _AU_澳大利亚 13, server: 172.105.180.227, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY}
-  - {name: 🇦🇺 _AU_澳大利亚 14, server: 172.105.180.227, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: 🇺🇸 _US_美国 52, server: 38.91.102.86, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG}
-  - {name: 🇺🇸 _US_美国 53, server: 169.197.142.39, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: 🇺🇸 _US_美国 54, server: 38.91.102.86, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG}
-  - {name: 🇺🇸 _US_美国 55, server: 169.197.142.39, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: 🇺🇸 _US_美国 56, server: 169.197.142.39, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: 🇺🇸 _US_美国 57, server: 38.91.102.86, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: 🇮🇳 _IN_印度, server: 192.46.210.73, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: 🇺🇸 _US_美国 58, server: 167.88.61.60, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 🇮🇳 _IN_印度 2, server: 192.46.210.73, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: 🇺🇸 _US_美国 59, server: 169.197.142.39, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
-  - {name: 🇷🇺 _RU_俄罗斯联邦, server: 82.202.220.242, port: 8388, type: ss, cipher: chacha20-ietf-poly1305, password: Kw6hMXQ2Z7ey7mf2Uqyr}
-  - {name: 🇺🇸 _US_美国 60, server: 169.197.142.39, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: 🇺🇸 _US_美国 61, server: 38.91.102.86, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: 🇮🇳 _IN_印度 3, server: 192.46.210.73, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: 🇺🇸 _US_美国 62, server: 169.197.142.39, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
-  - {name: 🇺🇸 _US_美国 63, server: 167.88.61.60, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: 🇺🇸 _US_美国 64, server: 169.197.142.39, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
-  - {name: 🇺🇸 _US_美国 65, server: 38.143.66.71, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 🇺🇸 _US_美国 66, server: 38.91.102.86, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: 🇺🇸 _US_美国 67, server: 38.91.102.86, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: 🇺🇸 _US_美国 68, server: 169.197.142.39, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: 🇺🇸 _US_美国 69, server: 167.88.61.60, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74}
-  - {name: 🇺🇸 _US_美国 70, server: 169.197.142.39, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: 🇺🇸 _US_美国 71, server: 169.197.142.39, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: 🇺🇸 _US_美国 72, server: 38.91.102.86, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
-  - {name: 🇺🇸 _US_美国 73, server: 169.197.142.39, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: 🇨🇦 _CA_加拿大, server: 198.57.27.218, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 🇺🇸 _US_美国 74, server: 169.197.142.39, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: 🇺🇸 _US_美国 75, server: 169.197.142.39, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74}
-  - {name: 🇭🇰 _HK_香港, server: 84.17.37.55, port: 8388, type: ss, cipher: chacha20-ietf-poly1305, password: tjwRqQvteAjt3xFmbZTA}
-  - {name: 🇺🇸 _US_美国 76, server: 169.197.142.39, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: 🇺🇸 _US_美国 77, server: 38.91.102.86, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: 🇺🇸 _US_美国 78, server: 169.197.142.39, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: 🇦🇺 _AU_澳大利亚 15, server: 172.105.180.227, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
-  - {name: 🇺🇸 _US_美国 79, server: 169.197.142.39, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 🇨🇦 _CA_加拿大 2, server: 198.57.27.218, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: 🇮🇳 _IN_印度 4, server: 192.46.210.73, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: 🇺🇸 _US_美国 80, server: 38.143.66.71, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: 🇺🇸 _US_美国 81, server: 169.197.142.39, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: 🇫🇷 _FR_法国, server: 145.239.1.137, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: 🇫🇷 _FR_法国 2, server: 145.239.1.137, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: 🇸🇪 _SE_瑞典, server: 45.83.91.66, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: fAmKHf3Dft78ZyzL9kYF}
-  - {name: 🇨🇦 _CA_加拿大 3, server: 198.57.27.218, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: 🇦🇺 _AU_澳大利亚 16, server: 172.105.180.227, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: 🇺🇸 _US_美国 82, server: 169.197.142.39, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG}
-  - {name: 🇺🇸 _US_美国 83, server: 169.197.142.39, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY}
-  - {name: 🇫🇷 _FR_法国 3, server: 145.239.1.137, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
-  - {name: 🇦🇺 _AU_澳大利亚 17, server: 172.105.180.227, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
-  - {name: 🇺🇸 _US_美国 84, server: 169.197.142.39, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG}
-  - {name: 🇺🇸 _US_美国 85, server: 169.197.142.39, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: 🇺🇸 _US_美国 86, server: 169.197.142.39, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74}
-  - {name: 🇦🇺 _AU_澳大利亚 18, server: 172.105.180.227, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG}
-  - {name: 🇨🇦 _CA_加拿大 4, server: 198.57.27.218, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
-  - {name: 🇺🇸 _US_美国 87, server: 66.55.92.101, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: NK4wZejCzDfPdWXTK4FW}
-  - {name: 🇺🇸 _US_美国 88, server: 169.197.142.39, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
-  - {name: 🇫🇷 _FR_法国 4, server: 145.239.1.137, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: 🇨🇦 _CA_加拿大 5, server: 198.57.27.218, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: 🇺🇸 _US_美国 89, server: 169.197.142.39, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
-  - {name: 🇦🇺 _AU_澳大利亚 19, server: 172.105.180.227, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: _NO_挪威, server: 46.29.218.6, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: 🇺🇸 _US_美国 90, server: 66.55.92.101, port: 8388, type: ss, cipher: chacha20-ietf-poly1305, password: NK4wZejCzDfPdWXTK4FW}
-  - {name: 🇫🇷 _FR_法国 5, server: 145.239.1.137, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: 🇸🇬 _SG_新加坡, server: 139.99.62.207, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
-  - {name: 🇦🇺 _AU_澳大利亚 20, server: 172.105.180.227, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74}
-  - {name: _NO_挪威 2, server: 46.29.218.6, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
-  - {name: 🇸🇬 _SG_新加坡 2, server: 139.99.62.207, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: 🇨🇦 _CA_加拿大 6, server: 198.57.27.218, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: _NO_挪威 3, server: 46.29.218.6, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 🇦🇺 _AU_澳大利亚 21, server: 172.105.180.227, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: 🇺🇸 _US_美国 91, server: 38.75.136.93, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
-  - {name: _MX_墨西哥, server: 169.57.35.97, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: 3Q5yYEGGMu8jU2p25aWL}
-  - {name: 🇬🇧 _GB_英国, server: 172.99.190.87, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: 🇫🇷 _FR_法国 6, server: 145.239.1.137, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: 🇺🇸 _US_美国 92, server: www.ltzs.buzz, port: 443, type: vmess, uuid: d0ce51d5-b4de-4f99-ac7c-c5c1a123bd94, alterId: 0, cipher: auto, tls: true, network: ws, ws-path: /bb2b34a1, ws-headers: {Host: www.ltzs.buzz}}
-  - {name: 🇲🇾 _MY_马来西亚, server: 223.25.246.4, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: w4GUD28Bw9uCMdbc2pqA}
-  - {name: 🇺🇸 _US_美国 93, server: 169.197.142.39, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: 🇫🇷 _FR_法国 7, server: 145.239.1.137, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: _NO_挪威 4, server: 46.29.218.6, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: _NO_挪威 5, server: 46.29.218.6, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: _NO_挪威 6, server: 46.29.218.6, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: +|23.87Mb, server: 38.91.102.96, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: +|23.68Mb, server: 38.91.102.96, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: _US_美国, server: 38.91.102.86, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: _US_美国+8, server: 38.143.66.71, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: _LU_卢森堡, server: 5.253.204.194, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: qLzS7DF9qRYxJTHfckhC, udp: true}
+  - {name: _RU_俄罗斯联邦, server: 82.202.220.242, port: 8388, type: ss, cipher: chacha20-ietf-poly1305, password: Kw6hMXQ2Z7ey7mf2Uqyr, udp: true}
+  - {name: _US_美国 92, server: www.ltzs.buzz, port: 443, type: vmess, uuid: d0ce51d5-b4de-4f99-ac7c-c5c1a123bd94, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /bb2b34a1, ws-headers: {Host: www.ltzs.buzz}, udp: true}
+  - {name: +|22.46Mb, server: 38.91.102.96, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: _US_美国 2, server: 38.91.102.86, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: _US_美国 3, server: 38.143.66.71, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: _US_美国+15, server: 38.143.66.71, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: _US_美国+50, server: 169.197.142.39, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: _US_美国 4, server: usa-miami.lvuft.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: usa-miami.lvuft.com}, udp: true}
+  - {name: _US_美国 5, server: 169.197.142.39, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: _US_美国 6, server: 38.91.102.86, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: _US_美国+18, server: 38.143.66.71, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: +|26.35Mb, server: 62.210.209.50, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: +|20.56Mb, server: 62.210.209.50, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: +|24.31Mb, server: 38.91.102.96, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: +|25.19Mb, server: 38.91.102.96, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: _US_美国+16, server: 38.91.102.96, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: +|15.90Mb, server: 38.91.102.86, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: +|22.10Mb, server: 62.210.209.50, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: +|13.04Mb, server: 38.91.102.86, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: _US_美国+54, server: 38.91.102.86, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: _US_美国+39, server: 169.197.142.39, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: _US_美国 7, server: 38.91.102.96, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: _US_美国+44, server: 38.91.102.86, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: _US_美国+35, server: 38.91.102.86, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: _US_美国 8, server: 38.91.102.86, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: TG+YouTube:8度科技_葡萄牙, server: 185.90.57.152, port: 8388, type: ss, cipher: chacha20-ietf-poly1305, password: qSnstpCypymLvPeyLRqf, udp: true}
+  - {name: _US_美国+24, server: 38.91.102.86, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
+  - {name: _US_美国+84, server: 169.197.142.39, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: _US_美国 9, server: 38.143.66.71, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: +|27.07Mb, server: 62.210.209.50, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: +|31.37Mb, server: 62.210.209.50, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: +|22.08Mb, server: 38.143.66.71, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: _US_美国+66, server: 38.91.102.86, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: TG+YouTube:8度科技_法国+2, server: 62.210.209.50, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: +|14.62Mb, server: 38.91.102.96, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: _US_美国 10, server: 38.91.102.86, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: _US_美国+12, server: 38.91.102.86, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: _US_美国+82, server: 169.197.142.39, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: +|16.64Mb, server: 62.210.209.50, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: +|14.54Mb, server: 38.91.102.96, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: _US_美国 11, server: 169.197.142.39, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: +|12.65Mb, server: 38.143.66.71, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: _US_美国+20, server: 38.91.102.86, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: _GB_英国, server: 172.99.190.87, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: +|14.45Mb, server: 38.91.102.96, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: _US_美国+47, server: 38.91.102.86, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: TG+YouTube:8度科技_葡萄牙 2, server: 185.90.57.152, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: qSnstpCypymLvPeyLRqf, udp: true}
+  - {name: TG+YouTube:8度科技_美国, server: 38.75.136.93, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: _US_美国 12, server: 167.88.61.60, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: _US_美国+63, server: 167.88.61.60, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: _US_美国 13, server: 38.91.102.86, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: _US_美国 14, server: 169.197.142.39, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: _US_美国+31, server: 169.197.142.39, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
+  - {name: _US_美国 15, server: 38.91.102.86, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: TG+YouTube:8度科技_英国, server: 172.99.190.87, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: TG+YouTube:8度科技_英国 2, server: 172.99.190.87, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: _US_美国 16, server: 169.197.142.39, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: _US_美国 17, server: 169.197.142.39, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: _US_美国+40, server: 38.91.102.86, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: +|24.43Mb, server: 38.91.102.86, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: _US_美国 18, server: 167.88.61.60, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: _US_美国 19, server: 167.88.61.60, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: _US_美国+3, server: 38.75.136.93, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: _US_美国 20, server: 167.88.61.60, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: _US_美国+71, server: 169.197.142.39, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: _US_美国+60, server: 169.197.142.39, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: _US_美国+46, server: 169.197.142.39, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: _US_美国 21, server: 38.91.102.86, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: _US_美国 22, server: 38.91.102.86, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: _US_美国+34, server: 38.143.66.71, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: _US_美国+91, server: 38.75.136.93, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: _US_美国+76, server: 169.197.142.39, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: _US_美国 17 2, server: v1.ssrsub.com, port: 8443, type: vmess, uuid: da8ad13d-19e6-4a28-82a6-da15bbc0a968, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ssrsub, ws-headers: {Host: v1.ssrsub.com}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇺🇸 _US_美国
-      - TG+YouTube:8度科技_挪威
-      - 🇦🇺 TG+YouTube:8度科技_澳大利亚
-      - +|22.46Mb
-      - +|22.10Mb
-      - TG+YouTube:8度科技_挪威 2
-      - TG+YouTube:8度科技_挪威 3
-      - TG+YouTube:8度科技_挪威 4
-      - 🇨🇦 TG+YouTube:8度科技_加拿大
-      - +|14.54Mb
-      - TG+YouTube:8度科技_挪威 5
-      - +|15.90Mb
-      - 🇨🇦 TG+YouTube:8度科技_加拿大 2
-      - 🇫🇷 TG+YouTube:8度科技_法国
-      - +|20.07Mb
-      - 🇨🇦 TG+YouTube:8度科技_加拿大 3
-      - +|24.24Mb
-      - +|+5.53Mb
-      - +|25.64Mb
-      - +|26.70Mb
-      - TG+YouTube:8度科技_葡萄牙
-      - 🇺🇸 _US_美国 2
-      - +|13.69Mb
-      - +|31.37Mb
-      - 🇺🇸 _US_美国 3
-      - +|14.45Mb
-      - +|14.62Mb
-      - 🇫🇷 TG+YouTube:8度科技_法国 2
-      - 🇺🇸 TG YouTube:8度科技_美国
-      - +|26.03Mb
-      - 🇺🇸 _US_美国 4
-      - 🇺🇸 TG+YouTube:8度科技_美国
-      - 🇮🇳 TG+YouTube:8度科技_印度
-      - +|27.07Mb
-      - +|+4.51Mb
-      - 🇺🇸 TG YouTube:8度科技_美国 2
-      - +|+4.73Mb
-      - +|+5.29Mb
-      - +|12.65Mb
-      - +|26.14Mb
-      - 🇬🇧 TG+YouTube:8度科技_英国
-      - +|24.31Mb
-      - +|22.08Mb
-      - 🇺🇸 TG YouTube:8度科技_美国 3
-      - +|16.64Mb
-      - TG+YouTube:8度科技_葡萄牙 2
-      - +|20.56Mb
-      - +|25.19Mb
-      - +|23.72Mb
       - +|23.87Mb
-      - +|26.35Mb
-      - 🇬🇧 TG+YouTube:8度科技_英国 2
-      - +|24.43Mb
       - +|23.68Mb
-      - +|+4.70Mb
-      - +|18.59Mb
+      - _US_美国
+      - _US_美国+8
+      - _LU_卢森堡
+      - _RU_俄罗斯联邦
+      - _US_美国 92
+      - +|22.46Mb
+      - _US_美国 2
+      - _US_美国 3
+      - _US_美国+15
+      - _US_美国+50
+      - _US_美国 4
+      - _US_美国 5
+      - _US_美国 6
+      - _US_美国+18
+      - +|26.35Mb
+      - +|20.56Mb
+      - +|24.31Mb
+      - +|25.19Mb
+      - _US_美国+16
+      - +|15.90Mb
+      - +|22.10Mb
       - +|13.04Mb
-      - +|18.95Mb
-      - +|23.68Mb 2
-      - 🇺🇸 _US_美国 5
-      - 🇺🇸 _US_美国 6
-      - 🇺🇸 _US_美国 7
-      - 🇺🇸 _US_美国 8
-      - 🇺🇸 _US_美国 9
-      - 🇺🇸 _US_美国 10
-      - 🇺🇸 _US_美国 11
-      - 🇺🇸 _US_美国 12
-      - 🇺🇸 _US_美国 13
-      - 🇺🇸 _US_美国 14
-      - 🇺🇸 _US_美国 15
-      - 🇺🇸 _US_美国 16
-      - 🇺🇸 _US_美国 17
-      - 🇺🇸 _US_美国 18
-      - 🇺🇸 _US_美国 19
-      - 🇺🇸 _US_美国 20
-      - 🇺🇸 _US_美国 21
-      - 🇺🇸 _US_美国 22
-      - 🇺🇸 _US_美国 23
-      - 🇺🇸 _US_美国 24
-      - 🇺🇸 _US_美国 25
-      - 🇺🇸 _US_美国 26
-      - 🇺🇸 _US_美国 27
-      - 🇺🇸 _US_美国 28
-      - 🇺🇸 _US_美国 29
-      - 🇺🇸 _US_美国 30
-      - 🇺🇸 _US_美国 31
-      - 🇺🇸 _US_美国 32
-      - 🇺🇸 _US_美国 33
-      - 🇺🇸 _US_美国 34
-      - 🇺🇸 _US_美国 35
-      - 🇺🇸 _US_美国 36
-      - 🇱🇺 _LU_卢森堡
-      - 🇺🇸 _US_美国 37
-      - 🇺🇸 _US_美国 38
-      - 🇺🇸 _US_美国 39
-      - 🇺🇸 _US_美国 40
-      - 🇺🇸 _US_美国 41
-      - 🇺🇸 _US_美国 42
-      - 🇺🇸 _US_美国 43
-      - 🇺🇸 _US_美国 44
-      - 🇩🇰 _DK_丹麦
-      - 🇺🇸 _US_美国 45
-      - 🇺🇸 _US_美国 46
-      - 🇺🇸 _US_美国 47
-      - 🇺🇸 _US_美国 48
-      - 🇺🇸 _US_美国 49
-      - 🇦🇺 _AU_澳大利亚
-      - 🇦🇺 _AU_澳大利亚 2
-      - 🇦🇺 _AU_澳大利亚 3
-      - 🇺🇸 _US_美国 50
-      - 🇦🇺 _AU_澳大利亚 4
-      - 🇦🇺 _AU_澳大利亚 5
-      - 🇦🇺 _AU_澳大利亚 6
-      - 🇦🇺 _AU_澳大利亚 7
-      - 🇦🇺 _AU_澳大利亚 8
-      - 🇦🇺 _AU_澳大利亚 9
-      - 🇺🇸 _US_美国 51
-      - 🇦🇺 _AU_澳大利亚 10
-      - 🇦🇺 _AU_澳大利亚 11
-      - 🇦🇺 _AU_澳大利亚 12
-      - 🇦🇺 _AU_澳大利亚 13
-      - 🇦🇺 _AU_澳大利亚 14
-      - 🇺🇸 _US_美国 52
-      - 🇺🇸 _US_美国 53
-      - 🇺🇸 _US_美国 54
-      - 🇺🇸 _US_美国 55
-      - 🇺🇸 _US_美国 56
-      - 🇺🇸 _US_美国 57
-      - 🇮🇳 _IN_印度
-      - 🇺🇸 _US_美国 58
-      - 🇮🇳 _IN_印度 2
-      - 🇺🇸 _US_美国 59
-      - 🇷🇺 _RU_俄罗斯联邦
-      - 🇺🇸 _US_美国 60
-      - 🇺🇸 _US_美国 61
-      - 🇮🇳 _IN_印度 3
-      - 🇺🇸 _US_美国 62
-      - 🇺🇸 _US_美国 63
-      - 🇺🇸 _US_美国 64
-      - 🇺🇸 _US_美国 65
-      - 🇺🇸 _US_美国 66
-      - 🇺🇸 _US_美国 67
-      - 🇺🇸 _US_美国 68
-      - 🇺🇸 _US_美国 69
-      - 🇺🇸 _US_美国 70
-      - 🇺🇸 _US_美国 71
-      - 🇺🇸 _US_美国 72
-      - 🇺🇸 _US_美国 73
-      - 🇨🇦 _CA_加拿大
-      - 🇺🇸 _US_美国 74
-      - 🇺🇸 _US_美国 75
-      - 🇭🇰 _HK_香港
-      - 🇺🇸 _US_美国 76
-      - 🇺🇸 _US_美国 77
-      - 🇺🇸 _US_美国 78
-      - 🇦🇺 _AU_澳大利亚 15
-      - 🇺🇸 _US_美国 79
-      - 🇨🇦 _CA_加拿大 2
-      - 🇮🇳 _IN_印度 4
-      - 🇺🇸 _US_美国 80
-      - 🇺🇸 _US_美国 81
-      - 🇫🇷 _FR_法国
-      - 🇫🇷 _FR_法国 2
-      - 🇸🇪 _SE_瑞典
-      - 🇨🇦 _CA_加拿大 3
-      - 🇦🇺 _AU_澳大利亚 16
-      - 🇺🇸 _US_美国 82
-      - 🇺🇸 _US_美国 83
-      - 🇫🇷 _FR_法国 3
-      - 🇦🇺 _AU_澳大利亚 17
-      - 🇺🇸 _US_美国 84
-      - 🇺🇸 _US_美国 85
-      - 🇺🇸 _US_美国 86
-      - 🇦🇺 _AU_澳大利亚 18
-      - 🇨🇦 _CA_加拿大 4
-      - 🇺🇸 _US_美国 87
-      - 🇺🇸 _US_美国 88
-      - 🇫🇷 _FR_法国 4
-      - 🇨🇦 _CA_加拿大 5
-      - 🇺🇸 _US_美国 89
-      - 🇦🇺 _AU_澳大利亚 19
-      - _NO_挪威
-      - 🇺🇸 _US_美国 90
-      - 🇫🇷 _FR_法国 5
-      - 🇸🇬 _SG_新加坡
-      - 🇦🇺 _AU_澳大利亚 20
-      - _NO_挪威 2
-      - 🇸🇬 _SG_新加坡 2
-      - 🇨🇦 _CA_加拿大 6
-      - _NO_挪威 3
-      - 🇦🇺 _AU_澳大利亚 21
-      - 🇺🇸 _US_美国 91
-      - _MX_墨西哥
-      - 🇬🇧 _GB_英国
-      - 🇫🇷 _FR_法国 6
-      - 🇺🇸 _US_美国 92
-      - 🇲🇾 _MY_马来西亚
-      - 🇺🇸 _US_美国 93
-      - 🇫🇷 _FR_法国 7
-      - _NO_挪威 4
-      - _NO_挪威 5
-      - _NO_挪威 6
+      - _US_美国+54
+      - _US_美国+39
+      - _US_美国 7
+      - _US_美国+44
+      - _US_美国+35
+      - _US_美国 8
+      - TG+YouTube:8度科技_葡萄牙
+      - _US_美国+24
+      - _US_美国+84
+      - _US_美国 9
+      - +|27.07Mb
+      - +|31.37Mb
+      - +|22.08Mb
+      - _US_美国+66
+      - TG+YouTube:8度科技_法国+2
+      - +|14.62Mb
+      - _US_美国 10
+      - _US_美国+12
+      - _US_美国+82
+      - +|16.64Mb
+      - +|14.54Mb
+      - _US_美国 11
+      - +|12.65Mb
+      - _US_美国+20
+      - _GB_英国
+      - +|14.45Mb
+      - _US_美国+47
+      - TG+YouTube:8度科技_葡萄牙 2
+      - TG+YouTube:8度科技_美国
+      - _US_美国 12
+      - _US_美国+63
+      - _US_美国 13
+      - _US_美国 14
+      - _US_美国+31
+      - _US_美国 15
+      - TG+YouTube:8度科技_英国
+      - TG+YouTube:8度科技_英国 2
+      - _US_美国 16
+      - _US_美国 17
+      - _US_美国+40
+      - +|24.43Mb
+      - _US_美国 18
+      - _US_美国 19
+      - _US_美国+3
+      - _US_美国 20
+      - _US_美国+71
+      - _US_美国+60
+      - _US_美国+46
+      - _US_美国 21
+      - _US_美国 22
+      - _US_美国+34
+      - _US_美国+91
+      - _US_美国+76
+      - _US_美国 17 2
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 🇺🇸 _US_美国
-      - TG+YouTube:8度科技_挪威
-      - 🇦🇺 TG+YouTube:8度科技_澳大利亚
-      - +|22.46Mb
-      - +|22.10Mb
-      - TG+YouTube:8度科技_挪威 2
-      - TG+YouTube:8度科技_挪威 3
-      - TG+YouTube:8度科技_挪威 4
-      - 🇨🇦 TG+YouTube:8度科技_加拿大
-      - +|14.54Mb
-      - TG+YouTube:8度科技_挪威 5
-      - +|15.90Mb
-      - 🇨🇦 TG+YouTube:8度科技_加拿大 2
-      - 🇫🇷 TG+YouTube:8度科技_法国
-      - +|20.07Mb
-      - 🇨🇦 TG+YouTube:8度科技_加拿大 3
-      - +|24.24Mb
-      - +|+5.53Mb
-      - +|25.64Mb
-      - +|26.70Mb
-      - TG+YouTube:8度科技_葡萄牙
-      - 🇺🇸 _US_美国 2
-      - +|13.69Mb
-      - +|31.37Mb
-      - 🇺🇸 _US_美国 3
-      - +|14.45Mb
-      - +|14.62Mb
-      - 🇫🇷 TG+YouTube:8度科技_法国 2
-      - 🇺🇸 TG YouTube:8度科技_美国
-      - +|26.03Mb
-      - 🇺🇸 _US_美国 4
-      - 🇺🇸 TG+YouTube:8度科技_美国
-      - 🇮🇳 TG+YouTube:8度科技_印度
-      - +|27.07Mb
-      - +|+4.51Mb
-      - 🇺🇸 TG YouTube:8度科技_美国 2
-      - +|+4.73Mb
-      - +|+5.29Mb
-      - +|12.65Mb
-      - +|26.14Mb
-      - 🇬🇧 TG+YouTube:8度科技_英国
-      - +|24.31Mb
-      - +|22.08Mb
-      - 🇺🇸 TG YouTube:8度科技_美国 3
-      - +|16.64Mb
-      - TG+YouTube:8度科技_葡萄牙 2
-      - +|20.56Mb
-      - +|25.19Mb
-      - +|23.72Mb
       - +|23.87Mb
-      - +|26.35Mb
-      - 🇬🇧 TG+YouTube:8度科技_英国 2
-      - +|24.43Mb
       - +|23.68Mb
-      - +|+4.70Mb
-      - +|18.59Mb
+      - _US_美国
+      - _US_美国+8
+      - _LU_卢森堡
+      - _RU_俄罗斯联邦
+      - _US_美国 92
+      - +|22.46Mb
+      - _US_美国 2
+      - _US_美国 3
+      - _US_美国+15
+      - _US_美国+50
+      - _US_美国 4
+      - _US_美国 5
+      - _US_美国 6
+      - _US_美国+18
+      - +|26.35Mb
+      - +|20.56Mb
+      - +|24.31Mb
+      - +|25.19Mb
+      - _US_美国+16
+      - +|15.90Mb
+      - +|22.10Mb
       - +|13.04Mb
-      - +|18.95Mb
-      - +|23.68Mb 2
-      - 🇺🇸 _US_美国 5
-      - 🇺🇸 _US_美国 6
-      - 🇺🇸 _US_美国 7
-      - 🇺🇸 _US_美国 8
-      - 🇺🇸 _US_美国 9
-      - 🇺🇸 _US_美国 10
-      - 🇺🇸 _US_美国 11
-      - 🇺🇸 _US_美国 12
-      - 🇺🇸 _US_美国 13
-      - 🇺🇸 _US_美国 14
-      - 🇺🇸 _US_美国 15
-      - 🇺🇸 _US_美国 16
-      - 🇺🇸 _US_美国 17
-      - 🇺🇸 _US_美国 18
-      - 🇺🇸 _US_美国 19
-      - 🇺🇸 _US_美国 20
-      - 🇺🇸 _US_美国 21
-      - 🇺🇸 _US_美国 22
-      - 🇺🇸 _US_美国 23
-      - 🇺🇸 _US_美国 24
-      - 🇺🇸 _US_美国 25
-      - 🇺🇸 _US_美国 26
-      - 🇺🇸 _US_美国 27
-      - 🇺🇸 _US_美国 28
-      - 🇺🇸 _US_美国 29
-      - 🇺🇸 _US_美国 30
-      - 🇺🇸 _US_美国 31
-      - 🇺🇸 _US_美国 32
-      - 🇺🇸 _US_美国 33
-      - 🇺🇸 _US_美国 34
-      - 🇺🇸 _US_美国 35
-      - 🇺🇸 _US_美国 36
-      - 🇱🇺 _LU_卢森堡
-      - 🇺🇸 _US_美国 37
-      - 🇺🇸 _US_美国 38
-      - 🇺🇸 _US_美国 39
-      - 🇺🇸 _US_美国 40
-      - 🇺🇸 _US_美国 41
-      - 🇺🇸 _US_美国 42
-      - 🇺🇸 _US_美国 43
-      - 🇺🇸 _US_美国 44
-      - 🇩🇰 _DK_丹麦
-      - 🇺🇸 _US_美国 45
-      - 🇺🇸 _US_美国 46
-      - 🇺🇸 _US_美国 47
-      - 🇺🇸 _US_美国 48
-      - 🇺🇸 _US_美国 49
-      - 🇦🇺 _AU_澳大利亚
-      - 🇦🇺 _AU_澳大利亚 2
-      - 🇦🇺 _AU_澳大利亚 3
-      - 🇺🇸 _US_美国 50
-      - 🇦🇺 _AU_澳大利亚 4
-      - 🇦🇺 _AU_澳大利亚 5
-      - 🇦🇺 _AU_澳大利亚 6
-      - 🇦🇺 _AU_澳大利亚 7
-      - 🇦🇺 _AU_澳大利亚 8
-      - 🇦🇺 _AU_澳大利亚 9
-      - 🇺🇸 _US_美国 51
-      - 🇦🇺 _AU_澳大利亚 10
-      - 🇦🇺 _AU_澳大利亚 11
-      - 🇦🇺 _AU_澳大利亚 12
-      - 🇦🇺 _AU_澳大利亚 13
-      - 🇦🇺 _AU_澳大利亚 14
-      - 🇺🇸 _US_美国 52
-      - 🇺🇸 _US_美国 53
-      - 🇺🇸 _US_美国 54
-      - 🇺🇸 _US_美国 55
-      - 🇺🇸 _US_美国 56
-      - 🇺🇸 _US_美国 57
-      - 🇮🇳 _IN_印度
-      - 🇺🇸 _US_美国 58
-      - 🇮🇳 _IN_印度 2
-      - 🇺🇸 _US_美国 59
-      - 🇷🇺 _RU_俄罗斯联邦
-      - 🇺🇸 _US_美国 60
-      - 🇺🇸 _US_美国 61
-      - 🇮🇳 _IN_印度 3
-      - 🇺🇸 _US_美国 62
-      - 🇺🇸 _US_美国 63
-      - 🇺🇸 _US_美国 64
-      - 🇺🇸 _US_美国 65
-      - 🇺🇸 _US_美国 66
-      - 🇺🇸 _US_美国 67
-      - 🇺🇸 _US_美国 68
-      - 🇺🇸 _US_美国 69
-      - 🇺🇸 _US_美国 70
-      - 🇺🇸 _US_美国 71
-      - 🇺🇸 _US_美国 72
-      - 🇺🇸 _US_美国 73
-      - 🇨🇦 _CA_加拿大
-      - 🇺🇸 _US_美国 74
-      - 🇺🇸 _US_美国 75
-      - 🇭🇰 _HK_香港
-      - 🇺🇸 _US_美国 76
-      - 🇺🇸 _US_美国 77
-      - 🇺🇸 _US_美国 78
-      - 🇦🇺 _AU_澳大利亚 15
-      - 🇺🇸 _US_美国 79
-      - 🇨🇦 _CA_加拿大 2
-      - 🇮🇳 _IN_印度 4
-      - 🇺🇸 _US_美国 80
-      - 🇺🇸 _US_美国 81
-      - 🇫🇷 _FR_法国
-      - 🇫🇷 _FR_法国 2
-      - 🇸🇪 _SE_瑞典
-      - 🇨🇦 _CA_加拿大 3
-      - 🇦🇺 _AU_澳大利亚 16
-      - 🇺🇸 _US_美国 82
-      - 🇺🇸 _US_美国 83
-      - 🇫🇷 _FR_法国 3
-      - 🇦🇺 _AU_澳大利亚 17
-      - 🇺🇸 _US_美国 84
-      - 🇺🇸 _US_美国 85
-      - 🇺🇸 _US_美国 86
-      - 🇦🇺 _AU_澳大利亚 18
-      - 🇨🇦 _CA_加拿大 4
-      - 🇺🇸 _US_美国 87
-      - 🇺🇸 _US_美国 88
-      - 🇫🇷 _FR_法国 4
-      - 🇨🇦 _CA_加拿大 5
-      - 🇺🇸 _US_美国 89
-      - 🇦🇺 _AU_澳大利亚 19
-      - _NO_挪威
-      - 🇺🇸 _US_美国 90
-      - 🇫🇷 _FR_法国 5
-      - 🇸🇬 _SG_新加坡
-      - 🇦🇺 _AU_澳大利亚 20
-      - _NO_挪威 2
-      - 🇸🇬 _SG_新加坡 2
-      - 🇨🇦 _CA_加拿大 6
-      - _NO_挪威 3
-      - 🇦🇺 _AU_澳大利亚 21
-      - 🇺🇸 _US_美国 91
-      - _MX_墨西哥
-      - 🇬🇧 _GB_英国
-      - 🇫🇷 _FR_法国 6
-      - 🇺🇸 _US_美国 92
-      - 🇲🇾 _MY_马来西亚
-      - 🇺🇸 _US_美国 93
-      - 🇫🇷 _FR_法国 7
-      - _NO_挪威 4
-      - _NO_挪威 5
-      - _NO_挪威 6
+      - _US_美国+54
+      - _US_美国+39
+      - _US_美国 7
+      - _US_美国+44
+      - _US_美国+35
+      - _US_美国 8
+      - TG+YouTube:8度科技_葡萄牙
+      - _US_美国+24
+      - _US_美国+84
+      - _US_美国 9
+      - +|27.07Mb
+      - +|31.37Mb
+      - +|22.08Mb
+      - _US_美国+66
+      - TG+YouTube:8度科技_法国+2
+      - +|14.62Mb
+      - _US_美国 10
+      - _US_美国+12
+      - _US_美国+82
+      - +|16.64Mb
+      - +|14.54Mb
+      - _US_美国 11
+      - +|12.65Mb
+      - _US_美国+20
+      - _GB_英国
+      - +|14.45Mb
+      - _US_美国+47
+      - TG+YouTube:8度科技_葡萄牙 2
+      - TG+YouTube:8度科技_美国
+      - _US_美国 12
+      - _US_美国+63
+      - _US_美国 13
+      - _US_美国 14
+      - _US_美国+31
+      - _US_美国 15
+      - TG+YouTube:8度科技_英国
+      - TG+YouTube:8度科技_英国 2
+      - _US_美国 16
+      - _US_美国 17
+      - _US_美国+40
+      - +|24.43Mb
+      - _US_美国 18
+      - _US_美国 19
+      - _US_美国+3
+      - _US_美国 20
+      - _US_美国+71
+      - _US_美国+60
+      - _US_美国+46
+      - _US_美国 21
+      - _US_美国 22
+      - _US_美国+34
+      - _US_美国+91
+      - _US_美国+76
+      - _US_美国 17 2
+  - name: 🎥 NETFLIX
+    type: select
+    proxies:
+      - 🔰 节点选择
+      - ♻️ 自动选择
+      - 🎯 全球直连
+      - +|23.87Mb
+      - +|23.68Mb
+      - _US_美国
+      - _US_美国+8
+      - _LU_卢森堡
+      - _RU_俄罗斯联邦
+      - _US_美国 92
+      - +|22.46Mb
+      - _US_美国 2
+      - _US_美国 3
+      - _US_美国+15
+      - _US_美国+50
+      - _US_美国 4
+      - _US_美国 5
+      - _US_美国 6
+      - _US_美国+18
+      - +|26.35Mb
+      - +|20.56Mb
+      - +|24.31Mb
+      - +|25.19Mb
+      - _US_美国+16
+      - +|15.90Mb
+      - +|22.10Mb
+      - +|13.04Mb
+      - _US_美国+54
+      - _US_美国+39
+      - _US_美国 7
+      - _US_美国+44
+      - _US_美国+35
+      - _US_美国 8
+      - TG+YouTube:8度科技_葡萄牙
+      - _US_美国+24
+      - _US_美国+84
+      - _US_美国 9
+      - +|27.07Mb
+      - +|31.37Mb
+      - +|22.08Mb
+      - _US_美国+66
+      - TG+YouTube:8度科技_法国+2
+      - +|14.62Mb
+      - _US_美国 10
+      - _US_美国+12
+      - _US_美国+82
+      - +|16.64Mb
+      - +|14.54Mb
+      - _US_美国 11
+      - +|12.65Mb
+      - _US_美国+20
+      - _GB_英国
+      - +|14.45Mb
+      - _US_美国+47
+      - TG+YouTube:8度科技_葡萄牙 2
+      - TG+YouTube:8度科技_美国
+      - _US_美国 12
+      - _US_美国+63
+      - _US_美国 13
+      - _US_美国 14
+      - _US_美国+31
+      - _US_美国 15
+      - TG+YouTube:8度科技_英国
+      - TG+YouTube:8度科技_英国 2
+      - _US_美国 16
+      - _US_美国 17
+      - _US_美国+40
+      - +|24.43Mb
+      - _US_美国 18
+      - _US_美国 19
+      - _US_美国+3
+      - _US_美国 20
+      - _US_美国+71
+      - _US_美国+60
+      - _US_美国+46
+      - _US_美国 21
+      - _US_美国 22
+      - _US_美国+34
+      - _US_美国+91
+      - _US_美国+76
+      - _US_美国 17 2
+  - name: ⛔️ 广告拦截
+    type: select
+    proxies:
+      - 🛑 全球拦截
+      - 🎯 全球直连
+      - 🔰 节点选择
+  - name: 🚫 运营劫持
+    type: select
+    proxies:
+      - 🛑 全球拦截
+      - 🎯 全球直连
+      - 🔰 节点选择
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇺🇸 _US_美国
-      - TG+YouTube:8度科技_挪威
-      - 🇦🇺 TG+YouTube:8度科技_澳大利亚
-      - +|22.46Mb
-      - +|22.10Mb
-      - TG+YouTube:8度科技_挪威 2
-      - TG+YouTube:8度科技_挪威 3
-      - TG+YouTube:8度科技_挪威 4
-      - 🇨🇦 TG+YouTube:8度科技_加拿大
-      - +|14.54Mb
-      - TG+YouTube:8度科技_挪威 5
-      - +|15.90Mb
-      - 🇨🇦 TG+YouTube:8度科技_加拿大 2
-      - 🇫🇷 TG+YouTube:8度科技_法国
-      - +|20.07Mb
-      - 🇨🇦 TG+YouTube:8度科技_加拿大 3
-      - +|24.24Mb
-      - +|+5.53Mb
-      - +|25.64Mb
-      - +|26.70Mb
-      - TG+YouTube:8度科技_葡萄牙
-      - 🇺🇸 _US_美国 2
-      - +|13.69Mb
-      - +|31.37Mb
-      - 🇺🇸 _US_美国 3
-      - +|14.45Mb
-      - +|14.62Mb
-      - 🇫🇷 TG+YouTube:8度科技_法国 2
-      - 🇺🇸 TG YouTube:8度科技_美国
-      - +|26.03Mb
-      - 🇺🇸 _US_美国 4
-      - 🇺🇸 TG+YouTube:8度科技_美国
-      - 🇮🇳 TG+YouTube:8度科技_印度
-      - +|27.07Mb
-      - +|+4.51Mb
-      - 🇺🇸 TG YouTube:8度科技_美国 2
-      - +|+4.73Mb
-      - +|+5.29Mb
-      - +|12.65Mb
-      - +|26.14Mb
-      - 🇬🇧 TG+YouTube:8度科技_英国
-      - +|24.31Mb
-      - +|22.08Mb
-      - 🇺🇸 TG YouTube:8度科技_美国 3
-      - +|16.64Mb
-      - TG+YouTube:8度科技_葡萄牙 2
-      - +|20.56Mb
-      - +|25.19Mb
-      - +|23.72Mb
       - +|23.87Mb
-      - +|26.35Mb
-      - 🇬🇧 TG+YouTube:8度科技_英国 2
-      - +|24.43Mb
       - +|23.68Mb
-      - +|+4.70Mb
-      - +|18.59Mb
+      - _US_美国
+      - _US_美国+8
+      - _LU_卢森堡
+      - _RU_俄罗斯联邦
+      - _US_美国 92
+      - +|22.46Mb
+      - _US_美国 2
+      - _US_美国 3
+      - _US_美国+15
+      - _US_美国+50
+      - _US_美国 4
+      - _US_美国 5
+      - _US_美国 6
+      - _US_美国+18
+      - +|26.35Mb
+      - +|20.56Mb
+      - +|24.31Mb
+      - +|25.19Mb
+      - _US_美国+16
+      - +|15.90Mb
+      - +|22.10Mb
       - +|13.04Mb
-      - +|18.95Mb
-      - +|23.68Mb 2
-      - 🇺🇸 _US_美国 5
-      - 🇺🇸 _US_美国 6
-      - 🇺🇸 _US_美国 7
-      - 🇺🇸 _US_美国 8
-      - 🇺🇸 _US_美国 9
-      - 🇺🇸 _US_美国 10
-      - 🇺🇸 _US_美国 11
-      - 🇺🇸 _US_美国 12
-      - 🇺🇸 _US_美国 13
-      - 🇺🇸 _US_美国 14
-      - 🇺🇸 _US_美国 15
-      - 🇺🇸 _US_美国 16
-      - 🇺🇸 _US_美国 17
-      - 🇺🇸 _US_美国 18
-      - 🇺🇸 _US_美国 19
-      - 🇺🇸 _US_美国 20
-      - 🇺🇸 _US_美国 21
-      - 🇺🇸 _US_美国 22
-      - 🇺🇸 _US_美国 23
-      - 🇺🇸 _US_美国 24
-      - 🇺🇸 _US_美国 25
-      - 🇺🇸 _US_美国 26
-      - 🇺🇸 _US_美国 27
-      - 🇺🇸 _US_美国 28
-      - 🇺🇸 _US_美国 29
-      - 🇺🇸 _US_美国 30
-      - 🇺🇸 _US_美国 31
-      - 🇺🇸 _US_美国 32
-      - 🇺🇸 _US_美国 33
-      - 🇺🇸 _US_美国 34
-      - 🇺🇸 _US_美国 35
-      - 🇺🇸 _US_美国 36
-      - 🇱🇺 _LU_卢森堡
-      - 🇺🇸 _US_美国 37
-      - 🇺🇸 _US_美国 38
-      - 🇺🇸 _US_美国 39
-      - 🇺🇸 _US_美国 40
-      - 🇺🇸 _US_美国 41
-      - 🇺🇸 _US_美国 42
-      - 🇺🇸 _US_美国 43
-      - 🇺🇸 _US_美国 44
-      - 🇩🇰 _DK_丹麦
-      - 🇺🇸 _US_美国 45
-      - 🇺🇸 _US_美国 46
-      - 🇺🇸 _US_美国 47
-      - 🇺🇸 _US_美国 48
-      - 🇺🇸 _US_美国 49
-      - 🇦🇺 _AU_澳大利亚
-      - 🇦🇺 _AU_澳大利亚 2
-      - 🇦🇺 _AU_澳大利亚 3
-      - 🇺🇸 _US_美国 50
-      - 🇦🇺 _AU_澳大利亚 4
-      - 🇦🇺 _AU_澳大利亚 5
-      - 🇦🇺 _AU_澳大利亚 6
-      - 🇦🇺 _AU_澳大利亚 7
-      - 🇦🇺 _AU_澳大利亚 8
-      - 🇦🇺 _AU_澳大利亚 9
-      - 🇺🇸 _US_美国 51
-      - 🇦🇺 _AU_澳大利亚 10
-      - 🇦🇺 _AU_澳大利亚 11
-      - 🇦🇺 _AU_澳大利亚 12
-      - 🇦🇺 _AU_澳大利亚 13
-      - 🇦🇺 _AU_澳大利亚 14
-      - 🇺🇸 _US_美国 52
-      - 🇺🇸 _US_美国 53
-      - 🇺🇸 _US_美国 54
-      - 🇺🇸 _US_美国 55
-      - 🇺🇸 _US_美国 56
-      - 🇺🇸 _US_美国 57
-      - 🇮🇳 _IN_印度
-      - 🇺🇸 _US_美国 58
-      - 🇮🇳 _IN_印度 2
-      - 🇺🇸 _US_美国 59
-      - 🇷🇺 _RU_俄罗斯联邦
-      - 🇺🇸 _US_美国 60
-      - 🇺🇸 _US_美国 61
-      - 🇮🇳 _IN_印度 3
-      - 🇺🇸 _US_美国 62
-      - 🇺🇸 _US_美国 63
-      - 🇺🇸 _US_美国 64
-      - 🇺🇸 _US_美国 65
-      - 🇺🇸 _US_美国 66
-      - 🇺🇸 _US_美国 67
-      - 🇺🇸 _US_美国 68
-      - 🇺🇸 _US_美国 69
-      - 🇺🇸 _US_美国 70
-      - 🇺🇸 _US_美国 71
-      - 🇺🇸 _US_美国 72
-      - 🇺🇸 _US_美国 73
-      - 🇨🇦 _CA_加拿大
-      - 🇺🇸 _US_美国 74
-      - 🇺🇸 _US_美国 75
-      - 🇭🇰 _HK_香港
-      - 🇺🇸 _US_美国 76
-      - 🇺🇸 _US_美国 77
-      - 🇺🇸 _US_美国 78
-      - 🇦🇺 _AU_澳大利亚 15
-      - 🇺🇸 _US_美国 79
-      - 🇨🇦 _CA_加拿大 2
-      - 🇮🇳 _IN_印度 4
-      - 🇺🇸 _US_美国 80
-      - 🇺🇸 _US_美国 81
-      - 🇫🇷 _FR_法国
-      - 🇫🇷 _FR_法国 2
-      - 🇸🇪 _SE_瑞典
-      - 🇨🇦 _CA_加拿大 3
-      - 🇦🇺 _AU_澳大利亚 16
-      - 🇺🇸 _US_美国 82
-      - 🇺🇸 _US_美国 83
-      - 🇫🇷 _FR_法国 3
-      - 🇦🇺 _AU_澳大利亚 17
-      - 🇺🇸 _US_美国 84
-      - 🇺🇸 _US_美国 85
-      - 🇺🇸 _US_美国 86
-      - 🇦🇺 _AU_澳大利亚 18
-      - 🇨🇦 _CA_加拿大 4
-      - 🇺🇸 _US_美国 87
-      - 🇺🇸 _US_美国 88
-      - 🇫🇷 _FR_法国 4
-      - 🇨🇦 _CA_加拿大 5
-      - 🇺🇸 _US_美国 89
-      - 🇦🇺 _AU_澳大利亚 19
-      - _NO_挪威
-      - 🇺🇸 _US_美国 90
-      - 🇫🇷 _FR_法国 5
-      - 🇸🇬 _SG_新加坡
-      - 🇦🇺 _AU_澳大利亚 20
-      - _NO_挪威 2
-      - 🇸🇬 _SG_新加坡 2
-      - 🇨🇦 _CA_加拿大 6
-      - _NO_挪威 3
-      - 🇦🇺 _AU_澳大利亚 21
-      - 🇺🇸 _US_美国 91
-      - _MX_墨西哥
-      - 🇬🇧 _GB_英国
-      - 🇫🇷 _FR_法国 6
-      - 🇺🇸 _US_美国 92
-      - 🇲🇾 _MY_马来西亚
-      - 🇺🇸 _US_美国 93
-      - 🇫🇷 _FR_法国 7
-      - _NO_挪威 4
-      - _NO_挪威 5
-      - _NO_挪威 6
+      - _US_美国+54
+      - _US_美国+39
+      - _US_美国 7
+      - _US_美国+44
+      - _US_美国+35
+      - _US_美国 8
+      - TG+YouTube:8度科技_葡萄牙
+      - _US_美国+24
+      - _US_美国+84
+      - _US_美国 9
+      - +|27.07Mb
+      - +|31.37Mb
+      - +|22.08Mb
+      - _US_美国+66
+      - TG+YouTube:8度科技_法国+2
+      - +|14.62Mb
+      - _US_美国 10
+      - _US_美国+12
+      - _US_美国+82
+      - +|16.64Mb
+      - +|14.54Mb
+      - _US_美国 11
+      - +|12.65Mb
+      - _US_美国+20
+      - _GB_英国
+      - +|14.45Mb
+      - _US_美国+47
+      - TG+YouTube:8度科技_葡萄牙 2
+      - TG+YouTube:8度科技_美国
+      - _US_美国 12
+      - _US_美国+63
+      - _US_美国 13
+      - _US_美国 14
+      - _US_美国+31
+      - _US_美国 15
+      - TG+YouTube:8度科技_英国
+      - TG+YouTube:8度科技_英国 2
+      - _US_美国 16
+      - _US_美国 17
+      - _US_美国+40
+      - +|24.43Mb
+      - _US_美国 18
+      - _US_美国 19
+      - _US_美国+3
+      - _US_美国 20
+      - _US_美国+71
+      - _US_美国+60
+      - _US_美国+46
+      - _US_美国 21
+      - _US_美国 22
+      - _US_美国+34
+      - _US_美国+91
+      - _US_美国+76
+      - _US_美国 17 2
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 🇭🇰 _HK_香港
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 🇺🇸 _US_美国
-      - TG+YouTube:8度科技_挪威
-      - 🇦🇺 TG+YouTube:8度科技_澳大利亚
-      - +|22.46Mb
-      - +|22.10Mb
-      - TG+YouTube:8度科技_挪威 2
-      - TG+YouTube:8度科技_挪威 3
-      - TG+YouTube:8度科技_挪威 4
-      - 🇨🇦 TG+YouTube:8度科技_加拿大
-      - +|14.54Mb
-      - TG+YouTube:8度科技_挪威 5
-      - +|15.90Mb
-      - 🇨🇦 TG+YouTube:8度科技_加拿大 2
-      - 🇫🇷 TG+YouTube:8度科技_法国
-      - +|20.07Mb
-      - 🇨🇦 TG+YouTube:8度科技_加拿大 3
-      - +|24.24Mb
-      - +|+5.53Mb
-      - +|25.64Mb
-      - +|26.70Mb
-      - TG+YouTube:8度科技_葡萄牙
-      - 🇺🇸 _US_美国 2
-      - +|13.69Mb
-      - +|31.37Mb
-      - 🇺🇸 _US_美国 3
-      - +|14.45Mb
-      - +|14.62Mb
-      - 🇫🇷 TG+YouTube:8度科技_法国 2
-      - 🇺🇸 TG YouTube:8度科技_美国
-      - +|26.03Mb
-      - 🇺🇸 _US_美国 4
-      - 🇺🇸 TG+YouTube:8度科技_美国
-      - 🇮🇳 TG+YouTube:8度科技_印度
-      - +|27.07Mb
-      - +|+4.51Mb
-      - 🇺🇸 TG YouTube:8度科技_美国 2
-      - +|+4.73Mb
-      - +|+5.29Mb
-      - +|12.65Mb
-      - +|26.14Mb
-      - 🇬🇧 TG+YouTube:8度科技_英国
-      - +|24.31Mb
-      - +|22.08Mb
-      - 🇺🇸 TG YouTube:8度科技_美国 3
-      - +|16.64Mb
-      - TG+YouTube:8度科技_葡萄牙 2
-      - +|20.56Mb
-      - +|25.19Mb
-      - +|23.72Mb
       - +|23.87Mb
-      - +|26.35Mb
-      - 🇬🇧 TG+YouTube:8度科技_英国 2
-      - +|24.43Mb
       - +|23.68Mb
-      - +|+4.70Mb
-      - +|18.59Mb
+      - _US_美国
+      - _US_美国+8
+      - _LU_卢森堡
+      - _RU_俄罗斯联邦
+      - _US_美国 92
+      - +|22.46Mb
+      - _US_美国 2
+      - _US_美国 3
+      - _US_美国+15
+      - _US_美国+50
+      - _US_美国 4
+      - _US_美国 5
+      - _US_美国 6
+      - _US_美国+18
+      - +|26.35Mb
+      - +|20.56Mb
+      - +|24.31Mb
+      - +|25.19Mb
+      - _US_美国+16
+      - +|15.90Mb
+      - +|22.10Mb
       - +|13.04Mb
-      - +|18.95Mb
-      - +|23.68Mb 2
-      - 🇺🇸 _US_美国 5
-      - 🇺🇸 _US_美国 6
-      - 🇺🇸 _US_美国 7
-      - 🇺🇸 _US_美国 8
-      - 🇺🇸 _US_美国 9
-      - 🇺🇸 _US_美国 10
-      - 🇺🇸 _US_美国 11
-      - 🇺🇸 _US_美国 12
-      - 🇺🇸 _US_美国 13
-      - 🇺🇸 _US_美国 14
-      - 🇺🇸 _US_美国 15
-      - 🇺🇸 _US_美国 16
-      - 🇺🇸 _US_美国 17
-      - 🇺🇸 _US_美国 18
-      - 🇺🇸 _US_美国 19
-      - 🇺🇸 _US_美国 20
-      - 🇺🇸 _US_美国 21
-      - 🇺🇸 _US_美国 22
-      - 🇺🇸 _US_美国 23
-      - 🇺🇸 _US_美国 24
-      - 🇺🇸 _US_美国 25
-      - 🇺🇸 _US_美国 26
-      - 🇺🇸 _US_美国 27
-      - 🇺🇸 _US_美国 28
-      - 🇺🇸 _US_美国 29
-      - 🇺🇸 _US_美国 30
-      - 🇺🇸 _US_美国 31
-      - 🇺🇸 _US_美国 32
-      - 🇺🇸 _US_美国 33
-      - 🇺🇸 _US_美国 34
-      - 🇺🇸 _US_美国 35
-      - 🇺🇸 _US_美国 36
-      - 🇱🇺 _LU_卢森堡
-      - 🇺🇸 _US_美国 37
-      - 🇺🇸 _US_美国 38
-      - 🇺🇸 _US_美国 39
-      - 🇺🇸 _US_美国 40
-      - 🇺🇸 _US_美国 41
-      - 🇺🇸 _US_美国 42
-      - 🇺🇸 _US_美国 43
-      - 🇺🇸 _US_美国 44
-      - 🇩🇰 _DK_丹麦
-      - 🇺🇸 _US_美国 45
-      - 🇺🇸 _US_美国 46
-      - 🇺🇸 _US_美国 47
-      - 🇺🇸 _US_美国 48
-      - 🇺🇸 _US_美国 49
-      - 🇦🇺 _AU_澳大利亚
-      - 🇦🇺 _AU_澳大利亚 2
-      - 🇦🇺 _AU_澳大利亚 3
-      - 🇺🇸 _US_美国 50
-      - 🇦🇺 _AU_澳大利亚 4
-      - 🇦🇺 _AU_澳大利亚 5
-      - 🇦🇺 _AU_澳大利亚 6
-      - 🇦🇺 _AU_澳大利亚 7
-      - 🇦🇺 _AU_澳大利亚 8
-      - 🇦🇺 _AU_澳大利亚 9
-      - 🇺🇸 _US_美国 51
-      - 🇦🇺 _AU_澳大利亚 10
-      - 🇦🇺 _AU_澳大利亚 11
-      - 🇦🇺 _AU_澳大利亚 12
-      - 🇦🇺 _AU_澳大利亚 13
-      - 🇦🇺 _AU_澳大利亚 14
-      - 🇺🇸 _US_美国 52
-      - 🇺🇸 _US_美国 53
-      - 🇺🇸 _US_美国 54
-      - 🇺🇸 _US_美国 55
-      - 🇺🇸 _US_美国 56
-      - 🇺🇸 _US_美国 57
-      - 🇮🇳 _IN_印度
-      - 🇺🇸 _US_美国 58
-      - 🇮🇳 _IN_印度 2
-      - 🇺🇸 _US_美国 59
-      - 🇷🇺 _RU_俄罗斯联邦
-      - 🇺🇸 _US_美国 60
-      - 🇺🇸 _US_美国 61
-      - 🇮🇳 _IN_印度 3
-      - 🇺🇸 _US_美国 62
-      - 🇺🇸 _US_美国 63
-      - 🇺🇸 _US_美国 64
-      - 🇺🇸 _US_美国 65
-      - 🇺🇸 _US_美国 66
-      - 🇺🇸 _US_美国 67
-      - 🇺🇸 _US_美国 68
-      - 🇺🇸 _US_美国 69
-      - 🇺🇸 _US_美国 70
-      - 🇺🇸 _US_美国 71
-      - 🇺🇸 _US_美国 72
-      - 🇺🇸 _US_美国 73
-      - 🇨🇦 _CA_加拿大
-      - 🇺🇸 _US_美国 74
-      - 🇺🇸 _US_美国 75
-      - 🇭🇰 _HK_香港
-      - 🇺🇸 _US_美国 76
-      - 🇺🇸 _US_美国 77
-      - 🇺🇸 _US_美国 78
-      - 🇦🇺 _AU_澳大利亚 15
-      - 🇺🇸 _US_美国 79
-      - 🇨🇦 _CA_加拿大 2
-      - 🇮🇳 _IN_印度 4
-      - 🇺🇸 _US_美国 80
-      - 🇺🇸 _US_美国 81
-      - 🇫🇷 _FR_法国
-      - 🇫🇷 _FR_法国 2
-      - 🇸🇪 _SE_瑞典
-      - 🇨🇦 _CA_加拿大 3
-      - 🇦🇺 _AU_澳大利亚 16
-      - 🇺🇸 _US_美国 82
-      - 🇺🇸 _US_美国 83
-      - 🇫🇷 _FR_法国 3
-      - 🇦🇺 _AU_澳大利亚 17
-      - 🇺🇸 _US_美国 84
-      - 🇺🇸 _US_美国 85
-      - 🇺🇸 _US_美国 86
-      - 🇦🇺 _AU_澳大利亚 18
-      - 🇨🇦 _CA_加拿大 4
-      - 🇺🇸 _US_美国 87
-      - 🇺🇸 _US_美国 88
-      - 🇫🇷 _FR_法国 4
-      - 🇨🇦 _CA_加拿大 5
-      - 🇺🇸 _US_美国 89
-      - 🇦🇺 _AU_澳大利亚 19
-      - _NO_挪威
-      - 🇺🇸 _US_美国 90
-      - 🇫🇷 _FR_法国 5
-      - 🇸🇬 _SG_新加坡
-      - 🇦🇺 _AU_澳大利亚 20
-      - _NO_挪威 2
-      - 🇸🇬 _SG_新加坡 2
-      - 🇨🇦 _CA_加拿大 6
-      - _NO_挪威 3
-      - 🇦🇺 _AU_澳大利亚 21
-      - 🇺🇸 _US_美国 91
-      - _MX_墨西哥
-      - 🇬🇧 _GB_英国
-      - 🇫🇷 _FR_法国 6
-      - 🇺🇸 _US_美国 92
-      - 🇲🇾 _MY_马来西亚
-      - 🇺🇸 _US_美国 93
-      - 🇫🇷 _FR_法国 7
-      - _NO_挪威 4
-      - _NO_挪威 5
-      - _NO_挪威 6
+      - _US_美国+54
+      - _US_美国+39
+      - _US_美国 7
+      - _US_美国+44
+      - _US_美国+35
+      - _US_美国 8
+      - TG+YouTube:8度科技_葡萄牙
+      - _US_美国+24
+      - _US_美国+84
+      - _US_美国 9
+      - +|27.07Mb
+      - +|31.37Mb
+      - +|22.08Mb
+      - _US_美国+66
+      - TG+YouTube:8度科技_法国+2
+      - +|14.62Mb
+      - _US_美国 10
+      - _US_美国+12
+      - _US_美国+82
+      - +|16.64Mb
+      - +|14.54Mb
+      - _US_美国 11
+      - +|12.65Mb
+      - _US_美国+20
+      - _GB_英国
+      - +|14.45Mb
+      - _US_美国+47
+      - TG+YouTube:8度科技_葡萄牙 2
+      - TG+YouTube:8度科技_美国
+      - _US_美国 12
+      - _US_美国+63
+      - _US_美国 13
+      - _US_美国 14
+      - _US_美国+31
+      - _US_美国 15
+      - TG+YouTube:8度科技_英国
+      - TG+YouTube:8度科技_英国 2
+      - _US_美国 16
+      - _US_美国 17
+      - _US_美国+40
+      - +|24.43Mb
+      - _US_美国 18
+      - _US_美国 19
+      - _US_美国+3
+      - _US_美国 20
+      - _US_美国+71
+      - _US_美国+60
+      - _US_美国+46
+      - _US_美国 21
+      - _US_美国 22
+      - _US_美国+34
+      - _US_美国+91
+      - _US_美国+76
+      - _US_美国 17 2
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 🇺🇸 _US_美国
-      - TG+YouTube:8度科技_挪威
-      - 🇦🇺 TG+YouTube:8度科技_澳大利亚
-      - +|22.46Mb
-      - +|22.10Mb
-      - TG+YouTube:8度科技_挪威 2
-      - TG+YouTube:8度科技_挪威 3
-      - TG+YouTube:8度科技_挪威 4
-      - 🇨🇦 TG+YouTube:8度科技_加拿大
-      - +|14.54Mb
-      - TG+YouTube:8度科技_挪威 5
-      - +|15.90Mb
-      - 🇨🇦 TG+YouTube:8度科技_加拿大 2
-      - 🇫🇷 TG+YouTube:8度科技_法国
-      - +|20.07Mb
-      - 🇨🇦 TG+YouTube:8度科技_加拿大 3
-      - +|24.24Mb
-      - +|+5.53Mb
-      - +|25.64Mb
-      - +|26.70Mb
-      - TG+YouTube:8度科技_葡萄牙
-      - 🇺🇸 _US_美国 2
-      - +|13.69Mb
-      - +|31.37Mb
-      - 🇺🇸 _US_美国 3
-      - +|14.45Mb
-      - +|14.62Mb
-      - 🇫🇷 TG+YouTube:8度科技_法国 2
-      - 🇺🇸 TG YouTube:8度科技_美国
-      - +|26.03Mb
-      - 🇺🇸 _US_美国 4
-      - 🇺🇸 TG+YouTube:8度科技_美国
-      - 🇮🇳 TG+YouTube:8度科技_印度
-      - +|27.07Mb
-      - +|+4.51Mb
-      - 🇺🇸 TG YouTube:8度科技_美国 2
-      - +|+4.73Mb
-      - +|+5.29Mb
-      - +|12.65Mb
-      - +|26.14Mb
-      - 🇬🇧 TG+YouTube:8度科技_英国
-      - +|24.31Mb
-      - +|22.08Mb
-      - 🇺🇸 TG YouTube:8度科技_美国 3
-      - +|16.64Mb
-      - TG+YouTube:8度科技_葡萄牙 2
-      - +|20.56Mb
-      - +|25.19Mb
-      - +|23.72Mb
       - +|23.87Mb
-      - +|26.35Mb
-      - 🇬🇧 TG+YouTube:8度科技_英国 2
-      - +|24.43Mb
       - +|23.68Mb
-      - +|+4.70Mb
-      - +|18.59Mb
+      - _US_美国
+      - _US_美国+8
+      - _LU_卢森堡
+      - _RU_俄罗斯联邦
+      - _US_美国 92
+      - +|22.46Mb
+      - _US_美国 2
+      - _US_美国 3
+      - _US_美国+15
+      - _US_美国+50
+      - _US_美国 4
+      - _US_美国 5
+      - _US_美国 6
+      - _US_美国+18
+      - +|26.35Mb
+      - +|20.56Mb
+      - +|24.31Mb
+      - +|25.19Mb
+      - _US_美国+16
+      - +|15.90Mb
+      - +|22.10Mb
       - +|13.04Mb
-      - +|18.95Mb
-      - +|23.68Mb 2
-      - 🇺🇸 _US_美国 5
-      - 🇺🇸 _US_美国 6
-      - 🇺🇸 _US_美国 7
-      - 🇺🇸 _US_美国 8
-      - 🇺🇸 _US_美国 9
-      - 🇺🇸 _US_美国 10
-      - 🇺🇸 _US_美国 11
-      - 🇺🇸 _US_美国 12
-      - 🇺🇸 _US_美国 13
-      - 🇺🇸 _US_美国 14
-      - 🇺🇸 _US_美国 15
-      - 🇺🇸 _US_美国 16
-      - 🇺🇸 _US_美国 17
-      - 🇺🇸 _US_美国 18
-      - 🇺🇸 _US_美国 19
-      - 🇺🇸 _US_美国 20
-      - 🇺🇸 _US_美国 21
-      - 🇺🇸 _US_美国 22
-      - 🇺🇸 _US_美国 23
-      - 🇺🇸 _US_美国 24
-      - 🇺🇸 _US_美国 25
-      - 🇺🇸 _US_美国 26
-      - 🇺🇸 _US_美国 27
-      - 🇺🇸 _US_美国 28
-      - 🇺🇸 _US_美国 29
-      - 🇺🇸 _US_美国 30
-      - 🇺🇸 _US_美国 31
-      - 🇺🇸 _US_美国 32
-      - 🇺🇸 _US_美国 33
-      - 🇺🇸 _US_美国 34
-      - 🇺🇸 _US_美国 35
-      - 🇺🇸 _US_美国 36
-      - 🇱🇺 _LU_卢森堡
-      - 🇺🇸 _US_美国 37
-      - 🇺🇸 _US_美国 38
-      - 🇺🇸 _US_美国 39
-      - 🇺🇸 _US_美国 40
-      - 🇺🇸 _US_美国 41
-      - 🇺🇸 _US_美国 42
-      - 🇺🇸 _US_美国 43
-      - 🇺🇸 _US_美国 44
-      - 🇩🇰 _DK_丹麦
-      - 🇺🇸 _US_美国 45
-      - 🇺🇸 _US_美国 46
-      - 🇺🇸 _US_美国 47
-      - 🇺🇸 _US_美国 48
-      - 🇺🇸 _US_美国 49
-      - 🇦🇺 _AU_澳大利亚
-      - 🇦🇺 _AU_澳大利亚 2
-      - 🇦🇺 _AU_澳大利亚 3
-      - 🇺🇸 _US_美国 50
-      - 🇦🇺 _AU_澳大利亚 4
-      - 🇦🇺 _AU_澳大利亚 5
-      - 🇦🇺 _AU_澳大利亚 6
-      - 🇦🇺 _AU_澳大利亚 7
-      - 🇦🇺 _AU_澳大利亚 8
-      - 🇦🇺 _AU_澳大利亚 9
-      - 🇺🇸 _US_美国 51
-      - 🇦🇺 _AU_澳大利亚 10
-      - 🇦🇺 _AU_澳大利亚 11
-      - 🇦🇺 _AU_澳大利亚 12
-      - 🇦🇺 _AU_澳大利亚 13
-      - 🇦🇺 _AU_澳大利亚 14
-      - 🇺🇸 _US_美国 52
-      - 🇺🇸 _US_美国 53
-      - 🇺🇸 _US_美国 54
-      - 🇺🇸 _US_美国 55
-      - 🇺🇸 _US_美国 56
-      - 🇺🇸 _US_美国 57
-      - 🇮🇳 _IN_印度
-      - 🇺🇸 _US_美国 58
-      - 🇮🇳 _IN_印度 2
-      - 🇺🇸 _US_美国 59
-      - 🇷🇺 _RU_俄罗斯联邦
-      - 🇺🇸 _US_美国 60
-      - 🇺🇸 _US_美国 61
-      - 🇮🇳 _IN_印度 3
-      - 🇺🇸 _US_美国 62
-      - 🇺🇸 _US_美国 63
-      - 🇺🇸 _US_美国 64
-      - 🇺🇸 _US_美国 65
-      - 🇺🇸 _US_美国 66
-      - 🇺🇸 _US_美国 67
-      - 🇺🇸 _US_美国 68
-      - 🇺🇸 _US_美国 69
-      - 🇺🇸 _US_美国 70
-      - 🇺🇸 _US_美国 71
-      - 🇺🇸 _US_美国 72
-      - 🇺🇸 _US_美国 73
-      - 🇨🇦 _CA_加拿大
-      - 🇺🇸 _US_美国 74
-      - 🇺🇸 _US_美国 75
-      - 🇭🇰 _HK_香港
-      - 🇺🇸 _US_美国 76
-      - 🇺🇸 _US_美国 77
-      - 🇺🇸 _US_美国 78
-      - 🇦🇺 _AU_澳大利亚 15
-      - 🇺🇸 _US_美国 79
-      - 🇨🇦 _CA_加拿大 2
-      - 🇮🇳 _IN_印度 4
-      - 🇺🇸 _US_美国 80
-      - 🇺🇸 _US_美国 81
-      - 🇫🇷 _FR_法国
-      - 🇫🇷 _FR_法国 2
-      - 🇸🇪 _SE_瑞典
-      - 🇨🇦 _CA_加拿大 3
-      - 🇦🇺 _AU_澳大利亚 16
-      - 🇺🇸 _US_美国 82
-      - 🇺🇸 _US_美国 83
-      - 🇫🇷 _FR_法国 3
-      - 🇦🇺 _AU_澳大利亚 17
-      - 🇺🇸 _US_美国 84
-      - 🇺🇸 _US_美国 85
-      - 🇺🇸 _US_美国 86
-      - 🇦🇺 _AU_澳大利亚 18
-      - 🇨🇦 _CA_加拿大 4
-      - 🇺🇸 _US_美国 87
-      - 🇺🇸 _US_美国 88
-      - 🇫🇷 _FR_法国 4
-      - 🇨🇦 _CA_加拿大 5
-      - 🇺🇸 _US_美国 89
-      - 🇦🇺 _AU_澳大利亚 19
-      - _NO_挪威
-      - 🇺🇸 _US_美国 90
-      - 🇫🇷 _FR_法国 5
-      - 🇸🇬 _SG_新加坡
-      - 🇦🇺 _AU_澳大利亚 20
-      - _NO_挪威 2
-      - 🇸🇬 _SG_新加坡 2
-      - 🇨🇦 _CA_加拿大 6
-      - _NO_挪威 3
-      - 🇦🇺 _AU_澳大利亚 21
-      - 🇺🇸 _US_美国 91
-      - _MX_墨西哥
-      - 🇬🇧 _GB_英国
-      - 🇫🇷 _FR_法国 6
-      - 🇺🇸 _US_美国 92
-      - 🇲🇾 _MY_马来西亚
-      - 🇺🇸 _US_美国 93
-      - 🇫🇷 _FR_法国 7
-      - _NO_挪威 4
-      - _NO_挪威 5
-      - _NO_挪威 6
+      - _US_美国+54
+      - _US_美国+39
+      - _US_美国 7
+      - _US_美国+44
+      - _US_美国+35
+      - _US_美国 8
+      - TG+YouTube:8度科技_葡萄牙
+      - _US_美国+24
+      - _US_美国+84
+      - _US_美国 9
+      - +|27.07Mb
+      - +|31.37Mb
+      - +|22.08Mb
+      - _US_美国+66
+      - TG+YouTube:8度科技_法国+2
+      - +|14.62Mb
+      - _US_美国 10
+      - _US_美国+12
+      - _US_美国+82
+      - +|16.64Mb
+      - +|14.54Mb
+      - _US_美国 11
+      - +|12.65Mb
+      - _US_美国+20
+      - _GB_英国
+      - +|14.45Mb
+      - _US_美国+47
+      - TG+YouTube:8度科技_葡萄牙 2
+      - TG+YouTube:8度科技_美国
+      - _US_美国 12
+      - _US_美国+63
+      - _US_美国 13
+      - _US_美国 14
+      - _US_美国+31
+      - _US_美国 15
+      - TG+YouTube:8度科技_英国
+      - TG+YouTube:8度科技_英国 2
+      - _US_美国 16
+      - _US_美国 17
+      - _US_美国+40
+      - +|24.43Mb
+      - _US_美国 18
+      - _US_美国 19
+      - _US_美国+3
+      - _US_美国 20
+      - _US_美国+71
+      - _US_美国+60
+      - _US_美国+46
+      - _US_美国 21
+      - _US_美国 22
+      - _US_美国+34
+      - _US_美国+91
+      - _US_美国+76
+      - _US_美国 17 2
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇺🇸 _US_美国
-      - TG+YouTube:8度科技_挪威
-      - 🇦🇺 TG+YouTube:8度科技_澳大利亚
-      - +|22.46Mb
-      - +|22.10Mb
-      - TG+YouTube:8度科技_挪威 2
-      - TG+YouTube:8度科技_挪威 3
-      - TG+YouTube:8度科技_挪威 4
-      - 🇨🇦 TG+YouTube:8度科技_加拿大
-      - +|14.54Mb
-      - TG+YouTube:8度科技_挪威 5
-      - +|15.90Mb
-      - 🇨🇦 TG+YouTube:8度科技_加拿大 2
-      - 🇫🇷 TG+YouTube:8度科技_法国
-      - +|20.07Mb
-      - 🇨🇦 TG+YouTube:8度科技_加拿大 3
-      - +|24.24Mb
-      - +|+5.53Mb
-      - +|25.64Mb
-      - +|26.70Mb
-      - TG+YouTube:8度科技_葡萄牙
-      - 🇺🇸 _US_美国 2
-      - +|13.69Mb
-      - +|31.37Mb
-      - 🇺🇸 _US_美国 3
-      - +|14.45Mb
-      - +|14.62Mb
-      - 🇫🇷 TG+YouTube:8度科技_法国 2
-      - 🇺🇸 TG YouTube:8度科技_美国
-      - +|26.03Mb
-      - 🇺🇸 _US_美国 4
-      - 🇺🇸 TG+YouTube:8度科技_美国
-      - 🇮🇳 TG+YouTube:8度科技_印度
-      - +|27.07Mb
-      - +|+4.51Mb
-      - 🇺🇸 TG YouTube:8度科技_美国 2
-      - +|+4.73Mb
-      - +|+5.29Mb
-      - +|12.65Mb
-      - +|26.14Mb
-      - 🇬🇧 TG+YouTube:8度科技_英国
-      - +|24.31Mb
-      - +|22.08Mb
-      - 🇺🇸 TG YouTube:8度科技_美国 3
-      - +|16.64Mb
-      - TG+YouTube:8度科技_葡萄牙 2
-      - +|20.56Mb
-      - +|25.19Mb
-      - +|23.72Mb
       - +|23.87Mb
-      - +|26.35Mb
-      - 🇬🇧 TG+YouTube:8度科技_英国 2
-      - +|24.43Mb
       - +|23.68Mb
-      - +|+4.70Mb
-      - +|18.59Mb
+      - _US_美国
+      - _US_美国+8
+      - _LU_卢森堡
+      - _RU_俄罗斯联邦
+      - _US_美国 92
+      - +|22.46Mb
+      - _US_美国 2
+      - _US_美国 3
+      - _US_美国+15
+      - _US_美国+50
+      - _US_美国 4
+      - _US_美国 5
+      - _US_美国 6
+      - _US_美国+18
+      - +|26.35Mb
+      - +|20.56Mb
+      - +|24.31Mb
+      - +|25.19Mb
+      - _US_美国+16
+      - +|15.90Mb
+      - +|22.10Mb
       - +|13.04Mb
-      - +|18.95Mb
-      - +|23.68Mb 2
-      - 🇺🇸 _US_美国 5
-      - 🇺🇸 _US_美国 6
-      - 🇺🇸 _US_美国 7
-      - 🇺🇸 _US_美国 8
-      - 🇺🇸 _US_美国 9
-      - 🇺🇸 _US_美国 10
-      - 🇺🇸 _US_美国 11
-      - 🇺🇸 _US_美国 12
-      - 🇺🇸 _US_美国 13
-      - 🇺🇸 _US_美国 14
-      - 🇺🇸 _US_美国 15
-      - 🇺🇸 _US_美国 16
-      - 🇺🇸 _US_美国 17
-      - 🇺🇸 _US_美国 18
-      - 🇺🇸 _US_美国 19
-      - 🇺🇸 _US_美国 20
-      - 🇺🇸 _US_美国 21
-      - 🇺🇸 _US_美国 22
-      - 🇺🇸 _US_美国 23
-      - 🇺🇸 _US_美国 24
-      - 🇺🇸 _US_美国 25
-      - 🇺🇸 _US_美国 26
-      - 🇺🇸 _US_美国 27
-      - 🇺🇸 _US_美国 28
-      - 🇺🇸 _US_美国 29
-      - 🇺🇸 _US_美国 30
-      - 🇺🇸 _US_美国 31
-      - 🇺🇸 _US_美国 32
-      - 🇺🇸 _US_美国 33
-      - 🇺🇸 _US_美国 34
-      - 🇺🇸 _US_美国 35
-      - 🇺🇸 _US_美国 36
-      - 🇱🇺 _LU_卢森堡
-      - 🇺🇸 _US_美国 37
-      - 🇺🇸 _US_美国 38
-      - 🇺🇸 _US_美国 39
-      - 🇺🇸 _US_美国 40
-      - 🇺🇸 _US_美国 41
-      - 🇺🇸 _US_美国 42
-      - 🇺🇸 _US_美国 43
-      - 🇺🇸 _US_美国 44
-      - 🇩🇰 _DK_丹麦
-      - 🇺🇸 _US_美国 45
-      - 🇺🇸 _US_美国 46
-      - 🇺🇸 _US_美国 47
-      - 🇺🇸 _US_美国 48
-      - 🇺🇸 _US_美国 49
-      - 🇦🇺 _AU_澳大利亚
-      - 🇦🇺 _AU_澳大利亚 2
-      - 🇦🇺 _AU_澳大利亚 3
-      - 🇺🇸 _US_美国 50
-      - 🇦🇺 _AU_澳大利亚 4
-      - 🇦🇺 _AU_澳大利亚 5
-      - 🇦🇺 _AU_澳大利亚 6
-      - 🇦🇺 _AU_澳大利亚 7
-      - 🇦🇺 _AU_澳大利亚 8
-      - 🇦🇺 _AU_澳大利亚 9
-      - 🇺🇸 _US_美国 51
-      - 🇦🇺 _AU_澳大利亚 10
-      - 🇦🇺 _AU_澳大利亚 11
-      - 🇦🇺 _AU_澳大利亚 12
-      - 🇦🇺 _AU_澳大利亚 13
-      - 🇦🇺 _AU_澳大利亚 14
-      - 🇺🇸 _US_美国 52
-      - 🇺🇸 _US_美国 53
-      - 🇺🇸 _US_美国 54
-      - 🇺🇸 _US_美国 55
-      - 🇺🇸 _US_美国 56
-      - 🇺🇸 _US_美国 57
-      - 🇮🇳 _IN_印度
-      - 🇺🇸 _US_美国 58
-      - 🇮🇳 _IN_印度 2
-      - 🇺🇸 _US_美国 59
-      - 🇷🇺 _RU_俄罗斯联邦
-      - 🇺🇸 _US_美国 60
-      - 🇺🇸 _US_美国 61
-      - 🇮🇳 _IN_印度 3
-      - 🇺🇸 _US_美国 62
-      - 🇺🇸 _US_美国 63
-      - 🇺🇸 _US_美国 64
-      - 🇺🇸 _US_美国 65
-      - 🇺🇸 _US_美国 66
-      - 🇺🇸 _US_美国 67
-      - 🇺🇸 _US_美国 68
-      - 🇺🇸 _US_美国 69
-      - 🇺🇸 _US_美国 70
-      - 🇺🇸 _US_美国 71
-      - 🇺🇸 _US_美国 72
-      - 🇺🇸 _US_美国 73
-      - 🇨🇦 _CA_加拿大
-      - 🇺🇸 _US_美国 74
-      - 🇺🇸 _US_美国 75
-      - 🇭🇰 _HK_香港
-      - 🇺🇸 _US_美国 76
-      - 🇺🇸 _US_美国 77
-      - 🇺🇸 _US_美国 78
-      - 🇦🇺 _AU_澳大利亚 15
-      - 🇺🇸 _US_美国 79
-      - 🇨🇦 _CA_加拿大 2
-      - 🇮🇳 _IN_印度 4
-      - 🇺🇸 _US_美国 80
-      - 🇺🇸 _US_美国 81
-      - 🇫🇷 _FR_法国
-      - 🇫🇷 _FR_法国 2
-      - 🇸🇪 _SE_瑞典
-      - 🇨🇦 _CA_加拿大 3
-      - 🇦🇺 _AU_澳大利亚 16
-      - 🇺🇸 _US_美国 82
-      - 🇺🇸 _US_美国 83
-      - 🇫🇷 _FR_法国 3
-      - 🇦🇺 _AU_澳大利亚 17
-      - 🇺🇸 _US_美国 84
-      - 🇺🇸 _US_美国 85
-      - 🇺🇸 _US_美国 86
-      - 🇦🇺 _AU_澳大利亚 18
-      - 🇨🇦 _CA_加拿大 4
-      - 🇺🇸 _US_美国 87
-      - 🇺🇸 _US_美国 88
-      - 🇫🇷 _FR_法国 4
-      - 🇨🇦 _CA_加拿大 5
-      - 🇺🇸 _US_美国 89
-      - 🇦🇺 _AU_澳大利亚 19
-      - _NO_挪威
-      - 🇺🇸 _US_美国 90
-      - 🇫🇷 _FR_法国 5
-      - 🇸🇬 _SG_新加坡
-      - 🇦🇺 _AU_澳大利亚 20
-      - _NO_挪威 2
-      - 🇸🇬 _SG_新加坡 2
-      - 🇨🇦 _CA_加拿大 6
-      - _NO_挪威 3
-      - 🇦🇺 _AU_澳大利亚 21
-      - 🇺🇸 _US_美国 91
-      - _MX_墨西哥
-      - 🇬🇧 _GB_英国
-      - 🇫🇷 _FR_法国 6
-      - 🇺🇸 _US_美国 92
-      - 🇲🇾 _MY_马来西亚
-      - 🇺🇸 _US_美国 93
-      - 🇫🇷 _FR_法国 7
-      - _NO_挪威 4
-      - _NO_挪威 5
-      - _NO_挪威 6
+      - _US_美国+54
+      - _US_美国+39
+      - _US_美国 7
+      - _US_美国+44
+      - _US_美国+35
+      - _US_美国 8
+      - TG+YouTube:8度科技_葡萄牙
+      - _US_美国+24
+      - _US_美国+84
+      - _US_美国 9
+      - +|27.07Mb
+      - +|31.37Mb
+      - +|22.08Mb
+      - _US_美国+66
+      - TG+YouTube:8度科技_法国+2
+      - +|14.62Mb
+      - _US_美国 10
+      - _US_美国+12
+      - _US_美国+82
+      - +|16.64Mb
+      - +|14.54Mb
+      - _US_美国 11
+      - +|12.65Mb
+      - _US_美国+20
+      - _GB_英国
+      - +|14.45Mb
+      - _US_美国+47
+      - TG+YouTube:8度科技_葡萄牙 2
+      - TG+YouTube:8度科技_美国
+      - _US_美国 12
+      - _US_美国+63
+      - _US_美国 13
+      - _US_美国 14
+      - _US_美国+31
+      - _US_美国 15
+      - TG+YouTube:8度科技_英国
+      - TG+YouTube:8度科技_英国 2
+      - _US_美国 16
+      - _US_美国 17
+      - _US_美国+40
+      - +|24.43Mb
+      - _US_美国 18
+      - _US_美国 19
+      - _US_美国+3
+      - _US_美国 20
+      - _US_美国+71
+      - _US_美国+60
+      - _US_美国+46
+      - _US_美国 21
+      - _US_美国 22
+      - _US_美国+34
+      - _US_美国+91
+      - _US_美国+76
+      - _US_美国 17 2
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -1473,208 +700,84 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇺🇸 _US_美国
-      - TG+YouTube:8度科技_挪威
-      - 🇦🇺 TG+YouTube:8度科技_澳大利亚
-      - +|22.46Mb
-      - +|22.10Mb
-      - TG+YouTube:8度科技_挪威 2
-      - TG+YouTube:8度科技_挪威 3
-      - TG+YouTube:8度科技_挪威 4
-      - 🇨🇦 TG+YouTube:8度科技_加拿大
-      - +|14.54Mb
-      - TG+YouTube:8度科技_挪威 5
-      - +|15.90Mb
-      - 🇨🇦 TG+YouTube:8度科技_加拿大 2
-      - 🇫🇷 TG+YouTube:8度科技_法国
-      - +|20.07Mb
-      - 🇨🇦 TG+YouTube:8度科技_加拿大 3
-      - +|24.24Mb
-      - +|+5.53Mb
-      - +|25.64Mb
-      - +|26.70Mb
-      - TG+YouTube:8度科技_葡萄牙
-      - 🇺🇸 _US_美国 2
-      - +|13.69Mb
-      - +|31.37Mb
-      - 🇺🇸 _US_美国 3
-      - +|14.45Mb
-      - +|14.62Mb
-      - 🇫🇷 TG+YouTube:8度科技_法国 2
-      - 🇺🇸 TG YouTube:8度科技_美国
-      - +|26.03Mb
-      - 🇺🇸 _US_美国 4
-      - 🇺🇸 TG+YouTube:8度科技_美国
-      - 🇮🇳 TG+YouTube:8度科技_印度
-      - +|27.07Mb
-      - +|+4.51Mb
-      - 🇺🇸 TG YouTube:8度科技_美国 2
-      - +|+4.73Mb
-      - +|+5.29Mb
-      - +|12.65Mb
-      - +|26.14Mb
-      - 🇬🇧 TG+YouTube:8度科技_英国
-      - +|24.31Mb
-      - +|22.08Mb
-      - 🇺🇸 TG YouTube:8度科技_美国 3
-      - +|16.64Mb
-      - TG+YouTube:8度科技_葡萄牙 2
-      - +|20.56Mb
-      - +|25.19Mb
-      - +|23.72Mb
       - +|23.87Mb
-      - +|26.35Mb
-      - 🇬🇧 TG+YouTube:8度科技_英国 2
-      - +|24.43Mb
       - +|23.68Mb
-      - +|+4.70Mb
-      - +|18.59Mb
+      - _US_美国
+      - _US_美国+8
+      - _LU_卢森堡
+      - _RU_俄罗斯联邦
+      - _US_美国 92
+      - +|22.46Mb
+      - _US_美国 2
+      - _US_美国 3
+      - _US_美国+15
+      - _US_美国+50
+      - _US_美国 4
+      - _US_美国 5
+      - _US_美国 6
+      - _US_美国+18
+      - +|26.35Mb
+      - +|20.56Mb
+      - +|24.31Mb
+      - +|25.19Mb
+      - _US_美国+16
+      - +|15.90Mb
+      - +|22.10Mb
       - +|13.04Mb
-      - +|18.95Mb
-      - +|23.68Mb 2
-      - 🇺🇸 _US_美国 5
-      - 🇺🇸 _US_美国 6
-      - 🇺🇸 _US_美国 7
-      - 🇺🇸 _US_美国 8
-      - 🇺🇸 _US_美国 9
-      - 🇺🇸 _US_美国 10
-      - 🇺🇸 _US_美国 11
-      - 🇺🇸 _US_美国 12
-      - 🇺🇸 _US_美国 13
-      - 🇺🇸 _US_美国 14
-      - 🇺🇸 _US_美国 15
-      - 🇺🇸 _US_美国 16
-      - 🇺🇸 _US_美国 17
-      - 🇺🇸 _US_美国 18
-      - 🇺🇸 _US_美国 19
-      - 🇺🇸 _US_美国 20
-      - 🇺🇸 _US_美国 21
-      - 🇺🇸 _US_美国 22
-      - 🇺🇸 _US_美国 23
-      - 🇺🇸 _US_美国 24
-      - 🇺🇸 _US_美国 25
-      - 🇺🇸 _US_美国 26
-      - 🇺🇸 _US_美国 27
-      - 🇺🇸 _US_美国 28
-      - 🇺🇸 _US_美国 29
-      - 🇺🇸 _US_美国 30
-      - 🇺🇸 _US_美国 31
-      - 🇺🇸 _US_美国 32
-      - 🇺🇸 _US_美国 33
-      - 🇺🇸 _US_美国 34
-      - 🇺🇸 _US_美国 35
-      - 🇺🇸 _US_美国 36
-      - 🇱🇺 _LU_卢森堡
-      - 🇺🇸 _US_美国 37
-      - 🇺🇸 _US_美国 38
-      - 🇺🇸 _US_美国 39
-      - 🇺🇸 _US_美国 40
-      - 🇺🇸 _US_美国 41
-      - 🇺🇸 _US_美国 42
-      - 🇺🇸 _US_美国 43
-      - 🇺🇸 _US_美国 44
-      - 🇩🇰 _DK_丹麦
-      - 🇺🇸 _US_美国 45
-      - 🇺🇸 _US_美国 46
-      - 🇺🇸 _US_美国 47
-      - 🇺🇸 _US_美国 48
-      - 🇺🇸 _US_美国 49
-      - 🇦🇺 _AU_澳大利亚
-      - 🇦🇺 _AU_澳大利亚 2
-      - 🇦🇺 _AU_澳大利亚 3
-      - 🇺🇸 _US_美国 50
-      - 🇦🇺 _AU_澳大利亚 4
-      - 🇦🇺 _AU_澳大利亚 5
-      - 🇦🇺 _AU_澳大利亚 6
-      - 🇦🇺 _AU_澳大利亚 7
-      - 🇦🇺 _AU_澳大利亚 8
-      - 🇦🇺 _AU_澳大利亚 9
-      - 🇺🇸 _US_美国 51
-      - 🇦🇺 _AU_澳大利亚 10
-      - 🇦🇺 _AU_澳大利亚 11
-      - 🇦🇺 _AU_澳大利亚 12
-      - 🇦🇺 _AU_澳大利亚 13
-      - 🇦🇺 _AU_澳大利亚 14
-      - 🇺🇸 _US_美国 52
-      - 🇺🇸 _US_美国 53
-      - 🇺🇸 _US_美国 54
-      - 🇺🇸 _US_美国 55
-      - 🇺🇸 _US_美国 56
-      - 🇺🇸 _US_美国 57
-      - 🇮🇳 _IN_印度
-      - 🇺🇸 _US_美国 58
-      - 🇮🇳 _IN_印度 2
-      - 🇺🇸 _US_美国 59
-      - 🇷🇺 _RU_俄罗斯联邦
-      - 🇺🇸 _US_美国 60
-      - 🇺🇸 _US_美国 61
-      - 🇮🇳 _IN_印度 3
-      - 🇺🇸 _US_美国 62
-      - 🇺🇸 _US_美国 63
-      - 🇺🇸 _US_美国 64
-      - 🇺🇸 _US_美国 65
-      - 🇺🇸 _US_美国 66
-      - 🇺🇸 _US_美国 67
-      - 🇺🇸 _US_美国 68
-      - 🇺🇸 _US_美国 69
-      - 🇺🇸 _US_美国 70
-      - 🇺🇸 _US_美国 71
-      - 🇺🇸 _US_美国 72
-      - 🇺🇸 _US_美国 73
-      - 🇨🇦 _CA_加拿大
-      - 🇺🇸 _US_美国 74
-      - 🇺🇸 _US_美国 75
-      - 🇭🇰 _HK_香港
-      - 🇺🇸 _US_美国 76
-      - 🇺🇸 _US_美国 77
-      - 🇺🇸 _US_美国 78
-      - 🇦🇺 _AU_澳大利亚 15
-      - 🇺🇸 _US_美国 79
-      - 🇨🇦 _CA_加拿大 2
-      - 🇮🇳 _IN_印度 4
-      - 🇺🇸 _US_美国 80
-      - 🇺🇸 _US_美国 81
-      - 🇫🇷 _FR_法国
-      - 🇫🇷 _FR_法国 2
-      - 🇸🇪 _SE_瑞典
-      - 🇨🇦 _CA_加拿大 3
-      - 🇦🇺 _AU_澳大利亚 16
-      - 🇺🇸 _US_美国 82
-      - 🇺🇸 _US_美国 83
-      - 🇫🇷 _FR_法国 3
-      - 🇦🇺 _AU_澳大利亚 17
-      - 🇺🇸 _US_美国 84
-      - 🇺🇸 _US_美国 85
-      - 🇺🇸 _US_美国 86
-      - 🇦🇺 _AU_澳大利亚 18
-      - 🇨🇦 _CA_加拿大 4
-      - 🇺🇸 _US_美国 87
-      - 🇺🇸 _US_美国 88
-      - 🇫🇷 _FR_法国 4
-      - 🇨🇦 _CA_加拿大 5
-      - 🇺🇸 _US_美国 89
-      - 🇦🇺 _AU_澳大利亚 19
-      - _NO_挪威
-      - 🇺🇸 _US_美国 90
-      - 🇫🇷 _FR_法国 5
-      - 🇸🇬 _SG_新加坡
-      - 🇦🇺 _AU_澳大利亚 20
-      - _NO_挪威 2
-      - 🇸🇬 _SG_新加坡 2
-      - 🇨🇦 _CA_加拿大 6
-      - _NO_挪威 3
-      - 🇦🇺 _AU_澳大利亚 21
-      - 🇺🇸 _US_美国 91
-      - _MX_墨西哥
-      - 🇬🇧 _GB_英国
-      - 🇫🇷 _FR_法国 6
-      - 🇺🇸 _US_美国 92
-      - 🇲🇾 _MY_马来西亚
-      - 🇺🇸 _US_美国 93
-      - 🇫🇷 _FR_法国 7
-      - _NO_挪威 4
-      - _NO_挪威 5
-      - _NO_挪威 6
+      - _US_美国+54
+      - _US_美国+39
+      - _US_美国 7
+      - _US_美国+44
+      - _US_美国+35
+      - _US_美国 8
+      - TG+YouTube:8度科技_葡萄牙
+      - _US_美国+24
+      - _US_美国+84
+      - _US_美国 9
+      - +|27.07Mb
+      - +|31.37Mb
+      - +|22.08Mb
+      - _US_美国+66
+      - TG+YouTube:8度科技_法国+2
+      - +|14.62Mb
+      - _US_美国 10
+      - _US_美国+12
+      - _US_美国+82
+      - +|16.64Mb
+      - +|14.54Mb
+      - _US_美国 11
+      - +|12.65Mb
+      - _US_美国+20
+      - _GB_英国
+      - +|14.45Mb
+      - _US_美国+47
+      - TG+YouTube:8度科技_葡萄牙 2
+      - TG+YouTube:8度科技_美国
+      - _US_美国 12
+      - _US_美国+63
+      - _US_美国 13
+      - _US_美国 14
+      - _US_美国+31
+      - _US_美国 15
+      - TG+YouTube:8度科技_英国
+      - TG+YouTube:8度科技_英国 2
+      - _US_美国 16
+      - _US_美国 17
+      - _US_美国+40
+      - +|24.43Mb
+      - _US_美国 18
+      - _US_美国 19
+      - _US_美国+3
+      - _US_美国 20
+      - _US_美国+71
+      - _US_美国+60
+      - _US_美国+46
+      - _US_美国 21
+      - _US_美国 22
+      - _US_美国+34
+      - _US_美国+91
+      - _US_美国+76
+      - _US_美国 17 2
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
@@ -1762,14 +865,35 @@ rules:
  - DOMAIN-SUFFIX,yammer.com,Ⓜ️ 微软服务
  - DOMAIN-SUFFIX,yammerusercontent.com,Ⓜ️ 微软服务
  - DOMAIN,app.adjust.com,🎯 全球直连
+ - DOMAIN,bdtj.tagtic.cn,🎯 全球直连
+ - DOMAIN,log.mmstat.com,🎯 全球直连
+ - DOMAIN,sycm.mmstat.com,🎯 全球直连
+ - DOMAIN-SUFFIX,blog.google,🎯 全球直连
  - DOMAIN-SUFFIX,googletraveladservices.com,🎯 全球直连
+ - DOMAIN,clientservices.googleapis.com,🎯 全球直连
  - DOMAIN,dl.google.com,🎯 全球直连
+ - DOMAIN,dl.l.google.com,🎯 全球直连
+ - DOMAIN,update.googleapis.com,🎯 全球直连
+ - DOMAIN,translate.googleapis.com,🎯 全球直连
+ - DOMAIN,fonts.googleapis.com,🎯 全球直连
+ - DOMAIN,fonts.gstatic.com,🎯 全球直连
  - DOMAIN,mtalk.google.com,🎯 全球直连
+ - DOMAIN,alt1-mtalk.google.com,🎯 全球直连
+ - DOMAIN,alt2-mtalk.google.com,🎯 全球直连
+ - DOMAIN,alt3-mtalk.google.com,🎯 全球直连
+ - DOMAIN,alt4-mtalk.google.com,🎯 全球直连
+ - DOMAIN,alt5-mtalk.google.com,🎯 全球直连
+ - DOMAIN,alt6-mtalk.google.com,🎯 全球直连
+ - DOMAIN,alt7-mtalk.google.com,🎯 全球直连
+ - DOMAIN,alt8-mtalk.google.com,🎯 全球直连
+ - DOMAIN,pubads.g.doubleclick.net,🎯 全球直连
+ - DOMAIN,fairplay.l.qq.com,🎯 全球直连
  - DOMAIN,livew.l.qq.com,🎯 全球直连
  - DOMAIN,vd.l.qq.com,🎯 全球直连
  - DOMAIN,analytics.strava.com,🎯 全球直连
  - DOMAIN,msg.umeng.com,🎯 全球直连
  - DOMAIN,msg.umengcloud.com,🎯 全球直连
+ - DOMAIN-SUFFIX,api-access.pangolin-sdk-toutiao-b.com,🛑 全球拦截
  - DOMAIN-SUFFIX,mcupdate.gstarcad.com,🛑 全球拦截
  - DOMAIN-SUFFIX,adx.open-adx.com,🛑 全球拦截
  - DOMAIN-SUFFIX,adservice.sigmob.cn,🛑 全球拦截
@@ -3588,6 +2712,7 @@ rules:
  - DOMAIN-SUFFIX,breezily168.com,🛑 全球拦截
  - DOMAIN-SUFFIX,brizads.com,🛑 全球拦截
  - DOMAIN-SUFFIX,bro.flyme.cn,🛑 全球拦截
+ - DOMAIN-SUFFIX,browser.gwdang.com,🛑 全球拦截
  - DOMAIN-SUFFIX,bs.5442.com,🛑 全球拦截
  - DOMAIN-SUFFIX,bs.serving-sys.com,🛑 全球拦截
  - DOMAIN-SUFFIX,bs14.9669.cn,🛑 全球拦截
@@ -6569,6 +5694,7 @@ rules:
  - DOMAIN-SUFFIX,m.guanren9.com,🛑 全球拦截
  - DOMAIN-SUFFIX,m.guifei99.com,🛑 全球拦截
  - DOMAIN-SUFFIX,m.gujinyue.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,m.gwdqp.com,🛑 全球拦截
  - DOMAIN-SUFFIX,m.gxkyl.com,🛑 全球拦截
  - DOMAIN-SUFFIX,m.haowj.com.cn,🛑 全球拦截
  - DOMAIN-SUFFIX,m.harbinbaojia.net,🛑 全球拦截
@@ -6868,6 +5994,7 @@ rules:
  - DOMAIN-SUFFIX,mbs.weathercn.com,🛑 全球拦截
  - DOMAIN-SUFFIX,mc.hujiang.com,🛑 全球拦截
  - DOMAIN-SUFFIX,mc.yandex.ru,🛑 全球拦截
+ - DOMAIN-SUFFIX,mclick.simba.taobao.com,🛑 全球拦截
  - DOMAIN-SUFFIX,mcore.vcgame.cn,🛑 全球拦截
  - DOMAIN-SUFFIX,md.1drj.com,🛑 全球拦截
  - DOMAIN-SUFFIX,md.he9630.com,🛑 全球拦截
@@ -7049,6 +6176,7 @@ rules:
  - DOMAIN-SUFFIX,ms.ienkdaccessory.cn,🛑 全球拦截
  - DOMAIN-SUFFIX,ms.jyhwt.cn,🛑 全球拦截
  - DOMAIN-SUFFIX,ms.myyage.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,ms.vipstatic.com,🛑 全球拦截
  - DOMAIN-SUFFIX,msads.net,🛑 全球拦截
  - DOMAIN-SUFFIX,mscimg.com,🛑 全球拦截
  - DOMAIN-SUFFIX,msclick2.kuwo.cn,🛑 全球拦截
@@ -7894,6 +7022,7 @@ rules:
  - DOMAIN-SUFFIX,rotate.ymtracking.com,🛑 全球拦截
  - DOMAIN-SUFFIX,rotator.tradetracker.net,🛑 全球拦截
  - DOMAIN-SUFFIX,router.bittorrent.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,router.gwdang.com,🛑 全球拦截
  - DOMAIN-SUFFIX,rp.crasheye.cn,🛑 全球拦截
  - DOMAIN-SUFFIX,rp.gwallet.com,🛑 全球拦截
  - DOMAIN-SUFFIX,rpaulfrank.com,🛑 全球拦截
@@ -8145,7 +7274,6 @@ rules:
  - DOMAIN-SUFFIX,searchswapper.com,🛑 全球拦截
  - DOMAIN-SUFFIX,seavideo-ak.espn.go.com,🛑 全球拦截
  - DOMAIN-SUFFIX,sebar.thand.info,🛑 全球拦截
- - DOMAIN-SUFFIX,sec.resource.xiaomi.net,🛑 全球拦截
  - DOMAIN-SUFFIX,secpay.wostore.cn,🛑 全球拦截
  - DOMAIN-SUFFIX,secretmedia.s3.amazonaws.com,🛑 全球拦截
  - DOMAIN-SUFFIX,secure.dsp.com,🛑 全球拦截
@@ -10139,6 +9267,7 @@ rules:
  - DOMAIN-SUFFIX,wup.imtt.qq.com,🛑 全球拦截
  - DOMAIN-SUFFIX,tns.simba.taobao.com,🛑 全球拦截
  - DOMAIN-SUFFIX,click.mz.simba.taobao.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,click.simba.taobao.com,🛑 全球拦截
  - DOMAIN-SUFFIX,click.tz.simba.taobao.com,🛑 全球拦截
  - DOMAIN-SUFFIX,stat.simba.taobao.com,🛑 全球拦截
  - DOMAIN-SUFFIX,m-adash.m.taobao.com,🛑 全球拦截
@@ -10415,6 +9544,7 @@ rules:
  - IP-CIDR,188.89.204.198/32,🛑 全球拦截,no-resolve
  - DOMAIN-SUFFIX,17gouwuba.com,🛑 全球拦截
  - DOMAIN-SUFFIX,186078.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,189key.com,🛑 全球拦截
  - DOMAIN-SUFFIX,189zj.cn,🛑 全球拦截
  - DOMAIN-SUFFIX,285680.com,🛑 全球拦截
  - DOMAIN-SUFFIX,3721zh.com,🛑 全球拦截
@@ -10437,6 +9567,7 @@ rules:
  - DOMAIN-SUFFIX,beilamusi.com,🛑 全球拦截
  - DOMAIN-SUFFIX,benshiw.net,🛑 全球拦截
  - DOMAIN-SUFFIX,bianxianmao.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,bkyhq.cn,🛑 全球拦截
  - DOMAIN-SUFFIX,bryonypie.com,🛑 全球拦截
  - DOMAIN-SUFFIX,cishantao.com,🛑 全球拦截
  - DOMAIN-SUFFIX,cszlks.com,🛑 全球拦截
@@ -10457,8 +9588,10 @@ rules:
  - DOMAIN-SUFFIX,goufanli100.com,🛑 全球拦截
  - DOMAIN-SUFFIX,goupaoerdai.com,🛑 全球拦截
  - DOMAIN-SUFFIX,gouwubang.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,gscxs.cn,🛑 全球拦截
  - DOMAIN-SUFFIX,gzxnlk.com,🛑 全球拦截
  - DOMAIN-SUFFIX,haoshengtoys.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,hbssjd.cn,🛑 全球拦截
  - DOMAIN-SUFFIX,hyunke.com,🛑 全球拦截
  - DOMAIN-SUFFIX,ichaosheng.com,🛑 全球拦截
  - DOMAIN-SUFFIX,ishop789.com,🛑 全球拦截
@@ -10471,6 +9604,7 @@ rules:
  - DOMAIN-SUFFIX,kualianyingxiao.cn,🛑 全球拦截
  - DOMAIN-SUFFIX,kumihua.com,🛑 全球拦截
  - DOMAIN-SUFFIX,ltheanine.cn,🛑 全球拦截
+ - DOMAIN-SUFFIX,lvehaisen.com,🛑 全球拦截
  - DOMAIN-SUFFIX,maipinshangmao.com,🛑 全球拦截
  - DOMAIN-SUFFIX,minisplat.cn,🛑 全球拦截
  - DOMAIN-SUFFIX,mkitgfs.com,🛑 全球拦截
@@ -10502,10 +9636,13 @@ rules:
  - DOMAIN-SUFFIX,tcxshop.com,🛑 全球拦截
  - DOMAIN-SUFFIX,tjqonline.cn,🛑 全球拦截
  - DOMAIN-SUFFIX,topitme.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,tt114.net,🛑 全球拦截
  - DOMAIN-SUFFIX,tt3sm4.cn,🛑 全球拦截
  - DOMAIN-SUFFIX,tuia.cn,🛑 全球拦截
  - DOMAIN-SUFFIX,tuipenguin.com,🛑 全球拦截
  - DOMAIN-SUFFIX,tuitiger.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,urlaw.cn,🛑 全球拦截
+ - DOMAIN-SUFFIX,urlet.cn,🛑 全球拦截
  - DOMAIN-SUFFIX,websd8.com,🛑 全球拦截
  - DOMAIN-SUFFIX,wsgblw.com,🛑 全球拦截
  - DOMAIN-SUFFIX,wx16999.com,🛑 全球拦截
@@ -10519,6 +9656,7 @@ rules:
  - DOMAIN-SUFFIX,zhaozecheng.cn,🛑 全球拦截
  - DOMAIN-SUFFIX,zhenxinet.com,🛑 全球拦截
  - DOMAIN-SUFFIX,zlne800.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,zmlled.cn,🛑 全球拦截
  - DOMAIN-SUFFIX,zunmi.cn,🛑 全球拦截
  - DOMAIN-SUFFIX,zzd6.com,🛑 全球拦截
  - IP-CIDR,39.107.15.115/32,🛑 全球拦截,no-resolve
@@ -10548,6 +9686,7 @@ rules:
  - IP-CIDR,220.196.52.141/32,🛑 全球拦截,no-resolve
  - IP-CIDR,221.6.4.148/32,🛑 全球拦截,no-resolve
  - IP-CIDR,114.247.28.96/32,🛑 全球拦截,no-resolve
+ - IP-CIDR,120.240.95.37/32,🛑 全球拦截,no-resolve
  - IP-CIDR,221.179.131.72/32,🛑 全球拦截,no-resolve
  - IP-CIDR,221.179.140.145/32,🛑 全球拦截,no-resolve
  - IP-CIDR,115.182.16.79/32,🛑 全球拦截,no-resolve
@@ -10559,8 +9698,10 @@ rules:
  - IP-CIDR,124.14.21.151/32,🛑 全球拦截,no-resolve
  - IP-CIDR,180.166.52.24/32,🛑 全球拦截,no-resolve
  - IP-CIDR,211.161.101.106/32,🛑 全球拦截,no-resolve
+ - IP-CIDR,211.161.101.110/32,🛑 全球拦截,no-resolve
  - IP-CIDR,220.115.251.25/32,🛑 全球拦截,no-resolve
  - IP-CIDR,222.73.156.235/32,🛑 全球拦截,no-resolve
+ - IP-CIDR,114.119.160.0/21,🛑 全球拦截,no-resolve
  - DOMAIN-SUFFIX,kuaizip.com,🛑 全球拦截
  - DOMAIN-SUFFIX,mackeeper.com,🛑 全球拦截
  - DOMAIN-SUFFIX,zryydi.com,🛑 全球拦截
@@ -10568,6 +9709,8 @@ rules:
  - DOMAIN,geo2.adobe.com,🛑 全球拦截
  - DOMAIN-SUFFIX,4009997658.com,🛑 全球拦截
  - DOMAIN-SUFFIX,abbyychina.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,alienskins.cn,🛑 全球拦截
+ - DOMAIN-SUFFIX,anydeskchina.cn,🛑 全球拦截
  - DOMAIN-SUFFIX,bartender.cc,🛑 全球拦截
  - DOMAIN-SUFFIX,betterzip.net,🛑 全球拦截
  - DOMAIN-SUFFIX,betterzipcn.com,🛑 全球拦截
@@ -10584,9 +9727,11 @@ rules:
  - DOMAIN-SUFFIX,easyrecoverychina.com,🛑 全球拦截
  - DOMAIN-SUFFIX,ediuschina.com,🛑 全球拦截
  - DOMAIN-SUFFIX,flstudiochina.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,folxchina.cn,🛑 全球拦截
  - DOMAIN-SUFFIX,formysql.com,🛑 全球拦截
  - DOMAIN-SUFFIX,guitarpro.cc,🛑 全球拦截
  - DOMAIN-SUFFIX,huishenghuiying.com.cn,🛑 全球拦截
+ - DOMAIN-SUFFIX,hypeapp.cn,🛑 全球拦截
  - DOMAIN-SUFFIX,hypersnap.net,🛑 全球拦截
  - DOMAIN-SUFFIX,iconworkshop.cn,🛑 全球拦截
  - DOMAIN-SUFFIX,imindmap.cc,🛑 全球拦截
@@ -10616,18 +9761,55 @@ rules:
  - DOMAIN-SUFFIX,shankejingling.com,🛑 全球拦截
  - DOMAIN-SUFFIX,ultraiso.net,🛑 全球拦截
  - DOMAIN-SUFFIX,vegaschina.cn,🛑 全球拦截
+ - DOMAIN-SUFFIX,xitongqingli.com,🛑 全球拦截
  - DOMAIN-SUFFIX,xmindchina.net,🛑 全球拦截
  - DOMAIN-SUFFIX,xshellcn.com,🛑 全球拦截
  - DOMAIN-SUFFIX,yihuifu.cn,🛑 全球拦截
  - DOMAIN-SUFFIX,yuanchengxiezuo.com,🛑 全球拦截
  - DOMAIN-SUFFIX,zbrushcn.com,🛑 全球拦截
  - DOMAIN-SUFFIX,zhzzx.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,netflix.com,🎥 NETFLIX
+ - DOMAIN-SUFFIX,netflix.net,🎥 NETFLIX
+ - DOMAIN-SUFFIX,nflxext.com,🎥 NETFLIX
+ - DOMAIN-SUFFIX,nflximg.com,🎥 NETFLIX
+ - DOMAIN-SUFFIX,nflximg.net,🎥 NETFLIX
+ - DOMAIN-SUFFIX,nflxso.net,🎥 NETFLIX
+ - DOMAIN-SUFFIX,nflxvideo.net,🎥 NETFLIX
+ - DOMAIN-SUFFIX,netflixdnstest0.com,🎥 NETFLIX
+ - DOMAIN-SUFFIX,netflixdnstest1.com,🎥 NETFLIX
+ - DOMAIN-SUFFIX,netflixdnstest2.com,🎥 NETFLIX
+ - DOMAIN-SUFFIX,netflixdnstest3.com,🎥 NETFLIX
+ - DOMAIN-SUFFIX,netflixdnstest4.com,🎥 NETFLIX
+ - DOMAIN-SUFFIX,netflixdnstest5.com,🎥 NETFLIX
+ - DOMAIN-SUFFIX,netflixdnstest6.com,🎥 NETFLIX
+ - DOMAIN-SUFFIX,netflixdnstest7.com,🎥 NETFLIX
+ - DOMAIN-SUFFIX,netflixdnstest8.com,🎥 NETFLIX
+ - DOMAIN-SUFFIX,netflixdnstest9.com,🎥 NETFLIX
+ - DOMAIN-KEYWORD,dualstack.apiproxy-,🎥 NETFLIX
+ - DOMAIN-KEYWORD,dualstack.ichnaea-web-,🎥 NETFLIX
+ - IP-CIDR,23.246.0.0/18,🎥 NETFLIX,no-resolve
+ - IP-CIDR,37.77.184.0/21,🎥 NETFLIX,no-resolve
+ - IP-CIDR,45.57.0.0/17,🎥 NETFLIX,no-resolve
+ - IP-CIDR,64.120.128.0/17,🎥 NETFLIX,no-resolve
+ - IP-CIDR,66.197.128.0/17,🎥 NETFLIX,no-resolve
+ - IP-CIDR,108.175.32.0/20,🎥 NETFLIX,no-resolve
+ - IP-CIDR,192.173.64.0/18,🎥 NETFLIX,no-resolve
+ - IP-CIDR,198.38.96.0/19,🎥 NETFLIX,no-resolve
+ - IP-CIDR,198.45.48.0/20,🎥 NETFLIX,no-resolve
+ - IP-CIDR,34.210.42.111/32,🎥 NETFLIX,no-resolve
+ - IP-CIDR,52.89.124.203/32,🎥 NETFLIX,no-resolve
+ - IP-CIDR,54.148.37.5/32,🎥 NETFLIX,no-resolve
+ - DOMAIN-SUFFIX,jtvnw.net,🌍 国外媒体
+ - DOMAIN-SUFFIX,ttvnw.net,🌍 国外媒体
+ - DOMAIN-SUFFIX,twitch.tv,🌍 国外媒体
+ - DOMAIN-SUFFIX,twitchcdn.net,🌍 国外媒体
  - DOMAIN-SUFFIX,deezer.com,🌍 国外媒体
  - DOMAIN-SUFFIX,dzcdn.net,🌍 国外媒体
+ - DOMAIN-SUFFIX,joox.com,🌍 国外媒体
+ - DOMAIN-KEYWORD,jooxweb-api,🌍 国外媒体
  - DOMAIN-SUFFIX,kkbox.com,🌍 国外媒体
  - DOMAIN-SUFFIX,kkbox.com.tw,🌍 国外媒体
  - DOMAIN-SUFFIX,kfs.io,🌍 国外媒体
- - DOMAIN-SUFFIX,joox.com,🌍 国外媒体
  - DOMAIN-SUFFIX,pandora.com,🌍 国外媒体
  - DOMAIN-SUFFIX,p-cdn.us,🌍 国外媒体
  - DOMAIN-SUFFIX,sndcdn.com,🌍 国外媒体
@@ -10639,26 +9821,32 @@ rules:
  - DOMAIN-KEYWORD,spotify.com,🌍 国外媒体
  - DOMAIN-KEYWORD,-spotify-com,🌍 国外媒体
  - DOMAIN-SUFFIX,tidal.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,himalaya.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,overcast.fm,🌍 国外媒体
+ - DOMAIN-SUFFIX,abema.io,🌍 国外媒体
+ - DOMAIN-SUFFIX,abema.tv,🌍 国外媒体
+ - DOMAIN-SUFFIX,ameba.jp,🌍 国外媒体
+ - DOMAIN-SUFFIX,hayabusa.io,🌍 国外媒体
+ - DOMAIN-KEYWORD,abematv.akamaized.net,🌍 国外媒体
  - DOMAIN-SUFFIX,c4assets.com,🌍 国外媒体
  - DOMAIN-SUFFIX,channel4.com,🌍 国外媒体
- - DOMAIN-SUFFIX,abema.io,🌍 国外媒体
- - DOMAIN-SUFFIX,ameba.jp,🌍 国外媒体
- - DOMAIN-SUFFIX,abema.tv,🌍 国外媒体
- - DOMAIN-SUFFIX,hayabusa.io,🌍 国外媒体
- - DOMAIN,abematv.akamaized.net,🌍 国外媒体
- - DOMAIN,ds-linear-abematv.akamaized.net,🌍 国外媒体
- - DOMAIN,ds-vod-abematv.akamaized.net,🌍 国外媒体
- - DOMAIN,linear-abematv.akamaized.net,🌍 国外媒体
  - DOMAIN-SUFFIX,aiv-cdn.net,🌍 国外媒体
  - DOMAIN-SUFFIX,aiv-delivery.net,🌍 国外媒体
  - DOMAIN-SUFFIX,amazonvideo.com,🌍 国外媒体
  - DOMAIN-SUFFIX,primevideo.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,media-amazon.com,🌍 国外媒体
+ - DOMAIN,atv-ps.amazon.com,🌍 国外媒体
+ - DOMAIN,fls-na.amazon.com,🌍 国外媒体
  - DOMAIN,avodmp4s3ww-a.akamaihd.net,🌍 国外媒体
  - DOMAIN,d25xi40x97liuc.cloudfront.net,🌍 国外媒体
  - DOMAIN,dmqdd6hw24ucf.cloudfront.net,🌍 国外媒体
+ - DOMAIN,dmqdd6hw24ucf.cloudfront.net,🌍 国外媒体
  - DOMAIN,d22qjgkvxw22r6.cloudfront.net,🌍 国外媒体
  - DOMAIN,d1v5ir2lpwr8os.cloudfront.net,🌍 国外媒体
+ - DOMAIN,d27xxe7juh1us6.cloudfront.net,🌍 国外媒体
  - DOMAIN-KEYWORD,avoddashs,🌍 国外媒体
+ - DOMAIN,linear.tv.apple.com,🌍 国外媒体
+ - DOMAIN,play-edge.itunes.apple.com,🌍 国外媒体
  - DOMAIN-SUFFIX,bahamut.com.tw,🌍 国外媒体
  - DOMAIN-SUFFIX,gamer.com.tw,🌍 国外媒体
  - DOMAIN,gamer-cds.cdn.hinet.net,🌍 国外媒体
@@ -10667,48 +9855,87 @@ rules:
  - DOMAIN-SUFFIX,bbci.co.uk,🌍 国外媒体
  - DOMAIN-KEYWORD,bbcfmt,🌍 国外媒体
  - DOMAIN-KEYWORD,uk-live,🌍 国外媒体
+ - DOMAIN-SUFFIX,biliintl.com,🌍 国外媒体
+ - DOMAIN,apm-misaka.biliapi.net,🌍 国外媒体
+ - DOMAIN,p.bstarstatic.com,🌍 国外媒体
+ - DOMAIN,p-bstarstatic.akamaized.net,🌍 国外媒体
+ - DOMAIN,upos-bstar-mirrorakam.akamaized.net,🌍 国外媒体
+ - DOMAIN,upos-bstar1-mirrorakam.akamaized.net,🌍 国外媒体
  - DOMAIN-SUFFIX,dazn.com,🌍 国外媒体
  - DOMAIN-SUFFIX,dazn-api.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,dazndn.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,indazn.com,🌍 国外媒体
  - DOMAIN,d151l6v8er5bdm.cloudfront.net,🌍 国外媒体
  - DOMAIN-KEYWORD,voddazn,🌍 国外媒体
+ - DOMAIN-SUFFIX,disco-api.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,discoveryplus.co.uk,🌍 国外媒体
+ - DOMAIN-SUFFIX,discoveryplus.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,discoveryplus.in,🌍 国外媒体
+ - DOMAIN-SUFFIX,dnitv.com,🌍 国外媒体
  - DOMAIN-SUFFIX,bamgrid.com,🌍 国外媒体
- - DOMAIN-SUFFIX,disney-plus.net,🌍 国外媒体
  - DOMAIN-SUFFIX,disneyplus.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,disney-plus.net,🌍 国外媒体
+ - DOMAIN-SUFFIX,disneystreaming.com,🌍 国外媒体
  - DOMAIN-SUFFIX,dssott.com,🌍 国外媒体
  - DOMAIN,cdn.registerdisney.go.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,dmm.co.jp,🌍 国外媒体
+ - DOMAIN-SUFFIX,dmm.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,dmm-extension.com,🌍 国外媒体
  - DOMAIN-SUFFIX,encoretvb.com,🌍 国外媒体
  - DOMAIN,edge.api.brightcove.com,🌍 国外媒体
  - DOMAIN,bcbolt446c5271-a.akamaihd.net,🌍 国外媒体
- - DOMAIN-SUFFIX,fox.com,🌍 国外媒体
- - DOMAIN-SUFFIX,foxdcg.com,🌍 国外媒体
- - DOMAIN-SUFFIX,theplatform.com,🌍 国外媒体
- - DOMAIN-SUFFIX,uplynk.com,🌍 国外媒体
  - DOMAIN-SUFFIX,hbo.com,🌍 国外媒体
  - DOMAIN-SUFFIX,hbogo.com,🌍 国外媒体
  - DOMAIN-SUFFIX,hbonow.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,hbomax.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,hbomaxcdn.com,🌍 国外媒体
  - DOMAIN-SUFFIX,hbogoasia.com,🌍 国外媒体
  - DOMAIN-SUFFIX,hbogoasia.hk,🌍 国外媒体
- - DOMAIN,bcbolthboa-a.akamaihd.net,🌍 国外媒体
- - DOMAIN,players.brightcove.net,🌍 国外媒体
- - DOMAIN,s3-ap-southeast-1.amazonaws.com,🌍 国外媒体
- - DOMAIN,dai3fd1oh325y.cloudfront.net,🌍 国外媒体
+ - DOMAIN-KEYWORD,.hbogoasia.,🌍 国外媒体
  - DOMAIN,44wilhpljf.execute-api.ap-southeast-1.amazonaws.com,🌍 国外媒体
+ - DOMAIN,bcbolthboa-a.akamaihd.net,🌍 国外媒体
+ - DOMAIN,cf-images.ap-southeast-1.prod.boltdns.net,🌍 国外媒体
+ - DOMAIN,dai3fd1oh325y.cloudfront.net,🌍 国外媒体
  - DOMAIN,hboasia1-i.akamaihd.net,🌍 国外媒体
  - DOMAIN,hboasia2-i.akamaihd.net,🌍 国外媒体
  - DOMAIN,hboasia3-i.akamaihd.net,🌍 国外媒体
  - DOMAIN,hboasia4-i.akamaihd.net,🌍 国外媒体
  - DOMAIN,hboasia5-i.akamaihd.net,🌍 国外媒体
- - DOMAIN,cf-images.ap-southeast-1.prod.boltdns.net,🌍 国外媒体
+ - DOMAIN,hboasialive.akamaized.net,🌍 国外媒体
+ - DOMAIN,hbogoprod-vod.akamaized.net,🌍 国外媒体
+ - DOMAIN,hbolb.onwardsmg.com,🌍 国外媒体
+ - DOMAIN,hbounify-prod.evergent.com,🌍 国外媒体
+ - DOMAIN,players.brightcove.net,🌍 国外媒体
+ - DOMAIN,s3-ap-southeast-1.amazonaws.com,🌍 国外媒体
  - DOMAIN-SUFFIX,5itv.tv,🌍 国外媒体
  - DOMAIN-SUFFIX,ocnttv.com,🌍 国外媒体
  - DOMAIN-SUFFIX,hulu.com,🌍 国外媒体
  - DOMAIN-SUFFIX,huluim.com,🌍 国外媒体
  - DOMAIN-SUFFIX,hulustream.com,🌍 国外媒体
  - DOMAIN-SUFFIX,happyon.jp,🌍 国外媒体
+ - DOMAIN-SUFFIX,hjholdings.jp,🌍 国外媒体
  - DOMAIN-SUFFIX,hulu.jp,🌍 国外媒体
  - DOMAIN-SUFFIX,itv.com,🌍 国外媒体
  - DOMAIN-SUFFIX,itvstatic.com,🌍 国外媒体
  - DOMAIN,itvpnpmobile-a.akamaihd.net,🌍 国外媒体
+ - DOMAIN-SUFFIX,iq.com,🌍 国外媒体
+ - DOMAIN,intl.iqiyi.com,🌍 国外媒体
+ - DOMAIN,intl-rcd.iqiyi.com,🌍 国外媒体
+ - DOMAIN,intl-subscription.iqiyi.com,🌍 国外媒体
+ - IP-CIDR,23.53.32.88/32,🌍 国外媒体,no-resolve
+ - IP-CIDR,23.211.15.99/32,🌍 国外媒体,no-resolve
+ - IP-CIDR,103.5.34.153/32,🌍 国外媒体,no-resolve
+ - IP-CIDR,104.109.129.153/32,🌍 国外媒体,no-resolve
+ - IP-CIDR,110.238.107.47/32,🌍 国外媒体,no-resolve
+ - IP-CIDR,118.26.32.178/32,🌍 国外媒体,no-resolve
+ - IP-CIDR,203.74.95.131/32,🌍 国外媒体,no-resolve
+ - IP-CIDR,203.74.95.139/32,🌍 国外媒体,no-resolve
+ - IP-CIDR,203.74.95.153/32,🌍 国外媒体,no-resolve
+ - IP-CIDR,203.211.4.169/32,🌍 国外媒体,no-resolve
+ - IP-CIDR,203.211.4.193/32,🌍 国外媒体,no-resolve
+ - IP-CIDR,210.71.227.202/32,🌍 国外媒体,no-resolve
+ - IP-CIDR,210.201.32.8/32,🌍 国外媒体,no-resolve
+ - IP-CIDR,210.201.32.11/32,🌍 国外媒体,no-resolve
  - DOMAIN-SUFFIX,kktv.com.tw,🌍 国外媒体
  - DOMAIN-SUFFIX,kktv.me,🌍 国外媒体
  - DOMAIN,kktv-theater.kk.stream,🌍 国外媒体
@@ -10716,12 +9943,15 @@ rules:
  - DOMAIN,d3c7rimkq79yfu.cloudfront.net,🌍 国外媒体
  - DOMAIN-SUFFIX,litv.tv,🌍 国外媒体
  - DOMAIN,litvfreemobile-hichannel.cdn.hinet.net,🌍 国外媒体
+ - DOMAIN-SUFFIX,api.mgtv.com,🌍 国外媒体
+ - DOMAIN,mobileso.bz.mgtv.com,🌍 国外媒体
  - DOMAIN-SUFFIX,channel5.com,🌍 国外媒体
  - DOMAIN-SUFFIX,my5.tv,🌍 国外媒体
  - DOMAIN,d349g9zuie06uo.cloudfront.net,🌍 国外媒体
  - DOMAIN-SUFFIX,mytvsuper.com,🌍 国外媒体
  - DOMAIN-SUFFIX,tvb.com,🌍 国外媒体
- - DOMAIN-SUFFIX,fast.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,naver.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,smartmediarep.com,🌍 国外媒体
  - DOMAIN-SUFFIX,netflix.com,🌍 国外媒体
  - DOMAIN-SUFFIX,netflix.net,🌍 国外媒体
  - DOMAIN-SUFFIX,nflxext.com,🌍 国外媒体
@@ -10739,6 +9969,8 @@ rules:
  - DOMAIN-SUFFIX,netflixdnstest7.com,🌍 国外媒体
  - DOMAIN-SUFFIX,netflixdnstest8.com,🌍 国外媒体
  - DOMAIN-SUFFIX,netflixdnstest9.com,🌍 国外媒体
+ - DOMAIN-KEYWORD,dualstack.apiproxy-,🌍 国外媒体
+ - DOMAIN-KEYWORD,dualstack.ichnaea-web-,🌍 国外媒体
  - IP-CIDR,23.246.0.0/18,🌍 国外媒体,no-resolve
  - IP-CIDR,37.77.184.0/21,🌍 国外媒体,no-resolve
  - IP-CIDR,45.57.0.0/17,🌍 国外媒体,no-resolve
@@ -10748,30 +9980,56 @@ rules:
  - IP-CIDR,192.173.64.0/18,🌍 国外媒体,no-resolve
  - IP-CIDR,198.38.96.0/19,🌍 国外媒体,no-resolve
  - IP-CIDR,198.45.48.0/20,🌍 国外媒体,no-resolve
+ - IP-CIDR,34.210.42.111/32,🌍 国外媒体,no-resolve
+ - IP-CIDR,52.89.124.203/32,🌍 国外媒体,no-resolve
+ - IP-CIDR,54.148.37.5/32,🌍 国外媒体,no-resolve
  - DOMAIN-SUFFIX,dmc.nico,🌍 国外媒体
  - DOMAIN-SUFFIX,nicovideo.jp,🌍 国外媒体
  - DOMAIN-SUFFIX,nimg.jp,🌍 国外媒体
- - DOMAIN-SUFFIX,socdm.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,nowe.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,nowestatic.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,cbsi.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,cbsaavideo.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,cbsivideo.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,paramountplus.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,pplusstatic.com,🌍 国外媒体
+ - DOMAIN,cbsi.live.ott.irdeto.com,🌍 国外媒体
+ - DOMAIN,cbsplaylistserver.aws.syncbak.com,🌍 国外媒体
+ - DOMAIN,cbsservice.aws.syncbak.com,🌍 国外媒体
+ - DOMAIN,link.theplatform.com,🌍 国外媒体
  - DOMAIN-SUFFIX,pbs.org,🌍 国外媒体
+ - DOMAIN-SUFFIX,peacocktv.com,🌍 国外媒体
  - DOMAIN-SUFFIX,phncdn.com,🌍 国外媒体
  - DOMAIN-SUFFIX,phprcdn.com,🌍 国外媒体
  - DOMAIN-SUFFIX,pornhub.com,🌍 国外媒体
  - DOMAIN-SUFFIX,pornhubpremium.com,🌍 国外媒体
  - DOMAIN-SUFFIX,skyking.com.tw,🌍 国外媒体
  - DOMAIN,hamifans.emome.net,🌍 国外媒体
- - DOMAIN-SUFFIX,twitch.tv,🌍 国外媒体
- - DOMAIN-SUFFIX,twitchcdn.net,🌍 国外媒体
- - DOMAIN-SUFFIX,ttvnw.net,🌍 国外媒体
- - DOMAIN-SUFFIX,jtvnw.net,🌍 国外媒体
+ - DOMAIN-SUFFIX,byteoversea.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,ibytedtos.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,muscdn.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,musical.ly,🌍 国外媒体
+ - DOMAIN-SUFFIX,tiktok.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,tik-tokapi.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,tiktokcdn.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,tiktokv.com,🌍 国外媒体
+ - DOMAIN-KEYWORD,-tiktokcdn-com,🌍 国外媒体
+ - DOMAIN-SUFFIX,tver.jp,🌍 国外媒体
+ - DOMAIN,edge.api.brightcove.com,🌍 国外媒体
  - DOMAIN-SUFFIX,viu.com,🌍 国外媒体
  - DOMAIN-SUFFIX,viu.tv,🌍 国外媒体
  - DOMAIN,api.viu.now.com,🌍 国外媒体
  - DOMAIN,d1k2us671qcoau.cloudfront.net,🌍 国外媒体
  - DOMAIN,d2anahhhmp1ffz.cloudfront.net,🌍 国外媒体
  - DOMAIN,dfp6rglgjqszk.cloudfront.net,🌍 国外媒体
+ - DOMAIN-SUFFIX,wetv.vip,🌍 国外媒体
+ - DOMAIN-SUFFIX,wetvinfo.com,🌍 国外媒体
+ - IP-CIDR,150.109.28.51/32,🌍 国外媒体,no-resolve
  - DOMAIN-SUFFIX,googlevideo.com,🌍 国外媒体
  - DOMAIN-SUFFIX,youtube.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,ytimg.com,🌍 国外媒体
  - DOMAIN,youtubei.googleapis.com,🌍 国外媒体
+ - DOMAIN,yt3.ggpht.com,🌍 国外媒体
  - DOMAIN-SUFFIX,acg.tv,🌏 国内媒体
  - DOMAIN-SUFFIX,acgvideo.com,🌏 国内媒体
  - DOMAIN-SUFFIX,b23.tv,🌏 国内媒体
@@ -10784,11 +10042,20 @@ rules:
  - DOMAIN-SUFFIX,hdslb.com,🌏 国内媒体
  - DOMAIN-SUFFIX,im9.com,🌏 国内媒体
  - DOMAIN-SUFFIX,smtcdns.net,🌏 国内媒体
- - DOMAIN-KEYWORD,qiyi,🌏 国内媒体
- - DOMAIN-SUFFIX,qy.net,🌏 国内媒体
- - IP-CIDR,101.227.0.0/16,🌏 国内媒体,no-resolve
- - IP-CIDR,101.224.0.0/13,🌏 国内媒体,no-resolve
- - IP-CIDR,119.176.0.0/12,🌏 国内媒体,no-resolve
+ - DOMAIN,intel-cache.m.iqiyi.com,🌏 国内媒体
+ - DOMAIN,intel-cache.video.iqiyi.com,🌏 国内媒体
+ - DOMAIN,intl-rcd.iqiyi.com,🌏 国内媒体
+ - DOMAIN,intl-subscription.iqiyi.com,🌏 国内媒体
+ - DOMAIN-SUFFIX,inter.iqiyi.com,🌏 国内媒体
+ - DOMAIN-SUFFIX,inter.ptqy.gitv.tv,🌏 国内媒体
+ - DOMAIN-SUFFIX,intl.iqiyi.com,🌏 国内媒体
+ - DOMAIN-SUFFIX,iq.com,🌏 国内媒体
+ - IP-CIDR,103.44.56.0/22,🌏 国内媒体,no-resolve
+ - IP-CIDR,118.26.120.0/24,🌏 国内媒体,no-resolve
+ - IP-CIDR,118.26.32.0/23,🌏 国内媒体,no-resolve
+ - IP-CIDR,223.119.62.225/28,🌏 国内媒体,no-resolve
+ - IP-CIDR,23.40.241.251/32,🌏 国内媒体,no-resolve
+ - IP-CIDR,23.40.242.10/32,🌏 国内媒体,no-resolve
  - DOMAIN-SUFFIX,api.mob.app.letv.com,🌏 国内媒体
  - DOMAIN-SUFFIX,v.smtcdns.com,🌏 国内媒体
  - DOMAIN-SUFFIX,vv.video.qq.com,🌏 国内媒体
@@ -10803,30 +10070,42 @@ rules:
  - IP-CIDR,91.108.8.0/22,📲 电报信息,no-resolve
  - IP-CIDR,91.108.12.0/22,📲 电报信息,no-resolve
  - IP-CIDR,91.108.16.0/22,📲 电报信息,no-resolve
+ - IP-CIDR,91.108.20.0/22,📲 电报信息,no-resolve
  - IP-CIDR,91.108.56.0/22,📲 电报信息,no-resolve
+ - IP-CIDR,95.161.64.0/20,📲 电报信息,no-resolve
  - IP-CIDR,149.154.160.0/20,📲 电报信息,no-resolve
  - IP-CIDR6,2001:b28:f23d::/48,📲 电报信息,no-resolve
  - IP-CIDR6,2001:b28:f23f::/48,📲 电报信息,no-resolve
  - IP-CIDR6,2001:67c:4e8::/48,📲 电报信息,no-resolve
- - DOMAIN-SUFFIX,ampproject.org,🔰 节点选择
- - DOMAIN-SUFFIX,appspot.com,🔰 节点选择
- - DOMAIN-SUFFIX,blogger.com,🔰 节点选择
- - DOMAIN-SUFFIX,getoutline.org,🔰 节点选择
- - DOMAIN-SUFFIX,gvt0.com,🔰 节点选择
- - DOMAIN-SUFFIX,gvt1.com,🔰 节点选择
- - DOMAIN-SUFFIX,gvt3.com,🔰 节点选择
- - DOMAIN-SUFFIX,xn--ngstr-lra8j.com,🔰 节点选择
- - DOMAIN-KEYWORD,google,🔰 节点选择
- - DOMAIN-KEYWORD,blogspot,🔰 节点选择
- - DOMAIN-SUFFIX,hdsky.me,🔰 节点选择
- - DOMAIN-SUFFIX,blackboard.com,🔰 节点选择
- - DOMAIN-SUFFIX,gvt3.com,🔰 节点选择
- - DOMAIN-SUFFIX,hdhome.org,🔰 节点选择
- - DOMAIN-SUFFIX,bb-gbc.blackboard.com,🔰 节点选择
- - DOMAIN-SUFFIX,onedrive.live.com,🔰 节点选择
- - DOMAIN-SUFFIX,xboxlive.com,🔰 节点选择
- - DOMAIN-SUFFIX,live.com,🔰 节点选择
+ - DOMAIN-SUFFIX,amazon.co.jp,🔰 节点选择
+ - DOMAIN,d3c33hcgiwev3.cloudfront.net,🔰 节点选择
+ - DOMAIN,payments-jp.amazon.com,🔰 节点选择
+ - DOMAIN,s3-ap-northeast-1.amazonaws.com,🔰 节点选择
+ - DOMAIN,s3-ap-southeast-2.amazonaws.com,🔰 节点选择
+ - DOMAIN,a248.e.akamai.net,🔰 节点选择
+ - DOMAIN,a771.dscq.akamai.net,🔰 节点选择
+ - DOMAIN,testflight.apple.com,🔰 节点选择
+ - DOMAIN-SUFFIX,aex.com,🔰 节点选择
+ - DOMAIN-SUFFIX,bibox.com,🔰 节点选择
+ - DOMAIN-SUFFIX,binance.cc,🔰 节点选择
+ - DOMAIN-SUFFIX,binance.com,🔰 节点选择
+ - DOMAIN-SUFFIX,bitcointalk.org,🔰 节点选择
+ - DOMAIN-SUFFIX,bitfinex.com,🔰 节点选择
+ - DOMAIN-SUFFIX,bitmex.com,🔰 节点选择
+ - DOMAIN-SUFFIX,gate.io,🔰 节点选择
+ - DOMAIN-SUFFIX,huobi.com,🔰 节点选择
+ - DOMAIN-SUFFIX,okex.com,🔰 节点选择
+ - DOMAIN-SUFFIX,uniswap.org,🔰 节点选择
+ - DOMAIN-SUFFIX,zb.com,🔰 节点选择
+ - DOMAIN-SUFFIX,discord.com,🔰 节点选择
+ - DOMAIN-SUFFIX,discordapp.com,🔰 节点选择
+ - DOMAIN-SUFFIX,discordapp.net,🔰 节点选择
+ - DOMAIN-SUFFIX,dropbox.com,🔰 节点选择
+ - DOMAIN-SUFFIX,dropboxapi.com,🔰 节点选择
+ - DOMAIN-SUFFIX,dropboxusercontent.com,🔰 节点选择
  - DOMAIN-SUFFIX,cdninstagram.com,🔰 节点选择
+ - DOMAIN-SUFFIX,facebook.com,🔰 节点选择
+ - DOMAIN-SUFFIX,facebook.net,🔰 节点选择
  - DOMAIN-SUFFIX,fb.com,🔰 节点选择
  - DOMAIN-SUFFIX,fb.me,🔰 节点选择
  - DOMAIN-SUFFIX,fbaddins.com,🔰 节点选择
@@ -10841,39 +10120,18 @@ rules:
  - DOMAIN-SUFFIX,rocksdb.org,🔰 节点选择
  - DOMAIN-SUFFIX,whatsapp.com,🔰 节点选择
  - DOMAIN-SUFFIX,whatsapp.net,🔰 节点选择
- - DOMAIN-KEYWORD,facebook,🔰 节点选择
- - IP-CIDR,3.123.36.126/32,🔰 节点选择,no-resolve
- - IP-CIDR,35.157.215.84/32,🔰 节点选择,no-resolve
- - IP-CIDR,35.157.217.255/32,🔰 节点选择,no-resolve
- - IP-CIDR,52.58.209.134/32,🔰 节点选择,no-resolve
- - IP-CIDR,54.93.124.31/32,🔰 节点选择,no-resolve
- - IP-CIDR,54.162.243.80/32,🔰 节点选择,no-resolve
- - IP-CIDR,54.173.34.141/32,🔰 节点选择,no-resolve
- - IP-CIDR,54.235.23.242/32,🔰 节点选择,no-resolve
- - IP-CIDR,169.45.248.118/32,🔰 节点选择,no-resolve
- - DOMAIN-SUFFIX,pscp.tv,🔰 节点选择
- - DOMAIN-SUFFIX,periscope.tv,🔰 节点选择
- - DOMAIN-SUFFIX,t.co,🔰 节点选择
- - DOMAIN-SUFFIX,twimg.co,🔰 节点选择
- - DOMAIN-SUFFIX,twimg.com,🔰 节点选择
- - DOMAIN-SUFFIX,twitpic.com,🔰 节点选择
- - DOMAIN-SUFFIX,vine.co,🔰 节点选择
- - DOMAIN-KEYWORD,twitter,🔰 节点选择
- - DOMAIN-SUFFIX,t.me,🔰 节点选择
- - DOMAIN-SUFFIX,tdesktop.com,🔰 节点选择
- - DOMAIN-SUFFIX,telegra.ph,🔰 节点选择
- - DOMAIN-SUFFIX,telegram.me,🔰 节点选择
- - DOMAIN-SUFFIX,telegram.org,🔰 节点选择
- - DOMAIN-SUFFIX,telesco.pe,🔰 节点选择
- - IP-CIDR,91.108.4.0/22,🔰 节点选择,no-resolve
- - IP-CIDR,91.108.8.0/22,🔰 节点选择,no-resolve
- - IP-CIDR,91.108.12.0/22,🔰 节点选择,no-resolve
- - IP-CIDR,91.108.16.0/22,🔰 节点选择,no-resolve
- - IP-CIDR,91.108.56.0/22,🔰 节点选择,no-resolve
- - IP-CIDR,149.154.160.0/20,🔰 节点选择,no-resolve
- - IP-CIDR6,2001:b28:f23d::/48,🔰 节点选择,no-resolve
- - IP-CIDR6,2001:b28:f23f::/48,🔰 节点选择,no-resolve
- - IP-CIDR6,2001:67c:4e8::/48,🔰 节点选择,no-resolve
+ - DOMAIN-SUFFIX,github.com,🔰 节点选择
+ - DOMAIN-SUFFIX,github.io,🔰 节点选择
+ - DOMAIN-SUFFIX,githubusercontent.com,🔰 节点选择
+ - DOMAIN-SUFFIX,appspot.com,🔰 节点选择
+ - DOMAIN-SUFFIX,blogger.com,🔰 节点选择
+ - DOMAIN-SUFFIX,getoutline.org,🔰 节点选择
+ - DOMAIN-SUFFIX,gvt0.com,🔰 节点选择
+ - DOMAIN-SUFFIX,gvt3.com,🔰 节点选择
+ - DOMAIN-SUFFIX,xn--ngstr-lra8j.com,🔰 节点选择
+ - DOMAIN-SUFFIX,ytimg.com,🔰 节点选择
+ - DOMAIN-KEYWORD,google,🔰 节点选择
+ - DOMAIN-KEYWORD,.blogspot.,🔰 节点选择
  - DOMAIN-SUFFIX,line.me,🔰 节点选择
  - DOMAIN-SUFFIX,line-apps.com,🔰 节点选择
  - DOMAIN-SUFFIX,line-scdn.net,🔰 节点选择
@@ -10882,16 +10140,71 @@ rules:
  - IP-CIDR,125.209.208.0/20,🔰 节点选择,no-resolve
  - IP-CIDR,147.92.128.0/17,🔰 节点选择,no-resolve
  - IP-CIDR,203.104.144.0/21,🔰 节点选择,no-resolve
+ - DOMAIN-SUFFIX,aka.ms,🔰 节点选择
+ - DOMAIN-SUFFIX,onedrive.live.com,🔰 节点选择
+ - DOMAIN-SUFFIX,streaming.mediaservices.windows.net,🔰 节点选择
+ - DOMAIN,assets1.xboxlive.com,🔰 节点选择
+ - DOMAIN,assets2.xboxlive.com,🔰 节点选择
+ - DOMAIN,az416426.vo.msecnd.net,🔰 节点选择
+ - DOMAIN,az668014.vo.msecnd.net,🔰 节点选择
+ - DOMAIN-SUFFIX,nyt.com,🔰 节点选择
+ - DOMAIN-SUFFIX,nytchina.com,🔰 节点选择
+ - DOMAIN-SUFFIX,nytcn.me,🔰 节点选择
+ - DOMAIN-SUFFIX,nytco.com,🔰 节点选择
+ - DOMAIN-SUFFIX,nytimes.com,🔰 节点选择
+ - DOMAIN-SUFFIX,nytimg.com,🔰 节点选择
+ - DOMAIN-SUFFIX,nytlog.com,🔰 节点选择
+ - DOMAIN-SUFFIX,nytstyle.com,🔰 节点选择
+ - DOMAIN-SUFFIX,pinterest.at,🔰 节点选择
+ - DOMAIN-SUFFIX,pinterest.ca,🔰 节点选择
+ - DOMAIN-SUFFIX,pinterest.co.uk,🔰 节点选择
+ - DOMAIN-SUFFIX,pinterest.com,🔰 节点选择
+ - DOMAIN-SUFFIX,pinterest.de,🔰 节点选择
+ - DOMAIN-SUFFIX,pinterest.fr,🔰 节点选择
+ - DOMAIN-SUFFIX,pinterest.jp,🔰 节点选择
+ - DOMAIN-SUFFIX,pinterest.se,🔰 节点选择
+ - DOMAIN-SUFFIX,pixiv.net,🔰 节点选择
+ - DOMAIN-SUFFIX,pixiv.org,🔰 节点选择
+ - DOMAIN-SUFFIX,pximg.net,🔰 节点选择
+ - DOMAIN-SUFFIX,redd.it,🔰 节点选择
+ - DOMAIN-SUFFIX,reddit.com,🔰 节点选择
+ - DOMAIN-SUFFIX,redditmedia.com,🔰 节点选择
+ - DOMAIN-SUFFIX,telegra.ph,🔰 节点选择
+ - DOMAIN-SUFFIX,telegram.org,🔰 节点选择
+ - IP-CIDR,91.108.4.0/22,🔰 节点选择,no-resolve
+ - IP-CIDR,91.108.8.0/22,🔰 节点选择,no-resolve
+ - IP-CIDR,91.108.12.0/22,🔰 节点选择,no-resolve
+ - IP-CIDR,91.108.16.0/22,🔰 节点选择,no-resolve
+ - IP-CIDR,91.108.20.0/22,🔰 节点选择,no-resolve
+ - IP-CIDR,91.108.56.0/22,🔰 节点选择,no-resolve
+ - IP-CIDR,95.161.64.0/20,🔰 节点选择,no-resolve
+ - IP-CIDR,149.154.160.0/20,🔰 节点选择,no-resolve
+ - IP-CIDR6,2001:b28:f23d::/48,🔰 节点选择,no-resolve
+ - IP-CIDR6,2001:b28:f23f::/48,🔰 节点选择,no-resolve
+ - IP-CIDR6,2001:67c:4e8::/48,🔰 节点选择,no-resolve
+ - DOMAIN-SUFFIX,pscp.tv,🔰 节点选择
+ - DOMAIN-SUFFIX,periscope.tv,🔰 节点选择
+ - DOMAIN-SUFFIX,t.co,🔰 节点选择
+ - DOMAIN-SUFFIX,twimg.co,🔰 节点选择
+ - DOMAIN-SUFFIX,twimg.com,🔰 节点选择
+ - DOMAIN-SUFFIX,twitpic.com,🔰 节点选择
+ - DOMAIN-SUFFIX,twitter.com,🔰 节点选择
+ - DOMAIN-SUFFIX,vine.co,🔰 节点选择
+ - DOMAIN-SUFFIX,wikileaks.org,🔰 节点选择
+ - DOMAIN-SUFFIX,wikimapia.org,🔰 节点选择
+ - DOMAIN-SUFFIX,wikimedia.org,🔰 节点选择
+ - DOMAIN-SUFFIX,wikinews.org,🔰 节点选择
+ - DOMAIN-SUFFIX,wikipedia.org,🔰 节点选择
+ - DOMAIN-SUFFIX,wikiquote.org,🔰 节点选择
  - DOMAIN-SUFFIX,4shared.com,🔰 节点选择
- - DOMAIN-SUFFIX,520cc.cc,🔰 节点选择
- - DOMAIN-SUFFIX,881903.com,🔰 节点选择
  - DOMAIN-SUFFIX,9cache.com,🔰 节点选择
  - DOMAIN-SUFFIX,9gag.com,🔰 节点选择
  - DOMAIN-SUFFIX,abc.com,🔰 节点选择
  - DOMAIN-SUFFIX,abc.net.au,🔰 节点选择
  - DOMAIN-SUFFIX,abebooks.com,🔰 节点选择
- - DOMAIN-SUFFIX,amazon.co.jp,🔰 节点选择
+ - DOMAIN-SUFFIX,ao3.org,🔰 节点选择
  - DOMAIN-SUFFIX,apigee.com,🔰 节点选择
+ - DOMAIN-SUFFIX,apkcombo.com,🔰 节点选择
  - DOMAIN-SUFFIX,apk-dl.com,🔰 节点选择
  - DOMAIN-SUFFIX,apkfind.com,🔰 节点选择
  - DOMAIN-SUFFIX,apkmirror.com,🔰 节点选择
@@ -10900,6 +10213,8 @@ rules:
  - DOMAIN-SUFFIX,aptoide.com,🔰 节点选择
  - DOMAIN-SUFFIX,archive.is,🔰 节点选择
  - DOMAIN-SUFFIX,archive.org,🔰 节点选择
+ - DOMAIN-SUFFIX,archiveofourown.com,🔰 节点选择
+ - DOMAIN-SUFFIX,archiveofourown.org,🔰 节点选择
  - DOMAIN-SUFFIX,arte.tv,🔰 节点选择
  - DOMAIN-SUFFIX,artstation.com,🔰 节点选择
  - DOMAIN-SUFFIX,arukas.io,🔰 节点选择
@@ -10907,16 +10222,13 @@ rules:
  - DOMAIN-SUFFIX,avg.com,🔰 节点选择
  - DOMAIN-SUFFIX,avgle.com,🔰 节点选择
  - DOMAIN-SUFFIX,badoo.com,🔰 节点选择
+ - DOMAIN-SUFFIX,bandcamp.com,🔰 节点选择
  - DOMAIN-SUFFIX,bandwagonhost.com,🔰 节点选择
+ - DOMAIN-SUFFIX,bangkokpost.com,🔰 节点选择
  - DOMAIN-SUFFIX,bbc.com,🔰 节点选择
  - DOMAIN-SUFFIX,behance.net,🔰 节点选择
- - DOMAIN-SUFFIX,bibox.com,🔰 节点选择
  - DOMAIN-SUFFIX,biggo.com.tw,🔰 节点选择
- - DOMAIN-SUFFIX,binance.com,🔰 节点选择
- - DOMAIN-SUFFIX,bitcointalk.org,🔰 节点选择
- - DOMAIN-SUFFIX,bitfinex.com,🔰 节点选择
- - DOMAIN-SUFFIX,bitmex.com,🔰 节点选择
- - DOMAIN-SUFFIX,bit-z.com,🔰 节点选择
+ - DOMAIN-SUFFIX,bit.ly,🔰 节点选择
  - DOMAIN-SUFFIX,bloglovin.com,🔰 节点选择
  - DOMAIN-SUFFIX,bloomberg.cn,🔰 节点选择
  - DOMAIN-SUFFIX,bloomberg.com,🔰 节点选择
@@ -10926,7 +10238,9 @@ rules:
  - DOMAIN-SUFFIX,books.com.tw,🔰 节点选择
  - DOMAIN-SUFFIX,boslife.net,🔰 节点选择
  - DOMAIN-SUFFIX,box.com,🔰 节点选择
+ - DOMAIN-SUFFIX,brave.com,🔰 节点选择
  - DOMAIN-SUFFIX,businessinsider.com,🔰 节点选择
+ - DOMAIN-SUFFIX,buzzfeed.com,🔰 节点选择
  - DOMAIN-SUFFIX,bwh1.net,🔰 节点选择
  - DOMAIN-SUFFIX,castbox.fm,🔰 节点选择
  - DOMAIN-SUFFIX,cbc.ca,🔰 节点选择
@@ -10935,6 +10249,8 @@ rules:
  - DOMAIN-SUFFIX,channelnewsasia.com,🔰 节点选择
  - DOMAIN-SUFFIX,ck101.com,🔰 节点选择
  - DOMAIN-SUFFIX,clarionproject.org,🔰 节点选择
+ - DOMAIN-SUFFIX,cloudcone.com,🔰 节点选择
+ - DOMAIN-SUFFIX,clubhouseapi.com,🔰 节点选择
  - DOMAIN-SUFFIX,clyp.it,🔰 节点选择
  - DOMAIN-SUFFIX,cna.com.tw,🔰 节点选择
  - DOMAIN-SUFFIX,comparitech.com,🔰 节点选择
@@ -10943,31 +10259,32 @@ rules:
  - DOMAIN-SUFFIX,cts.com.tw,🔰 节点选择
  - DOMAIN-SUFFIX,cw.com.tw,🔰 节点选择
  - DOMAIN-SUFFIX,cyberctm.com,🔰 节点选择
+ - DOMAIN-SUFFIX,cyclingnews.com,🔰 节点选择
  - DOMAIN-SUFFIX,dailymotion.com,🔰 节点选择
  - DOMAIN-SUFFIX,dailyview.tw,🔰 节点选择
+ - DOMAIN-SUFFIX,dandanzan.com,🔰 节点选择
  - DOMAIN-SUFFIX,daum.net,🔰 节点选择
  - DOMAIN-SUFFIX,daumcdn.net,🔰 节点选择
  - DOMAIN-SUFFIX,dcard.tw,🔰 节点选择
+ - DOMAIN-SUFFIX,deadline.com,🔰 节点选择
  - DOMAIN-SUFFIX,deepdiscount.com,🔰 节点选择
  - DOMAIN-SUFFIX,depositphotos.com,🔰 节点选择
  - DOMAIN-SUFFIX,deviantart.com,🔰 节点选择
  - DOMAIN-SUFFIX,disconnect.me,🔰 节点选择
- - DOMAIN-SUFFIX,discordapp.com,🔰 节点选择
- - DOMAIN-SUFFIX,discordapp.net,🔰 节点选择
  - DOMAIN-SUFFIX,disqus.com,🔰 节点选择
  - DOMAIN-SUFFIX,dlercloud.com,🔰 节点选择
+ - DOMAIN-SUFFIX,dmhy.org,🔰 节点选择
  - DOMAIN-SUFFIX,dns2go.com,🔰 节点选择
  - DOMAIN-SUFFIX,dowjones.com,🔰 节点选择
- - DOMAIN-SUFFIX,dropbox.com,🔰 节点选择
- - DOMAIN-SUFFIX,dropboxusercontent.com,🔰 节点选择
  - DOMAIN-SUFFIX,duckduckgo.com,🔰 节点选择
+ - DOMAIN-SUFFIX,duyaoss.com,🔰 节点选择
  - DOMAIN-SUFFIX,dw.com,🔰 节点选择
  - DOMAIN-SUFFIX,dynu.com,🔰 节点选择
  - DOMAIN-SUFFIX,earthcam.com,🔰 节点选择
  - DOMAIN-SUFFIX,ebookservice.tw,🔰 节点选择
  - DOMAIN-SUFFIX,economist.com,🔰 节点选择
  - DOMAIN-SUFFIX,edgecastcdn.net,🔰 节点选择
- - DOMAIN-SUFFIX,edu,🔰 节点选择
+ - DOMAIN-SUFFIX,edx-cdn.org,🔰 节点选择
  - DOMAIN-SUFFIX,elpais.com,🔰 节点选择
  - DOMAIN-SUFFIX,enanyang.my,🔰 节点选择
  - DOMAIN-SUFFIX,encyclopedia.com,🔰 节点选择
@@ -10975,28 +10292,31 @@ rules:
  - DOMAIN-SUFFIX,etherscan.io,🔰 节点选择
  - DOMAIN-SUFFIX,euronews.com,🔰 节点选择
  - DOMAIN-SUFFIX,evozi.com,🔰 节点选择
+ - DOMAIN-SUFFIX,exblog.jp,🔰 节点选择
+ - DOMAIN-SUFFIX,feeder.co,🔰 节点选择
  - DOMAIN-SUFFIX,feedly.com,🔰 节点选择
+ - DOMAIN-SUFFIX,feedx.net,🔰 节点选择
  - DOMAIN-SUFFIX,firech.at,🔰 节点选择
  - DOMAIN-SUFFIX,flickr.com,🔰 节点选择
+ - DOMAIN-SUFFIX,flipboard.com,🔰 节点选择
  - DOMAIN-SUFFIX,flitto.com,🔰 节点选择
  - DOMAIN-SUFFIX,foreignpolicy.com,🔰 节点选择
- - DOMAIN-SUFFIX,freebrowser.org,🔰 节点选择
- - DOMAIN-SUFFIX,freewechat.com,🔰 节点选择
- - DOMAIN-SUFFIX,freeweibo.com,🔰 节点选择
+ - DOMAIN-SUFFIX,fortawesome.com,🔰 节点选择
+ - DOMAIN-SUFFIX,freetls.fastly.net,🔰 节点选择
  - DOMAIN-SUFFIX,friday.tw,🔰 节点选择
+ - DOMAIN-SUFFIX,ft.com,🔰 节点选择
  - DOMAIN-SUFFIX,ftchinese.com,🔰 节点选择
  - DOMAIN-SUFFIX,ftimg.net,🔰 节点选择
- - DOMAIN-SUFFIX,gate.io,🔰 节点选择
+ - DOMAIN-SUFFIX,genius.com,🔰 节点选择
  - DOMAIN-SUFFIX,getlantern.org,🔰 节点选择
  - DOMAIN-SUFFIX,getsync.com,🔰 节点选择
  - DOMAIN-SUFFIX,globalvoices.org,🔰 节点选择
  - DOMAIN-SUFFIX,goo.ne.jp,🔰 节点选择
  - DOMAIN-SUFFIX,goodreads.com,🔰 节点选择
- - DOMAIN-SUFFIX,gov,🔰 节点选择
  - DOMAIN-SUFFIX,gov.tw,🔰 节点选择
+ - DOMAIN-SUFFIX,gravatar.com,🔰 节点选择
  - DOMAIN-SUFFIX,greatfire.org,🔰 节点选择
  - DOMAIN-SUFFIX,gumroad.com,🔰 节点选择
- - DOMAIN-SUFFIX,hbg.com,🔰 节点选择
  - DOMAIN-SUFFIX,heroku.com,🔰 节点选择
  - DOMAIN-SUFFIX,hightail.com,🔰 节点选择
  - DOMAIN-SUFFIX,hk01.com,🔰 节点选择
@@ -11004,16 +10324,18 @@ rules:
  - DOMAIN-SUFFIX,hkbookcity.com,🔰 节点选择
  - DOMAIN-SUFFIX,hkej.com,🔰 节点选择
  - DOMAIN-SUFFIX,hket.com,🔰 节点选择
- - DOMAIN-SUFFIX,hkgolden.com,🔰 节点选择
  - DOMAIN-SUFFIX,hootsuite.com,🔰 节点选择
  - DOMAIN-SUFFIX,hudson.org,🔰 节点选择
+ - DOMAIN-SUFFIX,huffpost.com,🔰 节点选择
  - DOMAIN-SUFFIX,hyread.com.tw,🔰 节点选择
  - DOMAIN-SUFFIX,ibtimes.com,🔰 节点选择
  - DOMAIN-SUFFIX,i-cable.com,🔰 节点选择
  - DOMAIN-SUFFIX,icij.org,🔰 节点选择
  - DOMAIN-SUFFIX,icoco.com,🔰 节点选择
  - DOMAIN-SUFFIX,imgur.com,🔰 节点选择
+ - DOMAIN-SUFFIX,independent.co.uk,🔰 节点选择
  - DOMAIN-SUFFIX,initiummall.com,🔰 节点选择
+ - DOMAIN-SUFFIX,inoreader.com,🔰 节点选择
  - DOMAIN-SUFFIX,insecam.org,🔰 节点选择
  - DOMAIN-SUFFIX,ipfs.io,🔰 节点选择
  - DOMAIN-SUFFIX,issuu.com,🔰 节点选择
@@ -11022,20 +10344,26 @@ rules:
  - DOMAIN-SUFFIX,jiji.com,🔰 节点选择
  - DOMAIN-SUFFIX,jinx.com,🔰 节点选择
  - DOMAIN-SUFFIX,jkforum.net,🔰 节点选择
+ - DOMAIN-SUFFIX,joinclubhouse.com,🔰 节点选择
  - DOMAIN-SUFFIX,joinmastodon.org,🔰 节点选择
  - DOMAIN-SUFFIX,justmysocks.net,🔰 节点选择
  - DOMAIN-SUFFIX,justpaste.it,🔰 节点选择
+ - DOMAIN-SUFFIX,kadokawa.co.jp,🔰 节点选择
  - DOMAIN-SUFFIX,kakao.com,🔰 节点选择
  - DOMAIN-SUFFIX,kakaocorp.com,🔰 节点选择
  - DOMAIN-SUFFIX,kik.com,🔰 节点选择
+ - DOMAIN-SUFFIX,kingkong.com.tw,🔰 节点选择
+ - DOMAIN-SUFFIX,knowyourmeme.com,🔰 节点选择
  - DOMAIN-SUFFIX,kobo.com,🔰 节点选择
  - DOMAIN-SUFFIX,kobobooks.com,🔰 节点选择
  - DOMAIN-SUFFIX,kodingen.com,🔰 节点选择
  - DOMAIN-SUFFIX,lemonde.fr,🔰 节点选择
  - DOMAIN-SUFFIX,lepoint.fr,🔰 节点选择
  - DOMAIN-SUFFIX,lihkg.com,🔰 节点选择
+ - DOMAIN-SUFFIX,limbopro.xyz,🔰 节点选择
  - DOMAIN-SUFFIX,listennotes.com,🔰 节点选择
  - DOMAIN-SUFFIX,livestream.com,🔰 节点选择
+ - DOMAIN-SUFFIX,logimg.jp,🔰 节点选择
  - DOMAIN-SUFFIX,logmein.com,🔰 节点选择
  - DOMAIN-SUFFIX,mail.ru,🔰 节点选择
  - DOMAIN-SUFFIX,mailchimp.com,🔰 节点选择
@@ -11044,48 +10372,46 @@ rules:
  - DOMAIN-SUFFIX,maying.co,🔰 节点选择
  - DOMAIN-SUFFIX,medium.com,🔰 节点选择
  - DOMAIN-SUFFIX,mega.nz,🔰 节点选择
- - DOMAIN-SUFFIX,mil,🔰 节点选择
+ - DOMAIN-SUFFIX,mergersandinquisitions.com,🔰 节点选择
  - DOMAIN-SUFFIX,mingpao.com,🔰 节点选择
+ - DOMAIN-SUFFIX,mixi.jp,🔰 节点选择
+ - DOMAIN-SUFFIX,mixlr.com,🔰 节点选择
  - DOMAIN-SUFFIX,mobile01.com,🔰 节点选择
+ - DOMAIN-SUFFIX,mubi.com,🔰 节点选择
  - DOMAIN-SUFFIX,myspace.com,🔰 节点选择
  - DOMAIN-SUFFIX,myspacecdn.com,🔰 节点选择
  - DOMAIN-SUFFIX,nanyang.com,🔰 节点选择
+ - DOMAIN-SUFFIX,nationalinterest.org,🔰 节点选择
  - DOMAIN-SUFFIX,naver.com,🔰 节点选择
+ - DOMAIN-SUFFIX,nbcnews.com,🔰 节点选择
+ - DOMAIN-SUFFIX,ndr.de,🔰 节点选择
  - DOMAIN-SUFFIX,neowin.net,🔰 节点选择
  - DOMAIN-SUFFIX,newstapa.org,🔰 节点选择
  - DOMAIN-SUFFIX,nexitally.com,🔰 节点选择
  - DOMAIN-SUFFIX,nhk.or.jp,🔰 节点选择
- - DOMAIN-SUFFIX,nicovideo.jp,🔰 节点选择
  - DOMAIN-SUFFIX,nii.ac.jp,🔰 节点选择
  - DOMAIN-SUFFIX,nikkei.com,🔰 节点选择
+ - DOMAIN-SUFFIX,nitter.net,🔰 节点选择
  - DOMAIN-SUFFIX,nofile.io,🔰 节点选择
+ - DOMAIN-SUFFIX,notion.so,🔰 节点选择
  - DOMAIN-SUFFIX,now.com,🔰 节点选择
  - DOMAIN-SUFFIX,nrk.no,🔰 节点选择
+ - DOMAIN-SUFFIX,nuget.org,🔰 节点选择
  - DOMAIN-SUFFIX,nyaa.si,🔰 节点选择
- - DOMAIN-SUFFIX,nyt.com,🔰 节点选择
- - DOMAIN-SUFFIX,nytchina.com,🔰 节点选择
- - DOMAIN-SUFFIX,nytcn.me,🔰 节点选择
- - DOMAIN-SUFFIX,nytco.com,🔰 节点选择
- - DOMAIN-SUFFIX,nytimes.com,🔰 节点选择
- - DOMAIN-SUFFIX,nytimg.com,🔰 节点选择
- - DOMAIN-SUFFIX,nytlog.com,🔰 节点选择
- - DOMAIN-SUFFIX,nytstyle.com,🔰 节点选择
  - DOMAIN-SUFFIX,ok.ru,🔰 节点选择
- - DOMAIN-SUFFIX,okex.com,🔰 节点选择
  - DOMAIN-SUFFIX,on.cc,🔰 节点选择
  - DOMAIN-SUFFIX,orientaldaily.com.my,🔰 节点选择
  - DOMAIN-SUFFIX,overcast.fm,🔰 节点选择
  - DOMAIN-SUFFIX,paltalk.com,🔰 节点选择
- - DOMAIN-SUFFIX,pao-pao.net,🔰 节点选择
  - DOMAIN-SUFFIX,parsevideo.com,🔰 节点选择
  - DOMAIN-SUFFIX,pawoo.net,🔰 节点选择
  - DOMAIN-SUFFIX,pbxes.com,🔰 节点选择
  - DOMAIN-SUFFIX,pcdvd.com.tw,🔰 节点选择
  - DOMAIN-SUFFIX,pchome.com.tw,🔰 节点选择
  - DOMAIN-SUFFIX,pcloud.com,🔰 节点选择
+ - DOMAIN-SUFFIX,peing.net,🔰 节点选择
  - DOMAIN-SUFFIX,picacomic.com,🔰 节点选择
  - DOMAIN-SUFFIX,pinimg.com,🔰 节点选择
- - DOMAIN-SUFFIX,pixiv.net,🔰 节点选择
  - DOMAIN-SUFFIX,player.fm,🔰 节点选择
  - DOMAIN-SUFFIX,plurk.com,🔰 节点选择
  - DOMAIN-SUFFIX,po18.tw,🔰 节点选择
@@ -11100,32 +10426,39 @@ rules:
  - DOMAIN-SUFFIX,pureapk.com,🔰 节点选择
  - DOMAIN-SUFFIX,quora.com,🔰 节点选择
  - DOMAIN-SUFFIX,quoracdn.net,🔰 节点选择
+ - DOMAIN-SUFFIX,qz.com,🔰 节点选择
+ - DOMAIN-SUFFIX,radio.garden,🔰 节点选择
  - DOMAIN-SUFFIX,rakuten.co.jp,🔰 节点选择
+ - DOMAIN-SUFFIX,rarbgprx.org,🔰 节点选择
+ - DOMAIN-SUFFIX,reabble.com,🔰 节点选择
  - DOMAIN-SUFFIX,readingtimes.com.tw,🔰 节点选择
  - DOMAIN-SUFFIX,readmoo.com,🔰 节点选择
  - DOMAIN-SUFFIX,redbubble.com,🔰 节点选择
- - DOMAIN-SUFFIX,reddit.com,🔰 节点选择
- - DOMAIN-SUFFIX,redditmedia.com,🔰 节点选择
- - DOMAIN-SUFFIX,redditstatic.com,🔰 节点选择
  - DOMAIN-SUFFIX,resilio.com,🔰 节点选择
  - DOMAIN-SUFFIX,reuters.com,🔰 节点选择
  - DOMAIN-SUFFIX,reutersmedia.net,🔰 节点选择
  - DOMAIN-SUFFIX,rfi.fr,🔰 节点选择
- - DOMAIN-SUFFIX,rixcloud.com,🔰 节点选择
  - DOMAIN-SUFFIX,roadshow.hk,🔰 节点选择
+ - DOMAIN-SUFFIX,rsshub.app,🔰 节点选择
  - DOMAIN-SUFFIX,scmp.com,🔰 节点选择
  - DOMAIN-SUFFIX,scribd.com,🔰 节点选择
  - DOMAIN-SUFFIX,seatguru.com,🔰 节点选择
  - DOMAIN-SUFFIX,shadowsocks.org,🔰 节点选择
+ - DOMAIN-SUFFIX,shindanmaker.com,🔰 节点选择
  - DOMAIN-SUFFIX,shopee.tw,🔰 节点选择
+ - DOMAIN-SUFFIX,signal.org,🔰 节点选择
+ - DOMAIN-SUFFIX,sina.com.hk,🔰 节点选择
  - DOMAIN-SUFFIX,slideshare.net,🔰 节点选择
  - DOMAIN-SUFFIX,softfamous.com,🔰 节点选择
- - DOMAIN-SUFFIX,soundcloud.com,🔰 节点选择
- - DOMAIN-SUFFIX,ssrcloud.org,🔰 节点选择
+ - DOMAIN-SUFFIX,spiegel.de,🔰 节点选择
  - DOMAIN-SUFFIX,startpage.com,🔰 节点选择
  - DOMAIN-SUFFIX,steamcommunity.com,🔰 节点选择
  - DOMAIN-SUFFIX,steemit.com,🔰 节点选择
  - DOMAIN-SUFFIX,steemitwallet.com,🔰 节点选择
+ - DOMAIN-SUFFIX,straitstimes.com,🔰 节点选择
+ - DOMAIN-SUFFIX,streamable.com,🔰 节点选择
+ - DOMAIN-SUFFIX,streema.com,🔰 节点选择
+ - DOMAIN-SUFFIX,substack.com,🔰 节点选择
  - DOMAIN-SUFFIX,t66y.com,🔰 节点选择
  - DOMAIN-SUFFIX,tapatalk.com,🔰 节点选择
  - DOMAIN-SUFFIX,teco-hk.org,🔰 节点选择
@@ -11134,8 +10467,12 @@ rules:
  - DOMAIN-SUFFIX,textnow.me,🔰 节点选择
  - DOMAIN-SUFFIX,theguardian.com,🔰 节点选择
  - DOMAIN-SUFFIX,theinitium.com,🔰 节点选择
+ - DOMAIN-SUFFIX,themoviedb.org,🔰 节点选择
  - DOMAIN-SUFFIX,thetvdb.com,🔰 节点选择
+ - DOMAIN-SUFFIX,time.com,🔰 节点选择
  - DOMAIN-SUFFIX,tineye.com,🔰 节点选择
+ - DOMAIN-SUFFIX,tiny.cc,🔰 节点选择
+ - DOMAIN-SUFFIX,tinyurl.com,🔰 节点选择
  - DOMAIN-SUFFIX,torproject.org,🔰 节点选择
  - DOMAIN-SUFFIX,tumblr.com,🔰 节点选择
  - DOMAIN-SUFFIX,turbobit.net,🔰 节点选择
@@ -11148,6 +10485,8 @@ rules:
  - DOMAIN-SUFFIX,urbandictionary.com,🔰 节点选择
  - DOMAIN-SUFFIX,ustream.tv,🔰 节点选择
  - DOMAIN-SUFFIX,uwants.com,🔰 节点选择
+ - DOMAIN-SUFFIX,v2ex.com,🔰 节点选择
+ - DOMAIN-SUFFIX,v2fly.org,🔰 节点选择
  - DOMAIN-SUFFIX,v2ray.com,🔰 节点选择
  - DOMAIN-SUFFIX,viber.com,🔰 节点选择
  - DOMAIN-SUFFIX,videopress.com,🔰 节点选择
@@ -11160,15 +10499,11 @@ rules:
  - DOMAIN-SUFFIX,washingtonpost.com,🔰 节点选择
  - DOMAIN-SUFFIX,wattpad.com,🔰 节点选择
  - DOMAIN-SUFFIX,whoer.net,🔰 节点选择
- - DOMAIN-SUFFIX,wikimapia.org,🔰 节点选择
- - DOMAIN-SUFFIX,wikimedia.org,🔰 节点选择
- - DOMAIN-SUFFIX,wikipedia.org,🔰 节点选择
- - DOMAIN-SUFFIX,wikiquote.org,🔰 节点选择
  - DOMAIN-SUFFIX,wikiwand.com,🔰 节点选择
  - DOMAIN-SUFFIX,winudf.com,🔰 节点选择
  - DOMAIN-SUFFIX,wire.com,🔰 节点选择
+ - DOMAIN-SUFFIX,wn.com,🔰 节点选择
  - DOMAIN-SUFFIX,wordpress.com,🔰 节点选择
- - DOMAIN-SUFFIX,workflow.is,🔰 节点选择
  - DOMAIN-SUFFIX,worldcat.org,🔰 节点选择
  - DOMAIN-SUFFIX,wsj.com,🔰 节点选择
  - DOMAIN-SUFFIX,wsj.net,🔰 节点选择
@@ -11177,6 +10512,7 @@ rules:
  - DOMAIN-SUFFIX,xn--i2ru8q2qg.com,🔰 节点选择
  - DOMAIN-SUFFIX,xnxx.com,🔰 节点选择
  - DOMAIN-SUFFIX,xvideos.com,🔰 节点选择
+ - DOMAIN-SUFFIX,yadi.sk,🔰 节点选择
  - DOMAIN-SUFFIX,yahoo.com,🔰 节点选择
  - DOMAIN-SUFFIX,yandex.ru,🔰 节点选择
  - DOMAIN-SUFFIX,ycombinator.com,🔰 节点选择
@@ -11185,74 +10521,21 @@ rules:
  - DOMAIN-SUFFIX,yomiuri.co.jp,🔰 节点选择
  - DOMAIN-SUFFIX,you-get.org,🔰 节点选择
  - DOMAIN-SUFFIX,zaobao.com,🔰 节点选择
- - DOMAIN-SUFFIX,zb.com,🔰 节点选择
  - DOMAIN-SUFFIX,zello.com,🔰 节点选择
  - DOMAIN-SUFFIX,zeronet.io,🔰 节点选择
+ - DOMAIN-SUFFIX,z-lib.org,🔰 节点选择
  - DOMAIN-SUFFIX,zoom.us,🔰 节点选择
- - DOMAIN-KEYWORD,github,🔰 节点选择
- - DOMAIN-KEYWORD,jav,🔰 节点选择
- - DOMAIN-KEYWORD,pinterest,🔰 节点选择
- - DOMAIN-KEYWORD,porn,🔰 节点选择
- - DOMAIN-KEYWORD,wikileaks,🔰 节点选择
- - DOMAIN-SUFFIX,apartmentratings.com,🔰 节点选择
- - DOMAIN-SUFFIX,apartments.com,🔰 节点选择
- - DOMAIN-SUFFIX,bankmobilevibe.com,🔰 节点选择
- - DOMAIN-SUFFIX,bing.com,🔰 节点选择
- - DOMAIN-SUFFIX,booktopia.com.au,🔰 节点选择
- - DOMAIN-SUFFIX,cccat.io,🔰 节点选择
- - DOMAIN-SUFFIX,centauro.com.br,🔰 节点选择
- - DOMAIN-SUFFIX,clearsurance.com,🔰 节点选择
- - DOMAIN-SUFFIX,costco.com,🔰 节点选择
- - DOMAIN-SUFFIX,crackle.com,🔰 节点选择
- - DOMAIN-SUFFIX,depositphotos.cn,🔰 节点选择
- - DOMAIN-SUFFIX,dish.com,🔰 节点选择
- - DOMAIN-SUFFIX,dmm.co.jp,🔰 节点选择
- - DOMAIN-SUFFIX,dmm.com,🔰 节点选择
- - DOMAIN-SUFFIX,dnvod.tv,🔰 节点选择
- - DOMAIN-SUFFIX,esurance.com,🔰 节点选择
- - DOMAIN-SUFFIX,extmatrix.com,🔰 节点选择
- - DOMAIN-SUFFIX,fastpic.ru,🔰 节点选择
- - DOMAIN-SUFFIX,flipboard.com,🔰 节点选择
- - DOMAIN-SUFFIX,fnac.be,🔰 节点选择
- - DOMAIN-SUFFIX,fnac.com,🔰 节点选择
- - DOMAIN-SUFFIX,funkyimg.com,🔰 节点选择
- - DOMAIN-SUFFIX,fxnetworks.com,🔰 节点选择
- - DOMAIN-SUFFIX,gettyimages.com,🔰 节点选择
- - DOMAIN-SUFFIX,go.com,🔰 节点选择
- - DOMAIN-SUFFIX,here.com,🔰 节点选择
- - DOMAIN-SUFFIX,jcpenney.com,🔰 节点选择
- - DOMAIN-SUFFIX,jiehua.tv,🔰 节点选择
- - DOMAIN-SUFFIX,mailfence.com,🔰 节点选择
- - DOMAIN-SUFFIX,nationwide.com,🔰 节点选择
- - DOMAIN-SUFFIX,nbc.com,🔰 节点选择
- - DOMAIN-SUFFIX,nexon.com,🔰 节点选择
- - DOMAIN-SUFFIX,nordstrom.com,🔰 节点选择
- - DOMAIN-SUFFIX,nordstromimage.com,🔰 节点选择
- - DOMAIN-SUFFIX,nordstromrack.com,🔰 节点选择
- - DOMAIN-SUFFIX,superpages.com,🔰 节点选择
- - DOMAIN-SUFFIX,target.com,🔰 节点选择
- - DOMAIN-SUFFIX,thinkgeek.com,🔰 节点选择
- - DOMAIN-SUFFIX,tracfone.com,🔰 节点选择
- - DOMAIN-SUFFIX,unity3d.com,🔰 节点选择
- - DOMAIN-SUFFIX,uploader.jp,🔰 节点选择
- - DOMAIN-SUFFIX,vevo.com,🔰 节点选择
- - DOMAIN-SUFFIX,viu.tv,🔰 节点选择
- - DOMAIN-SUFFIX,vk.com,🔰 节点选择
- - DOMAIN-SUFFIX,vsco.co,🔰 节点选择
- - DOMAIN-SUFFIX,xfinity.com,🔰 节点选择
- - DOMAIN-SUFFIX,zattoo.com,🔰 节点选择
- - DOMAIN,testflight.apple.com,🔰 节点选择
- - DOMAIN-SUFFIX,appsto.re,🔰 节点选择
- - DOMAIN,books.itunes.apple.com,🔰 节点选择
- - DOMAIN,hls.itunes.apple.com,🔰 节点选择
- - DOMAIN,apps.apple.com,🔰 节点选择
- - DOMAIN,itunes.apple.com,🔰 节点选择
- - DOMAIN,api-glb-sea.smoot.apple.com,🔰 节点选择
- - DOMAIN,lookup-api.apple.com,🔰 节点选择
+ - DOMAIN,cc.tvbs.com.tw,🔰 节点选择
+ - DOMAIN,ocsp.int-x3.letsencrypt.org,🔰 节点选择
+ - DOMAIN,us.weibo.com,🔰 节点选择
+ - DOMAIN-SUFFIX,edu,🔰 节点选择
+ - DOMAIN-SUFFIX,gov,🔰 节点选择
+ - DOMAIN-SUFFIX,mil,🔰 节点选择
  - DOMAIN-SUFFIX,abc.xyz,🔰 节点选择
+ - DOMAIN-SUFFIX,advertisercommunity.com,🔰 节点选择
+ - DOMAIN-SUFFIX,ampproject.org,🔰 节点选择
  - DOMAIN-SUFFIX,android.com,🔰 节点选择
  - DOMAIN-SUFFIX,androidify.com,🔰 节点选择
- - DOMAIN-SUFFIX,dialogflow.com,🔰 节点选择
  - DOMAIN-SUFFIX,autodraw.com,🔰 节点选择
  - DOMAIN-SUFFIX,capitalg.com,🔰 节点选择
  - DOMAIN-SUFFIX,certificate-transparency.org,🔰 节点选择
@@ -11263,21 +10546,21 @@ rules:
  - DOMAIN-SUFFIX,creativelab5.com,🔰 节点选择
  - DOMAIN-SUFFIX,debug.com,🔰 节点选择
  - DOMAIN-SUFFIX,deepmind.com,🔰 节点选择
+ - DOMAIN-SUFFIX,dialogflow.com,🔰 节点选择
  - DOMAIN-SUFFIX,firebaseio.com,🔰 节点选择
  - DOMAIN-SUFFIX,getmdl.io,🔰 节点选择
  - DOMAIN-SUFFIX,ggpht.com,🔰 节点选择
  - DOMAIN-SUFFIX,gmail.com,🔰 节点选择
  - DOMAIN-SUFFIX,gmodules.com,🔰 节点选择
  - DOMAIN-SUFFIX,godoc.org,🔰 节点选择
- - DOMAIN-SUFFIX,golang.org,🔰 节点选择
  - DOMAIN-SUFFIX,gstatic.com,🔰 节点选择
  - DOMAIN-SUFFIX,gv.com,🔰 节点选择
  - DOMAIN-SUFFIX,gwtproject.org,🔰 节点选择
  - DOMAIN-SUFFIX,itasoftware.com,🔰 节点选择
  - DOMAIN-SUFFIX,madewithcode.com,🔰 节点选择
  - DOMAIN-SUFFIX,material.io,🔰 节点选择
+ - DOMAIN-SUFFIX,page.link,🔰 节点选择
  - DOMAIN-SUFFIX,polymer-project.org,🔰 节点选择
- - DOMAIN-SUFFIX,admin.recaptcha.net,🔰 节点选择
  - DOMAIN-SUFFIX,recaptcha.net,🔰 节点选择
  - DOMAIN-SUFFIX,shattered.io,🔰 节点选择
  - DOMAIN-SUFFIX,synergyse.com,🔰 节点选择
@@ -11295,76 +10578,50 @@ rules:
  - DOMAIN-SUFFIX,youtu.be,🔰 节点选择
  - DOMAIN-SUFFIX,yt.be,🔰 节点选择
  - DOMAIN-SUFFIX,ytimg.com,🔰 节点选择
- - DOMAIN-SUFFIX,1drv.com,🔰 节点选择
- - DOMAIN-SUFFIX,1drv.ms,🔰 节点选择
- - DOMAIN-SUFFIX,blob.core.windows.net,🔰 节点选择
- - DOMAIN-SUFFIX,livefilestore.com,🔰 节点选择
- - DOMAIN-SUFFIX,onedrive.com,🔰 节点选择
- - DOMAIN-SUFFIX,storage.live.com,🔰 节点选择
- - DOMAIN-SUFFIX,storage.msn.com,🔰 节点选择
- - DOMAIN,oneclient.sfx.ms,🔰 节点选择
- - DOMAIN-SUFFIX,0rz.tw,🔰 节点选择
- - DOMAIN-SUFFIX,4bluestones.biz,🔰 节点选择
- - DOMAIN-SUFFIX,9bis.net,🔰 节点选择
- - DOMAIN-SUFFIX,allconnected.co,🔰 节点选择
- - DOMAIN-SUFFIX,aol.com,🔰 节点选择
- - DOMAIN-SUFFIX,bcc.com.tw,🔰 节点选择
- - DOMAIN-SUFFIX,bit.ly,🔰 节点选择
- - DOMAIN-SUFFIX,bitshare.com,🔰 节点选择
- - DOMAIN-SUFFIX,blog.jp,🔰 节点选择
- - DOMAIN-SUFFIX,blogimg.jp,🔰 节点选择
- - DOMAIN-SUFFIX,blogtd.org,🔰 节点选择
- - DOMAIN-SUFFIX,broadcast.co.nz,🔰 节点选择
- - DOMAIN-SUFFIX,camfrog.com,🔰 节点选择
- - DOMAIN-SUFFIX,cfos.de,🔰 节点选择
- - DOMAIN-SUFFIX,citypopulation.de,🔰 节点选择
- - DOMAIN-SUFFIX,cloudfront.net,🔰 节点选择
- - DOMAIN-SUFFIX,ctitv.com.tw,🔰 节点选择
- - DOMAIN-SUFFIX,cuhk.edu.hk,🔰 节点选择
- - DOMAIN-SUFFIX,cusu.hk,🔰 节点选择
- - DOMAIN-SUFFIX,discord.gg,🔰 节点选择
- - DOMAIN-SUFFIX,discuss.com.hk,🔰 节点选择
- - DOMAIN-SUFFIX,dropboxapi.com,🔰 节点选择
- - DOMAIN-SUFFIX,duolingo.cn,🔰 节点选择
- - DOMAIN-SUFFIX,edditstatic.com,🔰 节点选择
- - DOMAIN-SUFFIX,flickriver.com,🔰 节点选择
- - DOMAIN-SUFFIX,focustaiwan.tw,🔰 节点选择
- - DOMAIN-SUFFIX,free.fr,🔰 节点选择
- - DOMAIN-SUFFIX,gigacircle.com,🔰 节点选择
- - DOMAIN-SUFFIX,hk-pub.com,🔰 节点选择
- - DOMAIN-SUFFIX,hosting.co.uk,🔰 节点选择
- - DOMAIN-SUFFIX,hwcdn.net,🔰 节点选择
- - DOMAIN-SUFFIX,ib.metapix.net,🔰 节点选择
- - DOMAIN-SUFFIX,ifixit.com,🔰 节点选择
- - DOMAIN-SUFFIX,inkbunny.net,🔰 节点选择
- - DOMAIN-SUFFIX,iphone4hongkong.com,🔰 节点选择
- - DOMAIN-SUFFIX,iphonetaiwan.org,🔰 节点选择
- - DOMAIN-SUFFIX,iptvbin.com,🔰 节点选择
- - DOMAIN-SUFFIX,linksalpha.com,🔰 节点选择
- - DOMAIN-SUFFIX,manyvids.com,🔰 节点选择
- - DOMAIN-SUFFIX,myactimes.com,🔰 节点选择
- - DOMAIN-SUFFIX,newsblur.com,🔰 节点选择
- - DOMAIN-SUFFIX,now.im,🔰 节点选择
- - DOMAIN-SUFFIX,nowe.com,🔰 节点选择
- - DOMAIN-SUFFIX,redditlist.com,🔰 节点选择
- - DOMAIN-SUFFIX,s3.amazonaws.com,🔰 节点选择
- - DOMAIN-SUFFIX,signal.org,🔰 节点选择
+ - DOMAIN-SUFFIX,t.me,🔰 节点选择
+ - DOMAIN-SUFFIX,tdesktop.com,🔰 节点选择
+ - DOMAIN-SUFFIX,telegram.me,🔰 节点选择
+ - DOMAIN-SUFFIX,telesco.pe,🔰 节点选择
+ - DOMAIN-KEYWORD,.facebook.,🔰 节点选择
+ - DOMAIN-SUFFIX,facebookmail.com,🔰 节点选择
+ - DOMAIN-SUFFIX,noxinfluencer.com,🔰 节点选择
  - DOMAIN-SUFFIX,smartmailcloud.com,🔰 节点选择
- - DOMAIN-SUFFIX,sparknotes.com,🔰 节点选择
- - DOMAIN-SUFFIX,streetvoice.com,🔰 节点选择
- - DOMAIN-SUFFIX,supertop.co,🔰 节点选择
- - DOMAIN-SUFFIX,tv.com,🔰 节点选择
- - DOMAIN-SUFFIX,typepad.com,🔰 节点选择
- - DOMAIN-SUFFIX,udnbkk.com,🔰 节点选择
- - DOMAIN-SUFFIX,urbanairship.com,🔰 节点选择
- - DOMAIN-SUFFIX,whispersystems.org,🔰 节点选择
- - DOMAIN-SUFFIX,wikia.com,🔰 节点选择
- - DOMAIN-SUFFIX,wn.com,🔰 节点选择
- - DOMAIN-SUFFIX,wolframalpha.com,🔰 节点选择
- - DOMAIN-SUFFIX,x-art.com,🔰 节点选择
- - DOMAIN-SUFFIX,yimg.com,🔰 节点选择
- - DOMAIN,api.steampowered.com,🔰 节点选择
- - DOMAIN,store.steampowered.com,🔰 节点选择
+ - DOMAIN-SUFFIX,weebly.com,🔰 节点选择
+ - DOMAIN-SUFFIX,twitter.jp,🔰 节点选择
+ - DOMAIN-SUFFIX,appsto.re,🔰 节点选择
+ - DOMAIN,books.itunes.apple.com,🔰 节点选择
+ - DOMAIN,api-glb-sea.smoot.apple.com,🔰 节点选择
+ - DOMAIN,beta.music.apple.com,🔰 节点选择
+ - DOMAIN,tv.apple.com,🔰 节点选择
+ - DOMAIN,apps.apple.com,🔰 节点选择
+ - DOMAIN,itunes.apple.com,🔰 节点选择
+ - DOMAIN-SUFFIX,smoot.apple.com,🔰 节点选择
+ - DOMAIN,lookup-api.apple.com,🔰 节点选择
+ - DOMAIN-SUFFIX,go.dev,🔰 节点选择
+ - DOMAIN-SUFFIX,golang.org,🔰 节点选择
+ - DOMAIN-SUFFIX,bing.com,🔰 节点选择
+ - DOMAIN-SUFFIX,cccat.io,🔰 节点选择
+ - DOMAIN-SUFFIX,dubox.com,🔰 节点选择
+ - DOMAIN-SUFFIX,duboxcdn.com,🔰 节点选择
+ - DOMAIN-SUFFIX,ifixit.com,🔰 节点选择
+ - DOMAIN-SUFFIX,mangakakalot.com,🔰 节点选择
+ - DOMAIN-SUFFIX,shopeemobile.com,🔰 节点选择
+ - DOMAIN-SUFFIX,sushi.com,🔰 节点选择
+ - DOMAIN,appleid.apple.com,🔰 节点选择
+ - DOMAIN,developer.apple.com,🔰 节点选择
+ - DOMAIN,www.icloud.com,🔰 节点选择
+ - DOMAIN,ocsp.apple.com,🔰 节点选择
+ - DOMAIN,xp.apple.com,🔰 节点选择
+ - DOMAIN,cacerts.digicert.com,🔰 节点选择
+ - DOMAIN,crl3.digicert.com,🔰 节点选择
+ - DOMAIN,crl4.digicert.com,🔰 节点选择
+ - DOMAIN,ocsp.digicert.com,🔰 节点选择
+ - DOMAIN-SUFFIX,cloudcone.com.cn,🔰 节点选择
+ - DOMAIN-SUFFIX,inkbunny.net,🔰 节点选择
+ - DOMAIN-SUFFIX,metapix.net,🔰 节点选择
+ - DOMAIN-SUFFIX,s3.amazonaws.com,🔰 节点选择
+ - DOMAIN-SUFFIX,zaobao.com.sg,🔰 节点选择
+ - DOMAIN,international-gfe.download.nvidia.com,🔰 节点选择
  - DOMAIN-SUFFIX,aaplimg.com,🍎 苹果服务
  - DOMAIN-SUFFIX,apple.co,🍎 苹果服务
  - DOMAIN-SUFFIX,apple.com,🍎 苹果服务
@@ -11372,20 +10629,25 @@ rules:
  - DOMAIN-SUFFIX,apple-cloudkit.com,🍎 苹果服务
  - DOMAIN-SUFFIX,appstore.com,🍎 苹果服务
  - DOMAIN-SUFFIX,cdn-apple.com,🍎 苹果服务
- - DOMAIN-SUFFIX,crashlytics.com,🍎 苹果服务
  - DOMAIN-SUFFIX,icloud.com,🍎 苹果服务
  - DOMAIN-SUFFIX,icloud.com.cn,🍎 苹果服务
  - DOMAIN-SUFFIX,icloud-content.com,🍎 苹果服务
  - DOMAIN-SUFFIX,me.com,🍎 苹果服务
  - DOMAIN-SUFFIX,mzstatic.com,🍎 苹果服务
- - DOMAIN,www-cdn.icloud.com.akadns.net,🍎 苹果服务
+ - DOMAIN-KEYWORD,apple.com.akadns.net,🍎 苹果服务
+ - DOMAIN-KEYWORD,icloud.com.akadns.net,🍎 苹果服务
+ - IP-CIDR,17.0.0.0/8,🍎 苹果服务,no-resolve
+ - IP-CIDR,63.92.224.0/19,🍎 苹果服务,no-resolve
+ - IP-CIDR,65.199.22.0/23,🍎 苹果服务,no-resolve
+ - IP-CIDR,139.178.128.0/18,🍎 苹果服务,no-resolve
+ - IP-CIDR,144.178.0.0/19,🍎 苹果服务,no-resolve
+ - IP-CIDR,192.35.50.0/24,🍎 苹果服务,no-resolve
+ - IP-CIDR,198.183.17.0/24,🍎 苹果服务,no-resolve
+ - IP-CIDR,205.180.175.0/24,🍎 苹果服务,no-resolve
  - DOMAIN-SUFFIX,qhres.com,🎯 全球直连
  - DOMAIN-SUFFIX,qhimg.com,🎯 全球直连
- - DOMAIN-SUFFIX,sandaiyun.com,🎯 全球直连
- - DOMAIN-SUFFIX,linkstars.com,🎯 全球直连
- - DOMAIN-SUFFIX,nowcoder.com,🎯 全球直连
- - DOMAIN-SUFFIX,akadns.net,🎯 全球直连
  - DOMAIN-SUFFIX,alibaba.com,🎯 全球直连
+ - DOMAIN-SUFFIX,alibabausercontent.com,🎯 全球直连
  - DOMAIN-SUFFIX,alicdn.com,🎯 全球直连
  - DOMAIN-SUFFIX,alikunlun.com,🎯 全球直连
  - DOMAIN-SUFFIX,alipay.com,🎯 全球直连
@@ -11407,25 +10669,25 @@ rules:
  - DOMAIN-SUFFIX,apple-cloudkit.com,🎯 全球直连
  - DOMAIN-SUFFIX,appstore.com,🎯 全球直连
  - DOMAIN-SUFFIX,cdn-apple.com,🎯 全球直连
- - DOMAIN-SUFFIX,crashlytics.com,🎯 全球直连
  - DOMAIN-SUFFIX,icloud.com,🎯 全球直连
  - DOMAIN-SUFFIX,icloud-content.com,🎯 全球直连
  - DOMAIN-SUFFIX,me.com,🎯 全球直连
  - DOMAIN-SUFFIX,mzstatic.com,🎯 全球直连
- - DOMAIN,www-cdn.icloud.com.akadns.net,🎯 全球直连
  - DOMAIN-SUFFIX,baidu.com,🎯 全球直连
  - DOMAIN-SUFFIX,baidubcr.com,🎯 全球直连
+ - DOMAIN-SUFFIX,baidupan.com,🎯 全球直连
+ - DOMAIN-SUFFIX,baidupcs.com,🎯 全球直连
+ - DOMAIN-SUFFIX,bdimg.com,🎯 全球直连
  - DOMAIN-SUFFIX,bdstatic.com,🎯 全球直连
  - DOMAIN-SUFFIX,yunjiasu-cdn.net,🎯 全球直连
+ - DOMAIN-SUFFIX,battle.net,🎯 全球直连
+ - DOMAIN-SUFFIX,blizzard.com,🎯 全球直连
  - DOMAIN-SUFFIX,acgvideo.com,🎯 全球直连
  - DOMAIN-SUFFIX,biliapi.com,🎯 全球直连
  - DOMAIN-SUFFIX,biliapi.net,🎯 全球直连
  - DOMAIN-SUFFIX,bilibili.com,🎯 全球直连
  - DOMAIN-SUFFIX,bilibili.tv,🎯 全球直连
  - DOMAIN-SUFFIX,hdslb.com,🎯 全球直连
- - DOMAIN-SUFFIX,blizzard.com,🎯 全球直连
- - DOMAIN-SUFFIX,battle.net,🎯 全球直连
- - DOMAIN,blzddist1-a.akamaihd.net,🎯 全球直连
  - DOMAIN-SUFFIX,feiliao.com,🎯 全球直连
  - DOMAIN-SUFFIX,pstatp.com,🎯 全球直连
  - DOMAIN-SUFFIX,snssdk.com,🎯 全球直连
@@ -11434,22 +10696,15 @@ rules:
  - DOMAIN-SUFFIX,cctv.com,🎯 全球直连
  - DOMAIN-SUFFIX,cctvpic.com,🎯 全球直连
  - DOMAIN-SUFFIX,livechina.com,🎯 全球直连
+ - DOMAIN-SUFFIX,21cn.com,🎯 全球直连
  - DOMAIN-SUFFIX,didialift.com,🎯 全球直连
  - DOMAIN-SUFFIX,didiglobal.com,🎯 全球直连
  - DOMAIN-SUFFIX,udache.com,🎯 全球直连
- - DOMAIN-SUFFIX,343480.com,🎯 全球直连
- - DOMAIN-SUFFIX,baduziyuan.com,🎯 全球直连
- - DOMAIN-SUFFIX,com-hs-hkdy.com,🎯 全球直连
- - DOMAIN-SUFFIX,czybjz.com,🎯 全球直连
- - DOMAIN-SUFFIX,dandanzan.com,🎯 全球直连
- - DOMAIN-SUFFIX,fjhps.com,🎯 全球直连
- - DOMAIN-SUFFIX,kuyunbo.club,🎯 全球直连
- - DOMAIN-SUFFIX,21cn.com,🎯 全球直连
  - DOMAIN-SUFFIX,hitv.com,🎯 全球直连
  - DOMAIN-SUFFIX,mgtv.com,🎯 全球直连
  - DOMAIN-SUFFIX,iqiyi.com,🎯 全球直连
  - DOMAIN-SUFFIX,iqiyipic.com,🎯 全球直连
- - DOMAIN-SUFFIX,71.am.com,🎯 全球直连
+ - DOMAIN-SUFFIX,71.am,🎯 全球直连
  - DOMAIN-SUFFIX,jd.com,🎯 全球直连
  - DOMAIN-SUFFIX,jd.hk,🎯 全球直连
  - DOMAIN-SUFFIX,jdpay.com,🎯 全球直连
@@ -11460,27 +10715,41 @@ rules:
  - DOMAIN-SUFFIX,meitudata.com,🎯 全球直连
  - DOMAIN-SUFFIX,meitustat.com,🎯 全球直连
  - DOMAIN-SUFFIX,meipai.com,🎯 全球直连
+ - DOMAIN-SUFFIX,dianping.com,🎯 全球直连
+ - DOMAIN-SUFFIX,dpfile.com,🎯 全球直连
+ - DOMAIN-SUFFIX,meituan.com,🎯 全球直连
+ - DOMAIN-SUFFIX,meituan.net,🎯 全球直连
  - DOMAIN-SUFFIX,duokan.com,🎯 全球直连
+ - DOMAIN-SUFFIX,mi.com,🎯 全球直连
  - DOMAIN-SUFFIX,mi-img.com,🎯 全球直连
  - DOMAIN-SUFFIX,miui.com,🎯 全球直连
  - DOMAIN-SUFFIX,miwifi.com,🎯 全球直连
  - DOMAIN-SUFFIX,xiaomi.com,🎯 全球直连
- - DOMAIN-SUFFIX,microsoft.com,🎯 全球直连
- - DOMAIN-SUFFIX,msecnd.net,🎯 全球直连
- - DOMAIN-SUFFIX,office365.com,🎯 全球直连
- - DOMAIN-SUFFIX,outlook.com,🎯 全球直连
- - DOMAIN-SUFFIX,s-microsoft.com,🎯 全球直连
+ - DOMAIN-SUFFIX,xiaomi.net,🎯 全球直连
  - DOMAIN-SUFFIX,visualstudio.com,🎯 全球直连
- - DOMAIN-SUFFIX,windows.com,🎯 全球直连
+ - DOMAIN-SUFFIX,hotmail.com,🎯 全球直连
+ - DOMAIN-SUFFIX,outlook.com,🎯 全球直连
+ - DOMAIN,outlook.office365.com,🎯 全球直连
+ - DOMAIN,smtp.office365.com,🎯 全球直连
+ - DOMAIN-SUFFIX,dl.delivery.mp.microsoft.com,🎯 全球直连
+ - DOMAIN-SUFFIX,update.microsoft.com,🎯 全球直连
  - DOMAIN-SUFFIX,windowsupdate.com,🎯 全球直连
- - DOMAIN,officecdn-microsoft-com.akamaized.net,🎯 全球直连
+ - DOMAIN-SUFFIX,windowsupdate.microsoft.com,🎯 全球直连
+ - DOMAIN,download.microsoft.com,🎯 全球直连
+ - DOMAIN,wustat.windows.com,🎯 全球直连
+ - DOMAIN,ntservicepack.microsoft.com,🎯 全球直连
  - DOMAIN-SUFFIX,163.com,🎯 全球直连
+ - DOMAIN-SUFFIX,126.com,🎯 全球直连
  - DOMAIN-SUFFIX,126.net,🎯 全球直连
  - DOMAIN-SUFFIX,127.net,🎯 全球直连
  - DOMAIN-SUFFIX,163yun.com,🎯 全球直连
  - DOMAIN-SUFFIX,lofter.com,🎯 全球直连
  - DOMAIN-SUFFIX,netease.com,🎯 全球直连
  - DOMAIN-SUFFIX,ydstatic.com,🎯 全球直连
+ - DOMAIN-SUFFIX,youdao.com,🎯 全球直连
+ - DOMAIN-SUFFIX,paypal.com,🎯 全球直连
+ - DOMAIN-SUFFIX,paypal.me,🎯 全球直连
+ - DOMAIN-SUFFIX,paypalobjects.com,🎯 全球直连
  - DOMAIN-SUFFIX,sina.com,🎯 全球直连
  - DOMAIN-SUFFIX,weibo.com,🎯 全球直连
  - DOMAIN-SUFFIX,weibocdn.com,🎯 全球直连
@@ -11491,32 +10760,33 @@ rules:
  - DOMAIN-SUFFIX,sogo.com,🎯 全球直连
  - DOMAIN-SUFFIX,sogou.com,🎯 全球直连
  - DOMAIN-SUFFIX,sogoucdn.com,🎯 全球直连
- - DOMAIN-SUFFIX,steampowered.com,🎯 全球直连
- - DOMAIN-SUFFIX,steam-chat.com,🎯 全球直连
- - DOMAIN-SUFFIX,steamgames.com,🎯 全球直连
- - DOMAIN-SUFFIX,steamusercontent.com,🎯 全球直连
  - DOMAIN-SUFFIX,steamcontent.com,🎯 全球直连
+ - DOMAIN-SUFFIX,steampowered.com,🎯 全球直连
  - DOMAIN-SUFFIX,steamstatic.com,🎯 全球直连
- - DOMAIN-SUFFIX,steamcdn-a.akamaihd.net,🎯 全球直连
- - DOMAIN-SUFFIX,steamstat.us,🎯 全球直连
  - DOMAIN-SUFFIX,gtimg.com,🎯 全球直连
  - DOMAIN-SUFFIX,idqqimg.com,🎯 全球直连
  - DOMAIN-SUFFIX,igamecj.com,🎯 全球直连
  - DOMAIN-SUFFIX,myapp.com,🎯 全球直连
  - DOMAIN-SUFFIX,myqcloud.com,🎯 全球直连
  - DOMAIN-SUFFIX,qq.com,🎯 全球直连
+ - DOMAIN-SUFFIX,qqmail.com,🎯 全球直连
  - DOMAIN-SUFFIX,servicewechat.com,🎯 全球直连
  - DOMAIN-SUFFIX,tencent.com,🎯 全球直连
  - DOMAIN-SUFFIX,tencent-cloud.net,🎯 全球直连
  - DOMAIN-SUFFIX,tenpay.com,🎯 全球直连
+ - DOMAIN-SUFFIX,wechat.com,🎯 全球直连
  - DOMAIN,file-igamecj.akamaized.net,🎯 全球直连
- - DOMAIN-SUFFIX,jstucdn.com,🎯 全球直连
- - DOMAIN-SUFFIX,zimuzu.io,🎯 全球直连
- - DOMAIN-SUFFIX,zimuzu.tv,🎯 全球直连
- - DOMAIN-SUFFIX,zmz2019.com,🎯 全球直连
- - DOMAIN-SUFFIX,zmzapi.com,🎯 全球直连
- - DOMAIN-SUFFIX,zmzapi.net,🎯 全球直连
- - DOMAIN-SUFFIX,zmzfile.com,🎯 全球直连
+ - IP-CIDR,101.32.104.4/32,🎯 全球直连,no-resolve
+ - IP-CIDR,101.32.104.41/32,🎯 全球直连,no-resolve
+ - IP-CIDR,101.32.104.56/32,🎯 全球直连,no-resolve
+ - IP-CIDR,101.32.118.25/32,🎯 全球直连,no-resolve
+ - IP-CIDR,101.32.133.16/32,🎯 全球直连,no-resolve
+ - IP-CIDR,101.32.133.53/32,🎯 全球直连,no-resolve
+ - IP-CIDR,101.32.133.209/32,🎯 全球直连,no-resolve
+ - IP-CIDR,129.226.3.47/32,🎯 全球直连,no-resolve
+ - IP-CIDR,129.226.107.244/32,🎯 全球直连,no-resolve
+ - IP-CIDR,182.254.116.0/24,🎯 全球直连,no-resolve
+ - IP-CIDR,203.205.254.0/23,🎯 全球直连,no-resolve
  - DOMAIN-SUFFIX,ccgslb.com,🎯 全球直连
  - DOMAIN-SUFFIX,ccgslb.net,🎯 全球直连
  - DOMAIN-SUFFIX,chinanetcenter.com,🎯 全球直连
@@ -11526,26 +10796,36 @@ rules:
  - DOMAIN-SUFFIX,wangsu.com,🎯 全球直连
  - DOMAIN-SUFFIX,ipip.net,🎯 全球直连
  - DOMAIN-SUFFIX,ip.la,🎯 全球直连
+ - DOMAIN-SUFFIX,ip.sb,🎯 全球直连
  - DOMAIN-SUFFIX,ip-cdn.com,🎯 全球直连
  - DOMAIN-SUFFIX,ipv6-test.com,🎯 全球直连
+ - DOMAIN-SUFFIX,myip.la,🎯 全球直连
  - DOMAIN-SUFFIX,test-ipv6.com,🎯 全球直连
  - DOMAIN-SUFFIX,whatismyip.com,🎯 全球直连
+ - DOMAIN,ip.istatmenus.app,🎯 全球直连
+ - DOMAIN,sms.imagetasks.com,🎯 全球直连
  - DOMAIN-SUFFIX,netspeedtestmaster.com,🎯 全球直连
  - DOMAIN,speedtest.macpaw.com,🎯 全球直连
+ - DOMAIN-SUFFIX,acg.rip,🎯 全球直连
  - DOMAIN-SUFFIX,animebytes.tv,🎯 全球直连
  - DOMAIN-SUFFIX,awesome-hd.me,🎯 全球直连
  - DOMAIN-SUFFIX,broadcasthe.net,🎯 全球直连
  - DOMAIN-SUFFIX,chdbits.co,🎯 全球直连
  - DOMAIN-SUFFIX,classix-unlimited.co.uk,🎯 全球直连
+ - DOMAIN-SUFFIX,comicat.org,🎯 全球直连
  - DOMAIN-SUFFIX,empornium.me,🎯 全球直连
  - DOMAIN-SUFFIX,gazellegames.net,🎯 全球直连
- - DOMAIN-SUFFIX,hdchina.org,🎯 全球直连
  - DOMAIN-SUFFIX,hdbits.org,🎯 全球直连
+ - DOMAIN-SUFFIX,hdchina.org,🎯 全球直连
+ - DOMAIN-SUFFIX,hddolby.com,🎯 全球直连
+ - DOMAIN-SUFFIX,hdhome.org,🎯 全球直连
+ - DOMAIN-SUFFIX,hdsky.me,🎯 全球直连
  - DOMAIN-SUFFIX,icetorrent.org,🎯 全球直连
  - DOMAIN-SUFFIX,jpopsuki.eu,🎯 全球直连
  - DOMAIN-SUFFIX,keepfrds.com,🎯 全球直连
  - DOMAIN-SUFFIX,madsrevolution.net,🎯 全球直连
  - DOMAIN-SUFFIX,morethan.tv,🎯 全球直连
+ - DOMAIN-SUFFIX,m-team.cc,🎯 全球直连
  - DOMAIN-SUFFIX,myanonamouse.net,🎯 全球直连
  - DOMAIN-SUFFIX,nanyangpt.com,🎯 全球直连
  - DOMAIN-SUFFIX,ncore.cc,🎯 全球直连
@@ -11557,68 +10837,16 @@ rules:
  - DOMAIN-SUFFIX,redacted.ch,🎯 全球直连
  - DOMAIN-SUFFIX,springsunday.net,🎯 全球直连
  - DOMAIN-SUFFIX,tjupt.org,🎯 全球直连
- - DOMAIN-SUFFIX,acm.org,🎯 全球直连
- - DOMAIN-SUFFIX,acs.org,🎯 全球直连
- - DOMAIN-SUFFIX,aip.org,🎯 全球直连
- - DOMAIN-SUFFIX,ams.org,🎯 全球直连
- - DOMAIN-SUFFIX,annualreviews.org,🎯 全球直连
- - DOMAIN-SUFFIX,aps.org,🎯 全球直连
- - DOMAIN-SUFFIX,ascelibrary.org,🎯 全球直连
- - DOMAIN-SUFFIX,asm.org,🎯 全球直连
- - DOMAIN-SUFFIX,asme.org,🎯 全球直连
- - DOMAIN-SUFFIX,astm.org,🎯 全球直连
- - DOMAIN-SUFFIX,bmj.com,🎯 全球直连
- - DOMAIN-SUFFIX,cambridge.org,🎯 全球直连
- - DOMAIN-SUFFIX,cas.org,🎯 全球直连
- - DOMAIN-SUFFIX,clarivate.com,🎯 全球直连
- - DOMAIN-SUFFIX,ebscohost.com,🎯 全球直连
- - DOMAIN-SUFFIX,emerald.com,🎯 全球直连
- - DOMAIN-SUFFIX,engineeringvillage.com,🎯 全球直连
- - DOMAIN-SUFFIX,icevirtuallibrary.com,🎯 全球直连
- - DOMAIN-SUFFIX,ieee.org,🎯 全球直连
- - DOMAIN-SUFFIX,imf.org,🎯 全球直连
- - DOMAIN-SUFFIX,iop.org,🎯 全球直连
- - DOMAIN-SUFFIX,jamanetwork.com,🎯 全球直连
- - DOMAIN-SUFFIX,jhu.edu,🎯 全球直连
- - DOMAIN-SUFFIX,jstor.org,🎯 全球直连
- - DOMAIN-SUFFIX,karger.com,🎯 全球直连
- - DOMAIN-SUFFIX,libguides.com,🎯 全球直连
- - DOMAIN-SUFFIX,madsrevolution.net,🎯 全球直连
- - DOMAIN-SUFFIX,mpg.de,🎯 全球直连
- - DOMAIN-SUFFIX,myilibrary.com,🎯 全球直连
- - DOMAIN-SUFFIX,nature.com,🎯 全球直连
- - DOMAIN-SUFFIX,oecd-ilibrary.org,🎯 全球直连
- - DOMAIN-SUFFIX,osapublishing.org,🎯 全球直连
- - DOMAIN-SUFFIX,oup.com,🎯 全球直连
- - DOMAIN-SUFFIX,ovid.com,🎯 全球直连
- - DOMAIN-SUFFIX,oxfordartonline.com,🎯 全球直连
- - DOMAIN-SUFFIX,oxfordbibliographies.com,🎯 全球直连
- - DOMAIN-SUFFIX,oxfordmusiconline.com,🎯 全球直连
- - DOMAIN-SUFFIX,pnas.org,🎯 全球直连
- - DOMAIN-SUFFIX,proquest.com,🎯 全球直连
- - DOMAIN-SUFFIX,rsc.org,🎯 全球直连
- - DOMAIN-SUFFIX,sagepub.com,🎯 全球直连
- - DOMAIN-SUFFIX,sciencedirect.com,🎯 全球直连
- - DOMAIN-SUFFIX,sciencemag.org,🎯 全球直连
- - DOMAIN-SUFFIX,scopus.com,🎯 全球直连
- - DOMAIN-SUFFIX,siam.org,🎯 全球直连
- - DOMAIN-SUFFIX,spiedigitallibrary.org,🎯 全球直连
- - DOMAIN-SUFFIX,springer.com,🎯 全球直连
- - DOMAIN-SUFFIX,springerlink.com,🎯 全球直连
- - DOMAIN-SUFFIX,tandfonline.com,🎯 全球直连
- - DOMAIN-SUFFIX,un.org,🎯 全球直连
- - DOMAIN-SUFFIX,uni-bielefeld.de,🎯 全球直连
- - DOMAIN-SUFFIX,webofknowledge.com,🎯 全球直连
- - DOMAIN-SUFFIX,westlaw.com,🎯 全球直连
- - DOMAIN-SUFFIX,wiley.com,🎯 全球直连
- - DOMAIN-SUFFIX,worldbank.org,🎯 全球直连
- - DOMAIN-SUFFIX,worldscientific.com,🎯 全球直连
+ - DOMAIN-SUFFIX,totheglory.im,🎯 全球直连
  - DOMAIN-SUFFIX,cn,🎯 全球直连
+ - DOMAIN-SUFFIX,115.com,🎯 全球直连
  - DOMAIN-SUFFIX,360in.com,🎯 全球直连
  - DOMAIN-SUFFIX,51ym.me,🎯 全球直连
  - DOMAIN-SUFFIX,8686c.com,🎯 全球直连
+ - DOMAIN-SUFFIX,99.com,🎯 全球直连
  - DOMAIN-SUFFIX,abchina.com,🎯 全球直连
  - DOMAIN-SUFFIX,accuweather.com,🎯 全球直连
+ - DOMAIN-SUFFIX,agora.io,🎯 全球直连
  - DOMAIN-SUFFIX,aicoinstorge.com,🎯 全球直连
  - DOMAIN-SUFFIX,air-matters.com,🎯 全球直连
  - DOMAIN-SUFFIX,air-matters.io,🎯 全球直连
@@ -11627,20 +10855,21 @@ rules:
  - DOMAIN-SUFFIX,b612.net,🎯 全球直连
  - DOMAIN-SUFFIX,bdatu.com,🎯 全球直连
  - DOMAIN-SUFFIX,beitaichufang.com,🎯 全球直连
- - DOMAIN-SUFFIX,bjango.com,🎯 全球直连
  - DOMAIN-SUFFIX,booking.com,🎯 全球直连
  - DOMAIN-SUFFIX,bstatic.com,🎯 全球直连
  - DOMAIN-SUFFIX,cailianpress.com,🎯 全球直连
  - DOMAIN-SUFFIX,camera360.com,🎯 全球直连
+ - DOMAIN-SUFFIX,chaoxing.com,🎯 全球直连
+ - DOMAIN-SUFFIX,chaoxing.com,🎯 全球直连
  - DOMAIN-SUFFIX,chinaso.com,🎯 全球直连
- - DOMAIN-SUFFIX,chua.pro,🎯 全球直连
  - DOMAIN-SUFFIX,chuimg.com,🎯 全球直连
  - DOMAIN-SUFFIX,chunyu.mobi,🎯 全球直连
- - DOMAIN-SUFFIX,chushou.tv,🎯 全球直连
  - DOMAIN-SUFFIX,cmbchina.com,🎯 全球直连
  - DOMAIN-SUFFIX,cmbimg.com,🎯 全球直连
+ - DOMAIN-SUFFIX,coolapk.com,🎯 全球直连
  - DOMAIN-SUFFIX,ctrip.com,🎯 全球直连
  - DOMAIN-SUFFIX,dfcfw.com,🎯 全球直连
+ - DOMAIN-SUFFIX,dji.net,🎯 全球直连
  - DOMAIN-SUFFIX,docschina.org,🎯 全球直连
  - DOMAIN-SUFFIX,douban.com,🎯 全球直连
  - DOMAIN-SUFFIX,doubanio.com,🎯 全球直连
@@ -11655,79 +10884,94 @@ rules:
  - DOMAIN-SUFFIX,futu5.com,🎯 全球直连
  - DOMAIN-SUFFIX,futunn.com,🎯 全球直连
  - DOMAIN-SUFFIX,gandi.net,🎯 全球直连
+ - DOMAIN-SUFFIX,gcores.com,🎯 全球直连
  - DOMAIN-SUFFIX,geilicdn.com,🎯 全球直连
  - DOMAIN-SUFFIX,getpricetag.com,🎯 全球直连
  - DOMAIN-SUFFIX,gifshow.com,🎯 全球直连
  - DOMAIN-SUFFIX,godic.net,🎯 全球直连
+ - DOMAIN-SUFFIX,heweather.net,🎯 全球直连
  - DOMAIN-SUFFIX,hicloud.com,🎯 全球直连
  - DOMAIN-SUFFIX,hongxiu.com,🎯 全球直连
  - DOMAIN-SUFFIX,hostbuf.com,🎯 全球直连
  - DOMAIN-SUFFIX,huxiucdn.com,🎯 全球直连
  - DOMAIN-SUFFIX,huya.com,🎯 全球直连
+ - DOMAIN-SUFFIX,ibm.com,🎯 全球直连
  - DOMAIN-SUFFIX,infinitynewtab.com,🎯 全球直连
  - DOMAIN-SUFFIX,ithome.com,🎯 全球直连
  - DOMAIN-SUFFIX,java.com,🎯 全球直连
+ - DOMAIN-SUFFIX,jianguoyun.com,🎯 全球直连
+ - DOMAIN-SUFFIX,jianshu.com,🎯 全球直连
+ - DOMAIN-SUFFIX,jianshu.io,🎯 全球直连
  - DOMAIN-SUFFIX,jidian.im,🎯 全球直连
  - DOMAIN-SUFFIX,kaiyanapp.com,🎯 全球直连
  - DOMAIN-SUFFIX,kaspersky-labs.com,🎯 全球直连
  - DOMAIN-SUFFIX,keepcdn.com,🎯 全球直连
  - DOMAIN-SUFFIX,kkmh.com,🎯 全球直连
+ - DOMAIN-SUFFIX,lanzous.com,🎯 全球直连
  - DOMAIN-SUFFIX,licdn.com,🎯 全球直连
  - DOMAIN-SUFFIX,linkedin.com,🎯 全球直连
- - DOMAIN-SUFFIX,loli.net,🎯 全球直连
  - DOMAIN-SUFFIX,luojilab.com,🎯 全球直连
  - DOMAIN-SUFFIX,maoyan.com,🎯 全球直连
  - DOMAIN-SUFFIX,maoyun.tv,🎯 全球直连
- - DOMAIN-SUFFIX,meituan.com,🎯 全球直连
- - DOMAIN-SUFFIX,meituan.net,🎯 全球直连
+ - DOMAIN-SUFFIX,mls-cdn.com,🎯 全球直连
  - DOMAIN-SUFFIX,mobike.com,🎯 全球直连
  - DOMAIN-SUFFIX,moke.com,🎯 全球直连
  - DOMAIN-SUFFIX,mubu.com,🎯 全球直连
  - DOMAIN-SUFFIX,myzaker.com,🎯 全球直连
  - DOMAIN-SUFFIX,nim-lang-cn.org,🎯 全球直连
+ - DOMAIN-SUFFIX,ntp.org,🎯 全球直连
  - DOMAIN-SUFFIX,nvidia.com,🎯 全球直连
  - DOMAIN-SUFFIX,oracle.com,🎯 全球直连
- - DOMAIN-SUFFIX,paypal.com,🎯 全球直连
- - DOMAIN-SUFFIX,paypalobjects.com,🎯 全球直连
- - DOMAIN-SUFFIX,qdaily.com,🎯 全球直连
+ - DOMAIN-SUFFIX,plex.tv,🎯 全球直连
  - DOMAIN-SUFFIX,qidian.com,🎯 全球直连
+ - DOMAIN-SUFFIX,qweather.com,🎯 全球直连
  - DOMAIN-SUFFIX,qyer.com,🎯 全球直连
  - DOMAIN-SUFFIX,qyerstatic.com,🎯 全球直连
  - DOMAIN-SUFFIX,raychase.net,🎯 全球直连
  - DOMAIN-SUFFIX,ronghub.com,🎯 全球直连
  - DOMAIN-SUFFIX,ruguoapp.com,🎯 全球直连
- - DOMAIN-SUFFIX,s-reader.com,🎯 全球直连
  - DOMAIN-SUFFIX,sankuai.com,🎯 全球直连
  - DOMAIN-SUFFIX,scomper.me,🎯 全球直连
- - DOMAIN-SUFFIX,seafile.com,🎯 全球直连
  - DOMAIN-SUFFIX,sm.ms,🎯 全球直连
  - DOMAIN-SUFFIX,smzdm.com,🎯 全球直连
  - DOMAIN-SUFFIX,snapdrop.net,🎯 全球直连
  - DOMAIN-SUFFIX,snwx.com,🎯 全球直连
+ - DOMAIN-SUFFIX,s-reader.com,🎯 全球直连
  - DOMAIN-SUFFIX,sspai.com,🎯 全球直连
+ - DOMAIN-SUFFIX,subhd.tv,🎯 全球直连
  - DOMAIN-SUFFIX,takungpao.com,🎯 全球直连
  - DOMAIN-SUFFIX,teamviewer.com,🎯 全球直连
  - DOMAIN-SUFFIX,tianyancha.com,🎯 全球直连
- - DOMAIN-SUFFIX,udacity.com,🎯 全球直连
+ - DOMAIN-SUFFIX,tophub.today,🎯 全球直连
  - DOMAIN-SUFFIX,uning.com,🎯 全球直连
- - DOMAIN-SUFFIX,vmware.com,🎯 全球直连
  - DOMAIN-SUFFIX,weather.com,🎯 全球直连
  - DOMAIN-SUFFIX,weico.cc,🎯 全球直连
  - DOMAIN-SUFFIX,weidian.com,🎯 全球直连
  - DOMAIN-SUFFIX,xiachufang.com,🎯 全球直连
+ - DOMAIN-SUFFIX,xiaoka.tv,🎯 全球直连
  - DOMAIN-SUFFIX,ximalaya.com,🎯 全球直连
  - DOMAIN-SUFFIX,xinhuanet.com,🎯 全球直连
  - DOMAIN-SUFFIX,xmcdn.com,🎯 全球直连
  - DOMAIN-SUFFIX,yangkeduo.com,🎯 全球直连
+ - DOMAIN-SUFFIX,yizhibo.com,🎯 全球直连
  - DOMAIN-SUFFIX,zhangzishi.cc,🎯 全球直连
  - DOMAIN-SUFFIX,zhihu.com,🎯 全球直连
+ - DOMAIN-SUFFIX,zhihuishu.com,🎯 全球直连
  - DOMAIN-SUFFIX,zhimg.com,🎯 全球直连
  - DOMAIN-SUFFIX,zhuihd.com,🎯 全球直连
  - DOMAIN,download.jetbrains.com,🎯 全球直连
  - DOMAIN,images-cn.ssl-images-amazon.com,🎯 全球直连
- - DOMAIN,cdn.angruo.com,🎯 全球直连
- - IP-CIDR,119.28.28.28/32,🎯 全球直连,no-resolve
- - IP-CIDR,182.254.116.0/24,🎯 全球直连
+ - PROCESS-NAME,aria2c,🎯 全球直连
+ - PROCESS-NAME,fdm,🎯 全球直连
+ - PROCESS-NAME,Folx,🎯 全球直连
+ - PROCESS-NAME,NetTransport,🎯 全球直连
+ - PROCESS-NAME,Thunder,🎯 全球直连
+ - PROCESS-NAME,Transmission,🎯 全球直连
+ - PROCESS-NAME,uTorrent,🎯 全球直连
+ - PROCESS-NAME,WebTorrent,🎯 全球直连
+ - PROCESS-NAME,WebTorrent Helper,🎯 全球直连
+ - PROCESS-NAME,DownloadService,🎯 全球直连
+ - PROCESS-NAME,Weiyun,🎯 全球直连
  - DOMAIN-KEYWORD,aria2,🎯 全球直连
  - DOMAIN-KEYWORD,xunlei,🎯 全球直连
  - DOMAIN-KEYWORD,yunpan,🎯 全球直连
