@@ -5,191 +5,339 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: _HK_香港, server: 118.107.244.112, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: _HK_香港 2, server: 118.107.244.112, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: _US_美国, server: 38.75.136.93, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: _US_美国 2, server: 38.75.136.93, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: _HK_香港 3, server: 118.107.244.112, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: _US_美国 3, server: usa-sanfrancisco.lvuft.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: usa-sanfrancisco.lvuft.com}, udp: true}
-  - {name: _US_美国 4, server: 38.75.136.93, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: _US_美国 5, server: 38.75.136.93, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: _US_美国 6, server: ua1.uuv2.co.uk, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: usa-dallas.lvuft.com}, udp: true}
-  - {name: _US_美国 7, server: 38.75.136.93, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: _US_美国 8, server: 208.98.48.2, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: iesei1ei.com}, udp: true}
-  - {name: _US_美国 9, server: 38.75.136.93, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: _US_美国 10, server: 38.75.136.93, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: _US_美国 11, server: 38.75.136.93, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: _US_美国 12, server: 38.75.136.93, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: _US_美国 13, server: 45.58.150.130, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: dax6ujai.com}, udp: true}
+  - {name: Osaka-IT7, server: 192.243.120.45, port: 52593, type: vmess, uuid: e8947ce2-21f5-4daa-80ef-6ba42b0f7ed6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _US_美国, server: 209.58.139.41, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: usa-sanfrancisco.lvuft.com}, udp: true}
+  - {name: _US_美国 2, server: 45.35.84.162, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: usa-dallas.lvuft.com}, udp: true}
+  - {name: LAX-IT7, server: 216.24.178.62, port: 52593, type: vmess, uuid: e8947ce2-21f5-4daa-80ef-6ba42b0f7ed6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _US_美国 3, server: 208.98.48.2, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: iesei1ei.com}, udp: true}
+  - {name: _FR_法国, server: 62.210.209.50, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: _US_美国 4, server: 23.82.136.151, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: usa-miami.lvuft.com}, udp: true}
+  - {name: Amsterdam-Fiber, server: 104.245.96.88, port: 52593, type: vmess, uuid: e8947ce2-21f5-4daa-80ef-6ba42b0f7ed6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _AU_澳大利亚, server: 172.105.180.227, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: _AU_澳大利亚 2, server: 172.105.180.227, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
   - {name: _US_美国->🇫🇷_FR_法国, server: 172.67.68.58, port: 443, type: vmess, uuid: f2f578e4-692d-40b5-af99-9f1dd712eb32, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /shuier, ws-headers: {Host: xc1.v2rie.pp.ua}, udp: true}
-  - {name: _HK_香港 4, server: 118.107.244.112, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: _FR_法国, server: 62.210.209.50, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: _US_美国 14, server: 167.88.61.60, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: _US_美国 15, server: 38.143.66.71, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: _US_美国 16, server: 38.143.66.71, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: _US_美国 17, server: 38.143.66.71, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: _US_美国 18, server: 38.75.136.93, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: _US_美国 19, server: 38.143.66.71, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: _US_美国 20, server: 38.143.66.71, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: _US_美国 21, server: 167.88.61.60, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: _US_美国 22, server: usa-buffalo.lvuft.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: usa-buffalo.lvuft.com}, udp: true}
-  - {name: _GB_英国, server: 172.99.190.87, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: _US_美国 23, server: www.ltzs.buzz, port: 443, type: vmess, uuid: d0ce51d5-b4de-4f99-ac7c-c5c1a123bd94, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /bb2b34a1, ws-headers: {Host: www.ltzs.buzz}, udp: true}
-  - {name: _US_美国 24, server: 38.143.66.71, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: _US_美国 25, server: 38.75.136.93, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: _US_美国 26, server: 192.96.204.250, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: usa-washington.lvuft.com}, udp: true}
-  - {name: _US_美国 27, server: 38.143.66.71, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: _US_美国 28, server: 38.143.66.71, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: _US_美国 29, server: 38.75.136.93, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: _US_美国 30, server: 167.88.61.60, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: _US_美国 31, server: 38.75.136.93, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: _US_美国 32, server: 172.67.197.254, port: 443, type: vmess, uuid: d0ce51d5-b4de-4f99-ac7c-c5c1a123bd94, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /bb2b34a1, ws-headers: {Host: www.ltzs.buzz}, udp: true}
-  - {name: _US_美国 33, server: 167.88.61.60, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: _US_美国 34, server: 167.88.61.60, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: _US_美国 35, server: 167.88.61.60, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: _AU_澳大利亚 3, server: 172.105.180.227, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: _HU_匈牙利, server: 185.128.26.130, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: GU3kqh2ZSkzFkRBp4hxy, udp: true}
+  - {name: _US_美国 5, server: 38.143.66.71, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: _AU_澳大利亚 4, server: 172.105.180.227, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: _AU_澳大利亚 5, server: 172.105.180.227, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: _AU_澳大利亚 6, server: 172.105.180.227, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: _FR_法国 2, server: 62.210.209.50, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: _US_美国 6, server: 38.143.66.71, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: _AU_澳大利亚 7, server: 172.105.180.227, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: _FR_法国 3, server: 62.210.209.50, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: _AU_澳大利亚 8, server: 172.105.180.227, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: _AU_澳大利亚 9, server: 172.105.180.227, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: _AU_澳大利亚 10, server: 172.105.180.227, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: _US_美国 7, server: 167.88.61.60, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: _US_美国 8, server: 167.88.61.60, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: _AU_澳大利亚 11, server: 172.105.180.227, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: _US_美国 9, server: 38.143.66.71, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: _AU_澳大利亚 12, server: 172.105.180.227, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: _AU_澳大利亚 13, server: 172.105.180.227, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: _AU_澳大利亚 14, server: 172.105.180.227, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: _AU_澳大利亚 15, server: 172.105.180.227, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: _US_美国 10, server: 38.143.66.71, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: _FR_法国 4, server: 62.210.209.50, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: _AU_澳大利亚 16, server: 172.105.180.227, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: _US_美国 11, server: 167.88.61.60, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: _AU_澳大利亚 17, server: 172.105.180.227, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: _AU_澳大利亚 18, server: 172.105.180.227, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: _FR_法国 5, server: 141.95.0.26, port: 826, type: ss, cipher: chacha20-ietf-poly1305, password: sF43Xt2gONqcgFX563, udp: true}
+  - {name: _FR_法国 6, server: 62.210.209.50, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: _AU_澳大利亚 19, server: 172.105.180.227, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: _AU_澳大利亚 20, server: 172.105.180.227, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: _US_美国 12, server: 169.197.142.39, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: _US_美国 13, server: 38.143.66.71, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: _US_美国 14, server: 192.96.204.250, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: usa-washington.lvuft.com}, udp: true}
+  - {name: _FR_法国 7, server: 62.210.209.50, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: _US_美国 15, server: 169.197.142.39, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: _GB_英国, server: 172.99.190.87, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: _US_美国 16, server: 169.197.142.39, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: _FR_法国 8, server: 62.210.209.50, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: _US_美国 17, server: 169.197.142.39, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: _US_美国 18, server: 169.197.142.39, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: _US_美国 19, server: 38.143.66.71, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: _US_美国 20, server: 38.75.136.93, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: _US_美国 21, server: 167.88.61.60, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: _US_美国 22, server: 169.197.142.39, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: _US_美国 23, server: 167.88.61.60, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: _US_美国 24, server: 169.197.142.39, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: _US_美国 25, server: 167.88.61.60, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: _AU_澳大利亚 21, server: 172.105.180.227, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: _CA_加拿大, server: 198.57.27.218, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: _US_美国 26, server: 38.75.136.93, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: _US_美国 27, server: 167.88.61.60, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: _FR_法国 9, server: 145.239.1.137, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: _US_美国 28, server: 167.88.61.60, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: _US_美国 29, server: 169.197.142.39, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: _CA_加拿大 2, server: 198.57.27.218, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: _US_美国 30, server: 169.197.142.39, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
+  - {name: _US_美国 31, server: 167.88.61.60, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: _US_美国 32, server: 38.143.66.71, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: _US_美国 33, server: 167.88.61.60, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: _GB_英国 2, server: 172.99.190.87, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: _GB_英国 3, server: 172.99.190.87, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: _CA_加拿大 3, server: 198.57.27.218, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: _CA_加拿大 4, server: 198.57.27.218, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: _US_美国 34, server: 169.197.142.39, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: _US_美国 35, server: usa-washington.lvuft.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: usa-washington.lvuft.com}, udp: true}
+  - {name: _AU_澳大利亚 22, server: 172.105.180.227, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: _GB_英国 4, server: 172.99.190.87, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - _HK_香港
-      - _HK_香港 2
+      - Osaka-IT7
       - _US_美国
       - _US_美国 2
-      - _HK_香港 3
+      - LAX-IT7
       - _US_美国 3
+      - _FR_法国
       - _US_美国 4
+      - Amsterdam-Fiber
+      - _AU_澳大利亚
+      - _AU_澳大利亚 2
+      - _US_美国->🇫🇷_FR_法国
+      - _AU_澳大利亚 3
+      - _HU_匈牙利
       - _US_美国 5
+      - _AU_澳大利亚 4
+      - _AU_澳大利亚 5
+      - _AU_澳大利亚 6
+      - _FR_法国 2
       - _US_美国 6
+      - _AU_澳大利亚 7
+      - _FR_法国 3
+      - _AU_澳大利亚 8
+      - _AU_澳大利亚 9
+      - _AU_澳大利亚 10
       - _US_美国 7
       - _US_美国 8
+      - _AU_澳大利亚 11
       - _US_美国 9
+      - _AU_澳大利亚 12
+      - _AU_澳大利亚 13
+      - _AU_澳大利亚 14
+      - _AU_澳大利亚 15
       - _US_美国 10
+      - _FR_法国 4
+      - _AU_澳大利亚 16
       - _US_美国 11
+      - _AU_澳大利亚 17
+      - _AU_澳大利亚 18
+      - _FR_法国 5
+      - _FR_法国 6
+      - _AU_澳大利亚 19
+      - _AU_澳大利亚 20
       - _US_美国 12
       - _US_美国 13
-      - _US_美国->🇫🇷_FR_法国
-      - _HK_香港 4
-      - _FR_法国
       - _US_美国 14
+      - _FR_法国 7
       - _US_美国 15
+      - _GB_英国
       - _US_美国 16
+      - _FR_法国 8
       - _US_美国 17
       - _US_美国 18
       - _US_美国 19
       - _US_美国 20
       - _US_美国 21
       - _US_美国 22
-      - _GB_英国
       - _US_美国 23
       - _US_美国 24
       - _US_美国 25
+      - _AU_澳大利亚 21
+      - _CA_加拿大
       - _US_美国 26
       - _US_美国 27
+      - _FR_法国 9
       - _US_美国 28
       - _US_美国 29
+      - _CA_加拿大 2
       - _US_美国 30
       - _US_美国 31
       - _US_美国 32
       - _US_美国 33
+      - _GB_英国 2
+      - _GB_英国 3
+      - _CA_加拿大 3
+      - _CA_加拿大 4
       - _US_美国 34
       - _US_美国 35
+      - _AU_澳大利亚 22
+      - _GB_英国 4
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - _HK_香港
-      - _HK_香港 2
+      - Osaka-IT7
       - _US_美国
       - _US_美国 2
-      - _HK_香港 3
+      - LAX-IT7
       - _US_美国 3
+      - _FR_法国
       - _US_美国 4
+      - Amsterdam-Fiber
+      - _AU_澳大利亚
+      - _AU_澳大利亚 2
+      - _US_美国->🇫🇷_FR_法国
+      - _AU_澳大利亚 3
+      - _HU_匈牙利
       - _US_美国 5
+      - _AU_澳大利亚 4
+      - _AU_澳大利亚 5
+      - _AU_澳大利亚 6
+      - _FR_法国 2
       - _US_美国 6
+      - _AU_澳大利亚 7
+      - _FR_法国 3
+      - _AU_澳大利亚 8
+      - _AU_澳大利亚 9
+      - _AU_澳大利亚 10
       - _US_美国 7
       - _US_美国 8
+      - _AU_澳大利亚 11
       - _US_美国 9
+      - _AU_澳大利亚 12
+      - _AU_澳大利亚 13
+      - _AU_澳大利亚 14
+      - _AU_澳大利亚 15
       - _US_美国 10
+      - _FR_法国 4
+      - _AU_澳大利亚 16
       - _US_美国 11
+      - _AU_澳大利亚 17
+      - _AU_澳大利亚 18
+      - _FR_法国 5
+      - _FR_法国 6
+      - _AU_澳大利亚 19
+      - _AU_澳大利亚 20
       - _US_美国 12
       - _US_美国 13
-      - _US_美国->🇫🇷_FR_法国
-      - _HK_香港 4
-      - _FR_法国
       - _US_美国 14
+      - _FR_法国 7
       - _US_美国 15
+      - _GB_英国
       - _US_美国 16
+      - _FR_法国 8
       - _US_美国 17
       - _US_美国 18
       - _US_美国 19
       - _US_美国 20
       - _US_美国 21
       - _US_美国 22
-      - _GB_英国
       - _US_美国 23
       - _US_美国 24
       - _US_美国 25
+      - _AU_澳大利亚 21
+      - _CA_加拿大
       - _US_美国 26
       - _US_美国 27
+      - _FR_法国 9
       - _US_美国 28
       - _US_美国 29
+      - _CA_加拿大 2
       - _US_美国 30
       - _US_美国 31
       - _US_美国 32
       - _US_美国 33
+      - _GB_英国 2
+      - _GB_英国 3
+      - _CA_加拿大 3
+      - _CA_加拿大 4
       - _US_美国 34
       - _US_美国 35
+      - _AU_澳大利亚 22
+      - _GB_英国 4
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - _HK_香港
-      - _HK_香港 2
+      - Osaka-IT7
       - _US_美国
       - _US_美国 2
-      - _HK_香港 3
+      - LAX-IT7
       - _US_美国 3
+      - _FR_法国
       - _US_美国 4
+      - Amsterdam-Fiber
+      - _AU_澳大利亚
+      - _AU_澳大利亚 2
+      - _US_美国->🇫🇷_FR_法国
+      - _AU_澳大利亚 3
+      - _HU_匈牙利
       - _US_美国 5
+      - _AU_澳大利亚 4
+      - _AU_澳大利亚 5
+      - _AU_澳大利亚 6
+      - _FR_法国 2
       - _US_美国 6
+      - _AU_澳大利亚 7
+      - _FR_法国 3
+      - _AU_澳大利亚 8
+      - _AU_澳大利亚 9
+      - _AU_澳大利亚 10
       - _US_美国 7
       - _US_美国 8
+      - _AU_澳大利亚 11
       - _US_美国 9
+      - _AU_澳大利亚 12
+      - _AU_澳大利亚 13
+      - _AU_澳大利亚 14
+      - _AU_澳大利亚 15
       - _US_美国 10
+      - _FR_法国 4
+      - _AU_澳大利亚 16
       - _US_美国 11
+      - _AU_澳大利亚 17
+      - _AU_澳大利亚 18
+      - _FR_法国 5
+      - _FR_法国 6
+      - _AU_澳大利亚 19
+      - _AU_澳大利亚 20
       - _US_美国 12
       - _US_美国 13
-      - _US_美国->🇫🇷_FR_法国
-      - _HK_香港 4
-      - _FR_法国
       - _US_美国 14
+      - _FR_法国 7
       - _US_美国 15
+      - _GB_英国
       - _US_美国 16
+      - _FR_法国 8
       - _US_美国 17
       - _US_美国 18
       - _US_美国 19
       - _US_美国 20
       - _US_美国 21
       - _US_美国 22
-      - _GB_英国
       - _US_美国 23
       - _US_美国 24
       - _US_美国 25
+      - _AU_澳大利亚 21
+      - _CA_加拿大
       - _US_美国 26
       - _US_美国 27
+      - _FR_法国 9
       - _US_美国 28
       - _US_美国 29
+      - _CA_加拿大 2
       - _US_美国 30
       - _US_美国 31
       - _US_美国 32
       - _US_美国 33
+      - _GB_英国 2
+      - _GB_英国 3
+      - _CA_加拿大 3
+      - _CA_加拿大 4
       - _US_美国 34
       - _US_美国 35
+      - _AU_澳大利亚 22
+      - _GB_英国 4
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -208,199 +356,343 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - _HK_香港
-      - _HK_香港 2
+      - Osaka-IT7
       - _US_美国
       - _US_美国 2
-      - _HK_香港 3
+      - LAX-IT7
       - _US_美国 3
+      - _FR_法国
       - _US_美国 4
+      - Amsterdam-Fiber
+      - _AU_澳大利亚
+      - _AU_澳大利亚 2
+      - _US_美国->🇫🇷_FR_法国
+      - _AU_澳大利亚 3
+      - _HU_匈牙利
       - _US_美国 5
+      - _AU_澳大利亚 4
+      - _AU_澳大利亚 5
+      - _AU_澳大利亚 6
+      - _FR_法国 2
       - _US_美国 6
+      - _AU_澳大利亚 7
+      - _FR_法国 3
+      - _AU_澳大利亚 8
+      - _AU_澳大利亚 9
+      - _AU_澳大利亚 10
       - _US_美国 7
       - _US_美国 8
+      - _AU_澳大利亚 11
       - _US_美国 9
+      - _AU_澳大利亚 12
+      - _AU_澳大利亚 13
+      - _AU_澳大利亚 14
+      - _AU_澳大利亚 15
       - _US_美国 10
+      - _FR_法国 4
+      - _AU_澳大利亚 16
       - _US_美国 11
+      - _AU_澳大利亚 17
+      - _AU_澳大利亚 18
+      - _FR_法国 5
+      - _FR_法国 6
+      - _AU_澳大利亚 19
+      - _AU_澳大利亚 20
       - _US_美国 12
       - _US_美国 13
-      - _US_美国->🇫🇷_FR_法国
-      - _HK_香港 4
-      - _FR_法国
       - _US_美国 14
+      - _FR_法国 7
       - _US_美国 15
+      - _GB_英国
       - _US_美国 16
+      - _FR_法国 8
       - _US_美国 17
       - _US_美国 18
       - _US_美国 19
       - _US_美国 20
       - _US_美国 21
       - _US_美国 22
-      - _GB_英国
       - _US_美国 23
       - _US_美国 24
       - _US_美国 25
+      - _AU_澳大利亚 21
+      - _CA_加拿大
       - _US_美国 26
       - _US_美国 27
+      - _FR_法国 9
       - _US_美国 28
       - _US_美国 29
+      - _CA_加拿大 2
       - _US_美国 30
       - _US_美国 31
       - _US_美国 32
       - _US_美国 33
+      - _GB_英国 2
+      - _GB_英国 3
+      - _CA_加拿大 3
+      - _CA_加拿大 4
       - _US_美国 34
       - _US_美国 35
+      - _AU_澳大利亚 22
+      - _GB_英国 4
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - _HK_香港
-      - _HK_香港 2
-      - _HK_香港 3
-      - _HK_香港 4
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - _HK_香港
-      - _HK_香港 2
+      - Osaka-IT7
       - _US_美国
       - _US_美国 2
-      - _HK_香港 3
+      - LAX-IT7
       - _US_美国 3
+      - _FR_法国
       - _US_美国 4
+      - Amsterdam-Fiber
+      - _AU_澳大利亚
+      - _AU_澳大利亚 2
+      - _US_美国->🇫🇷_FR_法国
+      - _AU_澳大利亚 3
+      - _HU_匈牙利
       - _US_美国 5
+      - _AU_澳大利亚 4
+      - _AU_澳大利亚 5
+      - _AU_澳大利亚 6
+      - _FR_法国 2
       - _US_美国 6
+      - _AU_澳大利亚 7
+      - _FR_法国 3
+      - _AU_澳大利亚 8
+      - _AU_澳大利亚 9
+      - _AU_澳大利亚 10
       - _US_美国 7
       - _US_美国 8
+      - _AU_澳大利亚 11
       - _US_美国 9
+      - _AU_澳大利亚 12
+      - _AU_澳大利亚 13
+      - _AU_澳大利亚 14
+      - _AU_澳大利亚 15
       - _US_美国 10
+      - _FR_法国 4
+      - _AU_澳大利亚 16
       - _US_美国 11
+      - _AU_澳大利亚 17
+      - _AU_澳大利亚 18
+      - _FR_法国 5
+      - _FR_法国 6
+      - _AU_澳大利亚 19
+      - _AU_澳大利亚 20
       - _US_美国 12
       - _US_美国 13
-      - _US_美国->🇫🇷_FR_法国
-      - _HK_香港 4
-      - _FR_法国
       - _US_美国 14
+      - _FR_法国 7
       - _US_美国 15
+      - _GB_英国
       - _US_美国 16
+      - _FR_法国 8
       - _US_美国 17
       - _US_美国 18
       - _US_美国 19
       - _US_美国 20
       - _US_美国 21
       - _US_美国 22
-      - _GB_英国
       - _US_美国 23
       - _US_美国 24
       - _US_美国 25
+      - _AU_澳大利亚 21
+      - _CA_加拿大
       - _US_美国 26
       - _US_美国 27
+      - _FR_法国 9
       - _US_美国 28
       - _US_美国 29
+      - _CA_加拿大 2
       - _US_美国 30
       - _US_美国 31
       - _US_美国 32
       - _US_美国 33
+      - _GB_英国 2
+      - _GB_英国 3
+      - _CA_加拿大 3
+      - _CA_加拿大 4
       - _US_美国 34
       - _US_美国 35
+      - _AU_澳大利亚 22
+      - _GB_英国 4
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - _HK_香港
-      - _HK_香港 2
+      - Osaka-IT7
       - _US_美国
       - _US_美国 2
-      - _HK_香港 3
+      - LAX-IT7
       - _US_美国 3
+      - _FR_法国
       - _US_美国 4
+      - Amsterdam-Fiber
+      - _AU_澳大利亚
+      - _AU_澳大利亚 2
+      - _US_美国->🇫🇷_FR_法国
+      - _AU_澳大利亚 3
+      - _HU_匈牙利
       - _US_美国 5
+      - _AU_澳大利亚 4
+      - _AU_澳大利亚 5
+      - _AU_澳大利亚 6
+      - _FR_法国 2
       - _US_美国 6
+      - _AU_澳大利亚 7
+      - _FR_法国 3
+      - _AU_澳大利亚 8
+      - _AU_澳大利亚 9
+      - _AU_澳大利亚 10
       - _US_美国 7
       - _US_美国 8
+      - _AU_澳大利亚 11
       - _US_美国 9
+      - _AU_澳大利亚 12
+      - _AU_澳大利亚 13
+      - _AU_澳大利亚 14
+      - _AU_澳大利亚 15
       - _US_美国 10
+      - _FR_法国 4
+      - _AU_澳大利亚 16
       - _US_美国 11
+      - _AU_澳大利亚 17
+      - _AU_澳大利亚 18
+      - _FR_法国 5
+      - _FR_法国 6
+      - _AU_澳大利亚 19
+      - _AU_澳大利亚 20
       - _US_美国 12
       - _US_美国 13
-      - _US_美国->🇫🇷_FR_法国
-      - _HK_香港 4
-      - _FR_法国
       - _US_美国 14
+      - _FR_法国 7
       - _US_美国 15
+      - _GB_英国
       - _US_美国 16
+      - _FR_法国 8
       - _US_美国 17
       - _US_美国 18
       - _US_美国 19
       - _US_美国 20
       - _US_美国 21
       - _US_美国 22
-      - _GB_英国
       - _US_美国 23
       - _US_美国 24
       - _US_美国 25
+      - _AU_澳大利亚 21
+      - _CA_加拿大
       - _US_美国 26
       - _US_美国 27
+      - _FR_法国 9
       - _US_美国 28
       - _US_美国 29
+      - _CA_加拿大 2
       - _US_美国 30
       - _US_美国 31
       - _US_美国 32
       - _US_美国 33
+      - _GB_英国 2
+      - _GB_英国 3
+      - _CA_加拿大 3
+      - _CA_加拿大 4
       - _US_美国 34
       - _US_美国 35
+      - _AU_澳大利亚 22
+      - _GB_英国 4
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - _HK_香港
-      - _HK_香港 2
+      - Osaka-IT7
       - _US_美国
       - _US_美国 2
-      - _HK_香港 3
+      - LAX-IT7
       - _US_美国 3
+      - _FR_法国
       - _US_美国 4
+      - Amsterdam-Fiber
+      - _AU_澳大利亚
+      - _AU_澳大利亚 2
+      - _US_美国->🇫🇷_FR_法国
+      - _AU_澳大利亚 3
+      - _HU_匈牙利
       - _US_美国 5
+      - _AU_澳大利亚 4
+      - _AU_澳大利亚 5
+      - _AU_澳大利亚 6
+      - _FR_法国 2
       - _US_美国 6
+      - _AU_澳大利亚 7
+      - _FR_法国 3
+      - _AU_澳大利亚 8
+      - _AU_澳大利亚 9
+      - _AU_澳大利亚 10
       - _US_美国 7
       - _US_美国 8
+      - _AU_澳大利亚 11
       - _US_美国 9
+      - _AU_澳大利亚 12
+      - _AU_澳大利亚 13
+      - _AU_澳大利亚 14
+      - _AU_澳大利亚 15
       - _US_美国 10
+      - _FR_法国 4
+      - _AU_澳大利亚 16
       - _US_美国 11
+      - _AU_澳大利亚 17
+      - _AU_澳大利亚 18
+      - _FR_法国 5
+      - _FR_法国 6
+      - _AU_澳大利亚 19
+      - _AU_澳大利亚 20
       - _US_美国 12
       - _US_美国 13
-      - _US_美国->🇫🇷_FR_法国
-      - _HK_香港 4
-      - _FR_法国
       - _US_美国 14
+      - _FR_法国 7
       - _US_美国 15
+      - _GB_英国
       - _US_美国 16
+      - _FR_法国 8
       - _US_美国 17
       - _US_美国 18
       - _US_美国 19
       - _US_美国 20
       - _US_美国 21
       - _US_美国 22
-      - _GB_英国
       - _US_美国 23
       - _US_美国 24
       - _US_美国 25
+      - _AU_澳大利亚 21
+      - _CA_加拿大
       - _US_美国 26
       - _US_美国 27
+      - _FR_法国 9
       - _US_美国 28
       - _US_美国 29
+      - _CA_加拿大 2
       - _US_美国 30
       - _US_美国 31
       - _US_美国 32
       - _US_美国 33
+      - _GB_英国 2
+      - _GB_英国 3
+      - _CA_加拿大 3
+      - _CA_加拿大 4
       - _US_美国 34
       - _US_美国 35
+      - _AU_澳大利亚 22
+      - _GB_英国 4
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -416,48 +708,85 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - _HK_香港
-      - _HK_香港 2
+      - Osaka-IT7
       - _US_美国
       - _US_美国 2
-      - _HK_香港 3
+      - LAX-IT7
       - _US_美国 3
+      - _FR_法国
       - _US_美国 4
+      - Amsterdam-Fiber
+      - _AU_澳大利亚
+      - _AU_澳大利亚 2
+      - _US_美国->🇫🇷_FR_法国
+      - _AU_澳大利亚 3
+      - _HU_匈牙利
       - _US_美国 5
+      - _AU_澳大利亚 4
+      - _AU_澳大利亚 5
+      - _AU_澳大利亚 6
+      - _FR_法国 2
       - _US_美国 6
+      - _AU_澳大利亚 7
+      - _FR_法国 3
+      - _AU_澳大利亚 8
+      - _AU_澳大利亚 9
+      - _AU_澳大利亚 10
       - _US_美国 7
       - _US_美国 8
+      - _AU_澳大利亚 11
       - _US_美国 9
+      - _AU_澳大利亚 12
+      - _AU_澳大利亚 13
+      - _AU_澳大利亚 14
+      - _AU_澳大利亚 15
       - _US_美国 10
+      - _FR_法国 4
+      - _AU_澳大利亚 16
       - _US_美国 11
+      - _AU_澳大利亚 17
+      - _AU_澳大利亚 18
+      - _FR_法国 5
+      - _FR_法国 6
+      - _AU_澳大利亚 19
+      - _AU_澳大利亚 20
       - _US_美国 12
       - _US_美国 13
-      - _US_美国->🇫🇷_FR_法国
-      - _HK_香港 4
-      - _FR_法国
       - _US_美国 14
+      - _FR_法国 7
       - _US_美国 15
+      - _GB_英国
       - _US_美国 16
+      - _FR_法国 8
       - _US_美国 17
       - _US_美国 18
       - _US_美国 19
       - _US_美国 20
       - _US_美国 21
       - _US_美国 22
-      - _GB_英国
       - _US_美国 23
       - _US_美国 24
       - _US_美国 25
+      - _AU_澳大利亚 21
+      - _CA_加拿大
       - _US_美国 26
       - _US_美国 27
+      - _FR_法国 9
       - _US_美国 28
       - _US_美国 29
+      - _CA_加拿大 2
       - _US_美国 30
       - _US_美国 31
       - _US_美国 32
       - _US_美国 33
+      - _GB_英国 2
+      - _GB_英国 3
+      - _CA_加拿大 3
+      - _CA_加拿大 4
       - _US_美国 34
       - _US_美国 35
+      - _AU_澳大利亚 22
+      - _GB_英国 4
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
