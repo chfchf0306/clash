@@ -6,91 +6,191 @@ log-level: info
 external-controller: :9090
 proxies:
   - {name: 中国_YouTube：8度科技, server: sxqxj.cn, port: 2164, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: sxqxj.cn}, udp: true}
-  - {name: _US_美国, server: v8.ssrsub.com, port: 443, type: vmess, uuid: 21627f29-0d0f-4dfa-9740-b5ee360bf061, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ssrsub, ws-headers: {Host: v8.ssrsub.com}, udp: true}
   - {name: 中国_YouTube：8度科技 2, server: 105.wgong.xyz, port: 52205, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国_YouTube：8度科技, server: us.lv.buyvm.tgproxy.wtf, port: 21888, type: vmess, uuid: d064d11b-477c-4c5d-a2d8-9fd599ef8e79, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /theuploadapi, ws-headers: {Host: us.lv.buyvm.tgproxy.wtf}, udp: true}
-  - {name: _US_美国 2, server: 107.155.83.152, port: 443, type: vmess, uuid: 8f469f1b-1fd3-433b-9fd9-b4e041b9df16, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ray, ws-headers: {Host: govacaxixo.watchdoctor.xyz}, udp: true}
+  - {name: _US_美国, server: 107.155.83.152, port: 443, type: vmess, uuid: 8f469f1b-1fd3-433b-9fd9-b4e041b9df16, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ray, ws-headers: {Host: govacaxixo.watchdoctor.xyz}, udp: true}
   - {name: 英国_YouTube：8度科技, server: 37.120.134.207, port: 443, type: vmess, uuid: 5c0beec7-9b91-4e28-85b0-e3ff49b4ac50, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ray, ws-headers: {Host: govacaxixo.watchdoctor.xyz}, udp: true}
   - {name: 俄罗斯联邦_YouTube：8度科技, server: 92.223.65.119, port: 443, type: vmess, uuid: 3fd6713f-e036-4ba9-938a-da7843a17a15, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ray, ws-headers: {Host: govacaxixo.watchdoctor.xyz}, udp: true}
-  - {name: _US_美国 3, server: ahdaeph8.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: ahdaeph8.com}, udp: true}
-  - {name: 比利时_YouTube：8度科技, server: 194.71.227.16, port: 443, type: vmess, uuid: 0c601ad4-9fe1-4b02-b026-a37f6f45147d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ray, ws-headers: {Host: govacaxixo.watchdoctor.xyz}, udp: true}
   - {name: 澳大利亚_YouTube：8度科技, server: 45.76.127.189, port: 443, type: vmess, uuid: 7fc6764a-6cba-4599-95d7-ac7617b7db0a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ray, ws-headers: {Host: govacaxixo.watchdoctor.xyz}, udp: true}
-  - {name: 美国_YouTube：8度科技 2, server: 198.148.92.246, port: 443, type: vmess, uuid: 4f4c3fc0-888d-414e-9965-a41c627fab53, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ray, ws-headers: {Host: govacaxixo.watchdoctor.xyz}, udp: true}
-  - {name: 加拿大_YouTube：8度科技, server: 198.57.27.184, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: 加拿大_YouTube：8度科技 2, server: 134.195.196.81, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: 美国_YouTube：8度科技 3, server: 167.88.63.74, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: 加拿大_YouTube：8度科技 3, server: 198.57.27.184, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: 美国_YouTube：8度科技 4, server: 169.197.141.187, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 加拿大_YouTube：8度科技 4, server: 134.195.196.200, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: 加拿大_YouTube：8度科技 5, server: 134.195.196.81, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: 加拿大_YouTube：8度科技 6, server: 134.195.196.200, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: 美国_YouTube：8度科技 5, server: 167.88.63.61, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: 加拿大_YouTube：8度科技 7, server: 198.57.27.241, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: 美国_YouTube：8度科技 6, server: 142.202.48.34, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 加拿大_YouTube：8度科技 8, server: 198.57.27.241, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: 加拿大_YouTube：8度科技 9, server: 134.195.196.81, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: 美国_YouTube：8度科技 7, server: 38.121.43.71, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: 美国_YouTube：8度科技 8, server: 167.88.63.74, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: 美国_YouTube：8度科技 9, server: 167.88.63.28, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: 加拿大_YouTube：8度科技 10, server: 134.195.196.200, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: 英国_YouTube：8度科技 2, server: 172.99.190.205, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: _GB_英国, server: 172.99.190.188, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: 美国_YouTube：8度科技, server: 198.148.92.246, port: 443, type: vmess, uuid: 4f4c3fc0-888d-414e-9965-a41c627fab53, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ray, ws-headers: {Host: govacaxixo.watchdoctor.xyz}, udp: true}
+  - {name: 香港+中继07+华南, server: cn-6.crhnode.top, port: 566, type: ss, cipher: rc4-md5, password: AAEXNETWORKTECHNOLOGYLTD20170715, plugin: obfs, plugin-opts: {mode: http, host: 20148-818nw7mYgF.download.microsoft.com}, udp: true}
+  - {name: 香港+中继08+华南, server: cn-6.crhnode.top, port: 567, type: ss, cipher: rc4-md5, password: AAEXNETWORKTECHNOLOGYLTD20170715, plugin: obfs, plugin-opts: {mode: http, host: 20148-818nw7mYgF.download.microsoft.com}, udp: true}
+  - {name: 香港+中继03+华南, server: cn-6.crhnode.top, port: 562, type: ss, cipher: rc4-md5, password: AAEXNETWORKTECHNOLOGYLTD20170715, plugin: obfs, plugin-opts: {mode: http, host: 20148-818nw7mYgF.download.microsoft.com}, udp: true}
+  - {name: 香港+中继01+华南, server: cn-6.crhnode.top, port: 560, type: ss, cipher: rc4-md5, password: AAEXNETWORKTECHNOLOGYLTD20170715, plugin: obfs, plugin-opts: {mode: http, host: 20148-818nw7mYgF.download.microsoft.com}, udp: true}
+  - {name: 香港+中继02+华南, server: cn-6.crhnode.top, port: 561, type: ss, cipher: rc4-md5, password: AAEXNETWORKTECHNOLOGYLTD20170715, plugin: obfs, plugin-opts: {mode: http, host: 20148-818nw7mYgF.download.microsoft.com}, udp: true}
+  - {name: 香港+中继06+华南, server: cn-6.crhnode.top, port: 565, type: ss, cipher: rc4-md5, password: AAEXNETWORKTECHNOLOGYLTD20170715, plugin: obfs, plugin-opts: {mode: http, host: 20148-818nw7mYgF.download.microsoft.com}, udp: true}
+  - {name: 香港+中继04+华南, server: cn-6.crhnode.top, port: 563, type: ss, cipher: rc4-md5, password: AAEXNETWORKTECHNOLOGYLTD20170715, plugin: obfs, plugin-opts: {mode: http, host: 20148-818nw7mYgF.download.microsoft.com}, udp: true}
+  - {name: 台湾+中继08+华南, server: cn-1.crhnode.top, port: 557, type: ss, cipher: rc4-md5, password: AAEXNETWORKTECHNOLOGYLTD20170715, plugin: obfs, plugin-opts: {mode: http, host: 20148-818nw7mYgF.download.microsoft.com}, udp: true}
+  - {name: 香港+中继09+华南, server: cn-6.crhnode.top, port: 568, type: ss, cipher: rc4-md5, password: AAEXNETWORKTECHNOLOGYLTD20170715, plugin: obfs, plugin-opts: {mode: http, host: 20148-818nw7mYgF.download.microsoft.com}, udp: true}
+  - {name: 香港+中继10+华南, server: cn-6.crhnode.top, port: 569, type: ss, cipher: rc4-md5, password: AAEXNETWORKTECHNOLOGYLTD20170715, plugin: obfs, plugin-opts: {mode: http, host: 20148-818nw7mYgF.download.microsoft.com}, udp: true}
+  - {name: 台湾+中继09+华南, server: cn-1.crhnode.top, port: 558, type: ss, cipher: rc4-md5, password: AAEXNETWORKTECHNOLOGYLTD20170715, plugin: obfs, plugin-opts: {mode: http, host: 20148-818nw7mYgF.download.microsoft.com}, udp: true}
+  - {name: 香港+中继05+华南, server: cn-6.crhnode.top, port: 564, type: ss, cipher: rc4-md5, password: AAEXNETWORKTECHNOLOGYLTD20170715, plugin: obfs, plugin-opts: {mode: http, host: 20148-818nw7mYgF.download.microsoft.com}, udp: true}
+  - {name: 台湾+中继10+华南, server: cn-1.crhnode.top, port: 559, type: ss, cipher: rc4-md5, password: AAEXNETWORKTECHNOLOGYLTD20170715, plugin: obfs, plugin-opts: {mode: http, host: 20148-818nw7mYgF.download.microsoft.com}, udp: true}
+  - {name: 台湾+中继01+华南, server: cn-1.crhnode.top, port: 550, type: ss, cipher: rc4-md5, password: AAEXNETWORKTECHNOLOGYLTD20170715, plugin: obfs, plugin-opts: {mode: http, host: 20148-818nw7mYgF.download.microsoft.com}, udp: true}
+  - {name: 台湾+中继02+华南, server: cn-1.crhnode.top, port: 551, type: ss, cipher: rc4-md5, password: AAEXNETWORKTECHNOLOGYLTD20170715, plugin: obfs, plugin-opts: {mode: http, host: 20148-818nw7mYgF.download.microsoft.com}, udp: true}
+  - {name: 台湾+中继06+华南, server: cn-1.crhnode.top, port: 555, type: ss, cipher: rc4-md5, password: AAEXNETWORKTECHNOLOGYLTD20170715, plugin: obfs, plugin-opts: {mode: http, host: 20148-818nw7mYgF.download.microsoft.com}, udp: true}
+  - {name: 台湾+中继04+华南, server: cn-1.crhnode.top, port: 553, type: ss, cipher: rc4-md5, password: AAEXNETWORKTECHNOLOGYLTD20170715, plugin: obfs, plugin-opts: {mode: http, host: 20148-818nw7mYgF.download.microsoft.com}, udp: true}
+  - {name: 台湾+中继03+华南, server: cn-1.crhnode.top, port: 552, type: ss, cipher: rc4-md5, password: AAEXNETWORKTECHNOLOGYLTD20170715, plugin: obfs, plugin-opts: {mode: http, host: 20148-818nw7mYgF.download.microsoft.com}, udp: true}
+  - {name: 台湾+中继07+华南, server: cn-1.crhnode.top, port: 556, type: ss, cipher: rc4-md5, password: AAEXNETWORKTECHNOLOGYLTD20170715, plugin: obfs, plugin-opts: {mode: http, host: 20148-818nw7mYgF.download.microsoft.com}, udp: true}
+  - {name: 台湾+中继05+华南, server: cn-1.crhnode.top, port: 554, type: ss, cipher: rc4-md5, password: AAEXNETWORKTECHNOLOGYLTD20170715, plugin: obfs, plugin-opts: {mode: http, host: 20148-818nw7mYgF.download.microsoft.com}, udp: true}
+  - {name: US_2375+@WangCai_1, server: 167.88.61.14, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: US_0443+@WangCai_1, server: 167.88.61.14, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: US_6379+@WangCai_1, server: 167.88.61.14, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
+  - {name: US_8008+@WangCai_1, server: 167.88.61.14, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: US_8119+@WangCai_1, server: 167.88.61.14, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: US_8008+@WangCai_1 2, server: 38.75.136.102, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: US_8091+@WangCai_1, server: 167.88.61.14, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: US_2376+@WangCai_1, server: 167.88.61.14, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: US_7002+@WangCai_1, server: 38.75.136.102, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: US_6379+@WangCai_1 2, server: 38.75.136.102, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
+  - {name: US_8881+@WangCai_1, server: 167.88.61.14, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: US_6697+@WangCai_1, server: 167.88.61.14, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: US_9101+@WangCai_1, server: 167.88.61.14, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: US_6697+@WangCai_1 2, server: 38.75.136.102, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: US_8000+@WangCai_1, server: 38.75.136.102, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: US_8882+@WangCai_1, server: 167.88.61.14, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: US_8009+@WangCai_1, server: 167.88.61.14, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: US_5003+@WangCai_1, server: 167.88.61.14, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: US_9102+@WangCai_1, server: 38.75.136.102, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: US_5500+@WangCai_1, server: 38.75.136.102, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: US_8118+@WangCai_1, server: 38.75.136.102, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: US_9101+@WangCai_1 2, server: 38.75.136.102, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: US_7001+@WangCai_1, server: 38.75.136.102, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: US_8881+@WangCai_1 2, server: 38.75.136.102, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: US_8888+@WangCai_1, server: 167.88.61.14, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 德国+特选02+华南, server: cn-2.crhnode.top, port: 543, type: ss, cipher: rc4-md5, password: AAEXNETWORKTECHNOLOGYLTD20170715, plugin: obfs, plugin-opts: {mode: http, host: 20148-818nw7mYgF.download.microsoft.com}, udp: true}
+  - {name: US_8000+@WangCai_1 2, server: 167.88.61.14, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: US_8118+@WangCai_1 2, server: 167.88.61.14, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: US_5601+@WangCai_1, server: 38.75.136.102, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 美国_YouTube：8度科技 2, server: 169.197.141.91, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
+  - {name: 美国_YouTube：8度科技 3, server: 167.88.62.34, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: +US_1139, server: 167.88.62.34, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: US_5001+@WangCai_1, server: 38.75.136.102, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: +US_1239, server: 38.68.134.23, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: 美国_YouTube：8度科技 4, server: 167.88.63.28, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: 美国_YouTube：8度科技 5, server: 167.88.62.34, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: 加拿大_YouTube：8度科技, server: 198.57.27.184, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: 加拿大_YouTube：8度科技 2, server: 198.57.27.184, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: 加拿大_YouTube：8度科技 3, server: 134.195.196.81, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: 加拿大_YouTube：8度科技 4, server: 134.195.196.200, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: 美国_YouTube：8度科技 6, server: 169.197.141.91, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: 美国_YouTube：8度科技 7, server: 167.88.63.74, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: 美国_YouTube：8度科技 8, server: 169.197.141.187, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 加拿大_YouTube：8度科技 5, server: 134.195.196.200, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: 加拿大_YouTube：8度科技 6, server: 134.195.196.81, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: +US_1080, server: 142.202.48.34, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
+  - {name: 美国_YouTube：8度科技 9, server: 167.88.63.74, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: +US_1488, server: 167.88.63.28, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: +US_1496, server: 167.88.62.34, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: 加拿大_YouTube：8度科技 7, server: 134.195.196.200, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: 加拿大_YouTube：8度科技 8, server: 134.195.196.200, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
   - {name: 美国_YouTube：8度科技 10, server: 167.88.63.28, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: _US_美国 4, server: 38.121.43.71, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: 加拿大_YouTube：8度科技 9, server: 134.195.196.200, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: 加拿大_YouTube：8度科技 10, server: 134.195.196.200, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 美国+中继01+华东, server: cn-4.crhnode.top, port: 570, type: ss, cipher: rc4-md5, password: AAEXNETWORKTECHNOLOGYLTD20170715, plugin: obfs, plugin-opts: {mode: http, host: 20148-818nw7mYgF.download.microsoft.com}, udp: true}
+  - {name: +US_1443, server: 38.91.101.11, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: +US_1418, server: 172.99.190.109, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: 美国+中继06+华东, server: cn-4.crhnode.top, port: 575, type: ss, cipher: rc4-md5, password: AAEXNETWORKTECHNOLOGYLTD20170715, plugin: obfs, plugin-opts: {mode: http, host: 20148-818nw7mYgF.download.microsoft.com}, udp: true}
   - {name: 美国_YouTube：8度科技 11, server: 167.88.63.28, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: 美国_YouTube：8度科技 12, server: 167.88.63.61, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: _US_美国 5, server: 38.91.100.130, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: 加拿大_YouTube：8度科技 11, server: 134.195.196.147, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: 加拿大_YouTube：8度科技 12, server: 134.195.196.200, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: _CA_加拿大, server: 134.195.196.193, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: 加拿大_YouTube：8度科技 13, server: 134.195.196.200, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: 美国_YouTube：8度科技 13, server: 169.197.141.91, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: _FR_法国, server: 62.210.209.50, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: 加拿大_YouTube：8度科技 14, server: 134.195.196.200, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: 加拿大_YouTube：8度科技 15, server: 134.195.196.200, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: 加拿大_YouTube：8度科技 16, server: 198.57.27.152, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: 加拿大_YouTube：8度科技 17, server: 134.195.196.200, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 加拿大_YouTube：8度科技 18, server: 134.195.196.193, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: 美国_YouTube：8度科技 14, server: 167.88.62.34, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: 加拿大_YouTube：8度科技 19, server: 134.195.196.200, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: _FR_法国 2, server: 62.210.209.50, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: 加拿大_YouTube：8度科技 20, server: 198.57.27.241, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: 加拿大_YouTube：8度科技 21, server: 134.195.196.81, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: 法国_YouTube：8度科技, server: 62.210.209.50, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: 加拿大_YouTube：8度科技 22, server: 134.195.196.200, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: 美国_YouTube：8度科技 15, server: 38.121.43.71, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: _CA_加拿大 2, server: 134.195.198.95, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: 英国_YouTube：8度科技 3, server: 51.68.205.180, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: 美国_YouTube：8度科技 16, server: 142.202.48.34, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: 英国_YouTube：8度科技 4, server: 172.99.190.205, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: 法国_YouTube：8度科技 2, server: 145.239.1.100, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: _FR_法国 3, server: 149.202.82.172, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 法国_YouTube：8度科技 3, server: 145.239.1.100, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: 英国_YouTube：8度科技 5, server: 172.99.190.205, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: 美国_YouTube：8度科技 17, server: 167.88.63.28, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 英国_YouTube：8度科技 6, server: 172.99.190.39, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: 美国_YouTube：8度科技 18, server: 167.88.63.61, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: 加拿大_YouTube：8度科技 23, server: 134.195.196.200, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: 加拿大_YouTube：8度科技 24, server: 134.195.196.81, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: 法国_YouTube：8度科技 4, server: 145.239.1.100, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: 加拿大_YouTube：8度科技 25, server: 198.57.27.172, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: 英国_YouTube：8度科技 7, server: 51.68.205.180, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: 加拿大_YouTube：8度科技 11, server: 134.195.196.200, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
+  - {name: 加拿大_YouTube：8度科技 12, server: 134.195.196.200, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: 加拿大_YouTube：8度科技 13, server: 198.57.27.184, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: 法国_YouTube：8度科技, server: 145.239.1.100, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: 加拿大_YouTube：8度科技 14, server: 198.57.27.172, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: +US_2003, server: 167.88.63.28, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: 加拿大_YouTube：8度科技 15, server: 134.195.196.200, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: _CA_加拿大, server: 134.195.198.95, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: +US_1864, server: 167.88.63.28, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: 加拿大_YouTube：8度科技 16, server: 134.195.196.200, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: 美国_YouTube：8度科技 12, server: 167.88.62.34, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: 美国_YouTube：8度科技 13, server: 167.88.63.61, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: 英国_YouTube：8度科技 2, server: 172.99.190.39, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: +US_1213, server: 142.202.48.34, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: +US_1431, server: 172.99.190.109, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: _GB_英国, server: 172.99.190.188, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: 加拿大_YouTube：8度科技 17, server: 198.57.27.152, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: _CA_加拿大 2, server: 134.195.198.95, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: +US_1335, server: 172.99.190.109, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
   - {name: _CA_加拿大 3, server: 198.57.27.172, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: _CA_加拿大 4, server: 134.195.196.193, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: 加拿大_YouTube：8度科技 26, server: 198.57.27.152, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 美国_YouTube：8度科技 19, server: 167.88.62.34, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: 法国_YouTube：8度科技 5, server: 145.239.1.100, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: 加拿大_YouTube：8度科技 27, server: 198.57.27.172, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: 美国_YouTube：8度科技 20, server: 169.197.141.91, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
+  - {name: 美国+中继08+华东, server: cn-4.crhnode.top, port: 577, type: ss, cipher: rc4-md5, password: AAEXNETWORKTECHNOLOGYLTD20170715, plugin: obfs, plugin-opts: {mode: http, host: 20148-818nw7mYgF.download.microsoft.com}, udp: true}
+  - {name: 美国_YouTube：8度科技 14, server: 167.88.63.61, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: 美国+中继07+华东, server: cn-4.crhnode.top, port: 576, type: ss, cipher: rc4-md5, password: AAEXNETWORKTECHNOLOGYLTD20170715, plugin: obfs, plugin-opts: {mode: http, host: 20148-818nw7mYgF.download.microsoft.com}, udp: true}
+  - {name: +US_1785, server: 167.88.63.61, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: 法国_YouTube：8度科技 2, server: 145.239.1.100, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: +US_1421, server: 172.99.190.109, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: 加拿大_YouTube：8度科技 18, server: 134.195.196.81, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: +US_1563, server: 167.88.63.74, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: 法国_YouTube：8度科技 3, server: 145.239.1.100, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: +US_2122, server: 167.88.63.61, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: 加拿大_YouTube：8度科技 19, server: 198.57.27.152, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: 英国_YouTube：8度科技 3, server: 172.99.190.205, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: 美国+中继09+华东, server: cn-4.crhnode.top, port: 578, type: ss, cipher: rc4-md5, password: AAEXNETWORKTECHNOLOGYLTD20170715, plugin: obfs, plugin-opts: {mode: http, host: 20148-818nw7mYgF.download.microsoft.com}, udp: true}
+  - {name: +US_1641, server: 38.68.134.23, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: +US_1200, server: 38.91.101.11, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 美国_YouTube：8度科技 15, server: 167.88.63.61, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: +US_1482, server: 172.99.190.205, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: +US_2293, server: 167.88.63.61, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: 加拿大_YouTube：8度科技 20, server: 198.57.27.241, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: +US_1741, server: 142.202.48.34, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: 加拿大_YouTube：8度科技 21, server: 134.195.196.147, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: +US_1656, server: 167.88.63.61, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: +US_1657, server: 172.99.190.109, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: 加拿大_YouTube：8度科技 22, server: 198.57.27.241, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: 法国_YouTube：8度科技 4, server: 145.239.1.100, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: 加拿大_YouTube：8度科技 23, server: 134.195.196.81, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: +US_1547, server: 192.53.168.189, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: +US_1462, server: 172.99.190.39, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: 英国_YouTube：8度科技 4, server: 51.68.205.180, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: 英国_YouTube：8度科技 5, server: 172.99.190.205, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: +US_2119, server: 38.68.134.23, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: +US_1409, server: 167.88.63.61, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: +US_2137, server: 167.88.62.34, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: 美国+中继03+华东, server: cn-4.crhnode.top, port: 572, type: ss, cipher: rc4-md5, password: AAEXNETWORKTECHNOLOGYLTD20170715, plugin: obfs, plugin-opts: {mode: http, host: 20148-818nw7mYgF.download.microsoft.com}, udp: true}
   - {name: 中国_YouTube：8度科技 3, server: 117.28.243.220, port: 8186, type: ss, cipher: rc4-md5, password: passinfo123, udp: true}
-  - {name: 美国_YouTube：8度科技 21, server: 167.88.62.34, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: _CA_加拿大 5, server: 134.195.198.95, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: 加拿大_YouTube：8度科技 28, server: 134.195.196.200, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 美国_YouTube：8度科技 22, server: 167.88.63.61, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: 美国_YouTube：8度科技 23, server: 167.88.63.61, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: _US_美国 6, server: 167.88.63.61, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 加拿大_YouTube：8度科技 29, server: 198.57.27.184, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: 美国_YouTube：8度科技 24, server: 169.197.141.91, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: +US_1077, server: 192.53.168.189, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: +US_1249, server: 38.68.134.23, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: +US_1636, server: 172.99.190.149, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: 加拿大_YouTube：8度科技 24, server: 134.195.196.200, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: +US_1330, server: 192.53.168.189, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: +US_1764, server: 38.68.134.23, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: 加拿大_YouTube：8度科技 25, server: 198.57.27.172, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: 美国+中继04+华东, server: cn-4.crhnode.top, port: 573, type: ss, cipher: rc4-md5, password: AAEXNETWORKTECHNOLOGYLTD20170715, plugin: obfs, plugin-opts: {mode: http, host: 20148-818nw7mYgF.download.microsoft.com}, udp: true}
+  - {name: +US_1556, server: 192.53.168.189, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: +US_2287, server: 172.99.190.149, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: +US_1236, server: 38.68.134.23, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: +US_1312, server: 172.99.190.149, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 美国+中继05+华东, server: cn-4.crhnode.top, port: 574, type: ss, cipher: rc4-md5, password: AAEXNETWORKTECHNOLOGYLTD20170715, plugin: obfs, plugin-opts: {mode: http, host: 20148-818nw7mYgF.download.microsoft.com}, udp: true}
+  - {name: +US_2101, server: 167.88.63.61, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: US_5000+@WangCai_1, server: 167.88.61.14, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: US_3306+@WangCai_1, server: 167.88.61.14, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: US_5600+@WangCai_1, server: 167.88.61.14, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: +US_1332, server: 172.99.190.188, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: +US_1278, server: 172.99.190.188, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: +US_1691, server: 172.99.190.149, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: US_9102+@WangCai_1 2, server: 167.88.61.14, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: 美国+中继02+华东, server: cn-4.crhnode.top, port: 571, type: ss, cipher: rc4-md5, password: AAEXNETWORKTECHNOLOGYLTD20170715, plugin: obfs, plugin-opts: {mode: http, host: 20148-818nw7mYgF.download.microsoft.com}, udp: true}
+  - {name: 美国+中继10+华东, server: cn-4.crhnode.top, port: 579, type: ss, cipher: rc4-md5, password: AAEXNETWORKTECHNOLOGYLTD20170715, plugin: obfs, plugin-opts: {mode: http, host: 20148-818nw7mYgF.download.microsoft.com}, udp: true}
+  - {name: US_5601+@WangCai_1 2, server: 167.88.61.14, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: +US_1897, server: 38.68.134.23, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
+  - {name: +US_1577, server: 172.99.190.149, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: +US_1167, server: 38.68.134.23, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: 美国_YouTube：8度科技 16, server: 169.197.141.91, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 英国_YouTube：8度科技 6, server: 172.99.190.205, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: +US_1436, server: 167.88.63.74, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: _CA_加拿大 4, server: 134.195.196.193, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: US_6679+@WangCai_1, server: 167.88.61.14, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: +US_1751, server: 172.99.190.39, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: +US_1375, server: 172.99.190.149, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: +US_1473, server: 172.99.190.149, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: +US_1369, server: 167.88.63.61, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 加拿大_YouTube：8度科技 26, server: 134.195.196.200, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 美国_YouTube：8度科技 17, server: 167.88.63.61, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: _FR_法国, server: 149.202.82.172, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: +US_1531, server: 172.99.190.149, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: 法国_YouTube：8度科技 5, server: 62.210.209.50, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: +US_1362, server: 38.68.134.23, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: 加拿大_YouTube：8度科技 27, server: 134.195.196.193, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: US_5500+@WangCai_1 2, server: 167.88.61.14, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: +US_1126, server: 172.99.190.149, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
@@ -98,182 +198,382 @@ proxy-groups:
       - ♻️ 自动选择
       - 🎯 全球直连
       - 中国_YouTube：8度科技
-      - _US_美国
       - 中国_YouTube：8度科技 2
-      - 美国_YouTube：8度科技
-      - _US_美国 2
+      - _US_美国
       - 英国_YouTube：8度科技
       - 俄罗斯联邦_YouTube：8度科技
-      - _US_美国 3
-      - 比利时_YouTube：8度科技
       - 澳大利亚_YouTube：8度科技
+      - 美国_YouTube：8度科技
+      - 香港+中继07+华南
+      - 香港+中继08+华南
+      - 香港+中继03+华南
+      - 香港+中继01+华南
+      - 香港+中继02+华南
+      - 香港+中继06+华南
+      - 香港+中继04+华南
+      - 台湾+中继08+华南
+      - 香港+中继09+华南
+      - 香港+中继10+华南
+      - 台湾+中继09+华南
+      - 香港+中继05+华南
+      - 台湾+中继10+华南
+      - 台湾+中继01+华南
+      - 台湾+中继02+华南
+      - 台湾+中继06+华南
+      - 台湾+中继04+华南
+      - 台湾+中继03+华南
+      - 台湾+中继07+华南
+      - 台湾+中继05+华南
+      - US_2375+@WangCai_1
+      - US_0443+@WangCai_1
+      - US_6379+@WangCai_1
+      - US_8008+@WangCai_1
+      - US_8119+@WangCai_1
+      - US_8008+@WangCai_1 2
+      - US_8091+@WangCai_1
+      - US_2376+@WangCai_1
+      - US_7002+@WangCai_1
+      - US_6379+@WangCai_1 2
+      - US_8881+@WangCai_1
+      - US_6697+@WangCai_1
+      - US_9101+@WangCai_1
+      - US_6697+@WangCai_1 2
+      - US_8000+@WangCai_1
+      - US_8882+@WangCai_1
+      - US_8009+@WangCai_1
+      - US_5003+@WangCai_1
+      - US_9102+@WangCai_1
+      - US_5500+@WangCai_1
+      - US_8118+@WangCai_1
+      - US_9101+@WangCai_1 2
+      - US_7001+@WangCai_1
+      - US_8881+@WangCai_1 2
+      - US_8888+@WangCai_1
+      - 德国+特选02+华南
+      - US_8000+@WangCai_1 2
+      - US_8118+@WangCai_1 2
+      - US_5601+@WangCai_1
       - 美国_YouTube：8度科技 2
+      - 美国_YouTube：8度科技 3
+      - +US_1139
+      - US_5001+@WangCai_1
+      - +US_1239
+      - 美国_YouTube：8度科技 4
+      - 美国_YouTube：8度科技 5
       - 加拿大_YouTube：8度科技
       - 加拿大_YouTube：8度科技 2
-      - 美国_YouTube：8度科技 3
       - 加拿大_YouTube：8度科技 3
-      - 美国_YouTube：8度科技 4
       - 加拿大_YouTube：8度科技 4
-      - 加拿大_YouTube：8度科技 5
-      - 加拿大_YouTube：8度科技 6
-      - 美国_YouTube：8度科技 5
-      - 加拿大_YouTube：8度科技 7
       - 美国_YouTube：8度科技 6
-      - 加拿大_YouTube：8度科技 8
-      - 加拿大_YouTube：8度科技 9
       - 美国_YouTube：8度科技 7
       - 美国_YouTube：8度科技 8
+      - 加拿大_YouTube：8度科技 5
+      - 加拿大_YouTube：8度科技 6
+      - +US_1080
       - 美国_YouTube：8度科技 9
-      - 加拿大_YouTube：8度科技 10
-      - 英国_YouTube：8度科技 2
-      - _GB_英国
+      - +US_1488
+      - +US_1496
+      - 加拿大_YouTube：8度科技 7
+      - 加拿大_YouTube：8度科技 8
       - 美国_YouTube：8度科技 10
-      - _US_美国 4
+      - 加拿大_YouTube：8度科技 9
+      - 加拿大_YouTube：8度科技 10
+      - 美国+中继01+华东
+      - +US_1443
+      - +US_1418
+      - 美国+中继06+华东
       - 美国_YouTube：8度科技 11
-      - 美国_YouTube：8度科技 12
-      - _US_美国 5
       - 加拿大_YouTube：8度科技 11
       - 加拿大_YouTube：8度科技 12
-      - _CA_加拿大
       - 加拿大_YouTube：8度科技 13
-      - 美国_YouTube：8度科技 13
-      - _FR_法国
-      - 加拿大_YouTube：8度科技 14
-      - 加拿大_YouTube：8度科技 15
-      - 加拿大_YouTube：8度科技 16
-      - 加拿大_YouTube：8度科技 17
-      - 加拿大_YouTube：8度科技 18
-      - 美国_YouTube：8度科技 14
-      - 加拿大_YouTube：8度科技 19
-      - _FR_法国 2
-      - 加拿大_YouTube：8度科技 20
-      - 加拿大_YouTube：8度科技 21
       - 法国_YouTube：8度科技
-      - 加拿大_YouTube：8度科技 22
-      - 美国_YouTube：8度科技 15
+      - 加拿大_YouTube：8度科技 14
+      - +US_2003
+      - 加拿大_YouTube：8度科技 15
+      - _CA_加拿大
+      - +US_1864
+      - 加拿大_YouTube：8度科技 16
+      - 美国_YouTube：8度科技 12
+      - 美国_YouTube：8度科技 13
+      - 英国_YouTube：8度科技 2
+      - +US_1213
+      - +US_1431
+      - _GB_英国
+      - 加拿大_YouTube：8度科技 17
       - _CA_加拿大 2
-      - 英国_YouTube：8度科技 3
-      - 美国_YouTube：8度科技 16
-      - 英国_YouTube：8度科技 4
-      - 法国_YouTube：8度科技 2
-      - _FR_法国 3
-      - 法国_YouTube：8度科技 3
-      - 英国_YouTube：8度科技 5
-      - 美国_YouTube：8度科技 17
-      - 英国_YouTube：8度科技 6
-      - 美国_YouTube：8度科技 18
-      - 加拿大_YouTube：8度科技 23
-      - 加拿大_YouTube：8度科技 24
-      - 法国_YouTube：8度科技 4
-      - 加拿大_YouTube：8度科技 25
-      - 英国_YouTube：8度科技 7
+      - +US_1335
       - _CA_加拿大 3
-      - _CA_加拿大 4
-      - 加拿大_YouTube：8度科技 26
-      - 美国_YouTube：8度科技 19
-      - 法国_YouTube：8度科技 5
-      - 加拿大_YouTube：8度科技 27
-      - 美国_YouTube：8度科技 20
+      - 美国+中继08+华东
+      - 美国_YouTube：8度科技 14
+      - 美国+中继07+华东
+      - +US_1785
+      - 法国_YouTube：8度科技 2
+      - +US_1421
+      - 加拿大_YouTube：8度科技 18
+      - +US_1563
+      - 法国_YouTube：8度科技 3
+      - +US_2122
+      - 加拿大_YouTube：8度科技 19
+      - 英国_YouTube：8度科技 3
+      - 美国+中继09+华东
+      - +US_1641
+      - +US_1200
+      - 美国_YouTube：8度科技 15
+      - +US_1482
+      - +US_2293
+      - 加拿大_YouTube：8度科技 20
+      - +US_1741
+      - 加拿大_YouTube：8度科技 21
+      - +US_1656
+      - +US_1657
+      - 加拿大_YouTube：8度科技 22
+      - 法国_YouTube：8度科技 4
+      - 加拿大_YouTube：8度科技 23
+      - +US_1547
+      - +US_1462
+      - 英国_YouTube：8度科技 4
+      - 英国_YouTube：8度科技 5
+      - +US_2119
+      - +US_1409
+      - +US_2137
+      - 美国+中继03+华东
       - 中国_YouTube：8度科技 3
-      - 美国_YouTube：8度科技 21
-      - _CA_加拿大 5
-      - 加拿大_YouTube：8度科技 28
-      - 美国_YouTube：8度科技 22
-      - 美国_YouTube：8度科技 23
-      - _US_美国 6
-      - 加拿大_YouTube：8度科技 29
-      - 美国_YouTube：8度科技 24
+      - +US_1077
+      - +US_1249
+      - +US_1636
+      - 加拿大_YouTube：8度科技 24
+      - +US_1330
+      - +US_1764
+      - 加拿大_YouTube：8度科技 25
+      - 美国+中继04+华东
+      - +US_1556
+      - +US_2287
+      - +US_1236
+      - +US_1312
+      - 美国+中继05+华东
+      - +US_2101
+      - US_5000+@WangCai_1
+      - US_3306+@WangCai_1
+      - US_5600+@WangCai_1
+      - +US_1332
+      - +US_1278
+      - +US_1691
+      - US_9102+@WangCai_1 2
+      - 美国+中继02+华东
+      - 美国+中继10+华东
+      - US_5601+@WangCai_1 2
+      - +US_1897
+      - +US_1577
+      - +US_1167
+      - 美国_YouTube：8度科技 16
+      - 英国_YouTube：8度科技 6
+      - +US_1436
+      - _CA_加拿大 4
+      - US_6679+@WangCai_1
+      - +US_1751
+      - +US_1375
+      - +US_1473
+      - +US_1369
+      - 加拿大_YouTube：8度科技 26
+      - 美国_YouTube：8度科技 17
+      - _FR_法国
+      - +US_1531
+      - 法国_YouTube：8度科技 5
+      - +US_1362
+      - 加拿大_YouTube：8度科技 27
+      - US_5500+@WangCai_1 2
+      - +US_1126
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
       - 中国_YouTube：8度科技
-      - _US_美国
       - 中国_YouTube：8度科技 2
-      - 美国_YouTube：8度科技
-      - _US_美国 2
+      - _US_美国
       - 英国_YouTube：8度科技
       - 俄罗斯联邦_YouTube：8度科技
-      - _US_美国 3
-      - 比利时_YouTube：8度科技
       - 澳大利亚_YouTube：8度科技
+      - 美国_YouTube：8度科技
+      - 香港+中继07+华南
+      - 香港+中继08+华南
+      - 香港+中继03+华南
+      - 香港+中继01+华南
+      - 香港+中继02+华南
+      - 香港+中继06+华南
+      - 香港+中继04+华南
+      - 台湾+中继08+华南
+      - 香港+中继09+华南
+      - 香港+中继10+华南
+      - 台湾+中继09+华南
+      - 香港+中继05+华南
+      - 台湾+中继10+华南
+      - 台湾+中继01+华南
+      - 台湾+中继02+华南
+      - 台湾+中继06+华南
+      - 台湾+中继04+华南
+      - 台湾+中继03+华南
+      - 台湾+中继07+华南
+      - 台湾+中继05+华南
+      - US_2375+@WangCai_1
+      - US_0443+@WangCai_1
+      - US_6379+@WangCai_1
+      - US_8008+@WangCai_1
+      - US_8119+@WangCai_1
+      - US_8008+@WangCai_1 2
+      - US_8091+@WangCai_1
+      - US_2376+@WangCai_1
+      - US_7002+@WangCai_1
+      - US_6379+@WangCai_1 2
+      - US_8881+@WangCai_1
+      - US_6697+@WangCai_1
+      - US_9101+@WangCai_1
+      - US_6697+@WangCai_1 2
+      - US_8000+@WangCai_1
+      - US_8882+@WangCai_1
+      - US_8009+@WangCai_1
+      - US_5003+@WangCai_1
+      - US_9102+@WangCai_1
+      - US_5500+@WangCai_1
+      - US_8118+@WangCai_1
+      - US_9101+@WangCai_1 2
+      - US_7001+@WangCai_1
+      - US_8881+@WangCai_1 2
+      - US_8888+@WangCai_1
+      - 德国+特选02+华南
+      - US_8000+@WangCai_1 2
+      - US_8118+@WangCai_1 2
+      - US_5601+@WangCai_1
       - 美国_YouTube：8度科技 2
+      - 美国_YouTube：8度科技 3
+      - +US_1139
+      - US_5001+@WangCai_1
+      - +US_1239
+      - 美国_YouTube：8度科技 4
+      - 美国_YouTube：8度科技 5
       - 加拿大_YouTube：8度科技
       - 加拿大_YouTube：8度科技 2
-      - 美国_YouTube：8度科技 3
       - 加拿大_YouTube：8度科技 3
-      - 美国_YouTube：8度科技 4
       - 加拿大_YouTube：8度科技 4
-      - 加拿大_YouTube：8度科技 5
-      - 加拿大_YouTube：8度科技 6
-      - 美国_YouTube：8度科技 5
-      - 加拿大_YouTube：8度科技 7
       - 美国_YouTube：8度科技 6
-      - 加拿大_YouTube：8度科技 8
-      - 加拿大_YouTube：8度科技 9
       - 美国_YouTube：8度科技 7
       - 美国_YouTube：8度科技 8
+      - 加拿大_YouTube：8度科技 5
+      - 加拿大_YouTube：8度科技 6
+      - +US_1080
       - 美国_YouTube：8度科技 9
-      - 加拿大_YouTube：8度科技 10
-      - 英国_YouTube：8度科技 2
-      - _GB_英国
+      - +US_1488
+      - +US_1496
+      - 加拿大_YouTube：8度科技 7
+      - 加拿大_YouTube：8度科技 8
       - 美国_YouTube：8度科技 10
-      - _US_美国 4
+      - 加拿大_YouTube：8度科技 9
+      - 加拿大_YouTube：8度科技 10
+      - 美国+中继01+华东
+      - +US_1443
+      - +US_1418
+      - 美国+中继06+华东
       - 美国_YouTube：8度科技 11
-      - 美国_YouTube：8度科技 12
-      - _US_美国 5
       - 加拿大_YouTube：8度科技 11
       - 加拿大_YouTube：8度科技 12
-      - _CA_加拿大
       - 加拿大_YouTube：8度科技 13
-      - 美国_YouTube：8度科技 13
-      - _FR_法国
-      - 加拿大_YouTube：8度科技 14
-      - 加拿大_YouTube：8度科技 15
-      - 加拿大_YouTube：8度科技 16
-      - 加拿大_YouTube：8度科技 17
-      - 加拿大_YouTube：8度科技 18
-      - 美国_YouTube：8度科技 14
-      - 加拿大_YouTube：8度科技 19
-      - _FR_法国 2
-      - 加拿大_YouTube：8度科技 20
-      - 加拿大_YouTube：8度科技 21
       - 法国_YouTube：8度科技
-      - 加拿大_YouTube：8度科技 22
-      - 美国_YouTube：8度科技 15
+      - 加拿大_YouTube：8度科技 14
+      - +US_2003
+      - 加拿大_YouTube：8度科技 15
+      - _CA_加拿大
+      - +US_1864
+      - 加拿大_YouTube：8度科技 16
+      - 美国_YouTube：8度科技 12
+      - 美国_YouTube：8度科技 13
+      - 英国_YouTube：8度科技 2
+      - +US_1213
+      - +US_1431
+      - _GB_英国
+      - 加拿大_YouTube：8度科技 17
       - _CA_加拿大 2
-      - 英国_YouTube：8度科技 3
-      - 美国_YouTube：8度科技 16
-      - 英国_YouTube：8度科技 4
-      - 法国_YouTube：8度科技 2
-      - _FR_法国 3
-      - 法国_YouTube：8度科技 3
-      - 英国_YouTube：8度科技 5
-      - 美国_YouTube：8度科技 17
-      - 英国_YouTube：8度科技 6
-      - 美国_YouTube：8度科技 18
-      - 加拿大_YouTube：8度科技 23
-      - 加拿大_YouTube：8度科技 24
-      - 法国_YouTube：8度科技 4
-      - 加拿大_YouTube：8度科技 25
-      - 英国_YouTube：8度科技 7
+      - +US_1335
       - _CA_加拿大 3
-      - _CA_加拿大 4
-      - 加拿大_YouTube：8度科技 26
-      - 美国_YouTube：8度科技 19
-      - 法国_YouTube：8度科技 5
-      - 加拿大_YouTube：8度科技 27
-      - 美国_YouTube：8度科技 20
+      - 美国+中继08+华东
+      - 美国_YouTube：8度科技 14
+      - 美国+中继07+华东
+      - +US_1785
+      - 法国_YouTube：8度科技 2
+      - +US_1421
+      - 加拿大_YouTube：8度科技 18
+      - +US_1563
+      - 法国_YouTube：8度科技 3
+      - +US_2122
+      - 加拿大_YouTube：8度科技 19
+      - 英国_YouTube：8度科技 3
+      - 美国+中继09+华东
+      - +US_1641
+      - +US_1200
+      - 美国_YouTube：8度科技 15
+      - +US_1482
+      - +US_2293
+      - 加拿大_YouTube：8度科技 20
+      - +US_1741
+      - 加拿大_YouTube：8度科技 21
+      - +US_1656
+      - +US_1657
+      - 加拿大_YouTube：8度科技 22
+      - 法国_YouTube：8度科技 4
+      - 加拿大_YouTube：8度科技 23
+      - +US_1547
+      - +US_1462
+      - 英国_YouTube：8度科技 4
+      - 英国_YouTube：8度科技 5
+      - +US_2119
+      - +US_1409
+      - +US_2137
+      - 美国+中继03+华东
       - 中国_YouTube：8度科技 3
-      - 美国_YouTube：8度科技 21
-      - _CA_加拿大 5
-      - 加拿大_YouTube：8度科技 28
-      - 美国_YouTube：8度科技 22
-      - 美国_YouTube：8度科技 23
-      - _US_美国 6
-      - 加拿大_YouTube：8度科技 29
-      - 美国_YouTube：8度科技 24
+      - +US_1077
+      - +US_1249
+      - +US_1636
+      - 加拿大_YouTube：8度科技 24
+      - +US_1330
+      - +US_1764
+      - 加拿大_YouTube：8度科技 25
+      - 美国+中继04+华东
+      - +US_1556
+      - +US_2287
+      - +US_1236
+      - +US_1312
+      - 美国+中继05+华东
+      - +US_2101
+      - US_5000+@WangCai_1
+      - US_3306+@WangCai_1
+      - US_5600+@WangCai_1
+      - +US_1332
+      - +US_1278
+      - +US_1691
+      - US_9102+@WangCai_1 2
+      - 美国+中继02+华东
+      - 美国+中继10+华东
+      - US_5601+@WangCai_1 2
+      - +US_1897
+      - +US_1577
+      - +US_1167
+      - 美国_YouTube：8度科技 16
+      - 英国_YouTube：8度科技 6
+      - +US_1436
+      - _CA_加拿大 4
+      - US_6679+@WangCai_1
+      - +US_1751
+      - +US_1375
+      - +US_1473
+      - +US_1369
+      - 加拿大_YouTube：8度科技 26
+      - 美国_YouTube：8度科技 17
+      - _FR_法国
+      - +US_1531
+      - 法国_YouTube：8度科技 5
+      - +US_1362
+      - 加拿大_YouTube：8度科技 27
+      - US_5500+@WangCai_1 2
+      - +US_1126
   - name: 🎥 NETFLIX
     type: select
     proxies:
@@ -281,91 +581,191 @@ proxy-groups:
       - ♻️ 自动选择
       - 🎯 全球直连
       - 中国_YouTube：8度科技
-      - _US_美国
       - 中国_YouTube：8度科技 2
-      - 美国_YouTube：8度科技
-      - _US_美国 2
+      - _US_美国
       - 英国_YouTube：8度科技
       - 俄罗斯联邦_YouTube：8度科技
-      - _US_美国 3
-      - 比利时_YouTube：8度科技
       - 澳大利亚_YouTube：8度科技
+      - 美国_YouTube：8度科技
+      - 香港+中继07+华南
+      - 香港+中继08+华南
+      - 香港+中继03+华南
+      - 香港+中继01+华南
+      - 香港+中继02+华南
+      - 香港+中继06+华南
+      - 香港+中继04+华南
+      - 台湾+中继08+华南
+      - 香港+中继09+华南
+      - 香港+中继10+华南
+      - 台湾+中继09+华南
+      - 香港+中继05+华南
+      - 台湾+中继10+华南
+      - 台湾+中继01+华南
+      - 台湾+中继02+华南
+      - 台湾+中继06+华南
+      - 台湾+中继04+华南
+      - 台湾+中继03+华南
+      - 台湾+中继07+华南
+      - 台湾+中继05+华南
+      - US_2375+@WangCai_1
+      - US_0443+@WangCai_1
+      - US_6379+@WangCai_1
+      - US_8008+@WangCai_1
+      - US_8119+@WangCai_1
+      - US_8008+@WangCai_1 2
+      - US_8091+@WangCai_1
+      - US_2376+@WangCai_1
+      - US_7002+@WangCai_1
+      - US_6379+@WangCai_1 2
+      - US_8881+@WangCai_1
+      - US_6697+@WangCai_1
+      - US_9101+@WangCai_1
+      - US_6697+@WangCai_1 2
+      - US_8000+@WangCai_1
+      - US_8882+@WangCai_1
+      - US_8009+@WangCai_1
+      - US_5003+@WangCai_1
+      - US_9102+@WangCai_1
+      - US_5500+@WangCai_1
+      - US_8118+@WangCai_1
+      - US_9101+@WangCai_1 2
+      - US_7001+@WangCai_1
+      - US_8881+@WangCai_1 2
+      - US_8888+@WangCai_1
+      - 德国+特选02+华南
+      - US_8000+@WangCai_1 2
+      - US_8118+@WangCai_1 2
+      - US_5601+@WangCai_1
       - 美国_YouTube：8度科技 2
+      - 美国_YouTube：8度科技 3
+      - +US_1139
+      - US_5001+@WangCai_1
+      - +US_1239
+      - 美国_YouTube：8度科技 4
+      - 美国_YouTube：8度科技 5
       - 加拿大_YouTube：8度科技
       - 加拿大_YouTube：8度科技 2
-      - 美国_YouTube：8度科技 3
       - 加拿大_YouTube：8度科技 3
-      - 美国_YouTube：8度科技 4
       - 加拿大_YouTube：8度科技 4
-      - 加拿大_YouTube：8度科技 5
-      - 加拿大_YouTube：8度科技 6
-      - 美国_YouTube：8度科技 5
-      - 加拿大_YouTube：8度科技 7
       - 美国_YouTube：8度科技 6
-      - 加拿大_YouTube：8度科技 8
-      - 加拿大_YouTube：8度科技 9
       - 美国_YouTube：8度科技 7
       - 美国_YouTube：8度科技 8
+      - 加拿大_YouTube：8度科技 5
+      - 加拿大_YouTube：8度科技 6
+      - +US_1080
       - 美国_YouTube：8度科技 9
-      - 加拿大_YouTube：8度科技 10
-      - 英国_YouTube：8度科技 2
-      - _GB_英国
+      - +US_1488
+      - +US_1496
+      - 加拿大_YouTube：8度科技 7
+      - 加拿大_YouTube：8度科技 8
       - 美国_YouTube：8度科技 10
-      - _US_美国 4
+      - 加拿大_YouTube：8度科技 9
+      - 加拿大_YouTube：8度科技 10
+      - 美国+中继01+华东
+      - +US_1443
+      - +US_1418
+      - 美国+中继06+华东
       - 美国_YouTube：8度科技 11
-      - 美国_YouTube：8度科技 12
-      - _US_美国 5
       - 加拿大_YouTube：8度科技 11
       - 加拿大_YouTube：8度科技 12
-      - _CA_加拿大
       - 加拿大_YouTube：8度科技 13
-      - 美国_YouTube：8度科技 13
-      - _FR_法国
-      - 加拿大_YouTube：8度科技 14
-      - 加拿大_YouTube：8度科技 15
-      - 加拿大_YouTube：8度科技 16
-      - 加拿大_YouTube：8度科技 17
-      - 加拿大_YouTube：8度科技 18
-      - 美国_YouTube：8度科技 14
-      - 加拿大_YouTube：8度科技 19
-      - _FR_法国 2
-      - 加拿大_YouTube：8度科技 20
-      - 加拿大_YouTube：8度科技 21
       - 法国_YouTube：8度科技
-      - 加拿大_YouTube：8度科技 22
-      - 美国_YouTube：8度科技 15
+      - 加拿大_YouTube：8度科技 14
+      - +US_2003
+      - 加拿大_YouTube：8度科技 15
+      - _CA_加拿大
+      - +US_1864
+      - 加拿大_YouTube：8度科技 16
+      - 美国_YouTube：8度科技 12
+      - 美国_YouTube：8度科技 13
+      - 英国_YouTube：8度科技 2
+      - +US_1213
+      - +US_1431
+      - _GB_英国
+      - 加拿大_YouTube：8度科技 17
       - _CA_加拿大 2
-      - 英国_YouTube：8度科技 3
-      - 美国_YouTube：8度科技 16
-      - 英国_YouTube：8度科技 4
-      - 法国_YouTube：8度科技 2
-      - _FR_法国 3
-      - 法国_YouTube：8度科技 3
-      - 英国_YouTube：8度科技 5
-      - 美国_YouTube：8度科技 17
-      - 英国_YouTube：8度科技 6
-      - 美国_YouTube：8度科技 18
-      - 加拿大_YouTube：8度科技 23
-      - 加拿大_YouTube：8度科技 24
-      - 法国_YouTube：8度科技 4
-      - 加拿大_YouTube：8度科技 25
-      - 英国_YouTube：8度科技 7
+      - +US_1335
       - _CA_加拿大 3
-      - _CA_加拿大 4
-      - 加拿大_YouTube：8度科技 26
-      - 美国_YouTube：8度科技 19
-      - 法国_YouTube：8度科技 5
-      - 加拿大_YouTube：8度科技 27
-      - 美国_YouTube：8度科技 20
+      - 美国+中继08+华东
+      - 美国_YouTube：8度科技 14
+      - 美国+中继07+华东
+      - +US_1785
+      - 法国_YouTube：8度科技 2
+      - +US_1421
+      - 加拿大_YouTube：8度科技 18
+      - +US_1563
+      - 法国_YouTube：8度科技 3
+      - +US_2122
+      - 加拿大_YouTube：8度科技 19
+      - 英国_YouTube：8度科技 3
+      - 美国+中继09+华东
+      - +US_1641
+      - +US_1200
+      - 美国_YouTube：8度科技 15
+      - +US_1482
+      - +US_2293
+      - 加拿大_YouTube：8度科技 20
+      - +US_1741
+      - 加拿大_YouTube：8度科技 21
+      - +US_1656
+      - +US_1657
+      - 加拿大_YouTube：8度科技 22
+      - 法国_YouTube：8度科技 4
+      - 加拿大_YouTube：8度科技 23
+      - +US_1547
+      - +US_1462
+      - 英国_YouTube：8度科技 4
+      - 英国_YouTube：8度科技 5
+      - +US_2119
+      - +US_1409
+      - +US_2137
+      - 美国+中继03+华东
       - 中国_YouTube：8度科技 3
-      - 美国_YouTube：8度科技 21
-      - _CA_加拿大 5
-      - 加拿大_YouTube：8度科技 28
-      - 美国_YouTube：8度科技 22
-      - 美国_YouTube：8度科技 23
-      - _US_美国 6
-      - 加拿大_YouTube：8度科技 29
-      - 美国_YouTube：8度科技 24
+      - +US_1077
+      - +US_1249
+      - +US_1636
+      - 加拿大_YouTube：8度科技 24
+      - +US_1330
+      - +US_1764
+      - 加拿大_YouTube：8度科技 25
+      - 美国+中继04+华东
+      - +US_1556
+      - +US_2287
+      - +US_1236
+      - +US_1312
+      - 美国+中继05+华东
+      - +US_2101
+      - US_5000+@WangCai_1
+      - US_3306+@WangCai_1
+      - US_5600+@WangCai_1
+      - +US_1332
+      - +US_1278
+      - +US_1691
+      - US_9102+@WangCai_1 2
+      - 美国+中继02+华东
+      - 美国+中继10+华东
+      - US_5601+@WangCai_1 2
+      - +US_1897
+      - +US_1577
+      - +US_1167
+      - 美国_YouTube：8度科技 16
+      - 英国_YouTube：8度科技 6
+      - +US_1436
+      - _CA_加拿大 4
+      - US_6679+@WangCai_1
+      - +US_1751
+      - +US_1375
+      - +US_1473
+      - +US_1369
+      - 加拿大_YouTube：8度科技 26
+      - 美国_YouTube：8度科技 17
+      - _FR_法国
+      - +US_1531
+      - 法国_YouTube：8度科技 5
+      - +US_1362
+      - 加拿大_YouTube：8度科技 27
+      - US_5500+@WangCai_1 2
+      - +US_1126
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -385,95 +785,215 @@ proxy-groups:
       - ♻️ 自动选择
       - 🎯 全球直连
       - 中国_YouTube：8度科技
-      - _US_美国
       - 中国_YouTube：8度科技 2
-      - 美国_YouTube：8度科技
-      - _US_美国 2
+      - _US_美国
       - 英国_YouTube：8度科技
       - 俄罗斯联邦_YouTube：8度科技
-      - _US_美国 3
-      - 比利时_YouTube：8度科技
       - 澳大利亚_YouTube：8度科技
+      - 美国_YouTube：8度科技
+      - 香港+中继07+华南
+      - 香港+中继08+华南
+      - 香港+中继03+华南
+      - 香港+中继01+华南
+      - 香港+中继02+华南
+      - 香港+中继06+华南
+      - 香港+中继04+华南
+      - 台湾+中继08+华南
+      - 香港+中继09+华南
+      - 香港+中继10+华南
+      - 台湾+中继09+华南
+      - 香港+中继05+华南
+      - 台湾+中继10+华南
+      - 台湾+中继01+华南
+      - 台湾+中继02+华南
+      - 台湾+中继06+华南
+      - 台湾+中继04+华南
+      - 台湾+中继03+华南
+      - 台湾+中继07+华南
+      - 台湾+中继05+华南
+      - US_2375+@WangCai_1
+      - US_0443+@WangCai_1
+      - US_6379+@WangCai_1
+      - US_8008+@WangCai_1
+      - US_8119+@WangCai_1
+      - US_8008+@WangCai_1 2
+      - US_8091+@WangCai_1
+      - US_2376+@WangCai_1
+      - US_7002+@WangCai_1
+      - US_6379+@WangCai_1 2
+      - US_8881+@WangCai_1
+      - US_6697+@WangCai_1
+      - US_9101+@WangCai_1
+      - US_6697+@WangCai_1 2
+      - US_8000+@WangCai_1
+      - US_8882+@WangCai_1
+      - US_8009+@WangCai_1
+      - US_5003+@WangCai_1
+      - US_9102+@WangCai_1
+      - US_5500+@WangCai_1
+      - US_8118+@WangCai_1
+      - US_9101+@WangCai_1 2
+      - US_7001+@WangCai_1
+      - US_8881+@WangCai_1 2
+      - US_8888+@WangCai_1
+      - 德国+特选02+华南
+      - US_8000+@WangCai_1 2
+      - US_8118+@WangCai_1 2
+      - US_5601+@WangCai_1
       - 美国_YouTube：8度科技 2
+      - 美国_YouTube：8度科技 3
+      - +US_1139
+      - US_5001+@WangCai_1
+      - +US_1239
+      - 美国_YouTube：8度科技 4
+      - 美国_YouTube：8度科技 5
       - 加拿大_YouTube：8度科技
       - 加拿大_YouTube：8度科技 2
-      - 美国_YouTube：8度科技 3
       - 加拿大_YouTube：8度科技 3
-      - 美国_YouTube：8度科技 4
       - 加拿大_YouTube：8度科技 4
-      - 加拿大_YouTube：8度科技 5
-      - 加拿大_YouTube：8度科技 6
-      - 美国_YouTube：8度科技 5
-      - 加拿大_YouTube：8度科技 7
       - 美国_YouTube：8度科技 6
-      - 加拿大_YouTube：8度科技 8
-      - 加拿大_YouTube：8度科技 9
       - 美国_YouTube：8度科技 7
       - 美国_YouTube：8度科技 8
+      - 加拿大_YouTube：8度科技 5
+      - 加拿大_YouTube：8度科技 6
+      - +US_1080
       - 美国_YouTube：8度科技 9
-      - 加拿大_YouTube：8度科技 10
-      - 英国_YouTube：8度科技 2
-      - _GB_英国
+      - +US_1488
+      - +US_1496
+      - 加拿大_YouTube：8度科技 7
+      - 加拿大_YouTube：8度科技 8
       - 美国_YouTube：8度科技 10
-      - _US_美国 4
+      - 加拿大_YouTube：8度科技 9
+      - 加拿大_YouTube：8度科技 10
+      - 美国+中继01+华东
+      - +US_1443
+      - +US_1418
+      - 美国+中继06+华东
       - 美国_YouTube：8度科技 11
-      - 美国_YouTube：8度科技 12
-      - _US_美国 5
       - 加拿大_YouTube：8度科技 11
       - 加拿大_YouTube：8度科技 12
-      - _CA_加拿大
       - 加拿大_YouTube：8度科技 13
-      - 美国_YouTube：8度科技 13
-      - _FR_法国
-      - 加拿大_YouTube：8度科技 14
-      - 加拿大_YouTube：8度科技 15
-      - 加拿大_YouTube：8度科技 16
-      - 加拿大_YouTube：8度科技 17
-      - 加拿大_YouTube：8度科技 18
-      - 美国_YouTube：8度科技 14
-      - 加拿大_YouTube：8度科技 19
-      - _FR_法国 2
-      - 加拿大_YouTube：8度科技 20
-      - 加拿大_YouTube：8度科技 21
       - 法国_YouTube：8度科技
-      - 加拿大_YouTube：8度科技 22
-      - 美国_YouTube：8度科技 15
+      - 加拿大_YouTube：8度科技 14
+      - +US_2003
+      - 加拿大_YouTube：8度科技 15
+      - _CA_加拿大
+      - +US_1864
+      - 加拿大_YouTube：8度科技 16
+      - 美国_YouTube：8度科技 12
+      - 美国_YouTube：8度科技 13
+      - 英国_YouTube：8度科技 2
+      - +US_1213
+      - +US_1431
+      - _GB_英国
+      - 加拿大_YouTube：8度科技 17
       - _CA_加拿大 2
-      - 英国_YouTube：8度科技 3
-      - 美国_YouTube：8度科技 16
-      - 英国_YouTube：8度科技 4
-      - 法国_YouTube：8度科技 2
-      - _FR_法国 3
-      - 法国_YouTube：8度科技 3
-      - 英国_YouTube：8度科技 5
-      - 美国_YouTube：8度科技 17
-      - 英国_YouTube：8度科技 6
-      - 美国_YouTube：8度科技 18
-      - 加拿大_YouTube：8度科技 23
-      - 加拿大_YouTube：8度科技 24
-      - 法国_YouTube：8度科技 4
-      - 加拿大_YouTube：8度科技 25
-      - 英国_YouTube：8度科技 7
+      - +US_1335
       - _CA_加拿大 3
-      - _CA_加拿大 4
-      - 加拿大_YouTube：8度科技 26
-      - 美国_YouTube：8度科技 19
-      - 法国_YouTube：8度科技 5
-      - 加拿大_YouTube：8度科技 27
-      - 美国_YouTube：8度科技 20
+      - 美国+中继08+华东
+      - 美国_YouTube：8度科技 14
+      - 美国+中继07+华东
+      - +US_1785
+      - 法国_YouTube：8度科技 2
+      - +US_1421
+      - 加拿大_YouTube：8度科技 18
+      - +US_1563
+      - 法国_YouTube：8度科技 3
+      - +US_2122
+      - 加拿大_YouTube：8度科技 19
+      - 英国_YouTube：8度科技 3
+      - 美国+中继09+华东
+      - +US_1641
+      - +US_1200
+      - 美国_YouTube：8度科技 15
+      - +US_1482
+      - +US_2293
+      - 加拿大_YouTube：8度科技 20
+      - +US_1741
+      - 加拿大_YouTube：8度科技 21
+      - +US_1656
+      - +US_1657
+      - 加拿大_YouTube：8度科技 22
+      - 法国_YouTube：8度科技 4
+      - 加拿大_YouTube：8度科技 23
+      - +US_1547
+      - +US_1462
+      - 英国_YouTube：8度科技 4
+      - 英国_YouTube：8度科技 5
+      - +US_2119
+      - +US_1409
+      - +US_2137
+      - 美国+中继03+华东
       - 中国_YouTube：8度科技 3
-      - 美国_YouTube：8度科技 21
-      - _CA_加拿大 5
-      - 加拿大_YouTube：8度科技 28
-      - 美国_YouTube：8度科技 22
-      - 美国_YouTube：8度科技 23
-      - _US_美国 6
-      - 加拿大_YouTube：8度科技 29
-      - 美国_YouTube：8度科技 24
+      - +US_1077
+      - +US_1249
+      - +US_1636
+      - 加拿大_YouTube：8度科技 24
+      - +US_1330
+      - +US_1764
+      - 加拿大_YouTube：8度科技 25
+      - 美国+中继04+华东
+      - +US_1556
+      - +US_2287
+      - +US_1236
+      - +US_1312
+      - 美国+中继05+华东
+      - +US_2101
+      - US_5000+@WangCai_1
+      - US_3306+@WangCai_1
+      - US_5600+@WangCai_1
+      - +US_1332
+      - +US_1278
+      - +US_1691
+      - US_9102+@WangCai_1 2
+      - 美国+中继02+华东
+      - 美国+中继10+华东
+      - US_5601+@WangCai_1 2
+      - +US_1897
+      - +US_1577
+      - +US_1167
+      - 美国_YouTube：8度科技 16
+      - 英国_YouTube：8度科技 6
+      - +US_1436
+      - _CA_加拿大 4
+      - US_6679+@WangCai_1
+      - +US_1751
+      - +US_1375
+      - +US_1473
+      - +US_1369
+      - 加拿大_YouTube：8度科技 26
+      - 美国_YouTube：8度科技 17
+      - _FR_法国
+      - +US_1531
+      - 法国_YouTube：8度科技 5
+      - +US_1362
+      - 加拿大_YouTube：8度科技 27
+      - US_5500+@WangCai_1 2
+      - +US_1126
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
+      - 香港+中继07+华南
+      - 香港+中继08+华南
+      - 香港+中继03+华南
+      - 香港+中继01+华南
+      - 香港+中继02+华南
+      - 香港+中继06+华南
+      - 香港+中继04+华南
+      - 台湾+中继08+华南
+      - 香港+中继09+华南
+      - 香港+中继10+华南
+      - 台湾+中继09+华南
+      - 香港+中继05+华南
+      - 台湾+中继10+华南
+      - 台湾+中继01+华南
+      - 台湾+中继02+华南
+      - 台湾+中继06+华南
+      - 台湾+中继04+华南
+      - 台湾+中继03+华南
+      - 台湾+中继07+华南
+      - 台湾+中继05+华南
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
@@ -481,182 +1001,382 @@ proxy-groups:
       - 🎯 全球直连
       - 🔰 节点选择
       - 中国_YouTube：8度科技
-      - _US_美国
       - 中国_YouTube：8度科技 2
-      - 美国_YouTube：8度科技
-      - _US_美国 2
+      - _US_美国
       - 英国_YouTube：8度科技
       - 俄罗斯联邦_YouTube：8度科技
-      - _US_美国 3
-      - 比利时_YouTube：8度科技
       - 澳大利亚_YouTube：8度科技
+      - 美国_YouTube：8度科技
+      - 香港+中继07+华南
+      - 香港+中继08+华南
+      - 香港+中继03+华南
+      - 香港+中继01+华南
+      - 香港+中继02+华南
+      - 香港+中继06+华南
+      - 香港+中继04+华南
+      - 台湾+中继08+华南
+      - 香港+中继09+华南
+      - 香港+中继10+华南
+      - 台湾+中继09+华南
+      - 香港+中继05+华南
+      - 台湾+中继10+华南
+      - 台湾+中继01+华南
+      - 台湾+中继02+华南
+      - 台湾+中继06+华南
+      - 台湾+中继04+华南
+      - 台湾+中继03+华南
+      - 台湾+中继07+华南
+      - 台湾+中继05+华南
+      - US_2375+@WangCai_1
+      - US_0443+@WangCai_1
+      - US_6379+@WangCai_1
+      - US_8008+@WangCai_1
+      - US_8119+@WangCai_1
+      - US_8008+@WangCai_1 2
+      - US_8091+@WangCai_1
+      - US_2376+@WangCai_1
+      - US_7002+@WangCai_1
+      - US_6379+@WangCai_1 2
+      - US_8881+@WangCai_1
+      - US_6697+@WangCai_1
+      - US_9101+@WangCai_1
+      - US_6697+@WangCai_1 2
+      - US_8000+@WangCai_1
+      - US_8882+@WangCai_1
+      - US_8009+@WangCai_1
+      - US_5003+@WangCai_1
+      - US_9102+@WangCai_1
+      - US_5500+@WangCai_1
+      - US_8118+@WangCai_1
+      - US_9101+@WangCai_1 2
+      - US_7001+@WangCai_1
+      - US_8881+@WangCai_1 2
+      - US_8888+@WangCai_1
+      - 德国+特选02+华南
+      - US_8000+@WangCai_1 2
+      - US_8118+@WangCai_1 2
+      - US_5601+@WangCai_1
       - 美国_YouTube：8度科技 2
+      - 美国_YouTube：8度科技 3
+      - +US_1139
+      - US_5001+@WangCai_1
+      - +US_1239
+      - 美国_YouTube：8度科技 4
+      - 美国_YouTube：8度科技 5
       - 加拿大_YouTube：8度科技
       - 加拿大_YouTube：8度科技 2
-      - 美国_YouTube：8度科技 3
       - 加拿大_YouTube：8度科技 3
-      - 美国_YouTube：8度科技 4
       - 加拿大_YouTube：8度科技 4
-      - 加拿大_YouTube：8度科技 5
-      - 加拿大_YouTube：8度科技 6
-      - 美国_YouTube：8度科技 5
-      - 加拿大_YouTube：8度科技 7
       - 美国_YouTube：8度科技 6
-      - 加拿大_YouTube：8度科技 8
-      - 加拿大_YouTube：8度科技 9
       - 美国_YouTube：8度科技 7
       - 美国_YouTube：8度科技 8
+      - 加拿大_YouTube：8度科技 5
+      - 加拿大_YouTube：8度科技 6
+      - +US_1080
       - 美国_YouTube：8度科技 9
-      - 加拿大_YouTube：8度科技 10
-      - 英国_YouTube：8度科技 2
-      - _GB_英国
+      - +US_1488
+      - +US_1496
+      - 加拿大_YouTube：8度科技 7
+      - 加拿大_YouTube：8度科技 8
       - 美国_YouTube：8度科技 10
-      - _US_美国 4
+      - 加拿大_YouTube：8度科技 9
+      - 加拿大_YouTube：8度科技 10
+      - 美国+中继01+华东
+      - +US_1443
+      - +US_1418
+      - 美国+中继06+华东
       - 美国_YouTube：8度科技 11
-      - 美国_YouTube：8度科技 12
-      - _US_美国 5
       - 加拿大_YouTube：8度科技 11
       - 加拿大_YouTube：8度科技 12
-      - _CA_加拿大
       - 加拿大_YouTube：8度科技 13
-      - 美国_YouTube：8度科技 13
-      - _FR_法国
-      - 加拿大_YouTube：8度科技 14
-      - 加拿大_YouTube：8度科技 15
-      - 加拿大_YouTube：8度科技 16
-      - 加拿大_YouTube：8度科技 17
-      - 加拿大_YouTube：8度科技 18
-      - 美国_YouTube：8度科技 14
-      - 加拿大_YouTube：8度科技 19
-      - _FR_法国 2
-      - 加拿大_YouTube：8度科技 20
-      - 加拿大_YouTube：8度科技 21
       - 法国_YouTube：8度科技
-      - 加拿大_YouTube：8度科技 22
-      - 美国_YouTube：8度科技 15
+      - 加拿大_YouTube：8度科技 14
+      - +US_2003
+      - 加拿大_YouTube：8度科技 15
+      - _CA_加拿大
+      - +US_1864
+      - 加拿大_YouTube：8度科技 16
+      - 美国_YouTube：8度科技 12
+      - 美国_YouTube：8度科技 13
+      - 英国_YouTube：8度科技 2
+      - +US_1213
+      - +US_1431
+      - _GB_英国
+      - 加拿大_YouTube：8度科技 17
       - _CA_加拿大 2
-      - 英国_YouTube：8度科技 3
-      - 美国_YouTube：8度科技 16
-      - 英国_YouTube：8度科技 4
-      - 法国_YouTube：8度科技 2
-      - _FR_法国 3
-      - 法国_YouTube：8度科技 3
-      - 英国_YouTube：8度科技 5
-      - 美国_YouTube：8度科技 17
-      - 英国_YouTube：8度科技 6
-      - 美国_YouTube：8度科技 18
-      - 加拿大_YouTube：8度科技 23
-      - 加拿大_YouTube：8度科技 24
-      - 法国_YouTube：8度科技 4
-      - 加拿大_YouTube：8度科技 25
-      - 英国_YouTube：8度科技 7
+      - +US_1335
       - _CA_加拿大 3
-      - _CA_加拿大 4
-      - 加拿大_YouTube：8度科技 26
-      - 美国_YouTube：8度科技 19
-      - 法国_YouTube：8度科技 5
-      - 加拿大_YouTube：8度科技 27
-      - 美国_YouTube：8度科技 20
+      - 美国+中继08+华东
+      - 美国_YouTube：8度科技 14
+      - 美国+中继07+华东
+      - +US_1785
+      - 法国_YouTube：8度科技 2
+      - +US_1421
+      - 加拿大_YouTube：8度科技 18
+      - +US_1563
+      - 法国_YouTube：8度科技 3
+      - +US_2122
+      - 加拿大_YouTube：8度科技 19
+      - 英国_YouTube：8度科技 3
+      - 美国+中继09+华东
+      - +US_1641
+      - +US_1200
+      - 美国_YouTube：8度科技 15
+      - +US_1482
+      - +US_2293
+      - 加拿大_YouTube：8度科技 20
+      - +US_1741
+      - 加拿大_YouTube：8度科技 21
+      - +US_1656
+      - +US_1657
+      - 加拿大_YouTube：8度科技 22
+      - 法国_YouTube：8度科技 4
+      - 加拿大_YouTube：8度科技 23
+      - +US_1547
+      - +US_1462
+      - 英国_YouTube：8度科技 4
+      - 英国_YouTube：8度科技 5
+      - +US_2119
+      - +US_1409
+      - +US_2137
+      - 美国+中继03+华东
       - 中国_YouTube：8度科技 3
-      - 美国_YouTube：8度科技 21
-      - _CA_加拿大 5
-      - 加拿大_YouTube：8度科技 28
-      - 美国_YouTube：8度科技 22
-      - 美国_YouTube：8度科技 23
-      - _US_美国 6
-      - 加拿大_YouTube：8度科技 29
-      - 美国_YouTube：8度科技 24
+      - +US_1077
+      - +US_1249
+      - +US_1636
+      - 加拿大_YouTube：8度科技 24
+      - +US_1330
+      - +US_1764
+      - 加拿大_YouTube：8度科技 25
+      - 美国+中继04+华东
+      - +US_1556
+      - +US_2287
+      - +US_1236
+      - +US_1312
+      - 美国+中继05+华东
+      - +US_2101
+      - US_5000+@WangCai_1
+      - US_3306+@WangCai_1
+      - US_5600+@WangCai_1
+      - +US_1332
+      - +US_1278
+      - +US_1691
+      - US_9102+@WangCai_1 2
+      - 美国+中继02+华东
+      - 美国+中继10+华东
+      - US_5601+@WangCai_1 2
+      - +US_1897
+      - +US_1577
+      - +US_1167
+      - 美国_YouTube：8度科技 16
+      - 英国_YouTube：8度科技 6
+      - +US_1436
+      - _CA_加拿大 4
+      - US_6679+@WangCai_1
+      - +US_1751
+      - +US_1375
+      - +US_1473
+      - +US_1369
+      - 加拿大_YouTube：8度科技 26
+      - 美国_YouTube：8度科技 17
+      - _FR_法国
+      - +US_1531
+      - 法国_YouTube：8度科技 5
+      - +US_1362
+      - 加拿大_YouTube：8度科技 27
+      - US_5500+@WangCai_1 2
+      - +US_1126
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - 中国_YouTube：8度科技
-      - _US_美国
       - 中国_YouTube：8度科技 2
-      - 美国_YouTube：8度科技
-      - _US_美国 2
+      - _US_美国
       - 英国_YouTube：8度科技
       - 俄罗斯联邦_YouTube：8度科技
-      - _US_美国 3
-      - 比利时_YouTube：8度科技
       - 澳大利亚_YouTube：8度科技
+      - 美国_YouTube：8度科技
+      - 香港+中继07+华南
+      - 香港+中继08+华南
+      - 香港+中继03+华南
+      - 香港+中继01+华南
+      - 香港+中继02+华南
+      - 香港+中继06+华南
+      - 香港+中继04+华南
+      - 台湾+中继08+华南
+      - 香港+中继09+华南
+      - 香港+中继10+华南
+      - 台湾+中继09+华南
+      - 香港+中继05+华南
+      - 台湾+中继10+华南
+      - 台湾+中继01+华南
+      - 台湾+中继02+华南
+      - 台湾+中继06+华南
+      - 台湾+中继04+华南
+      - 台湾+中继03+华南
+      - 台湾+中继07+华南
+      - 台湾+中继05+华南
+      - US_2375+@WangCai_1
+      - US_0443+@WangCai_1
+      - US_6379+@WangCai_1
+      - US_8008+@WangCai_1
+      - US_8119+@WangCai_1
+      - US_8008+@WangCai_1 2
+      - US_8091+@WangCai_1
+      - US_2376+@WangCai_1
+      - US_7002+@WangCai_1
+      - US_6379+@WangCai_1 2
+      - US_8881+@WangCai_1
+      - US_6697+@WangCai_1
+      - US_9101+@WangCai_1
+      - US_6697+@WangCai_1 2
+      - US_8000+@WangCai_1
+      - US_8882+@WangCai_1
+      - US_8009+@WangCai_1
+      - US_5003+@WangCai_1
+      - US_9102+@WangCai_1
+      - US_5500+@WangCai_1
+      - US_8118+@WangCai_1
+      - US_9101+@WangCai_1 2
+      - US_7001+@WangCai_1
+      - US_8881+@WangCai_1 2
+      - US_8888+@WangCai_1
+      - 德国+特选02+华南
+      - US_8000+@WangCai_1 2
+      - US_8118+@WangCai_1 2
+      - US_5601+@WangCai_1
       - 美国_YouTube：8度科技 2
+      - 美国_YouTube：8度科技 3
+      - +US_1139
+      - US_5001+@WangCai_1
+      - +US_1239
+      - 美国_YouTube：8度科技 4
+      - 美国_YouTube：8度科技 5
       - 加拿大_YouTube：8度科技
       - 加拿大_YouTube：8度科技 2
-      - 美国_YouTube：8度科技 3
       - 加拿大_YouTube：8度科技 3
-      - 美国_YouTube：8度科技 4
       - 加拿大_YouTube：8度科技 4
-      - 加拿大_YouTube：8度科技 5
-      - 加拿大_YouTube：8度科技 6
-      - 美国_YouTube：8度科技 5
-      - 加拿大_YouTube：8度科技 7
       - 美国_YouTube：8度科技 6
-      - 加拿大_YouTube：8度科技 8
-      - 加拿大_YouTube：8度科技 9
       - 美国_YouTube：8度科技 7
       - 美国_YouTube：8度科技 8
+      - 加拿大_YouTube：8度科技 5
+      - 加拿大_YouTube：8度科技 6
+      - +US_1080
       - 美国_YouTube：8度科技 9
-      - 加拿大_YouTube：8度科技 10
-      - 英国_YouTube：8度科技 2
-      - _GB_英国
+      - +US_1488
+      - +US_1496
+      - 加拿大_YouTube：8度科技 7
+      - 加拿大_YouTube：8度科技 8
       - 美国_YouTube：8度科技 10
-      - _US_美国 4
+      - 加拿大_YouTube：8度科技 9
+      - 加拿大_YouTube：8度科技 10
+      - 美国+中继01+华东
+      - +US_1443
+      - +US_1418
+      - 美国+中继06+华东
       - 美国_YouTube：8度科技 11
-      - 美国_YouTube：8度科技 12
-      - _US_美国 5
       - 加拿大_YouTube：8度科技 11
       - 加拿大_YouTube：8度科技 12
-      - _CA_加拿大
       - 加拿大_YouTube：8度科技 13
-      - 美国_YouTube：8度科技 13
-      - _FR_法国
-      - 加拿大_YouTube：8度科技 14
-      - 加拿大_YouTube：8度科技 15
-      - 加拿大_YouTube：8度科技 16
-      - 加拿大_YouTube：8度科技 17
-      - 加拿大_YouTube：8度科技 18
-      - 美国_YouTube：8度科技 14
-      - 加拿大_YouTube：8度科技 19
-      - _FR_法国 2
-      - 加拿大_YouTube：8度科技 20
-      - 加拿大_YouTube：8度科技 21
       - 法国_YouTube：8度科技
-      - 加拿大_YouTube：8度科技 22
-      - 美国_YouTube：8度科技 15
+      - 加拿大_YouTube：8度科技 14
+      - +US_2003
+      - 加拿大_YouTube：8度科技 15
+      - _CA_加拿大
+      - +US_1864
+      - 加拿大_YouTube：8度科技 16
+      - 美国_YouTube：8度科技 12
+      - 美国_YouTube：8度科技 13
+      - 英国_YouTube：8度科技 2
+      - +US_1213
+      - +US_1431
+      - _GB_英国
+      - 加拿大_YouTube：8度科技 17
       - _CA_加拿大 2
-      - 英国_YouTube：8度科技 3
-      - 美国_YouTube：8度科技 16
-      - 英国_YouTube：8度科技 4
-      - 法国_YouTube：8度科技 2
-      - _FR_法国 3
-      - 法国_YouTube：8度科技 3
-      - 英国_YouTube：8度科技 5
-      - 美国_YouTube：8度科技 17
-      - 英国_YouTube：8度科技 6
-      - 美国_YouTube：8度科技 18
-      - 加拿大_YouTube：8度科技 23
-      - 加拿大_YouTube：8度科技 24
-      - 法国_YouTube：8度科技 4
-      - 加拿大_YouTube：8度科技 25
-      - 英国_YouTube：8度科技 7
+      - +US_1335
       - _CA_加拿大 3
-      - _CA_加拿大 4
-      - 加拿大_YouTube：8度科技 26
-      - 美国_YouTube：8度科技 19
-      - 法国_YouTube：8度科技 5
-      - 加拿大_YouTube：8度科技 27
-      - 美国_YouTube：8度科技 20
+      - 美国+中继08+华东
+      - 美国_YouTube：8度科技 14
+      - 美国+中继07+华东
+      - +US_1785
+      - 法国_YouTube：8度科技 2
+      - +US_1421
+      - 加拿大_YouTube：8度科技 18
+      - +US_1563
+      - 法国_YouTube：8度科技 3
+      - +US_2122
+      - 加拿大_YouTube：8度科技 19
+      - 英国_YouTube：8度科技 3
+      - 美国+中继09+华东
+      - +US_1641
+      - +US_1200
+      - 美国_YouTube：8度科技 15
+      - +US_1482
+      - +US_2293
+      - 加拿大_YouTube：8度科技 20
+      - +US_1741
+      - 加拿大_YouTube：8度科技 21
+      - +US_1656
+      - +US_1657
+      - 加拿大_YouTube：8度科技 22
+      - 法国_YouTube：8度科技 4
+      - 加拿大_YouTube：8度科技 23
+      - +US_1547
+      - +US_1462
+      - 英国_YouTube：8度科技 4
+      - 英国_YouTube：8度科技 5
+      - +US_2119
+      - +US_1409
+      - +US_2137
+      - 美国+中继03+华东
       - 中国_YouTube：8度科技 3
-      - 美国_YouTube：8度科技 21
-      - _CA_加拿大 5
-      - 加拿大_YouTube：8度科技 28
-      - 美国_YouTube：8度科技 22
-      - 美国_YouTube：8度科技 23
-      - _US_美国 6
-      - 加拿大_YouTube：8度科技 29
-      - 美国_YouTube：8度科技 24
+      - +US_1077
+      - +US_1249
+      - +US_1636
+      - 加拿大_YouTube：8度科技 24
+      - +US_1330
+      - +US_1764
+      - 加拿大_YouTube：8度科技 25
+      - 美国+中继04+华东
+      - +US_1556
+      - +US_2287
+      - +US_1236
+      - +US_1312
+      - 美国+中继05+华东
+      - +US_2101
+      - US_5000+@WangCai_1
+      - US_3306+@WangCai_1
+      - US_5600+@WangCai_1
+      - +US_1332
+      - +US_1278
+      - +US_1691
+      - US_9102+@WangCai_1 2
+      - 美国+中继02+华东
+      - 美国+中继10+华东
+      - US_5601+@WangCai_1 2
+      - +US_1897
+      - +US_1577
+      - +US_1167
+      - 美国_YouTube：8度科技 16
+      - 英国_YouTube：8度科技 6
+      - +US_1436
+      - _CA_加拿大 4
+      - US_6679+@WangCai_1
+      - +US_1751
+      - +US_1375
+      - +US_1473
+      - +US_1369
+      - 加拿大_YouTube：8度科技 26
+      - 美国_YouTube：8度科技 17
+      - _FR_法国
+      - +US_1531
+      - 法国_YouTube：8度科技 5
+      - +US_1362
+      - 加拿大_YouTube：8度科技 27
+      - US_5500+@WangCai_1 2
+      - +US_1126
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -664,91 +1384,191 @@ proxy-groups:
       - 🎯 全球直连
       - ♻️ 自动选择
       - 中国_YouTube：8度科技
-      - _US_美国
       - 中国_YouTube：8度科技 2
-      - 美国_YouTube：8度科技
-      - _US_美国 2
+      - _US_美国
       - 英国_YouTube：8度科技
       - 俄罗斯联邦_YouTube：8度科技
-      - _US_美国 3
-      - 比利时_YouTube：8度科技
       - 澳大利亚_YouTube：8度科技
+      - 美国_YouTube：8度科技
+      - 香港+中继07+华南
+      - 香港+中继08+华南
+      - 香港+中继03+华南
+      - 香港+中继01+华南
+      - 香港+中继02+华南
+      - 香港+中继06+华南
+      - 香港+中继04+华南
+      - 台湾+中继08+华南
+      - 香港+中继09+华南
+      - 香港+中继10+华南
+      - 台湾+中继09+华南
+      - 香港+中继05+华南
+      - 台湾+中继10+华南
+      - 台湾+中继01+华南
+      - 台湾+中继02+华南
+      - 台湾+中继06+华南
+      - 台湾+中继04+华南
+      - 台湾+中继03+华南
+      - 台湾+中继07+华南
+      - 台湾+中继05+华南
+      - US_2375+@WangCai_1
+      - US_0443+@WangCai_1
+      - US_6379+@WangCai_1
+      - US_8008+@WangCai_1
+      - US_8119+@WangCai_1
+      - US_8008+@WangCai_1 2
+      - US_8091+@WangCai_1
+      - US_2376+@WangCai_1
+      - US_7002+@WangCai_1
+      - US_6379+@WangCai_1 2
+      - US_8881+@WangCai_1
+      - US_6697+@WangCai_1
+      - US_9101+@WangCai_1
+      - US_6697+@WangCai_1 2
+      - US_8000+@WangCai_1
+      - US_8882+@WangCai_1
+      - US_8009+@WangCai_1
+      - US_5003+@WangCai_1
+      - US_9102+@WangCai_1
+      - US_5500+@WangCai_1
+      - US_8118+@WangCai_1
+      - US_9101+@WangCai_1 2
+      - US_7001+@WangCai_1
+      - US_8881+@WangCai_1 2
+      - US_8888+@WangCai_1
+      - 德国+特选02+华南
+      - US_8000+@WangCai_1 2
+      - US_8118+@WangCai_1 2
+      - US_5601+@WangCai_1
       - 美国_YouTube：8度科技 2
+      - 美国_YouTube：8度科技 3
+      - +US_1139
+      - US_5001+@WangCai_1
+      - +US_1239
+      - 美国_YouTube：8度科技 4
+      - 美国_YouTube：8度科技 5
       - 加拿大_YouTube：8度科技
       - 加拿大_YouTube：8度科技 2
-      - 美国_YouTube：8度科技 3
       - 加拿大_YouTube：8度科技 3
-      - 美国_YouTube：8度科技 4
       - 加拿大_YouTube：8度科技 4
-      - 加拿大_YouTube：8度科技 5
-      - 加拿大_YouTube：8度科技 6
-      - 美国_YouTube：8度科技 5
-      - 加拿大_YouTube：8度科技 7
       - 美国_YouTube：8度科技 6
-      - 加拿大_YouTube：8度科技 8
-      - 加拿大_YouTube：8度科技 9
       - 美国_YouTube：8度科技 7
       - 美国_YouTube：8度科技 8
+      - 加拿大_YouTube：8度科技 5
+      - 加拿大_YouTube：8度科技 6
+      - +US_1080
       - 美国_YouTube：8度科技 9
-      - 加拿大_YouTube：8度科技 10
-      - 英国_YouTube：8度科技 2
-      - _GB_英国
+      - +US_1488
+      - +US_1496
+      - 加拿大_YouTube：8度科技 7
+      - 加拿大_YouTube：8度科技 8
       - 美国_YouTube：8度科技 10
-      - _US_美国 4
+      - 加拿大_YouTube：8度科技 9
+      - 加拿大_YouTube：8度科技 10
+      - 美国+中继01+华东
+      - +US_1443
+      - +US_1418
+      - 美国+中继06+华东
       - 美国_YouTube：8度科技 11
-      - 美国_YouTube：8度科技 12
-      - _US_美国 5
       - 加拿大_YouTube：8度科技 11
       - 加拿大_YouTube：8度科技 12
-      - _CA_加拿大
       - 加拿大_YouTube：8度科技 13
-      - 美国_YouTube：8度科技 13
-      - _FR_法国
-      - 加拿大_YouTube：8度科技 14
-      - 加拿大_YouTube：8度科技 15
-      - 加拿大_YouTube：8度科技 16
-      - 加拿大_YouTube：8度科技 17
-      - 加拿大_YouTube：8度科技 18
-      - 美国_YouTube：8度科技 14
-      - 加拿大_YouTube：8度科技 19
-      - _FR_法国 2
-      - 加拿大_YouTube：8度科技 20
-      - 加拿大_YouTube：8度科技 21
       - 法国_YouTube：8度科技
-      - 加拿大_YouTube：8度科技 22
-      - 美国_YouTube：8度科技 15
+      - 加拿大_YouTube：8度科技 14
+      - +US_2003
+      - 加拿大_YouTube：8度科技 15
+      - _CA_加拿大
+      - +US_1864
+      - 加拿大_YouTube：8度科技 16
+      - 美国_YouTube：8度科技 12
+      - 美国_YouTube：8度科技 13
+      - 英国_YouTube：8度科技 2
+      - +US_1213
+      - +US_1431
+      - _GB_英国
+      - 加拿大_YouTube：8度科技 17
       - _CA_加拿大 2
-      - 英国_YouTube：8度科技 3
-      - 美国_YouTube：8度科技 16
-      - 英国_YouTube：8度科技 4
-      - 法国_YouTube：8度科技 2
-      - _FR_法国 3
-      - 法国_YouTube：8度科技 3
-      - 英国_YouTube：8度科技 5
-      - 美国_YouTube：8度科技 17
-      - 英国_YouTube：8度科技 6
-      - 美国_YouTube：8度科技 18
-      - 加拿大_YouTube：8度科技 23
-      - 加拿大_YouTube：8度科技 24
-      - 法国_YouTube：8度科技 4
-      - 加拿大_YouTube：8度科技 25
-      - 英国_YouTube：8度科技 7
+      - +US_1335
       - _CA_加拿大 3
-      - _CA_加拿大 4
-      - 加拿大_YouTube：8度科技 26
-      - 美国_YouTube：8度科技 19
-      - 法国_YouTube：8度科技 5
-      - 加拿大_YouTube：8度科技 27
-      - 美国_YouTube：8度科技 20
+      - 美国+中继08+华东
+      - 美国_YouTube：8度科技 14
+      - 美国+中继07+华东
+      - +US_1785
+      - 法国_YouTube：8度科技 2
+      - +US_1421
+      - 加拿大_YouTube：8度科技 18
+      - +US_1563
+      - 法国_YouTube：8度科技 3
+      - +US_2122
+      - 加拿大_YouTube：8度科技 19
+      - 英国_YouTube：8度科技 3
+      - 美国+中继09+华东
+      - +US_1641
+      - +US_1200
+      - 美国_YouTube：8度科技 15
+      - +US_1482
+      - +US_2293
+      - 加拿大_YouTube：8度科技 20
+      - +US_1741
+      - 加拿大_YouTube：8度科技 21
+      - +US_1656
+      - +US_1657
+      - 加拿大_YouTube：8度科技 22
+      - 法国_YouTube：8度科技 4
+      - 加拿大_YouTube：8度科技 23
+      - +US_1547
+      - +US_1462
+      - 英国_YouTube：8度科技 4
+      - 英国_YouTube：8度科技 5
+      - +US_2119
+      - +US_1409
+      - +US_2137
+      - 美国+中继03+华东
       - 中国_YouTube：8度科技 3
-      - 美国_YouTube：8度科技 21
-      - _CA_加拿大 5
-      - 加拿大_YouTube：8度科技 28
-      - 美国_YouTube：8度科技 22
-      - 美国_YouTube：8度科技 23
-      - _US_美国 6
-      - 加拿大_YouTube：8度科技 29
-      - 美国_YouTube：8度科技 24
+      - +US_1077
+      - +US_1249
+      - +US_1636
+      - 加拿大_YouTube：8度科技 24
+      - +US_1330
+      - +US_1764
+      - 加拿大_YouTube：8度科技 25
+      - 美国+中继04+华东
+      - +US_1556
+      - +US_2287
+      - +US_1236
+      - +US_1312
+      - 美国+中继05+华东
+      - +US_2101
+      - US_5000+@WangCai_1
+      - US_3306+@WangCai_1
+      - US_5600+@WangCai_1
+      - +US_1332
+      - +US_1278
+      - +US_1691
+      - US_9102+@WangCai_1 2
+      - 美国+中继02+华东
+      - 美国+中继10+华东
+      - US_5601+@WangCai_1 2
+      - +US_1897
+      - +US_1577
+      - +US_1167
+      - 美国_YouTube：8度科技 16
+      - 英国_YouTube：8度科技 6
+      - +US_1436
+      - _CA_加拿大 4
+      - US_6679+@WangCai_1
+      - +US_1751
+      - +US_1375
+      - +US_1473
+      - +US_1369
+      - 加拿大_YouTube：8度科技 26
+      - 美国_YouTube：8度科技 17
+      - _FR_法国
+      - +US_1531
+      - 法国_YouTube：8度科技 5
+      - +US_1362
+      - 加拿大_YouTube：8度科技 27
+      - US_5500+@WangCai_1 2
+      - +US_1126
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -765,91 +1585,191 @@ proxy-groups:
       - 🎯 全球直连
       - ♻️ 自动选择
       - 中国_YouTube：8度科技
-      - _US_美国
       - 中国_YouTube：8度科技 2
-      - 美国_YouTube：8度科技
-      - _US_美国 2
+      - _US_美国
       - 英国_YouTube：8度科技
       - 俄罗斯联邦_YouTube：8度科技
-      - _US_美国 3
-      - 比利时_YouTube：8度科技
       - 澳大利亚_YouTube：8度科技
+      - 美国_YouTube：8度科技
+      - 香港+中继07+华南
+      - 香港+中继08+华南
+      - 香港+中继03+华南
+      - 香港+中继01+华南
+      - 香港+中继02+华南
+      - 香港+中继06+华南
+      - 香港+中继04+华南
+      - 台湾+中继08+华南
+      - 香港+中继09+华南
+      - 香港+中继10+华南
+      - 台湾+中继09+华南
+      - 香港+中继05+华南
+      - 台湾+中继10+华南
+      - 台湾+中继01+华南
+      - 台湾+中继02+华南
+      - 台湾+中继06+华南
+      - 台湾+中继04+华南
+      - 台湾+中继03+华南
+      - 台湾+中继07+华南
+      - 台湾+中继05+华南
+      - US_2375+@WangCai_1
+      - US_0443+@WangCai_1
+      - US_6379+@WangCai_1
+      - US_8008+@WangCai_1
+      - US_8119+@WangCai_1
+      - US_8008+@WangCai_1 2
+      - US_8091+@WangCai_1
+      - US_2376+@WangCai_1
+      - US_7002+@WangCai_1
+      - US_6379+@WangCai_1 2
+      - US_8881+@WangCai_1
+      - US_6697+@WangCai_1
+      - US_9101+@WangCai_1
+      - US_6697+@WangCai_1 2
+      - US_8000+@WangCai_1
+      - US_8882+@WangCai_1
+      - US_8009+@WangCai_1
+      - US_5003+@WangCai_1
+      - US_9102+@WangCai_1
+      - US_5500+@WangCai_1
+      - US_8118+@WangCai_1
+      - US_9101+@WangCai_1 2
+      - US_7001+@WangCai_1
+      - US_8881+@WangCai_1 2
+      - US_8888+@WangCai_1
+      - 德国+特选02+华南
+      - US_8000+@WangCai_1 2
+      - US_8118+@WangCai_1 2
+      - US_5601+@WangCai_1
       - 美国_YouTube：8度科技 2
+      - 美国_YouTube：8度科技 3
+      - +US_1139
+      - US_5001+@WangCai_1
+      - +US_1239
+      - 美国_YouTube：8度科技 4
+      - 美国_YouTube：8度科技 5
       - 加拿大_YouTube：8度科技
       - 加拿大_YouTube：8度科技 2
-      - 美国_YouTube：8度科技 3
       - 加拿大_YouTube：8度科技 3
-      - 美国_YouTube：8度科技 4
       - 加拿大_YouTube：8度科技 4
-      - 加拿大_YouTube：8度科技 5
-      - 加拿大_YouTube：8度科技 6
-      - 美国_YouTube：8度科技 5
-      - 加拿大_YouTube：8度科技 7
       - 美国_YouTube：8度科技 6
-      - 加拿大_YouTube：8度科技 8
-      - 加拿大_YouTube：8度科技 9
       - 美国_YouTube：8度科技 7
       - 美国_YouTube：8度科技 8
+      - 加拿大_YouTube：8度科技 5
+      - 加拿大_YouTube：8度科技 6
+      - +US_1080
       - 美国_YouTube：8度科技 9
-      - 加拿大_YouTube：8度科技 10
-      - 英国_YouTube：8度科技 2
-      - _GB_英国
+      - +US_1488
+      - +US_1496
+      - 加拿大_YouTube：8度科技 7
+      - 加拿大_YouTube：8度科技 8
       - 美国_YouTube：8度科技 10
-      - _US_美国 4
+      - 加拿大_YouTube：8度科技 9
+      - 加拿大_YouTube：8度科技 10
+      - 美国+中继01+华东
+      - +US_1443
+      - +US_1418
+      - 美国+中继06+华东
       - 美国_YouTube：8度科技 11
-      - 美国_YouTube：8度科技 12
-      - _US_美国 5
       - 加拿大_YouTube：8度科技 11
       - 加拿大_YouTube：8度科技 12
-      - _CA_加拿大
       - 加拿大_YouTube：8度科技 13
-      - 美国_YouTube：8度科技 13
-      - _FR_法国
-      - 加拿大_YouTube：8度科技 14
-      - 加拿大_YouTube：8度科技 15
-      - 加拿大_YouTube：8度科技 16
-      - 加拿大_YouTube：8度科技 17
-      - 加拿大_YouTube：8度科技 18
-      - 美国_YouTube：8度科技 14
-      - 加拿大_YouTube：8度科技 19
-      - _FR_法国 2
-      - 加拿大_YouTube：8度科技 20
-      - 加拿大_YouTube：8度科技 21
       - 法国_YouTube：8度科技
-      - 加拿大_YouTube：8度科技 22
-      - 美国_YouTube：8度科技 15
+      - 加拿大_YouTube：8度科技 14
+      - +US_2003
+      - 加拿大_YouTube：8度科技 15
+      - _CA_加拿大
+      - +US_1864
+      - 加拿大_YouTube：8度科技 16
+      - 美国_YouTube：8度科技 12
+      - 美国_YouTube：8度科技 13
+      - 英国_YouTube：8度科技 2
+      - +US_1213
+      - +US_1431
+      - _GB_英国
+      - 加拿大_YouTube：8度科技 17
       - _CA_加拿大 2
-      - 英国_YouTube：8度科技 3
-      - 美国_YouTube：8度科技 16
-      - 英国_YouTube：8度科技 4
-      - 法国_YouTube：8度科技 2
-      - _FR_法国 3
-      - 法国_YouTube：8度科技 3
-      - 英国_YouTube：8度科技 5
-      - 美国_YouTube：8度科技 17
-      - 英国_YouTube：8度科技 6
-      - 美国_YouTube：8度科技 18
-      - 加拿大_YouTube：8度科技 23
-      - 加拿大_YouTube：8度科技 24
-      - 法国_YouTube：8度科技 4
-      - 加拿大_YouTube：8度科技 25
-      - 英国_YouTube：8度科技 7
+      - +US_1335
       - _CA_加拿大 3
-      - _CA_加拿大 4
-      - 加拿大_YouTube：8度科技 26
-      - 美国_YouTube：8度科技 19
-      - 法国_YouTube：8度科技 5
-      - 加拿大_YouTube：8度科技 27
-      - 美国_YouTube：8度科技 20
+      - 美国+中继08+华东
+      - 美国_YouTube：8度科技 14
+      - 美国+中继07+华东
+      - +US_1785
+      - 法国_YouTube：8度科技 2
+      - +US_1421
+      - 加拿大_YouTube：8度科技 18
+      - +US_1563
+      - 法国_YouTube：8度科技 3
+      - +US_2122
+      - 加拿大_YouTube：8度科技 19
+      - 英国_YouTube：8度科技 3
+      - 美国+中继09+华东
+      - +US_1641
+      - +US_1200
+      - 美国_YouTube：8度科技 15
+      - +US_1482
+      - +US_2293
+      - 加拿大_YouTube：8度科技 20
+      - +US_1741
+      - 加拿大_YouTube：8度科技 21
+      - +US_1656
+      - +US_1657
+      - 加拿大_YouTube：8度科技 22
+      - 法国_YouTube：8度科技 4
+      - 加拿大_YouTube：8度科技 23
+      - +US_1547
+      - +US_1462
+      - 英国_YouTube：8度科技 4
+      - 英国_YouTube：8度科技 5
+      - +US_2119
+      - +US_1409
+      - +US_2137
+      - 美国+中继03+华东
       - 中国_YouTube：8度科技 3
-      - 美国_YouTube：8度科技 21
-      - _CA_加拿大 5
-      - 加拿大_YouTube：8度科技 28
-      - 美国_YouTube：8度科技 22
-      - 美国_YouTube：8度科技 23
-      - _US_美国 6
-      - 加拿大_YouTube：8度科技 29
-      - 美国_YouTube：8度科技 24
+      - +US_1077
+      - +US_1249
+      - +US_1636
+      - 加拿大_YouTube：8度科技 24
+      - +US_1330
+      - +US_1764
+      - 加拿大_YouTube：8度科技 25
+      - 美国+中继04+华东
+      - +US_1556
+      - +US_2287
+      - +US_1236
+      - +US_1312
+      - 美国+中继05+华东
+      - +US_2101
+      - US_5000+@WangCai_1
+      - US_3306+@WangCai_1
+      - US_5600+@WangCai_1
+      - +US_1332
+      - +US_1278
+      - +US_1691
+      - US_9102+@WangCai_1 2
+      - 美国+中继02+华东
+      - 美国+中继10+华东
+      - US_5601+@WangCai_1 2
+      - +US_1897
+      - +US_1577
+      - +US_1167
+      - 美国_YouTube：8度科技 16
+      - 英国_YouTube：8度科技 6
+      - +US_1436
+      - _CA_加拿大 4
+      - US_6679+@WangCai_1
+      - +US_1751
+      - +US_1375
+      - +US_1473
+      - +US_1369
+      - 加拿大_YouTube：8度科技 26
+      - 美国_YouTube：8度科技 17
+      - _FR_法国
+      - +US_1531
+      - 法国_YouTube：8度科技 5
+      - +US_1362
+      - 加拿大_YouTube：8度科技 27
+      - US_5500+@WangCai_1 2
+      - +US_1126
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
