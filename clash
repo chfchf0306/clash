@@ -6,191 +6,133 @@ log-level: info
 external-controller: :9090
 proxies:
   - {name: 中国_YouTube：8度科技, server: sxqxj.cn, port: 2164, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: sxqxj.cn}, udp: true}
+  - {name: _香港_YouTube:VV科技_38, server: 108.wowogg.cyou, port: 11224, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _香港_YouTube:VV科技_40, server: 119.wgong.xyz, port: 52219, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _香港_YouTube:VV科技_60, server: 88.wowogg.cyou, port: 52288, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _香港_YouTube:VV科技_19, server: 112.wowogg.cyou, port: 52212, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _美国_YouTube:VV科技_44, server: 95.wowogg.cyou, port: 52295, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _香港_YouTube:VV科技_63, server: 130.wowogg.cyou, port: 52330, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _香港_YouTube:VV科技_64, server: 83.wgong.xyz, port: 52283, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _香港_YouTube:VV科技_56, server: 115.wowogg.cyou, port: 52215, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _美国_YouTube:VV科技_62, server: 87.wowogg.cyou, port: 52287, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _台湾_YouTube:VV科技_99, server: tw.v2ssvps.com, port: 60763, type: vmess, uuid: 1b693eb3-3241-362a-9001-5b503789cfbe, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: microsoft.com}, udp: true}
+  - {name: _中国跳转_YouTube:VV科技_71, server: tunnel-tw-a-01.xncloud.xyz, port: 504, type: vmess, uuid: 80bc6df4-2905-35f9-a671-35bc803d93cd, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /niaoyun, ws-headers: {Host: mf-hinet-tw-04.xncloud.xyz}, udp: true}
   - {name: 中国_YouTube：8度科技 2, server: 105.wgong.xyz, port: 52205, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _US_美国, server: 107.155.83.152, port: 443, type: vmess, uuid: 8f469f1b-1fd3-433b-9fd9-b4e041b9df16, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ray, ws-headers: {Host: govacaxixo.watchdoctor.xyz}, udp: true}
+  - {name: _CN_中国->🇷🇺_RU_俄罗斯联邦, server: styd.sf66.cf, port: 52412, type: vmess, uuid: 061a5ca3-09f7-413e-8d4d-35775bb5c0eb, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /theuploadapi, ws-headers: {Host: vds.sgp.tgproxy.wtf}, udp: true}
+  - {name: _US_美国, server: v8.ssrsub.com, port: 443, type: vmess, uuid: 21627f29-0d0f-4dfa-9740-b5ee360bf061, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ssrsub, ws-headers: {Host: v8.ssrsub.com}, udp: true}
+  - {name: _韩国_YouTube:VV科技_85, server: 1031kr.fans8.xyz, port: 80, type: vmess, uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: 1031kr.fans8.xyz}, udp: true}
+  - {name: _US_美国 2, server: ggz.jgw.tgproxy.wtf, port: 80, type: vmess, uuid: 061a5ca3-09f7-413e-8d4d-35775bb5c0eb, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /theuploadapi, ws-headers: {Host: ggz.jgw.tgproxy.wtf}, udp: true}
+  - {name: _中国跳转_YouTube:VV科技_28, server: tunnel-tw-a-01.xncloud.xyz, port: 505, type: vmess, uuid: 80bc6df4-2905-35f9-a671-35bc803d93cd, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /niaoyun, ws-headers: {Host: tunnel-tw-a-01.xncloud.xyz}, udp: true}
+  - {name: _US_美国 3, server: v1.ssrsub.com, port: 443, type: vmess, uuid: 21627f29-0d0f-4dfa-9740-b5ee360bf061, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ssrsub, ws-headers: {Host: v1.ssrsub.com}, udp: true}
+  - {name: _中国跳转_YouTube:VV科技_13, server: styd.sf66.cf, port: 16990, type: vmess, uuid: 061a5ca3-09f7-413e-8d4d-35775bb5c0eb, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /theuploadapi, ws-headers: {Host: ggz.jgw.tgproxy.wtf}, udp: true}
+  - {name: v2cross.com, server: ua1.uuv2.co.uk, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: usa-dallas.lvuft.com}, udp: true}
+  - {name: v2cross.com 2, server: 45.35.84.162, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: usa-dallas.lvuft.com}, udp: true}
+  - {name: _香港_YouTube:VV科技_17, server: 0107hk.fans8.xyz, port: 80, type: vmess, uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: 0107hk.fans8.xyz}, udp: true}
+  - {name: _RU_俄罗斯联邦, server: 5.188.35.120, port: 443, type: vmess, uuid: 0c7a06d0-8061-4df7-b521-960e2b9ce0f7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ray, ws-headers: {Host: govacaxixo.watchdoctor.xyz}, udp: true}
   - {name: 英国_YouTube：8度科技, server: 37.120.134.207, port: 443, type: vmess, uuid: 5c0beec7-9b91-4e28-85b0-e3ff49b4ac50, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ray, ws-headers: {Host: govacaxixo.watchdoctor.xyz}, udp: true}
+  - {name: default_name, server: anzhuo-hezi1.herokuapp.com, port: 443, type: vmess, uuid: 05b8441f-3c76-4af1-b5b9-dd60d27e5ef8, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /05b8441f-3c76-4af1-b5b9-dd60d27e5ef8-vmess, ws-headers: {Host: anzhuo-hezi1.herokuapp.com}, udp: true}
   - {name: 俄罗斯联邦_YouTube：8度科技, server: 92.223.65.119, port: 443, type: vmess, uuid: 3fd6713f-e036-4ba9-938a-da7843a17a15, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ray, ws-headers: {Host: govacaxixo.watchdoctor.xyz}, udp: true}
+  - {name: _US_美国->🇷🇺_RU_俄罗斯联邦, server: v2.ssrsub.com, port: 8443, type: vmess, uuid: 21627f29-0d0f-4dfa-9740-b5ee360bf061, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ssrsub, ws-headers: {Host: v2.ssrsub.com}, udp: true}
   - {name: 澳大利亚_YouTube：8度科技, server: 45.76.127.189, port: 443, type: vmess, uuid: 7fc6764a-6cba-4599-95d7-ac7617b7db0a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ray, ws-headers: {Host: govacaxixo.watchdoctor.xyz}, udp: true}
+  - {name: _美国_YouTube:VV科技_124, server: v2.ssrsub.com, port: 8443, type: vmess, uuid: 21627f29-0d0f-4dfa-9740-b5ee360bf061, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ssrsub, ws-headers: {Host: v2.ssrsub.com}, udp: true}
+  - {name: YouTube:VV科技_37, server: 104.17.161.28, port: 2053, type: vmess, uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /eisasqa, ws-headers: {Host: foxus.fovi.tk}, udp: true}
+  - {name: v2cross.com 3, server: canada-vancouver.mah3Hoet.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: canada-vancouver.mah3Hoet.com}, udp: true}
+  - {name: v2cross.com 4, server: 71.19.252.163, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: canada-vancouver.mah3Hoet.com}, udp: true}
+  - {name: _GB_英国, server: gia.uk.tgproxy.wtf, port: 443, type: vmess, uuid: 061a5ca3-09f7-413e-8d4d-35775bb5c0eb, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /theuploadapi, ws-headers: {Host: gia.uk.tgproxy.wtf}, udp: true}
+  - {name: _US_美国 4, server: dax6ujai.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: dax6ujai.com}, udp: true}
   - {name: 美国_YouTube：8度科技, server: 198.148.92.246, port: 443, type: vmess, uuid: 4f4c3fc0-888d-414e-9965-a41c627fab53, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ray, ws-headers: {Host: govacaxixo.watchdoctor.xyz}, udp: true}
-  - {name: 香港+中继07+华南, server: cn-6.crhnode.top, port: 566, type: ss, cipher: rc4-md5, password: AAEXNETWORKTECHNOLOGYLTD20170715, plugin: obfs, plugin-opts: {mode: http, host: 20148-818nw7mYgF.download.microsoft.com}, udp: true}
-  - {name: 香港+中继08+华南, server: cn-6.crhnode.top, port: 567, type: ss, cipher: rc4-md5, password: AAEXNETWORKTECHNOLOGYLTD20170715, plugin: obfs, plugin-opts: {mode: http, host: 20148-818nw7mYgF.download.microsoft.com}, udp: true}
-  - {name: 香港+中继03+华南, server: cn-6.crhnode.top, port: 562, type: ss, cipher: rc4-md5, password: AAEXNETWORKTECHNOLOGYLTD20170715, plugin: obfs, plugin-opts: {mode: http, host: 20148-818nw7mYgF.download.microsoft.com}, udp: true}
-  - {name: 香港+中继01+华南, server: cn-6.crhnode.top, port: 560, type: ss, cipher: rc4-md5, password: AAEXNETWORKTECHNOLOGYLTD20170715, plugin: obfs, plugin-opts: {mode: http, host: 20148-818nw7mYgF.download.microsoft.com}, udp: true}
-  - {name: 香港+中继02+华南, server: cn-6.crhnode.top, port: 561, type: ss, cipher: rc4-md5, password: AAEXNETWORKTECHNOLOGYLTD20170715, plugin: obfs, plugin-opts: {mode: http, host: 20148-818nw7mYgF.download.microsoft.com}, udp: true}
-  - {name: 香港+中继06+华南, server: cn-6.crhnode.top, port: 565, type: ss, cipher: rc4-md5, password: AAEXNETWORKTECHNOLOGYLTD20170715, plugin: obfs, plugin-opts: {mode: http, host: 20148-818nw7mYgF.download.microsoft.com}, udp: true}
-  - {name: 香港+中继04+华南, server: cn-6.crhnode.top, port: 563, type: ss, cipher: rc4-md5, password: AAEXNETWORKTECHNOLOGYLTD20170715, plugin: obfs, plugin-opts: {mode: http, host: 20148-818nw7mYgF.download.microsoft.com}, udp: true}
-  - {name: 台湾+中继08+华南, server: cn-1.crhnode.top, port: 557, type: ss, cipher: rc4-md5, password: AAEXNETWORKTECHNOLOGYLTD20170715, plugin: obfs, plugin-opts: {mode: http, host: 20148-818nw7mYgF.download.microsoft.com}, udp: true}
-  - {name: 香港+中继09+华南, server: cn-6.crhnode.top, port: 568, type: ss, cipher: rc4-md5, password: AAEXNETWORKTECHNOLOGYLTD20170715, plugin: obfs, plugin-opts: {mode: http, host: 20148-818nw7mYgF.download.microsoft.com}, udp: true}
-  - {name: 香港+中继10+华南, server: cn-6.crhnode.top, port: 569, type: ss, cipher: rc4-md5, password: AAEXNETWORKTECHNOLOGYLTD20170715, plugin: obfs, plugin-opts: {mode: http, host: 20148-818nw7mYgF.download.microsoft.com}, udp: true}
-  - {name: 台湾+中继09+华南, server: cn-1.crhnode.top, port: 558, type: ss, cipher: rc4-md5, password: AAEXNETWORKTECHNOLOGYLTD20170715, plugin: obfs, plugin-opts: {mode: http, host: 20148-818nw7mYgF.download.microsoft.com}, udp: true}
-  - {name: 香港+中继05+华南, server: cn-6.crhnode.top, port: 564, type: ss, cipher: rc4-md5, password: AAEXNETWORKTECHNOLOGYLTD20170715, plugin: obfs, plugin-opts: {mode: http, host: 20148-818nw7mYgF.download.microsoft.com}, udp: true}
-  - {name: 台湾+中继10+华南, server: cn-1.crhnode.top, port: 559, type: ss, cipher: rc4-md5, password: AAEXNETWORKTECHNOLOGYLTD20170715, plugin: obfs, plugin-opts: {mode: http, host: 20148-818nw7mYgF.download.microsoft.com}, udp: true}
-  - {name: 台湾+中继01+华南, server: cn-1.crhnode.top, port: 550, type: ss, cipher: rc4-md5, password: AAEXNETWORKTECHNOLOGYLTD20170715, plugin: obfs, plugin-opts: {mode: http, host: 20148-818nw7mYgF.download.microsoft.com}, udp: true}
-  - {name: 台湾+中继02+华南, server: cn-1.crhnode.top, port: 551, type: ss, cipher: rc4-md5, password: AAEXNETWORKTECHNOLOGYLTD20170715, plugin: obfs, plugin-opts: {mode: http, host: 20148-818nw7mYgF.download.microsoft.com}, udp: true}
-  - {name: 台湾+中继06+华南, server: cn-1.crhnode.top, port: 555, type: ss, cipher: rc4-md5, password: AAEXNETWORKTECHNOLOGYLTD20170715, plugin: obfs, plugin-opts: {mode: http, host: 20148-818nw7mYgF.download.microsoft.com}, udp: true}
-  - {name: 台湾+中继04+华南, server: cn-1.crhnode.top, port: 553, type: ss, cipher: rc4-md5, password: AAEXNETWORKTECHNOLOGYLTD20170715, plugin: obfs, plugin-opts: {mode: http, host: 20148-818nw7mYgF.download.microsoft.com}, udp: true}
-  - {name: 台湾+中继03+华南, server: cn-1.crhnode.top, port: 552, type: ss, cipher: rc4-md5, password: AAEXNETWORKTECHNOLOGYLTD20170715, plugin: obfs, plugin-opts: {mode: http, host: 20148-818nw7mYgF.download.microsoft.com}, udp: true}
-  - {name: 台湾+中继07+华南, server: cn-1.crhnode.top, port: 556, type: ss, cipher: rc4-md5, password: AAEXNETWORKTECHNOLOGYLTD20170715, plugin: obfs, plugin-opts: {mode: http, host: 20148-818nw7mYgF.download.microsoft.com}, udp: true}
-  - {name: 台湾+中继05+华南, server: cn-1.crhnode.top, port: 554, type: ss, cipher: rc4-md5, password: AAEXNETWORKTECHNOLOGYLTD20170715, plugin: obfs, plugin-opts: {mode: http, host: 20148-818nw7mYgF.download.microsoft.com}, udp: true}
-  - {name: US_2375+@WangCai_1, server: 167.88.61.14, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: US_0443+@WangCai_1, server: 167.88.61.14, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: US_6379+@WangCai_1, server: 167.88.61.14, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: US_8008+@WangCai_1, server: 167.88.61.14, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: US_8119+@WangCai_1, server: 167.88.61.14, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: US_8008+@WangCai_1 2, server: 38.75.136.102, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: US_8091+@WangCai_1, server: 167.88.61.14, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: US_2376+@WangCai_1, server: 167.88.61.14, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: US_7002+@WangCai_1, server: 38.75.136.102, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: US_6379+@WangCai_1 2, server: 38.75.136.102, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: US_8881+@WangCai_1, server: 167.88.61.14, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: US_6697+@WangCai_1, server: 167.88.61.14, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: US_9101+@WangCai_1, server: 167.88.61.14, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: US_6697+@WangCai_1 2, server: 38.75.136.102, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: US_8000+@WangCai_1, server: 38.75.136.102, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: US_8882+@WangCai_1, server: 167.88.61.14, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: US_8009+@WangCai_1, server: 167.88.61.14, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: US_5003+@WangCai_1, server: 167.88.61.14, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: US_9102+@WangCai_1, server: 38.75.136.102, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: US_5500+@WangCai_1, server: 38.75.136.102, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: US_8118+@WangCai_1, server: 38.75.136.102, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: US_9101+@WangCai_1 2, server: 38.75.136.102, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: US_7001+@WangCai_1, server: 38.75.136.102, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: US_8881+@WangCai_1 2, server: 38.75.136.102, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: US_8888+@WangCai_1, server: 167.88.61.14, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 德国+特选02+华南, server: cn-2.crhnode.top, port: 543, type: ss, cipher: rc4-md5, password: AAEXNETWORKTECHNOLOGYLTD20170715, plugin: obfs, plugin-opts: {mode: http, host: 20148-818nw7mYgF.download.microsoft.com}, udp: true}
-  - {name: US_8000+@WangCai_1 2, server: 167.88.61.14, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: US_8118+@WangCai_1 2, server: 167.88.61.14, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: US_5601+@WangCai_1, server: 38.75.136.102, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 美国_YouTube：8度科技 2, server: 169.197.141.91, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: 美国_YouTube：8度科技 3, server: 167.88.62.34, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: +US_1139, server: 167.88.62.34, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: US_5001+@WangCai_1, server: 38.75.136.102, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: +US_1239, server: 38.68.134.23, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: 美国_YouTube：8度科技 4, server: 167.88.63.28, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: 美国_YouTube：8度科技 5, server: 167.88.62.34, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: 加拿大_YouTube：8度科技, server: 198.57.27.184, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: 加拿大_YouTube：8度科技 2, server: 198.57.27.184, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: 加拿大_YouTube：8度科技 3, server: 134.195.196.81, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: 加拿大_YouTube：8度科技 4, server: 134.195.196.200, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: 美国_YouTube：8度科技 6, server: 169.197.141.91, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: 美国_YouTube：8度科技 7, server: 167.88.63.74, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: 美国_YouTube：8度科技 8, server: 169.197.141.187, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 加拿大_YouTube：8度科技 5, server: 134.195.196.200, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: 加拿大_YouTube：8度科技 6, server: 134.195.196.81, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: +US_1080, server: 142.202.48.34, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: 美国_YouTube：8度科技 9, server: 167.88.63.74, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: +US_1488, server: 167.88.63.28, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: +US_1496, server: 167.88.62.34, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: 加拿大_YouTube：8度科技 7, server: 134.195.196.200, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: 加拿大_YouTube：8度科技 8, server: 134.195.196.200, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: 美国_YouTube：8度科技 10, server: 167.88.63.28, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: 加拿大_YouTube：8度科技 9, server: 134.195.196.200, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: 加拿大_YouTube：8度科技 10, server: 134.195.196.200, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 美国+中继01+华东, server: cn-4.crhnode.top, port: 570, type: ss, cipher: rc4-md5, password: AAEXNETWORKTECHNOLOGYLTD20170715, plugin: obfs, plugin-opts: {mode: http, host: 20148-818nw7mYgF.download.microsoft.com}, udp: true}
-  - {name: +US_1443, server: 38.91.101.11, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: +US_1418, server: 172.99.190.109, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: 美国+中继06+华东, server: cn-4.crhnode.top, port: 575, type: ss, cipher: rc4-md5, password: AAEXNETWORKTECHNOLOGYLTD20170715, plugin: obfs, plugin-opts: {mode: http, host: 20148-818nw7mYgF.download.microsoft.com}, udp: true}
-  - {name: 美国_YouTube：8度科技 11, server: 167.88.63.28, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: 加拿大_YouTube：8度科技 11, server: 134.195.196.200, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: 加拿大_YouTube：8度科技 12, server: 134.195.196.200, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: 加拿大_YouTube：8度科技 13, server: 198.57.27.184, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: 法国_YouTube：8度科技, server: 145.239.1.100, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: 加拿大_YouTube：8度科技 14, server: 198.57.27.172, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: +US_2003, server: 167.88.63.28, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: 加拿大_YouTube：8度科技 15, server: 134.195.196.200, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: _CA_加拿大, server: 134.195.198.95, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: +US_1864, server: 167.88.63.28, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: 加拿大_YouTube：8度科技 16, server: 134.195.196.200, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: 美国_YouTube：8度科技 12, server: 167.88.62.34, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: 美国_YouTube：8度科技 13, server: 167.88.63.61, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: 英国_YouTube：8度科技 2, server: 172.99.190.39, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: +US_1213, server: 142.202.48.34, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: +US_1431, server: 172.99.190.109, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: _GB_英国, server: 172.99.190.188, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: 加拿大_YouTube：8度科技 17, server: 198.57.27.152, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: _CA_加拿大 2, server: 134.195.198.95, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: +US_1335, server: 172.99.190.109, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: _CA_加拿大 3, server: 198.57.27.172, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: 美国+中继08+华东, server: cn-4.crhnode.top, port: 577, type: ss, cipher: rc4-md5, password: AAEXNETWORKTECHNOLOGYLTD20170715, plugin: obfs, plugin-opts: {mode: http, host: 20148-818nw7mYgF.download.microsoft.com}, udp: true}
-  - {name: 美国_YouTube：8度科技 14, server: 167.88.63.61, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: 美国+中继07+华东, server: cn-4.crhnode.top, port: 576, type: ss, cipher: rc4-md5, password: AAEXNETWORKTECHNOLOGYLTD20170715, plugin: obfs, plugin-opts: {mode: http, host: 20148-818nw7mYgF.download.microsoft.com}, udp: true}
-  - {name: +US_1785, server: 167.88.63.61, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: 法国_YouTube：8度科技 2, server: 145.239.1.100, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: +US_1421, server: 172.99.190.109, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: 加拿大_YouTube：8度科技 18, server: 134.195.196.81, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: +US_1563, server: 167.88.63.74, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: 法国_YouTube：8度科技 3, server: 145.239.1.100, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: +US_2122, server: 167.88.63.61, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: 加拿大_YouTube：8度科技 19, server: 198.57.27.152, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: 英国_YouTube：8度科技 3, server: 172.99.190.205, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: 美国+中继09+华东, server: cn-4.crhnode.top, port: 578, type: ss, cipher: rc4-md5, password: AAEXNETWORKTECHNOLOGYLTD20170715, plugin: obfs, plugin-opts: {mode: http, host: 20148-818nw7mYgF.download.microsoft.com}, udp: true}
-  - {name: +US_1641, server: 38.68.134.23, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: +US_1200, server: 38.91.101.11, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 美国_YouTube：8度科技 15, server: 167.88.63.61, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: +US_1482, server: 172.99.190.205, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: +US_2293, server: 167.88.63.61, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: 加拿大_YouTube：8度科技 20, server: 198.57.27.241, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: +US_1741, server: 142.202.48.34, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: 加拿大_YouTube：8度科技 21, server: 134.195.196.147, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: +US_1656, server: 167.88.63.61, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: +US_1657, server: 172.99.190.109, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: 加拿大_YouTube：8度科技 22, server: 198.57.27.241, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: 法国_YouTube：8度科技 4, server: 145.239.1.100, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: 加拿大_YouTube：8度科技 23, server: 134.195.196.81, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: +US_1547, server: 192.53.168.189, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: +US_1462, server: 172.99.190.39, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: 英国_YouTube：8度科技 4, server: 51.68.205.180, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: 英国_YouTube：8度科技 5, server: 172.99.190.205, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: +US_2119, server: 38.68.134.23, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: +US_1409, server: 167.88.63.61, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: +US_2137, server: 167.88.62.34, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: 美国+中继03+华东, server: cn-4.crhnode.top, port: 572, type: ss, cipher: rc4-md5, password: AAEXNETWORKTECHNOLOGYLTD20170715, plugin: obfs, plugin-opts: {mode: http, host: 20148-818nw7mYgF.download.microsoft.com}, udp: true}
-  - {name: 中国_YouTube：8度科技 3, server: 117.28.243.220, port: 8186, type: ss, cipher: rc4-md5, password: passinfo123, udp: true}
-  - {name: +US_1077, server: 192.53.168.189, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: +US_1249, server: 38.68.134.23, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: +US_1636, server: 172.99.190.149, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: 加拿大_YouTube：8度科技 24, server: 134.195.196.200, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: +US_1330, server: 192.53.168.189, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: +US_1764, server: 38.68.134.23, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: 加拿大_YouTube：8度科技 25, server: 198.57.27.172, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: 美国+中继04+华东, server: cn-4.crhnode.top, port: 573, type: ss, cipher: rc4-md5, password: AAEXNETWORKTECHNOLOGYLTD20170715, plugin: obfs, plugin-opts: {mode: http, host: 20148-818nw7mYgF.download.microsoft.com}, udp: true}
-  - {name: +US_1556, server: 192.53.168.189, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: +US_2287, server: 172.99.190.149, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: +US_1236, server: 38.68.134.23, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: +US_1312, server: 172.99.190.149, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 美国+中继05+华东, server: cn-4.crhnode.top, port: 574, type: ss, cipher: rc4-md5, password: AAEXNETWORKTECHNOLOGYLTD20170715, plugin: obfs, plugin-opts: {mode: http, host: 20148-818nw7mYgF.download.microsoft.com}, udp: true}
-  - {name: +US_2101, server: 167.88.63.61, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: US_5000+@WangCai_1, server: 167.88.61.14, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_3306+@WangCai_1, server: 167.88.61.14, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_5600+@WangCai_1, server: 167.88.61.14, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: +US_1332, server: 172.99.190.188, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: +US_1278, server: 172.99.190.188, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: +US_1691, server: 172.99.190.149, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: US_9102+@WangCai_1 2, server: 167.88.61.14, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: 美国+中继02+华东, server: cn-4.crhnode.top, port: 571, type: ss, cipher: rc4-md5, password: AAEXNETWORKTECHNOLOGYLTD20170715, plugin: obfs, plugin-opts: {mode: http, host: 20148-818nw7mYgF.download.microsoft.com}, udp: true}
-  - {name: 美国+中继10+华东, server: cn-4.crhnode.top, port: 579, type: ss, cipher: rc4-md5, password: AAEXNETWORKTECHNOLOGYLTD20170715, plugin: obfs, plugin-opts: {mode: http, host: 20148-818nw7mYgF.download.microsoft.com}, udp: true}
-  - {name: US_5601+@WangCai_1 2, server: 167.88.61.14, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: +US_1897, server: 38.68.134.23, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: +US_1577, server: 172.99.190.149, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: +US_1167, server: 38.68.134.23, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: 美国_YouTube：8度科技 16, server: 169.197.141.91, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 英国_YouTube：8度科技 6, server: 172.99.190.205, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: +US_1436, server: 167.88.63.74, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: _CA_加拿大 4, server: 134.195.196.193, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: US_6679+@WangCai_1, server: 167.88.61.14, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: +US_1751, server: 172.99.190.39, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: +US_1375, server: 172.99.190.149, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: +US_1473, server: 172.99.190.149, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: +US_1369, server: 167.88.63.61, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 加拿大_YouTube：8度科技 26, server: 134.195.196.200, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 美国_YouTube：8度科技 17, server: 167.88.63.61, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: 高级线路hk1, server: alihsknew2.fly-lines.co, port: 443, type: ss, cipher: aes-256-gcm, password: cd7e70a47962, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: alihsknew2.fly-lines.co, path: "", tls: true, mux: true, skip-cert-verify: true}, udp: true}
+  - {name: 高级线路tw20, server: dx600twssnewss007.fly-lines.co, port: 443, type: ss, cipher: aes-256-gcm, password: 71cf61b9dcd5, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: dx600twssnewss007.fly-lines.co, path: "", tls: true, mux: true, skip-cert-verify: true}, udp: true}
+  - {name: 高级线路tw2, server: red600tw3.flylines.club, port: 443, type: ss, cipher: aes-256-gcm, password: cbf344f0497f, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: red600tw3.flylines.club, path: "", tls: true, mux: true, skip-cert-verify: true}, udp: true}
+  - {name: 高级线路tw17, server: dx600twsnews004.fly-lines.co, port: 443, type: ss, cipher: aes-256-gcm, password: 59b73d4dd800, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: dx600twsnews004.fly-lines.co, path: "", tls: true, mux: true, skip-cert-verify: true}, udp: true}
+  - {name: 高级线路tw16+, server: twn600wdss17.987gogo.online, port: 443, type: ss, cipher: aes-256-gcm, password: 15e0ad1e881b, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: twn600wdss17.987gogo.online, path: "", tls: true, mux: true, skip-cert-verify: true}, udp: true}
+  - {name: 高级线路tw3, server: dx600twsnews006.flylines.club, port: 443, type: ss, cipher: aes-256-gcm, password: d5d2bccc83cd, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: dx600twsnews006.flylines.club, path: "", tls: true, mux: true, skip-cert-verify: true}, udp: true}
+  - {name: 高级线路tw15, server: dx600twnews006.flylines.pl, port: 443, type: ss, cipher: aes-256-gcm, password: 2f0ec4503e4d, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: dx600twnews006.flylines.pl, path: "", tls: true, mux: true, skip-cert-verify: true}, udp: true}
+  - {name: 高级线路tw0, server: dx600twnews003.flylines.pl, port: 443, type: ss, cipher: aes-256-gcm, password: 2c86b957d52c, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: dx600twnews003.flylines.pl, path: "", tls: true, mux: true, skip-cert-verify: true}, udp: true}
+  - {name: 高级线路tw15+, server: dx600twsnews003.flylines.pl, port: 443, type: ss, cipher: aes-256-gcm, password: a03a75b6d1b2, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: dx600twsnews003.flylines.pl, path: "", tls: true, mux: true, skip-cert-verify: true}, udp: true}
+  - {name: 高级线路tw11, server: dx600twnews004.flylines.pl, port: 443, type: ss, cipher: aes-256-gcm, password: 02039db30d49, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: dx600twnews004.flylines.pl, path: "", tls: true, mux: true, skip-cert-verify: true}, udp: true}
+  - {name: 高级线路tw16, server: mik600twd.fly-lines.co, port: 443, type: ss, cipher: aes-256-gcm, password: 66b9549c773f, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: mik600twd.fly-lines.co, path: "", tls: true, mux: true, skip-cert-verify: true}, udp: true}
+  - {name: 高级线路tw9, server: dx600twnewss001.flylines.pl, port: 443, type: ss, cipher: aes-256-gcm, password: b9d1158d5165, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: dx600twnewss001.flylines.pl, path: "", tls: true, mux: true, skip-cert-verify: true}, udp: true}
+  - {name: 高级线路us3, server: dx1000us1.flylines.pl, port: 443, type: ss, cipher: aes-256-gcm, password: 19c36333acf8, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: dx1000us1.flylines.pl, path: "", tls: true, mux: true, skip-cert-verify: true}, udp: true}
+  - {name: v2cross.com 5, server: 169.197.141.91, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: 加拿大_YouTube：8度科技, server: 134.195.196.200, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: 加拿大_YouTube：8度科技 2, server: 134.195.196.200, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: 加拿大_YouTube：8度科技 3, server: 134.195.196.200, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: 英国_YouTube：8度科技 2, server: 172.99.190.205, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: 高级线路tw7, server: red600tw1.flylines.club, port: 443, type: ss, cipher: aes-256-gcm, password: 3bb91f5e7d3d, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: red600tw1.flylines.club, path: "", tls: true, mux: true, skip-cert-verify: true}, udp: true}
+  - {name: 英国_YouTube：8度科技 3, server: 172.99.190.205, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: _CA_加拿大, server: 134.195.196.200, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: _加拿大_YouTube:VV科技_106, server: 134.195.196.200, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: v2cross.com 6, server: 172.99.190.149, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: 高级线路hk3, server: dxhk1000new003.flylines.pl, port: 443, type: ss, cipher: aes-256-gcm, password: 18b3f59beadf, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: dxhk1000new003.flylines.pl, path: "", tls: true, mux: true, skip-cert-verify: true}, udp: true}
+  - {name: 加拿大_YouTube：8度科技 4, server: 134.195.196.200, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: _加拿大_YouTube:VV科技_54, server: 134.195.196.200, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: v2cross.com 7, server: 134.195.196.193, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: v2cross.com 8, server: 172.99.190.149, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: _英国_YouTube:VV科技_14, server: 172.99.190.205, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: v2cross.com 9, server: 134.195.196.193, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: _英国_YouTube:VV科技_8, server: 172.99.190.39, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: v2cross.com 10, server: 172.99.190.205, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: _英国_YouTube:VV科技_55, server: 172.99.190.205, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: _英国_YouTube:VV科技_123, server: 172.99.190.188, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: _法国_YouTube:VV科技_12, server: 145.239.1.100, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
   - {name: _FR_法国, server: 149.202.82.172, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: _英国_YouTube:VV科技_46, server: 172.99.190.205, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: _法国_YouTube:VV科技_16, server: 145.239.1.100, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: v2cross.com 11, server: 145.239.1.100, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: v2cross.com 12, server: 134.195.196.193, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: _CA_加拿大 2, server: 134.195.196.147, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: +US_1278, server: 172.99.190.188, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: _法国_YouTube:VV科技_10, server: 145.239.1.100, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: _GB_英国 2, server: 172.99.190.188, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: _加拿大_YouTube:VV科技_21, server: 134.195.196.200, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: v2cross.com 13, server: 172.99.190.149, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: _英国_YouTube:VV科技_6, server: 172.99.190.188, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: _GB_英国 3, server: 172.99.190.188, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: _GB_英国 4, server: 172.99.190.39, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: _加拿大_YouTube:VV科技_102, server: 134.195.196.200, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: v2cross.com 14, server: 134.195.196.193, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: _FR_法国 2, server: 149.202.82.172, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: v2cross.com 15, server: 134.195.196.193, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: 加拿大_YouTube：8度科技 5, server: 134.195.196.200, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
+  - {name: v2cross.com 16, server: 172.99.190.149, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: +US_1375, server: 172.99.190.149, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
   - {name: +US_1531, server: 172.99.190.149, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: 法国_YouTube：8度科技 5, server: 62.210.209.50, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: +US_1362, server: 38.68.134.23, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: 加拿大_YouTube：8度科技 27, server: 134.195.196.193, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: US_5500+@WangCai_1 2, server: 167.88.61.14, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: +US_1126, server: 172.99.190.149, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: v2cross.com 17, server: 149.202.82.172, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: v2cross.com 18, server: 172.99.190.149, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: v2cross.com 19, server: 134.195.196.193, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: _加拿大_YouTube:VV科技_100, server: 134.195.196.200, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: _FR_法国 3, server: 149.202.82.172, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: _FR_法国 4, server: 149.202.82.172, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: 高级线路tw18, server: dx600twsnewss006.fly-lines.co, port: 443, type: ss, cipher: aes-256-gcm, password: ef63f77f307a, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: dx600twsnewss006.fly-lines.co, path: "", tls: true, mux: true, skip-cert-verify: true}, udp: true}
+  - {name: _法国_YouTube:VV科技_139, server: 62.210.209.50, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: 试用线路, server: mik600twd001.fly-lines.co, port: 443, type: ss, cipher: aes-256-gcm, password: d6de71cb3589, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: mik600twd001.fly-lines.co, path: "", tls: true, mux: true, skip-cert-verify: true}, udp: true}
+  - {name: v2cross.com 20, server: 169.197.141.91, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: _法国_YouTube:VV科技_135, server: 149.202.82.172, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: +US_2287, server: 172.99.190.149, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: v2cross.com 21, server: 134.195.196.193, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: v2cross.com 22, server: 134.195.196.193, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: _FR_法国 5, server: 141.95.0.26, port: 826, type: ss, cipher: chacha20-ietf-poly1305, password: sF43Xt2gONqcgFX563, udp: true}
+  - {name: v2cross.com 23, server: 172.99.190.39, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: v2cross.com 24, server: 172.99.190.39, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: _美国_YouTube:VV科技_103, server: 169.197.141.91, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
+  - {name: 英国_YouTube：8度科技 4, server: 51.68.205.180, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: _法国_YouTube:VV科技_52, server: 145.239.1.100, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: +US_1332, server: 172.99.190.188, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: _GB_英国 5, server: 172.99.190.39, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: _CA_加拿大 3, server: 134.195.196.147, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: _FR_法国 6, server: 62.210.209.50, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: _法国_YouTube:VV科技_133, server: 62.210.209.50, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: 日本H1R, server: h1r.centaur.network, port: 16802, type: trojan, password: fb39b0bb-acb7-45b8-a896-0ff6b56beb5f, sni: h1r.centaur.network, skip-cert-verify: true, udp: true}
+  - {name: 香港P3, server: p3.centaur.network, port: 16803, type: trojan, password: 00635f3d-2c64-4281-9367-f3c26ebb6a44, sni: p3.centaur.network, skip-cert-verify: true, udp: true}
+  - {name: 日本N178, server: n178.centaur.network, port: 8082, type: trojan, password: 12d66073-1c21-45d7-b7e2-6b0ed7eed556, sni: n178.centaur.network, skip-cert-verify: true, udp: true}
+  - {name: 亚太H4R, server: h4r.centaur.network, port: 16801, type: trojan, password: 134b2dad-1ba4-49f6-a8b8-721525213356, sni: h4r.centaur.network, skip-cert-verify: true, udp: true}
+  - {name: 美国N200, server: n200.centaur.network, port: 8081, type: trojan, password: 5106d626-ddc5-452c-8983-c4ba957eb509, sni: n200.centaur.network, skip-cert-verify: true, udp: true}
+  - {name: 美国N150, server: n150.centaur.network, port: 8082, type: trojan, password: a00a413d-85f2-4b72-a396-b96e1b3d11a6, sni: n150.centaur.network, skip-cert-verify: true, udp: true}
+  - {name: 美国N149, server: n149.centaur.network, port: 8084, type: trojan, password: 2946b725-07e0-4e6e-a56a-1489caa237a8, sni: n149.centaur.network, skip-cert-verify: true, udp: true}
+  - {name: 美国A2, server: a2.centaur.network, port: 8081, type: trojan, password: cdcf03f6-5326-4496-a1d1-03bb098ad56f, sni: a2.centaur.network, skip-cert-verify: true, udp: true}
+  - {name: _加拿大_YouTube:VV科技_27, server: t1.ssrsub.com, port: 8443, type: trojan, password: 21627f29-0d0f-4dfa-9740-b5ee360bf061, sni: t1.ssrsub.com, skip-cert-verify: true, udp: true}
+  - {name: 日本H2R, server: h2r.centaur.network, port: 16801, type: trojan, password: 9be5458a-6a1e-4784-823e-45149d6c0ffc, sni: h2r.centaur.network, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
@@ -198,382 +140,266 @@ proxy-groups:
       - ♻️ 自动选择
       - 🎯 全球直连
       - 中国_YouTube：8度科技
+      - _香港_YouTube:VV科技_38
+      - _香港_YouTube:VV科技_40
+      - _香港_YouTube:VV科技_60
+      - _香港_YouTube:VV科技_19
+      - _美国_YouTube:VV科技_44
+      - _香港_YouTube:VV科技_63
+      - _香港_YouTube:VV科技_64
+      - _香港_YouTube:VV科技_56
+      - _美国_YouTube:VV科技_62
+      - _台湾_YouTube:VV科技_99
+      - _中国跳转_YouTube:VV科技_71
       - 中国_YouTube：8度科技 2
+      - _CN_中国->🇷🇺_RU_俄罗斯联邦
       - _US_美国
+      - _韩国_YouTube:VV科技_85
+      - _US_美国 2
+      - _中国跳转_YouTube:VV科技_28
+      - _US_美国 3
+      - _中国跳转_YouTube:VV科技_13
+      - v2cross.com
+      - v2cross.com 2
+      - _香港_YouTube:VV科技_17
+      - _RU_俄罗斯联邦
       - 英国_YouTube：8度科技
+      - default_name
       - 俄罗斯联邦_YouTube：8度科技
+      - _US_美国->🇷🇺_RU_俄罗斯联邦
       - 澳大利亚_YouTube：8度科技
+      - _美国_YouTube:VV科技_124
+      - YouTube:VV科技_37
+      - v2cross.com 3
+      - v2cross.com 4
+      - _GB_英国
+      - _US_美国 4
       - 美国_YouTube：8度科技
-      - 香港+中继07+华南
-      - 香港+中继08+华南
-      - 香港+中继03+华南
-      - 香港+中继01+华南
-      - 香港+中继02+华南
-      - 香港+中继06+华南
-      - 香港+中继04+华南
-      - 台湾+中继08+华南
-      - 香港+中继09+华南
-      - 香港+中继10+华南
-      - 台湾+中继09+华南
-      - 香港+中继05+华南
-      - 台湾+中继10+华南
-      - 台湾+中继01+华南
-      - 台湾+中继02+华南
-      - 台湾+中继06+华南
-      - 台湾+中继04+华南
-      - 台湾+中继03+华南
-      - 台湾+中继07+华南
-      - 台湾+中继05+华南
-      - US_2375+@WangCai_1
-      - US_0443+@WangCai_1
-      - US_6379+@WangCai_1
-      - US_8008+@WangCai_1
-      - US_8119+@WangCai_1
-      - US_8008+@WangCai_1 2
-      - US_8091+@WangCai_1
-      - US_2376+@WangCai_1
-      - US_7002+@WangCai_1
-      - US_6379+@WangCai_1 2
-      - US_8881+@WangCai_1
-      - US_6697+@WangCai_1
-      - US_9101+@WangCai_1
-      - US_6697+@WangCai_1 2
-      - US_8000+@WangCai_1
-      - US_8882+@WangCai_1
-      - US_8009+@WangCai_1
-      - US_5003+@WangCai_1
-      - US_9102+@WangCai_1
-      - US_5500+@WangCai_1
-      - US_8118+@WangCai_1
-      - US_9101+@WangCai_1 2
-      - US_7001+@WangCai_1
-      - US_8881+@WangCai_1 2
-      - US_8888+@WangCai_1
-      - 德国+特选02+华南
-      - US_8000+@WangCai_1 2
-      - US_8118+@WangCai_1 2
-      - US_5601+@WangCai_1
-      - 美国_YouTube：8度科技 2
-      - 美国_YouTube：8度科技 3
-      - +US_1139
-      - US_5001+@WangCai_1
-      - +US_1239
-      - 美国_YouTube：8度科技 4
-      - 美国_YouTube：8度科技 5
+      - 高级线路hk1
+      - 高级线路tw20
+      - 高级线路tw2
+      - 高级线路tw17
+      - 高级线路tw16+
+      - 高级线路tw3
+      - 高级线路tw15
+      - 高级线路tw0
+      - 高级线路tw15+
+      - 高级线路tw11
+      - 高级线路tw16
+      - 高级线路tw9
+      - 高级线路us3
+      - v2cross.com 5
       - 加拿大_YouTube：8度科技
       - 加拿大_YouTube：8度科技 2
       - 加拿大_YouTube：8度科技 3
-      - 加拿大_YouTube：8度科技 4
-      - 美国_YouTube：8度科技 6
-      - 美国_YouTube：8度科技 7
-      - 美国_YouTube：8度科技 8
-      - 加拿大_YouTube：8度科技 5
-      - 加拿大_YouTube：8度科技 6
-      - +US_1080
-      - 美国_YouTube：8度科技 9
-      - +US_1488
-      - +US_1496
-      - 加拿大_YouTube：8度科技 7
-      - 加拿大_YouTube：8度科技 8
-      - 美国_YouTube：8度科技 10
-      - 加拿大_YouTube：8度科技 9
-      - 加拿大_YouTube：8度科技 10
-      - 美国+中继01+华东
-      - +US_1443
-      - +US_1418
-      - 美国+中继06+华东
-      - 美国_YouTube：8度科技 11
-      - 加拿大_YouTube：8度科技 11
-      - 加拿大_YouTube：8度科技 12
-      - 加拿大_YouTube：8度科技 13
-      - 法国_YouTube：8度科技
-      - 加拿大_YouTube：8度科技 14
-      - +US_2003
-      - 加拿大_YouTube：8度科技 15
-      - _CA_加拿大
-      - +US_1864
-      - 加拿大_YouTube：8度科技 16
-      - 美国_YouTube：8度科技 12
-      - 美国_YouTube：8度科技 13
       - 英国_YouTube：8度科技 2
-      - +US_1213
-      - +US_1431
-      - _GB_英国
-      - 加拿大_YouTube：8度科技 17
-      - _CA_加拿大 2
-      - +US_1335
-      - _CA_加拿大 3
-      - 美国+中继08+华东
-      - 美国_YouTube：8度科技 14
-      - 美国+中继07+华东
-      - +US_1785
-      - 法国_YouTube：8度科技 2
-      - +US_1421
-      - 加拿大_YouTube：8度科技 18
-      - +US_1563
-      - 法国_YouTube：8度科技 3
-      - +US_2122
-      - 加拿大_YouTube：8度科技 19
+      - 高级线路tw7
       - 英国_YouTube：8度科技 3
-      - 美国+中继09+华东
-      - +US_1641
-      - +US_1200
-      - 美国_YouTube：8度科技 15
-      - +US_1482
-      - +US_2293
-      - 加拿大_YouTube：8度科技 20
-      - +US_1741
-      - 加拿大_YouTube：8度科技 21
-      - +US_1656
-      - +US_1657
-      - 加拿大_YouTube：8度科技 22
-      - 法国_YouTube：8度科技 4
-      - 加拿大_YouTube：8度科技 23
-      - +US_1547
-      - +US_1462
-      - 英国_YouTube：8度科技 4
-      - 英国_YouTube：8度科技 5
-      - +US_2119
-      - +US_1409
-      - +US_2137
-      - 美国+中继03+华东
-      - 中国_YouTube：8度科技 3
-      - +US_1077
-      - +US_1249
-      - +US_1636
-      - 加拿大_YouTube：8度科技 24
-      - +US_1330
-      - +US_1764
-      - 加拿大_YouTube：8度科技 25
-      - 美国+中继04+华东
-      - +US_1556
-      - +US_2287
-      - +US_1236
-      - +US_1312
-      - 美国+中继05+华东
-      - +US_2101
-      - US_5000+@WangCai_1
-      - US_3306+@WangCai_1
-      - US_5600+@WangCai_1
-      - +US_1332
-      - +US_1278
-      - +US_1691
-      - US_9102+@WangCai_1 2
-      - 美国+中继02+华东
-      - 美国+中继10+华东
-      - US_5601+@WangCai_1 2
-      - +US_1897
-      - +US_1577
-      - +US_1167
-      - 美国_YouTube：8度科技 16
-      - 英国_YouTube：8度科技 6
-      - +US_1436
-      - _CA_加拿大 4
-      - US_6679+@WangCai_1
-      - +US_1751
-      - +US_1375
-      - +US_1473
-      - +US_1369
-      - 加拿大_YouTube：8度科技 26
-      - 美国_YouTube：8度科技 17
+      - _CA_加拿大
+      - _加拿大_YouTube:VV科技_106
+      - v2cross.com 6
+      - 高级线路hk3
+      - 加拿大_YouTube：8度科技 4
+      - _加拿大_YouTube:VV科技_54
+      - v2cross.com 7
+      - v2cross.com 8
+      - _英国_YouTube:VV科技_14
+      - v2cross.com 9
+      - _英国_YouTube:VV科技_8
+      - v2cross.com 10
+      - _英国_YouTube:VV科技_55
+      - _英国_YouTube:VV科技_123
+      - _法国_YouTube:VV科技_12
       - _FR_法国
+      - _英国_YouTube:VV科技_46
+      - _法国_YouTube:VV科技_16
+      - v2cross.com 11
+      - v2cross.com 12
+      - _CA_加拿大 2
+      - +US_1278
+      - _法国_YouTube:VV科技_10
+      - _GB_英国 2
+      - _加拿大_YouTube:VV科技_21
+      - v2cross.com 13
+      - _英国_YouTube:VV科技_6
+      - _GB_英国 3
+      - _GB_英国 4
+      - _加拿大_YouTube:VV科技_102
+      - v2cross.com 14
+      - _FR_法国 2
+      - v2cross.com 15
+      - 加拿大_YouTube：8度科技 5
+      - v2cross.com 16
+      - +US_1375
       - +US_1531
-      - 法国_YouTube：8度科技 5
-      - +US_1362
-      - 加拿大_YouTube：8度科技 27
-      - US_5500+@WangCai_1 2
-      - +US_1126
+      - v2cross.com 17
+      - v2cross.com 18
+      - v2cross.com 19
+      - _加拿大_YouTube:VV科技_100
+      - _FR_法国 3
+      - _FR_法国 4
+      - 高级线路tw18
+      - _法国_YouTube:VV科技_139
+      - 试用线路
+      - v2cross.com 20
+      - _法国_YouTube:VV科技_135
+      - +US_2287
+      - v2cross.com 21
+      - v2cross.com 22
+      - _FR_法国 5
+      - v2cross.com 23
+      - v2cross.com 24
+      - _美国_YouTube:VV科技_103
+      - 英国_YouTube：8度科技 4
+      - _法国_YouTube:VV科技_52
+      - +US_1332
+      - _GB_英国 5
+      - _CA_加拿大 3
+      - _FR_法国 6
+      - _法国_YouTube:VV科技_133
+      - 日本H1R
+      - 香港P3
+      - 日本N178
+      - 亚太H4R
+      - 美国N200
+      - 美国N150
+      - 美国N149
+      - 美国A2
+      - _加拿大_YouTube:VV科技_27
+      - 日本H2R
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
       - 中国_YouTube：8度科技
+      - _香港_YouTube:VV科技_38
+      - _香港_YouTube:VV科技_40
+      - _香港_YouTube:VV科技_60
+      - _香港_YouTube:VV科技_19
+      - _美国_YouTube:VV科技_44
+      - _香港_YouTube:VV科技_63
+      - _香港_YouTube:VV科技_64
+      - _香港_YouTube:VV科技_56
+      - _美国_YouTube:VV科技_62
+      - _台湾_YouTube:VV科技_99
+      - _中国跳转_YouTube:VV科技_71
       - 中国_YouTube：8度科技 2
+      - _CN_中国->🇷🇺_RU_俄罗斯联邦
       - _US_美国
+      - _韩国_YouTube:VV科技_85
+      - _US_美国 2
+      - _中国跳转_YouTube:VV科技_28
+      - _US_美国 3
+      - _中国跳转_YouTube:VV科技_13
+      - v2cross.com
+      - v2cross.com 2
+      - _香港_YouTube:VV科技_17
+      - _RU_俄罗斯联邦
       - 英国_YouTube：8度科技
+      - default_name
       - 俄罗斯联邦_YouTube：8度科技
+      - _US_美国->🇷🇺_RU_俄罗斯联邦
       - 澳大利亚_YouTube：8度科技
+      - _美国_YouTube:VV科技_124
+      - YouTube:VV科技_37
+      - v2cross.com 3
+      - v2cross.com 4
+      - _GB_英国
+      - _US_美国 4
       - 美国_YouTube：8度科技
-      - 香港+中继07+华南
-      - 香港+中继08+华南
-      - 香港+中继03+华南
-      - 香港+中继01+华南
-      - 香港+中继02+华南
-      - 香港+中继06+华南
-      - 香港+中继04+华南
-      - 台湾+中继08+华南
-      - 香港+中继09+华南
-      - 香港+中继10+华南
-      - 台湾+中继09+华南
-      - 香港+中继05+华南
-      - 台湾+中继10+华南
-      - 台湾+中继01+华南
-      - 台湾+中继02+华南
-      - 台湾+中继06+华南
-      - 台湾+中继04+华南
-      - 台湾+中继03+华南
-      - 台湾+中继07+华南
-      - 台湾+中继05+华南
-      - US_2375+@WangCai_1
-      - US_0443+@WangCai_1
-      - US_6379+@WangCai_1
-      - US_8008+@WangCai_1
-      - US_8119+@WangCai_1
-      - US_8008+@WangCai_1 2
-      - US_8091+@WangCai_1
-      - US_2376+@WangCai_1
-      - US_7002+@WangCai_1
-      - US_6379+@WangCai_1 2
-      - US_8881+@WangCai_1
-      - US_6697+@WangCai_1
-      - US_9101+@WangCai_1
-      - US_6697+@WangCai_1 2
-      - US_8000+@WangCai_1
-      - US_8882+@WangCai_1
-      - US_8009+@WangCai_1
-      - US_5003+@WangCai_1
-      - US_9102+@WangCai_1
-      - US_5500+@WangCai_1
-      - US_8118+@WangCai_1
-      - US_9101+@WangCai_1 2
-      - US_7001+@WangCai_1
-      - US_8881+@WangCai_1 2
-      - US_8888+@WangCai_1
-      - 德国+特选02+华南
-      - US_8000+@WangCai_1 2
-      - US_8118+@WangCai_1 2
-      - US_5601+@WangCai_1
-      - 美国_YouTube：8度科技 2
-      - 美国_YouTube：8度科技 3
-      - +US_1139
-      - US_5001+@WangCai_1
-      - +US_1239
-      - 美国_YouTube：8度科技 4
-      - 美国_YouTube：8度科技 5
+      - 高级线路hk1
+      - 高级线路tw20
+      - 高级线路tw2
+      - 高级线路tw17
+      - 高级线路tw16+
+      - 高级线路tw3
+      - 高级线路tw15
+      - 高级线路tw0
+      - 高级线路tw15+
+      - 高级线路tw11
+      - 高级线路tw16
+      - 高级线路tw9
+      - 高级线路us3
+      - v2cross.com 5
       - 加拿大_YouTube：8度科技
       - 加拿大_YouTube：8度科技 2
       - 加拿大_YouTube：8度科技 3
-      - 加拿大_YouTube：8度科技 4
-      - 美国_YouTube：8度科技 6
-      - 美国_YouTube：8度科技 7
-      - 美国_YouTube：8度科技 8
-      - 加拿大_YouTube：8度科技 5
-      - 加拿大_YouTube：8度科技 6
-      - +US_1080
-      - 美国_YouTube：8度科技 9
-      - +US_1488
-      - +US_1496
-      - 加拿大_YouTube：8度科技 7
-      - 加拿大_YouTube：8度科技 8
-      - 美国_YouTube：8度科技 10
-      - 加拿大_YouTube：8度科技 9
-      - 加拿大_YouTube：8度科技 10
-      - 美国+中继01+华东
-      - +US_1443
-      - +US_1418
-      - 美国+中继06+华东
-      - 美国_YouTube：8度科技 11
-      - 加拿大_YouTube：8度科技 11
-      - 加拿大_YouTube：8度科技 12
-      - 加拿大_YouTube：8度科技 13
-      - 法国_YouTube：8度科技
-      - 加拿大_YouTube：8度科技 14
-      - +US_2003
-      - 加拿大_YouTube：8度科技 15
-      - _CA_加拿大
-      - +US_1864
-      - 加拿大_YouTube：8度科技 16
-      - 美国_YouTube：8度科技 12
-      - 美国_YouTube：8度科技 13
       - 英国_YouTube：8度科技 2
-      - +US_1213
-      - +US_1431
-      - _GB_英国
-      - 加拿大_YouTube：8度科技 17
-      - _CA_加拿大 2
-      - +US_1335
-      - _CA_加拿大 3
-      - 美国+中继08+华东
-      - 美国_YouTube：8度科技 14
-      - 美国+中继07+华东
-      - +US_1785
-      - 法国_YouTube：8度科技 2
-      - +US_1421
-      - 加拿大_YouTube：8度科技 18
-      - +US_1563
-      - 法国_YouTube：8度科技 3
-      - +US_2122
-      - 加拿大_YouTube：8度科技 19
+      - 高级线路tw7
       - 英国_YouTube：8度科技 3
-      - 美国+中继09+华东
-      - +US_1641
-      - +US_1200
-      - 美国_YouTube：8度科技 15
-      - +US_1482
-      - +US_2293
-      - 加拿大_YouTube：8度科技 20
-      - +US_1741
-      - 加拿大_YouTube：8度科技 21
-      - +US_1656
-      - +US_1657
-      - 加拿大_YouTube：8度科技 22
-      - 法国_YouTube：8度科技 4
-      - 加拿大_YouTube：8度科技 23
-      - +US_1547
-      - +US_1462
-      - 英国_YouTube：8度科技 4
-      - 英国_YouTube：8度科技 5
-      - +US_2119
-      - +US_1409
-      - +US_2137
-      - 美国+中继03+华东
-      - 中国_YouTube：8度科技 3
-      - +US_1077
-      - +US_1249
-      - +US_1636
-      - 加拿大_YouTube：8度科技 24
-      - +US_1330
-      - +US_1764
-      - 加拿大_YouTube：8度科技 25
-      - 美国+中继04+华东
-      - +US_1556
-      - +US_2287
-      - +US_1236
-      - +US_1312
-      - 美国+中继05+华东
-      - +US_2101
-      - US_5000+@WangCai_1
-      - US_3306+@WangCai_1
-      - US_5600+@WangCai_1
-      - +US_1332
-      - +US_1278
-      - +US_1691
-      - US_9102+@WangCai_1 2
-      - 美国+中继02+华东
-      - 美国+中继10+华东
-      - US_5601+@WangCai_1 2
-      - +US_1897
-      - +US_1577
-      - +US_1167
-      - 美国_YouTube：8度科技 16
-      - 英国_YouTube：8度科技 6
-      - +US_1436
-      - _CA_加拿大 4
-      - US_6679+@WangCai_1
-      - +US_1751
-      - +US_1375
-      - +US_1473
-      - +US_1369
-      - 加拿大_YouTube：8度科技 26
-      - 美国_YouTube：8度科技 17
+      - _CA_加拿大
+      - _加拿大_YouTube:VV科技_106
+      - v2cross.com 6
+      - 高级线路hk3
+      - 加拿大_YouTube：8度科技 4
+      - _加拿大_YouTube:VV科技_54
+      - v2cross.com 7
+      - v2cross.com 8
+      - _英国_YouTube:VV科技_14
+      - v2cross.com 9
+      - _英国_YouTube:VV科技_8
+      - v2cross.com 10
+      - _英国_YouTube:VV科技_55
+      - _英国_YouTube:VV科技_123
+      - _法国_YouTube:VV科技_12
       - _FR_法国
+      - _英国_YouTube:VV科技_46
+      - _法国_YouTube:VV科技_16
+      - v2cross.com 11
+      - v2cross.com 12
+      - _CA_加拿大 2
+      - +US_1278
+      - _法国_YouTube:VV科技_10
+      - _GB_英国 2
+      - _加拿大_YouTube:VV科技_21
+      - v2cross.com 13
+      - _英国_YouTube:VV科技_6
+      - _GB_英国 3
+      - _GB_英国 4
+      - _加拿大_YouTube:VV科技_102
+      - v2cross.com 14
+      - _FR_法国 2
+      - v2cross.com 15
+      - 加拿大_YouTube：8度科技 5
+      - v2cross.com 16
+      - +US_1375
       - +US_1531
-      - 法国_YouTube：8度科技 5
-      - +US_1362
-      - 加拿大_YouTube：8度科技 27
-      - US_5500+@WangCai_1 2
-      - +US_1126
+      - v2cross.com 17
+      - v2cross.com 18
+      - v2cross.com 19
+      - _加拿大_YouTube:VV科技_100
+      - _FR_法国 3
+      - _FR_法国 4
+      - 高级线路tw18
+      - _法国_YouTube:VV科技_139
+      - 试用线路
+      - v2cross.com 20
+      - _法国_YouTube:VV科技_135
+      - +US_2287
+      - v2cross.com 21
+      - v2cross.com 22
+      - _FR_法国 5
+      - v2cross.com 23
+      - v2cross.com 24
+      - _美国_YouTube:VV科技_103
+      - 英国_YouTube：8度科技 4
+      - _法国_YouTube:VV科技_52
+      - +US_1332
+      - _GB_英国 5
+      - _CA_加拿大 3
+      - _FR_法国 6
+      - _法国_YouTube:VV科技_133
+      - 日本H1R
+      - 香港P3
+      - 日本N178
+      - 亚太H4R
+      - 美国N200
+      - 美国N150
+      - 美国N149
+      - 美国A2
+      - _加拿大_YouTube:VV科技_27
+      - 日本H2R
   - name: 🎥 NETFLIX
     type: select
     proxies:
@@ -581,191 +407,133 @@ proxy-groups:
       - ♻️ 自动选择
       - 🎯 全球直连
       - 中国_YouTube：8度科技
+      - _香港_YouTube:VV科技_38
+      - _香港_YouTube:VV科技_40
+      - _香港_YouTube:VV科技_60
+      - _香港_YouTube:VV科技_19
+      - _美国_YouTube:VV科技_44
+      - _香港_YouTube:VV科技_63
+      - _香港_YouTube:VV科技_64
+      - _香港_YouTube:VV科技_56
+      - _美国_YouTube:VV科技_62
+      - _台湾_YouTube:VV科技_99
+      - _中国跳转_YouTube:VV科技_71
       - 中国_YouTube：8度科技 2
+      - _CN_中国->🇷🇺_RU_俄罗斯联邦
       - _US_美国
+      - _韩国_YouTube:VV科技_85
+      - _US_美国 2
+      - _中国跳转_YouTube:VV科技_28
+      - _US_美国 3
+      - _中国跳转_YouTube:VV科技_13
+      - v2cross.com
+      - v2cross.com 2
+      - _香港_YouTube:VV科技_17
+      - _RU_俄罗斯联邦
       - 英国_YouTube：8度科技
+      - default_name
       - 俄罗斯联邦_YouTube：8度科技
+      - _US_美国->🇷🇺_RU_俄罗斯联邦
       - 澳大利亚_YouTube：8度科技
+      - _美国_YouTube:VV科技_124
+      - YouTube:VV科技_37
+      - v2cross.com 3
+      - v2cross.com 4
+      - _GB_英国
+      - _US_美国 4
       - 美国_YouTube：8度科技
-      - 香港+中继07+华南
-      - 香港+中继08+华南
-      - 香港+中继03+华南
-      - 香港+中继01+华南
-      - 香港+中继02+华南
-      - 香港+中继06+华南
-      - 香港+中继04+华南
-      - 台湾+中继08+华南
-      - 香港+中继09+华南
-      - 香港+中继10+华南
-      - 台湾+中继09+华南
-      - 香港+中继05+华南
-      - 台湾+中继10+华南
-      - 台湾+中继01+华南
-      - 台湾+中继02+华南
-      - 台湾+中继06+华南
-      - 台湾+中继04+华南
-      - 台湾+中继03+华南
-      - 台湾+中继07+华南
-      - 台湾+中继05+华南
-      - US_2375+@WangCai_1
-      - US_0443+@WangCai_1
-      - US_6379+@WangCai_1
-      - US_8008+@WangCai_1
-      - US_8119+@WangCai_1
-      - US_8008+@WangCai_1 2
-      - US_8091+@WangCai_1
-      - US_2376+@WangCai_1
-      - US_7002+@WangCai_1
-      - US_6379+@WangCai_1 2
-      - US_8881+@WangCai_1
-      - US_6697+@WangCai_1
-      - US_9101+@WangCai_1
-      - US_6697+@WangCai_1 2
-      - US_8000+@WangCai_1
-      - US_8882+@WangCai_1
-      - US_8009+@WangCai_1
-      - US_5003+@WangCai_1
-      - US_9102+@WangCai_1
-      - US_5500+@WangCai_1
-      - US_8118+@WangCai_1
-      - US_9101+@WangCai_1 2
-      - US_7001+@WangCai_1
-      - US_8881+@WangCai_1 2
-      - US_8888+@WangCai_1
-      - 德国+特选02+华南
-      - US_8000+@WangCai_1 2
-      - US_8118+@WangCai_1 2
-      - US_5601+@WangCai_1
-      - 美国_YouTube：8度科技 2
-      - 美国_YouTube：8度科技 3
-      - +US_1139
-      - US_5001+@WangCai_1
-      - +US_1239
-      - 美国_YouTube：8度科技 4
-      - 美国_YouTube：8度科技 5
+      - 高级线路hk1
+      - 高级线路tw20
+      - 高级线路tw2
+      - 高级线路tw17
+      - 高级线路tw16+
+      - 高级线路tw3
+      - 高级线路tw15
+      - 高级线路tw0
+      - 高级线路tw15+
+      - 高级线路tw11
+      - 高级线路tw16
+      - 高级线路tw9
+      - 高级线路us3
+      - v2cross.com 5
       - 加拿大_YouTube：8度科技
       - 加拿大_YouTube：8度科技 2
       - 加拿大_YouTube：8度科技 3
-      - 加拿大_YouTube：8度科技 4
-      - 美国_YouTube：8度科技 6
-      - 美国_YouTube：8度科技 7
-      - 美国_YouTube：8度科技 8
-      - 加拿大_YouTube：8度科技 5
-      - 加拿大_YouTube：8度科技 6
-      - +US_1080
-      - 美国_YouTube：8度科技 9
-      - +US_1488
-      - +US_1496
-      - 加拿大_YouTube：8度科技 7
-      - 加拿大_YouTube：8度科技 8
-      - 美国_YouTube：8度科技 10
-      - 加拿大_YouTube：8度科技 9
-      - 加拿大_YouTube：8度科技 10
-      - 美国+中继01+华东
-      - +US_1443
-      - +US_1418
-      - 美国+中继06+华东
-      - 美国_YouTube：8度科技 11
-      - 加拿大_YouTube：8度科技 11
-      - 加拿大_YouTube：8度科技 12
-      - 加拿大_YouTube：8度科技 13
-      - 法国_YouTube：8度科技
-      - 加拿大_YouTube：8度科技 14
-      - +US_2003
-      - 加拿大_YouTube：8度科技 15
-      - _CA_加拿大
-      - +US_1864
-      - 加拿大_YouTube：8度科技 16
-      - 美国_YouTube：8度科技 12
-      - 美国_YouTube：8度科技 13
       - 英国_YouTube：8度科技 2
-      - +US_1213
-      - +US_1431
-      - _GB_英国
-      - 加拿大_YouTube：8度科技 17
-      - _CA_加拿大 2
-      - +US_1335
-      - _CA_加拿大 3
-      - 美国+中继08+华东
-      - 美国_YouTube：8度科技 14
-      - 美国+中继07+华东
-      - +US_1785
-      - 法国_YouTube：8度科技 2
-      - +US_1421
-      - 加拿大_YouTube：8度科技 18
-      - +US_1563
-      - 法国_YouTube：8度科技 3
-      - +US_2122
-      - 加拿大_YouTube：8度科技 19
+      - 高级线路tw7
       - 英国_YouTube：8度科技 3
-      - 美国+中继09+华东
-      - +US_1641
-      - +US_1200
-      - 美国_YouTube：8度科技 15
-      - +US_1482
-      - +US_2293
-      - 加拿大_YouTube：8度科技 20
-      - +US_1741
-      - 加拿大_YouTube：8度科技 21
-      - +US_1656
-      - +US_1657
-      - 加拿大_YouTube：8度科技 22
-      - 法国_YouTube：8度科技 4
-      - 加拿大_YouTube：8度科技 23
-      - +US_1547
-      - +US_1462
-      - 英国_YouTube：8度科技 4
-      - 英国_YouTube：8度科技 5
-      - +US_2119
-      - +US_1409
-      - +US_2137
-      - 美国+中继03+华东
-      - 中国_YouTube：8度科技 3
-      - +US_1077
-      - +US_1249
-      - +US_1636
-      - 加拿大_YouTube：8度科技 24
-      - +US_1330
-      - +US_1764
-      - 加拿大_YouTube：8度科技 25
-      - 美国+中继04+华东
-      - +US_1556
-      - +US_2287
-      - +US_1236
-      - +US_1312
-      - 美国+中继05+华东
-      - +US_2101
-      - US_5000+@WangCai_1
-      - US_3306+@WangCai_1
-      - US_5600+@WangCai_1
-      - +US_1332
-      - +US_1278
-      - +US_1691
-      - US_9102+@WangCai_1 2
-      - 美国+中继02+华东
-      - 美国+中继10+华东
-      - US_5601+@WangCai_1 2
-      - +US_1897
-      - +US_1577
-      - +US_1167
-      - 美国_YouTube：8度科技 16
-      - 英国_YouTube：8度科技 6
-      - +US_1436
-      - _CA_加拿大 4
-      - US_6679+@WangCai_1
-      - +US_1751
-      - +US_1375
-      - +US_1473
-      - +US_1369
-      - 加拿大_YouTube：8度科技 26
-      - 美国_YouTube：8度科技 17
+      - _CA_加拿大
+      - _加拿大_YouTube:VV科技_106
+      - v2cross.com 6
+      - 高级线路hk3
+      - 加拿大_YouTube：8度科技 4
+      - _加拿大_YouTube:VV科技_54
+      - v2cross.com 7
+      - v2cross.com 8
+      - _英国_YouTube:VV科技_14
+      - v2cross.com 9
+      - _英国_YouTube:VV科技_8
+      - v2cross.com 10
+      - _英国_YouTube:VV科技_55
+      - _英国_YouTube:VV科技_123
+      - _法国_YouTube:VV科技_12
       - _FR_法国
+      - _英国_YouTube:VV科技_46
+      - _法国_YouTube:VV科技_16
+      - v2cross.com 11
+      - v2cross.com 12
+      - _CA_加拿大 2
+      - +US_1278
+      - _法国_YouTube:VV科技_10
+      - _GB_英国 2
+      - _加拿大_YouTube:VV科技_21
+      - v2cross.com 13
+      - _英国_YouTube:VV科技_6
+      - _GB_英国 3
+      - _GB_英国 4
+      - _加拿大_YouTube:VV科技_102
+      - v2cross.com 14
+      - _FR_法国 2
+      - v2cross.com 15
+      - 加拿大_YouTube：8度科技 5
+      - v2cross.com 16
+      - +US_1375
       - +US_1531
-      - 法国_YouTube：8度科技 5
-      - +US_1362
-      - 加拿大_YouTube：8度科技 27
-      - US_5500+@WangCai_1 2
-      - +US_1126
+      - v2cross.com 17
+      - v2cross.com 18
+      - v2cross.com 19
+      - _加拿大_YouTube:VV科技_100
+      - _FR_法国 3
+      - _FR_法国 4
+      - 高级线路tw18
+      - _法国_YouTube:VV科技_139
+      - 试用线路
+      - v2cross.com 20
+      - _法国_YouTube:VV科技_135
+      - +US_2287
+      - v2cross.com 21
+      - v2cross.com 22
+      - _FR_法国 5
+      - v2cross.com 23
+      - v2cross.com 24
+      - _美国_YouTube:VV科技_103
+      - 英国_YouTube：8度科技 4
+      - _法国_YouTube:VV科技_52
+      - +US_1332
+      - _GB_英国 5
+      - _CA_加拿大 3
+      - _FR_法国 6
+      - _法国_YouTube:VV科技_133
+      - 日本H1R
+      - 香港P3
+      - 日本N178
+      - 亚太H4R
+      - 美国N200
+      - 美国N150
+      - 美国N149
+      - 美国A2
+      - _加拿大_YouTube:VV科技_27
+      - 日本H2R
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -785,215 +553,162 @@ proxy-groups:
       - ♻️ 自动选择
       - 🎯 全球直连
       - 中国_YouTube：8度科技
+      - _香港_YouTube:VV科技_38
+      - _香港_YouTube:VV科技_40
+      - _香港_YouTube:VV科技_60
+      - _香港_YouTube:VV科技_19
+      - _美国_YouTube:VV科技_44
+      - _香港_YouTube:VV科技_63
+      - _香港_YouTube:VV科技_64
+      - _香港_YouTube:VV科技_56
+      - _美国_YouTube:VV科技_62
+      - _台湾_YouTube:VV科技_99
+      - _中国跳转_YouTube:VV科技_71
       - 中国_YouTube：8度科技 2
+      - _CN_中国->🇷🇺_RU_俄罗斯联邦
       - _US_美国
+      - _韩国_YouTube:VV科技_85
+      - _US_美国 2
+      - _中国跳转_YouTube:VV科技_28
+      - _US_美国 3
+      - _中国跳转_YouTube:VV科技_13
+      - v2cross.com
+      - v2cross.com 2
+      - _香港_YouTube:VV科技_17
+      - _RU_俄罗斯联邦
       - 英国_YouTube：8度科技
+      - default_name
       - 俄罗斯联邦_YouTube：8度科技
+      - _US_美国->🇷🇺_RU_俄罗斯联邦
       - 澳大利亚_YouTube：8度科技
+      - _美国_YouTube:VV科技_124
+      - YouTube:VV科技_37
+      - v2cross.com 3
+      - v2cross.com 4
+      - _GB_英国
+      - _US_美国 4
       - 美国_YouTube：8度科技
-      - 香港+中继07+华南
-      - 香港+中继08+华南
-      - 香港+中继03+华南
-      - 香港+中继01+华南
-      - 香港+中继02+华南
-      - 香港+中继06+华南
-      - 香港+中继04+华南
-      - 台湾+中继08+华南
-      - 香港+中继09+华南
-      - 香港+中继10+华南
-      - 台湾+中继09+华南
-      - 香港+中继05+华南
-      - 台湾+中继10+华南
-      - 台湾+中继01+华南
-      - 台湾+中继02+华南
-      - 台湾+中继06+华南
-      - 台湾+中继04+华南
-      - 台湾+中继03+华南
-      - 台湾+中继07+华南
-      - 台湾+中继05+华南
-      - US_2375+@WangCai_1
-      - US_0443+@WangCai_1
-      - US_6379+@WangCai_1
-      - US_8008+@WangCai_1
-      - US_8119+@WangCai_1
-      - US_8008+@WangCai_1 2
-      - US_8091+@WangCai_1
-      - US_2376+@WangCai_1
-      - US_7002+@WangCai_1
-      - US_6379+@WangCai_1 2
-      - US_8881+@WangCai_1
-      - US_6697+@WangCai_1
-      - US_9101+@WangCai_1
-      - US_6697+@WangCai_1 2
-      - US_8000+@WangCai_1
-      - US_8882+@WangCai_1
-      - US_8009+@WangCai_1
-      - US_5003+@WangCai_1
-      - US_9102+@WangCai_1
-      - US_5500+@WangCai_1
-      - US_8118+@WangCai_1
-      - US_9101+@WangCai_1 2
-      - US_7001+@WangCai_1
-      - US_8881+@WangCai_1 2
-      - US_8888+@WangCai_1
-      - 德国+特选02+华南
-      - US_8000+@WangCai_1 2
-      - US_8118+@WangCai_1 2
-      - US_5601+@WangCai_1
-      - 美国_YouTube：8度科技 2
-      - 美国_YouTube：8度科技 3
-      - +US_1139
-      - US_5001+@WangCai_1
-      - +US_1239
-      - 美国_YouTube：8度科技 4
-      - 美国_YouTube：8度科技 5
+      - 高级线路hk1
+      - 高级线路tw20
+      - 高级线路tw2
+      - 高级线路tw17
+      - 高级线路tw16+
+      - 高级线路tw3
+      - 高级线路tw15
+      - 高级线路tw0
+      - 高级线路tw15+
+      - 高级线路tw11
+      - 高级线路tw16
+      - 高级线路tw9
+      - 高级线路us3
+      - v2cross.com 5
       - 加拿大_YouTube：8度科技
       - 加拿大_YouTube：8度科技 2
       - 加拿大_YouTube：8度科技 3
-      - 加拿大_YouTube：8度科技 4
-      - 美国_YouTube：8度科技 6
-      - 美国_YouTube：8度科技 7
-      - 美国_YouTube：8度科技 8
-      - 加拿大_YouTube：8度科技 5
-      - 加拿大_YouTube：8度科技 6
-      - +US_1080
-      - 美国_YouTube：8度科技 9
-      - +US_1488
-      - +US_1496
-      - 加拿大_YouTube：8度科技 7
-      - 加拿大_YouTube：8度科技 8
-      - 美国_YouTube：8度科技 10
-      - 加拿大_YouTube：8度科技 9
-      - 加拿大_YouTube：8度科技 10
-      - 美国+中继01+华东
-      - +US_1443
-      - +US_1418
-      - 美国+中继06+华东
-      - 美国_YouTube：8度科技 11
-      - 加拿大_YouTube：8度科技 11
-      - 加拿大_YouTube：8度科技 12
-      - 加拿大_YouTube：8度科技 13
-      - 法国_YouTube：8度科技
-      - 加拿大_YouTube：8度科技 14
-      - +US_2003
-      - 加拿大_YouTube：8度科技 15
-      - _CA_加拿大
-      - +US_1864
-      - 加拿大_YouTube：8度科技 16
-      - 美国_YouTube：8度科技 12
-      - 美国_YouTube：8度科技 13
       - 英国_YouTube：8度科技 2
-      - +US_1213
-      - +US_1431
-      - _GB_英国
-      - 加拿大_YouTube：8度科技 17
-      - _CA_加拿大 2
-      - +US_1335
-      - _CA_加拿大 3
-      - 美国+中继08+华东
-      - 美国_YouTube：8度科技 14
-      - 美国+中继07+华东
-      - +US_1785
-      - 法国_YouTube：8度科技 2
-      - +US_1421
-      - 加拿大_YouTube：8度科技 18
-      - +US_1563
-      - 法国_YouTube：8度科技 3
-      - +US_2122
-      - 加拿大_YouTube：8度科技 19
+      - 高级线路tw7
       - 英国_YouTube：8度科技 3
-      - 美国+中继09+华东
-      - +US_1641
-      - +US_1200
-      - 美国_YouTube：8度科技 15
-      - +US_1482
-      - +US_2293
-      - 加拿大_YouTube：8度科技 20
-      - +US_1741
-      - 加拿大_YouTube：8度科技 21
-      - +US_1656
-      - +US_1657
-      - 加拿大_YouTube：8度科技 22
-      - 法国_YouTube：8度科技 4
-      - 加拿大_YouTube：8度科技 23
-      - +US_1547
-      - +US_1462
-      - 英国_YouTube：8度科技 4
-      - 英国_YouTube：8度科技 5
-      - +US_2119
-      - +US_1409
-      - +US_2137
-      - 美国+中继03+华东
-      - 中国_YouTube：8度科技 3
-      - +US_1077
-      - +US_1249
-      - +US_1636
-      - 加拿大_YouTube：8度科技 24
-      - +US_1330
-      - +US_1764
-      - 加拿大_YouTube：8度科技 25
-      - 美国+中继04+华东
-      - +US_1556
-      - +US_2287
-      - +US_1236
-      - +US_1312
-      - 美国+中继05+华东
-      - +US_2101
-      - US_5000+@WangCai_1
-      - US_3306+@WangCai_1
-      - US_5600+@WangCai_1
-      - +US_1332
-      - +US_1278
-      - +US_1691
-      - US_9102+@WangCai_1 2
-      - 美国+中继02+华东
-      - 美国+中继10+华东
-      - US_5601+@WangCai_1 2
-      - +US_1897
-      - +US_1577
-      - +US_1167
-      - 美国_YouTube：8度科技 16
-      - 英国_YouTube：8度科技 6
-      - +US_1436
-      - _CA_加拿大 4
-      - US_6679+@WangCai_1
-      - +US_1751
-      - +US_1375
-      - +US_1473
-      - +US_1369
-      - 加拿大_YouTube：8度科技 26
-      - 美国_YouTube：8度科技 17
+      - _CA_加拿大
+      - _加拿大_YouTube:VV科技_106
+      - v2cross.com 6
+      - 高级线路hk3
+      - 加拿大_YouTube：8度科技 4
+      - _加拿大_YouTube:VV科技_54
+      - v2cross.com 7
+      - v2cross.com 8
+      - _英国_YouTube:VV科技_14
+      - v2cross.com 9
+      - _英国_YouTube:VV科技_8
+      - v2cross.com 10
+      - _英国_YouTube:VV科技_55
+      - _英国_YouTube:VV科技_123
+      - _法国_YouTube:VV科技_12
       - _FR_法国
+      - _英国_YouTube:VV科技_46
+      - _法国_YouTube:VV科技_16
+      - v2cross.com 11
+      - v2cross.com 12
+      - _CA_加拿大 2
+      - +US_1278
+      - _法国_YouTube:VV科技_10
+      - _GB_英国 2
+      - _加拿大_YouTube:VV科技_21
+      - v2cross.com 13
+      - _英国_YouTube:VV科技_6
+      - _GB_英国 3
+      - _GB_英国 4
+      - _加拿大_YouTube:VV科技_102
+      - v2cross.com 14
+      - _FR_法国 2
+      - v2cross.com 15
+      - 加拿大_YouTube：8度科技 5
+      - v2cross.com 16
+      - +US_1375
       - +US_1531
-      - 法国_YouTube：8度科技 5
-      - +US_1362
-      - 加拿大_YouTube：8度科技 27
-      - US_5500+@WangCai_1 2
-      - +US_1126
+      - v2cross.com 17
+      - v2cross.com 18
+      - v2cross.com 19
+      - _加拿大_YouTube:VV科技_100
+      - _FR_法国 3
+      - _FR_法国 4
+      - 高级线路tw18
+      - _法国_YouTube:VV科技_139
+      - 试用线路
+      - v2cross.com 20
+      - _法国_YouTube:VV科技_135
+      - +US_2287
+      - v2cross.com 21
+      - v2cross.com 22
+      - _FR_法国 5
+      - v2cross.com 23
+      - v2cross.com 24
+      - _美国_YouTube:VV科技_103
+      - 英国_YouTube：8度科技 4
+      - _法国_YouTube:VV科技_52
+      - +US_1332
+      - _GB_英国 5
+      - _CA_加拿大 3
+      - _FR_法国 6
+      - _法国_YouTube:VV科技_133
+      - 日本H1R
+      - 香港P3
+      - 日本N178
+      - 亚太H4R
+      - 美国N200
+      - 美国N150
+      - 美国N149
+      - 美国A2
+      - _加拿大_YouTube:VV科技_27
+      - 日本H2R
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 香港+中继07+华南
-      - 香港+中继08+华南
-      - 香港+中继03+华南
-      - 香港+中继01+华南
-      - 香港+中继02+华南
-      - 香港+中继06+华南
-      - 香港+中继04+华南
-      - 台湾+中继08+华南
-      - 香港+中继09+华南
-      - 香港+中继10+华南
-      - 台湾+中继09+华南
-      - 香港+中继05+华南
-      - 台湾+中继10+华南
-      - 台湾+中继01+华南
-      - 台湾+中继02+华南
-      - 台湾+中继06+华南
-      - 台湾+中继04+华南
-      - 台湾+中继03+华南
-      - 台湾+中继07+华南
-      - 台湾+中继05+华南
+      - _香港_YouTube:VV科技_38
+      - _香港_YouTube:VV科技_40
+      - _香港_YouTube:VV科技_60
+      - _香港_YouTube:VV科技_19
+      - _香港_YouTube:VV科技_63
+      - _香港_YouTube:VV科技_64
+      - _香港_YouTube:VV科技_56
+      - _台湾_YouTube:VV科技_99
+      - _香港_YouTube:VV科技_17
+      - 高级线路hk1
+      - 高级线路tw20
+      - 高级线路tw2
+      - 高级线路tw17
+      - 高级线路tw16+
+      - 高级线路tw3
+      - 高级线路tw15
+      - 高级线路tw0
+      - 高级线路tw15+
+      - 高级线路tw11
+      - 高级线路tw16
+      - 高级线路tw9
+      - 高级线路tw7
+      - 高级线路hk3
+      - 高级线路tw18
+      - 香港P3
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
@@ -1001,382 +716,266 @@ proxy-groups:
       - 🎯 全球直连
       - 🔰 节点选择
       - 中国_YouTube：8度科技
+      - _香港_YouTube:VV科技_38
+      - _香港_YouTube:VV科技_40
+      - _香港_YouTube:VV科技_60
+      - _香港_YouTube:VV科技_19
+      - _美国_YouTube:VV科技_44
+      - _香港_YouTube:VV科技_63
+      - _香港_YouTube:VV科技_64
+      - _香港_YouTube:VV科技_56
+      - _美国_YouTube:VV科技_62
+      - _台湾_YouTube:VV科技_99
+      - _中国跳转_YouTube:VV科技_71
       - 中国_YouTube：8度科技 2
+      - _CN_中国->🇷🇺_RU_俄罗斯联邦
       - _US_美国
+      - _韩国_YouTube:VV科技_85
+      - _US_美国 2
+      - _中国跳转_YouTube:VV科技_28
+      - _US_美国 3
+      - _中国跳转_YouTube:VV科技_13
+      - v2cross.com
+      - v2cross.com 2
+      - _香港_YouTube:VV科技_17
+      - _RU_俄罗斯联邦
       - 英国_YouTube：8度科技
+      - default_name
       - 俄罗斯联邦_YouTube：8度科技
+      - _US_美国->🇷🇺_RU_俄罗斯联邦
       - 澳大利亚_YouTube：8度科技
+      - _美国_YouTube:VV科技_124
+      - YouTube:VV科技_37
+      - v2cross.com 3
+      - v2cross.com 4
+      - _GB_英国
+      - _US_美国 4
       - 美国_YouTube：8度科技
-      - 香港+中继07+华南
-      - 香港+中继08+华南
-      - 香港+中继03+华南
-      - 香港+中继01+华南
-      - 香港+中继02+华南
-      - 香港+中继06+华南
-      - 香港+中继04+华南
-      - 台湾+中继08+华南
-      - 香港+中继09+华南
-      - 香港+中继10+华南
-      - 台湾+中继09+华南
-      - 香港+中继05+华南
-      - 台湾+中继10+华南
-      - 台湾+中继01+华南
-      - 台湾+中继02+华南
-      - 台湾+中继06+华南
-      - 台湾+中继04+华南
-      - 台湾+中继03+华南
-      - 台湾+中继07+华南
-      - 台湾+中继05+华南
-      - US_2375+@WangCai_1
-      - US_0443+@WangCai_1
-      - US_6379+@WangCai_1
-      - US_8008+@WangCai_1
-      - US_8119+@WangCai_1
-      - US_8008+@WangCai_1 2
-      - US_8091+@WangCai_1
-      - US_2376+@WangCai_1
-      - US_7002+@WangCai_1
-      - US_6379+@WangCai_1 2
-      - US_8881+@WangCai_1
-      - US_6697+@WangCai_1
-      - US_9101+@WangCai_1
-      - US_6697+@WangCai_1 2
-      - US_8000+@WangCai_1
-      - US_8882+@WangCai_1
-      - US_8009+@WangCai_1
-      - US_5003+@WangCai_1
-      - US_9102+@WangCai_1
-      - US_5500+@WangCai_1
-      - US_8118+@WangCai_1
-      - US_9101+@WangCai_1 2
-      - US_7001+@WangCai_1
-      - US_8881+@WangCai_1 2
-      - US_8888+@WangCai_1
-      - 德国+特选02+华南
-      - US_8000+@WangCai_1 2
-      - US_8118+@WangCai_1 2
-      - US_5601+@WangCai_1
-      - 美国_YouTube：8度科技 2
-      - 美国_YouTube：8度科技 3
-      - +US_1139
-      - US_5001+@WangCai_1
-      - +US_1239
-      - 美国_YouTube：8度科技 4
-      - 美国_YouTube：8度科技 5
+      - 高级线路hk1
+      - 高级线路tw20
+      - 高级线路tw2
+      - 高级线路tw17
+      - 高级线路tw16+
+      - 高级线路tw3
+      - 高级线路tw15
+      - 高级线路tw0
+      - 高级线路tw15+
+      - 高级线路tw11
+      - 高级线路tw16
+      - 高级线路tw9
+      - 高级线路us3
+      - v2cross.com 5
       - 加拿大_YouTube：8度科技
       - 加拿大_YouTube：8度科技 2
       - 加拿大_YouTube：8度科技 3
-      - 加拿大_YouTube：8度科技 4
-      - 美国_YouTube：8度科技 6
-      - 美国_YouTube：8度科技 7
-      - 美国_YouTube：8度科技 8
-      - 加拿大_YouTube：8度科技 5
-      - 加拿大_YouTube：8度科技 6
-      - +US_1080
-      - 美国_YouTube：8度科技 9
-      - +US_1488
-      - +US_1496
-      - 加拿大_YouTube：8度科技 7
-      - 加拿大_YouTube：8度科技 8
-      - 美国_YouTube：8度科技 10
-      - 加拿大_YouTube：8度科技 9
-      - 加拿大_YouTube：8度科技 10
-      - 美国+中继01+华东
-      - +US_1443
-      - +US_1418
-      - 美国+中继06+华东
-      - 美国_YouTube：8度科技 11
-      - 加拿大_YouTube：8度科技 11
-      - 加拿大_YouTube：8度科技 12
-      - 加拿大_YouTube：8度科技 13
-      - 法国_YouTube：8度科技
-      - 加拿大_YouTube：8度科技 14
-      - +US_2003
-      - 加拿大_YouTube：8度科技 15
-      - _CA_加拿大
-      - +US_1864
-      - 加拿大_YouTube：8度科技 16
-      - 美国_YouTube：8度科技 12
-      - 美国_YouTube：8度科技 13
       - 英国_YouTube：8度科技 2
-      - +US_1213
-      - +US_1431
-      - _GB_英国
-      - 加拿大_YouTube：8度科技 17
-      - _CA_加拿大 2
-      - +US_1335
-      - _CA_加拿大 3
-      - 美国+中继08+华东
-      - 美国_YouTube：8度科技 14
-      - 美国+中继07+华东
-      - +US_1785
-      - 法国_YouTube：8度科技 2
-      - +US_1421
-      - 加拿大_YouTube：8度科技 18
-      - +US_1563
-      - 法国_YouTube：8度科技 3
-      - +US_2122
-      - 加拿大_YouTube：8度科技 19
+      - 高级线路tw7
       - 英国_YouTube：8度科技 3
-      - 美国+中继09+华东
-      - +US_1641
-      - +US_1200
-      - 美国_YouTube：8度科技 15
-      - +US_1482
-      - +US_2293
-      - 加拿大_YouTube：8度科技 20
-      - +US_1741
-      - 加拿大_YouTube：8度科技 21
-      - +US_1656
-      - +US_1657
-      - 加拿大_YouTube：8度科技 22
-      - 法国_YouTube：8度科技 4
-      - 加拿大_YouTube：8度科技 23
-      - +US_1547
-      - +US_1462
-      - 英国_YouTube：8度科技 4
-      - 英国_YouTube：8度科技 5
-      - +US_2119
-      - +US_1409
-      - +US_2137
-      - 美国+中继03+华东
-      - 中国_YouTube：8度科技 3
-      - +US_1077
-      - +US_1249
-      - +US_1636
-      - 加拿大_YouTube：8度科技 24
-      - +US_1330
-      - +US_1764
-      - 加拿大_YouTube：8度科技 25
-      - 美国+中继04+华东
-      - +US_1556
-      - +US_2287
-      - +US_1236
-      - +US_1312
-      - 美国+中继05+华东
-      - +US_2101
-      - US_5000+@WangCai_1
-      - US_3306+@WangCai_1
-      - US_5600+@WangCai_1
-      - +US_1332
-      - +US_1278
-      - +US_1691
-      - US_9102+@WangCai_1 2
-      - 美国+中继02+华东
-      - 美国+中继10+华东
-      - US_5601+@WangCai_1 2
-      - +US_1897
-      - +US_1577
-      - +US_1167
-      - 美国_YouTube：8度科技 16
-      - 英国_YouTube：8度科技 6
-      - +US_1436
-      - _CA_加拿大 4
-      - US_6679+@WangCai_1
-      - +US_1751
-      - +US_1375
-      - +US_1473
-      - +US_1369
-      - 加拿大_YouTube：8度科技 26
-      - 美国_YouTube：8度科技 17
+      - _CA_加拿大
+      - _加拿大_YouTube:VV科技_106
+      - v2cross.com 6
+      - 高级线路hk3
+      - 加拿大_YouTube：8度科技 4
+      - _加拿大_YouTube:VV科技_54
+      - v2cross.com 7
+      - v2cross.com 8
+      - _英国_YouTube:VV科技_14
+      - v2cross.com 9
+      - _英国_YouTube:VV科技_8
+      - v2cross.com 10
+      - _英国_YouTube:VV科技_55
+      - _英国_YouTube:VV科技_123
+      - _法国_YouTube:VV科技_12
       - _FR_法国
+      - _英国_YouTube:VV科技_46
+      - _法国_YouTube:VV科技_16
+      - v2cross.com 11
+      - v2cross.com 12
+      - _CA_加拿大 2
+      - +US_1278
+      - _法国_YouTube:VV科技_10
+      - _GB_英国 2
+      - _加拿大_YouTube:VV科技_21
+      - v2cross.com 13
+      - _英国_YouTube:VV科技_6
+      - _GB_英国 3
+      - _GB_英国 4
+      - _加拿大_YouTube:VV科技_102
+      - v2cross.com 14
+      - _FR_法国 2
+      - v2cross.com 15
+      - 加拿大_YouTube：8度科技 5
+      - v2cross.com 16
+      - +US_1375
       - +US_1531
-      - 法国_YouTube：8度科技 5
-      - +US_1362
-      - 加拿大_YouTube：8度科技 27
-      - US_5500+@WangCai_1 2
-      - +US_1126
+      - v2cross.com 17
+      - v2cross.com 18
+      - v2cross.com 19
+      - _加拿大_YouTube:VV科技_100
+      - _FR_法国 3
+      - _FR_法国 4
+      - 高级线路tw18
+      - _法国_YouTube:VV科技_139
+      - 试用线路
+      - v2cross.com 20
+      - _法国_YouTube:VV科技_135
+      - +US_2287
+      - v2cross.com 21
+      - v2cross.com 22
+      - _FR_法国 5
+      - v2cross.com 23
+      - v2cross.com 24
+      - _美国_YouTube:VV科技_103
+      - 英国_YouTube：8度科技 4
+      - _法国_YouTube:VV科技_52
+      - +US_1332
+      - _GB_英国 5
+      - _CA_加拿大 3
+      - _FR_法国 6
+      - _法国_YouTube:VV科技_133
+      - 日本H1R
+      - 香港P3
+      - 日本N178
+      - 亚太H4R
+      - 美国N200
+      - 美国N150
+      - 美国N149
+      - 美国A2
+      - _加拿大_YouTube:VV科技_27
+      - 日本H2R
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - 中国_YouTube：8度科技
+      - _香港_YouTube:VV科技_38
+      - _香港_YouTube:VV科技_40
+      - _香港_YouTube:VV科技_60
+      - _香港_YouTube:VV科技_19
+      - _美国_YouTube:VV科技_44
+      - _香港_YouTube:VV科技_63
+      - _香港_YouTube:VV科技_64
+      - _香港_YouTube:VV科技_56
+      - _美国_YouTube:VV科技_62
+      - _台湾_YouTube:VV科技_99
+      - _中国跳转_YouTube:VV科技_71
       - 中国_YouTube：8度科技 2
+      - _CN_中国->🇷🇺_RU_俄罗斯联邦
       - _US_美国
+      - _韩国_YouTube:VV科技_85
+      - _US_美国 2
+      - _中国跳转_YouTube:VV科技_28
+      - _US_美国 3
+      - _中国跳转_YouTube:VV科技_13
+      - v2cross.com
+      - v2cross.com 2
+      - _香港_YouTube:VV科技_17
+      - _RU_俄罗斯联邦
       - 英国_YouTube：8度科技
+      - default_name
       - 俄罗斯联邦_YouTube：8度科技
+      - _US_美国->🇷🇺_RU_俄罗斯联邦
       - 澳大利亚_YouTube：8度科技
+      - _美国_YouTube:VV科技_124
+      - YouTube:VV科技_37
+      - v2cross.com 3
+      - v2cross.com 4
+      - _GB_英国
+      - _US_美国 4
       - 美国_YouTube：8度科技
-      - 香港+中继07+华南
-      - 香港+中继08+华南
-      - 香港+中继03+华南
-      - 香港+中继01+华南
-      - 香港+中继02+华南
-      - 香港+中继06+华南
-      - 香港+中继04+华南
-      - 台湾+中继08+华南
-      - 香港+中继09+华南
-      - 香港+中继10+华南
-      - 台湾+中继09+华南
-      - 香港+中继05+华南
-      - 台湾+中继10+华南
-      - 台湾+中继01+华南
-      - 台湾+中继02+华南
-      - 台湾+中继06+华南
-      - 台湾+中继04+华南
-      - 台湾+中继03+华南
-      - 台湾+中继07+华南
-      - 台湾+中继05+华南
-      - US_2375+@WangCai_1
-      - US_0443+@WangCai_1
-      - US_6379+@WangCai_1
-      - US_8008+@WangCai_1
-      - US_8119+@WangCai_1
-      - US_8008+@WangCai_1 2
-      - US_8091+@WangCai_1
-      - US_2376+@WangCai_1
-      - US_7002+@WangCai_1
-      - US_6379+@WangCai_1 2
-      - US_8881+@WangCai_1
-      - US_6697+@WangCai_1
-      - US_9101+@WangCai_1
-      - US_6697+@WangCai_1 2
-      - US_8000+@WangCai_1
-      - US_8882+@WangCai_1
-      - US_8009+@WangCai_1
-      - US_5003+@WangCai_1
-      - US_9102+@WangCai_1
-      - US_5500+@WangCai_1
-      - US_8118+@WangCai_1
-      - US_9101+@WangCai_1 2
-      - US_7001+@WangCai_1
-      - US_8881+@WangCai_1 2
-      - US_8888+@WangCai_1
-      - 德国+特选02+华南
-      - US_8000+@WangCai_1 2
-      - US_8118+@WangCai_1 2
-      - US_5601+@WangCai_1
-      - 美国_YouTube：8度科技 2
-      - 美国_YouTube：8度科技 3
-      - +US_1139
-      - US_5001+@WangCai_1
-      - +US_1239
-      - 美国_YouTube：8度科技 4
-      - 美国_YouTube：8度科技 5
+      - 高级线路hk1
+      - 高级线路tw20
+      - 高级线路tw2
+      - 高级线路tw17
+      - 高级线路tw16+
+      - 高级线路tw3
+      - 高级线路tw15
+      - 高级线路tw0
+      - 高级线路tw15+
+      - 高级线路tw11
+      - 高级线路tw16
+      - 高级线路tw9
+      - 高级线路us3
+      - v2cross.com 5
       - 加拿大_YouTube：8度科技
       - 加拿大_YouTube：8度科技 2
       - 加拿大_YouTube：8度科技 3
-      - 加拿大_YouTube：8度科技 4
-      - 美国_YouTube：8度科技 6
-      - 美国_YouTube：8度科技 7
-      - 美国_YouTube：8度科技 8
-      - 加拿大_YouTube：8度科技 5
-      - 加拿大_YouTube：8度科技 6
-      - +US_1080
-      - 美国_YouTube：8度科技 9
-      - +US_1488
-      - +US_1496
-      - 加拿大_YouTube：8度科技 7
-      - 加拿大_YouTube：8度科技 8
-      - 美国_YouTube：8度科技 10
-      - 加拿大_YouTube：8度科技 9
-      - 加拿大_YouTube：8度科技 10
-      - 美国+中继01+华东
-      - +US_1443
-      - +US_1418
-      - 美国+中继06+华东
-      - 美国_YouTube：8度科技 11
-      - 加拿大_YouTube：8度科技 11
-      - 加拿大_YouTube：8度科技 12
-      - 加拿大_YouTube：8度科技 13
-      - 法国_YouTube：8度科技
-      - 加拿大_YouTube：8度科技 14
-      - +US_2003
-      - 加拿大_YouTube：8度科技 15
-      - _CA_加拿大
-      - +US_1864
-      - 加拿大_YouTube：8度科技 16
-      - 美国_YouTube：8度科技 12
-      - 美国_YouTube：8度科技 13
       - 英国_YouTube：8度科技 2
-      - +US_1213
-      - +US_1431
-      - _GB_英国
-      - 加拿大_YouTube：8度科技 17
-      - _CA_加拿大 2
-      - +US_1335
-      - _CA_加拿大 3
-      - 美国+中继08+华东
-      - 美国_YouTube：8度科技 14
-      - 美国+中继07+华东
-      - +US_1785
-      - 法国_YouTube：8度科技 2
-      - +US_1421
-      - 加拿大_YouTube：8度科技 18
-      - +US_1563
-      - 法国_YouTube：8度科技 3
-      - +US_2122
-      - 加拿大_YouTube：8度科技 19
+      - 高级线路tw7
       - 英国_YouTube：8度科技 3
-      - 美国+中继09+华东
-      - +US_1641
-      - +US_1200
-      - 美国_YouTube：8度科技 15
-      - +US_1482
-      - +US_2293
-      - 加拿大_YouTube：8度科技 20
-      - +US_1741
-      - 加拿大_YouTube：8度科技 21
-      - +US_1656
-      - +US_1657
-      - 加拿大_YouTube：8度科技 22
-      - 法国_YouTube：8度科技 4
-      - 加拿大_YouTube：8度科技 23
-      - +US_1547
-      - +US_1462
-      - 英国_YouTube：8度科技 4
-      - 英国_YouTube：8度科技 5
-      - +US_2119
-      - +US_1409
-      - +US_2137
-      - 美国+中继03+华东
-      - 中国_YouTube：8度科技 3
-      - +US_1077
-      - +US_1249
-      - +US_1636
-      - 加拿大_YouTube：8度科技 24
-      - +US_1330
-      - +US_1764
-      - 加拿大_YouTube：8度科技 25
-      - 美国+中继04+华东
-      - +US_1556
-      - +US_2287
-      - +US_1236
-      - +US_1312
-      - 美国+中继05+华东
-      - +US_2101
-      - US_5000+@WangCai_1
-      - US_3306+@WangCai_1
-      - US_5600+@WangCai_1
-      - +US_1332
-      - +US_1278
-      - +US_1691
-      - US_9102+@WangCai_1 2
-      - 美国+中继02+华东
-      - 美国+中继10+华东
-      - US_5601+@WangCai_1 2
-      - +US_1897
-      - +US_1577
-      - +US_1167
-      - 美国_YouTube：8度科技 16
-      - 英国_YouTube：8度科技 6
-      - +US_1436
-      - _CA_加拿大 4
-      - US_6679+@WangCai_1
-      - +US_1751
-      - +US_1375
-      - +US_1473
-      - +US_1369
-      - 加拿大_YouTube：8度科技 26
-      - 美国_YouTube：8度科技 17
+      - _CA_加拿大
+      - _加拿大_YouTube:VV科技_106
+      - v2cross.com 6
+      - 高级线路hk3
+      - 加拿大_YouTube：8度科技 4
+      - _加拿大_YouTube:VV科技_54
+      - v2cross.com 7
+      - v2cross.com 8
+      - _英国_YouTube:VV科技_14
+      - v2cross.com 9
+      - _英国_YouTube:VV科技_8
+      - v2cross.com 10
+      - _英国_YouTube:VV科技_55
+      - _英国_YouTube:VV科技_123
+      - _法国_YouTube:VV科技_12
       - _FR_法国
+      - _英国_YouTube:VV科技_46
+      - _法国_YouTube:VV科技_16
+      - v2cross.com 11
+      - v2cross.com 12
+      - _CA_加拿大 2
+      - +US_1278
+      - _法国_YouTube:VV科技_10
+      - _GB_英国 2
+      - _加拿大_YouTube:VV科技_21
+      - v2cross.com 13
+      - _英国_YouTube:VV科技_6
+      - _GB_英国 3
+      - _GB_英国 4
+      - _加拿大_YouTube:VV科技_102
+      - v2cross.com 14
+      - _FR_法国 2
+      - v2cross.com 15
+      - 加拿大_YouTube：8度科技 5
+      - v2cross.com 16
+      - +US_1375
       - +US_1531
-      - 法国_YouTube：8度科技 5
-      - +US_1362
-      - 加拿大_YouTube：8度科技 27
-      - US_5500+@WangCai_1 2
-      - +US_1126
+      - v2cross.com 17
+      - v2cross.com 18
+      - v2cross.com 19
+      - _加拿大_YouTube:VV科技_100
+      - _FR_法国 3
+      - _FR_法国 4
+      - 高级线路tw18
+      - _法国_YouTube:VV科技_139
+      - 试用线路
+      - v2cross.com 20
+      - _法国_YouTube:VV科技_135
+      - +US_2287
+      - v2cross.com 21
+      - v2cross.com 22
+      - _FR_法国 5
+      - v2cross.com 23
+      - v2cross.com 24
+      - _美国_YouTube:VV科技_103
+      - 英国_YouTube：8度科技 4
+      - _法国_YouTube:VV科技_52
+      - +US_1332
+      - _GB_英国 5
+      - _CA_加拿大 3
+      - _FR_法国 6
+      - _法国_YouTube:VV科技_133
+      - 日本H1R
+      - 香港P3
+      - 日本N178
+      - 亚太H4R
+      - 美国N200
+      - 美国N150
+      - 美国N149
+      - 美国A2
+      - _加拿大_YouTube:VV科技_27
+      - 日本H2R
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -1384,191 +983,133 @@ proxy-groups:
       - 🎯 全球直连
       - ♻️ 自动选择
       - 中国_YouTube：8度科技
+      - _香港_YouTube:VV科技_38
+      - _香港_YouTube:VV科技_40
+      - _香港_YouTube:VV科技_60
+      - _香港_YouTube:VV科技_19
+      - _美国_YouTube:VV科技_44
+      - _香港_YouTube:VV科技_63
+      - _香港_YouTube:VV科技_64
+      - _香港_YouTube:VV科技_56
+      - _美国_YouTube:VV科技_62
+      - _台湾_YouTube:VV科技_99
+      - _中国跳转_YouTube:VV科技_71
       - 中国_YouTube：8度科技 2
+      - _CN_中国->🇷🇺_RU_俄罗斯联邦
       - _US_美国
+      - _韩国_YouTube:VV科技_85
+      - _US_美国 2
+      - _中国跳转_YouTube:VV科技_28
+      - _US_美国 3
+      - _中国跳转_YouTube:VV科技_13
+      - v2cross.com
+      - v2cross.com 2
+      - _香港_YouTube:VV科技_17
+      - _RU_俄罗斯联邦
       - 英国_YouTube：8度科技
+      - default_name
       - 俄罗斯联邦_YouTube：8度科技
+      - _US_美国->🇷🇺_RU_俄罗斯联邦
       - 澳大利亚_YouTube：8度科技
+      - _美国_YouTube:VV科技_124
+      - YouTube:VV科技_37
+      - v2cross.com 3
+      - v2cross.com 4
+      - _GB_英国
+      - _US_美国 4
       - 美国_YouTube：8度科技
-      - 香港+中继07+华南
-      - 香港+中继08+华南
-      - 香港+中继03+华南
-      - 香港+中继01+华南
-      - 香港+中继02+华南
-      - 香港+中继06+华南
-      - 香港+中继04+华南
-      - 台湾+中继08+华南
-      - 香港+中继09+华南
-      - 香港+中继10+华南
-      - 台湾+中继09+华南
-      - 香港+中继05+华南
-      - 台湾+中继10+华南
-      - 台湾+中继01+华南
-      - 台湾+中继02+华南
-      - 台湾+中继06+华南
-      - 台湾+中继04+华南
-      - 台湾+中继03+华南
-      - 台湾+中继07+华南
-      - 台湾+中继05+华南
-      - US_2375+@WangCai_1
-      - US_0443+@WangCai_1
-      - US_6379+@WangCai_1
-      - US_8008+@WangCai_1
-      - US_8119+@WangCai_1
-      - US_8008+@WangCai_1 2
-      - US_8091+@WangCai_1
-      - US_2376+@WangCai_1
-      - US_7002+@WangCai_1
-      - US_6379+@WangCai_1 2
-      - US_8881+@WangCai_1
-      - US_6697+@WangCai_1
-      - US_9101+@WangCai_1
-      - US_6697+@WangCai_1 2
-      - US_8000+@WangCai_1
-      - US_8882+@WangCai_1
-      - US_8009+@WangCai_1
-      - US_5003+@WangCai_1
-      - US_9102+@WangCai_1
-      - US_5500+@WangCai_1
-      - US_8118+@WangCai_1
-      - US_9101+@WangCai_1 2
-      - US_7001+@WangCai_1
-      - US_8881+@WangCai_1 2
-      - US_8888+@WangCai_1
-      - 德国+特选02+华南
-      - US_8000+@WangCai_1 2
-      - US_8118+@WangCai_1 2
-      - US_5601+@WangCai_1
-      - 美国_YouTube：8度科技 2
-      - 美国_YouTube：8度科技 3
-      - +US_1139
-      - US_5001+@WangCai_1
-      - +US_1239
-      - 美国_YouTube：8度科技 4
-      - 美国_YouTube：8度科技 5
+      - 高级线路hk1
+      - 高级线路tw20
+      - 高级线路tw2
+      - 高级线路tw17
+      - 高级线路tw16+
+      - 高级线路tw3
+      - 高级线路tw15
+      - 高级线路tw0
+      - 高级线路tw15+
+      - 高级线路tw11
+      - 高级线路tw16
+      - 高级线路tw9
+      - 高级线路us3
+      - v2cross.com 5
       - 加拿大_YouTube：8度科技
       - 加拿大_YouTube：8度科技 2
       - 加拿大_YouTube：8度科技 3
-      - 加拿大_YouTube：8度科技 4
-      - 美国_YouTube：8度科技 6
-      - 美国_YouTube：8度科技 7
-      - 美国_YouTube：8度科技 8
-      - 加拿大_YouTube：8度科技 5
-      - 加拿大_YouTube：8度科技 6
-      - +US_1080
-      - 美国_YouTube：8度科技 9
-      - +US_1488
-      - +US_1496
-      - 加拿大_YouTube：8度科技 7
-      - 加拿大_YouTube：8度科技 8
-      - 美国_YouTube：8度科技 10
-      - 加拿大_YouTube：8度科技 9
-      - 加拿大_YouTube：8度科技 10
-      - 美国+中继01+华东
-      - +US_1443
-      - +US_1418
-      - 美国+中继06+华东
-      - 美国_YouTube：8度科技 11
-      - 加拿大_YouTube：8度科技 11
-      - 加拿大_YouTube：8度科技 12
-      - 加拿大_YouTube：8度科技 13
-      - 法国_YouTube：8度科技
-      - 加拿大_YouTube：8度科技 14
-      - +US_2003
-      - 加拿大_YouTube：8度科技 15
-      - _CA_加拿大
-      - +US_1864
-      - 加拿大_YouTube：8度科技 16
-      - 美国_YouTube：8度科技 12
-      - 美国_YouTube：8度科技 13
       - 英国_YouTube：8度科技 2
-      - +US_1213
-      - +US_1431
-      - _GB_英国
-      - 加拿大_YouTube：8度科技 17
-      - _CA_加拿大 2
-      - +US_1335
-      - _CA_加拿大 3
-      - 美国+中继08+华东
-      - 美国_YouTube：8度科技 14
-      - 美国+中继07+华东
-      - +US_1785
-      - 法国_YouTube：8度科技 2
-      - +US_1421
-      - 加拿大_YouTube：8度科技 18
-      - +US_1563
-      - 法国_YouTube：8度科技 3
-      - +US_2122
-      - 加拿大_YouTube：8度科技 19
+      - 高级线路tw7
       - 英国_YouTube：8度科技 3
-      - 美国+中继09+华东
-      - +US_1641
-      - +US_1200
-      - 美国_YouTube：8度科技 15
-      - +US_1482
-      - +US_2293
-      - 加拿大_YouTube：8度科技 20
-      - +US_1741
-      - 加拿大_YouTube：8度科技 21
-      - +US_1656
-      - +US_1657
-      - 加拿大_YouTube：8度科技 22
-      - 法国_YouTube：8度科技 4
-      - 加拿大_YouTube：8度科技 23
-      - +US_1547
-      - +US_1462
-      - 英国_YouTube：8度科技 4
-      - 英国_YouTube：8度科技 5
-      - +US_2119
-      - +US_1409
-      - +US_2137
-      - 美国+中继03+华东
-      - 中国_YouTube：8度科技 3
-      - +US_1077
-      - +US_1249
-      - +US_1636
-      - 加拿大_YouTube：8度科技 24
-      - +US_1330
-      - +US_1764
-      - 加拿大_YouTube：8度科技 25
-      - 美国+中继04+华东
-      - +US_1556
-      - +US_2287
-      - +US_1236
-      - +US_1312
-      - 美国+中继05+华东
-      - +US_2101
-      - US_5000+@WangCai_1
-      - US_3306+@WangCai_1
-      - US_5600+@WangCai_1
-      - +US_1332
-      - +US_1278
-      - +US_1691
-      - US_9102+@WangCai_1 2
-      - 美国+中继02+华东
-      - 美国+中继10+华东
-      - US_5601+@WangCai_1 2
-      - +US_1897
-      - +US_1577
-      - +US_1167
-      - 美国_YouTube：8度科技 16
-      - 英国_YouTube：8度科技 6
-      - +US_1436
-      - _CA_加拿大 4
-      - US_6679+@WangCai_1
-      - +US_1751
-      - +US_1375
-      - +US_1473
-      - +US_1369
-      - 加拿大_YouTube：8度科技 26
-      - 美国_YouTube：8度科技 17
+      - _CA_加拿大
+      - _加拿大_YouTube:VV科技_106
+      - v2cross.com 6
+      - 高级线路hk3
+      - 加拿大_YouTube：8度科技 4
+      - _加拿大_YouTube:VV科技_54
+      - v2cross.com 7
+      - v2cross.com 8
+      - _英国_YouTube:VV科技_14
+      - v2cross.com 9
+      - _英国_YouTube:VV科技_8
+      - v2cross.com 10
+      - _英国_YouTube:VV科技_55
+      - _英国_YouTube:VV科技_123
+      - _法国_YouTube:VV科技_12
       - _FR_法国
+      - _英国_YouTube:VV科技_46
+      - _法国_YouTube:VV科技_16
+      - v2cross.com 11
+      - v2cross.com 12
+      - _CA_加拿大 2
+      - +US_1278
+      - _法国_YouTube:VV科技_10
+      - _GB_英国 2
+      - _加拿大_YouTube:VV科技_21
+      - v2cross.com 13
+      - _英国_YouTube:VV科技_6
+      - _GB_英国 3
+      - _GB_英国 4
+      - _加拿大_YouTube:VV科技_102
+      - v2cross.com 14
+      - _FR_法国 2
+      - v2cross.com 15
+      - 加拿大_YouTube：8度科技 5
+      - v2cross.com 16
+      - +US_1375
       - +US_1531
-      - 法国_YouTube：8度科技 5
-      - +US_1362
-      - 加拿大_YouTube：8度科技 27
-      - US_5500+@WangCai_1 2
-      - +US_1126
+      - v2cross.com 17
+      - v2cross.com 18
+      - v2cross.com 19
+      - _加拿大_YouTube:VV科技_100
+      - _FR_法国 3
+      - _FR_法国 4
+      - 高级线路tw18
+      - _法国_YouTube:VV科技_139
+      - 试用线路
+      - v2cross.com 20
+      - _法国_YouTube:VV科技_135
+      - +US_2287
+      - v2cross.com 21
+      - v2cross.com 22
+      - _FR_法国 5
+      - v2cross.com 23
+      - v2cross.com 24
+      - _美国_YouTube:VV科技_103
+      - 英国_YouTube：8度科技 4
+      - _法国_YouTube:VV科技_52
+      - +US_1332
+      - _GB_英国 5
+      - _CA_加拿大 3
+      - _FR_法国 6
+      - _法国_YouTube:VV科技_133
+      - 日本H1R
+      - 香港P3
+      - 日本N178
+      - 亚太H4R
+      - 美国N200
+      - 美国N150
+      - 美国N149
+      - 美国A2
+      - _加拿大_YouTube:VV科技_27
+      - 日本H2R
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -1585,191 +1126,133 @@ proxy-groups:
       - 🎯 全球直连
       - ♻️ 自动选择
       - 中国_YouTube：8度科技
+      - _香港_YouTube:VV科技_38
+      - _香港_YouTube:VV科技_40
+      - _香港_YouTube:VV科技_60
+      - _香港_YouTube:VV科技_19
+      - _美国_YouTube:VV科技_44
+      - _香港_YouTube:VV科技_63
+      - _香港_YouTube:VV科技_64
+      - _香港_YouTube:VV科技_56
+      - _美国_YouTube:VV科技_62
+      - _台湾_YouTube:VV科技_99
+      - _中国跳转_YouTube:VV科技_71
       - 中国_YouTube：8度科技 2
+      - _CN_中国->🇷🇺_RU_俄罗斯联邦
       - _US_美国
+      - _韩国_YouTube:VV科技_85
+      - _US_美国 2
+      - _中国跳转_YouTube:VV科技_28
+      - _US_美国 3
+      - _中国跳转_YouTube:VV科技_13
+      - v2cross.com
+      - v2cross.com 2
+      - _香港_YouTube:VV科技_17
+      - _RU_俄罗斯联邦
       - 英国_YouTube：8度科技
+      - default_name
       - 俄罗斯联邦_YouTube：8度科技
+      - _US_美国->🇷🇺_RU_俄罗斯联邦
       - 澳大利亚_YouTube：8度科技
+      - _美国_YouTube:VV科技_124
+      - YouTube:VV科技_37
+      - v2cross.com 3
+      - v2cross.com 4
+      - _GB_英国
+      - _US_美国 4
       - 美国_YouTube：8度科技
-      - 香港+中继07+华南
-      - 香港+中继08+华南
-      - 香港+中继03+华南
-      - 香港+中继01+华南
-      - 香港+中继02+华南
-      - 香港+中继06+华南
-      - 香港+中继04+华南
-      - 台湾+中继08+华南
-      - 香港+中继09+华南
-      - 香港+中继10+华南
-      - 台湾+中继09+华南
-      - 香港+中继05+华南
-      - 台湾+中继10+华南
-      - 台湾+中继01+华南
-      - 台湾+中继02+华南
-      - 台湾+中继06+华南
-      - 台湾+中继04+华南
-      - 台湾+中继03+华南
-      - 台湾+中继07+华南
-      - 台湾+中继05+华南
-      - US_2375+@WangCai_1
-      - US_0443+@WangCai_1
-      - US_6379+@WangCai_1
-      - US_8008+@WangCai_1
-      - US_8119+@WangCai_1
-      - US_8008+@WangCai_1 2
-      - US_8091+@WangCai_1
-      - US_2376+@WangCai_1
-      - US_7002+@WangCai_1
-      - US_6379+@WangCai_1 2
-      - US_8881+@WangCai_1
-      - US_6697+@WangCai_1
-      - US_9101+@WangCai_1
-      - US_6697+@WangCai_1 2
-      - US_8000+@WangCai_1
-      - US_8882+@WangCai_1
-      - US_8009+@WangCai_1
-      - US_5003+@WangCai_1
-      - US_9102+@WangCai_1
-      - US_5500+@WangCai_1
-      - US_8118+@WangCai_1
-      - US_9101+@WangCai_1 2
-      - US_7001+@WangCai_1
-      - US_8881+@WangCai_1 2
-      - US_8888+@WangCai_1
-      - 德国+特选02+华南
-      - US_8000+@WangCai_1 2
-      - US_8118+@WangCai_1 2
-      - US_5601+@WangCai_1
-      - 美国_YouTube：8度科技 2
-      - 美国_YouTube：8度科技 3
-      - +US_1139
-      - US_5001+@WangCai_1
-      - +US_1239
-      - 美国_YouTube：8度科技 4
-      - 美国_YouTube：8度科技 5
+      - 高级线路hk1
+      - 高级线路tw20
+      - 高级线路tw2
+      - 高级线路tw17
+      - 高级线路tw16+
+      - 高级线路tw3
+      - 高级线路tw15
+      - 高级线路tw0
+      - 高级线路tw15+
+      - 高级线路tw11
+      - 高级线路tw16
+      - 高级线路tw9
+      - 高级线路us3
+      - v2cross.com 5
       - 加拿大_YouTube：8度科技
       - 加拿大_YouTube：8度科技 2
       - 加拿大_YouTube：8度科技 3
-      - 加拿大_YouTube：8度科技 4
-      - 美国_YouTube：8度科技 6
-      - 美国_YouTube：8度科技 7
-      - 美国_YouTube：8度科技 8
-      - 加拿大_YouTube：8度科技 5
-      - 加拿大_YouTube：8度科技 6
-      - +US_1080
-      - 美国_YouTube：8度科技 9
-      - +US_1488
-      - +US_1496
-      - 加拿大_YouTube：8度科技 7
-      - 加拿大_YouTube：8度科技 8
-      - 美国_YouTube：8度科技 10
-      - 加拿大_YouTube：8度科技 9
-      - 加拿大_YouTube：8度科技 10
-      - 美国+中继01+华东
-      - +US_1443
-      - +US_1418
-      - 美国+中继06+华东
-      - 美国_YouTube：8度科技 11
-      - 加拿大_YouTube：8度科技 11
-      - 加拿大_YouTube：8度科技 12
-      - 加拿大_YouTube：8度科技 13
-      - 法国_YouTube：8度科技
-      - 加拿大_YouTube：8度科技 14
-      - +US_2003
-      - 加拿大_YouTube：8度科技 15
-      - _CA_加拿大
-      - +US_1864
-      - 加拿大_YouTube：8度科技 16
-      - 美国_YouTube：8度科技 12
-      - 美国_YouTube：8度科技 13
       - 英国_YouTube：8度科技 2
-      - +US_1213
-      - +US_1431
-      - _GB_英国
-      - 加拿大_YouTube：8度科技 17
-      - _CA_加拿大 2
-      - +US_1335
-      - _CA_加拿大 3
-      - 美国+中继08+华东
-      - 美国_YouTube：8度科技 14
-      - 美国+中继07+华东
-      - +US_1785
-      - 法国_YouTube：8度科技 2
-      - +US_1421
-      - 加拿大_YouTube：8度科技 18
-      - +US_1563
-      - 法国_YouTube：8度科技 3
-      - +US_2122
-      - 加拿大_YouTube：8度科技 19
+      - 高级线路tw7
       - 英国_YouTube：8度科技 3
-      - 美国+中继09+华东
-      - +US_1641
-      - +US_1200
-      - 美国_YouTube：8度科技 15
-      - +US_1482
-      - +US_2293
-      - 加拿大_YouTube：8度科技 20
-      - +US_1741
-      - 加拿大_YouTube：8度科技 21
-      - +US_1656
-      - +US_1657
-      - 加拿大_YouTube：8度科技 22
-      - 法国_YouTube：8度科技 4
-      - 加拿大_YouTube：8度科技 23
-      - +US_1547
-      - +US_1462
-      - 英国_YouTube：8度科技 4
-      - 英国_YouTube：8度科技 5
-      - +US_2119
-      - +US_1409
-      - +US_2137
-      - 美国+中继03+华东
-      - 中国_YouTube：8度科技 3
-      - +US_1077
-      - +US_1249
-      - +US_1636
-      - 加拿大_YouTube：8度科技 24
-      - +US_1330
-      - +US_1764
-      - 加拿大_YouTube：8度科技 25
-      - 美国+中继04+华东
-      - +US_1556
-      - +US_2287
-      - +US_1236
-      - +US_1312
-      - 美国+中继05+华东
-      - +US_2101
-      - US_5000+@WangCai_1
-      - US_3306+@WangCai_1
-      - US_5600+@WangCai_1
-      - +US_1332
-      - +US_1278
-      - +US_1691
-      - US_9102+@WangCai_1 2
-      - 美国+中继02+华东
-      - 美国+中继10+华东
-      - US_5601+@WangCai_1 2
-      - +US_1897
-      - +US_1577
-      - +US_1167
-      - 美国_YouTube：8度科技 16
-      - 英国_YouTube：8度科技 6
-      - +US_1436
-      - _CA_加拿大 4
-      - US_6679+@WangCai_1
-      - +US_1751
-      - +US_1375
-      - +US_1473
-      - +US_1369
-      - 加拿大_YouTube：8度科技 26
-      - 美国_YouTube：8度科技 17
+      - _CA_加拿大
+      - _加拿大_YouTube:VV科技_106
+      - v2cross.com 6
+      - 高级线路hk3
+      - 加拿大_YouTube：8度科技 4
+      - _加拿大_YouTube:VV科技_54
+      - v2cross.com 7
+      - v2cross.com 8
+      - _英国_YouTube:VV科技_14
+      - v2cross.com 9
+      - _英国_YouTube:VV科技_8
+      - v2cross.com 10
+      - _英国_YouTube:VV科技_55
+      - _英国_YouTube:VV科技_123
+      - _法国_YouTube:VV科技_12
       - _FR_法国
+      - _英国_YouTube:VV科技_46
+      - _法国_YouTube:VV科技_16
+      - v2cross.com 11
+      - v2cross.com 12
+      - _CA_加拿大 2
+      - +US_1278
+      - _法国_YouTube:VV科技_10
+      - _GB_英国 2
+      - _加拿大_YouTube:VV科技_21
+      - v2cross.com 13
+      - _英国_YouTube:VV科技_6
+      - _GB_英国 3
+      - _GB_英国 4
+      - _加拿大_YouTube:VV科技_102
+      - v2cross.com 14
+      - _FR_法国 2
+      - v2cross.com 15
+      - 加拿大_YouTube：8度科技 5
+      - v2cross.com 16
+      - +US_1375
       - +US_1531
-      - 法国_YouTube：8度科技 5
-      - +US_1362
-      - 加拿大_YouTube：8度科技 27
-      - US_5500+@WangCai_1 2
-      - +US_1126
+      - v2cross.com 17
+      - v2cross.com 18
+      - v2cross.com 19
+      - _加拿大_YouTube:VV科技_100
+      - _FR_法国 3
+      - _FR_法国 4
+      - 高级线路tw18
+      - _法国_YouTube:VV科技_139
+      - 试用线路
+      - v2cross.com 20
+      - _法国_YouTube:VV科技_135
+      - +US_2287
+      - v2cross.com 21
+      - v2cross.com 22
+      - _FR_法国 5
+      - v2cross.com 23
+      - v2cross.com 24
+      - _美国_YouTube:VV科技_103
+      - 英国_YouTube：8度科技 4
+      - _法国_YouTube:VV科技_52
+      - +US_1332
+      - _GB_英国 5
+      - _CA_加拿大 3
+      - _FR_法国 6
+      - _法国_YouTube:VV科技_133
+      - 日本H1R
+      - 香港P3
+      - 日本N178
+      - 亚太H4R
+      - 美国N200
+      - 美国N150
+      - 美国N149
+      - 美国A2
+      - _加拿大_YouTube:VV科技_27
+      - 日本H2R
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
