@@ -5,155 +5,423 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
+  - {name: CN_中国_油管 TG 8度科技, server: 101.230.149.27, port: 1112, type: vmess, uuid: 6e66fb0b-2d3a-46d9-b778-d4cc15b49a6b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: HK_香港_油管 TG 8度科技, server: 113.wowogg.cyou, port: 52213, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: HK_香港_油管 TG 8度科技 2, server: 83.wgong.xyz, port: 52283, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: TW_台湾_油管 TG 8度科技, server: tw.v2ssvps.com, port: 60763, type: vmess, uuid: 1b693eb3-3241-362a-9001-5b503789cfbe, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: microsoft.com}, udp: true}
-  - {name: HK_香港_油管 TG 8度科技 3, server: 99.wgong.xyz, port: 52299, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: HK_香港_油管 TG 8度科技 4, server: 85.wgong.xyz, port: 52285, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: HK_香港_油管 TG 8度科技 5, server: 113.wowogg.cyou, port: 52213, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: HK_香港_油管 TG 8度科技 6, server: 85.wgong.xyz, port: 52285, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: HK_香港_油管 TG 8度科技 7, server: 120.wgong.xyz, port: 52220, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: HK_香港_油管 TG 8度科技 8, server: 108.wowogg.cyou, port: 11224, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: HK_香港_油管 TG 8度科技 9, server: 81.wgong.xyz, port: 52281, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: HK_香港_油管 TG 8度科技 10, server: v111.wgong.xyz, port: 52211, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CN_中国_油管 TG 8度科技, server: tunnel-tw-a-01.xncloud.xyz, port: 505, type: vmess, uuid: 80bc6df4-2905-35f9-a671-35bc803d93cd, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /niaoyun, ws-headers: {Host: tunnel-tw-a-01.xncloud.xyz}, udp: true}
-  - {name: CN_中国_油管 TG 8度科技 2, server: tunnel-tw-a-01.xncloud.xyz, port: 504, type: vmess, uuid: 80bc6df4-2905-35f9-a671-35bc803d93cd, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /niaoyun, ws-headers: {Host: mf-hinet-tw-04.xncloud.xyz}, udp: true}
-  - {name: CN_中国_油管 TG 8度科技 3, server: 120.233.10.62, port: 52203, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CN_中国_油管 TG 8度科技 4, server: tunnel-tw-a-01.xncloud.xyz, port: 504, type: vmess, uuid: 80bc6df4-2905-35f9-a671-35bc803d93cd, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /niaoyun, ws-headers: {Host: mf-hinet-tw-04.xncloud.xyz}, udp: true}
-  - {name: KR_韩国_油管 TG 8度科技, server: 1031kr.fans8.xyz, port: 80, type: vmess, uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: 1031kr.fans8.xyz}, udp: true}
-  - {name: HK_香港_油管 TG 8度科技 11, server: 102.wowogg.cyou, port: 11221, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: JP_日本_油管 TG 8度科技, server: 45.142.166.15, port: 48919, type: trojan, password: 52911320-db53-40ff-917a-e5de797c28e7, skip-cert-verify: true, udp: true}
-  - {name: ZA_南非_油管 TG 8度科技, server: 2.ezydfdd.com, port: 443, type: vmess, uuid: 8ce46aae-dae5-4d50-ebcd-f9514e4c048a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /qwe, ws-headers: {Host: 2.ezydfdd.com}, udp: true}
-  - {name: CN_中国_油管 TG 8度科技 5, server: 82.wgong.xyz, port: 52282, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: HK_香港_油管 TG 8度科技 2, server: 113.wowogg.cyou, port: 52213, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: HK_香港_油管 TG 8度科技 3, server: 81.wgong.xyz, port: 52281, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: HK_香港_油管 TG 8度科技 4, server: 120.wgong.xyz, port: 52220, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN_中国_油管 TG 8度科技 2, server: 101.230.149.27, port: 1114, type: vmess, uuid: 6e66fb0b-2d3a-46d9-b778-d4cc15b49a6b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN_中国_油管 TG 8度科技 3, server: 101.230.149.27, port: 1115, type: vmess, uuid: 6e66fb0b-2d3a-46d9-b778-d4cc15b49a6b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN_中国_油管 TG 8度科技 4, server: 101.230.149.27, port: 1113, type: vmess, uuid: 6e66fb0b-2d3a-46d9-b778-d4cc15b49a6b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN_中国_油管 TG 8度科技 5, server: 101.230.149.27, port: 1111, type: vmess, uuid: 6e66fb0b-2d3a-46d9-b778-d4cc15b49a6b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN_中国_油管 TG 8度科技 6, server: tunnel-tw-a-01.xncloud.xyz, port: 504, type: vmess, uuid: 80bc6df4-2905-35f9-a671-35bc803d93cd, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /niaoyun, ws-headers: {Host: mf-hinet-tw-04.xncloud.xyz}, udp: true}
+  - {name: CN_中国_油管 TG 8度科技 7, server: tunnel-tw-a-01.xncloud.xyz, port: 504, type: vmess, uuid: 80bc6df4-2905-35f9-a671-35bc803d93cd, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /niaoyun, ws-headers: {Host: mf-hinet-tw-04.xncloud.xyz}, udp: true}
+  - {name: CN_中国_油管 TG 8度科技 8, server: tunnel-tw-a-01.xncloud.xyz, port: 505, type: vmess, uuid: 80bc6df4-2905-35f9-a671-35bc803d93cd, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /niaoyun, ws-headers: {Host: tunnel-tw-a-01.xncloud.xyz}, udp: true}
   - {name: US_美国_油管 TG 8度科技, server: anzhuo-hezi1.herokuapp.com, port: 443, type: vmess, uuid: 05b8441f-3c76-4af1-b5b9-dd60d27e5ef8, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /05b8441f-3c76-4af1-b5b9-dd60d27e5ef8-vmess, ws-headers: {Host: anzhuo-hezi1.herokuapp.com}, udp: true}
-  - {name: CN_中国_油管 TG 8度科技 6, server: 118.wowogg.cyou, port: 52218, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: TW_台湾_油管 TG 8度科技 2, server: 1207tw.fans8.xyz, port: 80, type: vmess, uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: 1207tw.fans8.xyz}, udp: true}
-  - {name: TW_台湾_油管 TG 8度科技 3, server: 1207tw.fans8.xyz, port: 80, type: vmess, uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: a.189.cn}, udp: true}
-  - {name: TW_台湾_油管 TG 8度科技 4, server: 128tw02.fans8.xyz, port: 80, type: vmess, uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: 128tw02.fans8.xyz}, udp: true}
-  - {name: CN_中国_油管 TG 8度科技 7, server: gzcm.v2hub.top, port: 19521, type: trojan, password: da8f4c57-d022-3ccc-ae2a-a70256d68c32, sni: gzcm.v2hub.top, skip-cert-verify: true, udp: true}
-  - {name: HK_香港_油管 TG 8度科技 12, server: 99.wgong.xyz, port: 52299, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CN_中国_油管 TG 8度科技 8, server: hz.pbaplink.xyz, port: 47769, type: trojan, password: ad983854-167d-478f-88eb-5d494d3b2c24, sni: hz.pbaplink.xyz, skip-cert-verify: true, udp: true}
+  - {name: 油管 TG 8度科技, server: test.0dc.cn, port: 443, type: vmess, uuid: ebe5703b-c18e-4664-c3a7-9fcf52453898, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: test.0dc.cn}, udp: true}
+  - {name: TW_台湾_油管 TG 8度科技, server: 1207tw.fans8.xyz, port: 80, type: vmess, uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: a.189.cn}, udp: true}
   - {name: US_美国_油管 TG 8度科技 2, server: anzhuo-hezi1.herokuapp.com, port: 443, type: vmess, uuid: 05b8441f-3c76-4af1-b5b9-dd60d27e5ef8, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /05b8441f-3c76-4af1-b5b9-dd60d27e5ef8-vmess, ws-headers: {Host: anzhuo-hezi1.herokuapp.com}, udp: true}
-  - {name: HK_香港_油管 TG 8度科技 13, server: v111.wgong.xyz, port: 52211, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: US_美国_油管 TG 8度科技 3, server: 45.58.150.130, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: dax6ujai.com}, udp: true}
+  - {name: US_美国_油管 TG 8度科技 3, server: 172.67.68.58, port: 443, type: vmess, uuid: f2f578e4-692d-40b5-af99-9f1dd712eb32, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /shuier, ws-headers: {Host: xc1.v2rie.pp.ua}, udp: true}
   - {name: AU_澳大利亚_油管 TG 8度科技, server: 217.138.204.202, port: 443, type: vmess, uuid: fa1eff46-f454-42d9-b881-90a102d5521d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ray, ws-headers: {Host: govacaxixo.watchdoctor.xyz}, udp: true}
-  - {name: HK_香港_油管 TG 8度科技 14, server: 107.wowogg.cyou, port: 52207, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: TW_台湾_油管 TG 8度科技 2, server: 128tw02.fans8.xyz, port: 80, type: vmess, uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: 128tw02.fans8.xyz}, udp: true}
+  - {name: HK_香港_油管 TG 8度科技 5, server: 85.wgong.xyz, port: 52285, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN_中国_油管 TG 8度科技 9, server: ls.yunsu.ke666.net, port: 34025, type: vmess, uuid: 7a875411-5911-4752-b129-e89722f0e740, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /yunsunode, ws-headers: {Host: ls.yunsu.ke666.net}, udp: true}
+  - {name: CN_中国_油管 TG 8度科技 10, server: 118.wowogg.cyou, port: 52218, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: HK_香港_油管 TG 8度科技 6, server: v111.wgong.xyz, port: 52211, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: HK_香港_油管 TG 8度科技 7, server: 85.wgong.xyz, port: 52285, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: HK_香港_油管 TG 8度科技 8, server: 104.208.67.157, port: 46791, type: ss, cipher: chacha20-ietf-poly1305, password: 3f448e67-ad9e-4cc2-ab6b-51f69445fdd9, udp: true}
+  - {name: HK_香港_油管 TG 8度科技 9, server: 20.205.8.44, port: 23456, type: ss, cipher: chacha20-ietf-poly1305, password: 3f448e67-ad9e-4cc2-ab6b-51f69445fdd9, udp: true}
+  - {name: HK_香港_油管 TG 8度科技 10, server: 20.187.116.75, port: 52552, type: ss, cipher: chacha20-ietf-poly1305, password: 3f448e67-ad9e-4cc2-ab6b-51f69445fdd9, udp: true}
+  - {name: HK_香港_油管 TG 8度科技 11, server: 104.208.107.8, port: 54732, type: ss, cipher: chacha20-ietf-poly1305, password: 3f448e67-ad9e-4cc2-ab6b-51f69445fdd9, udp: true}
+  - {name: HK_香港_油管 TG 8度科技 12, server: 20.205.116.239, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: 3f448e67-ad9e-4cc2-ab6b-51f69445fdd9, udp: true}
+  - {name: CN_中国_油管 TG 8度科技 11, server: gy.xqcloud.net, port: 32009, type: ss, cipher: chacha20-ietf-poly1305, password: 082e09b9-35a1-45af-914c-76bd6562228d, udp: true}
+  - {name: CN_中国_油管 TG 8度科技 12, server: 120.232.173.119, port: 13018, type: ss, cipher: chacha20-ietf-poly1305, password: 3f448e67-ad9e-4cc2-ab6b-51f69445fdd9, udp: true}
+  - {name: CN_中国_油管 TG 8度科技 13, server: 120.232.173.119, port: 13006, type: ss, cipher: chacha20-ietf-poly1305, password: 3f448e67-ad9e-4cc2-ab6b-51f69445fdd9, udp: true}
+  - {name: SG_新加坡_油管 TG 8度科技, server: 18.140.237.108, port: 32516, type: ss, cipher: chacha20-ietf-poly1305, password: 3f448e67-ad9e-4cc2-ab6b-51f69445fdd9, udp: true}
+  - {name: SG_新加坡_油管 TG 8度科技 2, server: 54.169.26.85, port: 43523, type: ss, cipher: chacha20-ietf-poly1305, password: 3f448e67-ad9e-4cc2-ab6b-51f69445fdd9, udp: true}
+  - {name: SG_新加坡_油管 TG 8度科技 3, server: 52.221.199.219, port: 24158, type: ss, cipher: chacha20-ietf-poly1305, password: 3f448e67-ad9e-4cc2-ab6b-51f69445fdd9, udp: true}
+  - {name: CN_中国_油管 TG 8度科技 14, server: 120.232.173.119, port: 13010, type: ss, cipher: chacha20-ietf-poly1305, password: 3f448e67-ad9e-4cc2-ab6b-51f69445fdd9, udp: true}
+  - {name: CN_中国_油管 TG 8度科技 15, server: 120.232.173.119, port: 13005, type: ss, cipher: chacha20-ietf-poly1305, password: 3f448e67-ad9e-4cc2-ab6b-51f69445fdd9, udp: true}
+  - {name: CN_中国_油管 TG 8度科技 16, server: 120.232.173.119, port: 13002, type: ss, cipher: chacha20-ietf-poly1305, password: 3f448e67-ad9e-4cc2-ab6b-51f69445fdd9, udp: true}
+  - {name: CN_中国_油管 TG 8度科技 17, server: gy.xqcloud.net, port: 31011, type: ss, cipher: chacha20-ietf-poly1305, password: 082e09b9-35a1-45af-914c-76bd6562228d, udp: true}
+  - {name: CN_中国_油管 TG 8度科技 18, server: 120.232.173.119, port: 13014, type: ss, cipher: chacha20-ietf-poly1305, password: 3f448e67-ad9e-4cc2-ab6b-51f69445fdd9, udp: true}
+  - {name: KR_韩国_油管 TG 8度科技, server: 13.124.251.191, port: 43453, type: ss, cipher: chacha20-ietf-poly1305, password: 3f448e67-ad9e-4cc2-ab6b-51f69445fdd9, udp: true}
+  - {name: CN_中国_油管 TG 8度科技 19, server: 120.232.173.119, port: 13017, type: ss, cipher: chacha20-ietf-poly1305, password: 3f448e67-ad9e-4cc2-ab6b-51f69445fdd9, udp: true}
+  - {name: TW_台湾_油管 TG 8度科技 3, server: 111.249.179.39, port: 10011, type: ss, cipher: chacha20-ietf-poly1305, password: 3f448e67-ad9e-4cc2-ab6b-51f69445fdd9, udp: true}
+  - {name: CN_中国_油管 TG 8度科技 20, server: gy.xqcloud.net, port: 31008, type: ss, cipher: chacha20-ietf-poly1305, password: 082e09b9-35a1-45af-914c-76bd6562228d, udp: true}
+  - {name: US_美国_油管 TG 8度科技 4, server: 38.143.66.186, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: US_美国_油管 TG 8度科技 5, server: 38.143.66.186, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: US_美国_油管 TG 8度科技 6, server: 38.143.66.186, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: US_美国_油管 TG 8度科技 7, server: 38.143.66.186, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: US_美国_油管 TG 8度科技 8, server: 38.143.66.186, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: CN_中国_油管 TG 8度科技 21, server: gy.xqcloud.net, port: 32004, type: ss, cipher: chacha20-ietf-poly1305, password: 082e09b9-35a1-45af-914c-76bd6562228d, udp: true}
+  - {name: US_美国_油管 TG 8度科技 9, server: 38.143.66.186, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: CN_中国_油管 TG 8度科技 22, server: gy.xqcloud.net, port: 32003, type: ss, cipher: chacha20-ietf-poly1305, password: 082e09b9-35a1-45af-914c-76bd6562228d, udp: true}
+  - {name: US_美国_油管 TG 8度科技 10, server: 38.143.66.186, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: US_美国_油管 TG 8度科技 11, server: 38.143.66.186, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: US_美国_油管 TG 8度科技 12, server: 38.143.66.186, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: US_美国_油管 TG 8度科技 13, server: 38.143.66.186, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: US_美国_油管 TG 8度科技 14, server: 23.94.212.120, port: 32165, type: ss, cipher: chacha20-ietf-poly1305, password: 3f448e67-ad9e-4cc2-ab6b-51f69445fdd9, udp: true}
+  - {name: CN_中国_油管 TG 8度科技 23, server: 120.232.173.119, port: 13008, type: ss, cipher: chacha20-ietf-poly1305, password: 3f448e67-ad9e-4cc2-ab6b-51f69445fdd9, udp: true}
+  - {name: US_美国_油管 TG 8度科技 15, server: 38.143.66.186, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: US_美国_油管 TG 8度科技 16, server: 38.143.66.186, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: US_美国_油管 TG 8度科技 17, server: 38.143.66.186, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: CN_中国_油管 TG 8度科技 24, server: gy.xqcloud.net, port: 32008, type: ss, cipher: chacha20-ietf-poly1305, password: 082e09b9-35a1-45af-914c-76bd6562228d, udp: true}
+  - {name: US_美国_油管 TG 8度科技 18, server: 38.143.66.186, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: CN_中国_油管 TG 8度科技 25, server: 120.232.173.119, port: 13000, type: ss, cipher: chacha20-ietf-poly1305, password: 3f448e67-ad9e-4cc2-ab6b-51f69445fdd9, udp: true}
+  - {name: US_美国_油管 TG 8度科技 19, server: 38.143.66.186, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
+  - {name: JP_日本_油管 TG 8度科技, server: 172.104.64.253, port: 32412, type: ss, cipher: chacha20-ietf-poly1305, password: 3f448e67-ad9e-4cc2-ab6b-51f69445fdd9, udp: true}
+  - {name: CN_中国_油管 TG 8度科技 26, server: 101.67.8.172, port: 38845, type: ss, cipher: chacha20-ietf-poly1305, password: 3f448e67-ad9e-4cc2-ab6b-51f69445fdd9, udp: true}
+  - {name: US_美国_油管 TG 8度科技 20, server: 38.143.66.186, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: CN_中国_油管 TG 8度科技 27, server: gy.xqcloud.net, port: 31007, type: ss, cipher: chacha20-ietf-poly1305, password: 082e09b9-35a1-45af-914c-76bd6562228d, udp: true}
+  - {name: US_美国_油管 TG 8度科技 21, server: 38.143.66.186, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: CN_中国_油管 TG 8度科技 28, server: 120.232.173.119, port: 13001, type: ss, cipher: chacha20-ietf-poly1305, password: 3f448e67-ad9e-4cc2-ab6b-51f69445fdd9, udp: true}
+  - {name: US_美国_油管 TG 8度科技 22, server: 38.143.66.186, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: US_美国_油管 TG 8度科技 23, server: 38.143.66.186, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: CN_中国_油管 TG 8度科技 29, server: gy.xqcloud.net, port: 31012, type: ss, cipher: chacha20-ietf-poly1305, password: 082e09b9-35a1-45af-914c-76bd6562228d, udp: true}
+  - {name: US_美国_油管 TG 8度科技 24, server: 38.143.66.186, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: GB_英国_油管 TG 8度科技, server: 172.99.190.188, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: US_美国_油管 TG 8度科技 25, server: 38.143.66.186, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: GB_英国_油管 TG 8度科技 2, server: 172.99.190.188, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: GB_英国_油管 TG 8度科技 3, server: 172.99.190.188, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: CN_中国_油管 TG 8度科技 30, server: 120.232.173.119, port: 13003, type: ss, cipher: chacha20-ietf-poly1305, password: 3f448e67-ad9e-4cc2-ab6b-51f69445fdd9, udp: true}
+  - {name: GB_英国_油管 TG 8度科技 4, server: 172.99.190.188, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: GB_英国_油管 TG 8度科技 5, server: 172.99.190.205, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: GB_英国_油管 TG 8度科技 6, server: 172.99.190.205, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: GB_英国_油管 TG 8度科技 7, server: 172.99.190.188, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: GB_英国_油管 TG 8度科技 8, server: 172.99.190.188, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: GB_英国_油管 TG 8度科技 9, server: 172.99.190.188, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: GB_英国_油管 TG 8度科技 10, server: 172.99.190.188, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: GB_英国_油管 TG 8度科技 11, server: 172.99.190.188, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: GB_英国_油管 TG 8度科技 12, server: 172.99.190.188, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: GB_英国_油管 TG 8度科技 13, server: 172.99.190.188, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: GB_英国_油管 TG 8度科技 14, server: 172.99.190.205, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: GB_英国_油管 TG 8度科技 15, server: 172.99.190.188, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: GB_英国_油管 TG 8度科技 16, server: 172.99.190.188, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: CN_中国_油管 TG 8度科技 31, server: china-zj-hz-1.forwardserver.xyz, port: 39583, type: trojan, password: f34894e3-a601-426b-a254-0f65f0009b37, sni: china-zj-hz-1.forwardserver.xyz, skip-cert-verify: true, udp: true}
+  - {name: CN_中国_油管 TG 8度科技 32, server: china-zj-hz-1.forwardserver.xyz, port: 43841, type: trojan, password: f34894e3-a601-426b-a254-0f65f0009b37, sni: china-zj-hz-1.forwardserver.xyz, skip-cert-verify: true, udp: true}
+  - {name: US_美国_油管 TG 8度科技 26, server: 173.255.225.7, port: 11416, type: trojan, password: f34894e3-a601-426b-a254-0f65f0009b37, skip-cert-verify: true, udp: true}
+  - {name: CN_中国_油管 TG 8度科技 33, server: 183.240.181.20, port: 1103, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 149:y711wfz6uln, obfs-param: t.me/vpnhat, udp: true}
+  - {name: CN_中国_油管 TG 8度科技 34, server: 183.240.181.20, port: 1111, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 149:y711wfz6uln, obfs-param: t.me/vpnhat, udp: true}
+  - {name: CN_中国_油管 TG 8度科技 35, server: 183.240.181.20, port: 2101, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 149:y711wfz6uln, obfs-param: t.me/vpnhat, udp: true}
+  - {name: CN_中国_油管 TG 8度科技 36, server: 183.240.181.20, port: 1109, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 149:y711wfz6uln, obfs-param: t.me/vpnhat, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
+      - CN_中国_油管 TG 8度科技
       - HK_香港_油管 TG 8度科技
       - HK_香港_油管 TG 8度科技 2
-      - TW_台湾_油管 TG 8度科技
       - HK_香港_油管 TG 8度科技 3
       - HK_香港_油管 TG 8度科技 4
+      - CN_中国_油管 TG 8度科技 2
+      - CN_中国_油管 TG 8度科技 3
+      - CN_中国_油管 TG 8度科技 4
+      - CN_中国_油管 TG 8度科技 5
+      - CN_中国_油管 TG 8度科技 6
+      - CN_中国_油管 TG 8度科技 7
+      - CN_中国_油管 TG 8度科技 8
+      - US_美国_油管 TG 8度科技
+      - 油管 TG 8度科技
+      - TW_台湾_油管 TG 8度科技
+      - US_美国_油管 TG 8度科技 2
+      - US_美国_油管 TG 8度科技 3
+      - AU_澳大利亚_油管 TG 8度科技
+      - TW_台湾_油管 TG 8度科技 2
       - HK_香港_油管 TG 8度科技 5
+      - CN_中国_油管 TG 8度科技 9
+      - CN_中国_油管 TG 8度科技 10
       - HK_香港_油管 TG 8度科技 6
       - HK_香港_油管 TG 8度科技 7
       - HK_香港_油管 TG 8度科技 8
       - HK_香港_油管 TG 8度科技 9
       - HK_香港_油管 TG 8度科技 10
-      - CN_中国_油管 TG 8度科技
-      - CN_中国_油管 TG 8度科技 2
-      - CN_中国_油管 TG 8度科技 3
-      - CN_中国_油管 TG 8度科技 4
-      - KR_韩国_油管 TG 8度科技
       - HK_香港_油管 TG 8度科技 11
-      - JP_日本_油管 TG 8度科技
-      - ZA_南非_油管 TG 8度科技
-      - CN_中国_油管 TG 8度科技 5
-      - US_美国_油管 TG 8度科技
-      - CN_中国_油管 TG 8度科技 6
-      - TW_台湾_油管 TG 8度科技 2
-      - TW_台湾_油管 TG 8度科技 3
-      - TW_台湾_油管 TG 8度科技 4
-      - CN_中国_油管 TG 8度科技 7
       - HK_香港_油管 TG 8度科技 12
-      - CN_中国_油管 TG 8度科技 8
-      - US_美国_油管 TG 8度科技 2
-      - HK_香港_油管 TG 8度科技 13
-      - US_美国_油管 TG 8度科技 3
-      - AU_澳大利亚_油管 TG 8度科技
-      - HK_香港_油管 TG 8度科技 14
+      - CN_中国_油管 TG 8度科技 11
+      - CN_中国_油管 TG 8度科技 12
+      - CN_中国_油管 TG 8度科技 13
+      - SG_新加坡_油管 TG 8度科技
+      - SG_新加坡_油管 TG 8度科技 2
+      - SG_新加坡_油管 TG 8度科技 3
+      - CN_中国_油管 TG 8度科技 14
+      - CN_中国_油管 TG 8度科技 15
+      - CN_中国_油管 TG 8度科技 16
+      - CN_中国_油管 TG 8度科技 17
+      - CN_中国_油管 TG 8度科技 18
+      - KR_韩国_油管 TG 8度科技
+      - CN_中国_油管 TG 8度科技 19
+      - TW_台湾_油管 TG 8度科技 3
+      - CN_中国_油管 TG 8度科技 20
+      - US_美国_油管 TG 8度科技 4
+      - US_美国_油管 TG 8度科技 5
+      - US_美国_油管 TG 8度科技 6
+      - US_美国_油管 TG 8度科技 7
+      - US_美国_油管 TG 8度科技 8
+      - CN_中国_油管 TG 8度科技 21
+      - US_美国_油管 TG 8度科技 9
+      - CN_中国_油管 TG 8度科技 22
+      - US_美国_油管 TG 8度科技 10
+      - US_美国_油管 TG 8度科技 11
+      - US_美国_油管 TG 8度科技 12
+      - US_美国_油管 TG 8度科技 13
+      - US_美国_油管 TG 8度科技 14
+      - CN_中国_油管 TG 8度科技 23
+      - US_美国_油管 TG 8度科技 15
+      - US_美国_油管 TG 8度科技 16
+      - US_美国_油管 TG 8度科技 17
+      - CN_中国_油管 TG 8度科技 24
+      - US_美国_油管 TG 8度科技 18
+      - CN_中国_油管 TG 8度科技 25
+      - US_美国_油管 TG 8度科技 19
+      - JP_日本_油管 TG 8度科技
+      - CN_中国_油管 TG 8度科技 26
+      - US_美国_油管 TG 8度科技 20
+      - CN_中国_油管 TG 8度科技 27
+      - US_美国_油管 TG 8度科技 21
+      - CN_中国_油管 TG 8度科技 28
+      - US_美国_油管 TG 8度科技 22
+      - US_美国_油管 TG 8度科技 23
+      - CN_中国_油管 TG 8度科技 29
+      - US_美国_油管 TG 8度科技 24
+      - GB_英国_油管 TG 8度科技
+      - US_美国_油管 TG 8度科技 25
+      - GB_英国_油管 TG 8度科技 2
+      - GB_英国_油管 TG 8度科技 3
+      - CN_中国_油管 TG 8度科技 30
+      - GB_英国_油管 TG 8度科技 4
+      - GB_英国_油管 TG 8度科技 5
+      - GB_英国_油管 TG 8度科技 6
+      - GB_英国_油管 TG 8度科技 7
+      - GB_英国_油管 TG 8度科技 8
+      - GB_英国_油管 TG 8度科技 9
+      - GB_英国_油管 TG 8度科技 10
+      - GB_英国_油管 TG 8度科技 11
+      - GB_英国_油管 TG 8度科技 12
+      - GB_英国_油管 TG 8度科技 13
+      - GB_英国_油管 TG 8度科技 14
+      - GB_英国_油管 TG 8度科技 15
+      - GB_英国_油管 TG 8度科技 16
+      - CN_中国_油管 TG 8度科技 31
+      - CN_中国_油管 TG 8度科技 32
+      - US_美国_油管 TG 8度科技 26
+      - CN_中国_油管 TG 8度科技 33
+      - CN_中国_油管 TG 8度科技 34
+      - CN_中国_油管 TG 8度科技 35
+      - CN_中国_油管 TG 8度科技 36
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
+      - CN_中国_油管 TG 8度科技
       - HK_香港_油管 TG 8度科技
       - HK_香港_油管 TG 8度科技 2
-      - TW_台湾_油管 TG 8度科技
       - HK_香港_油管 TG 8度科技 3
       - HK_香港_油管 TG 8度科技 4
+      - CN_中国_油管 TG 8度科技 2
+      - CN_中国_油管 TG 8度科技 3
+      - CN_中国_油管 TG 8度科技 4
+      - CN_中国_油管 TG 8度科技 5
+      - CN_中国_油管 TG 8度科技 6
+      - CN_中国_油管 TG 8度科技 7
+      - CN_中国_油管 TG 8度科技 8
+      - US_美国_油管 TG 8度科技
+      - 油管 TG 8度科技
+      - TW_台湾_油管 TG 8度科技
+      - US_美国_油管 TG 8度科技 2
+      - US_美国_油管 TG 8度科技 3
+      - AU_澳大利亚_油管 TG 8度科技
+      - TW_台湾_油管 TG 8度科技 2
       - HK_香港_油管 TG 8度科技 5
+      - CN_中国_油管 TG 8度科技 9
+      - CN_中国_油管 TG 8度科技 10
       - HK_香港_油管 TG 8度科技 6
       - HK_香港_油管 TG 8度科技 7
       - HK_香港_油管 TG 8度科技 8
       - HK_香港_油管 TG 8度科技 9
       - HK_香港_油管 TG 8度科技 10
-      - CN_中国_油管 TG 8度科技
-      - CN_中国_油管 TG 8度科技 2
-      - CN_中国_油管 TG 8度科技 3
-      - CN_中国_油管 TG 8度科技 4
-      - KR_韩国_油管 TG 8度科技
       - HK_香港_油管 TG 8度科技 11
-      - JP_日本_油管 TG 8度科技
-      - ZA_南非_油管 TG 8度科技
-      - CN_中国_油管 TG 8度科技 5
-      - US_美国_油管 TG 8度科技
-      - CN_中国_油管 TG 8度科技 6
-      - TW_台湾_油管 TG 8度科技 2
-      - TW_台湾_油管 TG 8度科技 3
-      - TW_台湾_油管 TG 8度科技 4
-      - CN_中国_油管 TG 8度科技 7
       - HK_香港_油管 TG 8度科技 12
-      - CN_中国_油管 TG 8度科技 8
-      - US_美国_油管 TG 8度科技 2
-      - HK_香港_油管 TG 8度科技 13
-      - US_美国_油管 TG 8度科技 3
-      - AU_澳大利亚_油管 TG 8度科技
-      - HK_香港_油管 TG 8度科技 14
+      - CN_中国_油管 TG 8度科技 11
+      - CN_中国_油管 TG 8度科技 12
+      - CN_中国_油管 TG 8度科技 13
+      - SG_新加坡_油管 TG 8度科技
+      - SG_新加坡_油管 TG 8度科技 2
+      - SG_新加坡_油管 TG 8度科技 3
+      - CN_中国_油管 TG 8度科技 14
+      - CN_中国_油管 TG 8度科技 15
+      - CN_中国_油管 TG 8度科技 16
+      - CN_中国_油管 TG 8度科技 17
+      - CN_中国_油管 TG 8度科技 18
+      - KR_韩国_油管 TG 8度科技
+      - CN_中国_油管 TG 8度科技 19
+      - TW_台湾_油管 TG 8度科技 3
+      - CN_中国_油管 TG 8度科技 20
+      - US_美国_油管 TG 8度科技 4
+      - US_美国_油管 TG 8度科技 5
+      - US_美国_油管 TG 8度科技 6
+      - US_美国_油管 TG 8度科技 7
+      - US_美国_油管 TG 8度科技 8
+      - CN_中国_油管 TG 8度科技 21
+      - US_美国_油管 TG 8度科技 9
+      - CN_中国_油管 TG 8度科技 22
+      - US_美国_油管 TG 8度科技 10
+      - US_美国_油管 TG 8度科技 11
+      - US_美国_油管 TG 8度科技 12
+      - US_美国_油管 TG 8度科技 13
+      - US_美国_油管 TG 8度科技 14
+      - CN_中国_油管 TG 8度科技 23
+      - US_美国_油管 TG 8度科技 15
+      - US_美国_油管 TG 8度科技 16
+      - US_美国_油管 TG 8度科技 17
+      - CN_中国_油管 TG 8度科技 24
+      - US_美国_油管 TG 8度科技 18
+      - CN_中国_油管 TG 8度科技 25
+      - US_美国_油管 TG 8度科技 19
+      - JP_日本_油管 TG 8度科技
+      - CN_中国_油管 TG 8度科技 26
+      - US_美国_油管 TG 8度科技 20
+      - CN_中国_油管 TG 8度科技 27
+      - US_美国_油管 TG 8度科技 21
+      - CN_中国_油管 TG 8度科技 28
+      - US_美国_油管 TG 8度科技 22
+      - US_美国_油管 TG 8度科技 23
+      - CN_中国_油管 TG 8度科技 29
+      - US_美国_油管 TG 8度科技 24
+      - GB_英国_油管 TG 8度科技
+      - US_美国_油管 TG 8度科技 25
+      - GB_英国_油管 TG 8度科技 2
+      - GB_英国_油管 TG 8度科技 3
+      - CN_中国_油管 TG 8度科技 30
+      - GB_英国_油管 TG 8度科技 4
+      - GB_英国_油管 TG 8度科技 5
+      - GB_英国_油管 TG 8度科技 6
+      - GB_英国_油管 TG 8度科技 7
+      - GB_英国_油管 TG 8度科技 8
+      - GB_英国_油管 TG 8度科技 9
+      - GB_英国_油管 TG 8度科技 10
+      - GB_英国_油管 TG 8度科技 11
+      - GB_英国_油管 TG 8度科技 12
+      - GB_英国_油管 TG 8度科技 13
+      - GB_英国_油管 TG 8度科技 14
+      - GB_英国_油管 TG 8度科技 15
+      - GB_英国_油管 TG 8度科技 16
+      - CN_中国_油管 TG 8度科技 31
+      - CN_中国_油管 TG 8度科技 32
+      - US_美国_油管 TG 8度科技 26
+      - CN_中国_油管 TG 8度科技 33
+      - CN_中国_油管 TG 8度科技 34
+      - CN_中国_油管 TG 8度科技 35
+      - CN_中国_油管 TG 8度科技 36
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - CN_中国_油管 TG 8度科技
       - HK_香港_油管 TG 8度科技
       - HK_香港_油管 TG 8度科技 2
-      - TW_台湾_油管 TG 8度科技
       - HK_香港_油管 TG 8度科技 3
       - HK_香港_油管 TG 8度科技 4
+      - CN_中国_油管 TG 8度科技 2
+      - CN_中国_油管 TG 8度科技 3
+      - CN_中国_油管 TG 8度科技 4
+      - CN_中国_油管 TG 8度科技 5
+      - CN_中国_油管 TG 8度科技 6
+      - CN_中国_油管 TG 8度科技 7
+      - CN_中国_油管 TG 8度科技 8
+      - US_美国_油管 TG 8度科技
+      - 油管 TG 8度科技
+      - TW_台湾_油管 TG 8度科技
+      - US_美国_油管 TG 8度科技 2
+      - US_美国_油管 TG 8度科技 3
+      - AU_澳大利亚_油管 TG 8度科技
+      - TW_台湾_油管 TG 8度科技 2
       - HK_香港_油管 TG 8度科技 5
+      - CN_中国_油管 TG 8度科技 9
+      - CN_中国_油管 TG 8度科技 10
       - HK_香港_油管 TG 8度科技 6
       - HK_香港_油管 TG 8度科技 7
       - HK_香港_油管 TG 8度科技 8
       - HK_香港_油管 TG 8度科技 9
       - HK_香港_油管 TG 8度科技 10
-      - CN_中国_油管 TG 8度科技
-      - CN_中国_油管 TG 8度科技 2
-      - CN_中国_油管 TG 8度科技 3
-      - CN_中国_油管 TG 8度科技 4
-      - KR_韩国_油管 TG 8度科技
       - HK_香港_油管 TG 8度科技 11
-      - JP_日本_油管 TG 8度科技
-      - ZA_南非_油管 TG 8度科技
-      - CN_中国_油管 TG 8度科技 5
-      - US_美国_油管 TG 8度科技
-      - CN_中国_油管 TG 8度科技 6
-      - TW_台湾_油管 TG 8度科技 2
-      - TW_台湾_油管 TG 8度科技 3
-      - TW_台湾_油管 TG 8度科技 4
-      - CN_中国_油管 TG 8度科技 7
       - HK_香港_油管 TG 8度科技 12
-      - CN_中国_油管 TG 8度科技 8
-      - US_美国_油管 TG 8度科技 2
-      - HK_香港_油管 TG 8度科技 13
-      - US_美国_油管 TG 8度科技 3
-      - AU_澳大利亚_油管 TG 8度科技
-      - HK_香港_油管 TG 8度科技 14
+      - CN_中国_油管 TG 8度科技 11
+      - CN_中国_油管 TG 8度科技 12
+      - CN_中国_油管 TG 8度科技 13
+      - SG_新加坡_油管 TG 8度科技
+      - SG_新加坡_油管 TG 8度科技 2
+      - SG_新加坡_油管 TG 8度科技 3
+      - CN_中国_油管 TG 8度科技 14
+      - CN_中国_油管 TG 8度科技 15
+      - CN_中国_油管 TG 8度科技 16
+      - CN_中国_油管 TG 8度科技 17
+      - CN_中国_油管 TG 8度科技 18
+      - KR_韩国_油管 TG 8度科技
+      - CN_中国_油管 TG 8度科技 19
+      - TW_台湾_油管 TG 8度科技 3
+      - CN_中国_油管 TG 8度科技 20
+      - US_美国_油管 TG 8度科技 4
+      - US_美国_油管 TG 8度科技 5
+      - US_美国_油管 TG 8度科技 6
+      - US_美国_油管 TG 8度科技 7
+      - US_美国_油管 TG 8度科技 8
+      - CN_中国_油管 TG 8度科技 21
+      - US_美国_油管 TG 8度科技 9
+      - CN_中国_油管 TG 8度科技 22
+      - US_美国_油管 TG 8度科技 10
+      - US_美国_油管 TG 8度科技 11
+      - US_美国_油管 TG 8度科技 12
+      - US_美国_油管 TG 8度科技 13
+      - US_美国_油管 TG 8度科技 14
+      - CN_中国_油管 TG 8度科技 23
+      - US_美国_油管 TG 8度科技 15
+      - US_美国_油管 TG 8度科技 16
+      - US_美国_油管 TG 8度科技 17
+      - CN_中国_油管 TG 8度科技 24
+      - US_美国_油管 TG 8度科技 18
+      - CN_中国_油管 TG 8度科技 25
+      - US_美国_油管 TG 8度科技 19
+      - JP_日本_油管 TG 8度科技
+      - CN_中国_油管 TG 8度科技 26
+      - US_美国_油管 TG 8度科技 20
+      - CN_中国_油管 TG 8度科技 27
+      - US_美国_油管 TG 8度科技 21
+      - CN_中国_油管 TG 8度科技 28
+      - US_美国_油管 TG 8度科技 22
+      - US_美国_油管 TG 8度科技 23
+      - CN_中国_油管 TG 8度科技 29
+      - US_美国_油管 TG 8度科技 24
+      - GB_英国_油管 TG 8度科技
+      - US_美国_油管 TG 8度科技 25
+      - GB_英国_油管 TG 8度科技 2
+      - GB_英国_油管 TG 8度科技 3
+      - CN_中国_油管 TG 8度科技 30
+      - GB_英国_油管 TG 8度科技 4
+      - GB_英国_油管 TG 8度科技 5
+      - GB_英国_油管 TG 8度科技 6
+      - GB_英国_油管 TG 8度科技 7
+      - GB_英国_油管 TG 8度科技 8
+      - GB_英国_油管 TG 8度科技 9
+      - GB_英国_油管 TG 8度科技 10
+      - GB_英国_油管 TG 8度科技 11
+      - GB_英国_油管 TG 8度科技 12
+      - GB_英国_油管 TG 8度科技 13
+      - GB_英国_油管 TG 8度科技 14
+      - GB_英国_油管 TG 8度科技 15
+      - GB_英国_油管 TG 8度科技 16
+      - CN_中国_油管 TG 8度科技 31
+      - CN_中国_油管 TG 8度科技 32
+      - US_美国_油管 TG 8度科技 26
+      - CN_中国_油管 TG 8度科技 33
+      - CN_中国_油管 TG 8度科技 34
+      - CN_中国_油管 TG 8度科技 35
+      - CN_中国_油管 TG 8度科技 36
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -172,48 +440,116 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - CN_中国_油管 TG 8度科技
       - HK_香港_油管 TG 8度科技
       - HK_香港_油管 TG 8度科技 2
-      - TW_台湾_油管 TG 8度科技
       - HK_香港_油管 TG 8度科技 3
       - HK_香港_油管 TG 8度科技 4
+      - CN_中国_油管 TG 8度科技 2
+      - CN_中国_油管 TG 8度科技 3
+      - CN_中国_油管 TG 8度科技 4
+      - CN_中国_油管 TG 8度科技 5
+      - CN_中国_油管 TG 8度科技 6
+      - CN_中国_油管 TG 8度科技 7
+      - CN_中国_油管 TG 8度科技 8
+      - US_美国_油管 TG 8度科技
+      - 油管 TG 8度科技
+      - TW_台湾_油管 TG 8度科技
+      - US_美国_油管 TG 8度科技 2
+      - US_美国_油管 TG 8度科技 3
+      - AU_澳大利亚_油管 TG 8度科技
+      - TW_台湾_油管 TG 8度科技 2
       - HK_香港_油管 TG 8度科技 5
+      - CN_中国_油管 TG 8度科技 9
+      - CN_中国_油管 TG 8度科技 10
       - HK_香港_油管 TG 8度科技 6
       - HK_香港_油管 TG 8度科技 7
       - HK_香港_油管 TG 8度科技 8
       - HK_香港_油管 TG 8度科技 9
       - HK_香港_油管 TG 8度科技 10
-      - CN_中国_油管 TG 8度科技
-      - CN_中国_油管 TG 8度科技 2
-      - CN_中国_油管 TG 8度科技 3
-      - CN_中国_油管 TG 8度科技 4
-      - KR_韩国_油管 TG 8度科技
       - HK_香港_油管 TG 8度科技 11
-      - JP_日本_油管 TG 8度科技
-      - ZA_南非_油管 TG 8度科技
-      - CN_中国_油管 TG 8度科技 5
-      - US_美国_油管 TG 8度科技
-      - CN_中国_油管 TG 8度科技 6
-      - TW_台湾_油管 TG 8度科技 2
-      - TW_台湾_油管 TG 8度科技 3
-      - TW_台湾_油管 TG 8度科技 4
-      - CN_中国_油管 TG 8度科技 7
       - HK_香港_油管 TG 8度科技 12
-      - CN_中国_油管 TG 8度科技 8
-      - US_美国_油管 TG 8度科技 2
-      - HK_香港_油管 TG 8度科技 13
-      - US_美国_油管 TG 8度科技 3
-      - AU_澳大利亚_油管 TG 8度科技
-      - HK_香港_油管 TG 8度科技 14
+      - CN_中国_油管 TG 8度科技 11
+      - CN_中国_油管 TG 8度科技 12
+      - CN_中国_油管 TG 8度科技 13
+      - SG_新加坡_油管 TG 8度科技
+      - SG_新加坡_油管 TG 8度科技 2
+      - SG_新加坡_油管 TG 8度科技 3
+      - CN_中国_油管 TG 8度科技 14
+      - CN_中国_油管 TG 8度科技 15
+      - CN_中国_油管 TG 8度科技 16
+      - CN_中国_油管 TG 8度科技 17
+      - CN_中国_油管 TG 8度科技 18
+      - KR_韩国_油管 TG 8度科技
+      - CN_中国_油管 TG 8度科技 19
+      - TW_台湾_油管 TG 8度科技 3
+      - CN_中国_油管 TG 8度科技 20
+      - US_美国_油管 TG 8度科技 4
+      - US_美国_油管 TG 8度科技 5
+      - US_美国_油管 TG 8度科技 6
+      - US_美国_油管 TG 8度科技 7
+      - US_美国_油管 TG 8度科技 8
+      - CN_中国_油管 TG 8度科技 21
+      - US_美国_油管 TG 8度科技 9
+      - CN_中国_油管 TG 8度科技 22
+      - US_美国_油管 TG 8度科技 10
+      - US_美国_油管 TG 8度科技 11
+      - US_美国_油管 TG 8度科技 12
+      - US_美国_油管 TG 8度科技 13
+      - US_美国_油管 TG 8度科技 14
+      - CN_中国_油管 TG 8度科技 23
+      - US_美国_油管 TG 8度科技 15
+      - US_美国_油管 TG 8度科技 16
+      - US_美国_油管 TG 8度科技 17
+      - CN_中国_油管 TG 8度科技 24
+      - US_美国_油管 TG 8度科技 18
+      - CN_中国_油管 TG 8度科技 25
+      - US_美国_油管 TG 8度科技 19
+      - JP_日本_油管 TG 8度科技
+      - CN_中国_油管 TG 8度科技 26
+      - US_美国_油管 TG 8度科技 20
+      - CN_中国_油管 TG 8度科技 27
+      - US_美国_油管 TG 8度科技 21
+      - CN_中国_油管 TG 8度科技 28
+      - US_美国_油管 TG 8度科技 22
+      - US_美国_油管 TG 8度科技 23
+      - CN_中国_油管 TG 8度科技 29
+      - US_美国_油管 TG 8度科技 24
+      - GB_英国_油管 TG 8度科技
+      - US_美国_油管 TG 8度科技 25
+      - GB_英国_油管 TG 8度科技 2
+      - GB_英国_油管 TG 8度科技 3
+      - CN_中国_油管 TG 8度科技 30
+      - GB_英国_油管 TG 8度科技 4
+      - GB_英国_油管 TG 8度科技 5
+      - GB_英国_油管 TG 8度科技 6
+      - GB_英国_油管 TG 8度科技 7
+      - GB_英国_油管 TG 8度科技 8
+      - GB_英国_油管 TG 8度科技 9
+      - GB_英国_油管 TG 8度科技 10
+      - GB_英国_油管 TG 8度科技 11
+      - GB_英国_油管 TG 8度科技 12
+      - GB_英国_油管 TG 8度科技 13
+      - GB_英国_油管 TG 8度科技 14
+      - GB_英国_油管 TG 8度科技 15
+      - GB_英国_油管 TG 8度科技 16
+      - CN_中国_油管 TG 8度科技 31
+      - CN_中国_油管 TG 8度科技 32
+      - US_美国_油管 TG 8度科技 26
+      - CN_中国_油管 TG 8度科技 33
+      - CN_中国_油管 TG 8度科技 34
+      - CN_中国_油管 TG 8度科技 35
+      - CN_中国_油管 TG 8度科技 36
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
       - HK_香港_油管 TG 8度科技
       - HK_香港_油管 TG 8度科技 2
-      - TW_台湾_油管 TG 8度科技
       - HK_香港_油管 TG 8度科技 3
       - HK_香港_油管 TG 8度科技 4
+      - TW_台湾_油管 TG 8度科技
+      - TW_台湾_油管 TG 8度科技 2
       - HK_香港_油管 TG 8度科技 5
       - HK_香港_油管 TG 8度科技 6
       - HK_香港_油管 TG 8度科技 7
@@ -221,128 +557,325 @@ proxy-groups:
       - HK_香港_油管 TG 8度科技 9
       - HK_香港_油管 TG 8度科技 10
       - HK_香港_油管 TG 8度科技 11
-      - TW_台湾_油管 TG 8度科技 2
-      - TW_台湾_油管 TG 8度科技 3
-      - TW_台湾_油管 TG 8度科技 4
       - HK_香港_油管 TG 8度科技 12
-      - HK_香港_油管 TG 8度科技 13
-      - HK_香港_油管 TG 8度科技 14
+      - TW_台湾_油管 TG 8度科技 3
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
+      - CN_中国_油管 TG 8度科技
       - HK_香港_油管 TG 8度科技
       - HK_香港_油管 TG 8度科技 2
-      - TW_台湾_油管 TG 8度科技
       - HK_香港_油管 TG 8度科技 3
       - HK_香港_油管 TG 8度科技 4
+      - CN_中国_油管 TG 8度科技 2
+      - CN_中国_油管 TG 8度科技 3
+      - CN_中国_油管 TG 8度科技 4
+      - CN_中国_油管 TG 8度科技 5
+      - CN_中国_油管 TG 8度科技 6
+      - CN_中国_油管 TG 8度科技 7
+      - CN_中国_油管 TG 8度科技 8
+      - US_美国_油管 TG 8度科技
+      - 油管 TG 8度科技
+      - TW_台湾_油管 TG 8度科技
+      - US_美国_油管 TG 8度科技 2
+      - US_美国_油管 TG 8度科技 3
+      - AU_澳大利亚_油管 TG 8度科技
+      - TW_台湾_油管 TG 8度科技 2
       - HK_香港_油管 TG 8度科技 5
+      - CN_中国_油管 TG 8度科技 9
+      - CN_中国_油管 TG 8度科技 10
       - HK_香港_油管 TG 8度科技 6
       - HK_香港_油管 TG 8度科技 7
       - HK_香港_油管 TG 8度科技 8
       - HK_香港_油管 TG 8度科技 9
       - HK_香港_油管 TG 8度科技 10
-      - CN_中国_油管 TG 8度科技
-      - CN_中国_油管 TG 8度科技 2
-      - CN_中国_油管 TG 8度科技 3
-      - CN_中国_油管 TG 8度科技 4
-      - KR_韩国_油管 TG 8度科技
       - HK_香港_油管 TG 8度科技 11
-      - JP_日本_油管 TG 8度科技
-      - ZA_南非_油管 TG 8度科技
-      - CN_中国_油管 TG 8度科技 5
-      - US_美国_油管 TG 8度科技
-      - CN_中国_油管 TG 8度科技 6
-      - TW_台湾_油管 TG 8度科技 2
-      - TW_台湾_油管 TG 8度科技 3
-      - TW_台湾_油管 TG 8度科技 4
-      - CN_中国_油管 TG 8度科技 7
       - HK_香港_油管 TG 8度科技 12
-      - CN_中国_油管 TG 8度科技 8
-      - US_美国_油管 TG 8度科技 2
-      - HK_香港_油管 TG 8度科技 13
-      - US_美国_油管 TG 8度科技 3
-      - AU_澳大利亚_油管 TG 8度科技
-      - HK_香港_油管 TG 8度科技 14
+      - CN_中国_油管 TG 8度科技 11
+      - CN_中国_油管 TG 8度科技 12
+      - CN_中国_油管 TG 8度科技 13
+      - SG_新加坡_油管 TG 8度科技
+      - SG_新加坡_油管 TG 8度科技 2
+      - SG_新加坡_油管 TG 8度科技 3
+      - CN_中国_油管 TG 8度科技 14
+      - CN_中国_油管 TG 8度科技 15
+      - CN_中国_油管 TG 8度科技 16
+      - CN_中国_油管 TG 8度科技 17
+      - CN_中国_油管 TG 8度科技 18
+      - KR_韩国_油管 TG 8度科技
+      - CN_中国_油管 TG 8度科技 19
+      - TW_台湾_油管 TG 8度科技 3
+      - CN_中国_油管 TG 8度科技 20
+      - US_美国_油管 TG 8度科技 4
+      - US_美国_油管 TG 8度科技 5
+      - US_美国_油管 TG 8度科技 6
+      - US_美国_油管 TG 8度科技 7
+      - US_美国_油管 TG 8度科技 8
+      - CN_中国_油管 TG 8度科技 21
+      - US_美国_油管 TG 8度科技 9
+      - CN_中国_油管 TG 8度科技 22
+      - US_美国_油管 TG 8度科技 10
+      - US_美国_油管 TG 8度科技 11
+      - US_美国_油管 TG 8度科技 12
+      - US_美国_油管 TG 8度科技 13
+      - US_美国_油管 TG 8度科技 14
+      - CN_中国_油管 TG 8度科技 23
+      - US_美国_油管 TG 8度科技 15
+      - US_美国_油管 TG 8度科技 16
+      - US_美国_油管 TG 8度科技 17
+      - CN_中国_油管 TG 8度科技 24
+      - US_美国_油管 TG 8度科技 18
+      - CN_中国_油管 TG 8度科技 25
+      - US_美国_油管 TG 8度科技 19
+      - JP_日本_油管 TG 8度科技
+      - CN_中国_油管 TG 8度科技 26
+      - US_美国_油管 TG 8度科技 20
+      - CN_中国_油管 TG 8度科技 27
+      - US_美国_油管 TG 8度科技 21
+      - CN_中国_油管 TG 8度科技 28
+      - US_美国_油管 TG 8度科技 22
+      - US_美国_油管 TG 8度科技 23
+      - CN_中国_油管 TG 8度科技 29
+      - US_美国_油管 TG 8度科技 24
+      - GB_英国_油管 TG 8度科技
+      - US_美国_油管 TG 8度科技 25
+      - GB_英国_油管 TG 8度科技 2
+      - GB_英国_油管 TG 8度科技 3
+      - CN_中国_油管 TG 8度科技 30
+      - GB_英国_油管 TG 8度科技 4
+      - GB_英国_油管 TG 8度科技 5
+      - GB_英国_油管 TG 8度科技 6
+      - GB_英国_油管 TG 8度科技 7
+      - GB_英国_油管 TG 8度科技 8
+      - GB_英国_油管 TG 8度科技 9
+      - GB_英国_油管 TG 8度科技 10
+      - GB_英国_油管 TG 8度科技 11
+      - GB_英国_油管 TG 8度科技 12
+      - GB_英国_油管 TG 8度科技 13
+      - GB_英国_油管 TG 8度科技 14
+      - GB_英国_油管 TG 8度科技 15
+      - GB_英国_油管 TG 8度科技 16
+      - CN_中国_油管 TG 8度科技 31
+      - CN_中国_油管 TG 8度科技 32
+      - US_美国_油管 TG 8度科技 26
+      - CN_中国_油管 TG 8度科技 33
+      - CN_中国_油管 TG 8度科技 34
+      - CN_中国_油管 TG 8度科技 35
+      - CN_中国_油管 TG 8度科技 36
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
+      - CN_中国_油管 TG 8度科技
       - HK_香港_油管 TG 8度科技
       - HK_香港_油管 TG 8度科技 2
-      - TW_台湾_油管 TG 8度科技
       - HK_香港_油管 TG 8度科技 3
       - HK_香港_油管 TG 8度科技 4
+      - CN_中国_油管 TG 8度科技 2
+      - CN_中国_油管 TG 8度科技 3
+      - CN_中国_油管 TG 8度科技 4
+      - CN_中国_油管 TG 8度科技 5
+      - CN_中国_油管 TG 8度科技 6
+      - CN_中国_油管 TG 8度科技 7
+      - CN_中国_油管 TG 8度科技 8
+      - US_美国_油管 TG 8度科技
+      - 油管 TG 8度科技
+      - TW_台湾_油管 TG 8度科技
+      - US_美国_油管 TG 8度科技 2
+      - US_美国_油管 TG 8度科技 3
+      - AU_澳大利亚_油管 TG 8度科技
+      - TW_台湾_油管 TG 8度科技 2
       - HK_香港_油管 TG 8度科技 5
+      - CN_中国_油管 TG 8度科技 9
+      - CN_中国_油管 TG 8度科技 10
       - HK_香港_油管 TG 8度科技 6
       - HK_香港_油管 TG 8度科技 7
       - HK_香港_油管 TG 8度科技 8
       - HK_香港_油管 TG 8度科技 9
       - HK_香港_油管 TG 8度科技 10
-      - CN_中国_油管 TG 8度科技
-      - CN_中国_油管 TG 8度科技 2
-      - CN_中国_油管 TG 8度科技 3
-      - CN_中国_油管 TG 8度科技 4
-      - KR_韩国_油管 TG 8度科技
       - HK_香港_油管 TG 8度科技 11
-      - JP_日本_油管 TG 8度科技
-      - ZA_南非_油管 TG 8度科技
-      - CN_中国_油管 TG 8度科技 5
-      - US_美国_油管 TG 8度科技
-      - CN_中国_油管 TG 8度科技 6
-      - TW_台湾_油管 TG 8度科技 2
-      - TW_台湾_油管 TG 8度科技 3
-      - TW_台湾_油管 TG 8度科技 4
-      - CN_中国_油管 TG 8度科技 7
       - HK_香港_油管 TG 8度科技 12
-      - CN_中国_油管 TG 8度科技 8
-      - US_美国_油管 TG 8度科技 2
-      - HK_香港_油管 TG 8度科技 13
-      - US_美国_油管 TG 8度科技 3
-      - AU_澳大利亚_油管 TG 8度科技
-      - HK_香港_油管 TG 8度科技 14
+      - CN_中国_油管 TG 8度科技 11
+      - CN_中国_油管 TG 8度科技 12
+      - CN_中国_油管 TG 8度科技 13
+      - SG_新加坡_油管 TG 8度科技
+      - SG_新加坡_油管 TG 8度科技 2
+      - SG_新加坡_油管 TG 8度科技 3
+      - CN_中国_油管 TG 8度科技 14
+      - CN_中国_油管 TG 8度科技 15
+      - CN_中国_油管 TG 8度科技 16
+      - CN_中国_油管 TG 8度科技 17
+      - CN_中国_油管 TG 8度科技 18
+      - KR_韩国_油管 TG 8度科技
+      - CN_中国_油管 TG 8度科技 19
+      - TW_台湾_油管 TG 8度科技 3
+      - CN_中国_油管 TG 8度科技 20
+      - US_美国_油管 TG 8度科技 4
+      - US_美国_油管 TG 8度科技 5
+      - US_美国_油管 TG 8度科技 6
+      - US_美国_油管 TG 8度科技 7
+      - US_美国_油管 TG 8度科技 8
+      - CN_中国_油管 TG 8度科技 21
+      - US_美国_油管 TG 8度科技 9
+      - CN_中国_油管 TG 8度科技 22
+      - US_美国_油管 TG 8度科技 10
+      - US_美国_油管 TG 8度科技 11
+      - US_美国_油管 TG 8度科技 12
+      - US_美国_油管 TG 8度科技 13
+      - US_美国_油管 TG 8度科技 14
+      - CN_中国_油管 TG 8度科技 23
+      - US_美国_油管 TG 8度科技 15
+      - US_美国_油管 TG 8度科技 16
+      - US_美国_油管 TG 8度科技 17
+      - CN_中国_油管 TG 8度科技 24
+      - US_美国_油管 TG 8度科技 18
+      - CN_中国_油管 TG 8度科技 25
+      - US_美国_油管 TG 8度科技 19
+      - JP_日本_油管 TG 8度科技
+      - CN_中国_油管 TG 8度科技 26
+      - US_美国_油管 TG 8度科技 20
+      - CN_中国_油管 TG 8度科技 27
+      - US_美国_油管 TG 8度科技 21
+      - CN_中国_油管 TG 8度科技 28
+      - US_美国_油管 TG 8度科技 22
+      - US_美国_油管 TG 8度科技 23
+      - CN_中国_油管 TG 8度科技 29
+      - US_美国_油管 TG 8度科技 24
+      - GB_英国_油管 TG 8度科技
+      - US_美国_油管 TG 8度科技 25
+      - GB_英国_油管 TG 8度科技 2
+      - GB_英国_油管 TG 8度科技 3
+      - CN_中国_油管 TG 8度科技 30
+      - GB_英国_油管 TG 8度科技 4
+      - GB_英国_油管 TG 8度科技 5
+      - GB_英国_油管 TG 8度科技 6
+      - GB_英国_油管 TG 8度科技 7
+      - GB_英国_油管 TG 8度科技 8
+      - GB_英国_油管 TG 8度科技 9
+      - GB_英国_油管 TG 8度科技 10
+      - GB_英国_油管 TG 8度科技 11
+      - GB_英国_油管 TG 8度科技 12
+      - GB_英国_油管 TG 8度科技 13
+      - GB_英国_油管 TG 8度科技 14
+      - GB_英国_油管 TG 8度科技 15
+      - GB_英国_油管 TG 8度科技 16
+      - CN_中国_油管 TG 8度科技 31
+      - CN_中国_油管 TG 8度科技 32
+      - US_美国_油管 TG 8度科技 26
+      - CN_中国_油管 TG 8度科技 33
+      - CN_中国_油管 TG 8度科技 34
+      - CN_中国_油管 TG 8度科技 35
+      - CN_中国_油管 TG 8度科技 36
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - CN_中国_油管 TG 8度科技
       - HK_香港_油管 TG 8度科技
       - HK_香港_油管 TG 8度科技 2
-      - TW_台湾_油管 TG 8度科技
       - HK_香港_油管 TG 8度科技 3
       - HK_香港_油管 TG 8度科技 4
+      - CN_中国_油管 TG 8度科技 2
+      - CN_中国_油管 TG 8度科技 3
+      - CN_中国_油管 TG 8度科技 4
+      - CN_中国_油管 TG 8度科技 5
+      - CN_中国_油管 TG 8度科技 6
+      - CN_中国_油管 TG 8度科技 7
+      - CN_中国_油管 TG 8度科技 8
+      - US_美国_油管 TG 8度科技
+      - 油管 TG 8度科技
+      - TW_台湾_油管 TG 8度科技
+      - US_美国_油管 TG 8度科技 2
+      - US_美国_油管 TG 8度科技 3
+      - AU_澳大利亚_油管 TG 8度科技
+      - TW_台湾_油管 TG 8度科技 2
       - HK_香港_油管 TG 8度科技 5
+      - CN_中国_油管 TG 8度科技 9
+      - CN_中国_油管 TG 8度科技 10
       - HK_香港_油管 TG 8度科技 6
       - HK_香港_油管 TG 8度科技 7
       - HK_香港_油管 TG 8度科技 8
       - HK_香港_油管 TG 8度科技 9
       - HK_香港_油管 TG 8度科技 10
-      - CN_中国_油管 TG 8度科技
-      - CN_中国_油管 TG 8度科技 2
-      - CN_中国_油管 TG 8度科技 3
-      - CN_中国_油管 TG 8度科技 4
-      - KR_韩国_油管 TG 8度科技
       - HK_香港_油管 TG 8度科技 11
-      - JP_日本_油管 TG 8度科技
-      - ZA_南非_油管 TG 8度科技
-      - CN_中国_油管 TG 8度科技 5
-      - US_美国_油管 TG 8度科技
-      - CN_中国_油管 TG 8度科技 6
-      - TW_台湾_油管 TG 8度科技 2
-      - TW_台湾_油管 TG 8度科技 3
-      - TW_台湾_油管 TG 8度科技 4
-      - CN_中国_油管 TG 8度科技 7
       - HK_香港_油管 TG 8度科技 12
-      - CN_中国_油管 TG 8度科技 8
-      - US_美国_油管 TG 8度科技 2
-      - HK_香港_油管 TG 8度科技 13
-      - US_美国_油管 TG 8度科技 3
-      - AU_澳大利亚_油管 TG 8度科技
-      - HK_香港_油管 TG 8度科技 14
+      - CN_中国_油管 TG 8度科技 11
+      - CN_中国_油管 TG 8度科技 12
+      - CN_中国_油管 TG 8度科技 13
+      - SG_新加坡_油管 TG 8度科技
+      - SG_新加坡_油管 TG 8度科技 2
+      - SG_新加坡_油管 TG 8度科技 3
+      - CN_中国_油管 TG 8度科技 14
+      - CN_中国_油管 TG 8度科技 15
+      - CN_中国_油管 TG 8度科技 16
+      - CN_中国_油管 TG 8度科技 17
+      - CN_中国_油管 TG 8度科技 18
+      - KR_韩国_油管 TG 8度科技
+      - CN_中国_油管 TG 8度科技 19
+      - TW_台湾_油管 TG 8度科技 3
+      - CN_中国_油管 TG 8度科技 20
+      - US_美国_油管 TG 8度科技 4
+      - US_美国_油管 TG 8度科技 5
+      - US_美国_油管 TG 8度科技 6
+      - US_美国_油管 TG 8度科技 7
+      - US_美国_油管 TG 8度科技 8
+      - CN_中国_油管 TG 8度科技 21
+      - US_美国_油管 TG 8度科技 9
+      - CN_中国_油管 TG 8度科技 22
+      - US_美国_油管 TG 8度科技 10
+      - US_美国_油管 TG 8度科技 11
+      - US_美国_油管 TG 8度科技 12
+      - US_美国_油管 TG 8度科技 13
+      - US_美国_油管 TG 8度科技 14
+      - CN_中国_油管 TG 8度科技 23
+      - US_美国_油管 TG 8度科技 15
+      - US_美国_油管 TG 8度科技 16
+      - US_美国_油管 TG 8度科技 17
+      - CN_中国_油管 TG 8度科技 24
+      - US_美国_油管 TG 8度科技 18
+      - CN_中国_油管 TG 8度科技 25
+      - US_美国_油管 TG 8度科技 19
+      - JP_日本_油管 TG 8度科技
+      - CN_中国_油管 TG 8度科技 26
+      - US_美国_油管 TG 8度科技 20
+      - CN_中国_油管 TG 8度科技 27
+      - US_美国_油管 TG 8度科技 21
+      - CN_中国_油管 TG 8度科技 28
+      - US_美国_油管 TG 8度科技 22
+      - US_美国_油管 TG 8度科技 23
+      - CN_中国_油管 TG 8度科技 29
+      - US_美国_油管 TG 8度科技 24
+      - GB_英国_油管 TG 8度科技
+      - US_美国_油管 TG 8度科技 25
+      - GB_英国_油管 TG 8度科技 2
+      - GB_英国_油管 TG 8度科技 3
+      - CN_中国_油管 TG 8度科技 30
+      - GB_英国_油管 TG 8度科技 4
+      - GB_英国_油管 TG 8度科技 5
+      - GB_英国_油管 TG 8度科技 6
+      - GB_英国_油管 TG 8度科技 7
+      - GB_英国_油管 TG 8度科技 8
+      - GB_英国_油管 TG 8度科技 9
+      - GB_英国_油管 TG 8度科技 10
+      - GB_英国_油管 TG 8度科技 11
+      - GB_英国_油管 TG 8度科技 12
+      - GB_英国_油管 TG 8度科技 13
+      - GB_英国_油管 TG 8度科技 14
+      - GB_英国_油管 TG 8度科技 15
+      - GB_英国_油管 TG 8度科技 16
+      - CN_中国_油管 TG 8度科技 31
+      - CN_中国_油管 TG 8度科技 32
+      - US_美国_油管 TG 8度科技 26
+      - CN_中国_油管 TG 8度科技 33
+      - CN_中国_油管 TG 8度科技 34
+      - CN_中国_油管 TG 8度科技 35
+      - CN_中国_油管 TG 8度科技 36
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -358,39 +891,106 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - CN_中国_油管 TG 8度科技
       - HK_香港_油管 TG 8度科技
       - HK_香港_油管 TG 8度科技 2
-      - TW_台湾_油管 TG 8度科技
       - HK_香港_油管 TG 8度科技 3
       - HK_香港_油管 TG 8度科技 4
+      - CN_中国_油管 TG 8度科技 2
+      - CN_中国_油管 TG 8度科技 3
+      - CN_中国_油管 TG 8度科技 4
+      - CN_中国_油管 TG 8度科技 5
+      - CN_中国_油管 TG 8度科技 6
+      - CN_中国_油管 TG 8度科技 7
+      - CN_中国_油管 TG 8度科技 8
+      - US_美国_油管 TG 8度科技
+      - 油管 TG 8度科技
+      - TW_台湾_油管 TG 8度科技
+      - US_美国_油管 TG 8度科技 2
+      - US_美国_油管 TG 8度科技 3
+      - AU_澳大利亚_油管 TG 8度科技
+      - TW_台湾_油管 TG 8度科技 2
       - HK_香港_油管 TG 8度科技 5
+      - CN_中国_油管 TG 8度科技 9
+      - CN_中国_油管 TG 8度科技 10
       - HK_香港_油管 TG 8度科技 6
       - HK_香港_油管 TG 8度科技 7
       - HK_香港_油管 TG 8度科技 8
       - HK_香港_油管 TG 8度科技 9
       - HK_香港_油管 TG 8度科技 10
-      - CN_中国_油管 TG 8度科技
-      - CN_中国_油管 TG 8度科技 2
-      - CN_中国_油管 TG 8度科技 3
-      - CN_中国_油管 TG 8度科技 4
-      - KR_韩国_油管 TG 8度科技
       - HK_香港_油管 TG 8度科技 11
-      - JP_日本_油管 TG 8度科技
-      - ZA_南非_油管 TG 8度科技
-      - CN_中国_油管 TG 8度科技 5
-      - US_美国_油管 TG 8度科技
-      - CN_中国_油管 TG 8度科技 6
-      - TW_台湾_油管 TG 8度科技 2
-      - TW_台湾_油管 TG 8度科技 3
-      - TW_台湾_油管 TG 8度科技 4
-      - CN_中国_油管 TG 8度科技 7
       - HK_香港_油管 TG 8度科技 12
-      - CN_中国_油管 TG 8度科技 8
-      - US_美国_油管 TG 8度科技 2
-      - HK_香港_油管 TG 8度科技 13
-      - US_美国_油管 TG 8度科技 3
-      - AU_澳大利亚_油管 TG 8度科技
-      - HK_香港_油管 TG 8度科技 14
+      - CN_中国_油管 TG 8度科技 11
+      - CN_中国_油管 TG 8度科技 12
+      - CN_中国_油管 TG 8度科技 13
+      - SG_新加坡_油管 TG 8度科技
+      - SG_新加坡_油管 TG 8度科技 2
+      - SG_新加坡_油管 TG 8度科技 3
+      - CN_中国_油管 TG 8度科技 14
+      - CN_中国_油管 TG 8度科技 15
+      - CN_中国_油管 TG 8度科技 16
+      - CN_中国_油管 TG 8度科技 17
+      - CN_中国_油管 TG 8度科技 18
+      - KR_韩国_油管 TG 8度科技
+      - CN_中国_油管 TG 8度科技 19
+      - TW_台湾_油管 TG 8度科技 3
+      - CN_中国_油管 TG 8度科技 20
+      - US_美国_油管 TG 8度科技 4
+      - US_美国_油管 TG 8度科技 5
+      - US_美国_油管 TG 8度科技 6
+      - US_美国_油管 TG 8度科技 7
+      - US_美国_油管 TG 8度科技 8
+      - CN_中国_油管 TG 8度科技 21
+      - US_美国_油管 TG 8度科技 9
+      - CN_中国_油管 TG 8度科技 22
+      - US_美国_油管 TG 8度科技 10
+      - US_美国_油管 TG 8度科技 11
+      - US_美国_油管 TG 8度科技 12
+      - US_美国_油管 TG 8度科技 13
+      - US_美国_油管 TG 8度科技 14
+      - CN_中国_油管 TG 8度科技 23
+      - US_美国_油管 TG 8度科技 15
+      - US_美国_油管 TG 8度科技 16
+      - US_美国_油管 TG 8度科技 17
+      - CN_中国_油管 TG 8度科技 24
+      - US_美国_油管 TG 8度科技 18
+      - CN_中国_油管 TG 8度科技 25
+      - US_美国_油管 TG 8度科技 19
+      - JP_日本_油管 TG 8度科技
+      - CN_中国_油管 TG 8度科技 26
+      - US_美国_油管 TG 8度科技 20
+      - CN_中国_油管 TG 8度科技 27
+      - US_美国_油管 TG 8度科技 21
+      - CN_中国_油管 TG 8度科技 28
+      - US_美国_油管 TG 8度科技 22
+      - US_美国_油管 TG 8度科技 23
+      - CN_中国_油管 TG 8度科技 29
+      - US_美国_油管 TG 8度科技 24
+      - GB_英国_油管 TG 8度科技
+      - US_美国_油管 TG 8度科技 25
+      - GB_英国_油管 TG 8度科技 2
+      - GB_英国_油管 TG 8度科技 3
+      - CN_中国_油管 TG 8度科技 30
+      - GB_英国_油管 TG 8度科技 4
+      - GB_英国_油管 TG 8度科技 5
+      - GB_英国_油管 TG 8度科技 6
+      - GB_英国_油管 TG 8度科技 7
+      - GB_英国_油管 TG 8度科技 8
+      - GB_英国_油管 TG 8度科技 9
+      - GB_英国_油管 TG 8度科技 10
+      - GB_英国_油管 TG 8度科技 11
+      - GB_英国_油管 TG 8度科技 12
+      - GB_英国_油管 TG 8度科技 13
+      - GB_英国_油管 TG 8度科技 14
+      - GB_英国_油管 TG 8度科技 15
+      - GB_英国_油管 TG 8度科技 16
+      - CN_中国_油管 TG 8度科技 31
+      - CN_中国_油管 TG 8度科技 32
+      - US_美国_油管 TG 8度科技 26
+      - CN_中国_油管 TG 8度科技 33
+      - CN_中国_油管 TG 8度科技 34
+      - CN_中国_油管 TG 8度科技 35
+      - CN_中国_油管 TG 8度科技 36
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
