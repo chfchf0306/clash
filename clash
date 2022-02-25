@@ -5,50 +5,51 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: _US_美国, server: app.ssfree.ru, port: 443, type: vmess, uuid: a8d3abf2-94c1-11ec-b51d-000017022008, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /getweather, ws-headers: {Host: app.ssfree.ru}, udp: true}
-  - {name: _US_美国 2, server: 167.88.61.5, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: _US_美国, server: 45.35.84.162, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: usa-dallas.lvuft.com}, udp: true}
+  - {name: 香港, server: www.shanpao.xyz, port: 32747, type: vmess, uuid: c460ff8a-c55e-4c7c-d556-356b758af32b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /pank, ws-headers: {Host: www.shanpao.xyz}, udp: true}
+  - {name: RU_油管 TG 8度科技, server: 92.223.65.119, port: 443, type: vmess, uuid: 3fd6713f-e036-4ba9-938a-da7843a17a15, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ray, ws-headers: {Host: govacaxixo.watchdoctor.xyz}, udp: true}
+  - {name: GB_8080 @WangCai_1, server: 172.99.190.206, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: GB_7001 @WangCai_1, server: 172.99.190.206, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: GB_6679 @WangCai_1, server: 172.99.190.206, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: GB_7306 @WangCai_1, server: 172.99.190.206, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: GB_8000 @WangCai_1, server: 172.99.190.206, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: FR_油管+TG+8度科技, server: 51.255.66.185, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: GB_5004 @WangCai_1, server: 172.99.190.206, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: GB_5601 @WangCai_1, server: 172.99.190.206, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: GB_6697 @WangCai_1, server: 172.99.190.206, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: GB_8881 @WangCai_1, server: 172.99.190.206, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: GB_5500 @WangCai_1, server: 172.99.190.206, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: GB_5003 @WangCai_1, server: 172.99.190.206, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: GB_7307 @WangCai_1, server: 172.99.190.206, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: _CA_加拿大, server: 134.195.196.147, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: GB_8118 @WangCai_1, server: 172.99.190.206, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: 英国-803.0KB/s(技术在这里), server: 172.99.190.205, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: GB_2376 @WangCai_1, server: 172.99.190.206, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: GB_8009 @WangCai_1, server: 172.99.190.206, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: GB_2375 @WangCai_1, server: 172.99.190.206, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: GB_5001 @WangCai_1, server: 172.99.190.206, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: GB_3389 @WangCai_1, server: 172.99.190.206, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: _CA_加拿大 2, server: 134.195.196.147, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: GB_5600 @WangCai_1, server: 172.99.190.206, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: GB_8008 @WangCai_1, server: 172.99.190.206, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: GB_8119 @WangCai_1, server: 172.99.190.206, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: GB_8888 @WangCai_1, server: 172.99.190.206, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: GB_9101 @WangCai_1, server: 172.99.190.206, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: GB_8882 @WangCai_1, server: 172.99.190.206, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: _CA_加拿大 3, server: 134.195.196.147, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: GB_5000 @WangCai_1, server: 172.99.190.206, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: _CA_加拿大 4, server: 134.195.196.147, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: GB_8090 @WangCai_1, server: 172.99.190.206, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: _CA_加拿大 5, server: 134.195.196.147, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: _CA_加拿大 6, server: 134.195.196.147, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: GB_3306 @WangCai_1, server: 172.99.190.206, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 加拿大-615.5KB/s(技术在这里), server: 134.195.196.200, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: _CA_加拿大 7, server: 134.195.196.147, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: _FR_法国, server: 149.202.82.172, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: GB_8091 @WangCai_1, server: 172.99.190.206, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
   - {name: JP_油管 TG 8度科技, server: os2-3.sstr-api.xyz, port: 443, type: trojan, password: MhPG7g9x2Etb4Hspsb, sni: os2-3.sstr-api.xyz, skip-cert-verify: true, udp: true}
-  - {name: 油管 TG 8度科技, server: icook.tw, port: 443, type: vmess, uuid: 188741f2-1f14-43cb-be7a-1200a9f4332e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /The-Great-Awakening_vws, ws-headers: {Host: vincent-jackson2022.ml}, udp: true}
-  - {name: _CA_加拿大, server: 134.195.196.147, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: US_油管 TG 8度科技, server: 45.9.10.103, port: 443, type: trojan, password: WpfQAbO2wg, skip-cert-verify: true, udp: true}
-  - {name: FR_油管 TG 8度科技, server: 51.255.66.185, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: CA_油管 TG 8度科技, server: t1.ssrsub.com, port: 8443, type: trojan, password: 739e53db-d41c-4bad-a61d-6cd5a173f85b, sni: t1.ssrsub.com, skip-cert-verify: true, udp: true}
-  - {name: _CA_加拿大 2, server: 134.195.196.147, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: _FR_法国, server: 149.202.82.172, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: _CA_加拿大 3, server: 134.195.196.147, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: _CA_加拿大 4, server: 134.195.196.150, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: _CA_加拿大 5, server: 134.195.196.193, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: _CA_加拿大 6, server: 134.195.196.147, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: CA_油管 TG 8度科技 2, server: t1.ssrsub.com, port: 8443, type: trojan, password: b2015918-4a70-4250-8afa-dba8a5be97f4, sni: t1.ssrsub.com, skip-cert-verify: true, udp: true}
-  - {name: _FR_法国 2, server: 149.202.82.172, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: _CA_加拿大 7, server: 134.195.196.147, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: CA_油管 TG 8度科技 3, server: 134.195.196.147, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: _FR_法国 3, server: 149.202.82.172, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: RU_油管 TG 8度科技, server: 92.223.72.42, port: 443, type: vmess, uuid: ae08412f-5bb9-4be7-8560-1984976a1097, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ray, ws-headers: {Host: govacaxixo.watchdoctor.xyz}, udp: true}
-  - {name: RU_油管 TG 8度科技 2, server: 92.223.65.119, port: 443, type: vmess, uuid: 3fd6713f-e036-4ba9-938a-da7843a17a15, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ray, ws-headers: {Host: govacaxixo.watchdoctor.xyz}, udp: true}
-  - {name: GB_油管 TG 8度科技, server: 172.99.190.188, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: _GB_英国, server: 172.99.190.205, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: _FR_法国 4, server: 149.202.82.172, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: _CA_加拿大 8, server: 134.195.196.147, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: _CA_加拿大 9, server: 134.195.196.193, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: _FR_法国 5, server: 149.202.82.172, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: _CA_加拿大 10, server: 134.195.196.147, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: _FR_法国 6, server: 149.202.82.172, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: _US_美国 3, server: 45.35.84.162, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: usa-dallas.lvuft.com}, udp: true}
-  - {name: _FR_法国 7, server: 62.210.209.50, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: _CA_加拿大 11, server: 134.195.196.147, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: _US_美国->🇳🇱_NL_荷兰, server: v2ray.ifuckgfw.ga, port: 8443, type: vmess, uuid: 98b20eea-8a11-11ec-9aeb-52ac0014346a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /nBaG3RmV/, ws-headers: {Host: v2ray.ifuckgfw.ga}, udp: true}
-  - {name: _GB_英国 2, server: 172.99.190.205, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: _FR_法国 8, server: 149.202.82.172, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: FR_油管 TG 8度科技 2, server: 92.243.24.68, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: bIS3QQFwFIm1, udp: true}
-  - {name: _CA_加拿大 12, server: 134.195.196.147, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: _CA_加拿大 13, server: 134.195.196.147, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: _CA_加拿大 14, server: 134.195.196.200, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: _CA_加拿大 15, server: 134.195.196.147, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: _GB_英国 3, server: 172.99.190.149, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: _GB_英国 4, server: 172.99.190.205, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: _GB_英国 5, server: 172.99.190.149, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: _GB_英国 6, server: 172.99.190.149, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: 新加坡-1.87MB/s(技术在这里), server: azhk.relay.qchwnd.moe, port: 10215, type: trojan, password: b5b0aa8d-595c-4739-8fa0-659cff1c49bb, sni: azhk.relay.qchwnd.moe, skip-cert-verify: true, udp: true}
+  - {name: 美国-2.45MB/s(技术在这里), server: 209.141.47.137, port: 443, type: trojan, password: b3d27d09-77fe-431d-9829-6eba7dce20b0, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
@@ -56,98 +57,100 @@ proxy-groups:
       - ♻️ 自动选择
       - 🎯 全球直连
       - _US_美国
-      - _US_美国 2
-      - JP_油管 TG 8度科技
-      - 油管 TG 8度科技
+      - 香港
+      - RU_油管 TG 8度科技
+      - GB_8080 @WangCai_1
+      - GB_7001 @WangCai_1
+      - GB_6679 @WangCai_1
+      - GB_7306 @WangCai_1
+      - GB_8000 @WangCai_1
+      - FR_油管+TG+8度科技
+      - GB_5004 @WangCai_1
+      - GB_5601 @WangCai_1
+      - GB_6697 @WangCai_1
+      - GB_8881 @WangCai_1
+      - GB_5500 @WangCai_1
+      - GB_5003 @WangCai_1
+      - GB_7307 @WangCai_1
       - _CA_加拿大
-      - US_油管 TG 8度科技
-      - FR_油管 TG 8度科技
-      - CA_油管 TG 8度科技
+      - GB_8118 @WangCai_1
+      - 英国-803.0KB/s(技术在这里)
+      - GB_2376 @WangCai_1
+      - GB_8009 @WangCai_1
+      - GB_2375 @WangCai_1
+      - GB_5001 @WangCai_1
+      - GB_3389 @WangCai_1
       - _CA_加拿大 2
-      - _FR_法国
+      - GB_5600 @WangCai_1
+      - GB_8008 @WangCai_1
+      - GB_8119 @WangCai_1
+      - GB_8888 @WangCai_1
+      - GB_9101 @WangCai_1
+      - GB_8882 @WangCai_1
       - _CA_加拿大 3
+      - GB_5000 @WangCai_1
       - _CA_加拿大 4
+      - GB_8090 @WangCai_1
       - _CA_加拿大 5
       - _CA_加拿大 6
-      - CA_油管 TG 8度科技 2
-      - _FR_法国 2
+      - GB_3306 @WangCai_1
+      - 加拿大-615.5KB/s(技术在这里)
       - _CA_加拿大 7
-      - CA_油管 TG 8度科技 3
-      - _FR_法国 3
-      - RU_油管 TG 8度科技
-      - RU_油管 TG 8度科技 2
-      - GB_油管 TG 8度科技
-      - _GB_英国
-      - _FR_法国 4
-      - _CA_加拿大 8
-      - _CA_加拿大 9
-      - _FR_法国 5
-      - _CA_加拿大 10
-      - _FR_法国 6
-      - _US_美国 3
-      - _FR_法国 7
-      - _CA_加拿大 11
-      - _US_美国->🇳🇱_NL_荷兰
-      - _GB_英国 2
-      - _FR_法国 8
-      - FR_油管 TG 8度科技 2
-      - _CA_加拿大 12
-      - _CA_加拿大 13
-      - _CA_加拿大 14
-      - _CA_加拿大 15
-      - _GB_英国 3
-      - _GB_英国 4
-      - _GB_英国 5
-      - _GB_英国 6
+      - _FR_法国
+      - GB_8091 @WangCai_1
+      - JP_油管 TG 8度科技
+      - 新加坡-1.87MB/s(技术在这里)
+      - 美国-2.45MB/s(技术在这里)
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
       - _US_美国
-      - _US_美国 2
-      - JP_油管 TG 8度科技
-      - 油管 TG 8度科技
+      - 香港
+      - RU_油管 TG 8度科技
+      - GB_8080 @WangCai_1
+      - GB_7001 @WangCai_1
+      - GB_6679 @WangCai_1
+      - GB_7306 @WangCai_1
+      - GB_8000 @WangCai_1
+      - FR_油管+TG+8度科技
+      - GB_5004 @WangCai_1
+      - GB_5601 @WangCai_1
+      - GB_6697 @WangCai_1
+      - GB_8881 @WangCai_1
+      - GB_5500 @WangCai_1
+      - GB_5003 @WangCai_1
+      - GB_7307 @WangCai_1
       - _CA_加拿大
-      - US_油管 TG 8度科技
-      - FR_油管 TG 8度科技
-      - CA_油管 TG 8度科技
+      - GB_8118 @WangCai_1
+      - 英国-803.0KB/s(技术在这里)
+      - GB_2376 @WangCai_1
+      - GB_8009 @WangCai_1
+      - GB_2375 @WangCai_1
+      - GB_5001 @WangCai_1
+      - GB_3389 @WangCai_1
       - _CA_加拿大 2
-      - _FR_法国
+      - GB_5600 @WangCai_1
+      - GB_8008 @WangCai_1
+      - GB_8119 @WangCai_1
+      - GB_8888 @WangCai_1
+      - GB_9101 @WangCai_1
+      - GB_8882 @WangCai_1
       - _CA_加拿大 3
+      - GB_5000 @WangCai_1
       - _CA_加拿大 4
+      - GB_8090 @WangCai_1
       - _CA_加拿大 5
       - _CA_加拿大 6
-      - CA_油管 TG 8度科技 2
-      - _FR_法国 2
+      - GB_3306 @WangCai_1
+      - 加拿大-615.5KB/s(技术在这里)
       - _CA_加拿大 7
-      - CA_油管 TG 8度科技 3
-      - _FR_法国 3
-      - RU_油管 TG 8度科技
-      - RU_油管 TG 8度科技 2
-      - GB_油管 TG 8度科技
-      - _GB_英国
-      - _FR_法国 4
-      - _CA_加拿大 8
-      - _CA_加拿大 9
-      - _FR_法国 5
-      - _CA_加拿大 10
-      - _FR_法国 6
-      - _US_美国 3
-      - _FR_法国 7
-      - _CA_加拿大 11
-      - _US_美国->🇳🇱_NL_荷兰
-      - _GB_英国 2
-      - _FR_法国 8
-      - FR_油管 TG 8度科技 2
-      - _CA_加拿大 12
-      - _CA_加拿大 13
-      - _CA_加拿大 14
-      - _CA_加拿大 15
-      - _GB_英国 3
-      - _GB_英国 4
-      - _GB_英国 5
-      - _GB_英国 6
+      - _FR_法国
+      - GB_8091 @WangCai_1
+      - JP_油管 TG 8度科技
+      - 新加坡-1.87MB/s(技术在这里)
+      - 美国-2.45MB/s(技术在这里)
   - name: 🎥 NETFLIX
     type: select
     proxies:
@@ -155,49 +158,50 @@ proxy-groups:
       - ♻️ 自动选择
       - 🎯 全球直连
       - _US_美国
-      - _US_美国 2
-      - JP_油管 TG 8度科技
-      - 油管 TG 8度科技
+      - 香港
+      - RU_油管 TG 8度科技
+      - GB_8080 @WangCai_1
+      - GB_7001 @WangCai_1
+      - GB_6679 @WangCai_1
+      - GB_7306 @WangCai_1
+      - GB_8000 @WangCai_1
+      - FR_油管+TG+8度科技
+      - GB_5004 @WangCai_1
+      - GB_5601 @WangCai_1
+      - GB_6697 @WangCai_1
+      - GB_8881 @WangCai_1
+      - GB_5500 @WangCai_1
+      - GB_5003 @WangCai_1
+      - GB_7307 @WangCai_1
       - _CA_加拿大
-      - US_油管 TG 8度科技
-      - FR_油管 TG 8度科技
-      - CA_油管 TG 8度科技
+      - GB_8118 @WangCai_1
+      - 英国-803.0KB/s(技术在这里)
+      - GB_2376 @WangCai_1
+      - GB_8009 @WangCai_1
+      - GB_2375 @WangCai_1
+      - GB_5001 @WangCai_1
+      - GB_3389 @WangCai_1
       - _CA_加拿大 2
-      - _FR_法国
+      - GB_5600 @WangCai_1
+      - GB_8008 @WangCai_1
+      - GB_8119 @WangCai_1
+      - GB_8888 @WangCai_1
+      - GB_9101 @WangCai_1
+      - GB_8882 @WangCai_1
       - _CA_加拿大 3
+      - GB_5000 @WangCai_1
       - _CA_加拿大 4
+      - GB_8090 @WangCai_1
       - _CA_加拿大 5
       - _CA_加拿大 6
-      - CA_油管 TG 8度科技 2
-      - _FR_法国 2
+      - GB_3306 @WangCai_1
+      - 加拿大-615.5KB/s(技术在这里)
       - _CA_加拿大 7
-      - CA_油管 TG 8度科技 3
-      - _FR_法国 3
-      - RU_油管 TG 8度科技
-      - RU_油管 TG 8度科技 2
-      - GB_油管 TG 8度科技
-      - _GB_英国
-      - _FR_法国 4
-      - _CA_加拿大 8
-      - _CA_加拿大 9
-      - _FR_法国 5
-      - _CA_加拿大 10
-      - _FR_法国 6
-      - _US_美国 3
-      - _FR_法国 7
-      - _CA_加拿大 11
-      - _US_美国->🇳🇱_NL_荷兰
-      - _GB_英国 2
-      - _FR_法国 8
-      - FR_油管 TG 8度科技 2
-      - _CA_加拿大 12
-      - _CA_加拿大 13
-      - _CA_加拿大 14
-      - _CA_加拿大 15
-      - _GB_英国 3
-      - _GB_英国 4
-      - _GB_英国 5
-      - _GB_英国 6
+      - _FR_法国
+      - GB_8091 @WangCai_1
+      - JP_油管 TG 8度科技
+      - 新加坡-1.87MB/s(技术在这里)
+      - 美国-2.45MB/s(技术在这里)
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -217,53 +221,55 @@ proxy-groups:
       - ♻️ 自动选择
       - 🎯 全球直连
       - _US_美国
-      - _US_美国 2
-      - JP_油管 TG 8度科技
-      - 油管 TG 8度科技
+      - 香港
+      - RU_油管 TG 8度科技
+      - GB_8080 @WangCai_1
+      - GB_7001 @WangCai_1
+      - GB_6679 @WangCai_1
+      - GB_7306 @WangCai_1
+      - GB_8000 @WangCai_1
+      - FR_油管+TG+8度科技
+      - GB_5004 @WangCai_1
+      - GB_5601 @WangCai_1
+      - GB_6697 @WangCai_1
+      - GB_8881 @WangCai_1
+      - GB_5500 @WangCai_1
+      - GB_5003 @WangCai_1
+      - GB_7307 @WangCai_1
       - _CA_加拿大
-      - US_油管 TG 8度科技
-      - FR_油管 TG 8度科技
-      - CA_油管 TG 8度科技
+      - GB_8118 @WangCai_1
+      - 英国-803.0KB/s(技术在这里)
+      - GB_2376 @WangCai_1
+      - GB_8009 @WangCai_1
+      - GB_2375 @WangCai_1
+      - GB_5001 @WangCai_1
+      - GB_3389 @WangCai_1
       - _CA_加拿大 2
-      - _FR_法国
+      - GB_5600 @WangCai_1
+      - GB_8008 @WangCai_1
+      - GB_8119 @WangCai_1
+      - GB_8888 @WangCai_1
+      - GB_9101 @WangCai_1
+      - GB_8882 @WangCai_1
       - _CA_加拿大 3
+      - GB_5000 @WangCai_1
       - _CA_加拿大 4
+      - GB_8090 @WangCai_1
       - _CA_加拿大 5
       - _CA_加拿大 6
-      - CA_油管 TG 8度科技 2
-      - _FR_法国 2
+      - GB_3306 @WangCai_1
+      - 加拿大-615.5KB/s(技术在这里)
       - _CA_加拿大 7
-      - CA_油管 TG 8度科技 3
-      - _FR_法国 3
-      - RU_油管 TG 8度科技
-      - RU_油管 TG 8度科技 2
-      - GB_油管 TG 8度科技
-      - _GB_英国
-      - _FR_法国 4
-      - _CA_加拿大 8
-      - _CA_加拿大 9
-      - _FR_法国 5
-      - _CA_加拿大 10
-      - _FR_法国 6
-      - _US_美国 3
-      - _FR_法国 7
-      - _CA_加拿大 11
-      - _US_美国->🇳🇱_NL_荷兰
-      - _GB_英国 2
-      - _FR_法国 8
-      - FR_油管 TG 8度科技 2
-      - _CA_加拿大 12
-      - _CA_加拿大 13
-      - _CA_加拿大 14
-      - _CA_加拿大 15
-      - _GB_英国 3
-      - _GB_英国 4
-      - _GB_英国 5
-      - _GB_英国 6
+      - _FR_法国
+      - GB_8091 @WangCai_1
+      - JP_油管 TG 8度科技
+      - 新加坡-1.87MB/s(技术在这里)
+      - 美国-2.45MB/s(技术在这里)
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
+      - 香港
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
@@ -271,98 +277,100 @@ proxy-groups:
       - 🎯 全球直连
       - 🔰 节点选择
       - _US_美国
-      - _US_美国 2
-      - JP_油管 TG 8度科技
-      - 油管 TG 8度科技
+      - 香港
+      - RU_油管 TG 8度科技
+      - GB_8080 @WangCai_1
+      - GB_7001 @WangCai_1
+      - GB_6679 @WangCai_1
+      - GB_7306 @WangCai_1
+      - GB_8000 @WangCai_1
+      - FR_油管+TG+8度科技
+      - GB_5004 @WangCai_1
+      - GB_5601 @WangCai_1
+      - GB_6697 @WangCai_1
+      - GB_8881 @WangCai_1
+      - GB_5500 @WangCai_1
+      - GB_5003 @WangCai_1
+      - GB_7307 @WangCai_1
       - _CA_加拿大
-      - US_油管 TG 8度科技
-      - FR_油管 TG 8度科技
-      - CA_油管 TG 8度科技
+      - GB_8118 @WangCai_1
+      - 英国-803.0KB/s(技术在这里)
+      - GB_2376 @WangCai_1
+      - GB_8009 @WangCai_1
+      - GB_2375 @WangCai_1
+      - GB_5001 @WangCai_1
+      - GB_3389 @WangCai_1
       - _CA_加拿大 2
-      - _FR_法国
+      - GB_5600 @WangCai_1
+      - GB_8008 @WangCai_1
+      - GB_8119 @WangCai_1
+      - GB_8888 @WangCai_1
+      - GB_9101 @WangCai_1
+      - GB_8882 @WangCai_1
       - _CA_加拿大 3
+      - GB_5000 @WangCai_1
       - _CA_加拿大 4
+      - GB_8090 @WangCai_1
       - _CA_加拿大 5
       - _CA_加拿大 6
-      - CA_油管 TG 8度科技 2
-      - _FR_法国 2
+      - GB_3306 @WangCai_1
+      - 加拿大-615.5KB/s(技术在这里)
       - _CA_加拿大 7
-      - CA_油管 TG 8度科技 3
-      - _FR_法国 3
-      - RU_油管 TG 8度科技
-      - RU_油管 TG 8度科技 2
-      - GB_油管 TG 8度科技
-      - _GB_英国
-      - _FR_法国 4
-      - _CA_加拿大 8
-      - _CA_加拿大 9
-      - _FR_法国 5
-      - _CA_加拿大 10
-      - _FR_法国 6
-      - _US_美国 3
-      - _FR_法国 7
-      - _CA_加拿大 11
-      - _US_美国->🇳🇱_NL_荷兰
-      - _GB_英国 2
-      - _FR_法国 8
-      - FR_油管 TG 8度科技 2
-      - _CA_加拿大 12
-      - _CA_加拿大 13
-      - _CA_加拿大 14
-      - _CA_加拿大 15
-      - _GB_英国 3
-      - _GB_英国 4
-      - _GB_英国 5
-      - _GB_英国 6
+      - _FR_法国
+      - GB_8091 @WangCai_1
+      - JP_油管 TG 8度科技
+      - 新加坡-1.87MB/s(技术在这里)
+      - 美国-2.45MB/s(技术在这里)
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - _US_美国
-      - _US_美国 2
-      - JP_油管 TG 8度科技
-      - 油管 TG 8度科技
+      - 香港
+      - RU_油管 TG 8度科技
+      - GB_8080 @WangCai_1
+      - GB_7001 @WangCai_1
+      - GB_6679 @WangCai_1
+      - GB_7306 @WangCai_1
+      - GB_8000 @WangCai_1
+      - FR_油管+TG+8度科技
+      - GB_5004 @WangCai_1
+      - GB_5601 @WangCai_1
+      - GB_6697 @WangCai_1
+      - GB_8881 @WangCai_1
+      - GB_5500 @WangCai_1
+      - GB_5003 @WangCai_1
+      - GB_7307 @WangCai_1
       - _CA_加拿大
-      - US_油管 TG 8度科技
-      - FR_油管 TG 8度科技
-      - CA_油管 TG 8度科技
+      - GB_8118 @WangCai_1
+      - 英国-803.0KB/s(技术在这里)
+      - GB_2376 @WangCai_1
+      - GB_8009 @WangCai_1
+      - GB_2375 @WangCai_1
+      - GB_5001 @WangCai_1
+      - GB_3389 @WangCai_1
       - _CA_加拿大 2
-      - _FR_法国
+      - GB_5600 @WangCai_1
+      - GB_8008 @WangCai_1
+      - GB_8119 @WangCai_1
+      - GB_8888 @WangCai_1
+      - GB_9101 @WangCai_1
+      - GB_8882 @WangCai_1
       - _CA_加拿大 3
+      - GB_5000 @WangCai_1
       - _CA_加拿大 4
+      - GB_8090 @WangCai_1
       - _CA_加拿大 5
       - _CA_加拿大 6
-      - CA_油管 TG 8度科技 2
-      - _FR_法国 2
+      - GB_3306 @WangCai_1
+      - 加拿大-615.5KB/s(技术在这里)
       - _CA_加拿大 7
-      - CA_油管 TG 8度科技 3
-      - _FR_法国 3
-      - RU_油管 TG 8度科技
-      - RU_油管 TG 8度科技 2
-      - GB_油管 TG 8度科技
-      - _GB_英国
-      - _FR_法国 4
-      - _CA_加拿大 8
-      - _CA_加拿大 9
-      - _FR_法国 5
-      - _CA_加拿大 10
-      - _FR_法国 6
-      - _US_美国 3
-      - _FR_法国 7
-      - _CA_加拿大 11
-      - _US_美国->🇳🇱_NL_荷兰
-      - _GB_英国 2
-      - _FR_法国 8
-      - FR_油管 TG 8度科技 2
-      - _CA_加拿大 12
-      - _CA_加拿大 13
-      - _CA_加拿大 14
-      - _CA_加拿大 15
-      - _GB_英国 3
-      - _GB_英国 4
-      - _GB_英国 5
-      - _GB_英国 6
+      - _FR_法国
+      - GB_8091 @WangCai_1
+      - JP_油管 TG 8度科技
+      - 新加坡-1.87MB/s(技术在这里)
+      - 美国-2.45MB/s(技术在这里)
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -370,49 +378,50 @@ proxy-groups:
       - 🎯 全球直连
       - ♻️ 自动选择
       - _US_美国
-      - _US_美国 2
-      - JP_油管 TG 8度科技
-      - 油管 TG 8度科技
+      - 香港
+      - RU_油管 TG 8度科技
+      - GB_8080 @WangCai_1
+      - GB_7001 @WangCai_1
+      - GB_6679 @WangCai_1
+      - GB_7306 @WangCai_1
+      - GB_8000 @WangCai_1
+      - FR_油管+TG+8度科技
+      - GB_5004 @WangCai_1
+      - GB_5601 @WangCai_1
+      - GB_6697 @WangCai_1
+      - GB_8881 @WangCai_1
+      - GB_5500 @WangCai_1
+      - GB_5003 @WangCai_1
+      - GB_7307 @WangCai_1
       - _CA_加拿大
-      - US_油管 TG 8度科技
-      - FR_油管 TG 8度科技
-      - CA_油管 TG 8度科技
+      - GB_8118 @WangCai_1
+      - 英国-803.0KB/s(技术在这里)
+      - GB_2376 @WangCai_1
+      - GB_8009 @WangCai_1
+      - GB_2375 @WangCai_1
+      - GB_5001 @WangCai_1
+      - GB_3389 @WangCai_1
       - _CA_加拿大 2
-      - _FR_法国
+      - GB_5600 @WangCai_1
+      - GB_8008 @WangCai_1
+      - GB_8119 @WangCai_1
+      - GB_8888 @WangCai_1
+      - GB_9101 @WangCai_1
+      - GB_8882 @WangCai_1
       - _CA_加拿大 3
+      - GB_5000 @WangCai_1
       - _CA_加拿大 4
+      - GB_8090 @WangCai_1
       - _CA_加拿大 5
       - _CA_加拿大 6
-      - CA_油管 TG 8度科技 2
-      - _FR_法国 2
+      - GB_3306 @WangCai_1
+      - 加拿大-615.5KB/s(技术在这里)
       - _CA_加拿大 7
-      - CA_油管 TG 8度科技 3
-      - _FR_法国 3
-      - RU_油管 TG 8度科技
-      - RU_油管 TG 8度科技 2
-      - GB_油管 TG 8度科技
-      - _GB_英国
-      - _FR_法国 4
-      - _CA_加拿大 8
-      - _CA_加拿大 9
-      - _FR_法国 5
-      - _CA_加拿大 10
-      - _FR_法国 6
-      - _US_美国 3
-      - _FR_法国 7
-      - _CA_加拿大 11
-      - _US_美国->🇳🇱_NL_荷兰
-      - _GB_英国 2
-      - _FR_法国 8
-      - FR_油管 TG 8度科技 2
-      - _CA_加拿大 12
-      - _CA_加拿大 13
-      - _CA_加拿大 14
-      - _CA_加拿大 15
-      - _GB_英国 3
-      - _GB_英国 4
-      - _GB_英国 5
-      - _GB_英国 6
+      - _FR_法国
+      - GB_8091 @WangCai_1
+      - JP_油管 TG 8度科技
+      - 新加坡-1.87MB/s(技术在这里)
+      - 美国-2.45MB/s(技术在这里)
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -429,49 +438,50 @@ proxy-groups:
       - 🎯 全球直连
       - ♻️ 自动选择
       - _US_美国
-      - _US_美国 2
-      - JP_油管 TG 8度科技
-      - 油管 TG 8度科技
+      - 香港
+      - RU_油管 TG 8度科技
+      - GB_8080 @WangCai_1
+      - GB_7001 @WangCai_1
+      - GB_6679 @WangCai_1
+      - GB_7306 @WangCai_1
+      - GB_8000 @WangCai_1
+      - FR_油管+TG+8度科技
+      - GB_5004 @WangCai_1
+      - GB_5601 @WangCai_1
+      - GB_6697 @WangCai_1
+      - GB_8881 @WangCai_1
+      - GB_5500 @WangCai_1
+      - GB_5003 @WangCai_1
+      - GB_7307 @WangCai_1
       - _CA_加拿大
-      - US_油管 TG 8度科技
-      - FR_油管 TG 8度科技
-      - CA_油管 TG 8度科技
+      - GB_8118 @WangCai_1
+      - 英国-803.0KB/s(技术在这里)
+      - GB_2376 @WangCai_1
+      - GB_8009 @WangCai_1
+      - GB_2375 @WangCai_1
+      - GB_5001 @WangCai_1
+      - GB_3389 @WangCai_1
       - _CA_加拿大 2
-      - _FR_法国
+      - GB_5600 @WangCai_1
+      - GB_8008 @WangCai_1
+      - GB_8119 @WangCai_1
+      - GB_8888 @WangCai_1
+      - GB_9101 @WangCai_1
+      - GB_8882 @WangCai_1
       - _CA_加拿大 3
+      - GB_5000 @WangCai_1
       - _CA_加拿大 4
+      - GB_8090 @WangCai_1
       - _CA_加拿大 5
       - _CA_加拿大 6
-      - CA_油管 TG 8度科技 2
-      - _FR_法国 2
+      - GB_3306 @WangCai_1
+      - 加拿大-615.5KB/s(技术在这里)
       - _CA_加拿大 7
-      - CA_油管 TG 8度科技 3
-      - _FR_法国 3
-      - RU_油管 TG 8度科技
-      - RU_油管 TG 8度科技 2
-      - GB_油管 TG 8度科技
-      - _GB_英国
-      - _FR_法国 4
-      - _CA_加拿大 8
-      - _CA_加拿大 9
-      - _FR_法国 5
-      - _CA_加拿大 10
-      - _FR_法国 6
-      - _US_美国 3
-      - _FR_法国 7
-      - _CA_加拿大 11
-      - _US_美国->🇳🇱_NL_荷兰
-      - _GB_英国 2
-      - _FR_法国 8
-      - FR_油管 TG 8度科技 2
-      - _CA_加拿大 12
-      - _CA_加拿大 13
-      - _CA_加拿大 14
-      - _CA_加拿大 15
-      - _GB_英国 3
-      - _GB_英国 4
-      - _GB_英国 5
-      - _GB_英国 6
+      - _FR_法国
+      - GB_8091 @WangCai_1
+      - JP_油管 TG 8度科技
+      - 新加坡-1.87MB/s(技术在这里)
+      - 美国-2.45MB/s(技术在这里)
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
