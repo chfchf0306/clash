@@ -5,599 +5,279 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: HK_10 @WangCai_1, server: cn2relay01.yiyorelay.xyz, port: 2709, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 63343:n2xAEI, obfs-param: microsoft.com, udp: true}
-  - {name: HK_8 @WangCai_1, server: cn2relay01.yiyorelay.xyz, port: 2707, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 63343:n2xAEI, obfs-param: microsoft.com, udp: true}
-  - {name: vpnpool-Tokyo-Linode, server: 36.250.71.68, port: 18806, type: vmess, uuid: 89ad04b4-a702-3753-ac97-9e693709f9ff, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.me/vpnhat}, udp: true}
-  - {name: HK_10 @WangCai_1 2, server: cn2relay01.yiyorelay.xyz, port: 2709, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62611:fx2iOd, obfs-param: microsoft.com, udp: true}
-  - {name: TW_4 @WangCai_1, server: cmrelay01.yiyorelay.xyz, port: 5703, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 63343:n2xAEI, obfs-param: microsoft.com, udp: true}
-  - {name: HK_6 @WangCai_1, server: cn2relay01.yiyorelay.xyz, port: 2705, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 63343:n2xAEI, obfs-param: microsoft.com, udp: true}
-  - {name: HK_4 @WangCai_1, server: cn2relay01.yiyorelay.xyz, port: 2703, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 63343:n2xAEI, obfs-param: microsoft.com, udp: true}
-  - {name: JP_2 @WangCai_1, server: cmrelay01.yiyorelay.xyz, port: 3701, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62611:fx2iOd, obfs-param: microsoft.com, udp: true}
-  - {name: JP_6 @WangCai_1, server: cmrelay01.yiyorelay.xyz, port: 3705, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62611:fx2iOd, obfs-param: microsoft.com, udp: true}
-  - {name: HK_5 @WangCai_1, server: cn2relay01.yiyorelay.xyz, port: 2704, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62611:fx2iOd, obfs-param: microsoft.com, udp: true}
-  - {name: JP_5 @WangCai_1, server: cmrelay01.yiyorelay.xyz, port: 3704, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 63343:n2xAEI, obfs-param: microsoft.com, udp: true}
-  - {name: JP_8 @WangCai_1, server: cmrelay01.yiyorelay.xyz, port: 3707, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 63343:n2xAEI, obfs-param: microsoft.com, udp: true}
-  - {name: JP_6 @WangCai_1 2, server: cmrelay01.yiyorelay.xyz, port: 3705, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 63343:n2xAEI, obfs-param: microsoft.com, udp: true}
-  - {name: JP_10 @WangCai_1, server: cmrelay01.yiyorelay.xyz, port: 3709, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 63343:n2xAEI, obfs-param: microsoft.com, udp: true}
-  - {name: JP_4 @WangCai_1, server: cmrelay01.yiyorelay.xyz, port: 3703, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62611:fx2iOd, obfs-param: microsoft.com, udp: true}
-  - {name: KR_3 @WangCai_1, server: cmrelay01.yiyorelay.xyz, port: 4002, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62611:fx2iOd, obfs-param: microsoft.com, udp: true}
-  - {name: HK_1 @WangCai_1, server: cn2relay01.yiyorelay.xyz, port: 2700, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 63343:n2xAEI, obfs-param: microsoft.com, udp: true}
-  - {name: HK_7 @WangCai_1, server: cn2relay01.yiyorelay.xyz, port: 2706, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62611:fx2iOd, obfs-param: microsoft.com, udp: true}
-  - {name: ‌‌🇨🇦CA_7002 @WangCai_1, server: 198.57.27.218, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: HK_3 @WangCai_1, server: cn2relay01.yiyorelay.xyz, port: 2702, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62611:fx2iOd, obfs-param: microsoft.com, udp: true}
-  - {name: HK_2 @WangCai_1, server: cn2relay01.yiyorelay.xyz, port: 2701, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 63343:n2xAEI, obfs-param: microsoft.com, udp: true}
-  - {name: vpnpool-San Jose-PegTech, server: 36.250.71.68, port: 18805, type: vmess, uuid: 89ad04b4-a702-3753-ac97-9e693709f9ff, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.me/vpnhat}, udp: true}
-  - {name: HK_7 @WangCai_1 2, server: cn2relay01.yiyorelay.xyz, port: 2706, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 63343:n2xAEI, obfs-param: microsoft.com, udp: true}
-  - {name: HK_9 @WangCai_1, server: cn2relay01.yiyorelay.xyz, port: 2708, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 63343:n2xAEI, obfs-param: microsoft.com, udp: true}
-  - {name: vpnpool-San Jose-PegTech 2, server: 183.240.55.55, port: 18805, type: vmess, uuid: 89ad04b4-a702-3753-ac97-9e693709f9ff, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.me/vpnhat}, udp: true}
-  - {name: HK_1 @WangCai_1 2, server: cn2relay01.yiyorelay.xyz, port: 2700, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62611:fx2iOd, obfs-param: microsoft.com, udp: true}
-  - {name: JP_5 @WangCai_1 2, server: cmrelay01.yiyorelay.xyz, port: 3704, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62611:fx2iOd, obfs-param: microsoft.com, udp: true}
-  - {name: JP_7 @WangCai_1, server: cmrelay01.yiyorelay.xyz, port: 3706, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 63343:n2xAEI, obfs-param: microsoft.com, udp: true}
-  - {name: JP_1 @WangCai_1, server: cmrelay01.yiyorelay.xyz, port: 3700, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 63343:n2xAEI, obfs-param: microsoft.com, udp: true}
-  - {name: JP_9 @WangCai_1, server: cmrelay01.yiyorelay.xyz, port: 3708, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62611:fx2iOd, obfs-param: microsoft.com, udp: true}
-  - {name: JP_3 @WangCai_1, server: cmrelay01.yiyorelay.xyz, port: 3702, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 63343:n2xAEI, obfs-param: microsoft.com, udp: true}
-  - {name: _US_美国, server: 38.143.66.71, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: JP_1 @WangCai_1 2, server: cmrelay01.yiyorelay.xyz, port: 3700, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62611:fx2iOd, obfs-param: microsoft.com, udp: true}
-  - {name: US_3 @WangCai_1, server: cmrelay01.yiyorelay.xyz, port: 7702, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62611:fx2iOd, obfs-param: microsoft.com, udp: true}
-  - {name: US_5 @WangCai_1, server: cmrelay01.yiyorelay.xyz, port: 7704, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 63343:n2xAEI, obfs-param: microsoft.com, udp: true}
-  - {name: HK_3 @WangCai_1 2, server: cn2relay01.yiyorelay.xyz, port: 2702, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 63343:n2xAEI, obfs-param: microsoft.com, udp: true}
-  - {name: KR_1 @WangCai_1, server: cmrelay01.yiyorelay.xyz, port: 4000, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62611:fx2iOd, obfs-param: microsoft.com, udp: true}
-  - {name: SG_2 @WangCai_1, server: cmrelay01.yiyorelay.xyz, port: 6701, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 63343:n2xAEI, obfs-param: microsoft.com, udp: true}
-  - {name: _US_美国_80, server: 167.88.61.175, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: US_5004 @WangCai_1, server: 38.143.66.71, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: SG3_ @WangCai_1, server: cmrelay01.yiyorelay.xyz, port: 6702, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62611:fx2iOd, obfs-param: microsoft.com, udp: true}
-  - {name: US_8 @WangCai_1, server: cmrelay01.yiyorelay.xyz, port: 7707, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 63343:n2xAEI, obfs-param: microsoft.com, udp: true}
-  - {name: US_8008 @WangCai_1, server: 38.143.66.71, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: US_5 @WangCai_1 2, server: cmrelay01.yiyorelay.xyz, port: 7704, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62611:fx2iOd, obfs-param: microsoft.com, udp: true}
-  - {name: US_9 @WangCai_1, server: cmrelay01.yiyorelay.xyz, port: 7708, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62611:fx2iOd, obfs-param: microsoft.com, udp: true}
-  - {name: US_2 @WangCai_1, server: cmrelay01.yiyorelay.xyz, port: 7701, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 63343:n2xAEI, obfs-param: microsoft.com, udp: true}
-  - {name: SG_9 @WangCai_1, server: cmrelay01.yiyorelay.xyz, port: 6708, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 63343:n2xAEI, obfs-param: microsoft.com, udp: true}
-  - {name: US_4 @WangCai_1, server: cmrelay01.yiyorelay.xyz, port: 7703, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 63343:n2xAEI, obfs-param: microsoft.com, udp: true}
-  - {name: SG3_ @WangCai_1 2, server: cmrelay01.yiyorelay.xyz, port: 6702, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 63343:n2xAEI, obfs-param: microsoft.com, udp: true}
-  - {name: US_3 @WangCai_1 2, server: cmrelay01.yiyorelay.xyz, port: 7702, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 63343:n2xAEI, obfs-param: microsoft.com, udp: true}
-  - {name: US_9 @WangCai_1 2, server: cmrelay01.yiyorelay.xyz, port: 7708, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 63343:n2xAEI, obfs-param: microsoft.com, udp: true}
-  - {name: _CA_加拿大, server: 134.195.196.187, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: Relay_🇺🇸US-🇺🇸US_2765, server: 138.197.236.77, port: 443, type: vmess, uuid: 3579436c-b37e-11eb-8529-0242ac130003, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ray, ws-headers: {Host: 138.197.236.77}, udp: true}
+  - {name: vpnpool-桃园Hinet, server: 120.233.10.182, port: 5705, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62611:fx2iOd, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnpool-新北Hinet, server: 120.233.10.182, port: 5704, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62611:fx2iOd, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnpool-桃园Hinet 2, server: 120.233.10.182, port: 5701, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62611:fx2iOd, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnpool-新北Hinet 2, server: 120.233.10.182, port: 5700, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62611:fx2iOd, obfs-param: t.me/vpnhat, udp: true}
+  - {name: vpnpool-桃园Hinet 3, server: 120.233.10.182, port: 5703, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62611:fx2iOd, obfs-param: t.me/vpnhat, udp: true}
+  - {name: Relay_🇸🇬SG-🇸🇬SG_1109, server: sg-am11.eqnode.net, port: 8181, type: ssr, cipher: aes-256-cfb, password: kKdNNt2HZ, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: releases.ubuntu.com, udp: true}
+  - {name: default_name, server: 198.41.221.169, port: 443, type: vmess, uuid: a8910831-f56b-4ac4-c68f-e4dd83f71e60, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /sakura/, ws-headers: {Host: zero1.a-yu.xyz}, udp: true}
+  - {name: 香港 01, server: 120.233.7.78, port: 50111, type: ssr, cipher: rc4-md5, password: abK09D1FnV, protocol: auth_aes128_md5, obfs: http_post, protocol-param: 292778:QiDeo5UdMB, obfs-param: "", udp: true}
+  - {name: _AE_阿联酋, server: bi.oracleusa.ml, port: 2053, type: vmess, uuid: 770df784-69de-4ef2-887c-783a67eaef7f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: bi.oracleusa.ml}, udp: true}
+  - {name: V1-美国01 中继D | 1.5x, server: in04.dns2333.xyz, port: 63014, type: vmess, uuid: f5851fa4-8c76-3148-860e-9641afcd3576, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /mg, ws-headers: {Host: mugua-us01.covid19.rip}, udp: true}
+  - {name: US_2579, server: 38.91.102.86, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
   - {name: US_8091 @WangCai_1, server: 38.143.66.71, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: US_6 @WangCai_1, server: cmrelay01.yiyorelay.xyz, port: 7705, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 63343:n2xAEI, obfs-param: microsoft.com, udp: true}
-  - {name: ‌‌🇨🇦CA_6679 @WangCai_1, server: 134.195.196.12, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: ‌‌🇨🇦CA_8000 @WangCai_1, server: 198.57.27.218, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: default_name, server: icook.tw, port: 443, type: vmess, uuid: 188741f2-1f14-43cb-be7a-1200a9f4332e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /The-Great-Awakening_vws, ws-headers: {Host: vincent-jackson2022.ml}, udp: true}
-  - {name: _CA_加拿大 2, server: 134.195.196.187, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: _CA_加拿大 3, server: 134.195.196.187, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: US_5001 @WangCai_1, server: 38.143.66.71, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_1 @WangCai_1, server: cmrelay01.yiyorelay.xyz, port: 7700, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62611:fx2iOd, obfs-param: microsoft.com, udp: true}
-  - {name: _CA_加拿大_100, server: 134.195.196.12, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: _CA_加拿大 4, server: 134.195.196.187, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: ‌‌🇨🇦CA_9101 @WangCai_1, server: 134.195.196.12, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: ‌‌🇨🇦CA_7307 @WangCai_1, server: 134.195.196.227, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: ‌‌🇨🇦CA_8118 @WangCai_1, server: 134.195.196.227, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: US_10 @WangCai_1, server: cmrelay01.yiyorelay.xyz, port: 7709, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62611:fx2iOd, obfs-param: microsoft.com, udp: true}
-  - {name: ‌‌🇨🇦CA_5500 @WangCai_1, server: 134.195.196.227, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: _CA_加拿大 5, server: 134.195.196.187, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: ‌‌🇨🇦CA_8008 @WangCai_1, server: 134.195.196.12, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: 香港 01 2, server: 120.233.7.78, port: 50111, type: ssr, cipher: rc4-md5, password: abK09D1FnV, protocol: auth_aes128_md5, obfs: http_post, protocol-param: 292769:GzZVA9eXtJ, obfs-param: "", udp: true}
+  - {name: 香港 01 3, server: 120.233.7.78, port: 50111, type: ssr, cipher: rc4-md5, password: abK09D1FnV, protocol: auth_aes128_md5, obfs: http_post, protocol-param: 292775:KCTJeBrLjb, obfs-param: "", udp: true}
+  - {name: ZZ_3318, server: 134.195.196.3, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: _US_美国, server: 38.86.135.36, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: vpnpool-US-Hillsboro-OVH, server: 120.233.10.182, port: 7700, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62611:fx2iOd, obfs-param: t.me/vpnhat, udp: true}
   - {name: ‌‌🇨🇦CA_6379 @WangCai_1, server: 134.195.196.12, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: _US_美国 2, server: 38.91.100.102, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: _CA_加拿大 6, server: 134.195.196.187, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: _CA_加拿大_97, server: 134.195.196.12, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: ‌‌🇨🇦CA_9102 @WangCai_1, server: 198.57.27.218, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: _CA_加拿大 7, server: 134.195.196.187, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: ‌‌🇨🇦CA_8000 @WangCai_1 2, server: 134.195.196.12, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: ‌‌🇨🇦CA_7001 @WangCai_1, server: 134.195.196.12, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: ‌‌🇨🇦CA_9102 @WangCai_1 2, server: 134.195.196.12, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: ‌‌🇨🇦CA_5001 @WangCai_1, server: 134.195.196.12, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: ‌‌🇨🇦CA_8091 @WangCai_1, server: 198.57.27.172, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: ‌‌🇨🇦CA_7002 @WangCai_1 2, server: 134.195.196.12, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: ‌‌🇨🇦CA_7002 @WangCai_1 3, server: 134.195.196.227, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: ‌‌🇨🇦CA_8888 @WangCai_1, server: 134.195.196.12, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: _CA_加拿大_11, server: 134.195.196.12, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: JP_3 @WangCai_1 2, server: cmrelay01.yiyorelay.xyz, port: 3702, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62611:fx2iOd, obfs-param: microsoft.com, udp: true}
-  - {name: JP_9 @WangCai_1 2, server: cmrelay01.yiyorelay.xyz, port: 3708, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 63343:n2xAEI, obfs-param: microsoft.com, udp: true}
-  - {name: _CA_加拿大 8, server: 134.195.196.187, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: _CA_加拿大_46, server: 134.195.196.12, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: _CA_加拿大 9, server: 134.195.196.187, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: JP_7 @WangCai_1 2, server: cmrelay01.yiyorelay.xyz, port: 3706, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62611:fx2iOd, obfs-param: microsoft.com, udp: true}
-  - {name: ‌‌🇨🇦CA_5500 @WangCai_1 2, server: 134.195.196.12, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: ‌‌🇨🇦CA_5004 @WangCai_1, server: 198.57.27.218, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: JP_2 @WangCai_1 2, server: cmrelay01.yiyorelay.xyz, port: 3701, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 63343:n2xAEI, obfs-param: microsoft.com, udp: true}
-  - {name: KR_3 @WangCai_1 2, server: cmrelay01.yiyorelay.xyz, port: 4002, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 63343:n2xAEI, obfs-param: microsoft.com, udp: true}
-  - {name: KR_2 @WangCai_1, server: cmrelay01.yiyorelay.xyz, port: 4001, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62611:fx2iOd, obfs-param: microsoft.com, udp: true}
-  - {name: US_8090 @WangCai_1, server: 38.143.66.71, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: ‌‌🇨🇦CA_0443 @WangCai_1, server: 134.195.196.227, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: ‌‌🇨🇦CA_8119 @WangCai_1, server: 134.195.196.12, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: ‌‌🇨🇦CA_7306 @WangCai_1, server: 134.195.196.12, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: ‌‌🇨🇦CA_8882 @WangCai_1, server: 198.57.27.218, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: ‌‌🇨🇦CA_8888 @WangCai_1 2, server: 134.195.196.227, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: _CA_加拿大_14, server: 134.195.196.12, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: ‌‌🇨🇦CA_8119 @WangCai_1 2, server: 198.57.27.218, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: JP_8 @WangCai_1 2, server: cmrelay01.yiyorelay.xyz, port: 3707, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62611:fx2iOd, obfs-param: microsoft.com, udp: true}
-  - {name: KR_4 @WangCai_1, server: cmrelay01.yiyorelay.xyz, port: 4003, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62611:fx2iOd, obfs-param: microsoft.com, udp: true}
-  - {name: ‌‌🇨🇦CA_8881 @WangCai_1, server: 134.195.196.12, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: ‌‌🇨🇦CA_8118 @WangCai_1 2, server: 134.195.196.12, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: KR_2 @WangCai_1 2, server: cmrelay01.yiyorelay.xyz, port: 4001, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 63343:n2xAEI, obfs-param: microsoft.com, udp: true}
-  - {name: KR_4 @WangCai_1 2, server: cmrelay01.yiyorelay.xyz, port: 4003, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 63343:n2xAEI, obfs-param: microsoft.com, udp: true}
-  - {name: vpnpool-香港Nearoute, server: 183.240.55.55, port: 18812, type: vmess, uuid: 89ad04b4-a702-3753-ac97-9e693709f9ff, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.me/vpnhat}, udp: true}
-  - {name: ‌‌🇨🇦CA_8009 @WangCai_1, server: 134.195.196.12, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: ‌‌🇨🇦CA_8008 @WangCai_1 2, server: 198.57.27.218, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: US_6 @WangCai_1 2, server: cmrelay01.yiyorelay.xyz, port: 7705, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62611:fx2iOd, obfs-param: microsoft.com, udp: true}
-  - {name: vpnpool-London-Linode, server: 183.240.55.55, port: 18815, type: vmess, uuid: 89ad04b4-a702-3753-ac97-9e693709f9ff, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.me/vpnhat}, udp: true}
-  - {name: SG_4 @WangCai_1, server: cmrelay01.yiyorelay.xyz, port: 6703, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 63343:n2xAEI, obfs-param: microsoft.com, udp: true}
-  - {name: _CA_加拿大_40, server: 134.195.196.12, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: KR_1 @WangCai_1 2, server: cmrelay01.yiyorelay.xyz, port: 4000, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 63343:n2xAEI, obfs-param: microsoft.com, udp: true}
-  - {name: SG_5 @WangCai_1, server: cmrelay01.yiyorelay.xyz, port: 6704, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62611:fx2iOd, obfs-param: microsoft.com, udp: true}
-  - {name: ‌‌🇨🇦CA_6379 @WangCai_1 2, server: 198.57.27.218, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
+  - {name: _CA_加拿大, server: 134.195.196.3, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: ‌‌🇨🇦CA_9102 @WangCai_1, server: 134.195.196.12, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: _CA_加拿大_100, server: 134.195.196.12, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: _CA_加拿大 2, server: 134.195.196.3, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: ‌‌🇨🇦CA_8000 @WangCai_1, server: 134.195.196.12, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: _US_美国 2, server: 169.197.142.187, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: _CA_加拿大 3, server: 134.195.196.68, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
   - {name: ‌‌🇨🇦CA_6697 @WangCai_1, server: 134.195.196.12, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: _CA_加拿大 10, server: 134.195.196.187, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: US_1 @WangCai_1 2, server: cmrelay01.yiyorelay.xyz, port: 7700, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 63343:n2xAEI, obfs-param: microsoft.com, udp: true}
-  - {name: ‌‌🇨🇦CA_8118 @WangCai_1 3, server: 198.57.27.218, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: HK_5 @WangCai_1 2, server: cn2relay01.yiyorelay.xyz, port: 2704, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 63343:n2xAEI, obfs-param: microsoft.com, udp: true}
-  - {name: ‌‌🇨🇦CA_6679 @WangCai_1 2, server: 198.57.27.218, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: ‌‌🇨🇦CA_8009 @WangCai_1 2, server: 198.57.27.172, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: vpnpool-Sydney-Linode, server: 113.240.72.239, port: 18811, type: vmess, uuid: 89ad04b4-a702-3753-ac97-9e693709f9ff, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.me/vpnhat}, udp: true}
-  - {name: vpnpool-Sydney-Linode 2, server: 183.240.55.55, port: 18811, type: vmess, uuid: 89ad04b4-a702-3753-ac97-9e693709f9ff, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.me/vpnhat}, udp: true}
-  - {name: Seoul-BCPL@vpnhat, server: 202.79.164.124, port: 8441, type: ss, cipher: rc4-md5, password: passinfo123, udp: true}
-  - {name: _CA_加拿大 11, server: 134.195.196.187, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: ‌‌🇨🇦CA_5000 @WangCai_1, server: 134.195.196.12, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: ‌‌🇨🇦CA_3306 @WangCai_1, server: 134.195.196.12, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: _CA_加拿大 12, server: 134.195.196.187, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: ‌‌🇨🇦CA_5000 @WangCai_1 2, server: 198.57.27.172, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: ‌‌🇨🇦CA_5600 @WangCai_1, server: 134.195.196.12, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: vpnpool-Sydney-Linode 3, server: 36.250.71.68, port: 18811, type: vmess, uuid: 89ad04b4-a702-3753-ac97-9e693709f9ff, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.me/vpnhat}, udp: true}
-  - {name: FR-Strasbourg-VELIANET@vpnhat, server: 117.28.243.220, port: 8186, type: ss, cipher: rc4-md5, password: passinfo123, udp: true}
-  - {name: 香港SGPL@vpnhat, server: 117.28.243.173, port: 4173, type: ss, cipher: rc4-md5, password: passinfo123, udp: true}
-  - {name: HK_2 @WangCai_1 2, server: cn2relay01.yiyorelay.xyz, port: 2701, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62611:fx2iOd, obfs-param: microsoft.com, udp: true}
-  - {name: ‌‌🇨🇦CA_7001 @WangCai_1 2, server: 198.57.27.218, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: ‌‌🇨🇦CA_6697 @WangCai_1 2, server: 198.57.27.218, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: San+Jose-PegTech@vpnhat, server: 107.148.211.118, port: 8450, type: ss, cipher: rc4-md5, password: passinfo123, udp: true}
-  - {name: 台中hinet@vpnhat, server: 117.28.243.220, port: 8036, type: ss, cipher: rc4-md5, password: passinfo123, udp: true}
+  - {name: _CA_加拿大 4, server: 134.195.196.68, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: US_5001 @WangCai_1, server: 38.143.66.71, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: _CA_加拿大 5, server: 134.195.196.187, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: _CA_加拿大 6, server: 134.195.196.227, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: ‌‌🇨🇦CA_8118 @WangCai_1, server: 134.195.196.12, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: _US_美国 3, server: 38.91.102.86, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: ‌‌🇨🇦CA_5500 @WangCai_1, server: 134.195.196.12, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: ‌‌🇨🇦CA_8888 @WangCai_1, server: 134.195.196.12, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: _CA_加拿大 7, server: 134.195.196.227, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: ZZ_2916, server: 169.197.142.187, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: ‌‌🇨🇦CA_5001 @WangCai_1, server: 134.195.196.12, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: _GB_英国, server: 172.99.190.92, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: ‌‌🇨🇦CA_7002 @WangCai_1, server: 134.195.196.12, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: ZZ_3373, server: 134.195.196.3, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: US_2597, server: 38.91.102.86, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: ‌‌🇨🇦CA_9101 @WangCai_1, server: 134.195.196.12, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: _CA_加拿大 8, server: 134.195.196.12, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: _FR_法国, server: 51.255.66.185, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: ‌‌🇨🇦CA_7306 @WangCai_1, server: 134.195.196.12, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: _CA_加拿大 9, server: 134.195.196.187, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: _CA_加拿大 10, server: 134.195.196.187, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: _CA_加拿大 11, server: 134.195.196.187, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: _US_美国 4, server: 38.143.66.71, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: _CA_加拿大_14, server: 134.195.196.12, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: _CA_加拿大 12, server: 134.195.196.227, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: _CA_加拿大 13, server: 134.195.196.227, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: US_1977, server: 38.143.66.71, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: _IN_印度, server: 192.46.209.227, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: _US_美国 5, server: 169.197.142.187, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: _US_美国 6, server: 38.143.66.71, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: _CA_加拿大 14, server: 134.195.196.187, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: ‌‌🇨🇦CA_7307 @WangCai_1, server: 134.195.196.227, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: _CA_加拿大 15, server: 134.195.196.12, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: _CA_加拿大 16, server: 134.195.196.187, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: _CA_加拿大 17, server: 134.195.196.12, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: _US_美国 7, server: 169.197.142.187, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: ZZ_3508, server: 169.197.142.187, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - HK_10 @WangCai_1
-      - HK_8 @WangCai_1
-      - vpnpool-Tokyo-Linode
-      - HK_10 @WangCai_1 2
-      - TW_4 @WangCai_1
-      - HK_6 @WangCai_1
-      - HK_4 @WangCai_1
-      - JP_2 @WangCai_1
-      - JP_6 @WangCai_1
-      - HK_5 @WangCai_1
-      - JP_5 @WangCai_1
-      - JP_8 @WangCai_1
-      - JP_6 @WangCai_1 2
-      - JP_10 @WangCai_1
-      - JP_4 @WangCai_1
-      - KR_3 @WangCai_1
-      - HK_1 @WangCai_1
-      - HK_7 @WangCai_1
-      - ‌‌🇨🇦CA_7002 @WangCai_1
-      - HK_3 @WangCai_1
-      - HK_2 @WangCai_1
-      - vpnpool-San Jose-PegTech
-      - HK_7 @WangCai_1 2
-      - HK_9 @WangCai_1
-      - vpnpool-San Jose-PegTech 2
-      - HK_1 @WangCai_1 2
-      - JP_5 @WangCai_1 2
-      - JP_7 @WangCai_1
-      - JP_1 @WangCai_1
-      - JP_9 @WangCai_1
-      - JP_3 @WangCai_1
-      - _US_美国
-      - JP_1 @WangCai_1 2
-      - US_3 @WangCai_1
-      - US_5 @WangCai_1
-      - HK_3 @WangCai_1 2
-      - KR_1 @WangCai_1
-      - SG_2 @WangCai_1
-      - _US_美国_80
-      - US_5004 @WangCai_1
-      - SG3_ @WangCai_1
-      - US_8 @WangCai_1
-      - US_8008 @WangCai_1
-      - US_5 @WangCai_1 2
-      - US_9 @WangCai_1
-      - US_2 @WangCai_1
-      - SG_9 @WangCai_1
-      - US_4 @WangCai_1
-      - SG3_ @WangCai_1 2
-      - US_3 @WangCai_1 2
-      - US_9 @WangCai_1 2
-      - _CA_加拿大
-      - US_8091 @WangCai_1
-      - US_6 @WangCai_1
-      - ‌‌🇨🇦CA_6679 @WangCai_1
-      - ‌‌🇨🇦CA_8000 @WangCai_1
+      - Relay_🇺🇸US-🇺🇸US_2765
+      - vpnpool-桃园Hinet
+      - vpnpool-新北Hinet
+      - vpnpool-桃园Hinet 2
+      - vpnpool-新北Hinet 2
+      - vpnpool-桃园Hinet 3
+      - Relay_🇸🇬SG-🇸🇬SG_1109
       - default_name
-      - _CA_加拿大 2
-      - _CA_加拿大 3
-      - US_5001 @WangCai_1
-      - US_1 @WangCai_1
-      - _CA_加拿大_100
-      - _CA_加拿大 4
-      - ‌‌🇨🇦CA_9101 @WangCai_1
-      - ‌‌🇨🇦CA_7307 @WangCai_1
-      - ‌‌🇨🇦CA_8118 @WangCai_1
-      - US_10 @WangCai_1
-      - ‌‌🇨🇦CA_5500 @WangCai_1
-      - _CA_加拿大 5
-      - ‌‌🇨🇦CA_8008 @WangCai_1
+      - 香港 01
+      - _AE_阿联酋
+      - V1-美国01 中继D | 1.5x
+      - US_2579
+      - US_8091 @WangCai_1
+      - 香港 01 2
+      - 香港 01 3
+      - ZZ_3318
+      - _US_美国
+      - vpnpool-US-Hillsboro-OVH
       - ‌‌🇨🇦CA_6379 @WangCai_1
-      - _US_美国 2
-      - _CA_加拿大 6
-      - _CA_加拿大_97
+      - _CA_加拿大
       - ‌‌🇨🇦CA_9102 @WangCai_1
-      - _CA_加拿大 7
-      - ‌‌🇨🇦CA_8000 @WangCai_1 2
-      - ‌‌🇨🇦CA_7001 @WangCai_1
-      - ‌‌🇨🇦CA_9102 @WangCai_1 2
-      - ‌‌🇨🇦CA_5001 @WangCai_1
-      - ‌‌🇨🇦CA_8091 @WangCai_1
-      - ‌‌🇨🇦CA_7002 @WangCai_1 2
-      - ‌‌🇨🇦CA_7002 @WangCai_1 3
-      - ‌‌🇨🇦CA_8888 @WangCai_1
-      - _CA_加拿大_11
-      - JP_3 @WangCai_1 2
-      - JP_9 @WangCai_1 2
-      - _CA_加拿大 8
-      - _CA_加拿大_46
-      - _CA_加拿大 9
-      - JP_7 @WangCai_1 2
-      - ‌‌🇨🇦CA_5500 @WangCai_1 2
-      - ‌‌🇨🇦CA_5004 @WangCai_1
-      - JP_2 @WangCai_1 2
-      - KR_3 @WangCai_1 2
-      - KR_2 @WangCai_1
-      - US_8090 @WangCai_1
-      - ‌‌🇨🇦CA_0443 @WangCai_1
-      - ‌‌🇨🇦CA_8119 @WangCai_1
-      - ‌‌🇨🇦CA_7306 @WangCai_1
-      - ‌‌🇨🇦CA_8882 @WangCai_1
-      - ‌‌🇨🇦CA_8888 @WangCai_1 2
-      - _CA_加拿大_14
-      - ‌‌🇨🇦CA_8119 @WangCai_1 2
-      - JP_8 @WangCai_1 2
-      - KR_4 @WangCai_1
-      - ‌‌🇨🇦CA_8881 @WangCai_1
-      - ‌‌🇨🇦CA_8118 @WangCai_1 2
-      - KR_2 @WangCai_1 2
-      - KR_4 @WangCai_1 2
-      - vpnpool-香港Nearoute
-      - ‌‌🇨🇦CA_8009 @WangCai_1
-      - ‌‌🇨🇦CA_8008 @WangCai_1 2
-      - US_6 @WangCai_1 2
-      - vpnpool-London-Linode
-      - SG_4 @WangCai_1
-      - _CA_加拿大_40
-      - KR_1 @WangCai_1 2
-      - SG_5 @WangCai_1
-      - ‌‌🇨🇦CA_6379 @WangCai_1 2
+      - _CA_加拿大_100
+      - _CA_加拿大 2
+      - ‌‌🇨🇦CA_8000 @WangCai_1
+      - _US_美国 2
+      - _CA_加拿大 3
       - ‌‌🇨🇦CA_6697 @WangCai_1
+      - _CA_加拿大 4
+      - US_5001 @WangCai_1
+      - _CA_加拿大 5
+      - _CA_加拿大 6
+      - ‌‌🇨🇦CA_8118 @WangCai_1
+      - _US_美国 3
+      - ‌‌🇨🇦CA_5500 @WangCai_1
+      - ‌‌🇨🇦CA_8888 @WangCai_1
+      - _CA_加拿大 7
+      - ZZ_2916
+      - ‌‌🇨🇦CA_5001 @WangCai_1
+      - _GB_英国
+      - ‌‌🇨🇦CA_7002 @WangCai_1
+      - ZZ_3373
+      - US_2597
+      - ‌‌🇨🇦CA_9101 @WangCai_1
+      - _CA_加拿大 8
+      - _FR_法国
+      - ‌‌🇨🇦CA_7306 @WangCai_1
+      - _CA_加拿大 9
       - _CA_加拿大 10
-      - US_1 @WangCai_1 2
-      - ‌‌🇨🇦CA_8118 @WangCai_1 3
-      - HK_5 @WangCai_1 2
-      - ‌‌🇨🇦CA_6679 @WangCai_1 2
-      - ‌‌🇨🇦CA_8009 @WangCai_1 2
-      - vpnpool-Sydney-Linode
-      - vpnpool-Sydney-Linode 2
-      - Seoul-BCPL@vpnhat
       - _CA_加拿大 11
-      - ‌‌🇨🇦CA_5000 @WangCai_1
-      - ‌‌🇨🇦CA_3306 @WangCai_1
+      - _US_美国 4
+      - _CA_加拿大_14
       - _CA_加拿大 12
-      - ‌‌🇨🇦CA_5000 @WangCai_1 2
-      - ‌‌🇨🇦CA_5600 @WangCai_1
-      - vpnpool-Sydney-Linode 3
-      - FR-Strasbourg-VELIANET@vpnhat
-      - 香港SGPL@vpnhat
-      - HK_2 @WangCai_1 2
-      - ‌‌🇨🇦CA_7001 @WangCai_1 2
-      - ‌‌🇨🇦CA_6697 @WangCai_1 2
-      - San+Jose-PegTech@vpnhat
-      - 台中hinet@vpnhat
+      - _CA_加拿大 13
+      - US_1977
+      - _IN_印度
+      - _US_美国 5
+      - _US_美国 6
+      - _CA_加拿大 14
+      - ‌‌🇨🇦CA_7307 @WangCai_1
+      - _CA_加拿大 15
+      - _CA_加拿大 16
+      - _CA_加拿大 17
+      - _US_美国 7
+      - ZZ_3508
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - HK_10 @WangCai_1
-      - HK_8 @WangCai_1
-      - vpnpool-Tokyo-Linode
-      - HK_10 @WangCai_1 2
-      - TW_4 @WangCai_1
-      - HK_6 @WangCai_1
-      - HK_4 @WangCai_1
-      - JP_2 @WangCai_1
-      - JP_6 @WangCai_1
-      - HK_5 @WangCai_1
-      - JP_5 @WangCai_1
-      - JP_8 @WangCai_1
-      - JP_6 @WangCai_1 2
-      - JP_10 @WangCai_1
-      - JP_4 @WangCai_1
-      - KR_3 @WangCai_1
-      - HK_1 @WangCai_1
-      - HK_7 @WangCai_1
-      - ‌‌🇨🇦CA_7002 @WangCai_1
-      - HK_3 @WangCai_1
-      - HK_2 @WangCai_1
-      - vpnpool-San Jose-PegTech
-      - HK_7 @WangCai_1 2
-      - HK_9 @WangCai_1
-      - vpnpool-San Jose-PegTech 2
-      - HK_1 @WangCai_1 2
-      - JP_5 @WangCai_1 2
-      - JP_7 @WangCai_1
-      - JP_1 @WangCai_1
-      - JP_9 @WangCai_1
-      - JP_3 @WangCai_1
-      - _US_美国
-      - JP_1 @WangCai_1 2
-      - US_3 @WangCai_1
-      - US_5 @WangCai_1
-      - HK_3 @WangCai_1 2
-      - KR_1 @WangCai_1
-      - SG_2 @WangCai_1
-      - _US_美国_80
-      - US_5004 @WangCai_1
-      - SG3_ @WangCai_1
-      - US_8 @WangCai_1
-      - US_8008 @WangCai_1
-      - US_5 @WangCai_1 2
-      - US_9 @WangCai_1
-      - US_2 @WangCai_1
-      - SG_9 @WangCai_1
-      - US_4 @WangCai_1
-      - SG3_ @WangCai_1 2
-      - US_3 @WangCai_1 2
-      - US_9 @WangCai_1 2
-      - _CA_加拿大
-      - US_8091 @WangCai_1
-      - US_6 @WangCai_1
-      - ‌‌🇨🇦CA_6679 @WangCai_1
-      - ‌‌🇨🇦CA_8000 @WangCai_1
+      - Relay_🇺🇸US-🇺🇸US_2765
+      - vpnpool-桃园Hinet
+      - vpnpool-新北Hinet
+      - vpnpool-桃园Hinet 2
+      - vpnpool-新北Hinet 2
+      - vpnpool-桃园Hinet 3
+      - Relay_🇸🇬SG-🇸🇬SG_1109
       - default_name
-      - _CA_加拿大 2
-      - _CA_加拿大 3
-      - US_5001 @WangCai_1
-      - US_1 @WangCai_1
-      - _CA_加拿大_100
-      - _CA_加拿大 4
-      - ‌‌🇨🇦CA_9101 @WangCai_1
-      - ‌‌🇨🇦CA_7307 @WangCai_1
-      - ‌‌🇨🇦CA_8118 @WangCai_1
-      - US_10 @WangCai_1
-      - ‌‌🇨🇦CA_5500 @WangCai_1
-      - _CA_加拿大 5
-      - ‌‌🇨🇦CA_8008 @WangCai_1
+      - 香港 01
+      - _AE_阿联酋
+      - V1-美国01 中继D | 1.5x
+      - US_2579
+      - US_8091 @WangCai_1
+      - 香港 01 2
+      - 香港 01 3
+      - ZZ_3318
+      - _US_美国
+      - vpnpool-US-Hillsboro-OVH
       - ‌‌🇨🇦CA_6379 @WangCai_1
-      - _US_美国 2
-      - _CA_加拿大 6
-      - _CA_加拿大_97
+      - _CA_加拿大
       - ‌‌🇨🇦CA_9102 @WangCai_1
-      - _CA_加拿大 7
-      - ‌‌🇨🇦CA_8000 @WangCai_1 2
-      - ‌‌🇨🇦CA_7001 @WangCai_1
-      - ‌‌🇨🇦CA_9102 @WangCai_1 2
-      - ‌‌🇨🇦CA_5001 @WangCai_1
-      - ‌‌🇨🇦CA_8091 @WangCai_1
-      - ‌‌🇨🇦CA_7002 @WangCai_1 2
-      - ‌‌🇨🇦CA_7002 @WangCai_1 3
-      - ‌‌🇨🇦CA_8888 @WangCai_1
-      - _CA_加拿大_11
-      - JP_3 @WangCai_1 2
-      - JP_9 @WangCai_1 2
-      - _CA_加拿大 8
-      - _CA_加拿大_46
-      - _CA_加拿大 9
-      - JP_7 @WangCai_1 2
-      - ‌‌🇨🇦CA_5500 @WangCai_1 2
-      - ‌‌🇨🇦CA_5004 @WangCai_1
-      - JP_2 @WangCai_1 2
-      - KR_3 @WangCai_1 2
-      - KR_2 @WangCai_1
-      - US_8090 @WangCai_1
-      - ‌‌🇨🇦CA_0443 @WangCai_1
-      - ‌‌🇨🇦CA_8119 @WangCai_1
-      - ‌‌🇨🇦CA_7306 @WangCai_1
-      - ‌‌🇨🇦CA_8882 @WangCai_1
-      - ‌‌🇨🇦CA_8888 @WangCai_1 2
-      - _CA_加拿大_14
-      - ‌‌🇨🇦CA_8119 @WangCai_1 2
-      - JP_8 @WangCai_1 2
-      - KR_4 @WangCai_1
-      - ‌‌🇨🇦CA_8881 @WangCai_1
-      - ‌‌🇨🇦CA_8118 @WangCai_1 2
-      - KR_2 @WangCai_1 2
-      - KR_4 @WangCai_1 2
-      - vpnpool-香港Nearoute
-      - ‌‌🇨🇦CA_8009 @WangCai_1
-      - ‌‌🇨🇦CA_8008 @WangCai_1 2
-      - US_6 @WangCai_1 2
-      - vpnpool-London-Linode
-      - SG_4 @WangCai_1
-      - _CA_加拿大_40
-      - KR_1 @WangCai_1 2
-      - SG_5 @WangCai_1
-      - ‌‌🇨🇦CA_6379 @WangCai_1 2
+      - _CA_加拿大_100
+      - _CA_加拿大 2
+      - ‌‌🇨🇦CA_8000 @WangCai_1
+      - _US_美国 2
+      - _CA_加拿大 3
       - ‌‌🇨🇦CA_6697 @WangCai_1
+      - _CA_加拿大 4
+      - US_5001 @WangCai_1
+      - _CA_加拿大 5
+      - _CA_加拿大 6
+      - ‌‌🇨🇦CA_8118 @WangCai_1
+      - _US_美国 3
+      - ‌‌🇨🇦CA_5500 @WangCai_1
+      - ‌‌🇨🇦CA_8888 @WangCai_1
+      - _CA_加拿大 7
+      - ZZ_2916
+      - ‌‌🇨🇦CA_5001 @WangCai_1
+      - _GB_英国
+      - ‌‌🇨🇦CA_7002 @WangCai_1
+      - ZZ_3373
+      - US_2597
+      - ‌‌🇨🇦CA_9101 @WangCai_1
+      - _CA_加拿大 8
+      - _FR_法国
+      - ‌‌🇨🇦CA_7306 @WangCai_1
+      - _CA_加拿大 9
       - _CA_加拿大 10
-      - US_1 @WangCai_1 2
-      - ‌‌🇨🇦CA_8118 @WangCai_1 3
-      - HK_5 @WangCai_1 2
-      - ‌‌🇨🇦CA_6679 @WangCai_1 2
-      - ‌‌🇨🇦CA_8009 @WangCai_1 2
-      - vpnpool-Sydney-Linode
-      - vpnpool-Sydney-Linode 2
-      - Seoul-BCPL@vpnhat
       - _CA_加拿大 11
-      - ‌‌🇨🇦CA_5000 @WangCai_1
-      - ‌‌🇨🇦CA_3306 @WangCai_1
+      - _US_美国 4
+      - _CA_加拿大_14
       - _CA_加拿大 12
-      - ‌‌🇨🇦CA_5000 @WangCai_1 2
-      - ‌‌🇨🇦CA_5600 @WangCai_1
-      - vpnpool-Sydney-Linode 3
-      - FR-Strasbourg-VELIANET@vpnhat
-      - 香港SGPL@vpnhat
-      - HK_2 @WangCai_1 2
-      - ‌‌🇨🇦CA_7001 @WangCai_1 2
-      - ‌‌🇨🇦CA_6697 @WangCai_1 2
-      - San+Jose-PegTech@vpnhat
-      - 台中hinet@vpnhat
+      - _CA_加拿大 13
+      - US_1977
+      - _IN_印度
+      - _US_美国 5
+      - _US_美国 6
+      - _CA_加拿大 14
+      - ‌‌🇨🇦CA_7307 @WangCai_1
+      - _CA_加拿大 15
+      - _CA_加拿大 16
+      - _CA_加拿大 17
+      - _US_美国 7
+      - ZZ_3508
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - HK_10 @WangCai_1
-      - HK_8 @WangCai_1
-      - vpnpool-Tokyo-Linode
-      - HK_10 @WangCai_1 2
-      - TW_4 @WangCai_1
-      - HK_6 @WangCai_1
-      - HK_4 @WangCai_1
-      - JP_2 @WangCai_1
-      - JP_6 @WangCai_1
-      - HK_5 @WangCai_1
-      - JP_5 @WangCai_1
-      - JP_8 @WangCai_1
-      - JP_6 @WangCai_1 2
-      - JP_10 @WangCai_1
-      - JP_4 @WangCai_1
-      - KR_3 @WangCai_1
-      - HK_1 @WangCai_1
-      - HK_7 @WangCai_1
-      - ‌‌🇨🇦CA_7002 @WangCai_1
-      - HK_3 @WangCai_1
-      - HK_2 @WangCai_1
-      - vpnpool-San Jose-PegTech
-      - HK_7 @WangCai_1 2
-      - HK_9 @WangCai_1
-      - vpnpool-San Jose-PegTech 2
-      - HK_1 @WangCai_1 2
-      - JP_5 @WangCai_1 2
-      - JP_7 @WangCai_1
-      - JP_1 @WangCai_1
-      - JP_9 @WangCai_1
-      - JP_3 @WangCai_1
-      - _US_美国
-      - JP_1 @WangCai_1 2
-      - US_3 @WangCai_1
-      - US_5 @WangCai_1
-      - HK_3 @WangCai_1 2
-      - KR_1 @WangCai_1
-      - SG_2 @WangCai_1
-      - _US_美国_80
-      - US_5004 @WangCai_1
-      - SG3_ @WangCai_1
-      - US_8 @WangCai_1
-      - US_8008 @WangCai_1
-      - US_5 @WangCai_1 2
-      - US_9 @WangCai_1
-      - US_2 @WangCai_1
-      - SG_9 @WangCai_1
-      - US_4 @WangCai_1
-      - SG3_ @WangCai_1 2
-      - US_3 @WangCai_1 2
-      - US_9 @WangCai_1 2
-      - _CA_加拿大
-      - US_8091 @WangCai_1
-      - US_6 @WangCai_1
-      - ‌‌🇨🇦CA_6679 @WangCai_1
-      - ‌‌🇨🇦CA_8000 @WangCai_1
+      - Relay_🇺🇸US-🇺🇸US_2765
+      - vpnpool-桃园Hinet
+      - vpnpool-新北Hinet
+      - vpnpool-桃园Hinet 2
+      - vpnpool-新北Hinet 2
+      - vpnpool-桃园Hinet 3
+      - Relay_🇸🇬SG-🇸🇬SG_1109
       - default_name
-      - _CA_加拿大 2
-      - _CA_加拿大 3
-      - US_5001 @WangCai_1
-      - US_1 @WangCai_1
-      - _CA_加拿大_100
-      - _CA_加拿大 4
-      - ‌‌🇨🇦CA_9101 @WangCai_1
-      - ‌‌🇨🇦CA_7307 @WangCai_1
-      - ‌‌🇨🇦CA_8118 @WangCai_1
-      - US_10 @WangCai_1
-      - ‌‌🇨🇦CA_5500 @WangCai_1
-      - _CA_加拿大 5
-      - ‌‌🇨🇦CA_8008 @WangCai_1
+      - 香港 01
+      - _AE_阿联酋
+      - V1-美国01 中继D | 1.5x
+      - US_2579
+      - US_8091 @WangCai_1
+      - 香港 01 2
+      - 香港 01 3
+      - ZZ_3318
+      - _US_美国
+      - vpnpool-US-Hillsboro-OVH
       - ‌‌🇨🇦CA_6379 @WangCai_1
-      - _US_美国 2
-      - _CA_加拿大 6
-      - _CA_加拿大_97
+      - _CA_加拿大
       - ‌‌🇨🇦CA_9102 @WangCai_1
-      - _CA_加拿大 7
-      - ‌‌🇨🇦CA_8000 @WangCai_1 2
-      - ‌‌🇨🇦CA_7001 @WangCai_1
-      - ‌‌🇨🇦CA_9102 @WangCai_1 2
-      - ‌‌🇨🇦CA_5001 @WangCai_1
-      - ‌‌🇨🇦CA_8091 @WangCai_1
-      - ‌‌🇨🇦CA_7002 @WangCai_1 2
-      - ‌‌🇨🇦CA_7002 @WangCai_1 3
-      - ‌‌🇨🇦CA_8888 @WangCai_1
-      - _CA_加拿大_11
-      - JP_3 @WangCai_1 2
-      - JP_9 @WangCai_1 2
-      - _CA_加拿大 8
-      - _CA_加拿大_46
-      - _CA_加拿大 9
-      - JP_7 @WangCai_1 2
-      - ‌‌🇨🇦CA_5500 @WangCai_1 2
-      - ‌‌🇨🇦CA_5004 @WangCai_1
-      - JP_2 @WangCai_1 2
-      - KR_3 @WangCai_1 2
-      - KR_2 @WangCai_1
-      - US_8090 @WangCai_1
-      - ‌‌🇨🇦CA_0443 @WangCai_1
-      - ‌‌🇨🇦CA_8119 @WangCai_1
-      - ‌‌🇨🇦CA_7306 @WangCai_1
-      - ‌‌🇨🇦CA_8882 @WangCai_1
-      - ‌‌🇨🇦CA_8888 @WangCai_1 2
-      - _CA_加拿大_14
-      - ‌‌🇨🇦CA_8119 @WangCai_1 2
-      - JP_8 @WangCai_1 2
-      - KR_4 @WangCai_1
-      - ‌‌🇨🇦CA_8881 @WangCai_1
-      - ‌‌🇨🇦CA_8118 @WangCai_1 2
-      - KR_2 @WangCai_1 2
-      - KR_4 @WangCai_1 2
-      - vpnpool-香港Nearoute
-      - ‌‌🇨🇦CA_8009 @WangCai_1
-      - ‌‌🇨🇦CA_8008 @WangCai_1 2
-      - US_6 @WangCai_1 2
-      - vpnpool-London-Linode
-      - SG_4 @WangCai_1
-      - _CA_加拿大_40
-      - KR_1 @WangCai_1 2
-      - SG_5 @WangCai_1
-      - ‌‌🇨🇦CA_6379 @WangCai_1 2
+      - _CA_加拿大_100
+      - _CA_加拿大 2
+      - ‌‌🇨🇦CA_8000 @WangCai_1
+      - _US_美国 2
+      - _CA_加拿大 3
       - ‌‌🇨🇦CA_6697 @WangCai_1
+      - _CA_加拿大 4
+      - US_5001 @WangCai_1
+      - _CA_加拿大 5
+      - _CA_加拿大 6
+      - ‌‌🇨🇦CA_8118 @WangCai_1
+      - _US_美国 3
+      - ‌‌🇨🇦CA_5500 @WangCai_1
+      - ‌‌🇨🇦CA_8888 @WangCai_1
+      - _CA_加拿大 7
+      - ZZ_2916
+      - ‌‌🇨🇦CA_5001 @WangCai_1
+      - _GB_英国
+      - ‌‌🇨🇦CA_7002 @WangCai_1
+      - ZZ_3373
+      - US_2597
+      - ‌‌🇨🇦CA_9101 @WangCai_1
+      - _CA_加拿大 8
+      - _FR_法国
+      - ‌‌🇨🇦CA_7306 @WangCai_1
+      - _CA_加拿大 9
       - _CA_加拿大 10
-      - US_1 @WangCai_1 2
-      - ‌‌🇨🇦CA_8118 @WangCai_1 3
-      - HK_5 @WangCai_1 2
-      - ‌‌🇨🇦CA_6679 @WangCai_1 2
-      - ‌‌🇨🇦CA_8009 @WangCai_1 2
-      - vpnpool-Sydney-Linode
-      - vpnpool-Sydney-Linode 2
-      - Seoul-BCPL@vpnhat
       - _CA_加拿大 11
-      - ‌‌🇨🇦CA_5000 @WangCai_1
-      - ‌‌🇨🇦CA_3306 @WangCai_1
+      - _US_美国 4
+      - _CA_加拿大_14
       - _CA_加拿大 12
-      - ‌‌🇨🇦CA_5000 @WangCai_1 2
-      - ‌‌🇨🇦CA_5600 @WangCai_1
-      - vpnpool-Sydney-Linode 3
-      - FR-Strasbourg-VELIANET@vpnhat
-      - 香港SGPL@vpnhat
-      - HK_2 @WangCai_1 2
-      - ‌‌🇨🇦CA_7001 @WangCai_1 2
-      - ‌‌🇨🇦CA_6697 @WangCai_1 2
-      - San+Jose-PegTech@vpnhat
-      - 台中hinet@vpnhat
+      - _CA_加拿大 13
+      - US_1977
+      - _IN_印度
+      - _US_美国 5
+      - _US_美国 6
+      - _CA_加拿大 14
+      - ‌‌🇨🇦CA_7307 @WangCai_1
+      - _CA_加拿大 15
+      - _CA_加拿大 16
+      - _CA_加拿大 17
+      - _US_美国 7
+      - ZZ_3508
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -616,606 +296,288 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - HK_10 @WangCai_1
-      - HK_8 @WangCai_1
-      - vpnpool-Tokyo-Linode
-      - HK_10 @WangCai_1 2
-      - TW_4 @WangCai_1
-      - HK_6 @WangCai_1
-      - HK_4 @WangCai_1
-      - JP_2 @WangCai_1
-      - JP_6 @WangCai_1
-      - HK_5 @WangCai_1
-      - JP_5 @WangCai_1
-      - JP_8 @WangCai_1
-      - JP_6 @WangCai_1 2
-      - JP_10 @WangCai_1
-      - JP_4 @WangCai_1
-      - KR_3 @WangCai_1
-      - HK_1 @WangCai_1
-      - HK_7 @WangCai_1
-      - ‌‌🇨🇦CA_7002 @WangCai_1
-      - HK_3 @WangCai_1
-      - HK_2 @WangCai_1
-      - vpnpool-San Jose-PegTech
-      - HK_7 @WangCai_1 2
-      - HK_9 @WangCai_1
-      - vpnpool-San Jose-PegTech 2
-      - HK_1 @WangCai_1 2
-      - JP_5 @WangCai_1 2
-      - JP_7 @WangCai_1
-      - JP_1 @WangCai_1
-      - JP_9 @WangCai_1
-      - JP_3 @WangCai_1
-      - _US_美国
-      - JP_1 @WangCai_1 2
-      - US_3 @WangCai_1
-      - US_5 @WangCai_1
-      - HK_3 @WangCai_1 2
-      - KR_1 @WangCai_1
-      - SG_2 @WangCai_1
-      - _US_美国_80
-      - US_5004 @WangCai_1
-      - SG3_ @WangCai_1
-      - US_8 @WangCai_1
-      - US_8008 @WangCai_1
-      - US_5 @WangCai_1 2
-      - US_9 @WangCai_1
-      - US_2 @WangCai_1
-      - SG_9 @WangCai_1
-      - US_4 @WangCai_1
-      - SG3_ @WangCai_1 2
-      - US_3 @WangCai_1 2
-      - US_9 @WangCai_1 2
-      - _CA_加拿大
-      - US_8091 @WangCai_1
-      - US_6 @WangCai_1
-      - ‌‌🇨🇦CA_6679 @WangCai_1
-      - ‌‌🇨🇦CA_8000 @WangCai_1
+      - Relay_🇺🇸US-🇺🇸US_2765
+      - vpnpool-桃园Hinet
+      - vpnpool-新北Hinet
+      - vpnpool-桃园Hinet 2
+      - vpnpool-新北Hinet 2
+      - vpnpool-桃园Hinet 3
+      - Relay_🇸🇬SG-🇸🇬SG_1109
       - default_name
-      - _CA_加拿大 2
-      - _CA_加拿大 3
-      - US_5001 @WangCai_1
-      - US_1 @WangCai_1
-      - _CA_加拿大_100
-      - _CA_加拿大 4
-      - ‌‌🇨🇦CA_9101 @WangCai_1
-      - ‌‌🇨🇦CA_7307 @WangCai_1
-      - ‌‌🇨🇦CA_8118 @WangCai_1
-      - US_10 @WangCai_1
-      - ‌‌🇨🇦CA_5500 @WangCai_1
-      - _CA_加拿大 5
-      - ‌‌🇨🇦CA_8008 @WangCai_1
+      - 香港 01
+      - _AE_阿联酋
+      - V1-美国01 中继D | 1.5x
+      - US_2579
+      - US_8091 @WangCai_1
+      - 香港 01 2
+      - 香港 01 3
+      - ZZ_3318
+      - _US_美国
+      - vpnpool-US-Hillsboro-OVH
       - ‌‌🇨🇦CA_6379 @WangCai_1
-      - _US_美国 2
-      - _CA_加拿大 6
-      - _CA_加拿大_97
+      - _CA_加拿大
       - ‌‌🇨🇦CA_9102 @WangCai_1
-      - _CA_加拿大 7
-      - ‌‌🇨🇦CA_8000 @WangCai_1 2
-      - ‌‌🇨🇦CA_7001 @WangCai_1
-      - ‌‌🇨🇦CA_9102 @WangCai_1 2
-      - ‌‌🇨🇦CA_5001 @WangCai_1
-      - ‌‌🇨🇦CA_8091 @WangCai_1
-      - ‌‌🇨🇦CA_7002 @WangCai_1 2
-      - ‌‌🇨🇦CA_7002 @WangCai_1 3
-      - ‌‌🇨🇦CA_8888 @WangCai_1
-      - _CA_加拿大_11
-      - JP_3 @WangCai_1 2
-      - JP_9 @WangCai_1 2
-      - _CA_加拿大 8
-      - _CA_加拿大_46
-      - _CA_加拿大 9
-      - JP_7 @WangCai_1 2
-      - ‌‌🇨🇦CA_5500 @WangCai_1 2
-      - ‌‌🇨🇦CA_5004 @WangCai_1
-      - JP_2 @WangCai_1 2
-      - KR_3 @WangCai_1 2
-      - KR_2 @WangCai_1
-      - US_8090 @WangCai_1
-      - ‌‌🇨🇦CA_0443 @WangCai_1
-      - ‌‌🇨🇦CA_8119 @WangCai_1
-      - ‌‌🇨🇦CA_7306 @WangCai_1
-      - ‌‌🇨🇦CA_8882 @WangCai_1
-      - ‌‌🇨🇦CA_8888 @WangCai_1 2
-      - _CA_加拿大_14
-      - ‌‌🇨🇦CA_8119 @WangCai_1 2
-      - JP_8 @WangCai_1 2
-      - KR_4 @WangCai_1
-      - ‌‌🇨🇦CA_8881 @WangCai_1
-      - ‌‌🇨🇦CA_8118 @WangCai_1 2
-      - KR_2 @WangCai_1 2
-      - KR_4 @WangCai_1 2
-      - vpnpool-香港Nearoute
-      - ‌‌🇨🇦CA_8009 @WangCai_1
-      - ‌‌🇨🇦CA_8008 @WangCai_1 2
-      - US_6 @WangCai_1 2
-      - vpnpool-London-Linode
-      - SG_4 @WangCai_1
-      - _CA_加拿大_40
-      - KR_1 @WangCai_1 2
-      - SG_5 @WangCai_1
-      - ‌‌🇨🇦CA_6379 @WangCai_1 2
+      - _CA_加拿大_100
+      - _CA_加拿大 2
+      - ‌‌🇨🇦CA_8000 @WangCai_1
+      - _US_美国 2
+      - _CA_加拿大 3
       - ‌‌🇨🇦CA_6697 @WangCai_1
+      - _CA_加拿大 4
+      - US_5001 @WangCai_1
+      - _CA_加拿大 5
+      - _CA_加拿大 6
+      - ‌‌🇨🇦CA_8118 @WangCai_1
+      - _US_美国 3
+      - ‌‌🇨🇦CA_5500 @WangCai_1
+      - ‌‌🇨🇦CA_8888 @WangCai_1
+      - _CA_加拿大 7
+      - ZZ_2916
+      - ‌‌🇨🇦CA_5001 @WangCai_1
+      - _GB_英国
+      - ‌‌🇨🇦CA_7002 @WangCai_1
+      - ZZ_3373
+      - US_2597
+      - ‌‌🇨🇦CA_9101 @WangCai_1
+      - _CA_加拿大 8
+      - _FR_法国
+      - ‌‌🇨🇦CA_7306 @WangCai_1
+      - _CA_加拿大 9
       - _CA_加拿大 10
-      - US_1 @WangCai_1 2
-      - ‌‌🇨🇦CA_8118 @WangCai_1 3
-      - HK_5 @WangCai_1 2
-      - ‌‌🇨🇦CA_6679 @WangCai_1 2
-      - ‌‌🇨🇦CA_8009 @WangCai_1 2
-      - vpnpool-Sydney-Linode
-      - vpnpool-Sydney-Linode 2
-      - Seoul-BCPL@vpnhat
       - _CA_加拿大 11
-      - ‌‌🇨🇦CA_5000 @WangCai_1
-      - ‌‌🇨🇦CA_3306 @WangCai_1
+      - _US_美国 4
+      - _CA_加拿大_14
       - _CA_加拿大 12
-      - ‌‌🇨🇦CA_5000 @WangCai_1 2
-      - ‌‌🇨🇦CA_5600 @WangCai_1
-      - vpnpool-Sydney-Linode 3
-      - FR-Strasbourg-VELIANET@vpnhat
-      - 香港SGPL@vpnhat
-      - HK_2 @WangCai_1 2
-      - ‌‌🇨🇦CA_7001 @WangCai_1 2
-      - ‌‌🇨🇦CA_6697 @WangCai_1 2
-      - San+Jose-PegTech@vpnhat
-      - 台中hinet@vpnhat
+      - _CA_加拿大 13
+      - US_1977
+      - _IN_印度
+      - _US_美国 5
+      - _US_美国 6
+      - _CA_加拿大 14
+      - ‌‌🇨🇦CA_7307 @WangCai_1
+      - _CA_加拿大 15
+      - _CA_加拿大 16
+      - _CA_加拿大 17
+      - _US_美国 7
+      - ZZ_3508
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - vpnpool-香港Nearoute
-      - 香港SGPL@vpnhat
-      - 台中hinet@vpnhat
+      - vpnpool-新北Hinet
+      - vpnpool-新北Hinet 2
+      - 香港 01
+      - 香港 01 2
+      - 香港 01 3
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - HK_10 @WangCai_1
-      - HK_8 @WangCai_1
-      - vpnpool-Tokyo-Linode
-      - HK_10 @WangCai_1 2
-      - TW_4 @WangCai_1
-      - HK_6 @WangCai_1
-      - HK_4 @WangCai_1
-      - JP_2 @WangCai_1
-      - JP_6 @WangCai_1
-      - HK_5 @WangCai_1
-      - JP_5 @WangCai_1
-      - JP_8 @WangCai_1
-      - JP_6 @WangCai_1 2
-      - JP_10 @WangCai_1
-      - JP_4 @WangCai_1
-      - KR_3 @WangCai_1
-      - HK_1 @WangCai_1
-      - HK_7 @WangCai_1
-      - ‌‌🇨🇦CA_7002 @WangCai_1
-      - HK_3 @WangCai_1
-      - HK_2 @WangCai_1
-      - vpnpool-San Jose-PegTech
-      - HK_7 @WangCai_1 2
-      - HK_9 @WangCai_1
-      - vpnpool-San Jose-PegTech 2
-      - HK_1 @WangCai_1 2
-      - JP_5 @WangCai_1 2
-      - JP_7 @WangCai_1
-      - JP_1 @WangCai_1
-      - JP_9 @WangCai_1
-      - JP_3 @WangCai_1
-      - _US_美国
-      - JP_1 @WangCai_1 2
-      - US_3 @WangCai_1
-      - US_5 @WangCai_1
-      - HK_3 @WangCai_1 2
-      - KR_1 @WangCai_1
-      - SG_2 @WangCai_1
-      - _US_美国_80
-      - US_5004 @WangCai_1
-      - SG3_ @WangCai_1
-      - US_8 @WangCai_1
-      - US_8008 @WangCai_1
-      - US_5 @WangCai_1 2
-      - US_9 @WangCai_1
-      - US_2 @WangCai_1
-      - SG_9 @WangCai_1
-      - US_4 @WangCai_1
-      - SG3_ @WangCai_1 2
-      - US_3 @WangCai_1 2
-      - US_9 @WangCai_1 2
-      - _CA_加拿大
-      - US_8091 @WangCai_1
-      - US_6 @WangCai_1
-      - ‌‌🇨🇦CA_6679 @WangCai_1
-      - ‌‌🇨🇦CA_8000 @WangCai_1
+      - Relay_🇺🇸US-🇺🇸US_2765
+      - vpnpool-桃园Hinet
+      - vpnpool-新北Hinet
+      - vpnpool-桃园Hinet 2
+      - vpnpool-新北Hinet 2
+      - vpnpool-桃园Hinet 3
+      - Relay_🇸🇬SG-🇸🇬SG_1109
       - default_name
-      - _CA_加拿大 2
-      - _CA_加拿大 3
-      - US_5001 @WangCai_1
-      - US_1 @WangCai_1
-      - _CA_加拿大_100
-      - _CA_加拿大 4
-      - ‌‌🇨🇦CA_9101 @WangCai_1
-      - ‌‌🇨🇦CA_7307 @WangCai_1
-      - ‌‌🇨🇦CA_8118 @WangCai_1
-      - US_10 @WangCai_1
-      - ‌‌🇨🇦CA_5500 @WangCai_1
-      - _CA_加拿大 5
-      - ‌‌🇨🇦CA_8008 @WangCai_1
+      - 香港 01
+      - _AE_阿联酋
+      - V1-美国01 中继D | 1.5x
+      - US_2579
+      - US_8091 @WangCai_1
+      - 香港 01 2
+      - 香港 01 3
+      - ZZ_3318
+      - _US_美国
+      - vpnpool-US-Hillsboro-OVH
       - ‌‌🇨🇦CA_6379 @WangCai_1
-      - _US_美国 2
-      - _CA_加拿大 6
-      - _CA_加拿大_97
+      - _CA_加拿大
       - ‌‌🇨🇦CA_9102 @WangCai_1
-      - _CA_加拿大 7
-      - ‌‌🇨🇦CA_8000 @WangCai_1 2
-      - ‌‌🇨🇦CA_7001 @WangCai_1
-      - ‌‌🇨🇦CA_9102 @WangCai_1 2
-      - ‌‌🇨🇦CA_5001 @WangCai_1
-      - ‌‌🇨🇦CA_8091 @WangCai_1
-      - ‌‌🇨🇦CA_7002 @WangCai_1 2
-      - ‌‌🇨🇦CA_7002 @WangCai_1 3
-      - ‌‌🇨🇦CA_8888 @WangCai_1
-      - _CA_加拿大_11
-      - JP_3 @WangCai_1 2
-      - JP_9 @WangCai_1 2
-      - _CA_加拿大 8
-      - _CA_加拿大_46
-      - _CA_加拿大 9
-      - JP_7 @WangCai_1 2
-      - ‌‌🇨🇦CA_5500 @WangCai_1 2
-      - ‌‌🇨🇦CA_5004 @WangCai_1
-      - JP_2 @WangCai_1 2
-      - KR_3 @WangCai_1 2
-      - KR_2 @WangCai_1
-      - US_8090 @WangCai_1
-      - ‌‌🇨🇦CA_0443 @WangCai_1
-      - ‌‌🇨🇦CA_8119 @WangCai_1
-      - ‌‌🇨🇦CA_7306 @WangCai_1
-      - ‌‌🇨🇦CA_8882 @WangCai_1
-      - ‌‌🇨🇦CA_8888 @WangCai_1 2
-      - _CA_加拿大_14
-      - ‌‌🇨🇦CA_8119 @WangCai_1 2
-      - JP_8 @WangCai_1 2
-      - KR_4 @WangCai_1
-      - ‌‌🇨🇦CA_8881 @WangCai_1
-      - ‌‌🇨🇦CA_8118 @WangCai_1 2
-      - KR_2 @WangCai_1 2
-      - KR_4 @WangCai_1 2
-      - vpnpool-香港Nearoute
-      - ‌‌🇨🇦CA_8009 @WangCai_1
-      - ‌‌🇨🇦CA_8008 @WangCai_1 2
-      - US_6 @WangCai_1 2
-      - vpnpool-London-Linode
-      - SG_4 @WangCai_1
-      - _CA_加拿大_40
-      - KR_1 @WangCai_1 2
-      - SG_5 @WangCai_1
-      - ‌‌🇨🇦CA_6379 @WangCai_1 2
+      - _CA_加拿大_100
+      - _CA_加拿大 2
+      - ‌‌🇨🇦CA_8000 @WangCai_1
+      - _US_美国 2
+      - _CA_加拿大 3
       - ‌‌🇨🇦CA_6697 @WangCai_1
+      - _CA_加拿大 4
+      - US_5001 @WangCai_1
+      - _CA_加拿大 5
+      - _CA_加拿大 6
+      - ‌‌🇨🇦CA_8118 @WangCai_1
+      - _US_美国 3
+      - ‌‌🇨🇦CA_5500 @WangCai_1
+      - ‌‌🇨🇦CA_8888 @WangCai_1
+      - _CA_加拿大 7
+      - ZZ_2916
+      - ‌‌🇨🇦CA_5001 @WangCai_1
+      - _GB_英国
+      - ‌‌🇨🇦CA_7002 @WangCai_1
+      - ZZ_3373
+      - US_2597
+      - ‌‌🇨🇦CA_9101 @WangCai_1
+      - _CA_加拿大 8
+      - _FR_法国
+      - ‌‌🇨🇦CA_7306 @WangCai_1
+      - _CA_加拿大 9
       - _CA_加拿大 10
-      - US_1 @WangCai_1 2
-      - ‌‌🇨🇦CA_8118 @WangCai_1 3
-      - HK_5 @WangCai_1 2
-      - ‌‌🇨🇦CA_6679 @WangCai_1 2
-      - ‌‌🇨🇦CA_8009 @WangCai_1 2
-      - vpnpool-Sydney-Linode
-      - vpnpool-Sydney-Linode 2
-      - Seoul-BCPL@vpnhat
       - _CA_加拿大 11
-      - ‌‌🇨🇦CA_5000 @WangCai_1
-      - ‌‌🇨🇦CA_3306 @WangCai_1
+      - _US_美国 4
+      - _CA_加拿大_14
       - _CA_加拿大 12
-      - ‌‌🇨🇦CA_5000 @WangCai_1 2
-      - ‌‌🇨🇦CA_5600 @WangCai_1
-      - vpnpool-Sydney-Linode 3
-      - FR-Strasbourg-VELIANET@vpnhat
-      - 香港SGPL@vpnhat
-      - HK_2 @WangCai_1 2
-      - ‌‌🇨🇦CA_7001 @WangCai_1 2
-      - ‌‌🇨🇦CA_6697 @WangCai_1 2
-      - San+Jose-PegTech@vpnhat
-      - 台中hinet@vpnhat
+      - _CA_加拿大 13
+      - US_1977
+      - _IN_印度
+      - _US_美国 5
+      - _US_美国 6
+      - _CA_加拿大 14
+      - ‌‌🇨🇦CA_7307 @WangCai_1
+      - _CA_加拿大 15
+      - _CA_加拿大 16
+      - _CA_加拿大 17
+      - _US_美国 7
+      - ZZ_3508
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - HK_10 @WangCai_1
-      - HK_8 @WangCai_1
-      - vpnpool-Tokyo-Linode
-      - HK_10 @WangCai_1 2
-      - TW_4 @WangCai_1
-      - HK_6 @WangCai_1
-      - HK_4 @WangCai_1
-      - JP_2 @WangCai_1
-      - JP_6 @WangCai_1
-      - HK_5 @WangCai_1
-      - JP_5 @WangCai_1
-      - JP_8 @WangCai_1
-      - JP_6 @WangCai_1 2
-      - JP_10 @WangCai_1
-      - JP_4 @WangCai_1
-      - KR_3 @WangCai_1
-      - HK_1 @WangCai_1
-      - HK_7 @WangCai_1
-      - ‌‌🇨🇦CA_7002 @WangCai_1
-      - HK_3 @WangCai_1
-      - HK_2 @WangCai_1
-      - vpnpool-San Jose-PegTech
-      - HK_7 @WangCai_1 2
-      - HK_9 @WangCai_1
-      - vpnpool-San Jose-PegTech 2
-      - HK_1 @WangCai_1 2
-      - JP_5 @WangCai_1 2
-      - JP_7 @WangCai_1
-      - JP_1 @WangCai_1
-      - JP_9 @WangCai_1
-      - JP_3 @WangCai_1
-      - _US_美国
-      - JP_1 @WangCai_1 2
-      - US_3 @WangCai_1
-      - US_5 @WangCai_1
-      - HK_3 @WangCai_1 2
-      - KR_1 @WangCai_1
-      - SG_2 @WangCai_1
-      - _US_美国_80
-      - US_5004 @WangCai_1
-      - SG3_ @WangCai_1
-      - US_8 @WangCai_1
-      - US_8008 @WangCai_1
-      - US_5 @WangCai_1 2
-      - US_9 @WangCai_1
-      - US_2 @WangCai_1
-      - SG_9 @WangCai_1
-      - US_4 @WangCai_1
-      - SG3_ @WangCai_1 2
-      - US_3 @WangCai_1 2
-      - US_9 @WangCai_1 2
-      - _CA_加拿大
-      - US_8091 @WangCai_1
-      - US_6 @WangCai_1
-      - ‌‌🇨🇦CA_6679 @WangCai_1
-      - ‌‌🇨🇦CA_8000 @WangCai_1
+      - Relay_🇺🇸US-🇺🇸US_2765
+      - vpnpool-桃园Hinet
+      - vpnpool-新北Hinet
+      - vpnpool-桃园Hinet 2
+      - vpnpool-新北Hinet 2
+      - vpnpool-桃园Hinet 3
+      - Relay_🇸🇬SG-🇸🇬SG_1109
       - default_name
-      - _CA_加拿大 2
-      - _CA_加拿大 3
-      - US_5001 @WangCai_1
-      - US_1 @WangCai_1
-      - _CA_加拿大_100
-      - _CA_加拿大 4
-      - ‌‌🇨🇦CA_9101 @WangCai_1
-      - ‌‌🇨🇦CA_7307 @WangCai_1
-      - ‌‌🇨🇦CA_8118 @WangCai_1
-      - US_10 @WangCai_1
-      - ‌‌🇨🇦CA_5500 @WangCai_1
-      - _CA_加拿大 5
-      - ‌‌🇨🇦CA_8008 @WangCai_1
+      - 香港 01
+      - _AE_阿联酋
+      - V1-美国01 中继D | 1.5x
+      - US_2579
+      - US_8091 @WangCai_1
+      - 香港 01 2
+      - 香港 01 3
+      - ZZ_3318
+      - _US_美国
+      - vpnpool-US-Hillsboro-OVH
       - ‌‌🇨🇦CA_6379 @WangCai_1
-      - _US_美国 2
-      - _CA_加拿大 6
-      - _CA_加拿大_97
+      - _CA_加拿大
       - ‌‌🇨🇦CA_9102 @WangCai_1
-      - _CA_加拿大 7
-      - ‌‌🇨🇦CA_8000 @WangCai_1 2
-      - ‌‌🇨🇦CA_7001 @WangCai_1
-      - ‌‌🇨🇦CA_9102 @WangCai_1 2
-      - ‌‌🇨🇦CA_5001 @WangCai_1
-      - ‌‌🇨🇦CA_8091 @WangCai_1
-      - ‌‌🇨🇦CA_7002 @WangCai_1 2
-      - ‌‌🇨🇦CA_7002 @WangCai_1 3
-      - ‌‌🇨🇦CA_8888 @WangCai_1
-      - _CA_加拿大_11
-      - JP_3 @WangCai_1 2
-      - JP_9 @WangCai_1 2
-      - _CA_加拿大 8
-      - _CA_加拿大_46
-      - _CA_加拿大 9
-      - JP_7 @WangCai_1 2
-      - ‌‌🇨🇦CA_5500 @WangCai_1 2
-      - ‌‌🇨🇦CA_5004 @WangCai_1
-      - JP_2 @WangCai_1 2
-      - KR_3 @WangCai_1 2
-      - KR_2 @WangCai_1
-      - US_8090 @WangCai_1
-      - ‌‌🇨🇦CA_0443 @WangCai_1
-      - ‌‌🇨🇦CA_8119 @WangCai_1
-      - ‌‌🇨🇦CA_7306 @WangCai_1
-      - ‌‌🇨🇦CA_8882 @WangCai_1
-      - ‌‌🇨🇦CA_8888 @WangCai_1 2
-      - _CA_加拿大_14
-      - ‌‌🇨🇦CA_8119 @WangCai_1 2
-      - JP_8 @WangCai_1 2
-      - KR_4 @WangCai_1
-      - ‌‌🇨🇦CA_8881 @WangCai_1
-      - ‌‌🇨🇦CA_8118 @WangCai_1 2
-      - KR_2 @WangCai_1 2
-      - KR_4 @WangCai_1 2
-      - vpnpool-香港Nearoute
-      - ‌‌🇨🇦CA_8009 @WangCai_1
-      - ‌‌🇨🇦CA_8008 @WangCai_1 2
-      - US_6 @WangCai_1 2
-      - vpnpool-London-Linode
-      - SG_4 @WangCai_1
-      - _CA_加拿大_40
-      - KR_1 @WangCai_1 2
-      - SG_5 @WangCai_1
-      - ‌‌🇨🇦CA_6379 @WangCai_1 2
+      - _CA_加拿大_100
+      - _CA_加拿大 2
+      - ‌‌🇨🇦CA_8000 @WangCai_1
+      - _US_美国 2
+      - _CA_加拿大 3
       - ‌‌🇨🇦CA_6697 @WangCai_1
+      - _CA_加拿大 4
+      - US_5001 @WangCai_1
+      - _CA_加拿大 5
+      - _CA_加拿大 6
+      - ‌‌🇨🇦CA_8118 @WangCai_1
+      - _US_美国 3
+      - ‌‌🇨🇦CA_5500 @WangCai_1
+      - ‌‌🇨🇦CA_8888 @WangCai_1
+      - _CA_加拿大 7
+      - ZZ_2916
+      - ‌‌🇨🇦CA_5001 @WangCai_1
+      - _GB_英国
+      - ‌‌🇨🇦CA_7002 @WangCai_1
+      - ZZ_3373
+      - US_2597
+      - ‌‌🇨🇦CA_9101 @WangCai_1
+      - _CA_加拿大 8
+      - _FR_法国
+      - ‌‌🇨🇦CA_7306 @WangCai_1
+      - _CA_加拿大 9
       - _CA_加拿大 10
-      - US_1 @WangCai_1 2
-      - ‌‌🇨🇦CA_8118 @WangCai_1 3
-      - HK_5 @WangCai_1 2
-      - ‌‌🇨🇦CA_6679 @WangCai_1 2
-      - ‌‌🇨🇦CA_8009 @WangCai_1 2
-      - vpnpool-Sydney-Linode
-      - vpnpool-Sydney-Linode 2
-      - Seoul-BCPL@vpnhat
       - _CA_加拿大 11
-      - ‌‌🇨🇦CA_5000 @WangCai_1
-      - ‌‌🇨🇦CA_3306 @WangCai_1
+      - _US_美国 4
+      - _CA_加拿大_14
       - _CA_加拿大 12
-      - ‌‌🇨🇦CA_5000 @WangCai_1 2
-      - ‌‌🇨🇦CA_5600 @WangCai_1
-      - vpnpool-Sydney-Linode 3
-      - FR-Strasbourg-VELIANET@vpnhat
-      - 香港SGPL@vpnhat
-      - HK_2 @WangCai_1 2
-      - ‌‌🇨🇦CA_7001 @WangCai_1 2
-      - ‌‌🇨🇦CA_6697 @WangCai_1 2
-      - San+Jose-PegTech@vpnhat
-      - 台中hinet@vpnhat
+      - _CA_加拿大 13
+      - US_1977
+      - _IN_印度
+      - _US_美国 5
+      - _US_美国 6
+      - _CA_加拿大 14
+      - ‌‌🇨🇦CA_7307 @WangCai_1
+      - _CA_加拿大 15
+      - _CA_加拿大 16
+      - _CA_加拿大 17
+      - _US_美国 7
+      - ZZ_3508
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - HK_10 @WangCai_1
-      - HK_8 @WangCai_1
-      - vpnpool-Tokyo-Linode
-      - HK_10 @WangCai_1 2
-      - TW_4 @WangCai_1
-      - HK_6 @WangCai_1
-      - HK_4 @WangCai_1
-      - JP_2 @WangCai_1
-      - JP_6 @WangCai_1
-      - HK_5 @WangCai_1
-      - JP_5 @WangCai_1
-      - JP_8 @WangCai_1
-      - JP_6 @WangCai_1 2
-      - JP_10 @WangCai_1
-      - JP_4 @WangCai_1
-      - KR_3 @WangCai_1
-      - HK_1 @WangCai_1
-      - HK_7 @WangCai_1
-      - ‌‌🇨🇦CA_7002 @WangCai_1
-      - HK_3 @WangCai_1
-      - HK_2 @WangCai_1
-      - vpnpool-San Jose-PegTech
-      - HK_7 @WangCai_1 2
-      - HK_9 @WangCai_1
-      - vpnpool-San Jose-PegTech 2
-      - HK_1 @WangCai_1 2
-      - JP_5 @WangCai_1 2
-      - JP_7 @WangCai_1
-      - JP_1 @WangCai_1
-      - JP_9 @WangCai_1
-      - JP_3 @WangCai_1
-      - _US_美国
-      - JP_1 @WangCai_1 2
-      - US_3 @WangCai_1
-      - US_5 @WangCai_1
-      - HK_3 @WangCai_1 2
-      - KR_1 @WangCai_1
-      - SG_2 @WangCai_1
-      - _US_美国_80
-      - US_5004 @WangCai_1
-      - SG3_ @WangCai_1
-      - US_8 @WangCai_1
-      - US_8008 @WangCai_1
-      - US_5 @WangCai_1 2
-      - US_9 @WangCai_1
-      - US_2 @WangCai_1
-      - SG_9 @WangCai_1
-      - US_4 @WangCai_1
-      - SG3_ @WangCai_1 2
-      - US_3 @WangCai_1 2
-      - US_9 @WangCai_1 2
-      - _CA_加拿大
-      - US_8091 @WangCai_1
-      - US_6 @WangCai_1
-      - ‌‌🇨🇦CA_6679 @WangCai_1
-      - ‌‌🇨🇦CA_8000 @WangCai_1
+      - Relay_🇺🇸US-🇺🇸US_2765
+      - vpnpool-桃园Hinet
+      - vpnpool-新北Hinet
+      - vpnpool-桃园Hinet 2
+      - vpnpool-新北Hinet 2
+      - vpnpool-桃园Hinet 3
+      - Relay_🇸🇬SG-🇸🇬SG_1109
       - default_name
-      - _CA_加拿大 2
-      - _CA_加拿大 3
-      - US_5001 @WangCai_1
-      - US_1 @WangCai_1
-      - _CA_加拿大_100
-      - _CA_加拿大 4
-      - ‌‌🇨🇦CA_9101 @WangCai_1
-      - ‌‌🇨🇦CA_7307 @WangCai_1
-      - ‌‌🇨🇦CA_8118 @WangCai_1
-      - US_10 @WangCai_1
-      - ‌‌🇨🇦CA_5500 @WangCai_1
-      - _CA_加拿大 5
-      - ‌‌🇨🇦CA_8008 @WangCai_1
+      - 香港 01
+      - _AE_阿联酋
+      - V1-美国01 中继D | 1.5x
+      - US_2579
+      - US_8091 @WangCai_1
+      - 香港 01 2
+      - 香港 01 3
+      - ZZ_3318
+      - _US_美国
+      - vpnpool-US-Hillsboro-OVH
       - ‌‌🇨🇦CA_6379 @WangCai_1
-      - _US_美国 2
-      - _CA_加拿大 6
-      - _CA_加拿大_97
+      - _CA_加拿大
       - ‌‌🇨🇦CA_9102 @WangCai_1
-      - _CA_加拿大 7
-      - ‌‌🇨🇦CA_8000 @WangCai_1 2
-      - ‌‌🇨🇦CA_7001 @WangCai_1
-      - ‌‌🇨🇦CA_9102 @WangCai_1 2
-      - ‌‌🇨🇦CA_5001 @WangCai_1
-      - ‌‌🇨🇦CA_8091 @WangCai_1
-      - ‌‌🇨🇦CA_7002 @WangCai_1 2
-      - ‌‌🇨🇦CA_7002 @WangCai_1 3
-      - ‌‌🇨🇦CA_8888 @WangCai_1
-      - _CA_加拿大_11
-      - JP_3 @WangCai_1 2
-      - JP_9 @WangCai_1 2
-      - _CA_加拿大 8
-      - _CA_加拿大_46
-      - _CA_加拿大 9
-      - JP_7 @WangCai_1 2
-      - ‌‌🇨🇦CA_5500 @WangCai_1 2
-      - ‌‌🇨🇦CA_5004 @WangCai_1
-      - JP_2 @WangCai_1 2
-      - KR_3 @WangCai_1 2
-      - KR_2 @WangCai_1
-      - US_8090 @WangCai_1
-      - ‌‌🇨🇦CA_0443 @WangCai_1
-      - ‌‌🇨🇦CA_8119 @WangCai_1
-      - ‌‌🇨🇦CA_7306 @WangCai_1
-      - ‌‌🇨🇦CA_8882 @WangCai_1
-      - ‌‌🇨🇦CA_8888 @WangCai_1 2
-      - _CA_加拿大_14
-      - ‌‌🇨🇦CA_8119 @WangCai_1 2
-      - JP_8 @WangCai_1 2
-      - KR_4 @WangCai_1
-      - ‌‌🇨🇦CA_8881 @WangCai_1
-      - ‌‌🇨🇦CA_8118 @WangCai_1 2
-      - KR_2 @WangCai_1 2
-      - KR_4 @WangCai_1 2
-      - vpnpool-香港Nearoute
-      - ‌‌🇨🇦CA_8009 @WangCai_1
-      - ‌‌🇨🇦CA_8008 @WangCai_1 2
-      - US_6 @WangCai_1 2
-      - vpnpool-London-Linode
-      - SG_4 @WangCai_1
-      - _CA_加拿大_40
-      - KR_1 @WangCai_1 2
-      - SG_5 @WangCai_1
-      - ‌‌🇨🇦CA_6379 @WangCai_1 2
+      - _CA_加拿大_100
+      - _CA_加拿大 2
+      - ‌‌🇨🇦CA_8000 @WangCai_1
+      - _US_美国 2
+      - _CA_加拿大 3
       - ‌‌🇨🇦CA_6697 @WangCai_1
+      - _CA_加拿大 4
+      - US_5001 @WangCai_1
+      - _CA_加拿大 5
+      - _CA_加拿大 6
+      - ‌‌🇨🇦CA_8118 @WangCai_1
+      - _US_美国 3
+      - ‌‌🇨🇦CA_5500 @WangCai_1
+      - ‌‌🇨🇦CA_8888 @WangCai_1
+      - _CA_加拿大 7
+      - ZZ_2916
+      - ‌‌🇨🇦CA_5001 @WangCai_1
+      - _GB_英国
+      - ‌‌🇨🇦CA_7002 @WangCai_1
+      - ZZ_3373
+      - US_2597
+      - ‌‌🇨🇦CA_9101 @WangCai_1
+      - _CA_加拿大 8
+      - _FR_法国
+      - ‌‌🇨🇦CA_7306 @WangCai_1
+      - _CA_加拿大 9
       - _CA_加拿大 10
-      - US_1 @WangCai_1 2
-      - ‌‌🇨🇦CA_8118 @WangCai_1 3
-      - HK_5 @WangCai_1 2
-      - ‌‌🇨🇦CA_6679 @WangCai_1 2
-      - ‌‌🇨🇦CA_8009 @WangCai_1 2
-      - vpnpool-Sydney-Linode
-      - vpnpool-Sydney-Linode 2
-      - Seoul-BCPL@vpnhat
       - _CA_加拿大 11
-      - ‌‌🇨🇦CA_5000 @WangCai_1
-      - ‌‌🇨🇦CA_3306 @WangCai_1
+      - _US_美国 4
+      - _CA_加拿大_14
       - _CA_加拿大 12
-      - ‌‌🇨🇦CA_5000 @WangCai_1 2
-      - ‌‌🇨🇦CA_5600 @WangCai_1
-      - vpnpool-Sydney-Linode 3
-      - FR-Strasbourg-VELIANET@vpnhat
-      - 香港SGPL@vpnhat
-      - HK_2 @WangCai_1 2
-      - ‌‌🇨🇦CA_7001 @WangCai_1 2
-      - ‌‌🇨🇦CA_6697 @WangCai_1 2
-      - San+Jose-PegTech@vpnhat
-      - 台中hinet@vpnhat
+      - _CA_加拿大 13
+      - US_1977
+      - _IN_印度
+      - _US_美国 5
+      - _US_美国 6
+      - _CA_加拿大 14
+      - ‌‌🇨🇦CA_7307 @WangCai_1
+      - _CA_加拿大 15
+      - _CA_加拿大 16
+      - _CA_加拿大 17
+      - _US_美国 7
+      - ZZ_3508
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -1231,150 +593,70 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - HK_10 @WangCai_1
-      - HK_8 @WangCai_1
-      - vpnpool-Tokyo-Linode
-      - HK_10 @WangCai_1 2
-      - TW_4 @WangCai_1
-      - HK_6 @WangCai_1
-      - HK_4 @WangCai_1
-      - JP_2 @WangCai_1
-      - JP_6 @WangCai_1
-      - HK_5 @WangCai_1
-      - JP_5 @WangCai_1
-      - JP_8 @WangCai_1
-      - JP_6 @WangCai_1 2
-      - JP_10 @WangCai_1
-      - JP_4 @WangCai_1
-      - KR_3 @WangCai_1
-      - HK_1 @WangCai_1
-      - HK_7 @WangCai_1
-      - ‌‌🇨🇦CA_7002 @WangCai_1
-      - HK_3 @WangCai_1
-      - HK_2 @WangCai_1
-      - vpnpool-San Jose-PegTech
-      - HK_7 @WangCai_1 2
-      - HK_9 @WangCai_1
-      - vpnpool-San Jose-PegTech 2
-      - HK_1 @WangCai_1 2
-      - JP_5 @WangCai_1 2
-      - JP_7 @WangCai_1
-      - JP_1 @WangCai_1
-      - JP_9 @WangCai_1
-      - JP_3 @WangCai_1
-      - _US_美国
-      - JP_1 @WangCai_1 2
-      - US_3 @WangCai_1
-      - US_5 @WangCai_1
-      - HK_3 @WangCai_1 2
-      - KR_1 @WangCai_1
-      - SG_2 @WangCai_1
-      - _US_美国_80
-      - US_5004 @WangCai_1
-      - SG3_ @WangCai_1
-      - US_8 @WangCai_1
-      - US_8008 @WangCai_1
-      - US_5 @WangCai_1 2
-      - US_9 @WangCai_1
-      - US_2 @WangCai_1
-      - SG_9 @WangCai_1
-      - US_4 @WangCai_1
-      - SG3_ @WangCai_1 2
-      - US_3 @WangCai_1 2
-      - US_9 @WangCai_1 2
-      - _CA_加拿大
-      - US_8091 @WangCai_1
-      - US_6 @WangCai_1
-      - ‌‌🇨🇦CA_6679 @WangCai_1
-      - ‌‌🇨🇦CA_8000 @WangCai_1
+      - Relay_🇺🇸US-🇺🇸US_2765
+      - vpnpool-桃园Hinet
+      - vpnpool-新北Hinet
+      - vpnpool-桃园Hinet 2
+      - vpnpool-新北Hinet 2
+      - vpnpool-桃园Hinet 3
+      - Relay_🇸🇬SG-🇸🇬SG_1109
       - default_name
-      - _CA_加拿大 2
-      - _CA_加拿大 3
-      - US_5001 @WangCai_1
-      - US_1 @WangCai_1
-      - _CA_加拿大_100
-      - _CA_加拿大 4
-      - ‌‌🇨🇦CA_9101 @WangCai_1
-      - ‌‌🇨🇦CA_7307 @WangCai_1
-      - ‌‌🇨🇦CA_8118 @WangCai_1
-      - US_10 @WangCai_1
-      - ‌‌🇨🇦CA_5500 @WangCai_1
-      - _CA_加拿大 5
-      - ‌‌🇨🇦CA_8008 @WangCai_1
+      - 香港 01
+      - _AE_阿联酋
+      - V1-美国01 中继D | 1.5x
+      - US_2579
+      - US_8091 @WangCai_1
+      - 香港 01 2
+      - 香港 01 3
+      - ZZ_3318
+      - _US_美国
+      - vpnpool-US-Hillsboro-OVH
       - ‌‌🇨🇦CA_6379 @WangCai_1
-      - _US_美国 2
-      - _CA_加拿大 6
-      - _CA_加拿大_97
+      - _CA_加拿大
       - ‌‌🇨🇦CA_9102 @WangCai_1
-      - _CA_加拿大 7
-      - ‌‌🇨🇦CA_8000 @WangCai_1 2
-      - ‌‌🇨🇦CA_7001 @WangCai_1
-      - ‌‌🇨🇦CA_9102 @WangCai_1 2
-      - ‌‌🇨🇦CA_5001 @WangCai_1
-      - ‌‌🇨🇦CA_8091 @WangCai_1
-      - ‌‌🇨🇦CA_7002 @WangCai_1 2
-      - ‌‌🇨🇦CA_7002 @WangCai_1 3
-      - ‌‌🇨🇦CA_8888 @WangCai_1
-      - _CA_加拿大_11
-      - JP_3 @WangCai_1 2
-      - JP_9 @WangCai_1 2
-      - _CA_加拿大 8
-      - _CA_加拿大_46
-      - _CA_加拿大 9
-      - JP_7 @WangCai_1 2
-      - ‌‌🇨🇦CA_5500 @WangCai_1 2
-      - ‌‌🇨🇦CA_5004 @WangCai_1
-      - JP_2 @WangCai_1 2
-      - KR_3 @WangCai_1 2
-      - KR_2 @WangCai_1
-      - US_8090 @WangCai_1
-      - ‌‌🇨🇦CA_0443 @WangCai_1
-      - ‌‌🇨🇦CA_8119 @WangCai_1
-      - ‌‌🇨🇦CA_7306 @WangCai_1
-      - ‌‌🇨🇦CA_8882 @WangCai_1
-      - ‌‌🇨🇦CA_8888 @WangCai_1 2
-      - _CA_加拿大_14
-      - ‌‌🇨🇦CA_8119 @WangCai_1 2
-      - JP_8 @WangCai_1 2
-      - KR_4 @WangCai_1
-      - ‌‌🇨🇦CA_8881 @WangCai_1
-      - ‌‌🇨🇦CA_8118 @WangCai_1 2
-      - KR_2 @WangCai_1 2
-      - KR_4 @WangCai_1 2
-      - vpnpool-香港Nearoute
-      - ‌‌🇨🇦CA_8009 @WangCai_1
-      - ‌‌🇨🇦CA_8008 @WangCai_1 2
-      - US_6 @WangCai_1 2
-      - vpnpool-London-Linode
-      - SG_4 @WangCai_1
-      - _CA_加拿大_40
-      - KR_1 @WangCai_1 2
-      - SG_5 @WangCai_1
-      - ‌‌🇨🇦CA_6379 @WangCai_1 2
+      - _CA_加拿大_100
+      - _CA_加拿大 2
+      - ‌‌🇨🇦CA_8000 @WangCai_1
+      - _US_美国 2
+      - _CA_加拿大 3
       - ‌‌🇨🇦CA_6697 @WangCai_1
+      - _CA_加拿大 4
+      - US_5001 @WangCai_1
+      - _CA_加拿大 5
+      - _CA_加拿大 6
+      - ‌‌🇨🇦CA_8118 @WangCai_1
+      - _US_美国 3
+      - ‌‌🇨🇦CA_5500 @WangCai_1
+      - ‌‌🇨🇦CA_8888 @WangCai_1
+      - _CA_加拿大 7
+      - ZZ_2916
+      - ‌‌🇨🇦CA_5001 @WangCai_1
+      - _GB_英国
+      - ‌‌🇨🇦CA_7002 @WangCai_1
+      - ZZ_3373
+      - US_2597
+      - ‌‌🇨🇦CA_9101 @WangCai_1
+      - _CA_加拿大 8
+      - _FR_法国
+      - ‌‌🇨🇦CA_7306 @WangCai_1
+      - _CA_加拿大 9
       - _CA_加拿大 10
-      - US_1 @WangCai_1 2
-      - ‌‌🇨🇦CA_8118 @WangCai_1 3
-      - HK_5 @WangCai_1 2
-      - ‌‌🇨🇦CA_6679 @WangCai_1 2
-      - ‌‌🇨🇦CA_8009 @WangCai_1 2
-      - vpnpool-Sydney-Linode
-      - vpnpool-Sydney-Linode 2
-      - Seoul-BCPL@vpnhat
       - _CA_加拿大 11
-      - ‌‌🇨🇦CA_5000 @WangCai_1
-      - ‌‌🇨🇦CA_3306 @WangCai_1
+      - _US_美国 4
+      - _CA_加拿大_14
       - _CA_加拿大 12
-      - ‌‌🇨🇦CA_5000 @WangCai_1 2
-      - ‌‌🇨🇦CA_5600 @WangCai_1
-      - vpnpool-Sydney-Linode 3
-      - FR-Strasbourg-VELIANET@vpnhat
-      - 香港SGPL@vpnhat
-      - HK_2 @WangCai_1 2
-      - ‌‌🇨🇦CA_7001 @WangCai_1 2
-      - ‌‌🇨🇦CA_6697 @WangCai_1 2
-      - San+Jose-PegTech@vpnhat
-      - 台中hinet@vpnhat
+      - _CA_加拿大 13
+      - US_1977
+      - _IN_印度
+      - _US_美国 5
+      - _US_美国 6
+      - _CA_加拿大 14
+      - ‌‌🇨🇦CA_7307 @WangCai_1
+      - _CA_加拿大 15
+      - _CA_加拿大 16
+      - _CA_加拿大 17
+      - _US_美国 7
+      - ZZ_3508
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
