@@ -5,279 +5,379 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: Relay_🇺🇸US-🇺🇸US_2765, server: 138.197.236.77, port: 443, type: vmess, uuid: 3579436c-b37e-11eb-8529-0242ac130003, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ray, ws-headers: {Host: 138.197.236.77}, udp: true}
-  - {name: vpnpool-桃园Hinet, server: 120.233.10.182, port: 5705, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62611:fx2iOd, obfs-param: t.me/vpnhat, udp: true}
-  - {name: vpnpool-新北Hinet, server: 120.233.10.182, port: 5704, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62611:fx2iOd, obfs-param: t.me/vpnhat, udp: true}
-  - {name: vpnpool-桃园Hinet 2, server: 120.233.10.182, port: 5701, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62611:fx2iOd, obfs-param: t.me/vpnhat, udp: true}
-  - {name: vpnpool-新北Hinet 2, server: 120.233.10.182, port: 5700, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62611:fx2iOd, obfs-param: t.me/vpnhat, udp: true}
-  - {name: vpnpool-桃园Hinet 3, server: 120.233.10.182, port: 5703, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62611:fx2iOd, obfs-param: t.me/vpnhat, udp: true}
-  - {name: Relay_🇸🇬SG-🇸🇬SG_1109, server: sg-am11.eqnode.net, port: 8181, type: ssr, cipher: aes-256-cfb, password: kKdNNt2HZ, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: releases.ubuntu.com, udp: true}
-  - {name: default_name, server: 198.41.221.169, port: 443, type: vmess, uuid: a8910831-f56b-4ac4-c68f-e4dd83f71e60, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /sakura/, ws-headers: {Host: zero1.a-yu.xyz}, udp: true}
-  - {name: 香港 01, server: 120.233.7.78, port: 50111, type: ssr, cipher: rc4-md5, password: abK09D1FnV, protocol: auth_aes128_md5, obfs: http_post, protocol-param: 292778:QiDeo5UdMB, obfs-param: "", udp: true}
-  - {name: _AE_阿联酋, server: bi.oracleusa.ml, port: 2053, type: vmess, uuid: 770df784-69de-4ef2-887c-783a67eaef7f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: bi.oracleusa.ml}, udp: true}
-  - {name: V1-美国01 中继D | 1.5x, server: in04.dns2333.xyz, port: 63014, type: vmess, uuid: f5851fa4-8c76-3148-860e-9641afcd3576, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /mg, ws-headers: {Host: mugua-us01.covid19.rip}, udp: true}
-  - {name: US_2579, server: 38.91.102.86, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: US_8091 @WangCai_1, server: 38.143.66.71, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: 香港 01 2, server: 120.233.7.78, port: 50111, type: ssr, cipher: rc4-md5, password: abK09D1FnV, protocol: auth_aes128_md5, obfs: http_post, protocol-param: 292769:GzZVA9eXtJ, obfs-param: "", udp: true}
-  - {name: 香港 01 3, server: 120.233.7.78, port: 50111, type: ssr, cipher: rc4-md5, password: abK09D1FnV, protocol: auth_aes128_md5, obfs: http_post, protocol-param: 292775:KCTJeBrLjb, obfs-param: "", udp: true}
-  - {name: ZZ_3318, server: 134.195.196.3, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: _US_美国, server: 38.86.135.36, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: vpnpool-US-Hillsboro-OVH, server: 120.233.10.182, port: 7700, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 62611:fx2iOd, obfs-param: t.me/vpnhat, udp: true}
-  - {name: ‌‌🇨🇦CA_6379 @WangCai_1, server: 134.195.196.12, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: _CA_加拿大, server: 134.195.196.3, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: ‌‌🇨🇦CA_9102 @WangCai_1, server: 134.195.196.12, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: _CA_加拿大_100, server: 134.195.196.12, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: _CA_加拿大 2, server: 134.195.196.3, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: ‌‌🇨🇦CA_8000 @WangCai_1, server: 134.195.196.12, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: _US_美国 2, server: 169.197.142.187, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: _CA_加拿大 3, server: 134.195.196.68, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: ‌‌🇨🇦CA_6697 @WangCai_1, server: 134.195.196.12, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: _CA_加拿大 4, server: 134.195.196.68, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: US_5001 @WangCai_1, server: 38.143.66.71, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: _CA_加拿大 5, server: 134.195.196.187, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: _CA_加拿大 6, server: 134.195.196.227, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: ‌‌🇨🇦CA_8118 @WangCai_1, server: 134.195.196.12, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: _US_美国 3, server: 38.91.102.86, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: ‌‌🇨🇦CA_5500 @WangCai_1, server: 134.195.196.12, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: ‌‌🇨🇦CA_8888 @WangCai_1, server: 134.195.196.12, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: _CA_加拿大 7, server: 134.195.196.227, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: ZZ_2916, server: 169.197.142.187, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: ‌‌🇨🇦CA_5001 @WangCai_1, server: 134.195.196.12, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: _GB_英国, server: 172.99.190.92, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: ‌‌🇨🇦CA_7002 @WangCai_1, server: 134.195.196.12, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: ZZ_3373, server: 134.195.196.3, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_2597, server: 38.91.102.86, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: ‌‌🇨🇦CA_9101 @WangCai_1, server: 134.195.196.12, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: _CA_加拿大 8, server: 134.195.196.12, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: _FR_法国, server: 51.255.66.185, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: ‌‌🇨🇦CA_7306 @WangCai_1, server: 134.195.196.12, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: _CA_加拿大 9, server: 134.195.196.187, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: _CA_加拿大 10, server: 134.195.196.187, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: _CA_加拿大 11, server: 134.195.196.187, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: _US_美国 4, server: 38.143.66.71, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: _CA_加拿大_14, server: 134.195.196.12, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: _CA_加拿大 12, server: 134.195.196.227, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: _CA_加拿大 13, server: 134.195.196.227, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: US_1977, server: 38.143.66.71, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: _IN_印度, server: 192.46.209.227, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: _US_美国 5, server: 169.197.142.187, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: _US_美国 6, server: 38.143.66.71, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: _CA_加拿大 14, server: 134.195.196.187, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: ‌‌🇨🇦CA_7307 @WangCai_1, server: 134.195.196.227, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: _CA_加拿大 15, server: 134.195.196.12, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: _CA_加拿大 16, server: 134.195.196.187, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: _CA_加拿大 17, server: 134.195.196.12, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: _US_美国 7, server: 169.197.142.187, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: ZZ_3508, server: 169.197.142.187, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: CN_油管 TG 8度科技, server: iepl1.ggboynextdoor.best, port: 65115, type: ssr, cipher: rc4-md5, password: lGBMNO, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 4173:OrUbgB, obfs-param: 9f7c44173.download.windowsupdate.com, udp: true}
+  - {name: CN_油管 TG 8度科技 2, server: shcn2tohkt66.ggboynextdoor.best, port: 49041, type: ssr, cipher: rc4-md5, password: lGBMNO, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 4173:OrUbgB, obfs-param: 9f7c44173.download.windowsupdate.com, udp: true}
+  - {name: CN_油管 TG 8度科技 3, server: shcn2tohkt44.ggboynextdoor.best, port: 49042, type: ssr, cipher: rc4-md5, password: lGBMNO, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 4173:OrUbgB, obfs-param: 9f7c44173.download.windowsupdate.com, udp: true}
+  - {name: CN_油管 TG 8度科技 4, server: 56c918c15a09403d93c037772a69dwd.jkcloud.xyz, port: 6598, type: ss, cipher: chacha20-ietf-poly1305, password: 21eda7ab-7263-4214-a056-59cb153ad0e0, udp: true}
+  - {name: CN_油管 TG 8度科技 5, server: 56c918c15a09403d93c037772a69dwd.jkcloud.xyz, port: 6388, type: ss, cipher: chacha20-ietf-poly1305, password: 21eda7ab-7263-4214-a056-59cb153ad0e0, udp: true}
+  - {name: CN_油管 TG 8度科技 6, server: 56c918c15a09403d93c037772a69dwd.jkcloud.xyz, port: 6389, type: ss, cipher: chacha20-ietf-poly1305, password: 21eda7ab-7263-4214-a056-59cb153ad0e0, udp: true}
+  - {name: CN_油管 TG 8度科技 7, server: 56c918c15a09403d93c037772a69dwd.jkcloud.xyz, port: 6386, type: ss, cipher: chacha20-ietf-poly1305, password: 21eda7ab-7263-4214-a056-59cb153ad0e0, udp: true}
+  - {name: CN_油管 TG 8度科技 8, server: 56c918c15a09403d93c037772a69dwd.jkcloud.xyz, port: 6596, type: ss, cipher: chacha20-ietf-poly1305, password: 21eda7ab-7263-4214-a056-59cb153ad0e0, udp: true}
+  - {name: CN_油管 TG 8度科技 9, server: 56c918c15a09403d93c037772a69dwd.jkcloud.xyz, port: 6396, type: ss, cipher: chacha20-ietf-poly1305, password: 21eda7ab-7263-4214-a056-59cb153ad0e0, udp: true}
+  - {name: CN_油管 TG 8度科技 10, server: 00178641680d4f73a85ff60e4cd27629.jkcloud.xyz, port: 6388, type: ss, cipher: chacha20-ietf-poly1305, password: 21eda7ab-7263-4214-a056-59cb153ad0e0, udp: true}
+  - {name: CN_油管 TG 8度科技 11, server: 00178641680d4f73a85ff60e4cd27629.jkcloud.xyz, port: 6598, type: ss, cipher: chacha20-ietf-poly1305, password: 21eda7ab-7263-4214-a056-59cb153ad0e0, udp: true}
+  - {name: CN_油管 TG 8度科技 12, server: 00178641680d4f73a85ff60e4cd27628sa.jkcloud.xyz, port: 6388, type: ss, cipher: chacha20-ietf-poly1305, password: 21eda7ab-7263-4214-a056-59cb153ad0e0, udp: true}
+  - {name: CN_油管 TG 8度科技 13, server: 56c918c15a09403d93c037772a69dwd.jkcloud.xyz, port: 6599, type: ss, cipher: chacha20-ietf-poly1305, password: 21eda7ab-7263-4214-a056-59cb153ad0e0, udp: true}
+  - {name: CN_油管 TG 8度科技 14, server: 56c918c15a09403d93c037772a69dwd.jkcloud.xyz, port: 6454, type: ss, cipher: chacha20-ietf-poly1305, password: 21eda7ab-7263-4214-a056-59cb153ad0e0, udp: true}
+  - {name: CN_油管 TG 8度科技 15, server: 00178641680d4f73a85ff60e4cd27628sa.jkcloud.xyz, port: 6396, type: ss, cipher: chacha20-ietf-poly1305, password: 21eda7ab-7263-4214-a056-59cb153ad0e0, udp: true}
+  - {name: CN_油管 TG 8度科技 16, server: 00178641680d4f73a85ff60e4cd27628sa.jkcloud.xyz, port: 6389, type: ss, cipher: chacha20-ietf-poly1305, password: 21eda7ab-7263-4214-a056-59cb153ad0e0, udp: true}
+  - {name: CN_油管 TG 8度科技 17, server: 00178641680d4f73a85ff60e4cd27629.jkcloud.xyz, port: 6396, type: ss, cipher: chacha20-ietf-poly1305, password: 21eda7ab-7263-4214-a056-59cb153ad0e0, udp: true}
+  - {name: CN_油管 TG 8度科技 18, server: 00178641680d4f73a85ff60e4cd27628sa.jkcloud.xyz, port: 6701, type: ss, cipher: chacha20-ietf-poly1305, password: 21eda7ab-7263-4214-a056-59cb153ad0e0, udp: true}
+  - {name: CN_油管 TG 8度科技 19, server: 00178641680d4f73a85ff60e4cd27628sa.jkcloud.xyz, port: 6386, type: ss, cipher: chacha20-ietf-poly1305, password: 21eda7ab-7263-4214-a056-59cb153ad0e0, udp: true}
+  - {name: CN_油管 TG 8度科技 20, server: 00178641680d4f73a85ff60e4cd27628sa.jkcloud.xyz, port: 6595, type: ss, cipher: chacha20-ietf-poly1305, password: 21eda7ab-7263-4214-a056-59cb153ad0e0, udp: true}
+  - {name: CN_油管 TG 8度科技 21, server: 00178641680d4f73a85ff60e4cd27629.jkcloud.xyz, port: 6701, type: ss, cipher: chacha20-ietf-poly1305, password: 21eda7ab-7263-4214-a056-59cb153ad0e0, udp: true}
+  - {name: CN_油管 TG 8度科技 22, server: 00178641680d4f73a85ff60e4cd27628sa.jkcloud.xyz, port: 6597, type: ss, cipher: chacha20-ietf-poly1305, password: 21eda7ab-7263-4214-a056-59cb153ad0e0, udp: true}
+  - {name: CN_油管 TG 8度科技 23, server: 56c918c15a09403d93c037772a69dwd.jkcloud.xyz, port: 6597, type: ss, cipher: chacha20-ietf-poly1305, password: 21eda7ab-7263-4214-a056-59cb153ad0e0, udp: true}
+  - {name: CN_油管 TG 8度科技 24, server: 00178641680d4f73a85ff60e4cd27628sa.jkcloud.xyz, port: 6596, type: ss, cipher: chacha20-ietf-poly1305, password: 21eda7ab-7263-4214-a056-59cb153ad0e0, udp: true}
+  - {name: CN_油管 TG 8度科技 25, server: 56c918c15a09403d93c037772a69dwd.jkcloud.xyz, port: 6387, type: ss, cipher: chacha20-ietf-poly1305, password: 21eda7ab-7263-4214-a056-59cb153ad0e0, udp: true}
+  - {name: CN_油管 TG 8度科技 26, server: 00178641680d4f73a85ff60e4cd27628sa.jkcloud.xyz, port: 6387, type: ss, cipher: chacha20-ietf-poly1305, password: 21eda7ab-7263-4214-a056-59cb153ad0e0, udp: true}
+  - {name: CN_油管 TG 8度科技 27, server: 00178641680d4f73a85ff60e4cd27629.jkcloud.xyz, port: 6387, type: ss, cipher: chacha20-ietf-poly1305, password: 21eda7ab-7263-4214-a056-59cb153ad0e0, udp: true}
+  - {name: CN_油管 TG 8度科技 28, server: 56c918c15a09403d93c037772a69dwd.jkcloud.xyz, port: 6385, type: ss, cipher: chacha20-ietf-poly1305, password: 21eda7ab-7263-4214-a056-59cb153ad0e0, udp: true}
+  - {name: CN_油管 TG 8度科技 29, server: 00178641680d4f73a85ff60e4cd27628sa.jkcloud.xyz, port: 6394, type: ss, cipher: chacha20-ietf-poly1305, password: 21eda7ab-7263-4214-a056-59cb153ad0e0, udp: true}
+  - {name: CN_油管 TG 8度科技 30, server: 00178641680d4f73a85ff60e4cd27629.jkcloud.xyz, port: 6392, type: ss, cipher: chacha20-ietf-poly1305, password: 21eda7ab-7263-4214-a056-59cb153ad0e0, udp: true}
+  - {name: CN_油管 TG 8度科技 31, server: 00178641680d4f73a85ff60e4cd27629.jkcloud.xyz, port: 6399, type: ss, cipher: chacha20-ietf-poly1305, password: 21eda7ab-7263-4214-a056-59cb153ad0e0, udp: true}
+  - {name: CN_油管 TG 8度科技 32, server: 00178641680d4f73a85ff60e4cd27628sa.jkcloud.xyz, port: 6393, type: ss, cipher: chacha20-ietf-poly1305, password: 21eda7ab-7263-4214-a056-59cb153ad0e0, udp: true}
+  - {name: CN_油管 TG 8度科技 33, server: 00178641680d4f73a85ff60e4cd27628sa.jkcloud.xyz, port: 6398, type: ss, cipher: chacha20-ietf-poly1305, password: 21eda7ab-7263-4214-a056-59cb153ad0e0, udp: true}
+  - {name: CN_油管 TG 8度科技 34, server: 00178641680d4f73a85ff60e4cd27628sa.jkcloud.xyz, port: 6392, type: ss, cipher: chacha20-ietf-poly1305, password: 21eda7ab-7263-4214-a056-59cb153ad0e0, udp: true}
+  - {name: CN_油管 TG 8度科技 35, server: 00178641680d4f73a85ff60e4cd27628sa.jkcloud.xyz, port: 6599, type: ss, cipher: chacha20-ietf-poly1305, password: 21eda7ab-7263-4214-a056-59cb153ad0e0, udp: true}
+  - {name: DE_油管 TG 8度科技, server: 193.108.117.75, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: DE_油管 TG 8度科技 2, server: 193.108.117.75, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: CN_油管 TG 8度科技 36, server: 56c918c15a09403d93c037772a69dwd.jkcloud.xyz, port: 6592, type: ss, cipher: chacha20-ietf-poly1305, password: 21eda7ab-7263-4214-a056-59cb153ad0e0, udp: true}
+  - {name: CN_油管 TG 8度科技 37, server: 00178641680d4f73a85ff60e4cd27629.jkcloud.xyz, port: 6393, type: ss, cipher: chacha20-ietf-poly1305, password: 21eda7ab-7263-4214-a056-59cb153ad0e0, udp: true}
+  - {name: CA_油管 TG 8度科技, server: 198.57.27.218, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
+  - {name: US_油管 TG 8度科技, server: 158.101.23.126, port: 2222, type: ss, cipher: chacha20-ietf-poly1305, password: miaoge110, udp: true}
+  - {name: CN_油管 TG 8度科技 38, server: 00178641680d4f73a85ff60e4cd27628sa.jkcloud.xyz, port: 6700, type: ss, cipher: chacha20-ietf-poly1305, password: 21eda7ab-7263-4214-a056-59cb153ad0e0, udp: true}
+  - {name: US_油管 TG 8度科技 2, server: 38.143.66.71, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: CA_油管 TG 8度科技 2, server: 198.57.27.218, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: CA_油管 TG 8度科技 3, server: 198.57.27.172, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: US_油管 TG 8度科技 3, server: 38.143.66.71, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: CN_油管 TG 8度科技 39, server: 00178641680d4f73a85ff60e4cd27629.jkcloud.xyz, port: 6596, type: ss, cipher: chacha20-ietf-poly1305, password: 21eda7ab-7263-4214-a056-59cb153ad0e0, udp: true}
+  - {name: CN_油管 TG 8度科技 40, server: 00178641680d4f73a85ff60e4cd27629.jkcloud.xyz, port: 6398, type: ss, cipher: chacha20-ietf-poly1305, password: 21eda7ab-7263-4214-a056-59cb153ad0e0, udp: true}
+  - {name: US_油管 TG 8度科技 4, server: 38.143.66.71, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: CN_油管 TG 8度科技 41, server: 00178641680d4f73a85ff60e4cd27629.jkcloud.xyz, port: 6385, type: ss, cipher: chacha20-ietf-poly1305, password: 21eda7ab-7263-4214-a056-59cb153ad0e0, udp: true}
+  - {name: CA_油管 TG 8度科技 4, server: 134.195.196.3, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: CA_油管 TG 8度科技 5, server: 134.195.196.3, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: CA_油管 TG 8度科技 6, server: 134.195.196.12, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: CA_油管 TG 8度科技 7, server: 134.195.196.12, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: CA_油管 TG 8度科技 8, server: 134.195.196.12, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: CA_油管 TG 8度科技 9, server: 134.195.196.68, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: CA_油管 TG 8度科技 10, server: 134.195.196.12, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: CN_油管 TG 8度科技 42, server: 00178641680d4f73a85ff60e4cd27628sa.jkcloud.xyz, port: 6399, type: ss, cipher: chacha20-ietf-poly1305, password: 21eda7ab-7263-4214-a056-59cb153ad0e0, udp: true}
+  - {name: CA_油管 TG 8度科技 11, server: 134.195.196.68, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: CA_油管 TG 8度科技 12, server: 134.195.196.68, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
+  - {name: CA_油管 TG 8度科技 13, server: 134.195.196.12, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: CA_油管 TG 8度科技 14, server: 134.195.196.12, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: CA_油管 TG 8度科技 15, server: 134.195.196.3, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: CA_油管 TG 8度科技 16, server: 134.195.196.3, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: CA_油管 TG 8度科技 17, server: 134.195.196.68, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: CA_油管 TG 8度科技 18, server: 134.195.196.12, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: CA_油管 TG 8度科技 19, server: 134.195.196.12, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: CA_油管 TG 8度科技 20, server: 134.195.196.12, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: CA_油管 TG 8度科技 21, server: 134.195.196.68, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: CN_油管 TG 8度科技 43, server: 117.28.243.220, port: 8036, type: ss, cipher: rc4-md5, password: passinfo123, udp: true}
+  - {name: CN_油管 TG 8度科技 44, server: iplc01.dns2333.xyz, port: 3084, type: vmess, uuid: 08c13347-4b34-32bc-b292-1887b9d42d31, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: AU_油管 TG 8度科技, server: 129.154.50.0, port: 29363, type: vmess, uuid: c71ba6b4-98c0-4e7c-b8a1-4b074a44933c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: JP_油管 TG 8度科技, server: 3.115.11.163, port: 80, type: vmess, uuid: b898423b-4151-4926-ac9e-d6aa4ae400e9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: baidu.com}, udp: true}
+  - {name: CN_油管 TG 8度科技 45, server: iplc01.dns2333.xyz, port: 3064, type: vmess, uuid: 08c13347-4b34-32bc-b292-1887b9d42d31, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN_油管 TG 8度科技 46, server: iplc01.dns2333.xyz, port: 3064, type: vmess, uuid: 08c13347-4b34-32bc-b292-1887b9d42d31, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN_油管 TG 8度科技 47, server: iplc01.dns2333.xyz, port: 3144, type: vmess, uuid: 08c13347-4b34-32bc-b292-1887b9d42d31, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN_油管 TG 8度科技 48, server: iplc01.dns2333.xyz, port: 3194, type: vmess, uuid: 08c13347-4b34-32bc-b292-1887b9d42d31, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: DE_油管 TG 8度科技 3, server: 31.22.108.243, port: 12856, type: vmess, uuid: d3409b56-49d4-4f30-b093-b71fef2c3382, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: KR_油管 TG 8度科技, server: 146.56.110.246, port: 45177, type: vmess, uuid: c2f1ae57-7ada-4bac-f510-a8336c8708dd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: HK_油管 TG 8度科技, server: china-f4s-az-hk.898868.xyz, port: 51645, type: vmess, uuid: 3b07447e-94cf-4d72-96c6-d0a539098049, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: china-f4s-az-hk.898868.xyz}, udp: true}
+  - {name: CN_油管 TG 8度科技 49, server: iplc01.dns2333.xyz, port: 3014, type: vmess, uuid: 08c13347-4b34-32bc-b292-1887b9d42d31, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN_油管 TG 8度科技 50, server: iplc01.dns2333.xyz, port: 3194, type: vmess, uuid: 08c13347-4b34-32bc-b292-1887b9d42d31, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: US_油管 TG 8度科技 5, server: 150.230.40.8, port: 29036, type: vmess, uuid: 8e5708d2-7c39-4e65-aab0-8ae53444a47a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN_油管 TG 8度科技 51, server: iplc01.dns2333.xyz, port: 3074, type: vmess, uuid: 08c13347-4b34-32bc-b292-1887b9d42d31, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: HK_油管 TG 8度科技 2, server: china-f4s-az-hk.898868.xyz, port: 37817, type: vmess, uuid: 3b07447e-94cf-4d72-96c6-d0a539098049, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: china-f4s-az-hk.898868.xyz}, udp: true}
+  - {name: HK_油管 TG 8度科技 3, server: stg88.stgchannelxyzroute.xyz, port: 443, type: vmess, uuid: 329107b6-739f-4d72-9295-cfc533197a39, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: stg88.stgchannelxyzroute.xyz}, udp: true}
+  - {name: CN_油管 TG 8度科技 52, server: iplc01.dns2333.xyz, port: 3044, type: vmess, uuid: 08c13347-4b34-32bc-b292-1887b9d42d31, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: DE_油管 TG 8度科技 4, server: 152.70.188.10, port: 443, type: vmess, uuid: 6ae16454-de6a-4113-c64e-0549be488f15, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: AE_油管 TG 8度科技, server: 193.123.83.36, port: 53920, type: vmess, uuid: d962ab66-3f72-4e99-888c-34bffa421c55, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Relay_🇺🇸US-🇺🇸US_2765
-      - vpnpool-桃园Hinet
-      - vpnpool-新北Hinet
-      - vpnpool-桃园Hinet 2
-      - vpnpool-新北Hinet 2
-      - vpnpool-桃园Hinet 3
-      - Relay_🇸🇬SG-🇸🇬SG_1109
-      - default_name
-      - 香港 01
-      - _AE_阿联酋
-      - V1-美国01 中继D | 1.5x
-      - US_2579
-      - US_8091 @WangCai_1
-      - 香港 01 2
-      - 香港 01 3
-      - ZZ_3318
-      - _US_美国
-      - vpnpool-US-Hillsboro-OVH
-      - ‌‌🇨🇦CA_6379 @WangCai_1
-      - _CA_加拿大
-      - ‌‌🇨🇦CA_9102 @WangCai_1
-      - _CA_加拿大_100
-      - _CA_加拿大 2
-      - ‌‌🇨🇦CA_8000 @WangCai_1
-      - _US_美国 2
-      - _CA_加拿大 3
-      - ‌‌🇨🇦CA_6697 @WangCai_1
-      - _CA_加拿大 4
-      - US_5001 @WangCai_1
-      - _CA_加拿大 5
-      - _CA_加拿大 6
-      - ‌‌🇨🇦CA_8118 @WangCai_1
-      - _US_美国 3
-      - ‌‌🇨🇦CA_5500 @WangCai_1
-      - ‌‌🇨🇦CA_8888 @WangCai_1
-      - _CA_加拿大 7
-      - ZZ_2916
-      - ‌‌🇨🇦CA_5001 @WangCai_1
-      - _GB_英国
-      - ‌‌🇨🇦CA_7002 @WangCai_1
-      - ZZ_3373
-      - US_2597
-      - ‌‌🇨🇦CA_9101 @WangCai_1
-      - _CA_加拿大 8
-      - _FR_法国
-      - ‌‌🇨🇦CA_7306 @WangCai_1
-      - _CA_加拿大 9
-      - _CA_加拿大 10
-      - _CA_加拿大 11
-      - _US_美国 4
-      - _CA_加拿大_14
-      - _CA_加拿大 12
-      - _CA_加拿大 13
-      - US_1977
-      - _IN_印度
-      - _US_美国 5
-      - _US_美国 6
-      - _CA_加拿大 14
-      - ‌‌🇨🇦CA_7307 @WangCai_1
-      - _CA_加拿大 15
-      - _CA_加拿大 16
-      - _CA_加拿大 17
-      - _US_美国 7
-      - ZZ_3508
+      - CN_油管 TG 8度科技
+      - CN_油管 TG 8度科技 2
+      - CN_油管 TG 8度科技 3
+      - CN_油管 TG 8度科技 4
+      - CN_油管 TG 8度科技 5
+      - CN_油管 TG 8度科技 6
+      - CN_油管 TG 8度科技 7
+      - CN_油管 TG 8度科技 8
+      - CN_油管 TG 8度科技 9
+      - CN_油管 TG 8度科技 10
+      - CN_油管 TG 8度科技 11
+      - CN_油管 TG 8度科技 12
+      - CN_油管 TG 8度科技 13
+      - CN_油管 TG 8度科技 14
+      - CN_油管 TG 8度科技 15
+      - CN_油管 TG 8度科技 16
+      - CN_油管 TG 8度科技 17
+      - CN_油管 TG 8度科技 18
+      - CN_油管 TG 8度科技 19
+      - CN_油管 TG 8度科技 20
+      - CN_油管 TG 8度科技 21
+      - CN_油管 TG 8度科技 22
+      - CN_油管 TG 8度科技 23
+      - CN_油管 TG 8度科技 24
+      - CN_油管 TG 8度科技 25
+      - CN_油管 TG 8度科技 26
+      - CN_油管 TG 8度科技 27
+      - CN_油管 TG 8度科技 28
+      - CN_油管 TG 8度科技 29
+      - CN_油管 TG 8度科技 30
+      - CN_油管 TG 8度科技 31
+      - CN_油管 TG 8度科技 32
+      - CN_油管 TG 8度科技 33
+      - CN_油管 TG 8度科技 34
+      - CN_油管 TG 8度科技 35
+      - DE_油管 TG 8度科技
+      - DE_油管 TG 8度科技 2
+      - CN_油管 TG 8度科技 36
+      - CN_油管 TG 8度科技 37
+      - CA_油管 TG 8度科技
+      - US_油管 TG 8度科技
+      - CN_油管 TG 8度科技 38
+      - US_油管 TG 8度科技 2
+      - CA_油管 TG 8度科技 2
+      - CA_油管 TG 8度科技 3
+      - US_油管 TG 8度科技 3
+      - CN_油管 TG 8度科技 39
+      - CN_油管 TG 8度科技 40
+      - US_油管 TG 8度科技 4
+      - CN_油管 TG 8度科技 41
+      - CA_油管 TG 8度科技 4
+      - CA_油管 TG 8度科技 5
+      - CA_油管 TG 8度科技 6
+      - CA_油管 TG 8度科技 7
+      - CA_油管 TG 8度科技 8
+      - CA_油管 TG 8度科技 9
+      - CA_油管 TG 8度科技 10
+      - CN_油管 TG 8度科技 42
+      - CA_油管 TG 8度科技 11
+      - CA_油管 TG 8度科技 12
+      - CA_油管 TG 8度科技 13
+      - CA_油管 TG 8度科技 14
+      - CA_油管 TG 8度科技 15
+      - CA_油管 TG 8度科技 16
+      - CA_油管 TG 8度科技 17
+      - CA_油管 TG 8度科技 18
+      - CA_油管 TG 8度科技 19
+      - CA_油管 TG 8度科技 20
+      - CA_油管 TG 8度科技 21
+      - CN_油管 TG 8度科技 43
+      - CN_油管 TG 8度科技 44
+      - AU_油管 TG 8度科技
+      - JP_油管 TG 8度科技
+      - CN_油管 TG 8度科技 45
+      - CN_油管 TG 8度科技 46
+      - CN_油管 TG 8度科技 47
+      - CN_油管 TG 8度科技 48
+      - DE_油管 TG 8度科技 3
+      - KR_油管 TG 8度科技
+      - HK_油管 TG 8度科技
+      - CN_油管 TG 8度科技 49
+      - CN_油管 TG 8度科技 50
+      - US_油管 TG 8度科技 5
+      - CN_油管 TG 8度科技 51
+      - HK_油管 TG 8度科技 2
+      - HK_油管 TG 8度科技 3
+      - CN_油管 TG 8度科技 52
+      - DE_油管 TG 8度科技 4
+      - AE_油管 TG 8度科技
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - Relay_🇺🇸US-🇺🇸US_2765
-      - vpnpool-桃园Hinet
-      - vpnpool-新北Hinet
-      - vpnpool-桃园Hinet 2
-      - vpnpool-新北Hinet 2
-      - vpnpool-桃园Hinet 3
-      - Relay_🇸🇬SG-🇸🇬SG_1109
-      - default_name
-      - 香港 01
-      - _AE_阿联酋
-      - V1-美国01 中继D | 1.5x
-      - US_2579
-      - US_8091 @WangCai_1
-      - 香港 01 2
-      - 香港 01 3
-      - ZZ_3318
-      - _US_美国
-      - vpnpool-US-Hillsboro-OVH
-      - ‌‌🇨🇦CA_6379 @WangCai_1
-      - _CA_加拿大
-      - ‌‌🇨🇦CA_9102 @WangCai_1
-      - _CA_加拿大_100
-      - _CA_加拿大 2
-      - ‌‌🇨🇦CA_8000 @WangCai_1
-      - _US_美国 2
-      - _CA_加拿大 3
-      - ‌‌🇨🇦CA_6697 @WangCai_1
-      - _CA_加拿大 4
-      - US_5001 @WangCai_1
-      - _CA_加拿大 5
-      - _CA_加拿大 6
-      - ‌‌🇨🇦CA_8118 @WangCai_1
-      - _US_美国 3
-      - ‌‌🇨🇦CA_5500 @WangCai_1
-      - ‌‌🇨🇦CA_8888 @WangCai_1
-      - _CA_加拿大 7
-      - ZZ_2916
-      - ‌‌🇨🇦CA_5001 @WangCai_1
-      - _GB_英国
-      - ‌‌🇨🇦CA_7002 @WangCai_1
-      - ZZ_3373
-      - US_2597
-      - ‌‌🇨🇦CA_9101 @WangCai_1
-      - _CA_加拿大 8
-      - _FR_法国
-      - ‌‌🇨🇦CA_7306 @WangCai_1
-      - _CA_加拿大 9
-      - _CA_加拿大 10
-      - _CA_加拿大 11
-      - _US_美国 4
-      - _CA_加拿大_14
-      - _CA_加拿大 12
-      - _CA_加拿大 13
-      - US_1977
-      - _IN_印度
-      - _US_美国 5
-      - _US_美国 6
-      - _CA_加拿大 14
-      - ‌‌🇨🇦CA_7307 @WangCai_1
-      - _CA_加拿大 15
-      - _CA_加拿大 16
-      - _CA_加拿大 17
-      - _US_美国 7
-      - ZZ_3508
+      - CN_油管 TG 8度科技
+      - CN_油管 TG 8度科技 2
+      - CN_油管 TG 8度科技 3
+      - CN_油管 TG 8度科技 4
+      - CN_油管 TG 8度科技 5
+      - CN_油管 TG 8度科技 6
+      - CN_油管 TG 8度科技 7
+      - CN_油管 TG 8度科技 8
+      - CN_油管 TG 8度科技 9
+      - CN_油管 TG 8度科技 10
+      - CN_油管 TG 8度科技 11
+      - CN_油管 TG 8度科技 12
+      - CN_油管 TG 8度科技 13
+      - CN_油管 TG 8度科技 14
+      - CN_油管 TG 8度科技 15
+      - CN_油管 TG 8度科技 16
+      - CN_油管 TG 8度科技 17
+      - CN_油管 TG 8度科技 18
+      - CN_油管 TG 8度科技 19
+      - CN_油管 TG 8度科技 20
+      - CN_油管 TG 8度科技 21
+      - CN_油管 TG 8度科技 22
+      - CN_油管 TG 8度科技 23
+      - CN_油管 TG 8度科技 24
+      - CN_油管 TG 8度科技 25
+      - CN_油管 TG 8度科技 26
+      - CN_油管 TG 8度科技 27
+      - CN_油管 TG 8度科技 28
+      - CN_油管 TG 8度科技 29
+      - CN_油管 TG 8度科技 30
+      - CN_油管 TG 8度科技 31
+      - CN_油管 TG 8度科技 32
+      - CN_油管 TG 8度科技 33
+      - CN_油管 TG 8度科技 34
+      - CN_油管 TG 8度科技 35
+      - DE_油管 TG 8度科技
+      - DE_油管 TG 8度科技 2
+      - CN_油管 TG 8度科技 36
+      - CN_油管 TG 8度科技 37
+      - CA_油管 TG 8度科技
+      - US_油管 TG 8度科技
+      - CN_油管 TG 8度科技 38
+      - US_油管 TG 8度科技 2
+      - CA_油管 TG 8度科技 2
+      - CA_油管 TG 8度科技 3
+      - US_油管 TG 8度科技 3
+      - CN_油管 TG 8度科技 39
+      - CN_油管 TG 8度科技 40
+      - US_油管 TG 8度科技 4
+      - CN_油管 TG 8度科技 41
+      - CA_油管 TG 8度科技 4
+      - CA_油管 TG 8度科技 5
+      - CA_油管 TG 8度科技 6
+      - CA_油管 TG 8度科技 7
+      - CA_油管 TG 8度科技 8
+      - CA_油管 TG 8度科技 9
+      - CA_油管 TG 8度科技 10
+      - CN_油管 TG 8度科技 42
+      - CA_油管 TG 8度科技 11
+      - CA_油管 TG 8度科技 12
+      - CA_油管 TG 8度科技 13
+      - CA_油管 TG 8度科技 14
+      - CA_油管 TG 8度科技 15
+      - CA_油管 TG 8度科技 16
+      - CA_油管 TG 8度科技 17
+      - CA_油管 TG 8度科技 18
+      - CA_油管 TG 8度科技 19
+      - CA_油管 TG 8度科技 20
+      - CA_油管 TG 8度科技 21
+      - CN_油管 TG 8度科技 43
+      - CN_油管 TG 8度科技 44
+      - AU_油管 TG 8度科技
+      - JP_油管 TG 8度科技
+      - CN_油管 TG 8度科技 45
+      - CN_油管 TG 8度科技 46
+      - CN_油管 TG 8度科技 47
+      - CN_油管 TG 8度科技 48
+      - DE_油管 TG 8度科技 3
+      - KR_油管 TG 8度科技
+      - HK_油管 TG 8度科技
+      - CN_油管 TG 8度科技 49
+      - CN_油管 TG 8度科技 50
+      - US_油管 TG 8度科技 5
+      - CN_油管 TG 8度科技 51
+      - HK_油管 TG 8度科技 2
+      - HK_油管 TG 8度科技 3
+      - CN_油管 TG 8度科技 52
+      - DE_油管 TG 8度科技 4
+      - AE_油管 TG 8度科技
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Relay_🇺🇸US-🇺🇸US_2765
-      - vpnpool-桃园Hinet
-      - vpnpool-新北Hinet
-      - vpnpool-桃园Hinet 2
-      - vpnpool-新北Hinet 2
-      - vpnpool-桃园Hinet 3
-      - Relay_🇸🇬SG-🇸🇬SG_1109
-      - default_name
-      - 香港 01
-      - _AE_阿联酋
-      - V1-美国01 中继D | 1.5x
-      - US_2579
-      - US_8091 @WangCai_1
-      - 香港 01 2
-      - 香港 01 3
-      - ZZ_3318
-      - _US_美国
-      - vpnpool-US-Hillsboro-OVH
-      - ‌‌🇨🇦CA_6379 @WangCai_1
-      - _CA_加拿大
-      - ‌‌🇨🇦CA_9102 @WangCai_1
-      - _CA_加拿大_100
-      - _CA_加拿大 2
-      - ‌‌🇨🇦CA_8000 @WangCai_1
-      - _US_美国 2
-      - _CA_加拿大 3
-      - ‌‌🇨🇦CA_6697 @WangCai_1
-      - _CA_加拿大 4
-      - US_5001 @WangCai_1
-      - _CA_加拿大 5
-      - _CA_加拿大 6
-      - ‌‌🇨🇦CA_8118 @WangCai_1
-      - _US_美国 3
-      - ‌‌🇨🇦CA_5500 @WangCai_1
-      - ‌‌🇨🇦CA_8888 @WangCai_1
-      - _CA_加拿大 7
-      - ZZ_2916
-      - ‌‌🇨🇦CA_5001 @WangCai_1
-      - _GB_英国
-      - ‌‌🇨🇦CA_7002 @WangCai_1
-      - ZZ_3373
-      - US_2597
-      - ‌‌🇨🇦CA_9101 @WangCai_1
-      - _CA_加拿大 8
-      - _FR_法国
-      - ‌‌🇨🇦CA_7306 @WangCai_1
-      - _CA_加拿大 9
-      - _CA_加拿大 10
-      - _CA_加拿大 11
-      - _US_美国 4
-      - _CA_加拿大_14
-      - _CA_加拿大 12
-      - _CA_加拿大 13
-      - US_1977
-      - _IN_印度
-      - _US_美国 5
-      - _US_美国 6
-      - _CA_加拿大 14
-      - ‌‌🇨🇦CA_7307 @WangCai_1
-      - _CA_加拿大 15
-      - _CA_加拿大 16
-      - _CA_加拿大 17
-      - _US_美国 7
-      - ZZ_3508
+      - CN_油管 TG 8度科技
+      - CN_油管 TG 8度科技 2
+      - CN_油管 TG 8度科技 3
+      - CN_油管 TG 8度科技 4
+      - CN_油管 TG 8度科技 5
+      - CN_油管 TG 8度科技 6
+      - CN_油管 TG 8度科技 7
+      - CN_油管 TG 8度科技 8
+      - CN_油管 TG 8度科技 9
+      - CN_油管 TG 8度科技 10
+      - CN_油管 TG 8度科技 11
+      - CN_油管 TG 8度科技 12
+      - CN_油管 TG 8度科技 13
+      - CN_油管 TG 8度科技 14
+      - CN_油管 TG 8度科技 15
+      - CN_油管 TG 8度科技 16
+      - CN_油管 TG 8度科技 17
+      - CN_油管 TG 8度科技 18
+      - CN_油管 TG 8度科技 19
+      - CN_油管 TG 8度科技 20
+      - CN_油管 TG 8度科技 21
+      - CN_油管 TG 8度科技 22
+      - CN_油管 TG 8度科技 23
+      - CN_油管 TG 8度科技 24
+      - CN_油管 TG 8度科技 25
+      - CN_油管 TG 8度科技 26
+      - CN_油管 TG 8度科技 27
+      - CN_油管 TG 8度科技 28
+      - CN_油管 TG 8度科技 29
+      - CN_油管 TG 8度科技 30
+      - CN_油管 TG 8度科技 31
+      - CN_油管 TG 8度科技 32
+      - CN_油管 TG 8度科技 33
+      - CN_油管 TG 8度科技 34
+      - CN_油管 TG 8度科技 35
+      - DE_油管 TG 8度科技
+      - DE_油管 TG 8度科技 2
+      - CN_油管 TG 8度科技 36
+      - CN_油管 TG 8度科技 37
+      - CA_油管 TG 8度科技
+      - US_油管 TG 8度科技
+      - CN_油管 TG 8度科技 38
+      - US_油管 TG 8度科技 2
+      - CA_油管 TG 8度科技 2
+      - CA_油管 TG 8度科技 3
+      - US_油管 TG 8度科技 3
+      - CN_油管 TG 8度科技 39
+      - CN_油管 TG 8度科技 40
+      - US_油管 TG 8度科技 4
+      - CN_油管 TG 8度科技 41
+      - CA_油管 TG 8度科技 4
+      - CA_油管 TG 8度科技 5
+      - CA_油管 TG 8度科技 6
+      - CA_油管 TG 8度科技 7
+      - CA_油管 TG 8度科技 8
+      - CA_油管 TG 8度科技 9
+      - CA_油管 TG 8度科技 10
+      - CN_油管 TG 8度科技 42
+      - CA_油管 TG 8度科技 11
+      - CA_油管 TG 8度科技 12
+      - CA_油管 TG 8度科技 13
+      - CA_油管 TG 8度科技 14
+      - CA_油管 TG 8度科技 15
+      - CA_油管 TG 8度科技 16
+      - CA_油管 TG 8度科技 17
+      - CA_油管 TG 8度科技 18
+      - CA_油管 TG 8度科技 19
+      - CA_油管 TG 8度科技 20
+      - CA_油管 TG 8度科技 21
+      - CN_油管 TG 8度科技 43
+      - CN_油管 TG 8度科技 44
+      - AU_油管 TG 8度科技
+      - JP_油管 TG 8度科技
+      - CN_油管 TG 8度科技 45
+      - CN_油管 TG 8度科技 46
+      - CN_油管 TG 8度科技 47
+      - CN_油管 TG 8度科技 48
+      - DE_油管 TG 8度科技 3
+      - KR_油管 TG 8度科技
+      - HK_油管 TG 8度科技
+      - CN_油管 TG 8度科技 49
+      - CN_油管 TG 8度科技 50
+      - US_油管 TG 8度科技 5
+      - CN_油管 TG 8度科技 51
+      - HK_油管 TG 8度科技 2
+      - HK_油管 TG 8度科技 3
+      - CN_油管 TG 8度科技 52
+      - DE_油管 TG 8度科技 4
+      - AE_油管 TG 8度科技
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -296,288 +396,383 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Relay_🇺🇸US-🇺🇸US_2765
-      - vpnpool-桃园Hinet
-      - vpnpool-新北Hinet
-      - vpnpool-桃园Hinet 2
-      - vpnpool-新北Hinet 2
-      - vpnpool-桃园Hinet 3
-      - Relay_🇸🇬SG-🇸🇬SG_1109
-      - default_name
-      - 香港 01
-      - _AE_阿联酋
-      - V1-美国01 中继D | 1.5x
-      - US_2579
-      - US_8091 @WangCai_1
-      - 香港 01 2
-      - 香港 01 3
-      - ZZ_3318
-      - _US_美国
-      - vpnpool-US-Hillsboro-OVH
-      - ‌‌🇨🇦CA_6379 @WangCai_1
-      - _CA_加拿大
-      - ‌‌🇨🇦CA_9102 @WangCai_1
-      - _CA_加拿大_100
-      - _CA_加拿大 2
-      - ‌‌🇨🇦CA_8000 @WangCai_1
-      - _US_美国 2
-      - _CA_加拿大 3
-      - ‌‌🇨🇦CA_6697 @WangCai_1
-      - _CA_加拿大 4
-      - US_5001 @WangCai_1
-      - _CA_加拿大 5
-      - _CA_加拿大 6
-      - ‌‌🇨🇦CA_8118 @WangCai_1
-      - _US_美国 3
-      - ‌‌🇨🇦CA_5500 @WangCai_1
-      - ‌‌🇨🇦CA_8888 @WangCai_1
-      - _CA_加拿大 7
-      - ZZ_2916
-      - ‌‌🇨🇦CA_5001 @WangCai_1
-      - _GB_英国
-      - ‌‌🇨🇦CA_7002 @WangCai_1
-      - ZZ_3373
-      - US_2597
-      - ‌‌🇨🇦CA_9101 @WangCai_1
-      - _CA_加拿大 8
-      - _FR_法国
-      - ‌‌🇨🇦CA_7306 @WangCai_1
-      - _CA_加拿大 9
-      - _CA_加拿大 10
-      - _CA_加拿大 11
-      - _US_美国 4
-      - _CA_加拿大_14
-      - _CA_加拿大 12
-      - _CA_加拿大 13
-      - US_1977
-      - _IN_印度
-      - _US_美国 5
-      - _US_美国 6
-      - _CA_加拿大 14
-      - ‌‌🇨🇦CA_7307 @WangCai_1
-      - _CA_加拿大 15
-      - _CA_加拿大 16
-      - _CA_加拿大 17
-      - _US_美国 7
-      - ZZ_3508
+      - CN_油管 TG 8度科技
+      - CN_油管 TG 8度科技 2
+      - CN_油管 TG 8度科技 3
+      - CN_油管 TG 8度科技 4
+      - CN_油管 TG 8度科技 5
+      - CN_油管 TG 8度科技 6
+      - CN_油管 TG 8度科技 7
+      - CN_油管 TG 8度科技 8
+      - CN_油管 TG 8度科技 9
+      - CN_油管 TG 8度科技 10
+      - CN_油管 TG 8度科技 11
+      - CN_油管 TG 8度科技 12
+      - CN_油管 TG 8度科技 13
+      - CN_油管 TG 8度科技 14
+      - CN_油管 TG 8度科技 15
+      - CN_油管 TG 8度科技 16
+      - CN_油管 TG 8度科技 17
+      - CN_油管 TG 8度科技 18
+      - CN_油管 TG 8度科技 19
+      - CN_油管 TG 8度科技 20
+      - CN_油管 TG 8度科技 21
+      - CN_油管 TG 8度科技 22
+      - CN_油管 TG 8度科技 23
+      - CN_油管 TG 8度科技 24
+      - CN_油管 TG 8度科技 25
+      - CN_油管 TG 8度科技 26
+      - CN_油管 TG 8度科技 27
+      - CN_油管 TG 8度科技 28
+      - CN_油管 TG 8度科技 29
+      - CN_油管 TG 8度科技 30
+      - CN_油管 TG 8度科技 31
+      - CN_油管 TG 8度科技 32
+      - CN_油管 TG 8度科技 33
+      - CN_油管 TG 8度科技 34
+      - CN_油管 TG 8度科技 35
+      - DE_油管 TG 8度科技
+      - DE_油管 TG 8度科技 2
+      - CN_油管 TG 8度科技 36
+      - CN_油管 TG 8度科技 37
+      - CA_油管 TG 8度科技
+      - US_油管 TG 8度科技
+      - CN_油管 TG 8度科技 38
+      - US_油管 TG 8度科技 2
+      - CA_油管 TG 8度科技 2
+      - CA_油管 TG 8度科技 3
+      - US_油管 TG 8度科技 3
+      - CN_油管 TG 8度科技 39
+      - CN_油管 TG 8度科技 40
+      - US_油管 TG 8度科技 4
+      - CN_油管 TG 8度科技 41
+      - CA_油管 TG 8度科技 4
+      - CA_油管 TG 8度科技 5
+      - CA_油管 TG 8度科技 6
+      - CA_油管 TG 8度科技 7
+      - CA_油管 TG 8度科技 8
+      - CA_油管 TG 8度科技 9
+      - CA_油管 TG 8度科技 10
+      - CN_油管 TG 8度科技 42
+      - CA_油管 TG 8度科技 11
+      - CA_油管 TG 8度科技 12
+      - CA_油管 TG 8度科技 13
+      - CA_油管 TG 8度科技 14
+      - CA_油管 TG 8度科技 15
+      - CA_油管 TG 8度科技 16
+      - CA_油管 TG 8度科技 17
+      - CA_油管 TG 8度科技 18
+      - CA_油管 TG 8度科技 19
+      - CA_油管 TG 8度科技 20
+      - CA_油管 TG 8度科技 21
+      - CN_油管 TG 8度科技 43
+      - CN_油管 TG 8度科技 44
+      - AU_油管 TG 8度科技
+      - JP_油管 TG 8度科技
+      - CN_油管 TG 8度科技 45
+      - CN_油管 TG 8度科技 46
+      - CN_油管 TG 8度科技 47
+      - CN_油管 TG 8度科技 48
+      - DE_油管 TG 8度科技 3
+      - KR_油管 TG 8度科技
+      - HK_油管 TG 8度科技
+      - CN_油管 TG 8度科技 49
+      - CN_油管 TG 8度科技 50
+      - US_油管 TG 8度科技 5
+      - CN_油管 TG 8度科技 51
+      - HK_油管 TG 8度科技 2
+      - HK_油管 TG 8度科技 3
+      - CN_油管 TG 8度科技 52
+      - DE_油管 TG 8度科技 4
+      - AE_油管 TG 8度科技
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - vpnpool-新北Hinet
-      - vpnpool-新北Hinet 2
-      - 香港 01
-      - 香港 01 2
-      - 香港 01 3
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - Relay_🇺🇸US-🇺🇸US_2765
-      - vpnpool-桃园Hinet
-      - vpnpool-新北Hinet
-      - vpnpool-桃园Hinet 2
-      - vpnpool-新北Hinet 2
-      - vpnpool-桃园Hinet 3
-      - Relay_🇸🇬SG-🇸🇬SG_1109
-      - default_name
-      - 香港 01
-      - _AE_阿联酋
-      - V1-美国01 中继D | 1.5x
-      - US_2579
-      - US_8091 @WangCai_1
-      - 香港 01 2
-      - 香港 01 3
-      - ZZ_3318
-      - _US_美国
-      - vpnpool-US-Hillsboro-OVH
-      - ‌‌🇨🇦CA_6379 @WangCai_1
-      - _CA_加拿大
-      - ‌‌🇨🇦CA_9102 @WangCai_1
-      - _CA_加拿大_100
-      - _CA_加拿大 2
-      - ‌‌🇨🇦CA_8000 @WangCai_1
-      - _US_美国 2
-      - _CA_加拿大 3
-      - ‌‌🇨🇦CA_6697 @WangCai_1
-      - _CA_加拿大 4
-      - US_5001 @WangCai_1
-      - _CA_加拿大 5
-      - _CA_加拿大 6
-      - ‌‌🇨🇦CA_8118 @WangCai_1
-      - _US_美国 3
-      - ‌‌🇨🇦CA_5500 @WangCai_1
-      - ‌‌🇨🇦CA_8888 @WangCai_1
-      - _CA_加拿大 7
-      - ZZ_2916
-      - ‌‌🇨🇦CA_5001 @WangCai_1
-      - _GB_英国
-      - ‌‌🇨🇦CA_7002 @WangCai_1
-      - ZZ_3373
-      - US_2597
-      - ‌‌🇨🇦CA_9101 @WangCai_1
-      - _CA_加拿大 8
-      - _FR_法国
-      - ‌‌🇨🇦CA_7306 @WangCai_1
-      - _CA_加拿大 9
-      - _CA_加拿大 10
-      - _CA_加拿大 11
-      - _US_美国 4
-      - _CA_加拿大_14
-      - _CA_加拿大 12
-      - _CA_加拿大 13
-      - US_1977
-      - _IN_印度
-      - _US_美国 5
-      - _US_美国 6
-      - _CA_加拿大 14
-      - ‌‌🇨🇦CA_7307 @WangCai_1
-      - _CA_加拿大 15
-      - _CA_加拿大 16
-      - _CA_加拿大 17
-      - _US_美国 7
-      - ZZ_3508
+      - CN_油管 TG 8度科技
+      - CN_油管 TG 8度科技 2
+      - CN_油管 TG 8度科技 3
+      - CN_油管 TG 8度科技 4
+      - CN_油管 TG 8度科技 5
+      - CN_油管 TG 8度科技 6
+      - CN_油管 TG 8度科技 7
+      - CN_油管 TG 8度科技 8
+      - CN_油管 TG 8度科技 9
+      - CN_油管 TG 8度科技 10
+      - CN_油管 TG 8度科技 11
+      - CN_油管 TG 8度科技 12
+      - CN_油管 TG 8度科技 13
+      - CN_油管 TG 8度科技 14
+      - CN_油管 TG 8度科技 15
+      - CN_油管 TG 8度科技 16
+      - CN_油管 TG 8度科技 17
+      - CN_油管 TG 8度科技 18
+      - CN_油管 TG 8度科技 19
+      - CN_油管 TG 8度科技 20
+      - CN_油管 TG 8度科技 21
+      - CN_油管 TG 8度科技 22
+      - CN_油管 TG 8度科技 23
+      - CN_油管 TG 8度科技 24
+      - CN_油管 TG 8度科技 25
+      - CN_油管 TG 8度科技 26
+      - CN_油管 TG 8度科技 27
+      - CN_油管 TG 8度科技 28
+      - CN_油管 TG 8度科技 29
+      - CN_油管 TG 8度科技 30
+      - CN_油管 TG 8度科技 31
+      - CN_油管 TG 8度科技 32
+      - CN_油管 TG 8度科技 33
+      - CN_油管 TG 8度科技 34
+      - CN_油管 TG 8度科技 35
+      - DE_油管 TG 8度科技
+      - DE_油管 TG 8度科技 2
+      - CN_油管 TG 8度科技 36
+      - CN_油管 TG 8度科技 37
+      - CA_油管 TG 8度科技
+      - US_油管 TG 8度科技
+      - CN_油管 TG 8度科技 38
+      - US_油管 TG 8度科技 2
+      - CA_油管 TG 8度科技 2
+      - CA_油管 TG 8度科技 3
+      - US_油管 TG 8度科技 3
+      - CN_油管 TG 8度科技 39
+      - CN_油管 TG 8度科技 40
+      - US_油管 TG 8度科技 4
+      - CN_油管 TG 8度科技 41
+      - CA_油管 TG 8度科技 4
+      - CA_油管 TG 8度科技 5
+      - CA_油管 TG 8度科技 6
+      - CA_油管 TG 8度科技 7
+      - CA_油管 TG 8度科技 8
+      - CA_油管 TG 8度科技 9
+      - CA_油管 TG 8度科技 10
+      - CN_油管 TG 8度科技 42
+      - CA_油管 TG 8度科技 11
+      - CA_油管 TG 8度科技 12
+      - CA_油管 TG 8度科技 13
+      - CA_油管 TG 8度科技 14
+      - CA_油管 TG 8度科技 15
+      - CA_油管 TG 8度科技 16
+      - CA_油管 TG 8度科技 17
+      - CA_油管 TG 8度科技 18
+      - CA_油管 TG 8度科技 19
+      - CA_油管 TG 8度科技 20
+      - CA_油管 TG 8度科技 21
+      - CN_油管 TG 8度科技 43
+      - CN_油管 TG 8度科技 44
+      - AU_油管 TG 8度科技
+      - JP_油管 TG 8度科技
+      - CN_油管 TG 8度科技 45
+      - CN_油管 TG 8度科技 46
+      - CN_油管 TG 8度科技 47
+      - CN_油管 TG 8度科技 48
+      - DE_油管 TG 8度科技 3
+      - KR_油管 TG 8度科技
+      - HK_油管 TG 8度科技
+      - CN_油管 TG 8度科技 49
+      - CN_油管 TG 8度科技 50
+      - US_油管 TG 8度科技 5
+      - CN_油管 TG 8度科技 51
+      - HK_油管 TG 8度科技 2
+      - HK_油管 TG 8度科技 3
+      - CN_油管 TG 8度科技 52
+      - DE_油管 TG 8度科技 4
+      - AE_油管 TG 8度科技
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - Relay_🇺🇸US-🇺🇸US_2765
-      - vpnpool-桃园Hinet
-      - vpnpool-新北Hinet
-      - vpnpool-桃园Hinet 2
-      - vpnpool-新北Hinet 2
-      - vpnpool-桃园Hinet 3
-      - Relay_🇸🇬SG-🇸🇬SG_1109
-      - default_name
-      - 香港 01
-      - _AE_阿联酋
-      - V1-美国01 中继D | 1.5x
-      - US_2579
-      - US_8091 @WangCai_1
-      - 香港 01 2
-      - 香港 01 3
-      - ZZ_3318
-      - _US_美国
-      - vpnpool-US-Hillsboro-OVH
-      - ‌‌🇨🇦CA_6379 @WangCai_1
-      - _CA_加拿大
-      - ‌‌🇨🇦CA_9102 @WangCai_1
-      - _CA_加拿大_100
-      - _CA_加拿大 2
-      - ‌‌🇨🇦CA_8000 @WangCai_1
-      - _US_美国 2
-      - _CA_加拿大 3
-      - ‌‌🇨🇦CA_6697 @WangCai_1
-      - _CA_加拿大 4
-      - US_5001 @WangCai_1
-      - _CA_加拿大 5
-      - _CA_加拿大 6
-      - ‌‌🇨🇦CA_8118 @WangCai_1
-      - _US_美国 3
-      - ‌‌🇨🇦CA_5500 @WangCai_1
-      - ‌‌🇨🇦CA_8888 @WangCai_1
-      - _CA_加拿大 7
-      - ZZ_2916
-      - ‌‌🇨🇦CA_5001 @WangCai_1
-      - _GB_英国
-      - ‌‌🇨🇦CA_7002 @WangCai_1
-      - ZZ_3373
-      - US_2597
-      - ‌‌🇨🇦CA_9101 @WangCai_1
-      - _CA_加拿大 8
-      - _FR_法国
-      - ‌‌🇨🇦CA_7306 @WangCai_1
-      - _CA_加拿大 9
-      - _CA_加拿大 10
-      - _CA_加拿大 11
-      - _US_美国 4
-      - _CA_加拿大_14
-      - _CA_加拿大 12
-      - _CA_加拿大 13
-      - US_1977
-      - _IN_印度
-      - _US_美国 5
-      - _US_美国 6
-      - _CA_加拿大 14
-      - ‌‌🇨🇦CA_7307 @WangCai_1
-      - _CA_加拿大 15
-      - _CA_加拿大 16
-      - _CA_加拿大 17
-      - _US_美国 7
-      - ZZ_3508
+      - CN_油管 TG 8度科技
+      - CN_油管 TG 8度科技 2
+      - CN_油管 TG 8度科技 3
+      - CN_油管 TG 8度科技 4
+      - CN_油管 TG 8度科技 5
+      - CN_油管 TG 8度科技 6
+      - CN_油管 TG 8度科技 7
+      - CN_油管 TG 8度科技 8
+      - CN_油管 TG 8度科技 9
+      - CN_油管 TG 8度科技 10
+      - CN_油管 TG 8度科技 11
+      - CN_油管 TG 8度科技 12
+      - CN_油管 TG 8度科技 13
+      - CN_油管 TG 8度科技 14
+      - CN_油管 TG 8度科技 15
+      - CN_油管 TG 8度科技 16
+      - CN_油管 TG 8度科技 17
+      - CN_油管 TG 8度科技 18
+      - CN_油管 TG 8度科技 19
+      - CN_油管 TG 8度科技 20
+      - CN_油管 TG 8度科技 21
+      - CN_油管 TG 8度科技 22
+      - CN_油管 TG 8度科技 23
+      - CN_油管 TG 8度科技 24
+      - CN_油管 TG 8度科技 25
+      - CN_油管 TG 8度科技 26
+      - CN_油管 TG 8度科技 27
+      - CN_油管 TG 8度科技 28
+      - CN_油管 TG 8度科技 29
+      - CN_油管 TG 8度科技 30
+      - CN_油管 TG 8度科技 31
+      - CN_油管 TG 8度科技 32
+      - CN_油管 TG 8度科技 33
+      - CN_油管 TG 8度科技 34
+      - CN_油管 TG 8度科技 35
+      - DE_油管 TG 8度科技
+      - DE_油管 TG 8度科技 2
+      - CN_油管 TG 8度科技 36
+      - CN_油管 TG 8度科技 37
+      - CA_油管 TG 8度科技
+      - US_油管 TG 8度科技
+      - CN_油管 TG 8度科技 38
+      - US_油管 TG 8度科技 2
+      - CA_油管 TG 8度科技 2
+      - CA_油管 TG 8度科技 3
+      - US_油管 TG 8度科技 3
+      - CN_油管 TG 8度科技 39
+      - CN_油管 TG 8度科技 40
+      - US_油管 TG 8度科技 4
+      - CN_油管 TG 8度科技 41
+      - CA_油管 TG 8度科技 4
+      - CA_油管 TG 8度科技 5
+      - CA_油管 TG 8度科技 6
+      - CA_油管 TG 8度科技 7
+      - CA_油管 TG 8度科技 8
+      - CA_油管 TG 8度科技 9
+      - CA_油管 TG 8度科技 10
+      - CN_油管 TG 8度科技 42
+      - CA_油管 TG 8度科技 11
+      - CA_油管 TG 8度科技 12
+      - CA_油管 TG 8度科技 13
+      - CA_油管 TG 8度科技 14
+      - CA_油管 TG 8度科技 15
+      - CA_油管 TG 8度科技 16
+      - CA_油管 TG 8度科技 17
+      - CA_油管 TG 8度科技 18
+      - CA_油管 TG 8度科技 19
+      - CA_油管 TG 8度科技 20
+      - CA_油管 TG 8度科技 21
+      - CN_油管 TG 8度科技 43
+      - CN_油管 TG 8度科技 44
+      - AU_油管 TG 8度科技
+      - JP_油管 TG 8度科技
+      - CN_油管 TG 8度科技 45
+      - CN_油管 TG 8度科技 46
+      - CN_油管 TG 8度科技 47
+      - CN_油管 TG 8度科技 48
+      - DE_油管 TG 8度科技 3
+      - KR_油管 TG 8度科技
+      - HK_油管 TG 8度科技
+      - CN_油管 TG 8度科技 49
+      - CN_油管 TG 8度科技 50
+      - US_油管 TG 8度科技 5
+      - CN_油管 TG 8度科技 51
+      - HK_油管 TG 8度科技 2
+      - HK_油管 TG 8度科技 3
+      - CN_油管 TG 8度科技 52
+      - DE_油管 TG 8度科技 4
+      - AE_油管 TG 8度科技
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - Relay_🇺🇸US-🇺🇸US_2765
-      - vpnpool-桃园Hinet
-      - vpnpool-新北Hinet
-      - vpnpool-桃园Hinet 2
-      - vpnpool-新北Hinet 2
-      - vpnpool-桃园Hinet 3
-      - Relay_🇸🇬SG-🇸🇬SG_1109
-      - default_name
-      - 香港 01
-      - _AE_阿联酋
-      - V1-美国01 中继D | 1.5x
-      - US_2579
-      - US_8091 @WangCai_1
-      - 香港 01 2
-      - 香港 01 3
-      - ZZ_3318
-      - _US_美国
-      - vpnpool-US-Hillsboro-OVH
-      - ‌‌🇨🇦CA_6379 @WangCai_1
-      - _CA_加拿大
-      - ‌‌🇨🇦CA_9102 @WangCai_1
-      - _CA_加拿大_100
-      - _CA_加拿大 2
-      - ‌‌🇨🇦CA_8000 @WangCai_1
-      - _US_美国 2
-      - _CA_加拿大 3
-      - ‌‌🇨🇦CA_6697 @WangCai_1
-      - _CA_加拿大 4
-      - US_5001 @WangCai_1
-      - _CA_加拿大 5
-      - _CA_加拿大 6
-      - ‌‌🇨🇦CA_8118 @WangCai_1
-      - _US_美国 3
-      - ‌‌🇨🇦CA_5500 @WangCai_1
-      - ‌‌🇨🇦CA_8888 @WangCai_1
-      - _CA_加拿大 7
-      - ZZ_2916
-      - ‌‌🇨🇦CA_5001 @WangCai_1
-      - _GB_英国
-      - ‌‌🇨🇦CA_7002 @WangCai_1
-      - ZZ_3373
-      - US_2597
-      - ‌‌🇨🇦CA_9101 @WangCai_1
-      - _CA_加拿大 8
-      - _FR_法国
-      - ‌‌🇨🇦CA_7306 @WangCai_1
-      - _CA_加拿大 9
-      - _CA_加拿大 10
-      - _CA_加拿大 11
-      - _US_美国 4
-      - _CA_加拿大_14
-      - _CA_加拿大 12
-      - _CA_加拿大 13
-      - US_1977
-      - _IN_印度
-      - _US_美国 5
-      - _US_美国 6
-      - _CA_加拿大 14
-      - ‌‌🇨🇦CA_7307 @WangCai_1
-      - _CA_加拿大 15
-      - _CA_加拿大 16
-      - _CA_加拿大 17
-      - _US_美国 7
-      - ZZ_3508
+      - CN_油管 TG 8度科技
+      - CN_油管 TG 8度科技 2
+      - CN_油管 TG 8度科技 3
+      - CN_油管 TG 8度科技 4
+      - CN_油管 TG 8度科技 5
+      - CN_油管 TG 8度科技 6
+      - CN_油管 TG 8度科技 7
+      - CN_油管 TG 8度科技 8
+      - CN_油管 TG 8度科技 9
+      - CN_油管 TG 8度科技 10
+      - CN_油管 TG 8度科技 11
+      - CN_油管 TG 8度科技 12
+      - CN_油管 TG 8度科技 13
+      - CN_油管 TG 8度科技 14
+      - CN_油管 TG 8度科技 15
+      - CN_油管 TG 8度科技 16
+      - CN_油管 TG 8度科技 17
+      - CN_油管 TG 8度科技 18
+      - CN_油管 TG 8度科技 19
+      - CN_油管 TG 8度科技 20
+      - CN_油管 TG 8度科技 21
+      - CN_油管 TG 8度科技 22
+      - CN_油管 TG 8度科技 23
+      - CN_油管 TG 8度科技 24
+      - CN_油管 TG 8度科技 25
+      - CN_油管 TG 8度科技 26
+      - CN_油管 TG 8度科技 27
+      - CN_油管 TG 8度科技 28
+      - CN_油管 TG 8度科技 29
+      - CN_油管 TG 8度科技 30
+      - CN_油管 TG 8度科技 31
+      - CN_油管 TG 8度科技 32
+      - CN_油管 TG 8度科技 33
+      - CN_油管 TG 8度科技 34
+      - CN_油管 TG 8度科技 35
+      - DE_油管 TG 8度科技
+      - DE_油管 TG 8度科技 2
+      - CN_油管 TG 8度科技 36
+      - CN_油管 TG 8度科技 37
+      - CA_油管 TG 8度科技
+      - US_油管 TG 8度科技
+      - CN_油管 TG 8度科技 38
+      - US_油管 TG 8度科技 2
+      - CA_油管 TG 8度科技 2
+      - CA_油管 TG 8度科技 3
+      - US_油管 TG 8度科技 3
+      - CN_油管 TG 8度科技 39
+      - CN_油管 TG 8度科技 40
+      - US_油管 TG 8度科技 4
+      - CN_油管 TG 8度科技 41
+      - CA_油管 TG 8度科技 4
+      - CA_油管 TG 8度科技 5
+      - CA_油管 TG 8度科技 6
+      - CA_油管 TG 8度科技 7
+      - CA_油管 TG 8度科技 8
+      - CA_油管 TG 8度科技 9
+      - CA_油管 TG 8度科技 10
+      - CN_油管 TG 8度科技 42
+      - CA_油管 TG 8度科技 11
+      - CA_油管 TG 8度科技 12
+      - CA_油管 TG 8度科技 13
+      - CA_油管 TG 8度科技 14
+      - CA_油管 TG 8度科技 15
+      - CA_油管 TG 8度科技 16
+      - CA_油管 TG 8度科技 17
+      - CA_油管 TG 8度科技 18
+      - CA_油管 TG 8度科技 19
+      - CA_油管 TG 8度科技 20
+      - CA_油管 TG 8度科技 21
+      - CN_油管 TG 8度科技 43
+      - CN_油管 TG 8度科技 44
+      - AU_油管 TG 8度科技
+      - JP_油管 TG 8度科技
+      - CN_油管 TG 8度科技 45
+      - CN_油管 TG 8度科技 46
+      - CN_油管 TG 8度科技 47
+      - CN_油管 TG 8度科技 48
+      - DE_油管 TG 8度科技 3
+      - KR_油管 TG 8度科技
+      - HK_油管 TG 8度科技
+      - CN_油管 TG 8度科技 49
+      - CN_油管 TG 8度科技 50
+      - US_油管 TG 8度科技 5
+      - CN_油管 TG 8度科技 51
+      - HK_油管 TG 8度科技 2
+      - HK_油管 TG 8度科技 3
+      - CN_油管 TG 8度科技 52
+      - DE_油管 TG 8度科技 4
+      - AE_油管 TG 8度科技
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -593,70 +788,95 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - Relay_🇺🇸US-🇺🇸US_2765
-      - vpnpool-桃园Hinet
-      - vpnpool-新北Hinet
-      - vpnpool-桃园Hinet 2
-      - vpnpool-新北Hinet 2
-      - vpnpool-桃园Hinet 3
-      - Relay_🇸🇬SG-🇸🇬SG_1109
-      - default_name
-      - 香港 01
-      - _AE_阿联酋
-      - V1-美国01 中继D | 1.5x
-      - US_2579
-      - US_8091 @WangCai_1
-      - 香港 01 2
-      - 香港 01 3
-      - ZZ_3318
-      - _US_美国
-      - vpnpool-US-Hillsboro-OVH
-      - ‌‌🇨🇦CA_6379 @WangCai_1
-      - _CA_加拿大
-      - ‌‌🇨🇦CA_9102 @WangCai_1
-      - _CA_加拿大_100
-      - _CA_加拿大 2
-      - ‌‌🇨🇦CA_8000 @WangCai_1
-      - _US_美国 2
-      - _CA_加拿大 3
-      - ‌‌🇨🇦CA_6697 @WangCai_1
-      - _CA_加拿大 4
-      - US_5001 @WangCai_1
-      - _CA_加拿大 5
-      - _CA_加拿大 6
-      - ‌‌🇨🇦CA_8118 @WangCai_1
-      - _US_美国 3
-      - ‌‌🇨🇦CA_5500 @WangCai_1
-      - ‌‌🇨🇦CA_8888 @WangCai_1
-      - _CA_加拿大 7
-      - ZZ_2916
-      - ‌‌🇨🇦CA_5001 @WangCai_1
-      - _GB_英国
-      - ‌‌🇨🇦CA_7002 @WangCai_1
-      - ZZ_3373
-      - US_2597
-      - ‌‌🇨🇦CA_9101 @WangCai_1
-      - _CA_加拿大 8
-      - _FR_法国
-      - ‌‌🇨🇦CA_7306 @WangCai_1
-      - _CA_加拿大 9
-      - _CA_加拿大 10
-      - _CA_加拿大 11
-      - _US_美国 4
-      - _CA_加拿大_14
-      - _CA_加拿大 12
-      - _CA_加拿大 13
-      - US_1977
-      - _IN_印度
-      - _US_美国 5
-      - _US_美国 6
-      - _CA_加拿大 14
-      - ‌‌🇨🇦CA_7307 @WangCai_1
-      - _CA_加拿大 15
-      - _CA_加拿大 16
-      - _CA_加拿大 17
-      - _US_美国 7
-      - ZZ_3508
+      - CN_油管 TG 8度科技
+      - CN_油管 TG 8度科技 2
+      - CN_油管 TG 8度科技 3
+      - CN_油管 TG 8度科技 4
+      - CN_油管 TG 8度科技 5
+      - CN_油管 TG 8度科技 6
+      - CN_油管 TG 8度科技 7
+      - CN_油管 TG 8度科技 8
+      - CN_油管 TG 8度科技 9
+      - CN_油管 TG 8度科技 10
+      - CN_油管 TG 8度科技 11
+      - CN_油管 TG 8度科技 12
+      - CN_油管 TG 8度科技 13
+      - CN_油管 TG 8度科技 14
+      - CN_油管 TG 8度科技 15
+      - CN_油管 TG 8度科技 16
+      - CN_油管 TG 8度科技 17
+      - CN_油管 TG 8度科技 18
+      - CN_油管 TG 8度科技 19
+      - CN_油管 TG 8度科技 20
+      - CN_油管 TG 8度科技 21
+      - CN_油管 TG 8度科技 22
+      - CN_油管 TG 8度科技 23
+      - CN_油管 TG 8度科技 24
+      - CN_油管 TG 8度科技 25
+      - CN_油管 TG 8度科技 26
+      - CN_油管 TG 8度科技 27
+      - CN_油管 TG 8度科技 28
+      - CN_油管 TG 8度科技 29
+      - CN_油管 TG 8度科技 30
+      - CN_油管 TG 8度科技 31
+      - CN_油管 TG 8度科技 32
+      - CN_油管 TG 8度科技 33
+      - CN_油管 TG 8度科技 34
+      - CN_油管 TG 8度科技 35
+      - DE_油管 TG 8度科技
+      - DE_油管 TG 8度科技 2
+      - CN_油管 TG 8度科技 36
+      - CN_油管 TG 8度科技 37
+      - CA_油管 TG 8度科技
+      - US_油管 TG 8度科技
+      - CN_油管 TG 8度科技 38
+      - US_油管 TG 8度科技 2
+      - CA_油管 TG 8度科技 2
+      - CA_油管 TG 8度科技 3
+      - US_油管 TG 8度科技 3
+      - CN_油管 TG 8度科技 39
+      - CN_油管 TG 8度科技 40
+      - US_油管 TG 8度科技 4
+      - CN_油管 TG 8度科技 41
+      - CA_油管 TG 8度科技 4
+      - CA_油管 TG 8度科技 5
+      - CA_油管 TG 8度科技 6
+      - CA_油管 TG 8度科技 7
+      - CA_油管 TG 8度科技 8
+      - CA_油管 TG 8度科技 9
+      - CA_油管 TG 8度科技 10
+      - CN_油管 TG 8度科技 42
+      - CA_油管 TG 8度科技 11
+      - CA_油管 TG 8度科技 12
+      - CA_油管 TG 8度科技 13
+      - CA_油管 TG 8度科技 14
+      - CA_油管 TG 8度科技 15
+      - CA_油管 TG 8度科技 16
+      - CA_油管 TG 8度科技 17
+      - CA_油管 TG 8度科技 18
+      - CA_油管 TG 8度科技 19
+      - CA_油管 TG 8度科技 20
+      - CA_油管 TG 8度科技 21
+      - CN_油管 TG 8度科技 43
+      - CN_油管 TG 8度科技 44
+      - AU_油管 TG 8度科技
+      - JP_油管 TG 8度科技
+      - CN_油管 TG 8度科技 45
+      - CN_油管 TG 8度科技 46
+      - CN_油管 TG 8度科技 47
+      - CN_油管 TG 8度科技 48
+      - DE_油管 TG 8度科技 3
+      - KR_油管 TG 8度科技
+      - HK_油管 TG 8度科技
+      - CN_油管 TG 8度科技 49
+      - CN_油管 TG 8度科技 50
+      - US_油管 TG 8度科技 5
+      - CN_油管 TG 8度科技 51
+      - HK_油管 TG 8度科技 2
+      - HK_油管 TG 8度科技 3
+      - CN_油管 TG 8度科技 52
+      - DE_油管 TG 8度科技 4
+      - AE_油管 TG 8度科技
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
