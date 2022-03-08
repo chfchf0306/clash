@@ -5,195 +5,223 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 油管 TG 8度科技, server: icook.hk, port: 443, type: vmess, uuid: 9a85a293-3eb7-4189-e17d-bfa46f9ad0ce, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /freebaipiao, ws-headers: {Host: xmlinodejp2.aifx.eu.org}, udp: true}
-  - {name: HK_油管 TG 8度科技, server: azure-f4s-hk-1.forwardserver.xyz, port: 44986, type: vmess, uuid: 3b07447e-94cf-4d72-96c6-d0a539098049, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: azure-f4s-hk-1.forwardserver.xyz}, udp: true}
-  - {name: HK_油管 TG 8度科技 2, server: azure-f4s-hk-1.forwardserver.xyz, port: 44986, type: vmess, uuid: 3b07447e-94cf-4d72-96c6-d0a539098049, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: azure-f4s-hk-1.forwardserver.xyz}, udp: true}
-  - {name: CN_油管 TG 8度科技, server: zz03.mcddns02.com, port: 17101, type: ssr, cipher: chacha20-ietf, password: GYAzB9, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 20071:CUoqXuxltNm1fo6Y, obfs-param: cd1a920071.microsoft.com, udp: true}
-  - {name: HK_油管 TG 8度科技 3, server: azure-f4s-hk-1.forwardserver.xyz, port: 30585, type: vmess, uuid: 3b07447e-94cf-4d72-96c6-d0a539098049, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: azure-f4s-hk-1.forwardserver.xyz}, udp: true}
-  - {name: 油管 TG 8度科技 2, server: bi.oracleusa.ml, port: 2053, type: vmess, uuid: a413b1be-ae8c-40a3-afd6-25fd152cd45f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: bi.oracleusa.ml}, udp: true}
-  - {name: US_油管 TG 8度科技, server: 169.197.142.99, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: 油管 TG 8度科技 3, server: bi.oracleusa.ml, port: 2053, type: vmess, uuid: a413b1be-ae8c-40a3-afd6-25fd152cd45f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: bi.oracleusa.ml}, udp: true}
-  - {name: HK_油管 TG 8度科技 4, server: azure-f4s-hk-1.forwardserver.xyz, port: 32434, type: vmess, uuid: 3b07447e-94cf-4d72-96c6-d0a539098049, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: azure-f4s-hk-1.forwardserver.xyz}, udp: true}
-  - {name: HK_油管 TG 8度科技 5, server: azure-f4s-hk-1.forwardserver.xyz, port: 49242, type: vmess, uuid: 3b07447e-94cf-4d72-96c6-d0a539098049, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: azure-f4s-hk-1.forwardserver.xyz}, udp: true}
-  - {name: US_油管 TG 8度科技 2, server: 104.24.54.206, port: 443, type: vmess, uuid: 3c581ecc-ea0e-4d20-d526-46397c98e99e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /dashanpao.mp3, ws-headers: {Host: misty-meadow-9120.lishanpao.workers.dev}, udp: true}
-  - {name: HK_油管 TG 8度科技 6, server: azure-f4s-hk-1.forwardserver.xyz, port: 41955, type: vmess, uuid: 3b07447e-94cf-4d72-96c6-d0a539098049, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: azure-f4s-hk-1.forwardserver.xyz}, udp: true}
-  - {name: HK_油管 TG 8度科技 7, server: azure-f4s-hk-1.forwardserver.xyz, port: 32434, type: vmess, uuid: 3b07447e-94cf-4d72-96c6-d0a539098049, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: azure-f4s-hk-1.forwardserver.xyz}, udp: true}
-  - {name: HK_油管 TG 8度科技 8, server: azure-f4s-hk-1.forwardserver.xyz, port: 30585, type: vmess, uuid: 3b07447e-94cf-4d72-96c6-d0a539098049, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: azure-f4s-hk-1.forwardserver.xyz}, udp: true}
-  - {name: US_油管 TG 8度科技 3, server: app.ssfree.ru, port: 443, type: vmess, uuid: a5e2a048-9e2f-11ec-9dc9-000017022008, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /getweather, ws-headers: {Host: app.ssfree.ru}, udp: true}
-  - {name: MK_油管 TG 8度科技, server: 46.183.185.15, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
-  - {name: DE_油管 TG 8度科技, server: 152.70.188.10, port: 443, type: vmess, uuid: 6ae16454-de6a-4113-c64e-0549be488f15, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: US_油管 TG 8度科技 4, server: cloudflare.xrenblog.com, port: 443, type: vmess, uuid: 6c175d1a-a57f-4881-a471-173eb139694b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /xrenblog/, ws-headers: {Host: ipv6.xrenblog.com}, udp: true}
-  - {name: US_油管 TG 8度科技 5, server: ua1.uuv2.co.uk, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: ua1.uuv2.co.uk}, udp: true}
-  - {name: US_油管 TG 8度科技 6, server: test.0dc.cn, port: 443, type: vmess, uuid: ebe5703b-c18e-4664-c3a7-9fcf52453898, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: test.0dc.cn}, udp: true}
-  - {name: GB_油管 TG 8度科技, server: 172.99.190.92, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: CA_油管 TG 8度科技, server: 134.195.196.68, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: GB_油管 TG 8度科技 2, server: 172.99.190.92, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: CA_油管 TG 8度科技 2, server: 134.195.196.68, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: JP_油管 TG 8度科技, server: cmi.db-link.in, port: 21154, type: vmess, uuid: 8e3547f1-e09b-3c64-87c4-2e778ea3c2e3, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /db, ws-headers: {Host: us4.db-link.in}, udp: true}
-  - {name: CA_油管 TG 8度科技 3, server: 134.195.196.3, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: US_油管 TG 8度科技 7, server: iesei1ei.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: iesei1ei.com}, udp: true}
-  - {name: CA_油管 TG 8度科技 4, server: 134.195.196.68, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: FR_油管 TG 8度科技, server: 141.95.0.26, port: 826, type: ss, cipher: chacha20-ietf-poly1305, password: sF43Xt2gONqcgFX563, udp: true}
-  - {name: CA_油管 TG 8度科技 5, server: 134.195.196.187, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: JP_油管 TG 8度科技 2, server: cmi.db-link.in, port: 21153, type: vmess, uuid: 8e3547f1-e09b-3c64-87c4-2e778ea3c2e3, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /db, ws-headers: {Host: us3.db-link.in}, udp: true}
-  - {name: CA_油管 TG 8度科技 6, server: 134.195.196.68, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: CA_油管 TG 8度科技 7, server: 134.195.196.3, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: CA_油管 TG 8度科技 8, server: 134.195.196.3, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: CA_油管 TG 8度科技 9, server: 134.195.196.187, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: CA_油管 TG 8度科技 10, server: 134.195.196.68, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: CA_油管 TG 8度科技 11, server: 134.195.196.187, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: GB_油管 TG 8度科技 3, server: 172.99.190.92, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: CA_油管 TG 8度科技 12, server: 134.195.196.3, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: CA_油管 TG 8度科技 13, server: 134.195.196.187, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_油管 TG 8度科技 8, server: 169.197.142.187, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: CA_油管 TG 8度科技 14, server: 134.195.196.3, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: CA_油管 TG 8度科技 15, server: 134.195.196.187, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: "[香港10]DM香港 广港隧道入口 SS 流媒", server: hk-zone.checkmails.xyz, port: 22999, type: ss, cipher: chacha20-ietf-poly1305, password: 76763f2a-7c79-498d-b0d3-986ad0f294cf, udp: true}
+  - {name: "[香港MS2]三网CN2GIA入口 SS 流媒体支持", server: hk-ms1.checkmails.xyz, port: 62222, type: ss, cipher: chacha20-ietf-poly1305, password: 76763f2a-7c79-498d-b0d3-986ad0f294cf, udp: true}
+  - {name: "[美国9]波特兰 长沙BGP入口 流媒体支持", server: cs-pm.iqdnsio.co, port: 29229, type: ss, cipher: aes-128-gcm, password: 76763f2a-7c79-498d-b0d3-986ad0f294cf, udp: true}
+  - {name: "[新加坡5]广港入口 SS协议 NF", server: hk-az2.checkmails.xyz, port: 12929, type: ss, cipher: aes-256-gcm, password: 76763f2a-7c79-498d-b0d3-986ad0f294cf, udp: true}
+  - {name: "[荷兰VIP-1]10G 下载节点 BGP入口 SS 流媒体支持", server: hk-az2.checkmails.xyz, port: 25999, type: ss, cipher: aes-128-gcm, password: 76763f2a-7c79-498d-b0d3-986ad0f294cf, udp: true}
+  - {name: _CA_加拿大, server: 134.195.196.81, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: _CA_加拿大 2, server: 134.195.196.81, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: "[香港7-2]MS 三网CN2GIA入口 SS 超大带宽低延迟节点", server: hk-ms4.checkmails.xyz, port: 6056, type: ss, cipher: aes-256-gcm, password: 76763f2a-7c79-498d-b0d3-986ad0f294cf, udp: true}
+  - {name: ZZ_2863 |54.78Mb, server: 169.197.142.99, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: "[美国7]Multa 杭州BGP入口 流媒体支持", server: hz2-cu.iqdnsio.co, port: 19999, type: ss, cipher: chacha20-ietf-poly1305, password: 76763f2a-7c79-498d-b0d3-986ad0f294cf, udp: true}
+  - {name: _CA_加拿大 3, server: 134.195.196.81, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
+  - {name: _CA_加拿大 4, server: 134.195.196.81, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: "[马来2]广港AGA入口  原生流媒", server: hk-azb1.uuuglass.co, port: 25125, type: ss, cipher: chacha20-ietf-poly1305, password: 76763f2a-7c79-498d-b0d3-986ad0f294cf, udp: true}
+  - {name: _CA_加拿大 5, server: 134.195.196.81, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: "[香港7-BGP]MS 长沙BGP入口 SS", server: cs-pm.iqdnsio.co, port: 29999, type: ss, cipher: aes-256-gcm, password: 76763f2a-7c79-498d-b0d3-986ad0f294cf, udp: true}
+  - {name: _CA_加拿大 6, server: 134.195.196.81, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: ZZ_3481 |176.12Mb, server: 134.195.196.81, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: _CA_加拿大 7, server: 134.195.196.81, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: "[香港7]MS 三网CN2GIA入口 超大带宽低延迟节点", server: hk-ms4.checkmails.xyz, port: 6619, type: vmess, uuid: 76763f2a-7c79-498d-b0d3-986ad0f294cf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "[台湾3]新北中华电信 珠海移动入口 流媒体支持", server: st-cm.iqdnsio.co, port: 12529, type: vmess, uuid: 76763f2a-7c79-498d-b0d3-986ad0f294cf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "[日本6]东京Cat 长沙BGP入口 流媒", server: cs-pm.iqdnsio.co, port: 29292, type: vmess, uuid: 76763f2a-7c79-498d-b0d3-986ad0f294cf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "[日本4]东京Cat 杭州BGP入口 流媒体支持", server: hz2-cu.iqdnsio.co, port: 22222, type: vmess, uuid: 76763f2a-7c79-498d-b0d3-986ad0f294cf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "[韩国1]首尔KT 珠海BGP入口 NF", server: st-cm.iqdnsio.co, port: 59222, type: vmess, uuid: 76763f2a-7c79-498d-b0d3-986ad0f294cf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "[日本7]东京NTT 沪日IPLC入口 流媒体支持", server: hz2-cu.iqdnsio.co, port: 29222, type: vmess, uuid: 76763f2a-7c79-498d-b0d3-986ad0f294cf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "[印度1]孟买tata 港印缆入口 流媒体支持", server: hk-azb1.uuuglass.co, port: 22777, type: vmess, uuid: 76763f2a-7c79-498d-b0d3-986ad0f294cf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "[日本5]东京Cat 电联接入点 联通电信推荐 流媒体支持", server: jp2-aws.uuuglass.co, port: 52666, type: vmess, uuid: 76763f2a-7c79-498d-b0d3-986ad0f294cf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "[香港MS1]广港AGA加速 流媒体支持", server: hk-ms1.checkmails.xyz, port: 31111, type: vmess, uuid: 76763f2a-7c79-498d-b0d3-986ad0f294cf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "[英国1]伦敦Sky 汕头移动入口 流媒体支持", server: st-cm.iqdnsio.co, port: 62222, type: vmess, uuid: 76763f2a-7c79-498d-b0d3-986ad0f294cf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "[日本2]东京Nico 上海CM入口 流媒体支持", server: shct.xn--mes98khzje07c.xyz, port: 12345, type: vmess, uuid: 76763f2a-7c79-498d-b0d3-986ad0f294cf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "[美国4]DO 超大带宽 长沙9929入口 流媒体支持", server: cs-pm.iqdnsio.co, port: 52222, type: vmess, uuid: 76763f2a-7c79-498d-b0d3-986ad0f294cf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _US_美国->🇯🇵_JP_日本, server: icook.hk, port: 443, type: vmess, uuid: 9a85a293-3eb7-4189-e17d-bfa46f9ad0ce, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /freebaipiao, ws-headers: {Host: xmlinodejp2.aifx.eu.org}, udp: true}
+  - {name: "[新加坡3]沪新IPLC  隐私专线入口 NF", server: hk-az2.checkmails.xyz, port: 52222, type: vmess, uuid: 76763f2a-7c79-498d-b0d3-986ad0f294cf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "[法国1]杭州BGP入口 流媒体支持", server: hk-az2.checkmails.xyz, port: 16051, type: vmess, uuid: 76763f2a-7c79-498d-b0d3-986ad0f294cf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "[美国1]ATT 长沙9929 入口 流媒体支持", server: cs2-cu.iqdnsio.co, port: 19999, type: vmess, uuid: 76763f2a-7c79-498d-b0d3-986ad0f294cf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "[日本8]东京NTT 广日BGP入口 流媒体支持", server: hk-az2.checkmails.xyz, port: 12999, type: vmess, uuid: 76763f2a-7c79-498d-b0d3-986ad0f294cf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "[土耳其3]MS全球路由 流媒体支持", server: hk-az2.checkmails.xyz, port: 56666, type: vmess, uuid: 76763f2a-7c79-498d-b0d3-986ad0f294cf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "[阿联酋1]迪拜节点 长沙BGP入口 流媒体支持", server: cs-pm.iqdnsio.co, port: 19999, type: vmess, uuid: 76763f2a-7c79-498d-b0d3-986ad0f294cf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "[阿联酋2]迪拜节点 广港国际入口 流媒体支持", server: hk-az2.checkmails.xyz, port: 25666, type: vmess, uuid: 76763f2a-7c79-498d-b0d3-986ad0f294cf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "[德国2]德国汉堡 沪法德入口 流媒体支持", server: hk-zone.checkmails.xyz, port: 19777, type: vmess, uuid: 76763f2a-7c79-498d-b0d3-986ad0f294cf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "[德国-希腊1]长沙BGP入口 流媒体支持", server: cs2-cu.iqdnsio.co, port: 65222, type: vmess, uuid: 76763f2a-7c79-498d-b0d3-986ad0f294cf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "[台湾2]新北中华电信 HT入口 流媒体支持", server: hk-az2.checkmails.xyz, port: 25122, type: vmess, uuid: 76763f2a-7c79-498d-b0d3-986ad0f294cf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "[英国2]伦敦Sky 广州BGP入口 流媒体支持", server: hk-azb1.uuuglass.co, port: 25666, type: vmess, uuid: 76763f2a-7c79-498d-b0d3-986ad0f294cf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: default_name, server: cm.db-link.in, port: 443, type: vmess, uuid: 8e3547f1-e09b-3c64-87c4-2e778ea3c2e3, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /db, ws-headers: {Host: us01.db-link.in}, udp: true}
+  - {name: "[荷兰VIP-2]10G 下载节点 深圳移动入口 流媒体支持", server: cs2-cu.iqdnsio.co, port: 25222, type: vmess, uuid: 76763f2a-7c79-498d-b0d3-986ad0f294cf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "[新加坡1]微软广新IPLC隐私专线入口 NF", server: hk-az2.checkmails.xyz, port: 22999, type: vmess, uuid: 76763f2a-7c79-498d-b0d3-986ad0f294cf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "[美国3]ATT 杭州BGP入口 流媒体支持", server: hz2-cu.iqdnsio.co, port: 52999, type: vmess, uuid: 76763f2a-7c79-498d-b0d3-986ad0f294cf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "[日本3]东京Nico 电联接入点 联通电信推荐 流媒体支持", server: jp2-aws.uuuglass.co, port: 57277, type: vmess, uuid: 76763f2a-7c79-498d-b0d3-986ad0f294cf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "[印度2]孟买tata 长沙BGP入口 流媒体支持", server: cs2-cu.iqdnsio.co, port: 52666, type: vmess, uuid: 76763f2a-7c79-498d-b0d3-986ad0f294cf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "[香港6]HKT 广港VNC入口2 流媒体支持", server: hk-az2.checkmails.xyz, port: 12222, type: vmess, uuid: 76763f2a-7c79-498d-b0d3-986ad0f294cf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "[巴西2]里约热内卢Vi VNC内网入口 流媒体支持", server: hk-zone.checkmails.xyz, port: 34567, type: vmess, uuid: 76763f2a-7c79-498d-b0d3-986ad0f294cf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 油管 TG 8度科技
-      - HK_油管 TG 8度科技
-      - HK_油管 TG 8度科技 2
-      - CN_油管 TG 8度科技
-      - HK_油管 TG 8度科技 3
-      - 油管 TG 8度科技 2
-      - US_油管 TG 8度科技
-      - 油管 TG 8度科技 3
-      - HK_油管 TG 8度科技 4
-      - HK_油管 TG 8度科技 5
-      - US_油管 TG 8度科技 2
-      - HK_油管 TG 8度科技 6
-      - HK_油管 TG 8度科技 7
-      - HK_油管 TG 8度科技 8
-      - US_油管 TG 8度科技 3
-      - MK_油管 TG 8度科技
-      - DE_油管 TG 8度科技
-      - US_油管 TG 8度科技 4
-      - US_油管 TG 8度科技 5
-      - US_油管 TG 8度科技 6
-      - GB_油管 TG 8度科技
-      - CA_油管 TG 8度科技
-      - GB_油管 TG 8度科技 2
-      - CA_油管 TG 8度科技 2
-      - JP_油管 TG 8度科技
-      - CA_油管 TG 8度科技 3
-      - US_油管 TG 8度科技 7
-      - CA_油管 TG 8度科技 4
-      - FR_油管 TG 8度科技
-      - CA_油管 TG 8度科技 5
-      - JP_油管 TG 8度科技 2
-      - CA_油管 TG 8度科技 6
-      - CA_油管 TG 8度科技 7
-      - CA_油管 TG 8度科技 8
-      - CA_油管 TG 8度科技 9
-      - CA_油管 TG 8度科技 10
-      - CA_油管 TG 8度科技 11
-      - GB_油管 TG 8度科技 3
-      - CA_油管 TG 8度科技 12
-      - CA_油管 TG 8度科技 13
-      - US_油管 TG 8度科技 8
-      - CA_油管 TG 8度科技 14
-      - CA_油管 TG 8度科技 15
+      - "[香港10]DM香港 广港隧道入口 SS 流媒"
+      - "[香港MS2]三网CN2GIA入口 SS 流媒体支持"
+      - "[美国9]波特兰 长沙BGP入口 流媒体支持"
+      - "[新加坡5]广港入口 SS协议 NF"
+      - "[荷兰VIP-1]10G 下载节点 BGP入口 SS 流媒体支持"
+      - _CA_加拿大
+      - _CA_加拿大 2
+      - "[香港7-2]MS 三网CN2GIA入口 SS 超大带宽低延迟节点"
+      - ZZ_2863 |54.78Mb
+      - "[美国7]Multa 杭州BGP入口 流媒体支持"
+      - _CA_加拿大 3
+      - _CA_加拿大 4
+      - "[马来2]广港AGA入口  原生流媒"
+      - _CA_加拿大 5
+      - "[香港7-BGP]MS 长沙BGP入口 SS"
+      - _CA_加拿大 6
+      - ZZ_3481 |176.12Mb
+      - _CA_加拿大 7
+      - "[香港7]MS 三网CN2GIA入口 超大带宽低延迟节点"
+      - "[台湾3]新北中华电信 珠海移动入口 流媒体支持"
+      - "[日本6]东京Cat 长沙BGP入口 流媒"
+      - "[日本4]东京Cat 杭州BGP入口 流媒体支持"
+      - "[韩国1]首尔KT 珠海BGP入口 NF"
+      - "[日本7]东京NTT 沪日IPLC入口 流媒体支持"
+      - "[印度1]孟买tata 港印缆入口 流媒体支持"
+      - "[日本5]东京Cat 电联接入点 联通电信推荐 流媒体支持"
+      - "[香港MS1]广港AGA加速 流媒体支持"
+      - "[英国1]伦敦Sky 汕头移动入口 流媒体支持"
+      - "[日本2]东京Nico 上海CM入口 流媒体支持"
+      - "[美国4]DO 超大带宽 长沙9929入口 流媒体支持"
+      - _US_美国->🇯🇵_JP_日本
+      - "[新加坡3]沪新IPLC  隐私专线入口 NF"
+      - "[法国1]杭州BGP入口 流媒体支持"
+      - "[美国1]ATT 长沙9929 入口 流媒体支持"
+      - "[日本8]东京NTT 广日BGP入口 流媒体支持"
+      - "[土耳其3]MS全球路由 流媒体支持"
+      - "[阿联酋1]迪拜节点 长沙BGP入口 流媒体支持"
+      - "[阿联酋2]迪拜节点 广港国际入口 流媒体支持"
+      - "[德国2]德国汉堡 沪法德入口 流媒体支持"
+      - "[德国-希腊1]长沙BGP入口 流媒体支持"
+      - "[台湾2]新北中华电信 HT入口 流媒体支持"
+      - "[英国2]伦敦Sky 广州BGP入口 流媒体支持"
+      - default_name
+      - "[荷兰VIP-2]10G 下载节点 深圳移动入口 流媒体支持"
+      - "[新加坡1]微软广新IPLC隐私专线入口 NF"
+      - "[美国3]ATT 杭州BGP入口 流媒体支持"
+      - "[日本3]东京Nico 电联接入点 联通电信推荐 流媒体支持"
+      - "[印度2]孟买tata 长沙BGP入口 流媒体支持"
+      - "[香港6]HKT 广港VNC入口2 流媒体支持"
+      - "[巴西2]里约热内卢Vi VNC内网入口 流媒体支持"
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 油管 TG 8度科技
-      - HK_油管 TG 8度科技
-      - HK_油管 TG 8度科技 2
-      - CN_油管 TG 8度科技
-      - HK_油管 TG 8度科技 3
-      - 油管 TG 8度科技 2
-      - US_油管 TG 8度科技
-      - 油管 TG 8度科技 3
-      - HK_油管 TG 8度科技 4
-      - HK_油管 TG 8度科技 5
-      - US_油管 TG 8度科技 2
-      - HK_油管 TG 8度科技 6
-      - HK_油管 TG 8度科技 7
-      - HK_油管 TG 8度科技 8
-      - US_油管 TG 8度科技 3
-      - MK_油管 TG 8度科技
-      - DE_油管 TG 8度科技
-      - US_油管 TG 8度科技 4
-      - US_油管 TG 8度科技 5
-      - US_油管 TG 8度科技 6
-      - GB_油管 TG 8度科技
-      - CA_油管 TG 8度科技
-      - GB_油管 TG 8度科技 2
-      - CA_油管 TG 8度科技 2
-      - JP_油管 TG 8度科技
-      - CA_油管 TG 8度科技 3
-      - US_油管 TG 8度科技 7
-      - CA_油管 TG 8度科技 4
-      - FR_油管 TG 8度科技
-      - CA_油管 TG 8度科技 5
-      - JP_油管 TG 8度科技 2
-      - CA_油管 TG 8度科技 6
-      - CA_油管 TG 8度科技 7
-      - CA_油管 TG 8度科技 8
-      - CA_油管 TG 8度科技 9
-      - CA_油管 TG 8度科技 10
-      - CA_油管 TG 8度科技 11
-      - GB_油管 TG 8度科技 3
-      - CA_油管 TG 8度科技 12
-      - CA_油管 TG 8度科技 13
-      - US_油管 TG 8度科技 8
-      - CA_油管 TG 8度科技 14
-      - CA_油管 TG 8度科技 15
+      - "[香港10]DM香港 广港隧道入口 SS 流媒"
+      - "[香港MS2]三网CN2GIA入口 SS 流媒体支持"
+      - "[美国9]波特兰 长沙BGP入口 流媒体支持"
+      - "[新加坡5]广港入口 SS协议 NF"
+      - "[荷兰VIP-1]10G 下载节点 BGP入口 SS 流媒体支持"
+      - _CA_加拿大
+      - _CA_加拿大 2
+      - "[香港7-2]MS 三网CN2GIA入口 SS 超大带宽低延迟节点"
+      - ZZ_2863 |54.78Mb
+      - "[美国7]Multa 杭州BGP入口 流媒体支持"
+      - _CA_加拿大 3
+      - _CA_加拿大 4
+      - "[马来2]广港AGA入口  原生流媒"
+      - _CA_加拿大 5
+      - "[香港7-BGP]MS 长沙BGP入口 SS"
+      - _CA_加拿大 6
+      - ZZ_3481 |176.12Mb
+      - _CA_加拿大 7
+      - "[香港7]MS 三网CN2GIA入口 超大带宽低延迟节点"
+      - "[台湾3]新北中华电信 珠海移动入口 流媒体支持"
+      - "[日本6]东京Cat 长沙BGP入口 流媒"
+      - "[日本4]东京Cat 杭州BGP入口 流媒体支持"
+      - "[韩国1]首尔KT 珠海BGP入口 NF"
+      - "[日本7]东京NTT 沪日IPLC入口 流媒体支持"
+      - "[印度1]孟买tata 港印缆入口 流媒体支持"
+      - "[日本5]东京Cat 电联接入点 联通电信推荐 流媒体支持"
+      - "[香港MS1]广港AGA加速 流媒体支持"
+      - "[英国1]伦敦Sky 汕头移动入口 流媒体支持"
+      - "[日本2]东京Nico 上海CM入口 流媒体支持"
+      - "[美国4]DO 超大带宽 长沙9929入口 流媒体支持"
+      - _US_美国->🇯🇵_JP_日本
+      - "[新加坡3]沪新IPLC  隐私专线入口 NF"
+      - "[法国1]杭州BGP入口 流媒体支持"
+      - "[美国1]ATT 长沙9929 入口 流媒体支持"
+      - "[日本8]东京NTT 广日BGP入口 流媒体支持"
+      - "[土耳其3]MS全球路由 流媒体支持"
+      - "[阿联酋1]迪拜节点 长沙BGP入口 流媒体支持"
+      - "[阿联酋2]迪拜节点 广港国际入口 流媒体支持"
+      - "[德国2]德国汉堡 沪法德入口 流媒体支持"
+      - "[德国-希腊1]长沙BGP入口 流媒体支持"
+      - "[台湾2]新北中华电信 HT入口 流媒体支持"
+      - "[英国2]伦敦Sky 广州BGP入口 流媒体支持"
+      - default_name
+      - "[荷兰VIP-2]10G 下载节点 深圳移动入口 流媒体支持"
+      - "[新加坡1]微软广新IPLC隐私专线入口 NF"
+      - "[美国3]ATT 杭州BGP入口 流媒体支持"
+      - "[日本3]东京Nico 电联接入点 联通电信推荐 流媒体支持"
+      - "[印度2]孟买tata 长沙BGP入口 流媒体支持"
+      - "[香港6]HKT 广港VNC入口2 流媒体支持"
+      - "[巴西2]里约热内卢Vi VNC内网入口 流媒体支持"
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 油管 TG 8度科技
-      - HK_油管 TG 8度科技
-      - HK_油管 TG 8度科技 2
-      - CN_油管 TG 8度科技
-      - HK_油管 TG 8度科技 3
-      - 油管 TG 8度科技 2
-      - US_油管 TG 8度科技
-      - 油管 TG 8度科技 3
-      - HK_油管 TG 8度科技 4
-      - HK_油管 TG 8度科技 5
-      - US_油管 TG 8度科技 2
-      - HK_油管 TG 8度科技 6
-      - HK_油管 TG 8度科技 7
-      - HK_油管 TG 8度科技 8
-      - US_油管 TG 8度科技 3
-      - MK_油管 TG 8度科技
-      - DE_油管 TG 8度科技
-      - US_油管 TG 8度科技 4
-      - US_油管 TG 8度科技 5
-      - US_油管 TG 8度科技 6
-      - GB_油管 TG 8度科技
-      - CA_油管 TG 8度科技
-      - GB_油管 TG 8度科技 2
-      - CA_油管 TG 8度科技 2
-      - JP_油管 TG 8度科技
-      - CA_油管 TG 8度科技 3
-      - US_油管 TG 8度科技 7
-      - CA_油管 TG 8度科技 4
-      - FR_油管 TG 8度科技
-      - CA_油管 TG 8度科技 5
-      - JP_油管 TG 8度科技 2
-      - CA_油管 TG 8度科技 6
-      - CA_油管 TG 8度科技 7
-      - CA_油管 TG 8度科技 8
-      - CA_油管 TG 8度科技 9
-      - CA_油管 TG 8度科技 10
-      - CA_油管 TG 8度科技 11
-      - GB_油管 TG 8度科技 3
-      - CA_油管 TG 8度科技 12
-      - CA_油管 TG 8度科技 13
-      - US_油管 TG 8度科技 8
-      - CA_油管 TG 8度科技 14
-      - CA_油管 TG 8度科技 15
+      - "[香港10]DM香港 广港隧道入口 SS 流媒"
+      - "[香港MS2]三网CN2GIA入口 SS 流媒体支持"
+      - "[美国9]波特兰 长沙BGP入口 流媒体支持"
+      - "[新加坡5]广港入口 SS协议 NF"
+      - "[荷兰VIP-1]10G 下载节点 BGP入口 SS 流媒体支持"
+      - _CA_加拿大
+      - _CA_加拿大 2
+      - "[香港7-2]MS 三网CN2GIA入口 SS 超大带宽低延迟节点"
+      - ZZ_2863 |54.78Mb
+      - "[美国7]Multa 杭州BGP入口 流媒体支持"
+      - _CA_加拿大 3
+      - _CA_加拿大 4
+      - "[马来2]广港AGA入口  原生流媒"
+      - _CA_加拿大 5
+      - "[香港7-BGP]MS 长沙BGP入口 SS"
+      - _CA_加拿大 6
+      - ZZ_3481 |176.12Mb
+      - _CA_加拿大 7
+      - "[香港7]MS 三网CN2GIA入口 超大带宽低延迟节点"
+      - "[台湾3]新北中华电信 珠海移动入口 流媒体支持"
+      - "[日本6]东京Cat 长沙BGP入口 流媒"
+      - "[日本4]东京Cat 杭州BGP入口 流媒体支持"
+      - "[韩国1]首尔KT 珠海BGP入口 NF"
+      - "[日本7]东京NTT 沪日IPLC入口 流媒体支持"
+      - "[印度1]孟买tata 港印缆入口 流媒体支持"
+      - "[日本5]东京Cat 电联接入点 联通电信推荐 流媒体支持"
+      - "[香港MS1]广港AGA加速 流媒体支持"
+      - "[英国1]伦敦Sky 汕头移动入口 流媒体支持"
+      - "[日本2]东京Nico 上海CM入口 流媒体支持"
+      - "[美国4]DO 超大带宽 长沙9929入口 流媒体支持"
+      - _US_美国->🇯🇵_JP_日本
+      - "[新加坡3]沪新IPLC  隐私专线入口 NF"
+      - "[法国1]杭州BGP入口 流媒体支持"
+      - "[美国1]ATT 长沙9929 入口 流媒体支持"
+      - "[日本8]东京NTT 广日BGP入口 流媒体支持"
+      - "[土耳其3]MS全球路由 流媒体支持"
+      - "[阿联酋1]迪拜节点 长沙BGP入口 流媒体支持"
+      - "[阿联酋2]迪拜节点 广港国际入口 流媒体支持"
+      - "[德国2]德国汉堡 沪法德入口 流媒体支持"
+      - "[德国-希腊1]长沙BGP入口 流媒体支持"
+      - "[台湾2]新北中华电信 HT入口 流媒体支持"
+      - "[英国2]伦敦Sky 广州BGP入口 流媒体支持"
+      - default_name
+      - "[荷兰VIP-2]10G 下载节点 深圳移动入口 流媒体支持"
+      - "[新加坡1]微软广新IPLC隐私专线入口 NF"
+      - "[美国3]ATT 杭州BGP入口 流媒体支持"
+      - "[日本3]东京Nico 电联接入点 联通电信推荐 流媒体支持"
+      - "[印度2]孟买tata 长沙BGP入口 流媒体支持"
+      - "[香港6]HKT 广港VNC入口2 流媒体支持"
+      - "[巴西2]里约热内卢Vi VNC内网入口 流媒体支持"
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -212,199 +240,240 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 油管 TG 8度科技
-      - HK_油管 TG 8度科技
-      - HK_油管 TG 8度科技 2
-      - CN_油管 TG 8度科技
-      - HK_油管 TG 8度科技 3
-      - 油管 TG 8度科技 2
-      - US_油管 TG 8度科技
-      - 油管 TG 8度科技 3
-      - HK_油管 TG 8度科技 4
-      - HK_油管 TG 8度科技 5
-      - US_油管 TG 8度科技 2
-      - HK_油管 TG 8度科技 6
-      - HK_油管 TG 8度科技 7
-      - HK_油管 TG 8度科技 8
-      - US_油管 TG 8度科技 3
-      - MK_油管 TG 8度科技
-      - DE_油管 TG 8度科技
-      - US_油管 TG 8度科技 4
-      - US_油管 TG 8度科技 5
-      - US_油管 TG 8度科技 6
-      - GB_油管 TG 8度科技
-      - CA_油管 TG 8度科技
-      - GB_油管 TG 8度科技 2
-      - CA_油管 TG 8度科技 2
-      - JP_油管 TG 8度科技
-      - CA_油管 TG 8度科技 3
-      - US_油管 TG 8度科技 7
-      - CA_油管 TG 8度科技 4
-      - FR_油管 TG 8度科技
-      - CA_油管 TG 8度科技 5
-      - JP_油管 TG 8度科技 2
-      - CA_油管 TG 8度科技 6
-      - CA_油管 TG 8度科技 7
-      - CA_油管 TG 8度科技 8
-      - CA_油管 TG 8度科技 9
-      - CA_油管 TG 8度科技 10
-      - CA_油管 TG 8度科技 11
-      - GB_油管 TG 8度科技 3
-      - CA_油管 TG 8度科技 12
-      - CA_油管 TG 8度科技 13
-      - US_油管 TG 8度科技 8
-      - CA_油管 TG 8度科技 14
-      - CA_油管 TG 8度科技 15
+      - "[香港10]DM香港 广港隧道入口 SS 流媒"
+      - "[香港MS2]三网CN2GIA入口 SS 流媒体支持"
+      - "[美国9]波特兰 长沙BGP入口 流媒体支持"
+      - "[新加坡5]广港入口 SS协议 NF"
+      - "[荷兰VIP-1]10G 下载节点 BGP入口 SS 流媒体支持"
+      - _CA_加拿大
+      - _CA_加拿大 2
+      - "[香港7-2]MS 三网CN2GIA入口 SS 超大带宽低延迟节点"
+      - ZZ_2863 |54.78Mb
+      - "[美国7]Multa 杭州BGP入口 流媒体支持"
+      - _CA_加拿大 3
+      - _CA_加拿大 4
+      - "[马来2]广港AGA入口  原生流媒"
+      - _CA_加拿大 5
+      - "[香港7-BGP]MS 长沙BGP入口 SS"
+      - _CA_加拿大 6
+      - ZZ_3481 |176.12Mb
+      - _CA_加拿大 7
+      - "[香港7]MS 三网CN2GIA入口 超大带宽低延迟节点"
+      - "[台湾3]新北中华电信 珠海移动入口 流媒体支持"
+      - "[日本6]东京Cat 长沙BGP入口 流媒"
+      - "[日本4]东京Cat 杭州BGP入口 流媒体支持"
+      - "[韩国1]首尔KT 珠海BGP入口 NF"
+      - "[日本7]东京NTT 沪日IPLC入口 流媒体支持"
+      - "[印度1]孟买tata 港印缆入口 流媒体支持"
+      - "[日本5]东京Cat 电联接入点 联通电信推荐 流媒体支持"
+      - "[香港MS1]广港AGA加速 流媒体支持"
+      - "[英国1]伦敦Sky 汕头移动入口 流媒体支持"
+      - "[日本2]东京Nico 上海CM入口 流媒体支持"
+      - "[美国4]DO 超大带宽 长沙9929入口 流媒体支持"
+      - _US_美国->🇯🇵_JP_日本
+      - "[新加坡3]沪新IPLC  隐私专线入口 NF"
+      - "[法国1]杭州BGP入口 流媒体支持"
+      - "[美国1]ATT 长沙9929 入口 流媒体支持"
+      - "[日本8]东京NTT 广日BGP入口 流媒体支持"
+      - "[土耳其3]MS全球路由 流媒体支持"
+      - "[阿联酋1]迪拜节点 长沙BGP入口 流媒体支持"
+      - "[阿联酋2]迪拜节点 广港国际入口 流媒体支持"
+      - "[德国2]德国汉堡 沪法德入口 流媒体支持"
+      - "[德国-希腊1]长沙BGP入口 流媒体支持"
+      - "[台湾2]新北中华电信 HT入口 流媒体支持"
+      - "[英国2]伦敦Sky 广州BGP入口 流媒体支持"
+      - default_name
+      - "[荷兰VIP-2]10G 下载节点 深圳移动入口 流媒体支持"
+      - "[新加坡1]微软广新IPLC隐私专线入口 NF"
+      - "[美国3]ATT 杭州BGP入口 流媒体支持"
+      - "[日本3]东京Nico 电联接入点 联通电信推荐 流媒体支持"
+      - "[印度2]孟买tata 长沙BGP入口 流媒体支持"
+      - "[香港6]HKT 广港VNC入口2 流媒体支持"
+      - "[巴西2]里约热内卢Vi VNC内网入口 流媒体支持"
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
+      - "[香港10]DM香港 广港隧道入口 SS 流媒"
+      - "[香港MS2]三网CN2GIA入口 SS 流媒体支持"
+      - "[新加坡5]广港入口 SS协议 NF"
+      - "[香港7-2]MS 三网CN2GIA入口 SS 超大带宽低延迟节点"
+      - "[马来2]广港AGA入口  原生流媒"
+      - "[香港7-BGP]MS 长沙BGP入口 SS"
+      - "[香港7]MS 三网CN2GIA入口 超大带宽低延迟节点"
+      - "[台湾3]新北中华电信 珠海移动入口 流媒体支持"
+      - "[印度1]孟买tata 港印缆入口 流媒体支持"
+      - "[香港MS1]广港AGA加速 流媒体支持"
+      - "[阿联酋2]迪拜节点 广港国际入口 流媒体支持"
+      - "[台湾2]新北中华电信 HT入口 流媒体支持"
+      - "[香港6]HKT 广港VNC入口2 流媒体支持"
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 油管 TG 8度科技
-      - HK_油管 TG 8度科技
-      - HK_油管 TG 8度科技 2
-      - CN_油管 TG 8度科技
-      - HK_油管 TG 8度科技 3
-      - 油管 TG 8度科技 2
-      - US_油管 TG 8度科技
-      - 油管 TG 8度科技 3
-      - HK_油管 TG 8度科技 4
-      - HK_油管 TG 8度科技 5
-      - US_油管 TG 8度科技 2
-      - HK_油管 TG 8度科技 6
-      - HK_油管 TG 8度科技 7
-      - HK_油管 TG 8度科技 8
-      - US_油管 TG 8度科技 3
-      - MK_油管 TG 8度科技
-      - DE_油管 TG 8度科技
-      - US_油管 TG 8度科技 4
-      - US_油管 TG 8度科技 5
-      - US_油管 TG 8度科技 6
-      - GB_油管 TG 8度科技
-      - CA_油管 TG 8度科技
-      - GB_油管 TG 8度科技 2
-      - CA_油管 TG 8度科技 2
-      - JP_油管 TG 8度科技
-      - CA_油管 TG 8度科技 3
-      - US_油管 TG 8度科技 7
-      - CA_油管 TG 8度科技 4
-      - FR_油管 TG 8度科技
-      - CA_油管 TG 8度科技 5
-      - JP_油管 TG 8度科技 2
-      - CA_油管 TG 8度科技 6
-      - CA_油管 TG 8度科技 7
-      - CA_油管 TG 8度科技 8
-      - CA_油管 TG 8度科技 9
-      - CA_油管 TG 8度科技 10
-      - CA_油管 TG 8度科技 11
-      - GB_油管 TG 8度科技 3
-      - CA_油管 TG 8度科技 12
-      - CA_油管 TG 8度科技 13
-      - US_油管 TG 8度科技 8
-      - CA_油管 TG 8度科技 14
-      - CA_油管 TG 8度科技 15
+      - "[香港10]DM香港 广港隧道入口 SS 流媒"
+      - "[香港MS2]三网CN2GIA入口 SS 流媒体支持"
+      - "[美国9]波特兰 长沙BGP入口 流媒体支持"
+      - "[新加坡5]广港入口 SS协议 NF"
+      - "[荷兰VIP-1]10G 下载节点 BGP入口 SS 流媒体支持"
+      - _CA_加拿大
+      - _CA_加拿大 2
+      - "[香港7-2]MS 三网CN2GIA入口 SS 超大带宽低延迟节点"
+      - ZZ_2863 |54.78Mb
+      - "[美国7]Multa 杭州BGP入口 流媒体支持"
+      - _CA_加拿大 3
+      - _CA_加拿大 4
+      - "[马来2]广港AGA入口  原生流媒"
+      - _CA_加拿大 5
+      - "[香港7-BGP]MS 长沙BGP入口 SS"
+      - _CA_加拿大 6
+      - ZZ_3481 |176.12Mb
+      - _CA_加拿大 7
+      - "[香港7]MS 三网CN2GIA入口 超大带宽低延迟节点"
+      - "[台湾3]新北中华电信 珠海移动入口 流媒体支持"
+      - "[日本6]东京Cat 长沙BGP入口 流媒"
+      - "[日本4]东京Cat 杭州BGP入口 流媒体支持"
+      - "[韩国1]首尔KT 珠海BGP入口 NF"
+      - "[日本7]东京NTT 沪日IPLC入口 流媒体支持"
+      - "[印度1]孟买tata 港印缆入口 流媒体支持"
+      - "[日本5]东京Cat 电联接入点 联通电信推荐 流媒体支持"
+      - "[香港MS1]广港AGA加速 流媒体支持"
+      - "[英国1]伦敦Sky 汕头移动入口 流媒体支持"
+      - "[日本2]东京Nico 上海CM入口 流媒体支持"
+      - "[美国4]DO 超大带宽 长沙9929入口 流媒体支持"
+      - _US_美国->🇯🇵_JP_日本
+      - "[新加坡3]沪新IPLC  隐私专线入口 NF"
+      - "[法国1]杭州BGP入口 流媒体支持"
+      - "[美国1]ATT 长沙9929 入口 流媒体支持"
+      - "[日本8]东京NTT 广日BGP入口 流媒体支持"
+      - "[土耳其3]MS全球路由 流媒体支持"
+      - "[阿联酋1]迪拜节点 长沙BGP入口 流媒体支持"
+      - "[阿联酋2]迪拜节点 广港国际入口 流媒体支持"
+      - "[德国2]德国汉堡 沪法德入口 流媒体支持"
+      - "[德国-希腊1]长沙BGP入口 流媒体支持"
+      - "[台湾2]新北中华电信 HT入口 流媒体支持"
+      - "[英国2]伦敦Sky 广州BGP入口 流媒体支持"
+      - default_name
+      - "[荷兰VIP-2]10G 下载节点 深圳移动入口 流媒体支持"
+      - "[新加坡1]微软广新IPLC隐私专线入口 NF"
+      - "[美国3]ATT 杭州BGP入口 流媒体支持"
+      - "[日本3]东京Nico 电联接入点 联通电信推荐 流媒体支持"
+      - "[印度2]孟买tata 长沙BGP入口 流媒体支持"
+      - "[香港6]HKT 广港VNC入口2 流媒体支持"
+      - "[巴西2]里约热内卢Vi VNC内网入口 流媒体支持"
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 油管 TG 8度科技
-      - HK_油管 TG 8度科技
-      - HK_油管 TG 8度科技 2
-      - CN_油管 TG 8度科技
-      - HK_油管 TG 8度科技 3
-      - 油管 TG 8度科技 2
-      - US_油管 TG 8度科技
-      - 油管 TG 8度科技 3
-      - HK_油管 TG 8度科技 4
-      - HK_油管 TG 8度科技 5
-      - US_油管 TG 8度科技 2
-      - HK_油管 TG 8度科技 6
-      - HK_油管 TG 8度科技 7
-      - HK_油管 TG 8度科技 8
-      - US_油管 TG 8度科技 3
-      - MK_油管 TG 8度科技
-      - DE_油管 TG 8度科技
-      - US_油管 TG 8度科技 4
-      - US_油管 TG 8度科技 5
-      - US_油管 TG 8度科技 6
-      - GB_油管 TG 8度科技
-      - CA_油管 TG 8度科技
-      - GB_油管 TG 8度科技 2
-      - CA_油管 TG 8度科技 2
-      - JP_油管 TG 8度科技
-      - CA_油管 TG 8度科技 3
-      - US_油管 TG 8度科技 7
-      - CA_油管 TG 8度科技 4
-      - FR_油管 TG 8度科技
-      - CA_油管 TG 8度科技 5
-      - JP_油管 TG 8度科技 2
-      - CA_油管 TG 8度科技 6
-      - CA_油管 TG 8度科技 7
-      - CA_油管 TG 8度科技 8
-      - CA_油管 TG 8度科技 9
-      - CA_油管 TG 8度科技 10
-      - CA_油管 TG 8度科技 11
-      - GB_油管 TG 8度科技 3
-      - CA_油管 TG 8度科技 12
-      - CA_油管 TG 8度科技 13
-      - US_油管 TG 8度科技 8
-      - CA_油管 TG 8度科技 14
-      - CA_油管 TG 8度科技 15
+      - "[香港10]DM香港 广港隧道入口 SS 流媒"
+      - "[香港MS2]三网CN2GIA入口 SS 流媒体支持"
+      - "[美国9]波特兰 长沙BGP入口 流媒体支持"
+      - "[新加坡5]广港入口 SS协议 NF"
+      - "[荷兰VIP-1]10G 下载节点 BGP入口 SS 流媒体支持"
+      - _CA_加拿大
+      - _CA_加拿大 2
+      - "[香港7-2]MS 三网CN2GIA入口 SS 超大带宽低延迟节点"
+      - ZZ_2863 |54.78Mb
+      - "[美国7]Multa 杭州BGP入口 流媒体支持"
+      - _CA_加拿大 3
+      - _CA_加拿大 4
+      - "[马来2]广港AGA入口  原生流媒"
+      - _CA_加拿大 5
+      - "[香港7-BGP]MS 长沙BGP入口 SS"
+      - _CA_加拿大 6
+      - ZZ_3481 |176.12Mb
+      - _CA_加拿大 7
+      - "[香港7]MS 三网CN2GIA入口 超大带宽低延迟节点"
+      - "[台湾3]新北中华电信 珠海移动入口 流媒体支持"
+      - "[日本6]东京Cat 长沙BGP入口 流媒"
+      - "[日本4]东京Cat 杭州BGP入口 流媒体支持"
+      - "[韩国1]首尔KT 珠海BGP入口 NF"
+      - "[日本7]东京NTT 沪日IPLC入口 流媒体支持"
+      - "[印度1]孟买tata 港印缆入口 流媒体支持"
+      - "[日本5]东京Cat 电联接入点 联通电信推荐 流媒体支持"
+      - "[香港MS1]广港AGA加速 流媒体支持"
+      - "[英国1]伦敦Sky 汕头移动入口 流媒体支持"
+      - "[日本2]东京Nico 上海CM入口 流媒体支持"
+      - "[美国4]DO 超大带宽 长沙9929入口 流媒体支持"
+      - _US_美国->🇯🇵_JP_日本
+      - "[新加坡3]沪新IPLC  隐私专线入口 NF"
+      - "[法国1]杭州BGP入口 流媒体支持"
+      - "[美国1]ATT 长沙9929 入口 流媒体支持"
+      - "[日本8]东京NTT 广日BGP入口 流媒体支持"
+      - "[土耳其3]MS全球路由 流媒体支持"
+      - "[阿联酋1]迪拜节点 长沙BGP入口 流媒体支持"
+      - "[阿联酋2]迪拜节点 广港国际入口 流媒体支持"
+      - "[德国2]德国汉堡 沪法德入口 流媒体支持"
+      - "[德国-希腊1]长沙BGP入口 流媒体支持"
+      - "[台湾2]新北中华电信 HT入口 流媒体支持"
+      - "[英国2]伦敦Sky 广州BGP入口 流媒体支持"
+      - default_name
+      - "[荷兰VIP-2]10G 下载节点 深圳移动入口 流媒体支持"
+      - "[新加坡1]微软广新IPLC隐私专线入口 NF"
+      - "[美国3]ATT 杭州BGP入口 流媒体支持"
+      - "[日本3]东京Nico 电联接入点 联通电信推荐 流媒体支持"
+      - "[印度2]孟买tata 长沙BGP入口 流媒体支持"
+      - "[香港6]HKT 广港VNC入口2 流媒体支持"
+      - "[巴西2]里约热内卢Vi VNC内网入口 流媒体支持"
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 油管 TG 8度科技
-      - HK_油管 TG 8度科技
-      - HK_油管 TG 8度科技 2
-      - CN_油管 TG 8度科技
-      - HK_油管 TG 8度科技 3
-      - 油管 TG 8度科技 2
-      - US_油管 TG 8度科技
-      - 油管 TG 8度科技 3
-      - HK_油管 TG 8度科技 4
-      - HK_油管 TG 8度科技 5
-      - US_油管 TG 8度科技 2
-      - HK_油管 TG 8度科技 6
-      - HK_油管 TG 8度科技 7
-      - HK_油管 TG 8度科技 8
-      - US_油管 TG 8度科技 3
-      - MK_油管 TG 8度科技
-      - DE_油管 TG 8度科技
-      - US_油管 TG 8度科技 4
-      - US_油管 TG 8度科技 5
-      - US_油管 TG 8度科技 6
-      - GB_油管 TG 8度科技
-      - CA_油管 TG 8度科技
-      - GB_油管 TG 8度科技 2
-      - CA_油管 TG 8度科技 2
-      - JP_油管 TG 8度科技
-      - CA_油管 TG 8度科技 3
-      - US_油管 TG 8度科技 7
-      - CA_油管 TG 8度科技 4
-      - FR_油管 TG 8度科技
-      - CA_油管 TG 8度科技 5
-      - JP_油管 TG 8度科技 2
-      - CA_油管 TG 8度科技 6
-      - CA_油管 TG 8度科技 7
-      - CA_油管 TG 8度科技 8
-      - CA_油管 TG 8度科技 9
-      - CA_油管 TG 8度科技 10
-      - CA_油管 TG 8度科技 11
-      - GB_油管 TG 8度科技 3
-      - CA_油管 TG 8度科技 12
-      - CA_油管 TG 8度科技 13
-      - US_油管 TG 8度科技 8
-      - CA_油管 TG 8度科技 14
-      - CA_油管 TG 8度科技 15
+      - "[香港10]DM香港 广港隧道入口 SS 流媒"
+      - "[香港MS2]三网CN2GIA入口 SS 流媒体支持"
+      - "[美国9]波特兰 长沙BGP入口 流媒体支持"
+      - "[新加坡5]广港入口 SS协议 NF"
+      - "[荷兰VIP-1]10G 下载节点 BGP入口 SS 流媒体支持"
+      - _CA_加拿大
+      - _CA_加拿大 2
+      - "[香港7-2]MS 三网CN2GIA入口 SS 超大带宽低延迟节点"
+      - ZZ_2863 |54.78Mb
+      - "[美国7]Multa 杭州BGP入口 流媒体支持"
+      - _CA_加拿大 3
+      - _CA_加拿大 4
+      - "[马来2]广港AGA入口  原生流媒"
+      - _CA_加拿大 5
+      - "[香港7-BGP]MS 长沙BGP入口 SS"
+      - _CA_加拿大 6
+      - ZZ_3481 |176.12Mb
+      - _CA_加拿大 7
+      - "[香港7]MS 三网CN2GIA入口 超大带宽低延迟节点"
+      - "[台湾3]新北中华电信 珠海移动入口 流媒体支持"
+      - "[日本6]东京Cat 长沙BGP入口 流媒"
+      - "[日本4]东京Cat 杭州BGP入口 流媒体支持"
+      - "[韩国1]首尔KT 珠海BGP入口 NF"
+      - "[日本7]东京NTT 沪日IPLC入口 流媒体支持"
+      - "[印度1]孟买tata 港印缆入口 流媒体支持"
+      - "[日本5]东京Cat 电联接入点 联通电信推荐 流媒体支持"
+      - "[香港MS1]广港AGA加速 流媒体支持"
+      - "[英国1]伦敦Sky 汕头移动入口 流媒体支持"
+      - "[日本2]东京Nico 上海CM入口 流媒体支持"
+      - "[美国4]DO 超大带宽 长沙9929入口 流媒体支持"
+      - _US_美国->🇯🇵_JP_日本
+      - "[新加坡3]沪新IPLC  隐私专线入口 NF"
+      - "[法国1]杭州BGP入口 流媒体支持"
+      - "[美国1]ATT 长沙9929 入口 流媒体支持"
+      - "[日本8]东京NTT 广日BGP入口 流媒体支持"
+      - "[土耳其3]MS全球路由 流媒体支持"
+      - "[阿联酋1]迪拜节点 长沙BGP入口 流媒体支持"
+      - "[阿联酋2]迪拜节点 广港国际入口 流媒体支持"
+      - "[德国2]德国汉堡 沪法德入口 流媒体支持"
+      - "[德国-希腊1]长沙BGP入口 流媒体支持"
+      - "[台湾2]新北中华电信 HT入口 流媒体支持"
+      - "[英国2]伦敦Sky 广州BGP入口 流媒体支持"
+      - default_name
+      - "[荷兰VIP-2]10G 下载节点 深圳移动入口 流媒体支持"
+      - "[新加坡1]微软广新IPLC隐私专线入口 NF"
+      - "[美国3]ATT 杭州BGP入口 流媒体支持"
+      - "[日本3]东京Nico 电联接入点 联通电信推荐 流媒体支持"
+      - "[印度2]孟买tata 长沙BGP入口 流媒体支持"
+      - "[香港6]HKT 广港VNC入口2 流媒体支持"
+      - "[巴西2]里约热内卢Vi VNC内网入口 流媒体支持"
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -420,49 +489,56 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 油管 TG 8度科技
-      - HK_油管 TG 8度科技
-      - HK_油管 TG 8度科技 2
-      - CN_油管 TG 8度科技
-      - HK_油管 TG 8度科技 3
-      - 油管 TG 8度科技 2
-      - US_油管 TG 8度科技
-      - 油管 TG 8度科技 3
-      - HK_油管 TG 8度科技 4
-      - HK_油管 TG 8度科技 5
-      - US_油管 TG 8度科技 2
-      - HK_油管 TG 8度科技 6
-      - HK_油管 TG 8度科技 7
-      - HK_油管 TG 8度科技 8
-      - US_油管 TG 8度科技 3
-      - MK_油管 TG 8度科技
-      - DE_油管 TG 8度科技
-      - US_油管 TG 8度科技 4
-      - US_油管 TG 8度科技 5
-      - US_油管 TG 8度科技 6
-      - GB_油管 TG 8度科技
-      - CA_油管 TG 8度科技
-      - GB_油管 TG 8度科技 2
-      - CA_油管 TG 8度科技 2
-      - JP_油管 TG 8度科技
-      - CA_油管 TG 8度科技 3
-      - US_油管 TG 8度科技 7
-      - CA_油管 TG 8度科技 4
-      - FR_油管 TG 8度科技
-      - CA_油管 TG 8度科技 5
-      - JP_油管 TG 8度科技 2
-      - CA_油管 TG 8度科技 6
-      - CA_油管 TG 8度科技 7
-      - CA_油管 TG 8度科技 8
-      - CA_油管 TG 8度科技 9
-      - CA_油管 TG 8度科技 10
-      - CA_油管 TG 8度科技 11
-      - GB_油管 TG 8度科技 3
-      - CA_油管 TG 8度科技 12
-      - CA_油管 TG 8度科技 13
-      - US_油管 TG 8度科技 8
-      - CA_油管 TG 8度科技 14
-      - CA_油管 TG 8度科技 15
+      - "[香港10]DM香港 广港隧道入口 SS 流媒"
+      - "[香港MS2]三网CN2GIA入口 SS 流媒体支持"
+      - "[美国9]波特兰 长沙BGP入口 流媒体支持"
+      - "[新加坡5]广港入口 SS协议 NF"
+      - "[荷兰VIP-1]10G 下载节点 BGP入口 SS 流媒体支持"
+      - _CA_加拿大
+      - _CA_加拿大 2
+      - "[香港7-2]MS 三网CN2GIA入口 SS 超大带宽低延迟节点"
+      - ZZ_2863 |54.78Mb
+      - "[美国7]Multa 杭州BGP入口 流媒体支持"
+      - _CA_加拿大 3
+      - _CA_加拿大 4
+      - "[马来2]广港AGA入口  原生流媒"
+      - _CA_加拿大 5
+      - "[香港7-BGP]MS 长沙BGP入口 SS"
+      - _CA_加拿大 6
+      - ZZ_3481 |176.12Mb
+      - _CA_加拿大 7
+      - "[香港7]MS 三网CN2GIA入口 超大带宽低延迟节点"
+      - "[台湾3]新北中华电信 珠海移动入口 流媒体支持"
+      - "[日本6]东京Cat 长沙BGP入口 流媒"
+      - "[日本4]东京Cat 杭州BGP入口 流媒体支持"
+      - "[韩国1]首尔KT 珠海BGP入口 NF"
+      - "[日本7]东京NTT 沪日IPLC入口 流媒体支持"
+      - "[印度1]孟买tata 港印缆入口 流媒体支持"
+      - "[日本5]东京Cat 电联接入点 联通电信推荐 流媒体支持"
+      - "[香港MS1]广港AGA加速 流媒体支持"
+      - "[英国1]伦敦Sky 汕头移动入口 流媒体支持"
+      - "[日本2]东京Nico 上海CM入口 流媒体支持"
+      - "[美国4]DO 超大带宽 长沙9929入口 流媒体支持"
+      - _US_美国->🇯🇵_JP_日本
+      - "[新加坡3]沪新IPLC  隐私专线入口 NF"
+      - "[法国1]杭州BGP入口 流媒体支持"
+      - "[美国1]ATT 长沙9929 入口 流媒体支持"
+      - "[日本8]东京NTT 广日BGP入口 流媒体支持"
+      - "[土耳其3]MS全球路由 流媒体支持"
+      - "[阿联酋1]迪拜节点 长沙BGP入口 流媒体支持"
+      - "[阿联酋2]迪拜节点 广港国际入口 流媒体支持"
+      - "[德国2]德国汉堡 沪法德入口 流媒体支持"
+      - "[德国-希腊1]长沙BGP入口 流媒体支持"
+      - "[台湾2]新北中华电信 HT入口 流媒体支持"
+      - "[英国2]伦敦Sky 广州BGP入口 流媒体支持"
+      - default_name
+      - "[荷兰VIP-2]10G 下载节点 深圳移动入口 流媒体支持"
+      - "[新加坡1]微软广新IPLC隐私专线入口 NF"
+      - "[美国3]ATT 杭州BGP入口 流媒体支持"
+      - "[日本3]东京Nico 电联接入点 联通电信推荐 流媒体支持"
+      - "[印度2]孟买tata 长沙BGP入口 流媒体支持"
+      - "[香港6]HKT 广港VNC入口2 流媒体支持"
+      - "[巴西2]里约热内卢Vi VNC内网入口 流媒体支持"
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
