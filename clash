@@ -5,371 +5,167 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: Vmess 香港 01, server: 116.162.14.197, port: 55633, type: vmess, uuid: ca78a3fd-bb73-4171-937f-62783bd38315, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 深圳 - 香港01 - 隧道3Gbps【vmess】, server: sz.v2bees.net, port: 40002, type: vmess, uuid: 47848b82-f2a7-4a28-a9cb-2196c3d19655, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /images, ws-headers: {Host: v.qq.com}, udp: true}
-  - {name: 新加坡Do01|1x, server: gz.baibianxiaoying.top, port: 20630, type: vmess, uuid: 8b4b3e56-6e8e-3ffb-a3fb-7b42e6c36826, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /doxjp1, ws-headers: {Host: gz.baibianxiaoying.top}, udp: true}
-  - {name: 安徽 - 日本04【vmess】, server: jp.v2bees.net, port: 29002, type: vmess, uuid: 47848b82-f2a7-4a28-a9cb-2196c3d19655, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /images, ws-headers: {Host: v.qq.com}, udp: true}
-  - {name: 新加坡Oracle01|优选原生IP|1x, server: gz.baibianxiaoying.top, port: 20630, type: vmess, uuid: 8b4b3e56-6e8e-3ffb-a3fb-7b42e6c36826, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jgwxjp, ws-headers: {Host: gz.baibianxiaoying.top}, udp: true}
-  - {name: IEPL SZ-SG 01, server: sz-sg-01.wallthefool.org, port: 15701, type: vmess, uuid: 3b85387c-ae6d-4156-b541-95f770d639ed, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 上海 - 韩国02【vmess】, server: kr.v2bees.net, port: 39001, type: vmess, uuid: 47848b82-f2a7-4a28-a9cb-2196c3d19655, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /images, ws-headers: {Host: v.qq.com}, udp: true}
-  - {name: 美国-洛杉矶3, server: v4.leget.xyz, port: 56994, type: vmess, uuid: 3b504215-f876-4754-8247-654720394d82, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 香港6 | 付费节点 | 可刷流量, server: hk6.342401.xyz, port: 80, type: vmess, uuid: 5ef82146-77d2-4e88-a1ed-459f7bba8601, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: tms.dingtalk.com}, udp: true}
-  - {name: 香港4 | 付费节点 | 可刷流量, server: hk4.342401.xyz, port: 443, type: vmess, uuid: 5ef82146-77d2-4e88-a1ed-459f7bba8601, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: tms.dingtalk.com}, udp: true}
-  - {name: 香港1 | 免费节点 | 限速10M, server: hk.342401.xyz, port: 80, type: vmess, uuid: 5ef82146-77d2-4e88-a1ed-459f7bba8601, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: tms.dingtalk.com}, udp: true}
-  - {name: 美国-洛杉矶1, server: v2.leget.xyz, port: 56992, type: vmess, uuid: 3b504215-f876-4754-8247-654720394d82, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 广港丨美国01丨2x, server: cm.xrayport.one, port: 33559, type: vmess, uuid: 6e4889d4-867a-4fae-9ab1-390a1dd98878, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: cm.xrayport.one}, udp: true}
-  - {name: 深圳 - 香港02 - 隧道3Gbps【vmess】, server: sz.v2bees.net, port: 40003, type: vmess, uuid: 47848b82-f2a7-4a28-a9cb-2196c3d19655, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /images, ws-headers: {Host: v.qq.com}, udp: true}
-  - {name: 佛山 - 香港03 - 隧道3Gbps【vmess】, server: jmhk.v2bees.net, port: 40002, type: vmess, uuid: 47848b82-f2a7-4a28-a9cb-2196c3d19655, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /images, ws-headers: {Host: v.qq.com}, udp: true}
-  - {name: 美国-洛杉矶-国内中转2, server: v9.leget.xyz, port: 56909, type: vmess, uuid: 3b504215-f876-4754-8247-654720394d82, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: UK-03, server: uk-detour-03.wallthefool.org, port: 15713, type: vmess, uuid: 3b85387c-ae6d-4156-b541-95f770d639ed, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: HKT-Detour 15, server: hkt-detour-15.wallthefool.org, port: 15115, type: vmess, uuid: 3b85387c-ae6d-4156-b541-95f770d639ed, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国-洛杉矶6, server: v7.leget.xyz, port: 56907, type: vmess, uuid: 3b504215-f876-4754-8247-654720394d82, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国-洛杉矶5, server: v6.leget.xyz, port: 56996, type: vmess, uuid: 3b504215-f876-4754-8247-654720394d82, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 广州 - 日本01（流媒体解锁）【vmess】, server: native.v2bees.net, port: 62005, type: vmess, uuid: 47848b82-f2a7-4a28-a9cb-2196c3d19655, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /images, ws-headers: {Host: v.qq.com}, udp: true}
-  - {name: 美国-洛杉矶-国内中转1, server: v8.leget.xyz, port: 56908, type: vmess, uuid: 3b504215-f876-4754-8247-654720394d82, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 广港丨狮城03丨2x, server: cm.xrayport.one, port: 55551, type: vmess, uuid: 6e4889d4-867a-4fae-9ab1-390a1dd98878, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: cm.xrayport.one}, udp: true}
-  - {name: "|40.46Mb", server: iepl02.zerohost.live, port: 11010, type: vmess, uuid: c008a763-2123-312f-bae6-bf7630517e22, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: iepl02.zerohost.live}, udp: true}
-  - {name: _US_美国->🇯🇵_JP_日本, server: gongyijp2.yigeweizhuang.com, port: 2096, type: vmess, uuid: a94446e3-be9c-4240-9bdf-9b88155a7eb4, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: gongyijp2.yigeweizhuang.com}, udp: true}
-  - {name: SG-Detour 02, server: sg-detour-02.wallthefool.org, port: 15302, type: vmess, uuid: 3b85387c-ae6d-4156-b541-95f770d639ed, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 香港2 | 免费节点 | 限速10M, server: hk2.342401.xyz, port: 80, type: vmess, uuid: 5ef82146-77d2-4e88-a1ed-459f7bba8601, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: tms.dingtalk.com}, udp: true}
-  - {name: 美国-洛杉矶4, server: v5.leget.xyz, port: 56905, type: vmess, uuid: 3b504215-f876-4754-8247-654720394d82, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 广港丨韩国01丨2x, server: cm.xrayport.one, port: 11225, type: vmess, uuid: 6e4889d4-867a-4fae-9ab1-390a1dd98878, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: cm.xrayport.one}, udp: true}
-  - {name: 专线 香港05, server: 111.28.3.110, port: 47765, type: ss, cipher: chacha20-ietf-poly1305, password: ca78a3fd-bb73-4171-937f-62783bd38315, udp: true}
-  - {name: 日本 01 *, server: cn.changsha.ddns.nttss.com, port: 25090, type: ss, cipher: chacha20-ietf-poly1305, password: ca78a3fd-bb73-4171-937f-62783bd38315, udp: true}
-  - {name: 广港丨香港02丨2x, server: cm.xrayport.one, port: 16302, type: ss, cipher: aes-128-gcm, password: 6e4889d4-867a-4fae-9ab1-390a1dd98878, udp: true}
-  - {name: IEPL丨香港04丨3x, server: cm.xrayport.one, port: 10005, type: ss, cipher: aes-128-gcm, password: 6e4889d4-867a-4fae-9ab1-390a1dd98878, udp: true}
-  - {name: 广港丨香港09丨2x, server: cm.xrayport.one, port: 40047, type: ss, cipher: aes-128-gcm, password: 6e4889d4-867a-4fae-9ab1-390a1dd98878, udp: true}
-  - {name: 广州 - 美国02【SS】, server: us.v2bees.net, port: 31102, type: ss, cipher: chacha20-ietf-poly1305, password: 47848b82-f2a7-4a28-a9cb-2196c3d19655, udp: true}
-  - {name: 广港丨香港06丨2x, server: cm.xrayport.one, port: 33896, type: ss, cipher: aes-128-gcm, password: 6e4889d4-867a-4fae-9ab1-390a1dd98878, udp: true}
-  - {name: 香港 06 *, server: cn.lianlun.nttss.com, port: 45263, type: ss, cipher: chacha20-ietf-poly1305, password: ca78a3fd-bb73-4171-937f-62783bd38315, udp: true}
-  - {name: 安徽 - 日本02【SS】, server: jp.v2bees.net, port: 28002, type: ss, cipher: chacha20-ietf-poly1305, password: 47848b82-f2a7-4a28-a9cb-2196c3d19655, udp: true}
-  - {name: 新加坡 02, server: cn.changsha.ddns.nttss.com, port: 25067, type: ss, cipher: chacha20-ietf-poly1305, password: ca78a3fd-bb73-4171-937f-62783bd38315, udp: true}
-  - {name: 广港丨德国01丨2x, server: cm.xrayport.one, port: 11755, type: ss, cipher: aes-128-gcm, password: 6e4889d4-867a-4fae-9ab1-390a1dd98878, udp: true}
-  - {name: 广州 - 美国03【SS】, server: us.v2bees.net, port: 31103, type: ss, cipher: chacha20-ietf-poly1305, password: 47848b82-f2a7-4a28-a9cb-2196c3d19655, udp: true}
-  - {name: 广港丨日本01丨2x, server: cm.xrayport.one, port: 36006, type: ss, cipher: aes-128-gcm, password: 6e4889d4-867a-4fae-9ab1-390a1dd98878, udp: true}
-  - {name: 日本 02 *, server: cn.changsha.ddns.nttss.com, port: 25086, type: ss, cipher: chacha20-ietf-poly1305, password: ca78a3fd-bb73-4171-937f-62783bd38315, udp: true}
-  - {name: 美国 02 *, server: cn.shenzhen.ddns.nttss.com, port: 25114, type: ss, cipher: chacha20-ietf-poly1305, password: ca78a3fd-bb73-4171-937f-62783bd38315, udp: true}
-  - {name: 上海 - 香港03【SS】, server: gyhk.v2bees.net, port: 26003, type: ss, cipher: chacha20-ietf-poly1305, password: 47848b82-f2a7-4a28-a9cb-2196c3d19655, udp: true}
-  - {name: 上海 - 韩国01【SS】, server: kr.v2bees.net, port: 38001, type: ss, cipher: chacha20-ietf-poly1305, password: 47848b82-f2a7-4a28-a9cb-2196c3d19655, udp: true}
-  - {name: 广港丨香港05丨2x, server: cm.xrayport.one, port: 33897, type: ss, cipher: aes-128-gcm, password: 6e4889d4-867a-4fae-9ab1-390a1dd98878, udp: true}
-  - {name: 新加坡 03, server: cn.changsha.ddns.nttss.com, port: 25070, type: ss, cipher: chacha20-ietf-poly1305, password: ca78a3fd-bb73-4171-937f-62783bd38315, udp: true}
-  - {name: 广港丨香港01丨2x, server: cm.xrayport.one, port: 444, type: ss, cipher: aes-128-gcm, password: 6e4889d4-867a-4fae-9ab1-390a1dd98878, udp: true}
-  - {name: IEPL丨香港07丨3x, server: cm.xrayport.one, port: 44559, type: ss, cipher: aes-128-gcm, password: 6e4889d4-867a-4fae-9ab1-390a1dd98878, udp: true}
-  - {name: 广港丨越南01丨2x, server: cm.xrayport.one, port: 53398, type: ss, cipher: aes-128-gcm, password: 6e4889d4-867a-4fae-9ab1-390a1dd98878, udp: true}
-  - {name: 安徽 - 日本01【SS】, server: jp.v2bees.net, port: 28001, type: ss, cipher: chacha20-ietf-poly1305, password: 47848b82-f2a7-4a28-a9cb-2196c3d19655, udp: true}
-  - {name: 广州 - 台湾02（流媒体解锁）【SS】「2x」, server: native.v2bees.net, port: 62003, type: ss, cipher: chacha20-ietf-poly1305, password: 47848b82-f2a7-4a28-a9cb-2196c3d19655, udp: true}
-  - {name: 广港丨英国01丨2x, server: cm.xrayport.one, port: 15016, type: ss, cipher: aes-128-gcm, password: 6e4889d4-867a-4fae-9ab1-390a1dd98878, udp: true}
-  - {name: 广州 - 香港01（流媒体解锁）【SS】「2x」, server: native.v2bees.net, port: 62001, type: ss, cipher: chacha20-ietf-poly1305, password: 47848b82-f2a7-4a28-a9cb-2196c3d19655, udp: true}
-  - {name: 台湾 01 *, server: cn.lianlun.nttss.com, port: 45330, type: ss, cipher: chacha20-ietf-poly1305, password: ca78a3fd-bb73-4171-937f-62783bd38315, udp: true}
-  - {name: 广港丨狮城01丨2x, server: cm.xrayport.one, port: 53001, type: ss, cipher: aes-128-gcm, password: 6e4889d4-867a-4fae-9ab1-390a1dd98878, udp: true}
-  - {name: 广港丨美国03丨2x, server: cm.xrayport.one, port: 54548, type: ss, cipher: aes-128-gcm, password: 6e4889d4-867a-4fae-9ab1-390a1dd98878, udp: true}
-  - {name: 广港丨土耳其01丨2x, server: cm.xrayport.one, port: 11756, type: ss, cipher: aes-128-gcm, password: 6e4889d4-867a-4fae-9ab1-390a1dd98878, udp: true}
-  - {name: 广港丨韩国03丨2x, server: cm.xrayport.one, port: 11226, type: ss, cipher: aes-128-gcm, password: 6e4889d4-867a-4fae-9ab1-390a1dd98878, udp: true}
-  - {name: 韩国 Oracle|中转|0.5x流量消耗|, server: 183.dxmax.co, port: 17208, type: trojan, password: 9cfda557-221e-4383-a9ba-84735f055c28, sni: 183.dxmax.co, skip-cert-verify: true, udp: true}
-  - {name: 高速AAA, server: iplc.gs1024.com, port: 20227, type: trojan, password: 1b693eb3-3241-362a-9001-5b503789cfbe, sni: iplc.gs1024.com, skip-cert-verify: true, udp: true}
-  - {name: 高速6, server: g9.gs1024.com, port: 21223, type: trojan, password: 1b693eb3-3241-362a-9001-5b503789cfbe, sni: g9.gs1024.com, skip-cert-verify: true, udp: true}
-  - {name: 香港 Nero|移动入口01|NF|, server: 197.dxmax.co, port: 52105, type: trojan, password: 9cfda557-221e-4383-a9ba-84735f055c28, sni: 197.dxmax.co, skip-cert-verify: true, udp: true}
-  - {name: 高速BBB, server: g3.gs1024.com, port: 21228, type: trojan, password: 1b693eb3-3241-362a-9001-5b503789cfbe, sni: g3.gs1024.com, skip-cert-verify: true, udp: true}
-  - {name: 新加坡 Oracle|中转|NF|, server: 183.dxmax.co, port: 17212, type: trojan, password: 9cfda557-221e-4383-a9ba-84735f055c28, sni: 183.dxmax.co, skip-cert-verify: true, udp: true}
-  - {name: 雅加达 AWS月抛|SG-NF|广移|X0.7, server: 183.dxmax.co, port: 17213, type: trojan, password: 9cfda557-221e-4383-a9ba-84735f055c28, sni: 183.dxmax.co, skip-cert-verify: true, udp: true}
-  - {name: 美国 Oracle|中转|NF.Hulu.HBO|, server: cn2.anoob.icu, port: 49758, type: trojan, password: 9cfda557-221e-4383-a9ba-84735f055c28, sni: cn2.anoob.icu, skip-cert-verify: true, udp: true}
-  - {name: vpnpool-SG-DigitalOcean, server: 117.185.229.24, port: 21223, type: trojan, password: 1b693eb3-3241-362a-9001-5b503789cfbe, skip-cert-verify: true, udp: true}
-  - {name: 香港 Nero|移动入口02|NF|, server: 183.dxmax.co, port: 17202, type: trojan, password: 9cfda557-221e-4383-a9ba-84735f055c28, sni: 183.dxmax.co, skip-cert-verify: true, udp: true}
-  - {name: 香港 HKT|中转|NF|, server: 197.dxmax.co, port: 52104, type: trojan, password: 9cfda557-221e-4383-a9ba-84735f055c28, sni: 197.dxmax.co, skip-cert-verify: true, udp: true}
-  - {name: vpnpool-Bengaluru-DigitalOcean, server: 183.240.132.27, port: 21228, type: trojan, password: 1b693eb3-3241-362a-9001-5b503789cfbe, skip-cert-verify: true, udp: true}
-  - {name: 日本 Nero|国内入口02|, server: 183.dxmax.co, port: 17206, type: trojan, password: 9cfda557-221e-4383-a9ba-84735f055c28, sni: 183.dxmax.co, skip-cert-verify: true, udp: true}
-  - {name: 俄罗斯 01|中转|, server: shct2.forgebukkit.com, port: 35731, type: trojan, password: 9cfda557-221e-4383-a9ba-84735f055c28, sni: shct2.forgebukkit.com, skip-cert-verify: true, udp: true}
-  - {name: 美国 GGC|中转|HBO|, server: cn2.anoob.icu, port: 30454, type: trojan, password: 9cfda557-221e-4383-a9ba-84735f055c28, sni: cn2.anoob.icu, skip-cert-verify: true, udp: true}
-  - {name: 英国 Do|中转|BBC|, server: 120.232.192.211, port: 9938, type: trojan, password: 9cfda557-221e-4383-a9ba-84735f055c28, skip-cert-verify: true, udp: true}
-  - {name: 香港 HKT|临时CN2中转|NF|, server: cs.anoob.icu, port: 25260, type: trojan, password: 9cfda557-221e-4383-a9ba-84735f055c28, sni: cs.anoob.icu, skip-cert-verify: true, udp: true}
-  - {name: 日本 Nero|广移入口01|, server: 197.dxmax.co, port: 52107, type: trojan, password: 9cfda557-221e-4383-a9ba-84735f055c28, sni: 197.dxmax.co, skip-cert-verify: true, udp: true}
-  - {name: 印度 Do|中转|, server: 183.dxmax.co, port: 17214, type: trojan, password: 9cfda557-221e-4383-a9ba-84735f055c28, sni: 183.dxmax.co, skip-cert-verify: true, udp: true}
-  - {name: 台湾 Scloud|中转|动漫疯|, server: 183.dxmax.co, port: 17205, type: trojan, password: 9cfda557-221e-4383-a9ba-84735f055c28, sni: 183.dxmax.co, skip-cert-verify: true, udp: true}
-  - {name: vpnpool-San Jose-ColoCrossing, server: 117.185.229.24, port: 21224, type: trojan, password: 1b693eb3-3241-362a-9001-5b503789cfbe, skip-cert-verify: true, udp: true}
-  - {name: 美国 INAP|中转|NF|, server: cn2.anoob.icu, port: 48374, type: trojan, password: 9cfda557-221e-4383-a9ba-84735f055c28, sni: cn2.anoob.icu, skip-cert-verify: true, udp: true}
-  - {name: vpnpool-Tokyo-Oracle, server: 117.185.229.24, port: 21231, type: trojan, password: 1b693eb3-3241-362a-9001-5b503789cfbe, skip-cert-verify: true, udp: true}
-  - {name: 俄罗斯 02|中转|NF|, server: gy3.anoob.icu, port: 44930, type: trojan, password: 9cfda557-221e-4383-a9ba-84735f055c28, sni: gy3.anoob.icu, skip-cert-verify: true, udp: true}
-  - {name: 土耳其|中转|, server: 183.232.163.246, port: 36942, type: trojan, password: 9cfda557-221e-4383-a9ba-84735f055c28, skip-cert-verify: true, udp: true}
-  - {name: 美国 GTT|中转|NF.Hulu.HBO|, server: cn2.anoob.icu, port: 24144, type: trojan, password: 9cfda557-221e-4383-a9ba-84735f055c28, sni: cn2.anoob.icu, skip-cert-verify: true, udp: true}
-  - {name: 日本 AWS月抛|广州移动|, server: 183.dxmax.co, port: 17207, type: trojan, password: 9cfda557-221e-4383-a9ba-84735f055c28, sni: 183.dxmax.co, skip-cert-verify: true, udp: true}
+  - {name: HK_油管 TG 8度科技, server: hk8.342401.xyz, port: 443, type: vmess, uuid: 5ef82146-77d2-4e88-a1ed-459f7bba8601, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: hk8.342401.xyz}, udp: true}
+  - {name: HK_油管 TG 8度科技 2, server: hk5.342401.xyz, port: 80, type: vmess, uuid: 5ef82146-77d2-4e88-a1ed-459f7bba8601, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: tms.dingtalk.com}, udp: true}
+  - {name: US_油管 TG 8度科技, server: icook.hk, port: 443, type: vmess, uuid: 9a85a293-3eb7-4189-e17d-bfa46f9ad0ce, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /freebaipiao, ws-headers: {Host: xmlinodejp2.aifx.eu.org}, udp: true}
+  - {name: 油管 TG 8度科技, server: gongyius1.yigeweizhuang.com, port: 2096, type: vmess, uuid: a94446e3-be9c-4240-9bdf-9b88155a7eb4, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: gongyius1.yigeweizhuang.com}, udp: true}
+  - {name: US_油管 TG 8度科技 2, server: 45.35.84.162, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: usa-dallas.lvuft.com}, udp: true}
+  - {name: 油管 TG 8度科技 2, server: gongyisg1.yigeweizhuang.com, port: 2096, type: vmess, uuid: a94446e3-be9c-4240-9bdf-9b88155a7eb4, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: gongyisg1.yigeweizhuang.com}, udp: true}
+  - {name: 油管 TG 8度科技 3, server: gongyijp2.yigeweizhuang.com, port: 2096, type: vmess, uuid: a94446e3-be9c-4240-9bdf-9b88155a7eb4, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: gongyijp2.yigeweizhuang.com}, udp: true}
+  - {name: CA_油管 TG 8度科技, server: 134.195.196.81, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: CA_油管 TG 8度科技 2, server: 134.195.196.81, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: CH_油管 TG 8度科技, server: sw.gfwglass.tk, port: 443, type: vmess, uuid: 5f90fd9b-c4a4-44bb-b706-2e92ffe1259a, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: sw.gfwglass.tk}, udp: true}
+  - {name: CA_油管 TG 8度科技 3, server: 134.195.196.81, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: CA_油管 TG 8度科技 4, server: 134.195.196.81, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: CA_油管 TG 8度科技 5, server: 134.195.196.81, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: US_油管 TG 8度科技 3, server: gongyijp1.yigeweizhuang.com, port: 2096, type: vmess, uuid: a94446e3-be9c-4240-9bdf-9b88155a7eb4, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: gongyijp1.yigeweizhuang.com}, udp: true}
+  - {name: CA_油管 TG 8度科技 6, server: 134.195.196.81, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: FR_油管 TG 8度科技, server: 141.95.0.26, port: 826, type: ss, cipher: chacha20-ietf-poly1305, password: sF43Xt2gONqcgFX563, udp: true}
+  - {name: 油管 TG 8度科技 4, server: cm.db-link.in, port: 443, type: vmess, uuid: 9b6dd8ea-fe2e-3508-b099-8e25bdf6b5fe, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /db, ws-headers: {Host: us01.db-link.in}, udp: true}
+  - {name: CA_油管 TG 8度科技 7, server: 134.195.196.68, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: CA_油管 TG 8度科技 8, server: 134.195.196.81, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
+  - {name: CA_油管 TG 8度科技 9, server: 134.195.196.81, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: CA_油管 TG 8度科技 10, server: 134.195.196.81, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: CA_油管 TG 8度科技 11, server: 134.195.196.81, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: CA_油管 TG 8度科技 12, server: 134.195.196.81, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: CA_油管 TG 8度科技 13, server: 134.195.196.81, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: CA_油管 TG 8度科技 14, server: 134.195.196.81, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: CA_油管 TG 8度科技 15, server: 134.195.196.81, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: CA_油管 TG 8度科技 16, server: 134.195.196.81, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: CA_油管 TG 8度科技 17, server: 134.195.196.81, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: CA_油管 TG 8度科技 18, server: 134.195.196.81, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: CA_油管 TG 8度科技 19, server: 134.195.196.187, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: CA_油管 TG 8度科技 20, server: 134.195.196.68, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: CA_油管 TG 8度科技 21, server: 134.195.196.187, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: CA_油管 TG 8度科技 22, server: 134.195.196.187, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: CA_油管 TG 8度科技 23, server: 134.195.196.68, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: CA_油管 TG 8度科技 24, server: 134.195.196.187, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: US_油管 TG 8度科技 4, server: 169.197.142.99, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Vmess 香港 01
-      - 深圳 - 香港01 - 隧道3Gbps【vmess】
-      - 新加坡Do01|1x
-      - 安徽 - 日本04【vmess】
-      - 新加坡Oracle01|优选原生IP|1x
-      - IEPL SZ-SG 01
-      - 上海 - 韩国02【vmess】
-      - 美国-洛杉矶3
-      - 香港6 | 付费节点 | 可刷流量
-      - 香港4 | 付费节点 | 可刷流量
-      - 香港1 | 免费节点 | 限速10M
-      - 美国-洛杉矶1
-      - 广港丨美国01丨2x
-      - 深圳 - 香港02 - 隧道3Gbps【vmess】
-      - 佛山 - 香港03 - 隧道3Gbps【vmess】
-      - 美国-洛杉矶-国内中转2
-      - UK-03
-      - HKT-Detour 15
-      - 美国-洛杉矶6
-      - 美国-洛杉矶5
-      - 广州 - 日本01（流媒体解锁）【vmess】
-      - 美国-洛杉矶-国内中转1
-      - 广港丨狮城03丨2x
-      - "|40.46Mb"
-      - _US_美国->🇯🇵_JP_日本
-      - SG-Detour 02
-      - 香港2 | 免费节点 | 限速10M
-      - 美国-洛杉矶4
-      - 广港丨韩国01丨2x
-      - 专线 香港05
-      - 日本 01 *
-      - 广港丨香港02丨2x
-      - IEPL丨香港04丨3x
-      - 广港丨香港09丨2x
-      - 广州 - 美国02【SS】
-      - 广港丨香港06丨2x
-      - 香港 06 *
-      - 安徽 - 日本02【SS】
-      - 新加坡 02
-      - 广港丨德国01丨2x
-      - 广州 - 美国03【SS】
-      - 广港丨日本01丨2x
-      - 日本 02 *
-      - 美国 02 *
-      - 上海 - 香港03【SS】
-      - 上海 - 韩国01【SS】
-      - 广港丨香港05丨2x
-      - 新加坡 03
-      - 广港丨香港01丨2x
-      - IEPL丨香港07丨3x
-      - 广港丨越南01丨2x
-      - 安徽 - 日本01【SS】
-      - 广州 - 台湾02（流媒体解锁）【SS】「2x」
-      - 广港丨英国01丨2x
-      - 广州 - 香港01（流媒体解锁）【SS】「2x」
-      - 台湾 01 *
-      - 广港丨狮城01丨2x
-      - 广港丨美国03丨2x
-      - 广港丨土耳其01丨2x
-      - 广港丨韩国03丨2x
-      - 韩国 Oracle|中转|0.5x流量消耗|
-      - 高速AAA
-      - 高速6
-      - 香港 Nero|移动入口01|NF|
-      - 高速BBB
-      - 新加坡 Oracle|中转|NF|
-      - 雅加达 AWS月抛|SG-NF|广移|X0.7
-      - 美国 Oracle|中转|NF.Hulu.HBO|
-      - vpnpool-SG-DigitalOcean
-      - 香港 Nero|移动入口02|NF|
-      - 香港 HKT|中转|NF|
-      - vpnpool-Bengaluru-DigitalOcean
-      - 日本 Nero|国内入口02|
-      - 俄罗斯 01|中转|
-      - 美国 GGC|中转|HBO|
-      - 英国 Do|中转|BBC|
-      - 香港 HKT|临时CN2中转|NF|
-      - 日本 Nero|广移入口01|
-      - 印度 Do|中转|
-      - 台湾 Scloud|中转|动漫疯|
-      - vpnpool-San Jose-ColoCrossing
-      - 美国 INAP|中转|NF|
-      - vpnpool-Tokyo-Oracle
-      - 俄罗斯 02|中转|NF|
-      - 土耳其|中转|
-      - 美国 GTT|中转|NF.Hulu.HBO|
-      - 日本 AWS月抛|广州移动|
+      - HK_油管 TG 8度科技
+      - HK_油管 TG 8度科技 2
+      - US_油管 TG 8度科技
+      - 油管 TG 8度科技
+      - US_油管 TG 8度科技 2
+      - 油管 TG 8度科技 2
+      - 油管 TG 8度科技 3
+      - CA_油管 TG 8度科技
+      - CA_油管 TG 8度科技 2
+      - CH_油管 TG 8度科技
+      - CA_油管 TG 8度科技 3
+      - CA_油管 TG 8度科技 4
+      - CA_油管 TG 8度科技 5
+      - US_油管 TG 8度科技 3
+      - CA_油管 TG 8度科技 6
+      - FR_油管 TG 8度科技
+      - 油管 TG 8度科技 4
+      - CA_油管 TG 8度科技 7
+      - CA_油管 TG 8度科技 8
+      - CA_油管 TG 8度科技 9
+      - CA_油管 TG 8度科技 10
+      - CA_油管 TG 8度科技 11
+      - CA_油管 TG 8度科技 12
+      - CA_油管 TG 8度科技 13
+      - CA_油管 TG 8度科技 14
+      - CA_油管 TG 8度科技 15
+      - CA_油管 TG 8度科技 16
+      - CA_油管 TG 8度科技 17
+      - CA_油管 TG 8度科技 18
+      - CA_油管 TG 8度科技 19
+      - CA_油管 TG 8度科技 20
+      - CA_油管 TG 8度科技 21
+      - CA_油管 TG 8度科技 22
+      - CA_油管 TG 8度科技 23
+      - CA_油管 TG 8度科技 24
+      - US_油管 TG 8度科技 4
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - Vmess 香港 01
-      - 深圳 - 香港01 - 隧道3Gbps【vmess】
-      - 新加坡Do01|1x
-      - 安徽 - 日本04【vmess】
-      - 新加坡Oracle01|优选原生IP|1x
-      - IEPL SZ-SG 01
-      - 上海 - 韩国02【vmess】
-      - 美国-洛杉矶3
-      - 香港6 | 付费节点 | 可刷流量
-      - 香港4 | 付费节点 | 可刷流量
-      - 香港1 | 免费节点 | 限速10M
-      - 美国-洛杉矶1
-      - 广港丨美国01丨2x
-      - 深圳 - 香港02 - 隧道3Gbps【vmess】
-      - 佛山 - 香港03 - 隧道3Gbps【vmess】
-      - 美国-洛杉矶-国内中转2
-      - UK-03
-      - HKT-Detour 15
-      - 美国-洛杉矶6
-      - 美国-洛杉矶5
-      - 广州 - 日本01（流媒体解锁）【vmess】
-      - 美国-洛杉矶-国内中转1
-      - 广港丨狮城03丨2x
-      - "|40.46Mb"
-      - _US_美国->🇯🇵_JP_日本
-      - SG-Detour 02
-      - 香港2 | 免费节点 | 限速10M
-      - 美国-洛杉矶4
-      - 广港丨韩国01丨2x
-      - 专线 香港05
-      - 日本 01 *
-      - 广港丨香港02丨2x
-      - IEPL丨香港04丨3x
-      - 广港丨香港09丨2x
-      - 广州 - 美国02【SS】
-      - 广港丨香港06丨2x
-      - 香港 06 *
-      - 安徽 - 日本02【SS】
-      - 新加坡 02
-      - 广港丨德国01丨2x
-      - 广州 - 美国03【SS】
-      - 广港丨日本01丨2x
-      - 日本 02 *
-      - 美国 02 *
-      - 上海 - 香港03【SS】
-      - 上海 - 韩国01【SS】
-      - 广港丨香港05丨2x
-      - 新加坡 03
-      - 广港丨香港01丨2x
-      - IEPL丨香港07丨3x
-      - 广港丨越南01丨2x
-      - 安徽 - 日本01【SS】
-      - 广州 - 台湾02（流媒体解锁）【SS】「2x」
-      - 广港丨英国01丨2x
-      - 广州 - 香港01（流媒体解锁）【SS】「2x」
-      - 台湾 01 *
-      - 广港丨狮城01丨2x
-      - 广港丨美国03丨2x
-      - 广港丨土耳其01丨2x
-      - 广港丨韩国03丨2x
-      - 韩国 Oracle|中转|0.5x流量消耗|
-      - 高速AAA
-      - 高速6
-      - 香港 Nero|移动入口01|NF|
-      - 高速BBB
-      - 新加坡 Oracle|中转|NF|
-      - 雅加达 AWS月抛|SG-NF|广移|X0.7
-      - 美国 Oracle|中转|NF.Hulu.HBO|
-      - vpnpool-SG-DigitalOcean
-      - 香港 Nero|移动入口02|NF|
-      - 香港 HKT|中转|NF|
-      - vpnpool-Bengaluru-DigitalOcean
-      - 日本 Nero|国内入口02|
-      - 俄罗斯 01|中转|
-      - 美国 GGC|中转|HBO|
-      - 英国 Do|中转|BBC|
-      - 香港 HKT|临时CN2中转|NF|
-      - 日本 Nero|广移入口01|
-      - 印度 Do|中转|
-      - 台湾 Scloud|中转|动漫疯|
-      - vpnpool-San Jose-ColoCrossing
-      - 美国 INAP|中转|NF|
-      - vpnpool-Tokyo-Oracle
-      - 俄罗斯 02|中转|NF|
-      - 土耳其|中转|
-      - 美国 GTT|中转|NF.Hulu.HBO|
-      - 日本 AWS月抛|广州移动|
+      - HK_油管 TG 8度科技
+      - HK_油管 TG 8度科技 2
+      - US_油管 TG 8度科技
+      - 油管 TG 8度科技
+      - US_油管 TG 8度科技 2
+      - 油管 TG 8度科技 2
+      - 油管 TG 8度科技 3
+      - CA_油管 TG 8度科技
+      - CA_油管 TG 8度科技 2
+      - CH_油管 TG 8度科技
+      - CA_油管 TG 8度科技 3
+      - CA_油管 TG 8度科技 4
+      - CA_油管 TG 8度科技 5
+      - US_油管 TG 8度科技 3
+      - CA_油管 TG 8度科技 6
+      - FR_油管 TG 8度科技
+      - 油管 TG 8度科技 4
+      - CA_油管 TG 8度科技 7
+      - CA_油管 TG 8度科技 8
+      - CA_油管 TG 8度科技 9
+      - CA_油管 TG 8度科技 10
+      - CA_油管 TG 8度科技 11
+      - CA_油管 TG 8度科技 12
+      - CA_油管 TG 8度科技 13
+      - CA_油管 TG 8度科技 14
+      - CA_油管 TG 8度科技 15
+      - CA_油管 TG 8度科技 16
+      - CA_油管 TG 8度科技 17
+      - CA_油管 TG 8度科技 18
+      - CA_油管 TG 8度科技 19
+      - CA_油管 TG 8度科技 20
+      - CA_油管 TG 8度科技 21
+      - CA_油管 TG 8度科技 22
+      - CA_油管 TG 8度科技 23
+      - CA_油管 TG 8度科技 24
+      - US_油管 TG 8度科技 4
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Vmess 香港 01
-      - 深圳 - 香港01 - 隧道3Gbps【vmess】
-      - 新加坡Do01|1x
-      - 安徽 - 日本04【vmess】
-      - 新加坡Oracle01|优选原生IP|1x
-      - IEPL SZ-SG 01
-      - 上海 - 韩国02【vmess】
-      - 美国-洛杉矶3
-      - 香港6 | 付费节点 | 可刷流量
-      - 香港4 | 付费节点 | 可刷流量
-      - 香港1 | 免费节点 | 限速10M
-      - 美国-洛杉矶1
-      - 广港丨美国01丨2x
-      - 深圳 - 香港02 - 隧道3Gbps【vmess】
-      - 佛山 - 香港03 - 隧道3Gbps【vmess】
-      - 美国-洛杉矶-国内中转2
-      - UK-03
-      - HKT-Detour 15
-      - 美国-洛杉矶6
-      - 美国-洛杉矶5
-      - 广州 - 日本01（流媒体解锁）【vmess】
-      - 美国-洛杉矶-国内中转1
-      - 广港丨狮城03丨2x
-      - "|40.46Mb"
-      - _US_美国->🇯🇵_JP_日本
-      - SG-Detour 02
-      - 香港2 | 免费节点 | 限速10M
-      - 美国-洛杉矶4
-      - 广港丨韩国01丨2x
-      - 专线 香港05
-      - 日本 01 *
-      - 广港丨香港02丨2x
-      - IEPL丨香港04丨3x
-      - 广港丨香港09丨2x
-      - 广州 - 美国02【SS】
-      - 广港丨香港06丨2x
-      - 香港 06 *
-      - 安徽 - 日本02【SS】
-      - 新加坡 02
-      - 广港丨德国01丨2x
-      - 广州 - 美国03【SS】
-      - 广港丨日本01丨2x
-      - 日本 02 *
-      - 美国 02 *
-      - 上海 - 香港03【SS】
-      - 上海 - 韩国01【SS】
-      - 广港丨香港05丨2x
-      - 新加坡 03
-      - 广港丨香港01丨2x
-      - IEPL丨香港07丨3x
-      - 广港丨越南01丨2x
-      - 安徽 - 日本01【SS】
-      - 广州 - 台湾02（流媒体解锁）【SS】「2x」
-      - 广港丨英国01丨2x
-      - 广州 - 香港01（流媒体解锁）【SS】「2x」
-      - 台湾 01 *
-      - 广港丨狮城01丨2x
-      - 广港丨美国03丨2x
-      - 广港丨土耳其01丨2x
-      - 广港丨韩国03丨2x
-      - 韩国 Oracle|中转|0.5x流量消耗|
-      - 高速AAA
-      - 高速6
-      - 香港 Nero|移动入口01|NF|
-      - 高速BBB
-      - 新加坡 Oracle|中转|NF|
-      - 雅加达 AWS月抛|SG-NF|广移|X0.7
-      - 美国 Oracle|中转|NF.Hulu.HBO|
-      - vpnpool-SG-DigitalOcean
-      - 香港 Nero|移动入口02|NF|
-      - 香港 HKT|中转|NF|
-      - vpnpool-Bengaluru-DigitalOcean
-      - 日本 Nero|国内入口02|
-      - 俄罗斯 01|中转|
-      - 美国 GGC|中转|HBO|
-      - 英国 Do|中转|BBC|
-      - 香港 HKT|临时CN2中转|NF|
-      - 日本 Nero|广移入口01|
-      - 印度 Do|中转|
-      - 台湾 Scloud|中转|动漫疯|
-      - vpnpool-San Jose-ColoCrossing
-      - 美国 INAP|中转|NF|
-      - vpnpool-Tokyo-Oracle
-      - 俄罗斯 02|中转|NF|
-      - 土耳其|中转|
-      - 美国 GTT|中转|NF.Hulu.HBO|
-      - 日本 AWS月抛|广州移动|
+      - HK_油管 TG 8度科技
+      - HK_油管 TG 8度科技 2
+      - US_油管 TG 8度科技
+      - 油管 TG 8度科技
+      - US_油管 TG 8度科技 2
+      - 油管 TG 8度科技 2
+      - 油管 TG 8度科技 3
+      - CA_油管 TG 8度科技
+      - CA_油管 TG 8度科技 2
+      - CH_油管 TG 8度科技
+      - CA_油管 TG 8度科技 3
+      - CA_油管 TG 8度科技 4
+      - CA_油管 TG 8度科技 5
+      - US_油管 TG 8度科技 3
+      - CA_油管 TG 8度科技 6
+      - FR_油管 TG 8度科技
+      - 油管 TG 8度科技 4
+      - CA_油管 TG 8度科技 7
+      - CA_油管 TG 8度科技 8
+      - CA_油管 TG 8度科技 9
+      - CA_油管 TG 8度科技 10
+      - CA_油管 TG 8度科技 11
+      - CA_油管 TG 8度科技 12
+      - CA_油管 TG 8度科技 13
+      - CA_油管 TG 8度科技 14
+      - CA_油管 TG 8度科技 15
+      - CA_油管 TG 8度科技 16
+      - CA_油管 TG 8度科技 17
+      - CA_油管 TG 8度科技 18
+      - CA_油管 TG 8度科技 19
+      - CA_油管 TG 8度科技 20
+      - CA_油管 TG 8度科技 21
+      - CA_油管 TG 8度科技 22
+      - CA_油管 TG 8度科技 23
+      - CA_油管 TG 8度科技 24
+      - US_油管 TG 8度科技 4
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -388,413 +184,171 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Vmess 香港 01
-      - 深圳 - 香港01 - 隧道3Gbps【vmess】
-      - 新加坡Do01|1x
-      - 安徽 - 日本04【vmess】
-      - 新加坡Oracle01|优选原生IP|1x
-      - IEPL SZ-SG 01
-      - 上海 - 韩国02【vmess】
-      - 美国-洛杉矶3
-      - 香港6 | 付费节点 | 可刷流量
-      - 香港4 | 付费节点 | 可刷流量
-      - 香港1 | 免费节点 | 限速10M
-      - 美国-洛杉矶1
-      - 广港丨美国01丨2x
-      - 深圳 - 香港02 - 隧道3Gbps【vmess】
-      - 佛山 - 香港03 - 隧道3Gbps【vmess】
-      - 美国-洛杉矶-国内中转2
-      - UK-03
-      - HKT-Detour 15
-      - 美国-洛杉矶6
-      - 美国-洛杉矶5
-      - 广州 - 日本01（流媒体解锁）【vmess】
-      - 美国-洛杉矶-国内中转1
-      - 广港丨狮城03丨2x
-      - "|40.46Mb"
-      - _US_美国->🇯🇵_JP_日本
-      - SG-Detour 02
-      - 香港2 | 免费节点 | 限速10M
-      - 美国-洛杉矶4
-      - 广港丨韩国01丨2x
-      - 专线 香港05
-      - 日本 01 *
-      - 广港丨香港02丨2x
-      - IEPL丨香港04丨3x
-      - 广港丨香港09丨2x
-      - 广州 - 美国02【SS】
-      - 广港丨香港06丨2x
-      - 香港 06 *
-      - 安徽 - 日本02【SS】
-      - 新加坡 02
-      - 广港丨德国01丨2x
-      - 广州 - 美国03【SS】
-      - 广港丨日本01丨2x
-      - 日本 02 *
-      - 美国 02 *
-      - 上海 - 香港03【SS】
-      - 上海 - 韩国01【SS】
-      - 广港丨香港05丨2x
-      - 新加坡 03
-      - 广港丨香港01丨2x
-      - IEPL丨香港07丨3x
-      - 广港丨越南01丨2x
-      - 安徽 - 日本01【SS】
-      - 广州 - 台湾02（流媒体解锁）【SS】「2x」
-      - 广港丨英国01丨2x
-      - 广州 - 香港01（流媒体解锁）【SS】「2x」
-      - 台湾 01 *
-      - 广港丨狮城01丨2x
-      - 广港丨美国03丨2x
-      - 广港丨土耳其01丨2x
-      - 广港丨韩国03丨2x
-      - 韩国 Oracle|中转|0.5x流量消耗|
-      - 高速AAA
-      - 高速6
-      - 香港 Nero|移动入口01|NF|
-      - 高速BBB
-      - 新加坡 Oracle|中转|NF|
-      - 雅加达 AWS月抛|SG-NF|广移|X0.7
-      - 美国 Oracle|中转|NF.Hulu.HBO|
-      - vpnpool-SG-DigitalOcean
-      - 香港 Nero|移动入口02|NF|
-      - 香港 HKT|中转|NF|
-      - vpnpool-Bengaluru-DigitalOcean
-      - 日本 Nero|国内入口02|
-      - 俄罗斯 01|中转|
-      - 美国 GGC|中转|HBO|
-      - 英国 Do|中转|BBC|
-      - 香港 HKT|临时CN2中转|NF|
-      - 日本 Nero|广移入口01|
-      - 印度 Do|中转|
-      - 台湾 Scloud|中转|动漫疯|
-      - vpnpool-San Jose-ColoCrossing
-      - 美国 INAP|中转|NF|
-      - vpnpool-Tokyo-Oracle
-      - 俄罗斯 02|中转|NF|
-      - 土耳其|中转|
-      - 美国 GTT|中转|NF.Hulu.HBO|
-      - 日本 AWS月抛|广州移动|
+      - HK_油管 TG 8度科技
+      - HK_油管 TG 8度科技 2
+      - US_油管 TG 8度科技
+      - 油管 TG 8度科技
+      - US_油管 TG 8度科技 2
+      - 油管 TG 8度科技 2
+      - 油管 TG 8度科技 3
+      - CA_油管 TG 8度科技
+      - CA_油管 TG 8度科技 2
+      - CH_油管 TG 8度科技
+      - CA_油管 TG 8度科技 3
+      - CA_油管 TG 8度科技 4
+      - CA_油管 TG 8度科技 5
+      - US_油管 TG 8度科技 3
+      - CA_油管 TG 8度科技 6
+      - FR_油管 TG 8度科技
+      - 油管 TG 8度科技 4
+      - CA_油管 TG 8度科技 7
+      - CA_油管 TG 8度科技 8
+      - CA_油管 TG 8度科技 9
+      - CA_油管 TG 8度科技 10
+      - CA_油管 TG 8度科技 11
+      - CA_油管 TG 8度科技 12
+      - CA_油管 TG 8度科技 13
+      - CA_油管 TG 8度科技 14
+      - CA_油管 TG 8度科技 15
+      - CA_油管 TG 8度科技 16
+      - CA_油管 TG 8度科技 17
+      - CA_油管 TG 8度科技 18
+      - CA_油管 TG 8度科技 19
+      - CA_油管 TG 8度科技 20
+      - CA_油管 TG 8度科技 21
+      - CA_油管 TG 8度科技 22
+      - CA_油管 TG 8度科技 23
+      - CA_油管 TG 8度科技 24
+      - US_油管 TG 8度科技 4
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - Vmess 香港 01
-      - 深圳 - 香港01 - 隧道3Gbps【vmess】
-      - 香港6 | 付费节点 | 可刷流量
-      - 香港4 | 付费节点 | 可刷流量
-      - 香港1 | 免费节点 | 限速10M
-      - 广港丨美国01丨2x
-      - 深圳 - 香港02 - 隧道3Gbps【vmess】
-      - 佛山 - 香港03 - 隧道3Gbps【vmess】
-      - HKT-Detour 15
-      - 广港丨狮城03丨2x
-      - 香港2 | 免费节点 | 限速10M
-      - 广港丨韩国01丨2x
-      - 专线 香港05
-      - 广港丨香港02丨2x
-      - IEPL丨香港04丨3x
-      - 广港丨香港09丨2x
-      - 广港丨香港06丨2x
-      - 香港 06 *
-      - 广港丨德国01丨2x
-      - 广港丨日本01丨2x
-      - 上海 - 香港03【SS】
-      - 广港丨香港05丨2x
-      - 广港丨香港01丨2x
-      - IEPL丨香港07丨3x
-      - 广港丨越南01丨2x
-      - 广州 - 台湾02（流媒体解锁）【SS】「2x」
-      - 广港丨英国01丨2x
-      - 广州 - 香港01（流媒体解锁）【SS】「2x」
-      - 台湾 01 *
-      - 广港丨狮城01丨2x
-      - 广港丨美国03丨2x
-      - 广港丨土耳其01丨2x
-      - 广港丨韩国03丨2x
-      - 香港 Nero|移动入口01|NF|
-      - 香港 Nero|移动入口02|NF|
-      - 香港 HKT|中转|NF|
-      - 香港 HKT|临时CN2中转|NF|
-      - 台湾 Scloud|中转|动漫疯|
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - Vmess 香港 01
-      - 深圳 - 香港01 - 隧道3Gbps【vmess】
-      - 新加坡Do01|1x
-      - 安徽 - 日本04【vmess】
-      - 新加坡Oracle01|优选原生IP|1x
-      - IEPL SZ-SG 01
-      - 上海 - 韩国02【vmess】
-      - 美国-洛杉矶3
-      - 香港6 | 付费节点 | 可刷流量
-      - 香港4 | 付费节点 | 可刷流量
-      - 香港1 | 免费节点 | 限速10M
-      - 美国-洛杉矶1
-      - 广港丨美国01丨2x
-      - 深圳 - 香港02 - 隧道3Gbps【vmess】
-      - 佛山 - 香港03 - 隧道3Gbps【vmess】
-      - 美国-洛杉矶-国内中转2
-      - UK-03
-      - HKT-Detour 15
-      - 美国-洛杉矶6
-      - 美国-洛杉矶5
-      - 广州 - 日本01（流媒体解锁）【vmess】
-      - 美国-洛杉矶-国内中转1
-      - 广港丨狮城03丨2x
-      - "|40.46Mb"
-      - _US_美国->🇯🇵_JP_日本
-      - SG-Detour 02
-      - 香港2 | 免费节点 | 限速10M
-      - 美国-洛杉矶4
-      - 广港丨韩国01丨2x
-      - 专线 香港05
-      - 日本 01 *
-      - 广港丨香港02丨2x
-      - IEPL丨香港04丨3x
-      - 广港丨香港09丨2x
-      - 广州 - 美国02【SS】
-      - 广港丨香港06丨2x
-      - 香港 06 *
-      - 安徽 - 日本02【SS】
-      - 新加坡 02
-      - 广港丨德国01丨2x
-      - 广州 - 美国03【SS】
-      - 广港丨日本01丨2x
-      - 日本 02 *
-      - 美国 02 *
-      - 上海 - 香港03【SS】
-      - 上海 - 韩国01【SS】
-      - 广港丨香港05丨2x
-      - 新加坡 03
-      - 广港丨香港01丨2x
-      - IEPL丨香港07丨3x
-      - 广港丨越南01丨2x
-      - 安徽 - 日本01【SS】
-      - 广州 - 台湾02（流媒体解锁）【SS】「2x」
-      - 广港丨英国01丨2x
-      - 广州 - 香港01（流媒体解锁）【SS】「2x」
-      - 台湾 01 *
-      - 广港丨狮城01丨2x
-      - 广港丨美国03丨2x
-      - 广港丨土耳其01丨2x
-      - 广港丨韩国03丨2x
-      - 韩国 Oracle|中转|0.5x流量消耗|
-      - 高速AAA
-      - 高速6
-      - 香港 Nero|移动入口01|NF|
-      - 高速BBB
-      - 新加坡 Oracle|中转|NF|
-      - 雅加达 AWS月抛|SG-NF|广移|X0.7
-      - 美国 Oracle|中转|NF.Hulu.HBO|
-      - vpnpool-SG-DigitalOcean
-      - 香港 Nero|移动入口02|NF|
-      - 香港 HKT|中转|NF|
-      - vpnpool-Bengaluru-DigitalOcean
-      - 日本 Nero|国内入口02|
-      - 俄罗斯 01|中转|
-      - 美国 GGC|中转|HBO|
-      - 英国 Do|中转|BBC|
-      - 香港 HKT|临时CN2中转|NF|
-      - 日本 Nero|广移入口01|
-      - 印度 Do|中转|
-      - 台湾 Scloud|中转|动漫疯|
-      - vpnpool-San Jose-ColoCrossing
-      - 美国 INAP|中转|NF|
-      - vpnpool-Tokyo-Oracle
-      - 俄罗斯 02|中转|NF|
-      - 土耳其|中转|
-      - 美国 GTT|中转|NF.Hulu.HBO|
-      - 日本 AWS月抛|广州移动|
+      - HK_油管 TG 8度科技
+      - HK_油管 TG 8度科技 2
+      - US_油管 TG 8度科技
+      - 油管 TG 8度科技
+      - US_油管 TG 8度科技 2
+      - 油管 TG 8度科技 2
+      - 油管 TG 8度科技 3
+      - CA_油管 TG 8度科技
+      - CA_油管 TG 8度科技 2
+      - CH_油管 TG 8度科技
+      - CA_油管 TG 8度科技 3
+      - CA_油管 TG 8度科技 4
+      - CA_油管 TG 8度科技 5
+      - US_油管 TG 8度科技 3
+      - CA_油管 TG 8度科技 6
+      - FR_油管 TG 8度科技
+      - 油管 TG 8度科技 4
+      - CA_油管 TG 8度科技 7
+      - CA_油管 TG 8度科技 8
+      - CA_油管 TG 8度科技 9
+      - CA_油管 TG 8度科技 10
+      - CA_油管 TG 8度科技 11
+      - CA_油管 TG 8度科技 12
+      - CA_油管 TG 8度科技 13
+      - CA_油管 TG 8度科技 14
+      - CA_油管 TG 8度科技 15
+      - CA_油管 TG 8度科技 16
+      - CA_油管 TG 8度科技 17
+      - CA_油管 TG 8度科技 18
+      - CA_油管 TG 8度科技 19
+      - CA_油管 TG 8度科技 20
+      - CA_油管 TG 8度科技 21
+      - CA_油管 TG 8度科技 22
+      - CA_油管 TG 8度科技 23
+      - CA_油管 TG 8度科技 24
+      - US_油管 TG 8度科技 4
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - Vmess 香港 01
-      - 深圳 - 香港01 - 隧道3Gbps【vmess】
-      - 新加坡Do01|1x
-      - 安徽 - 日本04【vmess】
-      - 新加坡Oracle01|优选原生IP|1x
-      - IEPL SZ-SG 01
-      - 上海 - 韩国02【vmess】
-      - 美国-洛杉矶3
-      - 香港6 | 付费节点 | 可刷流量
-      - 香港4 | 付费节点 | 可刷流量
-      - 香港1 | 免费节点 | 限速10M
-      - 美国-洛杉矶1
-      - 广港丨美国01丨2x
-      - 深圳 - 香港02 - 隧道3Gbps【vmess】
-      - 佛山 - 香港03 - 隧道3Gbps【vmess】
-      - 美国-洛杉矶-国内中转2
-      - UK-03
-      - HKT-Detour 15
-      - 美国-洛杉矶6
-      - 美国-洛杉矶5
-      - 广州 - 日本01（流媒体解锁）【vmess】
-      - 美国-洛杉矶-国内中转1
-      - 广港丨狮城03丨2x
-      - "|40.46Mb"
-      - _US_美国->🇯🇵_JP_日本
-      - SG-Detour 02
-      - 香港2 | 免费节点 | 限速10M
-      - 美国-洛杉矶4
-      - 广港丨韩国01丨2x
-      - 专线 香港05
-      - 日本 01 *
-      - 广港丨香港02丨2x
-      - IEPL丨香港04丨3x
-      - 广港丨香港09丨2x
-      - 广州 - 美国02【SS】
-      - 广港丨香港06丨2x
-      - 香港 06 *
-      - 安徽 - 日本02【SS】
-      - 新加坡 02
-      - 广港丨德国01丨2x
-      - 广州 - 美国03【SS】
-      - 广港丨日本01丨2x
-      - 日本 02 *
-      - 美国 02 *
-      - 上海 - 香港03【SS】
-      - 上海 - 韩国01【SS】
-      - 广港丨香港05丨2x
-      - 新加坡 03
-      - 广港丨香港01丨2x
-      - IEPL丨香港07丨3x
-      - 广港丨越南01丨2x
-      - 安徽 - 日本01【SS】
-      - 广州 - 台湾02（流媒体解锁）【SS】「2x」
-      - 广港丨英国01丨2x
-      - 广州 - 香港01（流媒体解锁）【SS】「2x」
-      - 台湾 01 *
-      - 广港丨狮城01丨2x
-      - 广港丨美国03丨2x
-      - 广港丨土耳其01丨2x
-      - 广港丨韩国03丨2x
-      - 韩国 Oracle|中转|0.5x流量消耗|
-      - 高速AAA
-      - 高速6
-      - 香港 Nero|移动入口01|NF|
-      - 高速BBB
-      - 新加坡 Oracle|中转|NF|
-      - 雅加达 AWS月抛|SG-NF|广移|X0.7
-      - 美国 Oracle|中转|NF.Hulu.HBO|
-      - vpnpool-SG-DigitalOcean
-      - 香港 Nero|移动入口02|NF|
-      - 香港 HKT|中转|NF|
-      - vpnpool-Bengaluru-DigitalOcean
-      - 日本 Nero|国内入口02|
-      - 俄罗斯 01|中转|
-      - 美国 GGC|中转|HBO|
-      - 英国 Do|中转|BBC|
-      - 香港 HKT|临时CN2中转|NF|
-      - 日本 Nero|广移入口01|
-      - 印度 Do|中转|
-      - 台湾 Scloud|中转|动漫疯|
-      - vpnpool-San Jose-ColoCrossing
-      - 美国 INAP|中转|NF|
-      - vpnpool-Tokyo-Oracle
-      - 俄罗斯 02|中转|NF|
-      - 土耳其|中转|
-      - 美国 GTT|中转|NF.Hulu.HBO|
-      - 日本 AWS月抛|广州移动|
+      - HK_油管 TG 8度科技
+      - HK_油管 TG 8度科技 2
+      - US_油管 TG 8度科技
+      - 油管 TG 8度科技
+      - US_油管 TG 8度科技 2
+      - 油管 TG 8度科技 2
+      - 油管 TG 8度科技 3
+      - CA_油管 TG 8度科技
+      - CA_油管 TG 8度科技 2
+      - CH_油管 TG 8度科技
+      - CA_油管 TG 8度科技 3
+      - CA_油管 TG 8度科技 4
+      - CA_油管 TG 8度科技 5
+      - US_油管 TG 8度科技 3
+      - CA_油管 TG 8度科技 6
+      - FR_油管 TG 8度科技
+      - 油管 TG 8度科技 4
+      - CA_油管 TG 8度科技 7
+      - CA_油管 TG 8度科技 8
+      - CA_油管 TG 8度科技 9
+      - CA_油管 TG 8度科技 10
+      - CA_油管 TG 8度科技 11
+      - CA_油管 TG 8度科技 12
+      - CA_油管 TG 8度科技 13
+      - CA_油管 TG 8度科技 14
+      - CA_油管 TG 8度科技 15
+      - CA_油管 TG 8度科技 16
+      - CA_油管 TG 8度科技 17
+      - CA_油管 TG 8度科技 18
+      - CA_油管 TG 8度科技 19
+      - CA_油管 TG 8度科技 20
+      - CA_油管 TG 8度科技 21
+      - CA_油管 TG 8度科技 22
+      - CA_油管 TG 8度科技 23
+      - CA_油管 TG 8度科技 24
+      - US_油管 TG 8度科技 4
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - Vmess 香港 01
-      - 深圳 - 香港01 - 隧道3Gbps【vmess】
-      - 新加坡Do01|1x
-      - 安徽 - 日本04【vmess】
-      - 新加坡Oracle01|优选原生IP|1x
-      - IEPL SZ-SG 01
-      - 上海 - 韩国02【vmess】
-      - 美国-洛杉矶3
-      - 香港6 | 付费节点 | 可刷流量
-      - 香港4 | 付费节点 | 可刷流量
-      - 香港1 | 免费节点 | 限速10M
-      - 美国-洛杉矶1
-      - 广港丨美国01丨2x
-      - 深圳 - 香港02 - 隧道3Gbps【vmess】
-      - 佛山 - 香港03 - 隧道3Gbps【vmess】
-      - 美国-洛杉矶-国内中转2
-      - UK-03
-      - HKT-Detour 15
-      - 美国-洛杉矶6
-      - 美国-洛杉矶5
-      - 广州 - 日本01（流媒体解锁）【vmess】
-      - 美国-洛杉矶-国内中转1
-      - 广港丨狮城03丨2x
-      - "|40.46Mb"
-      - _US_美国->🇯🇵_JP_日本
-      - SG-Detour 02
-      - 香港2 | 免费节点 | 限速10M
-      - 美国-洛杉矶4
-      - 广港丨韩国01丨2x
-      - 专线 香港05
-      - 日本 01 *
-      - 广港丨香港02丨2x
-      - IEPL丨香港04丨3x
-      - 广港丨香港09丨2x
-      - 广州 - 美国02【SS】
-      - 广港丨香港06丨2x
-      - 香港 06 *
-      - 安徽 - 日本02【SS】
-      - 新加坡 02
-      - 广港丨德国01丨2x
-      - 广州 - 美国03【SS】
-      - 广港丨日本01丨2x
-      - 日本 02 *
-      - 美国 02 *
-      - 上海 - 香港03【SS】
-      - 上海 - 韩国01【SS】
-      - 广港丨香港05丨2x
-      - 新加坡 03
-      - 广港丨香港01丨2x
-      - IEPL丨香港07丨3x
-      - 广港丨越南01丨2x
-      - 安徽 - 日本01【SS】
-      - 广州 - 台湾02（流媒体解锁）【SS】「2x」
-      - 广港丨英国01丨2x
-      - 广州 - 香港01（流媒体解锁）【SS】「2x」
-      - 台湾 01 *
-      - 广港丨狮城01丨2x
-      - 广港丨美国03丨2x
-      - 广港丨土耳其01丨2x
-      - 广港丨韩国03丨2x
-      - 韩国 Oracle|中转|0.5x流量消耗|
-      - 高速AAA
-      - 高速6
-      - 香港 Nero|移动入口01|NF|
-      - 高速BBB
-      - 新加坡 Oracle|中转|NF|
-      - 雅加达 AWS月抛|SG-NF|广移|X0.7
-      - 美国 Oracle|中转|NF.Hulu.HBO|
-      - vpnpool-SG-DigitalOcean
-      - 香港 Nero|移动入口02|NF|
-      - 香港 HKT|中转|NF|
-      - vpnpool-Bengaluru-DigitalOcean
-      - 日本 Nero|国内入口02|
-      - 俄罗斯 01|中转|
-      - 美国 GGC|中转|HBO|
-      - 英国 Do|中转|BBC|
-      - 香港 HKT|临时CN2中转|NF|
-      - 日本 Nero|广移入口01|
-      - 印度 Do|中转|
-      - 台湾 Scloud|中转|动漫疯|
-      - vpnpool-San Jose-ColoCrossing
-      - 美国 INAP|中转|NF|
-      - vpnpool-Tokyo-Oracle
-      - 俄罗斯 02|中转|NF|
-      - 土耳其|中转|
-      - 美国 GTT|中转|NF.Hulu.HBO|
-      - 日本 AWS月抛|广州移动|
+      - HK_油管 TG 8度科技
+      - HK_油管 TG 8度科技 2
+      - US_油管 TG 8度科技
+      - 油管 TG 8度科技
+      - US_油管 TG 8度科技 2
+      - 油管 TG 8度科技 2
+      - 油管 TG 8度科技 3
+      - CA_油管 TG 8度科技
+      - CA_油管 TG 8度科技 2
+      - CH_油管 TG 8度科技
+      - CA_油管 TG 8度科技 3
+      - CA_油管 TG 8度科技 4
+      - CA_油管 TG 8度科技 5
+      - US_油管 TG 8度科技 3
+      - CA_油管 TG 8度科技 6
+      - FR_油管 TG 8度科技
+      - 油管 TG 8度科技 4
+      - CA_油管 TG 8度科技 7
+      - CA_油管 TG 8度科技 8
+      - CA_油管 TG 8度科技 9
+      - CA_油管 TG 8度科技 10
+      - CA_油管 TG 8度科技 11
+      - CA_油管 TG 8度科技 12
+      - CA_油管 TG 8度科技 13
+      - CA_油管 TG 8度科技 14
+      - CA_油管 TG 8度科技 15
+      - CA_油管 TG 8度科技 16
+      - CA_油管 TG 8度科技 17
+      - CA_油管 TG 8度科技 18
+      - CA_油管 TG 8度科技 19
+      - CA_油管 TG 8度科技 20
+      - CA_油管 TG 8度科技 21
+      - CA_油管 TG 8度科技 22
+      - CA_油管 TG 8度科技 23
+      - CA_油管 TG 8度科技 24
+      - US_油管 TG 8度科技 4
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -810,93 +364,42 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - Vmess 香港 01
-      - 深圳 - 香港01 - 隧道3Gbps【vmess】
-      - 新加坡Do01|1x
-      - 安徽 - 日本04【vmess】
-      - 新加坡Oracle01|优选原生IP|1x
-      - IEPL SZ-SG 01
-      - 上海 - 韩国02【vmess】
-      - 美国-洛杉矶3
-      - 香港6 | 付费节点 | 可刷流量
-      - 香港4 | 付费节点 | 可刷流量
-      - 香港1 | 免费节点 | 限速10M
-      - 美国-洛杉矶1
-      - 广港丨美国01丨2x
-      - 深圳 - 香港02 - 隧道3Gbps【vmess】
-      - 佛山 - 香港03 - 隧道3Gbps【vmess】
-      - 美国-洛杉矶-国内中转2
-      - UK-03
-      - HKT-Detour 15
-      - 美国-洛杉矶6
-      - 美国-洛杉矶5
-      - 广州 - 日本01（流媒体解锁）【vmess】
-      - 美国-洛杉矶-国内中转1
-      - 广港丨狮城03丨2x
-      - "|40.46Mb"
-      - _US_美国->🇯🇵_JP_日本
-      - SG-Detour 02
-      - 香港2 | 免费节点 | 限速10M
-      - 美国-洛杉矶4
-      - 广港丨韩国01丨2x
-      - 专线 香港05
-      - 日本 01 *
-      - 广港丨香港02丨2x
-      - IEPL丨香港04丨3x
-      - 广港丨香港09丨2x
-      - 广州 - 美国02【SS】
-      - 广港丨香港06丨2x
-      - 香港 06 *
-      - 安徽 - 日本02【SS】
-      - 新加坡 02
-      - 广港丨德国01丨2x
-      - 广州 - 美国03【SS】
-      - 广港丨日本01丨2x
-      - 日本 02 *
-      - 美国 02 *
-      - 上海 - 香港03【SS】
-      - 上海 - 韩国01【SS】
-      - 广港丨香港05丨2x
-      - 新加坡 03
-      - 广港丨香港01丨2x
-      - IEPL丨香港07丨3x
-      - 广港丨越南01丨2x
-      - 安徽 - 日本01【SS】
-      - 广州 - 台湾02（流媒体解锁）【SS】「2x」
-      - 广港丨英国01丨2x
-      - 广州 - 香港01（流媒体解锁）【SS】「2x」
-      - 台湾 01 *
-      - 广港丨狮城01丨2x
-      - 广港丨美国03丨2x
-      - 广港丨土耳其01丨2x
-      - 广港丨韩国03丨2x
-      - 韩国 Oracle|中转|0.5x流量消耗|
-      - 高速AAA
-      - 高速6
-      - 香港 Nero|移动入口01|NF|
-      - 高速BBB
-      - 新加坡 Oracle|中转|NF|
-      - 雅加达 AWS月抛|SG-NF|广移|X0.7
-      - 美国 Oracle|中转|NF.Hulu.HBO|
-      - vpnpool-SG-DigitalOcean
-      - 香港 Nero|移动入口02|NF|
-      - 香港 HKT|中转|NF|
-      - vpnpool-Bengaluru-DigitalOcean
-      - 日本 Nero|国内入口02|
-      - 俄罗斯 01|中转|
-      - 美国 GGC|中转|HBO|
-      - 英国 Do|中转|BBC|
-      - 香港 HKT|临时CN2中转|NF|
-      - 日本 Nero|广移入口01|
-      - 印度 Do|中转|
-      - 台湾 Scloud|中转|动漫疯|
-      - vpnpool-San Jose-ColoCrossing
-      - 美国 INAP|中转|NF|
-      - vpnpool-Tokyo-Oracle
-      - 俄罗斯 02|中转|NF|
-      - 土耳其|中转|
-      - 美国 GTT|中转|NF.Hulu.HBO|
-      - 日本 AWS月抛|广州移动|
+      - HK_油管 TG 8度科技
+      - HK_油管 TG 8度科技 2
+      - US_油管 TG 8度科技
+      - 油管 TG 8度科技
+      - US_油管 TG 8度科技 2
+      - 油管 TG 8度科技 2
+      - 油管 TG 8度科技 3
+      - CA_油管 TG 8度科技
+      - CA_油管 TG 8度科技 2
+      - CH_油管 TG 8度科技
+      - CA_油管 TG 8度科技 3
+      - CA_油管 TG 8度科技 4
+      - CA_油管 TG 8度科技 5
+      - US_油管 TG 8度科技 3
+      - CA_油管 TG 8度科技 6
+      - FR_油管 TG 8度科技
+      - 油管 TG 8度科技 4
+      - CA_油管 TG 8度科技 7
+      - CA_油管 TG 8度科技 8
+      - CA_油管 TG 8度科技 9
+      - CA_油管 TG 8度科技 10
+      - CA_油管 TG 8度科技 11
+      - CA_油管 TG 8度科技 12
+      - CA_油管 TG 8度科技 13
+      - CA_油管 TG 8度科技 14
+      - CA_油管 TG 8度科技 15
+      - CA_油管 TG 8度科技 16
+      - CA_油管 TG 8度科技 17
+      - CA_油管 TG 8度科技 18
+      - CA_油管 TG 8度科技 19
+      - CA_油管 TG 8度科技 20
+      - CA_油管 TG 8度科技 21
+      - CA_油管 TG 8度科技 22
+      - CA_油管 TG 8度科技 23
+      - CA_油管 TG 8度科技 24
+      - US_油管 TG 8度科技 4
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
