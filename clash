@@ -5,635 +5,507 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: _US_美国, server: gongyius1.yigeweizhuang.com, port: 2096, type: vmess, uuid: a94446e3-be9c-4240-9bdf-9b88155a7eb4, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: gongyius1.yigeweizhuang.com}, udp: true}
-  - {name: default_name, server: cm.db-link.in, port: 443, type: vmess, uuid: 9b6dd8ea-fe2e-3508-b099-8e25bdf6b5fe, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /db, ws-headers: {Host: us01.db-link.in}, udp: true}
-  - {name: 日本+05丨1x+JP, server: asusjobhr.0064.shuyue521.com, port: 12014, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
-  - {name: 香港+04丨1x+HK, server: activity.huawei.daanyht.com, port: 12025, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
-  - {name: 日本+07丨1x+JP, server: asusjobhr.0064.shuyue521.com, port: 12016, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
-  - {name: 香港08, server: cm1.chashao.buzz, port: 21204, type: ss, cipher: chacha20-ietf-poly1305, password: a0bd91e1-1e8f-41c6-8a68-baf8e94fa467, udp: true}
-  - {name: 台湾+05丨1x+TW, server: activity.huawei.daanyht.com, port: 12308, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
-  - {name: 日本+01丨1x+JP, server: asusjobhr.0064.shuyue521.com, port: 12011, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
-  - {name: 台湾+04丨1x+TW, server: activity.huawei.daanyht.com, port: 12307, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
-  - {name: 日本+12丨1x+JP, server: asusjobhr.0064.shuyue521.com, port: 13022, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
-  - {name: 台湾+10丨1x+TW, server: activity.huawei.daanyht.com, port: 12413, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
-  - {name: 菲律宾+01丨1x+PH, server: activity.huawei.daanyht.com, port: 12020, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
-  - {name: 日本+04丨1x+JP, server: asusjobhr.0064.shuyue521.com, port: 12013, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
-  - {name: 香港06, server: cm1.chashao.buzz, port: 21203, type: ss, cipher: chacha20-ietf-poly1305, password: a0bd91e1-1e8f-41c6-8a68-baf8e94fa467, udp: true}
-  - {name: 香港家宽丨1x+HK, server: activity.huawei.daanyht.com, port: 12729, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
-  - {name: 香港+14丨1x+HK, server: activity.huawei.daanyht.com, port: 12722, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
-  - {name: 新加坡+09丨1x+SG, server: activity.huawei.daanyht.com, port: 12009, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
-  - {name: 新加坡+02丨1x+SG, server: activity.huawei.daanyht.com, port: 12001, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
-  - {name: 香港+01丨1x+HK, server: activity.huawei.daanyht.com, port: 12022, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
-  - {name: 巴基斯坦+01丨5x+PK, server: activity.huawei.daanyht.com, port: 12604, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
-  - {name: 新加坡01, server: cm.chashao.buzz, port: 21209, type: ss, cipher: chacha20-ietf-poly1305, password: a0bd91e1-1e8f-41c6-8a68-baf8e94fa467, udp: true}
-  - {name: 美国+03+芝加哥丨1x+US, server: asusjobhr.0064.shuyue521.com, port: 13007, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
-  - {name: 台湾01, server: cm.chashao.buzz, port: 21211, type: ss, cipher: chacha20-ietf-poly1305, password: a0bd91e1-1e8f-41c6-8a68-baf8e94fa467, udp: true}
-  - {name: 新加坡+11丨2x+SG, server: activity.huawei.daanyht.com, port: 12110, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
-  - {name: 韩国01, server: cm.chashao.buzz, port: 21207, type: ss, cipher: chacha20-ietf-poly1305, password: a0bd91e1-1e8f-41c6-8a68-baf8e94fa467, udp: true}
-  - {name: 新加坡+05丨1x+SG, server: activity.huawei.daanyht.com, port: 12004, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
-  - {name: 新加坡02, server: cm1.chashao.buzz, port: 21209, type: ss, cipher: chacha20-ietf-poly1305, password: a0bd91e1-1e8f-41c6-8a68-baf8e94fa467, udp: true}
-  - {name: 巴基斯坦+02丨5x+PK, server: activity.huawei.daanyht.com, port: 12605, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
-  - {name: 印度尼西亚-棉兰丨1x+ID, server: activity.huawei.daanyht.com, port: 12300, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
-  - {name: 台湾02, server: cu.chashao.buzz, port: 21211, type: ss, cipher: chacha20-ietf-poly1305, password: a0bd91e1-1e8f-41c6-8a68-baf8e94fa467, udp: true}
-  - {name: 美国+07+达拉斯丨1x+US, server: asusjobhr.0064.shuyue521.com, port: 13011, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
-  - {name: 香港+09丨1x+HK, server: activity.huawei.daanyht.com, port: 12030, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
-  - {name: 日本+14丨3x+JP, server: asusjobhr.0064.shuyue521.com, port: 13018, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
-  - {name: 印度尼西亚-雅加达丨1x+ID, server: activity.huawei.daanyht.com, port: 12301, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
-  - {name: 美国01, server: cm.chashao.buzz, port: 21214, type: ss, cipher: chacha20-ietf-poly1305, password: a0bd91e1-1e8f-41c6-8a68-baf8e94fa467, udp: true}
-  - {name: 香港+10丨1x+HK, server: activity.huawei.daanyht.com, port: 12031, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
-  - {name: 马来西亚家宽丨3x+MY, server: activity.huawei.daanyht.com, port: 12727, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
-  - {name: 越南丨1x+VN, server: activity.huawei.daanyht.com, port: 12316, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
-  - {name: 台湾+14丨1x+TW, server: activity.huawei.daanyht.com, port: 12417, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
-  - {name: 德国02, server: cu.chashao.buzz, port: 21216, type: ss, cipher: chacha20-ietf-poly1305, password: a0bd91e1-1e8f-41c6-8a68-baf8e94fa467, udp: true}
-  - {name: 新加坡家宽丨3x+SG, server: activity.huawei.daanyht.com, port: 12726, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
-  - {name: 巴拿马丨3x+PA, server: asusjobhr.0064.shuyue521.com, port: 12704, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
-  - {name: 美国+06+斯波坎丨1x+US, server: asusjobhr.0064.shuyue521.com, port: 13010, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
-  - {name: 日本+17丨3x+JP, server: asusjobhr.0064.shuyue521.com, port: 13020, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
-  - {name: 香港+12丨1x+HK, server: activity.huawei.daanyht.com, port: 12033, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
-  - {name: 以色列丨1x+IL, server: inspurcloud.api.xjshihuifang.com, port: 12600, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
-  - {name: 香港03, server: cm.chashao.buzz, port: 21202, type: ss, cipher: chacha20-ietf-poly1305, password: a0bd91e1-1e8f-41c6-8a68-baf8e94fa467, udp: true}
-  - {name: 香港04, server: cm1.chashao.buzz, port: 21202, type: ss, cipher: chacha20-ietf-poly1305, password: a0bd91e1-1e8f-41c6-8a68-baf8e94fa467, udp: true}
-  - {name: 加拿大+01+多伦多丨1x+CA, server: asusjobhr.0064.shuyue521.com, port: 13000, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
-  - {name: 卢森堡丨2x+LU, server: inspurcloud.api.xjshihuifang.com, port: 12629, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
-  - {name: 韩国+01丨3x+KR, server: asusjobhr.0064.shuyue521.com, port: 12317, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
-  - {name: 新西兰丨3x+NZ, server: activity.huawei.daanyht.com, port: 12326, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
-  - {name: 加拿大+02+温哥华丨2x+CA, server: asusjobhr.0064.shuyue521.com, port: 13001, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
-  - {name: 美国+09+密尔沃基丨1x+US, server: asusjobhr.0064.shuyue521.com, port: 13012, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
-  - {name: 荷兰丨1x+NL, server: inspurcloud.api.xjshihuifang.com, port: 12622, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
-  - {name: 冰岛丨2x+IS, server: inspurcloud.api.xjshihuifang.com, port: 12607, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
-  - {name: 意大利丨1x+IT, server: inspurcloud.api.xjshihuifang.com, port: 12616, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
-  - {name: 新加坡+08丨1x+SG, server: activity.huawei.daanyht.com, port: 12007, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
-  - {name: 尼泊尔丨1x+NP, server: activity.huawei.daanyht.com, port: 12720, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
-  - {name: 台湾+13丨1x+TW, server: activity.huawei.daanyht.com, port: 12416, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
-  - {name: 英国+02丨1x+GB, server: inspurcloud.api.xjshihuifang.com, port: 12627, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
-  - {name: 俄罗斯-库页岛丨1x+RU, server: asusjobhr.0064.shuyue521.com, port: 12327, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
-  - {name: 塞浦路斯丨1x+CY, server: inspurcloud.api.xjshihuifang.com, port: 12654, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
-  - {name: 埃及丨3x+EG, server: inspurcloud.api.xjshihuifang.com, port: 12718, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
-  - {name: 格鲁吉亚丨1x+GE, server: inspurcloud.api.xjshihuifang.com, port: 12644, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
-  - {name: 伊朗丨5x+IR, server: activity.huawei.daanyht.com, port: 12707, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
-  - {name: 法国丨1x+FR, server: inspurcloud.api.xjshihuifang.com, port: 12621, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
-  - {name: 德国+01丨1x+DE, server: inspurcloud.api.xjshihuifang.com, port: 12619, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
-  - {name: 阿塞拜疆丨1x+AZ, server: activity.huawei.daanyht.com, port: 12606, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
-  - {name: 罗马尼亚丨1x+RO, server: inspurcloud.api.xjshihuifang.com, port: 12641, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
-  - {name: 韩国03, server: cm.chashao.buzz, port: 21208, type: ss, cipher: chacha20-ietf-poly1305, password: a0bd91e1-1e8f-41c6-8a68-baf8e94fa467, udp: true}
-  - {name: 哥伦比亚丨1x+CO, server: asusjobhr.0064.shuyue521.com, port: 13050, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
-  - {name: 英国01, server: cm.chashao.buzz, port: 21213, type: ss, cipher: chacha20-ietf-poly1305, password: a0bd91e1-1e8f-41c6-8a68-baf8e94fa467, udp: true}
-  - {name: 克罗地亚丨2x+HR, server: inspurcloud.api.xjshihuifang.com, port: 12646, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
-  - {name: 葡萄牙丨1x+PT, server: inspurcloud.api.xjshihuifang.com, port: 12624, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
-  - {name: 台湾+08丨1x+TW, server: activity.huawei.daanyht.com, port: 12311, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
-  - {name: 斯洛文尼亚丨2x+SI, server: inspurcloud.api.xjshihuifang.com, port: 12653, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
-  - {name: 台湾+07丨1x+TW, server: activity.huawei.daanyht.com, port: 12310, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
-  - {name: 日本+10丨1x+JP, server: asusjobhr.0064.shuyue521.com, port: 12019, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
-  - {name: 澳大利亚-布里斯班丨2x+AU, server: activity.huawei.daanyht.com, port: 12325, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
-  - {name: 马恩岛丨2x+IM, server: inspurcloud.api.xjshihuifang.com, port: 12623, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
-  - {name: 德国01, server: cm.chashao.buzz, port: 21216, type: ss, cipher: chacha20-ietf-poly1305, password: a0bd91e1-1e8f-41c6-8a68-baf8e94fa467, udp: true}
-  - {name: 阿尔巴尼亚丨1x+AL, server: inspurcloud.api.xjshihuifang.com, port: 12642, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
-  - {name: 德国+02丨1x+DE, server: inspurcloud.api.xjshihuifang.com, port: 12620, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
-  - {name: 摩尔多瓦丨2x+MD, server: inspurcloud.api.xjshihuifang.com, port: 12651, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
-  - {name: 美国+01+费城丨1x+US, server: asusjobhr.0064.shuyue521.com, port: 13005, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
-  - {name: 土耳其丨1x+TR, server: inspurcloud.api.xjshihuifang.com, port: 12603, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
-  - {name: 爱沙尼亚丨1x+EE, server: inspurcloud.api.xjshihuifang.com, port: 12635, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
-  - {name: 尼日利亚丨2x+NG, server: inspurcloud.api.xjshihuifang.com, port: 12648, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
-  - {name: 希腊丨2x+GR, server: inspurcloud.api.xjshihuifang.com, port: 12615, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
-  - {name: 塞尔维亚丨2x+RS, server: inspurcloud.api.xjshihuifang.com, port: 12647, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
-  - {name: 台湾+09丨1x+TW, server: activity.huawei.daanyht.com, port: 12412, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
-  - {name: 香港+02丨1x+HK, server: activity.huawei.daanyht.com, port: 12023, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
-  - {name: 突尼斯丨2x+TN, server: inspurcloud.api.xjshihuifang.com, port: 12703, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
-  - {name: 印度02, server: cu.chashao.buzz, port: 21206, type: ss, cipher: chacha20-ietf-poly1305, password: a0bd91e1-1e8f-41c6-8a68-baf8e94fa467, udp: true}
-  - {name: 乌拉圭丨2x+UY, server: asusjobhr.0064.shuyue521.com, port: 12715, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
-  - {name: 挪威丨1x+NO, server: inspurcloud.api.xjshihuifang.com, port: 12610, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
-  - {name: 马来西亚+05丨1x+MY, server: activity.huawei.daanyht.com, port: 12723, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
-  - {name: 俄罗斯-莫斯科丨1x+RU, server: inspurcloud.api.xjshihuifang.com, port: 12034, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
-  - {name: 奥地利丨2x+AT, server: inspurcloud.api.xjshihuifang.com, port: 12628, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
-  - {name: 香港+08丨1x+HK, server: activity.huawei.daanyht.com, port: 12029, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
-  - {name: 台湾+16丨1x+TW, server: activity.huawei.daanyht.com, port: 12419, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
-  - {name: 香港05, server: cm.chashao.buzz, port: 21203, type: ss, cipher: chacha20-ietf-poly1305, password: a0bd91e1-1e8f-41c6-8a68-baf8e94fa467, udp: true}
-  - {name: 香港+06丨1x+HK, server: activity.huawei.daanyht.com, port: 12027, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
-  - {name: 美国03, server: cm.chashao.buzz, port: 21215, type: ss, cipher: chacha20-ietf-poly1305, password: a0bd91e1-1e8f-41c6-8a68-baf8e94fa467, udp: true}
-  - {name: 马来西亚+03丨1x+MY, server: activity.huawei.daanyht.com, port: 12323, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
-  - {name: 白俄罗斯丨2x+BY, server: inspurcloud.api.xjshihuifang.com, port: 12633, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
-  - {name: 香港+03丨1x+HK, server: activity.huawei.daanyht.com, port: 12024, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
-  - {name: 美国02, server: cu.chashao.buzz, port: 21214, type: ss, cipher: chacha20-ietf-poly1305, password: a0bd91e1-1e8f-41c6-8a68-baf8e94fa467, udp: true}
-  - {name: 印度01, server: cm.chashao.buzz, port: 21206, type: ss, cipher: chacha20-ietf-poly1305, password: a0bd91e1-1e8f-41c6-8a68-baf8e94fa467, udp: true}
-  - {name: 日本01, server: cm.chashao.buzz, port: 21205, type: ss, cipher: chacha20-ietf-poly1305, password: a0bd91e1-1e8f-41c6-8a68-baf8e94fa467, udp: true}
-  - {name: 立陶宛丨1x+LT, server: inspurcloud.api.xjshihuifang.com, port: 12652, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
-  - {name: 台湾+12丨1x+TW, server: activity.huawei.daanyht.com, port: 12415, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
-  - {name: 香港02, server: cm1.chashao.buzz, port: 21201, type: ss, cipher: chacha20-ietf-poly1305, password: a0bd91e1-1e8f-41c6-8a68-baf8e94fa467, udp: true}
-  - {name: 孟加拉丨2x+BD, server: activity.huawei.daanyht.com, port: 12724, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
-  - {name: 英国02, server: cu.chashao.buzz, port: 21213, type: ss, cipher: chacha20-ietf-poly1305, password: a0bd91e1-1e8f-41c6-8a68-baf8e94fa467, udp: true}
-  - {name: 越南家宽丨3x+VN, server: activity.huawei.daanyht.com, port: 12700, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
-  - {name: 美国+08+底特律丨1x+US, server: asusjobhr.0064.shuyue521.com, port: 12705, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
-  - {name: 爱尔兰丨2x+IE, server: inspurcloud.api.xjshihuifang.com, port: 12617, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
-  - {name: 瑞典丨1x+SE, server: inspurcloud.api.xjshihuifang.com, port: 12611, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
-  - {name: 哈萨克斯坦丨1x+KZ, server: inspurcloud.api.xjshihuifang.com, port: 12602, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
-  - {name: 韩国02, server: cu.chashao.buzz, port: 21207, type: ss, cipher: chacha20-ietf-poly1305, password: a0bd91e1-1e8f-41c6-8a68-baf8e94fa467, udp: true}
-  - {name: 台湾+11丨1x+TW, server: activity.huawei.daanyht.com, port: 12414, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
-  - {name: 日本+15丨3x+JP, server: asusjobhr.0064.shuyue521.com, port: 13026, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
-  - {name: 日本+08丨1x+JP, server: asusjobhr.0064.shuyue521.com, port: 12017, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
-  - {name: 加拿大家宽丨3x+CA, server: asusjobhr.0064.shuyue521.com, port: 10140, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
-  - {name: 美国+04+圣何塞丨1x+US, server: asusjobhr.0064.shuyue521.com, port: 13008, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
-  - {name: 新加坡03, server: cm.chashao.buzz, port: 21210, type: ss, cipher: chacha20-ietf-poly1305, password: a0bd91e1-1e8f-41c6-8a68-baf8e94fa467, udp: true}
-  - {name: 菲律宾+02丨1x+PH, server: activity.huawei.daanyht.com, port: 12021, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
-  - {name: 台湾+06丨1x+TW, server: activity.huawei.daanyht.com, port: 12309, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
-  - {name: 香港+05丨1x+HK, server: activity.huawei.daanyht.com, port: 12026, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
-  - {name: 加拿大+03+哈利法克斯丨1x+CA, server: asusjobhr.0064.shuyue521.com, port: 13002, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
-  - {name: 波兰丨1x+PL, server: inspurcloud.api.xjshihuifang.com, port: 12612, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
-  - {name: 南非丨1x+ZA, server: activity.huawei.daanyht.com, port: 12036, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
-  - {name: 瑞士丨2x+CH, server: inspurcloud.api.xjshihuifang.com, port: 12630, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
-  - {name: 印度-新德里丨1x+IN, server: activity.huawei.daanyht.com, port: 12303, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
-  - {name: 肯尼亚丨1x+KE, server: activity.huawei.daanyht.com, port: 12716, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
-  - {name: 日本+06丨1x+JP, server: asusjobhr.0064.shuyue521.com, port: 12015, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
-  - {name: 乌克兰丨1x+UA, server: inspurcloud.api.xjshihuifang.com, port: 12614, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
-  - {name: 马来西亚+02丨1x+MY, server: activity.huawei.daanyht.com, port: 12322, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
-  - {name: 新加坡+01丨1x+SG, server: activity.huawei.daanyht.com, port: 12000, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
-  - {name: 阿根廷丨5x+AR, server: asusjobhr.0064.shuyue521.com, port: 13015, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
-  - {name: 北马其顿丨2x+MK, server: inspurcloud.api.xjshihuifang.com, port: 12645, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
-  - {name: 澳门商宽丨2x+MO, server: activity.huawei.daanyht.com, port: 12730, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
-  - {name: 台湾+01丨1x+TW, server: activity.huawei.daanyht.com, port: 12304, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
-  - {name: 哥斯达黎加丨2x+CR, server: asusjobhr.0064.shuyue521.com, port: 12719, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
-  - {name: 日本+11丨2x+JP, server: asusjobhr.0064.shuyue521.com, port: 13019, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
-  - {name: 拉脱维亚丨1x+LV, server: inspurcloud.api.xjshihuifang.com, port: 12649, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
-  - {name: 墨西哥丨3x+MX, server: asusjobhr.0064.shuyue521.com, port: 13004, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
-  - {name: 马来西亚+01丨1x+MY, server: activity.huawei.daanyht.com, port: 12321, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
-  - {name: 日本02, server: cu.chashao.buzz, port: 21205, type: ss, cipher: chacha20-ietf-poly1305, password: a0bd91e1-1e8f-41c6-8a68-baf8e94fa467, udp: true}
-  - {name: 韩国+02丨3x+KR, server: asusjobhr.0064.shuyue521.com, port: 12318, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
-  - {name: 日本+03丨1x+JP, server: asusjobhr.0064.shuyue521.com, port: 12012, type: ss, cipher: aes-128-gcm, password: 0314713c-750a-4e11-86d7-e02318cb6c08, udp: true}
+  - {name: HK_油管 TG 8度科技, server: 23.102.234.10, port: 44288, type: vmess, uuid: 3e14963a-d117-46a2-b76e-05533bff306c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 23.102.234.10}, udp: true}
+  - {name: CN_油管 TG 8度科技, server: iepl.hk.stohb.nodeg.cloud, port: 30023, type: vmess, uuid: 23a3db66-2651-3fae-b042-83b437e871fc, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN_油管 TG 8度科技 2, server: iepl.hk.stohb.nodeg.cloud, port: 30022, type: vmess, uuid: 23a3db66-2651-3fae-b042-83b437e871fc, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN_油管 TG 8度科技 3, server: nyyd.zerohost.live, port: 53007, type: vmess, uuid: c008a763-2123-312f-bae6-bf7630517e22, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: aweikeji-YouTube-TG}, udp: true}
+  - {name: CN_油管 TG 8度科技 4, server: iepl.hk.stohb.nodeg.cloud, port: 30009, type: vmess, uuid: 23a3db66-2651-3fae-b042-83b437e871fc, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN_油管 TG 8度科技 5, server: iepl01.zerohost.live, port: 11013, type: vmess, uuid: c008a763-2123-312f-bae6-bf7630517e22, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: aweikeji-YouTube-TG}, udp: true}
+  - {name: CN_油管 TG 8度科技 6, server: nyyd.zerohost.live, port: 53004, type: vmess, uuid: c008a763-2123-312f-bae6-bf7630517e22, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: nyyd.zerohost.live}, udp: true}
+  - {name: CN_油管 TG 8度科技 7, server: iepl.hk.stohb.nodeg.cloud, port: 30010, type: vmess, uuid: 23a3db66-2651-3fae-b042-83b437e871fc, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: HK_油管 TG 8度科技 2, server: 23.102.234.10, port: 10369, type: vmess, uuid: bcc6ac7a-0771-4887-ad24-9fd1e75b3b53, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 23.102.234.10}, udp: true}
+  - {name: US_油管 TG 8度科技, server: 23.225.125.194, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /path/261217002001, ws-headers: {Host: www.95314708.xyz}, udp: true}
+  - {name: AE_油管 TG 8度科技, server: uae.oracleusa.ml, port: 2053, type: vmess, uuid: 810a7deb-4fcf-4e21-93bd-3d7685bb8cb4, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: uae.oracleusa.ml}, udp: true}
+  - {name: AE_油管 TG 8度科技 2, server: bi.oracleusa.ml, port: 2053, type: vmess, uuid: 810a7deb-4fcf-4e21-93bd-3d7685bb8cb4, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: bi.oracleusa.ml}, udp: true}
+  - {name: 油管 TG 8度科技, server: gongyica1.yigeweizhuang.com, port: 2096, type: vmess, uuid: a94446e3-be9c-4240-9bdf-9b88155a7eb4, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: gongyica1.yigeweizhuang.com}, udp: true}
+  - {name: 油管 TG 8度科技 2, server: linodemx0303.moonfree.top, port: 443, type: vmess, uuid: 113d0898-0e65-4d4e-ac26-2849f39c599c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: linodemx0303.moonfree.top}, udp: true}
+  - {name: AE_油管 TG 8度科技 3, server: bi.oracleusa.ml, port: 2053, type: vmess, uuid: d176bc78-9bf9-4ab3-9af9-a1e412d95c53, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: bi.oracleusa.ml}, udp: true}
+  - {name: US_油管 TG 8度科技 2, server: 137.175.21.195, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /path/261217002001, ws-headers: {Host: www.09622821.xyz}, udp: true}
+  - {name: US_油管 TG 8度科技 3, server: 172.247.198.123, port: 443, type: vmess, uuid: 7e68e0da-4264-4bd2-accc-ee977b3df1f5, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /path/353021140201, ws-headers: {Host: www.23063069.xyz}, udp: true}
+  - {name: US_油管 TG 8度科技 4, server: 192.151.220.102, port: 443, type: vmess, uuid: 9b9bb4ab-cd05-4dfe-ab55-06975aebe548, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /path/353021140201, ws-headers: {Host: www.88445767.xyz}, udp: true}
+  - {name: US_油管 TG 8度科技 5, server: gongyius1.yigeweizhuang.com, port: 2096, type: vmess, uuid: a94446e3-be9c-4240-9bdf-9b88155a7eb4, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: gongyius1.yigeweizhuang.com}, udp: true}
+  - {name: US_油管 TG 8度科技 6, server: usaadm.oracleusa.ml, port: 2053, type: vmess, uuid: c0a40c0e-1724-4cdc-8795-8c2397bb5594, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: usaadm.oracleusa.ml}, udp: true}
+  - {name: US_油管 TG 8度科技 7, server: 108.166.195.228, port: 443, type: vmess, uuid: 471ad422-1d74-44f1-a6d9-8d6fe25efd8f, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /path/080331123005, ws-headers: {Host: www.76684291.xyz}, udp: true}
+  - {name: US_油管 TG 8度科技 8, server: gongyijp2.yigeweizhuang.com, port: 2096, type: vmess, uuid: a94446e3-be9c-4240-9bdf-9b88155a7eb4, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: gongyijp2.yigeweizhuang.com}, udp: true}
+  - {name: US_油管 TG 8度科技 9, server: usa-dallas.lvuft.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: usa-dallas.lvuft.com}, udp: true}
+  - {name: US_油管 TG 8度科技 10, server: gongyide1.yigeweizhuang.com, port: 2096, type: vmess, uuid: a94446e3-be9c-4240-9bdf-9b88155a7eb4, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: gongyide1.yigeweizhuang.com}, udp: true}
+  - {name: US_油管 TG 8度科技 11, server: gongyide1.yigeweizhuang.com, port: 2096, type: vmess, uuid: a94446e3-be9c-4240-9bdf-9b88155a7eb4, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: gongyide1.yigeweizhuang.com}, udp: true}
+  - {name: HK_油管 TG 8度科技 3, server: zf.hk01.xfss.cc, port: 24814, type: vmess, uuid: d176bc78-9bf9-4ab3-9af9-a1e412d95c53, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: zf.hk01.xfss.cc}, udp: true}
+  - {name: NL_油管 TG 8度科技, server: 46.182.107.92, port: 443, type: vmess, uuid: 84d1de11-ce12-4a15-8312-1338356d4ac4, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /path/353021140201, ws-headers: {Host: www.36121039.xyz}, udp: true}
+  - {name: CN_油管 TG 8度科技 8, server: nyyd.zerohost.live, port: 53004, type: vmess, uuid: c008a763-2123-312f-bae6-bf7630517e22, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: aweikeji-YouTube-TG}, udp: true}
+  - {name: US_油管 TG 8度科技 12, server: cloudflare.xrenblog.com, port: 443, type: vmess, uuid: 6c175d1a-a57f-4881-a471-173eb139694b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /xrenblog/, ws-headers: {Host: ipv6.xrenblog.com}, udp: true}
+  - {name: US_油管 TG 8度科技 13, server: 23.225.165.245, port: 443, type: vmess, uuid: 95f388b3-68c9-421a-9de2-d8ab2e414a5e, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /path/261217002001, ws-headers: {Host: www.19241194.xyz}, udp: true}
+  - {name: US_油管 TG 8度科技 14, server: 45.35.84.162, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: usa-dallas.lvuft.com}, udp: true}
+  - {name: 油管 TG 8度科技 3, server: nl.oracleusa.ml, port: 2053, type: vmess, uuid: d176bc78-9bf9-4ab3-9af9-a1e412d95c53, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: nl.oracleusa.ml}, udp: true}
+  - {name: NL_油管 TG 8度科技 2, server: 46.182.107.70, port: 443, type: vmess, uuid: d024fd8b-ea78-4789-b928-70afa1a910ce, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /path/353021140201, ws-headers: {Host: www.24164786.xyz}, udp: true}
+  - {name: NL_油管 TG 8度科技 3, server: 46.182.107.23, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /path/353021140201, ws-headers: {Host: www.11300814.xyz}, udp: true}
+  - {name: US_油管 TG 8度科技 15, server: ua1.uuv2.co.uk, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: ua1.uuv2.co.uk}, udp: true}
+  - {name: 油管 TG 8度科技 4, server: nl.oracleusa.ml, port: 2053, type: vmess, uuid: d176bc78-9bf9-4ab3-9af9-a1e412d95c53, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: nl.oracleusa.ml}, udp: true}
+  - {name: NL_油管 TG 8度科技 4, server: 46.182.107.55, port: 443, type: vmess, uuid: 0056e4b1-ab31-457e-b028-ab86e9a46842, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /path/353021140201, ws-headers: {Host: www.65397453.xyz}, udp: true}
+  - {name: NL_油管 TG 8度科技 5, server: 154.84.1.250, port: 443, type: vmess, uuid: 6e79eea4-5f72-4683-ad0e-5339f013421b, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /path/080331123005, ws-headers: {Host: www.77555071.xyz}, udp: true}
+  - {name: NL_油管 TG 8度科技 6, server: 46.182.107.101, port: 443, type: vmess, uuid: 11117d4c-3b6a-4e76-8bcc-2b41b3e9ca93, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /path/353021140201, ws-headers: {Host: www.16101225.xyz}, udp: true}
+  - {name: US_油管 TG 8度科技 16, server: gongyijp1.yigeweizhuang.com, port: 2096, type: vmess, uuid: a94446e3-be9c-4240-9bdf-9b88155a7eb4, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: gongyijp1.yigeweizhuang.com}, udp: true}
+  - {name: 油管 TG 8度科技 5, server: nl.oracleusa.ml, port: 2053, type: vmess, uuid: d176bc78-9bf9-4ab3-9af9-a1e412d95c53, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: nl.oracleusa.ml}, udp: true}
+  - {name: NL_油管 TG 8度科技 7, server: 154.84.1.214, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca4690dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /path/080331123005, ws-headers: {Host: www.44590130.xyz}, udp: true}
+  - {name: US_油管 TG 8度科技 17, server: oz.moonfree.top, port: 443, type: vmess, uuid: 113d0898-0e65-4d4e-ac26-2849f39c599c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: oz.moonfree.top}, udp: true}
+  - {name: US_油管 TG 8度科技 18, server: gongyiau1.yigeweizhuang.com, port: 2096, type: vmess, uuid: a94446e3-be9c-4240-9bdf-9b88155a7eb4, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: gongyiau1.yigeweizhuang.com}, udp: true}
+  - {name: NL_油管 TG 8度科技 8, server: 154.84.1.198, port: 443, type: vmess, uuid: 743bdc87-1dea-41bf-aa0b-51dfbbfec8aa, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /path/080331123005, ws-headers: {Host: www.54872833.xyz}, udp: true}
+  - {name: US_油管 TG 8度科技 19, server: ru.oracleusa.ml, port: 2053, type: vmess, uuid: d176bc78-9bf9-4ab3-9af9-a1e412d95c53, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: ru.oracleusa.ml}, udp: true}
+  - {name: 油管 TG 8度科技 6, server: gongyisg1.yigeweizhuang.com, port: 2096, type: vmess, uuid: a94446e3-be9c-4240-9bdf-9b88155a7eb4, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: gongyisg1.yigeweizhuang.com}, udp: true}
+  - {name: 油管 TG 8度科技 7, server: gongyiin1.yigeweizhuang.com, port: 2096, type: vmess, uuid: a94446e3-be9c-4240-9bdf-9b88155a7eb4, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: gongyiin1.yigeweizhuang.com}, udp: true}
+  - {name: US_油管 TG 8度科技 20, server: 104.27.89.125, port: 443, type: vmess, uuid: 24b4b1e1-7a89-45f6-858c-242cf53b5bdb, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: 24b4b1e1-7a89-45f6-858c-242cf53b5bdb-vmess, ws-headers: {Host: xiaochen.chenyingjie5201314.workers.dev}, udp: true}
+  - {name: US_油管 TG 8度科技 21, server: 45.32.94.166, port: 31676, type: vmess, uuid: 6f3ec45c-5283-40e8-aea9-7749f4c75753, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/], headers: {Host: [45.32.94.166]}}, udp: true}
+  - {name: 油管 TG 8度科技 8, server: gongyiin1.yigeweizhuang.com, port: 2096, type: vmess, uuid: a94446e3-be9c-4240-9bdf-9b88155a7eb4, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: gongyiin1.yigeweizhuang.com}, udp: true}
+  - {name: CN_油管 TG 8度科技 9, server: qzyd.zerohost.live, port: 26001, type: vmess, uuid: c008a763-2123-312f-bae6-bf7630517e22, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: aweikeji-YouTube-TG}, udp: true}
+  - {name: JP_油管 TG 8度科技, server: rbzf.moonfree.top, port: 10080, type: vmess, uuid: 113d0898-0e65-4d4e-ac26-2849f39c599c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: v6fr.moonfree.top}, udp: true}
+  - {name: 油管 TG 8度科技 9, server: cm.db-link.in, port: 443, type: vmess, uuid: e65b42e6-a404-3dd0-ae1c-11ec8f507020, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /db, ws-headers: {Host: us01.db-link.in}, udp: true}
+  - {name: CN_油管 TG 8度科技 10, server: nyyd.zerohost.live, port: 53009, type: vmess, uuid: c008a763-2123-312f-bae6-bf7630517e22, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: aweikeji-YouTube-TG}, udp: true}
+  - {name: JP_油管 TG 8度科技 2, server: cmi.db-link.in, port: 21154, type: vmess, uuid: e65b42e6-a404-3dd0-ae1c-11ec8f507020, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /db, ws-headers: {Host: us4.db-link.in}, udp: true}
+  - {name: CN_油管 TG 8度科技 11, server: iepl.hk.stohb.nodeg.cloud, port: 30021, type: vmess, uuid: 23a3db66-2651-3fae-b042-83b437e871fc, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: US_油管 TG 8度科技 22, server: 23.225.33.42, port: 443, type: vmess, uuid: aaea45eb-7b4b-44d4-9080-56470ddfc58a, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /path/261217002001, ws-headers: {Host: www.20405808.xyz}, udp: true}
+  - {name: JP_油管 TG 8度科技 3, server: rbzf.moonfree.top, port: 10082, type: vmess, uuid: 113d0898-0e65-4d4e-ac26-2849f39c599c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: shz.moonfree.top}, udp: true}
+  - {name: JP_油管 TG 8度科技 4, server: cmi.db-link.in, port: 21152, type: vmess, uuid: e65b42e6-a404-3dd0-ae1c-11ec8f507020, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /db, ws-headers: {Host: us2.db-link.in}, udp: true}
+  - {name: JP_油管 TG 8度科技 5, server: cmi.db-link.in, port: 21153, type: vmess, uuid: e65b42e6-a404-3dd0-ae1c-11ec8f507020, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /db, ws-headers: {Host: us3.db-link.in}, udp: true}
+  - {name: CN_油管 TG 8度科技 12, server: nyyd.zerohost.live, port: 53009, type: vmess, uuid: c008a763-2123-312f-bae6-bf7630517e22, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: nyyd.zerohost.live}, udp: true}
+  - {name: US_油管 TG 8度科技 23, server: 23.224.69.21, port: 443, type: vmess, uuid: 946ba5df-5771-4873-a3cb-892378526147, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /path/080331123005, ws-headers: {Host: www.73788846.xyz}, udp: true}
+  - {name: CN_油管 TG 8度科技 13, server: CMT.SSRSS.CLUB, port: 35523, type: vmess, uuid: 7ed37d86-0018-194e-5e78-9c7a0846831e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /yy, ws-headers: {Host: 761384820-server.s0.aicdn.com}, udp: true}
+  - {name: CN_油管 TG 8度科技 14, server: 117.28.243.154, port: 6150, type: ss, cipher: rc4-md5, password: passinfo123, udp: true}
+  - {name: CA_油管 TG 8度科技, server: 134.195.196.81, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: CN_油管 TG 8度科技 15, server: 117.28.243.220, port: 8186, type: ss, cipher: rc4-md5, password: passinfo123, udp: true}
+  - {name: CN_油管 TG 8度科技 16, server: 117.28.243.154, port: 6188, type: ss, cipher: rc4-md5, password: passinfo123, udp: true}
+  - {name: CA_油管 TG 8度科技 2, server: 134.195.196.3, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: CA_油管 TG 8度科技 3, server: 134.195.196.81, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: CA_油管 TG 8度科技 4, server: 134.195.196.3, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: US_油管 TG 8度科技 24, server: 169.197.142.99, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: CA_油管 TG 8度科技 5, server: 134.195.196.81, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: CN_油管 TG 8度科技 17, server: 117.28.243.173, port: 4173, type: ss, cipher: rc4-md5, password: passinfo123, udp: true}
+  - {name: CN_油管 TG 8度科技 18, server: 117.28.243.220, port: 8254, type: ss, cipher: rc4-md5, password: passinfo123, udp: true}
+  - {name: CA_油管 TG 8度科技 6, server: 134.195.196.187, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: CA_油管 TG 8度科技 7, server: 134.195.196.81, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: CA_油管 TG 8度科技 8, server: 134.195.196.81, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: CA_油管 TG 8度科技 9, server: 134.195.196.81, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: CA_油管 TG 8度科技 10, server: 134.195.196.187, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: CA_油管 TG 8度科技 11, server: 134.195.196.81, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: CN_油管 TG 8度科技 19, server: 117.28.243.220, port: 8076, type: ss, cipher: rc4-md5, password: passinfo123, udp: true}
+  - {name: CA_油管 TG 8度科技 12, server: 134.195.196.3, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: CA_油管 TG 8度科技 13, server: 134.195.196.3, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: CA_油管 TG 8度科技 14, server: 134.195.196.81, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: CA_油管 TG 8度科技 15, server: 134.195.196.187, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: US_油管 TG 8度科技 25, server: 169.197.142.99, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: CA_油管 TG 8度科技 16, server: 134.195.196.3, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: CA_油管 TG 8度科技 17, server: 134.195.196.187, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: CA_油管 TG 8度科技 18, server: 134.195.196.81, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: CA_油管 TG 8度科技 19, server: 134.195.196.187, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: CA_油管 TG 8度科技 20, server: 134.195.196.81, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: CA_油管 TG 8度科技 21, server: 134.195.196.81, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: CA_油管 TG 8度科技 22, server: 134.195.196.81, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: CA_油管 TG 8度科技 23, server: 134.195.196.187, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: CA_油管 TG 8度科技 24, server: 134.195.196.187, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: CA_油管 TG 8度科技 25, server: 134.195.196.3, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: HK_油管 TG 8度科技 4, server: tj-16.t8737.shop, port: 11223, type: trojan, password: 7b521a74-6bee-477e-9ae3-bd6a217dcfcc, sni: tj-16.t8737.shop, skip-cert-verify: true, udp: true}
+  - {name: KR_油管 TG 8度科技, server: tj-06.t8737.shop, port: 11223, type: trojan, password: 7b521a74-6bee-477e-9ae3-bd6a217dcfcc, sni: tj-06.t8737.shop, skip-cert-verify: true, udp: true}
+  - {name: KR_油管 TG 8度科技 2, server: tj-05.t8737.shop, port: 11223, type: trojan, password: 7b521a74-6bee-477e-9ae3-bd6a217dcfcc, sni: tj-05.t8737.shop, skip-cert-verify: true, udp: true}
+  - {name: KR_油管 TG 8度科技 3, server: tj-07.t8737.shop, port: 11223, type: trojan, password: 7b521a74-6bee-477e-9ae3-bd6a217dcfcc, sni: tj-07.t8737.shop, skip-cert-verify: true, udp: true}
+  - {name: HK_油管 TG 8度科技 5, server: tj-03.t8737.shop, port: 11223, type: trojan, password: 7b521a74-6bee-477e-9ae3-bd6a217dcfcc, sni: tj-03.t8737.shop, skip-cert-verify: true, udp: true}
+  - {name: HK_油管 TG 8度科技 6, server: tj-04.t8737.shop, port: 11223, type: trojan, password: 7b521a74-6bee-477e-9ae3-bd6a217dcfcc, sni: tj-04.t8737.shop, skip-cert-verify: true, udp: true}
+  - {name: HK_油管 TG 8度科技 7, server: tj-02.t8737.shop, port: 11223, type: trojan, password: 7b521a74-6bee-477e-9ae3-bd6a217dcfcc, sni: tj-02.t8737.shop, skip-cert-verify: true, udp: true}
+  - {name: US_油管 TG 8度科技 26, server: tj-12.t8737.shop, port: 11223, type: trojan, password: 7b521a74-6bee-477e-9ae3-bd6a217dcfcc, sni: tj-12.t8737.shop, skip-cert-verify: true, udp: true}
+  - {name: HK_油管 TG 8度科技 8, server: tj-01.t8737.shop, port: 11223, type: trojan, password: 7b521a74-6bee-477e-9ae3-bd6a217dcfcc, sni: tj-01.t8737.shop, skip-cert-verify: true, udp: true}
+  - {name: US_油管 TG 8度科技 27, server: tj-13.t8737.shop, port: 11223, type: trojan, password: 7b521a74-6bee-477e-9ae3-bd6a217dcfcc, sni: tj-13.t8737.shop, skip-cert-verify: true, udp: true}
+  - {name: US_油管 TG 8度科技 28, server: tj-11.t8737.shop, port: 11223, type: trojan, password: 7b521a74-6bee-477e-9ae3-bd6a217dcfcc, sni: tj-11.t8737.shop, skip-cert-verify: true, udp: true}
+  - {name: US_油管 TG 8度科技 29, server: tj-15.t8737.shop, port: 11223, type: trojan, password: 7b521a74-6bee-477e-9ae3-bd6a217dcfcc, sni: tj-15.t8737.shop, skip-cert-verify: true, udp: true}
+  - {name: US_油管 TG 8度科技 30, server: tj-14.t8737.shop, port: 11223, type: trojan, password: 7b521a74-6bee-477e-9ae3-bd6a217dcfcc, sni: tj-14.t8737.shop, skip-cert-verify: true, udp: true}
+  - {name: US_油管 TG 8度科技 31, server: tj-10.t8737.shop, port: 11223, type: trojan, password: 7b521a74-6bee-477e-9ae3-bd6a217dcfcc, sni: tj-10.t8737.shop, skip-cert-verify: true, udp: true}
+  - {name: CN_油管 TG 8度科技 20, server: 120.233.7.78, port: 50111, type: ssr, cipher: rc4-md5, password: abK09D1FnV, protocol: auth_aes128_md5, obfs: http_post, protocol-param: 294798:xAlac3k6Nf, obfs-param: "", udp: true}
+  - {name: CN_油管 TG 8度科技 21, server: 120.233.7.78, port: 50111, type: ssr, cipher: rc4-md5, password: abK09D1FnV, protocol: auth_aes128_md5, obfs: http_post, protocol-param: 294803:oRJxWPD21g, obfs-param: "", udp: true}
+  - {name: CN_油管 TG 8度科技 22, server: 120.233.7.78, port: 50111, type: ssr, cipher: rc4-md5, password: abK09D1FnV, protocol: auth_aes128_md5, obfs: http_post, protocol-param: 294802:awgoVGEn97, obfs-param: "", udp: true}
+  - {name: CN_油管 TG 8度科技 23, server: 120.233.7.78, port: 50111, type: ssr, cipher: rc4-md5, password: abK09D1FnV, protocol: auth_aes128_md5, obfs: http_post, protocol-param: 294794:d39XoFl1My, obfs-param: "", udp: true}
+  - {name: CN_油管 TG 8度科技 24, server: 120.233.7.78, port: 50111, type: ssr, cipher: rc4-md5, password: abK09D1FnV, protocol: auth_aes128_md5, obfs: http_post, protocol-param: 294797:aL9ynR2h7f, obfs-param: "", udp: true}
+  - {name: CN_油管 TG 8度科技 25, server: 120.233.7.78, port: 50111, type: ssr, cipher: rc4-md5, password: abK09D1FnV, protocol: auth_aes128_md5, obfs: http_post, protocol-param: 294799:MioZb37IlY, obfs-param: "", udp: true}
+  - {name: CN_油管 TG 8度科技 26, server: 120.233.7.78, port: 50111, type: ssr, cipher: rc4-md5, password: abK09D1FnV, protocol: auth_aes128_md5, obfs: http_post, protocol-param: 294796:kf4QcXlBUm, obfs-param: "", udp: true}
+  - {name: CN_油管 TG 8度科技 27, server: 120.233.7.78, port: 50111, type: ssr, cipher: rc4-md5, password: abK09D1FnV, protocol: auth_aes128_md5, obfs: http_post, protocol-param: 294795:DXBhjoNuUG, obfs-param: "", udp: true}
+  - {name: CN_油管 TG 8度科技 28, server: 120.233.7.78, port: 50111, type: ssr, cipher: rc4-md5, password: abK09D1FnV, protocol: auth_aes128_md5, obfs: http_post, protocol-param: 294801:D1NLy4XQYI, obfs-param: "", udp: true}
+  - {name: CN_油管 TG 8度科技 29, server: 120.233.7.78, port: 50111, type: ssr, cipher: rc4-md5, password: abK09D1FnV, protocol: auth_aes128_md5, obfs: http_post, protocol-param: 294800:E3bF5VpSg7, obfs-param: "", udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - _US_美国
-      - default_name
-      - 日本+05丨1x+JP
-      - 香港+04丨1x+HK
-      - 日本+07丨1x+JP
-      - 香港08
-      - 台湾+05丨1x+TW
-      - 日本+01丨1x+JP
-      - 台湾+04丨1x+TW
-      - 日本+12丨1x+JP
-      - 台湾+10丨1x+TW
-      - 菲律宾+01丨1x+PH
-      - 日本+04丨1x+JP
-      - 香港06
-      - 香港家宽丨1x+HK
-      - 香港+14丨1x+HK
-      - 新加坡+09丨1x+SG
-      - 新加坡+02丨1x+SG
-      - 香港+01丨1x+HK
-      - 巴基斯坦+01丨5x+PK
-      - 新加坡01
-      - 美国+03+芝加哥丨1x+US
-      - 台湾01
-      - 新加坡+11丨2x+SG
-      - 韩国01
-      - 新加坡+05丨1x+SG
-      - 新加坡02
-      - 巴基斯坦+02丨5x+PK
-      - 印度尼西亚-棉兰丨1x+ID
-      - 台湾02
-      - 美国+07+达拉斯丨1x+US
-      - 香港+09丨1x+HK
-      - 日本+14丨3x+JP
-      - 印度尼西亚-雅加达丨1x+ID
-      - 美国01
-      - 香港+10丨1x+HK
-      - 马来西亚家宽丨3x+MY
-      - 越南丨1x+VN
-      - 台湾+14丨1x+TW
-      - 德国02
-      - 新加坡家宽丨3x+SG
-      - 巴拿马丨3x+PA
-      - 美国+06+斯波坎丨1x+US
-      - 日本+17丨3x+JP
-      - 香港+12丨1x+HK
-      - 以色列丨1x+IL
-      - 香港03
-      - 香港04
-      - 加拿大+01+多伦多丨1x+CA
-      - 卢森堡丨2x+LU
-      - 韩国+01丨3x+KR
-      - 新西兰丨3x+NZ
-      - 加拿大+02+温哥华丨2x+CA
-      - 美国+09+密尔沃基丨1x+US
-      - 荷兰丨1x+NL
-      - 冰岛丨2x+IS
-      - 意大利丨1x+IT
-      - 新加坡+08丨1x+SG
-      - 尼泊尔丨1x+NP
-      - 台湾+13丨1x+TW
-      - 英国+02丨1x+GB
-      - 俄罗斯-库页岛丨1x+RU
-      - 塞浦路斯丨1x+CY
-      - 埃及丨3x+EG
-      - 格鲁吉亚丨1x+GE
-      - 伊朗丨5x+IR
-      - 法国丨1x+FR
-      - 德国+01丨1x+DE
-      - 阿塞拜疆丨1x+AZ
-      - 罗马尼亚丨1x+RO
-      - 韩国03
-      - 哥伦比亚丨1x+CO
-      - 英国01
-      - 克罗地亚丨2x+HR
-      - 葡萄牙丨1x+PT
-      - 台湾+08丨1x+TW
-      - 斯洛文尼亚丨2x+SI
-      - 台湾+07丨1x+TW
-      - 日本+10丨1x+JP
-      - 澳大利亚-布里斯班丨2x+AU
-      - 马恩岛丨2x+IM
-      - 德国01
-      - 阿尔巴尼亚丨1x+AL
-      - 德国+02丨1x+DE
-      - 摩尔多瓦丨2x+MD
-      - 美国+01+费城丨1x+US
-      - 土耳其丨1x+TR
-      - 爱沙尼亚丨1x+EE
-      - 尼日利亚丨2x+NG
-      - 希腊丨2x+GR
-      - 塞尔维亚丨2x+RS
-      - 台湾+09丨1x+TW
-      - 香港+02丨1x+HK
-      - 突尼斯丨2x+TN
-      - 印度02
-      - 乌拉圭丨2x+UY
-      - 挪威丨1x+NO
-      - 马来西亚+05丨1x+MY
-      - 俄罗斯-莫斯科丨1x+RU
-      - 奥地利丨2x+AT
-      - 香港+08丨1x+HK
-      - 台湾+16丨1x+TW
-      - 香港05
-      - 香港+06丨1x+HK
-      - 美国03
-      - 马来西亚+03丨1x+MY
-      - 白俄罗斯丨2x+BY
-      - 香港+03丨1x+HK
-      - 美国02
-      - 印度01
-      - 日本01
-      - 立陶宛丨1x+LT
-      - 台湾+12丨1x+TW
-      - 香港02
-      - 孟加拉丨2x+BD
-      - 英国02
-      - 越南家宽丨3x+VN
-      - 美国+08+底特律丨1x+US
-      - 爱尔兰丨2x+IE
-      - 瑞典丨1x+SE
-      - 哈萨克斯坦丨1x+KZ
-      - 韩国02
-      - 台湾+11丨1x+TW
-      - 日本+15丨3x+JP
-      - 日本+08丨1x+JP
-      - 加拿大家宽丨3x+CA
-      - 美国+04+圣何塞丨1x+US
-      - 新加坡03
-      - 菲律宾+02丨1x+PH
-      - 台湾+06丨1x+TW
-      - 香港+05丨1x+HK
-      - 加拿大+03+哈利法克斯丨1x+CA
-      - 波兰丨1x+PL
-      - 南非丨1x+ZA
-      - 瑞士丨2x+CH
-      - 印度-新德里丨1x+IN
-      - 肯尼亚丨1x+KE
-      - 日本+06丨1x+JP
-      - 乌克兰丨1x+UA
-      - 马来西亚+02丨1x+MY
-      - 新加坡+01丨1x+SG
-      - 阿根廷丨5x+AR
-      - 北马其顿丨2x+MK
-      - 澳门商宽丨2x+MO
-      - 台湾+01丨1x+TW
-      - 哥斯达黎加丨2x+CR
-      - 日本+11丨2x+JP
-      - 拉脱维亚丨1x+LV
-      - 墨西哥丨3x+MX
-      - 马来西亚+01丨1x+MY
-      - 日本02
-      - 韩国+02丨3x+KR
-      - 日本+03丨1x+JP
+      - HK_油管 TG 8度科技
+      - CN_油管 TG 8度科技
+      - CN_油管 TG 8度科技 2
+      - CN_油管 TG 8度科技 3
+      - CN_油管 TG 8度科技 4
+      - CN_油管 TG 8度科技 5
+      - CN_油管 TG 8度科技 6
+      - CN_油管 TG 8度科技 7
+      - HK_油管 TG 8度科技 2
+      - US_油管 TG 8度科技
+      - AE_油管 TG 8度科技
+      - AE_油管 TG 8度科技 2
+      - 油管 TG 8度科技
+      - 油管 TG 8度科技 2
+      - AE_油管 TG 8度科技 3
+      - US_油管 TG 8度科技 2
+      - US_油管 TG 8度科技 3
+      - US_油管 TG 8度科技 4
+      - US_油管 TG 8度科技 5
+      - US_油管 TG 8度科技 6
+      - US_油管 TG 8度科技 7
+      - US_油管 TG 8度科技 8
+      - US_油管 TG 8度科技 9
+      - US_油管 TG 8度科技 10
+      - US_油管 TG 8度科技 11
+      - HK_油管 TG 8度科技 3
+      - NL_油管 TG 8度科技
+      - CN_油管 TG 8度科技 8
+      - US_油管 TG 8度科技 12
+      - US_油管 TG 8度科技 13
+      - US_油管 TG 8度科技 14
+      - 油管 TG 8度科技 3
+      - NL_油管 TG 8度科技 2
+      - NL_油管 TG 8度科技 3
+      - US_油管 TG 8度科技 15
+      - 油管 TG 8度科技 4
+      - NL_油管 TG 8度科技 4
+      - NL_油管 TG 8度科技 5
+      - NL_油管 TG 8度科技 6
+      - US_油管 TG 8度科技 16
+      - 油管 TG 8度科技 5
+      - NL_油管 TG 8度科技 7
+      - US_油管 TG 8度科技 17
+      - US_油管 TG 8度科技 18
+      - NL_油管 TG 8度科技 8
+      - US_油管 TG 8度科技 19
+      - 油管 TG 8度科技 6
+      - 油管 TG 8度科技 7
+      - US_油管 TG 8度科技 20
+      - US_油管 TG 8度科技 21
+      - 油管 TG 8度科技 8
+      - CN_油管 TG 8度科技 9
+      - JP_油管 TG 8度科技
+      - 油管 TG 8度科技 9
+      - CN_油管 TG 8度科技 10
+      - JP_油管 TG 8度科技 2
+      - CN_油管 TG 8度科技 11
+      - US_油管 TG 8度科技 22
+      - JP_油管 TG 8度科技 3
+      - JP_油管 TG 8度科技 4
+      - JP_油管 TG 8度科技 5
+      - CN_油管 TG 8度科技 12
+      - US_油管 TG 8度科技 23
+      - CN_油管 TG 8度科技 13
+      - CN_油管 TG 8度科技 14
+      - CA_油管 TG 8度科技
+      - CN_油管 TG 8度科技 15
+      - CN_油管 TG 8度科技 16
+      - CA_油管 TG 8度科技 2
+      - CA_油管 TG 8度科技 3
+      - CA_油管 TG 8度科技 4
+      - US_油管 TG 8度科技 24
+      - CA_油管 TG 8度科技 5
+      - CN_油管 TG 8度科技 17
+      - CN_油管 TG 8度科技 18
+      - CA_油管 TG 8度科技 6
+      - CA_油管 TG 8度科技 7
+      - CA_油管 TG 8度科技 8
+      - CA_油管 TG 8度科技 9
+      - CA_油管 TG 8度科技 10
+      - CA_油管 TG 8度科技 11
+      - CN_油管 TG 8度科技 19
+      - CA_油管 TG 8度科技 12
+      - CA_油管 TG 8度科技 13
+      - CA_油管 TG 8度科技 14
+      - CA_油管 TG 8度科技 15
+      - US_油管 TG 8度科技 25
+      - CA_油管 TG 8度科技 16
+      - CA_油管 TG 8度科技 17
+      - CA_油管 TG 8度科技 18
+      - CA_油管 TG 8度科技 19
+      - CA_油管 TG 8度科技 20
+      - CA_油管 TG 8度科技 21
+      - CA_油管 TG 8度科技 22
+      - CA_油管 TG 8度科技 23
+      - CA_油管 TG 8度科技 24
+      - CA_油管 TG 8度科技 25
+      - HK_油管 TG 8度科技 4
+      - KR_油管 TG 8度科技
+      - KR_油管 TG 8度科技 2
+      - KR_油管 TG 8度科技 3
+      - HK_油管 TG 8度科技 5
+      - HK_油管 TG 8度科技 6
+      - HK_油管 TG 8度科技 7
+      - US_油管 TG 8度科技 26
+      - HK_油管 TG 8度科技 8
+      - US_油管 TG 8度科技 27
+      - US_油管 TG 8度科技 28
+      - US_油管 TG 8度科技 29
+      - US_油管 TG 8度科技 30
+      - US_油管 TG 8度科技 31
+      - CN_油管 TG 8度科技 20
+      - CN_油管 TG 8度科技 21
+      - CN_油管 TG 8度科技 22
+      - CN_油管 TG 8度科技 23
+      - CN_油管 TG 8度科技 24
+      - CN_油管 TG 8度科技 25
+      - CN_油管 TG 8度科技 26
+      - CN_油管 TG 8度科技 27
+      - CN_油管 TG 8度科技 28
+      - CN_油管 TG 8度科技 29
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - _US_美国
-      - default_name
-      - 日本+05丨1x+JP
-      - 香港+04丨1x+HK
-      - 日本+07丨1x+JP
-      - 香港08
-      - 台湾+05丨1x+TW
-      - 日本+01丨1x+JP
-      - 台湾+04丨1x+TW
-      - 日本+12丨1x+JP
-      - 台湾+10丨1x+TW
-      - 菲律宾+01丨1x+PH
-      - 日本+04丨1x+JP
-      - 香港06
-      - 香港家宽丨1x+HK
-      - 香港+14丨1x+HK
-      - 新加坡+09丨1x+SG
-      - 新加坡+02丨1x+SG
-      - 香港+01丨1x+HK
-      - 巴基斯坦+01丨5x+PK
-      - 新加坡01
-      - 美国+03+芝加哥丨1x+US
-      - 台湾01
-      - 新加坡+11丨2x+SG
-      - 韩国01
-      - 新加坡+05丨1x+SG
-      - 新加坡02
-      - 巴基斯坦+02丨5x+PK
-      - 印度尼西亚-棉兰丨1x+ID
-      - 台湾02
-      - 美国+07+达拉斯丨1x+US
-      - 香港+09丨1x+HK
-      - 日本+14丨3x+JP
-      - 印度尼西亚-雅加达丨1x+ID
-      - 美国01
-      - 香港+10丨1x+HK
-      - 马来西亚家宽丨3x+MY
-      - 越南丨1x+VN
-      - 台湾+14丨1x+TW
-      - 德国02
-      - 新加坡家宽丨3x+SG
-      - 巴拿马丨3x+PA
-      - 美国+06+斯波坎丨1x+US
-      - 日本+17丨3x+JP
-      - 香港+12丨1x+HK
-      - 以色列丨1x+IL
-      - 香港03
-      - 香港04
-      - 加拿大+01+多伦多丨1x+CA
-      - 卢森堡丨2x+LU
-      - 韩国+01丨3x+KR
-      - 新西兰丨3x+NZ
-      - 加拿大+02+温哥华丨2x+CA
-      - 美国+09+密尔沃基丨1x+US
-      - 荷兰丨1x+NL
-      - 冰岛丨2x+IS
-      - 意大利丨1x+IT
-      - 新加坡+08丨1x+SG
-      - 尼泊尔丨1x+NP
-      - 台湾+13丨1x+TW
-      - 英国+02丨1x+GB
-      - 俄罗斯-库页岛丨1x+RU
-      - 塞浦路斯丨1x+CY
-      - 埃及丨3x+EG
-      - 格鲁吉亚丨1x+GE
-      - 伊朗丨5x+IR
-      - 法国丨1x+FR
-      - 德国+01丨1x+DE
-      - 阿塞拜疆丨1x+AZ
-      - 罗马尼亚丨1x+RO
-      - 韩国03
-      - 哥伦比亚丨1x+CO
-      - 英国01
-      - 克罗地亚丨2x+HR
-      - 葡萄牙丨1x+PT
-      - 台湾+08丨1x+TW
-      - 斯洛文尼亚丨2x+SI
-      - 台湾+07丨1x+TW
-      - 日本+10丨1x+JP
-      - 澳大利亚-布里斯班丨2x+AU
-      - 马恩岛丨2x+IM
-      - 德国01
-      - 阿尔巴尼亚丨1x+AL
-      - 德国+02丨1x+DE
-      - 摩尔多瓦丨2x+MD
-      - 美国+01+费城丨1x+US
-      - 土耳其丨1x+TR
-      - 爱沙尼亚丨1x+EE
-      - 尼日利亚丨2x+NG
-      - 希腊丨2x+GR
-      - 塞尔维亚丨2x+RS
-      - 台湾+09丨1x+TW
-      - 香港+02丨1x+HK
-      - 突尼斯丨2x+TN
-      - 印度02
-      - 乌拉圭丨2x+UY
-      - 挪威丨1x+NO
-      - 马来西亚+05丨1x+MY
-      - 俄罗斯-莫斯科丨1x+RU
-      - 奥地利丨2x+AT
-      - 香港+08丨1x+HK
-      - 台湾+16丨1x+TW
-      - 香港05
-      - 香港+06丨1x+HK
-      - 美国03
-      - 马来西亚+03丨1x+MY
-      - 白俄罗斯丨2x+BY
-      - 香港+03丨1x+HK
-      - 美国02
-      - 印度01
-      - 日本01
-      - 立陶宛丨1x+LT
-      - 台湾+12丨1x+TW
-      - 香港02
-      - 孟加拉丨2x+BD
-      - 英国02
-      - 越南家宽丨3x+VN
-      - 美国+08+底特律丨1x+US
-      - 爱尔兰丨2x+IE
-      - 瑞典丨1x+SE
-      - 哈萨克斯坦丨1x+KZ
-      - 韩国02
-      - 台湾+11丨1x+TW
-      - 日本+15丨3x+JP
-      - 日本+08丨1x+JP
-      - 加拿大家宽丨3x+CA
-      - 美国+04+圣何塞丨1x+US
-      - 新加坡03
-      - 菲律宾+02丨1x+PH
-      - 台湾+06丨1x+TW
-      - 香港+05丨1x+HK
-      - 加拿大+03+哈利法克斯丨1x+CA
-      - 波兰丨1x+PL
-      - 南非丨1x+ZA
-      - 瑞士丨2x+CH
-      - 印度-新德里丨1x+IN
-      - 肯尼亚丨1x+KE
-      - 日本+06丨1x+JP
-      - 乌克兰丨1x+UA
-      - 马来西亚+02丨1x+MY
-      - 新加坡+01丨1x+SG
-      - 阿根廷丨5x+AR
-      - 北马其顿丨2x+MK
-      - 澳门商宽丨2x+MO
-      - 台湾+01丨1x+TW
-      - 哥斯达黎加丨2x+CR
-      - 日本+11丨2x+JP
-      - 拉脱维亚丨1x+LV
-      - 墨西哥丨3x+MX
-      - 马来西亚+01丨1x+MY
-      - 日本02
-      - 韩国+02丨3x+KR
-      - 日本+03丨1x+JP
+      - HK_油管 TG 8度科技
+      - CN_油管 TG 8度科技
+      - CN_油管 TG 8度科技 2
+      - CN_油管 TG 8度科技 3
+      - CN_油管 TG 8度科技 4
+      - CN_油管 TG 8度科技 5
+      - CN_油管 TG 8度科技 6
+      - CN_油管 TG 8度科技 7
+      - HK_油管 TG 8度科技 2
+      - US_油管 TG 8度科技
+      - AE_油管 TG 8度科技
+      - AE_油管 TG 8度科技 2
+      - 油管 TG 8度科技
+      - 油管 TG 8度科技 2
+      - AE_油管 TG 8度科技 3
+      - US_油管 TG 8度科技 2
+      - US_油管 TG 8度科技 3
+      - US_油管 TG 8度科技 4
+      - US_油管 TG 8度科技 5
+      - US_油管 TG 8度科技 6
+      - US_油管 TG 8度科技 7
+      - US_油管 TG 8度科技 8
+      - US_油管 TG 8度科技 9
+      - US_油管 TG 8度科技 10
+      - US_油管 TG 8度科技 11
+      - HK_油管 TG 8度科技 3
+      - NL_油管 TG 8度科技
+      - CN_油管 TG 8度科技 8
+      - US_油管 TG 8度科技 12
+      - US_油管 TG 8度科技 13
+      - US_油管 TG 8度科技 14
+      - 油管 TG 8度科技 3
+      - NL_油管 TG 8度科技 2
+      - NL_油管 TG 8度科技 3
+      - US_油管 TG 8度科技 15
+      - 油管 TG 8度科技 4
+      - NL_油管 TG 8度科技 4
+      - NL_油管 TG 8度科技 5
+      - NL_油管 TG 8度科技 6
+      - US_油管 TG 8度科技 16
+      - 油管 TG 8度科技 5
+      - NL_油管 TG 8度科技 7
+      - US_油管 TG 8度科技 17
+      - US_油管 TG 8度科技 18
+      - NL_油管 TG 8度科技 8
+      - US_油管 TG 8度科技 19
+      - 油管 TG 8度科技 6
+      - 油管 TG 8度科技 7
+      - US_油管 TG 8度科技 20
+      - US_油管 TG 8度科技 21
+      - 油管 TG 8度科技 8
+      - CN_油管 TG 8度科技 9
+      - JP_油管 TG 8度科技
+      - 油管 TG 8度科技 9
+      - CN_油管 TG 8度科技 10
+      - JP_油管 TG 8度科技 2
+      - CN_油管 TG 8度科技 11
+      - US_油管 TG 8度科技 22
+      - JP_油管 TG 8度科技 3
+      - JP_油管 TG 8度科技 4
+      - JP_油管 TG 8度科技 5
+      - CN_油管 TG 8度科技 12
+      - US_油管 TG 8度科技 23
+      - CN_油管 TG 8度科技 13
+      - CN_油管 TG 8度科技 14
+      - CA_油管 TG 8度科技
+      - CN_油管 TG 8度科技 15
+      - CN_油管 TG 8度科技 16
+      - CA_油管 TG 8度科技 2
+      - CA_油管 TG 8度科技 3
+      - CA_油管 TG 8度科技 4
+      - US_油管 TG 8度科技 24
+      - CA_油管 TG 8度科技 5
+      - CN_油管 TG 8度科技 17
+      - CN_油管 TG 8度科技 18
+      - CA_油管 TG 8度科技 6
+      - CA_油管 TG 8度科技 7
+      - CA_油管 TG 8度科技 8
+      - CA_油管 TG 8度科技 9
+      - CA_油管 TG 8度科技 10
+      - CA_油管 TG 8度科技 11
+      - CN_油管 TG 8度科技 19
+      - CA_油管 TG 8度科技 12
+      - CA_油管 TG 8度科技 13
+      - CA_油管 TG 8度科技 14
+      - CA_油管 TG 8度科技 15
+      - US_油管 TG 8度科技 25
+      - CA_油管 TG 8度科技 16
+      - CA_油管 TG 8度科技 17
+      - CA_油管 TG 8度科技 18
+      - CA_油管 TG 8度科技 19
+      - CA_油管 TG 8度科技 20
+      - CA_油管 TG 8度科技 21
+      - CA_油管 TG 8度科技 22
+      - CA_油管 TG 8度科技 23
+      - CA_油管 TG 8度科技 24
+      - CA_油管 TG 8度科技 25
+      - HK_油管 TG 8度科技 4
+      - KR_油管 TG 8度科技
+      - KR_油管 TG 8度科技 2
+      - KR_油管 TG 8度科技 3
+      - HK_油管 TG 8度科技 5
+      - HK_油管 TG 8度科技 6
+      - HK_油管 TG 8度科技 7
+      - US_油管 TG 8度科技 26
+      - HK_油管 TG 8度科技 8
+      - US_油管 TG 8度科技 27
+      - US_油管 TG 8度科技 28
+      - US_油管 TG 8度科技 29
+      - US_油管 TG 8度科技 30
+      - US_油管 TG 8度科技 31
+      - CN_油管 TG 8度科技 20
+      - CN_油管 TG 8度科技 21
+      - CN_油管 TG 8度科技 22
+      - CN_油管 TG 8度科技 23
+      - CN_油管 TG 8度科技 24
+      - CN_油管 TG 8度科技 25
+      - CN_油管 TG 8度科技 26
+      - CN_油管 TG 8度科技 27
+      - CN_油管 TG 8度科技 28
+      - CN_油管 TG 8度科技 29
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - _US_美国
-      - default_name
-      - 日本+05丨1x+JP
-      - 香港+04丨1x+HK
-      - 日本+07丨1x+JP
-      - 香港08
-      - 台湾+05丨1x+TW
-      - 日本+01丨1x+JP
-      - 台湾+04丨1x+TW
-      - 日本+12丨1x+JP
-      - 台湾+10丨1x+TW
-      - 菲律宾+01丨1x+PH
-      - 日本+04丨1x+JP
-      - 香港06
-      - 香港家宽丨1x+HK
-      - 香港+14丨1x+HK
-      - 新加坡+09丨1x+SG
-      - 新加坡+02丨1x+SG
-      - 香港+01丨1x+HK
-      - 巴基斯坦+01丨5x+PK
-      - 新加坡01
-      - 美国+03+芝加哥丨1x+US
-      - 台湾01
-      - 新加坡+11丨2x+SG
-      - 韩国01
-      - 新加坡+05丨1x+SG
-      - 新加坡02
-      - 巴基斯坦+02丨5x+PK
-      - 印度尼西亚-棉兰丨1x+ID
-      - 台湾02
-      - 美国+07+达拉斯丨1x+US
-      - 香港+09丨1x+HK
-      - 日本+14丨3x+JP
-      - 印度尼西亚-雅加达丨1x+ID
-      - 美国01
-      - 香港+10丨1x+HK
-      - 马来西亚家宽丨3x+MY
-      - 越南丨1x+VN
-      - 台湾+14丨1x+TW
-      - 德国02
-      - 新加坡家宽丨3x+SG
-      - 巴拿马丨3x+PA
-      - 美国+06+斯波坎丨1x+US
-      - 日本+17丨3x+JP
-      - 香港+12丨1x+HK
-      - 以色列丨1x+IL
-      - 香港03
-      - 香港04
-      - 加拿大+01+多伦多丨1x+CA
-      - 卢森堡丨2x+LU
-      - 韩国+01丨3x+KR
-      - 新西兰丨3x+NZ
-      - 加拿大+02+温哥华丨2x+CA
-      - 美国+09+密尔沃基丨1x+US
-      - 荷兰丨1x+NL
-      - 冰岛丨2x+IS
-      - 意大利丨1x+IT
-      - 新加坡+08丨1x+SG
-      - 尼泊尔丨1x+NP
-      - 台湾+13丨1x+TW
-      - 英国+02丨1x+GB
-      - 俄罗斯-库页岛丨1x+RU
-      - 塞浦路斯丨1x+CY
-      - 埃及丨3x+EG
-      - 格鲁吉亚丨1x+GE
-      - 伊朗丨5x+IR
-      - 法国丨1x+FR
-      - 德国+01丨1x+DE
-      - 阿塞拜疆丨1x+AZ
-      - 罗马尼亚丨1x+RO
-      - 韩国03
-      - 哥伦比亚丨1x+CO
-      - 英国01
-      - 克罗地亚丨2x+HR
-      - 葡萄牙丨1x+PT
-      - 台湾+08丨1x+TW
-      - 斯洛文尼亚丨2x+SI
-      - 台湾+07丨1x+TW
-      - 日本+10丨1x+JP
-      - 澳大利亚-布里斯班丨2x+AU
-      - 马恩岛丨2x+IM
-      - 德国01
-      - 阿尔巴尼亚丨1x+AL
-      - 德国+02丨1x+DE
-      - 摩尔多瓦丨2x+MD
-      - 美国+01+费城丨1x+US
-      - 土耳其丨1x+TR
-      - 爱沙尼亚丨1x+EE
-      - 尼日利亚丨2x+NG
-      - 希腊丨2x+GR
-      - 塞尔维亚丨2x+RS
-      - 台湾+09丨1x+TW
-      - 香港+02丨1x+HK
-      - 突尼斯丨2x+TN
-      - 印度02
-      - 乌拉圭丨2x+UY
-      - 挪威丨1x+NO
-      - 马来西亚+05丨1x+MY
-      - 俄罗斯-莫斯科丨1x+RU
-      - 奥地利丨2x+AT
-      - 香港+08丨1x+HK
-      - 台湾+16丨1x+TW
-      - 香港05
-      - 香港+06丨1x+HK
-      - 美国03
-      - 马来西亚+03丨1x+MY
-      - 白俄罗斯丨2x+BY
-      - 香港+03丨1x+HK
-      - 美国02
-      - 印度01
-      - 日本01
-      - 立陶宛丨1x+LT
-      - 台湾+12丨1x+TW
-      - 香港02
-      - 孟加拉丨2x+BD
-      - 英国02
-      - 越南家宽丨3x+VN
-      - 美国+08+底特律丨1x+US
-      - 爱尔兰丨2x+IE
-      - 瑞典丨1x+SE
-      - 哈萨克斯坦丨1x+KZ
-      - 韩国02
-      - 台湾+11丨1x+TW
-      - 日本+15丨3x+JP
-      - 日本+08丨1x+JP
-      - 加拿大家宽丨3x+CA
-      - 美国+04+圣何塞丨1x+US
-      - 新加坡03
-      - 菲律宾+02丨1x+PH
-      - 台湾+06丨1x+TW
-      - 香港+05丨1x+HK
-      - 加拿大+03+哈利法克斯丨1x+CA
-      - 波兰丨1x+PL
-      - 南非丨1x+ZA
-      - 瑞士丨2x+CH
-      - 印度-新德里丨1x+IN
-      - 肯尼亚丨1x+KE
-      - 日本+06丨1x+JP
-      - 乌克兰丨1x+UA
-      - 马来西亚+02丨1x+MY
-      - 新加坡+01丨1x+SG
-      - 阿根廷丨5x+AR
-      - 北马其顿丨2x+MK
-      - 澳门商宽丨2x+MO
-      - 台湾+01丨1x+TW
-      - 哥斯达黎加丨2x+CR
-      - 日本+11丨2x+JP
-      - 拉脱维亚丨1x+LV
-      - 墨西哥丨3x+MX
-      - 马来西亚+01丨1x+MY
-      - 日本02
-      - 韩国+02丨3x+KR
-      - 日本+03丨1x+JP
+      - HK_油管 TG 8度科技
+      - CN_油管 TG 8度科技
+      - CN_油管 TG 8度科技 2
+      - CN_油管 TG 8度科技 3
+      - CN_油管 TG 8度科技 4
+      - CN_油管 TG 8度科技 5
+      - CN_油管 TG 8度科技 6
+      - CN_油管 TG 8度科技 7
+      - HK_油管 TG 8度科技 2
+      - US_油管 TG 8度科技
+      - AE_油管 TG 8度科技
+      - AE_油管 TG 8度科技 2
+      - 油管 TG 8度科技
+      - 油管 TG 8度科技 2
+      - AE_油管 TG 8度科技 3
+      - US_油管 TG 8度科技 2
+      - US_油管 TG 8度科技 3
+      - US_油管 TG 8度科技 4
+      - US_油管 TG 8度科技 5
+      - US_油管 TG 8度科技 6
+      - US_油管 TG 8度科技 7
+      - US_油管 TG 8度科技 8
+      - US_油管 TG 8度科技 9
+      - US_油管 TG 8度科技 10
+      - US_油管 TG 8度科技 11
+      - HK_油管 TG 8度科技 3
+      - NL_油管 TG 8度科技
+      - CN_油管 TG 8度科技 8
+      - US_油管 TG 8度科技 12
+      - US_油管 TG 8度科技 13
+      - US_油管 TG 8度科技 14
+      - 油管 TG 8度科技 3
+      - NL_油管 TG 8度科技 2
+      - NL_油管 TG 8度科技 3
+      - US_油管 TG 8度科技 15
+      - 油管 TG 8度科技 4
+      - NL_油管 TG 8度科技 4
+      - NL_油管 TG 8度科技 5
+      - NL_油管 TG 8度科技 6
+      - US_油管 TG 8度科技 16
+      - 油管 TG 8度科技 5
+      - NL_油管 TG 8度科技 7
+      - US_油管 TG 8度科技 17
+      - US_油管 TG 8度科技 18
+      - NL_油管 TG 8度科技 8
+      - US_油管 TG 8度科技 19
+      - 油管 TG 8度科技 6
+      - 油管 TG 8度科技 7
+      - US_油管 TG 8度科技 20
+      - US_油管 TG 8度科技 21
+      - 油管 TG 8度科技 8
+      - CN_油管 TG 8度科技 9
+      - JP_油管 TG 8度科技
+      - 油管 TG 8度科技 9
+      - CN_油管 TG 8度科技 10
+      - JP_油管 TG 8度科技 2
+      - CN_油管 TG 8度科技 11
+      - US_油管 TG 8度科技 22
+      - JP_油管 TG 8度科技 3
+      - JP_油管 TG 8度科技 4
+      - JP_油管 TG 8度科技 5
+      - CN_油管 TG 8度科技 12
+      - US_油管 TG 8度科技 23
+      - CN_油管 TG 8度科技 13
+      - CN_油管 TG 8度科技 14
+      - CA_油管 TG 8度科技
+      - CN_油管 TG 8度科技 15
+      - CN_油管 TG 8度科技 16
+      - CA_油管 TG 8度科技 2
+      - CA_油管 TG 8度科技 3
+      - CA_油管 TG 8度科技 4
+      - US_油管 TG 8度科技 24
+      - CA_油管 TG 8度科技 5
+      - CN_油管 TG 8度科技 17
+      - CN_油管 TG 8度科技 18
+      - CA_油管 TG 8度科技 6
+      - CA_油管 TG 8度科技 7
+      - CA_油管 TG 8度科技 8
+      - CA_油管 TG 8度科技 9
+      - CA_油管 TG 8度科技 10
+      - CA_油管 TG 8度科技 11
+      - CN_油管 TG 8度科技 19
+      - CA_油管 TG 8度科技 12
+      - CA_油管 TG 8度科技 13
+      - CA_油管 TG 8度科技 14
+      - CA_油管 TG 8度科技 15
+      - US_油管 TG 8度科技 25
+      - CA_油管 TG 8度科技 16
+      - CA_油管 TG 8度科技 17
+      - CA_油管 TG 8度科技 18
+      - CA_油管 TG 8度科技 19
+      - CA_油管 TG 8度科技 20
+      - CA_油管 TG 8度科技 21
+      - CA_油管 TG 8度科技 22
+      - CA_油管 TG 8度科技 23
+      - CA_油管 TG 8度科技 24
+      - CA_油管 TG 8度科技 25
+      - HK_油管 TG 8度科技 4
+      - KR_油管 TG 8度科技
+      - KR_油管 TG 8度科技 2
+      - KR_油管 TG 8度科技 3
+      - HK_油管 TG 8度科技 5
+      - HK_油管 TG 8度科技 6
+      - HK_油管 TG 8度科技 7
+      - US_油管 TG 8度科技 26
+      - HK_油管 TG 8度科技 8
+      - US_油管 TG 8度科技 27
+      - US_油管 TG 8度科技 28
+      - US_油管 TG 8度科技 29
+      - US_油管 TG 8度科技 30
+      - US_油管 TG 8度科技 31
+      - CN_油管 TG 8度科技 20
+      - CN_油管 TG 8度科技 21
+      - CN_油管 TG 8度科技 22
+      - CN_油管 TG 8度科技 23
+      - CN_油管 TG 8度科技 24
+      - CN_油管 TG 8度科技 25
+      - CN_油管 TG 8度科技 26
+      - CN_油管 TG 8度科技 27
+      - CN_油管 TG 8度科技 28
+      - CN_油管 TG 8度科技 29
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -652,672 +524,511 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - _US_美国
-      - default_name
-      - 日本+05丨1x+JP
-      - 香港+04丨1x+HK
-      - 日本+07丨1x+JP
-      - 香港08
-      - 台湾+05丨1x+TW
-      - 日本+01丨1x+JP
-      - 台湾+04丨1x+TW
-      - 日本+12丨1x+JP
-      - 台湾+10丨1x+TW
-      - 菲律宾+01丨1x+PH
-      - 日本+04丨1x+JP
-      - 香港06
-      - 香港家宽丨1x+HK
-      - 香港+14丨1x+HK
-      - 新加坡+09丨1x+SG
-      - 新加坡+02丨1x+SG
-      - 香港+01丨1x+HK
-      - 巴基斯坦+01丨5x+PK
-      - 新加坡01
-      - 美国+03+芝加哥丨1x+US
-      - 台湾01
-      - 新加坡+11丨2x+SG
-      - 韩国01
-      - 新加坡+05丨1x+SG
-      - 新加坡02
-      - 巴基斯坦+02丨5x+PK
-      - 印度尼西亚-棉兰丨1x+ID
-      - 台湾02
-      - 美国+07+达拉斯丨1x+US
-      - 香港+09丨1x+HK
-      - 日本+14丨3x+JP
-      - 印度尼西亚-雅加达丨1x+ID
-      - 美国01
-      - 香港+10丨1x+HK
-      - 马来西亚家宽丨3x+MY
-      - 越南丨1x+VN
-      - 台湾+14丨1x+TW
-      - 德国02
-      - 新加坡家宽丨3x+SG
-      - 巴拿马丨3x+PA
-      - 美国+06+斯波坎丨1x+US
-      - 日本+17丨3x+JP
-      - 香港+12丨1x+HK
-      - 以色列丨1x+IL
-      - 香港03
-      - 香港04
-      - 加拿大+01+多伦多丨1x+CA
-      - 卢森堡丨2x+LU
-      - 韩国+01丨3x+KR
-      - 新西兰丨3x+NZ
-      - 加拿大+02+温哥华丨2x+CA
-      - 美国+09+密尔沃基丨1x+US
-      - 荷兰丨1x+NL
-      - 冰岛丨2x+IS
-      - 意大利丨1x+IT
-      - 新加坡+08丨1x+SG
-      - 尼泊尔丨1x+NP
-      - 台湾+13丨1x+TW
-      - 英国+02丨1x+GB
-      - 俄罗斯-库页岛丨1x+RU
-      - 塞浦路斯丨1x+CY
-      - 埃及丨3x+EG
-      - 格鲁吉亚丨1x+GE
-      - 伊朗丨5x+IR
-      - 法国丨1x+FR
-      - 德国+01丨1x+DE
-      - 阿塞拜疆丨1x+AZ
-      - 罗马尼亚丨1x+RO
-      - 韩国03
-      - 哥伦比亚丨1x+CO
-      - 英国01
-      - 克罗地亚丨2x+HR
-      - 葡萄牙丨1x+PT
-      - 台湾+08丨1x+TW
-      - 斯洛文尼亚丨2x+SI
-      - 台湾+07丨1x+TW
-      - 日本+10丨1x+JP
-      - 澳大利亚-布里斯班丨2x+AU
-      - 马恩岛丨2x+IM
-      - 德国01
-      - 阿尔巴尼亚丨1x+AL
-      - 德国+02丨1x+DE
-      - 摩尔多瓦丨2x+MD
-      - 美国+01+费城丨1x+US
-      - 土耳其丨1x+TR
-      - 爱沙尼亚丨1x+EE
-      - 尼日利亚丨2x+NG
-      - 希腊丨2x+GR
-      - 塞尔维亚丨2x+RS
-      - 台湾+09丨1x+TW
-      - 香港+02丨1x+HK
-      - 突尼斯丨2x+TN
-      - 印度02
-      - 乌拉圭丨2x+UY
-      - 挪威丨1x+NO
-      - 马来西亚+05丨1x+MY
-      - 俄罗斯-莫斯科丨1x+RU
-      - 奥地利丨2x+AT
-      - 香港+08丨1x+HK
-      - 台湾+16丨1x+TW
-      - 香港05
-      - 香港+06丨1x+HK
-      - 美国03
-      - 马来西亚+03丨1x+MY
-      - 白俄罗斯丨2x+BY
-      - 香港+03丨1x+HK
-      - 美国02
-      - 印度01
-      - 日本01
-      - 立陶宛丨1x+LT
-      - 台湾+12丨1x+TW
-      - 香港02
-      - 孟加拉丨2x+BD
-      - 英国02
-      - 越南家宽丨3x+VN
-      - 美国+08+底特律丨1x+US
-      - 爱尔兰丨2x+IE
-      - 瑞典丨1x+SE
-      - 哈萨克斯坦丨1x+KZ
-      - 韩国02
-      - 台湾+11丨1x+TW
-      - 日本+15丨3x+JP
-      - 日本+08丨1x+JP
-      - 加拿大家宽丨3x+CA
-      - 美国+04+圣何塞丨1x+US
-      - 新加坡03
-      - 菲律宾+02丨1x+PH
-      - 台湾+06丨1x+TW
-      - 香港+05丨1x+HK
-      - 加拿大+03+哈利法克斯丨1x+CA
-      - 波兰丨1x+PL
-      - 南非丨1x+ZA
-      - 瑞士丨2x+CH
-      - 印度-新德里丨1x+IN
-      - 肯尼亚丨1x+KE
-      - 日本+06丨1x+JP
-      - 乌克兰丨1x+UA
-      - 马来西亚+02丨1x+MY
-      - 新加坡+01丨1x+SG
-      - 阿根廷丨5x+AR
-      - 北马其顿丨2x+MK
-      - 澳门商宽丨2x+MO
-      - 台湾+01丨1x+TW
-      - 哥斯达黎加丨2x+CR
-      - 日本+11丨2x+JP
-      - 拉脱维亚丨1x+LV
-      - 墨西哥丨3x+MX
-      - 马来西亚+01丨1x+MY
-      - 日本02
-      - 韩国+02丨3x+KR
-      - 日本+03丨1x+JP
+      - HK_油管 TG 8度科技
+      - CN_油管 TG 8度科技
+      - CN_油管 TG 8度科技 2
+      - CN_油管 TG 8度科技 3
+      - CN_油管 TG 8度科技 4
+      - CN_油管 TG 8度科技 5
+      - CN_油管 TG 8度科技 6
+      - CN_油管 TG 8度科技 7
+      - HK_油管 TG 8度科技 2
+      - US_油管 TG 8度科技
+      - AE_油管 TG 8度科技
+      - AE_油管 TG 8度科技 2
+      - 油管 TG 8度科技
+      - 油管 TG 8度科技 2
+      - AE_油管 TG 8度科技 3
+      - US_油管 TG 8度科技 2
+      - US_油管 TG 8度科技 3
+      - US_油管 TG 8度科技 4
+      - US_油管 TG 8度科技 5
+      - US_油管 TG 8度科技 6
+      - US_油管 TG 8度科技 7
+      - US_油管 TG 8度科技 8
+      - US_油管 TG 8度科技 9
+      - US_油管 TG 8度科技 10
+      - US_油管 TG 8度科技 11
+      - HK_油管 TG 8度科技 3
+      - NL_油管 TG 8度科技
+      - CN_油管 TG 8度科技 8
+      - US_油管 TG 8度科技 12
+      - US_油管 TG 8度科技 13
+      - US_油管 TG 8度科技 14
+      - 油管 TG 8度科技 3
+      - NL_油管 TG 8度科技 2
+      - NL_油管 TG 8度科技 3
+      - US_油管 TG 8度科技 15
+      - 油管 TG 8度科技 4
+      - NL_油管 TG 8度科技 4
+      - NL_油管 TG 8度科技 5
+      - NL_油管 TG 8度科技 6
+      - US_油管 TG 8度科技 16
+      - 油管 TG 8度科技 5
+      - NL_油管 TG 8度科技 7
+      - US_油管 TG 8度科技 17
+      - US_油管 TG 8度科技 18
+      - NL_油管 TG 8度科技 8
+      - US_油管 TG 8度科技 19
+      - 油管 TG 8度科技 6
+      - 油管 TG 8度科技 7
+      - US_油管 TG 8度科技 20
+      - US_油管 TG 8度科技 21
+      - 油管 TG 8度科技 8
+      - CN_油管 TG 8度科技 9
+      - JP_油管 TG 8度科技
+      - 油管 TG 8度科技 9
+      - CN_油管 TG 8度科技 10
+      - JP_油管 TG 8度科技 2
+      - CN_油管 TG 8度科技 11
+      - US_油管 TG 8度科技 22
+      - JP_油管 TG 8度科技 3
+      - JP_油管 TG 8度科技 4
+      - JP_油管 TG 8度科技 5
+      - CN_油管 TG 8度科技 12
+      - US_油管 TG 8度科技 23
+      - CN_油管 TG 8度科技 13
+      - CN_油管 TG 8度科技 14
+      - CA_油管 TG 8度科技
+      - CN_油管 TG 8度科技 15
+      - CN_油管 TG 8度科技 16
+      - CA_油管 TG 8度科技 2
+      - CA_油管 TG 8度科技 3
+      - CA_油管 TG 8度科技 4
+      - US_油管 TG 8度科技 24
+      - CA_油管 TG 8度科技 5
+      - CN_油管 TG 8度科技 17
+      - CN_油管 TG 8度科技 18
+      - CA_油管 TG 8度科技 6
+      - CA_油管 TG 8度科技 7
+      - CA_油管 TG 8度科技 8
+      - CA_油管 TG 8度科技 9
+      - CA_油管 TG 8度科技 10
+      - CA_油管 TG 8度科技 11
+      - CN_油管 TG 8度科技 19
+      - CA_油管 TG 8度科技 12
+      - CA_油管 TG 8度科技 13
+      - CA_油管 TG 8度科技 14
+      - CA_油管 TG 8度科技 15
+      - US_油管 TG 8度科技 25
+      - CA_油管 TG 8度科技 16
+      - CA_油管 TG 8度科技 17
+      - CA_油管 TG 8度科技 18
+      - CA_油管 TG 8度科技 19
+      - CA_油管 TG 8度科技 20
+      - CA_油管 TG 8度科技 21
+      - CA_油管 TG 8度科技 22
+      - CA_油管 TG 8度科技 23
+      - CA_油管 TG 8度科技 24
+      - CA_油管 TG 8度科技 25
+      - HK_油管 TG 8度科技 4
+      - KR_油管 TG 8度科技
+      - KR_油管 TG 8度科技 2
+      - KR_油管 TG 8度科技 3
+      - HK_油管 TG 8度科技 5
+      - HK_油管 TG 8度科技 6
+      - HK_油管 TG 8度科技 7
+      - US_油管 TG 8度科技 26
+      - HK_油管 TG 8度科技 8
+      - US_油管 TG 8度科技 27
+      - US_油管 TG 8度科技 28
+      - US_油管 TG 8度科技 29
+      - US_油管 TG 8度科技 30
+      - US_油管 TG 8度科技 31
+      - CN_油管 TG 8度科技 20
+      - CN_油管 TG 8度科技 21
+      - CN_油管 TG 8度科技 22
+      - CN_油管 TG 8度科技 23
+      - CN_油管 TG 8度科技 24
+      - CN_油管 TG 8度科技 25
+      - CN_油管 TG 8度科技 26
+      - CN_油管 TG 8度科技 27
+      - CN_油管 TG 8度科技 28
+      - CN_油管 TG 8度科技 29
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 香港+04丨1x+HK
-      - 香港08
-      - 台湾+05丨1x+TW
-      - 台湾+04丨1x+TW
-      - 台湾+10丨1x+TW
-      - 香港06
-      - 香港家宽丨1x+HK
-      - 香港+14丨1x+HK
-      - 香港+01丨1x+HK
-      - 台湾01
-      - 台湾02
-      - 香港+09丨1x+HK
-      - 香港+10丨1x+HK
-      - 台湾+14丨1x+TW
-      - 香港+12丨1x+HK
-      - 香港03
-      - 香港04
-      - 台湾+13丨1x+TW
-      - 台湾+08丨1x+TW
-      - 台湾+07丨1x+TW
-      - 台湾+09丨1x+TW
-      - 香港+02丨1x+HK
-      - 香港+08丨1x+HK
-      - 台湾+16丨1x+TW
-      - 香港05
-      - 香港+06丨1x+HK
-      - 香港+03丨1x+HK
-      - 台湾+12丨1x+TW
-      - 香港02
-      - 台湾+11丨1x+TW
-      - 台湾+06丨1x+TW
-      - 香港+05丨1x+HK
-      - 台湾+01丨1x+TW
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - _US_美国
-      - default_name
-      - 日本+05丨1x+JP
-      - 香港+04丨1x+HK
-      - 日本+07丨1x+JP
-      - 香港08
-      - 台湾+05丨1x+TW
-      - 日本+01丨1x+JP
-      - 台湾+04丨1x+TW
-      - 日本+12丨1x+JP
-      - 台湾+10丨1x+TW
-      - 菲律宾+01丨1x+PH
-      - 日本+04丨1x+JP
-      - 香港06
-      - 香港家宽丨1x+HK
-      - 香港+14丨1x+HK
-      - 新加坡+09丨1x+SG
-      - 新加坡+02丨1x+SG
-      - 香港+01丨1x+HK
-      - 巴基斯坦+01丨5x+PK
-      - 新加坡01
-      - 美国+03+芝加哥丨1x+US
-      - 台湾01
-      - 新加坡+11丨2x+SG
-      - 韩国01
-      - 新加坡+05丨1x+SG
-      - 新加坡02
-      - 巴基斯坦+02丨5x+PK
-      - 印度尼西亚-棉兰丨1x+ID
-      - 台湾02
-      - 美国+07+达拉斯丨1x+US
-      - 香港+09丨1x+HK
-      - 日本+14丨3x+JP
-      - 印度尼西亚-雅加达丨1x+ID
-      - 美国01
-      - 香港+10丨1x+HK
-      - 马来西亚家宽丨3x+MY
-      - 越南丨1x+VN
-      - 台湾+14丨1x+TW
-      - 德国02
-      - 新加坡家宽丨3x+SG
-      - 巴拿马丨3x+PA
-      - 美国+06+斯波坎丨1x+US
-      - 日本+17丨3x+JP
-      - 香港+12丨1x+HK
-      - 以色列丨1x+IL
-      - 香港03
-      - 香港04
-      - 加拿大+01+多伦多丨1x+CA
-      - 卢森堡丨2x+LU
-      - 韩国+01丨3x+KR
-      - 新西兰丨3x+NZ
-      - 加拿大+02+温哥华丨2x+CA
-      - 美国+09+密尔沃基丨1x+US
-      - 荷兰丨1x+NL
-      - 冰岛丨2x+IS
-      - 意大利丨1x+IT
-      - 新加坡+08丨1x+SG
-      - 尼泊尔丨1x+NP
-      - 台湾+13丨1x+TW
-      - 英国+02丨1x+GB
-      - 俄罗斯-库页岛丨1x+RU
-      - 塞浦路斯丨1x+CY
-      - 埃及丨3x+EG
-      - 格鲁吉亚丨1x+GE
-      - 伊朗丨5x+IR
-      - 法国丨1x+FR
-      - 德国+01丨1x+DE
-      - 阿塞拜疆丨1x+AZ
-      - 罗马尼亚丨1x+RO
-      - 韩国03
-      - 哥伦比亚丨1x+CO
-      - 英国01
-      - 克罗地亚丨2x+HR
-      - 葡萄牙丨1x+PT
-      - 台湾+08丨1x+TW
-      - 斯洛文尼亚丨2x+SI
-      - 台湾+07丨1x+TW
-      - 日本+10丨1x+JP
-      - 澳大利亚-布里斯班丨2x+AU
-      - 马恩岛丨2x+IM
-      - 德国01
-      - 阿尔巴尼亚丨1x+AL
-      - 德国+02丨1x+DE
-      - 摩尔多瓦丨2x+MD
-      - 美国+01+费城丨1x+US
-      - 土耳其丨1x+TR
-      - 爱沙尼亚丨1x+EE
-      - 尼日利亚丨2x+NG
-      - 希腊丨2x+GR
-      - 塞尔维亚丨2x+RS
-      - 台湾+09丨1x+TW
-      - 香港+02丨1x+HK
-      - 突尼斯丨2x+TN
-      - 印度02
-      - 乌拉圭丨2x+UY
-      - 挪威丨1x+NO
-      - 马来西亚+05丨1x+MY
-      - 俄罗斯-莫斯科丨1x+RU
-      - 奥地利丨2x+AT
-      - 香港+08丨1x+HK
-      - 台湾+16丨1x+TW
-      - 香港05
-      - 香港+06丨1x+HK
-      - 美国03
-      - 马来西亚+03丨1x+MY
-      - 白俄罗斯丨2x+BY
-      - 香港+03丨1x+HK
-      - 美国02
-      - 印度01
-      - 日本01
-      - 立陶宛丨1x+LT
-      - 台湾+12丨1x+TW
-      - 香港02
-      - 孟加拉丨2x+BD
-      - 英国02
-      - 越南家宽丨3x+VN
-      - 美国+08+底特律丨1x+US
-      - 爱尔兰丨2x+IE
-      - 瑞典丨1x+SE
-      - 哈萨克斯坦丨1x+KZ
-      - 韩国02
-      - 台湾+11丨1x+TW
-      - 日本+15丨3x+JP
-      - 日本+08丨1x+JP
-      - 加拿大家宽丨3x+CA
-      - 美国+04+圣何塞丨1x+US
-      - 新加坡03
-      - 菲律宾+02丨1x+PH
-      - 台湾+06丨1x+TW
-      - 香港+05丨1x+HK
-      - 加拿大+03+哈利法克斯丨1x+CA
-      - 波兰丨1x+PL
-      - 南非丨1x+ZA
-      - 瑞士丨2x+CH
-      - 印度-新德里丨1x+IN
-      - 肯尼亚丨1x+KE
-      - 日本+06丨1x+JP
-      - 乌克兰丨1x+UA
-      - 马来西亚+02丨1x+MY
-      - 新加坡+01丨1x+SG
-      - 阿根廷丨5x+AR
-      - 北马其顿丨2x+MK
-      - 澳门商宽丨2x+MO
-      - 台湾+01丨1x+TW
-      - 哥斯达黎加丨2x+CR
-      - 日本+11丨2x+JP
-      - 拉脱维亚丨1x+LV
-      - 墨西哥丨3x+MX
-      - 马来西亚+01丨1x+MY
-      - 日本02
-      - 韩国+02丨3x+KR
-      - 日本+03丨1x+JP
+      - HK_油管 TG 8度科技
+      - CN_油管 TG 8度科技
+      - CN_油管 TG 8度科技 2
+      - CN_油管 TG 8度科技 3
+      - CN_油管 TG 8度科技 4
+      - CN_油管 TG 8度科技 5
+      - CN_油管 TG 8度科技 6
+      - CN_油管 TG 8度科技 7
+      - HK_油管 TG 8度科技 2
+      - US_油管 TG 8度科技
+      - AE_油管 TG 8度科技
+      - AE_油管 TG 8度科技 2
+      - 油管 TG 8度科技
+      - 油管 TG 8度科技 2
+      - AE_油管 TG 8度科技 3
+      - US_油管 TG 8度科技 2
+      - US_油管 TG 8度科技 3
+      - US_油管 TG 8度科技 4
+      - US_油管 TG 8度科技 5
+      - US_油管 TG 8度科技 6
+      - US_油管 TG 8度科技 7
+      - US_油管 TG 8度科技 8
+      - US_油管 TG 8度科技 9
+      - US_油管 TG 8度科技 10
+      - US_油管 TG 8度科技 11
+      - HK_油管 TG 8度科技 3
+      - NL_油管 TG 8度科技
+      - CN_油管 TG 8度科技 8
+      - US_油管 TG 8度科技 12
+      - US_油管 TG 8度科技 13
+      - US_油管 TG 8度科技 14
+      - 油管 TG 8度科技 3
+      - NL_油管 TG 8度科技 2
+      - NL_油管 TG 8度科技 3
+      - US_油管 TG 8度科技 15
+      - 油管 TG 8度科技 4
+      - NL_油管 TG 8度科技 4
+      - NL_油管 TG 8度科技 5
+      - NL_油管 TG 8度科技 6
+      - US_油管 TG 8度科技 16
+      - 油管 TG 8度科技 5
+      - NL_油管 TG 8度科技 7
+      - US_油管 TG 8度科技 17
+      - US_油管 TG 8度科技 18
+      - NL_油管 TG 8度科技 8
+      - US_油管 TG 8度科技 19
+      - 油管 TG 8度科技 6
+      - 油管 TG 8度科技 7
+      - US_油管 TG 8度科技 20
+      - US_油管 TG 8度科技 21
+      - 油管 TG 8度科技 8
+      - CN_油管 TG 8度科技 9
+      - JP_油管 TG 8度科技
+      - 油管 TG 8度科技 9
+      - CN_油管 TG 8度科技 10
+      - JP_油管 TG 8度科技 2
+      - CN_油管 TG 8度科技 11
+      - US_油管 TG 8度科技 22
+      - JP_油管 TG 8度科技 3
+      - JP_油管 TG 8度科技 4
+      - JP_油管 TG 8度科技 5
+      - CN_油管 TG 8度科技 12
+      - US_油管 TG 8度科技 23
+      - CN_油管 TG 8度科技 13
+      - CN_油管 TG 8度科技 14
+      - CA_油管 TG 8度科技
+      - CN_油管 TG 8度科技 15
+      - CN_油管 TG 8度科技 16
+      - CA_油管 TG 8度科技 2
+      - CA_油管 TG 8度科技 3
+      - CA_油管 TG 8度科技 4
+      - US_油管 TG 8度科技 24
+      - CA_油管 TG 8度科技 5
+      - CN_油管 TG 8度科技 17
+      - CN_油管 TG 8度科技 18
+      - CA_油管 TG 8度科技 6
+      - CA_油管 TG 8度科技 7
+      - CA_油管 TG 8度科技 8
+      - CA_油管 TG 8度科技 9
+      - CA_油管 TG 8度科技 10
+      - CA_油管 TG 8度科技 11
+      - CN_油管 TG 8度科技 19
+      - CA_油管 TG 8度科技 12
+      - CA_油管 TG 8度科技 13
+      - CA_油管 TG 8度科技 14
+      - CA_油管 TG 8度科技 15
+      - US_油管 TG 8度科技 25
+      - CA_油管 TG 8度科技 16
+      - CA_油管 TG 8度科技 17
+      - CA_油管 TG 8度科技 18
+      - CA_油管 TG 8度科技 19
+      - CA_油管 TG 8度科技 20
+      - CA_油管 TG 8度科技 21
+      - CA_油管 TG 8度科技 22
+      - CA_油管 TG 8度科技 23
+      - CA_油管 TG 8度科技 24
+      - CA_油管 TG 8度科技 25
+      - HK_油管 TG 8度科技 4
+      - KR_油管 TG 8度科技
+      - KR_油管 TG 8度科技 2
+      - KR_油管 TG 8度科技 3
+      - HK_油管 TG 8度科技 5
+      - HK_油管 TG 8度科技 6
+      - HK_油管 TG 8度科技 7
+      - US_油管 TG 8度科技 26
+      - HK_油管 TG 8度科技 8
+      - US_油管 TG 8度科技 27
+      - US_油管 TG 8度科技 28
+      - US_油管 TG 8度科技 29
+      - US_油管 TG 8度科技 30
+      - US_油管 TG 8度科技 31
+      - CN_油管 TG 8度科技 20
+      - CN_油管 TG 8度科技 21
+      - CN_油管 TG 8度科技 22
+      - CN_油管 TG 8度科技 23
+      - CN_油管 TG 8度科技 24
+      - CN_油管 TG 8度科技 25
+      - CN_油管 TG 8度科技 26
+      - CN_油管 TG 8度科技 27
+      - CN_油管 TG 8度科技 28
+      - CN_油管 TG 8度科技 29
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - _US_美国
-      - default_name
-      - 日本+05丨1x+JP
-      - 香港+04丨1x+HK
-      - 日本+07丨1x+JP
-      - 香港08
-      - 台湾+05丨1x+TW
-      - 日本+01丨1x+JP
-      - 台湾+04丨1x+TW
-      - 日本+12丨1x+JP
-      - 台湾+10丨1x+TW
-      - 菲律宾+01丨1x+PH
-      - 日本+04丨1x+JP
-      - 香港06
-      - 香港家宽丨1x+HK
-      - 香港+14丨1x+HK
-      - 新加坡+09丨1x+SG
-      - 新加坡+02丨1x+SG
-      - 香港+01丨1x+HK
-      - 巴基斯坦+01丨5x+PK
-      - 新加坡01
-      - 美国+03+芝加哥丨1x+US
-      - 台湾01
-      - 新加坡+11丨2x+SG
-      - 韩国01
-      - 新加坡+05丨1x+SG
-      - 新加坡02
-      - 巴基斯坦+02丨5x+PK
-      - 印度尼西亚-棉兰丨1x+ID
-      - 台湾02
-      - 美国+07+达拉斯丨1x+US
-      - 香港+09丨1x+HK
-      - 日本+14丨3x+JP
-      - 印度尼西亚-雅加达丨1x+ID
-      - 美国01
-      - 香港+10丨1x+HK
-      - 马来西亚家宽丨3x+MY
-      - 越南丨1x+VN
-      - 台湾+14丨1x+TW
-      - 德国02
-      - 新加坡家宽丨3x+SG
-      - 巴拿马丨3x+PA
-      - 美国+06+斯波坎丨1x+US
-      - 日本+17丨3x+JP
-      - 香港+12丨1x+HK
-      - 以色列丨1x+IL
-      - 香港03
-      - 香港04
-      - 加拿大+01+多伦多丨1x+CA
-      - 卢森堡丨2x+LU
-      - 韩国+01丨3x+KR
-      - 新西兰丨3x+NZ
-      - 加拿大+02+温哥华丨2x+CA
-      - 美国+09+密尔沃基丨1x+US
-      - 荷兰丨1x+NL
-      - 冰岛丨2x+IS
-      - 意大利丨1x+IT
-      - 新加坡+08丨1x+SG
-      - 尼泊尔丨1x+NP
-      - 台湾+13丨1x+TW
-      - 英国+02丨1x+GB
-      - 俄罗斯-库页岛丨1x+RU
-      - 塞浦路斯丨1x+CY
-      - 埃及丨3x+EG
-      - 格鲁吉亚丨1x+GE
-      - 伊朗丨5x+IR
-      - 法国丨1x+FR
-      - 德国+01丨1x+DE
-      - 阿塞拜疆丨1x+AZ
-      - 罗马尼亚丨1x+RO
-      - 韩国03
-      - 哥伦比亚丨1x+CO
-      - 英国01
-      - 克罗地亚丨2x+HR
-      - 葡萄牙丨1x+PT
-      - 台湾+08丨1x+TW
-      - 斯洛文尼亚丨2x+SI
-      - 台湾+07丨1x+TW
-      - 日本+10丨1x+JP
-      - 澳大利亚-布里斯班丨2x+AU
-      - 马恩岛丨2x+IM
-      - 德国01
-      - 阿尔巴尼亚丨1x+AL
-      - 德国+02丨1x+DE
-      - 摩尔多瓦丨2x+MD
-      - 美国+01+费城丨1x+US
-      - 土耳其丨1x+TR
-      - 爱沙尼亚丨1x+EE
-      - 尼日利亚丨2x+NG
-      - 希腊丨2x+GR
-      - 塞尔维亚丨2x+RS
-      - 台湾+09丨1x+TW
-      - 香港+02丨1x+HK
-      - 突尼斯丨2x+TN
-      - 印度02
-      - 乌拉圭丨2x+UY
-      - 挪威丨1x+NO
-      - 马来西亚+05丨1x+MY
-      - 俄罗斯-莫斯科丨1x+RU
-      - 奥地利丨2x+AT
-      - 香港+08丨1x+HK
-      - 台湾+16丨1x+TW
-      - 香港05
-      - 香港+06丨1x+HK
-      - 美国03
-      - 马来西亚+03丨1x+MY
-      - 白俄罗斯丨2x+BY
-      - 香港+03丨1x+HK
-      - 美国02
-      - 印度01
-      - 日本01
-      - 立陶宛丨1x+LT
-      - 台湾+12丨1x+TW
-      - 香港02
-      - 孟加拉丨2x+BD
-      - 英国02
-      - 越南家宽丨3x+VN
-      - 美国+08+底特律丨1x+US
-      - 爱尔兰丨2x+IE
-      - 瑞典丨1x+SE
-      - 哈萨克斯坦丨1x+KZ
-      - 韩国02
-      - 台湾+11丨1x+TW
-      - 日本+15丨3x+JP
-      - 日本+08丨1x+JP
-      - 加拿大家宽丨3x+CA
-      - 美国+04+圣何塞丨1x+US
-      - 新加坡03
-      - 菲律宾+02丨1x+PH
-      - 台湾+06丨1x+TW
-      - 香港+05丨1x+HK
-      - 加拿大+03+哈利法克斯丨1x+CA
-      - 波兰丨1x+PL
-      - 南非丨1x+ZA
-      - 瑞士丨2x+CH
-      - 印度-新德里丨1x+IN
-      - 肯尼亚丨1x+KE
-      - 日本+06丨1x+JP
-      - 乌克兰丨1x+UA
-      - 马来西亚+02丨1x+MY
-      - 新加坡+01丨1x+SG
-      - 阿根廷丨5x+AR
-      - 北马其顿丨2x+MK
-      - 澳门商宽丨2x+MO
-      - 台湾+01丨1x+TW
-      - 哥斯达黎加丨2x+CR
-      - 日本+11丨2x+JP
-      - 拉脱维亚丨1x+LV
-      - 墨西哥丨3x+MX
-      - 马来西亚+01丨1x+MY
-      - 日本02
-      - 韩国+02丨3x+KR
-      - 日本+03丨1x+JP
+      - HK_油管 TG 8度科技
+      - CN_油管 TG 8度科技
+      - CN_油管 TG 8度科技 2
+      - CN_油管 TG 8度科技 3
+      - CN_油管 TG 8度科技 4
+      - CN_油管 TG 8度科技 5
+      - CN_油管 TG 8度科技 6
+      - CN_油管 TG 8度科技 7
+      - HK_油管 TG 8度科技 2
+      - US_油管 TG 8度科技
+      - AE_油管 TG 8度科技
+      - AE_油管 TG 8度科技 2
+      - 油管 TG 8度科技
+      - 油管 TG 8度科技 2
+      - AE_油管 TG 8度科技 3
+      - US_油管 TG 8度科技 2
+      - US_油管 TG 8度科技 3
+      - US_油管 TG 8度科技 4
+      - US_油管 TG 8度科技 5
+      - US_油管 TG 8度科技 6
+      - US_油管 TG 8度科技 7
+      - US_油管 TG 8度科技 8
+      - US_油管 TG 8度科技 9
+      - US_油管 TG 8度科技 10
+      - US_油管 TG 8度科技 11
+      - HK_油管 TG 8度科技 3
+      - NL_油管 TG 8度科技
+      - CN_油管 TG 8度科技 8
+      - US_油管 TG 8度科技 12
+      - US_油管 TG 8度科技 13
+      - US_油管 TG 8度科技 14
+      - 油管 TG 8度科技 3
+      - NL_油管 TG 8度科技 2
+      - NL_油管 TG 8度科技 3
+      - US_油管 TG 8度科技 15
+      - 油管 TG 8度科技 4
+      - NL_油管 TG 8度科技 4
+      - NL_油管 TG 8度科技 5
+      - NL_油管 TG 8度科技 6
+      - US_油管 TG 8度科技 16
+      - 油管 TG 8度科技 5
+      - NL_油管 TG 8度科技 7
+      - US_油管 TG 8度科技 17
+      - US_油管 TG 8度科技 18
+      - NL_油管 TG 8度科技 8
+      - US_油管 TG 8度科技 19
+      - 油管 TG 8度科技 6
+      - 油管 TG 8度科技 7
+      - US_油管 TG 8度科技 20
+      - US_油管 TG 8度科技 21
+      - 油管 TG 8度科技 8
+      - CN_油管 TG 8度科技 9
+      - JP_油管 TG 8度科技
+      - 油管 TG 8度科技 9
+      - CN_油管 TG 8度科技 10
+      - JP_油管 TG 8度科技 2
+      - CN_油管 TG 8度科技 11
+      - US_油管 TG 8度科技 22
+      - JP_油管 TG 8度科技 3
+      - JP_油管 TG 8度科技 4
+      - JP_油管 TG 8度科技 5
+      - CN_油管 TG 8度科技 12
+      - US_油管 TG 8度科技 23
+      - CN_油管 TG 8度科技 13
+      - CN_油管 TG 8度科技 14
+      - CA_油管 TG 8度科技
+      - CN_油管 TG 8度科技 15
+      - CN_油管 TG 8度科技 16
+      - CA_油管 TG 8度科技 2
+      - CA_油管 TG 8度科技 3
+      - CA_油管 TG 8度科技 4
+      - US_油管 TG 8度科技 24
+      - CA_油管 TG 8度科技 5
+      - CN_油管 TG 8度科技 17
+      - CN_油管 TG 8度科技 18
+      - CA_油管 TG 8度科技 6
+      - CA_油管 TG 8度科技 7
+      - CA_油管 TG 8度科技 8
+      - CA_油管 TG 8度科技 9
+      - CA_油管 TG 8度科技 10
+      - CA_油管 TG 8度科技 11
+      - CN_油管 TG 8度科技 19
+      - CA_油管 TG 8度科技 12
+      - CA_油管 TG 8度科技 13
+      - CA_油管 TG 8度科技 14
+      - CA_油管 TG 8度科技 15
+      - US_油管 TG 8度科技 25
+      - CA_油管 TG 8度科技 16
+      - CA_油管 TG 8度科技 17
+      - CA_油管 TG 8度科技 18
+      - CA_油管 TG 8度科技 19
+      - CA_油管 TG 8度科技 20
+      - CA_油管 TG 8度科技 21
+      - CA_油管 TG 8度科技 22
+      - CA_油管 TG 8度科技 23
+      - CA_油管 TG 8度科技 24
+      - CA_油管 TG 8度科技 25
+      - HK_油管 TG 8度科技 4
+      - KR_油管 TG 8度科技
+      - KR_油管 TG 8度科技 2
+      - KR_油管 TG 8度科技 3
+      - HK_油管 TG 8度科技 5
+      - HK_油管 TG 8度科技 6
+      - HK_油管 TG 8度科技 7
+      - US_油管 TG 8度科技 26
+      - HK_油管 TG 8度科技 8
+      - US_油管 TG 8度科技 27
+      - US_油管 TG 8度科技 28
+      - US_油管 TG 8度科技 29
+      - US_油管 TG 8度科技 30
+      - US_油管 TG 8度科技 31
+      - CN_油管 TG 8度科技 20
+      - CN_油管 TG 8度科技 21
+      - CN_油管 TG 8度科技 22
+      - CN_油管 TG 8度科技 23
+      - CN_油管 TG 8度科技 24
+      - CN_油管 TG 8度科技 25
+      - CN_油管 TG 8度科技 26
+      - CN_油管 TG 8度科技 27
+      - CN_油管 TG 8度科技 28
+      - CN_油管 TG 8度科技 29
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - _US_美国
-      - default_name
-      - 日本+05丨1x+JP
-      - 香港+04丨1x+HK
-      - 日本+07丨1x+JP
-      - 香港08
-      - 台湾+05丨1x+TW
-      - 日本+01丨1x+JP
-      - 台湾+04丨1x+TW
-      - 日本+12丨1x+JP
-      - 台湾+10丨1x+TW
-      - 菲律宾+01丨1x+PH
-      - 日本+04丨1x+JP
-      - 香港06
-      - 香港家宽丨1x+HK
-      - 香港+14丨1x+HK
-      - 新加坡+09丨1x+SG
-      - 新加坡+02丨1x+SG
-      - 香港+01丨1x+HK
-      - 巴基斯坦+01丨5x+PK
-      - 新加坡01
-      - 美国+03+芝加哥丨1x+US
-      - 台湾01
-      - 新加坡+11丨2x+SG
-      - 韩国01
-      - 新加坡+05丨1x+SG
-      - 新加坡02
-      - 巴基斯坦+02丨5x+PK
-      - 印度尼西亚-棉兰丨1x+ID
-      - 台湾02
-      - 美国+07+达拉斯丨1x+US
-      - 香港+09丨1x+HK
-      - 日本+14丨3x+JP
-      - 印度尼西亚-雅加达丨1x+ID
-      - 美国01
-      - 香港+10丨1x+HK
-      - 马来西亚家宽丨3x+MY
-      - 越南丨1x+VN
-      - 台湾+14丨1x+TW
-      - 德国02
-      - 新加坡家宽丨3x+SG
-      - 巴拿马丨3x+PA
-      - 美国+06+斯波坎丨1x+US
-      - 日本+17丨3x+JP
-      - 香港+12丨1x+HK
-      - 以色列丨1x+IL
-      - 香港03
-      - 香港04
-      - 加拿大+01+多伦多丨1x+CA
-      - 卢森堡丨2x+LU
-      - 韩国+01丨3x+KR
-      - 新西兰丨3x+NZ
-      - 加拿大+02+温哥华丨2x+CA
-      - 美国+09+密尔沃基丨1x+US
-      - 荷兰丨1x+NL
-      - 冰岛丨2x+IS
-      - 意大利丨1x+IT
-      - 新加坡+08丨1x+SG
-      - 尼泊尔丨1x+NP
-      - 台湾+13丨1x+TW
-      - 英国+02丨1x+GB
-      - 俄罗斯-库页岛丨1x+RU
-      - 塞浦路斯丨1x+CY
-      - 埃及丨3x+EG
-      - 格鲁吉亚丨1x+GE
-      - 伊朗丨5x+IR
-      - 法国丨1x+FR
-      - 德国+01丨1x+DE
-      - 阿塞拜疆丨1x+AZ
-      - 罗马尼亚丨1x+RO
-      - 韩国03
-      - 哥伦比亚丨1x+CO
-      - 英国01
-      - 克罗地亚丨2x+HR
-      - 葡萄牙丨1x+PT
-      - 台湾+08丨1x+TW
-      - 斯洛文尼亚丨2x+SI
-      - 台湾+07丨1x+TW
-      - 日本+10丨1x+JP
-      - 澳大利亚-布里斯班丨2x+AU
-      - 马恩岛丨2x+IM
-      - 德国01
-      - 阿尔巴尼亚丨1x+AL
-      - 德国+02丨1x+DE
-      - 摩尔多瓦丨2x+MD
-      - 美国+01+费城丨1x+US
-      - 土耳其丨1x+TR
-      - 爱沙尼亚丨1x+EE
-      - 尼日利亚丨2x+NG
-      - 希腊丨2x+GR
-      - 塞尔维亚丨2x+RS
-      - 台湾+09丨1x+TW
-      - 香港+02丨1x+HK
-      - 突尼斯丨2x+TN
-      - 印度02
-      - 乌拉圭丨2x+UY
-      - 挪威丨1x+NO
-      - 马来西亚+05丨1x+MY
-      - 俄罗斯-莫斯科丨1x+RU
-      - 奥地利丨2x+AT
-      - 香港+08丨1x+HK
-      - 台湾+16丨1x+TW
-      - 香港05
-      - 香港+06丨1x+HK
-      - 美国03
-      - 马来西亚+03丨1x+MY
-      - 白俄罗斯丨2x+BY
-      - 香港+03丨1x+HK
-      - 美国02
-      - 印度01
-      - 日本01
-      - 立陶宛丨1x+LT
-      - 台湾+12丨1x+TW
-      - 香港02
-      - 孟加拉丨2x+BD
-      - 英国02
-      - 越南家宽丨3x+VN
-      - 美国+08+底特律丨1x+US
-      - 爱尔兰丨2x+IE
-      - 瑞典丨1x+SE
-      - 哈萨克斯坦丨1x+KZ
-      - 韩国02
-      - 台湾+11丨1x+TW
-      - 日本+15丨3x+JP
-      - 日本+08丨1x+JP
-      - 加拿大家宽丨3x+CA
-      - 美国+04+圣何塞丨1x+US
-      - 新加坡03
-      - 菲律宾+02丨1x+PH
-      - 台湾+06丨1x+TW
-      - 香港+05丨1x+HK
-      - 加拿大+03+哈利法克斯丨1x+CA
-      - 波兰丨1x+PL
-      - 南非丨1x+ZA
-      - 瑞士丨2x+CH
-      - 印度-新德里丨1x+IN
-      - 肯尼亚丨1x+KE
-      - 日本+06丨1x+JP
-      - 乌克兰丨1x+UA
-      - 马来西亚+02丨1x+MY
-      - 新加坡+01丨1x+SG
-      - 阿根廷丨5x+AR
-      - 北马其顿丨2x+MK
-      - 澳门商宽丨2x+MO
-      - 台湾+01丨1x+TW
-      - 哥斯达黎加丨2x+CR
-      - 日本+11丨2x+JP
-      - 拉脱维亚丨1x+LV
-      - 墨西哥丨3x+MX
-      - 马来西亚+01丨1x+MY
-      - 日本02
-      - 韩国+02丨3x+KR
-      - 日本+03丨1x+JP
+      - HK_油管 TG 8度科技
+      - CN_油管 TG 8度科技
+      - CN_油管 TG 8度科技 2
+      - CN_油管 TG 8度科技 3
+      - CN_油管 TG 8度科技 4
+      - CN_油管 TG 8度科技 5
+      - CN_油管 TG 8度科技 6
+      - CN_油管 TG 8度科技 7
+      - HK_油管 TG 8度科技 2
+      - US_油管 TG 8度科技
+      - AE_油管 TG 8度科技
+      - AE_油管 TG 8度科技 2
+      - 油管 TG 8度科技
+      - 油管 TG 8度科技 2
+      - AE_油管 TG 8度科技 3
+      - US_油管 TG 8度科技 2
+      - US_油管 TG 8度科技 3
+      - US_油管 TG 8度科技 4
+      - US_油管 TG 8度科技 5
+      - US_油管 TG 8度科技 6
+      - US_油管 TG 8度科技 7
+      - US_油管 TG 8度科技 8
+      - US_油管 TG 8度科技 9
+      - US_油管 TG 8度科技 10
+      - US_油管 TG 8度科技 11
+      - HK_油管 TG 8度科技 3
+      - NL_油管 TG 8度科技
+      - CN_油管 TG 8度科技 8
+      - US_油管 TG 8度科技 12
+      - US_油管 TG 8度科技 13
+      - US_油管 TG 8度科技 14
+      - 油管 TG 8度科技 3
+      - NL_油管 TG 8度科技 2
+      - NL_油管 TG 8度科技 3
+      - US_油管 TG 8度科技 15
+      - 油管 TG 8度科技 4
+      - NL_油管 TG 8度科技 4
+      - NL_油管 TG 8度科技 5
+      - NL_油管 TG 8度科技 6
+      - US_油管 TG 8度科技 16
+      - 油管 TG 8度科技 5
+      - NL_油管 TG 8度科技 7
+      - US_油管 TG 8度科技 17
+      - US_油管 TG 8度科技 18
+      - NL_油管 TG 8度科技 8
+      - US_油管 TG 8度科技 19
+      - 油管 TG 8度科技 6
+      - 油管 TG 8度科技 7
+      - US_油管 TG 8度科技 20
+      - US_油管 TG 8度科技 21
+      - 油管 TG 8度科技 8
+      - CN_油管 TG 8度科技 9
+      - JP_油管 TG 8度科技
+      - 油管 TG 8度科技 9
+      - CN_油管 TG 8度科技 10
+      - JP_油管 TG 8度科技 2
+      - CN_油管 TG 8度科技 11
+      - US_油管 TG 8度科技 22
+      - JP_油管 TG 8度科技 3
+      - JP_油管 TG 8度科技 4
+      - JP_油管 TG 8度科技 5
+      - CN_油管 TG 8度科技 12
+      - US_油管 TG 8度科技 23
+      - CN_油管 TG 8度科技 13
+      - CN_油管 TG 8度科技 14
+      - CA_油管 TG 8度科技
+      - CN_油管 TG 8度科技 15
+      - CN_油管 TG 8度科技 16
+      - CA_油管 TG 8度科技 2
+      - CA_油管 TG 8度科技 3
+      - CA_油管 TG 8度科技 4
+      - US_油管 TG 8度科技 24
+      - CA_油管 TG 8度科技 5
+      - CN_油管 TG 8度科技 17
+      - CN_油管 TG 8度科技 18
+      - CA_油管 TG 8度科技 6
+      - CA_油管 TG 8度科技 7
+      - CA_油管 TG 8度科技 8
+      - CA_油管 TG 8度科技 9
+      - CA_油管 TG 8度科技 10
+      - CA_油管 TG 8度科技 11
+      - CN_油管 TG 8度科技 19
+      - CA_油管 TG 8度科技 12
+      - CA_油管 TG 8度科技 13
+      - CA_油管 TG 8度科技 14
+      - CA_油管 TG 8度科技 15
+      - US_油管 TG 8度科技 25
+      - CA_油管 TG 8度科技 16
+      - CA_油管 TG 8度科技 17
+      - CA_油管 TG 8度科技 18
+      - CA_油管 TG 8度科技 19
+      - CA_油管 TG 8度科技 20
+      - CA_油管 TG 8度科技 21
+      - CA_油管 TG 8度科技 22
+      - CA_油管 TG 8度科技 23
+      - CA_油管 TG 8度科技 24
+      - CA_油管 TG 8度科技 25
+      - HK_油管 TG 8度科技 4
+      - KR_油管 TG 8度科技
+      - KR_油管 TG 8度科技 2
+      - KR_油管 TG 8度科技 3
+      - HK_油管 TG 8度科技 5
+      - HK_油管 TG 8度科技 6
+      - HK_油管 TG 8度科技 7
+      - US_油管 TG 8度科技 26
+      - HK_油管 TG 8度科技 8
+      - US_油管 TG 8度科技 27
+      - US_油管 TG 8度科技 28
+      - US_油管 TG 8度科技 29
+      - US_油管 TG 8度科技 30
+      - US_油管 TG 8度科技 31
+      - CN_油管 TG 8度科技 20
+      - CN_油管 TG 8度科技 21
+      - CN_油管 TG 8度科技 22
+      - CN_油管 TG 8度科技 23
+      - CN_油管 TG 8度科技 24
+      - CN_油管 TG 8度科技 25
+      - CN_油管 TG 8度科技 26
+      - CN_油管 TG 8度科技 27
+      - CN_油管 TG 8度科技 28
+      - CN_油管 TG 8度科技 29
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -1333,159 +1044,127 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - _US_美国
-      - default_name
-      - 日本+05丨1x+JP
-      - 香港+04丨1x+HK
-      - 日本+07丨1x+JP
-      - 香港08
-      - 台湾+05丨1x+TW
-      - 日本+01丨1x+JP
-      - 台湾+04丨1x+TW
-      - 日本+12丨1x+JP
-      - 台湾+10丨1x+TW
-      - 菲律宾+01丨1x+PH
-      - 日本+04丨1x+JP
-      - 香港06
-      - 香港家宽丨1x+HK
-      - 香港+14丨1x+HK
-      - 新加坡+09丨1x+SG
-      - 新加坡+02丨1x+SG
-      - 香港+01丨1x+HK
-      - 巴基斯坦+01丨5x+PK
-      - 新加坡01
-      - 美国+03+芝加哥丨1x+US
-      - 台湾01
-      - 新加坡+11丨2x+SG
-      - 韩国01
-      - 新加坡+05丨1x+SG
-      - 新加坡02
-      - 巴基斯坦+02丨5x+PK
-      - 印度尼西亚-棉兰丨1x+ID
-      - 台湾02
-      - 美国+07+达拉斯丨1x+US
-      - 香港+09丨1x+HK
-      - 日本+14丨3x+JP
-      - 印度尼西亚-雅加达丨1x+ID
-      - 美国01
-      - 香港+10丨1x+HK
-      - 马来西亚家宽丨3x+MY
-      - 越南丨1x+VN
-      - 台湾+14丨1x+TW
-      - 德国02
-      - 新加坡家宽丨3x+SG
-      - 巴拿马丨3x+PA
-      - 美国+06+斯波坎丨1x+US
-      - 日本+17丨3x+JP
-      - 香港+12丨1x+HK
-      - 以色列丨1x+IL
-      - 香港03
-      - 香港04
-      - 加拿大+01+多伦多丨1x+CA
-      - 卢森堡丨2x+LU
-      - 韩国+01丨3x+KR
-      - 新西兰丨3x+NZ
-      - 加拿大+02+温哥华丨2x+CA
-      - 美国+09+密尔沃基丨1x+US
-      - 荷兰丨1x+NL
-      - 冰岛丨2x+IS
-      - 意大利丨1x+IT
-      - 新加坡+08丨1x+SG
-      - 尼泊尔丨1x+NP
-      - 台湾+13丨1x+TW
-      - 英国+02丨1x+GB
-      - 俄罗斯-库页岛丨1x+RU
-      - 塞浦路斯丨1x+CY
-      - 埃及丨3x+EG
-      - 格鲁吉亚丨1x+GE
-      - 伊朗丨5x+IR
-      - 法国丨1x+FR
-      - 德国+01丨1x+DE
-      - 阿塞拜疆丨1x+AZ
-      - 罗马尼亚丨1x+RO
-      - 韩国03
-      - 哥伦比亚丨1x+CO
-      - 英国01
-      - 克罗地亚丨2x+HR
-      - 葡萄牙丨1x+PT
-      - 台湾+08丨1x+TW
-      - 斯洛文尼亚丨2x+SI
-      - 台湾+07丨1x+TW
-      - 日本+10丨1x+JP
-      - 澳大利亚-布里斯班丨2x+AU
-      - 马恩岛丨2x+IM
-      - 德国01
-      - 阿尔巴尼亚丨1x+AL
-      - 德国+02丨1x+DE
-      - 摩尔多瓦丨2x+MD
-      - 美国+01+费城丨1x+US
-      - 土耳其丨1x+TR
-      - 爱沙尼亚丨1x+EE
-      - 尼日利亚丨2x+NG
-      - 希腊丨2x+GR
-      - 塞尔维亚丨2x+RS
-      - 台湾+09丨1x+TW
-      - 香港+02丨1x+HK
-      - 突尼斯丨2x+TN
-      - 印度02
-      - 乌拉圭丨2x+UY
-      - 挪威丨1x+NO
-      - 马来西亚+05丨1x+MY
-      - 俄罗斯-莫斯科丨1x+RU
-      - 奥地利丨2x+AT
-      - 香港+08丨1x+HK
-      - 台湾+16丨1x+TW
-      - 香港05
-      - 香港+06丨1x+HK
-      - 美国03
-      - 马来西亚+03丨1x+MY
-      - 白俄罗斯丨2x+BY
-      - 香港+03丨1x+HK
-      - 美国02
-      - 印度01
-      - 日本01
-      - 立陶宛丨1x+LT
-      - 台湾+12丨1x+TW
-      - 香港02
-      - 孟加拉丨2x+BD
-      - 英国02
-      - 越南家宽丨3x+VN
-      - 美国+08+底特律丨1x+US
-      - 爱尔兰丨2x+IE
-      - 瑞典丨1x+SE
-      - 哈萨克斯坦丨1x+KZ
-      - 韩国02
-      - 台湾+11丨1x+TW
-      - 日本+15丨3x+JP
-      - 日本+08丨1x+JP
-      - 加拿大家宽丨3x+CA
-      - 美国+04+圣何塞丨1x+US
-      - 新加坡03
-      - 菲律宾+02丨1x+PH
-      - 台湾+06丨1x+TW
-      - 香港+05丨1x+HK
-      - 加拿大+03+哈利法克斯丨1x+CA
-      - 波兰丨1x+PL
-      - 南非丨1x+ZA
-      - 瑞士丨2x+CH
-      - 印度-新德里丨1x+IN
-      - 肯尼亚丨1x+KE
-      - 日本+06丨1x+JP
-      - 乌克兰丨1x+UA
-      - 马来西亚+02丨1x+MY
-      - 新加坡+01丨1x+SG
-      - 阿根廷丨5x+AR
-      - 北马其顿丨2x+MK
-      - 澳门商宽丨2x+MO
-      - 台湾+01丨1x+TW
-      - 哥斯达黎加丨2x+CR
-      - 日本+11丨2x+JP
-      - 拉脱维亚丨1x+LV
-      - 墨西哥丨3x+MX
-      - 马来西亚+01丨1x+MY
-      - 日本02
-      - 韩国+02丨3x+KR
-      - 日本+03丨1x+JP
+      - HK_油管 TG 8度科技
+      - CN_油管 TG 8度科技
+      - CN_油管 TG 8度科技 2
+      - CN_油管 TG 8度科技 3
+      - CN_油管 TG 8度科技 4
+      - CN_油管 TG 8度科技 5
+      - CN_油管 TG 8度科技 6
+      - CN_油管 TG 8度科技 7
+      - HK_油管 TG 8度科技 2
+      - US_油管 TG 8度科技
+      - AE_油管 TG 8度科技
+      - AE_油管 TG 8度科技 2
+      - 油管 TG 8度科技
+      - 油管 TG 8度科技 2
+      - AE_油管 TG 8度科技 3
+      - US_油管 TG 8度科技 2
+      - US_油管 TG 8度科技 3
+      - US_油管 TG 8度科技 4
+      - US_油管 TG 8度科技 5
+      - US_油管 TG 8度科技 6
+      - US_油管 TG 8度科技 7
+      - US_油管 TG 8度科技 8
+      - US_油管 TG 8度科技 9
+      - US_油管 TG 8度科技 10
+      - US_油管 TG 8度科技 11
+      - HK_油管 TG 8度科技 3
+      - NL_油管 TG 8度科技
+      - CN_油管 TG 8度科技 8
+      - US_油管 TG 8度科技 12
+      - US_油管 TG 8度科技 13
+      - US_油管 TG 8度科技 14
+      - 油管 TG 8度科技 3
+      - NL_油管 TG 8度科技 2
+      - NL_油管 TG 8度科技 3
+      - US_油管 TG 8度科技 15
+      - 油管 TG 8度科技 4
+      - NL_油管 TG 8度科技 4
+      - NL_油管 TG 8度科技 5
+      - NL_油管 TG 8度科技 6
+      - US_油管 TG 8度科技 16
+      - 油管 TG 8度科技 5
+      - NL_油管 TG 8度科技 7
+      - US_油管 TG 8度科技 17
+      - US_油管 TG 8度科技 18
+      - NL_油管 TG 8度科技 8
+      - US_油管 TG 8度科技 19
+      - 油管 TG 8度科技 6
+      - 油管 TG 8度科技 7
+      - US_油管 TG 8度科技 20
+      - US_油管 TG 8度科技 21
+      - 油管 TG 8度科技 8
+      - CN_油管 TG 8度科技 9
+      - JP_油管 TG 8度科技
+      - 油管 TG 8度科技 9
+      - CN_油管 TG 8度科技 10
+      - JP_油管 TG 8度科技 2
+      - CN_油管 TG 8度科技 11
+      - US_油管 TG 8度科技 22
+      - JP_油管 TG 8度科技 3
+      - JP_油管 TG 8度科技 4
+      - JP_油管 TG 8度科技 5
+      - CN_油管 TG 8度科技 12
+      - US_油管 TG 8度科技 23
+      - CN_油管 TG 8度科技 13
+      - CN_油管 TG 8度科技 14
+      - CA_油管 TG 8度科技
+      - CN_油管 TG 8度科技 15
+      - CN_油管 TG 8度科技 16
+      - CA_油管 TG 8度科技 2
+      - CA_油管 TG 8度科技 3
+      - CA_油管 TG 8度科技 4
+      - US_油管 TG 8度科技 24
+      - CA_油管 TG 8度科技 5
+      - CN_油管 TG 8度科技 17
+      - CN_油管 TG 8度科技 18
+      - CA_油管 TG 8度科技 6
+      - CA_油管 TG 8度科技 7
+      - CA_油管 TG 8度科技 8
+      - CA_油管 TG 8度科技 9
+      - CA_油管 TG 8度科技 10
+      - CA_油管 TG 8度科技 11
+      - CN_油管 TG 8度科技 19
+      - CA_油管 TG 8度科技 12
+      - CA_油管 TG 8度科技 13
+      - CA_油管 TG 8度科技 14
+      - CA_油管 TG 8度科技 15
+      - US_油管 TG 8度科技 25
+      - CA_油管 TG 8度科技 16
+      - CA_油管 TG 8度科技 17
+      - CA_油管 TG 8度科技 18
+      - CA_油管 TG 8度科技 19
+      - CA_油管 TG 8度科技 20
+      - CA_油管 TG 8度科技 21
+      - CA_油管 TG 8度科技 22
+      - CA_油管 TG 8度科技 23
+      - CA_油管 TG 8度科技 24
+      - CA_油管 TG 8度科技 25
+      - HK_油管 TG 8度科技 4
+      - KR_油管 TG 8度科技
+      - KR_油管 TG 8度科技 2
+      - KR_油管 TG 8度科技 3
+      - HK_油管 TG 8度科技 5
+      - HK_油管 TG 8度科技 6
+      - HK_油管 TG 8度科技 7
+      - US_油管 TG 8度科技 26
+      - HK_油管 TG 8度科技 8
+      - US_油管 TG 8度科技 27
+      - US_油管 TG 8度科技 28
+      - US_油管 TG 8度科技 29
+      - US_油管 TG 8度科技 30
+      - US_油管 TG 8度科技 31
+      - CN_油管 TG 8度科技 20
+      - CN_油管 TG 8度科技 21
+      - CN_油管 TG 8度科技 22
+      - CN_油管 TG 8度科技 23
+      - CN_油管 TG 8度科技 24
+      - CN_油管 TG 8度科技 25
+      - CN_油管 TG 8度科技 26
+      - CN_油管 TG 8度科技 27
+      - CN_油管 TG 8度科技 28
+      - CN_油管 TG 8度科技 29
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
