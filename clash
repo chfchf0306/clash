@@ -5,323 +5,135 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: CN_欢迎使用软件库APP, server: 120.233.147.118, port: 41435, type: vmess, uuid: 35ffe46b-6c50-467e-9940-832deede23ea, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 120.233.147.118}, udp: true}
-  - {name: CN_欢迎使用软件库APP 2, server: juzixjp-001.ddns-oink.xyz, port: 40326, type: vmess, uuid: 4d0b3a57-a52b-3cee-8281-d73096aec993, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jz666666, ws-headers: {Host: juzixjp-001.ddns-oink.xyz}, udp: true}
-  - {name: CN_欢迎使用软件库APP 3, server: juzixjp-001.ddns-oink.xyz, port: 40322, type: vmess, uuid: 4d0b3a57-a52b-3cee-8281-d73096aec993, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jz666666, ws-headers: {Host: juzixjp-001.ddns-oink.xyz}, udp: true}
-  - {name: CN_欢迎使用软件库APP 4, server: juzixjp-001.ddns-oink.xyz, port: 40043, type: vmess, uuid: 4d0b3a57-a52b-3cee-8281-d73096aec993, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jz666666, ws-headers: {Host: juzixjp-001.ddns-oink.xyz}, udp: true}
-  - {name: US_欢迎使用软件库APP, server: 173.255.215.146, port: 11443, type: vmess, uuid: c04e69b1-3498-4187-9193-b657fd40cb65, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /api/common, ws-headers: {Host: usav2.ddns.tjiasu.xyz}, udp: true}
-  - {name: US_欢迎使用软件库APP 2, server: chuch3go.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: chuch3go.com}, udp: true}
-  - {name: US_欢迎使用软件库APP 3, server: cloudflare.xrenblog.com, port: 443, type: vmess, uuid: 6c175d1a-a57f-4881-a471-173eb139694b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /xrenblog/, ws-headers: {Host: ipv6.xrenblog.com}, udp: true}
-  - {name: US_欢迎使用软件库APP 4, server: 154.31.41.10, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: chuch3go.com}, udp: true}
-  - {name: CN_欢迎使用软件库APP 5, server: 42.193.48.64, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: US_欢迎使用软件库APP 5, server: 142.202.48.74, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: US_欢迎使用软件库APP 6, server: 142.202.48.74, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: US_欢迎使用软件库APP 7, server: 169.197.142.4, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: AU_欢迎使用软件库APP, server: 172.105.184.113, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: AU_欢迎使用软件库APP 2, server: 172.105.184.113, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: CA_欢迎使用软件库APP, server: 198.57.27.191, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: AU_欢迎使用软件库APP 3, server: 172.105.184.113, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: AU_欢迎使用软件库APP 4, server: 172.105.184.113, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: CA_欢迎使用软件库APP 2, server: 198.57.27.191, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: CA_欢迎使用软件库APP 3, server: 198.57.27.191, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: CA_欢迎使用软件库APP 4, server: 198.57.27.191, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: CA_欢迎使用软件库APP 5, server: 198.57.27.191, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_欢迎使用软件库APP 8, server: 169.197.142.4, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: US_欢迎使用软件库APP 9, server: 142.202.48.74, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: CA_欢迎使用软件库APP 6, server: 198.57.27.191, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: US_欢迎使用软件库APP 10, server: 142.202.48.74, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: US_欢迎使用软件库APP 11, server: 142.202.48.74, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: CA_欢迎使用软件库APP 7, server: 198.57.27.191, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: AU_欢迎使用软件库APP 5, server: 172.105.184.113, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_欢迎使用软件库APP 12, server: 169.197.142.4, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: IN_欢迎使用软件库APP, server: 192.46.209.146, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: CA_欢迎使用软件库APP 8, server: 134.195.196.68, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: CA_欢迎使用软件库APP 9, server: 134.195.196.68, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: CA_欢迎使用软件库APP 10, server: 134.195.196.68, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: CA_欢迎使用软件库APP 11, server: 198.57.27.191, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: CA_欢迎使用软件库APP 12, server: 198.57.27.191, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: CA_欢迎使用软件库APP 13, server: 134.195.196.68, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_欢迎使用软件库APP 13, server: 169.197.142.99, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: CA_欢迎使用软件库APP 14, server: 134.195.196.68, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: CA_欢迎使用软件库APP 15, server: 198.57.27.191, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: CA_欢迎使用软件库APP 16, server: 134.195.196.68, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: CA_欢迎使用软件库APP 17, server: 134.195.196.68, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: CA_欢迎使用软件库APP 18, server: 134.195.196.3, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: CA_欢迎使用软件库APP 19, server: 134.195.196.3, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: CA_欢迎使用软件库APP 20, server: 134.195.196.3, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: CA_欢迎使用软件库APP 21, server: 134.195.196.68, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: CA_欢迎使用软件库APP 22, server: 134.195.196.187, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: CA_欢迎使用软件库APP 23, server: 134.195.196.3, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: US_欢迎使用软件库APP 14, server: 169.197.142.99, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: CA_欢迎使用软件库APP 24, server: 134.195.196.81, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: CA_欢迎使用软件库APP 25, server: 134.195.196.3, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: CA_欢迎使用软件库APP 26, server: 198.57.27.191, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: CA_欢迎使用软件库APP 27, server: 134.195.196.3, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: CA_欢迎使用软件库APP 28, server: 134.195.196.187, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: US_欢迎使用软件库APP 15, server: 169.197.142.4, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: CA_欢迎使用软件库APP 29, server: 134.195.196.3, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: CA_欢迎使用软件库APP 30, server: 134.195.196.3, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: CA_欢迎使用软件库APP 31, server: 134.195.196.3, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: CA_欢迎使用软件库APP 32, server: 134.195.196.187, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: CA_欢迎使用软件库APP 33, server: 134.195.196.3, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: US_欢迎使用软件库APP 16, server: 169.197.142.99, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: CA_欢迎使用软件库APP 34, server: 134.195.196.81, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: CA_欢迎使用软件库APP 35, server: 134.195.196.68, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: CA_欢迎使用软件库APP 36, server: 134.195.196.3, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: CA_欢迎使用软件库APP 37, server: 198.57.27.191, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: CA_欢迎使用软件库APP 38, server: 198.57.27.191, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: CA_欢迎使用软件库APP 39, server: 134.195.196.81, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: CA_欢迎使用软件库APP 40, server: 198.57.27.191, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: CA_欢迎使用软件库APP 41, server: 134.195.196.81, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: CA_欢迎使用软件库APP 42, server: 134.195.196.81, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: CA_欢迎使用软件库APP 43, server: 134.195.196.81, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: CA_欢迎使用软件库APP 44, server: 134.195.196.187, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: CA_欢迎使用软件库APP 45, server: 134.195.196.81, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: CN_欢迎使用软件库APP 6, server: gz2.52168.xyz, port: 2105, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 149:y711wfz6uln, obfs-param: t.me/vpnhat, udp: true}
-  - {name: CN_欢迎使用软件库APP 7, server: gz1.52168.xyz, port: 1110, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 149:y711wfz6uln, obfs-param: t.me/vpnhat, udp: true}
-  - {name: CN_欢迎使用软件库APP 8, server: gz1.52168.xyz, port: 1110, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 623:l78d6doy74s, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 油管 TG 8度科技, server: 104.18.96.85, port: 2053, type: vmess, uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /eisasqa, ws-headers: {Host: foxus.fovi.tk}, udp: true}
+  - {name: US_油管 TG 8度科技, server: 154.31.41.10, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: chuch3go.com}, udp: true}
+  - {name: US_油管 TG 8度科技 2, server: chuch3go.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: chuch3go.com}, udp: true}
+  - {name: US_油管 TG 8度科技 3, server: cloudflare.xrenblog.com, port: 443, type: vmess, uuid: 6c175d1a-a57f-4881-a471-173eb139694b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /xrenblog/, ws-headers: {Host: ipv6.xrenblog.com}, udp: true}
+  - {name: CN_油管 TG 8度科技, server: liantong.latiao.cyou, port: 26801, type: ss, cipher: chacha20-ietf-poly1305, password: 6670a234-0d0a-42c8-b3b5-087568abc653, udp: true}
+  - {name: CN_油管 TG 8度科技 2, server: liantong.latiao.cyou, port: 26802, type: ss, cipher: chacha20-ietf-poly1305, password: 6670a234-0d0a-42c8-b3b5-087568abc653, udp: true}
+  - {name: CN_油管 TG 8度科技 3, server: yidong.latiao.cyou, port: 26801, type: ss, cipher: chacha20-ietf-poly1305, password: 6670a234-0d0a-42c8-b3b5-087568abc653, udp: true}
+  - {name: CN_油管 TG 8度科技 4, server: yidong.latiao.cyou, port: 26802, type: ss, cipher: chacha20-ietf-poly1305, password: 6670a234-0d0a-42c8-b3b5-087568abc653, udp: true}
+  - {name: CN_油管 TG 8度科技 5, server: liantong.latiao.cyou, port: 26804, type: ss, cipher: chacha20-ietf-poly1305, password: 6670a234-0d0a-42c8-b3b5-087568abc653, udp: true}
+  - {name: CN_油管 TG 8度科技 6, server: liantong.latiao.cyou, port: 26805, type: ss, cipher: chacha20-ietf-poly1305, password: 6670a234-0d0a-42c8-b3b5-087568abc653, udp: true}
+  - {name: CN_油管 TG 8度科技 7, server: yidong.latiao.cyou, port: 26804, type: ss, cipher: chacha20-ietf-poly1305, password: 6670a234-0d0a-42c8-b3b5-087568abc653, udp: true}
+  - {name: CN_油管 TG 8度科技 8, server: liantong.latiao.cyou, port: 26807, type: ss, cipher: chacha20-ietf-poly1305, password: 6670a234-0d0a-42c8-b3b5-087568abc653, udp: true}
+  - {name: CN_油管 TG 8度科技 9, server: yidong.latiao.cyou, port: 26804, type: ss, cipher: chacha20-ietf-poly1305, password: 804c3288-df4b-46e5-9c32-df048e2d7e64, udp: true}
+  - {name: CN_油管 TG 8度科技 10, server: yidong.latiao.cyou, port: 26807, type: ss, cipher: chacha20-ietf-poly1305, password: 6670a234-0d0a-42c8-b3b5-087568abc653, udp: true}
+  - {name: CN_油管 TG 8度科技 11, server: yidong.latiao.cyou, port: 26805, type: ss, cipher: chacha20-ietf-poly1305, password: 6670a234-0d0a-42c8-b3b5-087568abc653, udp: true}
+  - {name: US_油管 TG 8度科技 4, server: 142.202.48.74, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: US_油管 TG 8度科技 5, server: 142.202.48.74, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: US_油管 TG 8度科技 6, server: 142.202.48.74, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: US_油管 TG 8度科技 7, server: 142.202.48.74, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: CA_油管 TG 8度科技, server: 198.57.27.191, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: CA_油管 TG 8度科技 2, server: 198.57.27.191, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: US_油管 TG 8度科技 8, server: 169.197.142.99, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: CA_油管 TG 8度科技 3, server: 198.57.27.191, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: US_油管 TG 8度科技 9, server: 169.197.142.4, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: CA_油管 TG 8度科技 4, server: 198.57.27.191, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: US_油管 TG 8度科技 10, server: 169.197.142.4, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: US_油管 TG 8度科技 11, server: 169.197.142.4, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: HK_油管 TG 8度科技, server: hkcmi.greenshadow.top, port: 40001, type: trojan, password: d02d5977-e2cb-44af-a0fc-060b8c5e780c, sni: hkcmi.greenshadow.top, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - CN_欢迎使用软件库APP
-      - CN_欢迎使用软件库APP 2
-      - CN_欢迎使用软件库APP 3
-      - CN_欢迎使用软件库APP 4
-      - US_欢迎使用软件库APP
-      - US_欢迎使用软件库APP 2
-      - US_欢迎使用软件库APP 3
-      - US_欢迎使用软件库APP 4
-      - CN_欢迎使用软件库APP 5
-      - US_欢迎使用软件库APP 5
-      - US_欢迎使用软件库APP 6
-      - US_欢迎使用软件库APP 7
-      - AU_欢迎使用软件库APP
-      - AU_欢迎使用软件库APP 2
-      - CA_欢迎使用软件库APP
-      - AU_欢迎使用软件库APP 3
-      - AU_欢迎使用软件库APP 4
-      - CA_欢迎使用软件库APP 2
-      - CA_欢迎使用软件库APP 3
-      - CA_欢迎使用软件库APP 4
-      - CA_欢迎使用软件库APP 5
-      - US_欢迎使用软件库APP 8
-      - US_欢迎使用软件库APP 9
-      - CA_欢迎使用软件库APP 6
-      - US_欢迎使用软件库APP 10
-      - US_欢迎使用软件库APP 11
-      - CA_欢迎使用软件库APP 7
-      - AU_欢迎使用软件库APP 5
-      - US_欢迎使用软件库APP 12
-      - IN_欢迎使用软件库APP
-      - CA_欢迎使用软件库APP 8
-      - CA_欢迎使用软件库APP 9
-      - CA_欢迎使用软件库APP 10
-      - CA_欢迎使用软件库APP 11
-      - CA_欢迎使用软件库APP 12
-      - CA_欢迎使用软件库APP 13
-      - US_欢迎使用软件库APP 13
-      - CA_欢迎使用软件库APP 14
-      - CA_欢迎使用软件库APP 15
-      - CA_欢迎使用软件库APP 16
-      - CA_欢迎使用软件库APP 17
-      - CA_欢迎使用软件库APP 18
-      - CA_欢迎使用软件库APP 19
-      - CA_欢迎使用软件库APP 20
-      - CA_欢迎使用软件库APP 21
-      - CA_欢迎使用软件库APP 22
-      - CA_欢迎使用软件库APP 23
-      - US_欢迎使用软件库APP 14
-      - CA_欢迎使用软件库APP 24
-      - CA_欢迎使用软件库APP 25
-      - CA_欢迎使用软件库APP 26
-      - CA_欢迎使用软件库APP 27
-      - CA_欢迎使用软件库APP 28
-      - US_欢迎使用软件库APP 15
-      - CA_欢迎使用软件库APP 29
-      - CA_欢迎使用软件库APP 30
-      - CA_欢迎使用软件库APP 31
-      - CA_欢迎使用软件库APP 32
-      - CA_欢迎使用软件库APP 33
-      - US_欢迎使用软件库APP 16
-      - CA_欢迎使用软件库APP 34
-      - CA_欢迎使用软件库APP 35
-      - CA_欢迎使用软件库APP 36
-      - CA_欢迎使用软件库APP 37
-      - CA_欢迎使用软件库APP 38
-      - CA_欢迎使用软件库APP 39
-      - CA_欢迎使用软件库APP 40
-      - CA_欢迎使用软件库APP 41
-      - CA_欢迎使用软件库APP 42
-      - CA_欢迎使用软件库APP 43
-      - CA_欢迎使用软件库APP 44
-      - CA_欢迎使用软件库APP 45
-      - CN_欢迎使用软件库APP 6
-      - CN_欢迎使用软件库APP 7
-      - CN_欢迎使用软件库APP 8
+      - 油管 TG 8度科技
+      - US_油管 TG 8度科技
+      - US_油管 TG 8度科技 2
+      - US_油管 TG 8度科技 3
+      - CN_油管 TG 8度科技
+      - CN_油管 TG 8度科技 2
+      - CN_油管 TG 8度科技 3
+      - CN_油管 TG 8度科技 4
+      - CN_油管 TG 8度科技 5
+      - CN_油管 TG 8度科技 6
+      - CN_油管 TG 8度科技 7
+      - CN_油管 TG 8度科技 8
+      - CN_油管 TG 8度科技 9
+      - CN_油管 TG 8度科技 10
+      - CN_油管 TG 8度科技 11
+      - US_油管 TG 8度科技 4
+      - US_油管 TG 8度科技 5
+      - US_油管 TG 8度科技 6
+      - US_油管 TG 8度科技 7
+      - CA_油管 TG 8度科技
+      - CA_油管 TG 8度科技 2
+      - US_油管 TG 8度科技 8
+      - CA_油管 TG 8度科技 3
+      - US_油管 TG 8度科技 9
+      - CA_油管 TG 8度科技 4
+      - US_油管 TG 8度科技 10
+      - US_油管 TG 8度科技 11
+      - HK_油管 TG 8度科技
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - CN_欢迎使用软件库APP
-      - CN_欢迎使用软件库APP 2
-      - CN_欢迎使用软件库APP 3
-      - CN_欢迎使用软件库APP 4
-      - US_欢迎使用软件库APP
-      - US_欢迎使用软件库APP 2
-      - US_欢迎使用软件库APP 3
-      - US_欢迎使用软件库APP 4
-      - CN_欢迎使用软件库APP 5
-      - US_欢迎使用软件库APP 5
-      - US_欢迎使用软件库APP 6
-      - US_欢迎使用软件库APP 7
-      - AU_欢迎使用软件库APP
-      - AU_欢迎使用软件库APP 2
-      - CA_欢迎使用软件库APP
-      - AU_欢迎使用软件库APP 3
-      - AU_欢迎使用软件库APP 4
-      - CA_欢迎使用软件库APP 2
-      - CA_欢迎使用软件库APP 3
-      - CA_欢迎使用软件库APP 4
-      - CA_欢迎使用软件库APP 5
-      - US_欢迎使用软件库APP 8
-      - US_欢迎使用软件库APP 9
-      - CA_欢迎使用软件库APP 6
-      - US_欢迎使用软件库APP 10
-      - US_欢迎使用软件库APP 11
-      - CA_欢迎使用软件库APP 7
-      - AU_欢迎使用软件库APP 5
-      - US_欢迎使用软件库APP 12
-      - IN_欢迎使用软件库APP
-      - CA_欢迎使用软件库APP 8
-      - CA_欢迎使用软件库APP 9
-      - CA_欢迎使用软件库APP 10
-      - CA_欢迎使用软件库APP 11
-      - CA_欢迎使用软件库APP 12
-      - CA_欢迎使用软件库APP 13
-      - US_欢迎使用软件库APP 13
-      - CA_欢迎使用软件库APP 14
-      - CA_欢迎使用软件库APP 15
-      - CA_欢迎使用软件库APP 16
-      - CA_欢迎使用软件库APP 17
-      - CA_欢迎使用软件库APP 18
-      - CA_欢迎使用软件库APP 19
-      - CA_欢迎使用软件库APP 20
-      - CA_欢迎使用软件库APP 21
-      - CA_欢迎使用软件库APP 22
-      - CA_欢迎使用软件库APP 23
-      - US_欢迎使用软件库APP 14
-      - CA_欢迎使用软件库APP 24
-      - CA_欢迎使用软件库APP 25
-      - CA_欢迎使用软件库APP 26
-      - CA_欢迎使用软件库APP 27
-      - CA_欢迎使用软件库APP 28
-      - US_欢迎使用软件库APP 15
-      - CA_欢迎使用软件库APP 29
-      - CA_欢迎使用软件库APP 30
-      - CA_欢迎使用软件库APP 31
-      - CA_欢迎使用软件库APP 32
-      - CA_欢迎使用软件库APP 33
-      - US_欢迎使用软件库APP 16
-      - CA_欢迎使用软件库APP 34
-      - CA_欢迎使用软件库APP 35
-      - CA_欢迎使用软件库APP 36
-      - CA_欢迎使用软件库APP 37
-      - CA_欢迎使用软件库APP 38
-      - CA_欢迎使用软件库APP 39
-      - CA_欢迎使用软件库APP 40
-      - CA_欢迎使用软件库APP 41
-      - CA_欢迎使用软件库APP 42
-      - CA_欢迎使用软件库APP 43
-      - CA_欢迎使用软件库APP 44
-      - CA_欢迎使用软件库APP 45
-      - CN_欢迎使用软件库APP 6
-      - CN_欢迎使用软件库APP 7
-      - CN_欢迎使用软件库APP 8
+      - 油管 TG 8度科技
+      - US_油管 TG 8度科技
+      - US_油管 TG 8度科技 2
+      - US_油管 TG 8度科技 3
+      - CN_油管 TG 8度科技
+      - CN_油管 TG 8度科技 2
+      - CN_油管 TG 8度科技 3
+      - CN_油管 TG 8度科技 4
+      - CN_油管 TG 8度科技 5
+      - CN_油管 TG 8度科技 6
+      - CN_油管 TG 8度科技 7
+      - CN_油管 TG 8度科技 8
+      - CN_油管 TG 8度科技 9
+      - CN_油管 TG 8度科技 10
+      - CN_油管 TG 8度科技 11
+      - US_油管 TG 8度科技 4
+      - US_油管 TG 8度科技 5
+      - US_油管 TG 8度科技 6
+      - US_油管 TG 8度科技 7
+      - CA_油管 TG 8度科技
+      - CA_油管 TG 8度科技 2
+      - US_油管 TG 8度科技 8
+      - CA_油管 TG 8度科技 3
+      - US_油管 TG 8度科技 9
+      - CA_油管 TG 8度科技 4
+      - US_油管 TG 8度科技 10
+      - US_油管 TG 8度科技 11
+      - HK_油管 TG 8度科技
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - CN_欢迎使用软件库APP
-      - CN_欢迎使用软件库APP 2
-      - CN_欢迎使用软件库APP 3
-      - CN_欢迎使用软件库APP 4
-      - US_欢迎使用软件库APP
-      - US_欢迎使用软件库APP 2
-      - US_欢迎使用软件库APP 3
-      - US_欢迎使用软件库APP 4
-      - CN_欢迎使用软件库APP 5
-      - US_欢迎使用软件库APP 5
-      - US_欢迎使用软件库APP 6
-      - US_欢迎使用软件库APP 7
-      - AU_欢迎使用软件库APP
-      - AU_欢迎使用软件库APP 2
-      - CA_欢迎使用软件库APP
-      - AU_欢迎使用软件库APP 3
-      - AU_欢迎使用软件库APP 4
-      - CA_欢迎使用软件库APP 2
-      - CA_欢迎使用软件库APP 3
-      - CA_欢迎使用软件库APP 4
-      - CA_欢迎使用软件库APP 5
-      - US_欢迎使用软件库APP 8
-      - US_欢迎使用软件库APP 9
-      - CA_欢迎使用软件库APP 6
-      - US_欢迎使用软件库APP 10
-      - US_欢迎使用软件库APP 11
-      - CA_欢迎使用软件库APP 7
-      - AU_欢迎使用软件库APP 5
-      - US_欢迎使用软件库APP 12
-      - IN_欢迎使用软件库APP
-      - CA_欢迎使用软件库APP 8
-      - CA_欢迎使用软件库APP 9
-      - CA_欢迎使用软件库APP 10
-      - CA_欢迎使用软件库APP 11
-      - CA_欢迎使用软件库APP 12
-      - CA_欢迎使用软件库APP 13
-      - US_欢迎使用软件库APP 13
-      - CA_欢迎使用软件库APP 14
-      - CA_欢迎使用软件库APP 15
-      - CA_欢迎使用软件库APP 16
-      - CA_欢迎使用软件库APP 17
-      - CA_欢迎使用软件库APP 18
-      - CA_欢迎使用软件库APP 19
-      - CA_欢迎使用软件库APP 20
-      - CA_欢迎使用软件库APP 21
-      - CA_欢迎使用软件库APP 22
-      - CA_欢迎使用软件库APP 23
-      - US_欢迎使用软件库APP 14
-      - CA_欢迎使用软件库APP 24
-      - CA_欢迎使用软件库APP 25
-      - CA_欢迎使用软件库APP 26
-      - CA_欢迎使用软件库APP 27
-      - CA_欢迎使用软件库APP 28
-      - US_欢迎使用软件库APP 15
-      - CA_欢迎使用软件库APP 29
-      - CA_欢迎使用软件库APP 30
-      - CA_欢迎使用软件库APP 31
-      - CA_欢迎使用软件库APP 32
-      - CA_欢迎使用软件库APP 33
-      - US_欢迎使用软件库APP 16
-      - CA_欢迎使用软件库APP 34
-      - CA_欢迎使用软件库APP 35
-      - CA_欢迎使用软件库APP 36
-      - CA_欢迎使用软件库APP 37
-      - CA_欢迎使用软件库APP 38
-      - CA_欢迎使用软件库APP 39
-      - CA_欢迎使用软件库APP 40
-      - CA_欢迎使用软件库APP 41
-      - CA_欢迎使用软件库APP 42
-      - CA_欢迎使用软件库APP 43
-      - CA_欢迎使用软件库APP 44
-      - CA_欢迎使用软件库APP 45
-      - CN_欢迎使用软件库APP 6
-      - CN_欢迎使用软件库APP 7
-      - CN_欢迎使用软件库APP 8
+      - 油管 TG 8度科技
+      - US_油管 TG 8度科技
+      - US_油管 TG 8度科技 2
+      - US_油管 TG 8度科技 3
+      - CN_油管 TG 8度科技
+      - CN_油管 TG 8度科技 2
+      - CN_油管 TG 8度科技 3
+      - CN_油管 TG 8度科技 4
+      - CN_油管 TG 8度科技 5
+      - CN_油管 TG 8度科技 6
+      - CN_油管 TG 8度科技 7
+      - CN_油管 TG 8度科技 8
+      - CN_油管 TG 8度科技 9
+      - CN_油管 TG 8度科技 10
+      - CN_油管 TG 8度科技 11
+      - US_油管 TG 8度科技 4
+      - US_油管 TG 8度科技 5
+      - US_油管 TG 8度科技 6
+      - US_油管 TG 8度科技 7
+      - CA_油管 TG 8度科技
+      - CA_油管 TG 8度科技 2
+      - US_油管 TG 8度科技 8
+      - CA_油管 TG 8度科技 3
+      - US_油管 TG 8度科技 9
+      - CA_油管 TG 8度科技 4
+      - US_油管 TG 8度科技 10
+      - US_油管 TG 8度科技 11
+      - HK_油管 TG 8度科技
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -340,81 +152,34 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - CN_欢迎使用软件库APP
-      - CN_欢迎使用软件库APP 2
-      - CN_欢迎使用软件库APP 3
-      - CN_欢迎使用软件库APP 4
-      - US_欢迎使用软件库APP
-      - US_欢迎使用软件库APP 2
-      - US_欢迎使用软件库APP 3
-      - US_欢迎使用软件库APP 4
-      - CN_欢迎使用软件库APP 5
-      - US_欢迎使用软件库APP 5
-      - US_欢迎使用软件库APP 6
-      - US_欢迎使用软件库APP 7
-      - AU_欢迎使用软件库APP
-      - AU_欢迎使用软件库APP 2
-      - CA_欢迎使用软件库APP
-      - AU_欢迎使用软件库APP 3
-      - AU_欢迎使用软件库APP 4
-      - CA_欢迎使用软件库APP 2
-      - CA_欢迎使用软件库APP 3
-      - CA_欢迎使用软件库APP 4
-      - CA_欢迎使用软件库APP 5
-      - US_欢迎使用软件库APP 8
-      - US_欢迎使用软件库APP 9
-      - CA_欢迎使用软件库APP 6
-      - US_欢迎使用软件库APP 10
-      - US_欢迎使用软件库APP 11
-      - CA_欢迎使用软件库APP 7
-      - AU_欢迎使用软件库APP 5
-      - US_欢迎使用软件库APP 12
-      - IN_欢迎使用软件库APP
-      - CA_欢迎使用软件库APP 8
-      - CA_欢迎使用软件库APP 9
-      - CA_欢迎使用软件库APP 10
-      - CA_欢迎使用软件库APP 11
-      - CA_欢迎使用软件库APP 12
-      - CA_欢迎使用软件库APP 13
-      - US_欢迎使用软件库APP 13
-      - CA_欢迎使用软件库APP 14
-      - CA_欢迎使用软件库APP 15
-      - CA_欢迎使用软件库APP 16
-      - CA_欢迎使用软件库APP 17
-      - CA_欢迎使用软件库APP 18
-      - CA_欢迎使用软件库APP 19
-      - CA_欢迎使用软件库APP 20
-      - CA_欢迎使用软件库APP 21
-      - CA_欢迎使用软件库APP 22
-      - CA_欢迎使用软件库APP 23
-      - US_欢迎使用软件库APP 14
-      - CA_欢迎使用软件库APP 24
-      - CA_欢迎使用软件库APP 25
-      - CA_欢迎使用软件库APP 26
-      - CA_欢迎使用软件库APP 27
-      - CA_欢迎使用软件库APP 28
-      - US_欢迎使用软件库APP 15
-      - CA_欢迎使用软件库APP 29
-      - CA_欢迎使用软件库APP 30
-      - CA_欢迎使用软件库APP 31
-      - CA_欢迎使用软件库APP 32
-      - CA_欢迎使用软件库APP 33
-      - US_欢迎使用软件库APP 16
-      - CA_欢迎使用软件库APP 34
-      - CA_欢迎使用软件库APP 35
-      - CA_欢迎使用软件库APP 36
-      - CA_欢迎使用软件库APP 37
-      - CA_欢迎使用软件库APP 38
-      - CA_欢迎使用软件库APP 39
-      - CA_欢迎使用软件库APP 40
-      - CA_欢迎使用软件库APP 41
-      - CA_欢迎使用软件库APP 42
-      - CA_欢迎使用软件库APP 43
-      - CA_欢迎使用软件库APP 44
-      - CA_欢迎使用软件库APP 45
-      - CN_欢迎使用软件库APP 6
-      - CN_欢迎使用软件库APP 7
-      - CN_欢迎使用软件库APP 8
+      - 油管 TG 8度科技
+      - US_油管 TG 8度科技
+      - US_油管 TG 8度科技 2
+      - US_油管 TG 8度科技 3
+      - CN_油管 TG 8度科技
+      - CN_油管 TG 8度科技 2
+      - CN_油管 TG 8度科技 3
+      - CN_油管 TG 8度科技 4
+      - CN_油管 TG 8度科技 5
+      - CN_油管 TG 8度科技 6
+      - CN_油管 TG 8度科技 7
+      - CN_油管 TG 8度科技 8
+      - CN_油管 TG 8度科技 9
+      - CN_油管 TG 8度科技 10
+      - CN_油管 TG 8度科技 11
+      - US_油管 TG 8度科技 4
+      - US_油管 TG 8度科技 5
+      - US_油管 TG 8度科技 6
+      - US_油管 TG 8度科技 7
+      - CA_油管 TG 8度科技
+      - CA_油管 TG 8度科技 2
+      - US_油管 TG 8度科技 8
+      - CA_油管 TG 8度科技 3
+      - US_油管 TG 8度科技 9
+      - CA_油管 TG 8度科技 4
+      - US_油管 TG 8度科技 10
+      - US_油管 TG 8度科技 11
+      - HK_油管 TG 8度科技
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -425,242 +190,101 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - CN_欢迎使用软件库APP
-      - CN_欢迎使用软件库APP 2
-      - CN_欢迎使用软件库APP 3
-      - CN_欢迎使用软件库APP 4
-      - US_欢迎使用软件库APP
-      - US_欢迎使用软件库APP 2
-      - US_欢迎使用软件库APP 3
-      - US_欢迎使用软件库APP 4
-      - CN_欢迎使用软件库APP 5
-      - US_欢迎使用软件库APP 5
-      - US_欢迎使用软件库APP 6
-      - US_欢迎使用软件库APP 7
-      - AU_欢迎使用软件库APP
-      - AU_欢迎使用软件库APP 2
-      - CA_欢迎使用软件库APP
-      - AU_欢迎使用软件库APP 3
-      - AU_欢迎使用软件库APP 4
-      - CA_欢迎使用软件库APP 2
-      - CA_欢迎使用软件库APP 3
-      - CA_欢迎使用软件库APP 4
-      - CA_欢迎使用软件库APP 5
-      - US_欢迎使用软件库APP 8
-      - US_欢迎使用软件库APP 9
-      - CA_欢迎使用软件库APP 6
-      - US_欢迎使用软件库APP 10
-      - US_欢迎使用软件库APP 11
-      - CA_欢迎使用软件库APP 7
-      - AU_欢迎使用软件库APP 5
-      - US_欢迎使用软件库APP 12
-      - IN_欢迎使用软件库APP
-      - CA_欢迎使用软件库APP 8
-      - CA_欢迎使用软件库APP 9
-      - CA_欢迎使用软件库APP 10
-      - CA_欢迎使用软件库APP 11
-      - CA_欢迎使用软件库APP 12
-      - CA_欢迎使用软件库APP 13
-      - US_欢迎使用软件库APP 13
-      - CA_欢迎使用软件库APP 14
-      - CA_欢迎使用软件库APP 15
-      - CA_欢迎使用软件库APP 16
-      - CA_欢迎使用软件库APP 17
-      - CA_欢迎使用软件库APP 18
-      - CA_欢迎使用软件库APP 19
-      - CA_欢迎使用软件库APP 20
-      - CA_欢迎使用软件库APP 21
-      - CA_欢迎使用软件库APP 22
-      - CA_欢迎使用软件库APP 23
-      - US_欢迎使用软件库APP 14
-      - CA_欢迎使用软件库APP 24
-      - CA_欢迎使用软件库APP 25
-      - CA_欢迎使用软件库APP 26
-      - CA_欢迎使用软件库APP 27
-      - CA_欢迎使用软件库APP 28
-      - US_欢迎使用软件库APP 15
-      - CA_欢迎使用软件库APP 29
-      - CA_欢迎使用软件库APP 30
-      - CA_欢迎使用软件库APP 31
-      - CA_欢迎使用软件库APP 32
-      - CA_欢迎使用软件库APP 33
-      - US_欢迎使用软件库APP 16
-      - CA_欢迎使用软件库APP 34
-      - CA_欢迎使用软件库APP 35
-      - CA_欢迎使用软件库APP 36
-      - CA_欢迎使用软件库APP 37
-      - CA_欢迎使用软件库APP 38
-      - CA_欢迎使用软件库APP 39
-      - CA_欢迎使用软件库APP 40
-      - CA_欢迎使用软件库APP 41
-      - CA_欢迎使用软件库APP 42
-      - CA_欢迎使用软件库APP 43
-      - CA_欢迎使用软件库APP 44
-      - CA_欢迎使用软件库APP 45
-      - CN_欢迎使用软件库APP 6
-      - CN_欢迎使用软件库APP 7
-      - CN_欢迎使用软件库APP 8
+      - 油管 TG 8度科技
+      - US_油管 TG 8度科技
+      - US_油管 TG 8度科技 2
+      - US_油管 TG 8度科技 3
+      - CN_油管 TG 8度科技
+      - CN_油管 TG 8度科技 2
+      - CN_油管 TG 8度科技 3
+      - CN_油管 TG 8度科技 4
+      - CN_油管 TG 8度科技 5
+      - CN_油管 TG 8度科技 6
+      - CN_油管 TG 8度科技 7
+      - CN_油管 TG 8度科技 8
+      - CN_油管 TG 8度科技 9
+      - CN_油管 TG 8度科技 10
+      - CN_油管 TG 8度科技 11
+      - US_油管 TG 8度科技 4
+      - US_油管 TG 8度科技 5
+      - US_油管 TG 8度科技 6
+      - US_油管 TG 8度科技 7
+      - CA_油管 TG 8度科技
+      - CA_油管 TG 8度科技 2
+      - US_油管 TG 8度科技 8
+      - CA_油管 TG 8度科技 3
+      - US_油管 TG 8度科技 9
+      - CA_油管 TG 8度科技 4
+      - US_油管 TG 8度科技 10
+      - US_油管 TG 8度科技 11
+      - HK_油管 TG 8度科技
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - CN_欢迎使用软件库APP
-      - CN_欢迎使用软件库APP 2
-      - CN_欢迎使用软件库APP 3
-      - CN_欢迎使用软件库APP 4
-      - US_欢迎使用软件库APP
-      - US_欢迎使用软件库APP 2
-      - US_欢迎使用软件库APP 3
-      - US_欢迎使用软件库APP 4
-      - CN_欢迎使用软件库APP 5
-      - US_欢迎使用软件库APP 5
-      - US_欢迎使用软件库APP 6
-      - US_欢迎使用软件库APP 7
-      - AU_欢迎使用软件库APP
-      - AU_欢迎使用软件库APP 2
-      - CA_欢迎使用软件库APP
-      - AU_欢迎使用软件库APP 3
-      - AU_欢迎使用软件库APP 4
-      - CA_欢迎使用软件库APP 2
-      - CA_欢迎使用软件库APP 3
-      - CA_欢迎使用软件库APP 4
-      - CA_欢迎使用软件库APP 5
-      - US_欢迎使用软件库APP 8
-      - US_欢迎使用软件库APP 9
-      - CA_欢迎使用软件库APP 6
-      - US_欢迎使用软件库APP 10
-      - US_欢迎使用软件库APP 11
-      - CA_欢迎使用软件库APP 7
-      - AU_欢迎使用软件库APP 5
-      - US_欢迎使用软件库APP 12
-      - IN_欢迎使用软件库APP
-      - CA_欢迎使用软件库APP 8
-      - CA_欢迎使用软件库APP 9
-      - CA_欢迎使用软件库APP 10
-      - CA_欢迎使用软件库APP 11
-      - CA_欢迎使用软件库APP 12
-      - CA_欢迎使用软件库APP 13
-      - US_欢迎使用软件库APP 13
-      - CA_欢迎使用软件库APP 14
-      - CA_欢迎使用软件库APP 15
-      - CA_欢迎使用软件库APP 16
-      - CA_欢迎使用软件库APP 17
-      - CA_欢迎使用软件库APP 18
-      - CA_欢迎使用软件库APP 19
-      - CA_欢迎使用软件库APP 20
-      - CA_欢迎使用软件库APP 21
-      - CA_欢迎使用软件库APP 22
-      - CA_欢迎使用软件库APP 23
-      - US_欢迎使用软件库APP 14
-      - CA_欢迎使用软件库APP 24
-      - CA_欢迎使用软件库APP 25
-      - CA_欢迎使用软件库APP 26
-      - CA_欢迎使用软件库APP 27
-      - CA_欢迎使用软件库APP 28
-      - US_欢迎使用软件库APP 15
-      - CA_欢迎使用软件库APP 29
-      - CA_欢迎使用软件库APP 30
-      - CA_欢迎使用软件库APP 31
-      - CA_欢迎使用软件库APP 32
-      - CA_欢迎使用软件库APP 33
-      - US_欢迎使用软件库APP 16
-      - CA_欢迎使用软件库APP 34
-      - CA_欢迎使用软件库APP 35
-      - CA_欢迎使用软件库APP 36
-      - CA_欢迎使用软件库APP 37
-      - CA_欢迎使用软件库APP 38
-      - CA_欢迎使用软件库APP 39
-      - CA_欢迎使用软件库APP 40
-      - CA_欢迎使用软件库APP 41
-      - CA_欢迎使用软件库APP 42
-      - CA_欢迎使用软件库APP 43
-      - CA_欢迎使用软件库APP 44
-      - CA_欢迎使用软件库APP 45
-      - CN_欢迎使用软件库APP 6
-      - CN_欢迎使用软件库APP 7
-      - CN_欢迎使用软件库APP 8
+      - 油管 TG 8度科技
+      - US_油管 TG 8度科技
+      - US_油管 TG 8度科技 2
+      - US_油管 TG 8度科技 3
+      - CN_油管 TG 8度科技
+      - CN_油管 TG 8度科技 2
+      - CN_油管 TG 8度科技 3
+      - CN_油管 TG 8度科技 4
+      - CN_油管 TG 8度科技 5
+      - CN_油管 TG 8度科技 6
+      - CN_油管 TG 8度科技 7
+      - CN_油管 TG 8度科技 8
+      - CN_油管 TG 8度科技 9
+      - CN_油管 TG 8度科技 10
+      - CN_油管 TG 8度科技 11
+      - US_油管 TG 8度科技 4
+      - US_油管 TG 8度科技 5
+      - US_油管 TG 8度科技 6
+      - US_油管 TG 8度科技 7
+      - CA_油管 TG 8度科技
+      - CA_油管 TG 8度科技 2
+      - US_油管 TG 8度科技 8
+      - CA_油管 TG 8度科技 3
+      - US_油管 TG 8度科技 9
+      - CA_油管 TG 8度科技 4
+      - US_油管 TG 8度科技 10
+      - US_油管 TG 8度科技 11
+      - HK_油管 TG 8度科技
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - CN_欢迎使用软件库APP
-      - CN_欢迎使用软件库APP 2
-      - CN_欢迎使用软件库APP 3
-      - CN_欢迎使用软件库APP 4
-      - US_欢迎使用软件库APP
-      - US_欢迎使用软件库APP 2
-      - US_欢迎使用软件库APP 3
-      - US_欢迎使用软件库APP 4
-      - CN_欢迎使用软件库APP 5
-      - US_欢迎使用软件库APP 5
-      - US_欢迎使用软件库APP 6
-      - US_欢迎使用软件库APP 7
-      - AU_欢迎使用软件库APP
-      - AU_欢迎使用软件库APP 2
-      - CA_欢迎使用软件库APP
-      - AU_欢迎使用软件库APP 3
-      - AU_欢迎使用软件库APP 4
-      - CA_欢迎使用软件库APP 2
-      - CA_欢迎使用软件库APP 3
-      - CA_欢迎使用软件库APP 4
-      - CA_欢迎使用软件库APP 5
-      - US_欢迎使用软件库APP 8
-      - US_欢迎使用软件库APP 9
-      - CA_欢迎使用软件库APP 6
-      - US_欢迎使用软件库APP 10
-      - US_欢迎使用软件库APP 11
-      - CA_欢迎使用软件库APP 7
-      - AU_欢迎使用软件库APP 5
-      - US_欢迎使用软件库APP 12
-      - IN_欢迎使用软件库APP
-      - CA_欢迎使用软件库APP 8
-      - CA_欢迎使用软件库APP 9
-      - CA_欢迎使用软件库APP 10
-      - CA_欢迎使用软件库APP 11
-      - CA_欢迎使用软件库APP 12
-      - CA_欢迎使用软件库APP 13
-      - US_欢迎使用软件库APP 13
-      - CA_欢迎使用软件库APP 14
-      - CA_欢迎使用软件库APP 15
-      - CA_欢迎使用软件库APP 16
-      - CA_欢迎使用软件库APP 17
-      - CA_欢迎使用软件库APP 18
-      - CA_欢迎使用软件库APP 19
-      - CA_欢迎使用软件库APP 20
-      - CA_欢迎使用软件库APP 21
-      - CA_欢迎使用软件库APP 22
-      - CA_欢迎使用软件库APP 23
-      - US_欢迎使用软件库APP 14
-      - CA_欢迎使用软件库APP 24
-      - CA_欢迎使用软件库APP 25
-      - CA_欢迎使用软件库APP 26
-      - CA_欢迎使用软件库APP 27
-      - CA_欢迎使用软件库APP 28
-      - US_欢迎使用软件库APP 15
-      - CA_欢迎使用软件库APP 29
-      - CA_欢迎使用软件库APP 30
-      - CA_欢迎使用软件库APP 31
-      - CA_欢迎使用软件库APP 32
-      - CA_欢迎使用软件库APP 33
-      - US_欢迎使用软件库APP 16
-      - CA_欢迎使用软件库APP 34
-      - CA_欢迎使用软件库APP 35
-      - CA_欢迎使用软件库APP 36
-      - CA_欢迎使用软件库APP 37
-      - CA_欢迎使用软件库APP 38
-      - CA_欢迎使用软件库APP 39
-      - CA_欢迎使用软件库APP 40
-      - CA_欢迎使用软件库APP 41
-      - CA_欢迎使用软件库APP 42
-      - CA_欢迎使用软件库APP 43
-      - CA_欢迎使用软件库APP 44
-      - CA_欢迎使用软件库APP 45
-      - CN_欢迎使用软件库APP 6
-      - CN_欢迎使用软件库APP 7
-      - CN_欢迎使用软件库APP 8
+      - 油管 TG 8度科技
+      - US_油管 TG 8度科技
+      - US_油管 TG 8度科技 2
+      - US_油管 TG 8度科技 3
+      - CN_油管 TG 8度科技
+      - CN_油管 TG 8度科技 2
+      - CN_油管 TG 8度科技 3
+      - CN_油管 TG 8度科技 4
+      - CN_油管 TG 8度科技 5
+      - CN_油管 TG 8度科技 6
+      - CN_油管 TG 8度科技 7
+      - CN_油管 TG 8度科技 8
+      - CN_油管 TG 8度科技 9
+      - CN_油管 TG 8度科技 10
+      - CN_油管 TG 8度科技 11
+      - US_油管 TG 8度科技 4
+      - US_油管 TG 8度科技 5
+      - US_油管 TG 8度科技 6
+      - US_油管 TG 8度科技 7
+      - CA_油管 TG 8度科技
+      - CA_油管 TG 8度科技 2
+      - US_油管 TG 8度科技 8
+      - CA_油管 TG 8度科技 3
+      - US_油管 TG 8度科技 9
+      - CA_油管 TG 8度科技 4
+      - US_油管 TG 8度科技 10
+      - US_油管 TG 8度科技 11
+      - HK_油管 TG 8度科技
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -676,81 +300,34 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - CN_欢迎使用软件库APP
-      - CN_欢迎使用软件库APP 2
-      - CN_欢迎使用软件库APP 3
-      - CN_欢迎使用软件库APP 4
-      - US_欢迎使用软件库APP
-      - US_欢迎使用软件库APP 2
-      - US_欢迎使用软件库APP 3
-      - US_欢迎使用软件库APP 4
-      - CN_欢迎使用软件库APP 5
-      - US_欢迎使用软件库APP 5
-      - US_欢迎使用软件库APP 6
-      - US_欢迎使用软件库APP 7
-      - AU_欢迎使用软件库APP
-      - AU_欢迎使用软件库APP 2
-      - CA_欢迎使用软件库APP
-      - AU_欢迎使用软件库APP 3
-      - AU_欢迎使用软件库APP 4
-      - CA_欢迎使用软件库APP 2
-      - CA_欢迎使用软件库APP 3
-      - CA_欢迎使用软件库APP 4
-      - CA_欢迎使用软件库APP 5
-      - US_欢迎使用软件库APP 8
-      - US_欢迎使用软件库APP 9
-      - CA_欢迎使用软件库APP 6
-      - US_欢迎使用软件库APP 10
-      - US_欢迎使用软件库APP 11
-      - CA_欢迎使用软件库APP 7
-      - AU_欢迎使用软件库APP 5
-      - US_欢迎使用软件库APP 12
-      - IN_欢迎使用软件库APP
-      - CA_欢迎使用软件库APP 8
-      - CA_欢迎使用软件库APP 9
-      - CA_欢迎使用软件库APP 10
-      - CA_欢迎使用软件库APP 11
-      - CA_欢迎使用软件库APP 12
-      - CA_欢迎使用软件库APP 13
-      - US_欢迎使用软件库APP 13
-      - CA_欢迎使用软件库APP 14
-      - CA_欢迎使用软件库APP 15
-      - CA_欢迎使用软件库APP 16
-      - CA_欢迎使用软件库APP 17
-      - CA_欢迎使用软件库APP 18
-      - CA_欢迎使用软件库APP 19
-      - CA_欢迎使用软件库APP 20
-      - CA_欢迎使用软件库APP 21
-      - CA_欢迎使用软件库APP 22
-      - CA_欢迎使用软件库APP 23
-      - US_欢迎使用软件库APP 14
-      - CA_欢迎使用软件库APP 24
-      - CA_欢迎使用软件库APP 25
-      - CA_欢迎使用软件库APP 26
-      - CA_欢迎使用软件库APP 27
-      - CA_欢迎使用软件库APP 28
-      - US_欢迎使用软件库APP 15
-      - CA_欢迎使用软件库APP 29
-      - CA_欢迎使用软件库APP 30
-      - CA_欢迎使用软件库APP 31
-      - CA_欢迎使用软件库APP 32
-      - CA_欢迎使用软件库APP 33
-      - US_欢迎使用软件库APP 16
-      - CA_欢迎使用软件库APP 34
-      - CA_欢迎使用软件库APP 35
-      - CA_欢迎使用软件库APP 36
-      - CA_欢迎使用软件库APP 37
-      - CA_欢迎使用软件库APP 38
-      - CA_欢迎使用软件库APP 39
-      - CA_欢迎使用软件库APP 40
-      - CA_欢迎使用软件库APP 41
-      - CA_欢迎使用软件库APP 42
-      - CA_欢迎使用软件库APP 43
-      - CA_欢迎使用软件库APP 44
-      - CA_欢迎使用软件库APP 45
-      - CN_欢迎使用软件库APP 6
-      - CN_欢迎使用软件库APP 7
-      - CN_欢迎使用软件库APP 8
+      - 油管 TG 8度科技
+      - US_油管 TG 8度科技
+      - US_油管 TG 8度科技 2
+      - US_油管 TG 8度科技 3
+      - CN_油管 TG 8度科技
+      - CN_油管 TG 8度科技 2
+      - CN_油管 TG 8度科技 3
+      - CN_油管 TG 8度科技 4
+      - CN_油管 TG 8度科技 5
+      - CN_油管 TG 8度科技 6
+      - CN_油管 TG 8度科技 7
+      - CN_油管 TG 8度科技 8
+      - CN_油管 TG 8度科技 9
+      - CN_油管 TG 8度科技 10
+      - CN_油管 TG 8度科技 11
+      - US_油管 TG 8度科技 4
+      - US_油管 TG 8度科技 5
+      - US_油管 TG 8度科技 6
+      - US_油管 TG 8度科技 7
+      - CA_油管 TG 8度科技
+      - CA_油管 TG 8度科技 2
+      - US_油管 TG 8度科技 8
+      - CA_油管 TG 8度科技 3
+      - US_油管 TG 8度科技 9
+      - CA_油管 TG 8度科技 4
+      - US_油管 TG 8度科技 10
+      - US_油管 TG 8度科技 11
+      - HK_油管 TG 8度科技
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
