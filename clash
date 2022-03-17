@@ -5,323 +5,323 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: HongKong-HK1-4-Rate:0.5, server: hk1-4.nigirocloud.com, port: 443, type: trojan, password: y3tqpagD93UYPaRumH, sni: hk1-4.nigirocloud.com, skip-cert-verify: true, udp: true}
-  - {name: V3-#319_粤-台_NF_x2_0_V2ray_45, server: juzixjp-001.ddns-oink.xyz, port: 40319, type: vmess, uuid: 4d0b3a57-a52b-3cee-8281-d73096aec993, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jz666666, ws-headers: {Host: juzixjp-001.ddns-oink.xyz}, udp: true}
-  - {name: V2-#105_cn2-新_NF_x1_5_V2ray_3, server: shanghai-cn2-01.ddns-oink.xyz, port: 40105, type: vmess, uuid: 4d0b3a57-a52b-3cee-8281-d73096aec993, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jz666666, ws-headers: {Host: shanghai-cn2-01.ddns-oink.xyz}, udp: true}
-  - {name: HK_欢迎使用软件库APP, server: 104.208.112.171, port: 3389, type: trojan, password: 9029864a78d29a43, skip-cert-verify: true, udp: true}
-  - {name: UnitedStates-US3-1-Rate:1.0, server: us3-1.nigirocloud.com, port: 443, type: trojan, password: y3tqpagD93UYPaRumH, sni: us3-1.nigirocloud.com, skip-cert-verify: true, udp: true}
-  - {name: V3-IEPL专线 新加坡03 | 8x, server: iplc01.dns2333.xyz, port: 3044, type: vmess, uuid: 10c56562-b2a0-3243-8dd1-c7c866205945, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: HongKong-HK1-1-Rate:0.5, server: hk1-1.nigirocloud.com, port: 443, type: trojan, password: y3tqpagD93UYPaRumH, sni: hk1-1.nigirocloud.com, skip-cert-verify: true, udp: true}
-  - {name: V1-日本 多台负载均衡 中继B 1.5x, server: in02.dns2333.xyz, port: 64086, type: vmess, uuid: 10c56562-b2a0-3243-8dd1-c7c866205945, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /biteb, ws-headers: {Host: jp-balancer.myn1des.com}, udp: true}
-  - {name: V1-台湾 多台负载均衡 中继B 1.5x, server: in02.dns2333.xyz, port: 64088, type: vmess, uuid: 10c56562-b2a0-3243-8dd1-c7c866205945, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /biteb, ws-headers: {Host: cdn.bootcdn.net}, udp: true}
-  - {name: V2-#238_粤-港HKT_NF_x1_5_V2ray_14, server: jzdjd-01.ddns-oink.xyz, port: 40238, type: vmess, uuid: 4d0b3a57-a52b-3cee-8281-d73096aec993, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jz666666, ws-headers: {Host: jzdjd-01.ddns-oink.xyz}, udp: true}
-  - {name: V2-#43_粤-台_NF_x2_0_V2ray_26, server: juzixjp-001.ddns-oink.xyz, port: 40043, type: vmess, uuid: 4d0b3a57-a52b-3cee-8281-d73096aec993, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jz666666, ws-headers: {Host: juzixjp-001.ddns-oink.xyz}, udp: true}
-  - {name: V3-#239_粤-港HKT_NF_x1_5_V2ray_34, server: jzdjd-01.ddns-oink.xyz, port: 40239, type: vmess, uuid: 4d0b3a57-a52b-3cee-8281-d73096aec993, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jz666666, ws-headers: {Host: jzdjd-01.ddns-oink.xyz}, udp: true}
   - {name: CN_欢迎使用软件库APP, server: 120.233.147.118, port: 41435, type: vmess, uuid: 35ffe46b-6c50-467e-9940-832deede23ea, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 120.233.147.118}, udp: true}
-  - {name: V3-#258_粤-港HKTx1_5_V2ray_36, server: jzdjd-01.ddns-oink.xyz, port: 40258, type: vmess, uuid: 4d0b3a57-a52b-3cee-8281-d73096aec993, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jz666666, ws-headers: {Host: jzdjd-01.ddns-oink.xyz}, udp: true}
-  - {name: V3-IEPL专线 日本04 | 7x, server: iplc01.dns2333.xyz, port: 3014, type: vmess, uuid: 10c56562-b2a0-3243-8dd1-c7c866205945, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: Germany-DE1-2-Rate:1.0, server: de1-2.nigirocloud.com, port: 443, type: trojan, password: y3tqpagD93UYPaRumH, sni: de1-2.nigirocloud.com, skip-cert-verify: true, udp: true}
-  - {name: HongKong-HK1-7-Rate:0.5, server: hk1-7.nigirocloud.com, port: 443, type: trojan, password: y3tqpagD93UYPaRumH, sni: hk1-7.nigirocloud.com, skip-cert-verify: true, udp: true}
-  - {name: V1-香港 多台负载均衡 中继D | 2x, server: in04.dns2333.xyz, port: 64078, type: vmess, uuid: 10c56562-b2a0-3243-8dd1-c7c866205945, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: hk-balancer.airport-v2.com}, udp: true}
-  - {name: Japan-TY1-2-Rate:1.0, server: ty1-2.nigirocloud.com, port: 443, type: trojan, password: y3tqpagD93UYPaRumH, sni: ty1-2.nigirocloud.com, skip-cert-verify: true, udp: true}
-  - {name: UnitedStates-US3-4-Rate:1.0, server: us3-4.nigirocloud.com, port: 443, type: trojan, password: y3tqpagD93UYPaRumH, sni: us3-4.nigirocloud.com, skip-cert-verify: true, udp: true}
-  - {name: V2-#261_粤-港HKT_x1_2_V2ray_16, server: jzdjd-01.ddns-oink.xyz, port: 40261, type: vmess, uuid: 4d0b3a57-a52b-3cee-8281-d73096aec993, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jz666666, ws-headers: {Host: jzdjd-01.ddns-oink.xyz}, udp: true}
-  - {name: Germany-DE1-4-Rate:1.0, server: de1-4.nigirocloud.com, port: 443, type: trojan, password: y3tqpagD93UYPaRumH, sni: de1-4.nigirocloud.com, skip-cert-verify: true, udp: true}
-  - {name: Germany-DE1-1-Rate:1.0, server: de1-1.nigirocloud.com, port: 443, type: trojan, password: y3tqpagD93UYPaRumH, sni: de1-1.nigirocloud.com, skip-cert-verify: true, udp: true}
-  - {name: V4-#27_粤-港HKT_NF_x2_0_V2ray_69, server: jzdjd-01.ddns-oink.xyz, port: 40027, type: vmess, uuid: 4d0b3a57-a52b-3cee-8281-d73096aec993, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jz666666, ws-headers: {Host: jzdjd-01.ddns-oink.xyz}, udp: true}
-  - {name: UnitedStates-US3-8-Rate:1.0, server: us3-8.nigirocloud.com, port: 443, type: trojan, password: y3tqpagD93UYPaRumH, sni: us3-8.nigirocloud.com, skip-cert-verify: true, udp: true}
-  - {name: V1-香港 多台负载均衡 中继B | 2x, server: in02.dns2333.xyz, port: 64078, type: vmess, uuid: 10c56562-b2a0-3243-8dd1-c7c866205945, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: hk-balancer.airport-v2.com}, udp: true}
-  - {name: V3-IEPL专线 美国02 6x, server: iplc01.dns2333.xyz, port: 3034, type: vmess, uuid: 10c56562-b2a0-3243-8dd1-c7c866205945, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: V3-IEPL专线 马来西亚02 | 8x 原生IP, server: iplc01.dns2333.xyz, port: 3194, type: vmess, uuid: 10c56562-b2a0-3243-8dd1-c7c866205945, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: V1-日本 多台负载均衡 中继D 1.5x, server: in04.dns2333.xyz, port: 64086, type: vmess, uuid: 10c56562-b2a0-3243-8dd1-c7c866205945, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /biteb, ws-headers: {Host: jp-balancer.myn1des.com}, udp: true}
-  - {name: V3-IEPL专线 英国01 | 6x, server: iplc01.dns2333.xyz, port: 3154, type: vmess, uuid: 10c56562-b2a0-3243-8dd1-c7c866205945, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: V3-#322_粤-台_NF_x2_0_V2ray_48, server: juzixjp-001.ddns-oink.xyz, port: 40322, type: vmess, uuid: 4d0b3a57-a52b-3cee-8281-d73096aec993, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jz666666, ws-headers: {Host: juzixjp-001.ddns-oink.xyz}, udp: true}
-  - {name: V3-IEPL专线 新加坡05 | 8x 原生IP, server: iplc01.dns2333.xyz, port: 3054, type: vmess, uuid: 10c56562-b2a0-3243-8dd1-c7c866205945, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: HongKong-HK1-6-Rate:0.5, server: hk1-6.nigirocloud.com, port: 443, type: trojan, password: y3tqpagD93UYPaRumH, sni: hk1-6.nigirocloud.com, skip-cert-verify: true, udp: true}
-  - {name: Germany-DE1-3-Rate:1.0, server: de1-3.nigirocloud.com, port: 443, type: trojan, password: y3tqpagD93UYPaRumH, sni: de1-3.nigirocloud.com, skip-cert-verify: true, udp: true}
-  - {name: UnitedStates-US3-2-Rate:1.0, server: us3-2.nigirocloud.com, port: 443, type: trojan, password: y3tqpagD93UYPaRumH, sni: us3-2.nigirocloud.com, skip-cert-verify: true, udp: true}
-  - {name: V3-#77_沪-日_NF_x1_0_V2ray_58, server: yygd-rb-02.ddns-oink.xyz, port: 40077, type: vmess, uuid: 4d0b3a57-a52b-3cee-8281-d73096aec993, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jz666666, ws-headers: {Host: yygd-rb-02.ddns-oink.xyz}, udp: true}
-  - {name: Japan-OS2-2-Rate:1.0, server: os2-2.nigirocloud.com, port: 443, type: trojan, password: y3tqpagD93UYPaRumH, sni: os2-2.nigirocloud.com, skip-cert-verify: true, udp: true}
-  - {name: V1-日本 多台负载均衡 中继C 1.5x, server: in03.dns2333.xyz, port: 64086, type: vmess, uuid: 10c56562-b2a0-3243-8dd1-c7c866205945, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /biteb, ws-headers: {Host: jp-balancer.myn1des.com}, udp: true}
-  - {name: Japan-OS2-1-Rate:1.0, server: os2-1.nigirocloud.com, port: 443, type: trojan, password: y3tqpagD93UYPaRumH, sni: os2-1.nigirocloud.com, skip-cert-verify: true, udp: true}
-  - {name: Germany-DE2-2-Rate:1.0, server: de2-2.nigirocloud.com, port: 443, type: trojan, password: y3tqpagD93UYPaRumH, sni: de2-2.nigirocloud.com, skip-cert-verify: true, udp: true}
-  - {name: V4-#39_沪-日_NF_x1_0_V2ray_83, server: yygd-rb-02.ddns-oink.xyz, port: 40039, type: vmess, uuid: 4d0b3a57-a52b-3cee-8281-d73096aec993, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jz666666, ws-headers: {Host: yygd-rb-02.ddns-oink.xyz}, udp: true}
-  - {name: V3-IEPL专线 台湾03 Hinet | 8x 原生IP, server: iplc01.dns2333.xyz, port: 3074, type: vmess, uuid: 10c56562-b2a0-3243-8dd1-c7c866205945, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: US_1716, server: 142.202.48.74, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: V4-#326_粤-台_NF_x2_0_V2ray_78, server: juzixjp-001.ddns-oink.xyz, port: 40326, type: vmess, uuid: 4d0b3a57-a52b-3cee-8281-d73096aec993, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jz666666, ws-headers: {Host: juzixjp-001.ddns-oink.xyz}, udp: true}
-  - {name: V2-#113_cn2-台_NF_x2_5_V2ray_7, server: jzyjxcn2.ddns-oink.xyz, port: 40113, type: vmess, uuid: 4d0b3a57-a52b-3cee-8281-d73096aec993, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jz666666, ws-headers: {Host: jzyjxcn2.ddns-oink.xyz}, udp: true}
-  - {name: V2-巴西01 中继C 2x, server: in03.dns2333.xyz, port: 64041, type: vmess, uuid: 10c56562-b2a0-3243-8dd1-c7c866205945, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /mg, ws-headers: {Host: biteb-br01.covid19.rip}, udp: true}
-  - {name: ZZ_3532, server: 169.197.142.4, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: V3-#25_粤-港HKT_NF_x1_5_V2ray_38, server: jzdjd-01.ddns-oink.xyz, port: 40025, type: vmess, uuid: 4d0b3a57-a52b-3cee-8281-d73096aec993, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jz666666, ws-headers: {Host: jzdjd-01.ddns-oink.xyz}, udp: true}
-  - {name: Japan-OS2-4-Rate:1.0, server: os2-4.nigirocloud.com, port: 443, type: trojan, password: y3tqpagD93UYPaRumH, sni: os2-4.nigirocloud.com, skip-cert-verify: true, udp: true}
-  - {name: V2-#247_粤-港HKTx1_2_V2ray_15, server: jzdjd-01.ddns-oink.xyz, port: 40247, type: vmess, uuid: 4d0b3a57-a52b-3cee-8281-d73096aec993, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jz666666, ws-headers: {Host: jzdjd-01.ddns-oink.xyz}, udp: true}
-  - {name: V3-#259_粤-港HKT_x1_5_V2ray_37, server: jzdjd-01.ddns-oink.xyz, port: 40259, type: vmess, uuid: 4d0b3a57-a52b-3cee-8281-d73096aec993, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jz666666, ws-headers: {Host: jzdjd-01.ddns-oink.xyz}, udp: true}
-  - {name: HongKong-HK1-8-Rate:0.5, server: hk1-8.nigirocloud.com, port: 443, type: trojan, password: y3tqpagD93UYPaRumH, sni: hk1-8.nigirocloud.com, skip-cert-verify: true, udp: true}
-  - {name: Japan-OS1-2-Rate:1.0, server: os1-2.nigirocloud.com, port: 443, type: trojan, password: y3tqpagD93UYPaRumH, sni: os1-2.nigirocloud.com, skip-cert-verify: true, udp: true}
-  - {name: V1-日本 多台负载均衡 中继A 1.5x, server: in01.dns2333.xyz, port: 64086, type: vmess, uuid: 10c56562-b2a0-3243-8dd1-c7c866205945, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /biteb, ws-headers: {Host: jp-balancer.myn1des.com}, udp: true}
-  - {name: V4-#324_粤-台_NF_x2_0_V2ray_76, server: juzixjp-001.ddns-oink.xyz, port: 40324, type: vmess, uuid: 4d0b3a57-a52b-3cee-8281-d73096aec993, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jz666666, ws-headers: {Host: juzixjp-001.ddns-oink.xyz}, udp: true}
-  - {name: V2-#262_粤-港HKT_x1_2_V2ray_17, server: jzdjd-01.ddns-oink.xyz, port: 40262, type: vmess, uuid: 4d0b3a57-a52b-3cee-8281-d73096aec993, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jz666666, ws-headers: {Host: jzdjd-01.ddns-oink.xyz}, udp: true}
-  - {name: V2-#263_粤-港HKT_x1_5_V2ray_18, server: gdyd01.ddns-oink.xyz, port: 40263, type: vmess, uuid: 4d0b3a57-a52b-3cee-8281-d73096aec993, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jz666666, ws-headers: {Host: gdyd01.ddns-oink.xyz}, udp: true}
-  - {name: V3-#320_粤-台_NF_x2_0_V2ray_46, server: juzixjp-001.ddns-oink.xyz, port: 40320, type: vmess, uuid: 4d0b3a57-a52b-3cee-8281-d73096aec993, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jz666666, ws-headers: {Host: juzixjp-001.ddns-oink.xyz}, udp: true}
-  - {name: US_1696, server: 142.202.48.74, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_1329, server: 142.202.48.74, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: HongKong-HK1-5-Rate:0.5, server: hk1-5.nigirocloud.com, port: 443, type: trojan, password: y3tqpagD93UYPaRumH, sni: hk1-5.nigirocloud.com, skip-cert-verify: true, udp: true}
-  - {name: CN_欢迎使用软件库APP 2, server: 180.163.62.91, port: 22002, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: V2-#109_沪-日_NF_x1_5_V2ray_5, server: yygd-rb-02.ddns-oink.xyz, port: 40109, type: vmess, uuid: 4d0b3a57-a52b-3cee-8281-d73096aec993, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jz666666, ws-headers: {Host: yygd-rb-02.ddns-oink.xyz}, udp: true}
-  - {name: ZZ_3195, server: 169.197.142.4, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: Germany-DE2-3-Rate:1.0, server: de2-3.nigirocloud.com, port: 443, type: trojan, password: y3tqpagD93UYPaRumH, sni: de2-3.nigirocloud.com, skip-cert-verify: true, udp: true}
-  - {name: UnitedStates-US3-5-Rate:1.0, server: us3-5.nigirocloud.com, port: 443, type: trojan, password: y3tqpagD93UYPaRumH, sni: us3-5.nigirocloud.com, skip-cert-verify: true, udp: true}
-  - {name: V3-#214_江港-美M_NF_x2_0_V2ray_32, server: gdyd01.ddns-oink.xyz, port: 40214, type: vmess, uuid: 4d0b3a57-a52b-3cee-8281-d73096aec993, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jz666666, ws-headers: {Host: gdyd01.ddns-oink.xyz}, udp: true}
-  - {name: V4-#47_广港-新_NF_x2_0_V2ray_86, server: gdyd01.ddns-oink.xyz, port: 40047, type: vmess, uuid: 4d0b3a57-a52b-3cee-8281-d73096aec993, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jz666666, ws-headers: {Host: gdyd01.ddns-oink.xyz}, udp: true}
-  - {name: V3-IEPL专线 香港HKT01 | 7x 原生IP, server: iplc01.dns2333.xyz, port: 3144, type: vmess, uuid: 10c56562-b2a0-3243-8dd1-c7c866205945, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: V2-#107_沪-日_NF_x2_0_V2ray_4, server: yygd-rb-02.ddns-oink.xyz, port: 40107, type: vmess, uuid: 4d0b3a57-a52b-3cee-8281-d73096aec993, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jz666666, ws-headers: {Host: yygd-rb-02.ddns-oink.xyz}, udp: true}
-  - {name: V3-IEPL专线 香港HKG01 | 7x 原生IP, server: iplc01.dns2333.xyz, port: 3114, type: vmess, uuid: 10c56562-b2a0-3243-8dd1-c7c866205945, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: V4-#41_沪-日_NF_x1_0_V2ray_84, server: yygd-rb-02.ddns-oink.xyz, port: 40041, type: vmess, uuid: 4d0b3a57-a52b-3cee-8281-d73096aec993, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jz666666, ws-headers: {Host: yygd-rb-02.ddns-oink.xyz}, udp: true}
-  - {name: V4-#325_粤-台_NF_x2_0_V2ray_77, server: juzixjp-001.ddns-oink.xyz, port: 40325, type: vmess, uuid: 4d0b3a57-a52b-3cee-8281-d73096aec993, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jz666666, ws-headers: {Host: juzixjp-001.ddns-oink.xyz}, udp: true}
-  - {name: V2-韩国01 中继C 2x, server: in03.dns2333.xyz, port: 64004, type: vmess, uuid: 10c56562-b2a0-3243-8dd1-c7c866205945, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: biteb-kr01.covid19.rip}, udp: true}
-  - {name: _02, server: 42.193.48.64, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN_欢迎使用软件库APP 2, server: juzixjp-001.ddns-oink.xyz, port: 40326, type: vmess, uuid: 4d0b3a57-a52b-3cee-8281-d73096aec993, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jz666666, ws-headers: {Host: juzixjp-001.ddns-oink.xyz}, udp: true}
+  - {name: CN_欢迎使用软件库APP 3, server: juzixjp-001.ddns-oink.xyz, port: 40322, type: vmess, uuid: 4d0b3a57-a52b-3cee-8281-d73096aec993, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jz666666, ws-headers: {Host: juzixjp-001.ddns-oink.xyz}, udp: true}
+  - {name: CN_欢迎使用软件库APP 4, server: juzixjp-001.ddns-oink.xyz, port: 40043, type: vmess, uuid: 4d0b3a57-a52b-3cee-8281-d73096aec993, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jz666666, ws-headers: {Host: juzixjp-001.ddns-oink.xyz}, udp: true}
+  - {name: US_欢迎使用软件库APP, server: 173.255.215.146, port: 11443, type: vmess, uuid: c04e69b1-3498-4187-9193-b657fd40cb65, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /api/common, ws-headers: {Host: usav2.ddns.tjiasu.xyz}, udp: true}
+  - {name: US_欢迎使用软件库APP 2, server: chuch3go.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: chuch3go.com}, udp: true}
+  - {name: US_欢迎使用软件库APP 3, server: cloudflare.xrenblog.com, port: 443, type: vmess, uuid: 6c175d1a-a57f-4881-a471-173eb139694b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /xrenblog/, ws-headers: {Host: ipv6.xrenblog.com}, udp: true}
+  - {name: US_欢迎使用软件库APP 4, server: 154.31.41.10, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: chuch3go.com}, udp: true}
+  - {name: CN_欢迎使用软件库APP 5, server: 42.193.48.64, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: US_欢迎使用软件库APP 5, server: 142.202.48.74, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: US_欢迎使用软件库APP 6, server: 142.202.48.74, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: US_欢迎使用软件库APP 7, server: 169.197.142.4, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: AU_欢迎使用软件库APP, server: 172.105.184.113, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
+  - {name: AU_欢迎使用软件库APP 2, server: 172.105.184.113, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: CA_欢迎使用软件库APP, server: 198.57.27.191, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: AU_欢迎使用软件库APP 3, server: 172.105.184.113, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: AU_欢迎使用软件库APP 4, server: 172.105.184.113, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: CA_欢迎使用软件库APP 2, server: 198.57.27.191, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: CA_欢迎使用软件库APP 3, server: 198.57.27.191, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: CA_欢迎使用软件库APP 4, server: 198.57.27.191, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: CA_欢迎使用软件库APP 5, server: 198.57.27.191, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: US_欢迎使用软件库APP 8, server: 169.197.142.4, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: US_欢迎使用软件库APP 9, server: 142.202.48.74, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: CA_欢迎使用软件库APP 6, server: 198.57.27.191, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: US_欢迎使用软件库APP 10, server: 142.202.48.74, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: US_欢迎使用软件库APP 11, server: 142.202.48.74, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: CA_欢迎使用软件库APP 7, server: 198.57.27.191, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: AU_欢迎使用软件库APP 5, server: 172.105.184.113, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: US_欢迎使用软件库APP 12, server: 169.197.142.4, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: IN_欢迎使用软件库APP, server: 192.46.209.146, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: CA_欢迎使用软件库APP 8, server: 134.195.196.68, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: CA_欢迎使用软件库APP 9, server: 134.195.196.68, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: CA_欢迎使用软件库APP 10, server: 134.195.196.68, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: CA_欢迎使用软件库APP 11, server: 198.57.27.191, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: CA_欢迎使用软件库APP 12, server: 198.57.27.191, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: CA_欢迎使用软件库APP 13, server: 134.195.196.68, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: US_欢迎使用软件库APP 13, server: 169.197.142.99, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: CA_欢迎使用软件库APP 14, server: 134.195.196.68, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: CA_欢迎使用软件库APP 15, server: 198.57.27.191, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: CA_欢迎使用软件库APP 16, server: 134.195.196.68, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: CA_欢迎使用软件库APP 17, server: 134.195.196.68, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: CA_欢迎使用软件库APP 18, server: 134.195.196.3, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: CA_欢迎使用软件库APP 19, server: 134.195.196.3, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: CA_欢迎使用软件库APP 20, server: 134.195.196.3, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: CA_欢迎使用软件库APP 21, server: 134.195.196.68, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: CA_欢迎使用软件库APP 22, server: 134.195.196.187, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: CA_欢迎使用软件库APP 23, server: 134.195.196.3, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: US_欢迎使用软件库APP 14, server: 169.197.142.99, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: CA_欢迎使用软件库APP 24, server: 134.195.196.81, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: CA_欢迎使用软件库APP 25, server: 134.195.196.3, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: CA_欢迎使用软件库APP 26, server: 198.57.27.191, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: CA_欢迎使用软件库APP 27, server: 134.195.196.3, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: CA_欢迎使用软件库APP 28, server: 134.195.196.187, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: US_欢迎使用软件库APP 15, server: 169.197.142.4, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: CA_欢迎使用软件库APP 29, server: 134.195.196.3, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: CA_欢迎使用软件库APP 30, server: 134.195.196.3, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: CA_欢迎使用软件库APP 31, server: 134.195.196.3, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: CA_欢迎使用软件库APP 32, server: 134.195.196.187, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: CA_欢迎使用软件库APP 33, server: 134.195.196.3, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: US_欢迎使用软件库APP 16, server: 169.197.142.99, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: CA_欢迎使用软件库APP 34, server: 134.195.196.81, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: CA_欢迎使用软件库APP 35, server: 134.195.196.68, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
+  - {name: CA_欢迎使用软件库APP 36, server: 134.195.196.3, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: CA_欢迎使用软件库APP 37, server: 198.57.27.191, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: CA_欢迎使用软件库APP 38, server: 198.57.27.191, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: CA_欢迎使用软件库APP 39, server: 134.195.196.81, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: CA_欢迎使用软件库APP 40, server: 198.57.27.191, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: CA_欢迎使用软件库APP 41, server: 134.195.196.81, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: CA_欢迎使用软件库APP 42, server: 134.195.196.81, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: CA_欢迎使用软件库APP 43, server: 134.195.196.81, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: CA_欢迎使用软件库APP 44, server: 134.195.196.187, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: CA_欢迎使用软件库APP 45, server: 134.195.196.81, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: CN_欢迎使用软件库APP 6, server: gz2.52168.xyz, port: 2105, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 149:y711wfz6uln, obfs-param: t.me/vpnhat, udp: true}
+  - {name: CN_欢迎使用软件库APP 7, server: gz1.52168.xyz, port: 1110, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 149:y711wfz6uln, obfs-param: t.me/vpnhat, udp: true}
+  - {name: CN_欢迎使用软件库APP 8, server: gz1.52168.xyz, port: 1110, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 623:l78d6doy74s, obfs-param: t.me/vpnhat, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - HongKong-HK1-4-Rate:0.5
-      - V3-#319_粤-台_NF_x2_0_V2ray_45
-      - V2-#105_cn2-新_NF_x1_5_V2ray_3
-      - HK_欢迎使用软件库APP
-      - UnitedStates-US3-1-Rate:1.0
-      - V3-IEPL专线 新加坡03 | 8x
-      - HongKong-HK1-1-Rate:0.5
-      - V1-日本 多台负载均衡 中继B 1.5x
-      - V1-台湾 多台负载均衡 中继B 1.5x
-      - V2-#238_粤-港HKT_NF_x1_5_V2ray_14
-      - V2-#43_粤-台_NF_x2_0_V2ray_26
-      - V3-#239_粤-港HKT_NF_x1_5_V2ray_34
       - CN_欢迎使用软件库APP
-      - V3-#258_粤-港HKTx1_5_V2ray_36
-      - V3-IEPL专线 日本04 | 7x
-      - Germany-DE1-2-Rate:1.0
-      - HongKong-HK1-7-Rate:0.5
-      - V1-香港 多台负载均衡 中继D | 2x
-      - Japan-TY1-2-Rate:1.0
-      - UnitedStates-US3-4-Rate:1.0
-      - V2-#261_粤-港HKT_x1_2_V2ray_16
-      - Germany-DE1-4-Rate:1.0
-      - Germany-DE1-1-Rate:1.0
-      - V4-#27_粤-港HKT_NF_x2_0_V2ray_69
-      - UnitedStates-US3-8-Rate:1.0
-      - V1-香港 多台负载均衡 中继B | 2x
-      - V3-IEPL专线 美国02 6x
-      - V3-IEPL专线 马来西亚02 | 8x 原生IP
-      - V1-日本 多台负载均衡 中继D 1.5x
-      - V3-IEPL专线 英国01 | 6x
-      - V3-#322_粤-台_NF_x2_0_V2ray_48
-      - V3-IEPL专线 新加坡05 | 8x 原生IP
-      - HongKong-HK1-6-Rate:0.5
-      - Germany-DE1-3-Rate:1.0
-      - UnitedStates-US3-2-Rate:1.0
-      - V3-#77_沪-日_NF_x1_0_V2ray_58
-      - Japan-OS2-2-Rate:1.0
-      - V1-日本 多台负载均衡 中继C 1.5x
-      - Japan-OS2-1-Rate:1.0
-      - Germany-DE2-2-Rate:1.0
-      - V4-#39_沪-日_NF_x1_0_V2ray_83
-      - V3-IEPL专线 台湾03 Hinet | 8x 原生IP
-      - US_1716
-      - V4-#326_粤-台_NF_x2_0_V2ray_78
-      - V2-#113_cn2-台_NF_x2_5_V2ray_7
-      - V2-巴西01 中继C 2x
-      - ZZ_3532
-      - V3-#25_粤-港HKT_NF_x1_5_V2ray_38
-      - Japan-OS2-4-Rate:1.0
-      - V2-#247_粤-港HKTx1_2_V2ray_15
-      - V3-#259_粤-港HKT_x1_5_V2ray_37
-      - HongKong-HK1-8-Rate:0.5
-      - Japan-OS1-2-Rate:1.0
-      - V1-日本 多台负载均衡 中继A 1.5x
-      - V4-#324_粤-台_NF_x2_0_V2ray_76
-      - V2-#262_粤-港HKT_x1_2_V2ray_17
-      - V2-#263_粤-港HKT_x1_5_V2ray_18
-      - V3-#320_粤-台_NF_x2_0_V2ray_46
-      - US_1696
-      - US_1329
-      - HongKong-HK1-5-Rate:0.5
       - CN_欢迎使用软件库APP 2
-      - V2-#109_沪-日_NF_x1_5_V2ray_5
-      - ZZ_3195
-      - Germany-DE2-3-Rate:1.0
-      - UnitedStates-US3-5-Rate:1.0
-      - V3-#214_江港-美M_NF_x2_0_V2ray_32
-      - V4-#47_广港-新_NF_x2_0_V2ray_86
-      - V3-IEPL专线 香港HKT01 | 7x 原生IP
-      - V2-#107_沪-日_NF_x2_0_V2ray_4
-      - V3-IEPL专线 香港HKG01 | 7x 原生IP
-      - V4-#41_沪-日_NF_x1_0_V2ray_84
-      - V4-#325_粤-台_NF_x2_0_V2ray_77
-      - V2-韩国01 中继C 2x
-      - _02
+      - CN_欢迎使用软件库APP 3
+      - CN_欢迎使用软件库APP 4
+      - US_欢迎使用软件库APP
+      - US_欢迎使用软件库APP 2
+      - US_欢迎使用软件库APP 3
+      - US_欢迎使用软件库APP 4
+      - CN_欢迎使用软件库APP 5
+      - US_欢迎使用软件库APP 5
+      - US_欢迎使用软件库APP 6
+      - US_欢迎使用软件库APP 7
+      - AU_欢迎使用软件库APP
+      - AU_欢迎使用软件库APP 2
+      - CA_欢迎使用软件库APP
+      - AU_欢迎使用软件库APP 3
+      - AU_欢迎使用软件库APP 4
+      - CA_欢迎使用软件库APP 2
+      - CA_欢迎使用软件库APP 3
+      - CA_欢迎使用软件库APP 4
+      - CA_欢迎使用软件库APP 5
+      - US_欢迎使用软件库APP 8
+      - US_欢迎使用软件库APP 9
+      - CA_欢迎使用软件库APP 6
+      - US_欢迎使用软件库APP 10
+      - US_欢迎使用软件库APP 11
+      - CA_欢迎使用软件库APP 7
+      - AU_欢迎使用软件库APP 5
+      - US_欢迎使用软件库APP 12
+      - IN_欢迎使用软件库APP
+      - CA_欢迎使用软件库APP 8
+      - CA_欢迎使用软件库APP 9
+      - CA_欢迎使用软件库APP 10
+      - CA_欢迎使用软件库APP 11
+      - CA_欢迎使用软件库APP 12
+      - CA_欢迎使用软件库APP 13
+      - US_欢迎使用软件库APP 13
+      - CA_欢迎使用软件库APP 14
+      - CA_欢迎使用软件库APP 15
+      - CA_欢迎使用软件库APP 16
+      - CA_欢迎使用软件库APP 17
+      - CA_欢迎使用软件库APP 18
+      - CA_欢迎使用软件库APP 19
+      - CA_欢迎使用软件库APP 20
+      - CA_欢迎使用软件库APP 21
+      - CA_欢迎使用软件库APP 22
+      - CA_欢迎使用软件库APP 23
+      - US_欢迎使用软件库APP 14
+      - CA_欢迎使用软件库APP 24
+      - CA_欢迎使用软件库APP 25
+      - CA_欢迎使用软件库APP 26
+      - CA_欢迎使用软件库APP 27
+      - CA_欢迎使用软件库APP 28
+      - US_欢迎使用软件库APP 15
+      - CA_欢迎使用软件库APP 29
+      - CA_欢迎使用软件库APP 30
+      - CA_欢迎使用软件库APP 31
+      - CA_欢迎使用软件库APP 32
+      - CA_欢迎使用软件库APP 33
+      - US_欢迎使用软件库APP 16
+      - CA_欢迎使用软件库APP 34
+      - CA_欢迎使用软件库APP 35
+      - CA_欢迎使用软件库APP 36
+      - CA_欢迎使用软件库APP 37
+      - CA_欢迎使用软件库APP 38
+      - CA_欢迎使用软件库APP 39
+      - CA_欢迎使用软件库APP 40
+      - CA_欢迎使用软件库APP 41
+      - CA_欢迎使用软件库APP 42
+      - CA_欢迎使用软件库APP 43
+      - CA_欢迎使用软件库APP 44
+      - CA_欢迎使用软件库APP 45
+      - CN_欢迎使用软件库APP 6
+      - CN_欢迎使用软件库APP 7
+      - CN_欢迎使用软件库APP 8
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - HongKong-HK1-4-Rate:0.5
-      - V3-#319_粤-台_NF_x2_0_V2ray_45
-      - V2-#105_cn2-新_NF_x1_5_V2ray_3
-      - HK_欢迎使用软件库APP
-      - UnitedStates-US3-1-Rate:1.0
-      - V3-IEPL专线 新加坡03 | 8x
-      - HongKong-HK1-1-Rate:0.5
-      - V1-日本 多台负载均衡 中继B 1.5x
-      - V1-台湾 多台负载均衡 中继B 1.5x
-      - V2-#238_粤-港HKT_NF_x1_5_V2ray_14
-      - V2-#43_粤-台_NF_x2_0_V2ray_26
-      - V3-#239_粤-港HKT_NF_x1_5_V2ray_34
       - CN_欢迎使用软件库APP
-      - V3-#258_粤-港HKTx1_5_V2ray_36
-      - V3-IEPL专线 日本04 | 7x
-      - Germany-DE1-2-Rate:1.0
-      - HongKong-HK1-7-Rate:0.5
-      - V1-香港 多台负载均衡 中继D | 2x
-      - Japan-TY1-2-Rate:1.0
-      - UnitedStates-US3-4-Rate:1.0
-      - V2-#261_粤-港HKT_x1_2_V2ray_16
-      - Germany-DE1-4-Rate:1.0
-      - Germany-DE1-1-Rate:1.0
-      - V4-#27_粤-港HKT_NF_x2_0_V2ray_69
-      - UnitedStates-US3-8-Rate:1.0
-      - V1-香港 多台负载均衡 中继B | 2x
-      - V3-IEPL专线 美国02 6x
-      - V3-IEPL专线 马来西亚02 | 8x 原生IP
-      - V1-日本 多台负载均衡 中继D 1.5x
-      - V3-IEPL专线 英国01 | 6x
-      - V3-#322_粤-台_NF_x2_0_V2ray_48
-      - V3-IEPL专线 新加坡05 | 8x 原生IP
-      - HongKong-HK1-6-Rate:0.5
-      - Germany-DE1-3-Rate:1.0
-      - UnitedStates-US3-2-Rate:1.0
-      - V3-#77_沪-日_NF_x1_0_V2ray_58
-      - Japan-OS2-2-Rate:1.0
-      - V1-日本 多台负载均衡 中继C 1.5x
-      - Japan-OS2-1-Rate:1.0
-      - Germany-DE2-2-Rate:1.0
-      - V4-#39_沪-日_NF_x1_0_V2ray_83
-      - V3-IEPL专线 台湾03 Hinet | 8x 原生IP
-      - US_1716
-      - V4-#326_粤-台_NF_x2_0_V2ray_78
-      - V2-#113_cn2-台_NF_x2_5_V2ray_7
-      - V2-巴西01 中继C 2x
-      - ZZ_3532
-      - V3-#25_粤-港HKT_NF_x1_5_V2ray_38
-      - Japan-OS2-4-Rate:1.0
-      - V2-#247_粤-港HKTx1_2_V2ray_15
-      - V3-#259_粤-港HKT_x1_5_V2ray_37
-      - HongKong-HK1-8-Rate:0.5
-      - Japan-OS1-2-Rate:1.0
-      - V1-日本 多台负载均衡 中继A 1.5x
-      - V4-#324_粤-台_NF_x2_0_V2ray_76
-      - V2-#262_粤-港HKT_x1_2_V2ray_17
-      - V2-#263_粤-港HKT_x1_5_V2ray_18
-      - V3-#320_粤-台_NF_x2_0_V2ray_46
-      - US_1696
-      - US_1329
-      - HongKong-HK1-5-Rate:0.5
       - CN_欢迎使用软件库APP 2
-      - V2-#109_沪-日_NF_x1_5_V2ray_5
-      - ZZ_3195
-      - Germany-DE2-3-Rate:1.0
-      - UnitedStates-US3-5-Rate:1.0
-      - V3-#214_江港-美M_NF_x2_0_V2ray_32
-      - V4-#47_广港-新_NF_x2_0_V2ray_86
-      - V3-IEPL专线 香港HKT01 | 7x 原生IP
-      - V2-#107_沪-日_NF_x2_0_V2ray_4
-      - V3-IEPL专线 香港HKG01 | 7x 原生IP
-      - V4-#41_沪-日_NF_x1_0_V2ray_84
-      - V4-#325_粤-台_NF_x2_0_V2ray_77
-      - V2-韩国01 中继C 2x
-      - _02
+      - CN_欢迎使用软件库APP 3
+      - CN_欢迎使用软件库APP 4
+      - US_欢迎使用软件库APP
+      - US_欢迎使用软件库APP 2
+      - US_欢迎使用软件库APP 3
+      - US_欢迎使用软件库APP 4
+      - CN_欢迎使用软件库APP 5
+      - US_欢迎使用软件库APP 5
+      - US_欢迎使用软件库APP 6
+      - US_欢迎使用软件库APP 7
+      - AU_欢迎使用软件库APP
+      - AU_欢迎使用软件库APP 2
+      - CA_欢迎使用软件库APP
+      - AU_欢迎使用软件库APP 3
+      - AU_欢迎使用软件库APP 4
+      - CA_欢迎使用软件库APP 2
+      - CA_欢迎使用软件库APP 3
+      - CA_欢迎使用软件库APP 4
+      - CA_欢迎使用软件库APP 5
+      - US_欢迎使用软件库APP 8
+      - US_欢迎使用软件库APP 9
+      - CA_欢迎使用软件库APP 6
+      - US_欢迎使用软件库APP 10
+      - US_欢迎使用软件库APP 11
+      - CA_欢迎使用软件库APP 7
+      - AU_欢迎使用软件库APP 5
+      - US_欢迎使用软件库APP 12
+      - IN_欢迎使用软件库APP
+      - CA_欢迎使用软件库APP 8
+      - CA_欢迎使用软件库APP 9
+      - CA_欢迎使用软件库APP 10
+      - CA_欢迎使用软件库APP 11
+      - CA_欢迎使用软件库APP 12
+      - CA_欢迎使用软件库APP 13
+      - US_欢迎使用软件库APP 13
+      - CA_欢迎使用软件库APP 14
+      - CA_欢迎使用软件库APP 15
+      - CA_欢迎使用软件库APP 16
+      - CA_欢迎使用软件库APP 17
+      - CA_欢迎使用软件库APP 18
+      - CA_欢迎使用软件库APP 19
+      - CA_欢迎使用软件库APP 20
+      - CA_欢迎使用软件库APP 21
+      - CA_欢迎使用软件库APP 22
+      - CA_欢迎使用软件库APP 23
+      - US_欢迎使用软件库APP 14
+      - CA_欢迎使用软件库APP 24
+      - CA_欢迎使用软件库APP 25
+      - CA_欢迎使用软件库APP 26
+      - CA_欢迎使用软件库APP 27
+      - CA_欢迎使用软件库APP 28
+      - US_欢迎使用软件库APP 15
+      - CA_欢迎使用软件库APP 29
+      - CA_欢迎使用软件库APP 30
+      - CA_欢迎使用软件库APP 31
+      - CA_欢迎使用软件库APP 32
+      - CA_欢迎使用软件库APP 33
+      - US_欢迎使用软件库APP 16
+      - CA_欢迎使用软件库APP 34
+      - CA_欢迎使用软件库APP 35
+      - CA_欢迎使用软件库APP 36
+      - CA_欢迎使用软件库APP 37
+      - CA_欢迎使用软件库APP 38
+      - CA_欢迎使用软件库APP 39
+      - CA_欢迎使用软件库APP 40
+      - CA_欢迎使用软件库APP 41
+      - CA_欢迎使用软件库APP 42
+      - CA_欢迎使用软件库APP 43
+      - CA_欢迎使用软件库APP 44
+      - CA_欢迎使用软件库APP 45
+      - CN_欢迎使用软件库APP 6
+      - CN_欢迎使用软件库APP 7
+      - CN_欢迎使用软件库APP 8
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - HongKong-HK1-4-Rate:0.5
-      - V3-#319_粤-台_NF_x2_0_V2ray_45
-      - V2-#105_cn2-新_NF_x1_5_V2ray_3
-      - HK_欢迎使用软件库APP
-      - UnitedStates-US3-1-Rate:1.0
-      - V3-IEPL专线 新加坡03 | 8x
-      - HongKong-HK1-1-Rate:0.5
-      - V1-日本 多台负载均衡 中继B 1.5x
-      - V1-台湾 多台负载均衡 中继B 1.5x
-      - V2-#238_粤-港HKT_NF_x1_5_V2ray_14
-      - V2-#43_粤-台_NF_x2_0_V2ray_26
-      - V3-#239_粤-港HKT_NF_x1_5_V2ray_34
       - CN_欢迎使用软件库APP
-      - V3-#258_粤-港HKTx1_5_V2ray_36
-      - V3-IEPL专线 日本04 | 7x
-      - Germany-DE1-2-Rate:1.0
-      - HongKong-HK1-7-Rate:0.5
-      - V1-香港 多台负载均衡 中继D | 2x
-      - Japan-TY1-2-Rate:1.0
-      - UnitedStates-US3-4-Rate:1.0
-      - V2-#261_粤-港HKT_x1_2_V2ray_16
-      - Germany-DE1-4-Rate:1.0
-      - Germany-DE1-1-Rate:1.0
-      - V4-#27_粤-港HKT_NF_x2_0_V2ray_69
-      - UnitedStates-US3-8-Rate:1.0
-      - V1-香港 多台负载均衡 中继B | 2x
-      - V3-IEPL专线 美国02 6x
-      - V3-IEPL专线 马来西亚02 | 8x 原生IP
-      - V1-日本 多台负载均衡 中继D 1.5x
-      - V3-IEPL专线 英国01 | 6x
-      - V3-#322_粤-台_NF_x2_0_V2ray_48
-      - V3-IEPL专线 新加坡05 | 8x 原生IP
-      - HongKong-HK1-6-Rate:0.5
-      - Germany-DE1-3-Rate:1.0
-      - UnitedStates-US3-2-Rate:1.0
-      - V3-#77_沪-日_NF_x1_0_V2ray_58
-      - Japan-OS2-2-Rate:1.0
-      - V1-日本 多台负载均衡 中继C 1.5x
-      - Japan-OS2-1-Rate:1.0
-      - Germany-DE2-2-Rate:1.0
-      - V4-#39_沪-日_NF_x1_0_V2ray_83
-      - V3-IEPL专线 台湾03 Hinet | 8x 原生IP
-      - US_1716
-      - V4-#326_粤-台_NF_x2_0_V2ray_78
-      - V2-#113_cn2-台_NF_x2_5_V2ray_7
-      - V2-巴西01 中继C 2x
-      - ZZ_3532
-      - V3-#25_粤-港HKT_NF_x1_5_V2ray_38
-      - Japan-OS2-4-Rate:1.0
-      - V2-#247_粤-港HKTx1_2_V2ray_15
-      - V3-#259_粤-港HKT_x1_5_V2ray_37
-      - HongKong-HK1-8-Rate:0.5
-      - Japan-OS1-2-Rate:1.0
-      - V1-日本 多台负载均衡 中继A 1.5x
-      - V4-#324_粤-台_NF_x2_0_V2ray_76
-      - V2-#262_粤-港HKT_x1_2_V2ray_17
-      - V2-#263_粤-港HKT_x1_5_V2ray_18
-      - V3-#320_粤-台_NF_x2_0_V2ray_46
-      - US_1696
-      - US_1329
-      - HongKong-HK1-5-Rate:0.5
       - CN_欢迎使用软件库APP 2
-      - V2-#109_沪-日_NF_x1_5_V2ray_5
-      - ZZ_3195
-      - Germany-DE2-3-Rate:1.0
-      - UnitedStates-US3-5-Rate:1.0
-      - V3-#214_江港-美M_NF_x2_0_V2ray_32
-      - V4-#47_广港-新_NF_x2_0_V2ray_86
-      - V3-IEPL专线 香港HKT01 | 7x 原生IP
-      - V2-#107_沪-日_NF_x2_0_V2ray_4
-      - V3-IEPL专线 香港HKG01 | 7x 原生IP
-      - V4-#41_沪-日_NF_x1_0_V2ray_84
-      - V4-#325_粤-台_NF_x2_0_V2ray_77
-      - V2-韩国01 中继C 2x
-      - _02
+      - CN_欢迎使用软件库APP 3
+      - CN_欢迎使用软件库APP 4
+      - US_欢迎使用软件库APP
+      - US_欢迎使用软件库APP 2
+      - US_欢迎使用软件库APP 3
+      - US_欢迎使用软件库APP 4
+      - CN_欢迎使用软件库APP 5
+      - US_欢迎使用软件库APP 5
+      - US_欢迎使用软件库APP 6
+      - US_欢迎使用软件库APP 7
+      - AU_欢迎使用软件库APP
+      - AU_欢迎使用软件库APP 2
+      - CA_欢迎使用软件库APP
+      - AU_欢迎使用软件库APP 3
+      - AU_欢迎使用软件库APP 4
+      - CA_欢迎使用软件库APP 2
+      - CA_欢迎使用软件库APP 3
+      - CA_欢迎使用软件库APP 4
+      - CA_欢迎使用软件库APP 5
+      - US_欢迎使用软件库APP 8
+      - US_欢迎使用软件库APP 9
+      - CA_欢迎使用软件库APP 6
+      - US_欢迎使用软件库APP 10
+      - US_欢迎使用软件库APP 11
+      - CA_欢迎使用软件库APP 7
+      - AU_欢迎使用软件库APP 5
+      - US_欢迎使用软件库APP 12
+      - IN_欢迎使用软件库APP
+      - CA_欢迎使用软件库APP 8
+      - CA_欢迎使用软件库APP 9
+      - CA_欢迎使用软件库APP 10
+      - CA_欢迎使用软件库APP 11
+      - CA_欢迎使用软件库APP 12
+      - CA_欢迎使用软件库APP 13
+      - US_欢迎使用软件库APP 13
+      - CA_欢迎使用软件库APP 14
+      - CA_欢迎使用软件库APP 15
+      - CA_欢迎使用软件库APP 16
+      - CA_欢迎使用软件库APP 17
+      - CA_欢迎使用软件库APP 18
+      - CA_欢迎使用软件库APP 19
+      - CA_欢迎使用软件库APP 20
+      - CA_欢迎使用软件库APP 21
+      - CA_欢迎使用软件库APP 22
+      - CA_欢迎使用软件库APP 23
+      - US_欢迎使用软件库APP 14
+      - CA_欢迎使用软件库APP 24
+      - CA_欢迎使用软件库APP 25
+      - CA_欢迎使用软件库APP 26
+      - CA_欢迎使用软件库APP 27
+      - CA_欢迎使用软件库APP 28
+      - US_欢迎使用软件库APP 15
+      - CA_欢迎使用软件库APP 29
+      - CA_欢迎使用软件库APP 30
+      - CA_欢迎使用软件库APP 31
+      - CA_欢迎使用软件库APP 32
+      - CA_欢迎使用软件库APP 33
+      - US_欢迎使用软件库APP 16
+      - CA_欢迎使用软件库APP 34
+      - CA_欢迎使用软件库APP 35
+      - CA_欢迎使用软件库APP 36
+      - CA_欢迎使用软件库APP 37
+      - CA_欢迎使用软件库APP 38
+      - CA_欢迎使用软件库APP 39
+      - CA_欢迎使用软件库APP 40
+      - CA_欢迎使用软件库APP 41
+      - CA_欢迎使用软件库APP 42
+      - CA_欢迎使用软件库APP 43
+      - CA_欢迎使用软件库APP 44
+      - CA_欢迎使用软件库APP 45
+      - CN_欢迎使用软件库APP 6
+      - CN_欢迎使用软件库APP 7
+      - CN_欢迎使用软件库APP 8
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -340,357 +340,327 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - HongKong-HK1-4-Rate:0.5
-      - V3-#319_粤-台_NF_x2_0_V2ray_45
-      - V2-#105_cn2-新_NF_x1_5_V2ray_3
-      - HK_欢迎使用软件库APP
-      - UnitedStates-US3-1-Rate:1.0
-      - V3-IEPL专线 新加坡03 | 8x
-      - HongKong-HK1-1-Rate:0.5
-      - V1-日本 多台负载均衡 中继B 1.5x
-      - V1-台湾 多台负载均衡 中继B 1.5x
-      - V2-#238_粤-港HKT_NF_x1_5_V2ray_14
-      - V2-#43_粤-台_NF_x2_0_V2ray_26
-      - V3-#239_粤-港HKT_NF_x1_5_V2ray_34
       - CN_欢迎使用软件库APP
-      - V3-#258_粤-港HKTx1_5_V2ray_36
-      - V3-IEPL专线 日本04 | 7x
-      - Germany-DE1-2-Rate:1.0
-      - HongKong-HK1-7-Rate:0.5
-      - V1-香港 多台负载均衡 中继D | 2x
-      - Japan-TY1-2-Rate:1.0
-      - UnitedStates-US3-4-Rate:1.0
-      - V2-#261_粤-港HKT_x1_2_V2ray_16
-      - Germany-DE1-4-Rate:1.0
-      - Germany-DE1-1-Rate:1.0
-      - V4-#27_粤-港HKT_NF_x2_0_V2ray_69
-      - UnitedStates-US3-8-Rate:1.0
-      - V1-香港 多台负载均衡 中继B | 2x
-      - V3-IEPL专线 美国02 6x
-      - V3-IEPL专线 马来西亚02 | 8x 原生IP
-      - V1-日本 多台负载均衡 中继D 1.5x
-      - V3-IEPL专线 英国01 | 6x
-      - V3-#322_粤-台_NF_x2_0_V2ray_48
-      - V3-IEPL专线 新加坡05 | 8x 原生IP
-      - HongKong-HK1-6-Rate:0.5
-      - Germany-DE1-3-Rate:1.0
-      - UnitedStates-US3-2-Rate:1.0
-      - V3-#77_沪-日_NF_x1_0_V2ray_58
-      - Japan-OS2-2-Rate:1.0
-      - V1-日本 多台负载均衡 中继C 1.5x
-      - Japan-OS2-1-Rate:1.0
-      - Germany-DE2-2-Rate:1.0
-      - V4-#39_沪-日_NF_x1_0_V2ray_83
-      - V3-IEPL专线 台湾03 Hinet | 8x 原生IP
-      - US_1716
-      - V4-#326_粤-台_NF_x2_0_V2ray_78
-      - V2-#113_cn2-台_NF_x2_5_V2ray_7
-      - V2-巴西01 中继C 2x
-      - ZZ_3532
-      - V3-#25_粤-港HKT_NF_x1_5_V2ray_38
-      - Japan-OS2-4-Rate:1.0
-      - V2-#247_粤-港HKTx1_2_V2ray_15
-      - V3-#259_粤-港HKT_x1_5_V2ray_37
-      - HongKong-HK1-8-Rate:0.5
-      - Japan-OS1-2-Rate:1.0
-      - V1-日本 多台负载均衡 中继A 1.5x
-      - V4-#324_粤-台_NF_x2_0_V2ray_76
-      - V2-#262_粤-港HKT_x1_2_V2ray_17
-      - V2-#263_粤-港HKT_x1_5_V2ray_18
-      - V3-#320_粤-台_NF_x2_0_V2ray_46
-      - US_1696
-      - US_1329
-      - HongKong-HK1-5-Rate:0.5
       - CN_欢迎使用软件库APP 2
-      - V2-#109_沪-日_NF_x1_5_V2ray_5
-      - ZZ_3195
-      - Germany-DE2-3-Rate:1.0
-      - UnitedStates-US3-5-Rate:1.0
-      - V3-#214_江港-美M_NF_x2_0_V2ray_32
-      - V4-#47_广港-新_NF_x2_0_V2ray_86
-      - V3-IEPL专线 香港HKT01 | 7x 原生IP
-      - V2-#107_沪-日_NF_x2_0_V2ray_4
-      - V3-IEPL专线 香港HKG01 | 7x 原生IP
-      - V4-#41_沪-日_NF_x1_0_V2ray_84
-      - V4-#325_粤-台_NF_x2_0_V2ray_77
-      - V2-韩国01 中继C 2x
-      - _02
+      - CN_欢迎使用软件库APP 3
+      - CN_欢迎使用软件库APP 4
+      - US_欢迎使用软件库APP
+      - US_欢迎使用软件库APP 2
+      - US_欢迎使用软件库APP 3
+      - US_欢迎使用软件库APP 4
+      - CN_欢迎使用软件库APP 5
+      - US_欢迎使用软件库APP 5
+      - US_欢迎使用软件库APP 6
+      - US_欢迎使用软件库APP 7
+      - AU_欢迎使用软件库APP
+      - AU_欢迎使用软件库APP 2
+      - CA_欢迎使用软件库APP
+      - AU_欢迎使用软件库APP 3
+      - AU_欢迎使用软件库APP 4
+      - CA_欢迎使用软件库APP 2
+      - CA_欢迎使用软件库APP 3
+      - CA_欢迎使用软件库APP 4
+      - CA_欢迎使用软件库APP 5
+      - US_欢迎使用软件库APP 8
+      - US_欢迎使用软件库APP 9
+      - CA_欢迎使用软件库APP 6
+      - US_欢迎使用软件库APP 10
+      - US_欢迎使用软件库APP 11
+      - CA_欢迎使用软件库APP 7
+      - AU_欢迎使用软件库APP 5
+      - US_欢迎使用软件库APP 12
+      - IN_欢迎使用软件库APP
+      - CA_欢迎使用软件库APP 8
+      - CA_欢迎使用软件库APP 9
+      - CA_欢迎使用软件库APP 10
+      - CA_欢迎使用软件库APP 11
+      - CA_欢迎使用软件库APP 12
+      - CA_欢迎使用软件库APP 13
+      - US_欢迎使用软件库APP 13
+      - CA_欢迎使用软件库APP 14
+      - CA_欢迎使用软件库APP 15
+      - CA_欢迎使用软件库APP 16
+      - CA_欢迎使用软件库APP 17
+      - CA_欢迎使用软件库APP 18
+      - CA_欢迎使用软件库APP 19
+      - CA_欢迎使用软件库APP 20
+      - CA_欢迎使用软件库APP 21
+      - CA_欢迎使用软件库APP 22
+      - CA_欢迎使用软件库APP 23
+      - US_欢迎使用软件库APP 14
+      - CA_欢迎使用软件库APP 24
+      - CA_欢迎使用软件库APP 25
+      - CA_欢迎使用软件库APP 26
+      - CA_欢迎使用软件库APP 27
+      - CA_欢迎使用软件库APP 28
+      - US_欢迎使用软件库APP 15
+      - CA_欢迎使用软件库APP 29
+      - CA_欢迎使用软件库APP 30
+      - CA_欢迎使用软件库APP 31
+      - CA_欢迎使用软件库APP 32
+      - CA_欢迎使用软件库APP 33
+      - US_欢迎使用软件库APP 16
+      - CA_欢迎使用软件库APP 34
+      - CA_欢迎使用软件库APP 35
+      - CA_欢迎使用软件库APP 36
+      - CA_欢迎使用软件库APP 37
+      - CA_欢迎使用软件库APP 38
+      - CA_欢迎使用软件库APP 39
+      - CA_欢迎使用软件库APP 40
+      - CA_欢迎使用软件库APP 41
+      - CA_欢迎使用软件库APP 42
+      - CA_欢迎使用软件库APP 43
+      - CA_欢迎使用软件库APP 44
+      - CA_欢迎使用软件库APP 45
+      - CN_欢迎使用软件库APP 6
+      - CN_欢迎使用软件库APP 7
+      - CN_欢迎使用软件库APP 8
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - V3-#319_粤-台_NF_x2_0_V2ray_45
-      - V1-日本 多台负载均衡 中继B 1.5x
-      - V1-台湾 多台负载均衡 中继B 1.5x
-      - V2-#238_粤-港HKT_NF_x1_5_V2ray_14
-      - V2-#43_粤-台_NF_x2_0_V2ray_26
-      - V3-#239_粤-港HKT_NF_x1_5_V2ray_34
-      - V3-#258_粤-港HKTx1_5_V2ray_36
-      - V1-香港 多台负载均衡 中继D | 2x
-      - V2-#261_粤-港HKT_x1_2_V2ray_16
-      - V4-#27_粤-港HKT_NF_x2_0_V2ray_69
-      - V1-香港 多台负载均衡 中继B | 2x
-      - V1-日本 多台负载均衡 中继D 1.5x
-      - V3-#322_粤-台_NF_x2_0_V2ray_48
-      - V1-日本 多台负载均衡 中继C 1.5x
-      - V3-IEPL专线 台湾03 Hinet | 8x 原生IP
-      - V4-#326_粤-台_NF_x2_0_V2ray_78
-      - V2-#113_cn2-台_NF_x2_5_V2ray_7
-      - V3-#25_粤-港HKT_NF_x1_5_V2ray_38
-      - V2-#247_粤-港HKTx1_2_V2ray_15
-      - V3-#259_粤-港HKT_x1_5_V2ray_37
-      - V1-日本 多台负载均衡 中继A 1.5x
-      - V4-#324_粤-台_NF_x2_0_V2ray_76
-      - V2-#262_粤-港HKT_x1_2_V2ray_17
-      - V2-#263_粤-港HKT_x1_5_V2ray_18
-      - V3-#320_粤-台_NF_x2_0_V2ray_46
-      - V3-#214_江港-美M_NF_x2_0_V2ray_32
-      - V4-#47_广港-新_NF_x2_0_V2ray_86
-      - V3-IEPL专线 香港HKT01 | 7x 原生IP
-      - V3-IEPL专线 香港HKG01 | 7x 原生IP
-      - V4-#325_粤-台_NF_x2_0_V2ray_77
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - HongKong-HK1-4-Rate:0.5
-      - V3-#319_粤-台_NF_x2_0_V2ray_45
-      - V2-#105_cn2-新_NF_x1_5_V2ray_3
-      - HK_欢迎使用软件库APP
-      - UnitedStates-US3-1-Rate:1.0
-      - V3-IEPL专线 新加坡03 | 8x
-      - HongKong-HK1-1-Rate:0.5
-      - V1-日本 多台负载均衡 中继B 1.5x
-      - V1-台湾 多台负载均衡 中继B 1.5x
-      - V2-#238_粤-港HKT_NF_x1_5_V2ray_14
-      - V2-#43_粤-台_NF_x2_0_V2ray_26
-      - V3-#239_粤-港HKT_NF_x1_5_V2ray_34
       - CN_欢迎使用软件库APP
-      - V3-#258_粤-港HKTx1_5_V2ray_36
-      - V3-IEPL专线 日本04 | 7x
-      - Germany-DE1-2-Rate:1.0
-      - HongKong-HK1-7-Rate:0.5
-      - V1-香港 多台负载均衡 中继D | 2x
-      - Japan-TY1-2-Rate:1.0
-      - UnitedStates-US3-4-Rate:1.0
-      - V2-#261_粤-港HKT_x1_2_V2ray_16
-      - Germany-DE1-4-Rate:1.0
-      - Germany-DE1-1-Rate:1.0
-      - V4-#27_粤-港HKT_NF_x2_0_V2ray_69
-      - UnitedStates-US3-8-Rate:1.0
-      - V1-香港 多台负载均衡 中继B | 2x
-      - V3-IEPL专线 美国02 6x
-      - V3-IEPL专线 马来西亚02 | 8x 原生IP
-      - V1-日本 多台负载均衡 中继D 1.5x
-      - V3-IEPL专线 英国01 | 6x
-      - V3-#322_粤-台_NF_x2_0_V2ray_48
-      - V3-IEPL专线 新加坡05 | 8x 原生IP
-      - HongKong-HK1-6-Rate:0.5
-      - Germany-DE1-3-Rate:1.0
-      - UnitedStates-US3-2-Rate:1.0
-      - V3-#77_沪-日_NF_x1_0_V2ray_58
-      - Japan-OS2-2-Rate:1.0
-      - V1-日本 多台负载均衡 中继C 1.5x
-      - Japan-OS2-1-Rate:1.0
-      - Germany-DE2-2-Rate:1.0
-      - V4-#39_沪-日_NF_x1_0_V2ray_83
-      - V3-IEPL专线 台湾03 Hinet | 8x 原生IP
-      - US_1716
-      - V4-#326_粤-台_NF_x2_0_V2ray_78
-      - V2-#113_cn2-台_NF_x2_5_V2ray_7
-      - V2-巴西01 中继C 2x
-      - ZZ_3532
-      - V3-#25_粤-港HKT_NF_x1_5_V2ray_38
-      - Japan-OS2-4-Rate:1.0
-      - V2-#247_粤-港HKTx1_2_V2ray_15
-      - V3-#259_粤-港HKT_x1_5_V2ray_37
-      - HongKong-HK1-8-Rate:0.5
-      - Japan-OS1-2-Rate:1.0
-      - V1-日本 多台负载均衡 中继A 1.5x
-      - V4-#324_粤-台_NF_x2_0_V2ray_76
-      - V2-#262_粤-港HKT_x1_2_V2ray_17
-      - V2-#263_粤-港HKT_x1_5_V2ray_18
-      - V3-#320_粤-台_NF_x2_0_V2ray_46
-      - US_1696
-      - US_1329
-      - HongKong-HK1-5-Rate:0.5
       - CN_欢迎使用软件库APP 2
-      - V2-#109_沪-日_NF_x1_5_V2ray_5
-      - ZZ_3195
-      - Germany-DE2-3-Rate:1.0
-      - UnitedStates-US3-5-Rate:1.0
-      - V3-#214_江港-美M_NF_x2_0_V2ray_32
-      - V4-#47_广港-新_NF_x2_0_V2ray_86
-      - V3-IEPL专线 香港HKT01 | 7x 原生IP
-      - V2-#107_沪-日_NF_x2_0_V2ray_4
-      - V3-IEPL专线 香港HKG01 | 7x 原生IP
-      - V4-#41_沪-日_NF_x1_0_V2ray_84
-      - V4-#325_粤-台_NF_x2_0_V2ray_77
-      - V2-韩国01 中继C 2x
-      - _02
+      - CN_欢迎使用软件库APP 3
+      - CN_欢迎使用软件库APP 4
+      - US_欢迎使用软件库APP
+      - US_欢迎使用软件库APP 2
+      - US_欢迎使用软件库APP 3
+      - US_欢迎使用软件库APP 4
+      - CN_欢迎使用软件库APP 5
+      - US_欢迎使用软件库APP 5
+      - US_欢迎使用软件库APP 6
+      - US_欢迎使用软件库APP 7
+      - AU_欢迎使用软件库APP
+      - AU_欢迎使用软件库APP 2
+      - CA_欢迎使用软件库APP
+      - AU_欢迎使用软件库APP 3
+      - AU_欢迎使用软件库APP 4
+      - CA_欢迎使用软件库APP 2
+      - CA_欢迎使用软件库APP 3
+      - CA_欢迎使用软件库APP 4
+      - CA_欢迎使用软件库APP 5
+      - US_欢迎使用软件库APP 8
+      - US_欢迎使用软件库APP 9
+      - CA_欢迎使用软件库APP 6
+      - US_欢迎使用软件库APP 10
+      - US_欢迎使用软件库APP 11
+      - CA_欢迎使用软件库APP 7
+      - AU_欢迎使用软件库APP 5
+      - US_欢迎使用软件库APP 12
+      - IN_欢迎使用软件库APP
+      - CA_欢迎使用软件库APP 8
+      - CA_欢迎使用软件库APP 9
+      - CA_欢迎使用软件库APP 10
+      - CA_欢迎使用软件库APP 11
+      - CA_欢迎使用软件库APP 12
+      - CA_欢迎使用软件库APP 13
+      - US_欢迎使用软件库APP 13
+      - CA_欢迎使用软件库APP 14
+      - CA_欢迎使用软件库APP 15
+      - CA_欢迎使用软件库APP 16
+      - CA_欢迎使用软件库APP 17
+      - CA_欢迎使用软件库APP 18
+      - CA_欢迎使用软件库APP 19
+      - CA_欢迎使用软件库APP 20
+      - CA_欢迎使用软件库APP 21
+      - CA_欢迎使用软件库APP 22
+      - CA_欢迎使用软件库APP 23
+      - US_欢迎使用软件库APP 14
+      - CA_欢迎使用软件库APP 24
+      - CA_欢迎使用软件库APP 25
+      - CA_欢迎使用软件库APP 26
+      - CA_欢迎使用软件库APP 27
+      - CA_欢迎使用软件库APP 28
+      - US_欢迎使用软件库APP 15
+      - CA_欢迎使用软件库APP 29
+      - CA_欢迎使用软件库APP 30
+      - CA_欢迎使用软件库APP 31
+      - CA_欢迎使用软件库APP 32
+      - CA_欢迎使用软件库APP 33
+      - US_欢迎使用软件库APP 16
+      - CA_欢迎使用软件库APP 34
+      - CA_欢迎使用软件库APP 35
+      - CA_欢迎使用软件库APP 36
+      - CA_欢迎使用软件库APP 37
+      - CA_欢迎使用软件库APP 38
+      - CA_欢迎使用软件库APP 39
+      - CA_欢迎使用软件库APP 40
+      - CA_欢迎使用软件库APP 41
+      - CA_欢迎使用软件库APP 42
+      - CA_欢迎使用软件库APP 43
+      - CA_欢迎使用软件库APP 44
+      - CA_欢迎使用软件库APP 45
+      - CN_欢迎使用软件库APP 6
+      - CN_欢迎使用软件库APP 7
+      - CN_欢迎使用软件库APP 8
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - HongKong-HK1-4-Rate:0.5
-      - V3-#319_粤-台_NF_x2_0_V2ray_45
-      - V2-#105_cn2-新_NF_x1_5_V2ray_3
-      - HK_欢迎使用软件库APP
-      - UnitedStates-US3-1-Rate:1.0
-      - V3-IEPL专线 新加坡03 | 8x
-      - HongKong-HK1-1-Rate:0.5
-      - V1-日本 多台负载均衡 中继B 1.5x
-      - V1-台湾 多台负载均衡 中继B 1.5x
-      - V2-#238_粤-港HKT_NF_x1_5_V2ray_14
-      - V2-#43_粤-台_NF_x2_0_V2ray_26
-      - V3-#239_粤-港HKT_NF_x1_5_V2ray_34
       - CN_欢迎使用软件库APP
-      - V3-#258_粤-港HKTx1_5_V2ray_36
-      - V3-IEPL专线 日本04 | 7x
-      - Germany-DE1-2-Rate:1.0
-      - HongKong-HK1-7-Rate:0.5
-      - V1-香港 多台负载均衡 中继D | 2x
-      - Japan-TY1-2-Rate:1.0
-      - UnitedStates-US3-4-Rate:1.0
-      - V2-#261_粤-港HKT_x1_2_V2ray_16
-      - Germany-DE1-4-Rate:1.0
-      - Germany-DE1-1-Rate:1.0
-      - V4-#27_粤-港HKT_NF_x2_0_V2ray_69
-      - UnitedStates-US3-8-Rate:1.0
-      - V1-香港 多台负载均衡 中继B | 2x
-      - V3-IEPL专线 美国02 6x
-      - V3-IEPL专线 马来西亚02 | 8x 原生IP
-      - V1-日本 多台负载均衡 中继D 1.5x
-      - V3-IEPL专线 英国01 | 6x
-      - V3-#322_粤-台_NF_x2_0_V2ray_48
-      - V3-IEPL专线 新加坡05 | 8x 原生IP
-      - HongKong-HK1-6-Rate:0.5
-      - Germany-DE1-3-Rate:1.0
-      - UnitedStates-US3-2-Rate:1.0
-      - V3-#77_沪-日_NF_x1_0_V2ray_58
-      - Japan-OS2-2-Rate:1.0
-      - V1-日本 多台负载均衡 中继C 1.5x
-      - Japan-OS2-1-Rate:1.0
-      - Germany-DE2-2-Rate:1.0
-      - V4-#39_沪-日_NF_x1_0_V2ray_83
-      - V3-IEPL专线 台湾03 Hinet | 8x 原生IP
-      - US_1716
-      - V4-#326_粤-台_NF_x2_0_V2ray_78
-      - V2-#113_cn2-台_NF_x2_5_V2ray_7
-      - V2-巴西01 中继C 2x
-      - ZZ_3532
-      - V3-#25_粤-港HKT_NF_x1_5_V2ray_38
-      - Japan-OS2-4-Rate:1.0
-      - V2-#247_粤-港HKTx1_2_V2ray_15
-      - V3-#259_粤-港HKT_x1_5_V2ray_37
-      - HongKong-HK1-8-Rate:0.5
-      - Japan-OS1-2-Rate:1.0
-      - V1-日本 多台负载均衡 中继A 1.5x
-      - V4-#324_粤-台_NF_x2_0_V2ray_76
-      - V2-#262_粤-港HKT_x1_2_V2ray_17
-      - V2-#263_粤-港HKT_x1_5_V2ray_18
-      - V3-#320_粤-台_NF_x2_0_V2ray_46
-      - US_1696
-      - US_1329
-      - HongKong-HK1-5-Rate:0.5
       - CN_欢迎使用软件库APP 2
-      - V2-#109_沪-日_NF_x1_5_V2ray_5
-      - ZZ_3195
-      - Germany-DE2-3-Rate:1.0
-      - UnitedStates-US3-5-Rate:1.0
-      - V3-#214_江港-美M_NF_x2_0_V2ray_32
-      - V4-#47_广港-新_NF_x2_0_V2ray_86
-      - V3-IEPL专线 香港HKT01 | 7x 原生IP
-      - V2-#107_沪-日_NF_x2_0_V2ray_4
-      - V3-IEPL专线 香港HKG01 | 7x 原生IP
-      - V4-#41_沪-日_NF_x1_0_V2ray_84
-      - V4-#325_粤-台_NF_x2_0_V2ray_77
-      - V2-韩国01 中继C 2x
-      - _02
+      - CN_欢迎使用软件库APP 3
+      - CN_欢迎使用软件库APP 4
+      - US_欢迎使用软件库APP
+      - US_欢迎使用软件库APP 2
+      - US_欢迎使用软件库APP 3
+      - US_欢迎使用软件库APP 4
+      - CN_欢迎使用软件库APP 5
+      - US_欢迎使用软件库APP 5
+      - US_欢迎使用软件库APP 6
+      - US_欢迎使用软件库APP 7
+      - AU_欢迎使用软件库APP
+      - AU_欢迎使用软件库APP 2
+      - CA_欢迎使用软件库APP
+      - AU_欢迎使用软件库APP 3
+      - AU_欢迎使用软件库APP 4
+      - CA_欢迎使用软件库APP 2
+      - CA_欢迎使用软件库APP 3
+      - CA_欢迎使用软件库APP 4
+      - CA_欢迎使用软件库APP 5
+      - US_欢迎使用软件库APP 8
+      - US_欢迎使用软件库APP 9
+      - CA_欢迎使用软件库APP 6
+      - US_欢迎使用软件库APP 10
+      - US_欢迎使用软件库APP 11
+      - CA_欢迎使用软件库APP 7
+      - AU_欢迎使用软件库APP 5
+      - US_欢迎使用软件库APP 12
+      - IN_欢迎使用软件库APP
+      - CA_欢迎使用软件库APP 8
+      - CA_欢迎使用软件库APP 9
+      - CA_欢迎使用软件库APP 10
+      - CA_欢迎使用软件库APP 11
+      - CA_欢迎使用软件库APP 12
+      - CA_欢迎使用软件库APP 13
+      - US_欢迎使用软件库APP 13
+      - CA_欢迎使用软件库APP 14
+      - CA_欢迎使用软件库APP 15
+      - CA_欢迎使用软件库APP 16
+      - CA_欢迎使用软件库APP 17
+      - CA_欢迎使用软件库APP 18
+      - CA_欢迎使用软件库APP 19
+      - CA_欢迎使用软件库APP 20
+      - CA_欢迎使用软件库APP 21
+      - CA_欢迎使用软件库APP 22
+      - CA_欢迎使用软件库APP 23
+      - US_欢迎使用软件库APP 14
+      - CA_欢迎使用软件库APP 24
+      - CA_欢迎使用软件库APP 25
+      - CA_欢迎使用软件库APP 26
+      - CA_欢迎使用软件库APP 27
+      - CA_欢迎使用软件库APP 28
+      - US_欢迎使用软件库APP 15
+      - CA_欢迎使用软件库APP 29
+      - CA_欢迎使用软件库APP 30
+      - CA_欢迎使用软件库APP 31
+      - CA_欢迎使用软件库APP 32
+      - CA_欢迎使用软件库APP 33
+      - US_欢迎使用软件库APP 16
+      - CA_欢迎使用软件库APP 34
+      - CA_欢迎使用软件库APP 35
+      - CA_欢迎使用软件库APP 36
+      - CA_欢迎使用软件库APP 37
+      - CA_欢迎使用软件库APP 38
+      - CA_欢迎使用软件库APP 39
+      - CA_欢迎使用软件库APP 40
+      - CA_欢迎使用软件库APP 41
+      - CA_欢迎使用软件库APP 42
+      - CA_欢迎使用软件库APP 43
+      - CA_欢迎使用软件库APP 44
+      - CA_欢迎使用软件库APP 45
+      - CN_欢迎使用软件库APP 6
+      - CN_欢迎使用软件库APP 7
+      - CN_欢迎使用软件库APP 8
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - HongKong-HK1-4-Rate:0.5
-      - V3-#319_粤-台_NF_x2_0_V2ray_45
-      - V2-#105_cn2-新_NF_x1_5_V2ray_3
-      - HK_欢迎使用软件库APP
-      - UnitedStates-US3-1-Rate:1.0
-      - V3-IEPL专线 新加坡03 | 8x
-      - HongKong-HK1-1-Rate:0.5
-      - V1-日本 多台负载均衡 中继B 1.5x
-      - V1-台湾 多台负载均衡 中继B 1.5x
-      - V2-#238_粤-港HKT_NF_x1_5_V2ray_14
-      - V2-#43_粤-台_NF_x2_0_V2ray_26
-      - V3-#239_粤-港HKT_NF_x1_5_V2ray_34
       - CN_欢迎使用软件库APP
-      - V3-#258_粤-港HKTx1_5_V2ray_36
-      - V3-IEPL专线 日本04 | 7x
-      - Germany-DE1-2-Rate:1.0
-      - HongKong-HK1-7-Rate:0.5
-      - V1-香港 多台负载均衡 中继D | 2x
-      - Japan-TY1-2-Rate:1.0
-      - UnitedStates-US3-4-Rate:1.0
-      - V2-#261_粤-港HKT_x1_2_V2ray_16
-      - Germany-DE1-4-Rate:1.0
-      - Germany-DE1-1-Rate:1.0
-      - V4-#27_粤-港HKT_NF_x2_0_V2ray_69
-      - UnitedStates-US3-8-Rate:1.0
-      - V1-香港 多台负载均衡 中继B | 2x
-      - V3-IEPL专线 美国02 6x
-      - V3-IEPL专线 马来西亚02 | 8x 原生IP
-      - V1-日本 多台负载均衡 中继D 1.5x
-      - V3-IEPL专线 英国01 | 6x
-      - V3-#322_粤-台_NF_x2_0_V2ray_48
-      - V3-IEPL专线 新加坡05 | 8x 原生IP
-      - HongKong-HK1-6-Rate:0.5
-      - Germany-DE1-3-Rate:1.0
-      - UnitedStates-US3-2-Rate:1.0
-      - V3-#77_沪-日_NF_x1_0_V2ray_58
-      - Japan-OS2-2-Rate:1.0
-      - V1-日本 多台负载均衡 中继C 1.5x
-      - Japan-OS2-1-Rate:1.0
-      - Germany-DE2-2-Rate:1.0
-      - V4-#39_沪-日_NF_x1_0_V2ray_83
-      - V3-IEPL专线 台湾03 Hinet | 8x 原生IP
-      - US_1716
-      - V4-#326_粤-台_NF_x2_0_V2ray_78
-      - V2-#113_cn2-台_NF_x2_5_V2ray_7
-      - V2-巴西01 中继C 2x
-      - ZZ_3532
-      - V3-#25_粤-港HKT_NF_x1_5_V2ray_38
-      - Japan-OS2-4-Rate:1.0
-      - V2-#247_粤-港HKTx1_2_V2ray_15
-      - V3-#259_粤-港HKT_x1_5_V2ray_37
-      - HongKong-HK1-8-Rate:0.5
-      - Japan-OS1-2-Rate:1.0
-      - V1-日本 多台负载均衡 中继A 1.5x
-      - V4-#324_粤-台_NF_x2_0_V2ray_76
-      - V2-#262_粤-港HKT_x1_2_V2ray_17
-      - V2-#263_粤-港HKT_x1_5_V2ray_18
-      - V3-#320_粤-台_NF_x2_0_V2ray_46
-      - US_1696
-      - US_1329
-      - HongKong-HK1-5-Rate:0.5
       - CN_欢迎使用软件库APP 2
-      - V2-#109_沪-日_NF_x1_5_V2ray_5
-      - ZZ_3195
-      - Germany-DE2-3-Rate:1.0
-      - UnitedStates-US3-5-Rate:1.0
-      - V3-#214_江港-美M_NF_x2_0_V2ray_32
-      - V4-#47_广港-新_NF_x2_0_V2ray_86
-      - V3-IEPL专线 香港HKT01 | 7x 原生IP
-      - V2-#107_沪-日_NF_x2_0_V2ray_4
-      - V3-IEPL专线 香港HKG01 | 7x 原生IP
-      - V4-#41_沪-日_NF_x1_0_V2ray_84
-      - V4-#325_粤-台_NF_x2_0_V2ray_77
-      - V2-韩国01 中继C 2x
-      - _02
+      - CN_欢迎使用软件库APP 3
+      - CN_欢迎使用软件库APP 4
+      - US_欢迎使用软件库APP
+      - US_欢迎使用软件库APP 2
+      - US_欢迎使用软件库APP 3
+      - US_欢迎使用软件库APP 4
+      - CN_欢迎使用软件库APP 5
+      - US_欢迎使用软件库APP 5
+      - US_欢迎使用软件库APP 6
+      - US_欢迎使用软件库APP 7
+      - AU_欢迎使用软件库APP
+      - AU_欢迎使用软件库APP 2
+      - CA_欢迎使用软件库APP
+      - AU_欢迎使用软件库APP 3
+      - AU_欢迎使用软件库APP 4
+      - CA_欢迎使用软件库APP 2
+      - CA_欢迎使用软件库APP 3
+      - CA_欢迎使用软件库APP 4
+      - CA_欢迎使用软件库APP 5
+      - US_欢迎使用软件库APP 8
+      - US_欢迎使用软件库APP 9
+      - CA_欢迎使用软件库APP 6
+      - US_欢迎使用软件库APP 10
+      - US_欢迎使用软件库APP 11
+      - CA_欢迎使用软件库APP 7
+      - AU_欢迎使用软件库APP 5
+      - US_欢迎使用软件库APP 12
+      - IN_欢迎使用软件库APP
+      - CA_欢迎使用软件库APP 8
+      - CA_欢迎使用软件库APP 9
+      - CA_欢迎使用软件库APP 10
+      - CA_欢迎使用软件库APP 11
+      - CA_欢迎使用软件库APP 12
+      - CA_欢迎使用软件库APP 13
+      - US_欢迎使用软件库APP 13
+      - CA_欢迎使用软件库APP 14
+      - CA_欢迎使用软件库APP 15
+      - CA_欢迎使用软件库APP 16
+      - CA_欢迎使用软件库APP 17
+      - CA_欢迎使用软件库APP 18
+      - CA_欢迎使用软件库APP 19
+      - CA_欢迎使用软件库APP 20
+      - CA_欢迎使用软件库APP 21
+      - CA_欢迎使用软件库APP 22
+      - CA_欢迎使用软件库APP 23
+      - US_欢迎使用软件库APP 14
+      - CA_欢迎使用软件库APP 24
+      - CA_欢迎使用软件库APP 25
+      - CA_欢迎使用软件库APP 26
+      - CA_欢迎使用软件库APP 27
+      - CA_欢迎使用软件库APP 28
+      - US_欢迎使用软件库APP 15
+      - CA_欢迎使用软件库APP 29
+      - CA_欢迎使用软件库APP 30
+      - CA_欢迎使用软件库APP 31
+      - CA_欢迎使用软件库APP 32
+      - CA_欢迎使用软件库APP 33
+      - US_欢迎使用软件库APP 16
+      - CA_欢迎使用软件库APP 34
+      - CA_欢迎使用软件库APP 35
+      - CA_欢迎使用软件库APP 36
+      - CA_欢迎使用软件库APP 37
+      - CA_欢迎使用软件库APP 38
+      - CA_欢迎使用软件库APP 39
+      - CA_欢迎使用软件库APP 40
+      - CA_欢迎使用软件库APP 41
+      - CA_欢迎使用软件库APP 42
+      - CA_欢迎使用软件库APP 43
+      - CA_欢迎使用软件库APP 44
+      - CA_欢迎使用软件库APP 45
+      - CN_欢迎使用软件库APP 6
+      - CN_欢迎使用软件库APP 7
+      - CN_欢迎使用软件库APP 8
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -706,81 +676,81 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - HongKong-HK1-4-Rate:0.5
-      - V3-#319_粤-台_NF_x2_0_V2ray_45
-      - V2-#105_cn2-新_NF_x1_5_V2ray_3
-      - HK_欢迎使用软件库APP
-      - UnitedStates-US3-1-Rate:1.0
-      - V3-IEPL专线 新加坡03 | 8x
-      - HongKong-HK1-1-Rate:0.5
-      - V1-日本 多台负载均衡 中继B 1.5x
-      - V1-台湾 多台负载均衡 中继B 1.5x
-      - V2-#238_粤-港HKT_NF_x1_5_V2ray_14
-      - V2-#43_粤-台_NF_x2_0_V2ray_26
-      - V3-#239_粤-港HKT_NF_x1_5_V2ray_34
       - CN_欢迎使用软件库APP
-      - V3-#258_粤-港HKTx1_5_V2ray_36
-      - V3-IEPL专线 日本04 | 7x
-      - Germany-DE1-2-Rate:1.0
-      - HongKong-HK1-7-Rate:0.5
-      - V1-香港 多台负载均衡 中继D | 2x
-      - Japan-TY1-2-Rate:1.0
-      - UnitedStates-US3-4-Rate:1.0
-      - V2-#261_粤-港HKT_x1_2_V2ray_16
-      - Germany-DE1-4-Rate:1.0
-      - Germany-DE1-1-Rate:1.0
-      - V4-#27_粤-港HKT_NF_x2_0_V2ray_69
-      - UnitedStates-US3-8-Rate:1.0
-      - V1-香港 多台负载均衡 中继B | 2x
-      - V3-IEPL专线 美国02 6x
-      - V3-IEPL专线 马来西亚02 | 8x 原生IP
-      - V1-日本 多台负载均衡 中继D 1.5x
-      - V3-IEPL专线 英国01 | 6x
-      - V3-#322_粤-台_NF_x2_0_V2ray_48
-      - V3-IEPL专线 新加坡05 | 8x 原生IP
-      - HongKong-HK1-6-Rate:0.5
-      - Germany-DE1-3-Rate:1.0
-      - UnitedStates-US3-2-Rate:1.0
-      - V3-#77_沪-日_NF_x1_0_V2ray_58
-      - Japan-OS2-2-Rate:1.0
-      - V1-日本 多台负载均衡 中继C 1.5x
-      - Japan-OS2-1-Rate:1.0
-      - Germany-DE2-2-Rate:1.0
-      - V4-#39_沪-日_NF_x1_0_V2ray_83
-      - V3-IEPL专线 台湾03 Hinet | 8x 原生IP
-      - US_1716
-      - V4-#326_粤-台_NF_x2_0_V2ray_78
-      - V2-#113_cn2-台_NF_x2_5_V2ray_7
-      - V2-巴西01 中继C 2x
-      - ZZ_3532
-      - V3-#25_粤-港HKT_NF_x1_5_V2ray_38
-      - Japan-OS2-4-Rate:1.0
-      - V2-#247_粤-港HKTx1_2_V2ray_15
-      - V3-#259_粤-港HKT_x1_5_V2ray_37
-      - HongKong-HK1-8-Rate:0.5
-      - Japan-OS1-2-Rate:1.0
-      - V1-日本 多台负载均衡 中继A 1.5x
-      - V4-#324_粤-台_NF_x2_0_V2ray_76
-      - V2-#262_粤-港HKT_x1_2_V2ray_17
-      - V2-#263_粤-港HKT_x1_5_V2ray_18
-      - V3-#320_粤-台_NF_x2_0_V2ray_46
-      - US_1696
-      - US_1329
-      - HongKong-HK1-5-Rate:0.5
       - CN_欢迎使用软件库APP 2
-      - V2-#109_沪-日_NF_x1_5_V2ray_5
-      - ZZ_3195
-      - Germany-DE2-3-Rate:1.0
-      - UnitedStates-US3-5-Rate:1.0
-      - V3-#214_江港-美M_NF_x2_0_V2ray_32
-      - V4-#47_广港-新_NF_x2_0_V2ray_86
-      - V3-IEPL专线 香港HKT01 | 7x 原生IP
-      - V2-#107_沪-日_NF_x2_0_V2ray_4
-      - V3-IEPL专线 香港HKG01 | 7x 原生IP
-      - V4-#41_沪-日_NF_x1_0_V2ray_84
-      - V4-#325_粤-台_NF_x2_0_V2ray_77
-      - V2-韩国01 中继C 2x
-      - _02
+      - CN_欢迎使用软件库APP 3
+      - CN_欢迎使用软件库APP 4
+      - US_欢迎使用软件库APP
+      - US_欢迎使用软件库APP 2
+      - US_欢迎使用软件库APP 3
+      - US_欢迎使用软件库APP 4
+      - CN_欢迎使用软件库APP 5
+      - US_欢迎使用软件库APP 5
+      - US_欢迎使用软件库APP 6
+      - US_欢迎使用软件库APP 7
+      - AU_欢迎使用软件库APP
+      - AU_欢迎使用软件库APP 2
+      - CA_欢迎使用软件库APP
+      - AU_欢迎使用软件库APP 3
+      - AU_欢迎使用软件库APP 4
+      - CA_欢迎使用软件库APP 2
+      - CA_欢迎使用软件库APP 3
+      - CA_欢迎使用软件库APP 4
+      - CA_欢迎使用软件库APP 5
+      - US_欢迎使用软件库APP 8
+      - US_欢迎使用软件库APP 9
+      - CA_欢迎使用软件库APP 6
+      - US_欢迎使用软件库APP 10
+      - US_欢迎使用软件库APP 11
+      - CA_欢迎使用软件库APP 7
+      - AU_欢迎使用软件库APP 5
+      - US_欢迎使用软件库APP 12
+      - IN_欢迎使用软件库APP
+      - CA_欢迎使用软件库APP 8
+      - CA_欢迎使用软件库APP 9
+      - CA_欢迎使用软件库APP 10
+      - CA_欢迎使用软件库APP 11
+      - CA_欢迎使用软件库APP 12
+      - CA_欢迎使用软件库APP 13
+      - US_欢迎使用软件库APP 13
+      - CA_欢迎使用软件库APP 14
+      - CA_欢迎使用软件库APP 15
+      - CA_欢迎使用软件库APP 16
+      - CA_欢迎使用软件库APP 17
+      - CA_欢迎使用软件库APP 18
+      - CA_欢迎使用软件库APP 19
+      - CA_欢迎使用软件库APP 20
+      - CA_欢迎使用软件库APP 21
+      - CA_欢迎使用软件库APP 22
+      - CA_欢迎使用软件库APP 23
+      - US_欢迎使用软件库APP 14
+      - CA_欢迎使用软件库APP 24
+      - CA_欢迎使用软件库APP 25
+      - CA_欢迎使用软件库APP 26
+      - CA_欢迎使用软件库APP 27
+      - CA_欢迎使用软件库APP 28
+      - US_欢迎使用软件库APP 15
+      - CA_欢迎使用软件库APP 29
+      - CA_欢迎使用软件库APP 30
+      - CA_欢迎使用软件库APP 31
+      - CA_欢迎使用软件库APP 32
+      - CA_欢迎使用软件库APP 33
+      - US_欢迎使用软件库APP 16
+      - CA_欢迎使用软件库APP 34
+      - CA_欢迎使用软件库APP 35
+      - CA_欢迎使用软件库APP 36
+      - CA_欢迎使用软件库APP 37
+      - CA_欢迎使用软件库APP 38
+      - CA_欢迎使用软件库APP 39
+      - CA_欢迎使用软件库APP 40
+      - CA_欢迎使用软件库APP 41
+      - CA_欢迎使用软件库APP 42
+      - CA_欢迎使用软件库APP 43
+      - CA_欢迎使用软件库APP 44
+      - CA_欢迎使用软件库APP 45
+      - CN_欢迎使用软件库APP 6
+      - CN_欢迎使用软件库APP 7
+      - CN_欢迎使用软件库APP 8
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
