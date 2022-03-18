@@ -5,135 +5,183 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 油管 TG 8度科技, server: 104.18.96.85, port: 2053, type: vmess, uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /eisasqa, ws-headers: {Host: foxus.fovi.tk}, udp: true}
-  - {name: US_油管 TG 8度科技, server: 154.31.41.10, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: chuch3go.com}, udp: true}
-  - {name: US_油管 TG 8度科技 2, server: chuch3go.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: chuch3go.com}, udp: true}
-  - {name: US_油管 TG 8度科技 3, server: cloudflare.xrenblog.com, port: 443, type: vmess, uuid: 6c175d1a-a57f-4881-a471-173eb139694b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /xrenblog/, ws-headers: {Host: ipv6.xrenblog.com}, udp: true}
-  - {name: CN_油管 TG 8度科技, server: liantong.latiao.cyou, port: 26801, type: ss, cipher: chacha20-ietf-poly1305, password: 6670a234-0d0a-42c8-b3b5-087568abc653, udp: true}
-  - {name: CN_油管 TG 8度科技 2, server: liantong.latiao.cyou, port: 26802, type: ss, cipher: chacha20-ietf-poly1305, password: 6670a234-0d0a-42c8-b3b5-087568abc653, udp: true}
-  - {name: CN_油管 TG 8度科技 3, server: yidong.latiao.cyou, port: 26801, type: ss, cipher: chacha20-ietf-poly1305, password: 6670a234-0d0a-42c8-b3b5-087568abc653, udp: true}
-  - {name: CN_油管 TG 8度科技 4, server: yidong.latiao.cyou, port: 26802, type: ss, cipher: chacha20-ietf-poly1305, password: 6670a234-0d0a-42c8-b3b5-087568abc653, udp: true}
-  - {name: CN_油管 TG 8度科技 5, server: liantong.latiao.cyou, port: 26804, type: ss, cipher: chacha20-ietf-poly1305, password: 6670a234-0d0a-42c8-b3b5-087568abc653, udp: true}
-  - {name: CN_油管 TG 8度科技 6, server: liantong.latiao.cyou, port: 26805, type: ss, cipher: chacha20-ietf-poly1305, password: 6670a234-0d0a-42c8-b3b5-087568abc653, udp: true}
-  - {name: CN_油管 TG 8度科技 7, server: yidong.latiao.cyou, port: 26804, type: ss, cipher: chacha20-ietf-poly1305, password: 6670a234-0d0a-42c8-b3b5-087568abc653, udp: true}
-  - {name: CN_油管 TG 8度科技 8, server: liantong.latiao.cyou, port: 26807, type: ss, cipher: chacha20-ietf-poly1305, password: 6670a234-0d0a-42c8-b3b5-087568abc653, udp: true}
-  - {name: CN_油管 TG 8度科技 9, server: yidong.latiao.cyou, port: 26804, type: ss, cipher: chacha20-ietf-poly1305, password: 804c3288-df4b-46e5-9c32-df048e2d7e64, udp: true}
-  - {name: CN_油管 TG 8度科技 10, server: yidong.latiao.cyou, port: 26807, type: ss, cipher: chacha20-ietf-poly1305, password: 6670a234-0d0a-42c8-b3b5-087568abc653, udp: true}
-  - {name: CN_油管 TG 8度科技 11, server: yidong.latiao.cyou, port: 26805, type: ss, cipher: chacha20-ietf-poly1305, password: 6670a234-0d0a-42c8-b3b5-087568abc653, udp: true}
-  - {name: US_油管 TG 8度科技 4, server: 142.202.48.74, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: US_油管 TG 8度科技 5, server: 142.202.48.74, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: US_油管 TG 8度科技 6, server: 142.202.48.74, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: US_油管 TG 8度科技 7, server: 142.202.48.74, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: CA_油管 TG 8度科技, server: 198.57.27.191, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: CA_油管 TG 8度科技 2, server: 198.57.27.191, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: US_油管 TG 8度科技 8, server: 169.197.142.99, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: CA_油管 TG 8度科技 3, server: 198.57.27.191, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: US_油管 TG 8度科技 9, server: 169.197.142.4, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: CA_油管 TG 8度科技 4, server: 198.57.27.191, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: US_油管 TG 8度科技 10, server: 169.197.142.4, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: US_油管 TG 8度科技 11, server: 169.197.142.4, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: HK_油管 TG 8度科技, server: hkcmi.greenshadow.top, port: 40001, type: trojan, password: d02d5977-e2cb-44af-a0fc-060b8c5e780c, sni: hkcmi.greenshadow.top, skip-cert-verify: true, udp: true}
+  - {name: HK 102, server: hkaz2.xmrth-node.xyz, port: 10231, type: vmess, uuid: a685d5ce-ba3a-3548-ae94-84933f6080b6, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
+  - {name: HK 104, server: hkaz4.xmrth-node.xyz, port: 10011, type: vmess, uuid: a685d5ce-ba3a-3548-ae94-84933f6080b6, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
+  - {name: HK 106, server: hkaz6.xmrth-node.xyz, port: 10248, type: vmess, uuid: a685d5ce-ba3a-3548-ae94-84933f6080b6, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
+  - {name: HK A 003, server: hkaz3.xmrth-node.xyz, port: 10009, type: vmess, uuid: a685d5ce-ba3a-3548-ae94-84933f6080b6, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
+  - {name: IN A 001, server: hkaz1.xmrth-node.xyz, port: 10033, type: vmess, uuid: a685d5ce-ba3a-3548-ae94-84933f6080b6, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
+  - {name: IN A 003, server: hkaz3.xmrth-node.xyz, port: 10035, type: vmess, uuid: a685d5ce-ba3a-3548-ae94-84933f6080b6, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
+  - {name: IN B 002, server: jpaz2.xmrth-node.xyz, port: 10138, type: vmess, uuid: a685d5ce-ba3a-3548-ae94-84933f6080b6, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
+  - {name: IN B 003, server: jpaz3.xmrth-node.xyz, port: 10135, type: vmess, uuid: a685d5ce-ba3a-3548-ae94-84933f6080b6, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
+  - {name: JP B 002, server: jpaz2.xmrth-node.xyz, port: 10046, type: vmess, uuid: a685d5ce-ba3a-3548-ae94-84933f6080b6, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
+  - {name: JP B 003, server: jpaz3.xmrth-node.xyz, port: 10051, type: vmess, uuid: a685d5ce-ba3a-3548-ae94-84933f6080b6, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
+  - {name: SG A 001, server: hkaz1.xmrth-node.xyz, port: 10026, type: vmess, uuid: a685d5ce-ba3a-3548-ae94-84933f6080b6, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
+  - {name: SG A 002, server: hkaz2.xmrth-node.xyz, port: 10225, type: vmess, uuid: a685d5ce-ba3a-3548-ae94-84933f6080b6, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
+  - {name: SG A 003, server: hkaz3.xmrth-node.xyz, port: 10028, type: vmess, uuid: a685d5ce-ba3a-3548-ae94-84933f6080b6, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
+  - {name: SG A 004, server: hkaz4.xmrth-node.xyz, port: 10218, type: vmess, uuid: a685d5ce-ba3a-3548-ae94-84933f6080b6, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
+  - {name: SG A 005, server: hkaz5.xmrth-node.xyz, port: 10185, type: vmess, uuid: a685d5ce-ba3a-3548-ae94-84933f6080b6, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
+  - {name: SG A 007, server: hkaz7.xmrth-node.xyz, port: 10186, type: vmess, uuid: a685d5ce-ba3a-3548-ae94-84933f6080b6, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
+  - {name: TW A 1, server: hkaz1.xmrth-node.xyz, port: 10062, type: vmess, uuid: a685d5ce-ba3a-3548-ae94-84933f6080b6, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
+  - {name: _US_美国->🇫🇷_FR_法国, server: 172.67.68.58, port: 443, type: vmess, uuid: f2f578e4-692d-40b5-af99-9f1dd712eb32, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /shuier, ws-headers: {Host: xc1.v2rie.pp.ua}, udp: true}
+  - {name: _CA_加拿大, server: 134.195.196.3, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: _CA_加拿大 2, server: 134.195.196.68, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: _CA_加拿大 3, server: 134.195.196.81, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: GLaDOS-N2-02, server: 5.44.249.43, port: 3389, type: trojan, password: a3c6461972471c75, skip-cert-verify: true, udp: true}
+  - {name: GLaDOS-N2-03, server: 120.232.192.119, port: 3389, type: trojan, password: a3c6461972471c75, skip-cert-verify: true, udp: true}
+  - {name: GLaDOS-N2-05, server: 116.129.253.177, port: 3389, type: trojan, password: a3c6461972471c75, skip-cert-verify: true, udp: true}
+  - {name: GLaDOS-N2-06, server: 183.232.163.147, port: 3389, type: trojan, password: a3c6461972471c75, skip-cert-verify: true, udp: true}
+  - {name: GLaDOS-N2-07, server: 60.249.3.229, port: 3389, type: trojan, password: a3c6461972471c75, skip-cert-verify: true, udp: true}
+  - {name: HK-GLaDOS-GEO-00, server: 183.232.163.147, port: 3384, type: trojan, password: a3c6461972471c75, skip-cert-verify: true, udp: true}
+  - {name: 港WTT, server: ssl.tcpbbr.net, port: 443, type: trojan, password: 5a3d9b78-cb5b-11ea-82ef-f23c9164ca5d, sni: ssl.tcpbbr.net, skip-cert-verify: true, udp: true}
+  - {name: 港WTT 2, server: ssl.tcpbbr.net, port: 443, type: trojan, password: 283695dc-fcc8-11ea-8684-f23c913c8d2b, sni: ssl.tcpbbr.net, skip-cert-verify: true, udp: true}
+  - {name: 港WTT 3, server: ssl.tcpbbr.net, port: 443, type: trojan, password: 2e5f2a78-14d8-11eb-ad8c-f23c9164ca5d, sni: ssl.tcpbbr.net, skip-cert-verify: true, udp: true}
+  - {name: 港WTT3, server: api.tcpbbr.net, port: 443, type: trojan, password: 283695dc-fcc8-11ea-8684-f23c913c8d2b, sni: api.tcpbbr.net, skip-cert-verify: true, udp: true}
+  - {name: 港WTT3 2, server: api.tcpbbr.net, port: 443, type: trojan, password: 5a3d9b78-cb5b-11ea-82ef-f23c9164ca5d, sni: api.tcpbbr.net, skip-cert-verify: true, udp: true}
+  - {name: 港WTT3 3, server: api.tcpbbr.net, port: 443, type: trojan, password: 2e5f2a78-14d8-11eb-ad8c-f23c9164ca5d, sni: api.tcpbbr.net, skip-cert-verify: true, udp: true}
+  - {name: 美國-费利蒙, server: us2.tcpbbr.net, port: 443, type: trojan, password: 5a3d9b78-cb5b-11ea-82ef-f23c9164ca5d, sni: us2.tcpbbr.net, skip-cert-verify: true, udp: true}
+  - {name: 美國-费利蒙 2, server: us2.tcpbbr.net, port: 443, type: trojan, password: 2e5f2a78-14d8-11eb-ad8c-f23c9164ca5d, sni: us2.tcpbbr.net, skip-cert-verify: true, udp: true}
+  - {name: 美國-费利蒙 3, server: us2.tcpbbr.net, port: 443, type: trojan, password: 08d178d4-ec8b-11eb-a8bf-f23c91cfbbc9, sni: us2.tcpbbr.net, skip-cert-verify: true, udp: true}
+  - {name: 美國-费利蒙 4, server: us2.tcpbbr.net, port: 443, type: trojan, password: 283695dc-fcc8-11ea-8684-f23c913c8d2b, sni: us2.tcpbbr.net, skip-cert-verify: true, udp: true}
+  - {name: 台灣, server: tw.tcpbbr.net, port: 443, type: trojan, password: 08d178d4-ec8b-11eb-a8bf-f23c91cfbbc9, sni: tw.tcpbbr.net, skip-cert-verify: true, udp: true}
+  - {name: 台灣 2, server: tw.tcpbbr.net, port: 443, type: trojan, password: 2e5f2a78-14d8-11eb-ad8c-f23c9164ca5d, sni: tw.tcpbbr.net, skip-cert-verify: true, udp: true}
+  - {name: 台灣 3, server: tw.tcpbbr.net, port: 443, type: trojan, password: 283695dc-fcc8-11ea-8684-f23c913c8d2b, sni: tw.tcpbbr.net, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 油管 TG 8度科技
-      - US_油管 TG 8度科技
-      - US_油管 TG 8度科技 2
-      - US_油管 TG 8度科技 3
-      - CN_油管 TG 8度科技
-      - CN_油管 TG 8度科技 2
-      - CN_油管 TG 8度科技 3
-      - CN_油管 TG 8度科技 4
-      - CN_油管 TG 8度科技 5
-      - CN_油管 TG 8度科技 6
-      - CN_油管 TG 8度科技 7
-      - CN_油管 TG 8度科技 8
-      - CN_油管 TG 8度科技 9
-      - CN_油管 TG 8度科技 10
-      - CN_油管 TG 8度科技 11
-      - US_油管 TG 8度科技 4
-      - US_油管 TG 8度科技 5
-      - US_油管 TG 8度科技 6
-      - US_油管 TG 8度科技 7
-      - CA_油管 TG 8度科技
-      - CA_油管 TG 8度科技 2
-      - US_油管 TG 8度科技 8
-      - CA_油管 TG 8度科技 3
-      - US_油管 TG 8度科技 9
-      - CA_油管 TG 8度科技 4
-      - US_油管 TG 8度科技 10
-      - US_油管 TG 8度科技 11
-      - HK_油管 TG 8度科技
+      - HK 102
+      - HK 104
+      - HK 106
+      - HK A 003
+      - IN A 001
+      - IN A 003
+      - IN B 002
+      - IN B 003
+      - JP B 002
+      - JP B 003
+      - SG A 001
+      - SG A 002
+      - SG A 003
+      - SG A 004
+      - SG A 005
+      - SG A 007
+      - TW A 1
+      - _US_美国->🇫🇷_FR_法国
+      - _CA_加拿大
+      - _CA_加拿大 2
+      - _CA_加拿大 3
+      - GLaDOS-N2-02
+      - GLaDOS-N2-03
+      - GLaDOS-N2-05
+      - GLaDOS-N2-06
+      - GLaDOS-N2-07
+      - HK-GLaDOS-GEO-00
+      - 港WTT
+      - 港WTT 2
+      - 港WTT 3
+      - 港WTT3
+      - 港WTT3 2
+      - 港WTT3 3
+      - 美國-费利蒙
+      - 美國-费利蒙 2
+      - 美國-费利蒙 3
+      - 美國-费利蒙 4
+      - 台灣
+      - 台灣 2
+      - 台灣 3
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 油管 TG 8度科技
-      - US_油管 TG 8度科技
-      - US_油管 TG 8度科技 2
-      - US_油管 TG 8度科技 3
-      - CN_油管 TG 8度科技
-      - CN_油管 TG 8度科技 2
-      - CN_油管 TG 8度科技 3
-      - CN_油管 TG 8度科技 4
-      - CN_油管 TG 8度科技 5
-      - CN_油管 TG 8度科技 6
-      - CN_油管 TG 8度科技 7
-      - CN_油管 TG 8度科技 8
-      - CN_油管 TG 8度科技 9
-      - CN_油管 TG 8度科技 10
-      - CN_油管 TG 8度科技 11
-      - US_油管 TG 8度科技 4
-      - US_油管 TG 8度科技 5
-      - US_油管 TG 8度科技 6
-      - US_油管 TG 8度科技 7
-      - CA_油管 TG 8度科技
-      - CA_油管 TG 8度科技 2
-      - US_油管 TG 8度科技 8
-      - CA_油管 TG 8度科技 3
-      - US_油管 TG 8度科技 9
-      - CA_油管 TG 8度科技 4
-      - US_油管 TG 8度科技 10
-      - US_油管 TG 8度科技 11
-      - HK_油管 TG 8度科技
+      - HK 102
+      - HK 104
+      - HK 106
+      - HK A 003
+      - IN A 001
+      - IN A 003
+      - IN B 002
+      - IN B 003
+      - JP B 002
+      - JP B 003
+      - SG A 001
+      - SG A 002
+      - SG A 003
+      - SG A 004
+      - SG A 005
+      - SG A 007
+      - TW A 1
+      - _US_美国->🇫🇷_FR_法国
+      - _CA_加拿大
+      - _CA_加拿大 2
+      - _CA_加拿大 3
+      - GLaDOS-N2-02
+      - GLaDOS-N2-03
+      - GLaDOS-N2-05
+      - GLaDOS-N2-06
+      - GLaDOS-N2-07
+      - HK-GLaDOS-GEO-00
+      - 港WTT
+      - 港WTT 2
+      - 港WTT 3
+      - 港WTT3
+      - 港WTT3 2
+      - 港WTT3 3
+      - 美國-费利蒙
+      - 美國-费利蒙 2
+      - 美國-费利蒙 3
+      - 美國-费利蒙 4
+      - 台灣
+      - 台灣 2
+      - 台灣 3
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 油管 TG 8度科技
-      - US_油管 TG 8度科技
-      - US_油管 TG 8度科技 2
-      - US_油管 TG 8度科技 3
-      - CN_油管 TG 8度科技
-      - CN_油管 TG 8度科技 2
-      - CN_油管 TG 8度科技 3
-      - CN_油管 TG 8度科技 4
-      - CN_油管 TG 8度科技 5
-      - CN_油管 TG 8度科技 6
-      - CN_油管 TG 8度科技 7
-      - CN_油管 TG 8度科技 8
-      - CN_油管 TG 8度科技 9
-      - CN_油管 TG 8度科技 10
-      - CN_油管 TG 8度科技 11
-      - US_油管 TG 8度科技 4
-      - US_油管 TG 8度科技 5
-      - US_油管 TG 8度科技 6
-      - US_油管 TG 8度科技 7
-      - CA_油管 TG 8度科技
-      - CA_油管 TG 8度科技 2
-      - US_油管 TG 8度科技 8
-      - CA_油管 TG 8度科技 3
-      - US_油管 TG 8度科技 9
-      - CA_油管 TG 8度科技 4
-      - US_油管 TG 8度科技 10
-      - US_油管 TG 8度科技 11
-      - HK_油管 TG 8度科技
+      - HK 102
+      - HK 104
+      - HK 106
+      - HK A 003
+      - IN A 001
+      - IN A 003
+      - IN B 002
+      - IN B 003
+      - JP B 002
+      - JP B 003
+      - SG A 001
+      - SG A 002
+      - SG A 003
+      - SG A 004
+      - SG A 005
+      - SG A 007
+      - TW A 1
+      - _US_美国->🇫🇷_FR_法国
+      - _CA_加拿大
+      - _CA_加拿大 2
+      - _CA_加拿大 3
+      - GLaDOS-N2-02
+      - GLaDOS-N2-03
+      - GLaDOS-N2-05
+      - GLaDOS-N2-06
+      - GLaDOS-N2-07
+      - HK-GLaDOS-GEO-00
+      - 港WTT
+      - 港WTT 2
+      - 港WTT 3
+      - 港WTT3
+      - 港WTT3 2
+      - 港WTT3 3
+      - 美國-费利蒙
+      - 美國-费利蒙 2
+      - 美國-费利蒙 3
+      - 美國-费利蒙 4
+      - 台灣
+      - 台灣 2
+      - 台灣 3
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -152,139 +200,196 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 油管 TG 8度科技
-      - US_油管 TG 8度科技
-      - US_油管 TG 8度科技 2
-      - US_油管 TG 8度科技 3
-      - CN_油管 TG 8度科技
-      - CN_油管 TG 8度科技 2
-      - CN_油管 TG 8度科技 3
-      - CN_油管 TG 8度科技 4
-      - CN_油管 TG 8度科技 5
-      - CN_油管 TG 8度科技 6
-      - CN_油管 TG 8度科技 7
-      - CN_油管 TG 8度科技 8
-      - CN_油管 TG 8度科技 9
-      - CN_油管 TG 8度科技 10
-      - CN_油管 TG 8度科技 11
-      - US_油管 TG 8度科技 4
-      - US_油管 TG 8度科技 5
-      - US_油管 TG 8度科技 6
-      - US_油管 TG 8度科技 7
-      - CA_油管 TG 8度科技
-      - CA_油管 TG 8度科技 2
-      - US_油管 TG 8度科技 8
-      - CA_油管 TG 8度科技 3
-      - US_油管 TG 8度科技 9
-      - CA_油管 TG 8度科技 4
-      - US_油管 TG 8度科技 10
-      - US_油管 TG 8度科技 11
-      - HK_油管 TG 8度科技
+      - HK 102
+      - HK 104
+      - HK 106
+      - HK A 003
+      - IN A 001
+      - IN A 003
+      - IN B 002
+      - IN B 003
+      - JP B 002
+      - JP B 003
+      - SG A 001
+      - SG A 002
+      - SG A 003
+      - SG A 004
+      - SG A 005
+      - SG A 007
+      - TW A 1
+      - _US_美国->🇫🇷_FR_法国
+      - _CA_加拿大
+      - _CA_加拿大 2
+      - _CA_加拿大 3
+      - GLaDOS-N2-02
+      - GLaDOS-N2-03
+      - GLaDOS-N2-05
+      - GLaDOS-N2-06
+      - GLaDOS-N2-07
+      - HK-GLaDOS-GEO-00
+      - 港WTT
+      - 港WTT 2
+      - 港WTT 3
+      - 港WTT3
+      - 港WTT3 2
+      - 港WTT3 3
+      - 美國-费利蒙
+      - 美國-费利蒙 2
+      - 美國-费利蒙 3
+      - 美國-费利蒙 4
+      - 台灣
+      - 台灣 2
+      - 台灣 3
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
+      - 港WTT
+      - 港WTT 2
+      - 港WTT 3
+      - 港WTT3
+      - 港WTT3 2
+      - 港WTT3 3
+      - 台灣
+      - 台灣 2
+      - 台灣 3
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 油管 TG 8度科技
-      - US_油管 TG 8度科技
-      - US_油管 TG 8度科技 2
-      - US_油管 TG 8度科技 3
-      - CN_油管 TG 8度科技
-      - CN_油管 TG 8度科技 2
-      - CN_油管 TG 8度科技 3
-      - CN_油管 TG 8度科技 4
-      - CN_油管 TG 8度科技 5
-      - CN_油管 TG 8度科技 6
-      - CN_油管 TG 8度科技 7
-      - CN_油管 TG 8度科技 8
-      - CN_油管 TG 8度科技 9
-      - CN_油管 TG 8度科技 10
-      - CN_油管 TG 8度科技 11
-      - US_油管 TG 8度科技 4
-      - US_油管 TG 8度科技 5
-      - US_油管 TG 8度科技 6
-      - US_油管 TG 8度科技 7
-      - CA_油管 TG 8度科技
-      - CA_油管 TG 8度科技 2
-      - US_油管 TG 8度科技 8
-      - CA_油管 TG 8度科技 3
-      - US_油管 TG 8度科技 9
-      - CA_油管 TG 8度科技 4
-      - US_油管 TG 8度科技 10
-      - US_油管 TG 8度科技 11
-      - HK_油管 TG 8度科技
+      - HK 102
+      - HK 104
+      - HK 106
+      - HK A 003
+      - IN A 001
+      - IN A 003
+      - IN B 002
+      - IN B 003
+      - JP B 002
+      - JP B 003
+      - SG A 001
+      - SG A 002
+      - SG A 003
+      - SG A 004
+      - SG A 005
+      - SG A 007
+      - TW A 1
+      - _US_美国->🇫🇷_FR_法国
+      - _CA_加拿大
+      - _CA_加拿大 2
+      - _CA_加拿大 3
+      - GLaDOS-N2-02
+      - GLaDOS-N2-03
+      - GLaDOS-N2-05
+      - GLaDOS-N2-06
+      - GLaDOS-N2-07
+      - HK-GLaDOS-GEO-00
+      - 港WTT
+      - 港WTT 2
+      - 港WTT 3
+      - 港WTT3
+      - 港WTT3 2
+      - 港WTT3 3
+      - 美國-费利蒙
+      - 美國-费利蒙 2
+      - 美國-费利蒙 3
+      - 美國-费利蒙 4
+      - 台灣
+      - 台灣 2
+      - 台灣 3
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 油管 TG 8度科技
-      - US_油管 TG 8度科技
-      - US_油管 TG 8度科技 2
-      - US_油管 TG 8度科技 3
-      - CN_油管 TG 8度科技
-      - CN_油管 TG 8度科技 2
-      - CN_油管 TG 8度科技 3
-      - CN_油管 TG 8度科技 4
-      - CN_油管 TG 8度科技 5
-      - CN_油管 TG 8度科技 6
-      - CN_油管 TG 8度科技 7
-      - CN_油管 TG 8度科技 8
-      - CN_油管 TG 8度科技 9
-      - CN_油管 TG 8度科技 10
-      - CN_油管 TG 8度科技 11
-      - US_油管 TG 8度科技 4
-      - US_油管 TG 8度科技 5
-      - US_油管 TG 8度科技 6
-      - US_油管 TG 8度科技 7
-      - CA_油管 TG 8度科技
-      - CA_油管 TG 8度科技 2
-      - US_油管 TG 8度科技 8
-      - CA_油管 TG 8度科技 3
-      - US_油管 TG 8度科技 9
-      - CA_油管 TG 8度科技 4
-      - US_油管 TG 8度科技 10
-      - US_油管 TG 8度科技 11
-      - HK_油管 TG 8度科技
+      - HK 102
+      - HK 104
+      - HK 106
+      - HK A 003
+      - IN A 001
+      - IN A 003
+      - IN B 002
+      - IN B 003
+      - JP B 002
+      - JP B 003
+      - SG A 001
+      - SG A 002
+      - SG A 003
+      - SG A 004
+      - SG A 005
+      - SG A 007
+      - TW A 1
+      - _US_美国->🇫🇷_FR_法国
+      - _CA_加拿大
+      - _CA_加拿大 2
+      - _CA_加拿大 3
+      - GLaDOS-N2-02
+      - GLaDOS-N2-03
+      - GLaDOS-N2-05
+      - GLaDOS-N2-06
+      - GLaDOS-N2-07
+      - HK-GLaDOS-GEO-00
+      - 港WTT
+      - 港WTT 2
+      - 港WTT 3
+      - 港WTT3
+      - 港WTT3 2
+      - 港WTT3 3
+      - 美國-费利蒙
+      - 美國-费利蒙 2
+      - 美國-费利蒙 3
+      - 美國-费利蒙 4
+      - 台灣
+      - 台灣 2
+      - 台灣 3
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 油管 TG 8度科技
-      - US_油管 TG 8度科技
-      - US_油管 TG 8度科技 2
-      - US_油管 TG 8度科技 3
-      - CN_油管 TG 8度科技
-      - CN_油管 TG 8度科技 2
-      - CN_油管 TG 8度科技 3
-      - CN_油管 TG 8度科技 4
-      - CN_油管 TG 8度科技 5
-      - CN_油管 TG 8度科技 6
-      - CN_油管 TG 8度科技 7
-      - CN_油管 TG 8度科技 8
-      - CN_油管 TG 8度科技 9
-      - CN_油管 TG 8度科技 10
-      - CN_油管 TG 8度科技 11
-      - US_油管 TG 8度科技 4
-      - US_油管 TG 8度科技 5
-      - US_油管 TG 8度科技 6
-      - US_油管 TG 8度科技 7
-      - CA_油管 TG 8度科技
-      - CA_油管 TG 8度科技 2
-      - US_油管 TG 8度科技 8
-      - CA_油管 TG 8度科技 3
-      - US_油管 TG 8度科技 9
-      - CA_油管 TG 8度科技 4
-      - US_油管 TG 8度科技 10
-      - US_油管 TG 8度科技 11
-      - HK_油管 TG 8度科技
+      - HK 102
+      - HK 104
+      - HK 106
+      - HK A 003
+      - IN A 001
+      - IN A 003
+      - IN B 002
+      - IN B 003
+      - JP B 002
+      - JP B 003
+      - SG A 001
+      - SG A 002
+      - SG A 003
+      - SG A 004
+      - SG A 005
+      - SG A 007
+      - TW A 1
+      - _US_美国->🇫🇷_FR_法国
+      - _CA_加拿大
+      - _CA_加拿大 2
+      - _CA_加拿大 3
+      - GLaDOS-N2-02
+      - GLaDOS-N2-03
+      - GLaDOS-N2-05
+      - GLaDOS-N2-06
+      - GLaDOS-N2-07
+      - HK-GLaDOS-GEO-00
+      - 港WTT
+      - 港WTT 2
+      - 港WTT 3
+      - 港WTT3
+      - 港WTT3 2
+      - 港WTT3 3
+      - 美國-费利蒙
+      - 美國-费利蒙 2
+      - 美國-费利蒙 3
+      - 美國-费利蒙 4
+      - 台灣
+      - 台灣 2
+      - 台灣 3
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -300,34 +405,46 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 油管 TG 8度科技
-      - US_油管 TG 8度科技
-      - US_油管 TG 8度科技 2
-      - US_油管 TG 8度科技 3
-      - CN_油管 TG 8度科技
-      - CN_油管 TG 8度科技 2
-      - CN_油管 TG 8度科技 3
-      - CN_油管 TG 8度科技 4
-      - CN_油管 TG 8度科技 5
-      - CN_油管 TG 8度科技 6
-      - CN_油管 TG 8度科技 7
-      - CN_油管 TG 8度科技 8
-      - CN_油管 TG 8度科技 9
-      - CN_油管 TG 8度科技 10
-      - CN_油管 TG 8度科技 11
-      - US_油管 TG 8度科技 4
-      - US_油管 TG 8度科技 5
-      - US_油管 TG 8度科技 6
-      - US_油管 TG 8度科技 7
-      - CA_油管 TG 8度科技
-      - CA_油管 TG 8度科技 2
-      - US_油管 TG 8度科技 8
-      - CA_油管 TG 8度科技 3
-      - US_油管 TG 8度科技 9
-      - CA_油管 TG 8度科技 4
-      - US_油管 TG 8度科技 10
-      - US_油管 TG 8度科技 11
-      - HK_油管 TG 8度科技
+      - HK 102
+      - HK 104
+      - HK 106
+      - HK A 003
+      - IN A 001
+      - IN A 003
+      - IN B 002
+      - IN B 003
+      - JP B 002
+      - JP B 003
+      - SG A 001
+      - SG A 002
+      - SG A 003
+      - SG A 004
+      - SG A 005
+      - SG A 007
+      - TW A 1
+      - _US_美国->🇫🇷_FR_法国
+      - _CA_加拿大
+      - _CA_加拿大 2
+      - _CA_加拿大 3
+      - GLaDOS-N2-02
+      - GLaDOS-N2-03
+      - GLaDOS-N2-05
+      - GLaDOS-N2-06
+      - GLaDOS-N2-07
+      - HK-GLaDOS-GEO-00
+      - 港WTT
+      - 港WTT 2
+      - 港WTT 3
+      - 港WTT3
+      - 港WTT3 2
+      - 港WTT3 3
+      - 美國-费利蒙
+      - 美國-费利蒙 2
+      - 美國-费利蒙 3
+      - 美國-费利蒙 4
+      - 台灣
+      - 台灣 2
+      - 台灣 3
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
