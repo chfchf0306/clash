@@ -5,183 +5,175 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: HK 102, server: hkaz2.xmrth-node.xyz, port: 10231, type: vmess, uuid: a685d5ce-ba3a-3548-ae94-84933f6080b6, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: HK 104, server: hkaz4.xmrth-node.xyz, port: 10011, type: vmess, uuid: a685d5ce-ba3a-3548-ae94-84933f6080b6, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: HK 106, server: hkaz6.xmrth-node.xyz, port: 10248, type: vmess, uuid: a685d5ce-ba3a-3548-ae94-84933f6080b6, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: HK A 003, server: hkaz3.xmrth-node.xyz, port: 10009, type: vmess, uuid: a685d5ce-ba3a-3548-ae94-84933f6080b6, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: IN A 001, server: hkaz1.xmrth-node.xyz, port: 10033, type: vmess, uuid: a685d5ce-ba3a-3548-ae94-84933f6080b6, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: IN A 003, server: hkaz3.xmrth-node.xyz, port: 10035, type: vmess, uuid: a685d5ce-ba3a-3548-ae94-84933f6080b6, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: IN B 002, server: jpaz2.xmrth-node.xyz, port: 10138, type: vmess, uuid: a685d5ce-ba3a-3548-ae94-84933f6080b6, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: IN B 003, server: jpaz3.xmrth-node.xyz, port: 10135, type: vmess, uuid: a685d5ce-ba3a-3548-ae94-84933f6080b6, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: JP B 002, server: jpaz2.xmrth-node.xyz, port: 10046, type: vmess, uuid: a685d5ce-ba3a-3548-ae94-84933f6080b6, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: JP B 003, server: jpaz3.xmrth-node.xyz, port: 10051, type: vmess, uuid: a685d5ce-ba3a-3548-ae94-84933f6080b6, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: SG A 001, server: hkaz1.xmrth-node.xyz, port: 10026, type: vmess, uuid: a685d5ce-ba3a-3548-ae94-84933f6080b6, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: SG A 002, server: hkaz2.xmrth-node.xyz, port: 10225, type: vmess, uuid: a685d5ce-ba3a-3548-ae94-84933f6080b6, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: SG A 003, server: hkaz3.xmrth-node.xyz, port: 10028, type: vmess, uuid: a685d5ce-ba3a-3548-ae94-84933f6080b6, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: SG A 004, server: hkaz4.xmrth-node.xyz, port: 10218, type: vmess, uuid: a685d5ce-ba3a-3548-ae94-84933f6080b6, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: SG A 005, server: hkaz5.xmrth-node.xyz, port: 10185, type: vmess, uuid: a685d5ce-ba3a-3548-ae94-84933f6080b6, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: SG A 007, server: hkaz7.xmrth-node.xyz, port: 10186, type: vmess, uuid: a685d5ce-ba3a-3548-ae94-84933f6080b6, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: TW A 1, server: hkaz1.xmrth-node.xyz, port: 10062, type: vmess, uuid: a685d5ce-ba3a-3548-ae94-84933f6080b6, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: _US_美国->🇫🇷_FR_法国, server: 172.67.68.58, port: 443, type: vmess, uuid: f2f578e4-692d-40b5-af99-9f1dd712eb32, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /shuier, ws-headers: {Host: xc1.v2rie.pp.ua}, udp: true}
-  - {name: _CA_加拿大, server: 134.195.196.3, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: _CA_加拿大 2, server: 134.195.196.68, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: _CA_加拿大 3, server: 134.195.196.81, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: GLaDOS-N2-02, server: 5.44.249.43, port: 3389, type: trojan, password: a3c6461972471c75, skip-cert-verify: true, udp: true}
-  - {name: GLaDOS-N2-03, server: 120.232.192.119, port: 3389, type: trojan, password: a3c6461972471c75, skip-cert-verify: true, udp: true}
-  - {name: GLaDOS-N2-05, server: 116.129.253.177, port: 3389, type: trojan, password: a3c6461972471c75, skip-cert-verify: true, udp: true}
-  - {name: GLaDOS-N2-06, server: 183.232.163.147, port: 3389, type: trojan, password: a3c6461972471c75, skip-cert-verify: true, udp: true}
-  - {name: GLaDOS-N2-07, server: 60.249.3.229, port: 3389, type: trojan, password: a3c6461972471c75, skip-cert-verify: true, udp: true}
-  - {name: HK-GLaDOS-GEO-00, server: 183.232.163.147, port: 3384, type: trojan, password: a3c6461972471c75, skip-cert-verify: true, udp: true}
+  - {name: "日AWS2[x0.75|NF*|V2Ray]@1Gbps", server: br-cn-east-cu1.node-fnf.xyz, port: 10306, type: vmess, uuid: 0eefa5b3-fe64-3319-ba6c-f4df1c2d9304, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "日AWS3[x0.1|福利|NF*|V2Ray]@240Mbps", server: br-cn-east-cu2.node-fnf.xyz, port: 50110, type: vmess, uuid: 0eefa5b3-fe64-3319-ba6c-f4df1c2d9304, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "台HiNet1[x0.75|NF|V2Ray]@480Mbps", server: br-cn-south-cu1.node-fnf.xyz, port: 10202, type: vmess, uuid: 0eefa5b3-fe64-3319-ba6c-f4df1c2d9304, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "台HiNet4[x0.75|NF|V2Ray]@480Mbps", server: br-cn-east-cu1.node-fnf.xyz, port: 10208, type: vmess, uuid: 0eefa5b3-fe64-3319-ba6c-f4df1c2d9304, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "越FPT1[x0.75|NF|V2Ray]@480Mbps", server: br-cn-south-cu1.node-fnf.xyz, port: 25062, type: vmess, uuid: 0eefa5b3-fe64-3319-ba6c-f4df1c2d9304, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 标准|日本02解锁|T506, server: tanz-unicom.0098dns01in.work, port: 35006, type: vmess, uuid: b83d0e8b-f4e6-3988-b45e-cc96400f0bc6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "泰[x0.75|NF|V2Ray]@480Mbps", server: br-cn-south-cu1.node-fnf.xyz, port: 25042, type: vmess, uuid: 0eefa5b3-fe64-3319-ba6c-f4df1c2d9304, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 标准|印度01|T519, server: tanz-unicom.0098dns01in.work, port: 35021, type: vmess, uuid: b83d0e8b-f4e6-3988-b45e-cc96400f0bc6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "瑞典[x1|NF|V2Ray]@240Mbps", server: br-cn-east-cu1.node-fnf.xyz, port: 15104, type: vmess, uuid: 0eefa5b3-fe64-3319-ba6c-f4df1c2d9304, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "印AWS1[x1|V2Ray]@480Mbps", server: br-cn-south-cu1.node-fnf.xyz, port: 10502, type: vmess, uuid: 0eefa5b3-fe64-3319-ba6c-f4df1c2d9304, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 标准|香港02解锁|T508, server: tanz-moble.0098dns01in.work, port: 35010, type: vmess, uuid: b83d0e8b-f4e6-3988-b45e-cc96400f0bc6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "菲[x0.75|NF|V2Ray]@480Mbps", server: br-cn-south-cu1.node-fnf.xyz, port: 25032, type: vmess, uuid: 0eefa5b3-fe64-3319-ba6c-f4df1c2d9304, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "阿联酋AZ1[x1|V2Ray]@80Mbps", server: br-cn-south-cu1.node-fnf.xyz, port: 25014, type: vmess, uuid: 0eefa5b3-fe64-3319-ba6c-f4df1c2d9304, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 标准|德国01|T515, server: tanz-unicom.0098dns01in.work, port: 35017, type: vmess, uuid: b83d0e8b-f4e6-3988-b45e-cc96400f0bc6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 标准|英国01|T521, server: tanz-unicom.0098dns01in.work, port: 35023, type: vmess, uuid: b83d0e8b-f4e6-3988-b45e-cc96400f0bc6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "韩AWS1[x0.75|V2Ray]@1Gbps", server: br-cn-east-cu1.node-fnf.xyz, port: 10402, type: vmess, uuid: 0eefa5b3-fe64-3319-ba6c-f4df1c2d9304, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 标准|新加坡01解锁|T511, server: tanz-moble.0098dns01in.work, port: 35013, type: vmess, uuid: b83d0e8b-f4e6-3988-b45e-cc96400f0bc6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 标准|中国台湾04解锁|T604, server: tanz-moble.0098dns01in.work, port: 35070, type: vmess, uuid: b83d0e8b-f4e6-3988-b45e-cc96400f0bc6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "新SI1[x0.75|NF|V2Ray]@1Gbps", server: br-cn-south-cm1.node-fnf.xyz, port: 10214, type: vmess, uuid: 0eefa5b3-fe64-3319-ba6c-f4df1c2d9304, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "韩AWS2[x0.75|V2Ray]@1Gbps", server: br-cn-east-cu1.node-fnf.xyz, port: 10406, type: vmess, uuid: 0eefa5b3-fe64-3319-ba6c-f4df1c2d9304, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "台HiNet2[x0.75|NF|V2Ray]@480Mbps", server: br-cn-south-cu1.node-fnf.xyz, port: 10204, type: vmess, uuid: 0eefa5b3-fe64-3319-ba6c-f4df1c2d9304, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "澳大利亚NP1[x1|NF|V2Ray]@480Mbps", server: br-cn-south-cu1.node-fnf.xyz, port: 25072, type: vmess, uuid: 0eefa5b3-fe64-3319-ba6c-f4df1c2d9304, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 标准|美国01解锁|T503, server: tanz-unicom.0098dns01in.work, port: 35019, type: vmess, uuid: b83d0e8b-f4e6-3988-b45e-cc96400f0bc6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 标准|中国台湾03解锁|T603, server: tanz-moble.0098dns01in.work, port: 35069, type: vmess, uuid: b83d0e8b-f4e6-3988-b45e-cc96400f0bc6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 标准|英国02|T522, server: tanz-unicom.0098dns01in.work, port: 35034, type: vmess, uuid: b83d0e8b-f4e6-3988-b45e-cc96400f0bc6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 标准|中国台湾05解锁|T605, server: tanz-moble.0098dns01in.work, port: 35071, type: vmess, uuid: b83d0e8b-f4e6-3988-b45e-cc96400f0bc6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "港HKT2[x0.75|NF|V2Ray]@1Gbps", server: br-cn-south-iepl1.node-fnf.xyz, port: 10104, type: vmess, uuid: 0eefa5b3-fe64-3319-ba6c-f4df1c2d9304, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "日AWS1[x0.75|NF*|V2Ray]@1Gbps", server: br-cn-east-cu1.node-fnf.xyz, port: 10302, type: vmess, uuid: 0eefa5b3-fe64-3319-ba6c-f4df1c2d9304, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "马来西亚TM1[x0.75|NF|V2Ray]@240Mbps", server: br-cn-south-cu1.node-fnf.xyz, port: 25052, type: vmess, uuid: 0eefa5b3-fe64-3319-ba6c-f4df1c2d9304, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "新AWS2[x0.75|NF*|V2Ray]@1Gbps", server: br-cn-south-cm1.node-fnf.xyz, port: 10218, type: vmess, uuid: 0eefa5b3-fe64-3319-ba6c-f4df1c2d9304, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "新AWS1[x0.75|NF*|V2Ray]@1Gbps", server: br-cn-south-cm1.node-fnf.xyz, port: 10216, type: vmess, uuid: 0eefa5b3-fe64-3319-ba6c-f4df1c2d9304, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 标准|新加坡02解锁|T512, server: tanz-moble.0098dns01in.work, port: 35014, type: vmess, uuid: b83d0e8b-f4e6-3988-b45e-cc96400f0bc6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 标准|德国02|T516, server: tanz-unicom.0098dns01in.work, port: 35018, type: vmess, uuid: b83d0e8b-f4e6-3988-b45e-cc96400f0bc6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "印尼西亚PT1[x0.75|NF|V2Ray]@80Mbps", server: br-cn-south-cu1.node-fnf.xyz, port: 25034, type: vmess, uuid: 0eefa5b3-fe64-3319-ba6c-f4df1c2d9304, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美國-费利蒙, server: us2.tcpbbr.net, port: 443, type: trojan, password: 2e5f2a78-14d8-11eb-ad8c-f23c9164ca5d, sni: us2.tcpbbr.net, skip-cert-verify: true, udp: true}
   - {name: 港WTT, server: ssl.tcpbbr.net, port: 443, type: trojan, password: 5a3d9b78-cb5b-11ea-82ef-f23c9164ca5d, sni: ssl.tcpbbr.net, skip-cert-verify: true, udp: true}
-  - {name: 港WTT 2, server: ssl.tcpbbr.net, port: 443, type: trojan, password: 283695dc-fcc8-11ea-8684-f23c913c8d2b, sni: ssl.tcpbbr.net, skip-cert-verify: true, udp: true}
-  - {name: 港WTT 3, server: ssl.tcpbbr.net, port: 443, type: trojan, password: 2e5f2a78-14d8-11eb-ad8c-f23c9164ca5d, sni: ssl.tcpbbr.net, skip-cert-verify: true, udp: true}
-  - {name: 港WTT3, server: api.tcpbbr.net, port: 443, type: trojan, password: 283695dc-fcc8-11ea-8684-f23c913c8d2b, sni: api.tcpbbr.net, skip-cert-verify: true, udp: true}
-  - {name: 港WTT3 2, server: api.tcpbbr.net, port: 443, type: trojan, password: 5a3d9b78-cb5b-11ea-82ef-f23c9164ca5d, sni: api.tcpbbr.net, skip-cert-verify: true, udp: true}
-  - {name: 港WTT3 3, server: api.tcpbbr.net, port: 443, type: trojan, password: 2e5f2a78-14d8-11eb-ad8c-f23c9164ca5d, sni: api.tcpbbr.net, skip-cert-verify: true, udp: true}
-  - {name: 美國-费利蒙, server: us2.tcpbbr.net, port: 443, type: trojan, password: 5a3d9b78-cb5b-11ea-82ef-f23c9164ca5d, sni: us2.tcpbbr.net, skip-cert-verify: true, udp: true}
-  - {name: 美國-费利蒙 2, server: us2.tcpbbr.net, port: 443, type: trojan, password: 2e5f2a78-14d8-11eb-ad8c-f23c9164ca5d, sni: us2.tcpbbr.net, skip-cert-verify: true, udp: true}
-  - {name: 美國-费利蒙 3, server: us2.tcpbbr.net, port: 443, type: trojan, password: 08d178d4-ec8b-11eb-a8bf-f23c91cfbbc9, sni: us2.tcpbbr.net, skip-cert-verify: true, udp: true}
-  - {name: 美國-费利蒙 4, server: us2.tcpbbr.net, port: 443, type: trojan, password: 283695dc-fcc8-11ea-8684-f23c913c8d2b, sni: us2.tcpbbr.net, skip-cert-verify: true, udp: true}
-  - {name: 台灣, server: tw.tcpbbr.net, port: 443, type: trojan, password: 08d178d4-ec8b-11eb-a8bf-f23c91cfbbc9, sni: tw.tcpbbr.net, skip-cert-verify: true, udp: true}
-  - {name: 台灣 2, server: tw.tcpbbr.net, port: 443, type: trojan, password: 2e5f2a78-14d8-11eb-ad8c-f23c9164ca5d, sni: tw.tcpbbr.net, skip-cert-verify: true, udp: true}
-  - {name: 台灣 3, server: tw.tcpbbr.net, port: 443, type: trojan, password: 283695dc-fcc8-11ea-8684-f23c913c8d2b, sni: tw.tcpbbr.net, skip-cert-verify: true, udp: true}
+  - {name: 美國-费利蒙 2, server: us2.tcpbbr.net, port: 443, type: trojan, password: 283695dc-fcc8-11ea-8684-f23c913c8d2b, sni: us2.tcpbbr.net, skip-cert-verify: true, udp: true}
+  - {name: 港WTT 2, server: ssl.tcpbbr.net, port: 443, type: trojan, password: 2e5f2a78-14d8-11eb-ad8c-f23c9164ca5d, sni: ssl.tcpbbr.net, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - HK 102
-      - HK 104
-      - HK 106
-      - HK A 003
-      - IN A 001
-      - IN A 003
-      - IN B 002
-      - IN B 003
-      - JP B 002
-      - JP B 003
-      - SG A 001
-      - SG A 002
-      - SG A 003
-      - SG A 004
-      - SG A 005
-      - SG A 007
-      - TW A 1
-      - _US_美国->🇫🇷_FR_法国
-      - _CA_加拿大
-      - _CA_加拿大 2
-      - _CA_加拿大 3
-      - GLaDOS-N2-02
-      - GLaDOS-N2-03
-      - GLaDOS-N2-05
-      - GLaDOS-N2-06
-      - GLaDOS-N2-07
-      - HK-GLaDOS-GEO-00
-      - 港WTT
-      - 港WTT 2
-      - 港WTT 3
-      - 港WTT3
-      - 港WTT3 2
-      - 港WTT3 3
+      - 日AWS2[x0.75|NF*|V2Ray]@1Gbps
+      - 日AWS3[x0.1|福利|NF*|V2Ray]@240Mbps
+      - 台HiNet1[x0.75|NF|V2Ray]@480Mbps
+      - 台HiNet4[x0.75|NF|V2Ray]@480Mbps
+      - 越FPT1[x0.75|NF|V2Ray]@480Mbps
+      - 标准|日本02解锁|T506
+      - 泰[x0.75|NF|V2Ray]@480Mbps
+      - 标准|印度01|T519
+      - 瑞典[x1|NF|V2Ray]@240Mbps
+      - 印AWS1[x1|V2Ray]@480Mbps
+      - 标准|香港02解锁|T508
+      - 菲[x0.75|NF|V2Ray]@480Mbps
+      - 阿联酋AZ1[x1|V2Ray]@80Mbps
+      - 标准|德国01|T515
+      - 标准|英国01|T521
+      - 韩AWS1[x0.75|V2Ray]@1Gbps
+      - 标准|新加坡01解锁|T511
+      - 标准|中国台湾04解锁|T604
+      - 新SI1[x0.75|NF|V2Ray]@1Gbps
+      - 韩AWS2[x0.75|V2Ray]@1Gbps
+      - 台HiNet2[x0.75|NF|V2Ray]@480Mbps
+      - 澳大利亚NP1[x1|NF|V2Ray]@480Mbps
+      - 标准|美国01解锁|T503
+      - 标准|中国台湾03解锁|T603
+      - 标准|英国02|T522
+      - 标准|中国台湾05解锁|T605
+      - 港HKT2[x0.75|NF|V2Ray]@1Gbps
+      - 日AWS1[x0.75|NF*|V2Ray]@1Gbps
+      - 马来西亚TM1[x0.75|NF|V2Ray]@240Mbps
+      - 新AWS2[x0.75|NF*|V2Ray]@1Gbps
+      - 新AWS1[x0.75|NF*|V2Ray]@1Gbps
+      - 标准|新加坡02解锁|T512
+      - 标准|德国02|T516
+      - 印尼西亚PT1[x0.75|NF|V2Ray]@80Mbps
       - 美國-费利蒙
+      - 港WTT
       - 美國-费利蒙 2
-      - 美國-费利蒙 3
-      - 美國-费利蒙 4
-      - 台灣
-      - 台灣 2
-      - 台灣 3
+      - 港WTT 2
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - HK 102
-      - HK 104
-      - HK 106
-      - HK A 003
-      - IN A 001
-      - IN A 003
-      - IN B 002
-      - IN B 003
-      - JP B 002
-      - JP B 003
-      - SG A 001
-      - SG A 002
-      - SG A 003
-      - SG A 004
-      - SG A 005
-      - SG A 007
-      - TW A 1
-      - _US_美国->🇫🇷_FR_法国
-      - _CA_加拿大
-      - _CA_加拿大 2
-      - _CA_加拿大 3
-      - GLaDOS-N2-02
-      - GLaDOS-N2-03
-      - GLaDOS-N2-05
-      - GLaDOS-N2-06
-      - GLaDOS-N2-07
-      - HK-GLaDOS-GEO-00
-      - 港WTT
-      - 港WTT 2
-      - 港WTT 3
-      - 港WTT3
-      - 港WTT3 2
-      - 港WTT3 3
+      - 日AWS2[x0.75|NF*|V2Ray]@1Gbps
+      - 日AWS3[x0.1|福利|NF*|V2Ray]@240Mbps
+      - 台HiNet1[x0.75|NF|V2Ray]@480Mbps
+      - 台HiNet4[x0.75|NF|V2Ray]@480Mbps
+      - 越FPT1[x0.75|NF|V2Ray]@480Mbps
+      - 标准|日本02解锁|T506
+      - 泰[x0.75|NF|V2Ray]@480Mbps
+      - 标准|印度01|T519
+      - 瑞典[x1|NF|V2Ray]@240Mbps
+      - 印AWS1[x1|V2Ray]@480Mbps
+      - 标准|香港02解锁|T508
+      - 菲[x0.75|NF|V2Ray]@480Mbps
+      - 阿联酋AZ1[x1|V2Ray]@80Mbps
+      - 标准|德国01|T515
+      - 标准|英国01|T521
+      - 韩AWS1[x0.75|V2Ray]@1Gbps
+      - 标准|新加坡01解锁|T511
+      - 标准|中国台湾04解锁|T604
+      - 新SI1[x0.75|NF|V2Ray]@1Gbps
+      - 韩AWS2[x0.75|V2Ray]@1Gbps
+      - 台HiNet2[x0.75|NF|V2Ray]@480Mbps
+      - 澳大利亚NP1[x1|NF|V2Ray]@480Mbps
+      - 标准|美国01解锁|T503
+      - 标准|中国台湾03解锁|T603
+      - 标准|英国02|T522
+      - 标准|中国台湾05解锁|T605
+      - 港HKT2[x0.75|NF|V2Ray]@1Gbps
+      - 日AWS1[x0.75|NF*|V2Ray]@1Gbps
+      - 马来西亚TM1[x0.75|NF|V2Ray]@240Mbps
+      - 新AWS2[x0.75|NF*|V2Ray]@1Gbps
+      - 新AWS1[x0.75|NF*|V2Ray]@1Gbps
+      - 标准|新加坡02解锁|T512
+      - 标准|德国02|T516
+      - 印尼西亚PT1[x0.75|NF|V2Ray]@80Mbps
       - 美國-费利蒙
+      - 港WTT
       - 美國-费利蒙 2
-      - 美國-费利蒙 3
-      - 美國-费利蒙 4
-      - 台灣
-      - 台灣 2
-      - 台灣 3
+      - 港WTT 2
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - HK 102
-      - HK 104
-      - HK 106
-      - HK A 003
-      - IN A 001
-      - IN A 003
-      - IN B 002
-      - IN B 003
-      - JP B 002
-      - JP B 003
-      - SG A 001
-      - SG A 002
-      - SG A 003
-      - SG A 004
-      - SG A 005
-      - SG A 007
-      - TW A 1
-      - _US_美国->🇫🇷_FR_法国
-      - _CA_加拿大
-      - _CA_加拿大 2
-      - _CA_加拿大 3
-      - GLaDOS-N2-02
-      - GLaDOS-N2-03
-      - GLaDOS-N2-05
-      - GLaDOS-N2-06
-      - GLaDOS-N2-07
-      - HK-GLaDOS-GEO-00
-      - 港WTT
-      - 港WTT 2
-      - 港WTT 3
-      - 港WTT3
-      - 港WTT3 2
-      - 港WTT3 3
+      - 日AWS2[x0.75|NF*|V2Ray]@1Gbps
+      - 日AWS3[x0.1|福利|NF*|V2Ray]@240Mbps
+      - 台HiNet1[x0.75|NF|V2Ray]@480Mbps
+      - 台HiNet4[x0.75|NF|V2Ray]@480Mbps
+      - 越FPT1[x0.75|NF|V2Ray]@480Mbps
+      - 标准|日本02解锁|T506
+      - 泰[x0.75|NF|V2Ray]@480Mbps
+      - 标准|印度01|T519
+      - 瑞典[x1|NF|V2Ray]@240Mbps
+      - 印AWS1[x1|V2Ray]@480Mbps
+      - 标准|香港02解锁|T508
+      - 菲[x0.75|NF|V2Ray]@480Mbps
+      - 阿联酋AZ1[x1|V2Ray]@80Mbps
+      - 标准|德国01|T515
+      - 标准|英国01|T521
+      - 韩AWS1[x0.75|V2Ray]@1Gbps
+      - 标准|新加坡01解锁|T511
+      - 标准|中国台湾04解锁|T604
+      - 新SI1[x0.75|NF|V2Ray]@1Gbps
+      - 韩AWS2[x0.75|V2Ray]@1Gbps
+      - 台HiNet2[x0.75|NF|V2Ray]@480Mbps
+      - 澳大利亚NP1[x1|NF|V2Ray]@480Mbps
+      - 标准|美国01解锁|T503
+      - 标准|中国台湾03解锁|T603
+      - 标准|英国02|T522
+      - 标准|中国台湾05解锁|T605
+      - 港HKT2[x0.75|NF|V2Ray]@1Gbps
+      - 日AWS1[x0.75|NF*|V2Ray]@1Gbps
+      - 马来西亚TM1[x0.75|NF|V2Ray]@240Mbps
+      - 新AWS2[x0.75|NF*|V2Ray]@1Gbps
+      - 新AWS1[x0.75|NF*|V2Ray]@1Gbps
+      - 标准|新加坡02解锁|T512
+      - 标准|德国02|T516
+      - 印尼西亚PT1[x0.75|NF|V2Ray]@80Mbps
       - 美國-费利蒙
+      - 港WTT
       - 美國-费利蒙 2
-      - 美國-费利蒙 3
-      - 美國-费利蒙 4
-      - 台灣
-      - 台灣 2
-      - 台灣 3
+      - 港WTT 2
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -200,196 +192,189 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - HK 102
-      - HK 104
-      - HK 106
-      - HK A 003
-      - IN A 001
-      - IN A 003
-      - IN B 002
-      - IN B 003
-      - JP B 002
-      - JP B 003
-      - SG A 001
-      - SG A 002
-      - SG A 003
-      - SG A 004
-      - SG A 005
-      - SG A 007
-      - TW A 1
-      - _US_美国->🇫🇷_FR_法国
-      - _CA_加拿大
-      - _CA_加拿大 2
-      - _CA_加拿大 3
-      - GLaDOS-N2-02
-      - GLaDOS-N2-03
-      - GLaDOS-N2-05
-      - GLaDOS-N2-06
-      - GLaDOS-N2-07
-      - HK-GLaDOS-GEO-00
-      - 港WTT
-      - 港WTT 2
-      - 港WTT 3
-      - 港WTT3
-      - 港WTT3 2
-      - 港WTT3 3
+      - 日AWS2[x0.75|NF*|V2Ray]@1Gbps
+      - 日AWS3[x0.1|福利|NF*|V2Ray]@240Mbps
+      - 台HiNet1[x0.75|NF|V2Ray]@480Mbps
+      - 台HiNet4[x0.75|NF|V2Ray]@480Mbps
+      - 越FPT1[x0.75|NF|V2Ray]@480Mbps
+      - 标准|日本02解锁|T506
+      - 泰[x0.75|NF|V2Ray]@480Mbps
+      - 标准|印度01|T519
+      - 瑞典[x1|NF|V2Ray]@240Mbps
+      - 印AWS1[x1|V2Ray]@480Mbps
+      - 标准|香港02解锁|T508
+      - 菲[x0.75|NF|V2Ray]@480Mbps
+      - 阿联酋AZ1[x1|V2Ray]@80Mbps
+      - 标准|德国01|T515
+      - 标准|英国01|T521
+      - 韩AWS1[x0.75|V2Ray]@1Gbps
+      - 标准|新加坡01解锁|T511
+      - 标准|中国台湾04解锁|T604
+      - 新SI1[x0.75|NF|V2Ray]@1Gbps
+      - 韩AWS2[x0.75|V2Ray]@1Gbps
+      - 台HiNet2[x0.75|NF|V2Ray]@480Mbps
+      - 澳大利亚NP1[x1|NF|V2Ray]@480Mbps
+      - 标准|美国01解锁|T503
+      - 标准|中国台湾03解锁|T603
+      - 标准|英国02|T522
+      - 标准|中国台湾05解锁|T605
+      - 港HKT2[x0.75|NF|V2Ray]@1Gbps
+      - 日AWS1[x0.75|NF*|V2Ray]@1Gbps
+      - 马来西亚TM1[x0.75|NF|V2Ray]@240Mbps
+      - 新AWS2[x0.75|NF*|V2Ray]@1Gbps
+      - 新AWS1[x0.75|NF*|V2Ray]@1Gbps
+      - 标准|新加坡02解锁|T512
+      - 标准|德国02|T516
+      - 印尼西亚PT1[x0.75|NF|V2Ray]@80Mbps
       - 美國-费利蒙
+      - 港WTT
       - 美國-费利蒙 2
-      - 美國-费利蒙 3
-      - 美國-费利蒙 4
-      - 台灣
-      - 台灣 2
-      - 台灣 3
+      - 港WTT 2
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
+      - 台HiNet1[x0.75|NF|V2Ray]@480Mbps
+      - 台HiNet4[x0.75|NF|V2Ray]@480Mbps
+      - 标准|香港02解锁|T508
+      - 标准|中国台湾04解锁|T604
+      - 台HiNet2[x0.75|NF|V2Ray]@480Mbps
+      - 标准|中国台湾03解锁|T603
+      - 标准|中国台湾05解锁|T605
+      - 港HKT2[x0.75|NF|V2Ray]@1Gbps
       - 港WTT
       - 港WTT 2
-      - 港WTT 3
-      - 港WTT3
-      - 港WTT3 2
-      - 港WTT3 3
-      - 台灣
-      - 台灣 2
-      - 台灣 3
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - HK 102
-      - HK 104
-      - HK 106
-      - HK A 003
-      - IN A 001
-      - IN A 003
-      - IN B 002
-      - IN B 003
-      - JP B 002
-      - JP B 003
-      - SG A 001
-      - SG A 002
-      - SG A 003
-      - SG A 004
-      - SG A 005
-      - SG A 007
-      - TW A 1
-      - _US_美国->🇫🇷_FR_法国
-      - _CA_加拿大
-      - _CA_加拿大 2
-      - _CA_加拿大 3
-      - GLaDOS-N2-02
-      - GLaDOS-N2-03
-      - GLaDOS-N2-05
-      - GLaDOS-N2-06
-      - GLaDOS-N2-07
-      - HK-GLaDOS-GEO-00
-      - 港WTT
-      - 港WTT 2
-      - 港WTT 3
-      - 港WTT3
-      - 港WTT3 2
-      - 港WTT3 3
+      - 日AWS2[x0.75|NF*|V2Ray]@1Gbps
+      - 日AWS3[x0.1|福利|NF*|V2Ray]@240Mbps
+      - 台HiNet1[x0.75|NF|V2Ray]@480Mbps
+      - 台HiNet4[x0.75|NF|V2Ray]@480Mbps
+      - 越FPT1[x0.75|NF|V2Ray]@480Mbps
+      - 标准|日本02解锁|T506
+      - 泰[x0.75|NF|V2Ray]@480Mbps
+      - 标准|印度01|T519
+      - 瑞典[x1|NF|V2Ray]@240Mbps
+      - 印AWS1[x1|V2Ray]@480Mbps
+      - 标准|香港02解锁|T508
+      - 菲[x0.75|NF|V2Ray]@480Mbps
+      - 阿联酋AZ1[x1|V2Ray]@80Mbps
+      - 标准|德国01|T515
+      - 标准|英国01|T521
+      - 韩AWS1[x0.75|V2Ray]@1Gbps
+      - 标准|新加坡01解锁|T511
+      - 标准|中国台湾04解锁|T604
+      - 新SI1[x0.75|NF|V2Ray]@1Gbps
+      - 韩AWS2[x0.75|V2Ray]@1Gbps
+      - 台HiNet2[x0.75|NF|V2Ray]@480Mbps
+      - 澳大利亚NP1[x1|NF|V2Ray]@480Mbps
+      - 标准|美国01解锁|T503
+      - 标准|中国台湾03解锁|T603
+      - 标准|英国02|T522
+      - 标准|中国台湾05解锁|T605
+      - 港HKT2[x0.75|NF|V2Ray]@1Gbps
+      - 日AWS1[x0.75|NF*|V2Ray]@1Gbps
+      - 马来西亚TM1[x0.75|NF|V2Ray]@240Mbps
+      - 新AWS2[x0.75|NF*|V2Ray]@1Gbps
+      - 新AWS1[x0.75|NF*|V2Ray]@1Gbps
+      - 标准|新加坡02解锁|T512
+      - 标准|德国02|T516
+      - 印尼西亚PT1[x0.75|NF|V2Ray]@80Mbps
       - 美國-费利蒙
+      - 港WTT
       - 美國-费利蒙 2
-      - 美國-费利蒙 3
-      - 美國-费利蒙 4
-      - 台灣
-      - 台灣 2
-      - 台灣 3
+      - 港WTT 2
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - HK 102
-      - HK 104
-      - HK 106
-      - HK A 003
-      - IN A 001
-      - IN A 003
-      - IN B 002
-      - IN B 003
-      - JP B 002
-      - JP B 003
-      - SG A 001
-      - SG A 002
-      - SG A 003
-      - SG A 004
-      - SG A 005
-      - SG A 007
-      - TW A 1
-      - _US_美国->🇫🇷_FR_法国
-      - _CA_加拿大
-      - _CA_加拿大 2
-      - _CA_加拿大 3
-      - GLaDOS-N2-02
-      - GLaDOS-N2-03
-      - GLaDOS-N2-05
-      - GLaDOS-N2-06
-      - GLaDOS-N2-07
-      - HK-GLaDOS-GEO-00
-      - 港WTT
-      - 港WTT 2
-      - 港WTT 3
-      - 港WTT3
-      - 港WTT3 2
-      - 港WTT3 3
+      - 日AWS2[x0.75|NF*|V2Ray]@1Gbps
+      - 日AWS3[x0.1|福利|NF*|V2Ray]@240Mbps
+      - 台HiNet1[x0.75|NF|V2Ray]@480Mbps
+      - 台HiNet4[x0.75|NF|V2Ray]@480Mbps
+      - 越FPT1[x0.75|NF|V2Ray]@480Mbps
+      - 标准|日本02解锁|T506
+      - 泰[x0.75|NF|V2Ray]@480Mbps
+      - 标准|印度01|T519
+      - 瑞典[x1|NF|V2Ray]@240Mbps
+      - 印AWS1[x1|V2Ray]@480Mbps
+      - 标准|香港02解锁|T508
+      - 菲[x0.75|NF|V2Ray]@480Mbps
+      - 阿联酋AZ1[x1|V2Ray]@80Mbps
+      - 标准|德国01|T515
+      - 标准|英国01|T521
+      - 韩AWS1[x0.75|V2Ray]@1Gbps
+      - 标准|新加坡01解锁|T511
+      - 标准|中国台湾04解锁|T604
+      - 新SI1[x0.75|NF|V2Ray]@1Gbps
+      - 韩AWS2[x0.75|V2Ray]@1Gbps
+      - 台HiNet2[x0.75|NF|V2Ray]@480Mbps
+      - 澳大利亚NP1[x1|NF|V2Ray]@480Mbps
+      - 标准|美国01解锁|T503
+      - 标准|中国台湾03解锁|T603
+      - 标准|英国02|T522
+      - 标准|中国台湾05解锁|T605
+      - 港HKT2[x0.75|NF|V2Ray]@1Gbps
+      - 日AWS1[x0.75|NF*|V2Ray]@1Gbps
+      - 马来西亚TM1[x0.75|NF|V2Ray]@240Mbps
+      - 新AWS2[x0.75|NF*|V2Ray]@1Gbps
+      - 新AWS1[x0.75|NF*|V2Ray]@1Gbps
+      - 标准|新加坡02解锁|T512
+      - 标准|德国02|T516
+      - 印尼西亚PT1[x0.75|NF|V2Ray]@80Mbps
       - 美國-费利蒙
+      - 港WTT
       - 美國-费利蒙 2
-      - 美國-费利蒙 3
-      - 美國-费利蒙 4
-      - 台灣
-      - 台灣 2
-      - 台灣 3
+      - 港WTT 2
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - HK 102
-      - HK 104
-      - HK 106
-      - HK A 003
-      - IN A 001
-      - IN A 003
-      - IN B 002
-      - IN B 003
-      - JP B 002
-      - JP B 003
-      - SG A 001
-      - SG A 002
-      - SG A 003
-      - SG A 004
-      - SG A 005
-      - SG A 007
-      - TW A 1
-      - _US_美国->🇫🇷_FR_法国
-      - _CA_加拿大
-      - _CA_加拿大 2
-      - _CA_加拿大 3
-      - GLaDOS-N2-02
-      - GLaDOS-N2-03
-      - GLaDOS-N2-05
-      - GLaDOS-N2-06
-      - GLaDOS-N2-07
-      - HK-GLaDOS-GEO-00
-      - 港WTT
-      - 港WTT 2
-      - 港WTT 3
-      - 港WTT3
-      - 港WTT3 2
-      - 港WTT3 3
+      - 日AWS2[x0.75|NF*|V2Ray]@1Gbps
+      - 日AWS3[x0.1|福利|NF*|V2Ray]@240Mbps
+      - 台HiNet1[x0.75|NF|V2Ray]@480Mbps
+      - 台HiNet4[x0.75|NF|V2Ray]@480Mbps
+      - 越FPT1[x0.75|NF|V2Ray]@480Mbps
+      - 标准|日本02解锁|T506
+      - 泰[x0.75|NF|V2Ray]@480Mbps
+      - 标准|印度01|T519
+      - 瑞典[x1|NF|V2Ray]@240Mbps
+      - 印AWS1[x1|V2Ray]@480Mbps
+      - 标准|香港02解锁|T508
+      - 菲[x0.75|NF|V2Ray]@480Mbps
+      - 阿联酋AZ1[x1|V2Ray]@80Mbps
+      - 标准|德国01|T515
+      - 标准|英国01|T521
+      - 韩AWS1[x0.75|V2Ray]@1Gbps
+      - 标准|新加坡01解锁|T511
+      - 标准|中国台湾04解锁|T604
+      - 新SI1[x0.75|NF|V2Ray]@1Gbps
+      - 韩AWS2[x0.75|V2Ray]@1Gbps
+      - 台HiNet2[x0.75|NF|V2Ray]@480Mbps
+      - 澳大利亚NP1[x1|NF|V2Ray]@480Mbps
+      - 标准|美国01解锁|T503
+      - 标准|中国台湾03解锁|T603
+      - 标准|英国02|T522
+      - 标准|中国台湾05解锁|T605
+      - 港HKT2[x0.75|NF|V2Ray]@1Gbps
+      - 日AWS1[x0.75|NF*|V2Ray]@1Gbps
+      - 马来西亚TM1[x0.75|NF|V2Ray]@240Mbps
+      - 新AWS2[x0.75|NF*|V2Ray]@1Gbps
+      - 新AWS1[x0.75|NF*|V2Ray]@1Gbps
+      - 标准|新加坡02解锁|T512
+      - 标准|德国02|T516
+      - 印尼西亚PT1[x0.75|NF|V2Ray]@80Mbps
       - 美國-费利蒙
+      - 港WTT
       - 美國-费利蒙 2
-      - 美國-费利蒙 3
-      - 美國-费利蒙 4
-      - 台灣
-      - 台灣 2
-      - 台灣 3
+      - 港WTT 2
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -405,46 +390,44 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - HK 102
-      - HK 104
-      - HK 106
-      - HK A 003
-      - IN A 001
-      - IN A 003
-      - IN B 002
-      - IN B 003
-      - JP B 002
-      - JP B 003
-      - SG A 001
-      - SG A 002
-      - SG A 003
-      - SG A 004
-      - SG A 005
-      - SG A 007
-      - TW A 1
-      - _US_美国->🇫🇷_FR_法国
-      - _CA_加拿大
-      - _CA_加拿大 2
-      - _CA_加拿大 3
-      - GLaDOS-N2-02
-      - GLaDOS-N2-03
-      - GLaDOS-N2-05
-      - GLaDOS-N2-06
-      - GLaDOS-N2-07
-      - HK-GLaDOS-GEO-00
-      - 港WTT
-      - 港WTT 2
-      - 港WTT 3
-      - 港WTT3
-      - 港WTT3 2
-      - 港WTT3 3
+      - 日AWS2[x0.75|NF*|V2Ray]@1Gbps
+      - 日AWS3[x0.1|福利|NF*|V2Ray]@240Mbps
+      - 台HiNet1[x0.75|NF|V2Ray]@480Mbps
+      - 台HiNet4[x0.75|NF|V2Ray]@480Mbps
+      - 越FPT1[x0.75|NF|V2Ray]@480Mbps
+      - 标准|日本02解锁|T506
+      - 泰[x0.75|NF|V2Ray]@480Mbps
+      - 标准|印度01|T519
+      - 瑞典[x1|NF|V2Ray]@240Mbps
+      - 印AWS1[x1|V2Ray]@480Mbps
+      - 标准|香港02解锁|T508
+      - 菲[x0.75|NF|V2Ray]@480Mbps
+      - 阿联酋AZ1[x1|V2Ray]@80Mbps
+      - 标准|德国01|T515
+      - 标准|英国01|T521
+      - 韩AWS1[x0.75|V2Ray]@1Gbps
+      - 标准|新加坡01解锁|T511
+      - 标准|中国台湾04解锁|T604
+      - 新SI1[x0.75|NF|V2Ray]@1Gbps
+      - 韩AWS2[x0.75|V2Ray]@1Gbps
+      - 台HiNet2[x0.75|NF|V2Ray]@480Mbps
+      - 澳大利亚NP1[x1|NF|V2Ray]@480Mbps
+      - 标准|美国01解锁|T503
+      - 标准|中国台湾03解锁|T603
+      - 标准|英国02|T522
+      - 标准|中国台湾05解锁|T605
+      - 港HKT2[x0.75|NF|V2Ray]@1Gbps
+      - 日AWS1[x0.75|NF*|V2Ray]@1Gbps
+      - 马来西亚TM1[x0.75|NF|V2Ray]@240Mbps
+      - 新AWS2[x0.75|NF*|V2Ray]@1Gbps
+      - 新AWS1[x0.75|NF*|V2Ray]@1Gbps
+      - 标准|新加坡02解锁|T512
+      - 标准|德国02|T516
+      - 印尼西亚PT1[x0.75|NF|V2Ray]@80Mbps
       - 美國-费利蒙
+      - 港WTT
       - 美國-费利蒙 2
-      - 美國-费利蒙 3
-      - 美國-费利蒙 4
-      - 台灣
-      - 台灣 2
-      - 台灣 3
+      - 港WTT 2
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
