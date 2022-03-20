@@ -5,175 +5,143 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: "日AWS2[x0.75|NF*|V2Ray]@1Gbps", server: br-cn-east-cu1.node-fnf.xyz, port: 10306, type: vmess, uuid: 0eefa5b3-fe64-3319-ba6c-f4df1c2d9304, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "日AWS3[x0.1|福利|NF*|V2Ray]@240Mbps", server: br-cn-east-cu2.node-fnf.xyz, port: 50110, type: vmess, uuid: 0eefa5b3-fe64-3319-ba6c-f4df1c2d9304, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "台HiNet1[x0.75|NF|V2Ray]@480Mbps", server: br-cn-south-cu1.node-fnf.xyz, port: 10202, type: vmess, uuid: 0eefa5b3-fe64-3319-ba6c-f4df1c2d9304, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "台HiNet4[x0.75|NF|V2Ray]@480Mbps", server: br-cn-east-cu1.node-fnf.xyz, port: 10208, type: vmess, uuid: 0eefa5b3-fe64-3319-ba6c-f4df1c2d9304, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "越FPT1[x0.75|NF|V2Ray]@480Mbps", server: br-cn-south-cu1.node-fnf.xyz, port: 25062, type: vmess, uuid: 0eefa5b3-fe64-3319-ba6c-f4df1c2d9304, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 标准|日本02解锁|T506, server: tanz-unicom.0098dns01in.work, port: 35006, type: vmess, uuid: b83d0e8b-f4e6-3988-b45e-cc96400f0bc6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "泰[x0.75|NF|V2Ray]@480Mbps", server: br-cn-south-cu1.node-fnf.xyz, port: 25042, type: vmess, uuid: 0eefa5b3-fe64-3319-ba6c-f4df1c2d9304, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 标准|印度01|T519, server: tanz-unicom.0098dns01in.work, port: 35021, type: vmess, uuid: b83d0e8b-f4e6-3988-b45e-cc96400f0bc6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "瑞典[x1|NF|V2Ray]@240Mbps", server: br-cn-east-cu1.node-fnf.xyz, port: 15104, type: vmess, uuid: 0eefa5b3-fe64-3319-ba6c-f4df1c2d9304, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "印AWS1[x1|V2Ray]@480Mbps", server: br-cn-south-cu1.node-fnf.xyz, port: 10502, type: vmess, uuid: 0eefa5b3-fe64-3319-ba6c-f4df1c2d9304, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 标准|香港02解锁|T508, server: tanz-moble.0098dns01in.work, port: 35010, type: vmess, uuid: b83d0e8b-f4e6-3988-b45e-cc96400f0bc6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "菲[x0.75|NF|V2Ray]@480Mbps", server: br-cn-south-cu1.node-fnf.xyz, port: 25032, type: vmess, uuid: 0eefa5b3-fe64-3319-ba6c-f4df1c2d9304, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "阿联酋AZ1[x1|V2Ray]@80Mbps", server: br-cn-south-cu1.node-fnf.xyz, port: 25014, type: vmess, uuid: 0eefa5b3-fe64-3319-ba6c-f4df1c2d9304, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 标准|德国01|T515, server: tanz-unicom.0098dns01in.work, port: 35017, type: vmess, uuid: b83d0e8b-f4e6-3988-b45e-cc96400f0bc6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 标准|英国01|T521, server: tanz-unicom.0098dns01in.work, port: 35023, type: vmess, uuid: b83d0e8b-f4e6-3988-b45e-cc96400f0bc6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "韩AWS1[x0.75|V2Ray]@1Gbps", server: br-cn-east-cu1.node-fnf.xyz, port: 10402, type: vmess, uuid: 0eefa5b3-fe64-3319-ba6c-f4df1c2d9304, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 标准|新加坡01解锁|T511, server: tanz-moble.0098dns01in.work, port: 35013, type: vmess, uuid: b83d0e8b-f4e6-3988-b45e-cc96400f0bc6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 标准|中国台湾04解锁|T604, server: tanz-moble.0098dns01in.work, port: 35070, type: vmess, uuid: b83d0e8b-f4e6-3988-b45e-cc96400f0bc6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "新SI1[x0.75|NF|V2Ray]@1Gbps", server: br-cn-south-cm1.node-fnf.xyz, port: 10214, type: vmess, uuid: 0eefa5b3-fe64-3319-ba6c-f4df1c2d9304, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "韩AWS2[x0.75|V2Ray]@1Gbps", server: br-cn-east-cu1.node-fnf.xyz, port: 10406, type: vmess, uuid: 0eefa5b3-fe64-3319-ba6c-f4df1c2d9304, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "台HiNet2[x0.75|NF|V2Ray]@480Mbps", server: br-cn-south-cu1.node-fnf.xyz, port: 10204, type: vmess, uuid: 0eefa5b3-fe64-3319-ba6c-f4df1c2d9304, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "澳大利亚NP1[x1|NF|V2Ray]@480Mbps", server: br-cn-south-cu1.node-fnf.xyz, port: 25072, type: vmess, uuid: 0eefa5b3-fe64-3319-ba6c-f4df1c2d9304, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 标准|美国01解锁|T503, server: tanz-unicom.0098dns01in.work, port: 35019, type: vmess, uuid: b83d0e8b-f4e6-3988-b45e-cc96400f0bc6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 标准|中国台湾03解锁|T603, server: tanz-moble.0098dns01in.work, port: 35069, type: vmess, uuid: b83d0e8b-f4e6-3988-b45e-cc96400f0bc6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 标准|英国02|T522, server: tanz-unicom.0098dns01in.work, port: 35034, type: vmess, uuid: b83d0e8b-f4e6-3988-b45e-cc96400f0bc6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 标准|中国台湾05解锁|T605, server: tanz-moble.0098dns01in.work, port: 35071, type: vmess, uuid: b83d0e8b-f4e6-3988-b45e-cc96400f0bc6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "港HKT2[x0.75|NF|V2Ray]@1Gbps", server: br-cn-south-iepl1.node-fnf.xyz, port: 10104, type: vmess, uuid: 0eefa5b3-fe64-3319-ba6c-f4df1c2d9304, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "日AWS1[x0.75|NF*|V2Ray]@1Gbps", server: br-cn-east-cu1.node-fnf.xyz, port: 10302, type: vmess, uuid: 0eefa5b3-fe64-3319-ba6c-f4df1c2d9304, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "马来西亚TM1[x0.75|NF|V2Ray]@240Mbps", server: br-cn-south-cu1.node-fnf.xyz, port: 25052, type: vmess, uuid: 0eefa5b3-fe64-3319-ba6c-f4df1c2d9304, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "新AWS2[x0.75|NF*|V2Ray]@1Gbps", server: br-cn-south-cm1.node-fnf.xyz, port: 10218, type: vmess, uuid: 0eefa5b3-fe64-3319-ba6c-f4df1c2d9304, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "新AWS1[x0.75|NF*|V2Ray]@1Gbps", server: br-cn-south-cm1.node-fnf.xyz, port: 10216, type: vmess, uuid: 0eefa5b3-fe64-3319-ba6c-f4df1c2d9304, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 标准|新加坡02解锁|T512, server: tanz-moble.0098dns01in.work, port: 35014, type: vmess, uuid: b83d0e8b-f4e6-3988-b45e-cc96400f0bc6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 标准|德国02|T516, server: tanz-unicom.0098dns01in.work, port: 35018, type: vmess, uuid: b83d0e8b-f4e6-3988-b45e-cc96400f0bc6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "印尼西亚PT1[x0.75|NF|V2Ray]@80Mbps", server: br-cn-south-cu1.node-fnf.xyz, port: 25034, type: vmess, uuid: 0eefa5b3-fe64-3319-ba6c-f4df1c2d9304, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美國-费利蒙, server: us2.tcpbbr.net, port: 443, type: trojan, password: 2e5f2a78-14d8-11eb-ad8c-f23c9164ca5d, sni: us2.tcpbbr.net, skip-cert-verify: true, udp: true}
-  - {name: 港WTT, server: ssl.tcpbbr.net, port: 443, type: trojan, password: 5a3d9b78-cb5b-11ea-82ef-f23c9164ca5d, sni: ssl.tcpbbr.net, skip-cert-verify: true, udp: true}
-  - {name: 美國-费利蒙 2, server: us2.tcpbbr.net, port: 443, type: trojan, password: 283695dc-fcc8-11ea-8684-f23c913c8d2b, sni: us2.tcpbbr.net, skip-cert-verify: true, udp: true}
-  - {name: 港WTT 2, server: ssl.tcpbbr.net, port: 443, type: trojan, password: 2e5f2a78-14d8-11eb-ad8c-f23c9164ca5d, sni: ssl.tcpbbr.net, skip-cert-verify: true, udp: true}
+  - {name: SG_油管 TG 8度科技, server: sp1.peakerselling.com, port: 443, type: vmess, uuid: d3435521-3d1f-37f7-ab48-f5302bc6a4fb, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /helloman, ws-headers: {Host: t.me/p2psharing}, udp: true}
+  - {name: HK_油管 TG 8度科技, server: hk4.peakerselling.com, port: 443, type: vmess, uuid: d3435521-3d1f-37f7-ab48-f5302bc6a4fb, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /helloman, ws-headers: {Host: t.me/p2psharing}, udp: true}
+  - {name: HK_油管 TG 8度科技 2, server: hk3.peakerselling.com, port: 443, type: vmess, uuid: d3435521-3d1f-37f7-ab48-f5302bc6a4fb, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /helloman, ws-headers: {Host: t.me/p2psharing}, udp: true}
+  - {name: CN_油管 TG 8度科技, server: 120.233.147.118, port: 56390, type: vmess, uuid: 238076fe-3293-36a4-b2f3-e0de8cac58fa, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: usaarm1.oracleusa.ml}, udp: true}
+  - {name: CN_油管 TG 8度科技 2, server: 120.233.147.118, port: 58938, type: vmess, uuid: 6afa4121-9eed-3049-a8d2-54ac3e40aac7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: uae.oracleusa.ml}, udp: true}
+  - {name: CN_油管 TG 8度科技 3, server: 120.233.147.118, port: 53962, type: vmess, uuid: 6afa4121-9eed-3049-a8d2-54ac3e40aac7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: sw.oracleusa.ml}, udp: true}
+  - {name: HK_油管 TG 8度科技 3, server: 0314hk99.fans8.xyz, port: 443, type: vmess, uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c, alterId: 3, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ray, ws-headers: {Host: 0314hk99.fans8.xyz}, udp: true}
+  - {name: TW_油管 TG 8度科技, server: 0319tw123.fans8.xyz, port: 443, type: vmess, uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c, alterId: 2, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /nmsl, ws-headers: {Host: 0319tw123.fans8.xyz}, udp: true}
+  - {name: VN_油管 TG 8度科技, server: 0319hzm01.fans8.xyz, port: 443, type: vmess, uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c, alterId: 2, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /nmsl, ws-headers: {Host: 0319hzm01.fans8.xyz}, udp: true}
+  - {name: null_油管 TG 8度科技, server: 0316ro.fans8.xyz, port: 443, type: vmess, uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c, alterId: 3, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ray, ws-headers: {Host: 0316ro.fans8.xyz}, udp: true}
+  - {name: US_油管 TG 8度科技, server: cloudflare.xrenblog.com, port: 443, type: vmess, uuid: 6c175d1a-a57f-4881-a471-173eb139694b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /xrenblog/, ws-headers: {Host: ipv6.xrenblog.com}, udp: true}
+  - {name: TW_油管 TG 8度科技 2, server: 0314tw02.fans8.xyz, port: 443, type: vmess, uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c, alterId: 2, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ray, ws-headers: {Host: 0314tw02.fans8.xyz}, udp: true}
+  - {name: HK_油管 TG 8度科技 4, server: 23.99.123.83, port: 8020, type: vmess, uuid: f418d354-ad37-3e47-9de4-1d379ccf4a3b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: usa.oracleusa.ml}, udp: true}
+  - {name: US_油管 TG 8度科技 2, server: 20.212.220.101, port: 8004, type: vmess, uuid: ae415d25-6b4d-347f-8fce-379c86b8ad6a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: ex.oracleusa.ml}, udp: true}
+  - {name: US_油管 TG 8度科技 3, server: 138.2.9.117, port: 80, type: vmess, uuid: b2dc243c-db04-4190-a2c3-f8db738cc38d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 138.2.9.117}, udp: true}
+  - {name: JP_油管 TG 8度科技, server: 0320jp.fans8.xyz, port: 443, type: vmess, uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c, alterId: 2, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ray, ws-headers: {Host: 0320jp.fans8.xyz}, udp: true}
+  - {name: CN_油管 TG 8度科技 4, server: 120.233.147.118, port: 20556, type: vmess, uuid: 6afa4121-9eed-3049-a8d2-54ac3e40aac7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: usaadm.oracleusa.ml}, udp: true}
+  - {name: TW_油管 TG 8度科技 3, server: 0314tw01.fans8.xyz, port: 443, type: vmess, uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c, alterId: 2, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ray, ws-headers: {Host: 0314tw01.fans8.xyz}, udp: true}
+  - {name: SG_油管 TG 8度科技 2, server: ycy.gzhpxb.com, port: 49101, type: ss, cipher: aes-128-gcm, password: yangchaoyue, udp: true}
+  - {name: US_油管 TG 8度科技 4, server: 167.88.61.175, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: US_油管 TG 8度科技 5, server: excited.zemin.life, port: 51490, type: ss, cipher: aes-128-gcm, password: yangchaoyue, udp: true}
+  - {name: RO_油管 TG 8度科技, server: 62.216.91.229, port: 9080, type: ss, cipher: aes-256-cfb, password: VP8ZPxQpJtZRCjfZ, udp: true}
+  - {name: JP_油管 TG 8度科技 2, server: 85.208.108.234, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: CA_油管 TG 8度科技, server: 134.195.196.68, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: CA_油管 TG 8度科技 2, server: 134.195.196.3, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: US_油管 TG 8度科技 6, server: kr2.qingyun123.xyz, port: 10050, type: trojan, password: 2bbee0bf-d920-4572-b87b-eac67ba69736, sni: kr2.qingyun123.xyz, skip-cert-verify: true, udp: true}
+  - {name: JP_油管 TG 8度科技 3, server: jgwdb4.gaox.ml, port: 443, type: trojan, password: d06a3f01-1ff0-4792-9b8e-a5a604bc74a2, sni: jgwdb4.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: JP_油管 TG 8度科技 4, server: jgwdb1.gaox.ml, port: 443, type: trojan, password: a580d839-ee41-4df1-bf03-6789dca32e30, sni: jgwdb1.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: US_油管 TG 8度科技 7, server: us2.tcpbbr.net, port: 443, type: trojan, password: 5a3d9b78-cb5b-11ea-82ef-f23c9164ca5d, sni: us2.tcpbbr.net, skip-cert-verify: true, udp: true}
+  - {name: CA_油管 TG 8度科技 3, server: ca1.qingyun123.xyz, port: 10050, type: trojan, password: 2bbee0bf-d920-4572-b87b-eac67ba69736, sni: ca1.qingyun123.xyz, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 日AWS2[x0.75|NF*|V2Ray]@1Gbps
-      - 日AWS3[x0.1|福利|NF*|V2Ray]@240Mbps
-      - 台HiNet1[x0.75|NF|V2Ray]@480Mbps
-      - 台HiNet4[x0.75|NF|V2Ray]@480Mbps
-      - 越FPT1[x0.75|NF|V2Ray]@480Mbps
-      - 标准|日本02解锁|T506
-      - 泰[x0.75|NF|V2Ray]@480Mbps
-      - 标准|印度01|T519
-      - 瑞典[x1|NF|V2Ray]@240Mbps
-      - 印AWS1[x1|V2Ray]@480Mbps
-      - 标准|香港02解锁|T508
-      - 菲[x0.75|NF|V2Ray]@480Mbps
-      - 阿联酋AZ1[x1|V2Ray]@80Mbps
-      - 标准|德国01|T515
-      - 标准|英国01|T521
-      - 韩AWS1[x0.75|V2Ray]@1Gbps
-      - 标准|新加坡01解锁|T511
-      - 标准|中国台湾04解锁|T604
-      - 新SI1[x0.75|NF|V2Ray]@1Gbps
-      - 韩AWS2[x0.75|V2Ray]@1Gbps
-      - 台HiNet2[x0.75|NF|V2Ray]@480Mbps
-      - 澳大利亚NP1[x1|NF|V2Ray]@480Mbps
-      - 标准|美国01解锁|T503
-      - 标准|中国台湾03解锁|T603
-      - 标准|英国02|T522
-      - 标准|中国台湾05解锁|T605
-      - 港HKT2[x0.75|NF|V2Ray]@1Gbps
-      - 日AWS1[x0.75|NF*|V2Ray]@1Gbps
-      - 马来西亚TM1[x0.75|NF|V2Ray]@240Mbps
-      - 新AWS2[x0.75|NF*|V2Ray]@1Gbps
-      - 新AWS1[x0.75|NF*|V2Ray]@1Gbps
-      - 标准|新加坡02解锁|T512
-      - 标准|德国02|T516
-      - 印尼西亚PT1[x0.75|NF|V2Ray]@80Mbps
-      - 美國-费利蒙
-      - 港WTT
-      - 美國-费利蒙 2
-      - 港WTT 2
+      - SG_油管 TG 8度科技
+      - HK_油管 TG 8度科技
+      - HK_油管 TG 8度科技 2
+      - CN_油管 TG 8度科技
+      - CN_油管 TG 8度科技 2
+      - CN_油管 TG 8度科技 3
+      - HK_油管 TG 8度科技 3
+      - TW_油管 TG 8度科技
+      - VN_油管 TG 8度科技
+      - null_油管 TG 8度科技
+      - US_油管 TG 8度科技
+      - TW_油管 TG 8度科技 2
+      - HK_油管 TG 8度科技 4
+      - US_油管 TG 8度科技 2
+      - US_油管 TG 8度科技 3
+      - JP_油管 TG 8度科技
+      - CN_油管 TG 8度科技 4
+      - TW_油管 TG 8度科技 3
+      - SG_油管 TG 8度科技 2
+      - US_油管 TG 8度科技 4
+      - US_油管 TG 8度科技 5
+      - RO_油管 TG 8度科技
+      - JP_油管 TG 8度科技 2
+      - CA_油管 TG 8度科技
+      - CA_油管 TG 8度科技 2
+      - US_油管 TG 8度科技 6
+      - JP_油管 TG 8度科技 3
+      - JP_油管 TG 8度科技 4
+      - US_油管 TG 8度科技 7
+      - CA_油管 TG 8度科技 3
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 日AWS2[x0.75|NF*|V2Ray]@1Gbps
-      - 日AWS3[x0.1|福利|NF*|V2Ray]@240Mbps
-      - 台HiNet1[x0.75|NF|V2Ray]@480Mbps
-      - 台HiNet4[x0.75|NF|V2Ray]@480Mbps
-      - 越FPT1[x0.75|NF|V2Ray]@480Mbps
-      - 标准|日本02解锁|T506
-      - 泰[x0.75|NF|V2Ray]@480Mbps
-      - 标准|印度01|T519
-      - 瑞典[x1|NF|V2Ray]@240Mbps
-      - 印AWS1[x1|V2Ray]@480Mbps
-      - 标准|香港02解锁|T508
-      - 菲[x0.75|NF|V2Ray]@480Mbps
-      - 阿联酋AZ1[x1|V2Ray]@80Mbps
-      - 标准|德国01|T515
-      - 标准|英国01|T521
-      - 韩AWS1[x0.75|V2Ray]@1Gbps
-      - 标准|新加坡01解锁|T511
-      - 标准|中国台湾04解锁|T604
-      - 新SI1[x0.75|NF|V2Ray]@1Gbps
-      - 韩AWS2[x0.75|V2Ray]@1Gbps
-      - 台HiNet2[x0.75|NF|V2Ray]@480Mbps
-      - 澳大利亚NP1[x1|NF|V2Ray]@480Mbps
-      - 标准|美国01解锁|T503
-      - 标准|中国台湾03解锁|T603
-      - 标准|英国02|T522
-      - 标准|中国台湾05解锁|T605
-      - 港HKT2[x0.75|NF|V2Ray]@1Gbps
-      - 日AWS1[x0.75|NF*|V2Ray]@1Gbps
-      - 马来西亚TM1[x0.75|NF|V2Ray]@240Mbps
-      - 新AWS2[x0.75|NF*|V2Ray]@1Gbps
-      - 新AWS1[x0.75|NF*|V2Ray]@1Gbps
-      - 标准|新加坡02解锁|T512
-      - 标准|德国02|T516
-      - 印尼西亚PT1[x0.75|NF|V2Ray]@80Mbps
-      - 美國-费利蒙
-      - 港WTT
-      - 美國-费利蒙 2
-      - 港WTT 2
+      - SG_油管 TG 8度科技
+      - HK_油管 TG 8度科技
+      - HK_油管 TG 8度科技 2
+      - CN_油管 TG 8度科技
+      - CN_油管 TG 8度科技 2
+      - CN_油管 TG 8度科技 3
+      - HK_油管 TG 8度科技 3
+      - TW_油管 TG 8度科技
+      - VN_油管 TG 8度科技
+      - null_油管 TG 8度科技
+      - US_油管 TG 8度科技
+      - TW_油管 TG 8度科技 2
+      - HK_油管 TG 8度科技 4
+      - US_油管 TG 8度科技 2
+      - US_油管 TG 8度科技 3
+      - JP_油管 TG 8度科技
+      - CN_油管 TG 8度科技 4
+      - TW_油管 TG 8度科技 3
+      - SG_油管 TG 8度科技 2
+      - US_油管 TG 8度科技 4
+      - US_油管 TG 8度科技 5
+      - RO_油管 TG 8度科技
+      - JP_油管 TG 8度科技 2
+      - CA_油管 TG 8度科技
+      - CA_油管 TG 8度科技 2
+      - US_油管 TG 8度科技 6
+      - JP_油管 TG 8度科技 3
+      - JP_油管 TG 8度科技 4
+      - US_油管 TG 8度科技 7
+      - CA_油管 TG 8度科技 3
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 日AWS2[x0.75|NF*|V2Ray]@1Gbps
-      - 日AWS3[x0.1|福利|NF*|V2Ray]@240Mbps
-      - 台HiNet1[x0.75|NF|V2Ray]@480Mbps
-      - 台HiNet4[x0.75|NF|V2Ray]@480Mbps
-      - 越FPT1[x0.75|NF|V2Ray]@480Mbps
-      - 标准|日本02解锁|T506
-      - 泰[x0.75|NF|V2Ray]@480Mbps
-      - 标准|印度01|T519
-      - 瑞典[x1|NF|V2Ray]@240Mbps
-      - 印AWS1[x1|V2Ray]@480Mbps
-      - 标准|香港02解锁|T508
-      - 菲[x0.75|NF|V2Ray]@480Mbps
-      - 阿联酋AZ1[x1|V2Ray]@80Mbps
-      - 标准|德国01|T515
-      - 标准|英国01|T521
-      - 韩AWS1[x0.75|V2Ray]@1Gbps
-      - 标准|新加坡01解锁|T511
-      - 标准|中国台湾04解锁|T604
-      - 新SI1[x0.75|NF|V2Ray]@1Gbps
-      - 韩AWS2[x0.75|V2Ray]@1Gbps
-      - 台HiNet2[x0.75|NF|V2Ray]@480Mbps
-      - 澳大利亚NP1[x1|NF|V2Ray]@480Mbps
-      - 标准|美国01解锁|T503
-      - 标准|中国台湾03解锁|T603
-      - 标准|英国02|T522
-      - 标准|中国台湾05解锁|T605
-      - 港HKT2[x0.75|NF|V2Ray]@1Gbps
-      - 日AWS1[x0.75|NF*|V2Ray]@1Gbps
-      - 马来西亚TM1[x0.75|NF|V2Ray]@240Mbps
-      - 新AWS2[x0.75|NF*|V2Ray]@1Gbps
-      - 新AWS1[x0.75|NF*|V2Ray]@1Gbps
-      - 标准|新加坡02解锁|T512
-      - 标准|德国02|T516
-      - 印尼西亚PT1[x0.75|NF|V2Ray]@80Mbps
-      - 美國-费利蒙
-      - 港WTT
-      - 美國-费利蒙 2
-      - 港WTT 2
+      - SG_油管 TG 8度科技
+      - HK_油管 TG 8度科技
+      - HK_油管 TG 8度科技 2
+      - CN_油管 TG 8度科技
+      - CN_油管 TG 8度科技 2
+      - CN_油管 TG 8度科技 3
+      - HK_油管 TG 8度科技 3
+      - TW_油管 TG 8度科技
+      - VN_油管 TG 8度科技
+      - null_油管 TG 8度科技
+      - US_油管 TG 8度科技
+      - TW_油管 TG 8度科技 2
+      - HK_油管 TG 8度科技 4
+      - US_油管 TG 8度科技 2
+      - US_油管 TG 8度科技 3
+      - JP_油管 TG 8度科技
+      - CN_油管 TG 8度科技 4
+      - TW_油管 TG 8度科技 3
+      - SG_油管 TG 8度科技 2
+      - US_油管 TG 8度科技 4
+      - US_油管 TG 8度科技 5
+      - RO_油管 TG 8度科技
+      - JP_油管 TG 8度科技 2
+      - CA_油管 TG 8度科技
+      - CA_油管 TG 8度科技 2
+      - US_油管 TG 8度科技 6
+      - JP_油管 TG 8度科技 3
+      - JP_油管 TG 8度科技 4
+      - US_油管 TG 8度科技 7
+      - CA_油管 TG 8度科技 3
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -192,189 +160,147 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 日AWS2[x0.75|NF*|V2Ray]@1Gbps
-      - 日AWS3[x0.1|福利|NF*|V2Ray]@240Mbps
-      - 台HiNet1[x0.75|NF|V2Ray]@480Mbps
-      - 台HiNet4[x0.75|NF|V2Ray]@480Mbps
-      - 越FPT1[x0.75|NF|V2Ray]@480Mbps
-      - 标准|日本02解锁|T506
-      - 泰[x0.75|NF|V2Ray]@480Mbps
-      - 标准|印度01|T519
-      - 瑞典[x1|NF|V2Ray]@240Mbps
-      - 印AWS1[x1|V2Ray]@480Mbps
-      - 标准|香港02解锁|T508
-      - 菲[x0.75|NF|V2Ray]@480Mbps
-      - 阿联酋AZ1[x1|V2Ray]@80Mbps
-      - 标准|德国01|T515
-      - 标准|英国01|T521
-      - 韩AWS1[x0.75|V2Ray]@1Gbps
-      - 标准|新加坡01解锁|T511
-      - 标准|中国台湾04解锁|T604
-      - 新SI1[x0.75|NF|V2Ray]@1Gbps
-      - 韩AWS2[x0.75|V2Ray]@1Gbps
-      - 台HiNet2[x0.75|NF|V2Ray]@480Mbps
-      - 澳大利亚NP1[x1|NF|V2Ray]@480Mbps
-      - 标准|美国01解锁|T503
-      - 标准|中国台湾03解锁|T603
-      - 标准|英国02|T522
-      - 标准|中国台湾05解锁|T605
-      - 港HKT2[x0.75|NF|V2Ray]@1Gbps
-      - 日AWS1[x0.75|NF*|V2Ray]@1Gbps
-      - 马来西亚TM1[x0.75|NF|V2Ray]@240Mbps
-      - 新AWS2[x0.75|NF*|V2Ray]@1Gbps
-      - 新AWS1[x0.75|NF*|V2Ray]@1Gbps
-      - 标准|新加坡02解锁|T512
-      - 标准|德国02|T516
-      - 印尼西亚PT1[x0.75|NF|V2Ray]@80Mbps
-      - 美國-费利蒙
-      - 港WTT
-      - 美國-费利蒙 2
-      - 港WTT 2
+      - SG_油管 TG 8度科技
+      - HK_油管 TG 8度科技
+      - HK_油管 TG 8度科技 2
+      - CN_油管 TG 8度科技
+      - CN_油管 TG 8度科技 2
+      - CN_油管 TG 8度科技 3
+      - HK_油管 TG 8度科技 3
+      - TW_油管 TG 8度科技
+      - VN_油管 TG 8度科技
+      - null_油管 TG 8度科技
+      - US_油管 TG 8度科技
+      - TW_油管 TG 8度科技 2
+      - HK_油管 TG 8度科技 4
+      - US_油管 TG 8度科技 2
+      - US_油管 TG 8度科技 3
+      - JP_油管 TG 8度科技
+      - CN_油管 TG 8度科技 4
+      - TW_油管 TG 8度科技 3
+      - SG_油管 TG 8度科技 2
+      - US_油管 TG 8度科技 4
+      - US_油管 TG 8度科技 5
+      - RO_油管 TG 8度科技
+      - JP_油管 TG 8度科技 2
+      - CA_油管 TG 8度科技
+      - CA_油管 TG 8度科技 2
+      - US_油管 TG 8度科技 6
+      - JP_油管 TG 8度科技 3
+      - JP_油管 TG 8度科技 4
+      - US_油管 TG 8度科技 7
+      - CA_油管 TG 8度科技 3
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 台HiNet1[x0.75|NF|V2Ray]@480Mbps
-      - 台HiNet4[x0.75|NF|V2Ray]@480Mbps
-      - 标准|香港02解锁|T508
-      - 标准|中国台湾04解锁|T604
-      - 台HiNet2[x0.75|NF|V2Ray]@480Mbps
-      - 标准|中国台湾03解锁|T603
-      - 标准|中国台湾05解锁|T605
-      - 港HKT2[x0.75|NF|V2Ray]@1Gbps
-      - 港WTT
-      - 港WTT 2
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 日AWS2[x0.75|NF*|V2Ray]@1Gbps
-      - 日AWS3[x0.1|福利|NF*|V2Ray]@240Mbps
-      - 台HiNet1[x0.75|NF|V2Ray]@480Mbps
-      - 台HiNet4[x0.75|NF|V2Ray]@480Mbps
-      - 越FPT1[x0.75|NF|V2Ray]@480Mbps
-      - 标准|日本02解锁|T506
-      - 泰[x0.75|NF|V2Ray]@480Mbps
-      - 标准|印度01|T519
-      - 瑞典[x1|NF|V2Ray]@240Mbps
-      - 印AWS1[x1|V2Ray]@480Mbps
-      - 标准|香港02解锁|T508
-      - 菲[x0.75|NF|V2Ray]@480Mbps
-      - 阿联酋AZ1[x1|V2Ray]@80Mbps
-      - 标准|德国01|T515
-      - 标准|英国01|T521
-      - 韩AWS1[x0.75|V2Ray]@1Gbps
-      - 标准|新加坡01解锁|T511
-      - 标准|中国台湾04解锁|T604
-      - 新SI1[x0.75|NF|V2Ray]@1Gbps
-      - 韩AWS2[x0.75|V2Ray]@1Gbps
-      - 台HiNet2[x0.75|NF|V2Ray]@480Mbps
-      - 澳大利亚NP1[x1|NF|V2Ray]@480Mbps
-      - 标准|美国01解锁|T503
-      - 标准|中国台湾03解锁|T603
-      - 标准|英国02|T522
-      - 标准|中国台湾05解锁|T605
-      - 港HKT2[x0.75|NF|V2Ray]@1Gbps
-      - 日AWS1[x0.75|NF*|V2Ray]@1Gbps
-      - 马来西亚TM1[x0.75|NF|V2Ray]@240Mbps
-      - 新AWS2[x0.75|NF*|V2Ray]@1Gbps
-      - 新AWS1[x0.75|NF*|V2Ray]@1Gbps
-      - 标准|新加坡02解锁|T512
-      - 标准|德国02|T516
-      - 印尼西亚PT1[x0.75|NF|V2Ray]@80Mbps
-      - 美國-费利蒙
-      - 港WTT
-      - 美國-费利蒙 2
-      - 港WTT 2
+      - SG_油管 TG 8度科技
+      - HK_油管 TG 8度科技
+      - HK_油管 TG 8度科技 2
+      - CN_油管 TG 8度科技
+      - CN_油管 TG 8度科技 2
+      - CN_油管 TG 8度科技 3
+      - HK_油管 TG 8度科技 3
+      - TW_油管 TG 8度科技
+      - VN_油管 TG 8度科技
+      - null_油管 TG 8度科技
+      - US_油管 TG 8度科技
+      - TW_油管 TG 8度科技 2
+      - HK_油管 TG 8度科技 4
+      - US_油管 TG 8度科技 2
+      - US_油管 TG 8度科技 3
+      - JP_油管 TG 8度科技
+      - CN_油管 TG 8度科技 4
+      - TW_油管 TG 8度科技 3
+      - SG_油管 TG 8度科技 2
+      - US_油管 TG 8度科技 4
+      - US_油管 TG 8度科技 5
+      - RO_油管 TG 8度科技
+      - JP_油管 TG 8度科技 2
+      - CA_油管 TG 8度科技
+      - CA_油管 TG 8度科技 2
+      - US_油管 TG 8度科技 6
+      - JP_油管 TG 8度科技 3
+      - JP_油管 TG 8度科技 4
+      - US_油管 TG 8度科技 7
+      - CA_油管 TG 8度科技 3
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 日AWS2[x0.75|NF*|V2Ray]@1Gbps
-      - 日AWS3[x0.1|福利|NF*|V2Ray]@240Mbps
-      - 台HiNet1[x0.75|NF|V2Ray]@480Mbps
-      - 台HiNet4[x0.75|NF|V2Ray]@480Mbps
-      - 越FPT1[x0.75|NF|V2Ray]@480Mbps
-      - 标准|日本02解锁|T506
-      - 泰[x0.75|NF|V2Ray]@480Mbps
-      - 标准|印度01|T519
-      - 瑞典[x1|NF|V2Ray]@240Mbps
-      - 印AWS1[x1|V2Ray]@480Mbps
-      - 标准|香港02解锁|T508
-      - 菲[x0.75|NF|V2Ray]@480Mbps
-      - 阿联酋AZ1[x1|V2Ray]@80Mbps
-      - 标准|德国01|T515
-      - 标准|英国01|T521
-      - 韩AWS1[x0.75|V2Ray]@1Gbps
-      - 标准|新加坡01解锁|T511
-      - 标准|中国台湾04解锁|T604
-      - 新SI1[x0.75|NF|V2Ray]@1Gbps
-      - 韩AWS2[x0.75|V2Ray]@1Gbps
-      - 台HiNet2[x0.75|NF|V2Ray]@480Mbps
-      - 澳大利亚NP1[x1|NF|V2Ray]@480Mbps
-      - 标准|美国01解锁|T503
-      - 标准|中国台湾03解锁|T603
-      - 标准|英国02|T522
-      - 标准|中国台湾05解锁|T605
-      - 港HKT2[x0.75|NF|V2Ray]@1Gbps
-      - 日AWS1[x0.75|NF*|V2Ray]@1Gbps
-      - 马来西亚TM1[x0.75|NF|V2Ray]@240Mbps
-      - 新AWS2[x0.75|NF*|V2Ray]@1Gbps
-      - 新AWS1[x0.75|NF*|V2Ray]@1Gbps
-      - 标准|新加坡02解锁|T512
-      - 标准|德国02|T516
-      - 印尼西亚PT1[x0.75|NF|V2Ray]@80Mbps
-      - 美國-费利蒙
-      - 港WTT
-      - 美國-费利蒙 2
-      - 港WTT 2
+      - SG_油管 TG 8度科技
+      - HK_油管 TG 8度科技
+      - HK_油管 TG 8度科技 2
+      - CN_油管 TG 8度科技
+      - CN_油管 TG 8度科技 2
+      - CN_油管 TG 8度科技 3
+      - HK_油管 TG 8度科技 3
+      - TW_油管 TG 8度科技
+      - VN_油管 TG 8度科技
+      - null_油管 TG 8度科技
+      - US_油管 TG 8度科技
+      - TW_油管 TG 8度科技 2
+      - HK_油管 TG 8度科技 4
+      - US_油管 TG 8度科技 2
+      - US_油管 TG 8度科技 3
+      - JP_油管 TG 8度科技
+      - CN_油管 TG 8度科技 4
+      - TW_油管 TG 8度科技 3
+      - SG_油管 TG 8度科技 2
+      - US_油管 TG 8度科技 4
+      - US_油管 TG 8度科技 5
+      - RO_油管 TG 8度科技
+      - JP_油管 TG 8度科技 2
+      - CA_油管 TG 8度科技
+      - CA_油管 TG 8度科技 2
+      - US_油管 TG 8度科技 6
+      - JP_油管 TG 8度科技 3
+      - JP_油管 TG 8度科技 4
+      - US_油管 TG 8度科技 7
+      - CA_油管 TG 8度科技 3
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 日AWS2[x0.75|NF*|V2Ray]@1Gbps
-      - 日AWS3[x0.1|福利|NF*|V2Ray]@240Mbps
-      - 台HiNet1[x0.75|NF|V2Ray]@480Mbps
-      - 台HiNet4[x0.75|NF|V2Ray]@480Mbps
-      - 越FPT1[x0.75|NF|V2Ray]@480Mbps
-      - 标准|日本02解锁|T506
-      - 泰[x0.75|NF|V2Ray]@480Mbps
-      - 标准|印度01|T519
-      - 瑞典[x1|NF|V2Ray]@240Mbps
-      - 印AWS1[x1|V2Ray]@480Mbps
-      - 标准|香港02解锁|T508
-      - 菲[x0.75|NF|V2Ray]@480Mbps
-      - 阿联酋AZ1[x1|V2Ray]@80Mbps
-      - 标准|德国01|T515
-      - 标准|英国01|T521
-      - 韩AWS1[x0.75|V2Ray]@1Gbps
-      - 标准|新加坡01解锁|T511
-      - 标准|中国台湾04解锁|T604
-      - 新SI1[x0.75|NF|V2Ray]@1Gbps
-      - 韩AWS2[x0.75|V2Ray]@1Gbps
-      - 台HiNet2[x0.75|NF|V2Ray]@480Mbps
-      - 澳大利亚NP1[x1|NF|V2Ray]@480Mbps
-      - 标准|美国01解锁|T503
-      - 标准|中国台湾03解锁|T603
-      - 标准|英国02|T522
-      - 标准|中国台湾05解锁|T605
-      - 港HKT2[x0.75|NF|V2Ray]@1Gbps
-      - 日AWS1[x0.75|NF*|V2Ray]@1Gbps
-      - 马来西亚TM1[x0.75|NF|V2Ray]@240Mbps
-      - 新AWS2[x0.75|NF*|V2Ray]@1Gbps
-      - 新AWS1[x0.75|NF*|V2Ray]@1Gbps
-      - 标准|新加坡02解锁|T512
-      - 标准|德国02|T516
-      - 印尼西亚PT1[x0.75|NF|V2Ray]@80Mbps
-      - 美國-费利蒙
-      - 港WTT
-      - 美國-费利蒙 2
-      - 港WTT 2
+      - SG_油管 TG 8度科技
+      - HK_油管 TG 8度科技
+      - HK_油管 TG 8度科技 2
+      - CN_油管 TG 8度科技
+      - CN_油管 TG 8度科技 2
+      - CN_油管 TG 8度科技 3
+      - HK_油管 TG 8度科技 3
+      - TW_油管 TG 8度科技
+      - VN_油管 TG 8度科技
+      - null_油管 TG 8度科技
+      - US_油管 TG 8度科技
+      - TW_油管 TG 8度科技 2
+      - HK_油管 TG 8度科技 4
+      - US_油管 TG 8度科技 2
+      - US_油管 TG 8度科技 3
+      - JP_油管 TG 8度科技
+      - CN_油管 TG 8度科技 4
+      - TW_油管 TG 8度科技 3
+      - SG_油管 TG 8度科技 2
+      - US_油管 TG 8度科技 4
+      - US_油管 TG 8度科技 5
+      - RO_油管 TG 8度科技
+      - JP_油管 TG 8度科技 2
+      - CA_油管 TG 8度科技
+      - CA_油管 TG 8度科技 2
+      - US_油管 TG 8度科技 6
+      - JP_油管 TG 8度科技 3
+      - JP_油管 TG 8度科技 4
+      - US_油管 TG 8度科技 7
+      - CA_油管 TG 8度科技 3
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -390,44 +316,36 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 日AWS2[x0.75|NF*|V2Ray]@1Gbps
-      - 日AWS3[x0.1|福利|NF*|V2Ray]@240Mbps
-      - 台HiNet1[x0.75|NF|V2Ray]@480Mbps
-      - 台HiNet4[x0.75|NF|V2Ray]@480Mbps
-      - 越FPT1[x0.75|NF|V2Ray]@480Mbps
-      - 标准|日本02解锁|T506
-      - 泰[x0.75|NF|V2Ray]@480Mbps
-      - 标准|印度01|T519
-      - 瑞典[x1|NF|V2Ray]@240Mbps
-      - 印AWS1[x1|V2Ray]@480Mbps
-      - 标准|香港02解锁|T508
-      - 菲[x0.75|NF|V2Ray]@480Mbps
-      - 阿联酋AZ1[x1|V2Ray]@80Mbps
-      - 标准|德国01|T515
-      - 标准|英国01|T521
-      - 韩AWS1[x0.75|V2Ray]@1Gbps
-      - 标准|新加坡01解锁|T511
-      - 标准|中国台湾04解锁|T604
-      - 新SI1[x0.75|NF|V2Ray]@1Gbps
-      - 韩AWS2[x0.75|V2Ray]@1Gbps
-      - 台HiNet2[x0.75|NF|V2Ray]@480Mbps
-      - 澳大利亚NP1[x1|NF|V2Ray]@480Mbps
-      - 标准|美国01解锁|T503
-      - 标准|中国台湾03解锁|T603
-      - 标准|英国02|T522
-      - 标准|中国台湾05解锁|T605
-      - 港HKT2[x0.75|NF|V2Ray]@1Gbps
-      - 日AWS1[x0.75|NF*|V2Ray]@1Gbps
-      - 马来西亚TM1[x0.75|NF|V2Ray]@240Mbps
-      - 新AWS2[x0.75|NF*|V2Ray]@1Gbps
-      - 新AWS1[x0.75|NF*|V2Ray]@1Gbps
-      - 标准|新加坡02解锁|T512
-      - 标准|德国02|T516
-      - 印尼西亚PT1[x0.75|NF|V2Ray]@80Mbps
-      - 美國-费利蒙
-      - 港WTT
-      - 美國-费利蒙 2
-      - 港WTT 2
+      - SG_油管 TG 8度科技
+      - HK_油管 TG 8度科技
+      - HK_油管 TG 8度科技 2
+      - CN_油管 TG 8度科技
+      - CN_油管 TG 8度科技 2
+      - CN_油管 TG 8度科技 3
+      - HK_油管 TG 8度科技 3
+      - TW_油管 TG 8度科技
+      - VN_油管 TG 8度科技
+      - null_油管 TG 8度科技
+      - US_油管 TG 8度科技
+      - TW_油管 TG 8度科技 2
+      - HK_油管 TG 8度科技 4
+      - US_油管 TG 8度科技 2
+      - US_油管 TG 8度科技 3
+      - JP_油管 TG 8度科技
+      - CN_油管 TG 8度科技 4
+      - TW_油管 TG 8度科技 3
+      - SG_油管 TG 8度科技 2
+      - US_油管 TG 8度科技 4
+      - US_油管 TG 8度科技 5
+      - RO_油管 TG 8度科技
+      - JP_油管 TG 8度科技 2
+      - CA_油管 TG 8度科技
+      - CA_油管 TG 8度科技 2
+      - US_油管 TG 8度科技 6
+      - JP_油管 TG 8度科技 3
+      - JP_油管 TG 8度科技 4
+      - US_油管 TG 8度科技 7
+      - CA_油管 TG 8度科技 3
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
