@@ -5,183 +5,343 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: _null_null, server: 0316ro.fans8.xyz, port: 443, type: vmess, uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c, alterId: 3, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ray, ws-headers: {Host: 0316ro.fans8.xyz}, udp: true}
-  - {name: lindoe日本|三网优化|1x, server: cs.daxun.club, port: 20631, type: vmess, uuid: d2f7e67f-7473-4a97-8c5d-927a296aca35, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /lindoerb01, ws-headers: {Host: cs.daxun.club}, udp: true}
-  - {name: 澳大利亚01|三网优化|1x, server: cs.daxun.club, port: 20631, type: vmess, uuid: d2f7e67f-7473-4a97-8c5d-927a296aca35, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /AUS01, ws-headers: {Host: cs.daxun.club}, udp: true}
-  - {name: 澳大利亚02|三网优化|1x, server: cs.daxun.club, port: 20631, type: vmess, uuid: d2f7e67f-7473-4a97-8c5d-927a296aca35, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /AUS02, ws-headers: {Host: cs.daxun.club}, udp: true}
-  - {name: 德国|三网优化|1x, server: cs.daxun.club, port: 20631, type: vmess, uuid: d2f7e67f-7473-4a97-8c5d-927a296aca35, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /dg01, ws-headers: {Host: cs.daxun.club}, udp: true}
-  - {name: 东京|优选原生IP|1x, server: cs.daxun.club, port: 20631, type: vmess, uuid: d2f7e67f-7473-4a97-8c5d-927a296aca35, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /dj01, ws-headers: {Host: cs.daxun.club}, udp: true}
-  - {name: 俄罗斯|三网优化|1x, server: cs.daxun.club, port: 20631, type: vmess, uuid: d2f7e67f-7473-4a97-8c5d-927a296aca35, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /els01, ws-headers: {Host: cs.daxun.club}, udp: true}
-  - {name: 韩国|优选原生IP|1x, server: cs.daxun.club, port: 20631, type: vmess, uuid: d2f7e67f-7473-4a97-8c5d-927a296aca35, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jgwhg01, ws-headers: {Host: cs.daxun.club}, udp: true}
-  - {name: 加拿大01|三网优化|1x, server: cs.daxun.club, port: 20631, type: vmess, uuid: d2f7e67f-7473-4a97-8c5d-927a296aca35, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /canada01, ws-headers: {Host: cs.daxun.club}, udp: true}
-  - {name: 加拿大02|三网优化|1x, server: cs.daxun.club, port: 20631, type: vmess, uuid: d2f7e67f-7473-4a97-8c5d-927a296aca35, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /canada02, ws-headers: {Host: cs.daxun.club}, udp: true}
-  - {name: 马来西亚|三网优化|优选原生IP|1x, server: cs.daxun.club, port: 20631, type: vmess, uuid: d2f7e67f-7473-4a97-8c5d-927a296aca35, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /mlxy008, ws-headers: {Host: cs.daxun.club}, udp: true}
-  - {name: 美国01|三网优化|1x, server: cs.daxun.club, port: 20631, type: vmess, uuid: d2f7e67f-7473-4a97-8c5d-927a296aca35, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /cere01, ws-headers: {Host: cs.daxun.club}, udp: true}
-  - {name: 美国02|三网优化|1x, server: cs.daxun.club, port: 20631, type: vmess, uuid: d2f7e67f-7473-4a97-8c5d-927a296aca35, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /cere02, ws-headers: {Host: cs.daxun.club}, udp: true}
-  - {name: 美国03|三网优化|1x, server: cs.daxun.club, port: 20631, type: vmess, uuid: d2f7e67f-7473-4a97-8c5d-927a296aca35, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /cere03, ws-headers: {Host: cs.daxun.club}, udp: true}
-  - {name: 美国04|三网优化|1x, server: cs.daxun.club, port: 20631, type: vmess, uuid: d2f7e67f-7473-4a97-8c5d-927a296aca35, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /usa04, ws-headers: {Host: cs.daxun.club}, udp: true}
-  - {name: 日本01|三网优化|1x, server: cs.daxun.club, port: 20631, type: vmess, uuid: d2f7e67f-7473-4a97-8c5d-927a296aca35, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /linodejp01, ws-headers: {Host: cs.daxun.club}, udp: true}
-  - {name: 日本02|三网优化|1x, server: cs.daxun.club, port: 20631, type: vmess, uuid: d2f7e67f-7473-4a97-8c5d-927a296aca35, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: linodejp02, ws-headers: {Host: cs.daxun.club}, udp: true}
-  - {name: 日本03|三网优化|1x, server: cs.daxun.club, port: 20631, type: vmess, uuid: d2f7e67f-7473-4a97-8c5d-927a296aca35, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: linodejp03, ws-headers: {Host: cs.daxun.club}, udp: true}
-  - {name: 日本04|三网优化|1x, server: cs.daxun.club, port: 20631, type: vmess, uuid: d2f7e67f-7473-4a97-8c5d-927a296aca35, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /japanese01, ws-headers: {Host: cs.daxun.club}, udp: true}
-  - {name: 日本05|三网优化|1x, server: cs.daxun.club, port: 20631, type: vmess, uuid: d2f7e67f-7473-4a97-8c5d-927a296aca35, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /japanese02, ws-headers: {Host: cs.daxun.club}, udp: true}
-  - {name: 日本06|三网优化|1x, server: cs.daxun.club, port: 20631, type: vmess, uuid: d2f7e67f-7473-4a97-8c5d-927a296aca35, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /japanese03, ws-headers: {Host: cs.daxun.club}, udp: true}
-  - {name: 台湾04|三网优化|原生IP|1x, server: cs.daxun.club, port: 20631, type: vmess, uuid: d2f7e67f-7473-4a97-8c5d-927a296aca35, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hinet04, ws-headers: {Host: cs.daxun.club}, udp: true}
-  - {name: 香港04|负载均衡|原生IP|1x, server: cs.daxun.club, port: 20631, type: vmess, uuid: d2f7e67f-7473-4a97-8c5d-927a296aca35, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hkt008, ws-headers: {Host: cs.daxun.club}, udp: true}
-  - {name: 香港阿里云@vpnhat, server: 47.243.42.106, port: 80, type: vmess, uuid: 4df7092c-aeea-3256-a156-f8ca3d094f2b, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: t.me/vppool}, udp: true}
-  - {name: 香港阿里云@vpnhat 2, server: 47.243.252.67, port: 80, type: vmess, uuid: 4df7092c-aeea-3256-a156-f8ca3d094f2b, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: t.me/vppool}, udp: true}
-  - {name: 香港阿里云@vpnhat 3, server: 8.210.82.84, port: 80, type: vmess, uuid: 4df7092c-aeea-3256-a156-f8ca3d094f2b, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: t.me/vppool}, udp: true}
-  - {name: 香港阿里云@vpnpool, server: 8.210.74.245, port: 80, type: vmess, uuid: 4dd6cbf5-7ff5-3aeb-b5ac-8cff4b21d0e5, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: t.me/vpnhat}, udp: true}
-  - {name: 香港阿里云@vpnpool 2, server: 47.243.252.67, port: 80, type: vmess, uuid: 4dd6cbf5-7ff5-3aeb-b5ac-8cff4b21d0e5, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: t.me/vpnhat}, udp: true}
-  - {name: 香港阿里云@vpnpool 3, server: 8.210.82.84, port: 80, type: vmess, uuid: 4dd6cbf5-7ff5-3aeb-b5ac-8cff4b21d0e5, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: t.me/vpnhat}, udp: true}
-  - {name: 新加坡01|三网优化|1x, server: cs.daxun.club, port: 20631, type: vmess, uuid: d2f7e67f-7473-4a97-8c5d-927a296aca35, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /doxjp01, ws-headers: {Host: cs.daxun.club}, udp: true}
-  - {name: 新加坡04|三网优化|优选原生IP|1x, server: cs.daxun.club, port: 20631, type: vmess, uuid: d2f7e67f-7473-4a97-8c5d-927a296aca35, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /doxjp04, ws-headers: {Host: cs.daxun.club}, udp: true}
-  - {name: 新加坡05|三网优化|优选原生IP|1x, server: cs.daxun.club, port: 20631, type: vmess, uuid: d2f7e67f-7473-4a97-8c5d-927a296aca35, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /doxjp05, ws-headers: {Host: cs.daxun.club}, udp: true}
-  - {name: 新加坡06|三网优化|优选原生IP|1x, server: cs.daxun.club, port: 20631, type: vmess, uuid: d2f7e67f-7473-4a97-8c5d-927a296aca35, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /doxjp06, ws-headers: {Host: cs.daxun.club}, udp: true}
-  - {name: 英国01|三网优化|1x, server: cs.daxun.club, port: 20631, type: vmess, uuid: d2f7e67f-7473-4a97-8c5d-927a296aca35, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /UK01, ws-headers: {Host: cs.daxun.club}, udp: true}
-  - {name: 英国02|三网优化|1x, server: cs.daxun.club, port: 20631, type: vmess, uuid: d2f7e67f-7473-4a97-8c5d-927a296aca35, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /UK02, ws-headers: {Host: cs.daxun.club}, udp: true}
-  - {name: 英国03|三网优化|1x, server: cs.daxun.club, port: 20631, type: vmess, uuid: d2f7e67f-7473-4a97-8c5d-927a296aca35, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /UK03, ws-headers: {Host: cs.daxun.club}, udp: true}
-  - {name: 日本02, server: hunan-bgp.kexueddns.club, port: 42881, type: trojan, password: 55418292-165b-4bcc-99d7-a8d8471dbeff, sni: hunan-bgp.kexueddns.club, skip-cert-verify: true, udp: true}
-  - {name: 香港03, server: hunan-cu.kexueddns.club, port: 12224, type: trojan, password: 55418292-165b-4bcc-99d7-a8d8471dbeff, sni: hunan-cu.kexueddns.club, skip-cert-verify: true, udp: true}
-  - {name: 香港05, server: guangzhou-cm2.kexueddns.club, port: 24067, type: trojan, password: 55418292-165b-4bcc-99d7-a8d8471dbeff, sni: guangzhou-cm2.kexueddns.club, skip-cert-verify: true, udp: true}
-  - {name: 香港06, server: guangzhou-cm2.kexueddns.club, port: 24068, type: trojan, password: 55418292-165b-4bcc-99d7-a8d8471dbeff, sni: guangzhou-cm2.kexueddns.club, skip-cert-verify: true, udp: true}
+  - {name: 油管 TG 8度科技, server: restless-lake-c439.377955635.workers.dev, port: 443, type: vmess, uuid: ad806487-2d26-4636-98b6-ab85cc8521f7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: restless-lake-c439.377955635.workers.dev}, udp: true}
+  - {name: HK_油管 TG 8度科技, server: 13.72.192.219, port: 15015, type: vmess, uuid: 047184b7-6da2-3d3f-ac27-6a1a8701daf8, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 13.72.192.219}, udp: true}
+  - {name: CN_油管 TG 8度科技, server: cs.daxun.club, port: 20631, type: vmess, uuid: 3ed9eb62-9715-46bf-85a4-1dc6bc56ce5a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /doxjp06, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: HK_油管 TG 8度科技 2, server: 65.52.171.156, port: 15085, type: vmess, uuid: 047184b7-6da2-3d3f-ac27-6a1a8701daf8, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 65.52.171.156}, udp: true}
+  - {name: HK_油管 TG 8度科技 3, server: 65.52.171.156, port: 15072, type: vmess, uuid: 047184b7-6da2-3d3f-ac27-6a1a8701daf8, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 65.52.171.156}, udp: true}
+  - {name: CN_油管 TG 8度科技 2, server: cs.daxun.club, port: 20631, type: vmess, uuid: 3ed9eb62-9715-46bf-85a4-1dc6bc56ce5a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hkt008, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: HK_油管 TG 8度科技 4, server: 13.72.192.219, port: 36104, type: vmess, uuid: 047184b7-6da2-3d3f-ac27-6a1a8701daf8, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 13.72.192.219}, udp: true}
+  - {name: CN_油管 TG 8度科技 3, server: cs.daxun.club, port: 20631, type: vmess, uuid: 3ed9eb62-9715-46bf-85a4-1dc6bc56ce5a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /schinet01, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: CN_油管 TG 8度科技 4, server: cs.daxun.club, port: 20631, type: vmess, uuid: 3ed9eb62-9715-46bf-85a4-1dc6bc56ce5a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /doxjp05, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: HK_油管 TG 8度科技 5, server: 65.52.171.156, port: 15084, type: vmess, uuid: 047184b7-6da2-3d3f-ac27-6a1a8701daf8, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 65.52.171.156}, udp: true}
+  - {name: HK_油管 TG 8度科技 6, server: 20.205.47.95, port: 15021, type: vmess, uuid: 047184b7-6da2-3d3f-ac27-6a1a8701daf8, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 20.205.47.95}, udp: true}
+  - {name: CN_油管 TG 8度科技 5, server: cs.daxun.club, port: 20631, type: vmess, uuid: 3ed9eb62-9715-46bf-85a4-1dc6bc56ce5a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /lindoerb01, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: US_油管 TG 8度科技, server: hk1.qtycloud.link, port: 1521, type: vmess, uuid: c6191a10-baf5-3391-aa2e-983826d50d0c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: hk1.qtycloud.link}, udp: true}
+  - {name: CN_油管 TG 8度科技 6, server: cs.daxun.club, port: 20631, type: vmess, uuid: 3ed9eb62-9715-46bf-85a4-1dc6bc56ce5a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: linodejp03, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: CN_油管 TG 8度科技 7, server: cs.daxun.club, port: 20631, type: vmess, uuid: 3ed9eb62-9715-46bf-85a4-1dc6bc56ce5a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jgwhg01, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: CN_油管 TG 8度科技 8, server: cs.daxun.club, port: 20631, type: vmess, uuid: 3ed9eb62-9715-46bf-85a4-1dc6bc56ce5a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /linodejp01, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: CN_油管 TG 8度科技 9, server: cs.daxun.club, port: 20631, type: vmess, uuid: 3ed9eb62-9715-46bf-85a4-1dc6bc56ce5a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /mlxy008, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: US_油管 TG 8度科技 2, server: hk1.qtycloud.link, port: 1517, type: vmess, uuid: c6191a10-baf5-3391-aa2e-983826d50d0c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: hk1.qtycloud.link}, udp: true}
+  - {name: US_油管 TG 8度科技 3, server: hk1.qtycloud.link, port: 1519, type: vmess, uuid: c6191a10-baf5-3391-aa2e-983826d50d0c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: hk1.qtycloud.link}, udp: true}
+  - {name: CN_油管 TG 8度科技 10, server: gkdcm.gkdcn.top, port: 21811, type: ss, cipher: chacha20-ietf-poly1305, password: 82b60549-103b-31f0-b6fb-a303177522ae, udp: true}
+  - {name: HK_油管 TG 8度科技 7, server: 12.v2-ray.cyou, port: 15012, type: vmess, uuid: 047184b7-6da2-3d3f-ac27-6a1a8701daf8, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 12.v2-ray.cyou}, udp: true}
+  - {name: US_油管 TG 8度科技 4, server: hk1.qtycloud.link, port: 1521, type: vmess, uuid: c6191a10-baf5-3391-aa2e-983826d50d0c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: hk1.qtycloud.link}, udp: true}
+  - {name: CN_油管 TG 8度科技 11, server: gkdcm.gkdcn.top, port: 21809, type: ss, cipher: chacha20-ietf-poly1305, password: 82b60549-103b-31f0-b6fb-a303177522ae, udp: true}
+  - {name: HK_油管 TG 8度科技 8, server: 13.72.192.219, port: 15012, type: vmess, uuid: 047184b7-6da2-3d3f-ac27-6a1a8701daf8, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 13.72.192.219}, udp: true}
+  - {name: CN_油管 TG 8度科技 12, server: cs.daxun.club, port: 20631, type: vmess, uuid: 3ed9eb62-9715-46bf-85a4-1dc6bc56ce5a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jp01, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: US_油管 TG 8度科技 5, server: hk1.qtycloud.link, port: 1522, type: vmess, uuid: c6191a10-baf5-3391-aa2e-983826d50d0c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: hk1.qtycloud.link}, udp: true}
+  - {name: CN_油管 TG 8度科技 13, server: cs.daxun.club, port: 20631, type: vmess, uuid: 3ed9eb62-9715-46bf-85a4-1dc6bc56ce5a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: linodejp02, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: CN_油管 TG 8度科技 14, server: gkdcm.gkdcn.top, port: 21806, type: ss, cipher: chacha20-ietf-poly1305, password: 82b60549-103b-31f0-b6fb-a303177522ae, udp: true}
+  - {name: US_油管 TG 8度科技 6, server: nfjp1.qingyun123.xyz, port: 10000, type: trojan, password: 9b7eacaf-64ed-4b69-9494-63dde479a6b8, sni: nfjp1.qingyun123.xyz, skip-cert-verify: true, udp: true}
+  - {name: CN_油管 TG 8度科技 15, server: cs.daxun.club, port: 20631, type: vmess, uuid: 3ed9eb62-9715-46bf-85a4-1dc6bc56ce5a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /AUS02, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: HK_油管 TG 8度科技 9, server: 65.52.171.156, port: 15046, type: vmess, uuid: 047184b7-6da2-3d3f-ac27-6a1a8701daf8, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 65.52.171.156}, udp: true}
+  - {name: HK_油管 TG 8度科技 10, server: 65.52.171.156, port: 15031, type: vmess, uuid: 047184b7-6da2-3d3f-ac27-6a1a8701daf8, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 65.52.171.156}, udp: true}
+  - {name: HK_油管 TG 8度科技 11, server: 65.52.171.156, port: 36174, type: vmess, uuid: 047184b7-6da2-3d3f-ac27-6a1a8701daf8, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 65.52.171.156}, udp: true}
+  - {name: CN_油管 TG 8度科技 16, server: cs.daxun.club, port: 20631, type: vmess, uuid: 3ed9eb62-9715-46bf-85a4-1dc6bc56ce5a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /AUS01, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: CN_油管 TG 8度科技 17, server: cs.daxun.club, port: 20631, type: vmess, uuid: 3ed9eb62-9715-46bf-85a4-1dc6bc56ce5a, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /yd01, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: CN_油管 TG 8度科技 18, server: cs.daxun.club, port: 20631, type: vmess, uuid: 3ed9eb62-9715-46bf-85a4-1dc6bc56ce5a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /UK01, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: CN_油管 TG 8度科技 19, server: cs.daxun.club, port: 20631, type: vmess, uuid: 3ed9eb62-9715-46bf-85a4-1dc6bc56ce5a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /dg01, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: CN_油管 TG 8度科技 20, server: cs.daxun.club, port: 20631, type: vmess, uuid: 3ed9eb62-9715-46bf-85a4-1dc6bc56ce5a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /UK02, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: JP_油管 TG 8度科技, server: 168.138.36.193, port: 32329, type: vmess, uuid: ddf03d93-d6e5-46f8-8176-80536e52e50e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN_油管 TG 8度科技 21, server: cs.daxun.club, port: 20631, type: vmess, uuid: 3ed9eb62-9715-46bf-85a4-1dc6bc56ce5a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /UK03, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: CN_油管 TG 8度科技 22, server: cs.daxun.club, port: 20631, type: vmess, uuid: 3ed9eb62-9715-46bf-85a4-1dc6bc56ce5a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /els01, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: US_油管 TG 8度科技 7, server: bpjzx2.cainiao.tk, port: 443, type: vmess, uuid: 24b4b1e1-7a89-45f6-858c-242cf53b5bdb, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /24b4b1e1-7a89-45f6-858c-242cf53b5bdb-vmess, ws-headers: {Host: orange-mode-ac6a.xjp0mx2cp.workers.dev}, udp: true}
+  - {name: CN_油管 TG 8度科技 23, server: cs.daxun.club, port: 20631, type: vmess, uuid: 3ed9eb62-9715-46bf-85a4-1dc6bc56ce5a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /usa04, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: CN_油管 TG 8度科技 24, server: 120.233.147.118, port: 53962, type: vmess, uuid: f6fee97f-1c14-326b-b57f-41af5449d3a9, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: sw.oracleusa.ml}, udp: true}
+  - {name: US_油管 TG 8度科技 8, server: hk1.qtycloud.link, port: 1520, type: vmess, uuid: c6191a10-baf5-3391-aa2e-983826d50d0c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: hk1.qtycloud.link}, udp: true}
+  - {name: US_油管 TG 8度科技 9, server: us2.tcpbbr.net, port: 443, type: trojan, password: 283695dc-fcc8-11ea-8684-f23c913c8d2b, sni: us2.tcpbbr.net, skip-cert-verify: true, udp: true}
+  - {name: CN_油管 TG 8度科技 25, server: cs.daxun.club, port: 20631, type: vmess, uuid: 3ed9eb62-9715-46bf-85a4-1dc6bc56ce5a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /canada01, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: CN_油管 TG 8度科技 26, server: gkdcm.gkdcn.top, port: 21822, type: ss, cipher: chacha20-ietf-poly1305, password: 82b60549-103b-31f0-b6fb-a303177522ae, udp: true}
+  - {name: CN_油管 TG 8度科技 27, server: 120.233.147.118, port: 58938, type: vmess, uuid: 106f379f-d331-399c-ba4d-2f352b70bfcf, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: uae.oracleusa.ml}, udp: true}
+  - {name: CN_油管 TG 8度科技 28, server: gkdcu.gkdcn.top, port: 21821, type: ss, cipher: chacha20-ietf-poly1305, password: 82b60549-103b-31f0-b6fb-a303177522ae, udp: true}
+  - {name: CN_油管 TG 8度科技 29, server: 120.233.147.118, port: 58938, type: vmess, uuid: f6fee97f-1c14-326b-b57f-41af5449d3a9, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: uae.oracleusa.ml}, udp: true}
+  - {name: CN_油管 TG 8度科技 30, server: 120.233.147.118, port: 53962, type: vmess, uuid: 106f379f-d331-399c-ba4d-2f352b70bfcf, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: sw.oracleusa.ml}, udp: true}
+  - {name: null_油管 TG 8度科技, server: 0316ro.fans8.xyz, port: 443, type: vmess, uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c, alterId: 2, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /nl, ws-headers: {Host: 0316ro.fans8.xyz}, udp: true}
+  - {name: HK_油管 TG 8度科技 12, server: 0320hk857.fans8.xyz, port: 443, type: vmess, uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c, alterId: 2, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ray, ws-headers: {Host: 0320hk857.fans8.xyz}, udp: true}
+  - {name: US_油管 TG 8度科技 10, server: hk1.qtycloud.link, port: 1517, type: vmess, uuid: c6191a10-baf5-3391-aa2e-983826d50d0c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: hk1.qtycloud.link}, udp: true}
+  - {name: HK_油管 TG 8度科技 13, server: 0320hk567.fans8.xyz, port: 443, type: vmess, uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c, alterId: 2, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ray, ws-headers: {Host: 0320hk567.fans8.xyz}, udp: true}
+  - {name: CN_油管 TG 8度科技 31, server: cs.daxun.club, port: 20631, type: vmess, uuid: 3ed9eb62-9715-46bf-85a4-1dc6bc56ce5a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /japanese03, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: VN_油管 TG 8度科技, server: 0319hzm01.fans8.xyz, port: 443, type: vmess, uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c, alterId: 2, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /nmsl, ws-headers: {Host: 0319hzm01.fans8.xyz}, udp: true}
+  - {name: US_油管 TG 8度科技 11, server: us2.tcpbbr.net, port: 443, type: trojan, password: 5a3d9b78-cb5b-11ea-82ef-f23c9164ca5d, sni: us2.tcpbbr.net, skip-cert-verify: true, udp: true}
+  - {name: IN_油管 TG 8度科技, server: jgwhdlb1.gaox.ml, port: 443, type: trojan, password: e05c749b-7c6b-41b8-9c71-9dcf685edf4a, sni: jgwhdlb1.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: TW_油管 TG 8度科技, server: 0314tw02.fans8.xyz, port: 443, type: vmess, uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c, alterId: 2, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ray, ws-headers: {Host: 0314tw02.fans8.xyz}, udp: true}
+  - {name: US_油管 TG 8度科技 12, server: 45.61.184.3, port: 40435, type: vmess, uuid: eca12e73-8f74-439f-b918-624e832422d4, alterId: 8, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: HK_油管 TG 8度科技 14, server: 0320hkhh.fans8.xyz, port: 443, type: vmess, uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c, alterId: 2, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ray, ws-headers: {Host: 0320hkhh.fans8.xyz}, udp: true}
+  - {name: RU_油管 TG 8度科技, server: 0319ru99.fans8.xyz, port: 443, type: vmess, uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c, alterId: 2, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /nmsl, ws-headers: {Host: 0319ru99.fans8.xyz}, udp: true}
+  - {name: JP_油管 TG 8度科技 2, server: jgwdj1.gaox.ml, port: 443, type: trojan, password: e8553fc5-f3a0-409c-ac06-1cd93b026cf4, sni: jgwdj1.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: TW_油管 TG 8度科技 2, server: 0314tw02.fans8.xyz, port: 443, type: vmess, uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c, alterId: 3, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ray, ws-headers: {Host: 0314tw02.fans8.xyz}, udp: true}
+  - {name: US_油管 TG 8度科技 13, server: us2.tcpbbr.net, port: 443, type: trojan, password: 2e5f2a78-14d8-11eb-ad8c-f23c9164ca5d, sni: us2.tcpbbr.net, skip-cert-verify: true, udp: true}
+  - {name: TW_油管 TG 8度科技 3, server: 0320tw1731.fans8.xyz, port: 443, type: vmess, uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c, alterId: 2, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /nl, ws-headers: {Host: 0320tw1731.fans8.xyz}, udp: true}
+  - {name: GB_油管 TG 8度科技, server: jgwld3.gaox.ml, port: 443, type: trojan, password: 71b55a84-3fac-4458-abff-eaad79219c91, sni: jgwld3.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: HK_油管 TG 8度科技 15, server: 20.205.47.95, port: 15023, type: vmess, uuid: 047184b7-6da2-3d3f-ac27-6a1a8701daf8, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 20.205.47.95}, udp: true}
+  - {name: HK_油管 TG 8度科技 16, server: gz.yd01.paopaocloud.cyou, port: 10010, type: vmess, uuid: d6a3f7ed-5d0d-323e-b092-5c1fdeadb34f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: paopao.v2.az01.paopaocloud.cyou}, udp: true}
+  - {name: KR_油管 TG 8度科技, server: 0320kr99.fans8.xyz, port: 443, type: vmess, uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c, alterId: 2, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /nmsl, ws-headers: {Host: 0320kr99.fans8.xyz}, udp: true}
+  - {name: HK_油管 TG 8度科技 17, server: 65.52.171.156, port: 15038, type: vmess, uuid: 047184b7-6da2-3d3f-ac27-6a1a8701daf8, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 65.52.171.156}, udp: true}
+  - {name: JP_油管 TG 8度科技 3, server: 172.104.76.239, port: 15020, type: vmess, uuid: 047184b7-6da2-3d3f-ac27-6a1a8701daf8, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 172.104.76.239}, udp: true}
+  - {name: CN_油管 TG 8度科技 32, server: az.hk01.paopaocloud.cyou, port: 10032, type: vmess, uuid: d6a3f7ed-5d0d-323e-b092-5c1fdeadb34f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: paopao.v2.hk01.paopaocloud.cyou}, udp: true}
+  - {name: US_油管 TG 8度科技 14, server: 169.197.142.4, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: US_油管 TG 8度科技 15, server: 169.197.142.4, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: US_油管 TG 8度科技 16, server: 169.197.142.99, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: US_油管 TG 8度科技 17, server: 169.197.142.99, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: US_油管 TG 8度科技 18, server: 169.197.142.4, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - _null_null
-      - lindoe日本|三网优化|1x
-      - 澳大利亚01|三网优化|1x
-      - 澳大利亚02|三网优化|1x
-      - 德国|三网优化|1x
-      - 东京|优选原生IP|1x
-      - 俄罗斯|三网优化|1x
-      - 韩国|优选原生IP|1x
-      - 加拿大01|三网优化|1x
-      - 加拿大02|三网优化|1x
-      - 马来西亚|三网优化|优选原生IP|1x
-      - 美国01|三网优化|1x
-      - 美国02|三网优化|1x
-      - 美国03|三网优化|1x
-      - 美国04|三网优化|1x
-      - 日本01|三网优化|1x
-      - 日本02|三网优化|1x
-      - 日本03|三网优化|1x
-      - 日本04|三网优化|1x
-      - 日本05|三网优化|1x
-      - 日本06|三网优化|1x
-      - 台湾04|三网优化|原生IP|1x
-      - 香港04|负载均衡|原生IP|1x
-      - 香港阿里云@vpnhat
-      - 香港阿里云@vpnhat 2
-      - 香港阿里云@vpnhat 3
-      - 香港阿里云@vpnpool
-      - 香港阿里云@vpnpool 2
-      - 香港阿里云@vpnpool 3
-      - 新加坡01|三网优化|1x
-      - 新加坡04|三网优化|优选原生IP|1x
-      - 新加坡05|三网优化|优选原生IP|1x
-      - 新加坡06|三网优化|优选原生IP|1x
-      - 英国01|三网优化|1x
-      - 英国02|三网优化|1x
-      - 英国03|三网优化|1x
-      - 日本02
-      - 香港03
-      - 香港05
-      - 香港06
+      - 油管 TG 8度科技
+      - HK_油管 TG 8度科技
+      - CN_油管 TG 8度科技
+      - HK_油管 TG 8度科技 2
+      - HK_油管 TG 8度科技 3
+      - CN_油管 TG 8度科技 2
+      - HK_油管 TG 8度科技 4
+      - CN_油管 TG 8度科技 3
+      - CN_油管 TG 8度科技 4
+      - HK_油管 TG 8度科技 5
+      - HK_油管 TG 8度科技 6
+      - CN_油管 TG 8度科技 5
+      - US_油管 TG 8度科技
+      - CN_油管 TG 8度科技 6
+      - CN_油管 TG 8度科技 7
+      - CN_油管 TG 8度科技 8
+      - CN_油管 TG 8度科技 9
+      - US_油管 TG 8度科技 2
+      - US_油管 TG 8度科技 3
+      - CN_油管 TG 8度科技 10
+      - HK_油管 TG 8度科技 7
+      - US_油管 TG 8度科技 4
+      - CN_油管 TG 8度科技 11
+      - HK_油管 TG 8度科技 8
+      - CN_油管 TG 8度科技 12
+      - US_油管 TG 8度科技 5
+      - CN_油管 TG 8度科技 13
+      - CN_油管 TG 8度科技 14
+      - US_油管 TG 8度科技 6
+      - CN_油管 TG 8度科技 15
+      - HK_油管 TG 8度科技 9
+      - HK_油管 TG 8度科技 10
+      - HK_油管 TG 8度科技 11
+      - CN_油管 TG 8度科技 16
+      - CN_油管 TG 8度科技 17
+      - CN_油管 TG 8度科技 18
+      - CN_油管 TG 8度科技 19
+      - CN_油管 TG 8度科技 20
+      - JP_油管 TG 8度科技
+      - CN_油管 TG 8度科技 21
+      - CN_油管 TG 8度科技 22
+      - US_油管 TG 8度科技 7
+      - CN_油管 TG 8度科技 23
+      - CN_油管 TG 8度科技 24
+      - US_油管 TG 8度科技 8
+      - US_油管 TG 8度科技 9
+      - CN_油管 TG 8度科技 25
+      - CN_油管 TG 8度科技 26
+      - CN_油管 TG 8度科技 27
+      - CN_油管 TG 8度科技 28
+      - CN_油管 TG 8度科技 29
+      - CN_油管 TG 8度科技 30
+      - null_油管 TG 8度科技
+      - HK_油管 TG 8度科技 12
+      - US_油管 TG 8度科技 10
+      - HK_油管 TG 8度科技 13
+      - CN_油管 TG 8度科技 31
+      - VN_油管 TG 8度科技
+      - US_油管 TG 8度科技 11
+      - IN_油管 TG 8度科技
+      - TW_油管 TG 8度科技
+      - US_油管 TG 8度科技 12
+      - HK_油管 TG 8度科技 14
+      - RU_油管 TG 8度科技
+      - JP_油管 TG 8度科技 2
+      - TW_油管 TG 8度科技 2
+      - US_油管 TG 8度科技 13
+      - TW_油管 TG 8度科技 3
+      - GB_油管 TG 8度科技
+      - HK_油管 TG 8度科技 15
+      - HK_油管 TG 8度科技 16
+      - KR_油管 TG 8度科技
+      - HK_油管 TG 8度科技 17
+      - JP_油管 TG 8度科技 3
+      - CN_油管 TG 8度科技 32
+      - US_油管 TG 8度科技 14
+      - US_油管 TG 8度科技 15
+      - US_油管 TG 8度科技 16
+      - US_油管 TG 8度科技 17
+      - US_油管 TG 8度科技 18
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - _null_null
-      - lindoe日本|三网优化|1x
-      - 澳大利亚01|三网优化|1x
-      - 澳大利亚02|三网优化|1x
-      - 德国|三网优化|1x
-      - 东京|优选原生IP|1x
-      - 俄罗斯|三网优化|1x
-      - 韩国|优选原生IP|1x
-      - 加拿大01|三网优化|1x
-      - 加拿大02|三网优化|1x
-      - 马来西亚|三网优化|优选原生IP|1x
-      - 美国01|三网优化|1x
-      - 美国02|三网优化|1x
-      - 美国03|三网优化|1x
-      - 美国04|三网优化|1x
-      - 日本01|三网优化|1x
-      - 日本02|三网优化|1x
-      - 日本03|三网优化|1x
-      - 日本04|三网优化|1x
-      - 日本05|三网优化|1x
-      - 日本06|三网优化|1x
-      - 台湾04|三网优化|原生IP|1x
-      - 香港04|负载均衡|原生IP|1x
-      - 香港阿里云@vpnhat
-      - 香港阿里云@vpnhat 2
-      - 香港阿里云@vpnhat 3
-      - 香港阿里云@vpnpool
-      - 香港阿里云@vpnpool 2
-      - 香港阿里云@vpnpool 3
-      - 新加坡01|三网优化|1x
-      - 新加坡04|三网优化|优选原生IP|1x
-      - 新加坡05|三网优化|优选原生IP|1x
-      - 新加坡06|三网优化|优选原生IP|1x
-      - 英国01|三网优化|1x
-      - 英国02|三网优化|1x
-      - 英国03|三网优化|1x
-      - 日本02
-      - 香港03
-      - 香港05
-      - 香港06
+      - 油管 TG 8度科技
+      - HK_油管 TG 8度科技
+      - CN_油管 TG 8度科技
+      - HK_油管 TG 8度科技 2
+      - HK_油管 TG 8度科技 3
+      - CN_油管 TG 8度科技 2
+      - HK_油管 TG 8度科技 4
+      - CN_油管 TG 8度科技 3
+      - CN_油管 TG 8度科技 4
+      - HK_油管 TG 8度科技 5
+      - HK_油管 TG 8度科技 6
+      - CN_油管 TG 8度科技 5
+      - US_油管 TG 8度科技
+      - CN_油管 TG 8度科技 6
+      - CN_油管 TG 8度科技 7
+      - CN_油管 TG 8度科技 8
+      - CN_油管 TG 8度科技 9
+      - US_油管 TG 8度科技 2
+      - US_油管 TG 8度科技 3
+      - CN_油管 TG 8度科技 10
+      - HK_油管 TG 8度科技 7
+      - US_油管 TG 8度科技 4
+      - CN_油管 TG 8度科技 11
+      - HK_油管 TG 8度科技 8
+      - CN_油管 TG 8度科技 12
+      - US_油管 TG 8度科技 5
+      - CN_油管 TG 8度科技 13
+      - CN_油管 TG 8度科技 14
+      - US_油管 TG 8度科技 6
+      - CN_油管 TG 8度科技 15
+      - HK_油管 TG 8度科技 9
+      - HK_油管 TG 8度科技 10
+      - HK_油管 TG 8度科技 11
+      - CN_油管 TG 8度科技 16
+      - CN_油管 TG 8度科技 17
+      - CN_油管 TG 8度科技 18
+      - CN_油管 TG 8度科技 19
+      - CN_油管 TG 8度科技 20
+      - JP_油管 TG 8度科技
+      - CN_油管 TG 8度科技 21
+      - CN_油管 TG 8度科技 22
+      - US_油管 TG 8度科技 7
+      - CN_油管 TG 8度科技 23
+      - CN_油管 TG 8度科技 24
+      - US_油管 TG 8度科技 8
+      - US_油管 TG 8度科技 9
+      - CN_油管 TG 8度科技 25
+      - CN_油管 TG 8度科技 26
+      - CN_油管 TG 8度科技 27
+      - CN_油管 TG 8度科技 28
+      - CN_油管 TG 8度科技 29
+      - CN_油管 TG 8度科技 30
+      - null_油管 TG 8度科技
+      - HK_油管 TG 8度科技 12
+      - US_油管 TG 8度科技 10
+      - HK_油管 TG 8度科技 13
+      - CN_油管 TG 8度科技 31
+      - VN_油管 TG 8度科技
+      - US_油管 TG 8度科技 11
+      - IN_油管 TG 8度科技
+      - TW_油管 TG 8度科技
+      - US_油管 TG 8度科技 12
+      - HK_油管 TG 8度科技 14
+      - RU_油管 TG 8度科技
+      - JP_油管 TG 8度科技 2
+      - TW_油管 TG 8度科技 2
+      - US_油管 TG 8度科技 13
+      - TW_油管 TG 8度科技 3
+      - GB_油管 TG 8度科技
+      - HK_油管 TG 8度科技 15
+      - HK_油管 TG 8度科技 16
+      - KR_油管 TG 8度科技
+      - HK_油管 TG 8度科技 17
+      - JP_油管 TG 8度科技 3
+      - CN_油管 TG 8度科技 32
+      - US_油管 TG 8度科技 14
+      - US_油管 TG 8度科技 15
+      - US_油管 TG 8度科技 16
+      - US_油管 TG 8度科技 17
+      - US_油管 TG 8度科技 18
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - _null_null
-      - lindoe日本|三网优化|1x
-      - 澳大利亚01|三网优化|1x
-      - 澳大利亚02|三网优化|1x
-      - 德国|三网优化|1x
-      - 东京|优选原生IP|1x
-      - 俄罗斯|三网优化|1x
-      - 韩国|优选原生IP|1x
-      - 加拿大01|三网优化|1x
-      - 加拿大02|三网优化|1x
-      - 马来西亚|三网优化|优选原生IP|1x
-      - 美国01|三网优化|1x
-      - 美国02|三网优化|1x
-      - 美国03|三网优化|1x
-      - 美国04|三网优化|1x
-      - 日本01|三网优化|1x
-      - 日本02|三网优化|1x
-      - 日本03|三网优化|1x
-      - 日本04|三网优化|1x
-      - 日本05|三网优化|1x
-      - 日本06|三网优化|1x
-      - 台湾04|三网优化|原生IP|1x
-      - 香港04|负载均衡|原生IP|1x
-      - 香港阿里云@vpnhat
-      - 香港阿里云@vpnhat 2
-      - 香港阿里云@vpnhat 3
-      - 香港阿里云@vpnpool
-      - 香港阿里云@vpnpool 2
-      - 香港阿里云@vpnpool 3
-      - 新加坡01|三网优化|1x
-      - 新加坡04|三网优化|优选原生IP|1x
-      - 新加坡05|三网优化|优选原生IP|1x
-      - 新加坡06|三网优化|优选原生IP|1x
-      - 英国01|三网优化|1x
-      - 英国02|三网优化|1x
-      - 英国03|三网优化|1x
-      - 日本02
-      - 香港03
-      - 香港05
-      - 香港06
+      - 油管 TG 8度科技
+      - HK_油管 TG 8度科技
+      - CN_油管 TG 8度科技
+      - HK_油管 TG 8度科技 2
+      - HK_油管 TG 8度科技 3
+      - CN_油管 TG 8度科技 2
+      - HK_油管 TG 8度科技 4
+      - CN_油管 TG 8度科技 3
+      - CN_油管 TG 8度科技 4
+      - HK_油管 TG 8度科技 5
+      - HK_油管 TG 8度科技 6
+      - CN_油管 TG 8度科技 5
+      - US_油管 TG 8度科技
+      - CN_油管 TG 8度科技 6
+      - CN_油管 TG 8度科技 7
+      - CN_油管 TG 8度科技 8
+      - CN_油管 TG 8度科技 9
+      - US_油管 TG 8度科技 2
+      - US_油管 TG 8度科技 3
+      - CN_油管 TG 8度科技 10
+      - HK_油管 TG 8度科技 7
+      - US_油管 TG 8度科技 4
+      - CN_油管 TG 8度科技 11
+      - HK_油管 TG 8度科技 8
+      - CN_油管 TG 8度科技 12
+      - US_油管 TG 8度科技 5
+      - CN_油管 TG 8度科技 13
+      - CN_油管 TG 8度科技 14
+      - US_油管 TG 8度科技 6
+      - CN_油管 TG 8度科技 15
+      - HK_油管 TG 8度科技 9
+      - HK_油管 TG 8度科技 10
+      - HK_油管 TG 8度科技 11
+      - CN_油管 TG 8度科技 16
+      - CN_油管 TG 8度科技 17
+      - CN_油管 TG 8度科技 18
+      - CN_油管 TG 8度科技 19
+      - CN_油管 TG 8度科技 20
+      - JP_油管 TG 8度科技
+      - CN_油管 TG 8度科技 21
+      - CN_油管 TG 8度科技 22
+      - US_油管 TG 8度科技 7
+      - CN_油管 TG 8度科技 23
+      - CN_油管 TG 8度科技 24
+      - US_油管 TG 8度科技 8
+      - US_油管 TG 8度科技 9
+      - CN_油管 TG 8度科技 25
+      - CN_油管 TG 8度科技 26
+      - CN_油管 TG 8度科技 27
+      - CN_油管 TG 8度科技 28
+      - CN_油管 TG 8度科技 29
+      - CN_油管 TG 8度科技 30
+      - null_油管 TG 8度科技
+      - HK_油管 TG 8度科技 12
+      - US_油管 TG 8度科技 10
+      - HK_油管 TG 8度科技 13
+      - CN_油管 TG 8度科技 31
+      - VN_油管 TG 8度科技
+      - US_油管 TG 8度科技 11
+      - IN_油管 TG 8度科技
+      - TW_油管 TG 8度科技
+      - US_油管 TG 8度科技 12
+      - HK_油管 TG 8度科技 14
+      - RU_油管 TG 8度科技
+      - JP_油管 TG 8度科技 2
+      - TW_油管 TG 8度科技 2
+      - US_油管 TG 8度科技 13
+      - TW_油管 TG 8度科技 3
+      - GB_油管 TG 8度科技
+      - HK_油管 TG 8度科技 15
+      - HK_油管 TG 8度科技 16
+      - KR_油管 TG 8度科技
+      - HK_油管 TG 8度科技 17
+      - JP_油管 TG 8度科技 3
+      - CN_油管 TG 8度科技 32
+      - US_油管 TG 8度科技 14
+      - US_油管 TG 8度科技 15
+      - US_油管 TG 8度科技 16
+      - US_油管 TG 8度科技 17
+      - US_油管 TG 8度科技 18
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -200,198 +360,347 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - _null_null
-      - lindoe日本|三网优化|1x
-      - 澳大利亚01|三网优化|1x
-      - 澳大利亚02|三网优化|1x
-      - 德国|三网优化|1x
-      - 东京|优选原生IP|1x
-      - 俄罗斯|三网优化|1x
-      - 韩国|优选原生IP|1x
-      - 加拿大01|三网优化|1x
-      - 加拿大02|三网优化|1x
-      - 马来西亚|三网优化|优选原生IP|1x
-      - 美国01|三网优化|1x
-      - 美国02|三网优化|1x
-      - 美国03|三网优化|1x
-      - 美国04|三网优化|1x
-      - 日本01|三网优化|1x
-      - 日本02|三网优化|1x
-      - 日本03|三网优化|1x
-      - 日本04|三网优化|1x
-      - 日本05|三网优化|1x
-      - 日本06|三网优化|1x
-      - 台湾04|三网优化|原生IP|1x
-      - 香港04|负载均衡|原生IP|1x
-      - 香港阿里云@vpnhat
-      - 香港阿里云@vpnhat 2
-      - 香港阿里云@vpnhat 3
-      - 香港阿里云@vpnpool
-      - 香港阿里云@vpnpool 2
-      - 香港阿里云@vpnpool 3
-      - 新加坡01|三网优化|1x
-      - 新加坡04|三网优化|优选原生IP|1x
-      - 新加坡05|三网优化|优选原生IP|1x
-      - 新加坡06|三网优化|优选原生IP|1x
-      - 英国01|三网优化|1x
-      - 英国02|三网优化|1x
-      - 英国03|三网优化|1x
-      - 日本02
-      - 香港03
-      - 香港05
-      - 香港06
+      - 油管 TG 8度科技
+      - HK_油管 TG 8度科技
+      - CN_油管 TG 8度科技
+      - HK_油管 TG 8度科技 2
+      - HK_油管 TG 8度科技 3
+      - CN_油管 TG 8度科技 2
+      - HK_油管 TG 8度科技 4
+      - CN_油管 TG 8度科技 3
+      - CN_油管 TG 8度科技 4
+      - HK_油管 TG 8度科技 5
+      - HK_油管 TG 8度科技 6
+      - CN_油管 TG 8度科技 5
+      - US_油管 TG 8度科技
+      - CN_油管 TG 8度科技 6
+      - CN_油管 TG 8度科技 7
+      - CN_油管 TG 8度科技 8
+      - CN_油管 TG 8度科技 9
+      - US_油管 TG 8度科技 2
+      - US_油管 TG 8度科技 3
+      - CN_油管 TG 8度科技 10
+      - HK_油管 TG 8度科技 7
+      - US_油管 TG 8度科技 4
+      - CN_油管 TG 8度科技 11
+      - HK_油管 TG 8度科技 8
+      - CN_油管 TG 8度科技 12
+      - US_油管 TG 8度科技 5
+      - CN_油管 TG 8度科技 13
+      - CN_油管 TG 8度科技 14
+      - US_油管 TG 8度科技 6
+      - CN_油管 TG 8度科技 15
+      - HK_油管 TG 8度科技 9
+      - HK_油管 TG 8度科技 10
+      - HK_油管 TG 8度科技 11
+      - CN_油管 TG 8度科技 16
+      - CN_油管 TG 8度科技 17
+      - CN_油管 TG 8度科技 18
+      - CN_油管 TG 8度科技 19
+      - CN_油管 TG 8度科技 20
+      - JP_油管 TG 8度科技
+      - CN_油管 TG 8度科技 21
+      - CN_油管 TG 8度科技 22
+      - US_油管 TG 8度科技 7
+      - CN_油管 TG 8度科技 23
+      - CN_油管 TG 8度科技 24
+      - US_油管 TG 8度科技 8
+      - US_油管 TG 8度科技 9
+      - CN_油管 TG 8度科技 25
+      - CN_油管 TG 8度科技 26
+      - CN_油管 TG 8度科技 27
+      - CN_油管 TG 8度科技 28
+      - CN_油管 TG 8度科技 29
+      - CN_油管 TG 8度科技 30
+      - null_油管 TG 8度科技
+      - HK_油管 TG 8度科技 12
+      - US_油管 TG 8度科技 10
+      - HK_油管 TG 8度科技 13
+      - CN_油管 TG 8度科技 31
+      - VN_油管 TG 8度科技
+      - US_油管 TG 8度科技 11
+      - IN_油管 TG 8度科技
+      - TW_油管 TG 8度科技
+      - US_油管 TG 8度科技 12
+      - HK_油管 TG 8度科技 14
+      - RU_油管 TG 8度科技
+      - JP_油管 TG 8度科技 2
+      - TW_油管 TG 8度科技 2
+      - US_油管 TG 8度科技 13
+      - TW_油管 TG 8度科技 3
+      - GB_油管 TG 8度科技
+      - HK_油管 TG 8度科技 15
+      - HK_油管 TG 8度科技 16
+      - KR_油管 TG 8度科技
+      - HK_油管 TG 8度科技 17
+      - JP_油管 TG 8度科技 3
+      - CN_油管 TG 8度科技 32
+      - US_油管 TG 8度科技 14
+      - US_油管 TG 8度科技 15
+      - US_油管 TG 8度科技 16
+      - US_油管 TG 8度科技 17
+      - US_油管 TG 8度科技 18
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 台湾04|三网优化|原生IP|1x
-      - 香港04|负载均衡|原生IP|1x
-      - 香港阿里云@vpnhat
-      - 香港阿里云@vpnhat 2
-      - 香港阿里云@vpnhat 3
-      - 香港阿里云@vpnpool
-      - 香港阿里云@vpnpool 2
-      - 香港阿里云@vpnpool 3
-      - 香港03
-      - 香港05
-      - 香港06
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - _null_null
-      - lindoe日本|三网优化|1x
-      - 澳大利亚01|三网优化|1x
-      - 澳大利亚02|三网优化|1x
-      - 德国|三网优化|1x
-      - 东京|优选原生IP|1x
-      - 俄罗斯|三网优化|1x
-      - 韩国|优选原生IP|1x
-      - 加拿大01|三网优化|1x
-      - 加拿大02|三网优化|1x
-      - 马来西亚|三网优化|优选原生IP|1x
-      - 美国01|三网优化|1x
-      - 美国02|三网优化|1x
-      - 美国03|三网优化|1x
-      - 美国04|三网优化|1x
-      - 日本01|三网优化|1x
-      - 日本02|三网优化|1x
-      - 日本03|三网优化|1x
-      - 日本04|三网优化|1x
-      - 日本05|三网优化|1x
-      - 日本06|三网优化|1x
-      - 台湾04|三网优化|原生IP|1x
-      - 香港04|负载均衡|原生IP|1x
-      - 香港阿里云@vpnhat
-      - 香港阿里云@vpnhat 2
-      - 香港阿里云@vpnhat 3
-      - 香港阿里云@vpnpool
-      - 香港阿里云@vpnpool 2
-      - 香港阿里云@vpnpool 3
-      - 新加坡01|三网优化|1x
-      - 新加坡04|三网优化|优选原生IP|1x
-      - 新加坡05|三网优化|优选原生IP|1x
-      - 新加坡06|三网优化|优选原生IP|1x
-      - 英国01|三网优化|1x
-      - 英国02|三网优化|1x
-      - 英国03|三网优化|1x
-      - 日本02
-      - 香港03
-      - 香港05
-      - 香港06
+      - 油管 TG 8度科技
+      - HK_油管 TG 8度科技
+      - CN_油管 TG 8度科技
+      - HK_油管 TG 8度科技 2
+      - HK_油管 TG 8度科技 3
+      - CN_油管 TG 8度科技 2
+      - HK_油管 TG 8度科技 4
+      - CN_油管 TG 8度科技 3
+      - CN_油管 TG 8度科技 4
+      - HK_油管 TG 8度科技 5
+      - HK_油管 TG 8度科技 6
+      - CN_油管 TG 8度科技 5
+      - US_油管 TG 8度科技
+      - CN_油管 TG 8度科技 6
+      - CN_油管 TG 8度科技 7
+      - CN_油管 TG 8度科技 8
+      - CN_油管 TG 8度科技 9
+      - US_油管 TG 8度科技 2
+      - US_油管 TG 8度科技 3
+      - CN_油管 TG 8度科技 10
+      - HK_油管 TG 8度科技 7
+      - US_油管 TG 8度科技 4
+      - CN_油管 TG 8度科技 11
+      - HK_油管 TG 8度科技 8
+      - CN_油管 TG 8度科技 12
+      - US_油管 TG 8度科技 5
+      - CN_油管 TG 8度科技 13
+      - CN_油管 TG 8度科技 14
+      - US_油管 TG 8度科技 6
+      - CN_油管 TG 8度科技 15
+      - HK_油管 TG 8度科技 9
+      - HK_油管 TG 8度科技 10
+      - HK_油管 TG 8度科技 11
+      - CN_油管 TG 8度科技 16
+      - CN_油管 TG 8度科技 17
+      - CN_油管 TG 8度科技 18
+      - CN_油管 TG 8度科技 19
+      - CN_油管 TG 8度科技 20
+      - JP_油管 TG 8度科技
+      - CN_油管 TG 8度科技 21
+      - CN_油管 TG 8度科技 22
+      - US_油管 TG 8度科技 7
+      - CN_油管 TG 8度科技 23
+      - CN_油管 TG 8度科技 24
+      - US_油管 TG 8度科技 8
+      - US_油管 TG 8度科技 9
+      - CN_油管 TG 8度科技 25
+      - CN_油管 TG 8度科技 26
+      - CN_油管 TG 8度科技 27
+      - CN_油管 TG 8度科技 28
+      - CN_油管 TG 8度科技 29
+      - CN_油管 TG 8度科技 30
+      - null_油管 TG 8度科技
+      - HK_油管 TG 8度科技 12
+      - US_油管 TG 8度科技 10
+      - HK_油管 TG 8度科技 13
+      - CN_油管 TG 8度科技 31
+      - VN_油管 TG 8度科技
+      - US_油管 TG 8度科技 11
+      - IN_油管 TG 8度科技
+      - TW_油管 TG 8度科技
+      - US_油管 TG 8度科技 12
+      - HK_油管 TG 8度科技 14
+      - RU_油管 TG 8度科技
+      - JP_油管 TG 8度科技 2
+      - TW_油管 TG 8度科技 2
+      - US_油管 TG 8度科技 13
+      - TW_油管 TG 8度科技 3
+      - GB_油管 TG 8度科技
+      - HK_油管 TG 8度科技 15
+      - HK_油管 TG 8度科技 16
+      - KR_油管 TG 8度科技
+      - HK_油管 TG 8度科技 17
+      - JP_油管 TG 8度科技 3
+      - CN_油管 TG 8度科技 32
+      - US_油管 TG 8度科技 14
+      - US_油管 TG 8度科技 15
+      - US_油管 TG 8度科技 16
+      - US_油管 TG 8度科技 17
+      - US_油管 TG 8度科技 18
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - _null_null
-      - lindoe日本|三网优化|1x
-      - 澳大利亚01|三网优化|1x
-      - 澳大利亚02|三网优化|1x
-      - 德国|三网优化|1x
-      - 东京|优选原生IP|1x
-      - 俄罗斯|三网优化|1x
-      - 韩国|优选原生IP|1x
-      - 加拿大01|三网优化|1x
-      - 加拿大02|三网优化|1x
-      - 马来西亚|三网优化|优选原生IP|1x
-      - 美国01|三网优化|1x
-      - 美国02|三网优化|1x
-      - 美国03|三网优化|1x
-      - 美国04|三网优化|1x
-      - 日本01|三网优化|1x
-      - 日本02|三网优化|1x
-      - 日本03|三网优化|1x
-      - 日本04|三网优化|1x
-      - 日本05|三网优化|1x
-      - 日本06|三网优化|1x
-      - 台湾04|三网优化|原生IP|1x
-      - 香港04|负载均衡|原生IP|1x
-      - 香港阿里云@vpnhat
-      - 香港阿里云@vpnhat 2
-      - 香港阿里云@vpnhat 3
-      - 香港阿里云@vpnpool
-      - 香港阿里云@vpnpool 2
-      - 香港阿里云@vpnpool 3
-      - 新加坡01|三网优化|1x
-      - 新加坡04|三网优化|优选原生IP|1x
-      - 新加坡05|三网优化|优选原生IP|1x
-      - 新加坡06|三网优化|优选原生IP|1x
-      - 英国01|三网优化|1x
-      - 英国02|三网优化|1x
-      - 英国03|三网优化|1x
-      - 日本02
-      - 香港03
-      - 香港05
-      - 香港06
+      - 油管 TG 8度科技
+      - HK_油管 TG 8度科技
+      - CN_油管 TG 8度科技
+      - HK_油管 TG 8度科技 2
+      - HK_油管 TG 8度科技 3
+      - CN_油管 TG 8度科技 2
+      - HK_油管 TG 8度科技 4
+      - CN_油管 TG 8度科技 3
+      - CN_油管 TG 8度科技 4
+      - HK_油管 TG 8度科技 5
+      - HK_油管 TG 8度科技 6
+      - CN_油管 TG 8度科技 5
+      - US_油管 TG 8度科技
+      - CN_油管 TG 8度科技 6
+      - CN_油管 TG 8度科技 7
+      - CN_油管 TG 8度科技 8
+      - CN_油管 TG 8度科技 9
+      - US_油管 TG 8度科技 2
+      - US_油管 TG 8度科技 3
+      - CN_油管 TG 8度科技 10
+      - HK_油管 TG 8度科技 7
+      - US_油管 TG 8度科技 4
+      - CN_油管 TG 8度科技 11
+      - HK_油管 TG 8度科技 8
+      - CN_油管 TG 8度科技 12
+      - US_油管 TG 8度科技 5
+      - CN_油管 TG 8度科技 13
+      - CN_油管 TG 8度科技 14
+      - US_油管 TG 8度科技 6
+      - CN_油管 TG 8度科技 15
+      - HK_油管 TG 8度科技 9
+      - HK_油管 TG 8度科技 10
+      - HK_油管 TG 8度科技 11
+      - CN_油管 TG 8度科技 16
+      - CN_油管 TG 8度科技 17
+      - CN_油管 TG 8度科技 18
+      - CN_油管 TG 8度科技 19
+      - CN_油管 TG 8度科技 20
+      - JP_油管 TG 8度科技
+      - CN_油管 TG 8度科技 21
+      - CN_油管 TG 8度科技 22
+      - US_油管 TG 8度科技 7
+      - CN_油管 TG 8度科技 23
+      - CN_油管 TG 8度科技 24
+      - US_油管 TG 8度科技 8
+      - US_油管 TG 8度科技 9
+      - CN_油管 TG 8度科技 25
+      - CN_油管 TG 8度科技 26
+      - CN_油管 TG 8度科技 27
+      - CN_油管 TG 8度科技 28
+      - CN_油管 TG 8度科技 29
+      - CN_油管 TG 8度科技 30
+      - null_油管 TG 8度科技
+      - HK_油管 TG 8度科技 12
+      - US_油管 TG 8度科技 10
+      - HK_油管 TG 8度科技 13
+      - CN_油管 TG 8度科技 31
+      - VN_油管 TG 8度科技
+      - US_油管 TG 8度科技 11
+      - IN_油管 TG 8度科技
+      - TW_油管 TG 8度科技
+      - US_油管 TG 8度科技 12
+      - HK_油管 TG 8度科技 14
+      - RU_油管 TG 8度科技
+      - JP_油管 TG 8度科技 2
+      - TW_油管 TG 8度科技 2
+      - US_油管 TG 8度科技 13
+      - TW_油管 TG 8度科技 3
+      - GB_油管 TG 8度科技
+      - HK_油管 TG 8度科技 15
+      - HK_油管 TG 8度科技 16
+      - KR_油管 TG 8度科技
+      - HK_油管 TG 8度科技 17
+      - JP_油管 TG 8度科技 3
+      - CN_油管 TG 8度科技 32
+      - US_油管 TG 8度科技 14
+      - US_油管 TG 8度科技 15
+      - US_油管 TG 8度科技 16
+      - US_油管 TG 8度科技 17
+      - US_油管 TG 8度科技 18
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - _null_null
-      - lindoe日本|三网优化|1x
-      - 澳大利亚01|三网优化|1x
-      - 澳大利亚02|三网优化|1x
-      - 德国|三网优化|1x
-      - 东京|优选原生IP|1x
-      - 俄罗斯|三网优化|1x
-      - 韩国|优选原生IP|1x
-      - 加拿大01|三网优化|1x
-      - 加拿大02|三网优化|1x
-      - 马来西亚|三网优化|优选原生IP|1x
-      - 美国01|三网优化|1x
-      - 美国02|三网优化|1x
-      - 美国03|三网优化|1x
-      - 美国04|三网优化|1x
-      - 日本01|三网优化|1x
-      - 日本02|三网优化|1x
-      - 日本03|三网优化|1x
-      - 日本04|三网优化|1x
-      - 日本05|三网优化|1x
-      - 日本06|三网优化|1x
-      - 台湾04|三网优化|原生IP|1x
-      - 香港04|负载均衡|原生IP|1x
-      - 香港阿里云@vpnhat
-      - 香港阿里云@vpnhat 2
-      - 香港阿里云@vpnhat 3
-      - 香港阿里云@vpnpool
-      - 香港阿里云@vpnpool 2
-      - 香港阿里云@vpnpool 3
-      - 新加坡01|三网优化|1x
-      - 新加坡04|三网优化|优选原生IP|1x
-      - 新加坡05|三网优化|优选原生IP|1x
-      - 新加坡06|三网优化|优选原生IP|1x
-      - 英国01|三网优化|1x
-      - 英国02|三网优化|1x
-      - 英国03|三网优化|1x
-      - 日本02
-      - 香港03
-      - 香港05
-      - 香港06
+      - 油管 TG 8度科技
+      - HK_油管 TG 8度科技
+      - CN_油管 TG 8度科技
+      - HK_油管 TG 8度科技 2
+      - HK_油管 TG 8度科技 3
+      - CN_油管 TG 8度科技 2
+      - HK_油管 TG 8度科技 4
+      - CN_油管 TG 8度科技 3
+      - CN_油管 TG 8度科技 4
+      - HK_油管 TG 8度科技 5
+      - HK_油管 TG 8度科技 6
+      - CN_油管 TG 8度科技 5
+      - US_油管 TG 8度科技
+      - CN_油管 TG 8度科技 6
+      - CN_油管 TG 8度科技 7
+      - CN_油管 TG 8度科技 8
+      - CN_油管 TG 8度科技 9
+      - US_油管 TG 8度科技 2
+      - US_油管 TG 8度科技 3
+      - CN_油管 TG 8度科技 10
+      - HK_油管 TG 8度科技 7
+      - US_油管 TG 8度科技 4
+      - CN_油管 TG 8度科技 11
+      - HK_油管 TG 8度科技 8
+      - CN_油管 TG 8度科技 12
+      - US_油管 TG 8度科技 5
+      - CN_油管 TG 8度科技 13
+      - CN_油管 TG 8度科技 14
+      - US_油管 TG 8度科技 6
+      - CN_油管 TG 8度科技 15
+      - HK_油管 TG 8度科技 9
+      - HK_油管 TG 8度科技 10
+      - HK_油管 TG 8度科技 11
+      - CN_油管 TG 8度科技 16
+      - CN_油管 TG 8度科技 17
+      - CN_油管 TG 8度科技 18
+      - CN_油管 TG 8度科技 19
+      - CN_油管 TG 8度科技 20
+      - JP_油管 TG 8度科技
+      - CN_油管 TG 8度科技 21
+      - CN_油管 TG 8度科技 22
+      - US_油管 TG 8度科技 7
+      - CN_油管 TG 8度科技 23
+      - CN_油管 TG 8度科技 24
+      - US_油管 TG 8度科技 8
+      - US_油管 TG 8度科技 9
+      - CN_油管 TG 8度科技 25
+      - CN_油管 TG 8度科技 26
+      - CN_油管 TG 8度科技 27
+      - CN_油管 TG 8度科技 28
+      - CN_油管 TG 8度科技 29
+      - CN_油管 TG 8度科技 30
+      - null_油管 TG 8度科技
+      - HK_油管 TG 8度科技 12
+      - US_油管 TG 8度科技 10
+      - HK_油管 TG 8度科技 13
+      - CN_油管 TG 8度科技 31
+      - VN_油管 TG 8度科技
+      - US_油管 TG 8度科技 11
+      - IN_油管 TG 8度科技
+      - TW_油管 TG 8度科技
+      - US_油管 TG 8度科技 12
+      - HK_油管 TG 8度科技 14
+      - RU_油管 TG 8度科技
+      - JP_油管 TG 8度科技 2
+      - TW_油管 TG 8度科技 2
+      - US_油管 TG 8度科技 13
+      - TW_油管 TG 8度科技 3
+      - GB_油管 TG 8度科技
+      - HK_油管 TG 8度科技 15
+      - HK_油管 TG 8度科技 16
+      - KR_油管 TG 8度科技
+      - HK_油管 TG 8度科技 17
+      - JP_油管 TG 8度科技 3
+      - CN_油管 TG 8度科技 32
+      - US_油管 TG 8度科技 14
+      - US_油管 TG 8度科技 15
+      - US_油管 TG 8度科技 16
+      - US_油管 TG 8度科技 17
+      - US_油管 TG 8度科技 18
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -407,46 +716,86 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - _null_null
-      - lindoe日本|三网优化|1x
-      - 澳大利亚01|三网优化|1x
-      - 澳大利亚02|三网优化|1x
-      - 德国|三网优化|1x
-      - 东京|优选原生IP|1x
-      - 俄罗斯|三网优化|1x
-      - 韩国|优选原生IP|1x
-      - 加拿大01|三网优化|1x
-      - 加拿大02|三网优化|1x
-      - 马来西亚|三网优化|优选原生IP|1x
-      - 美国01|三网优化|1x
-      - 美国02|三网优化|1x
-      - 美国03|三网优化|1x
-      - 美国04|三网优化|1x
-      - 日本01|三网优化|1x
-      - 日本02|三网优化|1x
-      - 日本03|三网优化|1x
-      - 日本04|三网优化|1x
-      - 日本05|三网优化|1x
-      - 日本06|三网优化|1x
-      - 台湾04|三网优化|原生IP|1x
-      - 香港04|负载均衡|原生IP|1x
-      - 香港阿里云@vpnhat
-      - 香港阿里云@vpnhat 2
-      - 香港阿里云@vpnhat 3
-      - 香港阿里云@vpnpool
-      - 香港阿里云@vpnpool 2
-      - 香港阿里云@vpnpool 3
-      - 新加坡01|三网优化|1x
-      - 新加坡04|三网优化|优选原生IP|1x
-      - 新加坡05|三网优化|优选原生IP|1x
-      - 新加坡06|三网优化|优选原生IP|1x
-      - 英国01|三网优化|1x
-      - 英国02|三网优化|1x
-      - 英国03|三网优化|1x
-      - 日本02
-      - 香港03
-      - 香港05
-      - 香港06
+      - 油管 TG 8度科技
+      - HK_油管 TG 8度科技
+      - CN_油管 TG 8度科技
+      - HK_油管 TG 8度科技 2
+      - HK_油管 TG 8度科技 3
+      - CN_油管 TG 8度科技 2
+      - HK_油管 TG 8度科技 4
+      - CN_油管 TG 8度科技 3
+      - CN_油管 TG 8度科技 4
+      - HK_油管 TG 8度科技 5
+      - HK_油管 TG 8度科技 6
+      - CN_油管 TG 8度科技 5
+      - US_油管 TG 8度科技
+      - CN_油管 TG 8度科技 6
+      - CN_油管 TG 8度科技 7
+      - CN_油管 TG 8度科技 8
+      - CN_油管 TG 8度科技 9
+      - US_油管 TG 8度科技 2
+      - US_油管 TG 8度科技 3
+      - CN_油管 TG 8度科技 10
+      - HK_油管 TG 8度科技 7
+      - US_油管 TG 8度科技 4
+      - CN_油管 TG 8度科技 11
+      - HK_油管 TG 8度科技 8
+      - CN_油管 TG 8度科技 12
+      - US_油管 TG 8度科技 5
+      - CN_油管 TG 8度科技 13
+      - CN_油管 TG 8度科技 14
+      - US_油管 TG 8度科技 6
+      - CN_油管 TG 8度科技 15
+      - HK_油管 TG 8度科技 9
+      - HK_油管 TG 8度科技 10
+      - HK_油管 TG 8度科技 11
+      - CN_油管 TG 8度科技 16
+      - CN_油管 TG 8度科技 17
+      - CN_油管 TG 8度科技 18
+      - CN_油管 TG 8度科技 19
+      - CN_油管 TG 8度科技 20
+      - JP_油管 TG 8度科技
+      - CN_油管 TG 8度科技 21
+      - CN_油管 TG 8度科技 22
+      - US_油管 TG 8度科技 7
+      - CN_油管 TG 8度科技 23
+      - CN_油管 TG 8度科技 24
+      - US_油管 TG 8度科技 8
+      - US_油管 TG 8度科技 9
+      - CN_油管 TG 8度科技 25
+      - CN_油管 TG 8度科技 26
+      - CN_油管 TG 8度科技 27
+      - CN_油管 TG 8度科技 28
+      - CN_油管 TG 8度科技 29
+      - CN_油管 TG 8度科技 30
+      - null_油管 TG 8度科技
+      - HK_油管 TG 8度科技 12
+      - US_油管 TG 8度科技 10
+      - HK_油管 TG 8度科技 13
+      - CN_油管 TG 8度科技 31
+      - VN_油管 TG 8度科技
+      - US_油管 TG 8度科技 11
+      - IN_油管 TG 8度科技
+      - TW_油管 TG 8度科技
+      - US_油管 TG 8度科技 12
+      - HK_油管 TG 8度科技 14
+      - RU_油管 TG 8度科技
+      - JP_油管 TG 8度科技 2
+      - TW_油管 TG 8度科技 2
+      - US_油管 TG 8度科技 13
+      - TW_油管 TG 8度科技 3
+      - GB_油管 TG 8度科技
+      - HK_油管 TG 8度科技 15
+      - HK_油管 TG 8度科技 16
+      - KR_油管 TG 8度科技
+      - HK_油管 TG 8度科技 17
+      - JP_油管 TG 8度科技 3
+      - CN_油管 TG 8度科技 32
+      - US_油管 TG 8度科技 14
+      - US_油管 TG 8度科技 15
+      - US_油管 TG 8度科技 16
+      - US_油管 TG 8度科技 17
+      - US_油管 TG 8度科技 18
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
