@@ -5,491 +5,531 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: HK2 10G 80|倍率1, server: hk2.cycloud.org, port: 80, type: vmess, uuid: 93cd9f59-7e38-41cd-bce9-8412757ab90b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: www.189.cn}, udp: true}
-  - {name: v2ray-ah-az02(港), server: ah.yd01.paopaocloud.cyou, port: 10010, type: vmess, uuid: 6fc1701d-36a0-3096-8889-f625c6570559, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: telegram.channel.p2psharing}, udp: true}
-  - {name: v2ray-ah-hk03(港Netflix), server: ah.yd01.paopaocloud.cyou, port: 10001, type: vmess, uuid: 6fc1701d-36a0-3096-8889-f625c6570559, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: telegram.channel.p2psharing}, udp: true}
-  - {name: v2ray-gz-hk06(hkt港Netflix), server: gz.yd01.paopaocloud.cyou, port: 10009, type: vmess, uuid: 6fc1701d-36a0-3096-8889-f625c6570559, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: telegram.channel.p2psharing}, udp: true}
-  - {name: v2ray-gz-az02(港), server: gz.yd01.paopaocloud.cyou, port: 10010, type: vmess, uuid: 6fc1701d-36a0-3096-8889-f625c6570559, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: telegram.channel.p2psharing}, udp: true}
-  - {name: 香港02|厦门联通|高峰期稳定, server: lt.geia27.xyz, port: 21357, type: vmess, uuid: a0a0cd91-812a-4e3d-be39-052a9d16a776, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: v2ray-ah-hk08(hgc港Netflix), server: ah.yd01.paopaocloud.cyou, port: 10037, type: vmess, uuid: 6fc1701d-36a0-3096-8889-f625c6570559, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: telegram.channel.p2psharing}, udp: true}
-  - {name: v2ray-gz-sgp01(新Netflix), server: gz.yd01.paopaocloud.cyou, port: 10014, type: vmess, uuid: 6fc1701d-36a0-3096-8889-f625c6570559, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: telegram.channel.p2psharing}, udp: true}
-  - {name: 上海5 5Gbps  443|倍率1, server: 40.73.119.227, port: 443, type: vmess, uuid: 93cd9f59-7e38-41cd-bce9-8412757ab90b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: www.189.cn}, udp: true}
-  - {name: v2ray-jm-jp03(日), server: jm.yd02.paopaocloud.cyou, port: 15623, type: vmess, uuid: 6fc1701d-36a0-3096-8889-f625c6570559, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: telegram.channel.p2psharing}, udp: true}
-  - {name: 上海 5Gbps  80|倍率1, server: 52.131.216.65, port: 80, type: vmess, uuid: 93cd9f59-7e38-41cd-bce9-8412757ab90b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: "/dsban2?ed=2048", ws-headers: {Host: www.189.cn}, udp: true}
-  - {name: 上海2 5Gbps  80|倍率1, server: 139.217.223.195, port: 80, type: vmess, uuid: 93cd9f59-7e38-41cd-bce9-8412757ab90b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: www.189.cn}, udp: true}
-  - {name: v2ray-gz-jp03(日|新Netflix), server: gz.yd01.paopaocloud.cyou, port: 10033, type: vmess, uuid: 6fc1701d-36a0-3096-8889-f625c6570559, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: telegram.channel.p2psharing}, udp: true}
-  - {name: 中国_TG@nodesharing_79, server: in04.dns2333.xyz, port: 64078, type: vmess, uuid: a34d6fe7-7ab0-3071-81f7-e24c8edd2acb, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: hk-balancer.airport-v2.com}, udp: true}
-  - {name: v2ray-az-hk03(港Netflix), server: az.hk01.paopaocloud.cyou, port: 10001, type: vmess, uuid: 6fc1701d-36a0-3096-8889-f625c6570559, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: telegram.channel.p2psharing}, udp: true}
-  - {name: 上海4 5Gbps  80|倍率1, server: 52.130.185.159, port: 80, type: vmess, uuid: 93cd9f59-7e38-41cd-bce9-8412757ab90b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: www.189.cn}, udp: true}
-  - {name: v2ray-ah-jp02(日Netflix|Abema|...), server: ah.yd01.paopaocloud.cyou, port: 10015, type: vmess, uuid: 6fc1701d-36a0-3096-8889-f625c6570559, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: telegram.channel.p2psharing}, udp: true}
-  - {name: v2ray-gz-jp02(日), server: gz.yd01.paopaocloud.cyou, port: 10015, type: vmess, uuid: 6fc1701d-36a0-3096-8889-f625c6570559, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: telegram.channel.p2psharing}, udp: true}
-  - {name: v2ray-az-hk07(hgc港Netflix), server: az.hk01.paopaocloud.cyou, port: 10011, type: vmess, uuid: 6fc1701d-36a0-3096-8889-f625c6570559, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: telegram.channel.p2psharing}, udp: true}
-  - {name: 日本_TG@nodesharing_108, server: jp-group-a-direct.node001.xyz, port: 8880, type: vmess, uuid: a34d6fe7-7ab0-3071-81f7-e24c8edd2acb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: jp-group-a-direct.node001.xyz}, udp: true}
-  - {name: 北京4 5Gbps  80|倍率1, server: 159.27.81.147, port: 80, type: vmess, uuid: 93cd9f59-7e38-41cd-bce9-8412757ab90b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: www.189.cn}, udp: true}
-  - {name: 日本01|厦门联通|解锁流媒体, server: lt.geia27.xyz, port: 60583, type: vmess, uuid: a0a0cd91-812a-4e3d-be39-052a9d16a776, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: 北京 5Gbps  80|倍率1, server: 139.217.98.143, port: 80, type: vmess, uuid: 93cd9f59-7e38-41cd-bce9-8412757ab90b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /TS/recharge/tzUrl.html, ws-headers: {Host: www.189.cn}, udp: true}
-  - {name: 上海3 5Gbps  80|倍率1, server: 42.159.184.75, port: 80, type: vmess, uuid: 93cd9f59-7e38-41cd-bce9-8412757ab90b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: "/dsban2?ed=2048", ws-headers: {Host: www.189.cn}, udp: true}
-  - {name: 新加坡01|azHK|解锁流媒体, server: azhk.geia27.xyz, port: 48755, type: vmess, uuid: a0a0cd91-812a-4e3d-be39-052a9d16a776, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: 上海5 5Gbps  80|倍率1, server: 40.73.119.227, port: 80, type: vmess, uuid: 93cd9f59-7e38-41cd-bce9-8412757ab90b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: www.189.cn}, udp: true}
+  - {name: _KR_韩国, server: kr3.uuv2.co.uk, port: 2053, type: vmess, uuid: bef4871a-a3ed-4cca-831f-88382c4382fa, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: kr3.futi.online}, udp: true}
+  - {name: vpnpool-Seattle-Contabo-dip, server: 120.197.88.209, port: 10016, type: vmess, uuid: d6a3f7ed-5d0d-323e-b092-5c1fdeadb34f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: vpnhat-Tokyo-NTT, server: 13.75.95.54, port: 10015, type: vmess, uuid: d6a3f7ed-5d0d-323e-b092-5c1fdeadb34f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: 日 西 IDCF, server: jpn.05.sola.plus, port: 12345, type: vmess, uuid: b282cfed-e0d6-30d4-8a9e-8fba6fba99bc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: vpnhat-Seattle-Contabo-dip, server: 13.75.95.54, port: 10016, type: vmess, uuid: d6a3f7ed-5d0d-323e-b092-5c1fdeadb34f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: vpnpool-Seattle-Contabo-dip 2, server: 120.197.88.209, port: 10018, type: vmess, uuid: d6a3f7ed-5d0d-323e-b092-5c1fdeadb34f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: vpnpool-SG-Oracle, server: 120.197.88.209, port: 10031, type: vmess, uuid: d6a3f7ed-5d0d-323e-b092-5c1fdeadb34f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: EXTM3U-香港HGC-dip, server: 116.162.14.190, port: 10037, type: vmess, uuid: d6a3f7ed-5d0d-323e-b092-5c1fdeadb34f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: vpnpool-新北Hinet-dip, server: 120.197.88.209, port: 10008, type: vmess, uuid: d6a3f7ed-5d0d-323e-b092-5c1fdeadb34f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: vpnpool-香港Adcdata-dip, server: 120.197.88.209, port: 10020, type: vmess, uuid: d6a3f7ed-5d0d-323e-b092-5c1fdeadb34f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: vpnpool-Canyon Country-Multacom, server: 120.197.88.209, port: 10025, type: vmess, uuid: d6a3f7ed-5d0d-323e-b092-5c1fdeadb34f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: EXTM3U-Dubai-Oracle, server: 116.162.14.190, port: 10039, type: vmess, uuid: d6a3f7ed-5d0d-323e-b092-5c1fdeadb34f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: vpnpool-Chuncheon-Oracle, server: 120.197.88.209, port: 10038, type: vmess, uuid: d6a3f7ed-5d0d-323e-b092-5c1fdeadb34f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: EXTM3U-香港HGC-dip 2, server: 116.162.14.190, port: 10011, type: vmess, uuid: d6a3f7ed-5d0d-323e-b092-5c1fdeadb34f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: vpnpool-Dallas-NextArray-dip, server: 120.197.88.209, port: 10017, type: vmess, uuid: d6a3f7ed-5d0d-323e-b092-5c1fdeadb34f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: vpnhat-Dallas-NextArray-dip, server: 13.75.95.54, port: 10017, type: vmess, uuid: d6a3f7ed-5d0d-323e-b092-5c1fdeadb34f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: vpnhat-Paris-Online, server: 13.75.95.54, port: 10012, type: vmess, uuid: d6a3f7ed-5d0d-323e-b092-5c1fdeadb34f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: vpnpool-Dubai-Oracle, server: 120.197.88.209, port: 10039, type: vmess, uuid: d6a3f7ed-5d0d-323e-b092-5c1fdeadb34f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: EXTM3U-Seattle-Contabo-dip, server: 116.162.14.190, port: 10016, type: vmess, uuid: d6a3f7ed-5d0d-323e-b092-5c1fdeadb34f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: vpnpool-San Jose-Oracle, server: 120.197.88.209, port: 10026, type: vmess, uuid: d6a3f7ed-5d0d-323e-b092-5c1fdeadb34f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: EXTM3U-LAX-M247, server: 116.162.14.190, port: 10027, type: vmess, uuid: d6a3f7ed-5d0d-323e-b092-5c1fdeadb34f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: EXTM3U-Tokyo-Optage-dip, server: 116.162.14.190, port: 10004, type: vmess, uuid: d6a3f7ed-5d0d-323e-b092-5c1fdeadb34f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: vpnpool-台北Hinet-dip, server: 120.197.88.209, port: 10034, type: vmess, uuid: d6a3f7ed-5d0d-323e-b092-5c1fdeadb34f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: EXTM3U-台北Hinet-dip, server: 116.162.14.190, port: 10035, type: vmess, uuid: d6a3f7ed-5d0d-323e-b092-5c1fdeadb34f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: vpnhat-新北Hinet-dip, server: 13.75.95.54, port: 10008, type: vmess, uuid: d6a3f7ed-5d0d-323e-b092-5c1fdeadb34f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: EXTM3U-Tokyo-Oracle, server: 116.162.14.190, port: 10007, type: vmess, uuid: d6a3f7ed-5d0d-323e-b092-5c1fdeadb34f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: vpnpool-SG-DigitalOcean, server: 120.197.88.209, port: 10021, type: vmess, uuid: d6a3f7ed-5d0d-323e-b092-5c1fdeadb34f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: EXTM3U-Chuncheon-Oracle, server: 116.162.14.190, port: 10038, type: vmess, uuid: d6a3f7ed-5d0d-323e-b092-5c1fdeadb34f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: vpnpool-台北Hinet-dip 2, server: 120.197.88.209, port: 10035, type: vmess, uuid: d6a3f7ed-5d0d-323e-b092-5c1fdeadb34f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: vpnhat-Tokyo-Oracle, server: 13.75.95.54, port: 10007, type: vmess, uuid: d6a3f7ed-5d0d-323e-b092-5c1fdeadb34f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: 台 Hinet (高优先), server: twn.02.sola.plus, port: 11001, type: vmess, uuid: b282cfed-e0d6-30d4-8a9e-8fba6fba99bc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: vpnpool-香港HGC-dip, server: 120.197.88.209, port: 10011, type: vmess, uuid: d6a3f7ed-5d0d-323e-b092-5c1fdeadb34f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: vpnhat-香港HGC-dip, server: 13.75.95.54, port: 10011, type: vmess, uuid: d6a3f7ed-5d0d-323e-b092-5c1fdeadb34f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: 中 港 HKBN, server: hk.01.ddnss.vip, port: 12345, type: vmess, uuid: b282cfed-e0d6-30d4-8a9e-8fba6fba99bc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: 中国_TG@nodesharing_87, server: 134.wowogg.cyou, port: 52334, type: vmess, uuid: 7b0e18c2-7c79-370b-833d-5b2191ea112a, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: v2ray-az-hk06(hkt港Netflix), server: az.hk01.paopaocloud.cyou, port: 10009, type: vmess, uuid: 6fc1701d-36a0-3096-8889-f625c6570559, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: telegram.channel.p2psharing}, udp: true}
-  - {name: v2ray-az-jp03(日|新Netflix), server: az.hk01.paopaocloud.cyou, port: 10033, type: vmess, uuid: 6fc1701d-36a0-3096-8889-f625c6570559, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: telegram.channel.p2psharing}, udp: true}
-  - {name: 北京2 5Gbps  80|倍率1, server: 42.159.81.3, port: 80, type: vmess, uuid: 93cd9f59-7e38-41cd-bce9-8412757ab90b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /TS/recharge/tzUrl.html, ws-headers: {Host: www.189.cn}, udp: true}
-  - {name: v2ray-az-sgp01(新Netflix), server: az.hk01.paopaocloud.cyou, port: 10014, type: vmess, uuid: 6fc1701d-36a0-3096-8889-f625c6570559, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: telegram.channel.p2psharing}, udp: true}
-  - {name: v2ray-az-jp05(日Netflix|Abema|...), server: az.hk01.paopaocloud.cyou, port: 10004, type: vmess, uuid: 6fc1701d-36a0-3096-8889-f625c6570559, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: telegram.channel.p2psharing}, udp: true}
-  - {name: v2ray-ah-jp05(日Netflix|Abema|...), server: ah.yd01.paopaocloud.cyou, port: 10004, type: vmess, uuid: 6fc1701d-36a0-3096-8889-f625c6570559, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: telegram.channel.p2psharing}, udp: true}
-  - {name: 美国01|azHK|解锁流媒体, server: azhk.geia27.xyz, port: 30854, type: vmess, uuid: a0a0cd91-812a-4e3d-be39-052a9d16a776, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: v2ray-az-jp01(日Netflix|Abema|...), server: az.hk01.paopaocloud.cyou, port: 10007, type: vmess, uuid: 6fc1701d-36a0-3096-8889-f625c6570559, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: telegram.channel.p2psharing}, udp: true}
-  - {name: v2ray-az-jp02(日Netflix|Abema|...), server: az.hk01.paopaocloud.cyou, port: 10015, type: vmess, uuid: 6fc1701d-36a0-3096-8889-f625c6570559, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: telegram.channel.p2psharing}, udp: true}
-  - {name: v2ray-az-hk01(hgc港Netflix), server: az.hk01.paopaocloud.cyou, port: 10032, type: vmess, uuid: 6fc1701d-36a0-3096-8889-f625c6570559, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: telegram.channel.p2psharing}, udp: true}
-  - {name: 英国01|azHK|解锁流媒体, server: azhk.geia27.xyz, port: 36439, type: vmess, uuid: a0a0cd91-812a-4e3d-be39-052a9d16a776, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 日 东 IDCF, server: jpn.06.sola.plus, port: 12345, type: vmess, uuid: b282cfed-e0d6-30d4-8a9e-8fba6fba99bc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: vpnhat-香港Adcdata-dip, server: 13.75.95.54, port: 10020, type: vmess, uuid: d6a3f7ed-5d0d-323e-b092-5c1fdeadb34f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}, udp: true}
   - {name: 中国_TG@nodesharing_80, server: 114.wowogg.cyou, port: 52214, type: vmess, uuid: 7b0e18c2-7c79-370b-833d-5b2191ea112a, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 英国02|azhk|解锁流媒体, server: azhk.geia27.xyz, port: 31328, type: vmess, uuid: a0a0cd91-812a-4e3d-be39-052a9d16a776, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: 加拿大01|azHK|高峰期稳定, server: azhk.geia27.xyz, port: 26321, type: vmess, uuid: a0a0cd91-812a-4e3d-be39-052a9d16a776, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: v2ray-ah-kr01, server: ah.yd01.paopaocloud.cyou, port: 10016, type: vmess, uuid: 6fc1701d-36a0-3096-8889-f625c6570559, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: telegram.channel.p2psharing}, udp: true}
-  - {name: v2ray-az-us06(美), server: az.hk01.paopaocloud.cyou, port: 10026, type: vmess, uuid: 6fc1701d-36a0-3096-8889-f625c6570559, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: telegram.channel.p2psharing}, udp: true}
-  - {name: v2ray-ah-us07(美流媒体解锁), server: ah.yd01.paopaocloud.cyou, port: 10027, type: vmess, uuid: 6fc1701d-36a0-3096-8889-f625c6570559, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: telegram.channel.p2psharing}, udp: true}
-  - {name: v2ray-az-us05(美Netflix), server: az.hk01.paopaocloud.cyou, port: 10025, type: vmess, uuid: 6fc1701d-36a0-3096-8889-f625c6570559, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: telegram.channel.p2psharing}, udp: true}
-  - {name: 香港_TG@nodesharing_26, server: 23.v2-ray.cyou, port: 15023, type: vmess, uuid: 047184b7-6da2-3d3f-ac27-6a1a8701daf8, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: microsoft.com}, udp: true}
-  - {name: v2ray日02(Netflix|Abema|...), server: paopao.v2.jp02.paopaocloud.cyou, port: 13308, type: vmess, uuid: 6fc1701d-36a0-3096-8889-f625c6570559, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: telegram.channel.p2psharing}, udp: true}
-  - {name: 中国_TG@nodesharing_72, server: 115.wowogg.cyou, port: 52215, type: vmess, uuid: 7b0e18c2-7c79-370b-833d-5b2191ea112a, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: US_油管 TG 8度科技, server: bpjzx2.cainiao.tk, port: 443, type: vmess, uuid: 24b4b1e1-7a89-45f6-858c-242cf53b5bdb, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /24b4b1e1-7a89-45f6-858c-242cf53b5bdb-vmess, ws-headers: {Host: orange-mode-ac6a.xjp0mx2cp.workers.dev}, udp: true}
-  - {name: v2ray-gz-hk01(hgc港Netflix), server: gz.yd01.paopaocloud.cyou, port: 10032, type: vmess, uuid: 6fc1701d-36a0-3096-8889-f625c6570559, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: telegram.channel.p2psharing}, udp: true}
-  - {name: v2ray-az-hl01, server: az.hk01.paopaocloud.cyou, port: 10012, type: vmess, uuid: 6fc1701d-36a0-3096-8889-f625c6570559, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: telegram.channel.p2psharing}, udp: true}
-  - {name: v2ray-az-us02(美), server: az.hk01.paopaocloud.cyou, port: 10017, type: vmess, uuid: 6fc1701d-36a0-3096-8889-f625c6570559, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: telegram.channel.p2psharing}, udp: true}
-  - {name: v2ray-gz-hk03(港Netflix), server: gz.yd01.paopaocloud.cyou, port: 10001, type: vmess, uuid: 6fc1701d-36a0-3096-8889-f625c6570559, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: telegram.channel.p2psharing}, udp: true}
-  - {name: ฅ^ΦωΦ^ฅ6༶ฅ^ΦωΦ^ฅ, server: jj01.nfeng6.pp.ua, port: 39065, type: vmess, uuid: a8554f20-45a7-3844-8fc5-c2ea1397d467, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: HK_油管 TG 8度科技, server: 0320hk567.fans8.xyz, port: 443, type: vmess, uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c, alterId: 2, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ray, ws-headers: {Host: 0320hk567.fans8.xyz}, udp: true}
-  - {name: 韩国 80|解锁Netflix 倍率1, server: ke.cycloud.org, port: 80, type: vmess, uuid: 93cd9f59-7e38-41cd-bce9-8412757ab90b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: "/?ed=2048", ws-headers: {Host: www.189.cn}, udp: true}
-  - {name: null_油管 TG 8度科技, server: 0316ro.fans8.xyz, port: 443, type: vmess, uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c, alterId: 2, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /nl, ws-headers: {Host: 0316ro.fans8.xyz}, udp: true}
-  - {name: CN_油管 TG 8度科技, server: 120.233.147.118, port: 58938, type: vmess, uuid: f6fee97f-1c14-326b-b57f-41af5449d3a9, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: uae.oracleusa.ml}, udp: true}
-  - {name: v2ray-az-kr01, server: az.hk01.paopaocloud.cyou, port: 10016, type: vmess, uuid: 6fc1701d-36a0-3096-8889-f625c6570559, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: telegram.channel.p2psharing}, udp: true}
-  - {name: v2ray-az-us03(美Netflix), server: az.hk01.paopaocloud.cyou, port: 10018, type: vmess, uuid: 6fc1701d-36a0-3096-8889-f625c6570559, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: telegram.channel.p2psharing}, udp: true}
-  - {name: 韩国_TG@nodesharing_135, server: vs.mumi.bid, port: 10124, type: vmess, uuid: 0748a567-ca97-4fc8-9d9c-9ca18f2b9ff4, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: vs.mumi.bid}, udp: true}
-  - {name: HK_油管 TG 8度科技 2, server: 65.52.171.156, port: 36174, type: vmess, uuid: 047184b7-6da2-3d3f-ac27-6a1a8701daf8, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 65.52.171.156}, udp: true}
-  - {name: CN_油管 TG 8度科技 2, server: 120.233.147.118, port: 58938, type: vmess, uuid: 106f379f-d331-399c-ba4d-2f352b70bfcf, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: uae.oracleusa.ml}, udp: true}
-  - {name: ฅ^ΦωΦ^ฅ5༶ฅ^ΦωΦ^ฅ, server: jj01.nfeng6.pp.ua, port: 39050, type: vmess, uuid: a8554f20-45a7-3844-8fc5-c2ea1397d467, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: v2ray-jm-tw01(台Netflix), server: jm.yd02.paopaocloud.cyou, port: 15621, type: vmess, uuid: 6fc1701d-36a0-3096-8889-f625c6570559, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: telegram.channel.p2psharing}, udp: true}
-  - {name: CN_油管 TG 8度科技 3, server: 120.233.147.118, port: 53962, type: vmess, uuid: f6fee97f-1c14-326b-b57f-41af5449d3a9, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: sw.oracleusa.ml}, udp: true}
-  - {name: 中转HK 10G 80|倍率1, server: 40.72.184.172, port: 80, type: vmess, uuid: 93cd9f59-7e38-41cd-bce9-8412757ab90b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: "/?ed=2048", ws-headers: {Host: www.189.cn}, udp: true}
-  - {name: 香港_TG@nodesharing_24, server: 20.205.47.95, port: 15023, type: vmess, uuid: 047184b7-6da2-3d3f-ac27-6a1a8701daf8, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 20.205.47.95}, udp: true}
-  - {name: v2ray-az-ru02(俄netflix), server: az.hk01.paopaocloud.cyou, port: 10031, type: vmess, uuid: 6fc1701d-36a0-3096-8889-f625c6570559, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: telegram.channel.p2psharing}, udp: true}
-  - {name: v2ray-ah-tw01(台Netflix), server: ah.yd01.paopaocloud.cyou, port: 10006, type: vmess, uuid: 6fc1701d-36a0-3096-8889-f625c6570559, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: telegram.channel.p2psharing}, udp: true}
-  - {name: v2ray-gz-jp01(日Netflix|Abema|...), server: gz.yd01.paopaocloud.cyou, port: 10007, type: vmess, uuid: 6fc1701d-36a0-3096-8889-f625c6570559, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: telegram.channel.p2psharing}, udp: true}
-  - {name: HK_油管 TG 8度科技 3, server: 65.52.171.156, port: 15038, type: vmess, uuid: 047184b7-6da2-3d3f-ac27-6a1a8701daf8, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 65.52.171.156}, udp: true}
-  - {name: 香港_TG@nodesharing_36, server: 14.v2-ray.cyou, port: 15014, type: vmess, uuid: 047184b7-6da2-3d3f-ac27-6a1a8701daf8, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: microsoft.com}, udp: true}
-  - {name: v2ray-gz-tw01(台netflix), server: gz.yd01.paopaocloud.cyou, port: 10006, type: vmess, uuid: 6fc1701d-36a0-3096-8889-f625c6570559, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: telegram.channel.p2psharing}, udp: true}
   - {name: 台湾_TG@nodesharing_173, server: 0319tw123.fans8.xyz, port: 443, type: vmess, uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c, alterId: 2, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /nmsl, ws-headers: {Host: 0319tw123.fans8.xyz}, udp: true}
-  - {name: 香港_TG@nodesharing_65, server: 84.v2-ray.cyou, port: 15084, type: vmess, uuid: 047184b7-6da2-3d3f-ac27-6a1a8701daf8, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: microsoft.com}, udp: true}
-  - {name: v2ray-az-mol01(摩尔多卡), server: az.hk01.paopaocloud.cyou, port: 10036, type: vmess, uuid: 6fc1701d-36a0-3096-8889-f625c6570559, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: telegram.channel.p2psharing}, udp: true}
-  - {name: ฅ^ΦωΦ^ฅ2༶ฅ^ΦωΦ^ฅ, server: jj01.nfeng6.pp.ua, port: 39049, type: vmess, uuid: a8554f20-45a7-3844-8fc5-c2ea1397d467, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 北京游戏节点 限速10mbps, server: 52.131.39.94, port: 80, type: vmess, uuid: 93cd9f59-7e38-41cd-bce9-8412757ab90b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: "/dsban2?ed=2048", ws-headers: {Host: www.189.cn}, udp: true}
-  - {name: 香港01|广州移动|高峰期稳定, server: gy.geia27.xyz, port: 38878, type: vmess, uuid: a0a0cd91-812a-4e3d-be39-052a9d16a776, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: v2ray-gz-us03(美Netflix), server: gz.yd01.paopaocloud.cyou, port: 10018, type: vmess, uuid: 6fc1701d-36a0-3096-8889-f625c6570559, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: telegram.channel.p2psharing}, udp: true}
-  - {name: MO01|澳门|SS|x5.0, server: colagzcm.jumpwallsocks.online, port: 48101, type: ss, cipher: chacha20-ietf-poly1305, password: f238b431-ba39-427d-9bbd-2440c30ef211, udp: true}
-  - {name: US04|美国|SS|x1.0, server: colagzcm.jumpwallsocks.online, port: 41006, type: ss, cipher: chacha20-ietf-poly1305, password: f238b431-ba39-427d-9bbd-2440c30ef211, udp: true}
-  - {name: US05|美国|SS|x1.0, server: colagzcm.jumpwallsocks.online, port: 41009, type: ss, cipher: chacha20-ietf-poly1305, password: f238b431-ba39-427d-9bbd-2440c30ef211, udp: true}
-  - {name: US03|美国|SS|x1.0, server: colagzcm.jumpwallsocks.online, port: 41003, type: ss, cipher: chacha20-ietf-poly1305, password: f238b431-ba39-427d-9bbd-2440c30ef211, udp: true}
-  - {name: US02|美国|SS|x1.0, server: colagzcm.jumpwallsocks.online, port: 41002, type: ss, cipher: chacha20-ietf-poly1305, password: f238b431-ba39-427d-9bbd-2440c30ef211, udp: true}
-  - {name: CN_油管+TG+8度科技, server: gkdcm.gkdcn.top, port: 21806, type: ss, cipher: chacha20-ietf-poly1305, password: 82b60549-103b-31f0-b6fb-a303177522ae, udp: true}
-  - {name: CN_油管+TG+8度科技 2, server: gkdcm.gkdcn.top, port: 21822, type: ss, cipher: chacha20-ietf-poly1305, password: 82b60549-103b-31f0-b6fb-a303177522ae, udp: true}
-  - {name: HK02|香港|SS|x1.0, server: colagzcm.jumpwallsocks.online, port: 40002, type: ss, cipher: chacha20-ietf-poly1305, password: f238b431-ba39-427d-9bbd-2440c30ef211, udp: true}
-  - {name: HK01|香港|SS|x1.0, server: colagzcm.jumpwallsocks.online, port: 40001, type: ss, cipher: chacha20-ietf-poly1305, password: f238b431-ba39-427d-9bbd-2440c30ef211, udp: true}
-  - {name: KR01|韩国|SS|x1.0, server: colagzcm.jumpwallsocks.online, port: 44001, type: ss, cipher: chacha20-ietf-poly1305, password: f238b431-ba39-427d-9bbd-2440c30ef211, udp: true}
-  - {name: _US_美国, server: 169.197.142.4, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: MO01|澳门|x5.0, server: colagzcm.jumpwallsocks.online, port: 38101, type: trojan, password: f238b431-ba39-427d-9bbd-2440c30ef211, sni: colagzcm.jumpwallsocks.online, skip-cert-verify: true, udp: true}
-  - {name: TH01|泰国|x1.0, server: colagzcm.jumpwallsocks.online, port: 33003, type: trojan, password: f238b431-ba39-427d-9bbd-2440c30ef211, sni: colagzcm.jumpwallsocks.online, skip-cert-verify: true, udp: true}
-  - {name: JP02|日本|x1.0, server: colagzcm.jumpwallsocks.online, port: 32002, type: trojan, password: f238b431-ba39-427d-9bbd-2440c30ef211, sni: colagzcm.jumpwallsocks.online, skip-cert-verify: true, udp: true}
-  - {name: RO01|罗马尼亚|x1.0, server: colagzcm.jumpwallsocks.online, port: 31004, type: trojan, password: f238b431-ba39-427d-9bbd-2440c30ef211, sni: colagzcm.jumpwallsocks.online, skip-cert-verify: true, udp: true}
-  - {name: HK04|香港|x1.0, server: colagzcm.jumpwallsocks.online, port: 30004, type: trojan, password: f238b431-ba39-427d-9bbd-2440c30ef211, sni: colagzcm.jumpwallsocks.online, skip-cert-verify: true, udp: true}
-  - {name: KR02|韩国|x1.0, server: colagzcm.jumpwallsocks.online, port: 34002, type: trojan, password: f238b431-ba39-427d-9bbd-2440c30ef211, sni: colagzcm.jumpwallsocks.online, skip-cert-verify: true, udp: true}
-  - {name: US05|美国|x1.0, server: colagzcm.jumpwallsocks.online, port: 31009, type: trojan, password: f238b431-ba39-427d-9bbd-2440c30ef211, sni: colagzcm.jumpwallsocks.online, skip-cert-verify: true, udp: true}
-  - {name: HK01|香港|x1.0, server: colagzcm.jumpwallsocks.online, port: 30001, type: trojan, password: f238b431-ba39-427d-9bbd-2440c30ef211, sni: colagzcm.jumpwallsocks.online, skip-cert-verify: true, udp: true}
-  - {name: UK01|英国|x1.0, server: colagzcm.jumpwallsocks.online, port: 35001, type: trojan, password: f238b431-ba39-427d-9bbd-2440c30ef211, sni: colagzcm.jumpwallsocks.online, skip-cert-verify: true, udp: true}
-  - {name: UK02|英国|x2.0, server: colagzcm.jumpwallsocks.online, port: 35003, type: trojan, password: f238b431-ba39-427d-9bbd-2440c30ef211, sni: colagzcm.jumpwallsocks.online, skip-cert-verify: true, udp: true}
-  - {name: NL01|荷兰|x1.0, server: colagzcm.jumpwallsocks.online, port: 35002, type: trojan, password: f238b431-ba39-427d-9bbd-2440c30ef211, sni: colagzcm.jumpwallsocks.online, skip-cert-verify: true, udp: true}
-  - {name: HU01|匈牙利|x1.0, server: colagzcm.jumpwallsocks.online, port: 35004, type: trojan, password: f238b431-ba39-427d-9bbd-2440c30ef211, sni: colagzcm.jumpwallsocks.online, skip-cert-verify: true, udp: true}
-  - {name: US04|美国|x1.0, server: colagzcm.jumpwallsocks.online, port: 31006, type: trojan, password: f238b431-ba39-427d-9bbd-2440c30ef211, sni: colagzcm.jumpwallsocks.online, skip-cert-verify: true, udp: true}
-  - {name: DE01|德国|x1.0, server: colagzcm.jumpwallsocks.online, port: 37001, type: trojan, password: f238b431-ba39-427d-9bbd-2440c30ef211, sni: colagzcm.jumpwallsocks.online, skip-cert-verify: true, udp: true}
+  - {name: null_油管 TG 8度科技, server: 0316ro.fans8.xyz, port: 443, type: vmess, uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c, alterId: 2, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /nl, ws-headers: {Host: 0316ro.fans8.xyz}, udp: true}
+  - {name: HK_油管 TG 8度科技, server: 0320hk567.fans8.xyz, port: 443, type: vmess, uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c, alterId: 2, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ray, ws-headers: {Host: 0320hk567.fans8.xyz}, udp: true}
+  - {name: US_油管 TG 8度科技, server: bpjzx2.cainiao.tk, port: 443, type: vmess, uuid: 24b4b1e1-7a89-45f6-858c-242cf53b5bdb, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /24b4b1e1-7a89-45f6-858c-242cf53b5bdb-vmess, ws-headers: {Host: orange-mode-ac6a.xjp0mx2cp.workers.dev}, udp: true}
+  - {name: 日 sakura, server: jpn.03.sola.plus, port: 12345, type: vmess, uuid: b282cfed-e0d6-30d4-8a9e-8fba6fba99bc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 日 GMO, server: jpn.04.sola.plus, port: 12345, type: vmess, uuid: b282cfed-e0d6-30d4-8a9e-8fba6fba99bc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: vpnhat-SG-DigitalOcean, server: 13.75.95.54, port: 10021, type: vmess, uuid: d6a3f7ed-5d0d-323e-b092-5c1fdeadb34f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: vpnhat-Novosibirsk-Adman, server: 13.75.95.54, port: 10023, type: vmess, uuid: d6a3f7ed-5d0d-323e-b092-5c1fdeadb34f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: vpnhat-Canyon Country-Multacom, server: 13.75.95.54, port: 10025, type: vmess, uuid: d6a3f7ed-5d0d-323e-b092-5c1fdeadb34f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: vpnhat-San Jose-Oracle, server: 13.75.95.54, port: 10026, type: vmess, uuid: d6a3f7ed-5d0d-323e-b092-5c1fdeadb34f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: vpnhat-LAX-M247, server: 13.75.95.54, port: 10027, type: vmess, uuid: d6a3f7ed-5d0d-323e-b092-5c1fdeadb34f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: vpnhat-SG-Oracle, server: 13.75.95.54, port: 10031, type: vmess, uuid: d6a3f7ed-5d0d-323e-b092-5c1fdeadb34f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: vpnhat-香港HGC-dip 2, server: 13.75.95.54, port: 10032, type: vmess, uuid: d6a3f7ed-5d0d-323e-b092-5c1fdeadb34f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: vpnhat-Tokyo-M247, server: 13.75.95.54, port: 10033, type: vmess, uuid: d6a3f7ed-5d0d-323e-b092-5c1fdeadb34f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: vpnhat-台北Hinet-dip, server: 13.75.95.54, port: 10034, type: vmess, uuid: d6a3f7ed-5d0d-323e-b092-5c1fdeadb34f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: vpnhat-台北Hinet-dip 2, server: 13.75.95.54, port: 10035, type: vmess, uuid: d6a3f7ed-5d0d-323e-b092-5c1fdeadb34f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: vpnhat-MD-Chisinau-AlexHost, server: 13.75.95.54, port: 10036, type: vmess, uuid: d6a3f7ed-5d0d-323e-b092-5c1fdeadb34f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: vpnhat-香港HGC-dip 3, server: 13.75.95.54, port: 10037, type: vmess, uuid: d6a3f7ed-5d0d-323e-b092-5c1fdeadb34f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: vpnhat-香港HKT, server: 20.205.109.227, port: 10001, type: vmess, uuid: d6a3f7ed-5d0d-323e-b092-5c1fdeadb34f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: vpnhat-香港HKT 2, server: 20.205.109.227, port: 10002, type: vmess, uuid: d6a3f7ed-5d0d-323e-b092-5c1fdeadb34f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: vpnhat-香港HKT 3, server: 20.205.109.227, port: 10003, type: vmess, uuid: d6a3f7ed-5d0d-323e-b092-5c1fdeadb34f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: vpnhat-Tokyo-Optage-dip, server: 20.205.109.227, port: 10004, type: vmess, uuid: d6a3f7ed-5d0d-323e-b092-5c1fdeadb34f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: vpnhat-新北Hinet-dip 2, server: 20.205.109.227, port: 10006, type: vmess, uuid: d6a3f7ed-5d0d-323e-b092-5c1fdeadb34f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: vpnhat-Tokyo-Oracle 2, server: 20.205.109.227, port: 10007, type: vmess, uuid: d6a3f7ed-5d0d-323e-b092-5c1fdeadb34f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: vpnhat-新北Hinet-dip 3, server: 20.205.109.227, port: 10008, type: vmess, uuid: d6a3f7ed-5d0d-323e-b092-5c1fdeadb34f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: vpnhat-香港Azure, server: 20.205.109.227, port: 10009, type: vmess, uuid: d6a3f7ed-5d0d-323e-b092-5c1fdeadb34f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: vpnhat-香港HGC-dip 4, server: 20.205.109.227, port: 10010, type: vmess, uuid: d6a3f7ed-5d0d-323e-b092-5c1fdeadb34f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: vpnhat-香港HGC-dip 5, server: 20.205.109.227, port: 10011, type: vmess, uuid: d6a3f7ed-5d0d-323e-b092-5c1fdeadb34f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: vpnhat-Paris-Online 2, server: 20.205.109.227, port: 10012, type: vmess, uuid: d6a3f7ed-5d0d-323e-b092-5c1fdeadb34f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: vpnhat-Frankfurt-Leaseweb, server: 20.205.109.227, port: 10013, type: vmess, uuid: d6a3f7ed-5d0d-323e-b092-5c1fdeadb34f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: vpnhat-SG-Oracle 2, server: 20.205.109.227, port: 10014, type: vmess, uuid: d6a3f7ed-5d0d-323e-b092-5c1fdeadb34f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: vpnhat-Tokyo-NTT 2, server: 20.205.109.227, port: 10015, type: vmess, uuid: d6a3f7ed-5d0d-323e-b092-5c1fdeadb34f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: vpnhat-Seattle-Contabo-dip 2, server: 20.205.109.227, port: 10016, type: vmess, uuid: d6a3f7ed-5d0d-323e-b092-5c1fdeadb34f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: vpnhat-Dallas-NextArray-dip 2, server: 20.205.109.227, port: 10017, type: vmess, uuid: d6a3f7ed-5d0d-323e-b092-5c1fdeadb34f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: vpnhat-Seattle-Contabo-dip 3, server: 20.205.109.227, port: 10018, type: vmess, uuid: d6a3f7ed-5d0d-323e-b092-5c1fdeadb34f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: vpnhat-香港Adcdata-dip 2, server: 20.205.109.227, port: 10020, type: vmess, uuid: d6a3f7ed-5d0d-323e-b092-5c1fdeadb34f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: vpnhat-SG-DigitalOcean 2, server: 20.205.109.227, port: 10021, type: vmess, uuid: d6a3f7ed-5d0d-323e-b092-5c1fdeadb34f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: vpnhat-Novosibirsk-Adman 2, server: 20.205.109.227, port: 10023, type: vmess, uuid: d6a3f7ed-5d0d-323e-b092-5c1fdeadb34f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: vpnhat-Canyon Country-Multacom 2, server: 20.205.109.227, port: 10025, type: vmess, uuid: d6a3f7ed-5d0d-323e-b092-5c1fdeadb34f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: vpnhat-San Jose-Oracle 2, server: 20.205.109.227, port: 10026, type: vmess, uuid: d6a3f7ed-5d0d-323e-b092-5c1fdeadb34f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: vpnhat-LAX-M247 2, server: 20.205.109.227, port: 10027, type: vmess, uuid: d6a3f7ed-5d0d-323e-b092-5c1fdeadb34f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: vpnhat-SG-Oracle 3, server: 20.205.109.227, port: 10031, type: vmess, uuid: d6a3f7ed-5d0d-323e-b092-5c1fdeadb34f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: vpnhat-香港HGC-dip 6, server: 20.205.109.227, port: 10032, type: vmess, uuid: d6a3f7ed-5d0d-323e-b092-5c1fdeadb34f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: vpnhat-Tokyo-M247 2, server: 20.205.109.227, port: 10033, type: vmess, uuid: d6a3f7ed-5d0d-323e-b092-5c1fdeadb34f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: vpnhat-台北Hinet-dip 3, server: 20.205.109.227, port: 10034, type: vmess, uuid: d6a3f7ed-5d0d-323e-b092-5c1fdeadb34f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: vpnhat-台北Hinet-dip 4, server: 20.205.109.227, port: 10035, type: vmess, uuid: d6a3f7ed-5d0d-323e-b092-5c1fdeadb34f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: vpnhat-MD-Chisinau-AlexHost 2, server: 20.205.109.227, port: 10036, type: vmess, uuid: d6a3f7ed-5d0d-323e-b092-5c1fdeadb34f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: vpnhat-香港HGC-dip 7, server: 20.205.109.227, port: 10037, type: vmess, uuid: d6a3f7ed-5d0d-323e-b092-5c1fdeadb34f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: vpnhat-香港HKT 4, server: 20.239.49.112, port: 10001, type: vmess, uuid: d6a3f7ed-5d0d-323e-b092-5c1fdeadb34f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: vpnhat-香港HKT 5, server: 20.239.49.112, port: 10002, type: vmess, uuid: d6a3f7ed-5d0d-323e-b092-5c1fdeadb34f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: vpnhat-香港HKT 6, server: 20.239.49.112, port: 10003, type: vmess, uuid: d6a3f7ed-5d0d-323e-b092-5c1fdeadb34f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: vpnhat-Tokyo-Optage-dip 2, server: 20.239.49.112, port: 10004, type: vmess, uuid: d6a3f7ed-5d0d-323e-b092-5c1fdeadb34f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: vpnhat-新北Hinet-dip 4, server: 20.239.49.112, port: 10006, type: vmess, uuid: d6a3f7ed-5d0d-323e-b092-5c1fdeadb34f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: vpnhat-Tokyo-Oracle 3, server: 20.239.49.112, port: 10007, type: vmess, uuid: d6a3f7ed-5d0d-323e-b092-5c1fdeadb34f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: vpnhat-新北Hinet-dip 5, server: 20.239.49.112, port: 10008, type: vmess, uuid: d6a3f7ed-5d0d-323e-b092-5c1fdeadb34f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: vpnhat-香港Azure 2, server: 20.239.49.112, port: 10009, type: vmess, uuid: d6a3f7ed-5d0d-323e-b092-5c1fdeadb34f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: vpnhat-香港HGC-dip 8, server: 20.239.49.112, port: 10010, type: vmess, uuid: d6a3f7ed-5d0d-323e-b092-5c1fdeadb34f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: vpnhat-香港HGC-dip 9, server: 20.239.49.112, port: 10011, type: vmess, uuid: d6a3f7ed-5d0d-323e-b092-5c1fdeadb34f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: vpnhat-Paris-Online 3, server: 20.239.49.112, port: 10012, type: vmess, uuid: d6a3f7ed-5d0d-323e-b092-5c1fdeadb34f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: vpnhat-Frankfurt-Leaseweb 2, server: 20.239.49.112, port: 10013, type: vmess, uuid: d6a3f7ed-5d0d-323e-b092-5c1fdeadb34f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: vpnhat-SG-Oracle 4, server: 20.239.49.112, port: 10014, type: vmess, uuid: d6a3f7ed-5d0d-323e-b092-5c1fdeadb34f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: vpnhat-Tokyo-NTT 3, server: 20.239.49.112, port: 10015, type: vmess, uuid: d6a3f7ed-5d0d-323e-b092-5c1fdeadb34f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: vpnhat-Seattle-Contabo-dip 4, server: 20.239.49.112, port: 10016, type: vmess, uuid: d6a3f7ed-5d0d-323e-b092-5c1fdeadb34f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: vpnhat-Dallas-NextArray-dip 3, server: 20.239.49.112, port: 10017, type: vmess, uuid: d6a3f7ed-5d0d-323e-b092-5c1fdeadb34f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: vpnhat-Seattle-Contabo-dip 5, server: 20.239.49.112, port: 10018, type: vmess, uuid: d6a3f7ed-5d0d-323e-b092-5c1fdeadb34f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: vpnhat-香港Adcdata-dip 3, server: 20.239.49.112, port: 10020, type: vmess, uuid: d6a3f7ed-5d0d-323e-b092-5c1fdeadb34f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: vpnhat-SG-DigitalOcean 3, server: 20.239.49.112, port: 10021, type: vmess, uuid: d6a3f7ed-5d0d-323e-b092-5c1fdeadb34f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: vpnhat-Novosibirsk-Adman 3, server: 20.239.49.112, port: 10023, type: vmess, uuid: d6a3f7ed-5d0d-323e-b092-5c1fdeadb34f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: vpnhat-Canyon Country-Multacom 3, server: 20.239.49.112, port: 10025, type: vmess, uuid: d6a3f7ed-5d0d-323e-b092-5c1fdeadb34f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: vpnhat-San Jose-Oracle 3, server: 20.239.49.112, port: 10026, type: vmess, uuid: d6a3f7ed-5d0d-323e-b092-5c1fdeadb34f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: vpnhat-SG-Oracle 5, server: 20.239.49.112, port: 10031, type: vmess, uuid: d6a3f7ed-5d0d-323e-b092-5c1fdeadb34f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: vpnhat-Tokyo-M247 3, server: 20.239.49.112, port: 10033, type: vmess, uuid: d6a3f7ed-5d0d-323e-b092-5c1fdeadb34f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: vpnhat-台北Hinet-dip 5, server: 20.239.49.112, port: 10034, type: vmess, uuid: d6a3f7ed-5d0d-323e-b092-5c1fdeadb34f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: vpnhat-台北Hinet-dip 6, server: 20.239.49.112, port: 10035, type: vmess, uuid: d6a3f7ed-5d0d-323e-b092-5c1fdeadb34f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: vpnhat-MD-Chisinau-AlexHost 3, server: 20.239.49.112, port: 10036, type: vmess, uuid: d6a3f7ed-5d0d-323e-b092-5c1fdeadb34f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: _PL_波兰, server: 194.15.196.66, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: _CA_加拿大, server: 134.195.196.3, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
   - {name: US03|美国|x1.0, server: colagzcm.jumpwallsocks.online, port: 31003, type: trojan, password: f238b431-ba39-427d-9bbd-2440c30ef211, sni: colagzcm.jumpwallsocks.online, skip-cert-verify: true, udp: true}
-  - {name: 美国_TG@nodesharing_103, server: us2.tcpbbr.net, port: 443, type: trojan, password: 5a3d9b78-cb5b-11ea-82ef-f23c9164ca5d, sni: us2.tcpbbr.net, skip-cert-verify: true, udp: true}
-  - {name: 美国_TG@nodesharing_101, server: us2.tcpbbr.net, port: 443, type: trojan, password: 283695dc-fcc8-11ea-8684-f23c913c8d2b, sni: us2.tcpbbr.net, skip-cert-verify: true, udp: true}
-  - {name: TR01|土耳其|x1.0, server: colagzcm.jumpwallsocks.online, port: 33002, type: trojan, password: f238b431-ba39-427d-9bbd-2440c30ef211, sni: colagzcm.jumpwallsocks.online, skip-cert-verify: true, udp: true}
-  - {name: 美国_TG@nodesharing_112, server: us2.tcpbbr.net, port: 443, type: trojan, password: 2e5f2a78-14d8-11eb-ad8c-f23c9164ca5d, sni: us2.tcpbbr.net, skip-cert-verify: true, udp: true}
-  - {name: SG01|新加坡|x2.0, server: colagzcm.jumpwallsocks.online, port: 33001, type: trojan, password: f238b431-ba39-427d-9bbd-2440c30ef211, sni: colagzcm.jumpwallsocks.online, skip-cert-verify: true, udp: true}
-  - {name: RR01|巴西|x0.5, server: colagzcm.jumpwallsocks.online, port: 31008, type: trojan, password: f238b431-ba39-427d-9bbd-2440c30ef211, sni: colagzcm.jumpwallsocks.online, skip-cert-verify: true, udp: true}
   - {name: SG02|新加坡|x2.0, server: colagzcm.jumpwallsocks.online, port: 33005, type: trojan, password: f238b431-ba39-427d-9bbd-2440c30ef211, sni: colagzcm.jumpwallsocks.online, skip-cert-verify: true, udp: true}
+  - {name: 美国_TG@nodesharing_112, server: us2.tcpbbr.net, port: 443, type: trojan, password: 2e5f2a78-14d8-11eb-ad8c-f23c9164ca5d, sni: us2.tcpbbr.net, skip-cert-verify: true, udp: true}
   - {name: JP01|日本|x1.0, server: colagzcm.jumpwallsocks.online, port: 32001, type: trojan, password: f238b431-ba39-427d-9bbd-2440c30ef211, sni: colagzcm.jumpwallsocks.online, skip-cert-verify: true, udp: true}
-  - {name: MY01|马来西亚|x1.0, server: colagzcm.jumpwallsocks.online, port: 39001, type: trojan, password: f238b431-ba39-427d-9bbd-2440c30ef211, sni: colagzcm.jumpwallsocks.online, skip-cert-verify: true, udp: true}
-  - {name: TW02|台湾|x1.0, server: colagzcm.jumpwallsocks.online, port: 38002, type: trojan, password: f238b431-ba39-427d-9bbd-2440c30ef211, sni: colagzcm.jumpwallsocks.online, skip-cert-verify: true, udp: true}
+  - {name: HU01|匈牙利|x1.0, server: colagzcm.jumpwallsocks.online, port: 35004, type: trojan, password: f238b431-ba39-427d-9bbd-2440c30ef211, sni: colagzcm.jumpwallsocks.online, skip-cert-verify: true, udp: true}
+  - {name: 美国_TG@nodesharing_103, server: us2.tcpbbr.net, port: 443, type: trojan, password: 5a3d9b78-cb5b-11ea-82ef-f23c9164ca5d, sni: us2.tcpbbr.net, skip-cert-verify: true, udp: true}
+  - {name: TR01|土耳其|x1.0, server: colagzcm.jumpwallsocks.online, port: 33002, type: trojan, password: f238b431-ba39-427d-9bbd-2440c30ef211, sni: colagzcm.jumpwallsocks.online, skip-cert-verify: true, udp: true}
+  - {name: 美国_TG@nodesharing_101, server: us2.tcpbbr.net, port: 443, type: trojan, password: 283695dc-fcc8-11ea-8684-f23c913c8d2b, sni: us2.tcpbbr.net, skip-cert-verify: true, udp: true}
+  - {name: RR01|巴西|x0.5, server: colagzcm.jumpwallsocks.online, port: 31008, type: trojan, password: f238b431-ba39-427d-9bbd-2440c30ef211, sni: colagzcm.jumpwallsocks.online, skip-cert-verify: true, udp: true}
+  - {name: NL01|荷兰|x1.0, server: colagzcm.jumpwallsocks.online, port: 35002, type: trojan, password: f238b431-ba39-427d-9bbd-2440c30ef211, sni: colagzcm.jumpwallsocks.online, skip-cert-verify: true, udp: true}
+  - {name: US04|美国|x1.0, server: colagzcm.jumpwallsocks.online, port: 31006, type: trojan, password: f238b431-ba39-427d-9bbd-2440c30ef211, sni: colagzcm.jumpwallsocks.online, skip-cert-verify: true, udp: true}
+  - {name: SG01|新加坡|x2.0, server: colagzcm.jumpwallsocks.online, port: 33001, type: trojan, password: f238b431-ba39-427d-9bbd-2440c30ef211, sni: colagzcm.jumpwallsocks.online, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - HK2 10G 80|倍率1
-      - v2ray-ah-az02(港)
-      - v2ray-ah-hk03(港Netflix)
-      - v2ray-gz-hk06(hkt港Netflix)
-      - v2ray-gz-az02(港)
-      - 香港02|厦门联通|高峰期稳定
-      - v2ray-ah-hk08(hgc港Netflix)
-      - v2ray-gz-sgp01(新Netflix)
-      - 上海5 5Gbps  443|倍率1
-      - v2ray-jm-jp03(日)
-      - 上海 5Gbps  80|倍率1
-      - 上海2 5Gbps  80|倍率1
-      - v2ray-gz-jp03(日|新Netflix)
-      - 中国_TG@nodesharing_79
-      - v2ray-az-hk03(港Netflix)
-      - 上海4 5Gbps  80|倍率1
-      - v2ray-ah-jp02(日Netflix|Abema|...)
-      - v2ray-gz-jp02(日)
-      - v2ray-az-hk07(hgc港Netflix)
-      - 日本_TG@nodesharing_108
-      - 北京4 5Gbps  80|倍率1
-      - 日本01|厦门联通|解锁流媒体
-      - 北京 5Gbps  80|倍率1
-      - 上海3 5Gbps  80|倍率1
-      - 新加坡01|azHK|解锁流媒体
-      - 上海5 5Gbps  80|倍率1
+      - _KR_韩国
+      - vpnpool-Seattle-Contabo-dip
+      - vpnhat-Tokyo-NTT
+      - 日 西 IDCF
+      - vpnhat-Seattle-Contabo-dip
+      - vpnpool-Seattle-Contabo-dip 2
+      - vpnpool-SG-Oracle
+      - EXTM3U-香港HGC-dip
+      - vpnpool-新北Hinet-dip
+      - vpnpool-香港Adcdata-dip
+      - vpnpool-Canyon Country-Multacom
+      - EXTM3U-Dubai-Oracle
+      - vpnpool-Chuncheon-Oracle
+      - EXTM3U-香港HGC-dip 2
+      - vpnpool-Dallas-NextArray-dip
+      - vpnhat-Dallas-NextArray-dip
+      - vpnhat-Paris-Online
+      - vpnpool-Dubai-Oracle
+      - EXTM3U-Seattle-Contabo-dip
+      - vpnpool-San Jose-Oracle
+      - EXTM3U-LAX-M247
+      - EXTM3U-Tokyo-Optage-dip
+      - vpnpool-台北Hinet-dip
+      - EXTM3U-台北Hinet-dip
+      - vpnhat-新北Hinet-dip
+      - EXTM3U-Tokyo-Oracle
+      - vpnpool-SG-DigitalOcean
+      - EXTM3U-Chuncheon-Oracle
+      - vpnpool-台北Hinet-dip 2
+      - vpnhat-Tokyo-Oracle
+      - 台 Hinet (高优先)
+      - vpnpool-香港HGC-dip
+      - vpnhat-香港HGC-dip
+      - 中 港 HKBN
       - 中国_TG@nodesharing_87
-      - v2ray-az-hk06(hkt港Netflix)
-      - v2ray-az-jp03(日|新Netflix)
-      - 北京2 5Gbps  80|倍率1
-      - v2ray-az-sgp01(新Netflix)
-      - v2ray-az-jp05(日Netflix|Abema|...)
-      - v2ray-ah-jp05(日Netflix|Abema|...)
-      - 美国01|azHK|解锁流媒体
-      - v2ray-az-jp01(日Netflix|Abema|...)
-      - v2ray-az-jp02(日Netflix|Abema|...)
-      - v2ray-az-hk01(hgc港Netflix)
-      - 英国01|azHK|解锁流媒体
+      - 日 东 IDCF
+      - vpnhat-香港Adcdata-dip
       - 中国_TG@nodesharing_80
-      - 英国02|azhk|解锁流媒体
-      - 加拿大01|azHK|高峰期稳定
-      - v2ray-ah-kr01
-      - v2ray-az-us06(美)
-      - v2ray-ah-us07(美流媒体解锁)
-      - v2ray-az-us05(美Netflix)
-      - 香港_TG@nodesharing_26
-      - v2ray日02(Netflix|Abema|...)
-      - 中国_TG@nodesharing_72
-      - US_油管 TG 8度科技
-      - v2ray-gz-hk01(hgc港Netflix)
-      - v2ray-az-hl01
-      - v2ray-az-us02(美)
-      - v2ray-gz-hk03(港Netflix)
-      - ฅ^ΦωΦ^ฅ6༶ฅ^ΦωΦ^ฅ
-      - HK_油管 TG 8度科技
-      - 韩国 80|解锁Netflix 倍率1
-      - null_油管 TG 8度科技
-      - CN_油管 TG 8度科技
-      - v2ray-az-kr01
-      - v2ray-az-us03(美Netflix)
-      - 韩国_TG@nodesharing_135
-      - HK_油管 TG 8度科技 2
-      - CN_油管 TG 8度科技 2
-      - ฅ^ΦωΦ^ฅ5༶ฅ^ΦωΦ^ฅ
-      - v2ray-jm-tw01(台Netflix)
-      - CN_油管 TG 8度科技 3
-      - 中转HK 10G 80|倍率1
-      - 香港_TG@nodesharing_24
-      - v2ray-az-ru02(俄netflix)
-      - v2ray-ah-tw01(台Netflix)
-      - v2ray-gz-jp01(日Netflix|Abema|...)
-      - HK_油管 TG 8度科技 3
-      - 香港_TG@nodesharing_36
-      - v2ray-gz-tw01(台netflix)
       - 台湾_TG@nodesharing_173
-      - 香港_TG@nodesharing_65
-      - v2ray-az-mol01(摩尔多卡)
-      - ฅ^ΦωΦ^ฅ2༶ฅ^ΦωΦ^ฅ
-      - 北京游戏节点 限速10mbps
-      - 香港01|广州移动|高峰期稳定
-      - v2ray-gz-us03(美Netflix)
-      - MO01|澳门|SS|x5.0
-      - US04|美国|SS|x1.0
-      - US05|美国|SS|x1.0
-      - US03|美国|SS|x1.0
-      - US02|美国|SS|x1.0
-      - CN_油管+TG+8度科技
-      - CN_油管+TG+8度科技 2
-      - HK02|香港|SS|x1.0
-      - HK01|香港|SS|x1.0
-      - KR01|韩国|SS|x1.0
-      - _US_美国
-      - MO01|澳门|x5.0
-      - TH01|泰国|x1.0
-      - JP02|日本|x1.0
-      - RO01|罗马尼亚|x1.0
-      - HK04|香港|x1.0
-      - KR02|韩国|x1.0
-      - US05|美国|x1.0
-      - HK01|香港|x1.0
-      - UK01|英国|x1.0
-      - UK02|英国|x2.0
-      - NL01|荷兰|x1.0
-      - HU01|匈牙利|x1.0
-      - US04|美国|x1.0
-      - DE01|德国|x1.0
+      - null_油管 TG 8度科技
+      - HK_油管 TG 8度科技
+      - US_油管 TG 8度科技
+      - 日 sakura
+      - 日 GMO
+      - vpnhat-SG-DigitalOcean
+      - vpnhat-Novosibirsk-Adman
+      - vpnhat-Canyon Country-Multacom
+      - vpnhat-San Jose-Oracle
+      - vpnhat-LAX-M247
+      - vpnhat-SG-Oracle
+      - vpnhat-香港HGC-dip 2
+      - vpnhat-Tokyo-M247
+      - vpnhat-台北Hinet-dip
+      - vpnhat-台北Hinet-dip 2
+      - vpnhat-MD-Chisinau-AlexHost
+      - vpnhat-香港HGC-dip 3
+      - vpnhat-香港HKT
+      - vpnhat-香港HKT 2
+      - vpnhat-香港HKT 3
+      - vpnhat-Tokyo-Optage-dip
+      - vpnhat-新北Hinet-dip 2
+      - vpnhat-Tokyo-Oracle 2
+      - vpnhat-新北Hinet-dip 3
+      - vpnhat-香港Azure
+      - vpnhat-香港HGC-dip 4
+      - vpnhat-香港HGC-dip 5
+      - vpnhat-Paris-Online 2
+      - vpnhat-Frankfurt-Leaseweb
+      - vpnhat-SG-Oracle 2
+      - vpnhat-Tokyo-NTT 2
+      - vpnhat-Seattle-Contabo-dip 2
+      - vpnhat-Dallas-NextArray-dip 2
+      - vpnhat-Seattle-Contabo-dip 3
+      - vpnhat-香港Adcdata-dip 2
+      - vpnhat-SG-DigitalOcean 2
+      - vpnhat-Novosibirsk-Adman 2
+      - vpnhat-Canyon Country-Multacom 2
+      - vpnhat-San Jose-Oracle 2
+      - vpnhat-LAX-M247 2
+      - vpnhat-SG-Oracle 3
+      - vpnhat-香港HGC-dip 6
+      - vpnhat-Tokyo-M247 2
+      - vpnhat-台北Hinet-dip 3
+      - vpnhat-台北Hinet-dip 4
+      - vpnhat-MD-Chisinau-AlexHost 2
+      - vpnhat-香港HGC-dip 7
+      - vpnhat-香港HKT 4
+      - vpnhat-香港HKT 5
+      - vpnhat-香港HKT 6
+      - vpnhat-Tokyo-Optage-dip 2
+      - vpnhat-新北Hinet-dip 4
+      - vpnhat-Tokyo-Oracle 3
+      - vpnhat-新北Hinet-dip 5
+      - vpnhat-香港Azure 2
+      - vpnhat-香港HGC-dip 8
+      - vpnhat-香港HGC-dip 9
+      - vpnhat-Paris-Online 3
+      - vpnhat-Frankfurt-Leaseweb 2
+      - vpnhat-SG-Oracle 4
+      - vpnhat-Tokyo-NTT 3
+      - vpnhat-Seattle-Contabo-dip 4
+      - vpnhat-Dallas-NextArray-dip 3
+      - vpnhat-Seattle-Contabo-dip 5
+      - vpnhat-香港Adcdata-dip 3
+      - vpnhat-SG-DigitalOcean 3
+      - vpnhat-Novosibirsk-Adman 3
+      - vpnhat-Canyon Country-Multacom 3
+      - vpnhat-San Jose-Oracle 3
+      - vpnhat-SG-Oracle 5
+      - vpnhat-Tokyo-M247 3
+      - vpnhat-台北Hinet-dip 5
+      - vpnhat-台北Hinet-dip 6
+      - vpnhat-MD-Chisinau-AlexHost 3
+      - _PL_波兰
+      - _CA_加拿大
       - US03|美国|x1.0
-      - 美国_TG@nodesharing_103
-      - 美国_TG@nodesharing_101
-      - TR01|土耳其|x1.0
-      - 美国_TG@nodesharing_112
-      - SG01|新加坡|x2.0
-      - RR01|巴西|x0.5
       - SG02|新加坡|x2.0
+      - 美国_TG@nodesharing_112
       - JP01|日本|x1.0
-      - MY01|马来西亚|x1.0
-      - TW02|台湾|x1.0
+      - HU01|匈牙利|x1.0
+      - 美国_TG@nodesharing_103
+      - TR01|土耳其|x1.0
+      - 美国_TG@nodesharing_101
+      - RR01|巴西|x0.5
+      - NL01|荷兰|x1.0
+      - US04|美国|x1.0
+      - SG01|新加坡|x2.0
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - HK2 10G 80|倍率1
-      - v2ray-ah-az02(港)
-      - v2ray-ah-hk03(港Netflix)
-      - v2ray-gz-hk06(hkt港Netflix)
-      - v2ray-gz-az02(港)
-      - 香港02|厦门联通|高峰期稳定
-      - v2ray-ah-hk08(hgc港Netflix)
-      - v2ray-gz-sgp01(新Netflix)
-      - 上海5 5Gbps  443|倍率1
-      - v2ray-jm-jp03(日)
-      - 上海 5Gbps  80|倍率1
-      - 上海2 5Gbps  80|倍率1
-      - v2ray-gz-jp03(日|新Netflix)
-      - 中国_TG@nodesharing_79
-      - v2ray-az-hk03(港Netflix)
-      - 上海4 5Gbps  80|倍率1
-      - v2ray-ah-jp02(日Netflix|Abema|...)
-      - v2ray-gz-jp02(日)
-      - v2ray-az-hk07(hgc港Netflix)
-      - 日本_TG@nodesharing_108
-      - 北京4 5Gbps  80|倍率1
-      - 日本01|厦门联通|解锁流媒体
-      - 北京 5Gbps  80|倍率1
-      - 上海3 5Gbps  80|倍率1
-      - 新加坡01|azHK|解锁流媒体
-      - 上海5 5Gbps  80|倍率1
+      - _KR_韩国
+      - vpnpool-Seattle-Contabo-dip
+      - vpnhat-Tokyo-NTT
+      - 日 西 IDCF
+      - vpnhat-Seattle-Contabo-dip
+      - vpnpool-Seattle-Contabo-dip 2
+      - vpnpool-SG-Oracle
+      - EXTM3U-香港HGC-dip
+      - vpnpool-新北Hinet-dip
+      - vpnpool-香港Adcdata-dip
+      - vpnpool-Canyon Country-Multacom
+      - EXTM3U-Dubai-Oracle
+      - vpnpool-Chuncheon-Oracle
+      - EXTM3U-香港HGC-dip 2
+      - vpnpool-Dallas-NextArray-dip
+      - vpnhat-Dallas-NextArray-dip
+      - vpnhat-Paris-Online
+      - vpnpool-Dubai-Oracle
+      - EXTM3U-Seattle-Contabo-dip
+      - vpnpool-San Jose-Oracle
+      - EXTM3U-LAX-M247
+      - EXTM3U-Tokyo-Optage-dip
+      - vpnpool-台北Hinet-dip
+      - EXTM3U-台北Hinet-dip
+      - vpnhat-新北Hinet-dip
+      - EXTM3U-Tokyo-Oracle
+      - vpnpool-SG-DigitalOcean
+      - EXTM3U-Chuncheon-Oracle
+      - vpnpool-台北Hinet-dip 2
+      - vpnhat-Tokyo-Oracle
+      - 台 Hinet (高优先)
+      - vpnpool-香港HGC-dip
+      - vpnhat-香港HGC-dip
+      - 中 港 HKBN
       - 中国_TG@nodesharing_87
-      - v2ray-az-hk06(hkt港Netflix)
-      - v2ray-az-jp03(日|新Netflix)
-      - 北京2 5Gbps  80|倍率1
-      - v2ray-az-sgp01(新Netflix)
-      - v2ray-az-jp05(日Netflix|Abema|...)
-      - v2ray-ah-jp05(日Netflix|Abema|...)
-      - 美国01|azHK|解锁流媒体
-      - v2ray-az-jp01(日Netflix|Abema|...)
-      - v2ray-az-jp02(日Netflix|Abema|...)
-      - v2ray-az-hk01(hgc港Netflix)
-      - 英国01|azHK|解锁流媒体
+      - 日 东 IDCF
+      - vpnhat-香港Adcdata-dip
       - 中国_TG@nodesharing_80
-      - 英国02|azhk|解锁流媒体
-      - 加拿大01|azHK|高峰期稳定
-      - v2ray-ah-kr01
-      - v2ray-az-us06(美)
-      - v2ray-ah-us07(美流媒体解锁)
-      - v2ray-az-us05(美Netflix)
-      - 香港_TG@nodesharing_26
-      - v2ray日02(Netflix|Abema|...)
-      - 中国_TG@nodesharing_72
-      - US_油管 TG 8度科技
-      - v2ray-gz-hk01(hgc港Netflix)
-      - v2ray-az-hl01
-      - v2ray-az-us02(美)
-      - v2ray-gz-hk03(港Netflix)
-      - ฅ^ΦωΦ^ฅ6༶ฅ^ΦωΦ^ฅ
-      - HK_油管 TG 8度科技
-      - 韩国 80|解锁Netflix 倍率1
-      - null_油管 TG 8度科技
-      - CN_油管 TG 8度科技
-      - v2ray-az-kr01
-      - v2ray-az-us03(美Netflix)
-      - 韩国_TG@nodesharing_135
-      - HK_油管 TG 8度科技 2
-      - CN_油管 TG 8度科技 2
-      - ฅ^ΦωΦ^ฅ5༶ฅ^ΦωΦ^ฅ
-      - v2ray-jm-tw01(台Netflix)
-      - CN_油管 TG 8度科技 3
-      - 中转HK 10G 80|倍率1
-      - 香港_TG@nodesharing_24
-      - v2ray-az-ru02(俄netflix)
-      - v2ray-ah-tw01(台Netflix)
-      - v2ray-gz-jp01(日Netflix|Abema|...)
-      - HK_油管 TG 8度科技 3
-      - 香港_TG@nodesharing_36
-      - v2ray-gz-tw01(台netflix)
       - 台湾_TG@nodesharing_173
-      - 香港_TG@nodesharing_65
-      - v2ray-az-mol01(摩尔多卡)
-      - ฅ^ΦωΦ^ฅ2༶ฅ^ΦωΦ^ฅ
-      - 北京游戏节点 限速10mbps
-      - 香港01|广州移动|高峰期稳定
-      - v2ray-gz-us03(美Netflix)
-      - MO01|澳门|SS|x5.0
-      - US04|美国|SS|x1.0
-      - US05|美国|SS|x1.0
-      - US03|美国|SS|x1.0
-      - US02|美国|SS|x1.0
-      - CN_油管+TG+8度科技
-      - CN_油管+TG+8度科技 2
-      - HK02|香港|SS|x1.0
-      - HK01|香港|SS|x1.0
-      - KR01|韩国|SS|x1.0
-      - _US_美国
-      - MO01|澳门|x5.0
-      - TH01|泰国|x1.0
-      - JP02|日本|x1.0
-      - RO01|罗马尼亚|x1.0
-      - HK04|香港|x1.0
-      - KR02|韩国|x1.0
-      - US05|美国|x1.0
-      - HK01|香港|x1.0
-      - UK01|英国|x1.0
-      - UK02|英国|x2.0
-      - NL01|荷兰|x1.0
-      - HU01|匈牙利|x1.0
-      - US04|美国|x1.0
-      - DE01|德国|x1.0
+      - null_油管 TG 8度科技
+      - HK_油管 TG 8度科技
+      - US_油管 TG 8度科技
+      - 日 sakura
+      - 日 GMO
+      - vpnhat-SG-DigitalOcean
+      - vpnhat-Novosibirsk-Adman
+      - vpnhat-Canyon Country-Multacom
+      - vpnhat-San Jose-Oracle
+      - vpnhat-LAX-M247
+      - vpnhat-SG-Oracle
+      - vpnhat-香港HGC-dip 2
+      - vpnhat-Tokyo-M247
+      - vpnhat-台北Hinet-dip
+      - vpnhat-台北Hinet-dip 2
+      - vpnhat-MD-Chisinau-AlexHost
+      - vpnhat-香港HGC-dip 3
+      - vpnhat-香港HKT
+      - vpnhat-香港HKT 2
+      - vpnhat-香港HKT 3
+      - vpnhat-Tokyo-Optage-dip
+      - vpnhat-新北Hinet-dip 2
+      - vpnhat-Tokyo-Oracle 2
+      - vpnhat-新北Hinet-dip 3
+      - vpnhat-香港Azure
+      - vpnhat-香港HGC-dip 4
+      - vpnhat-香港HGC-dip 5
+      - vpnhat-Paris-Online 2
+      - vpnhat-Frankfurt-Leaseweb
+      - vpnhat-SG-Oracle 2
+      - vpnhat-Tokyo-NTT 2
+      - vpnhat-Seattle-Contabo-dip 2
+      - vpnhat-Dallas-NextArray-dip 2
+      - vpnhat-Seattle-Contabo-dip 3
+      - vpnhat-香港Adcdata-dip 2
+      - vpnhat-SG-DigitalOcean 2
+      - vpnhat-Novosibirsk-Adman 2
+      - vpnhat-Canyon Country-Multacom 2
+      - vpnhat-San Jose-Oracle 2
+      - vpnhat-LAX-M247 2
+      - vpnhat-SG-Oracle 3
+      - vpnhat-香港HGC-dip 6
+      - vpnhat-Tokyo-M247 2
+      - vpnhat-台北Hinet-dip 3
+      - vpnhat-台北Hinet-dip 4
+      - vpnhat-MD-Chisinau-AlexHost 2
+      - vpnhat-香港HGC-dip 7
+      - vpnhat-香港HKT 4
+      - vpnhat-香港HKT 5
+      - vpnhat-香港HKT 6
+      - vpnhat-Tokyo-Optage-dip 2
+      - vpnhat-新北Hinet-dip 4
+      - vpnhat-Tokyo-Oracle 3
+      - vpnhat-新北Hinet-dip 5
+      - vpnhat-香港Azure 2
+      - vpnhat-香港HGC-dip 8
+      - vpnhat-香港HGC-dip 9
+      - vpnhat-Paris-Online 3
+      - vpnhat-Frankfurt-Leaseweb 2
+      - vpnhat-SG-Oracle 4
+      - vpnhat-Tokyo-NTT 3
+      - vpnhat-Seattle-Contabo-dip 4
+      - vpnhat-Dallas-NextArray-dip 3
+      - vpnhat-Seattle-Contabo-dip 5
+      - vpnhat-香港Adcdata-dip 3
+      - vpnhat-SG-DigitalOcean 3
+      - vpnhat-Novosibirsk-Adman 3
+      - vpnhat-Canyon Country-Multacom 3
+      - vpnhat-San Jose-Oracle 3
+      - vpnhat-SG-Oracle 5
+      - vpnhat-Tokyo-M247 3
+      - vpnhat-台北Hinet-dip 5
+      - vpnhat-台北Hinet-dip 6
+      - vpnhat-MD-Chisinau-AlexHost 3
+      - _PL_波兰
+      - _CA_加拿大
       - US03|美国|x1.0
-      - 美国_TG@nodesharing_103
-      - 美国_TG@nodesharing_101
-      - TR01|土耳其|x1.0
-      - 美国_TG@nodesharing_112
-      - SG01|新加坡|x2.0
-      - RR01|巴西|x0.5
       - SG02|新加坡|x2.0
+      - 美国_TG@nodesharing_112
       - JP01|日本|x1.0
-      - MY01|马来西亚|x1.0
-      - TW02|台湾|x1.0
+      - HU01|匈牙利|x1.0
+      - 美国_TG@nodesharing_103
+      - TR01|土耳其|x1.0
+      - 美国_TG@nodesharing_101
+      - RR01|巴西|x0.5
+      - NL01|荷兰|x1.0
+      - US04|美国|x1.0
+      - SG01|新加坡|x2.0
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - HK2 10G 80|倍率1
-      - v2ray-ah-az02(港)
-      - v2ray-ah-hk03(港Netflix)
-      - v2ray-gz-hk06(hkt港Netflix)
-      - v2ray-gz-az02(港)
-      - 香港02|厦门联通|高峰期稳定
-      - v2ray-ah-hk08(hgc港Netflix)
-      - v2ray-gz-sgp01(新Netflix)
-      - 上海5 5Gbps  443|倍率1
-      - v2ray-jm-jp03(日)
-      - 上海 5Gbps  80|倍率1
-      - 上海2 5Gbps  80|倍率1
-      - v2ray-gz-jp03(日|新Netflix)
-      - 中国_TG@nodesharing_79
-      - v2ray-az-hk03(港Netflix)
-      - 上海4 5Gbps  80|倍率1
-      - v2ray-ah-jp02(日Netflix|Abema|...)
-      - v2ray-gz-jp02(日)
-      - v2ray-az-hk07(hgc港Netflix)
-      - 日本_TG@nodesharing_108
-      - 北京4 5Gbps  80|倍率1
-      - 日本01|厦门联通|解锁流媒体
-      - 北京 5Gbps  80|倍率1
-      - 上海3 5Gbps  80|倍率1
-      - 新加坡01|azHK|解锁流媒体
-      - 上海5 5Gbps  80|倍率1
+      - _KR_韩国
+      - vpnpool-Seattle-Contabo-dip
+      - vpnhat-Tokyo-NTT
+      - 日 西 IDCF
+      - vpnhat-Seattle-Contabo-dip
+      - vpnpool-Seattle-Contabo-dip 2
+      - vpnpool-SG-Oracle
+      - EXTM3U-香港HGC-dip
+      - vpnpool-新北Hinet-dip
+      - vpnpool-香港Adcdata-dip
+      - vpnpool-Canyon Country-Multacom
+      - EXTM3U-Dubai-Oracle
+      - vpnpool-Chuncheon-Oracle
+      - EXTM3U-香港HGC-dip 2
+      - vpnpool-Dallas-NextArray-dip
+      - vpnhat-Dallas-NextArray-dip
+      - vpnhat-Paris-Online
+      - vpnpool-Dubai-Oracle
+      - EXTM3U-Seattle-Contabo-dip
+      - vpnpool-San Jose-Oracle
+      - EXTM3U-LAX-M247
+      - EXTM3U-Tokyo-Optage-dip
+      - vpnpool-台北Hinet-dip
+      - EXTM3U-台北Hinet-dip
+      - vpnhat-新北Hinet-dip
+      - EXTM3U-Tokyo-Oracle
+      - vpnpool-SG-DigitalOcean
+      - EXTM3U-Chuncheon-Oracle
+      - vpnpool-台北Hinet-dip 2
+      - vpnhat-Tokyo-Oracle
+      - 台 Hinet (高优先)
+      - vpnpool-香港HGC-dip
+      - vpnhat-香港HGC-dip
+      - 中 港 HKBN
       - 中国_TG@nodesharing_87
-      - v2ray-az-hk06(hkt港Netflix)
-      - v2ray-az-jp03(日|新Netflix)
-      - 北京2 5Gbps  80|倍率1
-      - v2ray-az-sgp01(新Netflix)
-      - v2ray-az-jp05(日Netflix|Abema|...)
-      - v2ray-ah-jp05(日Netflix|Abema|...)
-      - 美国01|azHK|解锁流媒体
-      - v2ray-az-jp01(日Netflix|Abema|...)
-      - v2ray-az-jp02(日Netflix|Abema|...)
-      - v2ray-az-hk01(hgc港Netflix)
-      - 英国01|azHK|解锁流媒体
+      - 日 东 IDCF
+      - vpnhat-香港Adcdata-dip
       - 中国_TG@nodesharing_80
-      - 英国02|azhk|解锁流媒体
-      - 加拿大01|azHK|高峰期稳定
-      - v2ray-ah-kr01
-      - v2ray-az-us06(美)
-      - v2ray-ah-us07(美流媒体解锁)
-      - v2ray-az-us05(美Netflix)
-      - 香港_TG@nodesharing_26
-      - v2ray日02(Netflix|Abema|...)
-      - 中国_TG@nodesharing_72
-      - US_油管 TG 8度科技
-      - v2ray-gz-hk01(hgc港Netflix)
-      - v2ray-az-hl01
-      - v2ray-az-us02(美)
-      - v2ray-gz-hk03(港Netflix)
-      - ฅ^ΦωΦ^ฅ6༶ฅ^ΦωΦ^ฅ
-      - HK_油管 TG 8度科技
-      - 韩国 80|解锁Netflix 倍率1
-      - null_油管 TG 8度科技
-      - CN_油管 TG 8度科技
-      - v2ray-az-kr01
-      - v2ray-az-us03(美Netflix)
-      - 韩国_TG@nodesharing_135
-      - HK_油管 TG 8度科技 2
-      - CN_油管 TG 8度科技 2
-      - ฅ^ΦωΦ^ฅ5༶ฅ^ΦωΦ^ฅ
-      - v2ray-jm-tw01(台Netflix)
-      - CN_油管 TG 8度科技 3
-      - 中转HK 10G 80|倍率1
-      - 香港_TG@nodesharing_24
-      - v2ray-az-ru02(俄netflix)
-      - v2ray-ah-tw01(台Netflix)
-      - v2ray-gz-jp01(日Netflix|Abema|...)
-      - HK_油管 TG 8度科技 3
-      - 香港_TG@nodesharing_36
-      - v2ray-gz-tw01(台netflix)
       - 台湾_TG@nodesharing_173
-      - 香港_TG@nodesharing_65
-      - v2ray-az-mol01(摩尔多卡)
-      - ฅ^ΦωΦ^ฅ2༶ฅ^ΦωΦ^ฅ
-      - 北京游戏节点 限速10mbps
-      - 香港01|广州移动|高峰期稳定
-      - v2ray-gz-us03(美Netflix)
-      - MO01|澳门|SS|x5.0
-      - US04|美国|SS|x1.0
-      - US05|美国|SS|x1.0
-      - US03|美国|SS|x1.0
-      - US02|美国|SS|x1.0
-      - CN_油管+TG+8度科技
-      - CN_油管+TG+8度科技 2
-      - HK02|香港|SS|x1.0
-      - HK01|香港|SS|x1.0
-      - KR01|韩国|SS|x1.0
-      - _US_美国
-      - MO01|澳门|x5.0
-      - TH01|泰国|x1.0
-      - JP02|日本|x1.0
-      - RO01|罗马尼亚|x1.0
-      - HK04|香港|x1.0
-      - KR02|韩国|x1.0
-      - US05|美国|x1.0
-      - HK01|香港|x1.0
-      - UK01|英国|x1.0
-      - UK02|英国|x2.0
-      - NL01|荷兰|x1.0
-      - HU01|匈牙利|x1.0
-      - US04|美国|x1.0
-      - DE01|德国|x1.0
+      - null_油管 TG 8度科技
+      - HK_油管 TG 8度科技
+      - US_油管 TG 8度科技
+      - 日 sakura
+      - 日 GMO
+      - vpnhat-SG-DigitalOcean
+      - vpnhat-Novosibirsk-Adman
+      - vpnhat-Canyon Country-Multacom
+      - vpnhat-San Jose-Oracle
+      - vpnhat-LAX-M247
+      - vpnhat-SG-Oracle
+      - vpnhat-香港HGC-dip 2
+      - vpnhat-Tokyo-M247
+      - vpnhat-台北Hinet-dip
+      - vpnhat-台北Hinet-dip 2
+      - vpnhat-MD-Chisinau-AlexHost
+      - vpnhat-香港HGC-dip 3
+      - vpnhat-香港HKT
+      - vpnhat-香港HKT 2
+      - vpnhat-香港HKT 3
+      - vpnhat-Tokyo-Optage-dip
+      - vpnhat-新北Hinet-dip 2
+      - vpnhat-Tokyo-Oracle 2
+      - vpnhat-新北Hinet-dip 3
+      - vpnhat-香港Azure
+      - vpnhat-香港HGC-dip 4
+      - vpnhat-香港HGC-dip 5
+      - vpnhat-Paris-Online 2
+      - vpnhat-Frankfurt-Leaseweb
+      - vpnhat-SG-Oracle 2
+      - vpnhat-Tokyo-NTT 2
+      - vpnhat-Seattle-Contabo-dip 2
+      - vpnhat-Dallas-NextArray-dip 2
+      - vpnhat-Seattle-Contabo-dip 3
+      - vpnhat-香港Adcdata-dip 2
+      - vpnhat-SG-DigitalOcean 2
+      - vpnhat-Novosibirsk-Adman 2
+      - vpnhat-Canyon Country-Multacom 2
+      - vpnhat-San Jose-Oracle 2
+      - vpnhat-LAX-M247 2
+      - vpnhat-SG-Oracle 3
+      - vpnhat-香港HGC-dip 6
+      - vpnhat-Tokyo-M247 2
+      - vpnhat-台北Hinet-dip 3
+      - vpnhat-台北Hinet-dip 4
+      - vpnhat-MD-Chisinau-AlexHost 2
+      - vpnhat-香港HGC-dip 7
+      - vpnhat-香港HKT 4
+      - vpnhat-香港HKT 5
+      - vpnhat-香港HKT 6
+      - vpnhat-Tokyo-Optage-dip 2
+      - vpnhat-新北Hinet-dip 4
+      - vpnhat-Tokyo-Oracle 3
+      - vpnhat-新北Hinet-dip 5
+      - vpnhat-香港Azure 2
+      - vpnhat-香港HGC-dip 8
+      - vpnhat-香港HGC-dip 9
+      - vpnhat-Paris-Online 3
+      - vpnhat-Frankfurt-Leaseweb 2
+      - vpnhat-SG-Oracle 4
+      - vpnhat-Tokyo-NTT 3
+      - vpnhat-Seattle-Contabo-dip 4
+      - vpnhat-Dallas-NextArray-dip 3
+      - vpnhat-Seattle-Contabo-dip 5
+      - vpnhat-香港Adcdata-dip 3
+      - vpnhat-SG-DigitalOcean 3
+      - vpnhat-Novosibirsk-Adman 3
+      - vpnhat-Canyon Country-Multacom 3
+      - vpnhat-San Jose-Oracle 3
+      - vpnhat-SG-Oracle 5
+      - vpnhat-Tokyo-M247 3
+      - vpnhat-台北Hinet-dip 5
+      - vpnhat-台北Hinet-dip 6
+      - vpnhat-MD-Chisinau-AlexHost 3
+      - _PL_波兰
+      - _CA_加拿大
       - US03|美国|x1.0
-      - 美国_TG@nodesharing_103
-      - 美国_TG@nodesharing_101
-      - TR01|土耳其|x1.0
-      - 美国_TG@nodesharing_112
-      - SG01|新加坡|x2.0
-      - RR01|巴西|x0.5
       - SG02|新加坡|x2.0
+      - 美国_TG@nodesharing_112
       - JP01|日本|x1.0
-      - MY01|马来西亚|x1.0
-      - TW02|台湾|x1.0
+      - HU01|匈牙利|x1.0
+      - 美国_TG@nodesharing_103
+      - TR01|土耳其|x1.0
+      - 美国_TG@nodesharing_101
+      - RR01|巴西|x0.5
+      - NL01|荷兰|x1.0
+      - US04|美国|x1.0
+      - SG01|新加坡|x2.0
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -508,522 +548,577 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - HK2 10G 80|倍率1
-      - v2ray-ah-az02(港)
-      - v2ray-ah-hk03(港Netflix)
-      - v2ray-gz-hk06(hkt港Netflix)
-      - v2ray-gz-az02(港)
-      - 香港02|厦门联通|高峰期稳定
-      - v2ray-ah-hk08(hgc港Netflix)
-      - v2ray-gz-sgp01(新Netflix)
-      - 上海5 5Gbps  443|倍率1
-      - v2ray-jm-jp03(日)
-      - 上海 5Gbps  80|倍率1
-      - 上海2 5Gbps  80|倍率1
-      - v2ray-gz-jp03(日|新Netflix)
-      - 中国_TG@nodesharing_79
-      - v2ray-az-hk03(港Netflix)
-      - 上海4 5Gbps  80|倍率1
-      - v2ray-ah-jp02(日Netflix|Abema|...)
-      - v2ray-gz-jp02(日)
-      - v2ray-az-hk07(hgc港Netflix)
-      - 日本_TG@nodesharing_108
-      - 北京4 5Gbps  80|倍率1
-      - 日本01|厦门联通|解锁流媒体
-      - 北京 5Gbps  80|倍率1
-      - 上海3 5Gbps  80|倍率1
-      - 新加坡01|azHK|解锁流媒体
-      - 上海5 5Gbps  80|倍率1
+      - _KR_韩国
+      - vpnpool-Seattle-Contabo-dip
+      - vpnhat-Tokyo-NTT
+      - 日 西 IDCF
+      - vpnhat-Seattle-Contabo-dip
+      - vpnpool-Seattle-Contabo-dip 2
+      - vpnpool-SG-Oracle
+      - EXTM3U-香港HGC-dip
+      - vpnpool-新北Hinet-dip
+      - vpnpool-香港Adcdata-dip
+      - vpnpool-Canyon Country-Multacom
+      - EXTM3U-Dubai-Oracle
+      - vpnpool-Chuncheon-Oracle
+      - EXTM3U-香港HGC-dip 2
+      - vpnpool-Dallas-NextArray-dip
+      - vpnhat-Dallas-NextArray-dip
+      - vpnhat-Paris-Online
+      - vpnpool-Dubai-Oracle
+      - EXTM3U-Seattle-Contabo-dip
+      - vpnpool-San Jose-Oracle
+      - EXTM3U-LAX-M247
+      - EXTM3U-Tokyo-Optage-dip
+      - vpnpool-台北Hinet-dip
+      - EXTM3U-台北Hinet-dip
+      - vpnhat-新北Hinet-dip
+      - EXTM3U-Tokyo-Oracle
+      - vpnpool-SG-DigitalOcean
+      - EXTM3U-Chuncheon-Oracle
+      - vpnpool-台北Hinet-dip 2
+      - vpnhat-Tokyo-Oracle
+      - 台 Hinet (高优先)
+      - vpnpool-香港HGC-dip
+      - vpnhat-香港HGC-dip
+      - 中 港 HKBN
       - 中国_TG@nodesharing_87
-      - v2ray-az-hk06(hkt港Netflix)
-      - v2ray-az-jp03(日|新Netflix)
-      - 北京2 5Gbps  80|倍率1
-      - v2ray-az-sgp01(新Netflix)
-      - v2ray-az-jp05(日Netflix|Abema|...)
-      - v2ray-ah-jp05(日Netflix|Abema|...)
-      - 美国01|azHK|解锁流媒体
-      - v2ray-az-jp01(日Netflix|Abema|...)
-      - v2ray-az-jp02(日Netflix|Abema|...)
-      - v2ray-az-hk01(hgc港Netflix)
-      - 英国01|azHK|解锁流媒体
+      - 日 东 IDCF
+      - vpnhat-香港Adcdata-dip
       - 中国_TG@nodesharing_80
-      - 英国02|azhk|解锁流媒体
-      - 加拿大01|azHK|高峰期稳定
-      - v2ray-ah-kr01
-      - v2ray-az-us06(美)
-      - v2ray-ah-us07(美流媒体解锁)
-      - v2ray-az-us05(美Netflix)
-      - 香港_TG@nodesharing_26
-      - v2ray日02(Netflix|Abema|...)
-      - 中国_TG@nodesharing_72
-      - US_油管 TG 8度科技
-      - v2ray-gz-hk01(hgc港Netflix)
-      - v2ray-az-hl01
-      - v2ray-az-us02(美)
-      - v2ray-gz-hk03(港Netflix)
-      - ฅ^ΦωΦ^ฅ6༶ฅ^ΦωΦ^ฅ
-      - HK_油管 TG 8度科技
-      - 韩国 80|解锁Netflix 倍率1
-      - null_油管 TG 8度科技
-      - CN_油管 TG 8度科技
-      - v2ray-az-kr01
-      - v2ray-az-us03(美Netflix)
-      - 韩国_TG@nodesharing_135
-      - HK_油管 TG 8度科技 2
-      - CN_油管 TG 8度科技 2
-      - ฅ^ΦωΦ^ฅ5༶ฅ^ΦωΦ^ฅ
-      - v2ray-jm-tw01(台Netflix)
-      - CN_油管 TG 8度科技 3
-      - 中转HK 10G 80|倍率1
-      - 香港_TG@nodesharing_24
-      - v2ray-az-ru02(俄netflix)
-      - v2ray-ah-tw01(台Netflix)
-      - v2ray-gz-jp01(日Netflix|Abema|...)
-      - HK_油管 TG 8度科技 3
-      - 香港_TG@nodesharing_36
-      - v2ray-gz-tw01(台netflix)
       - 台湾_TG@nodesharing_173
-      - 香港_TG@nodesharing_65
-      - v2ray-az-mol01(摩尔多卡)
-      - ฅ^ΦωΦ^ฅ2༶ฅ^ΦωΦ^ฅ
-      - 北京游戏节点 限速10mbps
-      - 香港01|广州移动|高峰期稳定
-      - v2ray-gz-us03(美Netflix)
-      - MO01|澳门|SS|x5.0
-      - US04|美国|SS|x1.0
-      - US05|美国|SS|x1.0
-      - US03|美国|SS|x1.0
-      - US02|美国|SS|x1.0
-      - CN_油管+TG+8度科技
-      - CN_油管+TG+8度科技 2
-      - HK02|香港|SS|x1.0
-      - HK01|香港|SS|x1.0
-      - KR01|韩国|SS|x1.0
-      - _US_美国
-      - MO01|澳门|x5.0
-      - TH01|泰国|x1.0
-      - JP02|日本|x1.0
-      - RO01|罗马尼亚|x1.0
-      - HK04|香港|x1.0
-      - KR02|韩国|x1.0
-      - US05|美国|x1.0
-      - HK01|香港|x1.0
-      - UK01|英国|x1.0
-      - UK02|英国|x2.0
-      - NL01|荷兰|x1.0
-      - HU01|匈牙利|x1.0
-      - US04|美国|x1.0
-      - DE01|德国|x1.0
+      - null_油管 TG 8度科技
+      - HK_油管 TG 8度科技
+      - US_油管 TG 8度科技
+      - 日 sakura
+      - 日 GMO
+      - vpnhat-SG-DigitalOcean
+      - vpnhat-Novosibirsk-Adman
+      - vpnhat-Canyon Country-Multacom
+      - vpnhat-San Jose-Oracle
+      - vpnhat-LAX-M247
+      - vpnhat-SG-Oracle
+      - vpnhat-香港HGC-dip 2
+      - vpnhat-Tokyo-M247
+      - vpnhat-台北Hinet-dip
+      - vpnhat-台北Hinet-dip 2
+      - vpnhat-MD-Chisinau-AlexHost
+      - vpnhat-香港HGC-dip 3
+      - vpnhat-香港HKT
+      - vpnhat-香港HKT 2
+      - vpnhat-香港HKT 3
+      - vpnhat-Tokyo-Optage-dip
+      - vpnhat-新北Hinet-dip 2
+      - vpnhat-Tokyo-Oracle 2
+      - vpnhat-新北Hinet-dip 3
+      - vpnhat-香港Azure
+      - vpnhat-香港HGC-dip 4
+      - vpnhat-香港HGC-dip 5
+      - vpnhat-Paris-Online 2
+      - vpnhat-Frankfurt-Leaseweb
+      - vpnhat-SG-Oracle 2
+      - vpnhat-Tokyo-NTT 2
+      - vpnhat-Seattle-Contabo-dip 2
+      - vpnhat-Dallas-NextArray-dip 2
+      - vpnhat-Seattle-Contabo-dip 3
+      - vpnhat-香港Adcdata-dip 2
+      - vpnhat-SG-DigitalOcean 2
+      - vpnhat-Novosibirsk-Adman 2
+      - vpnhat-Canyon Country-Multacom 2
+      - vpnhat-San Jose-Oracle 2
+      - vpnhat-LAX-M247 2
+      - vpnhat-SG-Oracle 3
+      - vpnhat-香港HGC-dip 6
+      - vpnhat-Tokyo-M247 2
+      - vpnhat-台北Hinet-dip 3
+      - vpnhat-台北Hinet-dip 4
+      - vpnhat-MD-Chisinau-AlexHost 2
+      - vpnhat-香港HGC-dip 7
+      - vpnhat-香港HKT 4
+      - vpnhat-香港HKT 5
+      - vpnhat-香港HKT 6
+      - vpnhat-Tokyo-Optage-dip 2
+      - vpnhat-新北Hinet-dip 4
+      - vpnhat-Tokyo-Oracle 3
+      - vpnhat-新北Hinet-dip 5
+      - vpnhat-香港Azure 2
+      - vpnhat-香港HGC-dip 8
+      - vpnhat-香港HGC-dip 9
+      - vpnhat-Paris-Online 3
+      - vpnhat-Frankfurt-Leaseweb 2
+      - vpnhat-SG-Oracle 4
+      - vpnhat-Tokyo-NTT 3
+      - vpnhat-Seattle-Contabo-dip 4
+      - vpnhat-Dallas-NextArray-dip 3
+      - vpnhat-Seattle-Contabo-dip 5
+      - vpnhat-香港Adcdata-dip 3
+      - vpnhat-SG-DigitalOcean 3
+      - vpnhat-Novosibirsk-Adman 3
+      - vpnhat-Canyon Country-Multacom 3
+      - vpnhat-San Jose-Oracle 3
+      - vpnhat-SG-Oracle 5
+      - vpnhat-Tokyo-M247 3
+      - vpnhat-台北Hinet-dip 5
+      - vpnhat-台北Hinet-dip 6
+      - vpnhat-MD-Chisinau-AlexHost 3
+      - _PL_波兰
+      - _CA_加拿大
       - US03|美国|x1.0
-      - 美国_TG@nodesharing_103
-      - 美国_TG@nodesharing_101
-      - TR01|土耳其|x1.0
-      - 美国_TG@nodesharing_112
-      - SG01|新加坡|x2.0
-      - RR01|巴西|x0.5
       - SG02|新加坡|x2.0
+      - 美国_TG@nodesharing_112
       - JP01|日本|x1.0
-      - MY01|马来西亚|x1.0
-      - TW02|台湾|x1.0
+      - HU01|匈牙利|x1.0
+      - 美国_TG@nodesharing_103
+      - TR01|土耳其|x1.0
+      - 美国_TG@nodesharing_101
+      - RR01|巴西|x0.5
+      - NL01|荷兰|x1.0
+      - US04|美国|x1.0
+      - SG01|新加坡|x2.0
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - v2ray-ah-az02(港)
-      - v2ray-ah-hk03(港Netflix)
-      - v2ray-gz-hk06(hkt港Netflix)
-      - v2ray-gz-az02(港)
-      - 香港02|厦门联通|高峰期稳定
-      - v2ray-ah-hk08(hgc港Netflix)
-      - v2ray-az-hk03(港Netflix)
-      - v2ray-az-hk07(hgc港Netflix)
-      - v2ray-az-hk06(hkt港Netflix)
-      - v2ray-az-hk01(hgc港Netflix)
-      - 英国02|azhk|解锁流媒体
-      - 香港_TG@nodesharing_26
-      - v2ray-gz-hk01(hgc港Netflix)
-      - v2ray-gz-hk03(港Netflix)
-      - v2ray-jm-tw01(台Netflix)
-      - 香港_TG@nodesharing_24
-      - v2ray-ah-tw01(台Netflix)
-      - 香港_TG@nodesharing_36
-      - v2ray-gz-tw01(台netflix)
+      - EXTM3U-香港HGC-dip
+      - vpnpool-新北Hinet-dip
+      - vpnpool-香港Adcdata-dip
+      - EXTM3U-香港HGC-dip 2
+      - vpnpool-台北Hinet-dip
+      - EXTM3U-台北Hinet-dip
+      - vpnhat-新北Hinet-dip
+      - vpnpool-台北Hinet-dip 2
+      - 台 Hinet (高优先)
+      - vpnpool-香港HGC-dip
+      - vpnhat-香港HGC-dip
+      - 中 港 HKBN
+      - vpnhat-香港Adcdata-dip
       - 台湾_TG@nodesharing_173
-      - 香港_TG@nodesharing_65
-      - 香港01|广州移动|高峰期稳定
-      - HK02|香港|SS|x1.0
-      - HK01|香港|SS|x1.0
-      - HK04|香港|x1.0
-      - HK01|香港|x1.0
-      - TW02|台湾|x1.0
+      - vpnhat-香港HGC-dip 2
+      - vpnhat-台北Hinet-dip
+      - vpnhat-台北Hinet-dip 2
+      - vpnhat-香港HGC-dip 3
+      - vpnhat-香港HKT
+      - vpnhat-香港HKT 2
+      - vpnhat-香港HKT 3
+      - vpnhat-新北Hinet-dip 2
+      - vpnhat-新北Hinet-dip 3
+      - vpnhat-香港Azure
+      - vpnhat-香港HGC-dip 4
+      - vpnhat-香港HGC-dip 5
+      - vpnhat-香港Adcdata-dip 2
+      - vpnhat-香港HGC-dip 6
+      - vpnhat-台北Hinet-dip 3
+      - vpnhat-台北Hinet-dip 4
+      - vpnhat-香港HGC-dip 7
+      - vpnhat-香港HKT 4
+      - vpnhat-香港HKT 5
+      - vpnhat-香港HKT 6
+      - vpnhat-新北Hinet-dip 4
+      - vpnhat-新北Hinet-dip 5
+      - vpnhat-香港Azure 2
+      - vpnhat-香港HGC-dip 8
+      - vpnhat-香港HGC-dip 9
+      - vpnhat-香港Adcdata-dip 3
+      - vpnhat-台北Hinet-dip 5
+      - vpnhat-台北Hinet-dip 6
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - HK2 10G 80|倍率1
-      - v2ray-ah-az02(港)
-      - v2ray-ah-hk03(港Netflix)
-      - v2ray-gz-hk06(hkt港Netflix)
-      - v2ray-gz-az02(港)
-      - 香港02|厦门联通|高峰期稳定
-      - v2ray-ah-hk08(hgc港Netflix)
-      - v2ray-gz-sgp01(新Netflix)
-      - 上海5 5Gbps  443|倍率1
-      - v2ray-jm-jp03(日)
-      - 上海 5Gbps  80|倍率1
-      - 上海2 5Gbps  80|倍率1
-      - v2ray-gz-jp03(日|新Netflix)
-      - 中国_TG@nodesharing_79
-      - v2ray-az-hk03(港Netflix)
-      - 上海4 5Gbps  80|倍率1
-      - v2ray-ah-jp02(日Netflix|Abema|...)
-      - v2ray-gz-jp02(日)
-      - v2ray-az-hk07(hgc港Netflix)
-      - 日本_TG@nodesharing_108
-      - 北京4 5Gbps  80|倍率1
-      - 日本01|厦门联通|解锁流媒体
-      - 北京 5Gbps  80|倍率1
-      - 上海3 5Gbps  80|倍率1
-      - 新加坡01|azHK|解锁流媒体
-      - 上海5 5Gbps  80|倍率1
+      - _KR_韩国
+      - vpnpool-Seattle-Contabo-dip
+      - vpnhat-Tokyo-NTT
+      - 日 西 IDCF
+      - vpnhat-Seattle-Contabo-dip
+      - vpnpool-Seattle-Contabo-dip 2
+      - vpnpool-SG-Oracle
+      - EXTM3U-香港HGC-dip
+      - vpnpool-新北Hinet-dip
+      - vpnpool-香港Adcdata-dip
+      - vpnpool-Canyon Country-Multacom
+      - EXTM3U-Dubai-Oracle
+      - vpnpool-Chuncheon-Oracle
+      - EXTM3U-香港HGC-dip 2
+      - vpnpool-Dallas-NextArray-dip
+      - vpnhat-Dallas-NextArray-dip
+      - vpnhat-Paris-Online
+      - vpnpool-Dubai-Oracle
+      - EXTM3U-Seattle-Contabo-dip
+      - vpnpool-San Jose-Oracle
+      - EXTM3U-LAX-M247
+      - EXTM3U-Tokyo-Optage-dip
+      - vpnpool-台北Hinet-dip
+      - EXTM3U-台北Hinet-dip
+      - vpnhat-新北Hinet-dip
+      - EXTM3U-Tokyo-Oracle
+      - vpnpool-SG-DigitalOcean
+      - EXTM3U-Chuncheon-Oracle
+      - vpnpool-台北Hinet-dip 2
+      - vpnhat-Tokyo-Oracle
+      - 台 Hinet (高优先)
+      - vpnpool-香港HGC-dip
+      - vpnhat-香港HGC-dip
+      - 中 港 HKBN
       - 中国_TG@nodesharing_87
-      - v2ray-az-hk06(hkt港Netflix)
-      - v2ray-az-jp03(日|新Netflix)
-      - 北京2 5Gbps  80|倍率1
-      - v2ray-az-sgp01(新Netflix)
-      - v2ray-az-jp05(日Netflix|Abema|...)
-      - v2ray-ah-jp05(日Netflix|Abema|...)
-      - 美国01|azHK|解锁流媒体
-      - v2ray-az-jp01(日Netflix|Abema|...)
-      - v2ray-az-jp02(日Netflix|Abema|...)
-      - v2ray-az-hk01(hgc港Netflix)
-      - 英国01|azHK|解锁流媒体
+      - 日 东 IDCF
+      - vpnhat-香港Adcdata-dip
       - 中国_TG@nodesharing_80
-      - 英国02|azhk|解锁流媒体
-      - 加拿大01|azHK|高峰期稳定
-      - v2ray-ah-kr01
-      - v2ray-az-us06(美)
-      - v2ray-ah-us07(美流媒体解锁)
-      - v2ray-az-us05(美Netflix)
-      - 香港_TG@nodesharing_26
-      - v2ray日02(Netflix|Abema|...)
-      - 中国_TG@nodesharing_72
-      - US_油管 TG 8度科技
-      - v2ray-gz-hk01(hgc港Netflix)
-      - v2ray-az-hl01
-      - v2ray-az-us02(美)
-      - v2ray-gz-hk03(港Netflix)
-      - ฅ^ΦωΦ^ฅ6༶ฅ^ΦωΦ^ฅ
-      - HK_油管 TG 8度科技
-      - 韩国 80|解锁Netflix 倍率1
-      - null_油管 TG 8度科技
-      - CN_油管 TG 8度科技
-      - v2ray-az-kr01
-      - v2ray-az-us03(美Netflix)
-      - 韩国_TG@nodesharing_135
-      - HK_油管 TG 8度科技 2
-      - CN_油管 TG 8度科技 2
-      - ฅ^ΦωΦ^ฅ5༶ฅ^ΦωΦ^ฅ
-      - v2ray-jm-tw01(台Netflix)
-      - CN_油管 TG 8度科技 3
-      - 中转HK 10G 80|倍率1
-      - 香港_TG@nodesharing_24
-      - v2ray-az-ru02(俄netflix)
-      - v2ray-ah-tw01(台Netflix)
-      - v2ray-gz-jp01(日Netflix|Abema|...)
-      - HK_油管 TG 8度科技 3
-      - 香港_TG@nodesharing_36
-      - v2ray-gz-tw01(台netflix)
       - 台湾_TG@nodesharing_173
-      - 香港_TG@nodesharing_65
-      - v2ray-az-mol01(摩尔多卡)
-      - ฅ^ΦωΦ^ฅ2༶ฅ^ΦωΦ^ฅ
-      - 北京游戏节点 限速10mbps
-      - 香港01|广州移动|高峰期稳定
-      - v2ray-gz-us03(美Netflix)
-      - MO01|澳门|SS|x5.0
-      - US04|美国|SS|x1.0
-      - US05|美国|SS|x1.0
-      - US03|美国|SS|x1.0
-      - US02|美国|SS|x1.0
-      - CN_油管+TG+8度科技
-      - CN_油管+TG+8度科技 2
-      - HK02|香港|SS|x1.0
-      - HK01|香港|SS|x1.0
-      - KR01|韩国|SS|x1.0
-      - _US_美国
-      - MO01|澳门|x5.0
-      - TH01|泰国|x1.0
-      - JP02|日本|x1.0
-      - RO01|罗马尼亚|x1.0
-      - HK04|香港|x1.0
-      - KR02|韩国|x1.0
-      - US05|美国|x1.0
-      - HK01|香港|x1.0
-      - UK01|英国|x1.0
-      - UK02|英国|x2.0
-      - NL01|荷兰|x1.0
-      - HU01|匈牙利|x1.0
-      - US04|美国|x1.0
-      - DE01|德国|x1.0
+      - null_油管 TG 8度科技
+      - HK_油管 TG 8度科技
+      - US_油管 TG 8度科技
+      - 日 sakura
+      - 日 GMO
+      - vpnhat-SG-DigitalOcean
+      - vpnhat-Novosibirsk-Adman
+      - vpnhat-Canyon Country-Multacom
+      - vpnhat-San Jose-Oracle
+      - vpnhat-LAX-M247
+      - vpnhat-SG-Oracle
+      - vpnhat-香港HGC-dip 2
+      - vpnhat-Tokyo-M247
+      - vpnhat-台北Hinet-dip
+      - vpnhat-台北Hinet-dip 2
+      - vpnhat-MD-Chisinau-AlexHost
+      - vpnhat-香港HGC-dip 3
+      - vpnhat-香港HKT
+      - vpnhat-香港HKT 2
+      - vpnhat-香港HKT 3
+      - vpnhat-Tokyo-Optage-dip
+      - vpnhat-新北Hinet-dip 2
+      - vpnhat-Tokyo-Oracle 2
+      - vpnhat-新北Hinet-dip 3
+      - vpnhat-香港Azure
+      - vpnhat-香港HGC-dip 4
+      - vpnhat-香港HGC-dip 5
+      - vpnhat-Paris-Online 2
+      - vpnhat-Frankfurt-Leaseweb
+      - vpnhat-SG-Oracle 2
+      - vpnhat-Tokyo-NTT 2
+      - vpnhat-Seattle-Contabo-dip 2
+      - vpnhat-Dallas-NextArray-dip 2
+      - vpnhat-Seattle-Contabo-dip 3
+      - vpnhat-香港Adcdata-dip 2
+      - vpnhat-SG-DigitalOcean 2
+      - vpnhat-Novosibirsk-Adman 2
+      - vpnhat-Canyon Country-Multacom 2
+      - vpnhat-San Jose-Oracle 2
+      - vpnhat-LAX-M247 2
+      - vpnhat-SG-Oracle 3
+      - vpnhat-香港HGC-dip 6
+      - vpnhat-Tokyo-M247 2
+      - vpnhat-台北Hinet-dip 3
+      - vpnhat-台北Hinet-dip 4
+      - vpnhat-MD-Chisinau-AlexHost 2
+      - vpnhat-香港HGC-dip 7
+      - vpnhat-香港HKT 4
+      - vpnhat-香港HKT 5
+      - vpnhat-香港HKT 6
+      - vpnhat-Tokyo-Optage-dip 2
+      - vpnhat-新北Hinet-dip 4
+      - vpnhat-Tokyo-Oracle 3
+      - vpnhat-新北Hinet-dip 5
+      - vpnhat-香港Azure 2
+      - vpnhat-香港HGC-dip 8
+      - vpnhat-香港HGC-dip 9
+      - vpnhat-Paris-Online 3
+      - vpnhat-Frankfurt-Leaseweb 2
+      - vpnhat-SG-Oracle 4
+      - vpnhat-Tokyo-NTT 3
+      - vpnhat-Seattle-Contabo-dip 4
+      - vpnhat-Dallas-NextArray-dip 3
+      - vpnhat-Seattle-Contabo-dip 5
+      - vpnhat-香港Adcdata-dip 3
+      - vpnhat-SG-DigitalOcean 3
+      - vpnhat-Novosibirsk-Adman 3
+      - vpnhat-Canyon Country-Multacom 3
+      - vpnhat-San Jose-Oracle 3
+      - vpnhat-SG-Oracle 5
+      - vpnhat-Tokyo-M247 3
+      - vpnhat-台北Hinet-dip 5
+      - vpnhat-台北Hinet-dip 6
+      - vpnhat-MD-Chisinau-AlexHost 3
+      - _PL_波兰
+      - _CA_加拿大
       - US03|美国|x1.0
-      - 美国_TG@nodesharing_103
-      - 美国_TG@nodesharing_101
-      - TR01|土耳其|x1.0
-      - 美国_TG@nodesharing_112
-      - SG01|新加坡|x2.0
-      - RR01|巴西|x0.5
       - SG02|新加坡|x2.0
+      - 美国_TG@nodesharing_112
       - JP01|日本|x1.0
-      - MY01|马来西亚|x1.0
-      - TW02|台湾|x1.0
+      - HU01|匈牙利|x1.0
+      - 美国_TG@nodesharing_103
+      - TR01|土耳其|x1.0
+      - 美国_TG@nodesharing_101
+      - RR01|巴西|x0.5
+      - NL01|荷兰|x1.0
+      - US04|美国|x1.0
+      - SG01|新加坡|x2.0
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - HK2 10G 80|倍率1
-      - v2ray-ah-az02(港)
-      - v2ray-ah-hk03(港Netflix)
-      - v2ray-gz-hk06(hkt港Netflix)
-      - v2ray-gz-az02(港)
-      - 香港02|厦门联通|高峰期稳定
-      - v2ray-ah-hk08(hgc港Netflix)
-      - v2ray-gz-sgp01(新Netflix)
-      - 上海5 5Gbps  443|倍率1
-      - v2ray-jm-jp03(日)
-      - 上海 5Gbps  80|倍率1
-      - 上海2 5Gbps  80|倍率1
-      - v2ray-gz-jp03(日|新Netflix)
-      - 中国_TG@nodesharing_79
-      - v2ray-az-hk03(港Netflix)
-      - 上海4 5Gbps  80|倍率1
-      - v2ray-ah-jp02(日Netflix|Abema|...)
-      - v2ray-gz-jp02(日)
-      - v2ray-az-hk07(hgc港Netflix)
-      - 日本_TG@nodesharing_108
-      - 北京4 5Gbps  80|倍率1
-      - 日本01|厦门联通|解锁流媒体
-      - 北京 5Gbps  80|倍率1
-      - 上海3 5Gbps  80|倍率1
-      - 新加坡01|azHK|解锁流媒体
-      - 上海5 5Gbps  80|倍率1
+      - _KR_韩国
+      - vpnpool-Seattle-Contabo-dip
+      - vpnhat-Tokyo-NTT
+      - 日 西 IDCF
+      - vpnhat-Seattle-Contabo-dip
+      - vpnpool-Seattle-Contabo-dip 2
+      - vpnpool-SG-Oracle
+      - EXTM3U-香港HGC-dip
+      - vpnpool-新北Hinet-dip
+      - vpnpool-香港Adcdata-dip
+      - vpnpool-Canyon Country-Multacom
+      - EXTM3U-Dubai-Oracle
+      - vpnpool-Chuncheon-Oracle
+      - EXTM3U-香港HGC-dip 2
+      - vpnpool-Dallas-NextArray-dip
+      - vpnhat-Dallas-NextArray-dip
+      - vpnhat-Paris-Online
+      - vpnpool-Dubai-Oracle
+      - EXTM3U-Seattle-Contabo-dip
+      - vpnpool-San Jose-Oracle
+      - EXTM3U-LAX-M247
+      - EXTM3U-Tokyo-Optage-dip
+      - vpnpool-台北Hinet-dip
+      - EXTM3U-台北Hinet-dip
+      - vpnhat-新北Hinet-dip
+      - EXTM3U-Tokyo-Oracle
+      - vpnpool-SG-DigitalOcean
+      - EXTM3U-Chuncheon-Oracle
+      - vpnpool-台北Hinet-dip 2
+      - vpnhat-Tokyo-Oracle
+      - 台 Hinet (高优先)
+      - vpnpool-香港HGC-dip
+      - vpnhat-香港HGC-dip
+      - 中 港 HKBN
       - 中国_TG@nodesharing_87
-      - v2ray-az-hk06(hkt港Netflix)
-      - v2ray-az-jp03(日|新Netflix)
-      - 北京2 5Gbps  80|倍率1
-      - v2ray-az-sgp01(新Netflix)
-      - v2ray-az-jp05(日Netflix|Abema|...)
-      - v2ray-ah-jp05(日Netflix|Abema|...)
-      - 美国01|azHK|解锁流媒体
-      - v2ray-az-jp01(日Netflix|Abema|...)
-      - v2ray-az-jp02(日Netflix|Abema|...)
-      - v2ray-az-hk01(hgc港Netflix)
-      - 英国01|azHK|解锁流媒体
+      - 日 东 IDCF
+      - vpnhat-香港Adcdata-dip
       - 中国_TG@nodesharing_80
-      - 英国02|azhk|解锁流媒体
-      - 加拿大01|azHK|高峰期稳定
-      - v2ray-ah-kr01
-      - v2ray-az-us06(美)
-      - v2ray-ah-us07(美流媒体解锁)
-      - v2ray-az-us05(美Netflix)
-      - 香港_TG@nodesharing_26
-      - v2ray日02(Netflix|Abema|...)
-      - 中国_TG@nodesharing_72
-      - US_油管 TG 8度科技
-      - v2ray-gz-hk01(hgc港Netflix)
-      - v2ray-az-hl01
-      - v2ray-az-us02(美)
-      - v2ray-gz-hk03(港Netflix)
-      - ฅ^ΦωΦ^ฅ6༶ฅ^ΦωΦ^ฅ
-      - HK_油管 TG 8度科技
-      - 韩国 80|解锁Netflix 倍率1
-      - null_油管 TG 8度科技
-      - CN_油管 TG 8度科技
-      - v2ray-az-kr01
-      - v2ray-az-us03(美Netflix)
-      - 韩国_TG@nodesharing_135
-      - HK_油管 TG 8度科技 2
-      - CN_油管 TG 8度科技 2
-      - ฅ^ΦωΦ^ฅ5༶ฅ^ΦωΦ^ฅ
-      - v2ray-jm-tw01(台Netflix)
-      - CN_油管 TG 8度科技 3
-      - 中转HK 10G 80|倍率1
-      - 香港_TG@nodesharing_24
-      - v2ray-az-ru02(俄netflix)
-      - v2ray-ah-tw01(台Netflix)
-      - v2ray-gz-jp01(日Netflix|Abema|...)
-      - HK_油管 TG 8度科技 3
-      - 香港_TG@nodesharing_36
-      - v2ray-gz-tw01(台netflix)
       - 台湾_TG@nodesharing_173
-      - 香港_TG@nodesharing_65
-      - v2ray-az-mol01(摩尔多卡)
-      - ฅ^ΦωΦ^ฅ2༶ฅ^ΦωΦ^ฅ
-      - 北京游戏节点 限速10mbps
-      - 香港01|广州移动|高峰期稳定
-      - v2ray-gz-us03(美Netflix)
-      - MO01|澳门|SS|x5.0
-      - US04|美国|SS|x1.0
-      - US05|美国|SS|x1.0
-      - US03|美国|SS|x1.0
-      - US02|美国|SS|x1.0
-      - CN_油管+TG+8度科技
-      - CN_油管+TG+8度科技 2
-      - HK02|香港|SS|x1.0
-      - HK01|香港|SS|x1.0
-      - KR01|韩国|SS|x1.0
-      - _US_美国
-      - MO01|澳门|x5.0
-      - TH01|泰国|x1.0
-      - JP02|日本|x1.0
-      - RO01|罗马尼亚|x1.0
-      - HK04|香港|x1.0
-      - KR02|韩国|x1.0
-      - US05|美国|x1.0
-      - HK01|香港|x1.0
-      - UK01|英国|x1.0
-      - UK02|英国|x2.0
-      - NL01|荷兰|x1.0
-      - HU01|匈牙利|x1.0
-      - US04|美国|x1.0
-      - DE01|德国|x1.0
+      - null_油管 TG 8度科技
+      - HK_油管 TG 8度科技
+      - US_油管 TG 8度科技
+      - 日 sakura
+      - 日 GMO
+      - vpnhat-SG-DigitalOcean
+      - vpnhat-Novosibirsk-Adman
+      - vpnhat-Canyon Country-Multacom
+      - vpnhat-San Jose-Oracle
+      - vpnhat-LAX-M247
+      - vpnhat-SG-Oracle
+      - vpnhat-香港HGC-dip 2
+      - vpnhat-Tokyo-M247
+      - vpnhat-台北Hinet-dip
+      - vpnhat-台北Hinet-dip 2
+      - vpnhat-MD-Chisinau-AlexHost
+      - vpnhat-香港HGC-dip 3
+      - vpnhat-香港HKT
+      - vpnhat-香港HKT 2
+      - vpnhat-香港HKT 3
+      - vpnhat-Tokyo-Optage-dip
+      - vpnhat-新北Hinet-dip 2
+      - vpnhat-Tokyo-Oracle 2
+      - vpnhat-新北Hinet-dip 3
+      - vpnhat-香港Azure
+      - vpnhat-香港HGC-dip 4
+      - vpnhat-香港HGC-dip 5
+      - vpnhat-Paris-Online 2
+      - vpnhat-Frankfurt-Leaseweb
+      - vpnhat-SG-Oracle 2
+      - vpnhat-Tokyo-NTT 2
+      - vpnhat-Seattle-Contabo-dip 2
+      - vpnhat-Dallas-NextArray-dip 2
+      - vpnhat-Seattle-Contabo-dip 3
+      - vpnhat-香港Adcdata-dip 2
+      - vpnhat-SG-DigitalOcean 2
+      - vpnhat-Novosibirsk-Adman 2
+      - vpnhat-Canyon Country-Multacom 2
+      - vpnhat-San Jose-Oracle 2
+      - vpnhat-LAX-M247 2
+      - vpnhat-SG-Oracle 3
+      - vpnhat-香港HGC-dip 6
+      - vpnhat-Tokyo-M247 2
+      - vpnhat-台北Hinet-dip 3
+      - vpnhat-台北Hinet-dip 4
+      - vpnhat-MD-Chisinau-AlexHost 2
+      - vpnhat-香港HGC-dip 7
+      - vpnhat-香港HKT 4
+      - vpnhat-香港HKT 5
+      - vpnhat-香港HKT 6
+      - vpnhat-Tokyo-Optage-dip 2
+      - vpnhat-新北Hinet-dip 4
+      - vpnhat-Tokyo-Oracle 3
+      - vpnhat-新北Hinet-dip 5
+      - vpnhat-香港Azure 2
+      - vpnhat-香港HGC-dip 8
+      - vpnhat-香港HGC-dip 9
+      - vpnhat-Paris-Online 3
+      - vpnhat-Frankfurt-Leaseweb 2
+      - vpnhat-SG-Oracle 4
+      - vpnhat-Tokyo-NTT 3
+      - vpnhat-Seattle-Contabo-dip 4
+      - vpnhat-Dallas-NextArray-dip 3
+      - vpnhat-Seattle-Contabo-dip 5
+      - vpnhat-香港Adcdata-dip 3
+      - vpnhat-SG-DigitalOcean 3
+      - vpnhat-Novosibirsk-Adman 3
+      - vpnhat-Canyon Country-Multacom 3
+      - vpnhat-San Jose-Oracle 3
+      - vpnhat-SG-Oracle 5
+      - vpnhat-Tokyo-M247 3
+      - vpnhat-台北Hinet-dip 5
+      - vpnhat-台北Hinet-dip 6
+      - vpnhat-MD-Chisinau-AlexHost 3
+      - _PL_波兰
+      - _CA_加拿大
       - US03|美国|x1.0
-      - 美国_TG@nodesharing_103
-      - 美国_TG@nodesharing_101
-      - TR01|土耳其|x1.0
-      - 美国_TG@nodesharing_112
-      - SG01|新加坡|x2.0
-      - RR01|巴西|x0.5
       - SG02|新加坡|x2.0
+      - 美国_TG@nodesharing_112
       - JP01|日本|x1.0
-      - MY01|马来西亚|x1.0
-      - TW02|台湾|x1.0
+      - HU01|匈牙利|x1.0
+      - 美国_TG@nodesharing_103
+      - TR01|土耳其|x1.0
+      - 美国_TG@nodesharing_101
+      - RR01|巴西|x0.5
+      - NL01|荷兰|x1.0
+      - US04|美国|x1.0
+      - SG01|新加坡|x2.0
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - HK2 10G 80|倍率1
-      - v2ray-ah-az02(港)
-      - v2ray-ah-hk03(港Netflix)
-      - v2ray-gz-hk06(hkt港Netflix)
-      - v2ray-gz-az02(港)
-      - 香港02|厦门联通|高峰期稳定
-      - v2ray-ah-hk08(hgc港Netflix)
-      - v2ray-gz-sgp01(新Netflix)
-      - 上海5 5Gbps  443|倍率1
-      - v2ray-jm-jp03(日)
-      - 上海 5Gbps  80|倍率1
-      - 上海2 5Gbps  80|倍率1
-      - v2ray-gz-jp03(日|新Netflix)
-      - 中国_TG@nodesharing_79
-      - v2ray-az-hk03(港Netflix)
-      - 上海4 5Gbps  80|倍率1
-      - v2ray-ah-jp02(日Netflix|Abema|...)
-      - v2ray-gz-jp02(日)
-      - v2ray-az-hk07(hgc港Netflix)
-      - 日本_TG@nodesharing_108
-      - 北京4 5Gbps  80|倍率1
-      - 日本01|厦门联通|解锁流媒体
-      - 北京 5Gbps  80|倍率1
-      - 上海3 5Gbps  80|倍率1
-      - 新加坡01|azHK|解锁流媒体
-      - 上海5 5Gbps  80|倍率1
+      - _KR_韩国
+      - vpnpool-Seattle-Contabo-dip
+      - vpnhat-Tokyo-NTT
+      - 日 西 IDCF
+      - vpnhat-Seattle-Contabo-dip
+      - vpnpool-Seattle-Contabo-dip 2
+      - vpnpool-SG-Oracle
+      - EXTM3U-香港HGC-dip
+      - vpnpool-新北Hinet-dip
+      - vpnpool-香港Adcdata-dip
+      - vpnpool-Canyon Country-Multacom
+      - EXTM3U-Dubai-Oracle
+      - vpnpool-Chuncheon-Oracle
+      - EXTM3U-香港HGC-dip 2
+      - vpnpool-Dallas-NextArray-dip
+      - vpnhat-Dallas-NextArray-dip
+      - vpnhat-Paris-Online
+      - vpnpool-Dubai-Oracle
+      - EXTM3U-Seattle-Contabo-dip
+      - vpnpool-San Jose-Oracle
+      - EXTM3U-LAX-M247
+      - EXTM3U-Tokyo-Optage-dip
+      - vpnpool-台北Hinet-dip
+      - EXTM3U-台北Hinet-dip
+      - vpnhat-新北Hinet-dip
+      - EXTM3U-Tokyo-Oracle
+      - vpnpool-SG-DigitalOcean
+      - EXTM3U-Chuncheon-Oracle
+      - vpnpool-台北Hinet-dip 2
+      - vpnhat-Tokyo-Oracle
+      - 台 Hinet (高优先)
+      - vpnpool-香港HGC-dip
+      - vpnhat-香港HGC-dip
+      - 中 港 HKBN
       - 中国_TG@nodesharing_87
-      - v2ray-az-hk06(hkt港Netflix)
-      - v2ray-az-jp03(日|新Netflix)
-      - 北京2 5Gbps  80|倍率1
-      - v2ray-az-sgp01(新Netflix)
-      - v2ray-az-jp05(日Netflix|Abema|...)
-      - v2ray-ah-jp05(日Netflix|Abema|...)
-      - 美国01|azHK|解锁流媒体
-      - v2ray-az-jp01(日Netflix|Abema|...)
-      - v2ray-az-jp02(日Netflix|Abema|...)
-      - v2ray-az-hk01(hgc港Netflix)
-      - 英国01|azHK|解锁流媒体
+      - 日 东 IDCF
+      - vpnhat-香港Adcdata-dip
       - 中国_TG@nodesharing_80
-      - 英国02|azhk|解锁流媒体
-      - 加拿大01|azHK|高峰期稳定
-      - v2ray-ah-kr01
-      - v2ray-az-us06(美)
-      - v2ray-ah-us07(美流媒体解锁)
-      - v2ray-az-us05(美Netflix)
-      - 香港_TG@nodesharing_26
-      - v2ray日02(Netflix|Abema|...)
-      - 中国_TG@nodesharing_72
-      - US_油管 TG 8度科技
-      - v2ray-gz-hk01(hgc港Netflix)
-      - v2ray-az-hl01
-      - v2ray-az-us02(美)
-      - v2ray-gz-hk03(港Netflix)
-      - ฅ^ΦωΦ^ฅ6༶ฅ^ΦωΦ^ฅ
-      - HK_油管 TG 8度科技
-      - 韩国 80|解锁Netflix 倍率1
-      - null_油管 TG 8度科技
-      - CN_油管 TG 8度科技
-      - v2ray-az-kr01
-      - v2ray-az-us03(美Netflix)
-      - 韩国_TG@nodesharing_135
-      - HK_油管 TG 8度科技 2
-      - CN_油管 TG 8度科技 2
-      - ฅ^ΦωΦ^ฅ5༶ฅ^ΦωΦ^ฅ
-      - v2ray-jm-tw01(台Netflix)
-      - CN_油管 TG 8度科技 3
-      - 中转HK 10G 80|倍率1
-      - 香港_TG@nodesharing_24
-      - v2ray-az-ru02(俄netflix)
-      - v2ray-ah-tw01(台Netflix)
-      - v2ray-gz-jp01(日Netflix|Abema|...)
-      - HK_油管 TG 8度科技 3
-      - 香港_TG@nodesharing_36
-      - v2ray-gz-tw01(台netflix)
       - 台湾_TG@nodesharing_173
-      - 香港_TG@nodesharing_65
-      - v2ray-az-mol01(摩尔多卡)
-      - ฅ^ΦωΦ^ฅ2༶ฅ^ΦωΦ^ฅ
-      - 北京游戏节点 限速10mbps
-      - 香港01|广州移动|高峰期稳定
-      - v2ray-gz-us03(美Netflix)
-      - MO01|澳门|SS|x5.0
-      - US04|美国|SS|x1.0
-      - US05|美国|SS|x1.0
-      - US03|美国|SS|x1.0
-      - US02|美国|SS|x1.0
-      - CN_油管+TG+8度科技
-      - CN_油管+TG+8度科技 2
-      - HK02|香港|SS|x1.0
-      - HK01|香港|SS|x1.0
-      - KR01|韩国|SS|x1.0
-      - _US_美国
-      - MO01|澳门|x5.0
-      - TH01|泰国|x1.0
-      - JP02|日本|x1.0
-      - RO01|罗马尼亚|x1.0
-      - HK04|香港|x1.0
-      - KR02|韩国|x1.0
-      - US05|美国|x1.0
-      - HK01|香港|x1.0
-      - UK01|英国|x1.0
-      - UK02|英国|x2.0
-      - NL01|荷兰|x1.0
-      - HU01|匈牙利|x1.0
-      - US04|美国|x1.0
-      - DE01|德国|x1.0
+      - null_油管 TG 8度科技
+      - HK_油管 TG 8度科技
+      - US_油管 TG 8度科技
+      - 日 sakura
+      - 日 GMO
+      - vpnhat-SG-DigitalOcean
+      - vpnhat-Novosibirsk-Adman
+      - vpnhat-Canyon Country-Multacom
+      - vpnhat-San Jose-Oracle
+      - vpnhat-LAX-M247
+      - vpnhat-SG-Oracle
+      - vpnhat-香港HGC-dip 2
+      - vpnhat-Tokyo-M247
+      - vpnhat-台北Hinet-dip
+      - vpnhat-台北Hinet-dip 2
+      - vpnhat-MD-Chisinau-AlexHost
+      - vpnhat-香港HGC-dip 3
+      - vpnhat-香港HKT
+      - vpnhat-香港HKT 2
+      - vpnhat-香港HKT 3
+      - vpnhat-Tokyo-Optage-dip
+      - vpnhat-新北Hinet-dip 2
+      - vpnhat-Tokyo-Oracle 2
+      - vpnhat-新北Hinet-dip 3
+      - vpnhat-香港Azure
+      - vpnhat-香港HGC-dip 4
+      - vpnhat-香港HGC-dip 5
+      - vpnhat-Paris-Online 2
+      - vpnhat-Frankfurt-Leaseweb
+      - vpnhat-SG-Oracle 2
+      - vpnhat-Tokyo-NTT 2
+      - vpnhat-Seattle-Contabo-dip 2
+      - vpnhat-Dallas-NextArray-dip 2
+      - vpnhat-Seattle-Contabo-dip 3
+      - vpnhat-香港Adcdata-dip 2
+      - vpnhat-SG-DigitalOcean 2
+      - vpnhat-Novosibirsk-Adman 2
+      - vpnhat-Canyon Country-Multacom 2
+      - vpnhat-San Jose-Oracle 2
+      - vpnhat-LAX-M247 2
+      - vpnhat-SG-Oracle 3
+      - vpnhat-香港HGC-dip 6
+      - vpnhat-Tokyo-M247 2
+      - vpnhat-台北Hinet-dip 3
+      - vpnhat-台北Hinet-dip 4
+      - vpnhat-MD-Chisinau-AlexHost 2
+      - vpnhat-香港HGC-dip 7
+      - vpnhat-香港HKT 4
+      - vpnhat-香港HKT 5
+      - vpnhat-香港HKT 6
+      - vpnhat-Tokyo-Optage-dip 2
+      - vpnhat-新北Hinet-dip 4
+      - vpnhat-Tokyo-Oracle 3
+      - vpnhat-新北Hinet-dip 5
+      - vpnhat-香港Azure 2
+      - vpnhat-香港HGC-dip 8
+      - vpnhat-香港HGC-dip 9
+      - vpnhat-Paris-Online 3
+      - vpnhat-Frankfurt-Leaseweb 2
+      - vpnhat-SG-Oracle 4
+      - vpnhat-Tokyo-NTT 3
+      - vpnhat-Seattle-Contabo-dip 4
+      - vpnhat-Dallas-NextArray-dip 3
+      - vpnhat-Seattle-Contabo-dip 5
+      - vpnhat-香港Adcdata-dip 3
+      - vpnhat-SG-DigitalOcean 3
+      - vpnhat-Novosibirsk-Adman 3
+      - vpnhat-Canyon Country-Multacom 3
+      - vpnhat-San Jose-Oracle 3
+      - vpnhat-SG-Oracle 5
+      - vpnhat-Tokyo-M247 3
+      - vpnhat-台北Hinet-dip 5
+      - vpnhat-台北Hinet-dip 6
+      - vpnhat-MD-Chisinau-AlexHost 3
+      - _PL_波兰
+      - _CA_加拿大
       - US03|美国|x1.0
-      - 美国_TG@nodesharing_103
-      - 美国_TG@nodesharing_101
-      - TR01|土耳其|x1.0
-      - 美国_TG@nodesharing_112
-      - SG01|新加坡|x2.0
-      - RR01|巴西|x0.5
       - SG02|新加坡|x2.0
+      - 美国_TG@nodesharing_112
       - JP01|日本|x1.0
-      - MY01|马来西亚|x1.0
-      - TW02|台湾|x1.0
+      - HU01|匈牙利|x1.0
+      - 美国_TG@nodesharing_103
+      - TR01|土耳其|x1.0
+      - 美国_TG@nodesharing_101
+      - RR01|巴西|x0.5
+      - NL01|荷兰|x1.0
+      - US04|美国|x1.0
+      - SG01|新加坡|x2.0
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -1039,123 +1134,133 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - HK2 10G 80|倍率1
-      - v2ray-ah-az02(港)
-      - v2ray-ah-hk03(港Netflix)
-      - v2ray-gz-hk06(hkt港Netflix)
-      - v2ray-gz-az02(港)
-      - 香港02|厦门联通|高峰期稳定
-      - v2ray-ah-hk08(hgc港Netflix)
-      - v2ray-gz-sgp01(新Netflix)
-      - 上海5 5Gbps  443|倍率1
-      - v2ray-jm-jp03(日)
-      - 上海 5Gbps  80|倍率1
-      - 上海2 5Gbps  80|倍率1
-      - v2ray-gz-jp03(日|新Netflix)
-      - 中国_TG@nodesharing_79
-      - v2ray-az-hk03(港Netflix)
-      - 上海4 5Gbps  80|倍率1
-      - v2ray-ah-jp02(日Netflix|Abema|...)
-      - v2ray-gz-jp02(日)
-      - v2ray-az-hk07(hgc港Netflix)
-      - 日本_TG@nodesharing_108
-      - 北京4 5Gbps  80|倍率1
-      - 日本01|厦门联通|解锁流媒体
-      - 北京 5Gbps  80|倍率1
-      - 上海3 5Gbps  80|倍率1
-      - 新加坡01|azHK|解锁流媒体
-      - 上海5 5Gbps  80|倍率1
+      - _KR_韩国
+      - vpnpool-Seattle-Contabo-dip
+      - vpnhat-Tokyo-NTT
+      - 日 西 IDCF
+      - vpnhat-Seattle-Contabo-dip
+      - vpnpool-Seattle-Contabo-dip 2
+      - vpnpool-SG-Oracle
+      - EXTM3U-香港HGC-dip
+      - vpnpool-新北Hinet-dip
+      - vpnpool-香港Adcdata-dip
+      - vpnpool-Canyon Country-Multacom
+      - EXTM3U-Dubai-Oracle
+      - vpnpool-Chuncheon-Oracle
+      - EXTM3U-香港HGC-dip 2
+      - vpnpool-Dallas-NextArray-dip
+      - vpnhat-Dallas-NextArray-dip
+      - vpnhat-Paris-Online
+      - vpnpool-Dubai-Oracle
+      - EXTM3U-Seattle-Contabo-dip
+      - vpnpool-San Jose-Oracle
+      - EXTM3U-LAX-M247
+      - EXTM3U-Tokyo-Optage-dip
+      - vpnpool-台北Hinet-dip
+      - EXTM3U-台北Hinet-dip
+      - vpnhat-新北Hinet-dip
+      - EXTM3U-Tokyo-Oracle
+      - vpnpool-SG-DigitalOcean
+      - EXTM3U-Chuncheon-Oracle
+      - vpnpool-台北Hinet-dip 2
+      - vpnhat-Tokyo-Oracle
+      - 台 Hinet (高优先)
+      - vpnpool-香港HGC-dip
+      - vpnhat-香港HGC-dip
+      - 中 港 HKBN
       - 中国_TG@nodesharing_87
-      - v2ray-az-hk06(hkt港Netflix)
-      - v2ray-az-jp03(日|新Netflix)
-      - 北京2 5Gbps  80|倍率1
-      - v2ray-az-sgp01(新Netflix)
-      - v2ray-az-jp05(日Netflix|Abema|...)
-      - v2ray-ah-jp05(日Netflix|Abema|...)
-      - 美国01|azHK|解锁流媒体
-      - v2ray-az-jp01(日Netflix|Abema|...)
-      - v2ray-az-jp02(日Netflix|Abema|...)
-      - v2ray-az-hk01(hgc港Netflix)
-      - 英国01|azHK|解锁流媒体
+      - 日 东 IDCF
+      - vpnhat-香港Adcdata-dip
       - 中国_TG@nodesharing_80
-      - 英国02|azhk|解锁流媒体
-      - 加拿大01|azHK|高峰期稳定
-      - v2ray-ah-kr01
-      - v2ray-az-us06(美)
-      - v2ray-ah-us07(美流媒体解锁)
-      - v2ray-az-us05(美Netflix)
-      - 香港_TG@nodesharing_26
-      - v2ray日02(Netflix|Abema|...)
-      - 中国_TG@nodesharing_72
-      - US_油管 TG 8度科技
-      - v2ray-gz-hk01(hgc港Netflix)
-      - v2ray-az-hl01
-      - v2ray-az-us02(美)
-      - v2ray-gz-hk03(港Netflix)
-      - ฅ^ΦωΦ^ฅ6༶ฅ^ΦωΦ^ฅ
-      - HK_油管 TG 8度科技
-      - 韩国 80|解锁Netflix 倍率1
-      - null_油管 TG 8度科技
-      - CN_油管 TG 8度科技
-      - v2ray-az-kr01
-      - v2ray-az-us03(美Netflix)
-      - 韩国_TG@nodesharing_135
-      - HK_油管 TG 8度科技 2
-      - CN_油管 TG 8度科技 2
-      - ฅ^ΦωΦ^ฅ5༶ฅ^ΦωΦ^ฅ
-      - v2ray-jm-tw01(台Netflix)
-      - CN_油管 TG 8度科技 3
-      - 中转HK 10G 80|倍率1
-      - 香港_TG@nodesharing_24
-      - v2ray-az-ru02(俄netflix)
-      - v2ray-ah-tw01(台Netflix)
-      - v2ray-gz-jp01(日Netflix|Abema|...)
-      - HK_油管 TG 8度科技 3
-      - 香港_TG@nodesharing_36
-      - v2ray-gz-tw01(台netflix)
       - 台湾_TG@nodesharing_173
-      - 香港_TG@nodesharing_65
-      - v2ray-az-mol01(摩尔多卡)
-      - ฅ^ΦωΦ^ฅ2༶ฅ^ΦωΦ^ฅ
-      - 北京游戏节点 限速10mbps
-      - 香港01|广州移动|高峰期稳定
-      - v2ray-gz-us03(美Netflix)
-      - MO01|澳门|SS|x5.0
-      - US04|美国|SS|x1.0
-      - US05|美国|SS|x1.0
-      - US03|美国|SS|x1.0
-      - US02|美国|SS|x1.0
-      - CN_油管+TG+8度科技
-      - CN_油管+TG+8度科技 2
-      - HK02|香港|SS|x1.0
-      - HK01|香港|SS|x1.0
-      - KR01|韩国|SS|x1.0
-      - _US_美国
-      - MO01|澳门|x5.0
-      - TH01|泰国|x1.0
-      - JP02|日本|x1.0
-      - RO01|罗马尼亚|x1.0
-      - HK04|香港|x1.0
-      - KR02|韩国|x1.0
-      - US05|美国|x1.0
-      - HK01|香港|x1.0
-      - UK01|英国|x1.0
-      - UK02|英国|x2.0
-      - NL01|荷兰|x1.0
-      - HU01|匈牙利|x1.0
-      - US04|美国|x1.0
-      - DE01|德国|x1.0
+      - null_油管 TG 8度科技
+      - HK_油管 TG 8度科技
+      - US_油管 TG 8度科技
+      - 日 sakura
+      - 日 GMO
+      - vpnhat-SG-DigitalOcean
+      - vpnhat-Novosibirsk-Adman
+      - vpnhat-Canyon Country-Multacom
+      - vpnhat-San Jose-Oracle
+      - vpnhat-LAX-M247
+      - vpnhat-SG-Oracle
+      - vpnhat-香港HGC-dip 2
+      - vpnhat-Tokyo-M247
+      - vpnhat-台北Hinet-dip
+      - vpnhat-台北Hinet-dip 2
+      - vpnhat-MD-Chisinau-AlexHost
+      - vpnhat-香港HGC-dip 3
+      - vpnhat-香港HKT
+      - vpnhat-香港HKT 2
+      - vpnhat-香港HKT 3
+      - vpnhat-Tokyo-Optage-dip
+      - vpnhat-新北Hinet-dip 2
+      - vpnhat-Tokyo-Oracle 2
+      - vpnhat-新北Hinet-dip 3
+      - vpnhat-香港Azure
+      - vpnhat-香港HGC-dip 4
+      - vpnhat-香港HGC-dip 5
+      - vpnhat-Paris-Online 2
+      - vpnhat-Frankfurt-Leaseweb
+      - vpnhat-SG-Oracle 2
+      - vpnhat-Tokyo-NTT 2
+      - vpnhat-Seattle-Contabo-dip 2
+      - vpnhat-Dallas-NextArray-dip 2
+      - vpnhat-Seattle-Contabo-dip 3
+      - vpnhat-香港Adcdata-dip 2
+      - vpnhat-SG-DigitalOcean 2
+      - vpnhat-Novosibirsk-Adman 2
+      - vpnhat-Canyon Country-Multacom 2
+      - vpnhat-San Jose-Oracle 2
+      - vpnhat-LAX-M247 2
+      - vpnhat-SG-Oracle 3
+      - vpnhat-香港HGC-dip 6
+      - vpnhat-Tokyo-M247 2
+      - vpnhat-台北Hinet-dip 3
+      - vpnhat-台北Hinet-dip 4
+      - vpnhat-MD-Chisinau-AlexHost 2
+      - vpnhat-香港HGC-dip 7
+      - vpnhat-香港HKT 4
+      - vpnhat-香港HKT 5
+      - vpnhat-香港HKT 6
+      - vpnhat-Tokyo-Optage-dip 2
+      - vpnhat-新北Hinet-dip 4
+      - vpnhat-Tokyo-Oracle 3
+      - vpnhat-新北Hinet-dip 5
+      - vpnhat-香港Azure 2
+      - vpnhat-香港HGC-dip 8
+      - vpnhat-香港HGC-dip 9
+      - vpnhat-Paris-Online 3
+      - vpnhat-Frankfurt-Leaseweb 2
+      - vpnhat-SG-Oracle 4
+      - vpnhat-Tokyo-NTT 3
+      - vpnhat-Seattle-Contabo-dip 4
+      - vpnhat-Dallas-NextArray-dip 3
+      - vpnhat-Seattle-Contabo-dip 5
+      - vpnhat-香港Adcdata-dip 3
+      - vpnhat-SG-DigitalOcean 3
+      - vpnhat-Novosibirsk-Adman 3
+      - vpnhat-Canyon Country-Multacom 3
+      - vpnhat-San Jose-Oracle 3
+      - vpnhat-SG-Oracle 5
+      - vpnhat-Tokyo-M247 3
+      - vpnhat-台北Hinet-dip 5
+      - vpnhat-台北Hinet-dip 6
+      - vpnhat-MD-Chisinau-AlexHost 3
+      - _PL_波兰
+      - _CA_加拿大
       - US03|美国|x1.0
-      - 美国_TG@nodesharing_103
-      - 美国_TG@nodesharing_101
-      - TR01|土耳其|x1.0
-      - 美国_TG@nodesharing_112
-      - SG01|新加坡|x2.0
-      - RR01|巴西|x0.5
       - SG02|新加坡|x2.0
+      - 美国_TG@nodesharing_112
       - JP01|日本|x1.0
-      - MY01|马来西亚|x1.0
-      - TW02|台湾|x1.0
+      - HU01|匈牙利|x1.0
+      - 美国_TG@nodesharing_103
+      - TR01|土耳其|x1.0
+      - 美国_TG@nodesharing_101
+      - RR01|巴西|x0.5
+      - NL01|荷兰|x1.0
+      - US04|美国|x1.0
+      - SG01|新加坡|x2.0
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
