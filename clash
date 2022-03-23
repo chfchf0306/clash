@@ -5,155 +5,635 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: CN_油管 TG 8度科技, server: 116.162.14.228, port: 20785, type: vmess, uuid: 1b693eb3-3241-362a-9001-5b503789cfbe, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CN_油管 TG 8度科技 2, server: 116.162.14.228, port: 21103, type: vmess, uuid: 1b693eb3-3241-362a-9001-5b503789cfbe, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CN_油管 TG 8度科技 3, server: 183.240.132.27, port: 61765, type: vmess, uuid: 1b693eb3-3241-362a-9001-5b503789cfbe, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CN_油管 TG 8度科技 4, server: 183.240.132.27, port: 21203, type: vmess, uuid: 1b693eb3-3241-362a-9001-5b503789cfbe, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CN_油管 TG 8度科技 5, server: 183.240.132.27, port: 21208, type: vmess, uuid: 1b693eb3-3241-362a-9001-5b503789cfbe, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CN_油管 TG 8度科技 6, server: 183.240.132.27, port: 21233, type: vmess, uuid: 1b693eb3-3241-362a-9001-5b503789cfbe, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CN_油管 TG 8度科技 7, server: 183.240.132.27, port: 21101, type: vmess, uuid: 1b693eb3-3241-362a-9001-5b503789cfbe, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CN_油管 TG 8度科技 8, server: 116.162.14.228, port: 21206, type: vmess, uuid: 1b693eb3-3241-362a-9001-5b503789cfbe, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CN_油管 TG 8度科技 9, server: cu2.worldmuseum.buzz, port: 12100, type: vmess, uuid: ff52c519-91fb-3ca3-9b55-f96e75201532, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /sg, ws-headers: {Host: www.189.cn}, udp: true}
-  - {name: CN_油管 TG 8度科技 10, server: 183.240.132.27, port: 21207, type: vmess, uuid: 1b693eb3-3241-362a-9001-5b503789cfbe, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: JP_油管 TG 8度科技, server: japan.fanqiangvpn.com, port: 443, type: vmess, uuid: afc34a50-76f7-4fb1-9393-c5da1c1a54db, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /www.fanqiangvpn.com, ws-headers: {Host: japan.fanqiangvpn.com}, udp: true}
-  - {name: CN_油管 TG 8度科技 11, server: cu2.worldmuseum.buzz, port: 12100, type: vmess, uuid: ff52c519-91fb-3ca3-9b55-f96e75201532, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /in, ws-headers: {Host: www.189.cn}, udp: true}
-  - {name: CN_油管 TG 8度科技 12, server: 101.67.8.178, port: 20761, type: vmess, uuid: 1b693eb3-3241-362a-9001-5b503789cfbe, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CN_油管 TG 8度科技 13, server: cu1.worldmuseum.buzz, port: 12100, type: vmess, uuid: ff52c519-91fb-3ca3-9b55-f96e75201532, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hk2, ws-headers: {Host: www.189.cn}, udp: true}
-  - {name: CN_油管 TG 8度科技 14, server: cu1.worldmuseum.buzz, port: 12100, type: vmess, uuid: ff52c519-91fb-3ca3-9b55-f96e75201532, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hk1, ws-headers: {Host: www.189.cn}, udp: true}
-  - {name: CN_油管 TG 8度科技 15, server: cu1.worldmuseum.buzz, port: 12100, type: vmess, uuid: ff52c519-91fb-3ca3-9b55-f96e75201532, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jp2, ws-headers: {Host: www.189.cn}, udp: true}
-  - {name: HK_油管 TG 8度科技, server: 13.75.95.54, port: 10026, type: vmess, uuid: d6a3f7ed-5d0d-323e-b092-5c1fdeadb34f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}, udp: true}
-  - {name: HK_油管 TG 8度科技 2, server: 20.205.109.227, port: 10026, type: vmess, uuid: d6a3f7ed-5d0d-323e-b092-5c1fdeadb34f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}, udp: true}
-  - {name: CN_油管 TG 8度科技 16, server: 116.162.14.190, port: 10039, type: vmess, uuid: d6a3f7ed-5d0d-323e-b092-5c1fdeadb34f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}, udp: true}
-  - {name: HK_油管 TG 8度科技 3, server: 13.75.95.54, port: 10031, type: vmess, uuid: d6a3f7ed-5d0d-323e-b092-5c1fdeadb34f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}, udp: true}
-  - {name: HK_油管 TG 8度科技 4, server: 20.205.109.227, port: 10018, type: vmess, uuid: d6a3f7ed-5d0d-323e-b092-5c1fdeadb34f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}, udp: true}
-  - {name: HK_油管 TG 8度科技 5, server: 20.205.109.227, port: 10025, type: vmess, uuid: d6a3f7ed-5d0d-323e-b092-5c1fdeadb34f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}, udp: true}
-  - {name: HK_油管 TG 8度科技 6, server: 20.205.109.227, port: 10017, type: vmess, uuid: d6a3f7ed-5d0d-323e-b092-5c1fdeadb34f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}, udp: true}
-  - {name: HK_油管 TG 8度科技 7, server: 20.205.109.227, port: 10013, type: vmess, uuid: d6a3f7ed-5d0d-323e-b092-5c1fdeadb34f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}, udp: true}
-  - {name: CN_油管 TG 8度科技 17, server: 120.197.88.209, port: 10018, type: vmess, uuid: d6a3f7ed-5d0d-323e-b092-5c1fdeadb34f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}, udp: true}
-  - {name: US_油管 TG 8度科技, server: 45.61.184.3, port: 40435, type: vmess, uuid: eca12e73-8f74-439f-b918-624e832422d4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: HK_油管 TG 8度科技 8, server: 20.205.109.227, port: 10033, type: vmess, uuid: d6a3f7ed-5d0d-323e-b092-5c1fdeadb34f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}, udp: true}
-  - {name: HK_油管 TG 8度科技 9, server: 13.75.95.54, port: 10033, type: vmess, uuid: d6a3f7ed-5d0d-323e-b092-5c1fdeadb34f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}, udp: true}
-  - {name: PL_油管 TG 8度科技, server: 194.15.196.66, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: US_油管 TG 8度科技 2, server: 142.202.48.7, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_油管 TG 8度科技 3, server: 38.75.137.187, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: US_油管 TG 8度科技 4, server: 142.202.48.7, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: JP_油管 TG 8度科技 2, server: jgwdb1.gaox.ml, port: 443, type: trojan, password: a580d839-ee41-4df1-bf03-6789dca32e30, sni: jgwdb1.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: lindoe日本|三网优化|1x, server: cs.daxun.club, port: 20631, type: vmess, uuid: accfc138-8a1c-41c2-9761-7454c0509a56, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /lindoerb01, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: 东京|优选原生IP|1x, server: cs.daxun.club, port: 20631, type: vmess, uuid: a5281205-5682-4149-b548-83b64ebedae9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /dj01, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: 香港04|负载均衡|原生IP|1x, server: cs.daxun.club, port: 20631, type: vmess, uuid: 7558a1bb-42fb-426a-81fc-475e2992101d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hkt008, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: 日本01|三网优化|1x, server: cs.daxun.club, port: 20631, type: vmess, uuid: a5281205-5682-4149-b548-83b64ebedae9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /linodejp01, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: lindoe日本|三网优化|1x 2, server: cs.daxun.club, port: 20631, type: vmess, uuid: 008818ea-d64e-44b3-90c3-595869c27529, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /lindoerb01, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: lindoe日本|三网优化|1x 3, server: cs.daxun.club, port: 20631, type: vmess, uuid: a5281205-5682-4149-b548-83b64ebedae9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /lindoerb01, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: 东京|优选原生IP|1x 2, server: cs.daxun.club, port: 20631, type: vmess, uuid: accfc138-8a1c-41c2-9761-7454c0509a56, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /dj01, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: 日本02|三网优化|1x, server: cs.daxun.club, port: 20631, type: vmess, uuid: a5281205-5682-4149-b548-83b64ebedae9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: linodejp02, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: 日本06|三网优化|1x, server: cs.daxun.club, port: 20631, type: vmess, uuid: accfc138-8a1c-41c2-9761-7454c0509a56, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /japanese03, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: 台湾|三网优化|1x, server: cs.daxun.club, port: 20631, type: vmess, uuid: 5ea64f9e-3a36-4041-81bd-cc411cb5b7bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /schinet01, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: 日本06|三网优化|1x 2, server: cs.daxun.club, port: 20631, type: vmess, uuid: 7558a1bb-42fb-426a-81fc-475e2992101d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /japanese03, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: 日本02|三网优化|1x 2, server: cs.daxun.club, port: 20631, type: vmess, uuid: 7558a1bb-42fb-426a-81fc-475e2992101d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: linodejp02, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: 日本06|三网优化|1x 3, server: cs.daxun.club, port: 20631, type: vmess, uuid: 008818ea-d64e-44b3-90c3-595869c27529, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /japanese03, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: 日本05|三网优化|1x, server: cs.daxun.club, port: 20631, type: vmess, uuid: 7c86e016-3043-472a-9ca7-96360db4d93c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /japanese02, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: 香港04|负载均衡|原生IP|1x 2, server: cs.daxun.club, port: 20631, type: vmess, uuid: a5281205-5682-4149-b548-83b64ebedae9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hkt008, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: 日本03|三网优化|1x, server: cs.daxun.club, port: 20631, type: vmess, uuid: 5ea64f9e-3a36-4041-81bd-cc411cb5b7bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: linodejp03, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: 韩国|优选原生IP|1x, server: cs.daxun.club, port: 20631, type: vmess, uuid: 7558a1bb-42fb-426a-81fc-475e2992101d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jgwhg01, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: 日本04|三网优化|1x, server: cs.daxun.club, port: 20631, type: vmess, uuid: accfc138-8a1c-41c2-9761-7454c0509a56, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /japanese01, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: 日本06|三网优化|1x 4, server: cs.daxun.club, port: 20631, type: vmess, uuid: a5281205-5682-4149-b548-83b64ebedae9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /japanese03, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: 日本01|三网优化|1x 2, server: cs.daxun.club, port: 20631, type: vmess, uuid: 7c86e016-3043-472a-9ca7-96360db4d93c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /linodejp01, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: 东京|优选原生IP|1x 3, server: cs.daxun.club, port: 20631, type: vmess, uuid: 7c86e016-3043-472a-9ca7-96360db4d93c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /dj01, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: 东京|优选原生IP|1x 4, server: cs.daxun.club, port: 20631, type: vmess, uuid: 5ea64f9e-3a36-4041-81bd-cc411cb5b7bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /dj01, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: 日本03|三网优化|1x 2, server: cs.daxun.club, port: 20631, type: vmess, uuid: 008818ea-d64e-44b3-90c3-595869c27529, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: linodejp03, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: 马来西亚|三网优化|优选原生IP|1x, server: cs.daxun.club, port: 20631, type: vmess, uuid: a5281205-5682-4149-b548-83b64ebedae9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /mlxy008, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: 台湾04|三网优化|原生IP|1x, server: cs.daxun.club, port: 20631, type: vmess, uuid: 5ea64f9e-3a36-4041-81bd-cc411cb5b7bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hinet04, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: 台湾04|三网优化|原生IP|1x 2, server: cs.daxun.club, port: 20631, type: vmess, uuid: 7c86e016-3043-472a-9ca7-96360db4d93c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hinet04, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: 俄罗斯|三网优化|1x, server: cs.daxun.club, port: 20631, type: vmess, uuid: 008818ea-d64e-44b3-90c3-595869c27529, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /els01, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: 日本05|三网优化|1x 2, server: cs.daxun.club, port: 20631, type: vmess, uuid: 5ea64f9e-3a36-4041-81bd-cc411cb5b7bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /japanese02, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: 日本04|三网优化|1x 2, server: cs.daxun.club, port: 20631, type: vmess, uuid: 5ea64f9e-3a36-4041-81bd-cc411cb5b7bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /japanese01, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: 俄罗斯|三网优化|1x 2, server: cs.daxun.club, port: 20631, type: vmess, uuid: 7558a1bb-42fb-426a-81fc-475e2992101d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /els01, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: 日本06|三网优化|1x 5, server: cs.daxun.club, port: 20631, type: vmess, uuid: 7c86e016-3043-472a-9ca7-96360db4d93c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /japanese03, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: 日本01|三网优化|1x 3, server: cs.daxun.club, port: 20631, type: vmess, uuid: 5ea64f9e-3a36-4041-81bd-cc411cb5b7bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /linodejp01, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: 美国02|三网优化|1x, server: cs.daxun.club, port: 20631, type: vmess, uuid: a5281205-5682-4149-b548-83b64ebedae9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /cere02, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: lindoe日本|三网优化|1x 4, server: cs.daxun.club, port: 20631, type: vmess, uuid: 7558a1bb-42fb-426a-81fc-475e2992101d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /lindoerb01, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: 澳大利亚01|三网优化|1x, server: cs.daxun.club, port: 20631, type: vmess, uuid: 7558a1bb-42fb-426a-81fc-475e2992101d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /AUS01, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: 美国04|三网优化|1x, server: cs.daxun.club, port: 20631, type: vmess, uuid: 008818ea-d64e-44b3-90c3-595869c27529, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /usa04, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: 日本03|三网优化|1x 3, server: cs.daxun.club, port: 20631, type: vmess, uuid: 7c86e016-3043-472a-9ca7-96360db4d93c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: linodejp03, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: 美国04|三网优化|1x 2, server: cs.daxun.club, port: 20631, type: vmess, uuid: 7558a1bb-42fb-426a-81fc-475e2992101d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /usa04, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: lindoe日本|三网优化|1x 5, server: cs.daxun.club, port: 20631, type: vmess, uuid: 7c86e016-3043-472a-9ca7-96360db4d93c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /lindoerb01, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: 香港04|负载均衡|原生IP|1x 3, server: cs.daxun.club, port: 20631, type: vmess, uuid: 5ea64f9e-3a36-4041-81bd-cc411cb5b7bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hkt008, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: 日本03|三网优化|1x 4, server: cs.daxun.club, port: 20631, type: vmess, uuid: a5281205-5682-4149-b548-83b64ebedae9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: linodejp03, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: 台湾|三网优化|1x 2, server: cs.daxun.club, port: 20631, type: vmess, uuid: accfc138-8a1c-41c2-9761-7454c0509a56, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /schinet01, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: 澳大利亚01|三网优化|1x 2, server: cs.daxun.club, port: 20631, type: vmess, uuid: 008818ea-d64e-44b3-90c3-595869c27529, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /AUS01, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: 日本06|三网优化|1x 6, server: cs.daxun.club, port: 20631, type: vmess, uuid: 5ea64f9e-3a36-4041-81bd-cc411cb5b7bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /japanese03, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: 韩国|优选原生IP|1x 2, server: cs.daxun.club, port: 20631, type: vmess, uuid: 7c86e016-3043-472a-9ca7-96360db4d93c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jgwhg01, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: 美国04|三网优化|1x 3, server: cs.daxun.club, port: 20631, type: vmess, uuid: a5281205-5682-4149-b548-83b64ebedae9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /usa04, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: 俄罗斯|三网优化|1x 3, server: cs.daxun.club, port: 20631, type: vmess, uuid: accfc138-8a1c-41c2-9761-7454c0509a56, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /els01, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: 日本05|三网优化|1x 3, server: cs.daxun.club, port: 20631, type: vmess, uuid: accfc138-8a1c-41c2-9761-7454c0509a56, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /japanese02, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: lindoe日本|三网优化|1x 6, server: cs.daxun.club, port: 20631, type: vmess, uuid: 5ea64f9e-3a36-4041-81bd-cc411cb5b7bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /lindoerb01, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: 东京|优选原生IP|1x 5, server: cs.daxun.club, port: 20631, type: vmess, uuid: 008818ea-d64e-44b3-90c3-595869c27529, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /dj01, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: 台湾|三网优化|1x 3, server: cs.daxun.club, port: 20631, type: vmess, uuid: a5281205-5682-4149-b548-83b64ebedae9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /schinet01, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: 德国|三网优化|1x, server: cs.daxun.club, port: 20631, type: vmess, uuid: 7558a1bb-42fb-426a-81fc-475e2992101d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /dg01, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: 澳大利亚02|三网优化|1x, server: cs.daxun.club, port: 20631, type: vmess, uuid: 7c86e016-3043-472a-9ca7-96360db4d93c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /AUS02, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: 英国01|三网优化|1x, server: cs.daxun.club, port: 20631, type: vmess, uuid: accfc138-8a1c-41c2-9761-7454c0509a56, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /UK01, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: 新加坡01|三网优化|1x, server: cs.daxun.club, port: 20631, type: vmess, uuid: accfc138-8a1c-41c2-9761-7454c0509a56, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /doxjp01, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: 马来西亚|三网优化|优选原生IP|1x 2, server: cs.daxun.club, port: 20631, type: vmess, uuid: 008818ea-d64e-44b3-90c3-595869c27529, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /mlxy008, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: 台湾|三网优化|1x 4, server: cs.daxun.club, port: 20631, type: vmess, uuid: 7c86e016-3043-472a-9ca7-96360db4d93c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /schinet01, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: 日本05|三网优化|1x 4, server: cs.daxun.club, port: 20631, type: vmess, uuid: a5281205-5682-4149-b548-83b64ebedae9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /japanese02, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: 美国03|三网优化|1x, server: cs.daxun.club, port: 20631, type: vmess, uuid: 008818ea-d64e-44b3-90c3-595869c27529, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /cere03, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: 韩国|优选原生IP|1x 3, server: cs.daxun.club, port: 20631, type: vmess, uuid: a5281205-5682-4149-b548-83b64ebedae9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jgwhg01, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: 马来西亚|三网优化|优选原生IP|1x 3, server: cs.daxun.club, port: 20631, type: vmess, uuid: 7558a1bb-42fb-426a-81fc-475e2992101d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /mlxy008, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: 马来西亚|三网优化|优选原生IP|1x 4, server: cs.daxun.club, port: 20631, type: vmess, uuid: 7c86e016-3043-472a-9ca7-96360db4d93c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /mlxy008, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: 美国04|三网优化|1x 4, server: cs.daxun.club, port: 20631, type: vmess, uuid: accfc138-8a1c-41c2-9761-7454c0509a56, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /usa04, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: 香港04|负载均衡|原生IP|1x 4, server: cs.daxun.club, port: 20631, type: vmess, uuid: accfc138-8a1c-41c2-9761-7454c0509a56, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hkt008, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: 澳大利亚02|三网优化|1x 2, server: cs.daxun.club, port: 20631, type: vmess, uuid: accfc138-8a1c-41c2-9761-7454c0509a56, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /AUS02, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: 英国01|三网优化|1x 2, server: cs.daxun.club, port: 20631, type: vmess, uuid: 5ea64f9e-3a36-4041-81bd-cc411cb5b7bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /UK01, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: 日本04|三网优化|1x 3, server: cs.daxun.club, port: 20631, type: vmess, uuid: 7c86e016-3043-472a-9ca7-96360db4d93c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /japanese01, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: 日本05|三网优化|1x 5, server: cs.daxun.club, port: 20631, type: vmess, uuid: 7558a1bb-42fb-426a-81fc-475e2992101d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /japanese02, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: 美国04|三网优化|1x 5, server: cs.daxun.club, port: 20631, type: vmess, uuid: 5ea64f9e-3a36-4041-81bd-cc411cb5b7bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /usa04, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: 德国|三网优化|1x 2, server: cs.daxun.club, port: 20631, type: vmess, uuid: accfc138-8a1c-41c2-9761-7454c0509a56, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /dg01, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: 日本01|三网优化|1x 4, server: cs.daxun.club, port: 20631, type: vmess, uuid: accfc138-8a1c-41c2-9761-7454c0509a56, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /linodejp01, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: 日本01|三网优化|1x 5, server: cs.daxun.club, port: 20631, type: vmess, uuid: 008818ea-d64e-44b3-90c3-595869c27529, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /linodejp01, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: 俄罗斯|三网优化|1x 4, server: cs.daxun.club, port: 20631, type: vmess, uuid: a5281205-5682-4149-b548-83b64ebedae9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /els01, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: 英国01|三网优化|1x 3, server: cs.daxun.club, port: 20631, type: vmess, uuid: 008818ea-d64e-44b3-90c3-595869c27529, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /UK01, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: 英国01|三网优化|1x 4, server: cs.daxun.club, port: 20631, type: vmess, uuid: 7c86e016-3043-472a-9ca7-96360db4d93c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /UK01, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: 日本02|三网优化|1x 3, server: cs.daxun.club, port: 20631, type: vmess, uuid: 7c86e016-3043-472a-9ca7-96360db4d93c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: linodejp02, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: 日本04|三网优化|1x 4, server: cs.daxun.club, port: 20631, type: vmess, uuid: 7558a1bb-42fb-426a-81fc-475e2992101d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /japanese01, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: 英国01|三网优化|1x 5, server: cs.daxun.club, port: 20631, type: vmess, uuid: a5281205-5682-4149-b548-83b64ebedae9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /UK01, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: 马来西亚|三网优化|优选原生IP|1x 5, server: cs.daxun.club, port: 20631, type: vmess, uuid: 5ea64f9e-3a36-4041-81bd-cc411cb5b7bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /mlxy008, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: 加拿大01|三网优化|1x, server: cs.daxun.club, port: 20631, type: vmess, uuid: 008818ea-d64e-44b3-90c3-595869c27529, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /canada01, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: 加拿大01|三网优化|1x 2, server: cs.daxun.club, port: 20631, type: vmess, uuid: 5ea64f9e-3a36-4041-81bd-cc411cb5b7bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /canada01, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: 澳大利亚02|三网优化|1x 3, server: cs.daxun.club, port: 20631, type: vmess, uuid: 008818ea-d64e-44b3-90c3-595869c27529, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /AUS02, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: 英国02|三网优化|1x, server: cs.daxun.club, port: 20631, type: vmess, uuid: accfc138-8a1c-41c2-9761-7454c0509a56, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /UK02, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: 日本05|三网优化|1x 6, server: cs.daxun.club, port: 20631, type: vmess, uuid: 008818ea-d64e-44b3-90c3-595869c27529, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /japanese02, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: 澳大利亚01|三网优化|1x 3, server: cs.daxun.club, port: 20631, type: vmess, uuid: accfc138-8a1c-41c2-9761-7454c0509a56, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /AUS01, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: 英国02|三网优化|1x 2, server: cs.daxun.club, port: 20631, type: vmess, uuid: a5281205-5682-4149-b548-83b64ebedae9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /UK02, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: 马来西亚|三网优化|优选原生IP|1x 6, server: cs.daxun.club, port: 20631, type: vmess, uuid: accfc138-8a1c-41c2-9761-7454c0509a56, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /mlxy008, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: 澳大利亚02|三网优化|1x 4, server: cs.daxun.club, port: 20631, type: vmess, uuid: a5281205-5682-4149-b548-83b64ebedae9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /AUS02, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: 日本01|三网优化|1x 6, server: cs.daxun.club, port: 20631, type: vmess, uuid: 7558a1bb-42fb-426a-81fc-475e2992101d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /linodejp01, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: 新加坡02|三网优化|1x, server: cs.daxun.club, port: 20631, type: vmess, uuid: 008818ea-d64e-44b3-90c3-595869c27529, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /doxjp02, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: 美国03|三网优化|1x 2, server: cs.daxun.club, port: 20631, type: vmess, uuid: 5ea64f9e-3a36-4041-81bd-cc411cb5b7bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /cere03, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: 韩国|优选原生IP|1x 4, server: cs.daxun.club, port: 20631, type: vmess, uuid: accfc138-8a1c-41c2-9761-7454c0509a56, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jgwhg01, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: 加拿大01|三网优化|1x 3, server: cs.daxun.club, port: 20631, type: vmess, uuid: 7558a1bb-42fb-426a-81fc-475e2992101d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /canada01, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: 加拿大01|三网优化|1x 4, server: cs.daxun.club, port: 20631, type: vmess, uuid: 7c86e016-3043-472a-9ca7-96360db4d93c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /canada01, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: 日本04|三网优化|1x 5, server: cs.daxun.club, port: 20631, type: vmess, uuid: a5281205-5682-4149-b548-83b64ebedae9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /japanese01, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: 英国02|三网优化|1x 3, server: cs.daxun.club, port: 20631, type: vmess, uuid: 008818ea-d64e-44b3-90c3-595869c27529, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /UK02, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: 新加坡01|三网优化|1x 2, server: cs.daxun.club, port: 20631, type: vmess, uuid: 008818ea-d64e-44b3-90c3-595869c27529, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /doxjp01, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: 德国|三网优化|1x 3, server: cs.daxun.club, port: 20631, type: vmess, uuid: a5281205-5682-4149-b548-83b64ebedae9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /dg01, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: 美国01|三网优化|1x, server: cs.daxun.club, port: 20631, type: vmess, uuid: 7c86e016-3043-472a-9ca7-96360db4d93c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /cere01, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: 台湾04|三网优化|原生IP|1x 3, server: cs.daxun.club, port: 20631, type: vmess, uuid: a5281205-5682-4149-b548-83b64ebedae9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hinet04, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: 台湾|三网优化|1x 5, server: cs.daxun.club, port: 20631, type: vmess, uuid: 7558a1bb-42fb-426a-81fc-475e2992101d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /schinet01, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: 美国04|三网优化|1x 6, server: cs.daxun.club, port: 20631, type: vmess, uuid: 7c86e016-3043-472a-9ca7-96360db4d93c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /usa04, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: 台湾04|三网优化|原生IP|1x 4, server: cs.daxun.club, port: 20631, type: vmess, uuid: accfc138-8a1c-41c2-9761-7454c0509a56, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hinet04, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: 澳大利亚02|三网优化|1x 5, server: cs.daxun.club, port: 20631, type: vmess, uuid: 7558a1bb-42fb-426a-81fc-475e2992101d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /AUS02, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: 俄罗斯|三网优化|1x 5, server: cs.daxun.club, port: 20631, type: vmess, uuid: 5ea64f9e-3a36-4041-81bd-cc411cb5b7bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /els01, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: 美国01|三网优化|1x 2, server: cs.daxun.club, port: 20631, type: vmess, uuid: 5ea64f9e-3a36-4041-81bd-cc411cb5b7bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /cere01, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: 韩国|优选原生IP|1x 5, server: cs.daxun.club, port: 20631, type: vmess, uuid: 5ea64f9e-3a36-4041-81bd-cc411cb5b7bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jgwhg01, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: 日本04|三网优化|1x 6, server: cs.daxun.club, port: 20631, type: vmess, uuid: 008818ea-d64e-44b3-90c3-595869c27529, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /japanese01, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: 日本02|三网优化|1x 4, server: cs.daxun.club, port: 20631, type: vmess, uuid: 008818ea-d64e-44b3-90c3-595869c27529, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: linodejp02, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: 台湾|三网优化|1x 6, server: cs.daxun.club, port: 20631, type: vmess, uuid: 008818ea-d64e-44b3-90c3-595869c27529, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /schinet01, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: 英国01|三网优化|1x 6, server: cs.daxun.club, port: 20631, type: vmess, uuid: 7558a1bb-42fb-426a-81fc-475e2992101d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /UK01, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: 日本02|三网优化|1x 5, server: cs.daxun.club, port: 20631, type: vmess, uuid: accfc138-8a1c-41c2-9761-7454c0509a56, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: linodejp02, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: 新加坡03|三网优化|1x, server: cs.daxun.club, port: 20631, type: vmess, uuid: accfc138-8a1c-41c2-9761-7454c0509a56, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /doxjp03, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: 英国02|三网优化|1x 4, server: cs.daxun.club, port: 20631, type: vmess, uuid: 7c86e016-3043-472a-9ca7-96360db4d93c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /UK02, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: 日本03|三网优化|1x 5, server: cs.daxun.club, port: 20631, type: vmess, uuid: 7558a1bb-42fb-426a-81fc-475e2992101d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: linodejp03, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: 英国02|三网优化|1x 5, server: cs.daxun.club, port: 20631, type: vmess, uuid: 7558a1bb-42fb-426a-81fc-475e2992101d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /UK02, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: 新加坡03|三网优化|1x 2, server: cs.daxun.club, port: 20631, type: vmess, uuid: 7c86e016-3043-472a-9ca7-96360db4d93c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /doxjp03, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: 加拿大01|三网优化|1x 5, server: cs.daxun.club, port: 20631, type: vmess, uuid: accfc138-8a1c-41c2-9761-7454c0509a56, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /canada01, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: 美国01|三网优化|1x 3, server: cs.daxun.club, port: 20631, type: vmess, uuid: accfc138-8a1c-41c2-9761-7454c0509a56, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /cere01, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: 美国01|三网优化|1x 4, server: cs.daxun.club, port: 20631, type: vmess, uuid: 008818ea-d64e-44b3-90c3-595869c27529, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /cere01, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: 香港04|负载均衡|原生IP|1x 5, server: cs.daxun.club, port: 20631, type: vmess, uuid: 7c86e016-3043-472a-9ca7-96360db4d93c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hkt008, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: 美国02|三网优化|1x 2, server: cs.daxun.club, port: 20631, type: vmess, uuid: accfc138-8a1c-41c2-9761-7454c0509a56, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /cere02, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: 英国03|三网优化|1x, server: cs.daxun.club, port: 20631, type: vmess, uuid: accfc138-8a1c-41c2-9761-7454c0509a56, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /UK03, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: 美国03|三网优化|1x 3, server: cs.daxun.club, port: 20631, type: vmess, uuid: accfc138-8a1c-41c2-9761-7454c0509a56, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /cere03, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: 美国01|三网优化|1x 5, server: cs.daxun.club, port: 20631, type: vmess, uuid: 7558a1bb-42fb-426a-81fc-475e2992101d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /cere01, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: 德国|三网优化|1x 4, server: cs.daxun.club, port: 20631, type: vmess, uuid: 5ea64f9e-3a36-4041-81bd-cc411cb5b7bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /dg01, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: 澳大利亚01|三网优化|1x 4, server: cs.daxun.club, port: 20631, type: vmess, uuid: 5ea64f9e-3a36-4041-81bd-cc411cb5b7bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /AUS01, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: 美国03|三网优化|1x 4, server: cs.daxun.club, port: 20631, type: vmess, uuid: a5281205-5682-4149-b548-83b64ebedae9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /cere03, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: 英国02|三网优化|1x 6, server: cs.daxun.club, port: 20631, type: vmess, uuid: 5ea64f9e-3a36-4041-81bd-cc411cb5b7bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /UK02, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: 德国|三网优化|1x 5, server: cs.daxun.club, port: 20631, type: vmess, uuid: 008818ea-d64e-44b3-90c3-595869c27529, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /dg01, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: 俄罗斯|三网优化|1x 6, server: cs.daxun.club, port: 20631, type: vmess, uuid: 7c86e016-3043-472a-9ca7-96360db4d93c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /els01, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: 香港04|负载均衡|原生IP|1x 6, server: cs.daxun.club, port: 20631, type: vmess, uuid: 008818ea-d64e-44b3-90c3-595869c27529, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hkt008, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: 德国|三网优化|1x 6, server: cs.daxun.club, port: 20631, type: vmess, uuid: 7c86e016-3043-472a-9ca7-96360db4d93c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /dg01, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: 台湾04|三网优化|原生IP|1x 5, server: cs.daxun.club, port: 20631, type: vmess, uuid: 008818ea-d64e-44b3-90c3-595869c27529, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hinet04, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: 美国02|三网优化|1x 3, server: cs.daxun.club, port: 20631, type: vmess, uuid: 7558a1bb-42fb-426a-81fc-475e2992101d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /cere02, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: 日本02|三网优化|1x 6, server: cs.daxun.club, port: 20631, type: vmess, uuid: 5ea64f9e-3a36-4041-81bd-cc411cb5b7bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: linodejp02, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: 美国03|三网优化|1x 5, server: cs.daxun.club, port: 20631, type: vmess, uuid: 7c86e016-3043-472a-9ca7-96360db4d93c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /cere03, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: 美国02|三网优化|1x 4, server: cs.daxun.club, port: 20631, type: vmess, uuid: 008818ea-d64e-44b3-90c3-595869c27529, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /cere02, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: 澳大利亚02|三网优化|1x 6, server: cs.daxun.club, port: 20631, type: vmess, uuid: 5ea64f9e-3a36-4041-81bd-cc411cb5b7bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /AUS02, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: 美国02|三网优化|1x 5, server: cs.daxun.club, port: 20631, type: vmess, uuid: 7c86e016-3043-472a-9ca7-96360db4d93c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /cere02, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: 韩国|优选原生IP|1x 6, server: cs.daxun.club, port: 20631, type: vmess, uuid: 008818ea-d64e-44b3-90c3-595869c27529, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jgwhg01, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: 英国03|三网优化|1x 2, server: cs.daxun.club, port: 20631, type: vmess, uuid: 7c86e016-3043-472a-9ca7-96360db4d93c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /UK03, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: 新加坡02|三网优化|1x 2, server: cs.daxun.club, port: 20631, type: vmess, uuid: 7c86e016-3043-472a-9ca7-96360db4d93c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /doxjp02, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: 英国03|三网优化|1x 3, server: cs.daxun.club, port: 20631, type: vmess, uuid: 5ea64f9e-3a36-4041-81bd-cc411cb5b7bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /UK03, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: 东京|优选原生IP|1x 6, server: cs.daxun.club, port: 20631, type: vmess, uuid: 7558a1bb-42fb-426a-81fc-475e2992101d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /dj01, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: 台湾04|三网优化|原生IP|1x 6, server: cs.daxun.club, port: 20631, type: vmess, uuid: 7558a1bb-42fb-426a-81fc-475e2992101d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hinet04, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: 美国01|三网优化|1x 6, server: cs.daxun.club, port: 20631, type: vmess, uuid: a5281205-5682-4149-b548-83b64ebedae9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /cere01, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: 澳大利亚01|三网优化|1x 5, server: cs.daxun.club, port: 20631, type: vmess, uuid: a5281205-5682-4149-b548-83b64ebedae9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /AUS01, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: 美国03|三网优化|1x 6, server: cs.daxun.club, port: 20631, type: vmess, uuid: 7558a1bb-42fb-426a-81fc-475e2992101d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /cere03, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: 英国03|三网优化|1x 4, server: cs.daxun.club, port: 20631, type: vmess, uuid: 008818ea-d64e-44b3-90c3-595869c27529, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /UK03, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: 英国03|三网优化|1x 5, server: cs.daxun.club, port: 20631, type: vmess, uuid: a5281205-5682-4149-b548-83b64ebedae9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /UK03, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: 美国02|三网优化|1x 6, server: cs.daxun.club, port: 20631, type: vmess, uuid: 5ea64f9e-3a36-4041-81bd-cc411cb5b7bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /cere02, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: 加拿大01|三网优化|1x 6, server: cs.daxun.club, port: 20631, type: vmess, uuid: a5281205-5682-4149-b548-83b64ebedae9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /canada01, ws-headers: {Host: cs.daxun.club}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - CN_油管 TG 8度科技
-      - CN_油管 TG 8度科技 2
-      - CN_油管 TG 8度科技 3
-      - CN_油管 TG 8度科技 4
-      - CN_油管 TG 8度科技 5
-      - CN_油管 TG 8度科技 6
-      - CN_油管 TG 8度科技 7
-      - CN_油管 TG 8度科技 8
-      - CN_油管 TG 8度科技 9
-      - CN_油管 TG 8度科技 10
-      - JP_油管 TG 8度科技
-      - CN_油管 TG 8度科技 11
-      - CN_油管 TG 8度科技 12
-      - CN_油管 TG 8度科技 13
-      - CN_油管 TG 8度科技 14
-      - CN_油管 TG 8度科技 15
-      - HK_油管 TG 8度科技
-      - HK_油管 TG 8度科技 2
-      - CN_油管 TG 8度科技 16
-      - HK_油管 TG 8度科技 3
-      - HK_油管 TG 8度科技 4
-      - HK_油管 TG 8度科技 5
-      - HK_油管 TG 8度科技 6
-      - HK_油管 TG 8度科技 7
-      - CN_油管 TG 8度科技 17
-      - US_油管 TG 8度科技
-      - HK_油管 TG 8度科技 8
-      - HK_油管 TG 8度科技 9
-      - PL_油管 TG 8度科技
-      - US_油管 TG 8度科技 2
-      - US_油管 TG 8度科技 3
-      - US_油管 TG 8度科技 4
-      - JP_油管 TG 8度科技 2
+      - lindoe日本|三网优化|1x
+      - 东京|优选原生IP|1x
+      - 香港04|负载均衡|原生IP|1x
+      - 日本01|三网优化|1x
+      - lindoe日本|三网优化|1x 2
+      - lindoe日本|三网优化|1x 3
+      - 东京|优选原生IP|1x 2
+      - 日本02|三网优化|1x
+      - 日本06|三网优化|1x
+      - 台湾|三网优化|1x
+      - 日本06|三网优化|1x 2
+      - 日本02|三网优化|1x 2
+      - 日本06|三网优化|1x 3
+      - 日本05|三网优化|1x
+      - 香港04|负载均衡|原生IP|1x 2
+      - 日本03|三网优化|1x
+      - 韩国|优选原生IP|1x
+      - 日本04|三网优化|1x
+      - 日本06|三网优化|1x 4
+      - 日本01|三网优化|1x 2
+      - 东京|优选原生IP|1x 3
+      - 东京|优选原生IP|1x 4
+      - 日本03|三网优化|1x 2
+      - 马来西亚|三网优化|优选原生IP|1x
+      - 台湾04|三网优化|原生IP|1x
+      - 台湾04|三网优化|原生IP|1x 2
+      - 俄罗斯|三网优化|1x
+      - 日本05|三网优化|1x 2
+      - 日本04|三网优化|1x 2
+      - 俄罗斯|三网优化|1x 2
+      - 日本06|三网优化|1x 5
+      - 日本01|三网优化|1x 3
+      - 美国02|三网优化|1x
+      - lindoe日本|三网优化|1x 4
+      - 澳大利亚01|三网优化|1x
+      - 美国04|三网优化|1x
+      - 日本03|三网优化|1x 3
+      - 美国04|三网优化|1x 2
+      - lindoe日本|三网优化|1x 5
+      - 香港04|负载均衡|原生IP|1x 3
+      - 日本03|三网优化|1x 4
+      - 台湾|三网优化|1x 2
+      - 澳大利亚01|三网优化|1x 2
+      - 日本06|三网优化|1x 6
+      - 韩国|优选原生IP|1x 2
+      - 美国04|三网优化|1x 3
+      - 俄罗斯|三网优化|1x 3
+      - 日本05|三网优化|1x 3
+      - lindoe日本|三网优化|1x 6
+      - 东京|优选原生IP|1x 5
+      - 台湾|三网优化|1x 3
+      - 德国|三网优化|1x
+      - 澳大利亚02|三网优化|1x
+      - 英国01|三网优化|1x
+      - 新加坡01|三网优化|1x
+      - 马来西亚|三网优化|优选原生IP|1x 2
+      - 台湾|三网优化|1x 4
+      - 日本05|三网优化|1x 4
+      - 美国03|三网优化|1x
+      - 韩国|优选原生IP|1x 3
+      - 马来西亚|三网优化|优选原生IP|1x 3
+      - 马来西亚|三网优化|优选原生IP|1x 4
+      - 美国04|三网优化|1x 4
+      - 香港04|负载均衡|原生IP|1x 4
+      - 澳大利亚02|三网优化|1x 2
+      - 英国01|三网优化|1x 2
+      - 日本04|三网优化|1x 3
+      - 日本05|三网优化|1x 5
+      - 美国04|三网优化|1x 5
+      - 德国|三网优化|1x 2
+      - 日本01|三网优化|1x 4
+      - 日本01|三网优化|1x 5
+      - 俄罗斯|三网优化|1x 4
+      - 英国01|三网优化|1x 3
+      - 英国01|三网优化|1x 4
+      - 日本02|三网优化|1x 3
+      - 日本04|三网优化|1x 4
+      - 英国01|三网优化|1x 5
+      - 马来西亚|三网优化|优选原生IP|1x 5
+      - 加拿大01|三网优化|1x
+      - 加拿大01|三网优化|1x 2
+      - 澳大利亚02|三网优化|1x 3
+      - 英国02|三网优化|1x
+      - 日本05|三网优化|1x 6
+      - 澳大利亚01|三网优化|1x 3
+      - 英国02|三网优化|1x 2
+      - 马来西亚|三网优化|优选原生IP|1x 6
+      - 澳大利亚02|三网优化|1x 4
+      - 日本01|三网优化|1x 6
+      - 新加坡02|三网优化|1x
+      - 美国03|三网优化|1x 2
+      - 韩国|优选原生IP|1x 4
+      - 加拿大01|三网优化|1x 3
+      - 加拿大01|三网优化|1x 4
+      - 日本04|三网优化|1x 5
+      - 英国02|三网优化|1x 3
+      - 新加坡01|三网优化|1x 2
+      - 德国|三网优化|1x 3
+      - 美国01|三网优化|1x
+      - 台湾04|三网优化|原生IP|1x 3
+      - 台湾|三网优化|1x 5
+      - 美国04|三网优化|1x 6
+      - 台湾04|三网优化|原生IP|1x 4
+      - 澳大利亚02|三网优化|1x 5
+      - 俄罗斯|三网优化|1x 5
+      - 美国01|三网优化|1x 2
+      - 韩国|优选原生IP|1x 5
+      - 日本04|三网优化|1x 6
+      - 日本02|三网优化|1x 4
+      - 台湾|三网优化|1x 6
+      - 英国01|三网优化|1x 6
+      - 日本02|三网优化|1x 5
+      - 新加坡03|三网优化|1x
+      - 英国02|三网优化|1x 4
+      - 日本03|三网优化|1x 5
+      - 英国02|三网优化|1x 5
+      - 新加坡03|三网优化|1x 2
+      - 加拿大01|三网优化|1x 5
+      - 美国01|三网优化|1x 3
+      - 美国01|三网优化|1x 4
+      - 香港04|负载均衡|原生IP|1x 5
+      - 美国02|三网优化|1x 2
+      - 英国03|三网优化|1x
+      - 美国03|三网优化|1x 3
+      - 美国01|三网优化|1x 5
+      - 德国|三网优化|1x 4
+      - 澳大利亚01|三网优化|1x 4
+      - 美国03|三网优化|1x 4
+      - 英国02|三网优化|1x 6
+      - 德国|三网优化|1x 5
+      - 俄罗斯|三网优化|1x 6
+      - 香港04|负载均衡|原生IP|1x 6
+      - 德国|三网优化|1x 6
+      - 台湾04|三网优化|原生IP|1x 5
+      - 美国02|三网优化|1x 3
+      - 日本02|三网优化|1x 6
+      - 美国03|三网优化|1x 5
+      - 美国02|三网优化|1x 4
+      - 澳大利亚02|三网优化|1x 6
+      - 美国02|三网优化|1x 5
+      - 韩国|优选原生IP|1x 6
+      - 英国03|三网优化|1x 2
+      - 新加坡02|三网优化|1x 2
+      - 英国03|三网优化|1x 3
+      - 东京|优选原生IP|1x 6
+      - 台湾04|三网优化|原生IP|1x 6
+      - 美国01|三网优化|1x 6
+      - 澳大利亚01|三网优化|1x 5
+      - 美国03|三网优化|1x 6
+      - 英国03|三网优化|1x 4
+      - 英国03|三网优化|1x 5
+      - 美国02|三网优化|1x 6
+      - 加拿大01|三网优化|1x 6
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - CN_油管 TG 8度科技
-      - CN_油管 TG 8度科技 2
-      - CN_油管 TG 8度科技 3
-      - CN_油管 TG 8度科技 4
-      - CN_油管 TG 8度科技 5
-      - CN_油管 TG 8度科技 6
-      - CN_油管 TG 8度科技 7
-      - CN_油管 TG 8度科技 8
-      - CN_油管 TG 8度科技 9
-      - CN_油管 TG 8度科技 10
-      - JP_油管 TG 8度科技
-      - CN_油管 TG 8度科技 11
-      - CN_油管 TG 8度科技 12
-      - CN_油管 TG 8度科技 13
-      - CN_油管 TG 8度科技 14
-      - CN_油管 TG 8度科技 15
-      - HK_油管 TG 8度科技
-      - HK_油管 TG 8度科技 2
-      - CN_油管 TG 8度科技 16
-      - HK_油管 TG 8度科技 3
-      - HK_油管 TG 8度科技 4
-      - HK_油管 TG 8度科技 5
-      - HK_油管 TG 8度科技 6
-      - HK_油管 TG 8度科技 7
-      - CN_油管 TG 8度科技 17
-      - US_油管 TG 8度科技
-      - HK_油管 TG 8度科技 8
-      - HK_油管 TG 8度科技 9
-      - PL_油管 TG 8度科技
-      - US_油管 TG 8度科技 2
-      - US_油管 TG 8度科技 3
-      - US_油管 TG 8度科技 4
-      - JP_油管 TG 8度科技 2
+      - lindoe日本|三网优化|1x
+      - 东京|优选原生IP|1x
+      - 香港04|负载均衡|原生IP|1x
+      - 日本01|三网优化|1x
+      - lindoe日本|三网优化|1x 2
+      - lindoe日本|三网优化|1x 3
+      - 东京|优选原生IP|1x 2
+      - 日本02|三网优化|1x
+      - 日本06|三网优化|1x
+      - 台湾|三网优化|1x
+      - 日本06|三网优化|1x 2
+      - 日本02|三网优化|1x 2
+      - 日本06|三网优化|1x 3
+      - 日本05|三网优化|1x
+      - 香港04|负载均衡|原生IP|1x 2
+      - 日本03|三网优化|1x
+      - 韩国|优选原生IP|1x
+      - 日本04|三网优化|1x
+      - 日本06|三网优化|1x 4
+      - 日本01|三网优化|1x 2
+      - 东京|优选原生IP|1x 3
+      - 东京|优选原生IP|1x 4
+      - 日本03|三网优化|1x 2
+      - 马来西亚|三网优化|优选原生IP|1x
+      - 台湾04|三网优化|原生IP|1x
+      - 台湾04|三网优化|原生IP|1x 2
+      - 俄罗斯|三网优化|1x
+      - 日本05|三网优化|1x 2
+      - 日本04|三网优化|1x 2
+      - 俄罗斯|三网优化|1x 2
+      - 日本06|三网优化|1x 5
+      - 日本01|三网优化|1x 3
+      - 美国02|三网优化|1x
+      - lindoe日本|三网优化|1x 4
+      - 澳大利亚01|三网优化|1x
+      - 美国04|三网优化|1x
+      - 日本03|三网优化|1x 3
+      - 美国04|三网优化|1x 2
+      - lindoe日本|三网优化|1x 5
+      - 香港04|负载均衡|原生IP|1x 3
+      - 日本03|三网优化|1x 4
+      - 台湾|三网优化|1x 2
+      - 澳大利亚01|三网优化|1x 2
+      - 日本06|三网优化|1x 6
+      - 韩国|优选原生IP|1x 2
+      - 美国04|三网优化|1x 3
+      - 俄罗斯|三网优化|1x 3
+      - 日本05|三网优化|1x 3
+      - lindoe日本|三网优化|1x 6
+      - 东京|优选原生IP|1x 5
+      - 台湾|三网优化|1x 3
+      - 德国|三网优化|1x
+      - 澳大利亚02|三网优化|1x
+      - 英国01|三网优化|1x
+      - 新加坡01|三网优化|1x
+      - 马来西亚|三网优化|优选原生IP|1x 2
+      - 台湾|三网优化|1x 4
+      - 日本05|三网优化|1x 4
+      - 美国03|三网优化|1x
+      - 韩国|优选原生IP|1x 3
+      - 马来西亚|三网优化|优选原生IP|1x 3
+      - 马来西亚|三网优化|优选原生IP|1x 4
+      - 美国04|三网优化|1x 4
+      - 香港04|负载均衡|原生IP|1x 4
+      - 澳大利亚02|三网优化|1x 2
+      - 英国01|三网优化|1x 2
+      - 日本04|三网优化|1x 3
+      - 日本05|三网优化|1x 5
+      - 美国04|三网优化|1x 5
+      - 德国|三网优化|1x 2
+      - 日本01|三网优化|1x 4
+      - 日本01|三网优化|1x 5
+      - 俄罗斯|三网优化|1x 4
+      - 英国01|三网优化|1x 3
+      - 英国01|三网优化|1x 4
+      - 日本02|三网优化|1x 3
+      - 日本04|三网优化|1x 4
+      - 英国01|三网优化|1x 5
+      - 马来西亚|三网优化|优选原生IP|1x 5
+      - 加拿大01|三网优化|1x
+      - 加拿大01|三网优化|1x 2
+      - 澳大利亚02|三网优化|1x 3
+      - 英国02|三网优化|1x
+      - 日本05|三网优化|1x 6
+      - 澳大利亚01|三网优化|1x 3
+      - 英国02|三网优化|1x 2
+      - 马来西亚|三网优化|优选原生IP|1x 6
+      - 澳大利亚02|三网优化|1x 4
+      - 日本01|三网优化|1x 6
+      - 新加坡02|三网优化|1x
+      - 美国03|三网优化|1x 2
+      - 韩国|优选原生IP|1x 4
+      - 加拿大01|三网优化|1x 3
+      - 加拿大01|三网优化|1x 4
+      - 日本04|三网优化|1x 5
+      - 英国02|三网优化|1x 3
+      - 新加坡01|三网优化|1x 2
+      - 德国|三网优化|1x 3
+      - 美国01|三网优化|1x
+      - 台湾04|三网优化|原生IP|1x 3
+      - 台湾|三网优化|1x 5
+      - 美国04|三网优化|1x 6
+      - 台湾04|三网优化|原生IP|1x 4
+      - 澳大利亚02|三网优化|1x 5
+      - 俄罗斯|三网优化|1x 5
+      - 美国01|三网优化|1x 2
+      - 韩国|优选原生IP|1x 5
+      - 日本04|三网优化|1x 6
+      - 日本02|三网优化|1x 4
+      - 台湾|三网优化|1x 6
+      - 英国01|三网优化|1x 6
+      - 日本02|三网优化|1x 5
+      - 新加坡03|三网优化|1x
+      - 英国02|三网优化|1x 4
+      - 日本03|三网优化|1x 5
+      - 英国02|三网优化|1x 5
+      - 新加坡03|三网优化|1x 2
+      - 加拿大01|三网优化|1x 5
+      - 美国01|三网优化|1x 3
+      - 美国01|三网优化|1x 4
+      - 香港04|负载均衡|原生IP|1x 5
+      - 美国02|三网优化|1x 2
+      - 英国03|三网优化|1x
+      - 美国03|三网优化|1x 3
+      - 美国01|三网优化|1x 5
+      - 德国|三网优化|1x 4
+      - 澳大利亚01|三网优化|1x 4
+      - 美国03|三网优化|1x 4
+      - 英国02|三网优化|1x 6
+      - 德国|三网优化|1x 5
+      - 俄罗斯|三网优化|1x 6
+      - 香港04|负载均衡|原生IP|1x 6
+      - 德国|三网优化|1x 6
+      - 台湾04|三网优化|原生IP|1x 5
+      - 美国02|三网优化|1x 3
+      - 日本02|三网优化|1x 6
+      - 美国03|三网优化|1x 5
+      - 美国02|三网优化|1x 4
+      - 澳大利亚02|三网优化|1x 6
+      - 美国02|三网优化|1x 5
+      - 韩国|优选原生IP|1x 6
+      - 英国03|三网优化|1x 2
+      - 新加坡02|三网优化|1x 2
+      - 英国03|三网优化|1x 3
+      - 东京|优选原生IP|1x 6
+      - 台湾04|三网优化|原生IP|1x 6
+      - 美国01|三网优化|1x 6
+      - 澳大利亚01|三网优化|1x 5
+      - 美国03|三网优化|1x 6
+      - 英国03|三网优化|1x 4
+      - 英国03|三网优化|1x 5
+      - 美国02|三网优化|1x 6
+      - 加拿大01|三网优化|1x 6
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - CN_油管 TG 8度科技
-      - CN_油管 TG 8度科技 2
-      - CN_油管 TG 8度科技 3
-      - CN_油管 TG 8度科技 4
-      - CN_油管 TG 8度科技 5
-      - CN_油管 TG 8度科技 6
-      - CN_油管 TG 8度科技 7
-      - CN_油管 TG 8度科技 8
-      - CN_油管 TG 8度科技 9
-      - CN_油管 TG 8度科技 10
-      - JP_油管 TG 8度科技
-      - CN_油管 TG 8度科技 11
-      - CN_油管 TG 8度科技 12
-      - CN_油管 TG 8度科技 13
-      - CN_油管 TG 8度科技 14
-      - CN_油管 TG 8度科技 15
-      - HK_油管 TG 8度科技
-      - HK_油管 TG 8度科技 2
-      - CN_油管 TG 8度科技 16
-      - HK_油管 TG 8度科技 3
-      - HK_油管 TG 8度科技 4
-      - HK_油管 TG 8度科技 5
-      - HK_油管 TG 8度科技 6
-      - HK_油管 TG 8度科技 7
-      - CN_油管 TG 8度科技 17
-      - US_油管 TG 8度科技
-      - HK_油管 TG 8度科技 8
-      - HK_油管 TG 8度科技 9
-      - PL_油管 TG 8度科技
-      - US_油管 TG 8度科技 2
-      - US_油管 TG 8度科技 3
-      - US_油管 TG 8度科技 4
-      - JP_油管 TG 8度科技 2
+      - lindoe日本|三网优化|1x
+      - 东京|优选原生IP|1x
+      - 香港04|负载均衡|原生IP|1x
+      - 日本01|三网优化|1x
+      - lindoe日本|三网优化|1x 2
+      - lindoe日本|三网优化|1x 3
+      - 东京|优选原生IP|1x 2
+      - 日本02|三网优化|1x
+      - 日本06|三网优化|1x
+      - 台湾|三网优化|1x
+      - 日本06|三网优化|1x 2
+      - 日本02|三网优化|1x 2
+      - 日本06|三网优化|1x 3
+      - 日本05|三网优化|1x
+      - 香港04|负载均衡|原生IP|1x 2
+      - 日本03|三网优化|1x
+      - 韩国|优选原生IP|1x
+      - 日本04|三网优化|1x
+      - 日本06|三网优化|1x 4
+      - 日本01|三网优化|1x 2
+      - 东京|优选原生IP|1x 3
+      - 东京|优选原生IP|1x 4
+      - 日本03|三网优化|1x 2
+      - 马来西亚|三网优化|优选原生IP|1x
+      - 台湾04|三网优化|原生IP|1x
+      - 台湾04|三网优化|原生IP|1x 2
+      - 俄罗斯|三网优化|1x
+      - 日本05|三网优化|1x 2
+      - 日本04|三网优化|1x 2
+      - 俄罗斯|三网优化|1x 2
+      - 日本06|三网优化|1x 5
+      - 日本01|三网优化|1x 3
+      - 美国02|三网优化|1x
+      - lindoe日本|三网优化|1x 4
+      - 澳大利亚01|三网优化|1x
+      - 美国04|三网优化|1x
+      - 日本03|三网优化|1x 3
+      - 美国04|三网优化|1x 2
+      - lindoe日本|三网优化|1x 5
+      - 香港04|负载均衡|原生IP|1x 3
+      - 日本03|三网优化|1x 4
+      - 台湾|三网优化|1x 2
+      - 澳大利亚01|三网优化|1x 2
+      - 日本06|三网优化|1x 6
+      - 韩国|优选原生IP|1x 2
+      - 美国04|三网优化|1x 3
+      - 俄罗斯|三网优化|1x 3
+      - 日本05|三网优化|1x 3
+      - lindoe日本|三网优化|1x 6
+      - 东京|优选原生IP|1x 5
+      - 台湾|三网优化|1x 3
+      - 德国|三网优化|1x
+      - 澳大利亚02|三网优化|1x
+      - 英国01|三网优化|1x
+      - 新加坡01|三网优化|1x
+      - 马来西亚|三网优化|优选原生IP|1x 2
+      - 台湾|三网优化|1x 4
+      - 日本05|三网优化|1x 4
+      - 美国03|三网优化|1x
+      - 韩国|优选原生IP|1x 3
+      - 马来西亚|三网优化|优选原生IP|1x 3
+      - 马来西亚|三网优化|优选原生IP|1x 4
+      - 美国04|三网优化|1x 4
+      - 香港04|负载均衡|原生IP|1x 4
+      - 澳大利亚02|三网优化|1x 2
+      - 英国01|三网优化|1x 2
+      - 日本04|三网优化|1x 3
+      - 日本05|三网优化|1x 5
+      - 美国04|三网优化|1x 5
+      - 德国|三网优化|1x 2
+      - 日本01|三网优化|1x 4
+      - 日本01|三网优化|1x 5
+      - 俄罗斯|三网优化|1x 4
+      - 英国01|三网优化|1x 3
+      - 英国01|三网优化|1x 4
+      - 日本02|三网优化|1x 3
+      - 日本04|三网优化|1x 4
+      - 英国01|三网优化|1x 5
+      - 马来西亚|三网优化|优选原生IP|1x 5
+      - 加拿大01|三网优化|1x
+      - 加拿大01|三网优化|1x 2
+      - 澳大利亚02|三网优化|1x 3
+      - 英国02|三网优化|1x
+      - 日本05|三网优化|1x 6
+      - 澳大利亚01|三网优化|1x 3
+      - 英国02|三网优化|1x 2
+      - 马来西亚|三网优化|优选原生IP|1x 6
+      - 澳大利亚02|三网优化|1x 4
+      - 日本01|三网优化|1x 6
+      - 新加坡02|三网优化|1x
+      - 美国03|三网优化|1x 2
+      - 韩国|优选原生IP|1x 4
+      - 加拿大01|三网优化|1x 3
+      - 加拿大01|三网优化|1x 4
+      - 日本04|三网优化|1x 5
+      - 英国02|三网优化|1x 3
+      - 新加坡01|三网优化|1x 2
+      - 德国|三网优化|1x 3
+      - 美国01|三网优化|1x
+      - 台湾04|三网优化|原生IP|1x 3
+      - 台湾|三网优化|1x 5
+      - 美国04|三网优化|1x 6
+      - 台湾04|三网优化|原生IP|1x 4
+      - 澳大利亚02|三网优化|1x 5
+      - 俄罗斯|三网优化|1x 5
+      - 美国01|三网优化|1x 2
+      - 韩国|优选原生IP|1x 5
+      - 日本04|三网优化|1x 6
+      - 日本02|三网优化|1x 4
+      - 台湾|三网优化|1x 6
+      - 英国01|三网优化|1x 6
+      - 日本02|三网优化|1x 5
+      - 新加坡03|三网优化|1x
+      - 英国02|三网优化|1x 4
+      - 日本03|三网优化|1x 5
+      - 英国02|三网优化|1x 5
+      - 新加坡03|三网优化|1x 2
+      - 加拿大01|三网优化|1x 5
+      - 美国01|三网优化|1x 3
+      - 美国01|三网优化|1x 4
+      - 香港04|负载均衡|原生IP|1x 5
+      - 美国02|三网优化|1x 2
+      - 英国03|三网优化|1x
+      - 美国03|三网优化|1x 3
+      - 美国01|三网优化|1x 5
+      - 德国|三网优化|1x 4
+      - 澳大利亚01|三网优化|1x 4
+      - 美国03|三网优化|1x 4
+      - 英国02|三网优化|1x 6
+      - 德国|三网优化|1x 5
+      - 俄罗斯|三网优化|1x 6
+      - 香港04|负载均衡|原生IP|1x 6
+      - 德国|三网优化|1x 6
+      - 台湾04|三网优化|原生IP|1x 5
+      - 美国02|三网优化|1x 3
+      - 日本02|三网优化|1x 6
+      - 美国03|三网优化|1x 5
+      - 美国02|三网优化|1x 4
+      - 澳大利亚02|三网优化|1x 6
+      - 美国02|三网优化|1x 5
+      - 韩国|优选原生IP|1x 6
+      - 英国03|三网优化|1x 2
+      - 新加坡02|三网优化|1x 2
+      - 英国03|三网优化|1x 3
+      - 东京|优选原生IP|1x 6
+      - 台湾04|三网优化|原生IP|1x 6
+      - 美国01|三网优化|1x 6
+      - 澳大利亚01|三网优化|1x 5
+      - 美国03|三网优化|1x 6
+      - 英国03|三网优化|1x 4
+      - 英国03|三网优化|1x 5
+      - 美国02|三网优化|1x 6
+      - 加拿大01|三网优化|1x 6
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -172,159 +652,657 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - CN_油管 TG 8度科技
-      - CN_油管 TG 8度科技 2
-      - CN_油管 TG 8度科技 3
-      - CN_油管 TG 8度科技 4
-      - CN_油管 TG 8度科技 5
-      - CN_油管 TG 8度科技 6
-      - CN_油管 TG 8度科技 7
-      - CN_油管 TG 8度科技 8
-      - CN_油管 TG 8度科技 9
-      - CN_油管 TG 8度科技 10
-      - JP_油管 TG 8度科技
-      - CN_油管 TG 8度科技 11
-      - CN_油管 TG 8度科技 12
-      - CN_油管 TG 8度科技 13
-      - CN_油管 TG 8度科技 14
-      - CN_油管 TG 8度科技 15
-      - HK_油管 TG 8度科技
-      - HK_油管 TG 8度科技 2
-      - CN_油管 TG 8度科技 16
-      - HK_油管 TG 8度科技 3
-      - HK_油管 TG 8度科技 4
-      - HK_油管 TG 8度科技 5
-      - HK_油管 TG 8度科技 6
-      - HK_油管 TG 8度科技 7
-      - CN_油管 TG 8度科技 17
-      - US_油管 TG 8度科技
-      - HK_油管 TG 8度科技 8
-      - HK_油管 TG 8度科技 9
-      - PL_油管 TG 8度科技
-      - US_油管 TG 8度科技 2
-      - US_油管 TG 8度科技 3
-      - US_油管 TG 8度科技 4
-      - JP_油管 TG 8度科技 2
+      - lindoe日本|三网优化|1x
+      - 东京|优选原生IP|1x
+      - 香港04|负载均衡|原生IP|1x
+      - 日本01|三网优化|1x
+      - lindoe日本|三网优化|1x 2
+      - lindoe日本|三网优化|1x 3
+      - 东京|优选原生IP|1x 2
+      - 日本02|三网优化|1x
+      - 日本06|三网优化|1x
+      - 台湾|三网优化|1x
+      - 日本06|三网优化|1x 2
+      - 日本02|三网优化|1x 2
+      - 日本06|三网优化|1x 3
+      - 日本05|三网优化|1x
+      - 香港04|负载均衡|原生IP|1x 2
+      - 日本03|三网优化|1x
+      - 韩国|优选原生IP|1x
+      - 日本04|三网优化|1x
+      - 日本06|三网优化|1x 4
+      - 日本01|三网优化|1x 2
+      - 东京|优选原生IP|1x 3
+      - 东京|优选原生IP|1x 4
+      - 日本03|三网优化|1x 2
+      - 马来西亚|三网优化|优选原生IP|1x
+      - 台湾04|三网优化|原生IP|1x
+      - 台湾04|三网优化|原生IP|1x 2
+      - 俄罗斯|三网优化|1x
+      - 日本05|三网优化|1x 2
+      - 日本04|三网优化|1x 2
+      - 俄罗斯|三网优化|1x 2
+      - 日本06|三网优化|1x 5
+      - 日本01|三网优化|1x 3
+      - 美国02|三网优化|1x
+      - lindoe日本|三网优化|1x 4
+      - 澳大利亚01|三网优化|1x
+      - 美国04|三网优化|1x
+      - 日本03|三网优化|1x 3
+      - 美国04|三网优化|1x 2
+      - lindoe日本|三网优化|1x 5
+      - 香港04|负载均衡|原生IP|1x 3
+      - 日本03|三网优化|1x 4
+      - 台湾|三网优化|1x 2
+      - 澳大利亚01|三网优化|1x 2
+      - 日本06|三网优化|1x 6
+      - 韩国|优选原生IP|1x 2
+      - 美国04|三网优化|1x 3
+      - 俄罗斯|三网优化|1x 3
+      - 日本05|三网优化|1x 3
+      - lindoe日本|三网优化|1x 6
+      - 东京|优选原生IP|1x 5
+      - 台湾|三网优化|1x 3
+      - 德国|三网优化|1x
+      - 澳大利亚02|三网优化|1x
+      - 英国01|三网优化|1x
+      - 新加坡01|三网优化|1x
+      - 马来西亚|三网优化|优选原生IP|1x 2
+      - 台湾|三网优化|1x 4
+      - 日本05|三网优化|1x 4
+      - 美国03|三网优化|1x
+      - 韩国|优选原生IP|1x 3
+      - 马来西亚|三网优化|优选原生IP|1x 3
+      - 马来西亚|三网优化|优选原生IP|1x 4
+      - 美国04|三网优化|1x 4
+      - 香港04|负载均衡|原生IP|1x 4
+      - 澳大利亚02|三网优化|1x 2
+      - 英国01|三网优化|1x 2
+      - 日本04|三网优化|1x 3
+      - 日本05|三网优化|1x 5
+      - 美国04|三网优化|1x 5
+      - 德国|三网优化|1x 2
+      - 日本01|三网优化|1x 4
+      - 日本01|三网优化|1x 5
+      - 俄罗斯|三网优化|1x 4
+      - 英国01|三网优化|1x 3
+      - 英国01|三网优化|1x 4
+      - 日本02|三网优化|1x 3
+      - 日本04|三网优化|1x 4
+      - 英国01|三网优化|1x 5
+      - 马来西亚|三网优化|优选原生IP|1x 5
+      - 加拿大01|三网优化|1x
+      - 加拿大01|三网优化|1x 2
+      - 澳大利亚02|三网优化|1x 3
+      - 英国02|三网优化|1x
+      - 日本05|三网优化|1x 6
+      - 澳大利亚01|三网优化|1x 3
+      - 英国02|三网优化|1x 2
+      - 马来西亚|三网优化|优选原生IP|1x 6
+      - 澳大利亚02|三网优化|1x 4
+      - 日本01|三网优化|1x 6
+      - 新加坡02|三网优化|1x
+      - 美国03|三网优化|1x 2
+      - 韩国|优选原生IP|1x 4
+      - 加拿大01|三网优化|1x 3
+      - 加拿大01|三网优化|1x 4
+      - 日本04|三网优化|1x 5
+      - 英国02|三网优化|1x 3
+      - 新加坡01|三网优化|1x 2
+      - 德国|三网优化|1x 3
+      - 美国01|三网优化|1x
+      - 台湾04|三网优化|原生IP|1x 3
+      - 台湾|三网优化|1x 5
+      - 美国04|三网优化|1x 6
+      - 台湾04|三网优化|原生IP|1x 4
+      - 澳大利亚02|三网优化|1x 5
+      - 俄罗斯|三网优化|1x 5
+      - 美国01|三网优化|1x 2
+      - 韩国|优选原生IP|1x 5
+      - 日本04|三网优化|1x 6
+      - 日本02|三网优化|1x 4
+      - 台湾|三网优化|1x 6
+      - 英国01|三网优化|1x 6
+      - 日本02|三网优化|1x 5
+      - 新加坡03|三网优化|1x
+      - 英国02|三网优化|1x 4
+      - 日本03|三网优化|1x 5
+      - 英国02|三网优化|1x 5
+      - 新加坡03|三网优化|1x 2
+      - 加拿大01|三网优化|1x 5
+      - 美国01|三网优化|1x 3
+      - 美国01|三网优化|1x 4
+      - 香港04|负载均衡|原生IP|1x 5
+      - 美国02|三网优化|1x 2
+      - 英国03|三网优化|1x
+      - 美国03|三网优化|1x 3
+      - 美国01|三网优化|1x 5
+      - 德国|三网优化|1x 4
+      - 澳大利亚01|三网优化|1x 4
+      - 美国03|三网优化|1x 4
+      - 英国02|三网优化|1x 6
+      - 德国|三网优化|1x 5
+      - 俄罗斯|三网优化|1x 6
+      - 香港04|负载均衡|原生IP|1x 6
+      - 德国|三网优化|1x 6
+      - 台湾04|三网优化|原生IP|1x 5
+      - 美国02|三网优化|1x 3
+      - 日本02|三网优化|1x 6
+      - 美国03|三网优化|1x 5
+      - 美国02|三网优化|1x 4
+      - 澳大利亚02|三网优化|1x 6
+      - 美国02|三网优化|1x 5
+      - 韩国|优选原生IP|1x 6
+      - 英国03|三网优化|1x 2
+      - 新加坡02|三网优化|1x 2
+      - 英国03|三网优化|1x 3
+      - 东京|优选原生IP|1x 6
+      - 台湾04|三网优化|原生IP|1x 6
+      - 美国01|三网优化|1x 6
+      - 澳大利亚01|三网优化|1x 5
+      - 美国03|三网优化|1x 6
+      - 英国03|三网优化|1x 4
+      - 英国03|三网优化|1x 5
+      - 美国02|三网优化|1x 6
+      - 加拿大01|三网优化|1x 6
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
+      - 香港04|负载均衡|原生IP|1x
+      - 台湾|三网优化|1x
+      - 香港04|负载均衡|原生IP|1x 2
+      - 台湾04|三网优化|原生IP|1x
+      - 台湾04|三网优化|原生IP|1x 2
+      - 香港04|负载均衡|原生IP|1x 3
+      - 台湾|三网优化|1x 2
+      - 台湾|三网优化|1x 3
+      - 台湾|三网优化|1x 4
+      - 香港04|负载均衡|原生IP|1x 4
+      - 台湾04|三网优化|原生IP|1x 3
+      - 台湾|三网优化|1x 5
+      - 台湾04|三网优化|原生IP|1x 4
+      - 台湾|三网优化|1x 6
+      - 香港04|负载均衡|原生IP|1x 5
+      - 香港04|负载均衡|原生IP|1x 6
+      - 台湾04|三网优化|原生IP|1x 5
+      - 台湾04|三网优化|原生IP|1x 6
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - CN_油管 TG 8度科技
-      - CN_油管 TG 8度科技 2
-      - CN_油管 TG 8度科技 3
-      - CN_油管 TG 8度科技 4
-      - CN_油管 TG 8度科技 5
-      - CN_油管 TG 8度科技 6
-      - CN_油管 TG 8度科技 7
-      - CN_油管 TG 8度科技 8
-      - CN_油管 TG 8度科技 9
-      - CN_油管 TG 8度科技 10
-      - JP_油管 TG 8度科技
-      - CN_油管 TG 8度科技 11
-      - CN_油管 TG 8度科技 12
-      - CN_油管 TG 8度科技 13
-      - CN_油管 TG 8度科技 14
-      - CN_油管 TG 8度科技 15
-      - HK_油管 TG 8度科技
-      - HK_油管 TG 8度科技 2
-      - CN_油管 TG 8度科技 16
-      - HK_油管 TG 8度科技 3
-      - HK_油管 TG 8度科技 4
-      - HK_油管 TG 8度科技 5
-      - HK_油管 TG 8度科技 6
-      - HK_油管 TG 8度科技 7
-      - CN_油管 TG 8度科技 17
-      - US_油管 TG 8度科技
-      - HK_油管 TG 8度科技 8
-      - HK_油管 TG 8度科技 9
-      - PL_油管 TG 8度科技
-      - US_油管 TG 8度科技 2
-      - US_油管 TG 8度科技 3
-      - US_油管 TG 8度科技 4
-      - JP_油管 TG 8度科技 2
+      - lindoe日本|三网优化|1x
+      - 东京|优选原生IP|1x
+      - 香港04|负载均衡|原生IP|1x
+      - 日本01|三网优化|1x
+      - lindoe日本|三网优化|1x 2
+      - lindoe日本|三网优化|1x 3
+      - 东京|优选原生IP|1x 2
+      - 日本02|三网优化|1x
+      - 日本06|三网优化|1x
+      - 台湾|三网优化|1x
+      - 日本06|三网优化|1x 2
+      - 日本02|三网优化|1x 2
+      - 日本06|三网优化|1x 3
+      - 日本05|三网优化|1x
+      - 香港04|负载均衡|原生IP|1x 2
+      - 日本03|三网优化|1x
+      - 韩国|优选原生IP|1x
+      - 日本04|三网优化|1x
+      - 日本06|三网优化|1x 4
+      - 日本01|三网优化|1x 2
+      - 东京|优选原生IP|1x 3
+      - 东京|优选原生IP|1x 4
+      - 日本03|三网优化|1x 2
+      - 马来西亚|三网优化|优选原生IP|1x
+      - 台湾04|三网优化|原生IP|1x
+      - 台湾04|三网优化|原生IP|1x 2
+      - 俄罗斯|三网优化|1x
+      - 日本05|三网优化|1x 2
+      - 日本04|三网优化|1x 2
+      - 俄罗斯|三网优化|1x 2
+      - 日本06|三网优化|1x 5
+      - 日本01|三网优化|1x 3
+      - 美国02|三网优化|1x
+      - lindoe日本|三网优化|1x 4
+      - 澳大利亚01|三网优化|1x
+      - 美国04|三网优化|1x
+      - 日本03|三网优化|1x 3
+      - 美国04|三网优化|1x 2
+      - lindoe日本|三网优化|1x 5
+      - 香港04|负载均衡|原生IP|1x 3
+      - 日本03|三网优化|1x 4
+      - 台湾|三网优化|1x 2
+      - 澳大利亚01|三网优化|1x 2
+      - 日本06|三网优化|1x 6
+      - 韩国|优选原生IP|1x 2
+      - 美国04|三网优化|1x 3
+      - 俄罗斯|三网优化|1x 3
+      - 日本05|三网优化|1x 3
+      - lindoe日本|三网优化|1x 6
+      - 东京|优选原生IP|1x 5
+      - 台湾|三网优化|1x 3
+      - 德国|三网优化|1x
+      - 澳大利亚02|三网优化|1x
+      - 英国01|三网优化|1x
+      - 新加坡01|三网优化|1x
+      - 马来西亚|三网优化|优选原生IP|1x 2
+      - 台湾|三网优化|1x 4
+      - 日本05|三网优化|1x 4
+      - 美国03|三网优化|1x
+      - 韩国|优选原生IP|1x 3
+      - 马来西亚|三网优化|优选原生IP|1x 3
+      - 马来西亚|三网优化|优选原生IP|1x 4
+      - 美国04|三网优化|1x 4
+      - 香港04|负载均衡|原生IP|1x 4
+      - 澳大利亚02|三网优化|1x 2
+      - 英国01|三网优化|1x 2
+      - 日本04|三网优化|1x 3
+      - 日本05|三网优化|1x 5
+      - 美国04|三网优化|1x 5
+      - 德国|三网优化|1x 2
+      - 日本01|三网优化|1x 4
+      - 日本01|三网优化|1x 5
+      - 俄罗斯|三网优化|1x 4
+      - 英国01|三网优化|1x 3
+      - 英国01|三网优化|1x 4
+      - 日本02|三网优化|1x 3
+      - 日本04|三网优化|1x 4
+      - 英国01|三网优化|1x 5
+      - 马来西亚|三网优化|优选原生IP|1x 5
+      - 加拿大01|三网优化|1x
+      - 加拿大01|三网优化|1x 2
+      - 澳大利亚02|三网优化|1x 3
+      - 英国02|三网优化|1x
+      - 日本05|三网优化|1x 6
+      - 澳大利亚01|三网优化|1x 3
+      - 英国02|三网优化|1x 2
+      - 马来西亚|三网优化|优选原生IP|1x 6
+      - 澳大利亚02|三网优化|1x 4
+      - 日本01|三网优化|1x 6
+      - 新加坡02|三网优化|1x
+      - 美国03|三网优化|1x 2
+      - 韩国|优选原生IP|1x 4
+      - 加拿大01|三网优化|1x 3
+      - 加拿大01|三网优化|1x 4
+      - 日本04|三网优化|1x 5
+      - 英国02|三网优化|1x 3
+      - 新加坡01|三网优化|1x 2
+      - 德国|三网优化|1x 3
+      - 美国01|三网优化|1x
+      - 台湾04|三网优化|原生IP|1x 3
+      - 台湾|三网优化|1x 5
+      - 美国04|三网优化|1x 6
+      - 台湾04|三网优化|原生IP|1x 4
+      - 澳大利亚02|三网优化|1x 5
+      - 俄罗斯|三网优化|1x 5
+      - 美国01|三网优化|1x 2
+      - 韩国|优选原生IP|1x 5
+      - 日本04|三网优化|1x 6
+      - 日本02|三网优化|1x 4
+      - 台湾|三网优化|1x 6
+      - 英国01|三网优化|1x 6
+      - 日本02|三网优化|1x 5
+      - 新加坡03|三网优化|1x
+      - 英国02|三网优化|1x 4
+      - 日本03|三网优化|1x 5
+      - 英国02|三网优化|1x 5
+      - 新加坡03|三网优化|1x 2
+      - 加拿大01|三网优化|1x 5
+      - 美国01|三网优化|1x 3
+      - 美国01|三网优化|1x 4
+      - 香港04|负载均衡|原生IP|1x 5
+      - 美国02|三网优化|1x 2
+      - 英国03|三网优化|1x
+      - 美国03|三网优化|1x 3
+      - 美国01|三网优化|1x 5
+      - 德国|三网优化|1x 4
+      - 澳大利亚01|三网优化|1x 4
+      - 美国03|三网优化|1x 4
+      - 英国02|三网优化|1x 6
+      - 德国|三网优化|1x 5
+      - 俄罗斯|三网优化|1x 6
+      - 香港04|负载均衡|原生IP|1x 6
+      - 德国|三网优化|1x 6
+      - 台湾04|三网优化|原生IP|1x 5
+      - 美国02|三网优化|1x 3
+      - 日本02|三网优化|1x 6
+      - 美国03|三网优化|1x 5
+      - 美国02|三网优化|1x 4
+      - 澳大利亚02|三网优化|1x 6
+      - 美国02|三网优化|1x 5
+      - 韩国|优选原生IP|1x 6
+      - 英国03|三网优化|1x 2
+      - 新加坡02|三网优化|1x 2
+      - 英国03|三网优化|1x 3
+      - 东京|优选原生IP|1x 6
+      - 台湾04|三网优化|原生IP|1x 6
+      - 美国01|三网优化|1x 6
+      - 澳大利亚01|三网优化|1x 5
+      - 美国03|三网优化|1x 6
+      - 英国03|三网优化|1x 4
+      - 英国03|三网优化|1x 5
+      - 美国02|三网优化|1x 6
+      - 加拿大01|三网优化|1x 6
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - CN_油管 TG 8度科技
-      - CN_油管 TG 8度科技 2
-      - CN_油管 TG 8度科技 3
-      - CN_油管 TG 8度科技 4
-      - CN_油管 TG 8度科技 5
-      - CN_油管 TG 8度科技 6
-      - CN_油管 TG 8度科技 7
-      - CN_油管 TG 8度科技 8
-      - CN_油管 TG 8度科技 9
-      - CN_油管 TG 8度科技 10
-      - JP_油管 TG 8度科技
-      - CN_油管 TG 8度科技 11
-      - CN_油管 TG 8度科技 12
-      - CN_油管 TG 8度科技 13
-      - CN_油管 TG 8度科技 14
-      - CN_油管 TG 8度科技 15
-      - HK_油管 TG 8度科技
-      - HK_油管 TG 8度科技 2
-      - CN_油管 TG 8度科技 16
-      - HK_油管 TG 8度科技 3
-      - HK_油管 TG 8度科技 4
-      - HK_油管 TG 8度科技 5
-      - HK_油管 TG 8度科技 6
-      - HK_油管 TG 8度科技 7
-      - CN_油管 TG 8度科技 17
-      - US_油管 TG 8度科技
-      - HK_油管 TG 8度科技 8
-      - HK_油管 TG 8度科技 9
-      - PL_油管 TG 8度科技
-      - US_油管 TG 8度科技 2
-      - US_油管 TG 8度科技 3
-      - US_油管 TG 8度科技 4
-      - JP_油管 TG 8度科技 2
+      - lindoe日本|三网优化|1x
+      - 东京|优选原生IP|1x
+      - 香港04|负载均衡|原生IP|1x
+      - 日本01|三网优化|1x
+      - lindoe日本|三网优化|1x 2
+      - lindoe日本|三网优化|1x 3
+      - 东京|优选原生IP|1x 2
+      - 日本02|三网优化|1x
+      - 日本06|三网优化|1x
+      - 台湾|三网优化|1x
+      - 日本06|三网优化|1x 2
+      - 日本02|三网优化|1x 2
+      - 日本06|三网优化|1x 3
+      - 日本05|三网优化|1x
+      - 香港04|负载均衡|原生IP|1x 2
+      - 日本03|三网优化|1x
+      - 韩国|优选原生IP|1x
+      - 日本04|三网优化|1x
+      - 日本06|三网优化|1x 4
+      - 日本01|三网优化|1x 2
+      - 东京|优选原生IP|1x 3
+      - 东京|优选原生IP|1x 4
+      - 日本03|三网优化|1x 2
+      - 马来西亚|三网优化|优选原生IP|1x
+      - 台湾04|三网优化|原生IP|1x
+      - 台湾04|三网优化|原生IP|1x 2
+      - 俄罗斯|三网优化|1x
+      - 日本05|三网优化|1x 2
+      - 日本04|三网优化|1x 2
+      - 俄罗斯|三网优化|1x 2
+      - 日本06|三网优化|1x 5
+      - 日本01|三网优化|1x 3
+      - 美国02|三网优化|1x
+      - lindoe日本|三网优化|1x 4
+      - 澳大利亚01|三网优化|1x
+      - 美国04|三网优化|1x
+      - 日本03|三网优化|1x 3
+      - 美国04|三网优化|1x 2
+      - lindoe日本|三网优化|1x 5
+      - 香港04|负载均衡|原生IP|1x 3
+      - 日本03|三网优化|1x 4
+      - 台湾|三网优化|1x 2
+      - 澳大利亚01|三网优化|1x 2
+      - 日本06|三网优化|1x 6
+      - 韩国|优选原生IP|1x 2
+      - 美国04|三网优化|1x 3
+      - 俄罗斯|三网优化|1x 3
+      - 日本05|三网优化|1x 3
+      - lindoe日本|三网优化|1x 6
+      - 东京|优选原生IP|1x 5
+      - 台湾|三网优化|1x 3
+      - 德国|三网优化|1x
+      - 澳大利亚02|三网优化|1x
+      - 英国01|三网优化|1x
+      - 新加坡01|三网优化|1x
+      - 马来西亚|三网优化|优选原生IP|1x 2
+      - 台湾|三网优化|1x 4
+      - 日本05|三网优化|1x 4
+      - 美国03|三网优化|1x
+      - 韩国|优选原生IP|1x 3
+      - 马来西亚|三网优化|优选原生IP|1x 3
+      - 马来西亚|三网优化|优选原生IP|1x 4
+      - 美国04|三网优化|1x 4
+      - 香港04|负载均衡|原生IP|1x 4
+      - 澳大利亚02|三网优化|1x 2
+      - 英国01|三网优化|1x 2
+      - 日本04|三网优化|1x 3
+      - 日本05|三网优化|1x 5
+      - 美国04|三网优化|1x 5
+      - 德国|三网优化|1x 2
+      - 日本01|三网优化|1x 4
+      - 日本01|三网优化|1x 5
+      - 俄罗斯|三网优化|1x 4
+      - 英国01|三网优化|1x 3
+      - 英国01|三网优化|1x 4
+      - 日本02|三网优化|1x 3
+      - 日本04|三网优化|1x 4
+      - 英国01|三网优化|1x 5
+      - 马来西亚|三网优化|优选原生IP|1x 5
+      - 加拿大01|三网优化|1x
+      - 加拿大01|三网优化|1x 2
+      - 澳大利亚02|三网优化|1x 3
+      - 英国02|三网优化|1x
+      - 日本05|三网优化|1x 6
+      - 澳大利亚01|三网优化|1x 3
+      - 英国02|三网优化|1x 2
+      - 马来西亚|三网优化|优选原生IP|1x 6
+      - 澳大利亚02|三网优化|1x 4
+      - 日本01|三网优化|1x 6
+      - 新加坡02|三网优化|1x
+      - 美国03|三网优化|1x 2
+      - 韩国|优选原生IP|1x 4
+      - 加拿大01|三网优化|1x 3
+      - 加拿大01|三网优化|1x 4
+      - 日本04|三网优化|1x 5
+      - 英国02|三网优化|1x 3
+      - 新加坡01|三网优化|1x 2
+      - 德国|三网优化|1x 3
+      - 美国01|三网优化|1x
+      - 台湾04|三网优化|原生IP|1x 3
+      - 台湾|三网优化|1x 5
+      - 美国04|三网优化|1x 6
+      - 台湾04|三网优化|原生IP|1x 4
+      - 澳大利亚02|三网优化|1x 5
+      - 俄罗斯|三网优化|1x 5
+      - 美国01|三网优化|1x 2
+      - 韩国|优选原生IP|1x 5
+      - 日本04|三网优化|1x 6
+      - 日本02|三网优化|1x 4
+      - 台湾|三网优化|1x 6
+      - 英国01|三网优化|1x 6
+      - 日本02|三网优化|1x 5
+      - 新加坡03|三网优化|1x
+      - 英国02|三网优化|1x 4
+      - 日本03|三网优化|1x 5
+      - 英国02|三网优化|1x 5
+      - 新加坡03|三网优化|1x 2
+      - 加拿大01|三网优化|1x 5
+      - 美国01|三网优化|1x 3
+      - 美国01|三网优化|1x 4
+      - 香港04|负载均衡|原生IP|1x 5
+      - 美国02|三网优化|1x 2
+      - 英国03|三网优化|1x
+      - 美国03|三网优化|1x 3
+      - 美国01|三网优化|1x 5
+      - 德国|三网优化|1x 4
+      - 澳大利亚01|三网优化|1x 4
+      - 美国03|三网优化|1x 4
+      - 英国02|三网优化|1x 6
+      - 德国|三网优化|1x 5
+      - 俄罗斯|三网优化|1x 6
+      - 香港04|负载均衡|原生IP|1x 6
+      - 德国|三网优化|1x 6
+      - 台湾04|三网优化|原生IP|1x 5
+      - 美国02|三网优化|1x 3
+      - 日本02|三网优化|1x 6
+      - 美国03|三网优化|1x 5
+      - 美国02|三网优化|1x 4
+      - 澳大利亚02|三网优化|1x 6
+      - 美国02|三网优化|1x 5
+      - 韩国|优选原生IP|1x 6
+      - 英国03|三网优化|1x 2
+      - 新加坡02|三网优化|1x 2
+      - 英国03|三网优化|1x 3
+      - 东京|优选原生IP|1x 6
+      - 台湾04|三网优化|原生IP|1x 6
+      - 美国01|三网优化|1x 6
+      - 澳大利亚01|三网优化|1x 5
+      - 美国03|三网优化|1x 6
+      - 英国03|三网优化|1x 4
+      - 英国03|三网优化|1x 5
+      - 美国02|三网优化|1x 6
+      - 加拿大01|三网优化|1x 6
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - CN_油管 TG 8度科技
-      - CN_油管 TG 8度科技 2
-      - CN_油管 TG 8度科技 3
-      - CN_油管 TG 8度科技 4
-      - CN_油管 TG 8度科技 5
-      - CN_油管 TG 8度科技 6
-      - CN_油管 TG 8度科技 7
-      - CN_油管 TG 8度科技 8
-      - CN_油管 TG 8度科技 9
-      - CN_油管 TG 8度科技 10
-      - JP_油管 TG 8度科技
-      - CN_油管 TG 8度科技 11
-      - CN_油管 TG 8度科技 12
-      - CN_油管 TG 8度科技 13
-      - CN_油管 TG 8度科技 14
-      - CN_油管 TG 8度科技 15
-      - HK_油管 TG 8度科技
-      - HK_油管 TG 8度科技 2
-      - CN_油管 TG 8度科技 16
-      - HK_油管 TG 8度科技 3
-      - HK_油管 TG 8度科技 4
-      - HK_油管 TG 8度科技 5
-      - HK_油管 TG 8度科技 6
-      - HK_油管 TG 8度科技 7
-      - CN_油管 TG 8度科技 17
-      - US_油管 TG 8度科技
-      - HK_油管 TG 8度科技 8
-      - HK_油管 TG 8度科技 9
-      - PL_油管 TG 8度科技
-      - US_油管 TG 8度科技 2
-      - US_油管 TG 8度科技 3
-      - US_油管 TG 8度科技 4
-      - JP_油管 TG 8度科技 2
+      - lindoe日本|三网优化|1x
+      - 东京|优选原生IP|1x
+      - 香港04|负载均衡|原生IP|1x
+      - 日本01|三网优化|1x
+      - lindoe日本|三网优化|1x 2
+      - lindoe日本|三网优化|1x 3
+      - 东京|优选原生IP|1x 2
+      - 日本02|三网优化|1x
+      - 日本06|三网优化|1x
+      - 台湾|三网优化|1x
+      - 日本06|三网优化|1x 2
+      - 日本02|三网优化|1x 2
+      - 日本06|三网优化|1x 3
+      - 日本05|三网优化|1x
+      - 香港04|负载均衡|原生IP|1x 2
+      - 日本03|三网优化|1x
+      - 韩国|优选原生IP|1x
+      - 日本04|三网优化|1x
+      - 日本06|三网优化|1x 4
+      - 日本01|三网优化|1x 2
+      - 东京|优选原生IP|1x 3
+      - 东京|优选原生IP|1x 4
+      - 日本03|三网优化|1x 2
+      - 马来西亚|三网优化|优选原生IP|1x
+      - 台湾04|三网优化|原生IP|1x
+      - 台湾04|三网优化|原生IP|1x 2
+      - 俄罗斯|三网优化|1x
+      - 日本05|三网优化|1x 2
+      - 日本04|三网优化|1x 2
+      - 俄罗斯|三网优化|1x 2
+      - 日本06|三网优化|1x 5
+      - 日本01|三网优化|1x 3
+      - 美国02|三网优化|1x
+      - lindoe日本|三网优化|1x 4
+      - 澳大利亚01|三网优化|1x
+      - 美国04|三网优化|1x
+      - 日本03|三网优化|1x 3
+      - 美国04|三网优化|1x 2
+      - lindoe日本|三网优化|1x 5
+      - 香港04|负载均衡|原生IP|1x 3
+      - 日本03|三网优化|1x 4
+      - 台湾|三网优化|1x 2
+      - 澳大利亚01|三网优化|1x 2
+      - 日本06|三网优化|1x 6
+      - 韩国|优选原生IP|1x 2
+      - 美国04|三网优化|1x 3
+      - 俄罗斯|三网优化|1x 3
+      - 日本05|三网优化|1x 3
+      - lindoe日本|三网优化|1x 6
+      - 东京|优选原生IP|1x 5
+      - 台湾|三网优化|1x 3
+      - 德国|三网优化|1x
+      - 澳大利亚02|三网优化|1x
+      - 英国01|三网优化|1x
+      - 新加坡01|三网优化|1x
+      - 马来西亚|三网优化|优选原生IP|1x 2
+      - 台湾|三网优化|1x 4
+      - 日本05|三网优化|1x 4
+      - 美国03|三网优化|1x
+      - 韩国|优选原生IP|1x 3
+      - 马来西亚|三网优化|优选原生IP|1x 3
+      - 马来西亚|三网优化|优选原生IP|1x 4
+      - 美国04|三网优化|1x 4
+      - 香港04|负载均衡|原生IP|1x 4
+      - 澳大利亚02|三网优化|1x 2
+      - 英国01|三网优化|1x 2
+      - 日本04|三网优化|1x 3
+      - 日本05|三网优化|1x 5
+      - 美国04|三网优化|1x 5
+      - 德国|三网优化|1x 2
+      - 日本01|三网优化|1x 4
+      - 日本01|三网优化|1x 5
+      - 俄罗斯|三网优化|1x 4
+      - 英国01|三网优化|1x 3
+      - 英国01|三网优化|1x 4
+      - 日本02|三网优化|1x 3
+      - 日本04|三网优化|1x 4
+      - 英国01|三网优化|1x 5
+      - 马来西亚|三网优化|优选原生IP|1x 5
+      - 加拿大01|三网优化|1x
+      - 加拿大01|三网优化|1x 2
+      - 澳大利亚02|三网优化|1x 3
+      - 英国02|三网优化|1x
+      - 日本05|三网优化|1x 6
+      - 澳大利亚01|三网优化|1x 3
+      - 英国02|三网优化|1x 2
+      - 马来西亚|三网优化|优选原生IP|1x 6
+      - 澳大利亚02|三网优化|1x 4
+      - 日本01|三网优化|1x 6
+      - 新加坡02|三网优化|1x
+      - 美国03|三网优化|1x 2
+      - 韩国|优选原生IP|1x 4
+      - 加拿大01|三网优化|1x 3
+      - 加拿大01|三网优化|1x 4
+      - 日本04|三网优化|1x 5
+      - 英国02|三网优化|1x 3
+      - 新加坡01|三网优化|1x 2
+      - 德国|三网优化|1x 3
+      - 美国01|三网优化|1x
+      - 台湾04|三网优化|原生IP|1x 3
+      - 台湾|三网优化|1x 5
+      - 美国04|三网优化|1x 6
+      - 台湾04|三网优化|原生IP|1x 4
+      - 澳大利亚02|三网优化|1x 5
+      - 俄罗斯|三网优化|1x 5
+      - 美国01|三网优化|1x 2
+      - 韩国|优选原生IP|1x 5
+      - 日本04|三网优化|1x 6
+      - 日本02|三网优化|1x 4
+      - 台湾|三网优化|1x 6
+      - 英国01|三网优化|1x 6
+      - 日本02|三网优化|1x 5
+      - 新加坡03|三网优化|1x
+      - 英国02|三网优化|1x 4
+      - 日本03|三网优化|1x 5
+      - 英国02|三网优化|1x 5
+      - 新加坡03|三网优化|1x 2
+      - 加拿大01|三网优化|1x 5
+      - 美国01|三网优化|1x 3
+      - 美国01|三网优化|1x 4
+      - 香港04|负载均衡|原生IP|1x 5
+      - 美国02|三网优化|1x 2
+      - 英国03|三网优化|1x
+      - 美国03|三网优化|1x 3
+      - 美国01|三网优化|1x 5
+      - 德国|三网优化|1x 4
+      - 澳大利亚01|三网优化|1x 4
+      - 美国03|三网优化|1x 4
+      - 英国02|三网优化|1x 6
+      - 德国|三网优化|1x 5
+      - 俄罗斯|三网优化|1x 6
+      - 香港04|负载均衡|原生IP|1x 6
+      - 德国|三网优化|1x 6
+      - 台湾04|三网优化|原生IP|1x 5
+      - 美国02|三网优化|1x 3
+      - 日本02|三网优化|1x 6
+      - 美国03|三网优化|1x 5
+      - 美国02|三网优化|1x 4
+      - 澳大利亚02|三网优化|1x 6
+      - 美国02|三网优化|1x 5
+      - 韩国|优选原生IP|1x 6
+      - 英国03|三网优化|1x 2
+      - 新加坡02|三网优化|1x 2
+      - 英国03|三网优化|1x 3
+      - 东京|优选原生IP|1x 6
+      - 台湾04|三网优化|原生IP|1x 6
+      - 美国01|三网优化|1x 6
+      - 澳大利亚01|三网优化|1x 5
+      - 美国03|三网优化|1x 6
+      - 英国03|三网优化|1x 4
+      - 英国03|三网优化|1x 5
+      - 美国02|三网优化|1x 6
+      - 加拿大01|三网优化|1x 6
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -340,39 +1318,159 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - CN_油管 TG 8度科技
-      - CN_油管 TG 8度科技 2
-      - CN_油管 TG 8度科技 3
-      - CN_油管 TG 8度科技 4
-      - CN_油管 TG 8度科技 5
-      - CN_油管 TG 8度科技 6
-      - CN_油管 TG 8度科技 7
-      - CN_油管 TG 8度科技 8
-      - CN_油管 TG 8度科技 9
-      - CN_油管 TG 8度科技 10
-      - JP_油管 TG 8度科技
-      - CN_油管 TG 8度科技 11
-      - CN_油管 TG 8度科技 12
-      - CN_油管 TG 8度科技 13
-      - CN_油管 TG 8度科技 14
-      - CN_油管 TG 8度科技 15
-      - HK_油管 TG 8度科技
-      - HK_油管 TG 8度科技 2
-      - CN_油管 TG 8度科技 16
-      - HK_油管 TG 8度科技 3
-      - HK_油管 TG 8度科技 4
-      - HK_油管 TG 8度科技 5
-      - HK_油管 TG 8度科技 6
-      - HK_油管 TG 8度科技 7
-      - CN_油管 TG 8度科技 17
-      - US_油管 TG 8度科技
-      - HK_油管 TG 8度科技 8
-      - HK_油管 TG 8度科技 9
-      - PL_油管 TG 8度科技
-      - US_油管 TG 8度科技 2
-      - US_油管 TG 8度科技 3
-      - US_油管 TG 8度科技 4
-      - JP_油管 TG 8度科技 2
+      - lindoe日本|三网优化|1x
+      - 东京|优选原生IP|1x
+      - 香港04|负载均衡|原生IP|1x
+      - 日本01|三网优化|1x
+      - lindoe日本|三网优化|1x 2
+      - lindoe日本|三网优化|1x 3
+      - 东京|优选原生IP|1x 2
+      - 日本02|三网优化|1x
+      - 日本06|三网优化|1x
+      - 台湾|三网优化|1x
+      - 日本06|三网优化|1x 2
+      - 日本02|三网优化|1x 2
+      - 日本06|三网优化|1x 3
+      - 日本05|三网优化|1x
+      - 香港04|负载均衡|原生IP|1x 2
+      - 日本03|三网优化|1x
+      - 韩国|优选原生IP|1x
+      - 日本04|三网优化|1x
+      - 日本06|三网优化|1x 4
+      - 日本01|三网优化|1x 2
+      - 东京|优选原生IP|1x 3
+      - 东京|优选原生IP|1x 4
+      - 日本03|三网优化|1x 2
+      - 马来西亚|三网优化|优选原生IP|1x
+      - 台湾04|三网优化|原生IP|1x
+      - 台湾04|三网优化|原生IP|1x 2
+      - 俄罗斯|三网优化|1x
+      - 日本05|三网优化|1x 2
+      - 日本04|三网优化|1x 2
+      - 俄罗斯|三网优化|1x 2
+      - 日本06|三网优化|1x 5
+      - 日本01|三网优化|1x 3
+      - 美国02|三网优化|1x
+      - lindoe日本|三网优化|1x 4
+      - 澳大利亚01|三网优化|1x
+      - 美国04|三网优化|1x
+      - 日本03|三网优化|1x 3
+      - 美国04|三网优化|1x 2
+      - lindoe日本|三网优化|1x 5
+      - 香港04|负载均衡|原生IP|1x 3
+      - 日本03|三网优化|1x 4
+      - 台湾|三网优化|1x 2
+      - 澳大利亚01|三网优化|1x 2
+      - 日本06|三网优化|1x 6
+      - 韩国|优选原生IP|1x 2
+      - 美国04|三网优化|1x 3
+      - 俄罗斯|三网优化|1x 3
+      - 日本05|三网优化|1x 3
+      - lindoe日本|三网优化|1x 6
+      - 东京|优选原生IP|1x 5
+      - 台湾|三网优化|1x 3
+      - 德国|三网优化|1x
+      - 澳大利亚02|三网优化|1x
+      - 英国01|三网优化|1x
+      - 新加坡01|三网优化|1x
+      - 马来西亚|三网优化|优选原生IP|1x 2
+      - 台湾|三网优化|1x 4
+      - 日本05|三网优化|1x 4
+      - 美国03|三网优化|1x
+      - 韩国|优选原生IP|1x 3
+      - 马来西亚|三网优化|优选原生IP|1x 3
+      - 马来西亚|三网优化|优选原生IP|1x 4
+      - 美国04|三网优化|1x 4
+      - 香港04|负载均衡|原生IP|1x 4
+      - 澳大利亚02|三网优化|1x 2
+      - 英国01|三网优化|1x 2
+      - 日本04|三网优化|1x 3
+      - 日本05|三网优化|1x 5
+      - 美国04|三网优化|1x 5
+      - 德国|三网优化|1x 2
+      - 日本01|三网优化|1x 4
+      - 日本01|三网优化|1x 5
+      - 俄罗斯|三网优化|1x 4
+      - 英国01|三网优化|1x 3
+      - 英国01|三网优化|1x 4
+      - 日本02|三网优化|1x 3
+      - 日本04|三网优化|1x 4
+      - 英国01|三网优化|1x 5
+      - 马来西亚|三网优化|优选原生IP|1x 5
+      - 加拿大01|三网优化|1x
+      - 加拿大01|三网优化|1x 2
+      - 澳大利亚02|三网优化|1x 3
+      - 英国02|三网优化|1x
+      - 日本05|三网优化|1x 6
+      - 澳大利亚01|三网优化|1x 3
+      - 英国02|三网优化|1x 2
+      - 马来西亚|三网优化|优选原生IP|1x 6
+      - 澳大利亚02|三网优化|1x 4
+      - 日本01|三网优化|1x 6
+      - 新加坡02|三网优化|1x
+      - 美国03|三网优化|1x 2
+      - 韩国|优选原生IP|1x 4
+      - 加拿大01|三网优化|1x 3
+      - 加拿大01|三网优化|1x 4
+      - 日本04|三网优化|1x 5
+      - 英国02|三网优化|1x 3
+      - 新加坡01|三网优化|1x 2
+      - 德国|三网优化|1x 3
+      - 美国01|三网优化|1x
+      - 台湾04|三网优化|原生IP|1x 3
+      - 台湾|三网优化|1x 5
+      - 美国04|三网优化|1x 6
+      - 台湾04|三网优化|原生IP|1x 4
+      - 澳大利亚02|三网优化|1x 5
+      - 俄罗斯|三网优化|1x 5
+      - 美国01|三网优化|1x 2
+      - 韩国|优选原生IP|1x 5
+      - 日本04|三网优化|1x 6
+      - 日本02|三网优化|1x 4
+      - 台湾|三网优化|1x 6
+      - 英国01|三网优化|1x 6
+      - 日本02|三网优化|1x 5
+      - 新加坡03|三网优化|1x
+      - 英国02|三网优化|1x 4
+      - 日本03|三网优化|1x 5
+      - 英国02|三网优化|1x 5
+      - 新加坡03|三网优化|1x 2
+      - 加拿大01|三网优化|1x 5
+      - 美国01|三网优化|1x 3
+      - 美国01|三网优化|1x 4
+      - 香港04|负载均衡|原生IP|1x 5
+      - 美国02|三网优化|1x 2
+      - 英国03|三网优化|1x
+      - 美国03|三网优化|1x 3
+      - 美国01|三网优化|1x 5
+      - 德国|三网优化|1x 4
+      - 澳大利亚01|三网优化|1x 4
+      - 美国03|三网优化|1x 4
+      - 英国02|三网优化|1x 6
+      - 德国|三网优化|1x 5
+      - 俄罗斯|三网优化|1x 6
+      - 香港04|负载均衡|原生IP|1x 6
+      - 德国|三网优化|1x 6
+      - 台湾04|三网优化|原生IP|1x 5
+      - 美国02|三网优化|1x 3
+      - 日本02|三网优化|1x 6
+      - 美国03|三网优化|1x 5
+      - 美国02|三网优化|1x 4
+      - 澳大利亚02|三网优化|1x 6
+      - 美国02|三网优化|1x 5
+      - 韩国|优选原生IP|1x 6
+      - 英国03|三网优化|1x 2
+      - 新加坡02|三网优化|1x 2
+      - 英国03|三网优化|1x 3
+      - 东京|优选原生IP|1x 6
+      - 台湾04|三网优化|原生IP|1x 6
+      - 美国01|三网优化|1x 6
+      - 澳大利亚01|三网优化|1x 5
+      - 美国03|三网优化|1x 6
+      - 英国03|三网优化|1x 4
+      - 英国03|三网优化|1x 5
+      - 美国02|三网优化|1x 6
+      - 加拿大01|三网优化|1x 6
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
