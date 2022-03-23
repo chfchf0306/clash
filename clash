@@ -5,667 +5,243 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 港 F | 沪联通中继 | Prepaid Users, server: cu2.worldmuseum.buzz, port: 12100, type: vmess, uuid: ff52c519-91fb-3ca3-9b55-f96e75201532, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hkt, ws-headers: {Host: telegram.channel.p2psharing}, udp: true}
-  - {name: 日本 | 3 杭日隧道 STCP GAME, server: cs.bgp.01.211129.xyz, port: 52312, type: vmess, uuid: 835df9b6-f85c-47e2-bc0c-40c694a3db1e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /onefall, ws-headers: {Host: cs.bgp.01.211129.xyz}, udp: true}
-  - {name: lindoe日本|三网优化|1x, server: cs.daxun.club, port: 20631, type: vmess, uuid: 59341040-0c8c-4cc9-bae6-f07bd6211d8b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /lindoerb01, ws-headers: {Host: cs.daxun.club}, udp: true}
-  - {name: 香港az | 3, server: azhk520.greenyun.tk, port: 10030, type: vmess, uuid: 835df9b6-f85c-47e2-bc0c-40c694a3db1e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /onefall, ws-headers: {Host: azhk520.greenyun.tk}, udp: true}
-  - {name: 香港-日本 | 5 GAME, server: swtnsvardi.eastasia.cloudapp.azure.com, port: 10001, type: vmess, uuid: 835df9b6-f85c-47e2-bc0c-40c694a3db1e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /onefall, ws-headers: {Host: swtnsvardi.eastasia.cloudapp.azure.com}, udp: true}
-  - {name: 日本04|三网优化|1x, server: cs.daxun.club, port: 20631, type: vmess, uuid: 895f8dc4-ba8a-47d7-ab75-67c872f48d7d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /japanese01, ws-headers: {Host: cs.daxun.club}, udp: true}
-  - {name: 日本05|三网优化|1x, server: cs.daxun.club, port: 20631, type: vmess, uuid: 895f8dc4-ba8a-47d7-ab75-67c872f48d7d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /japanese02, ws-headers: {Host: cs.daxun.club}, udp: true}
-  - {name: 东京|优选原生IP|1x, server: cs.daxun.club, port: 20631, type: vmess, uuid: 895f8dc4-ba8a-47d7-ab75-67c872f48d7d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /dj01, ws-headers: {Host: cs.daxun.club}, udp: true}
-  - {name: 日本 | 2 Softbank GMAE, server: gy.cm.01.211129.xyz, port: 10010, type: vmess, uuid: 835df9b6-f85c-47e2-bc0c-40c694a3db1e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /onefall, ws-headers: {Host: gy.cm.01.211129.xyz}, udp: true}
-  - {name: 日本01|三网优化|1x, server: cs.daxun.club, port: 20631, type: vmess, uuid: 895f8dc4-ba8a-47d7-ab75-67c872f48d7d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /linodejp01, ws-headers: {Host: cs.daxun.club}, udp: true}
-  - {name: 台湾04|三网优化|原生IP|1x, server: cs.daxun.club, port: 20631, type: vmess, uuid: 59341040-0c8c-4cc9-bae6-f07bd6211d8b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hinet04, ws-headers: {Host: cs.daxun.club}, udp: true}
-  - {name: 台湾04|三网优化|原生IP|1x 2, server: cs.daxun.club, port: 20631, type: vmess, uuid: 895f8dc4-ba8a-47d7-ab75-67c872f48d7d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hinet04, ws-headers: {Host: cs.daxun.club}, udp: true}
-  - {name: 日本 | 6 GAME, server: 20.222.26.127, port: 443, type: vmess, uuid: 835df9b6-f85c-47e2-bc0c-40c694a3db1e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /onefall, ws-headers: {Host: 20.222.26.127}, udp: true}
-  - {name: 印度 | 1 Azure, server: swtnsvardi.eastasia.cloudapp.azure.com, port: 10004, type: vmess, uuid: 835df9b6-f85c-47e2-bc0c-40c694a3db1e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /onefall.top, ws-headers: {Host: swtnsvardi.eastasia.cloudapp.azure.com}, udp: true}
-  - {name: 日本03|三网优化|1x, server: cs.daxun.club, port: 20631, type: vmess, uuid: 895f8dc4-ba8a-47d7-ab75-67c872f48d7d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: linodejp03, ws-headers: {Host: cs.daxun.club}, udp: true}
-  - {name: 台湾|三网优化|1x, server: cs.daxun.club, port: 20631, type: vmess, uuid: 895f8dc4-ba8a-47d7-ab75-67c872f48d7d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /schinet01, ws-headers: {Host: cs.daxun.club}, udp: true}
-  - {name: 新加坡02|三网优化|1x, server: cs.daxun.club, port: 20631, type: vmess, uuid: 895f8dc4-ba8a-47d7-ab75-67c872f48d7d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /doxjp02, ws-headers: {Host: cs.daxun.club}, udp: true}
-  - {name: 香港04|负载均衡|原生IP|1x, server: cs.daxun.club, port: 20631, type: vmess, uuid: 59341040-0c8c-4cc9-bae6-f07bd6211d8b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hkt008, ws-headers: {Host: cs.daxun.club}, udp: true}
-  - {name: 日本05|三网优化|1x 2, server: cs.daxun.club, port: 20631, type: vmess, uuid: 59341040-0c8c-4cc9-bae6-f07bd6211d8b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /japanese02, ws-headers: {Host: cs.daxun.club}, udp: true}
-  - {name: 俄罗斯|三网优化|1x, server: cs.daxun.club, port: 20631, type: vmess, uuid: 59341040-0c8c-4cc9-bae6-f07bd6211d8b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /els01, ws-headers: {Host: cs.daxun.club}, udp: true}
-  - {name: 东京|优选原生IP|1x 2, server: cs.daxun.club, port: 20631, type: vmess, uuid: 59341040-0c8c-4cc9-bae6-f07bd6211d8b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /dj01, ws-headers: {Host: cs.daxun.club}, udp: true}
-  - {name: 新02 1x--@p2psharing, server: 116.162.14.228, port: 20785, type: vmess, uuid: 1b693eb3-3241-362a-9001-5b503789cfbe, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 日本06|三网优化|1x, server: cs.daxun.club, port: 20631, type: vmess, uuid: 895f8dc4-ba8a-47d7-ab75-67c872f48d7d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /japanese03, ws-headers: {Host: cs.daxun.club}, udp: true}
-  - {name: 澳大利亚 | 1 Azure, server: swtnsvardi.eastasia.cloudapp.azure.com, port: 10003, type: vmess, uuid: 835df9b6-f85c-47e2-bc0c-40c694a3db1e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /onefall.top, ws-headers: {Host: swtnsvardi.eastasia.cloudapp.azure.com}, udp: true}
-  - {name: 美国2 | 奈飞, server: azhk520.greenyun.tk, port: 10004, type: vmess, uuid: 835df9b6-f85c-47e2-bc0c-40c694a3db1e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /onefall.top, ws-headers: {Host: azhk520.greenyun.tk}, udp: true}
-  - {name: 土耳其--@p2psharing, server: 116.162.14.228, port: 21206, type: vmess, uuid: 1b693eb3-3241-362a-9001-5b503789cfbe, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 英国01|三网优化|1x, server: cs.daxun.club, port: 20631, type: vmess, uuid: 59341040-0c8c-4cc9-bae6-f07bd6211d8b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /UK01, ws-headers: {Host: cs.daxun.club}, udp: true}
-  - {name: 美国04|三网优化|1x, server: cs.daxun.club, port: 20631, type: vmess, uuid: 59341040-0c8c-4cc9-bae6-f07bd6211d8b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /usa04, ws-headers: {Host: cs.daxun.club}, udp: true}
-  - {name: 新加坡02|三网优化|1x 2, server: cs.daxun.club, port: 20631, type: vmess, uuid: 59341040-0c8c-4cc9-bae6-f07bd6211d8b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /doxjp02, ws-headers: {Host: cs.daxun.club}, udp: true}
-  - {name: 英国01|三网优化|1x 2, server: cs.daxun.club, port: 20631, type: vmess, uuid: 895f8dc4-ba8a-47d7-ab75-67c872f48d7d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /UK01, ws-headers: {Host: cs.daxun.club}, udp: true}
-  - {name: 日本03|三网优化|1x 2, server: cs.daxun.club, port: 20631, type: vmess, uuid: 59341040-0c8c-4cc9-bae6-f07bd6211d8b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: linodejp03, ws-headers: {Host: cs.daxun.club}, udp: true}
-  - {name: 香港HKT | 2, server: hkthk.nodrop.bike, port: 13123, type: vmess, uuid: 835df9b6-f85c-47e2-bc0c-40c694a3db1e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /onefall, ws-headers: {Host: hkthk.nodrop.bike}, udp: true}
-  - {name: 美国01|三网优化|1x, server: cs.daxun.club, port: 20631, type: vmess, uuid: 895f8dc4-ba8a-47d7-ab75-67c872f48d7d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /cere01, ws-headers: {Host: cs.daxun.club}, udp: true}
-  - {name: 日本02|三网优化|1x, server: cs.daxun.club, port: 20631, type: vmess, uuid: 59341040-0c8c-4cc9-bae6-f07bd6211d8b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: linodejp02, ws-headers: {Host: cs.daxun.club}, udp: true}
-  - {name: 俄罗斯|三网优化|1x 2, server: cs.daxun.club, port: 20631, type: vmess, uuid: 895f8dc4-ba8a-47d7-ab75-67c872f48d7d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /els01, ws-headers: {Host: cs.daxun.club}, udp: true}
-  - {name: 韩国 | 1, server: KR.nodrop.bike, port: 32123, type: vmess, uuid: 835df9b6-f85c-47e2-bc0c-40c694a3db1e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /onefall.top, ws-headers: {Host: KR.nodrop.bike}, udp: true}
-  - {name: lindoe日本|三网优化|1x 2, server: cs.daxun.club, port: 20631, type: vmess, uuid: 895f8dc4-ba8a-47d7-ab75-67c872f48d7d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /lindoerb01, ws-headers: {Host: cs.daxun.club}, udp: true}
-  - {name: 美国 | 1 奈飞, server: us.nodrop.bike, port: 47891, type: vmess, uuid: 835df9b6-f85c-47e2-bc0c-40c694a3db1e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /onefall, ws-headers: {Host: us.nodrop.bike}, udp: true}
-  - {name: 日本01|三网优化|1x 2, server: cs.daxun.club, port: 20631, type: vmess, uuid: 59341040-0c8c-4cc9-bae6-f07bd6211d8b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /linodejp01, ws-headers: {Host: cs.daxun.club}, udp: true}
-  - {name: 香港-新加坡 | 1, server: azhk520.greenyun.tk, port: 10000, type: vmess, uuid: 835df9b6-f85c-47e2-bc0c-40c694a3db1e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /onefall.top, ws-headers: {Host: azhk520.greenyun.tk}, udp: true}
-  - {name: 台湾|三网优化|1x 2, server: cs.daxun.club, port: 20631, type: vmess, uuid: 59341040-0c8c-4cc9-bae6-f07bd6211d8b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /schinet01, ws-headers: {Host: cs.daxun.club}, udp: true}
-  - {name: 新加坡03|三网优化|1x, server: cs.daxun.club, port: 20631, type: vmess, uuid: 59341040-0c8c-4cc9-bae6-f07bd6211d8b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /doxjp03, ws-headers: {Host: cs.daxun.club}, udp: true}
-  - {name: 印度 | 2 Azure, server: 20.198.2.18, port: 443, type: vmess, uuid: 835df9b6-f85c-47e2-bc0c-40c694a3db1e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /onefall.top, ws-headers: {Host: 20.198.2.18}, udp: true}
-  - {name: 德国|三网优化|1x, server: cs.daxun.club, port: 20631, type: vmess, uuid: 59341040-0c8c-4cc9-bae6-f07bd6211d8b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /dg01, ws-headers: {Host: cs.daxun.club}, udp: true}
-  - {name: 马来西亚|三网优化|优选原生IP|1x, server: cs.daxun.club, port: 20631, type: vmess, uuid: 895f8dc4-ba8a-47d7-ab75-67c872f48d7d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /mlxy008, ws-headers: {Host: cs.daxun.club}, udp: true}
-  - {name: 美国01|三网优化|1x 2, server: cs.daxun.club, port: 20631, type: vmess, uuid: 59341040-0c8c-4cc9-bae6-f07bd6211d8b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /cere01, ws-headers: {Host: cs.daxun.club}, udp: true}
-  - {name: 台湾 | 2 Hinet, server: gy.cm.01.211129.xyz, port: 20062, type: vmess, uuid: 835df9b6-f85c-47e2-bc0c-40c694a3db1e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: gy.cm.01.211129.xyz}, udp: true}
-  - {name: 香港-美国 | 5, server: swtnsvardi.eastasia.cloudapp.azure.com, port: 10000, type: vmess, uuid: 835df9b6-f85c-47e2-bc0c-40c694a3db1e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /onefall, ws-headers: {Host: swtnsvardi.eastasia.cloudapp.azure.com}, udp: true}
-  - {name: 日本 | 7 Softbank GMAE, server: 137.220.217.121, port: 9929, type: vmess, uuid: 835df9b6-f85c-47e2-bc0c-40c694a3db1e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /onefall, ws-headers: {Host: 137.220.217.121}, udp: true}
-  - {name: 英国02|三网优化|1x, server: cs.daxun.club, port: 20631, type: vmess, uuid: 59341040-0c8c-4cc9-bae6-f07bd6211d8b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /UK02, ws-headers: {Host: cs.daxun.club}, udp: true}
-  - {name: 土耳其 | 2, server: azhk520.greenyun.tk, port: 10003, type: vmess, uuid: 835df9b6-f85c-47e2-bc0c-40c694a3db1e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /onefall.top, ws-headers: {Host: azhk520.greenyun.tk}, udp: true}
-  - {name: 日本04|三网优化|1x 2, server: cs.daxun.club, port: 20631, type: vmess, uuid: 59341040-0c8c-4cc9-bae6-f07bd6211d8b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /japanese01, ws-headers: {Host: cs.daxun.club}, udp: true}
-  - {name: 加拿大01|三网优化|1x, server: cs.daxun.club, port: 20631, type: vmess, uuid: 895f8dc4-ba8a-47d7-ab75-67c872f48d7d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /canada01, ws-headers: {Host: cs.daxun.club}, udp: true}
-  - {name: 澳大利亚01|三网优化|1x, server: cs.daxun.club, port: 20631, type: vmess, uuid: 895f8dc4-ba8a-47d7-ab75-67c872f48d7d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /AUS01, ws-headers: {Host: cs.daxun.club}, udp: true}
-  - {name: 美国04|三网优化|1x 2, server: cs.daxun.club, port: 20631, type: vmess, uuid: 895f8dc4-ba8a-47d7-ab75-67c872f48d7d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /usa04, ws-headers: {Host: cs.daxun.club}, udp: true}
-  - {name: 澳大利亚01|三网优化|1x 2, server: cs.daxun.club, port: 20631, type: vmess, uuid: 59341040-0c8c-4cc9-bae6-f07bd6211d8b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /AUS01, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: SG_15072 @WangCai_1, server: 72.v2-ray.cyou, port: 15072, type: vmess, uuid: 047184b7-6da2-3d3f-ac27-6a1a8701daf8, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: microsoft.com}, udp: true}
+  - {name: 台湾|三网优化|1x, server: cs.daxun.club, port: 20631, type: vmess, uuid: f26869a1-32b7-4f25-8580-71da92adc33a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /schinet01, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: HK_15071 @WangCai_1, server: 71.v2-ray.cyou, port: 15071, type: vmess, uuid: 047184b7-6da2-3d3f-ac27-6a1a8701daf8, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: microsoft.com}, udp: true}
+  - {name: 日本05|三网优化|1x, server: cs.daxun.club, port: 20631, type: vmess, uuid: f26869a1-32b7-4f25-8580-71da92adc33a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /japanese02, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: 日本02|三网优化|1x, server: cs.daxun.club, port: 20631, type: vmess, uuid: f26869a1-32b7-4f25-8580-71da92adc33a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: linodejp02, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: 澳大利亚01|三网优化|1x, server: cs.daxun.club, port: 20631, type: vmess, uuid: f26869a1-32b7-4f25-8580-71da92adc33a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /AUS01, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: 新加坡03|三网优化|1x, server: cs.daxun.club, port: 20631, type: vmess, uuid: f26869a1-32b7-4f25-8580-71da92adc33a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /doxjp03, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: 日本01|三网优化|1x, server: cs.daxun.club, port: 20631, type: vmess, uuid: f26869a1-32b7-4f25-8580-71da92adc33a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /linodejp01, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: 美国03|三网优化|1x, server: cs.daxun.club, port: 20631, type: vmess, uuid: f26869a1-32b7-4f25-8580-71da92adc33a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /cere03, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: 马来西亚03|三网优化|优选原生IP|1x, server: cs.daxun.club, port: 20631, type: vmess, uuid: f26869a1-32b7-4f25-8580-71da92adc33a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /mlxy008, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: 印 A | 沪联通中继 | Prepaid Users, server: cu2.worldmuseum.buzz, port: 12100, type: vmess, uuid: ff52c519-91fb-3ca3-9b55-f96e75201532, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /in, ws-headers: {Host: telegram.channel.p2psharing}, udp: true}
+  - {name: HK星河, server: 12.v2-ray.cyou, port: 15012, type: vmess, uuid: 047184b7-6da2-3d3f-ac27-6a1a8701daf8, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 12.v2-ray.cyou}, udp: true}
+  - {name: 新加坡02|三网优化|1x, server: cs.daxun.club, port: 20631, type: vmess, uuid: f26869a1-32b7-4f25-8580-71da92adc33a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /doxjp02, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: 台湾04|三网优化|原生IP|1x, server: cs.daxun.club, port: 20631, type: vmess, uuid: f26869a1-32b7-4f25-8580-71da92adc33a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hinet04, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: SG_15015 @WangCai_1, server: 15.v2-ray.cyou, port: 15015, type: vmess, uuid: 047184b7-6da2-3d3f-ac27-6a1a8701daf8, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: microsoft.com}, udp: true}
+  - {name: 日本|优选原生IP|1x, server: cs.daxun.club, port: 20631, type: vmess, uuid: f26869a1-32b7-4f25-8580-71da92adc33a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jp01, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: 东京|优选原生IP|1x, server: cs.daxun.club, port: 20631, type: vmess, uuid: f26869a1-32b7-4f25-8580-71da92adc33a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /dj01, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: 香港06|负载均衡|原生IP|1x, server: cs.daxun.club, port: 20631, type: vmess, uuid: f26869a1-32b7-4f25-8580-71da92adc33a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hkt008, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: 新加坡01|三网优化|1x, server: cs.daxun.club, port: 20631, type: vmess, uuid: f26869a1-32b7-4f25-8580-71da92adc33a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /doxjp01, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: SG_15085 @WangCai_1, server: 85.v2-ray.cyou, port: 15085, type: vmess, uuid: 047184b7-6da2-3d3f-ac27-6a1a8701daf8, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: microsoft.com}, udp: true}
+  - {name: 加拿大01|三网优化|1x, server: cs.daxun.club, port: 20631, type: vmess, uuid: f26869a1-32b7-4f25-8580-71da92adc33a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /canada01, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: US_15012 @WangCai_1, server: 12.v2-ray.cyou, port: 15012, type: vmess, uuid: 047184b7-6da2-3d3f-ac27-6a1a8701daf8, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: microsoft.com}, udp: true}
   - {name: 港 E | 沪联通中继 | Prepaid Users, server: cu2.worldmuseum.buzz, port: 12100, type: vmess, uuid: ff52c519-91fb-3ca3-9b55-f96e75201532, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /wtt, ws-headers: {Host: telegram.channel.p2psharing}, udp: true}
-  - {name: 澳大利亚02|三网优化|1x, server: cs.daxun.club, port: 20631, type: vmess, uuid: 895f8dc4-ba8a-47d7-ab75-67c872f48d7d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /AUS02, ws-headers: {Host: cs.daxun.club}, udp: true}
-  - {name: 韩国|优选原生IP|1x, server: cs.daxun.club, port: 20631, type: vmess, uuid: 895f8dc4-ba8a-47d7-ab75-67c872f48d7d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jgwhg01, ws-headers: {Host: cs.daxun.club}, udp: true}
-  - {name: 加拿大01|三网优化|1x 2, server: cs.daxun.club, port: 20631, type: vmess, uuid: 59341040-0c8c-4cc9-bae6-f07bd6211d8b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /canada01, ws-headers: {Host: cs.daxun.club}, udp: true}
-  - {name: 美国02|三网优化|1x, server: cs.daxun.club, port: 20631, type: vmess, uuid: 59341040-0c8c-4cc9-bae6-f07bd6211d8b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /cere02, ws-headers: {Host: cs.daxun.club}, udp: true}
-  - {name: 英国 | 1 Tiktok, server: gy.cm.01.211129.xyz, port: 52319, type: vmess, uuid: 835df9b6-f85c-47e2-bc0c-40c694a3db1e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /onefall.top, ws-headers: {Host: gy.cm.01.211129.xyz}, udp: true}
-  - {name: 德国|三网优化|1x 2, server: cs.daxun.club, port: 20631, type: vmess, uuid: 895f8dc4-ba8a-47d7-ab75-67c872f48d7d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /dg01, ws-headers: {Host: cs.daxun.club}, udp: true}
-  - {name: 英国02|三网优化|1x 2, server: cs.daxun.club, port: 20631, type: vmess, uuid: 895f8dc4-ba8a-47d7-ab75-67c872f48d7d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /UK02, ws-headers: {Host: cs.daxun.club}, udp: true}
-  - {name: 日本02|三网优化|1x 2, server: cs.daxun.club, port: 20631, type: vmess, uuid: 895f8dc4-ba8a-47d7-ab75-67c872f48d7d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: linodejp02, ws-headers: {Host: cs.daxun.club}, udp: true}
-  - {name: 香港-日本 | 1, server: swtnsvardi.eastasia.cloudapp.azure.com, port: 10002, type: vmess, uuid: 835df9b6-f85c-47e2-bc0c-40c694a3db1e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /onefall, ws-headers: {Host: swtnsvardi.eastasia.cloudapp.azure.com}, udp: true}
-  - {name: 澳大利亚02|三网优化|1x 2, server: cs.daxun.club, port: 20631, type: vmess, uuid: 59341040-0c8c-4cc9-bae6-f07bd6211d8b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /AUS02, ws-headers: {Host: cs.daxun.club}, udp: true}
-  - {name: 韩国 | 2 广港隧道 STCP, server: gy.cm.01.211129.xyz, port: 43213, type: vmess, uuid: 835df9b6-f85c-47e2-bc0c-40c694a3db1e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /onefall.top, ws-headers: {Host: gy.cm.01.211129.xyz}, udp: true}
-  - {name: 美国03|三网优化|1x, server: cs.daxun.club, port: 20631, type: vmess, uuid: 59341040-0c8c-4cc9-bae6-f07bd6211d8b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /cere03, ws-headers: {Host: cs.daxun.club}, udp: true}
-  - {name: 英国03|三网优化|1x, server: cs.daxun.club, port: 20631, type: vmess, uuid: 895f8dc4-ba8a-47d7-ab75-67c872f48d7d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /UK03, ws-headers: {Host: cs.daxun.club}, udp: true}
-  - {name: 瑞典 A | 沪联通中继 | Prepaid Users, server: cu2.worldmuseum.buzz, port: 12100, type: vmess, uuid: ff52c519-91fb-3ca3-9b55-f96e75201532, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /se, ws-headers: {Host: telegram.channel.p2psharing}, udp: true}
-  - {name: 英国03|三网优化|1x 2, server: cs.daxun.club, port: 20631, type: vmess, uuid: 59341040-0c8c-4cc9-bae6-f07bd6211d8b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /UK03, ws-headers: {Host: cs.daxun.club}, udp: true}
-  - {name: 香港-韩国 | 1, server: azhk520.greenyun.tk, port: 32123, type: vmess, uuid: 835df9b6-f85c-47e2-bc0c-40c694a3db1e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /onefall.top, ws-headers: {Host: azhk520.greenyun.tk}, udp: true}
-  - {name: 美国02|三网优化|1x 2, server: cs.daxun.club, port: 20631, type: vmess, uuid: 895f8dc4-ba8a-47d7-ab75-67c872f48d7d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /cere02, ws-headers: {Host: cs.daxun.club}, udp: true}
-  - {name: 香港01 1x--@p2psharing, server: 183.240.132.27, port: 21232, type: vmess, uuid: 1b693eb3-3241-362a-9001-5b503789cfbe, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 土耳其 | 1 无限流量！, server: rq1.nodrop.bike, port: 443, type: vmess, uuid: 835df9b6-f85c-47e2-bc0c-40c694a3db1e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /onefall.top, ws-headers: {Host: rq1.nodrop.bike}, udp: true}
-  - {name: 美国03|三网优化|1x 2, server: cs.daxun.club, port: 20631, type: vmess, uuid: 895f8dc4-ba8a-47d7-ab75-67c872f48d7d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /cere03, ws-headers: {Host: cs.daxun.club}, udp: true}
-  - {name: _VN_越南, server: 0319hzm01.fans8.xyz, port: 443, type: vmess, uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c, alterId: 2, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /nmsl, ws-headers: {Host: 0319hzm01.fans8.xyz}, udp: true}
-  - {name: 美国 | 4, server: rnus.nodrop.bike, port: 47891, type: vmess, uuid: 835df9b6-f85c-47e2-bc0c-40c694a3db1e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /onefall, ws-headers: {Host: rnus.nodrop.bike}, udp: true}
-  - {name: HKG CM.A/06 x0.3, server: 8388adc0-1548-43b5-9a4e-c1fbccb4dd61.404sx.com, port: 21006, type: ss, cipher: chacha20-ietf-poly1305, password: 3c60e14a-4172-4a45-8052-a4a1d516aec8, udp: true}
-  - {name: HKG IEPL.B/02 x1.0, server: f72a1b44-b454-43ae-bd06-f13524958c7c.404sx.com, port: 21002, type: ss, cipher: chacha20-ietf-poly1305, password: 3c60e14a-4172-4a45-8052-a4a1d516aec8, udp: true}
-  - {name: JPN IEPL.A/05 x1.0, server: 5e0af12d-db5e-42e8-b88e-98aff594dd5e.404sx.com, port: 11005, type: ss, cipher: chacha20-ietf-poly1305, password: 3c60e14a-4172-4a45-8052-a4a1d516aec8, udp: true}
-  - {name: HKG IEPL.A/10 x1.0, server: 5e0af12d-db5e-42e8-b88e-98aff594dd5e.404sx.com, port: 21010, type: ss, cipher: chacha20-ietf-poly1305, password: 3c60e14a-4172-4a45-8052-a4a1d516aec8, udp: true}
-  - {name: HKG IEPL.A/03 x1.0, server: 5e0af12d-db5e-42e8-b88e-98aff594dd5e.404sx.com, port: 21003, type: ss, cipher: chacha20-ietf-poly1305, password: 3c60e14a-4172-4a45-8052-a4a1d516aec8, udp: true}
-  - {name: HKG CN2/02 x0.3, server: f074f635-439e-4eb5-8d62-b3369bd7264d.404sx.com, port: 21002, type: ss, cipher: chacha20-ietf-poly1305, password: 3c60e14a-4172-4a45-8052-a4a1d516aec8, udp: true}
-  - {name: HKG CM.A/02 x0.3, server: 8388adc0-1548-43b5-9a4e-c1fbccb4dd61.404sx.com, port: 21002, type: ss, cipher: chacha20-ietf-poly1305, password: 3c60e14a-4172-4a45-8052-a4a1d516aec8, udp: true}
-  - {name: JPN IEPL.A/04 x1.0, server: 5e0af12d-db5e-42e8-b88e-98aff594dd5e.404sx.com, port: 11004, type: ss, cipher: chacha20-ietf-poly1305, password: 3c60e14a-4172-4a45-8052-a4a1d516aec8, udp: true}
-  - {name: JPN IEPL.A/02 x1.0, server: 5e0af12d-db5e-42e8-b88e-98aff594dd5e.404sx.com, port: 11002, type: ss, cipher: chacha20-ietf-poly1305, password: 3c60e14a-4172-4a45-8052-a4a1d516aec8, udp: true}
-  - {name: TWN IEPL.A/02 x1.0, server: 5e0af12d-db5e-42e8-b88e-98aff594dd5e.404sx.com, port: 41002, type: ss, cipher: chacha20-ietf-poly1305, password: 3c60e14a-4172-4a45-8052-a4a1d516aec8, udp: true}
-  - {name: HKG IEPL.B/07 x1.0, server: f72a1b44-b454-43ae-bd06-f13524958c7c.404sx.com, port: 21007, type: ss, cipher: chacha20-ietf-poly1305, password: 3c60e14a-4172-4a45-8052-a4a1d516aec8, udp: true}
-  - {name: HKG IEPL.B/10 x1.0, server: f72a1b44-b454-43ae-bd06-f13524958c7c.404sx.com, port: 21010, type: ss, cipher: chacha20-ietf-poly1305, password: 3c60e14a-4172-4a45-8052-a4a1d516aec8, udp: true}
-  - {name: HKG CM.A/01 x0.3, server: 8388adc0-1548-43b5-9a4e-c1fbccb4dd61.404sx.com, port: 21001, type: ss, cipher: chacha20-ietf-poly1305, password: 3c60e14a-4172-4a45-8052-a4a1d516aec8, udp: true}
-  - {name: HKG CM.A/07 x0.3, server: 8388adc0-1548-43b5-9a4e-c1fbccb4dd61.404sx.com, port: 21007, type: ss, cipher: chacha20-ietf-poly1305, password: 3c60e14a-4172-4a45-8052-a4a1d516aec8, udp: true}
-  - {name: HKG CN2/08 x0.3, server: f074f635-439e-4eb5-8d62-b3369bd7264d.404sx.com, port: 21008, type: ss, cipher: chacha20-ietf-poly1305, password: 3c60e14a-4172-4a45-8052-a4a1d516aec8, udp: true}
-  - {name: HKG CM.B/02 x0.3, server: 7f98cedf-c70b-48e4-b7ec-4c2394ced310.404sx.com, port: 21002, type: ss, cipher: chacha20-ietf-poly1305, password: 3c60e14a-4172-4a45-8052-a4a1d516aec8, udp: true}
-  - {name: SGP IEPL.A/03 x1.0, server: 5e0af12d-db5e-42e8-b88e-98aff594dd5e.404sx.com, port: 61003, type: ss, cipher: chacha20-ietf-poly1305, password: 3c60e14a-4172-4a45-8052-a4a1d516aec8, udp: true}
-  - {name: SGP IEPL.A/01 x1.0, server: 5e0af12d-db5e-42e8-b88e-98aff594dd5e.404sx.com, port: 61001, type: ss, cipher: chacha20-ietf-poly1305, password: 3c60e14a-4172-4a45-8052-a4a1d516aec8, udp: true}
-  - {name: USA IEPL.A/02 x1.0, server: 5e0af12d-db5e-42e8-b88e-98aff594dd5e.404sx.com, port: 31002, type: ss, cipher: chacha20-ietf-poly1305, password: 3c60e14a-4172-4a45-8052-a4a1d516aec8, udp: true}
-  - {name: HKG IEPL.A/07 x1.0, server: 5e0af12d-db5e-42e8-b88e-98aff594dd5e.404sx.com, port: 21007, type: ss, cipher: chacha20-ietf-poly1305, password: 3c60e14a-4172-4a45-8052-a4a1d516aec8, udp: true}
-  - {name: HKG IEPL.B/08 x1.0, server: f72a1b44-b454-43ae-bd06-f13524958c7c.404sx.com, port: 21008, type: ss, cipher: chacha20-ietf-poly1305, password: 3c60e14a-4172-4a45-8052-a4a1d516aec8, udp: true}
-  - {name: SGP CM.B/04 x0.3, server: 7f98cedf-c70b-48e4-b7ec-4c2394ced310.404sx.com, port: 61004, type: ss, cipher: chacha20-ietf-poly1305, password: 3c60e14a-4172-4a45-8052-a4a1d516aec8, udp: true}
-  - {name: HKG IEPL.A/06 x1.0, server: 5e0af12d-db5e-42e8-b88e-98aff594dd5e.404sx.com, port: 21006, type: ss, cipher: chacha20-ietf-poly1305, password: 3c60e14a-4172-4a45-8052-a4a1d516aec8, udp: true}
-  - {name: SGP CM.A/01 x0.3, server: 8388adc0-1548-43b5-9a4e-c1fbccb4dd61.404sx.com, port: 61001, type: ss, cipher: chacha20-ietf-poly1305, password: 3c60e14a-4172-4a45-8052-a4a1d516aec8, udp: true}
-  - {name: JPN IEPL.A/01 x1.0, server: 5e0af12d-db5e-42e8-b88e-98aff594dd5e.404sx.com, port: 11001, type: ss, cipher: chacha20-ietf-poly1305, password: 3c60e14a-4172-4a45-8052-a4a1d516aec8, udp: true}
-  - {name: HKG IEPL.B/09 x1.0, server: f72a1b44-b454-43ae-bd06-f13524958c7c.404sx.com, port: 21009, type: ss, cipher: chacha20-ietf-poly1305, password: 3c60e14a-4172-4a45-8052-a4a1d516aec8, udp: true}
-  - {name: JPN CM.A/01 x0.3, server: 8388adc0-1548-43b5-9a4e-c1fbccb4dd61.404sx.com, port: 11001, type: ss, cipher: chacha20-ietf-poly1305, password: 3c60e14a-4172-4a45-8052-a4a1d516aec8, udp: true}
-  - {name: HKG CN2/04 x0.3, server: f074f635-439e-4eb5-8d62-b3369bd7264d.404sx.com, port: 21004, type: ss, cipher: chacha20-ietf-poly1305, password: 3c60e14a-4172-4a45-8052-a4a1d516aec8, udp: true}
-  - {name: SGP CM.B/05 x0.3, server: 7f98cedf-c70b-48e4-b7ec-4c2394ced310.404sx.com, port: 61005, type: ss, cipher: chacha20-ietf-poly1305, password: 3c60e14a-4172-4a45-8052-a4a1d516aec8, udp: true}
-  - {name: HKG IEPL.B/05 x1.0, server: f72a1b44-b454-43ae-bd06-f13524958c7c.404sx.com, port: 21005, type: ss, cipher: chacha20-ietf-poly1305, password: 3c60e14a-4172-4a45-8052-a4a1d516aec8, udp: true}
-  - {name: HKG CM.B/06 x0.3, server: 7f98cedf-c70b-48e4-b7ec-4c2394ced310.404sx.com, port: 21006, type: ss, cipher: chacha20-ietf-poly1305, password: 3c60e14a-4172-4a45-8052-a4a1d516aec8, udp: true}
-  - {name: SGP CM.A/05 x0.3, server: 8388adc0-1548-43b5-9a4e-c1fbccb4dd61.404sx.com, port: 61005, type: ss, cipher: chacha20-ietf-poly1305, password: 3c60e14a-4172-4a45-8052-a4a1d516aec8, udp: true}
-  - {name: HKG CN2/01 x0.3, server: f074f635-439e-4eb5-8d62-b3369bd7264d.404sx.com, port: 21001, type: ss, cipher: chacha20-ietf-poly1305, password: 3c60e14a-4172-4a45-8052-a4a1d516aec8, udp: true}
-  - {name: TWN IEPL.A/03 x1.0, server: 5e0af12d-db5e-42e8-b88e-98aff594dd5e.404sx.com, port: 41003, type: ss, cipher: chacha20-ietf-poly1305, password: 3c60e14a-4172-4a45-8052-a4a1d516aec8, udp: true}
-  - {name: HKG IEPL.B/04 x1.0, server: f72a1b44-b454-43ae-bd06-f13524958c7c.404sx.com, port: 21004, type: ss, cipher: chacha20-ietf-poly1305, password: 3c60e14a-4172-4a45-8052-a4a1d516aec8, udp: true}
-  - {name: HKG CM.B/05 x0.3, server: 7f98cedf-c70b-48e4-b7ec-4c2394ced310.404sx.com, port: 21005, type: ss, cipher: chacha20-ietf-poly1305, password: 3c60e14a-4172-4a45-8052-a4a1d516aec8, udp: true}
-  - {name: HKG CM.B/08 x0.3, server: 7f98cedf-c70b-48e4-b7ec-4c2394ced310.404sx.com, port: 21008, type: ss, cipher: chacha20-ietf-poly1305, password: 3c60e14a-4172-4a45-8052-a4a1d516aec8, udp: true}
-  - {name: HKG CN2/06 x0.3, server: f074f635-439e-4eb5-8d62-b3369bd7264d.404sx.com, port: 21006, type: ss, cipher: chacha20-ietf-poly1305, password: 3c60e14a-4172-4a45-8052-a4a1d516aec8, udp: true}
-  - {name: USA IEPL.A/05 x1.0, server: 5e0af12d-db5e-42e8-b88e-98aff594dd5e.404sx.com, port: 31005, type: ss, cipher: chacha20-ietf-poly1305, password: 3c60e14a-4172-4a45-8052-a4a1d516aec8, udp: true}
-  - {name: HKG CM.A/03 x0.3, server: 8388adc0-1548-43b5-9a4e-c1fbccb4dd61.404sx.com, port: 21003, type: ss, cipher: chacha20-ietf-poly1305, password: 3c60e14a-4172-4a45-8052-a4a1d516aec8, udp: true}
-  - {name: HKG CM.A/04 x0.3, server: 8388adc0-1548-43b5-9a4e-c1fbccb4dd61.404sx.com, port: 21004, type: ss, cipher: chacha20-ietf-poly1305, password: 3c60e14a-4172-4a45-8052-a4a1d516aec8, udp: true}
-  - {name: JPN CM.A/02 x0.3, server: 8388adc0-1548-43b5-9a4e-c1fbccb4dd61.404sx.com, port: 11002, type: ss, cipher: chacha20-ietf-poly1305, password: 3c60e14a-4172-4a45-8052-a4a1d516aec8, udp: true}
-  - {name: HKG CM.B/07 x0.3, server: 7f98cedf-c70b-48e4-b7ec-4c2394ced310.404sx.com, port: 21007, type: ss, cipher: chacha20-ietf-poly1305, password: 3c60e14a-4172-4a45-8052-a4a1d516aec8, udp: true}
-  - {name: HKG IEPL.A/09 x1.0, server: 5e0af12d-db5e-42e8-b88e-98aff594dd5e.404sx.com, port: 21009, type: ss, cipher: chacha20-ietf-poly1305, password: 3c60e14a-4172-4a45-8052-a4a1d516aec8, udp: true}
-  - {name: SGP CM.A/02 x0.3, server: 8388adc0-1548-43b5-9a4e-c1fbccb4dd61.404sx.com, port: 61002, type: ss, cipher: chacha20-ietf-poly1305, password: 3c60e14a-4172-4a45-8052-a4a1d516aec8, udp: true}
-  - {name: SGP CM.B/03 x0.3, server: 7f98cedf-c70b-48e4-b7ec-4c2394ced310.404sx.com, port: 61003, type: ss, cipher: chacha20-ietf-poly1305, password: 3c60e14a-4172-4a45-8052-a4a1d516aec8, udp: true}
-  - {name: SGP CM.B/01 x0.3, server: 7f98cedf-c70b-48e4-b7ec-4c2394ced310.404sx.com, port: 61001, type: ss, cipher: chacha20-ietf-poly1305, password: 3c60e14a-4172-4a45-8052-a4a1d516aec8, udp: true}
-  - {name: HKG CM.A/05 x0.3, server: 8388adc0-1548-43b5-9a4e-c1fbccb4dd61.404sx.com, port: 21005, type: ss, cipher: chacha20-ietf-poly1305, password: 3c60e14a-4172-4a45-8052-a4a1d516aec8, udp: true}
-  - {name: SGP CM.B/02 x0.3, server: 7f98cedf-c70b-48e4-b7ec-4c2394ced310.404sx.com, port: 61002, type: ss, cipher: chacha20-ietf-poly1305, password: 3c60e14a-4172-4a45-8052-a4a1d516aec8, udp: true}
-  - {name: SGP CM.A/04 x0.3, server: 8388adc0-1548-43b5-9a4e-c1fbccb4dd61.404sx.com, port: 61004, type: ss, cipher: chacha20-ietf-poly1305, password: 3c60e14a-4172-4a45-8052-a4a1d516aec8, udp: true}
-  - {name: 公告|所求皆所愿！所行皆坦途, server: 20.205.45.232, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 835df9b6-f85c-47e2-bc0c-40c694a3db1e, udp: true}
-  - {name: HKG CM.A/10 x0.3, server: 8388adc0-1548-43b5-9a4e-c1fbccb4dd61.404sx.com, port: 21010, type: ss, cipher: chacha20-ietf-poly1305, password: 3c60e14a-4172-4a45-8052-a4a1d516aec8, udp: true}
-  - {name: HKG CN2/07 x0.3, server: f074f635-439e-4eb5-8d62-b3369bd7264d.404sx.com, port: 21007, type: ss, cipher: chacha20-ietf-poly1305, password: 3c60e14a-4172-4a45-8052-a4a1d516aec8, udp: true}
-  - {name: TWN CM.A/01 x1.0, server: 8388adc0-1548-43b5-9a4e-c1fbccb4dd61.404sx.com, port: 41001, type: ss, cipher: chacha20-ietf-poly1305, password: 3c60e14a-4172-4a45-8052-a4a1d516aec8, udp: true}
-  - {name: 香港 | Azure ss 4, server: gy.cm.01.211129.xyz, port: 54543, type: ss, cipher: chacha20-ietf-poly1305, password: 835df9b6-f85c-47e2-bc0c-40c694a3db1e, udp: true}
-  - {name: HKG CM.B/04 x0.3, server: 7f98cedf-c70b-48e4-b7ec-4c2394ced310.404sx.com, port: 21004, type: ss, cipher: chacha20-ietf-poly1305, password: 3c60e14a-4172-4a45-8052-a4a1d516aec8, udp: true}
-  - {name: HKG CM.B/10 x0.3, server: 7f98cedf-c70b-48e4-b7ec-4c2394ced310.404sx.com, port: 21010, type: ss, cipher: chacha20-ietf-poly1305, password: 3c60e14a-4172-4a45-8052-a4a1d516aec8, udp: true}
-  - {name: TWN CM.A/03 x1.0, server: 8388adc0-1548-43b5-9a4e-c1fbccb4dd61.404sx.com, port: 41003, type: ss, cipher: chacha20-ietf-poly1305, password: 3c60e14a-4172-4a45-8052-a4a1d516aec8, udp: true}
-  - {name: TWN CM.A/02 x1.0, server: 8388adc0-1548-43b5-9a4e-c1fbccb4dd61.404sx.com, port: 41002, type: ss, cipher: chacha20-ietf-poly1305, password: 3c60e14a-4172-4a45-8052-a4a1d516aec8, udp: true}
-  - {name: HKG CN2/03 x0.3, server: f074f635-439e-4eb5-8d62-b3369bd7264d.404sx.com, port: 21003, type: ss, cipher: chacha20-ietf-poly1305, password: 3c60e14a-4172-4a45-8052-a4a1d516aec8, udp: true}
-  - {name: RUS  IEPL.A/01 x1.0, server: 5e0af12d-db5e-42e8-b88e-98aff594dd5e.404sx.com, port: 51001, type: ss, cipher: chacha20-ietf-poly1305, password: 3c60e14a-4172-4a45-8052-a4a1d516aec8, udp: true}
-  - {name: HKG CM.B/09 x0.3, server: 7f98cedf-c70b-48e4-b7ec-4c2394ced310.404sx.com, port: 21009, type: ss, cipher: chacha20-ietf-poly1305, password: 3c60e14a-4172-4a45-8052-a4a1d516aec8, udp: true}
-  - {name: SGP IEPL.A/05 x1.0, server: 5e0af12d-db5e-42e8-b88e-98aff594dd5e.404sx.com, port: 61005, type: ss, cipher: chacha20-ietf-poly1305, password: 3c60e14a-4172-4a45-8052-a4a1d516aec8, udp: true}
-  - {name: HKG CM.A/09 x0.3, server: 8388adc0-1548-43b5-9a4e-c1fbccb4dd61.404sx.com, port: 21009, type: ss, cipher: chacha20-ietf-poly1305, password: 3c60e14a-4172-4a45-8052-a4a1d516aec8, udp: true}
-  - {name: HKG CM.A/08 x0.3, server: 8388adc0-1548-43b5-9a4e-c1fbccb4dd61.404sx.com, port: 21008, type: ss, cipher: chacha20-ietf-poly1305, password: 3c60e14a-4172-4a45-8052-a4a1d516aec8, udp: true}
-  - {name: TWN IEPL.A/01 x1.0, server: 5e0af12d-db5e-42e8-b88e-98aff594dd5e.404sx.com, port: 41001, type: ss, cipher: chacha20-ietf-poly1305, password: 3c60e14a-4172-4a45-8052-a4a1d516aec8, udp: true}
-  - {name: SGP CM.A/03 x0.3, server: 8388adc0-1548-43b5-9a4e-c1fbccb4dd61.404sx.com, port: 61003, type: ss, cipher: chacha20-ietf-poly1305, password: 3c60e14a-4172-4a45-8052-a4a1d516aec8, udp: true}
-  - {name: GBR IEPL.A/01 x1.0, server: 5e0af12d-db5e-42e8-b88e-98aff594dd5e.404sx.com, port: 51002, type: ss, cipher: chacha20-ietf-poly1305, password: 3c60e14a-4172-4a45-8052-a4a1d516aec8, udp: true}
-  - {name: HKG IEPL.A/05 x1.0, server: 5e0af12d-db5e-42e8-b88e-98aff594dd5e.404sx.com, port: 21005, type: ss, cipher: chacha20-ietf-poly1305, password: 3c60e14a-4172-4a45-8052-a4a1d516aec8, udp: true}
-  - {name: SGP IEPL.A/04 x1.0, server: 5e0af12d-db5e-42e8-b88e-98aff594dd5e.404sx.com, port: 61004, type: ss, cipher: chacha20-ietf-poly1305, password: 3c60e14a-4172-4a45-8052-a4a1d516aec8, udp: true}
-  - {name: JPN CM.A/05 x0.3, server: 8388adc0-1548-43b5-9a4e-c1fbccb4dd61.404sx.com, port: 11005, type: ss, cipher: chacha20-ietf-poly1305, password: 3c60e14a-4172-4a45-8052-a4a1d516aec8, udp: true}
-  - {name: SGP IEPL.A/02 x1.0, server: 5e0af12d-db5e-42e8-b88e-98aff594dd5e.404sx.com, port: 61002, type: ss, cipher: chacha20-ietf-poly1305, password: 3c60e14a-4172-4a45-8052-a4a1d516aec8, udp: true}
-  - {name: HKG IEPL.B/03 x1.0, server: f72a1b44-b454-43ae-bd06-f13524958c7c.404sx.com, port: 21003, type: ss, cipher: chacha20-ietf-poly1305, password: 3c60e14a-4172-4a45-8052-a4a1d516aec8, udp: true}
-  - {name: HKG CM.B/01 x0.3, server: 7f98cedf-c70b-48e4-b7ec-4c2394ced310.404sx.com, port: 21001, type: ss, cipher: chacha20-ietf-poly1305, password: 3c60e14a-4172-4a45-8052-a4a1d516aec8, udp: true}
-  - {name: JPN CM.A/03 x0.3, server: 8388adc0-1548-43b5-9a4e-c1fbccb4dd61.404sx.com, port: 11003, type: ss, cipher: chacha20-ietf-poly1305, password: 3c60e14a-4172-4a45-8052-a4a1d516aec8, udp: true}
-  - {name: HKG CN2/05 x0.3, server: f074f635-439e-4eb5-8d62-b3369bd7264d.404sx.com, port: 21005, type: ss, cipher: chacha20-ietf-poly1305, password: 3c60e14a-4172-4a45-8052-a4a1d516aec8, udp: true}
-  - {name: HKG CN2/09 x0.3, server: f074f635-439e-4eb5-8d62-b3369bd7264d.404sx.com, port: 21009, type: ss, cipher: chacha20-ietf-poly1305, password: 3c60e14a-4172-4a45-8052-a4a1d516aec8, udp: true}
-  - {name: HKG IEPL.A/08 x1.0, server: 5e0af12d-db5e-42e8-b88e-98aff594dd5e.404sx.com, port: 21008, type: ss, cipher: chacha20-ietf-poly1305, password: 3c60e14a-4172-4a45-8052-a4a1d516aec8, udp: true}
-  - {name: JPN CM.A/04 x0.3, server: 8388adc0-1548-43b5-9a4e-c1fbccb4dd61.404sx.com, port: 11004, type: ss, cipher: chacha20-ietf-poly1305, password: 3c60e14a-4172-4a45-8052-a4a1d516aec8, udp: true}
-  - {name: HKG IEPL.B/06 x1.0, server: f72a1b44-b454-43ae-bd06-f13524958c7c.404sx.com, port: 21006, type: ss, cipher: chacha20-ietf-poly1305, password: 3c60e14a-4172-4a45-8052-a4a1d516aec8, udp: true}
-  - {name: HKG CN2/10 x0.3, server: f074f635-439e-4eb5-8d62-b3369bd7264d.404sx.com, port: 21010, type: ss, cipher: chacha20-ietf-poly1305, password: 3c60e14a-4172-4a45-8052-a4a1d516aec8, udp: true}
-  - {name: _SE_瑞典, server: 51.12.89.247, port: 500, type: ss, cipher: aes-128-gcm, password: "@VPNFolder", udp: true}
+  - {name: "", server: clown01.tk, port: 443, type: vmess, uuid: 1785204a-a1b1-4224-d3ce-9a11c6b6fc4d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /wefghyFgjydSdfF, ws-headers: {Host: clown01.tk}, udp: true}
+  - {name: 港 D | 沪联通中继 | Prepaid Users, server: cu2.worldmuseum.buzz, port: 12100, type: vmess, uuid: ff52c519-91fb-3ca3-9b55-f96e75201532, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hgc, ws-headers: {Host: telegram.channel.p2psharing}, udp: true}
+  - {name: 美国02|三网优化|1x, server: cs.daxun.club, port: 20631, type: vmess, uuid: f26869a1-32b7-4f25-8580-71da92adc33a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /cere02, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: 新 A | 沪联通中继 | Prepaid Users, server: cu2.worldmuseum.buzz, port: 12100, type: vmess, uuid: ff52c519-91fb-3ca3-9b55-f96e75201532, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /sg, ws-headers: {Host: telegram.channel.p2psharing}, udp: true}
+  - {name: 韩国|优选原生IP|1x, server: cs.daxun.club, port: 20631, type: vmess, uuid: f26869a1-32b7-4f25-8580-71da92adc33a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jgwhg01, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: 英国03|三网优化|1x, server: cs.daxun.club, port: 20631, type: vmess, uuid: f26869a1-32b7-4f25-8580-71da92adc33a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /UK03, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: 台湾A | tg频道:@ripaojiedian, server: cm1.worldmuseum.buzz, port: 12100, type: vmess, uuid: ff52c519-91fb-3ca3-9b55-f96e75201532, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /tw1, ws-headers: {Host: telegram.channel.p2psharing}, udp: true}
+  - {name: 日 A | 粤移动中继 | Prepaid Users, server: cm1.worldmuseum.buzz, port: 12100, type: vmess, uuid: ff52c519-91fb-3ca3-9b55-f96e75201532, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jp1, ws-headers: {Host: telegram.channel.p2psharing}, udp: true}
+  - {name: 德国|三网优化|1x, server: cs.daxun.club, port: 20631, type: vmess, uuid: f26869a1-32b7-4f25-8580-71da92adc33a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /dg01, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: 台湾 A | tg频道:@ripaojiedian, server: cm1.worldmuseum.buzz, port: 12100, type: vmess, uuid: ff52c519-91fb-3ca3-9b55-f96e75201532, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /tw1, ws-headers: {Host: cm1.worldmuseum.buzz}, udp: true}
+  - {name: 日本06|三网优化|1x, server: cs.daxun.club, port: 20631, type: vmess, uuid: f26869a1-32b7-4f25-8580-71da92adc33a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /japanese03, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: 美国01|三网优化|1x, server: cs.daxun.club, port: 20631, type: vmess, uuid: f26869a1-32b7-4f25-8580-71da92adc33a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /cere01, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: 英国01|三网优化|1x, server: cs.daxun.club, port: 20631, type: vmess, uuid: f26869a1-32b7-4f25-8580-71da92adc33a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /UK01, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: 俄罗斯|三网优化|1x, server: cs.daxun.club, port: 20631, type: vmess, uuid: f26869a1-32b7-4f25-8580-71da92adc33a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /els01, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: 英国02|三网优化|1x, server: cs.daxun.club, port: 20631, type: vmess, uuid: f26869a1-32b7-4f25-8580-71da92adc33a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /UK02, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: JP_15004 @WangCai_1, server: 4.v2-ray.cyou, port: 36104, type: vmess, uuid: 047184b7-6da2-3d3f-ac27-6a1a8701daf8, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: microsoft.com}, udp: true}
+  - {name: lindoe日本|三网优化|1x, server: cs.daxun.club, port: 20631, type: vmess, uuid: f26869a1-32b7-4f25-8580-71da92adc33a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /lindoerb01, ws-headers: {Host: cs.daxun.club}, udp: true}
+  - {name: US_8009 @WangCai_1, server: 38.75.137.66, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: US_8882 @WangCai_1, server: 38.75.137.66, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: US_8118 @WangCai_1, server: 38.75.137.66, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: US_6697 @WangCai_1, server: 38.75.137.66, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: US_8000 @WangCai_1, server: 38.75.137.66, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: US_9101 @WangCai_1, server: 38.75.137.66, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: US_6379 @WangCai_1, server: 38.75.137.66, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
+  - {name: US_8008 @WangCai_1, server: 38.75.137.66, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: US_7002 @WangCai_1, server: 38.75.137.66, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: US_8881 @WangCai_1, server: 38.75.137.66, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: US_6679 @WangCai_1, server: 38.75.137.66, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: US_8888 @WangCai_1, server: 38.75.137.66, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: US_5601 @WangCai_1, server: 38.75.137.66, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 香港_1, server: hk4.qingyun123.xyz, port: 10050, type: trojan, password: 7ba98947-ea44-4682-ae1a-79b0ba1ec98a, sni: hk4.qingyun123.xyz, skip-cert-verify: true, udp: true}
+  - {name: 星河, server: usa.fanqiangvpn.com, port: 443, type: trojan, password: afc34a50-76f7-4fb1-9393-c5da1c1a54db, sni: usa.fanqiangvpn.com, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 港 F | 沪联通中继 | Prepaid Users
-      - 日本 | 3 杭日隧道 STCP GAME
-      - lindoe日本|三网优化|1x
-      - 香港az | 3
-      - 香港-日本 | 5 GAME
-      - 日本04|三网优化|1x
-      - 日本05|三网优化|1x
-      - 东京|优选原生IP|1x
-      - 日本 | 2 Softbank GMAE
-      - 日本01|三网优化|1x
-      - 台湾04|三网优化|原生IP|1x
-      - 台湾04|三网优化|原生IP|1x 2
-      - 日本 | 6 GAME
-      - 印度 | 1 Azure
-      - 日本03|三网优化|1x
+      - SG_15072 @WangCai_1
       - 台湾|三网优化|1x
-      - 新加坡02|三网优化|1x
-      - 香港04|负载均衡|原生IP|1x
-      - 日本05|三网优化|1x 2
-      - 俄罗斯|三网优化|1x
-      - 东京|优选原生IP|1x 2
-      - 新02 1x--@p2psharing
-      - 日本06|三网优化|1x
-      - 澳大利亚 | 1 Azure
-      - 美国2 | 奈飞
-      - 土耳其--@p2psharing
-      - 英国01|三网优化|1x
-      - 美国04|三网优化|1x
-      - 新加坡02|三网优化|1x 2
-      - 英国01|三网优化|1x 2
-      - 日本03|三网优化|1x 2
-      - 香港HKT | 2
-      - 美国01|三网优化|1x
+      - HK_15071 @WangCai_1
+      - 日本05|三网优化|1x
       - 日本02|三网优化|1x
-      - 俄罗斯|三网优化|1x 2
-      - 韩国 | 1
-      - lindoe日本|三网优化|1x 2
-      - 美国 | 1 奈飞
-      - 日本01|三网优化|1x 2
-      - 香港-新加坡 | 1
-      - 台湾|三网优化|1x 2
-      - 新加坡03|三网优化|1x
-      - 印度 | 2 Azure
-      - 德国|三网优化|1x
-      - 马来西亚|三网优化|优选原生IP|1x
-      - 美国01|三网优化|1x 2
-      - 台湾 | 2 Hinet
-      - 香港-美国 | 5
-      - 日本 | 7 Softbank GMAE
-      - 英国02|三网优化|1x
-      - 土耳其 | 2
-      - 日本04|三网优化|1x 2
-      - 加拿大01|三网优化|1x
       - 澳大利亚01|三网优化|1x
-      - 美国04|三网优化|1x 2
-      - 澳大利亚01|三网优化|1x 2
-      - 港 E | 沪联通中继 | Prepaid Users
-      - 澳大利亚02|三网优化|1x
-      - 韩国|优选原生IP|1x
-      - 加拿大01|三网优化|1x 2
-      - 美国02|三网优化|1x
-      - 英国 | 1 Tiktok
-      - 德国|三网优化|1x 2
-      - 英国02|三网优化|1x 2
-      - 日本02|三网优化|1x 2
-      - 香港-日本 | 1
-      - 澳大利亚02|三网优化|1x 2
-      - 韩国 | 2 广港隧道 STCP
+      - 新加坡03|三网优化|1x
+      - 日本01|三网优化|1x
       - 美国03|三网优化|1x
+      - 马来西亚03|三网优化|优选原生IP|1x
+      - 印 A | 沪联通中继 | Prepaid Users
+      - HK星河
+      - 新加坡02|三网优化|1x
+      - 台湾04|三网优化|原生IP|1x
+      - SG_15015 @WangCai_1
+      - 日本|优选原生IP|1x
+      - 东京|优选原生IP|1x
+      - 香港06|负载均衡|原生IP|1x
+      - 新加坡01|三网优化|1x
+      - SG_15085 @WangCai_1
+      - 加拿大01|三网优化|1x
+      - US_15012 @WangCai_1
+      - 港 E | 沪联通中继 | Prepaid Users
+      - ""
+      - 港 D | 沪联通中继 | Prepaid Users
+      - 美国02|三网优化|1x
+      - 新 A | 沪联通中继 | Prepaid Users
+      - 韩国|优选原生IP|1x
       - 英国03|三网优化|1x
-      - 瑞典 A | 沪联通中继 | Prepaid Users
-      - 英国03|三网优化|1x 2
-      - 香港-韩国 | 1
-      - 美国02|三网优化|1x 2
-      - 香港01 1x--@p2psharing
-      - 土耳其 | 1 无限流量！
-      - 美国03|三网优化|1x 2
-      - _VN_越南
-      - 美国 | 4
-      - HKG CM.A/06 x0.3
-      - HKG IEPL.B/02 x1.0
-      - JPN IEPL.A/05 x1.0
-      - HKG IEPL.A/10 x1.0
-      - HKG IEPL.A/03 x1.0
-      - HKG CN2/02 x0.3
-      - HKG CM.A/02 x0.3
-      - JPN IEPL.A/04 x1.0
-      - JPN IEPL.A/02 x1.0
-      - TWN IEPL.A/02 x1.0
-      - HKG IEPL.B/07 x1.0
-      - HKG IEPL.B/10 x1.0
-      - HKG CM.A/01 x0.3
-      - HKG CM.A/07 x0.3
-      - HKG CN2/08 x0.3
-      - HKG CM.B/02 x0.3
-      - SGP IEPL.A/03 x1.0
-      - SGP IEPL.A/01 x1.0
-      - USA IEPL.A/02 x1.0
-      - HKG IEPL.A/07 x1.0
-      - HKG IEPL.B/08 x1.0
-      - SGP CM.B/04 x0.3
-      - HKG IEPL.A/06 x1.0
-      - SGP CM.A/01 x0.3
-      - JPN IEPL.A/01 x1.0
-      - HKG IEPL.B/09 x1.0
-      - JPN CM.A/01 x0.3
-      - HKG CN2/04 x0.3
-      - SGP CM.B/05 x0.3
-      - HKG IEPL.B/05 x1.0
-      - HKG CM.B/06 x0.3
-      - SGP CM.A/05 x0.3
-      - HKG CN2/01 x0.3
-      - TWN IEPL.A/03 x1.0
-      - HKG IEPL.B/04 x1.0
-      - HKG CM.B/05 x0.3
-      - HKG CM.B/08 x0.3
-      - HKG CN2/06 x0.3
-      - USA IEPL.A/05 x1.0
-      - HKG CM.A/03 x0.3
-      - HKG CM.A/04 x0.3
-      - JPN CM.A/02 x0.3
-      - HKG CM.B/07 x0.3
-      - HKG IEPL.A/09 x1.0
-      - SGP CM.A/02 x0.3
-      - SGP CM.B/03 x0.3
-      - SGP CM.B/01 x0.3
-      - HKG CM.A/05 x0.3
-      - SGP CM.B/02 x0.3
-      - SGP CM.A/04 x0.3
-      - 公告|所求皆所愿！所行皆坦途
-      - HKG CM.A/10 x0.3
-      - HKG CN2/07 x0.3
-      - TWN CM.A/01 x1.0
-      - 香港 | Azure ss 4
-      - HKG CM.B/04 x0.3
-      - HKG CM.B/10 x0.3
-      - TWN CM.A/03 x1.0
-      - TWN CM.A/02 x1.0
-      - HKG CN2/03 x0.3
-      - RUS  IEPL.A/01 x1.0
-      - HKG CM.B/09 x0.3
-      - SGP IEPL.A/05 x1.0
-      - HKG CM.A/09 x0.3
-      - HKG CM.A/08 x0.3
-      - TWN IEPL.A/01 x1.0
-      - SGP CM.A/03 x0.3
-      - GBR IEPL.A/01 x1.0
-      - HKG IEPL.A/05 x1.0
-      - SGP IEPL.A/04 x1.0
-      - JPN CM.A/05 x0.3
-      - SGP IEPL.A/02 x1.0
-      - HKG IEPL.B/03 x1.0
-      - HKG CM.B/01 x0.3
-      - JPN CM.A/03 x0.3
-      - HKG CN2/05 x0.3
-      - HKG CN2/09 x0.3
-      - HKG IEPL.A/08 x1.0
-      - JPN CM.A/04 x0.3
-      - HKG IEPL.B/06 x1.0
-      - HKG CN2/10 x0.3
-      - _SE_瑞典
+      - 台湾A | tg频道:@ripaojiedian
+      - 日 A | 粤移动中继 | Prepaid Users
+      - 德国|三网优化|1x
+      - 台湾 A | tg频道:@ripaojiedian
+      - 日本06|三网优化|1x
+      - 美国01|三网优化|1x
+      - 英国01|三网优化|1x
+      - 俄罗斯|三网优化|1x
+      - 英国02|三网优化|1x
+      - JP_15004 @WangCai_1
+      - lindoe日本|三网优化|1x
+      - US_8009 @WangCai_1
+      - US_8882 @WangCai_1
+      - US_8118 @WangCai_1
+      - US_6697 @WangCai_1
+      - US_8000 @WangCai_1
+      - US_9101 @WangCai_1
+      - US_6379 @WangCai_1
+      - US_8008 @WangCai_1
+      - US_7002 @WangCai_1
+      - US_8881 @WangCai_1
+      - US_6679 @WangCai_1
+      - US_8888 @WangCai_1
+      - US_5601 @WangCai_1
+      - 香港_1
+      - 星河
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 港 F | 沪联通中继 | Prepaid Users
-      - 日本 | 3 杭日隧道 STCP GAME
-      - lindoe日本|三网优化|1x
-      - 香港az | 3
-      - 香港-日本 | 5 GAME
-      - 日本04|三网优化|1x
-      - 日本05|三网优化|1x
-      - 东京|优选原生IP|1x
-      - 日本 | 2 Softbank GMAE
-      - 日本01|三网优化|1x
-      - 台湾04|三网优化|原生IP|1x
-      - 台湾04|三网优化|原生IP|1x 2
-      - 日本 | 6 GAME
-      - 印度 | 1 Azure
-      - 日本03|三网优化|1x
+      - SG_15072 @WangCai_1
       - 台湾|三网优化|1x
-      - 新加坡02|三网优化|1x
-      - 香港04|负载均衡|原生IP|1x
-      - 日本05|三网优化|1x 2
-      - 俄罗斯|三网优化|1x
-      - 东京|优选原生IP|1x 2
-      - 新02 1x--@p2psharing
-      - 日本06|三网优化|1x
-      - 澳大利亚 | 1 Azure
-      - 美国2 | 奈飞
-      - 土耳其--@p2psharing
-      - 英国01|三网优化|1x
-      - 美国04|三网优化|1x
-      - 新加坡02|三网优化|1x 2
-      - 英国01|三网优化|1x 2
-      - 日本03|三网优化|1x 2
-      - 香港HKT | 2
-      - 美国01|三网优化|1x
+      - HK_15071 @WangCai_1
+      - 日本05|三网优化|1x
       - 日本02|三网优化|1x
-      - 俄罗斯|三网优化|1x 2
-      - 韩国 | 1
-      - lindoe日本|三网优化|1x 2
-      - 美国 | 1 奈飞
-      - 日本01|三网优化|1x 2
-      - 香港-新加坡 | 1
-      - 台湾|三网优化|1x 2
-      - 新加坡03|三网优化|1x
-      - 印度 | 2 Azure
-      - 德国|三网优化|1x
-      - 马来西亚|三网优化|优选原生IP|1x
-      - 美国01|三网优化|1x 2
-      - 台湾 | 2 Hinet
-      - 香港-美国 | 5
-      - 日本 | 7 Softbank GMAE
-      - 英国02|三网优化|1x
-      - 土耳其 | 2
-      - 日本04|三网优化|1x 2
-      - 加拿大01|三网优化|1x
       - 澳大利亚01|三网优化|1x
-      - 美国04|三网优化|1x 2
-      - 澳大利亚01|三网优化|1x 2
-      - 港 E | 沪联通中继 | Prepaid Users
-      - 澳大利亚02|三网优化|1x
-      - 韩国|优选原生IP|1x
-      - 加拿大01|三网优化|1x 2
-      - 美国02|三网优化|1x
-      - 英国 | 1 Tiktok
-      - 德国|三网优化|1x 2
-      - 英国02|三网优化|1x 2
-      - 日本02|三网优化|1x 2
-      - 香港-日本 | 1
-      - 澳大利亚02|三网优化|1x 2
-      - 韩国 | 2 广港隧道 STCP
+      - 新加坡03|三网优化|1x
+      - 日本01|三网优化|1x
       - 美国03|三网优化|1x
+      - 马来西亚03|三网优化|优选原生IP|1x
+      - 印 A | 沪联通中继 | Prepaid Users
+      - HK星河
+      - 新加坡02|三网优化|1x
+      - 台湾04|三网优化|原生IP|1x
+      - SG_15015 @WangCai_1
+      - 日本|优选原生IP|1x
+      - 东京|优选原生IP|1x
+      - 香港06|负载均衡|原生IP|1x
+      - 新加坡01|三网优化|1x
+      - SG_15085 @WangCai_1
+      - 加拿大01|三网优化|1x
+      - US_15012 @WangCai_1
+      - 港 E | 沪联通中继 | Prepaid Users
+      - ""
+      - 港 D | 沪联通中继 | Prepaid Users
+      - 美国02|三网优化|1x
+      - 新 A | 沪联通中继 | Prepaid Users
+      - 韩国|优选原生IP|1x
       - 英国03|三网优化|1x
-      - 瑞典 A | 沪联通中继 | Prepaid Users
-      - 英国03|三网优化|1x 2
-      - 香港-韩国 | 1
-      - 美国02|三网优化|1x 2
-      - 香港01 1x--@p2psharing
-      - 土耳其 | 1 无限流量！
-      - 美国03|三网优化|1x 2
-      - _VN_越南
-      - 美国 | 4
-      - HKG CM.A/06 x0.3
-      - HKG IEPL.B/02 x1.0
-      - JPN IEPL.A/05 x1.0
-      - HKG IEPL.A/10 x1.0
-      - HKG IEPL.A/03 x1.0
-      - HKG CN2/02 x0.3
-      - HKG CM.A/02 x0.3
-      - JPN IEPL.A/04 x1.0
-      - JPN IEPL.A/02 x1.0
-      - TWN IEPL.A/02 x1.0
-      - HKG IEPL.B/07 x1.0
-      - HKG IEPL.B/10 x1.0
-      - HKG CM.A/01 x0.3
-      - HKG CM.A/07 x0.3
-      - HKG CN2/08 x0.3
-      - HKG CM.B/02 x0.3
-      - SGP IEPL.A/03 x1.0
-      - SGP IEPL.A/01 x1.0
-      - USA IEPL.A/02 x1.0
-      - HKG IEPL.A/07 x1.0
-      - HKG IEPL.B/08 x1.0
-      - SGP CM.B/04 x0.3
-      - HKG IEPL.A/06 x1.0
-      - SGP CM.A/01 x0.3
-      - JPN IEPL.A/01 x1.0
-      - HKG IEPL.B/09 x1.0
-      - JPN CM.A/01 x0.3
-      - HKG CN2/04 x0.3
-      - SGP CM.B/05 x0.3
-      - HKG IEPL.B/05 x1.0
-      - HKG CM.B/06 x0.3
-      - SGP CM.A/05 x0.3
-      - HKG CN2/01 x0.3
-      - TWN IEPL.A/03 x1.0
-      - HKG IEPL.B/04 x1.0
-      - HKG CM.B/05 x0.3
-      - HKG CM.B/08 x0.3
-      - HKG CN2/06 x0.3
-      - USA IEPL.A/05 x1.0
-      - HKG CM.A/03 x0.3
-      - HKG CM.A/04 x0.3
-      - JPN CM.A/02 x0.3
-      - HKG CM.B/07 x0.3
-      - HKG IEPL.A/09 x1.0
-      - SGP CM.A/02 x0.3
-      - SGP CM.B/03 x0.3
-      - SGP CM.B/01 x0.3
-      - HKG CM.A/05 x0.3
-      - SGP CM.B/02 x0.3
-      - SGP CM.A/04 x0.3
-      - 公告|所求皆所愿！所行皆坦途
-      - HKG CM.A/10 x0.3
-      - HKG CN2/07 x0.3
-      - TWN CM.A/01 x1.0
-      - 香港 | Azure ss 4
-      - HKG CM.B/04 x0.3
-      - HKG CM.B/10 x0.3
-      - TWN CM.A/03 x1.0
-      - TWN CM.A/02 x1.0
-      - HKG CN2/03 x0.3
-      - RUS  IEPL.A/01 x1.0
-      - HKG CM.B/09 x0.3
-      - SGP IEPL.A/05 x1.0
-      - HKG CM.A/09 x0.3
-      - HKG CM.A/08 x0.3
-      - TWN IEPL.A/01 x1.0
-      - SGP CM.A/03 x0.3
-      - GBR IEPL.A/01 x1.0
-      - HKG IEPL.A/05 x1.0
-      - SGP IEPL.A/04 x1.0
-      - JPN CM.A/05 x0.3
-      - SGP IEPL.A/02 x1.0
-      - HKG IEPL.B/03 x1.0
-      - HKG CM.B/01 x0.3
-      - JPN CM.A/03 x0.3
-      - HKG CN2/05 x0.3
-      - HKG CN2/09 x0.3
-      - HKG IEPL.A/08 x1.0
-      - JPN CM.A/04 x0.3
-      - HKG IEPL.B/06 x1.0
-      - HKG CN2/10 x0.3
-      - _SE_瑞典
+      - 台湾A | tg频道:@ripaojiedian
+      - 日 A | 粤移动中继 | Prepaid Users
+      - 德国|三网优化|1x
+      - 台湾 A | tg频道:@ripaojiedian
+      - 日本06|三网优化|1x
+      - 美国01|三网优化|1x
+      - 英国01|三网优化|1x
+      - 俄罗斯|三网优化|1x
+      - 英国02|三网优化|1x
+      - JP_15004 @WangCai_1
+      - lindoe日本|三网优化|1x
+      - US_8009 @WangCai_1
+      - US_8882 @WangCai_1
+      - US_8118 @WangCai_1
+      - US_6697 @WangCai_1
+      - US_8000 @WangCai_1
+      - US_9101 @WangCai_1
+      - US_6379 @WangCai_1
+      - US_8008 @WangCai_1
+      - US_7002 @WangCai_1
+      - US_8881 @WangCai_1
+      - US_6679 @WangCai_1
+      - US_8888 @WangCai_1
+      - US_5601 @WangCai_1
+      - 香港_1
+      - 星河
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 港 F | 沪联通中继 | Prepaid Users
-      - 日本 | 3 杭日隧道 STCP GAME
-      - lindoe日本|三网优化|1x
-      - 香港az | 3
-      - 香港-日本 | 5 GAME
-      - 日本04|三网优化|1x
-      - 日本05|三网优化|1x
-      - 东京|优选原生IP|1x
-      - 日本 | 2 Softbank GMAE
-      - 日本01|三网优化|1x
-      - 台湾04|三网优化|原生IP|1x
-      - 台湾04|三网优化|原生IP|1x 2
-      - 日本 | 6 GAME
-      - 印度 | 1 Azure
-      - 日本03|三网优化|1x
+      - SG_15072 @WangCai_1
       - 台湾|三网优化|1x
-      - 新加坡02|三网优化|1x
-      - 香港04|负载均衡|原生IP|1x
-      - 日本05|三网优化|1x 2
-      - 俄罗斯|三网优化|1x
-      - 东京|优选原生IP|1x 2
-      - 新02 1x--@p2psharing
-      - 日本06|三网优化|1x
-      - 澳大利亚 | 1 Azure
-      - 美国2 | 奈飞
-      - 土耳其--@p2psharing
-      - 英国01|三网优化|1x
-      - 美国04|三网优化|1x
-      - 新加坡02|三网优化|1x 2
-      - 英国01|三网优化|1x 2
-      - 日本03|三网优化|1x 2
-      - 香港HKT | 2
-      - 美国01|三网优化|1x
+      - HK_15071 @WangCai_1
+      - 日本05|三网优化|1x
       - 日本02|三网优化|1x
-      - 俄罗斯|三网优化|1x 2
-      - 韩国 | 1
-      - lindoe日本|三网优化|1x 2
-      - 美国 | 1 奈飞
-      - 日本01|三网优化|1x 2
-      - 香港-新加坡 | 1
-      - 台湾|三网优化|1x 2
-      - 新加坡03|三网优化|1x
-      - 印度 | 2 Azure
-      - 德国|三网优化|1x
-      - 马来西亚|三网优化|优选原生IP|1x
-      - 美国01|三网优化|1x 2
-      - 台湾 | 2 Hinet
-      - 香港-美国 | 5
-      - 日本 | 7 Softbank GMAE
-      - 英国02|三网优化|1x
-      - 土耳其 | 2
-      - 日本04|三网优化|1x 2
-      - 加拿大01|三网优化|1x
       - 澳大利亚01|三网优化|1x
-      - 美国04|三网优化|1x 2
-      - 澳大利亚01|三网优化|1x 2
-      - 港 E | 沪联通中继 | Prepaid Users
-      - 澳大利亚02|三网优化|1x
-      - 韩国|优选原生IP|1x
-      - 加拿大01|三网优化|1x 2
-      - 美国02|三网优化|1x
-      - 英国 | 1 Tiktok
-      - 德国|三网优化|1x 2
-      - 英国02|三网优化|1x 2
-      - 日本02|三网优化|1x 2
-      - 香港-日本 | 1
-      - 澳大利亚02|三网优化|1x 2
-      - 韩国 | 2 广港隧道 STCP
+      - 新加坡03|三网优化|1x
+      - 日本01|三网优化|1x
       - 美国03|三网优化|1x
+      - 马来西亚03|三网优化|优选原生IP|1x
+      - 印 A | 沪联通中继 | Prepaid Users
+      - HK星河
+      - 新加坡02|三网优化|1x
+      - 台湾04|三网优化|原生IP|1x
+      - SG_15015 @WangCai_1
+      - 日本|优选原生IP|1x
+      - 东京|优选原生IP|1x
+      - 香港06|负载均衡|原生IP|1x
+      - 新加坡01|三网优化|1x
+      - SG_15085 @WangCai_1
+      - 加拿大01|三网优化|1x
+      - US_15012 @WangCai_1
+      - 港 E | 沪联通中继 | Prepaid Users
+      - ""
+      - 港 D | 沪联通中继 | Prepaid Users
+      - 美国02|三网优化|1x
+      - 新 A | 沪联通中继 | Prepaid Users
+      - 韩国|优选原生IP|1x
       - 英国03|三网优化|1x
-      - 瑞典 A | 沪联通中继 | Prepaid Users
-      - 英国03|三网优化|1x 2
-      - 香港-韩国 | 1
-      - 美国02|三网优化|1x 2
-      - 香港01 1x--@p2psharing
-      - 土耳其 | 1 无限流量！
-      - 美国03|三网优化|1x 2
-      - _VN_越南
-      - 美国 | 4
-      - HKG CM.A/06 x0.3
-      - HKG IEPL.B/02 x1.0
-      - JPN IEPL.A/05 x1.0
-      - HKG IEPL.A/10 x1.0
-      - HKG IEPL.A/03 x1.0
-      - HKG CN2/02 x0.3
-      - HKG CM.A/02 x0.3
-      - JPN IEPL.A/04 x1.0
-      - JPN IEPL.A/02 x1.0
-      - TWN IEPL.A/02 x1.0
-      - HKG IEPL.B/07 x1.0
-      - HKG IEPL.B/10 x1.0
-      - HKG CM.A/01 x0.3
-      - HKG CM.A/07 x0.3
-      - HKG CN2/08 x0.3
-      - HKG CM.B/02 x0.3
-      - SGP IEPL.A/03 x1.0
-      - SGP IEPL.A/01 x1.0
-      - USA IEPL.A/02 x1.0
-      - HKG IEPL.A/07 x1.0
-      - HKG IEPL.B/08 x1.0
-      - SGP CM.B/04 x0.3
-      - HKG IEPL.A/06 x1.0
-      - SGP CM.A/01 x0.3
-      - JPN IEPL.A/01 x1.0
-      - HKG IEPL.B/09 x1.0
-      - JPN CM.A/01 x0.3
-      - HKG CN2/04 x0.3
-      - SGP CM.B/05 x0.3
-      - HKG IEPL.B/05 x1.0
-      - HKG CM.B/06 x0.3
-      - SGP CM.A/05 x0.3
-      - HKG CN2/01 x0.3
-      - TWN IEPL.A/03 x1.0
-      - HKG IEPL.B/04 x1.0
-      - HKG CM.B/05 x0.3
-      - HKG CM.B/08 x0.3
-      - HKG CN2/06 x0.3
-      - USA IEPL.A/05 x1.0
-      - HKG CM.A/03 x0.3
-      - HKG CM.A/04 x0.3
-      - JPN CM.A/02 x0.3
-      - HKG CM.B/07 x0.3
-      - HKG IEPL.A/09 x1.0
-      - SGP CM.A/02 x0.3
-      - SGP CM.B/03 x0.3
-      - SGP CM.B/01 x0.3
-      - HKG CM.A/05 x0.3
-      - SGP CM.B/02 x0.3
-      - SGP CM.A/04 x0.3
-      - 公告|所求皆所愿！所行皆坦途
-      - HKG CM.A/10 x0.3
-      - HKG CN2/07 x0.3
-      - TWN CM.A/01 x1.0
-      - 香港 | Azure ss 4
-      - HKG CM.B/04 x0.3
-      - HKG CM.B/10 x0.3
-      - TWN CM.A/03 x1.0
-      - TWN CM.A/02 x1.0
-      - HKG CN2/03 x0.3
-      - RUS  IEPL.A/01 x1.0
-      - HKG CM.B/09 x0.3
-      - SGP IEPL.A/05 x1.0
-      - HKG CM.A/09 x0.3
-      - HKG CM.A/08 x0.3
-      - TWN IEPL.A/01 x1.0
-      - SGP CM.A/03 x0.3
-      - GBR IEPL.A/01 x1.0
-      - HKG IEPL.A/05 x1.0
-      - SGP IEPL.A/04 x1.0
-      - JPN CM.A/05 x0.3
-      - SGP IEPL.A/02 x1.0
-      - HKG IEPL.B/03 x1.0
-      - HKG CM.B/01 x0.3
-      - JPN CM.A/03 x0.3
-      - HKG CN2/05 x0.3
-      - HKG CN2/09 x0.3
-      - HKG IEPL.A/08 x1.0
-      - JPN CM.A/04 x0.3
-      - HKG IEPL.B/06 x1.0
-      - HKG CN2/10 x0.3
-      - _SE_瑞典
+      - 台湾A | tg频道:@ripaojiedian
+      - 日 A | 粤移动中继 | Prepaid Users
+      - 德国|三网优化|1x
+      - 台湾 A | tg频道:@ripaojiedian
+      - 日本06|三网优化|1x
+      - 美国01|三网优化|1x
+      - 英国01|三网优化|1x
+      - 俄罗斯|三网优化|1x
+      - 英国02|三网优化|1x
+      - JP_15004 @WangCai_1
+      - lindoe日本|三网优化|1x
+      - US_8009 @WangCai_1
+      - US_8882 @WangCai_1
+      - US_8118 @WangCai_1
+      - US_6697 @WangCai_1
+      - US_8000 @WangCai_1
+      - US_9101 @WangCai_1
+      - US_6379 @WangCai_1
+      - US_8008 @WangCai_1
+      - US_7002 @WangCai_1
+      - US_8881 @WangCai_1
+      - US_6679 @WangCai_1
+      - US_8888 @WangCai_1
+      - US_5601 @WangCai_1
+      - 香港_1
+      - 星河
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -684,689 +260,255 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 港 F | 沪联通中继 | Prepaid Users
-      - 日本 | 3 杭日隧道 STCP GAME
-      - lindoe日本|三网优化|1x
-      - 香港az | 3
-      - 香港-日本 | 5 GAME
-      - 日本04|三网优化|1x
-      - 日本05|三网优化|1x
-      - 东京|优选原生IP|1x
-      - 日本 | 2 Softbank GMAE
-      - 日本01|三网优化|1x
-      - 台湾04|三网优化|原生IP|1x
-      - 台湾04|三网优化|原生IP|1x 2
-      - 日本 | 6 GAME
-      - 印度 | 1 Azure
-      - 日本03|三网优化|1x
+      - SG_15072 @WangCai_1
       - 台湾|三网优化|1x
-      - 新加坡02|三网优化|1x
-      - 香港04|负载均衡|原生IP|1x
-      - 日本05|三网优化|1x 2
-      - 俄罗斯|三网优化|1x
-      - 东京|优选原生IP|1x 2
-      - 新02 1x--@p2psharing
-      - 日本06|三网优化|1x
-      - 澳大利亚 | 1 Azure
-      - 美国2 | 奈飞
-      - 土耳其--@p2psharing
-      - 英国01|三网优化|1x
-      - 美国04|三网优化|1x
-      - 新加坡02|三网优化|1x 2
-      - 英国01|三网优化|1x 2
-      - 日本03|三网优化|1x 2
-      - 香港HKT | 2
-      - 美国01|三网优化|1x
+      - HK_15071 @WangCai_1
+      - 日本05|三网优化|1x
       - 日本02|三网优化|1x
-      - 俄罗斯|三网优化|1x 2
-      - 韩国 | 1
-      - lindoe日本|三网优化|1x 2
-      - 美国 | 1 奈飞
-      - 日本01|三网优化|1x 2
-      - 香港-新加坡 | 1
-      - 台湾|三网优化|1x 2
-      - 新加坡03|三网优化|1x
-      - 印度 | 2 Azure
-      - 德国|三网优化|1x
-      - 马来西亚|三网优化|优选原生IP|1x
-      - 美国01|三网优化|1x 2
-      - 台湾 | 2 Hinet
-      - 香港-美国 | 5
-      - 日本 | 7 Softbank GMAE
-      - 英国02|三网优化|1x
-      - 土耳其 | 2
-      - 日本04|三网优化|1x 2
-      - 加拿大01|三网优化|1x
       - 澳大利亚01|三网优化|1x
-      - 美国04|三网优化|1x 2
-      - 澳大利亚01|三网优化|1x 2
-      - 港 E | 沪联通中继 | Prepaid Users
-      - 澳大利亚02|三网优化|1x
-      - 韩国|优选原生IP|1x
-      - 加拿大01|三网优化|1x 2
-      - 美国02|三网优化|1x
-      - 英国 | 1 Tiktok
-      - 德国|三网优化|1x 2
-      - 英国02|三网优化|1x 2
-      - 日本02|三网优化|1x 2
-      - 香港-日本 | 1
-      - 澳大利亚02|三网优化|1x 2
-      - 韩国 | 2 广港隧道 STCP
+      - 新加坡03|三网优化|1x
+      - 日本01|三网优化|1x
       - 美国03|三网优化|1x
+      - 马来西亚03|三网优化|优选原生IP|1x
+      - 印 A | 沪联通中继 | Prepaid Users
+      - HK星河
+      - 新加坡02|三网优化|1x
+      - 台湾04|三网优化|原生IP|1x
+      - SG_15015 @WangCai_1
+      - 日本|优选原生IP|1x
+      - 东京|优选原生IP|1x
+      - 香港06|负载均衡|原生IP|1x
+      - 新加坡01|三网优化|1x
+      - SG_15085 @WangCai_1
+      - 加拿大01|三网优化|1x
+      - US_15012 @WangCai_1
+      - 港 E | 沪联通中继 | Prepaid Users
+      - ""
+      - 港 D | 沪联通中继 | Prepaid Users
+      - 美国02|三网优化|1x
+      - 新 A | 沪联通中继 | Prepaid Users
+      - 韩国|优选原生IP|1x
       - 英国03|三网优化|1x
-      - 瑞典 A | 沪联通中继 | Prepaid Users
-      - 英国03|三网优化|1x 2
-      - 香港-韩国 | 1
-      - 美国02|三网优化|1x 2
-      - 香港01 1x--@p2psharing
-      - 土耳其 | 1 无限流量！
-      - 美国03|三网优化|1x 2
-      - _VN_越南
-      - 美国 | 4
-      - HKG CM.A/06 x0.3
-      - HKG IEPL.B/02 x1.0
-      - JPN IEPL.A/05 x1.0
-      - HKG IEPL.A/10 x1.0
-      - HKG IEPL.A/03 x1.0
-      - HKG CN2/02 x0.3
-      - HKG CM.A/02 x0.3
-      - JPN IEPL.A/04 x1.0
-      - JPN IEPL.A/02 x1.0
-      - TWN IEPL.A/02 x1.0
-      - HKG IEPL.B/07 x1.0
-      - HKG IEPL.B/10 x1.0
-      - HKG CM.A/01 x0.3
-      - HKG CM.A/07 x0.3
-      - HKG CN2/08 x0.3
-      - HKG CM.B/02 x0.3
-      - SGP IEPL.A/03 x1.0
-      - SGP IEPL.A/01 x1.0
-      - USA IEPL.A/02 x1.0
-      - HKG IEPL.A/07 x1.0
-      - HKG IEPL.B/08 x1.0
-      - SGP CM.B/04 x0.3
-      - HKG IEPL.A/06 x1.0
-      - SGP CM.A/01 x0.3
-      - JPN IEPL.A/01 x1.0
-      - HKG IEPL.B/09 x1.0
-      - JPN CM.A/01 x0.3
-      - HKG CN2/04 x0.3
-      - SGP CM.B/05 x0.3
-      - HKG IEPL.B/05 x1.0
-      - HKG CM.B/06 x0.3
-      - SGP CM.A/05 x0.3
-      - HKG CN2/01 x0.3
-      - TWN IEPL.A/03 x1.0
-      - HKG IEPL.B/04 x1.0
-      - HKG CM.B/05 x0.3
-      - HKG CM.B/08 x0.3
-      - HKG CN2/06 x0.3
-      - USA IEPL.A/05 x1.0
-      - HKG CM.A/03 x0.3
-      - HKG CM.A/04 x0.3
-      - JPN CM.A/02 x0.3
-      - HKG CM.B/07 x0.3
-      - HKG IEPL.A/09 x1.0
-      - SGP CM.A/02 x0.3
-      - SGP CM.B/03 x0.3
-      - SGP CM.B/01 x0.3
-      - HKG CM.A/05 x0.3
-      - SGP CM.B/02 x0.3
-      - SGP CM.A/04 x0.3
-      - 公告|所求皆所愿！所行皆坦途
-      - HKG CM.A/10 x0.3
-      - HKG CN2/07 x0.3
-      - TWN CM.A/01 x1.0
-      - 香港 | Azure ss 4
-      - HKG CM.B/04 x0.3
-      - HKG CM.B/10 x0.3
-      - TWN CM.A/03 x1.0
-      - TWN CM.A/02 x1.0
-      - HKG CN2/03 x0.3
-      - RUS  IEPL.A/01 x1.0
-      - HKG CM.B/09 x0.3
-      - SGP IEPL.A/05 x1.0
-      - HKG CM.A/09 x0.3
-      - HKG CM.A/08 x0.3
-      - TWN IEPL.A/01 x1.0
-      - SGP CM.A/03 x0.3
-      - GBR IEPL.A/01 x1.0
-      - HKG IEPL.A/05 x1.0
-      - SGP IEPL.A/04 x1.0
-      - JPN CM.A/05 x0.3
-      - SGP IEPL.A/02 x1.0
-      - HKG IEPL.B/03 x1.0
-      - HKG CM.B/01 x0.3
-      - JPN CM.A/03 x0.3
-      - HKG CN2/05 x0.3
-      - HKG CN2/09 x0.3
-      - HKG IEPL.A/08 x1.0
-      - JPN CM.A/04 x0.3
-      - HKG IEPL.B/06 x1.0
-      - HKG CN2/10 x0.3
-      - _SE_瑞典
+      - 台湾A | tg频道:@ripaojiedian
+      - 日 A | 粤移动中继 | Prepaid Users
+      - 德国|三网优化|1x
+      - 台湾 A | tg频道:@ripaojiedian
+      - 日本06|三网优化|1x
+      - 美国01|三网优化|1x
+      - 英国01|三网优化|1x
+      - 俄罗斯|三网优化|1x
+      - 英国02|三网优化|1x
+      - JP_15004 @WangCai_1
+      - lindoe日本|三网优化|1x
+      - US_8009 @WangCai_1
+      - US_8882 @WangCai_1
+      - US_8118 @WangCai_1
+      - US_6697 @WangCai_1
+      - US_8000 @WangCai_1
+      - US_9101 @WangCai_1
+      - US_6379 @WangCai_1
+      - US_8008 @WangCai_1
+      - US_7002 @WangCai_1
+      - US_8881 @WangCai_1
+      - US_6679 @WangCai_1
+      - US_8888 @WangCai_1
+      - US_5601 @WangCai_1
+      - 香港_1
+      - 星河
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 港 F | 沪联通中继 | Prepaid Users
-      - 香港az | 3
-      - 香港-日本 | 5 GAME
-      - 台湾04|三网优化|原生IP|1x
-      - 台湾04|三网优化|原生IP|1x 2
       - 台湾|三网优化|1x
-      - 香港04|负载均衡|原生IP|1x
-      - 香港HKT | 2
-      - 香港-新加坡 | 1
-      - 台湾|三网优化|1x 2
-      - 台湾 | 2 Hinet
-      - 香港-美国 | 5
+      - 台湾04|三网优化|原生IP|1x
+      - 香港06|负载均衡|原生IP|1x
       - 港 E | 沪联通中继 | Prepaid Users
-      - 香港-日本 | 1
-      - 韩国 | 2 广港隧道 STCP
-      - 香港-韩国 | 1
-      - 香港01 1x--@p2psharing
-      - 香港 | Azure ss 4
+      - 港 D | 沪联通中继 | Prepaid Users
+      - 台湾A | tg频道:@ripaojiedian
+      - 台湾 A | tg频道:@ripaojiedian
+      - 香港_1
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 港 F | 沪联通中继 | Prepaid Users
-      - 日本 | 3 杭日隧道 STCP GAME
-      - lindoe日本|三网优化|1x
-      - 香港az | 3
-      - 香港-日本 | 5 GAME
-      - 日本04|三网优化|1x
-      - 日本05|三网优化|1x
-      - 东京|优选原生IP|1x
-      - 日本 | 2 Softbank GMAE
-      - 日本01|三网优化|1x
-      - 台湾04|三网优化|原生IP|1x
-      - 台湾04|三网优化|原生IP|1x 2
-      - 日本 | 6 GAME
-      - 印度 | 1 Azure
-      - 日本03|三网优化|1x
+      - SG_15072 @WangCai_1
       - 台湾|三网优化|1x
-      - 新加坡02|三网优化|1x
-      - 香港04|负载均衡|原生IP|1x
-      - 日本05|三网优化|1x 2
-      - 俄罗斯|三网优化|1x
-      - 东京|优选原生IP|1x 2
-      - 新02 1x--@p2psharing
-      - 日本06|三网优化|1x
-      - 澳大利亚 | 1 Azure
-      - 美国2 | 奈飞
-      - 土耳其--@p2psharing
-      - 英国01|三网优化|1x
-      - 美国04|三网优化|1x
-      - 新加坡02|三网优化|1x 2
-      - 英国01|三网优化|1x 2
-      - 日本03|三网优化|1x 2
-      - 香港HKT | 2
-      - 美国01|三网优化|1x
+      - HK_15071 @WangCai_1
+      - 日本05|三网优化|1x
       - 日本02|三网优化|1x
-      - 俄罗斯|三网优化|1x 2
-      - 韩国 | 1
-      - lindoe日本|三网优化|1x 2
-      - 美国 | 1 奈飞
-      - 日本01|三网优化|1x 2
-      - 香港-新加坡 | 1
-      - 台湾|三网优化|1x 2
-      - 新加坡03|三网优化|1x
-      - 印度 | 2 Azure
-      - 德国|三网优化|1x
-      - 马来西亚|三网优化|优选原生IP|1x
-      - 美国01|三网优化|1x 2
-      - 台湾 | 2 Hinet
-      - 香港-美国 | 5
-      - 日本 | 7 Softbank GMAE
-      - 英国02|三网优化|1x
-      - 土耳其 | 2
-      - 日本04|三网优化|1x 2
-      - 加拿大01|三网优化|1x
       - 澳大利亚01|三网优化|1x
-      - 美国04|三网优化|1x 2
-      - 澳大利亚01|三网优化|1x 2
-      - 港 E | 沪联通中继 | Prepaid Users
-      - 澳大利亚02|三网优化|1x
-      - 韩国|优选原生IP|1x
-      - 加拿大01|三网优化|1x 2
-      - 美国02|三网优化|1x
-      - 英国 | 1 Tiktok
-      - 德国|三网优化|1x 2
-      - 英国02|三网优化|1x 2
-      - 日本02|三网优化|1x 2
-      - 香港-日本 | 1
-      - 澳大利亚02|三网优化|1x 2
-      - 韩国 | 2 广港隧道 STCP
+      - 新加坡03|三网优化|1x
+      - 日本01|三网优化|1x
       - 美国03|三网优化|1x
+      - 马来西亚03|三网优化|优选原生IP|1x
+      - 印 A | 沪联通中继 | Prepaid Users
+      - HK星河
+      - 新加坡02|三网优化|1x
+      - 台湾04|三网优化|原生IP|1x
+      - SG_15015 @WangCai_1
+      - 日本|优选原生IP|1x
+      - 东京|优选原生IP|1x
+      - 香港06|负载均衡|原生IP|1x
+      - 新加坡01|三网优化|1x
+      - SG_15085 @WangCai_1
+      - 加拿大01|三网优化|1x
+      - US_15012 @WangCai_1
+      - 港 E | 沪联通中继 | Prepaid Users
+      - ""
+      - 港 D | 沪联通中继 | Prepaid Users
+      - 美国02|三网优化|1x
+      - 新 A | 沪联通中继 | Prepaid Users
+      - 韩国|优选原生IP|1x
       - 英国03|三网优化|1x
-      - 瑞典 A | 沪联通中继 | Prepaid Users
-      - 英国03|三网优化|1x 2
-      - 香港-韩国 | 1
-      - 美国02|三网优化|1x 2
-      - 香港01 1x--@p2psharing
-      - 土耳其 | 1 无限流量！
-      - 美国03|三网优化|1x 2
-      - _VN_越南
-      - 美国 | 4
-      - HKG CM.A/06 x0.3
-      - HKG IEPL.B/02 x1.0
-      - JPN IEPL.A/05 x1.0
-      - HKG IEPL.A/10 x1.0
-      - HKG IEPL.A/03 x1.0
-      - HKG CN2/02 x0.3
-      - HKG CM.A/02 x0.3
-      - JPN IEPL.A/04 x1.0
-      - JPN IEPL.A/02 x1.0
-      - TWN IEPL.A/02 x1.0
-      - HKG IEPL.B/07 x1.0
-      - HKG IEPL.B/10 x1.0
-      - HKG CM.A/01 x0.3
-      - HKG CM.A/07 x0.3
-      - HKG CN2/08 x0.3
-      - HKG CM.B/02 x0.3
-      - SGP IEPL.A/03 x1.0
-      - SGP IEPL.A/01 x1.0
-      - USA IEPL.A/02 x1.0
-      - HKG IEPL.A/07 x1.0
-      - HKG IEPL.B/08 x1.0
-      - SGP CM.B/04 x0.3
-      - HKG IEPL.A/06 x1.0
-      - SGP CM.A/01 x0.3
-      - JPN IEPL.A/01 x1.0
-      - HKG IEPL.B/09 x1.0
-      - JPN CM.A/01 x0.3
-      - HKG CN2/04 x0.3
-      - SGP CM.B/05 x0.3
-      - HKG IEPL.B/05 x1.0
-      - HKG CM.B/06 x0.3
-      - SGP CM.A/05 x0.3
-      - HKG CN2/01 x0.3
-      - TWN IEPL.A/03 x1.0
-      - HKG IEPL.B/04 x1.0
-      - HKG CM.B/05 x0.3
-      - HKG CM.B/08 x0.3
-      - HKG CN2/06 x0.3
-      - USA IEPL.A/05 x1.0
-      - HKG CM.A/03 x0.3
-      - HKG CM.A/04 x0.3
-      - JPN CM.A/02 x0.3
-      - HKG CM.B/07 x0.3
-      - HKG IEPL.A/09 x1.0
-      - SGP CM.A/02 x0.3
-      - SGP CM.B/03 x0.3
-      - SGP CM.B/01 x0.3
-      - HKG CM.A/05 x0.3
-      - SGP CM.B/02 x0.3
-      - SGP CM.A/04 x0.3
-      - 公告|所求皆所愿！所行皆坦途
-      - HKG CM.A/10 x0.3
-      - HKG CN2/07 x0.3
-      - TWN CM.A/01 x1.0
-      - 香港 | Azure ss 4
-      - HKG CM.B/04 x0.3
-      - HKG CM.B/10 x0.3
-      - TWN CM.A/03 x1.0
-      - TWN CM.A/02 x1.0
-      - HKG CN2/03 x0.3
-      - RUS  IEPL.A/01 x1.0
-      - HKG CM.B/09 x0.3
-      - SGP IEPL.A/05 x1.0
-      - HKG CM.A/09 x0.3
-      - HKG CM.A/08 x0.3
-      - TWN IEPL.A/01 x1.0
-      - SGP CM.A/03 x0.3
-      - GBR IEPL.A/01 x1.0
-      - HKG IEPL.A/05 x1.0
-      - SGP IEPL.A/04 x1.0
-      - JPN CM.A/05 x0.3
-      - SGP IEPL.A/02 x1.0
-      - HKG IEPL.B/03 x1.0
-      - HKG CM.B/01 x0.3
-      - JPN CM.A/03 x0.3
-      - HKG CN2/05 x0.3
-      - HKG CN2/09 x0.3
-      - HKG IEPL.A/08 x1.0
-      - JPN CM.A/04 x0.3
-      - HKG IEPL.B/06 x1.0
-      - HKG CN2/10 x0.3
-      - _SE_瑞典
+      - 台湾A | tg频道:@ripaojiedian
+      - 日 A | 粤移动中继 | Prepaid Users
+      - 德国|三网优化|1x
+      - 台湾 A | tg频道:@ripaojiedian
+      - 日本06|三网优化|1x
+      - 美国01|三网优化|1x
+      - 英国01|三网优化|1x
+      - 俄罗斯|三网优化|1x
+      - 英国02|三网优化|1x
+      - JP_15004 @WangCai_1
+      - lindoe日本|三网优化|1x
+      - US_8009 @WangCai_1
+      - US_8882 @WangCai_1
+      - US_8118 @WangCai_1
+      - US_6697 @WangCai_1
+      - US_8000 @WangCai_1
+      - US_9101 @WangCai_1
+      - US_6379 @WangCai_1
+      - US_8008 @WangCai_1
+      - US_7002 @WangCai_1
+      - US_8881 @WangCai_1
+      - US_6679 @WangCai_1
+      - US_8888 @WangCai_1
+      - US_5601 @WangCai_1
+      - 香港_1
+      - 星河
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 港 F | 沪联通中继 | Prepaid Users
-      - 日本 | 3 杭日隧道 STCP GAME
-      - lindoe日本|三网优化|1x
-      - 香港az | 3
-      - 香港-日本 | 5 GAME
-      - 日本04|三网优化|1x
-      - 日本05|三网优化|1x
-      - 东京|优选原生IP|1x
-      - 日本 | 2 Softbank GMAE
-      - 日本01|三网优化|1x
-      - 台湾04|三网优化|原生IP|1x
-      - 台湾04|三网优化|原生IP|1x 2
-      - 日本 | 6 GAME
-      - 印度 | 1 Azure
-      - 日本03|三网优化|1x
+      - SG_15072 @WangCai_1
       - 台湾|三网优化|1x
-      - 新加坡02|三网优化|1x
-      - 香港04|负载均衡|原生IP|1x
-      - 日本05|三网优化|1x 2
-      - 俄罗斯|三网优化|1x
-      - 东京|优选原生IP|1x 2
-      - 新02 1x--@p2psharing
-      - 日本06|三网优化|1x
-      - 澳大利亚 | 1 Azure
-      - 美国2 | 奈飞
-      - 土耳其--@p2psharing
-      - 英国01|三网优化|1x
-      - 美国04|三网优化|1x
-      - 新加坡02|三网优化|1x 2
-      - 英国01|三网优化|1x 2
-      - 日本03|三网优化|1x 2
-      - 香港HKT | 2
-      - 美国01|三网优化|1x
+      - HK_15071 @WangCai_1
+      - 日本05|三网优化|1x
       - 日本02|三网优化|1x
-      - 俄罗斯|三网优化|1x 2
-      - 韩国 | 1
-      - lindoe日本|三网优化|1x 2
-      - 美国 | 1 奈飞
-      - 日本01|三网优化|1x 2
-      - 香港-新加坡 | 1
-      - 台湾|三网优化|1x 2
-      - 新加坡03|三网优化|1x
-      - 印度 | 2 Azure
-      - 德国|三网优化|1x
-      - 马来西亚|三网优化|优选原生IP|1x
-      - 美国01|三网优化|1x 2
-      - 台湾 | 2 Hinet
-      - 香港-美国 | 5
-      - 日本 | 7 Softbank GMAE
-      - 英国02|三网优化|1x
-      - 土耳其 | 2
-      - 日本04|三网优化|1x 2
-      - 加拿大01|三网优化|1x
       - 澳大利亚01|三网优化|1x
-      - 美国04|三网优化|1x 2
-      - 澳大利亚01|三网优化|1x 2
-      - 港 E | 沪联通中继 | Prepaid Users
-      - 澳大利亚02|三网优化|1x
-      - 韩国|优选原生IP|1x
-      - 加拿大01|三网优化|1x 2
-      - 美国02|三网优化|1x
-      - 英国 | 1 Tiktok
-      - 德国|三网优化|1x 2
-      - 英国02|三网优化|1x 2
-      - 日本02|三网优化|1x 2
-      - 香港-日本 | 1
-      - 澳大利亚02|三网优化|1x 2
-      - 韩国 | 2 广港隧道 STCP
+      - 新加坡03|三网优化|1x
+      - 日本01|三网优化|1x
       - 美国03|三网优化|1x
+      - 马来西亚03|三网优化|优选原生IP|1x
+      - 印 A | 沪联通中继 | Prepaid Users
+      - HK星河
+      - 新加坡02|三网优化|1x
+      - 台湾04|三网优化|原生IP|1x
+      - SG_15015 @WangCai_1
+      - 日本|优选原生IP|1x
+      - 东京|优选原生IP|1x
+      - 香港06|负载均衡|原生IP|1x
+      - 新加坡01|三网优化|1x
+      - SG_15085 @WangCai_1
+      - 加拿大01|三网优化|1x
+      - US_15012 @WangCai_1
+      - 港 E | 沪联通中继 | Prepaid Users
+      - ""
+      - 港 D | 沪联通中继 | Prepaid Users
+      - 美国02|三网优化|1x
+      - 新 A | 沪联通中继 | Prepaid Users
+      - 韩国|优选原生IP|1x
       - 英国03|三网优化|1x
-      - 瑞典 A | 沪联通中继 | Prepaid Users
-      - 英国03|三网优化|1x 2
-      - 香港-韩国 | 1
-      - 美国02|三网优化|1x 2
-      - 香港01 1x--@p2psharing
-      - 土耳其 | 1 无限流量！
-      - 美国03|三网优化|1x 2
-      - _VN_越南
-      - 美国 | 4
-      - HKG CM.A/06 x0.3
-      - HKG IEPL.B/02 x1.0
-      - JPN IEPL.A/05 x1.0
-      - HKG IEPL.A/10 x1.0
-      - HKG IEPL.A/03 x1.0
-      - HKG CN2/02 x0.3
-      - HKG CM.A/02 x0.3
-      - JPN IEPL.A/04 x1.0
-      - JPN IEPL.A/02 x1.0
-      - TWN IEPL.A/02 x1.0
-      - HKG IEPL.B/07 x1.0
-      - HKG IEPL.B/10 x1.0
-      - HKG CM.A/01 x0.3
-      - HKG CM.A/07 x0.3
-      - HKG CN2/08 x0.3
-      - HKG CM.B/02 x0.3
-      - SGP IEPL.A/03 x1.0
-      - SGP IEPL.A/01 x1.0
-      - USA IEPL.A/02 x1.0
-      - HKG IEPL.A/07 x1.0
-      - HKG IEPL.B/08 x1.0
-      - SGP CM.B/04 x0.3
-      - HKG IEPL.A/06 x1.0
-      - SGP CM.A/01 x0.3
-      - JPN IEPL.A/01 x1.0
-      - HKG IEPL.B/09 x1.0
-      - JPN CM.A/01 x0.3
-      - HKG CN2/04 x0.3
-      - SGP CM.B/05 x0.3
-      - HKG IEPL.B/05 x1.0
-      - HKG CM.B/06 x0.3
-      - SGP CM.A/05 x0.3
-      - HKG CN2/01 x0.3
-      - TWN IEPL.A/03 x1.0
-      - HKG IEPL.B/04 x1.0
-      - HKG CM.B/05 x0.3
-      - HKG CM.B/08 x0.3
-      - HKG CN2/06 x0.3
-      - USA IEPL.A/05 x1.0
-      - HKG CM.A/03 x0.3
-      - HKG CM.A/04 x0.3
-      - JPN CM.A/02 x0.3
-      - HKG CM.B/07 x0.3
-      - HKG IEPL.A/09 x1.0
-      - SGP CM.A/02 x0.3
-      - SGP CM.B/03 x0.3
-      - SGP CM.B/01 x0.3
-      - HKG CM.A/05 x0.3
-      - SGP CM.B/02 x0.3
-      - SGP CM.A/04 x0.3
-      - 公告|所求皆所愿！所行皆坦途
-      - HKG CM.A/10 x0.3
-      - HKG CN2/07 x0.3
-      - TWN CM.A/01 x1.0
-      - 香港 | Azure ss 4
-      - HKG CM.B/04 x0.3
-      - HKG CM.B/10 x0.3
-      - TWN CM.A/03 x1.0
-      - TWN CM.A/02 x1.0
-      - HKG CN2/03 x0.3
-      - RUS  IEPL.A/01 x1.0
-      - HKG CM.B/09 x0.3
-      - SGP IEPL.A/05 x1.0
-      - HKG CM.A/09 x0.3
-      - HKG CM.A/08 x0.3
-      - TWN IEPL.A/01 x1.0
-      - SGP CM.A/03 x0.3
-      - GBR IEPL.A/01 x1.0
-      - HKG IEPL.A/05 x1.0
-      - SGP IEPL.A/04 x1.0
-      - JPN CM.A/05 x0.3
-      - SGP IEPL.A/02 x1.0
-      - HKG IEPL.B/03 x1.0
-      - HKG CM.B/01 x0.3
-      - JPN CM.A/03 x0.3
-      - HKG CN2/05 x0.3
-      - HKG CN2/09 x0.3
-      - HKG IEPL.A/08 x1.0
-      - JPN CM.A/04 x0.3
-      - HKG IEPL.B/06 x1.0
-      - HKG CN2/10 x0.3
-      - _SE_瑞典
+      - 台湾A | tg频道:@ripaojiedian
+      - 日 A | 粤移动中继 | Prepaid Users
+      - 德国|三网优化|1x
+      - 台湾 A | tg频道:@ripaojiedian
+      - 日本06|三网优化|1x
+      - 美国01|三网优化|1x
+      - 英国01|三网优化|1x
+      - 俄罗斯|三网优化|1x
+      - 英国02|三网优化|1x
+      - JP_15004 @WangCai_1
+      - lindoe日本|三网优化|1x
+      - US_8009 @WangCai_1
+      - US_8882 @WangCai_1
+      - US_8118 @WangCai_1
+      - US_6697 @WangCai_1
+      - US_8000 @WangCai_1
+      - US_9101 @WangCai_1
+      - US_6379 @WangCai_1
+      - US_8008 @WangCai_1
+      - US_7002 @WangCai_1
+      - US_8881 @WangCai_1
+      - US_6679 @WangCai_1
+      - US_8888 @WangCai_1
+      - US_5601 @WangCai_1
+      - 香港_1
+      - 星河
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 港 F | 沪联通中继 | Prepaid Users
-      - 日本 | 3 杭日隧道 STCP GAME
-      - lindoe日本|三网优化|1x
-      - 香港az | 3
-      - 香港-日本 | 5 GAME
-      - 日本04|三网优化|1x
-      - 日本05|三网优化|1x
-      - 东京|优选原生IP|1x
-      - 日本 | 2 Softbank GMAE
-      - 日本01|三网优化|1x
-      - 台湾04|三网优化|原生IP|1x
-      - 台湾04|三网优化|原生IP|1x 2
-      - 日本 | 6 GAME
-      - 印度 | 1 Azure
-      - 日本03|三网优化|1x
+      - SG_15072 @WangCai_1
       - 台湾|三网优化|1x
-      - 新加坡02|三网优化|1x
-      - 香港04|负载均衡|原生IP|1x
-      - 日本05|三网优化|1x 2
-      - 俄罗斯|三网优化|1x
-      - 东京|优选原生IP|1x 2
-      - 新02 1x--@p2psharing
-      - 日本06|三网优化|1x
-      - 澳大利亚 | 1 Azure
-      - 美国2 | 奈飞
-      - 土耳其--@p2psharing
-      - 英国01|三网优化|1x
-      - 美国04|三网优化|1x
-      - 新加坡02|三网优化|1x 2
-      - 英国01|三网优化|1x 2
-      - 日本03|三网优化|1x 2
-      - 香港HKT | 2
-      - 美国01|三网优化|1x
+      - HK_15071 @WangCai_1
+      - 日本05|三网优化|1x
       - 日本02|三网优化|1x
-      - 俄罗斯|三网优化|1x 2
-      - 韩国 | 1
-      - lindoe日本|三网优化|1x 2
-      - 美国 | 1 奈飞
-      - 日本01|三网优化|1x 2
-      - 香港-新加坡 | 1
-      - 台湾|三网优化|1x 2
-      - 新加坡03|三网优化|1x
-      - 印度 | 2 Azure
-      - 德国|三网优化|1x
-      - 马来西亚|三网优化|优选原生IP|1x
-      - 美国01|三网优化|1x 2
-      - 台湾 | 2 Hinet
-      - 香港-美国 | 5
-      - 日本 | 7 Softbank GMAE
-      - 英国02|三网优化|1x
-      - 土耳其 | 2
-      - 日本04|三网优化|1x 2
-      - 加拿大01|三网优化|1x
       - 澳大利亚01|三网优化|1x
-      - 美国04|三网优化|1x 2
-      - 澳大利亚01|三网优化|1x 2
-      - 港 E | 沪联通中继 | Prepaid Users
-      - 澳大利亚02|三网优化|1x
-      - 韩国|优选原生IP|1x
-      - 加拿大01|三网优化|1x 2
-      - 美国02|三网优化|1x
-      - 英国 | 1 Tiktok
-      - 德国|三网优化|1x 2
-      - 英国02|三网优化|1x 2
-      - 日本02|三网优化|1x 2
-      - 香港-日本 | 1
-      - 澳大利亚02|三网优化|1x 2
-      - 韩国 | 2 广港隧道 STCP
+      - 新加坡03|三网优化|1x
+      - 日本01|三网优化|1x
       - 美国03|三网优化|1x
+      - 马来西亚03|三网优化|优选原生IP|1x
+      - 印 A | 沪联通中继 | Prepaid Users
+      - HK星河
+      - 新加坡02|三网优化|1x
+      - 台湾04|三网优化|原生IP|1x
+      - SG_15015 @WangCai_1
+      - 日本|优选原生IP|1x
+      - 东京|优选原生IP|1x
+      - 香港06|负载均衡|原生IP|1x
+      - 新加坡01|三网优化|1x
+      - SG_15085 @WangCai_1
+      - 加拿大01|三网优化|1x
+      - US_15012 @WangCai_1
+      - 港 E | 沪联通中继 | Prepaid Users
+      - ""
+      - 港 D | 沪联通中继 | Prepaid Users
+      - 美国02|三网优化|1x
+      - 新 A | 沪联通中继 | Prepaid Users
+      - 韩国|优选原生IP|1x
       - 英国03|三网优化|1x
-      - 瑞典 A | 沪联通中继 | Prepaid Users
-      - 英国03|三网优化|1x 2
-      - 香港-韩国 | 1
-      - 美国02|三网优化|1x 2
-      - 香港01 1x--@p2psharing
-      - 土耳其 | 1 无限流量！
-      - 美国03|三网优化|1x 2
-      - _VN_越南
-      - 美国 | 4
-      - HKG CM.A/06 x0.3
-      - HKG IEPL.B/02 x1.0
-      - JPN IEPL.A/05 x1.0
-      - HKG IEPL.A/10 x1.0
-      - HKG IEPL.A/03 x1.0
-      - HKG CN2/02 x0.3
-      - HKG CM.A/02 x0.3
-      - JPN IEPL.A/04 x1.0
-      - JPN IEPL.A/02 x1.0
-      - TWN IEPL.A/02 x1.0
-      - HKG IEPL.B/07 x1.0
-      - HKG IEPL.B/10 x1.0
-      - HKG CM.A/01 x0.3
-      - HKG CM.A/07 x0.3
-      - HKG CN2/08 x0.3
-      - HKG CM.B/02 x0.3
-      - SGP IEPL.A/03 x1.0
-      - SGP IEPL.A/01 x1.0
-      - USA IEPL.A/02 x1.0
-      - HKG IEPL.A/07 x1.0
-      - HKG IEPL.B/08 x1.0
-      - SGP CM.B/04 x0.3
-      - HKG IEPL.A/06 x1.0
-      - SGP CM.A/01 x0.3
-      - JPN IEPL.A/01 x1.0
-      - HKG IEPL.B/09 x1.0
-      - JPN CM.A/01 x0.3
-      - HKG CN2/04 x0.3
-      - SGP CM.B/05 x0.3
-      - HKG IEPL.B/05 x1.0
-      - HKG CM.B/06 x0.3
-      - SGP CM.A/05 x0.3
-      - HKG CN2/01 x0.3
-      - TWN IEPL.A/03 x1.0
-      - HKG IEPL.B/04 x1.0
-      - HKG CM.B/05 x0.3
-      - HKG CM.B/08 x0.3
-      - HKG CN2/06 x0.3
-      - USA IEPL.A/05 x1.0
-      - HKG CM.A/03 x0.3
-      - HKG CM.A/04 x0.3
-      - JPN CM.A/02 x0.3
-      - HKG CM.B/07 x0.3
-      - HKG IEPL.A/09 x1.0
-      - SGP CM.A/02 x0.3
-      - SGP CM.B/03 x0.3
-      - SGP CM.B/01 x0.3
-      - HKG CM.A/05 x0.3
-      - SGP CM.B/02 x0.3
-      - SGP CM.A/04 x0.3
-      - 公告|所求皆所愿！所行皆坦途
-      - HKG CM.A/10 x0.3
-      - HKG CN2/07 x0.3
-      - TWN CM.A/01 x1.0
-      - 香港 | Azure ss 4
-      - HKG CM.B/04 x0.3
-      - HKG CM.B/10 x0.3
-      - TWN CM.A/03 x1.0
-      - TWN CM.A/02 x1.0
-      - HKG CN2/03 x0.3
-      - RUS  IEPL.A/01 x1.0
-      - HKG CM.B/09 x0.3
-      - SGP IEPL.A/05 x1.0
-      - HKG CM.A/09 x0.3
-      - HKG CM.A/08 x0.3
-      - TWN IEPL.A/01 x1.0
-      - SGP CM.A/03 x0.3
-      - GBR IEPL.A/01 x1.0
-      - HKG IEPL.A/05 x1.0
-      - SGP IEPL.A/04 x1.0
-      - JPN CM.A/05 x0.3
-      - SGP IEPL.A/02 x1.0
-      - HKG IEPL.B/03 x1.0
-      - HKG CM.B/01 x0.3
-      - JPN CM.A/03 x0.3
-      - HKG CN2/05 x0.3
-      - HKG CN2/09 x0.3
-      - HKG IEPL.A/08 x1.0
-      - JPN CM.A/04 x0.3
-      - HKG IEPL.B/06 x1.0
-      - HKG CN2/10 x0.3
-      - _SE_瑞典
+      - 台湾A | tg频道:@ripaojiedian
+      - 日 A | 粤移动中继 | Prepaid Users
+      - 德国|三网优化|1x
+      - 台湾 A | tg频道:@ripaojiedian
+      - 日本06|三网优化|1x
+      - 美国01|三网优化|1x
+      - 英国01|三网优化|1x
+      - 俄罗斯|三网优化|1x
+      - 英国02|三网优化|1x
+      - JP_15004 @WangCai_1
+      - lindoe日本|三网优化|1x
+      - US_8009 @WangCai_1
+      - US_8882 @WangCai_1
+      - US_8118 @WangCai_1
+      - US_6697 @WangCai_1
+      - US_8000 @WangCai_1
+      - US_9101 @WangCai_1
+      - US_6379 @WangCai_1
+      - US_8008 @WangCai_1
+      - US_7002 @WangCai_1
+      - US_8881 @WangCai_1
+      - US_6679 @WangCai_1
+      - US_8888 @WangCai_1
+      - US_5601 @WangCai_1
+      - 香港_1
+      - 星河
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -1382,167 +524,61 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 港 F | 沪联通中继 | Prepaid Users
-      - 日本 | 3 杭日隧道 STCP GAME
-      - lindoe日本|三网优化|1x
-      - 香港az | 3
-      - 香港-日本 | 5 GAME
-      - 日本04|三网优化|1x
-      - 日本05|三网优化|1x
-      - 东京|优选原生IP|1x
-      - 日本 | 2 Softbank GMAE
-      - 日本01|三网优化|1x
-      - 台湾04|三网优化|原生IP|1x
-      - 台湾04|三网优化|原生IP|1x 2
-      - 日本 | 6 GAME
-      - 印度 | 1 Azure
-      - 日本03|三网优化|1x
+      - SG_15072 @WangCai_1
       - 台湾|三网优化|1x
-      - 新加坡02|三网优化|1x
-      - 香港04|负载均衡|原生IP|1x
-      - 日本05|三网优化|1x 2
-      - 俄罗斯|三网优化|1x
-      - 东京|优选原生IP|1x 2
-      - 新02 1x--@p2psharing
-      - 日本06|三网优化|1x
-      - 澳大利亚 | 1 Azure
-      - 美国2 | 奈飞
-      - 土耳其--@p2psharing
-      - 英国01|三网优化|1x
-      - 美国04|三网优化|1x
-      - 新加坡02|三网优化|1x 2
-      - 英国01|三网优化|1x 2
-      - 日本03|三网优化|1x 2
-      - 香港HKT | 2
-      - 美国01|三网优化|1x
+      - HK_15071 @WangCai_1
+      - 日本05|三网优化|1x
       - 日本02|三网优化|1x
-      - 俄罗斯|三网优化|1x 2
-      - 韩国 | 1
-      - lindoe日本|三网优化|1x 2
-      - 美国 | 1 奈飞
-      - 日本01|三网优化|1x 2
-      - 香港-新加坡 | 1
-      - 台湾|三网优化|1x 2
-      - 新加坡03|三网优化|1x
-      - 印度 | 2 Azure
-      - 德国|三网优化|1x
-      - 马来西亚|三网优化|优选原生IP|1x
-      - 美国01|三网优化|1x 2
-      - 台湾 | 2 Hinet
-      - 香港-美国 | 5
-      - 日本 | 7 Softbank GMAE
-      - 英国02|三网优化|1x
-      - 土耳其 | 2
-      - 日本04|三网优化|1x 2
-      - 加拿大01|三网优化|1x
       - 澳大利亚01|三网优化|1x
-      - 美国04|三网优化|1x 2
-      - 澳大利亚01|三网优化|1x 2
-      - 港 E | 沪联通中继 | Prepaid Users
-      - 澳大利亚02|三网优化|1x
-      - 韩国|优选原生IP|1x
-      - 加拿大01|三网优化|1x 2
-      - 美国02|三网优化|1x
-      - 英国 | 1 Tiktok
-      - 德国|三网优化|1x 2
-      - 英国02|三网优化|1x 2
-      - 日本02|三网优化|1x 2
-      - 香港-日本 | 1
-      - 澳大利亚02|三网优化|1x 2
-      - 韩国 | 2 广港隧道 STCP
+      - 新加坡03|三网优化|1x
+      - 日本01|三网优化|1x
       - 美国03|三网优化|1x
+      - 马来西亚03|三网优化|优选原生IP|1x
+      - 印 A | 沪联通中继 | Prepaid Users
+      - HK星河
+      - 新加坡02|三网优化|1x
+      - 台湾04|三网优化|原生IP|1x
+      - SG_15015 @WangCai_1
+      - 日本|优选原生IP|1x
+      - 东京|优选原生IP|1x
+      - 香港06|负载均衡|原生IP|1x
+      - 新加坡01|三网优化|1x
+      - SG_15085 @WangCai_1
+      - 加拿大01|三网优化|1x
+      - US_15012 @WangCai_1
+      - 港 E | 沪联通中继 | Prepaid Users
+      - ""
+      - 港 D | 沪联通中继 | Prepaid Users
+      - 美国02|三网优化|1x
+      - 新 A | 沪联通中继 | Prepaid Users
+      - 韩国|优选原生IP|1x
       - 英国03|三网优化|1x
-      - 瑞典 A | 沪联通中继 | Prepaid Users
-      - 英国03|三网优化|1x 2
-      - 香港-韩国 | 1
-      - 美国02|三网优化|1x 2
-      - 香港01 1x--@p2psharing
-      - 土耳其 | 1 无限流量！
-      - 美国03|三网优化|1x 2
-      - _VN_越南
-      - 美国 | 4
-      - HKG CM.A/06 x0.3
-      - HKG IEPL.B/02 x1.0
-      - JPN IEPL.A/05 x1.0
-      - HKG IEPL.A/10 x1.0
-      - HKG IEPL.A/03 x1.0
-      - HKG CN2/02 x0.3
-      - HKG CM.A/02 x0.3
-      - JPN IEPL.A/04 x1.0
-      - JPN IEPL.A/02 x1.0
-      - TWN IEPL.A/02 x1.0
-      - HKG IEPL.B/07 x1.0
-      - HKG IEPL.B/10 x1.0
-      - HKG CM.A/01 x0.3
-      - HKG CM.A/07 x0.3
-      - HKG CN2/08 x0.3
-      - HKG CM.B/02 x0.3
-      - SGP IEPL.A/03 x1.0
-      - SGP IEPL.A/01 x1.0
-      - USA IEPL.A/02 x1.0
-      - HKG IEPL.A/07 x1.0
-      - HKG IEPL.B/08 x1.0
-      - SGP CM.B/04 x0.3
-      - HKG IEPL.A/06 x1.0
-      - SGP CM.A/01 x0.3
-      - JPN IEPL.A/01 x1.0
-      - HKG IEPL.B/09 x1.0
-      - JPN CM.A/01 x0.3
-      - HKG CN2/04 x0.3
-      - SGP CM.B/05 x0.3
-      - HKG IEPL.B/05 x1.0
-      - HKG CM.B/06 x0.3
-      - SGP CM.A/05 x0.3
-      - HKG CN2/01 x0.3
-      - TWN IEPL.A/03 x1.0
-      - HKG IEPL.B/04 x1.0
-      - HKG CM.B/05 x0.3
-      - HKG CM.B/08 x0.3
-      - HKG CN2/06 x0.3
-      - USA IEPL.A/05 x1.0
-      - HKG CM.A/03 x0.3
-      - HKG CM.A/04 x0.3
-      - JPN CM.A/02 x0.3
-      - HKG CM.B/07 x0.3
-      - HKG IEPL.A/09 x1.0
-      - SGP CM.A/02 x0.3
-      - SGP CM.B/03 x0.3
-      - SGP CM.B/01 x0.3
-      - HKG CM.A/05 x0.3
-      - SGP CM.B/02 x0.3
-      - SGP CM.A/04 x0.3
-      - 公告|所求皆所愿！所行皆坦途
-      - HKG CM.A/10 x0.3
-      - HKG CN2/07 x0.3
-      - TWN CM.A/01 x1.0
-      - 香港 | Azure ss 4
-      - HKG CM.B/04 x0.3
-      - HKG CM.B/10 x0.3
-      - TWN CM.A/03 x1.0
-      - TWN CM.A/02 x1.0
-      - HKG CN2/03 x0.3
-      - RUS  IEPL.A/01 x1.0
-      - HKG CM.B/09 x0.3
-      - SGP IEPL.A/05 x1.0
-      - HKG CM.A/09 x0.3
-      - HKG CM.A/08 x0.3
-      - TWN IEPL.A/01 x1.0
-      - SGP CM.A/03 x0.3
-      - GBR IEPL.A/01 x1.0
-      - HKG IEPL.A/05 x1.0
-      - SGP IEPL.A/04 x1.0
-      - JPN CM.A/05 x0.3
-      - SGP IEPL.A/02 x1.0
-      - HKG IEPL.B/03 x1.0
-      - HKG CM.B/01 x0.3
-      - JPN CM.A/03 x0.3
-      - HKG CN2/05 x0.3
-      - HKG CN2/09 x0.3
-      - HKG IEPL.A/08 x1.0
-      - JPN CM.A/04 x0.3
-      - HKG IEPL.B/06 x1.0
-      - HKG CN2/10 x0.3
-      - _SE_瑞典
+      - 台湾A | tg频道:@ripaojiedian
+      - 日 A | 粤移动中继 | Prepaid Users
+      - 德国|三网优化|1x
+      - 台湾 A | tg频道:@ripaojiedian
+      - 日本06|三网优化|1x
+      - 美国01|三网优化|1x
+      - 英国01|三网优化|1x
+      - 俄罗斯|三网优化|1x
+      - 英国02|三网优化|1x
+      - JP_15004 @WangCai_1
+      - lindoe日本|三网优化|1x
+      - US_8009 @WangCai_1
+      - US_8882 @WangCai_1
+      - US_8118 @WangCai_1
+      - US_6697 @WangCai_1
+      - US_8000 @WangCai_1
+      - US_9101 @WangCai_1
+      - US_6379 @WangCai_1
+      - US_8008 @WangCai_1
+      - US_7002 @WangCai_1
+      - US_8881 @WangCai_1
+      - US_6679 @WangCai_1
+      - US_8888 @WangCai_1
+      - US_5601 @WangCai_1
+      - 香港_1
+      - 星河
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
