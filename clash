@@ -5,12 +5,7 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: cdn, server: www.srealisreal011.xyz, port: 443, type: vmess, uuid: d77942a0-574c-4e68-999b-477845422a6e, alterId: 233, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /gfw, ws-headers: {Host: www.srealisreal011.xyz}, udp: true}
-  - {name: 油管 TG 8度科技, server: 104.16.162.16, port: 2053, type: vmess, uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /eisasqa, ws-headers: {Host: foxus.fovi.tk}, udp: true}
-  - {name: CN_油管 TG 8度科技, server: 183.232.56.161, port: 1704, type: vmess, uuid: 3a226645-c640-39a2-8177-000381e29f20, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: 183.232.56.161}, udp: true}
-  - {name: CN_油管 TG 8度科技 2, server: 183.232.56.161, port: 1611, type: vmess, uuid: 3a226645-c640-39a2-8177-000381e29f20, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: 183.232.56.161}, udp: true}
-  - {name: CN_油管 TG 8度科技 3, server: cu3.sgdns.club, port: 31267, type: vmess, uuid: 2dc10784-c7fb-377d-a579-2b541eb16d7b, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /sgy, ws-headers: {Host: cu3.sgdns.club}, udp: true}
-  - {name: CN_油管 TG 8度科技 4, server: 183.232.56.161, port: 1212, type: vmess, uuid: 3a226645-c640-39a2-8177-000381e29f20, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: 183.232.56.161}, udp: true}
+  - {name: HK_油管 TG 8度科技, server: zz-az-hk.xiaocai.ga, port: 50003, type: trojan, password: 3XhbFzLXfw, sni: zz-az-hk.xiaocai.ga, skip-cert-verify: true, udp: true}
   - {name: CN_油管+TG+8度科技, server: 211.99.115.24, port: 11001, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
   - {name: CN_油管+TG+8度科技 2, server: 211.99.115.24, port: 11111, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
   - {name: CN_油管+TG+8度科技 3, server: 211.99.115.24, port: 11052, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
@@ -134,19 +129,19 @@ proxies:
   - {name: CN_油管+TG+8度科技 76, server: 14.29.124.168, port: 16057, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
   - {name: CN_油管+TG+8度科技 77, server: 211.99.115.24, port: 11552, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
   - {name: CN_油管+TG+8度科技 78, server: 211.99.115.24, port: 11403, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: HK_油管 TG 8度科技, server: zz-az-hk.xiaocai.ga, port: 50003, type: trojan, password: 3XhbFzLXfw, sni: zz-az-hk.xiaocai.ga, skip-cert-verify: true, udp: true}
+  - {name: cdn, server: www.srealisreal011.xyz, port: 443, type: vmess, uuid: d77942a0-574c-4e68-999b-477845422a6e, alterId: 233, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /gfw, ws-headers: {Host: www.srealisreal011.xyz}, udp: true}
+  - {name: 油管 TG 8度科技, server: 104.16.162.16, port: 2053, type: vmess, uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /eisasqa, ws-headers: {Host: foxus.fovi.tk}, udp: true}
+  - {name: CN_油管 TG 8度科技, server: 183.232.56.161, port: 1704, type: vmess, uuid: 3a226645-c640-39a2-8177-000381e29f20, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: 183.232.56.161}, udp: true}
+  - {name: CN_油管 TG 8度科技 2, server: 183.232.56.161, port: 1611, type: vmess, uuid: 3a226645-c640-39a2-8177-000381e29f20, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: 183.232.56.161}, udp: true}
+  - {name: CN_油管 TG 8度科技 3, server: cu3.sgdns.club, port: 31267, type: vmess, uuid: 2dc10784-c7fb-377d-a579-2b541eb16d7b, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /sgy, ws-headers: {Host: cu3.sgdns.club}, udp: true}
+  - {name: CN_油管 TG 8度科技 4, server: 183.232.56.161, port: 1212, type: vmess, uuid: 3a226645-c640-39a2-8177-000381e29f20, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: 183.232.56.161}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - cdn
-      - 油管 TG 8度科技
-      - CN_油管 TG 8度科技
-      - CN_油管 TG 8度科技 2
-      - CN_油管 TG 8度科技 3
-      - CN_油管 TG 8度科技 4
+      - HK_油管 TG 8度科技
       - CN_油管+TG+8度科技
       - CN_油管+TG+8度科技 2
       - CN_油管+TG+8度科技 3
@@ -270,18 +265,18 @@ proxy-groups:
       - CN_油管+TG+8度科技 76
       - CN_油管+TG+8度科技 77
       - CN_油管+TG+8度科技 78
-      - HK_油管 TG 8度科技
+      - cdn
+      - 油管 TG 8度科技
+      - CN_油管 TG 8度科技
+      - CN_油管 TG 8度科技 2
+      - CN_油管 TG 8度科技 3
+      - CN_油管 TG 8度科技 4
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - cdn
-      - 油管 TG 8度科技
-      - CN_油管 TG 8度科技
-      - CN_油管 TG 8度科技 2
-      - CN_油管 TG 8度科技 3
-      - CN_油管 TG 8度科技 4
+      - HK_油管 TG 8度科技
       - CN_油管+TG+8度科技
       - CN_油管+TG+8度科技 2
       - CN_油管+TG+8度科技 3
@@ -405,19 +400,19 @@ proxy-groups:
       - CN_油管+TG+8度科技 76
       - CN_油管+TG+8度科技 77
       - CN_油管+TG+8度科技 78
-      - HK_油管 TG 8度科技
+      - cdn
+      - 油管 TG 8度科技
+      - CN_油管 TG 8度科技
+      - CN_油管 TG 8度科技 2
+      - CN_油管 TG 8度科技 3
+      - CN_油管 TG 8度科技 4
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - cdn
-      - 油管 TG 8度科技
-      - CN_油管 TG 8度科技
-      - CN_油管 TG 8度科技 2
-      - CN_油管 TG 8度科技 3
-      - CN_油管 TG 8度科技 4
+      - HK_油管 TG 8度科技
       - CN_油管+TG+8度科技
       - CN_油管+TG+8度科技 2
       - CN_油管+TG+8度科技 3
@@ -541,7 +536,12 @@ proxy-groups:
       - CN_油管+TG+8度科技 76
       - CN_油管+TG+8度科技 77
       - CN_油管+TG+8度科技 78
-      - HK_油管 TG 8度科技
+      - cdn
+      - 油管 TG 8度科技
+      - CN_油管 TG 8度科技
+      - CN_油管 TG 8度科技 2
+      - CN_油管 TG 8度科技 3
+      - CN_油管 TG 8度科技 4
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -560,12 +560,7 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - cdn
-      - 油管 TG 8度科技
-      - CN_油管 TG 8度科技
-      - CN_油管 TG 8度科技 2
-      - CN_油管 TG 8度科技 3
-      - CN_油管 TG 8度科技 4
+      - HK_油管 TG 8度科技
       - CN_油管+TG+8度科技
       - CN_油管+TG+8度科技 2
       - CN_油管+TG+8度科技 3
@@ -689,7 +684,12 @@ proxy-groups:
       - CN_油管+TG+8度科技 76
       - CN_油管+TG+8度科技 77
       - CN_油管+TG+8度科技 78
-      - HK_油管 TG 8度科技
+      - cdn
+      - 油管 TG 8度科技
+      - CN_油管 TG 8度科技
+      - CN_油管 TG 8度科技 2
+      - CN_油管 TG 8度科技 3
+      - CN_油管 TG 8度科技 4
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -700,12 +700,7 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - cdn
-      - 油管 TG 8度科技
-      - CN_油管 TG 8度科技
-      - CN_油管 TG 8度科技 2
-      - CN_油管 TG 8度科技 3
-      - CN_油管 TG 8度科技 4
+      - HK_油管 TG 8度科技
       - CN_油管+TG+8度科技
       - CN_油管+TG+8度科技 2
       - CN_油管+TG+8度科技 3
@@ -829,18 +824,18 @@ proxy-groups:
       - CN_油管+TG+8度科技 76
       - CN_油管+TG+8度科技 77
       - CN_油管+TG+8度科技 78
-      - HK_油管 TG 8度科技
+      - cdn
+      - 油管 TG 8度科技
+      - CN_油管 TG 8度科技
+      - CN_油管 TG 8度科技 2
+      - CN_油管 TG 8度科技 3
+      - CN_油管 TG 8度科技 4
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - cdn
-      - 油管 TG 8度科技
-      - CN_油管 TG 8度科技
-      - CN_油管 TG 8度科技 2
-      - CN_油管 TG 8度科技 3
-      - CN_油管 TG 8度科技 4
+      - HK_油管 TG 8度科技
       - CN_油管+TG+8度科技
       - CN_油管+TG+8度科技 2
       - CN_油管+TG+8度科技 3
@@ -964,19 +959,19 @@ proxy-groups:
       - CN_油管+TG+8度科技 76
       - CN_油管+TG+8度科技 77
       - CN_油管+TG+8度科技 78
-      - HK_油管 TG 8度科技
+      - cdn
+      - 油管 TG 8度科技
+      - CN_油管 TG 8度科技
+      - CN_油管 TG 8度科技 2
+      - CN_油管 TG 8度科技 3
+      - CN_油管 TG 8度科技 4
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - cdn
-      - 油管 TG 8度科技
-      - CN_油管 TG 8度科技
-      - CN_油管 TG 8度科技 2
-      - CN_油管 TG 8度科技 3
-      - CN_油管 TG 8度科技 4
+      - HK_油管 TG 8度科技
       - CN_油管+TG+8度科技
       - CN_油管+TG+8度科技 2
       - CN_油管+TG+8度科技 3
@@ -1100,7 +1095,12 @@ proxy-groups:
       - CN_油管+TG+8度科技 76
       - CN_油管+TG+8度科技 77
       - CN_油管+TG+8度科技 78
-      - HK_油管 TG 8度科技
+      - cdn
+      - 油管 TG 8度科技
+      - CN_油管 TG 8度科技
+      - CN_油管 TG 8度科技 2
+      - CN_油管 TG 8度科技 3
+      - CN_油管 TG 8度科技 4
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -1116,12 +1116,7 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - cdn
-      - 油管 TG 8度科技
-      - CN_油管 TG 8度科技
-      - CN_油管 TG 8度科技 2
-      - CN_油管 TG 8度科技 3
-      - CN_油管 TG 8度科技 4
+      - HK_油管 TG 8度科技
       - CN_油管+TG+8度科技
       - CN_油管+TG+8度科技 2
       - CN_油管+TG+8度科技 3
@@ -1245,7 +1240,12 @@ proxy-groups:
       - CN_油管+TG+8度科技 76
       - CN_油管+TG+8度科技 77
       - CN_油管+TG+8度科技 78
-      - HK_油管 TG 8度科技
+      - cdn
+      - 油管 TG 8度科技
+      - CN_油管 TG 8度科技
+      - CN_油管 TG 8度科技 2
+      - CN_油管 TG 8度科技 3
+      - CN_油管 TG 8度科技 4
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
