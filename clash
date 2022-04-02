@@ -5,556 +5,416 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: CN_油管+TG+8度科技, server: 211.99.115.17, port: 11004, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管 TG 8度科技, server: global.sggov.lion1.sggovcloud.com, port: 9258, type: vmess, uuid: 05fe4a2f-b31f-4204-9f2f-acd9a47b9390, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /cctv13/hd.m3u8, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: CN_油管 TG 8度科技 2, server: global.sggov.lion1.sggovcloud.com, port: 8097, type: vmess, uuid: 05fe4a2f-b31f-4204-9f2f-acd9a47b9390, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /cctv13/hd.m3u8, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: CN_油管+TG+8度科技 2, server: 211.99.115.17, port: 11302, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管 TG 8度科技 3, server: cdn-cn.nekocloud.cn, port: 19094, type: vmess, uuid: e1bdbb56-25e4-351c-b039-247394961abc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /dahjwuh, ws-headers: {Host: cdn-cn.nekocloud.cn}, udp: true}
-  - {name: CN_油管 TG 8度科技 4, server: global.sggov.lion1.sggovcloud.com, port: 9163, type: vmess, uuid: 05fe4a2f-b31f-4204-9f2f-acd9a47b9390, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /cctv13/hd.m3u8, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: CN_油管+TG+8度科技 3, server: 211.99.115.17, port: 11401, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管 TG 8度科技 5, server: global.sggov.sands1.sggovcloud.com, port: 9268, type: vmess, uuid: 05fe4a2f-b31f-4204-9f2f-acd9a47b9390, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /cctv13/hd.m3u8, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: CN_油管+TG+8度科技 4, server: 211.99.115.21, port: 11551, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 5, server: 211.99.115.21, port: 11007, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管 TG 8度科技 6, server: global.sggov.marina1.sggovcloud.com, port: 9188, type: vmess, uuid: 05fe4a2f-b31f-4204-9f2f-acd9a47b9390, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /cctv13/hd.m3u8, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: CN_油管 TG 8度科技 7, server: global.sggov.lion1.sggovcloud.com, port: 9254, type: vmess, uuid: 05fe4a2f-b31f-4204-9f2f-acd9a47b9390, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /cctv13/hd.m3u8, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: CN_油管+TG+8度科技 6, server: 42.157.161.45, port: 11210, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 7, server: 42.157.161.51, port: 11151, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管 TG 8度科技 8, server: cdn-cn.nekocloud.cn, port: 19092, type: vmess, uuid: e1bdbb56-25e4-351c-b039-247394961abc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /dahjwuh, ws-headers: {Host: cdn-cn.nekocloud.cn}, udp: true}
-  - {name: CN_油管+TG+8度科技 8, server: 211.99.115.12, port: 11552, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 9, server: 42.157.161.46, port: 11217, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管 TG 8度科技 9, server: global.sggov.lion1.sggovcloud.com, port: 8168, type: vmess, uuid: 05fe4a2f-b31f-4204-9f2f-acd9a47b9390, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /cctv13/hd.m3u8, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: CN_油管+TG+8度科技 10, server: 211.99.115.19, port: 11117, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 11, server: 211.99.115.25, port: 11851, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管 TG 8度科技 10, server: cdn-cn.nekocloud.cn, port: 19092, type: vmess, uuid: e1bdbb56-25e4-351c-b039-247394961abc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /dahjwuh, ws-headers: {Host: cdn-cn.nekocloud.cn}, udp: true}
-  - {name: CN_油管+TG+8度科技 12, server: 211.99.115.21, port: 11009, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 13, server: 42.157.161.52, port: 11262, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 14, server: 211.99.115.15, port: 11404, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 15, server: 211.99.115.10, port: 11302, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 16, server: 42.157.161.44, port: 11254, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 17, server: 42.157.161.46, port: 11213, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 18, server: 42.157.161.40, port: 11801, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 19, server: 42.157.161.49, port: 11151, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 20, server: 211.99.115.17, port: 11405, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管 TG 8度科技 11, server: cdn-cn.nekocloud.cn, port: 19085, type: vmess, uuid: e1bdbb56-25e4-351c-b039-247394961abc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /dahjwuh, ws-headers: {Host: cdn-cn.nekocloud.cn}, udp: true}
-  - {name: CN_油管+TG+8度科技 21, server: 211.99.115.2, port: 11552, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 22, server: 211.99.115.11, port: 11105, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 23, server: 211.99.115.7, port: 11017, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 24, server: 211.99.115.12, port: 11012, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管 TG 8度科技 12, server: global.sggov.anycast1.sggovcloud.com, port: 9163, type: vmess, uuid: 05fe4a2f-b31f-4204-9f2f-acd9a47b9390, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /cctv13/hd.m3u8, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: CN_油管+TG+8度科技 25, server: 211.99.115.14, port: 11109, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: US_油管 TG 8度科技, server: us06.xiaohouzi.club, port: 10082, type: vmess, uuid: dbf20899-f0d8-33bd-bed0-ddc16105dfe3, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: us06.xiaohouzi.club}, udp: true}
-  - {name: CN_油管+TG+8度科技 26, server: 42.157.161.42, port: 11256, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 27, server: 211.99.115.9, port: 11053, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 28, server: 211.99.115.9, port: 11117, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管 TG 8度科技 13, server: global.sggov.lion1.sggovcloud.com, port: 9191, type: vmess, uuid: 05fe4a2f-b31f-4204-9f2f-acd9a47b9390, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /cctv13/hd.m3u8, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: CN_油管+TG+8度科技 29, server: 211.99.115.7, port: 11105, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 30, server: 42.157.161.43, port: 11208, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管 TG 8度科技 14, server: cdn-cn.nekocloud.cn, port: 19094, type: vmess, uuid: e1bdbb56-25e4-351c-b039-247394961abc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /dahjwuh, ws-headers: {Host: cdn-cn.nekocloud.cn}, udp: true}
-  - {name: CN_油管+TG+8度科技 31, server: 211.99.115.18, port: 11003, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 32, server: 211.99.115.25, port: 11101, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管 TG 8度科技 15, server: cdn-cn.nekocloud.cn, port: 19079, type: vmess, uuid: e1bdbb56-25e4-351c-b039-247394961abc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /dahjwuh, ws-headers: {Host: cdn-cn.nekocloud.cn}, udp: true}
-  - {name: CN_油管+TG+8度科技 33, server: 42.157.161.49, port: 11252, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 34, server: 42.157.161.50, port: 11263, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管 TG 8度科技 16, server: cdn-cn.nekocloud.cn, port: 10002, type: vmess, uuid: e1bdbb56-25e4-351c-b039-247394961abc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /catnet, ws-headers: {Host: cdn-cn.nekocloud.cn}, udp: true}
-  - {name: CN_油管+TG+8度科技 35, server: 42.157.161.52, port: 11212, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 36, server: 211.99.115.15, port: 11009, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管 TG 8度科技 17, server: global.sggov.marina1.sggovcloud.com, port: 9163, type: vmess, uuid: 05fe4a2f-b31f-4204-9f2f-acd9a47b9390, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /cctv13/hd.m3u8, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: CN_油管+TG+8度科技 37, server: 211.99.115.15, port: 11701, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技, server: 211.99.115.21, port: 11007, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 2, server: 211.99.115.18, port: 11003, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 3, server: 211.99.115.23, port: 11116, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 4, server: 211.99.115.9, port: 11053, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 5, server: 211.99.115.21, port: 11009, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 6, server: 211.99.115.2, port: 11007, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 7, server: 211.99.115.6, port: 11002, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 8, server: 211.99.115.8, port: 11117, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 9, server: 211.99.115.6, port: 11104, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 10, server: 211.99.115.15, port: 11009, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 11, server: 211.99.115.14, port: 11051, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 12, server: 211.99.115.10, port: 11051, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 13, server: 211.99.115.12, port: 11006, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 14, server: 211.99.115.3, port: 11301, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 15, server: 211.99.115.13, port: 11015, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 16, server: 211.99.115.2, port: 11006, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 17, server: 211.99.115.6, port: 11052, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 18, server: 42.157.161.46, port: 11217, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 19, server: 211.99.115.15, port: 11007, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 20, server: 211.99.115.5, port: 11015, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 21, server: 42.157.161.47, port: 11217, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 22, server: 211.99.115.3, port: 11055, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 23, server: 211.99.115.12, port: 11002, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 24, server: 211.99.115.20, port: 11016, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 25, server: 211.99.115.22, port: 11111, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 26, server: 211.99.115.17, port: 11008, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 27, server: 42.157.161.41, port: 11218, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 28, server: 211.99.115.21, port: 11054, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 29, server: 211.99.115.19, port: 11117, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 30, server: 211.99.115.16, port: 11012, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 31, server: 211.99.115.12, port: 11017, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 32, server: 211.99.115.23, port: 11006, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 33, server: 211.99.115.21, port: 11011, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 34, server: 211.99.115.14, port: 11016, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 35, server: 211.99.115.17, port: 11852, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 36, server: 211.99.115.11, port: 11116, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 37, server: 211.99.115.13, port: 11010, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
   - {name: CN_油管+TG+8度科技 38, server: 211.99.115.22, port: 11055, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管 TG 8度科技 18, server: global.sggov.lion1.sggovcloud.com, port: 9188, type: vmess, uuid: 05fe4a2f-b31f-4204-9f2f-acd9a47b9390, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /cctv13/hd.m3u8, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: CN_油管+TG+8度科技 39, server: 211.99.115.7, port: 11351, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 40, server: 42.157.161.41, port: 11204, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 41, server: 211.99.115.3, port: 11501, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 42, server: 42.157.161.52, port: 11261, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 43, server: 42.157.161.42, port: 11251, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 44, server: 211.99.115.6, port: 11002, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 45, server: 42.157.161.53, port: 11253, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 46, server: 211.99.115.17, port: 11007, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 47, server: 211.99.115.10, port: 11113, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 48, server: 211.99.115.21, port: 11052, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 49, server: 211.99.115.18, port: 11451, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管 TG 8度科技 19, server: cdn-cn.nekocloud.cn, port: 19042, type: vmess, uuid: e1bdbb56-25e4-351c-b039-247394961abc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /catnet, ws-headers: {Host: cdn-cn.nekocloud.cn}, udp: true}
-  - {name: CN_油管+TG+8度科技 50, server: 42.157.161.50, port: 11802, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 51, server: 211.99.115.21, port: 11117, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 52, server: 42.157.161.41, port: 11255, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 53, server: 42.157.161.46, port: 11251, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 54, server: 42.157.161.44, port: 11204, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 55, server: 211.99.115.17, port: 11403, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 56, server: 211.99.115.10, port: 11108, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 57, server: 211.99.115.11, port: 11018, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 58, server: 211.99.115.16, port: 11113, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 59, server: 211.99.115.2, port: 11007, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 60, server: 211.99.115.15, port: 11007, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 61, server: 211.99.115.13, port: 11853, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管 TG 8度科技 20, server: ingress-i1.onebox6.org, port: 38501, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: www.ivpnpro.net}, udp: true}
-  - {name: CN_油管+TG+8度科技 62, server: 211.99.115.17, port: 11008, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 63, server: 211.99.115.11, port: 11851, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 64, server: 42.157.161.48, port: 11212, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 65, server: 211.99.115.18, port: 11101, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 66, server: 42.157.161.40, port: 11251, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 67, server: 211.99.115.12, port: 11106, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 68, server: 211.99.115.15, port: 11001, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 69, server: 211.99.115.4, port: 11852, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 70, server: 211.99.115.2, port: 11108, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 71, server: 211.99.115.6, port: 11012, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 72, server: 211.99.115.19, port: 11110, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 73, server: 42.157.161.53, port: 11265, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 74, server: 42.157.161.49, port: 11205, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 75, server: 42.157.161.38, port: 11202, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 76, server: 42.157.161.43, port: 11266, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 77, server: 211.99.115.18, port: 11901, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 78, server: 42.157.161.49, port: 11256, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 79, server: 42.157.161.50, port: 11209, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 80, server: 211.99.115.16, port: 11001, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 81, server: 42.157.161.47, port: 11210, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 82, server: 211.99.115.13, port: 11010, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 83, server: 211.99.115.8, port: 11109, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 84, server: 211.99.115.14, port: 11113, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 85, server: 211.99.115.11, port: 11552, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 86, server: 211.99.115.23, port: 11106, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 87, server: 42.157.161.45, port: 11209, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 88, server: 211.99.115.7, port: 11106, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 89, server: 42.157.161.52, port: 11211, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 90, server: 42.157.161.47, port: 11201, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 91, server: 211.99.115.3, port: 11017, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 92, server: 211.99.115.3, port: 11852, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 93, server: 211.99.115.23, port: 11013, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: US_油管 TG 8度科技 2, server: cloudflare.xrenblog.com, port: 443, type: vmess, uuid: 6c175d1a-a57f-4881-a471-173eb139694b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /xrenblog/, ws-headers: {Host: ipv6.xrenblog.com}, udp: true}
-  - {name: CN_油管+TG+8度科技 94, server: 211.99.115.18, port: 11105, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 95, server: 42.157.161.44, port: 11251, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 96, server: 42.157.161.39, port: 11256, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 97, server: 42.157.161.45, port: 11208, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 98, server: 211.99.115.20, port: 11016, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 99, server: 211.99.115.21, port: 11751, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 100, server: 211.99.115.21, port: 11011, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 101, server: 211.99.115.4, port: 11004, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 102, server: 211.99.115.23, port: 11501, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 103, server: 211.99.115.19, port: 11052, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 104, server: 42.157.161.44, port: 11207, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 105, server: 211.99.115.8, port: 11052, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: US_油管 TG 8度科技 3, server: vv01.xiaohouzi.club, port: 10083, type: vmess, uuid: dbf20899-f0d8-33bd-bed0-ddc16105dfe3, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: www.ibm.com}, udp: true}
-  - {name: CN_油管+TG+8度科技 106, server: 211.99.115.12, port: 11903, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 107, server: 211.99.115.19, port: 11012, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 108, server: 211.99.115.17, port: 11406, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 109, server: 211.99.115.6, port: 11112, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 110, server: 211.99.115.20, port: 11102, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 111, server: 42.157.161.43, port: 11205, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 112, server: 42.157.161.43, port: 11213, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 113, server: 211.99.115.14, port: 11004, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: US_油管 TG 8度科技 4, server: us06.xiaohouzi.club, port: 10082, type: vmess, uuid: dbf20899-f0d8-33bd-bed0-ddc16105dfe3, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: us06.xiaohouzi.club}, udp: true}
-  - {name: CN_油管+TG+8度科技 114, server: 42.157.161.45, port: 11252, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 115, server: 211.99.115.5, port: 11109, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 116, server: 42.157.161.51, port: 11211, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 117, server: 211.99.115.12, port: 11751, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 118, server: 211.99.115.11, port: 11302, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 119, server: 211.99.115.23, port: 11116, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 120, server: 42.157.161.51, port: 11216, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 121, server: 211.99.115.24, port: 11051, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管 TG 8度科技 21, server: global.sggov.lion1.sggovcloud.com, port: 9161, type: vmess, uuid: 05fe4a2f-b31f-4204-9f2f-acd9a47b9390, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /cctv13/hd.m3u8, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: CN_油管+TG+8度科技 122, server: 211.99.115.22, port: 11851, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 123, server: 211.99.115.10, port: 11104, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 124, server: 211.99.115.22, port: 11106, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 125, server: 42.157.161.49, port: 11204, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 126, server: 211.99.115.12, port: 11017, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 127, server: 211.99.115.16, port: 11012, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 128, server: 211.99.115.4, port: 11006, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 129, server: 211.99.115.21, port: 11003, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 130, server: 211.99.115.18, port: 11404, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 131, server: 211.99.115.3, port: 11552, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 132, server: 42.157.161.38, port: 11801, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 133, server: 211.99.115.25, port: 11552, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 134, server: 42.157.161.46, port: 11254, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 135, server: 42.157.161.45, port: 11215, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 136, server: 211.99.115.6, port: 11052, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: HK_油管 TG 8度科技, server: 165.154.225.176, port: 443, type: vmess, uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c, alterId: 2, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ray, ws-headers: {Host: 0326hk01.fans8.xyz}, udp: true}
-  - {name: US_油管 TG 8度科技 5, server: us06.xiaohouzi.club, port: 10082, type: vmess, uuid: dbf20899-f0d8-33bd-bed0-ddc16105dfe3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: us06.xiaohouzi.club}, udp: true}
-  - {name: CN_油管+TG+8度科技 137, server: 42.157.161.51, port: 11801, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 138, server: 211.99.115.15, port: 11010, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 139, server: 211.99.115.23, port: 11010, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 140, server: 211.99.115.12, port: 11851, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 141, server: 211.99.115.8, port: 11854, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 142, server: 211.99.115.25, port: 11553, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 143, server: 211.99.115.7, port: 11104, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 144, server: 42.157.161.42, port: 11207, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 145, server: 211.99.115.3, port: 11004, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 146, server: 211.99.115.17, port: 11006, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 147, server: 211.99.115.11, port: 11903, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 148, server: 211.99.115.3, port: 11854, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 149, server: 211.99.115.23, port: 11851, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 150, server: 211.99.115.14, port: 11854, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 151, server: 211.99.115.23, port: 11351, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 152, server: 211.99.115.25, port: 11302, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 153, server: 42.157.161.45, port: 11261, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 154, server: 42.157.161.47, port: 11266, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 155, server: 211.99.115.6, port: 11103, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 156, server: 42.157.161.46, port: 11216, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 157, server: 211.99.115.24, port: 11015, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 158, server: 211.99.115.11, port: 11009, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 159, server: 211.99.115.22, port: 11601, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 160, server: 42.157.161.48, port: 11254, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 161, server: 211.99.115.19, port: 11101, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 162, server: 211.99.115.14, port: 11106, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 163, server: 211.99.115.3, port: 11102, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 164, server: 211.99.115.17, port: 11854, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 165, server: 211.99.115.15, port: 11052, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 166, server: 211.99.115.4, port: 11701, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 167, server: 211.99.115.2, port: 11751, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 168, server: 211.99.115.22, port: 11553, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 169, server: 211.99.115.3, port: 11301, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 170, server: 211.99.115.22, port: 11112, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 171, server: 211.99.115.15, port: 11109, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 172, server: 42.157.161.50, port: 11206, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 173, server: 211.99.115.9, port: 11007, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 174, server: 211.99.115.6, port: 11013, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 175, server: 211.99.115.25, port: 11008, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 176, server: 211.99.115.3, port: 11011, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 177, server: 211.99.115.7, port: 11051, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 178, server: 211.99.115.13, port: 11904, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 179, server: 42.157.161.53, port: 11261, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 180, server: 42.157.161.40, port: 11802, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 181, server: 211.99.115.16, port: 11110, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 182, server: 211.99.115.16, port: 11015, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 183, server: 211.99.115.17, port: 11852, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 184, server: 211.99.115.25, port: 11651, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 185, server: 211.99.115.17, port: 11552, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 186, server: 42.157.161.42, port: 11263, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 187, server: 211.99.115.16, port: 11106, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 188, server: 211.99.115.7, port: 11116, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 189, server: 211.99.115.16, port: 11107, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 190, server: 211.99.115.24, port: 11106, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 191, server: 211.99.115.11, port: 11117, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 192, server: 42.157.161.49, port: 11216, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 193, server: 211.99.115.8, port: 11006, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 194, server: 211.99.115.16, port: 11005, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 195, server: 211.99.115.10, port: 11351, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 196, server: 42.157.161.38, port: 11206, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 197, server: 211.99.115.9, port: 11111, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 198, server: 211.99.115.11, port: 11010, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 199, server: 211.99.115.22, port: 11007, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管 TG 8度科技 22, server: cdn-cn.nekocloud.cn, port: 19095, type: vmess, uuid: e1bdbb56-25e4-351c-b039-247394961abc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /catnet, ws-headers: {Host: cdn-cn.nekocloud.cn}, udp: true}
-  - {name: CN_油管+TG+8度科技 200, server: 42.157.161.45, port: 11262, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 201, server: 42.157.161.45, port: 11259, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 202, server: 42.157.161.39, port: 11255, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 203, server: 211.99.115.13, port: 11110, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 204, server: 211.99.115.13, port: 11109, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 205, server: 42.157.161.43, port: 11211, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 206, server: 42.157.161.40, port: 11217, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 207, server: 211.99.115.23, port: 11007, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 208, server: 42.157.161.52, port: 11207, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 209, server: 211.99.115.8, port: 11011, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 210, server: 211.99.115.12, port: 11054, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 211, server: 211.99.115.16, port: 11002, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 212, server: 211.99.115.22, port: 11451, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 213, server: 211.99.115.19, port: 11106, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 214, server: 211.99.115.17, port: 11351, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 215, server: 211.99.115.3, port: 11117, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 216, server: 211.99.115.4, port: 11117, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 217, server: 211.99.115.8, port: 11004, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 218, server: 211.99.115.14, port: 11013, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 219, server: 211.99.115.24, port: 11011, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 220, server: 211.99.115.9, port: 11010, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 221, server: 211.99.115.12, port: 11406, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 222, server: 211.99.115.18, port: 11301, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 223, server: 211.99.115.17, port: 11016, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 224, server: 42.157.161.43, port: 11258, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 225, server: 211.99.115.3, port: 11101, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 226, server: 211.99.115.15, port: 11105, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 227, server: 42.157.161.50, port: 11217, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 228, server: 211.99.115.23, port: 11006, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 229, server: 42.157.161.48, port: 11208, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 230, server: 42.157.161.49, port: 11207, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 231, server: 211.99.115.12, port: 11018, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 232, server: 211.99.115.12, port: 11007, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 233, server: 42.157.161.38, port: 11254, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 234, server: 211.99.115.2, port: 11851, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 235, server: 42.157.161.52, port: 11252, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 236, server: 211.99.115.12, port: 11109, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 237, server: 211.99.115.4, port: 11302, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 238, server: 211.99.115.2, port: 11115, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 239, server: 42.157.161.52, port: 11202, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 240, server: 211.99.115.9, port: 11553, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 241, server: 42.157.161.48, port: 11259, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 242, server: 42.157.161.38, port: 11207, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 243, server: 211.99.115.25, port: 11551, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 244, server: 211.99.115.25, port: 11451, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 245, server: 42.157.161.42, port: 11258, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 246, server: 211.99.115.17, port: 11601, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 247, server: 211.99.115.13, port: 11103, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 248, server: 211.99.115.20, port: 11003, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 249, server: 42.157.161.47, port: 11211, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 250, server: 211.99.115.4, port: 11052, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 251, server: 211.99.115.11, port: 11055, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 252, server: 211.99.115.23, port: 11004, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 253, server: 211.99.115.15, port: 11053, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 254, server: 211.99.115.10, port: 11652, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 255, server: 211.99.115.15, port: 11652, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 256, server: 42.157.161.39, port: 11258, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 257, server: 211.99.115.25, port: 11106, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 258, server: 211.99.115.8, port: 11113, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 259, server: 42.157.161.41, port: 11202, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 260, server: 211.99.115.24, port: 11016, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 261, server: 211.99.115.16, port: 11851, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 262, server: 211.99.115.6, port: 11854, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 263, server: 211.99.115.6, port: 11104, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 264, server: 211.99.115.19, port: 11011, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 265, server: 211.99.115.17, port: 11011, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 266, server: 42.157.161.41, port: 11209, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 267, server: 211.99.115.10, port: 11015, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 268, server: 211.99.115.16, port: 11551, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 269, server: 211.99.115.14, port: 11904, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 270, server: 211.99.115.15, port: 11403, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 271, server: 211.99.115.18, port: 11351, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 272, server: 211.99.115.24, port: 11404, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 273, server: 42.157.161.46, port: 11263, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 274, server: 211.99.115.8, port: 11115, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 275, server: 42.157.161.51, port: 11206, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 276, server: 211.99.115.3, port: 11007, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 277, server: 211.99.115.10, port: 11053, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 278, server: 211.99.115.18, port: 11051, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 279, server: 211.99.115.15, port: 11651, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 280, server: 211.99.115.12, port: 11501, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 281, server: 211.99.115.13, port: 11116, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 282, server: 211.99.115.10, port: 11901, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 283, server: 211.99.115.5, port: 11113, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 284, server: 211.99.115.21, port: 11106, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 285, server: 211.99.115.14, port: 11110, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 286, server: 211.99.115.3, port: 11116, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 287, server: 211.99.115.9, port: 11116, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 288, server: 42.157.161.51, port: 11210, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 289, server: 211.99.115.21, port: 11017, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 290, server: 42.157.161.48, port: 11203, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 291, server: 211.99.115.20, port: 11008, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 292, server: 211.99.115.9, port: 11006, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 293, server: 211.99.115.7, port: 11052, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 294, server: 211.99.115.14, port: 11402, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 295, server: 211.99.115.23, port: 11651, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 296, server: 211.99.115.22, port: 11402, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 297, server: 211.99.115.2, port: 11402, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 298, server: 42.157.161.49, port: 11255, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 299, server: 211.99.115.13, port: 11501, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 300, server: 42.157.161.50, port: 11252, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 301, server: 211.99.115.9, port: 11351, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 302, server: 42.157.161.49, port: 11254, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 303, server: 211.99.115.21, port: 11301, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 304, server: 211.99.115.14, port: 11104, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 305, server: 211.99.115.8, port: 11101, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 306, server: 211.99.115.22, port: 11105, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 307, server: 42.157.161.47, port: 11206, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 308, server: 42.157.161.52, port: 11217, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 309, server: 211.99.115.24, port: 11002, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 310, server: 211.99.115.13, port: 11003, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管 TG 8度科技 23, server: cdn-cn.nekocloud.cn, port: 10006, type: vmess, uuid: e1bdbb56-25e4-351c-b039-247394961abc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /catnet, ws-headers: {Host: cdn-cn.nekocloud.cn}, udp: true}
-  - {name: CN_油管+TG+8度科技 311, server: 211.99.115.22, port: 11701, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 312, server: 211.99.115.21, port: 11501, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 313, server: 211.99.115.13, port: 11302, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 314, server: 211.99.115.23, port: 11117, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 315, server: 211.99.115.11, port: 11104, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 316, server: 42.157.161.50, port: 11203, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 317, server: 42.157.161.46, port: 11215, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 318, server: 211.99.115.17, port: 11052, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 319, server: 211.99.115.17, port: 11117, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 320, server: 211.99.115.16, port: 11852, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 321, server: 211.99.115.18, port: 11052, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 322, server: 42.157.161.45, port: 11260, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 323, server: 42.157.161.53, port: 11802, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 324, server: 42.157.161.42, port: 11260, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 325, server: 42.157.161.49, port: 11152, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 326, server: 211.99.115.10, port: 11301, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 327, server: 211.99.115.21, port: 11104, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 328, server: 211.99.115.9, port: 11101, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 329, server: 42.157.161.51, port: 11215, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 330, server: 211.99.115.7, port: 11013, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 331, server: 211.99.115.18, port: 11017, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 332, server: 211.99.115.18, port: 11112, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 333, server: 42.157.161.52, port: 11255, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 334, server: 42.157.161.43, port: 11152, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 335, server: 211.99.115.7, port: 11111, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 336, server: 211.99.115.20, port: 11104, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 337, server: 211.99.115.12, port: 11105, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 338, server: 42.157.161.42, port: 11216, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 339, server: 211.99.115.5, port: 11115, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 340, server: 42.157.161.46, port: 11212, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 341, server: 211.99.115.16, port: 11751, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管 TG 8度科技 24, server: global.sggov.anycast2.sggovcloud.com, port: 9188, type: vmess, uuid: 05fe4a2f-b31f-4204-9f2f-acd9a47b9390, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /cctv13/hd.m3u8, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: CN_油管+TG+8度科技 342, server: 42.157.161.43, port: 11264, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 343, server: 42.157.161.50, port: 11151, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 344, server: 42.157.161.43, port: 11261, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 345, server: 42.157.161.46, port: 11257, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 346, server: 211.99.115.4, port: 11108, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 347, server: 211.99.115.4, port: 11103, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 348, server: 211.99.115.20, port: 11055, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 349, server: 211.99.115.6, port: 11051, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 350, server: 211.99.115.13, port: 11406, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 351, server: 211.99.115.13, port: 11405, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 352, server: 42.157.161.47, port: 11255, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 353, server: 211.99.115.16, port: 11401, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 354, server: 211.99.115.25, port: 11405, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 355, server: 211.99.115.9, port: 11551, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 356, server: 42.157.161.53, port: 11257, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 357, server: 211.99.115.7, port: 11901, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 358, server: 211.99.115.9, port: 11110, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 359, server: 211.99.115.15, port: 11106, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 360, server: 42.157.161.42, port: 11208, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 361, server: 211.99.115.4, port: 11007, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 362, server: 211.99.115.7, port: 11054, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 363, server: 211.99.115.16, port: 11405, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管 TG 8度科技 25, server: cdn-cn.nekocloud.cn, port: 19080, type: vmess, uuid: e1bdbb56-25e4-351c-b039-247394961abc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /dahjwuh, ws-headers: {Host: cdn-cn.nekocloud.cn}, udp: true}
-  - {name: CN_油管+TG+8度科技 364, server: 211.99.115.6, port: 11751, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 365, server: 211.99.115.17, port: 11553, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 366, server: 211.99.115.10, port: 11115, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 367, server: 211.99.115.7, port: 11652, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 368, server: 211.99.115.11, port: 11652, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 369, server: 211.99.115.13, port: 11751, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 370, server: 211.99.115.3, port: 11302, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 371, server: 211.99.115.2, port: 11116, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 372, server: 211.99.115.2, port: 11105, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 373, server: 211.99.115.3, port: 11053, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 374, server: 211.99.115.23, port: 11001, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 375, server: 211.99.115.21, port: 11904, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 376, server: 211.99.115.19, port: 11103, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 377, server: 211.99.115.19, port: 11116, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 378, server: 211.99.115.17, port: 11102, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 379, server: 42.157.161.40, port: 11151, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 380, server: 42.157.161.41, port: 11261, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 381, server: 42.157.161.43, port: 11251, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 382, server: 211.99.115.22, port: 11115, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 383, server: 211.99.115.10, port: 11111, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 384, server: 42.157.161.44, port: 11213, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 385, server: 42.157.161.40, port: 11211, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 386, server: 211.99.115.10, port: 11051, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 387, server: 211.99.115.13, port: 11051, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 388, server: 211.99.115.12, port: 11004, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 389, server: 211.99.115.3, port: 11551, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 390, server: 42.157.161.38, port: 11204, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 391, server: 42.157.161.53, port: 11259, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 392, server: 211.99.115.7, port: 11108, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 393, server: 211.99.115.24, port: 11004, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 394, server: 211.99.115.3, port: 11013, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 395, server: 42.157.161.39, port: 11216, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 396, server: 211.99.115.2, port: 11008, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 397, server: 211.99.115.15, port: 11008, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 398, server: 211.99.115.10, port: 11553, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 399, server: 211.99.115.18, port: 11009, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 400, server: 211.99.115.18, port: 11852, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 401, server: 42.157.161.44, port: 11252, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 402, server: 42.157.161.38, port: 11259, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 403, server: 42.157.161.44, port: 11151, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 404, server: 211.99.115.10, port: 11106, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 405, server: 211.99.115.12, port: 11111, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 406, server: 211.99.115.6, port: 11017, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 407, server: 211.99.115.16, port: 11016, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 408, server: 211.99.115.24, port: 11008, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 409, server: 211.99.115.10, port: 11006, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 410, server: 211.99.115.6, port: 11009, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管 TG 8度科技 26, server: cdn-cn.nekocloud.cn, port: 19040, type: vmess, uuid: e1bdbb56-25e4-351c-b039-247394961abc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /dahjwuh, ws-headers: {Host: cdn-cn.nekocloud.cn}, udp: true}
-  - {name: CN_油管+TG+8度科技 411, server: 211.99.115.9, port: 11451, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 412, server: 211.99.115.24, port: 11652, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 413, server: 211.99.115.4, port: 11652, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 414, server: 42.157.161.42, port: 11253, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 415, server: 42.157.161.42, port: 11262, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 416, server: 211.99.115.13, port: 11117, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 417, server: 42.157.161.52, port: 11209, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 418, server: 211.99.115.12, port: 11010, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 419, server: 211.99.115.4, port: 11016, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 420, server: 211.99.115.23, port: 11052, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 421, server: 211.99.115.16, port: 11406, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 422, server: 211.99.115.8, port: 11701, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 423, server: 211.99.115.6, port: 11403, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 424, server: 211.99.115.2, port: 11904, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 425, server: 211.99.115.13, port: 11601, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 426, server: 211.99.115.8, port: 11852, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 427, server: 211.99.115.7, port: 11854, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 428, server: 211.99.115.4, port: 11751, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 429, server: 211.99.115.20, port: 11402, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 430, server: 211.99.115.21, port: 11403, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 431, server: 42.157.161.42, port: 11152, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 432, server: 42.157.161.41, port: 11264, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 433, server: 42.157.161.40, port: 11152, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 434, server: 211.99.115.14, port: 11107, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 435, server: 211.99.115.25, port: 11103, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 436, server: 211.99.115.22, port: 11113, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 437, server: 211.99.115.24, port: 11101, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 438, server: 42.157.161.48, port: 11207, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 439, server: 42.157.161.42, port: 11213, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 440, server: 211.99.115.25, port: 11013, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 441, server: 211.99.115.5, port: 11015, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 442, server: 211.99.115.17, port: 11015, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 443, server: 211.99.115.17, port: 11017, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 444, server: 211.99.115.11, port: 11011, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 445, server: 211.99.115.22, port: 11018, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 446, server: 211.99.115.22, port: 11051, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 447, server: 211.99.115.22, port: 11052, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 448, server: 211.99.115.18, port: 11401, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 449, server: 211.99.115.20, port: 11701, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 450, server: 42.157.161.46, port: 11253, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 451, server: 211.99.115.10, port: 11101, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 452, server: 211.99.115.22, port: 11104, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 453, server: 211.99.115.8, port: 11053, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 454, server: 211.99.115.2, port: 11010, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 455, server: 42.157.161.41, port: 11216, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 456, server: 42.157.161.49, port: 11213, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 457, server: 211.99.115.16, port: 11055, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 458, server: 211.99.115.14, port: 11053, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 459, server: 211.99.115.5, port: 11012, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 460, server: 211.99.115.23, port: 11405, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 461, server: 211.99.115.16, port: 11403, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 462, server: 211.99.115.14, port: 11401, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 463, server: 42.157.161.51, port: 11251, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 464, server: 211.99.115.12, port: 11301, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 465, server: 211.99.115.6, port: 11115, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 466, server: 211.99.115.20, port: 11106, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 467, server: 211.99.115.21, port: 11105, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 468, server: 211.99.115.16, port: 11013, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 469, server: 211.99.115.5, port: 11102, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 470, server: 42.157.161.53, port: 11215, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 471, server: 211.99.115.24, port: 11053, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 472, server: 211.99.115.2, port: 11005, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 473, server: 211.99.115.11, port: 11008, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 474, server: 211.99.115.23, port: 11005, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 475, server: 211.99.115.18, port: 11117, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 476, server: 211.99.115.10, port: 11451, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 477, server: 211.99.115.8, port: 11652, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 478, server: 211.99.115.16, port: 11301, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 479, server: 211.99.115.24, port: 11403, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 480, server: 211.99.115.19, port: 11852, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 481, server: 42.157.161.38, port: 11208, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 482, server: 42.157.161.38, port: 11216, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 483, server: 211.99.115.5, port: 11351, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 484, server: 42.157.161.40, port: 11260, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 485, server: 211.99.115.21, port: 11111, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 486, server: 211.99.115.5, port: 11107, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 487, server: 211.99.115.12, port: 11104, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 488, server: 42.157.161.48, port: 11215, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 489, server: 42.157.161.40, port: 11213, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 490, server: 211.99.115.6, port: 11401, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 491, server: 211.99.115.16, port: 11601, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 492, server: 211.99.115.17, port: 11115, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 493, server: 211.99.115.22, port: 11404, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 494, server: 211.99.115.19, port: 11301, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 495, server: 211.99.115.15, port: 11853, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 496, server: 42.157.161.46, port: 11262, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 497, server: 42.157.161.41, port: 11252, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 498, server: 211.99.115.19, port: 11006, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 499, server: 211.99.115.5, port: 11116, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 500, server: 211.99.115.2, port: 11104, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 501, server: 42.157.161.48, port: 11204, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 502, server: 211.99.115.11, port: 11005, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 503, server: 211.99.115.4, port: 11012, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 504, server: 211.99.115.6, port: 11054, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 505, server: 211.99.115.13, port: 11651, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 506, server: 211.99.115.18, port: 11403, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 507, server: 211.99.115.12, port: 11904, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 508, server: 211.99.115.9, port: 11853, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 509, server: 211.99.115.16, port: 11117, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 510, server: 211.99.115.21, port: 11851, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 511, server: 42.157.161.38, port: 11217, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 512, server: 211.99.115.19, port: 11005, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 513, server: 211.99.115.9, port: 11102, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 514, server: 211.99.115.15, port: 11117, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 515, server: 42.157.161.44, port: 11206, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 516, server: 211.99.115.10, port: 11008, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 517, server: 211.99.115.6, port: 11011, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: CN_油管+TG+8度科技 518, server: 211.99.115.14, port: 11751, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 39, server: 211.99.115.13, port: 11054, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 40, server: 211.99.115.20, port: 11051, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 41, server: 211.99.115.18, port: 11901, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 42, server: 211.99.115.8, port: 11111, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 43, server: 211.99.115.15, port: 11017, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 44, server: 211.99.115.12, port: 11117, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 45, server: 211.99.115.2, port: 11053, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 46, server: 211.99.115.23, port: 11013, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 47, server: 42.157.161.51, port: 11801, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 48, server: 211.99.115.5, port: 11004, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 49, server: 211.99.115.6, port: 11406, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 50, server: 42.157.161.51, port: 11151, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 51, server: 211.99.115.14, port: 11004, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 52, server: 211.99.115.12, port: 11903, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 53, server: 211.99.115.15, port: 11006, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管 TG 8度科技, server: ingress-i1.onebox6.org, port: 38501, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: www.ivpnpro.net}, udp: true}
+  - {name: CN_油管+TG+8度科技 54, server: 211.99.115.7, port: 11116, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 55, server: 211.99.115.9, port: 11903, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 56, server: 211.99.115.8, port: 11018, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 57, server: 211.99.115.16, port: 11055, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 58, server: 211.99.115.9, port: 11117, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 59, server: 211.99.115.15, port: 11018, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 60, server: 211.99.115.6, port: 11003, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 61, server: 211.99.115.22, port: 11601, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 62, server: 211.99.115.6, port: 11015, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 63, server: 211.99.115.5, port: 11016, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 64, server: 211.99.115.12, port: 11552, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 65, server: 211.99.115.24, port: 11015, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 66, server: 211.99.115.19, port: 11011, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 67, server: 211.99.115.22, port: 11003, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 68, server: 211.99.115.6, port: 11011, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 69, server: 211.99.115.18, port: 11002, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 70, server: 211.99.115.17, port: 11004, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 71, server: 211.99.115.22, port: 11104, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 72, server: 211.99.115.5, port: 11104, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 73, server: 211.99.115.22, port: 11904, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 74, server: 211.99.115.21, port: 11751, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 75, server: 211.99.115.13, port: 11501, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 76, server: 211.99.115.2, port: 11004, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 77, server: 211.99.115.7, port: 11017, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 78, server: 211.99.115.21, port: 11116, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 79, server: 211.99.115.3, port: 11853, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 80, server: 211.99.115.21, port: 11017, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 81, server: 211.99.115.2, port: 11005, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 82, server: 211.99.115.6, port: 11903, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 83, server: 211.99.115.21, port: 11003, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 84, server: 211.99.115.3, port: 11852, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 85, server: 211.99.115.24, port: 11002, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 86, server: 211.99.115.24, port: 11053, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 87, server: 211.99.115.15, port: 11054, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 88, server: 211.99.115.6, port: 11012, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 89, server: 211.99.115.10, port: 11002, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 90, server: 211.99.115.5, port: 11054, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 91, server: 211.99.115.6, port: 11854, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 92, server: 211.99.115.6, port: 11008, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 93, server: 211.99.115.23, port: 11018, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 94, server: 211.99.115.18, port: 11009, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 95, server: 211.99.115.5, port: 11012, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 96, server: 42.157.161.45, port: 11217, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 97, server: 211.99.115.5, port: 11055, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 98, server: 42.157.161.38, port: 11217, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 99, server: 211.99.115.16, port: 11301, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 100, server: 211.99.115.13, port: 11051, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 101, server: 211.99.115.22, port: 11901, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 102, server: 211.99.115.4, port: 11053, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 103, server: 211.99.115.11, port: 11001, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 104, server: 211.99.115.13, port: 11013, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 105, server: 211.99.115.6, port: 11013, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 106, server: 211.99.115.13, port: 11002, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 107, server: 211.99.115.17, port: 11302, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 108, server: 211.99.115.20, port: 11008, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 109, server: 211.99.115.8, port: 11451, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 110, server: 211.99.115.12, port: 11451, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 111, server: 211.99.115.17, port: 11451, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 112, server: 211.99.115.11, port: 11551, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 113, server: 211.99.115.2, port: 11008, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 114, server: 211.99.115.22, port: 11011, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 115, server: 211.99.115.15, port: 11406, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 116, server: 211.99.115.9, port: 11007, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 117, server: 211.99.115.23, port: 11001, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 118, server: 211.99.115.10, port: 11012, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 119, server: 211.99.115.15, port: 11405, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 120, server: 211.99.115.4, port: 11406, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 121, server: 211.99.115.12, port: 11501, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 122, server: 42.157.161.42, port: 11217, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 123, server: 211.99.115.17, port: 11052, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 124, server: 211.99.115.7, port: 11013, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 125, server: 211.99.115.3, port: 11053, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 126, server: 211.99.115.4, port: 11852, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 127, server: 211.99.115.6, port: 11016, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 128, server: 211.99.115.17, port: 11601, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 129, server: 211.99.115.12, port: 11104, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 130, server: 211.99.115.10, port: 11004, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 131, server: 211.99.115.15, port: 11012, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 132, server: 211.99.115.21, port: 11111, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 133, server: 42.157.161.39, port: 11217, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 134, server: 211.99.115.11, port: 11005, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 135, server: 211.99.115.22, port: 11903, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 136, server: 211.99.115.22, port: 11852, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 137, server: 211.99.115.16, port: 11553, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 138, server: 211.99.115.4, port: 11751, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 139, server: 211.99.115.15, port: 11853, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 140, server: 211.99.115.5, port: 11010, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 141, server: 42.157.161.40, port: 11217, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 142, server: 211.99.115.9, port: 11551, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 143, server: 211.99.115.14, port: 11751, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 144, server: 211.99.115.16, port: 11115, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 145, server: 211.99.115.5, port: 11601, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 146, server: 211.99.115.21, port: 11104, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 147, server: 211.99.115.19, port: 11301, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 148, server: 211.99.115.2, port: 11001, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 149, server: 211.99.115.13, port: 11003, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 150, server: 211.99.115.20, port: 11104, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 151, server: 211.99.115.10, port: 11405, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 152, server: 211.99.115.20, port: 11405, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 153, server: 211.99.115.3, port: 11551, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 154, server: 211.99.115.6, port: 11601, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 155, server: 211.99.115.21, port: 11008, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 156, server: 211.99.115.25, port: 11451, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 157, server: 211.99.115.13, port: 11601, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 158, server: 211.99.115.17, port: 11301, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 159, server: 211.99.115.20, port: 11904, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 160, server: 211.99.115.24, port: 11111, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 161, server: 211.99.115.18, port: 11351, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 162, server: 211.99.115.23, port: 11052, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 163, server: 211.99.115.17, port: 11116, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 164, server: 211.99.115.4, port: 11904, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 165, server: 42.157.161.41, port: 11152, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 166, server: 211.99.115.17, port: 11405, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 167, server: 211.99.115.4, port: 11302, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 168, server: 211.99.115.2, port: 11904, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 169, server: 211.99.115.21, port: 11551, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 170, server: 211.99.115.7, port: 11111, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 171, server: 211.99.115.16, port: 11002, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 172, server: 211.99.115.3, port: 11854, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 173, server: 211.99.115.18, port: 11852, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 174, server: 211.99.115.18, port: 11904, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 175, server: 211.99.115.8, port: 11013, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 176, server: 211.99.115.17, port: 11551, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 177, server: 211.99.115.15, port: 11116, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 178, server: 211.99.115.15, port: 11451, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 179, server: 211.99.115.25, port: 11552, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 180, server: 211.99.115.16, port: 11003, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 181, server: 211.99.115.18, port: 11010, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 182, server: 211.99.115.2, port: 11751, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 183, server: 211.99.115.8, port: 11006, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 184, server: 211.99.115.11, port: 11054, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 185, server: 211.99.115.8, port: 11651, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 186, server: 211.99.115.4, port: 11501, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 187, server: 211.99.115.9, port: 11553, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 188, server: 211.99.115.9, port: 11852, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 189, server: 42.157.161.50, port: 11151, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 190, server: 211.99.115.10, port: 11553, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 191, server: 211.99.115.24, port: 11104, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 192, server: 211.99.115.23, port: 11451, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 193, server: 211.99.115.2, port: 11552, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 194, server: 211.99.115.11, port: 11018, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 195, server: 211.99.115.9, port: 11016, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 196, server: 211.99.115.17, port: 11006, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 197, server: 211.99.115.14, port: 11015, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 198, server: 211.99.115.6, port: 11017, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 199, server: 211.99.115.16, port: 11018, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 200, server: 211.99.115.11, port: 11405, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 201, server: 211.99.115.12, port: 11013, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 202, server: 211.99.115.15, port: 11010, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 203, server: 211.99.115.25, port: 11405, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 204, server: 211.99.115.10, port: 11010, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 205, server: 211.99.115.19, port: 11055, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 206, server: 211.99.115.16, port: 11013, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 207, server: 211.99.115.17, port: 11903, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 208, server: 211.99.115.8, port: 11903, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 209, server: 211.99.115.22, port: 11007, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 210, server: 211.99.115.24, port: 11008, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 211, server: 211.99.115.17, port: 11017, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 212, server: 211.99.115.10, port: 11451, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 213, server: 211.99.115.3, port: 11008, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 214, server: 211.99.115.8, port: 11405, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 215, server: 211.99.115.2, port: 11854, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 216, server: 211.99.115.16, port: 11054, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 217, server: 211.99.115.9, port: 11116, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 218, server: 211.99.115.18, port: 11052, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 219, server: 211.99.115.23, port: 11016, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 220, server: 211.99.115.7, port: 11301, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 221, server: 211.99.115.23, port: 11009, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 222, server: 211.99.115.3, port: 11017, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 223, server: 211.99.115.11, port: 11117, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 224, server: 211.99.115.14, port: 11553, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 225, server: 211.99.115.6, port: 11451, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 226, server: 211.99.115.8, port: 11011, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 227, server: 211.99.115.6, port: 11051, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 228, server: 211.99.115.11, port: 11652, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 229, server: 211.99.115.17, port: 11015, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 230, server: 211.99.115.12, port: 11301, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 231, server: 211.99.115.11, port: 11854, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 232, server: 211.99.115.25, port: 11007, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 233, server: 42.157.161.50, port: 11217, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 234, server: 211.99.115.13, port: 11405, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 235, server: 211.99.115.3, port: 11851, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 236, server: 211.99.115.7, port: 11018, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 237, server: 211.99.115.6, port: 11006, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 238, server: 211.99.115.21, port: 11601, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 239, server: 211.99.115.24, port: 11116, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 240, server: 211.99.115.11, port: 11903, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 241, server: 211.99.115.17, port: 11011, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 242, server: 211.99.115.14, port: 11904, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 243, server: 211.99.115.7, port: 11054, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 244, server: 211.99.115.16, port: 11016, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 245, server: 211.99.115.16, port: 11651, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 246, server: 211.99.115.20, port: 11018, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 247, server: 211.99.115.25, port: 11553, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 248, server: 211.99.115.23, port: 11552, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 249, server: 211.99.115.14, port: 11013, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 250, server: 211.99.115.10, port: 11651, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 251, server: 211.99.115.21, port: 11501, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 252, server: 211.99.115.8, port: 11701, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 253, server: 211.99.115.21, port: 11851, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 254, server: 211.99.115.14, port: 11104, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 255, server: 211.99.115.11, port: 11011, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 256, server: 211.99.115.7, port: 11117, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 257, server: 211.99.115.3, port: 11406, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 258, server: 211.99.115.23, port: 11406, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 259, server: 211.99.115.18, port: 11903, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 260, server: 211.99.115.5, port: 11115, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 261, server: 211.99.115.6, port: 11652, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 262, server: 211.99.115.16, port: 11451, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 263, server: 211.99.115.6, port: 11055, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 264, server: 211.99.115.20, port: 11854, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 265, server: 211.99.115.13, port: 11117, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 266, server: 211.99.115.3, port: 11904, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 267, server: 211.99.115.22, port: 11013, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 268, server: 211.99.115.4, port: 11017, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 269, server: 211.99.115.10, port: 11351, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 270, server: 42.157.161.44, port: 11151, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 271, server: 211.99.115.12, port: 11055, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 272, server: 211.99.115.19, port: 11405, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 273, server: 211.99.115.4, port: 11117, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 274, server: 211.99.115.8, port: 11652, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 275, server: 211.99.115.13, port: 11552, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 276, server: 211.99.115.15, port: 11701, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 277, server: 211.99.115.16, port: 11005, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 278, server: 211.99.115.17, port: 11351, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 279, server: 211.99.115.16, port: 11405, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 280, server: 211.99.115.16, port: 11010, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 281, server: 42.157.161.45, port: 11801, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 282, server: 211.99.115.13, port: 11016, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 283, server: 211.99.115.12, port: 11111, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 284, server: 211.99.115.22, port: 11006, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 285, server: 211.99.115.20, port: 11302, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 286, server: 211.99.115.12, port: 11405, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 287, server: 211.99.115.12, port: 11054, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 288, server: 211.99.115.8, port: 11115, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 289, server: 14.29.124.168, port: 25100, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_油管+TG+8度科技 290, server: 211.99.115.11, port: 11017, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管 TG 8度科技 2, server: 14.29.124.168, port: 25279, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_油管+TG+8度科技 291, server: 211.99.115.22, port: 11551, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 292, server: 211.99.115.12, port: 11012, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 293, server: 211.99.115.24, port: 11011, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 294, server: 211.99.115.15, port: 11117, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 295, server: 211.99.115.21, port: 11052, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 296, server: 211.99.115.9, port: 11006, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 297, server: 211.99.115.21, port: 11904, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 298, server: 211.99.115.4, port: 11004, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 299, server: 211.99.115.15, port: 11553, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 300, server: 211.99.115.7, port: 11010, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 301, server: 211.99.115.21, port: 11117, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 302, server: 211.99.115.18, port: 11017, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 303, server: 211.99.115.25, port: 11351, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 304, server: 211.99.115.15, port: 11001, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 305, server: 211.99.115.16, port: 11001, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 306, server: 211.99.115.23, port: 11351, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 307, server: 211.99.115.25, port: 11651, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 308, server: 211.99.115.11, port: 11010, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 309, server: 211.99.115.13, port: 11104, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 310, server: 211.99.115.7, port: 11015, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 311, server: 211.99.115.18, port: 11851, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 312, server: 14.29.124.168, port: 25267, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_油管+TG+8度科技 313, server: 211.99.115.14, port: 11053, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 314, server: 211.99.115.23, port: 11852, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 315, server: 211.99.115.4, port: 11851, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 316, server: 211.99.115.10, port: 11003, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 317, server: 211.99.115.17, port: 11007, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 318, server: 211.99.115.25, port: 11013, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 319, server: 211.99.115.2, port: 11010, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 320, server: 211.99.115.2, port: 11104, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 321, server: 211.99.115.15, port: 11015, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 322, server: 211.99.115.2, port: 11406, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 323, server: 211.99.115.24, port: 11051, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 324, server: 211.99.115.11, port: 11009, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 325, server: 211.99.115.15, port: 11551, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 326, server: 211.99.115.3, port: 11007, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 327, server: 211.99.115.10, port: 11011, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 328, server: 211.99.115.7, port: 11751, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 329, server: 211.99.115.16, port: 11015, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 330, server: 211.99.115.22, port: 11018, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 331, server: 211.99.115.9, port: 11009, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 332, server: 211.99.115.12, port: 11751, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 333, server: 211.99.115.9, port: 11010, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 334, server: 211.99.115.15, port: 11053, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 335, server: 211.99.115.24, port: 11016, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 336, server: 211.99.115.18, port: 11053, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 337, server: 211.99.115.6, port: 11054, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 338, server: 211.99.115.22, port: 11552, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 339, server: 42.157.161.46, port: 11802, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 340, server: 211.99.115.3, port: 11405, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 341, server: 42.157.161.53, port: 11217, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 342, server: 211.99.115.18, port: 11051, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 343, server: 211.99.115.16, port: 11852, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 344, server: 211.99.115.8, port: 11053, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 345, server: 211.99.115.23, port: 11651, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 346, server: 211.99.115.25, port: 11009, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 347, server: 211.99.115.9, port: 11451, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 348, server: 211.99.115.18, port: 11004, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 349, server: 211.99.115.10, port: 11406, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 350, server: 211.99.115.20, port: 11053, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 351, server: 211.99.115.4, port: 11006, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 352, server: 211.99.115.12, port: 11851, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 353, server: 211.99.115.10, port: 11015, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 354, server: 42.157.161.45, port: 11218, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 355, server: 211.99.115.18, port: 11552, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 356, server: 211.99.115.13, port: 11008, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 357, server: 211.99.115.10, port: 11601, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 358, server: 211.99.115.12, port: 11018, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 359, server: 42.157.161.40, port: 11151, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 360, server: 211.99.115.17, port: 11053, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 361, server: 211.99.115.19, port: 11406, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 362, server: 211.99.115.7, port: 11901, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 363, server: 211.99.115.8, port: 11852, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 364, server: 211.99.115.22, port: 11010, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 365, server: 211.99.115.14, port: 11851, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 366, server: 211.99.115.5, port: 11302, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 367, server: 211.99.115.25, port: 11406, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 368, server: 211.99.115.11, port: 11552, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 369, server: 211.99.115.16, port: 11406, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 370, server: 14.29.124.168, port: 25293, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_油管+TG+8度科技 371, server: 211.99.115.16, port: 11009, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 372, server: 42.157.161.40, port: 11801, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 373, server: 211.99.115.12, port: 11406, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 374, server: 211.99.115.17, port: 11115, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 375, server: 211.99.115.3, port: 11501, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 376, server: 211.99.115.13, port: 11116, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 377, server: 211.99.115.20, port: 11055, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 378, server: 211.99.115.19, port: 11018, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 379, server: 211.99.115.14, port: 11017, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 380, server: 211.99.115.25, port: 11001, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 381, server: 211.99.115.19, port: 11451, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 382, server: 211.99.115.18, port: 11451, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 383, server: 211.99.115.23, port: 11851, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 384, server: 211.99.115.4, port: 11701, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 385, server: 211.99.115.9, port: 11853, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 386, server: 211.99.115.16, port: 11117, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 387, server: 211.99.115.5, port: 11552, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 388, server: 211.99.115.6, port: 11053, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 389, server: 211.99.115.8, port: 11601, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 390, server: 211.99.115.3, port: 11104, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 391, server: 211.99.115.23, port: 11501, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 392, server: 211.99.115.9, port: 11351, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 393, server: 211.99.115.10, port: 11301, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 394, server: 211.99.115.9, port: 11054, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 395, server: 211.99.115.15, port: 11111, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 396, server: 211.99.115.25, port: 11853, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 397, server: 42.157.161.38, port: 11801, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 398, server: 211.99.115.13, port: 11302, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 399, server: 211.99.115.23, port: 11405, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 400, server: 211.99.115.5, port: 11116, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 401, server: 211.99.115.10, port: 11008, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 402, server: 211.99.115.2, port: 11055, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 403, server: 211.99.115.11, port: 11851, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 404, server: 211.99.115.19, port: 11052, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 405, server: 211.99.115.11, port: 11055, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 406, server: 211.99.115.10, port: 11901, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 407, server: 211.99.115.17, port: 11701, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: CN_油管+TG+8度科技 408, server: 211.99.115.16, port: 11853, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
@@ -562,26 +422,16 @@ proxy-groups:
       - ♻️ 自动选择
       - 🎯 全球直连
       - CN_油管+TG+8度科技
-      - CN_油管 TG 8度科技
-      - CN_油管 TG 8度科技 2
       - CN_油管+TG+8度科技 2
-      - CN_油管 TG 8度科技 3
-      - CN_油管 TG 8度科技 4
       - CN_油管+TG+8度科技 3
-      - CN_油管 TG 8度科技 5
       - CN_油管+TG+8度科技 4
       - CN_油管+TG+8度科技 5
-      - CN_油管 TG 8度科技 6
-      - CN_油管 TG 8度科技 7
       - CN_油管+TG+8度科技 6
       - CN_油管+TG+8度科技 7
-      - CN_油管 TG 8度科技 8
       - CN_油管+TG+8度科技 8
       - CN_油管+TG+8度科技 9
-      - CN_油管 TG 8度科技 9
       - CN_油管+TG+8度科技 10
       - CN_油管+TG+8度科技 11
-      - CN_油管 TG 8度科技 10
       - CN_油管+TG+8度科技 12
       - CN_油管+TG+8度科技 13
       - CN_油管+TG+8度科技 14
@@ -591,33 +441,24 @@ proxy-groups:
       - CN_油管+TG+8度科技 18
       - CN_油管+TG+8度科技 19
       - CN_油管+TG+8度科技 20
-      - CN_油管 TG 8度科技 11
       - CN_油管+TG+8度科技 21
       - CN_油管+TG+8度科技 22
       - CN_油管+TG+8度科技 23
       - CN_油管+TG+8度科技 24
-      - CN_油管 TG 8度科技 12
       - CN_油管+TG+8度科技 25
-      - US_油管 TG 8度科技
       - CN_油管+TG+8度科技 26
       - CN_油管+TG+8度科技 27
       - CN_油管+TG+8度科技 28
-      - CN_油管 TG 8度科技 13
       - CN_油管+TG+8度科技 29
       - CN_油管+TG+8度科技 30
-      - CN_油管 TG 8度科技 14
       - CN_油管+TG+8度科技 31
       - CN_油管+TG+8度科技 32
-      - CN_油管 TG 8度科技 15
       - CN_油管+TG+8度科技 33
       - CN_油管+TG+8度科技 34
-      - CN_油管 TG 8度科技 16
       - CN_油管+TG+8度科技 35
       - CN_油管+TG+8度科技 36
-      - CN_油管 TG 8度科技 17
       - CN_油管+TG+8度科技 37
       - CN_油管+TG+8度科技 38
-      - CN_油管 TG 8度科技 18
       - CN_油管+TG+8度科技 39
       - CN_油管+TG+8度科技 40
       - CN_油管+TG+8度科技 41
@@ -629,11 +470,11 @@ proxy-groups:
       - CN_油管+TG+8度科技 47
       - CN_油管+TG+8度科技 48
       - CN_油管+TG+8度科技 49
-      - CN_油管 TG 8度科技 19
       - CN_油管+TG+8度科技 50
       - CN_油管+TG+8度科技 51
       - CN_油管+TG+8度科技 52
       - CN_油管+TG+8度科技 53
+      - CN_油管 TG 8度科技
       - CN_油管+TG+8度科技 54
       - CN_油管+TG+8度科技 55
       - CN_油管+TG+8度科技 56
@@ -642,7 +483,6 @@ proxy-groups:
       - CN_油管+TG+8度科技 59
       - CN_油管+TG+8度科技 60
       - CN_油管+TG+8度科技 61
-      - CN_油管 TG 8度科技 20
       - CN_油管+TG+8度科技 62
       - CN_油管+TG+8度科技 63
       - CN_油管+TG+8度科技 64
@@ -675,7 +515,6 @@ proxy-groups:
       - CN_油管+TG+8度科技 91
       - CN_油管+TG+8度科技 92
       - CN_油管+TG+8度科技 93
-      - US_油管 TG 8度科技 2
       - CN_油管+TG+8度科技 94
       - CN_油管+TG+8度科技 95
       - CN_油管+TG+8度科技 96
@@ -688,7 +527,6 @@ proxy-groups:
       - CN_油管+TG+8度科技 103
       - CN_油管+TG+8度科技 104
       - CN_油管+TG+8度科技 105
-      - US_油管 TG 8度科技 3
       - CN_油管+TG+8度科技 106
       - CN_油管+TG+8度科技 107
       - CN_油管+TG+8度科技 108
@@ -697,7 +535,6 @@ proxy-groups:
       - CN_油管+TG+8度科技 111
       - CN_油管+TG+8度科技 112
       - CN_油管+TG+8度科技 113
-      - US_油管 TG 8度科技 4
       - CN_油管+TG+8度科技 114
       - CN_油管+TG+8度科技 115
       - CN_油管+TG+8度科技 116
@@ -706,7 +543,6 @@ proxy-groups:
       - CN_油管+TG+8度科技 119
       - CN_油管+TG+8度科技 120
       - CN_油管+TG+8度科技 121
-      - CN_油管 TG 8度科技 21
       - CN_油管+TG+8度科技 122
       - CN_油管+TG+8度科技 123
       - CN_油管+TG+8度科技 124
@@ -722,8 +558,6 @@ proxy-groups:
       - CN_油管+TG+8度科技 134
       - CN_油管+TG+8度科技 135
       - CN_油管+TG+8度科技 136
-      - HK_油管 TG 8度科技
-      - US_油管 TG 8度科技 5
       - CN_油管+TG+8度科技 137
       - CN_油管+TG+8度科技 138
       - CN_油管+TG+8度科技 139
@@ -787,7 +621,6 @@ proxy-groups:
       - CN_油管+TG+8度科技 197
       - CN_油管+TG+8度科技 198
       - CN_油管+TG+8度科技 199
-      - CN_油管 TG 8度科技 22
       - CN_油管+TG+8度科技 200
       - CN_油管+TG+8度科技 201
       - CN_油管+TG+8度科技 202
@@ -879,6 +712,7 @@ proxy-groups:
       - CN_油管+TG+8度科技 288
       - CN_油管+TG+8度科技 289
       - CN_油管+TG+8度科技 290
+      - CN_油管 TG 8度科技 2
       - CN_油管+TG+8度科技 291
       - CN_油管+TG+8度科技 292
       - CN_油管+TG+8度科技 293
@@ -899,7 +733,6 @@ proxy-groups:
       - CN_油管+TG+8度科技 308
       - CN_油管+TG+8度科技 309
       - CN_油管+TG+8度科技 310
-      - CN_油管 TG 8度科技 23
       - CN_油管+TG+8度科技 311
       - CN_油管+TG+8度科技 312
       - CN_油管+TG+8度科技 313
@@ -931,7 +764,6 @@ proxy-groups:
       - CN_油管+TG+8度科技 339
       - CN_油管+TG+8度科技 340
       - CN_油管+TG+8度科技 341
-      - CN_油管 TG 8度科技 24
       - CN_油管+TG+8度科技 342
       - CN_油管+TG+8度科技 343
       - CN_油管+TG+8度科技 344
@@ -954,7 +786,6 @@ proxy-groups:
       - CN_油管+TG+8度科技 361
       - CN_油管+TG+8度科技 362
       - CN_油管+TG+8度科技 363
-      - CN_油管 TG 8度科技 25
       - CN_油管+TG+8度科技 364
       - CN_油管+TG+8度科技 365
       - CN_油管+TG+8度科技 366
@@ -1000,143 +831,22 @@ proxy-groups:
       - CN_油管+TG+8度科技 406
       - CN_油管+TG+8度科技 407
       - CN_油管+TG+8度科技 408
-      - CN_油管+TG+8度科技 409
-      - CN_油管+TG+8度科技 410
-      - CN_油管 TG 8度科技 26
-      - CN_油管+TG+8度科技 411
-      - CN_油管+TG+8度科技 412
-      - CN_油管+TG+8度科技 413
-      - CN_油管+TG+8度科技 414
-      - CN_油管+TG+8度科技 415
-      - CN_油管+TG+8度科技 416
-      - CN_油管+TG+8度科技 417
-      - CN_油管+TG+8度科技 418
-      - CN_油管+TG+8度科技 419
-      - CN_油管+TG+8度科技 420
-      - CN_油管+TG+8度科技 421
-      - CN_油管+TG+8度科技 422
-      - CN_油管+TG+8度科技 423
-      - CN_油管+TG+8度科技 424
-      - CN_油管+TG+8度科技 425
-      - CN_油管+TG+8度科技 426
-      - CN_油管+TG+8度科技 427
-      - CN_油管+TG+8度科技 428
-      - CN_油管+TG+8度科技 429
-      - CN_油管+TG+8度科技 430
-      - CN_油管+TG+8度科技 431
-      - CN_油管+TG+8度科技 432
-      - CN_油管+TG+8度科技 433
-      - CN_油管+TG+8度科技 434
-      - CN_油管+TG+8度科技 435
-      - CN_油管+TG+8度科技 436
-      - CN_油管+TG+8度科技 437
-      - CN_油管+TG+8度科技 438
-      - CN_油管+TG+8度科技 439
-      - CN_油管+TG+8度科技 440
-      - CN_油管+TG+8度科技 441
-      - CN_油管+TG+8度科技 442
-      - CN_油管+TG+8度科技 443
-      - CN_油管+TG+8度科技 444
-      - CN_油管+TG+8度科技 445
-      - CN_油管+TG+8度科技 446
-      - CN_油管+TG+8度科技 447
-      - CN_油管+TG+8度科技 448
-      - CN_油管+TG+8度科技 449
-      - CN_油管+TG+8度科技 450
-      - CN_油管+TG+8度科技 451
-      - CN_油管+TG+8度科技 452
-      - CN_油管+TG+8度科技 453
-      - CN_油管+TG+8度科技 454
-      - CN_油管+TG+8度科技 455
-      - CN_油管+TG+8度科技 456
-      - CN_油管+TG+8度科技 457
-      - CN_油管+TG+8度科技 458
-      - CN_油管+TG+8度科技 459
-      - CN_油管+TG+8度科技 460
-      - CN_油管+TG+8度科技 461
-      - CN_油管+TG+8度科技 462
-      - CN_油管+TG+8度科技 463
-      - CN_油管+TG+8度科技 464
-      - CN_油管+TG+8度科技 465
-      - CN_油管+TG+8度科技 466
-      - CN_油管+TG+8度科技 467
-      - CN_油管+TG+8度科技 468
-      - CN_油管+TG+8度科技 469
-      - CN_油管+TG+8度科技 470
-      - CN_油管+TG+8度科技 471
-      - CN_油管+TG+8度科技 472
-      - CN_油管+TG+8度科技 473
-      - CN_油管+TG+8度科技 474
-      - CN_油管+TG+8度科技 475
-      - CN_油管+TG+8度科技 476
-      - CN_油管+TG+8度科技 477
-      - CN_油管+TG+8度科技 478
-      - CN_油管+TG+8度科技 479
-      - CN_油管+TG+8度科技 480
-      - CN_油管+TG+8度科技 481
-      - CN_油管+TG+8度科技 482
-      - CN_油管+TG+8度科技 483
-      - CN_油管+TG+8度科技 484
-      - CN_油管+TG+8度科技 485
-      - CN_油管+TG+8度科技 486
-      - CN_油管+TG+8度科技 487
-      - CN_油管+TG+8度科技 488
-      - CN_油管+TG+8度科技 489
-      - CN_油管+TG+8度科技 490
-      - CN_油管+TG+8度科技 491
-      - CN_油管+TG+8度科技 492
-      - CN_油管+TG+8度科技 493
-      - CN_油管+TG+8度科技 494
-      - CN_油管+TG+8度科技 495
-      - CN_油管+TG+8度科技 496
-      - CN_油管+TG+8度科技 497
-      - CN_油管+TG+8度科技 498
-      - CN_油管+TG+8度科技 499
-      - CN_油管+TG+8度科技 500
-      - CN_油管+TG+8度科技 501
-      - CN_油管+TG+8度科技 502
-      - CN_油管+TG+8度科技 503
-      - CN_油管+TG+8度科技 504
-      - CN_油管+TG+8度科技 505
-      - CN_油管+TG+8度科技 506
-      - CN_油管+TG+8度科技 507
-      - CN_油管+TG+8度科技 508
-      - CN_油管+TG+8度科技 509
-      - CN_油管+TG+8度科技 510
-      - CN_油管+TG+8度科技 511
-      - CN_油管+TG+8度科技 512
-      - CN_油管+TG+8度科技 513
-      - CN_油管+TG+8度科技 514
-      - CN_油管+TG+8度科技 515
-      - CN_油管+TG+8度科技 516
-      - CN_油管+TG+8度科技 517
-      - CN_油管+TG+8度科技 518
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
       - CN_油管+TG+8度科技
-      - CN_油管 TG 8度科技
-      - CN_油管 TG 8度科技 2
       - CN_油管+TG+8度科技 2
-      - CN_油管 TG 8度科技 3
-      - CN_油管 TG 8度科技 4
       - CN_油管+TG+8度科技 3
-      - CN_油管 TG 8度科技 5
       - CN_油管+TG+8度科技 4
       - CN_油管+TG+8度科技 5
-      - CN_油管 TG 8度科技 6
-      - CN_油管 TG 8度科技 7
       - CN_油管+TG+8度科技 6
       - CN_油管+TG+8度科技 7
-      - CN_油管 TG 8度科技 8
       - CN_油管+TG+8度科技 8
       - CN_油管+TG+8度科技 9
-      - CN_油管 TG 8度科技 9
       - CN_油管+TG+8度科技 10
       - CN_油管+TG+8度科技 11
-      - CN_油管 TG 8度科技 10
       - CN_油管+TG+8度科技 12
       - CN_油管+TG+8度科技 13
       - CN_油管+TG+8度科技 14
@@ -1146,33 +856,24 @@ proxy-groups:
       - CN_油管+TG+8度科技 18
       - CN_油管+TG+8度科技 19
       - CN_油管+TG+8度科技 20
-      - CN_油管 TG 8度科技 11
       - CN_油管+TG+8度科技 21
       - CN_油管+TG+8度科技 22
       - CN_油管+TG+8度科技 23
       - CN_油管+TG+8度科技 24
-      - CN_油管 TG 8度科技 12
       - CN_油管+TG+8度科技 25
-      - US_油管 TG 8度科技
       - CN_油管+TG+8度科技 26
       - CN_油管+TG+8度科技 27
       - CN_油管+TG+8度科技 28
-      - CN_油管 TG 8度科技 13
       - CN_油管+TG+8度科技 29
       - CN_油管+TG+8度科技 30
-      - CN_油管 TG 8度科技 14
       - CN_油管+TG+8度科技 31
       - CN_油管+TG+8度科技 32
-      - CN_油管 TG 8度科技 15
       - CN_油管+TG+8度科技 33
       - CN_油管+TG+8度科技 34
-      - CN_油管 TG 8度科技 16
       - CN_油管+TG+8度科技 35
       - CN_油管+TG+8度科技 36
-      - CN_油管 TG 8度科技 17
       - CN_油管+TG+8度科技 37
       - CN_油管+TG+8度科技 38
-      - CN_油管 TG 8度科技 18
       - CN_油管+TG+8度科技 39
       - CN_油管+TG+8度科技 40
       - CN_油管+TG+8度科技 41
@@ -1184,11 +885,11 @@ proxy-groups:
       - CN_油管+TG+8度科技 47
       - CN_油管+TG+8度科技 48
       - CN_油管+TG+8度科技 49
-      - CN_油管 TG 8度科技 19
       - CN_油管+TG+8度科技 50
       - CN_油管+TG+8度科技 51
       - CN_油管+TG+8度科技 52
       - CN_油管+TG+8度科技 53
+      - CN_油管 TG 8度科技
       - CN_油管+TG+8度科技 54
       - CN_油管+TG+8度科技 55
       - CN_油管+TG+8度科技 56
@@ -1197,7 +898,6 @@ proxy-groups:
       - CN_油管+TG+8度科技 59
       - CN_油管+TG+8度科技 60
       - CN_油管+TG+8度科技 61
-      - CN_油管 TG 8度科技 20
       - CN_油管+TG+8度科技 62
       - CN_油管+TG+8度科技 63
       - CN_油管+TG+8度科技 64
@@ -1230,7 +930,6 @@ proxy-groups:
       - CN_油管+TG+8度科技 91
       - CN_油管+TG+8度科技 92
       - CN_油管+TG+8度科技 93
-      - US_油管 TG 8度科技 2
       - CN_油管+TG+8度科技 94
       - CN_油管+TG+8度科技 95
       - CN_油管+TG+8度科技 96
@@ -1243,7 +942,6 @@ proxy-groups:
       - CN_油管+TG+8度科技 103
       - CN_油管+TG+8度科技 104
       - CN_油管+TG+8度科技 105
-      - US_油管 TG 8度科技 3
       - CN_油管+TG+8度科技 106
       - CN_油管+TG+8度科技 107
       - CN_油管+TG+8度科技 108
@@ -1252,7 +950,6 @@ proxy-groups:
       - CN_油管+TG+8度科技 111
       - CN_油管+TG+8度科技 112
       - CN_油管+TG+8度科技 113
-      - US_油管 TG 8度科技 4
       - CN_油管+TG+8度科技 114
       - CN_油管+TG+8度科技 115
       - CN_油管+TG+8度科技 116
@@ -1261,7 +958,6 @@ proxy-groups:
       - CN_油管+TG+8度科技 119
       - CN_油管+TG+8度科技 120
       - CN_油管+TG+8度科技 121
-      - CN_油管 TG 8度科技 21
       - CN_油管+TG+8度科技 122
       - CN_油管+TG+8度科技 123
       - CN_油管+TG+8度科技 124
@@ -1277,8 +973,6 @@ proxy-groups:
       - CN_油管+TG+8度科技 134
       - CN_油管+TG+8度科技 135
       - CN_油管+TG+8度科技 136
-      - HK_油管 TG 8度科技
-      - US_油管 TG 8度科技 5
       - CN_油管+TG+8度科技 137
       - CN_油管+TG+8度科技 138
       - CN_油管+TG+8度科技 139
@@ -1342,7 +1036,6 @@ proxy-groups:
       - CN_油管+TG+8度科技 197
       - CN_油管+TG+8度科技 198
       - CN_油管+TG+8度科技 199
-      - CN_油管 TG 8度科技 22
       - CN_油管+TG+8度科技 200
       - CN_油管+TG+8度科技 201
       - CN_油管+TG+8度科技 202
@@ -1434,6 +1127,7 @@ proxy-groups:
       - CN_油管+TG+8度科技 288
       - CN_油管+TG+8度科技 289
       - CN_油管+TG+8度科技 290
+      - CN_油管 TG 8度科技 2
       - CN_油管+TG+8度科技 291
       - CN_油管+TG+8度科技 292
       - CN_油管+TG+8度科技 293
@@ -1454,7 +1148,6 @@ proxy-groups:
       - CN_油管+TG+8度科技 308
       - CN_油管+TG+8度科技 309
       - CN_油管+TG+8度科技 310
-      - CN_油管 TG 8度科技 23
       - CN_油管+TG+8度科技 311
       - CN_油管+TG+8度科技 312
       - CN_油管+TG+8度科技 313
@@ -1486,7 +1179,6 @@ proxy-groups:
       - CN_油管+TG+8度科技 339
       - CN_油管+TG+8度科技 340
       - CN_油管+TG+8度科技 341
-      - CN_油管 TG 8度科技 24
       - CN_油管+TG+8度科技 342
       - CN_油管+TG+8度科技 343
       - CN_油管+TG+8度科技 344
@@ -1509,7 +1201,6 @@ proxy-groups:
       - CN_油管+TG+8度科技 361
       - CN_油管+TG+8度科技 362
       - CN_油管+TG+8度科技 363
-      - CN_油管 TG 8度科技 25
       - CN_油管+TG+8度科技 364
       - CN_油管+TG+8度科技 365
       - CN_油管+TG+8度科技 366
@@ -1555,117 +1246,6 @@ proxy-groups:
       - CN_油管+TG+8度科技 406
       - CN_油管+TG+8度科技 407
       - CN_油管+TG+8度科技 408
-      - CN_油管+TG+8度科技 409
-      - CN_油管+TG+8度科技 410
-      - CN_油管 TG 8度科技 26
-      - CN_油管+TG+8度科技 411
-      - CN_油管+TG+8度科技 412
-      - CN_油管+TG+8度科技 413
-      - CN_油管+TG+8度科技 414
-      - CN_油管+TG+8度科技 415
-      - CN_油管+TG+8度科技 416
-      - CN_油管+TG+8度科技 417
-      - CN_油管+TG+8度科技 418
-      - CN_油管+TG+8度科技 419
-      - CN_油管+TG+8度科技 420
-      - CN_油管+TG+8度科技 421
-      - CN_油管+TG+8度科技 422
-      - CN_油管+TG+8度科技 423
-      - CN_油管+TG+8度科技 424
-      - CN_油管+TG+8度科技 425
-      - CN_油管+TG+8度科技 426
-      - CN_油管+TG+8度科技 427
-      - CN_油管+TG+8度科技 428
-      - CN_油管+TG+8度科技 429
-      - CN_油管+TG+8度科技 430
-      - CN_油管+TG+8度科技 431
-      - CN_油管+TG+8度科技 432
-      - CN_油管+TG+8度科技 433
-      - CN_油管+TG+8度科技 434
-      - CN_油管+TG+8度科技 435
-      - CN_油管+TG+8度科技 436
-      - CN_油管+TG+8度科技 437
-      - CN_油管+TG+8度科技 438
-      - CN_油管+TG+8度科技 439
-      - CN_油管+TG+8度科技 440
-      - CN_油管+TG+8度科技 441
-      - CN_油管+TG+8度科技 442
-      - CN_油管+TG+8度科技 443
-      - CN_油管+TG+8度科技 444
-      - CN_油管+TG+8度科技 445
-      - CN_油管+TG+8度科技 446
-      - CN_油管+TG+8度科技 447
-      - CN_油管+TG+8度科技 448
-      - CN_油管+TG+8度科技 449
-      - CN_油管+TG+8度科技 450
-      - CN_油管+TG+8度科技 451
-      - CN_油管+TG+8度科技 452
-      - CN_油管+TG+8度科技 453
-      - CN_油管+TG+8度科技 454
-      - CN_油管+TG+8度科技 455
-      - CN_油管+TG+8度科技 456
-      - CN_油管+TG+8度科技 457
-      - CN_油管+TG+8度科技 458
-      - CN_油管+TG+8度科技 459
-      - CN_油管+TG+8度科技 460
-      - CN_油管+TG+8度科技 461
-      - CN_油管+TG+8度科技 462
-      - CN_油管+TG+8度科技 463
-      - CN_油管+TG+8度科技 464
-      - CN_油管+TG+8度科技 465
-      - CN_油管+TG+8度科技 466
-      - CN_油管+TG+8度科技 467
-      - CN_油管+TG+8度科技 468
-      - CN_油管+TG+8度科技 469
-      - CN_油管+TG+8度科技 470
-      - CN_油管+TG+8度科技 471
-      - CN_油管+TG+8度科技 472
-      - CN_油管+TG+8度科技 473
-      - CN_油管+TG+8度科技 474
-      - CN_油管+TG+8度科技 475
-      - CN_油管+TG+8度科技 476
-      - CN_油管+TG+8度科技 477
-      - CN_油管+TG+8度科技 478
-      - CN_油管+TG+8度科技 479
-      - CN_油管+TG+8度科技 480
-      - CN_油管+TG+8度科技 481
-      - CN_油管+TG+8度科技 482
-      - CN_油管+TG+8度科技 483
-      - CN_油管+TG+8度科技 484
-      - CN_油管+TG+8度科技 485
-      - CN_油管+TG+8度科技 486
-      - CN_油管+TG+8度科技 487
-      - CN_油管+TG+8度科技 488
-      - CN_油管+TG+8度科技 489
-      - CN_油管+TG+8度科技 490
-      - CN_油管+TG+8度科技 491
-      - CN_油管+TG+8度科技 492
-      - CN_油管+TG+8度科技 493
-      - CN_油管+TG+8度科技 494
-      - CN_油管+TG+8度科技 495
-      - CN_油管+TG+8度科技 496
-      - CN_油管+TG+8度科技 497
-      - CN_油管+TG+8度科技 498
-      - CN_油管+TG+8度科技 499
-      - CN_油管+TG+8度科技 500
-      - CN_油管+TG+8度科技 501
-      - CN_油管+TG+8度科技 502
-      - CN_油管+TG+8度科技 503
-      - CN_油管+TG+8度科技 504
-      - CN_油管+TG+8度科技 505
-      - CN_油管+TG+8度科技 506
-      - CN_油管+TG+8度科技 507
-      - CN_油管+TG+8度科技 508
-      - CN_油管+TG+8度科技 509
-      - CN_油管+TG+8度科技 510
-      - CN_油管+TG+8度科技 511
-      - CN_油管+TG+8度科技 512
-      - CN_油管+TG+8度科技 513
-      - CN_油管+TG+8度科技 514
-      - CN_油管+TG+8度科技 515
-      - CN_油管+TG+8度科技 516
-      - CN_油管+TG+8度科技 517
-      - CN_油管+TG+8度科技 518
   - name: 🎥 NETFLIX
     type: select
     proxies:
@@ -1673,26 +1253,16 @@ proxy-groups:
       - ♻️ 自动选择
       - 🎯 全球直连
       - CN_油管+TG+8度科技
-      - CN_油管 TG 8度科技
-      - CN_油管 TG 8度科技 2
       - CN_油管+TG+8度科技 2
-      - CN_油管 TG 8度科技 3
-      - CN_油管 TG 8度科技 4
       - CN_油管+TG+8度科技 3
-      - CN_油管 TG 8度科技 5
       - CN_油管+TG+8度科技 4
       - CN_油管+TG+8度科技 5
-      - CN_油管 TG 8度科技 6
-      - CN_油管 TG 8度科技 7
       - CN_油管+TG+8度科技 6
       - CN_油管+TG+8度科技 7
-      - CN_油管 TG 8度科技 8
       - CN_油管+TG+8度科技 8
       - CN_油管+TG+8度科技 9
-      - CN_油管 TG 8度科技 9
       - CN_油管+TG+8度科技 10
       - CN_油管+TG+8度科技 11
-      - CN_油管 TG 8度科技 10
       - CN_油管+TG+8度科技 12
       - CN_油管+TG+8度科技 13
       - CN_油管+TG+8度科技 14
@@ -1702,33 +1272,24 @@ proxy-groups:
       - CN_油管+TG+8度科技 18
       - CN_油管+TG+8度科技 19
       - CN_油管+TG+8度科技 20
-      - CN_油管 TG 8度科技 11
       - CN_油管+TG+8度科技 21
       - CN_油管+TG+8度科技 22
       - CN_油管+TG+8度科技 23
       - CN_油管+TG+8度科技 24
-      - CN_油管 TG 8度科技 12
       - CN_油管+TG+8度科技 25
-      - US_油管 TG 8度科技
       - CN_油管+TG+8度科技 26
       - CN_油管+TG+8度科技 27
       - CN_油管+TG+8度科技 28
-      - CN_油管 TG 8度科技 13
       - CN_油管+TG+8度科技 29
       - CN_油管+TG+8度科技 30
-      - CN_油管 TG 8度科技 14
       - CN_油管+TG+8度科技 31
       - CN_油管+TG+8度科技 32
-      - CN_油管 TG 8度科技 15
       - CN_油管+TG+8度科技 33
       - CN_油管+TG+8度科技 34
-      - CN_油管 TG 8度科技 16
       - CN_油管+TG+8度科技 35
       - CN_油管+TG+8度科技 36
-      - CN_油管 TG 8度科技 17
       - CN_油管+TG+8度科技 37
       - CN_油管+TG+8度科技 38
-      - CN_油管 TG 8度科技 18
       - CN_油管+TG+8度科技 39
       - CN_油管+TG+8度科技 40
       - CN_油管+TG+8度科技 41
@@ -1740,11 +1301,11 @@ proxy-groups:
       - CN_油管+TG+8度科技 47
       - CN_油管+TG+8度科技 48
       - CN_油管+TG+8度科技 49
-      - CN_油管 TG 8度科技 19
       - CN_油管+TG+8度科技 50
       - CN_油管+TG+8度科技 51
       - CN_油管+TG+8度科技 52
       - CN_油管+TG+8度科技 53
+      - CN_油管 TG 8度科技
       - CN_油管+TG+8度科技 54
       - CN_油管+TG+8度科技 55
       - CN_油管+TG+8度科技 56
@@ -1753,7 +1314,6 @@ proxy-groups:
       - CN_油管+TG+8度科技 59
       - CN_油管+TG+8度科技 60
       - CN_油管+TG+8度科技 61
-      - CN_油管 TG 8度科技 20
       - CN_油管+TG+8度科技 62
       - CN_油管+TG+8度科技 63
       - CN_油管+TG+8度科技 64
@@ -1786,7 +1346,6 @@ proxy-groups:
       - CN_油管+TG+8度科技 91
       - CN_油管+TG+8度科技 92
       - CN_油管+TG+8度科技 93
-      - US_油管 TG 8度科技 2
       - CN_油管+TG+8度科技 94
       - CN_油管+TG+8度科技 95
       - CN_油管+TG+8度科技 96
@@ -1799,7 +1358,6 @@ proxy-groups:
       - CN_油管+TG+8度科技 103
       - CN_油管+TG+8度科技 104
       - CN_油管+TG+8度科技 105
-      - US_油管 TG 8度科技 3
       - CN_油管+TG+8度科技 106
       - CN_油管+TG+8度科技 107
       - CN_油管+TG+8度科技 108
@@ -1808,7 +1366,6 @@ proxy-groups:
       - CN_油管+TG+8度科技 111
       - CN_油管+TG+8度科技 112
       - CN_油管+TG+8度科技 113
-      - US_油管 TG 8度科技 4
       - CN_油管+TG+8度科技 114
       - CN_油管+TG+8度科技 115
       - CN_油管+TG+8度科技 116
@@ -1817,7 +1374,6 @@ proxy-groups:
       - CN_油管+TG+8度科技 119
       - CN_油管+TG+8度科技 120
       - CN_油管+TG+8度科技 121
-      - CN_油管 TG 8度科技 21
       - CN_油管+TG+8度科技 122
       - CN_油管+TG+8度科技 123
       - CN_油管+TG+8度科技 124
@@ -1833,8 +1389,6 @@ proxy-groups:
       - CN_油管+TG+8度科技 134
       - CN_油管+TG+8度科技 135
       - CN_油管+TG+8度科技 136
-      - HK_油管 TG 8度科技
-      - US_油管 TG 8度科技 5
       - CN_油管+TG+8度科技 137
       - CN_油管+TG+8度科技 138
       - CN_油管+TG+8度科技 139
@@ -1898,7 +1452,6 @@ proxy-groups:
       - CN_油管+TG+8度科技 197
       - CN_油管+TG+8度科技 198
       - CN_油管+TG+8度科技 199
-      - CN_油管 TG 8度科技 22
       - CN_油管+TG+8度科技 200
       - CN_油管+TG+8度科技 201
       - CN_油管+TG+8度科技 202
@@ -1990,6 +1543,7 @@ proxy-groups:
       - CN_油管+TG+8度科技 288
       - CN_油管+TG+8度科技 289
       - CN_油管+TG+8度科技 290
+      - CN_油管 TG 8度科技 2
       - CN_油管+TG+8度科技 291
       - CN_油管+TG+8度科技 292
       - CN_油管+TG+8度科技 293
@@ -2010,7 +1564,6 @@ proxy-groups:
       - CN_油管+TG+8度科技 308
       - CN_油管+TG+8度科技 309
       - CN_油管+TG+8度科技 310
-      - CN_油管 TG 8度科技 23
       - CN_油管+TG+8度科技 311
       - CN_油管+TG+8度科技 312
       - CN_油管+TG+8度科技 313
@@ -2042,7 +1595,6 @@ proxy-groups:
       - CN_油管+TG+8度科技 339
       - CN_油管+TG+8度科技 340
       - CN_油管+TG+8度科技 341
-      - CN_油管 TG 8度科技 24
       - CN_油管+TG+8度科技 342
       - CN_油管+TG+8度科技 343
       - CN_油管+TG+8度科技 344
@@ -2065,7 +1617,6 @@ proxy-groups:
       - CN_油管+TG+8度科技 361
       - CN_油管+TG+8度科技 362
       - CN_油管+TG+8度科技 363
-      - CN_油管 TG 8度科技 25
       - CN_油管+TG+8度科技 364
       - CN_油管+TG+8度科技 365
       - CN_油管+TG+8度科技 366
@@ -2111,117 +1662,6 @@ proxy-groups:
       - CN_油管+TG+8度科技 406
       - CN_油管+TG+8度科技 407
       - CN_油管+TG+8度科技 408
-      - CN_油管+TG+8度科技 409
-      - CN_油管+TG+8度科技 410
-      - CN_油管 TG 8度科技 26
-      - CN_油管+TG+8度科技 411
-      - CN_油管+TG+8度科技 412
-      - CN_油管+TG+8度科技 413
-      - CN_油管+TG+8度科技 414
-      - CN_油管+TG+8度科技 415
-      - CN_油管+TG+8度科技 416
-      - CN_油管+TG+8度科技 417
-      - CN_油管+TG+8度科技 418
-      - CN_油管+TG+8度科技 419
-      - CN_油管+TG+8度科技 420
-      - CN_油管+TG+8度科技 421
-      - CN_油管+TG+8度科技 422
-      - CN_油管+TG+8度科技 423
-      - CN_油管+TG+8度科技 424
-      - CN_油管+TG+8度科技 425
-      - CN_油管+TG+8度科技 426
-      - CN_油管+TG+8度科技 427
-      - CN_油管+TG+8度科技 428
-      - CN_油管+TG+8度科技 429
-      - CN_油管+TG+8度科技 430
-      - CN_油管+TG+8度科技 431
-      - CN_油管+TG+8度科技 432
-      - CN_油管+TG+8度科技 433
-      - CN_油管+TG+8度科技 434
-      - CN_油管+TG+8度科技 435
-      - CN_油管+TG+8度科技 436
-      - CN_油管+TG+8度科技 437
-      - CN_油管+TG+8度科技 438
-      - CN_油管+TG+8度科技 439
-      - CN_油管+TG+8度科技 440
-      - CN_油管+TG+8度科技 441
-      - CN_油管+TG+8度科技 442
-      - CN_油管+TG+8度科技 443
-      - CN_油管+TG+8度科技 444
-      - CN_油管+TG+8度科技 445
-      - CN_油管+TG+8度科技 446
-      - CN_油管+TG+8度科技 447
-      - CN_油管+TG+8度科技 448
-      - CN_油管+TG+8度科技 449
-      - CN_油管+TG+8度科技 450
-      - CN_油管+TG+8度科技 451
-      - CN_油管+TG+8度科技 452
-      - CN_油管+TG+8度科技 453
-      - CN_油管+TG+8度科技 454
-      - CN_油管+TG+8度科技 455
-      - CN_油管+TG+8度科技 456
-      - CN_油管+TG+8度科技 457
-      - CN_油管+TG+8度科技 458
-      - CN_油管+TG+8度科技 459
-      - CN_油管+TG+8度科技 460
-      - CN_油管+TG+8度科技 461
-      - CN_油管+TG+8度科技 462
-      - CN_油管+TG+8度科技 463
-      - CN_油管+TG+8度科技 464
-      - CN_油管+TG+8度科技 465
-      - CN_油管+TG+8度科技 466
-      - CN_油管+TG+8度科技 467
-      - CN_油管+TG+8度科技 468
-      - CN_油管+TG+8度科技 469
-      - CN_油管+TG+8度科技 470
-      - CN_油管+TG+8度科技 471
-      - CN_油管+TG+8度科技 472
-      - CN_油管+TG+8度科技 473
-      - CN_油管+TG+8度科技 474
-      - CN_油管+TG+8度科技 475
-      - CN_油管+TG+8度科技 476
-      - CN_油管+TG+8度科技 477
-      - CN_油管+TG+8度科技 478
-      - CN_油管+TG+8度科技 479
-      - CN_油管+TG+8度科技 480
-      - CN_油管+TG+8度科技 481
-      - CN_油管+TG+8度科技 482
-      - CN_油管+TG+8度科技 483
-      - CN_油管+TG+8度科技 484
-      - CN_油管+TG+8度科技 485
-      - CN_油管+TG+8度科技 486
-      - CN_油管+TG+8度科技 487
-      - CN_油管+TG+8度科技 488
-      - CN_油管+TG+8度科技 489
-      - CN_油管+TG+8度科技 490
-      - CN_油管+TG+8度科技 491
-      - CN_油管+TG+8度科技 492
-      - CN_油管+TG+8度科技 493
-      - CN_油管+TG+8度科技 494
-      - CN_油管+TG+8度科技 495
-      - CN_油管+TG+8度科技 496
-      - CN_油管+TG+8度科技 497
-      - CN_油管+TG+8度科技 498
-      - CN_油管+TG+8度科技 499
-      - CN_油管+TG+8度科技 500
-      - CN_油管+TG+8度科技 501
-      - CN_油管+TG+8度科技 502
-      - CN_油管+TG+8度科技 503
-      - CN_油管+TG+8度科技 504
-      - CN_油管+TG+8度科技 505
-      - CN_油管+TG+8度科技 506
-      - CN_油管+TG+8度科技 507
-      - CN_油管+TG+8度科技 508
-      - CN_油管+TG+8度科技 509
-      - CN_油管+TG+8度科技 510
-      - CN_油管+TG+8度科技 511
-      - CN_油管+TG+8度科技 512
-      - CN_油管+TG+8度科技 513
-      - CN_油管+TG+8度科技 514
-      - CN_油管+TG+8度科技 515
-      - CN_油管+TG+8度科技 516
-      - CN_油管+TG+8度科技 517
-      - CN_油管+TG+8度科技 518
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -2241,26 +1681,16 @@ proxy-groups:
       - ♻️ 自动选择
       - 🎯 全球直连
       - CN_油管+TG+8度科技
-      - CN_油管 TG 8度科技
-      - CN_油管 TG 8度科技 2
       - CN_油管+TG+8度科技 2
-      - CN_油管 TG 8度科技 3
-      - CN_油管 TG 8度科技 4
       - CN_油管+TG+8度科技 3
-      - CN_油管 TG 8度科技 5
       - CN_油管+TG+8度科技 4
       - CN_油管+TG+8度科技 5
-      - CN_油管 TG 8度科技 6
-      - CN_油管 TG 8度科技 7
       - CN_油管+TG+8度科技 6
       - CN_油管+TG+8度科技 7
-      - CN_油管 TG 8度科技 8
       - CN_油管+TG+8度科技 8
       - CN_油管+TG+8度科技 9
-      - CN_油管 TG 8度科技 9
       - CN_油管+TG+8度科技 10
       - CN_油管+TG+8度科技 11
-      - CN_油管 TG 8度科技 10
       - CN_油管+TG+8度科技 12
       - CN_油管+TG+8度科技 13
       - CN_油管+TG+8度科技 14
@@ -2270,33 +1700,24 @@ proxy-groups:
       - CN_油管+TG+8度科技 18
       - CN_油管+TG+8度科技 19
       - CN_油管+TG+8度科技 20
-      - CN_油管 TG 8度科技 11
       - CN_油管+TG+8度科技 21
       - CN_油管+TG+8度科技 22
       - CN_油管+TG+8度科技 23
       - CN_油管+TG+8度科技 24
-      - CN_油管 TG 8度科技 12
       - CN_油管+TG+8度科技 25
-      - US_油管 TG 8度科技
       - CN_油管+TG+8度科技 26
       - CN_油管+TG+8度科技 27
       - CN_油管+TG+8度科技 28
-      - CN_油管 TG 8度科技 13
       - CN_油管+TG+8度科技 29
       - CN_油管+TG+8度科技 30
-      - CN_油管 TG 8度科技 14
       - CN_油管+TG+8度科技 31
       - CN_油管+TG+8度科技 32
-      - CN_油管 TG 8度科技 15
       - CN_油管+TG+8度科技 33
       - CN_油管+TG+8度科技 34
-      - CN_油管 TG 8度科技 16
       - CN_油管+TG+8度科技 35
       - CN_油管+TG+8度科技 36
-      - CN_油管 TG 8度科技 17
       - CN_油管+TG+8度科技 37
       - CN_油管+TG+8度科技 38
-      - CN_油管 TG 8度科技 18
       - CN_油管+TG+8度科技 39
       - CN_油管+TG+8度科技 40
       - CN_油管+TG+8度科技 41
@@ -2308,11 +1729,11 @@ proxy-groups:
       - CN_油管+TG+8度科技 47
       - CN_油管+TG+8度科技 48
       - CN_油管+TG+8度科技 49
-      - CN_油管 TG 8度科技 19
       - CN_油管+TG+8度科技 50
       - CN_油管+TG+8度科技 51
       - CN_油管+TG+8度科技 52
       - CN_油管+TG+8度科技 53
+      - CN_油管 TG 8度科技
       - CN_油管+TG+8度科技 54
       - CN_油管+TG+8度科技 55
       - CN_油管+TG+8度科技 56
@@ -2321,7 +1742,6 @@ proxy-groups:
       - CN_油管+TG+8度科技 59
       - CN_油管+TG+8度科技 60
       - CN_油管+TG+8度科技 61
-      - CN_油管 TG 8度科技 20
       - CN_油管+TG+8度科技 62
       - CN_油管+TG+8度科技 63
       - CN_油管+TG+8度科技 64
@@ -2354,7 +1774,6 @@ proxy-groups:
       - CN_油管+TG+8度科技 91
       - CN_油管+TG+8度科技 92
       - CN_油管+TG+8度科技 93
-      - US_油管 TG 8度科技 2
       - CN_油管+TG+8度科技 94
       - CN_油管+TG+8度科技 95
       - CN_油管+TG+8度科技 96
@@ -2367,7 +1786,6 @@ proxy-groups:
       - CN_油管+TG+8度科技 103
       - CN_油管+TG+8度科技 104
       - CN_油管+TG+8度科技 105
-      - US_油管 TG 8度科技 3
       - CN_油管+TG+8度科技 106
       - CN_油管+TG+8度科技 107
       - CN_油管+TG+8度科技 108
@@ -2376,7 +1794,6 @@ proxy-groups:
       - CN_油管+TG+8度科技 111
       - CN_油管+TG+8度科技 112
       - CN_油管+TG+8度科技 113
-      - US_油管 TG 8度科技 4
       - CN_油管+TG+8度科技 114
       - CN_油管+TG+8度科技 115
       - CN_油管+TG+8度科技 116
@@ -2385,7 +1802,6 @@ proxy-groups:
       - CN_油管+TG+8度科技 119
       - CN_油管+TG+8度科技 120
       - CN_油管+TG+8度科技 121
-      - CN_油管 TG 8度科技 21
       - CN_油管+TG+8度科技 122
       - CN_油管+TG+8度科技 123
       - CN_油管+TG+8度科技 124
@@ -2401,8 +1817,6 @@ proxy-groups:
       - CN_油管+TG+8度科技 134
       - CN_油管+TG+8度科技 135
       - CN_油管+TG+8度科技 136
-      - HK_油管 TG 8度科技
-      - US_油管 TG 8度科技 5
       - CN_油管+TG+8度科技 137
       - CN_油管+TG+8度科技 138
       - CN_油管+TG+8度科技 139
@@ -2466,7 +1880,6 @@ proxy-groups:
       - CN_油管+TG+8度科技 197
       - CN_油管+TG+8度科技 198
       - CN_油管+TG+8度科技 199
-      - CN_油管 TG 8度科技 22
       - CN_油管+TG+8度科技 200
       - CN_油管+TG+8度科技 201
       - CN_油管+TG+8度科技 202
@@ -2558,6 +1971,7 @@ proxy-groups:
       - CN_油管+TG+8度科技 288
       - CN_油管+TG+8度科技 289
       - CN_油管+TG+8度科技 290
+      - CN_油管 TG 8度科技 2
       - CN_油管+TG+8度科技 291
       - CN_油管+TG+8度科技 292
       - CN_油管+TG+8度科技 293
@@ -2578,7 +1992,6 @@ proxy-groups:
       - CN_油管+TG+8度科技 308
       - CN_油管+TG+8度科技 309
       - CN_油管+TG+8度科技 310
-      - CN_油管 TG 8度科技 23
       - CN_油管+TG+8度科技 311
       - CN_油管+TG+8度科技 312
       - CN_油管+TG+8度科技 313
@@ -2610,7 +2023,6 @@ proxy-groups:
       - CN_油管+TG+8度科技 339
       - CN_油管+TG+8度科技 340
       - CN_油管+TG+8度科技 341
-      - CN_油管 TG 8度科技 24
       - CN_油管+TG+8度科技 342
       - CN_油管+TG+8度科技 343
       - CN_油管+TG+8度科技 344
@@ -2633,7 +2045,6 @@ proxy-groups:
       - CN_油管+TG+8度科技 361
       - CN_油管+TG+8度科技 362
       - CN_油管+TG+8度科技 363
-      - CN_油管 TG 8度科技 25
       - CN_油管+TG+8度科技 364
       - CN_油管+TG+8度科技 365
       - CN_油管+TG+8度科技 366
@@ -2679,117 +2090,6 @@ proxy-groups:
       - CN_油管+TG+8度科技 406
       - CN_油管+TG+8度科技 407
       - CN_油管+TG+8度科技 408
-      - CN_油管+TG+8度科技 409
-      - CN_油管+TG+8度科技 410
-      - CN_油管 TG 8度科技 26
-      - CN_油管+TG+8度科技 411
-      - CN_油管+TG+8度科技 412
-      - CN_油管+TG+8度科技 413
-      - CN_油管+TG+8度科技 414
-      - CN_油管+TG+8度科技 415
-      - CN_油管+TG+8度科技 416
-      - CN_油管+TG+8度科技 417
-      - CN_油管+TG+8度科技 418
-      - CN_油管+TG+8度科技 419
-      - CN_油管+TG+8度科技 420
-      - CN_油管+TG+8度科技 421
-      - CN_油管+TG+8度科技 422
-      - CN_油管+TG+8度科技 423
-      - CN_油管+TG+8度科技 424
-      - CN_油管+TG+8度科技 425
-      - CN_油管+TG+8度科技 426
-      - CN_油管+TG+8度科技 427
-      - CN_油管+TG+8度科技 428
-      - CN_油管+TG+8度科技 429
-      - CN_油管+TG+8度科技 430
-      - CN_油管+TG+8度科技 431
-      - CN_油管+TG+8度科技 432
-      - CN_油管+TG+8度科技 433
-      - CN_油管+TG+8度科技 434
-      - CN_油管+TG+8度科技 435
-      - CN_油管+TG+8度科技 436
-      - CN_油管+TG+8度科技 437
-      - CN_油管+TG+8度科技 438
-      - CN_油管+TG+8度科技 439
-      - CN_油管+TG+8度科技 440
-      - CN_油管+TG+8度科技 441
-      - CN_油管+TG+8度科技 442
-      - CN_油管+TG+8度科技 443
-      - CN_油管+TG+8度科技 444
-      - CN_油管+TG+8度科技 445
-      - CN_油管+TG+8度科技 446
-      - CN_油管+TG+8度科技 447
-      - CN_油管+TG+8度科技 448
-      - CN_油管+TG+8度科技 449
-      - CN_油管+TG+8度科技 450
-      - CN_油管+TG+8度科技 451
-      - CN_油管+TG+8度科技 452
-      - CN_油管+TG+8度科技 453
-      - CN_油管+TG+8度科技 454
-      - CN_油管+TG+8度科技 455
-      - CN_油管+TG+8度科技 456
-      - CN_油管+TG+8度科技 457
-      - CN_油管+TG+8度科技 458
-      - CN_油管+TG+8度科技 459
-      - CN_油管+TG+8度科技 460
-      - CN_油管+TG+8度科技 461
-      - CN_油管+TG+8度科技 462
-      - CN_油管+TG+8度科技 463
-      - CN_油管+TG+8度科技 464
-      - CN_油管+TG+8度科技 465
-      - CN_油管+TG+8度科技 466
-      - CN_油管+TG+8度科技 467
-      - CN_油管+TG+8度科技 468
-      - CN_油管+TG+8度科技 469
-      - CN_油管+TG+8度科技 470
-      - CN_油管+TG+8度科技 471
-      - CN_油管+TG+8度科技 472
-      - CN_油管+TG+8度科技 473
-      - CN_油管+TG+8度科技 474
-      - CN_油管+TG+8度科技 475
-      - CN_油管+TG+8度科技 476
-      - CN_油管+TG+8度科技 477
-      - CN_油管+TG+8度科技 478
-      - CN_油管+TG+8度科技 479
-      - CN_油管+TG+8度科技 480
-      - CN_油管+TG+8度科技 481
-      - CN_油管+TG+8度科技 482
-      - CN_油管+TG+8度科技 483
-      - CN_油管+TG+8度科技 484
-      - CN_油管+TG+8度科技 485
-      - CN_油管+TG+8度科技 486
-      - CN_油管+TG+8度科技 487
-      - CN_油管+TG+8度科技 488
-      - CN_油管+TG+8度科技 489
-      - CN_油管+TG+8度科技 490
-      - CN_油管+TG+8度科技 491
-      - CN_油管+TG+8度科技 492
-      - CN_油管+TG+8度科技 493
-      - CN_油管+TG+8度科技 494
-      - CN_油管+TG+8度科技 495
-      - CN_油管+TG+8度科技 496
-      - CN_油管+TG+8度科技 497
-      - CN_油管+TG+8度科技 498
-      - CN_油管+TG+8度科技 499
-      - CN_油管+TG+8度科技 500
-      - CN_油管+TG+8度科技 501
-      - CN_油管+TG+8度科技 502
-      - CN_油管+TG+8度科技 503
-      - CN_油管+TG+8度科技 504
-      - CN_油管+TG+8度科技 505
-      - CN_油管+TG+8度科技 506
-      - CN_油管+TG+8度科技 507
-      - CN_油管+TG+8度科技 508
-      - CN_油管+TG+8度科技 509
-      - CN_油管+TG+8度科技 510
-      - CN_油管+TG+8度科技 511
-      - CN_油管+TG+8度科技 512
-      - CN_油管+TG+8度科技 513
-      - CN_油管+TG+8度科技 514
-      - CN_油管+TG+8度科技 515
-      - CN_油管+TG+8度科技 516
-      - CN_油管+TG+8度科技 517
-      - CN_油管+TG+8度科技 518
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -2801,26 +2101,16 @@ proxy-groups:
       - 🎯 全球直连
       - 🔰 节点选择
       - CN_油管+TG+8度科技
-      - CN_油管 TG 8度科技
-      - CN_油管 TG 8度科技 2
       - CN_油管+TG+8度科技 2
-      - CN_油管 TG 8度科技 3
-      - CN_油管 TG 8度科技 4
       - CN_油管+TG+8度科技 3
-      - CN_油管 TG 8度科技 5
       - CN_油管+TG+8度科技 4
       - CN_油管+TG+8度科技 5
-      - CN_油管 TG 8度科技 6
-      - CN_油管 TG 8度科技 7
       - CN_油管+TG+8度科技 6
       - CN_油管+TG+8度科技 7
-      - CN_油管 TG 8度科技 8
       - CN_油管+TG+8度科技 8
       - CN_油管+TG+8度科技 9
-      - CN_油管 TG 8度科技 9
       - CN_油管+TG+8度科技 10
       - CN_油管+TG+8度科技 11
-      - CN_油管 TG 8度科技 10
       - CN_油管+TG+8度科技 12
       - CN_油管+TG+8度科技 13
       - CN_油管+TG+8度科技 14
@@ -2830,33 +2120,24 @@ proxy-groups:
       - CN_油管+TG+8度科技 18
       - CN_油管+TG+8度科技 19
       - CN_油管+TG+8度科技 20
-      - CN_油管 TG 8度科技 11
       - CN_油管+TG+8度科技 21
       - CN_油管+TG+8度科技 22
       - CN_油管+TG+8度科技 23
       - CN_油管+TG+8度科技 24
-      - CN_油管 TG 8度科技 12
       - CN_油管+TG+8度科技 25
-      - US_油管 TG 8度科技
       - CN_油管+TG+8度科技 26
       - CN_油管+TG+8度科技 27
       - CN_油管+TG+8度科技 28
-      - CN_油管 TG 8度科技 13
       - CN_油管+TG+8度科技 29
       - CN_油管+TG+8度科技 30
-      - CN_油管 TG 8度科技 14
       - CN_油管+TG+8度科技 31
       - CN_油管+TG+8度科技 32
-      - CN_油管 TG 8度科技 15
       - CN_油管+TG+8度科技 33
       - CN_油管+TG+8度科技 34
-      - CN_油管 TG 8度科技 16
       - CN_油管+TG+8度科技 35
       - CN_油管+TG+8度科技 36
-      - CN_油管 TG 8度科技 17
       - CN_油管+TG+8度科技 37
       - CN_油管+TG+8度科技 38
-      - CN_油管 TG 8度科技 18
       - CN_油管+TG+8度科技 39
       - CN_油管+TG+8度科技 40
       - CN_油管+TG+8度科技 41
@@ -2868,11 +2149,11 @@ proxy-groups:
       - CN_油管+TG+8度科技 47
       - CN_油管+TG+8度科技 48
       - CN_油管+TG+8度科技 49
-      - CN_油管 TG 8度科技 19
       - CN_油管+TG+8度科技 50
       - CN_油管+TG+8度科技 51
       - CN_油管+TG+8度科技 52
       - CN_油管+TG+8度科技 53
+      - CN_油管 TG 8度科技
       - CN_油管+TG+8度科技 54
       - CN_油管+TG+8度科技 55
       - CN_油管+TG+8度科技 56
@@ -2881,7 +2162,6 @@ proxy-groups:
       - CN_油管+TG+8度科技 59
       - CN_油管+TG+8度科技 60
       - CN_油管+TG+8度科技 61
-      - CN_油管 TG 8度科技 20
       - CN_油管+TG+8度科技 62
       - CN_油管+TG+8度科技 63
       - CN_油管+TG+8度科技 64
@@ -2914,7 +2194,6 @@ proxy-groups:
       - CN_油管+TG+8度科技 91
       - CN_油管+TG+8度科技 92
       - CN_油管+TG+8度科技 93
-      - US_油管 TG 8度科技 2
       - CN_油管+TG+8度科技 94
       - CN_油管+TG+8度科技 95
       - CN_油管+TG+8度科技 96
@@ -2927,7 +2206,6 @@ proxy-groups:
       - CN_油管+TG+8度科技 103
       - CN_油管+TG+8度科技 104
       - CN_油管+TG+8度科技 105
-      - US_油管 TG 8度科技 3
       - CN_油管+TG+8度科技 106
       - CN_油管+TG+8度科技 107
       - CN_油管+TG+8度科技 108
@@ -2936,7 +2214,6 @@ proxy-groups:
       - CN_油管+TG+8度科技 111
       - CN_油管+TG+8度科技 112
       - CN_油管+TG+8度科技 113
-      - US_油管 TG 8度科技 4
       - CN_油管+TG+8度科技 114
       - CN_油管+TG+8度科技 115
       - CN_油管+TG+8度科技 116
@@ -2945,7 +2222,6 @@ proxy-groups:
       - CN_油管+TG+8度科技 119
       - CN_油管+TG+8度科技 120
       - CN_油管+TG+8度科技 121
-      - CN_油管 TG 8度科技 21
       - CN_油管+TG+8度科技 122
       - CN_油管+TG+8度科技 123
       - CN_油管+TG+8度科技 124
@@ -2961,8 +2237,6 @@ proxy-groups:
       - CN_油管+TG+8度科技 134
       - CN_油管+TG+8度科技 135
       - CN_油管+TG+8度科技 136
-      - HK_油管 TG 8度科技
-      - US_油管 TG 8度科技 5
       - CN_油管+TG+8度科技 137
       - CN_油管+TG+8度科技 138
       - CN_油管+TG+8度科技 139
@@ -3026,7 +2300,6 @@ proxy-groups:
       - CN_油管+TG+8度科技 197
       - CN_油管+TG+8度科技 198
       - CN_油管+TG+8度科技 199
-      - CN_油管 TG 8度科技 22
       - CN_油管+TG+8度科技 200
       - CN_油管+TG+8度科技 201
       - CN_油管+TG+8度科技 202
@@ -3118,6 +2391,7 @@ proxy-groups:
       - CN_油管+TG+8度科技 288
       - CN_油管+TG+8度科技 289
       - CN_油管+TG+8度科技 290
+      - CN_油管 TG 8度科技 2
       - CN_油管+TG+8度科技 291
       - CN_油管+TG+8度科技 292
       - CN_油管+TG+8度科技 293
@@ -3138,7 +2412,6 @@ proxy-groups:
       - CN_油管+TG+8度科技 308
       - CN_油管+TG+8度科技 309
       - CN_油管+TG+8度科技 310
-      - CN_油管 TG 8度科技 23
       - CN_油管+TG+8度科技 311
       - CN_油管+TG+8度科技 312
       - CN_油管+TG+8度科技 313
@@ -3170,7 +2443,6 @@ proxy-groups:
       - CN_油管+TG+8度科技 339
       - CN_油管+TG+8度科技 340
       - CN_油管+TG+8度科技 341
-      - CN_油管 TG 8度科技 24
       - CN_油管+TG+8度科技 342
       - CN_油管+TG+8度科技 343
       - CN_油管+TG+8度科技 344
@@ -3193,7 +2465,6 @@ proxy-groups:
       - CN_油管+TG+8度科技 361
       - CN_油管+TG+8度科技 362
       - CN_油管+TG+8度科技 363
-      - CN_油管 TG 8度科技 25
       - CN_油管+TG+8度科技 364
       - CN_油管+TG+8度科技 365
       - CN_油管+TG+8度科技 366
@@ -3239,143 +2510,22 @@ proxy-groups:
       - CN_油管+TG+8度科技 406
       - CN_油管+TG+8度科技 407
       - CN_油管+TG+8度科技 408
-      - CN_油管+TG+8度科技 409
-      - CN_油管+TG+8度科技 410
-      - CN_油管 TG 8度科技 26
-      - CN_油管+TG+8度科技 411
-      - CN_油管+TG+8度科技 412
-      - CN_油管+TG+8度科技 413
-      - CN_油管+TG+8度科技 414
-      - CN_油管+TG+8度科技 415
-      - CN_油管+TG+8度科技 416
-      - CN_油管+TG+8度科技 417
-      - CN_油管+TG+8度科技 418
-      - CN_油管+TG+8度科技 419
-      - CN_油管+TG+8度科技 420
-      - CN_油管+TG+8度科技 421
-      - CN_油管+TG+8度科技 422
-      - CN_油管+TG+8度科技 423
-      - CN_油管+TG+8度科技 424
-      - CN_油管+TG+8度科技 425
-      - CN_油管+TG+8度科技 426
-      - CN_油管+TG+8度科技 427
-      - CN_油管+TG+8度科技 428
-      - CN_油管+TG+8度科技 429
-      - CN_油管+TG+8度科技 430
-      - CN_油管+TG+8度科技 431
-      - CN_油管+TG+8度科技 432
-      - CN_油管+TG+8度科技 433
-      - CN_油管+TG+8度科技 434
-      - CN_油管+TG+8度科技 435
-      - CN_油管+TG+8度科技 436
-      - CN_油管+TG+8度科技 437
-      - CN_油管+TG+8度科技 438
-      - CN_油管+TG+8度科技 439
-      - CN_油管+TG+8度科技 440
-      - CN_油管+TG+8度科技 441
-      - CN_油管+TG+8度科技 442
-      - CN_油管+TG+8度科技 443
-      - CN_油管+TG+8度科技 444
-      - CN_油管+TG+8度科技 445
-      - CN_油管+TG+8度科技 446
-      - CN_油管+TG+8度科技 447
-      - CN_油管+TG+8度科技 448
-      - CN_油管+TG+8度科技 449
-      - CN_油管+TG+8度科技 450
-      - CN_油管+TG+8度科技 451
-      - CN_油管+TG+8度科技 452
-      - CN_油管+TG+8度科技 453
-      - CN_油管+TG+8度科技 454
-      - CN_油管+TG+8度科技 455
-      - CN_油管+TG+8度科技 456
-      - CN_油管+TG+8度科技 457
-      - CN_油管+TG+8度科技 458
-      - CN_油管+TG+8度科技 459
-      - CN_油管+TG+8度科技 460
-      - CN_油管+TG+8度科技 461
-      - CN_油管+TG+8度科技 462
-      - CN_油管+TG+8度科技 463
-      - CN_油管+TG+8度科技 464
-      - CN_油管+TG+8度科技 465
-      - CN_油管+TG+8度科技 466
-      - CN_油管+TG+8度科技 467
-      - CN_油管+TG+8度科技 468
-      - CN_油管+TG+8度科技 469
-      - CN_油管+TG+8度科技 470
-      - CN_油管+TG+8度科技 471
-      - CN_油管+TG+8度科技 472
-      - CN_油管+TG+8度科技 473
-      - CN_油管+TG+8度科技 474
-      - CN_油管+TG+8度科技 475
-      - CN_油管+TG+8度科技 476
-      - CN_油管+TG+8度科技 477
-      - CN_油管+TG+8度科技 478
-      - CN_油管+TG+8度科技 479
-      - CN_油管+TG+8度科技 480
-      - CN_油管+TG+8度科技 481
-      - CN_油管+TG+8度科技 482
-      - CN_油管+TG+8度科技 483
-      - CN_油管+TG+8度科技 484
-      - CN_油管+TG+8度科技 485
-      - CN_油管+TG+8度科技 486
-      - CN_油管+TG+8度科技 487
-      - CN_油管+TG+8度科技 488
-      - CN_油管+TG+8度科技 489
-      - CN_油管+TG+8度科技 490
-      - CN_油管+TG+8度科技 491
-      - CN_油管+TG+8度科技 492
-      - CN_油管+TG+8度科技 493
-      - CN_油管+TG+8度科技 494
-      - CN_油管+TG+8度科技 495
-      - CN_油管+TG+8度科技 496
-      - CN_油管+TG+8度科技 497
-      - CN_油管+TG+8度科技 498
-      - CN_油管+TG+8度科技 499
-      - CN_油管+TG+8度科技 500
-      - CN_油管+TG+8度科技 501
-      - CN_油管+TG+8度科技 502
-      - CN_油管+TG+8度科技 503
-      - CN_油管+TG+8度科技 504
-      - CN_油管+TG+8度科技 505
-      - CN_油管+TG+8度科技 506
-      - CN_油管+TG+8度科技 507
-      - CN_油管+TG+8度科技 508
-      - CN_油管+TG+8度科技 509
-      - CN_油管+TG+8度科技 510
-      - CN_油管+TG+8度科技 511
-      - CN_油管+TG+8度科技 512
-      - CN_油管+TG+8度科技 513
-      - CN_油管+TG+8度科技 514
-      - CN_油管+TG+8度科技 515
-      - CN_油管+TG+8度科技 516
-      - CN_油管+TG+8度科技 517
-      - CN_油管+TG+8度科技 518
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - CN_油管+TG+8度科技
-      - CN_油管 TG 8度科技
-      - CN_油管 TG 8度科技 2
       - CN_油管+TG+8度科技 2
-      - CN_油管 TG 8度科技 3
-      - CN_油管 TG 8度科技 4
       - CN_油管+TG+8度科技 3
-      - CN_油管 TG 8度科技 5
       - CN_油管+TG+8度科技 4
       - CN_油管+TG+8度科技 5
-      - CN_油管 TG 8度科技 6
-      - CN_油管 TG 8度科技 7
       - CN_油管+TG+8度科技 6
       - CN_油管+TG+8度科技 7
-      - CN_油管 TG 8度科技 8
       - CN_油管+TG+8度科技 8
       - CN_油管+TG+8度科技 9
-      - CN_油管 TG 8度科技 9
       - CN_油管+TG+8度科技 10
       - CN_油管+TG+8度科技 11
-      - CN_油管 TG 8度科技 10
       - CN_油管+TG+8度科技 12
       - CN_油管+TG+8度科技 13
       - CN_油管+TG+8度科技 14
@@ -3385,33 +2535,24 @@ proxy-groups:
       - CN_油管+TG+8度科技 18
       - CN_油管+TG+8度科技 19
       - CN_油管+TG+8度科技 20
-      - CN_油管 TG 8度科技 11
       - CN_油管+TG+8度科技 21
       - CN_油管+TG+8度科技 22
       - CN_油管+TG+8度科技 23
       - CN_油管+TG+8度科技 24
-      - CN_油管 TG 8度科技 12
       - CN_油管+TG+8度科技 25
-      - US_油管 TG 8度科技
       - CN_油管+TG+8度科技 26
       - CN_油管+TG+8度科技 27
       - CN_油管+TG+8度科技 28
-      - CN_油管 TG 8度科技 13
       - CN_油管+TG+8度科技 29
       - CN_油管+TG+8度科技 30
-      - CN_油管 TG 8度科技 14
       - CN_油管+TG+8度科技 31
       - CN_油管+TG+8度科技 32
-      - CN_油管 TG 8度科技 15
       - CN_油管+TG+8度科技 33
       - CN_油管+TG+8度科技 34
-      - CN_油管 TG 8度科技 16
       - CN_油管+TG+8度科技 35
       - CN_油管+TG+8度科技 36
-      - CN_油管 TG 8度科技 17
       - CN_油管+TG+8度科技 37
       - CN_油管+TG+8度科技 38
-      - CN_油管 TG 8度科技 18
       - CN_油管+TG+8度科技 39
       - CN_油管+TG+8度科技 40
       - CN_油管+TG+8度科技 41
@@ -3423,11 +2564,11 @@ proxy-groups:
       - CN_油管+TG+8度科技 47
       - CN_油管+TG+8度科技 48
       - CN_油管+TG+8度科技 49
-      - CN_油管 TG 8度科技 19
       - CN_油管+TG+8度科技 50
       - CN_油管+TG+8度科技 51
       - CN_油管+TG+8度科技 52
       - CN_油管+TG+8度科技 53
+      - CN_油管 TG 8度科技
       - CN_油管+TG+8度科技 54
       - CN_油管+TG+8度科技 55
       - CN_油管+TG+8度科技 56
@@ -3436,7 +2577,6 @@ proxy-groups:
       - CN_油管+TG+8度科技 59
       - CN_油管+TG+8度科技 60
       - CN_油管+TG+8度科技 61
-      - CN_油管 TG 8度科技 20
       - CN_油管+TG+8度科技 62
       - CN_油管+TG+8度科技 63
       - CN_油管+TG+8度科技 64
@@ -3469,7 +2609,6 @@ proxy-groups:
       - CN_油管+TG+8度科技 91
       - CN_油管+TG+8度科技 92
       - CN_油管+TG+8度科技 93
-      - US_油管 TG 8度科技 2
       - CN_油管+TG+8度科技 94
       - CN_油管+TG+8度科技 95
       - CN_油管+TG+8度科技 96
@@ -3482,7 +2621,6 @@ proxy-groups:
       - CN_油管+TG+8度科技 103
       - CN_油管+TG+8度科技 104
       - CN_油管+TG+8度科技 105
-      - US_油管 TG 8度科技 3
       - CN_油管+TG+8度科技 106
       - CN_油管+TG+8度科技 107
       - CN_油管+TG+8度科技 108
@@ -3491,7 +2629,6 @@ proxy-groups:
       - CN_油管+TG+8度科技 111
       - CN_油管+TG+8度科技 112
       - CN_油管+TG+8度科技 113
-      - US_油管 TG 8度科技 4
       - CN_油管+TG+8度科技 114
       - CN_油管+TG+8度科技 115
       - CN_油管+TG+8度科技 116
@@ -3500,7 +2637,6 @@ proxy-groups:
       - CN_油管+TG+8度科技 119
       - CN_油管+TG+8度科技 120
       - CN_油管+TG+8度科技 121
-      - CN_油管 TG 8度科技 21
       - CN_油管+TG+8度科技 122
       - CN_油管+TG+8度科技 123
       - CN_油管+TG+8度科技 124
@@ -3516,8 +2652,6 @@ proxy-groups:
       - CN_油管+TG+8度科技 134
       - CN_油管+TG+8度科技 135
       - CN_油管+TG+8度科技 136
-      - HK_油管 TG 8度科技
-      - US_油管 TG 8度科技 5
       - CN_油管+TG+8度科技 137
       - CN_油管+TG+8度科技 138
       - CN_油管+TG+8度科技 139
@@ -3581,7 +2715,6 @@ proxy-groups:
       - CN_油管+TG+8度科技 197
       - CN_油管+TG+8度科技 198
       - CN_油管+TG+8度科技 199
-      - CN_油管 TG 8度科技 22
       - CN_油管+TG+8度科技 200
       - CN_油管+TG+8度科技 201
       - CN_油管+TG+8度科技 202
@@ -3673,6 +2806,7 @@ proxy-groups:
       - CN_油管+TG+8度科技 288
       - CN_油管+TG+8度科技 289
       - CN_油管+TG+8度科技 290
+      - CN_油管 TG 8度科技 2
       - CN_油管+TG+8度科技 291
       - CN_油管+TG+8度科技 292
       - CN_油管+TG+8度科技 293
@@ -3693,7 +2827,6 @@ proxy-groups:
       - CN_油管+TG+8度科技 308
       - CN_油管+TG+8度科技 309
       - CN_油管+TG+8度科技 310
-      - CN_油管 TG 8度科技 23
       - CN_油管+TG+8度科技 311
       - CN_油管+TG+8度科技 312
       - CN_油管+TG+8度科技 313
@@ -3725,7 +2858,6 @@ proxy-groups:
       - CN_油管+TG+8度科技 339
       - CN_油管+TG+8度科技 340
       - CN_油管+TG+8度科技 341
-      - CN_油管 TG 8度科技 24
       - CN_油管+TG+8度科技 342
       - CN_油管+TG+8度科技 343
       - CN_油管+TG+8度科技 344
@@ -3748,7 +2880,6 @@ proxy-groups:
       - CN_油管+TG+8度科技 361
       - CN_油管+TG+8度科技 362
       - CN_油管+TG+8度科技 363
-      - CN_油管 TG 8度科技 25
       - CN_油管+TG+8度科技 364
       - CN_油管+TG+8度科技 365
       - CN_油管+TG+8度科技 366
@@ -3794,117 +2925,6 @@ proxy-groups:
       - CN_油管+TG+8度科技 406
       - CN_油管+TG+8度科技 407
       - CN_油管+TG+8度科技 408
-      - CN_油管+TG+8度科技 409
-      - CN_油管+TG+8度科技 410
-      - CN_油管 TG 8度科技 26
-      - CN_油管+TG+8度科技 411
-      - CN_油管+TG+8度科技 412
-      - CN_油管+TG+8度科技 413
-      - CN_油管+TG+8度科技 414
-      - CN_油管+TG+8度科技 415
-      - CN_油管+TG+8度科技 416
-      - CN_油管+TG+8度科技 417
-      - CN_油管+TG+8度科技 418
-      - CN_油管+TG+8度科技 419
-      - CN_油管+TG+8度科技 420
-      - CN_油管+TG+8度科技 421
-      - CN_油管+TG+8度科技 422
-      - CN_油管+TG+8度科技 423
-      - CN_油管+TG+8度科技 424
-      - CN_油管+TG+8度科技 425
-      - CN_油管+TG+8度科技 426
-      - CN_油管+TG+8度科技 427
-      - CN_油管+TG+8度科技 428
-      - CN_油管+TG+8度科技 429
-      - CN_油管+TG+8度科技 430
-      - CN_油管+TG+8度科技 431
-      - CN_油管+TG+8度科技 432
-      - CN_油管+TG+8度科技 433
-      - CN_油管+TG+8度科技 434
-      - CN_油管+TG+8度科技 435
-      - CN_油管+TG+8度科技 436
-      - CN_油管+TG+8度科技 437
-      - CN_油管+TG+8度科技 438
-      - CN_油管+TG+8度科技 439
-      - CN_油管+TG+8度科技 440
-      - CN_油管+TG+8度科技 441
-      - CN_油管+TG+8度科技 442
-      - CN_油管+TG+8度科技 443
-      - CN_油管+TG+8度科技 444
-      - CN_油管+TG+8度科技 445
-      - CN_油管+TG+8度科技 446
-      - CN_油管+TG+8度科技 447
-      - CN_油管+TG+8度科技 448
-      - CN_油管+TG+8度科技 449
-      - CN_油管+TG+8度科技 450
-      - CN_油管+TG+8度科技 451
-      - CN_油管+TG+8度科技 452
-      - CN_油管+TG+8度科技 453
-      - CN_油管+TG+8度科技 454
-      - CN_油管+TG+8度科技 455
-      - CN_油管+TG+8度科技 456
-      - CN_油管+TG+8度科技 457
-      - CN_油管+TG+8度科技 458
-      - CN_油管+TG+8度科技 459
-      - CN_油管+TG+8度科技 460
-      - CN_油管+TG+8度科技 461
-      - CN_油管+TG+8度科技 462
-      - CN_油管+TG+8度科技 463
-      - CN_油管+TG+8度科技 464
-      - CN_油管+TG+8度科技 465
-      - CN_油管+TG+8度科技 466
-      - CN_油管+TG+8度科技 467
-      - CN_油管+TG+8度科技 468
-      - CN_油管+TG+8度科技 469
-      - CN_油管+TG+8度科技 470
-      - CN_油管+TG+8度科技 471
-      - CN_油管+TG+8度科技 472
-      - CN_油管+TG+8度科技 473
-      - CN_油管+TG+8度科技 474
-      - CN_油管+TG+8度科技 475
-      - CN_油管+TG+8度科技 476
-      - CN_油管+TG+8度科技 477
-      - CN_油管+TG+8度科技 478
-      - CN_油管+TG+8度科技 479
-      - CN_油管+TG+8度科技 480
-      - CN_油管+TG+8度科技 481
-      - CN_油管+TG+8度科技 482
-      - CN_油管+TG+8度科技 483
-      - CN_油管+TG+8度科技 484
-      - CN_油管+TG+8度科技 485
-      - CN_油管+TG+8度科技 486
-      - CN_油管+TG+8度科技 487
-      - CN_油管+TG+8度科技 488
-      - CN_油管+TG+8度科技 489
-      - CN_油管+TG+8度科技 490
-      - CN_油管+TG+8度科技 491
-      - CN_油管+TG+8度科技 492
-      - CN_油管+TG+8度科技 493
-      - CN_油管+TG+8度科技 494
-      - CN_油管+TG+8度科技 495
-      - CN_油管+TG+8度科技 496
-      - CN_油管+TG+8度科技 497
-      - CN_油管+TG+8度科技 498
-      - CN_油管+TG+8度科技 499
-      - CN_油管+TG+8度科技 500
-      - CN_油管+TG+8度科技 501
-      - CN_油管+TG+8度科技 502
-      - CN_油管+TG+8度科技 503
-      - CN_油管+TG+8度科技 504
-      - CN_油管+TG+8度科技 505
-      - CN_油管+TG+8度科技 506
-      - CN_油管+TG+8度科技 507
-      - CN_油管+TG+8度科技 508
-      - CN_油管+TG+8度科技 509
-      - CN_油管+TG+8度科技 510
-      - CN_油管+TG+8度科技 511
-      - CN_油管+TG+8度科技 512
-      - CN_油管+TG+8度科技 513
-      - CN_油管+TG+8度科技 514
-      - CN_油管+TG+8度科技 515
-      - CN_油管+TG+8度科技 516
-      - CN_油管+TG+8度科技 517
-      - CN_油管+TG+8度科技 518
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -3912,26 +2932,16 @@ proxy-groups:
       - 🎯 全球直连
       - ♻️ 自动选择
       - CN_油管+TG+8度科技
-      - CN_油管 TG 8度科技
-      - CN_油管 TG 8度科技 2
       - CN_油管+TG+8度科技 2
-      - CN_油管 TG 8度科技 3
-      - CN_油管 TG 8度科技 4
       - CN_油管+TG+8度科技 3
-      - CN_油管 TG 8度科技 5
       - CN_油管+TG+8度科技 4
       - CN_油管+TG+8度科技 5
-      - CN_油管 TG 8度科技 6
-      - CN_油管 TG 8度科技 7
       - CN_油管+TG+8度科技 6
       - CN_油管+TG+8度科技 7
-      - CN_油管 TG 8度科技 8
       - CN_油管+TG+8度科技 8
       - CN_油管+TG+8度科技 9
-      - CN_油管 TG 8度科技 9
       - CN_油管+TG+8度科技 10
       - CN_油管+TG+8度科技 11
-      - CN_油管 TG 8度科技 10
       - CN_油管+TG+8度科技 12
       - CN_油管+TG+8度科技 13
       - CN_油管+TG+8度科技 14
@@ -3941,33 +2951,24 @@ proxy-groups:
       - CN_油管+TG+8度科技 18
       - CN_油管+TG+8度科技 19
       - CN_油管+TG+8度科技 20
-      - CN_油管 TG 8度科技 11
       - CN_油管+TG+8度科技 21
       - CN_油管+TG+8度科技 22
       - CN_油管+TG+8度科技 23
       - CN_油管+TG+8度科技 24
-      - CN_油管 TG 8度科技 12
       - CN_油管+TG+8度科技 25
-      - US_油管 TG 8度科技
       - CN_油管+TG+8度科技 26
       - CN_油管+TG+8度科技 27
       - CN_油管+TG+8度科技 28
-      - CN_油管 TG 8度科技 13
       - CN_油管+TG+8度科技 29
       - CN_油管+TG+8度科技 30
-      - CN_油管 TG 8度科技 14
       - CN_油管+TG+8度科技 31
       - CN_油管+TG+8度科技 32
-      - CN_油管 TG 8度科技 15
       - CN_油管+TG+8度科技 33
       - CN_油管+TG+8度科技 34
-      - CN_油管 TG 8度科技 16
       - CN_油管+TG+8度科技 35
       - CN_油管+TG+8度科技 36
-      - CN_油管 TG 8度科技 17
       - CN_油管+TG+8度科技 37
       - CN_油管+TG+8度科技 38
-      - CN_油管 TG 8度科技 18
       - CN_油管+TG+8度科技 39
       - CN_油管+TG+8度科技 40
       - CN_油管+TG+8度科技 41
@@ -3979,11 +2980,11 @@ proxy-groups:
       - CN_油管+TG+8度科技 47
       - CN_油管+TG+8度科技 48
       - CN_油管+TG+8度科技 49
-      - CN_油管 TG 8度科技 19
       - CN_油管+TG+8度科技 50
       - CN_油管+TG+8度科技 51
       - CN_油管+TG+8度科技 52
       - CN_油管+TG+8度科技 53
+      - CN_油管 TG 8度科技
       - CN_油管+TG+8度科技 54
       - CN_油管+TG+8度科技 55
       - CN_油管+TG+8度科技 56
@@ -3992,7 +2993,6 @@ proxy-groups:
       - CN_油管+TG+8度科技 59
       - CN_油管+TG+8度科技 60
       - CN_油管+TG+8度科技 61
-      - CN_油管 TG 8度科技 20
       - CN_油管+TG+8度科技 62
       - CN_油管+TG+8度科技 63
       - CN_油管+TG+8度科技 64
@@ -4025,7 +3025,6 @@ proxy-groups:
       - CN_油管+TG+8度科技 91
       - CN_油管+TG+8度科技 92
       - CN_油管+TG+8度科技 93
-      - US_油管 TG 8度科技 2
       - CN_油管+TG+8度科技 94
       - CN_油管+TG+8度科技 95
       - CN_油管+TG+8度科技 96
@@ -4038,7 +3037,6 @@ proxy-groups:
       - CN_油管+TG+8度科技 103
       - CN_油管+TG+8度科技 104
       - CN_油管+TG+8度科技 105
-      - US_油管 TG 8度科技 3
       - CN_油管+TG+8度科技 106
       - CN_油管+TG+8度科技 107
       - CN_油管+TG+8度科技 108
@@ -4047,7 +3045,6 @@ proxy-groups:
       - CN_油管+TG+8度科技 111
       - CN_油管+TG+8度科技 112
       - CN_油管+TG+8度科技 113
-      - US_油管 TG 8度科技 4
       - CN_油管+TG+8度科技 114
       - CN_油管+TG+8度科技 115
       - CN_油管+TG+8度科技 116
@@ -4056,7 +3053,6 @@ proxy-groups:
       - CN_油管+TG+8度科技 119
       - CN_油管+TG+8度科技 120
       - CN_油管+TG+8度科技 121
-      - CN_油管 TG 8度科技 21
       - CN_油管+TG+8度科技 122
       - CN_油管+TG+8度科技 123
       - CN_油管+TG+8度科技 124
@@ -4072,8 +3068,6 @@ proxy-groups:
       - CN_油管+TG+8度科技 134
       - CN_油管+TG+8度科技 135
       - CN_油管+TG+8度科技 136
-      - HK_油管 TG 8度科技
-      - US_油管 TG 8度科技 5
       - CN_油管+TG+8度科技 137
       - CN_油管+TG+8度科技 138
       - CN_油管+TG+8度科技 139
@@ -4137,7 +3131,6 @@ proxy-groups:
       - CN_油管+TG+8度科技 197
       - CN_油管+TG+8度科技 198
       - CN_油管+TG+8度科技 199
-      - CN_油管 TG 8度科技 22
       - CN_油管+TG+8度科技 200
       - CN_油管+TG+8度科技 201
       - CN_油管+TG+8度科技 202
@@ -4229,6 +3222,7 @@ proxy-groups:
       - CN_油管+TG+8度科技 288
       - CN_油管+TG+8度科技 289
       - CN_油管+TG+8度科技 290
+      - CN_油管 TG 8度科技 2
       - CN_油管+TG+8度科技 291
       - CN_油管+TG+8度科技 292
       - CN_油管+TG+8度科技 293
@@ -4249,7 +3243,6 @@ proxy-groups:
       - CN_油管+TG+8度科技 308
       - CN_油管+TG+8度科技 309
       - CN_油管+TG+8度科技 310
-      - CN_油管 TG 8度科技 23
       - CN_油管+TG+8度科技 311
       - CN_油管+TG+8度科技 312
       - CN_油管+TG+8度科技 313
@@ -4281,7 +3274,6 @@ proxy-groups:
       - CN_油管+TG+8度科技 339
       - CN_油管+TG+8度科技 340
       - CN_油管+TG+8度科技 341
-      - CN_油管 TG 8度科技 24
       - CN_油管+TG+8度科技 342
       - CN_油管+TG+8度科技 343
       - CN_油管+TG+8度科技 344
@@ -4304,7 +3296,6 @@ proxy-groups:
       - CN_油管+TG+8度科技 361
       - CN_油管+TG+8度科技 362
       - CN_油管+TG+8度科技 363
-      - CN_油管 TG 8度科技 25
       - CN_油管+TG+8度科技 364
       - CN_油管+TG+8度科技 365
       - CN_油管+TG+8度科技 366
@@ -4350,117 +3341,6 @@ proxy-groups:
       - CN_油管+TG+8度科技 406
       - CN_油管+TG+8度科技 407
       - CN_油管+TG+8度科技 408
-      - CN_油管+TG+8度科技 409
-      - CN_油管+TG+8度科技 410
-      - CN_油管 TG 8度科技 26
-      - CN_油管+TG+8度科技 411
-      - CN_油管+TG+8度科技 412
-      - CN_油管+TG+8度科技 413
-      - CN_油管+TG+8度科技 414
-      - CN_油管+TG+8度科技 415
-      - CN_油管+TG+8度科技 416
-      - CN_油管+TG+8度科技 417
-      - CN_油管+TG+8度科技 418
-      - CN_油管+TG+8度科技 419
-      - CN_油管+TG+8度科技 420
-      - CN_油管+TG+8度科技 421
-      - CN_油管+TG+8度科技 422
-      - CN_油管+TG+8度科技 423
-      - CN_油管+TG+8度科技 424
-      - CN_油管+TG+8度科技 425
-      - CN_油管+TG+8度科技 426
-      - CN_油管+TG+8度科技 427
-      - CN_油管+TG+8度科技 428
-      - CN_油管+TG+8度科技 429
-      - CN_油管+TG+8度科技 430
-      - CN_油管+TG+8度科技 431
-      - CN_油管+TG+8度科技 432
-      - CN_油管+TG+8度科技 433
-      - CN_油管+TG+8度科技 434
-      - CN_油管+TG+8度科技 435
-      - CN_油管+TG+8度科技 436
-      - CN_油管+TG+8度科技 437
-      - CN_油管+TG+8度科技 438
-      - CN_油管+TG+8度科技 439
-      - CN_油管+TG+8度科技 440
-      - CN_油管+TG+8度科技 441
-      - CN_油管+TG+8度科技 442
-      - CN_油管+TG+8度科技 443
-      - CN_油管+TG+8度科技 444
-      - CN_油管+TG+8度科技 445
-      - CN_油管+TG+8度科技 446
-      - CN_油管+TG+8度科技 447
-      - CN_油管+TG+8度科技 448
-      - CN_油管+TG+8度科技 449
-      - CN_油管+TG+8度科技 450
-      - CN_油管+TG+8度科技 451
-      - CN_油管+TG+8度科技 452
-      - CN_油管+TG+8度科技 453
-      - CN_油管+TG+8度科技 454
-      - CN_油管+TG+8度科技 455
-      - CN_油管+TG+8度科技 456
-      - CN_油管+TG+8度科技 457
-      - CN_油管+TG+8度科技 458
-      - CN_油管+TG+8度科技 459
-      - CN_油管+TG+8度科技 460
-      - CN_油管+TG+8度科技 461
-      - CN_油管+TG+8度科技 462
-      - CN_油管+TG+8度科技 463
-      - CN_油管+TG+8度科技 464
-      - CN_油管+TG+8度科技 465
-      - CN_油管+TG+8度科技 466
-      - CN_油管+TG+8度科技 467
-      - CN_油管+TG+8度科技 468
-      - CN_油管+TG+8度科技 469
-      - CN_油管+TG+8度科技 470
-      - CN_油管+TG+8度科技 471
-      - CN_油管+TG+8度科技 472
-      - CN_油管+TG+8度科技 473
-      - CN_油管+TG+8度科技 474
-      - CN_油管+TG+8度科技 475
-      - CN_油管+TG+8度科技 476
-      - CN_油管+TG+8度科技 477
-      - CN_油管+TG+8度科技 478
-      - CN_油管+TG+8度科技 479
-      - CN_油管+TG+8度科技 480
-      - CN_油管+TG+8度科技 481
-      - CN_油管+TG+8度科技 482
-      - CN_油管+TG+8度科技 483
-      - CN_油管+TG+8度科技 484
-      - CN_油管+TG+8度科技 485
-      - CN_油管+TG+8度科技 486
-      - CN_油管+TG+8度科技 487
-      - CN_油管+TG+8度科技 488
-      - CN_油管+TG+8度科技 489
-      - CN_油管+TG+8度科技 490
-      - CN_油管+TG+8度科技 491
-      - CN_油管+TG+8度科技 492
-      - CN_油管+TG+8度科技 493
-      - CN_油管+TG+8度科技 494
-      - CN_油管+TG+8度科技 495
-      - CN_油管+TG+8度科技 496
-      - CN_油管+TG+8度科技 497
-      - CN_油管+TG+8度科技 498
-      - CN_油管+TG+8度科技 499
-      - CN_油管+TG+8度科技 500
-      - CN_油管+TG+8度科技 501
-      - CN_油管+TG+8度科技 502
-      - CN_油管+TG+8度科技 503
-      - CN_油管+TG+8度科技 504
-      - CN_油管+TG+8度科技 505
-      - CN_油管+TG+8度科技 506
-      - CN_油管+TG+8度科技 507
-      - CN_油管+TG+8度科技 508
-      - CN_油管+TG+8度科技 509
-      - CN_油管+TG+8度科技 510
-      - CN_油管+TG+8度科技 511
-      - CN_油管+TG+8度科技 512
-      - CN_油管+TG+8度科技 513
-      - CN_油管+TG+8度科技 514
-      - CN_油管+TG+8度科技 515
-      - CN_油管+TG+8度科技 516
-      - CN_油管+TG+8度科技 517
-      - CN_油管+TG+8度科技 518
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -4477,26 +3357,16 @@ proxy-groups:
       - 🎯 全球直连
       - ♻️ 自动选择
       - CN_油管+TG+8度科技
-      - CN_油管 TG 8度科技
-      - CN_油管 TG 8度科技 2
       - CN_油管+TG+8度科技 2
-      - CN_油管 TG 8度科技 3
-      - CN_油管 TG 8度科技 4
       - CN_油管+TG+8度科技 3
-      - CN_油管 TG 8度科技 5
       - CN_油管+TG+8度科技 4
       - CN_油管+TG+8度科技 5
-      - CN_油管 TG 8度科技 6
-      - CN_油管 TG 8度科技 7
       - CN_油管+TG+8度科技 6
       - CN_油管+TG+8度科技 7
-      - CN_油管 TG 8度科技 8
       - CN_油管+TG+8度科技 8
       - CN_油管+TG+8度科技 9
-      - CN_油管 TG 8度科技 9
       - CN_油管+TG+8度科技 10
       - CN_油管+TG+8度科技 11
-      - CN_油管 TG 8度科技 10
       - CN_油管+TG+8度科技 12
       - CN_油管+TG+8度科技 13
       - CN_油管+TG+8度科技 14
@@ -4506,33 +3376,24 @@ proxy-groups:
       - CN_油管+TG+8度科技 18
       - CN_油管+TG+8度科技 19
       - CN_油管+TG+8度科技 20
-      - CN_油管 TG 8度科技 11
       - CN_油管+TG+8度科技 21
       - CN_油管+TG+8度科技 22
       - CN_油管+TG+8度科技 23
       - CN_油管+TG+8度科技 24
-      - CN_油管 TG 8度科技 12
       - CN_油管+TG+8度科技 25
-      - US_油管 TG 8度科技
       - CN_油管+TG+8度科技 26
       - CN_油管+TG+8度科技 27
       - CN_油管+TG+8度科技 28
-      - CN_油管 TG 8度科技 13
       - CN_油管+TG+8度科技 29
       - CN_油管+TG+8度科技 30
-      - CN_油管 TG 8度科技 14
       - CN_油管+TG+8度科技 31
       - CN_油管+TG+8度科技 32
-      - CN_油管 TG 8度科技 15
       - CN_油管+TG+8度科技 33
       - CN_油管+TG+8度科技 34
-      - CN_油管 TG 8度科技 16
       - CN_油管+TG+8度科技 35
       - CN_油管+TG+8度科技 36
-      - CN_油管 TG 8度科技 17
       - CN_油管+TG+8度科技 37
       - CN_油管+TG+8度科技 38
-      - CN_油管 TG 8度科技 18
       - CN_油管+TG+8度科技 39
       - CN_油管+TG+8度科技 40
       - CN_油管+TG+8度科技 41
@@ -4544,11 +3405,11 @@ proxy-groups:
       - CN_油管+TG+8度科技 47
       - CN_油管+TG+8度科技 48
       - CN_油管+TG+8度科技 49
-      - CN_油管 TG 8度科技 19
       - CN_油管+TG+8度科技 50
       - CN_油管+TG+8度科技 51
       - CN_油管+TG+8度科技 52
       - CN_油管+TG+8度科技 53
+      - CN_油管 TG 8度科技
       - CN_油管+TG+8度科技 54
       - CN_油管+TG+8度科技 55
       - CN_油管+TG+8度科技 56
@@ -4557,7 +3418,6 @@ proxy-groups:
       - CN_油管+TG+8度科技 59
       - CN_油管+TG+8度科技 60
       - CN_油管+TG+8度科技 61
-      - CN_油管 TG 8度科技 20
       - CN_油管+TG+8度科技 62
       - CN_油管+TG+8度科技 63
       - CN_油管+TG+8度科技 64
@@ -4590,7 +3450,6 @@ proxy-groups:
       - CN_油管+TG+8度科技 91
       - CN_油管+TG+8度科技 92
       - CN_油管+TG+8度科技 93
-      - US_油管 TG 8度科技 2
       - CN_油管+TG+8度科技 94
       - CN_油管+TG+8度科技 95
       - CN_油管+TG+8度科技 96
@@ -4603,7 +3462,6 @@ proxy-groups:
       - CN_油管+TG+8度科技 103
       - CN_油管+TG+8度科技 104
       - CN_油管+TG+8度科技 105
-      - US_油管 TG 8度科技 3
       - CN_油管+TG+8度科技 106
       - CN_油管+TG+8度科技 107
       - CN_油管+TG+8度科技 108
@@ -4612,7 +3470,6 @@ proxy-groups:
       - CN_油管+TG+8度科技 111
       - CN_油管+TG+8度科技 112
       - CN_油管+TG+8度科技 113
-      - US_油管 TG 8度科技 4
       - CN_油管+TG+8度科技 114
       - CN_油管+TG+8度科技 115
       - CN_油管+TG+8度科技 116
@@ -4621,7 +3478,6 @@ proxy-groups:
       - CN_油管+TG+8度科技 119
       - CN_油管+TG+8度科技 120
       - CN_油管+TG+8度科技 121
-      - CN_油管 TG 8度科技 21
       - CN_油管+TG+8度科技 122
       - CN_油管+TG+8度科技 123
       - CN_油管+TG+8度科技 124
@@ -4637,8 +3493,6 @@ proxy-groups:
       - CN_油管+TG+8度科技 134
       - CN_油管+TG+8度科技 135
       - CN_油管+TG+8度科技 136
-      - HK_油管 TG 8度科技
-      - US_油管 TG 8度科技 5
       - CN_油管+TG+8度科技 137
       - CN_油管+TG+8度科技 138
       - CN_油管+TG+8度科技 139
@@ -4702,7 +3556,6 @@ proxy-groups:
       - CN_油管+TG+8度科技 197
       - CN_油管+TG+8度科技 198
       - CN_油管+TG+8度科技 199
-      - CN_油管 TG 8度科技 22
       - CN_油管+TG+8度科技 200
       - CN_油管+TG+8度科技 201
       - CN_油管+TG+8度科技 202
@@ -4794,6 +3647,7 @@ proxy-groups:
       - CN_油管+TG+8度科技 288
       - CN_油管+TG+8度科技 289
       - CN_油管+TG+8度科技 290
+      - CN_油管 TG 8度科技 2
       - CN_油管+TG+8度科技 291
       - CN_油管+TG+8度科技 292
       - CN_油管+TG+8度科技 293
@@ -4814,7 +3668,6 @@ proxy-groups:
       - CN_油管+TG+8度科技 308
       - CN_油管+TG+8度科技 309
       - CN_油管+TG+8度科技 310
-      - CN_油管 TG 8度科技 23
       - CN_油管+TG+8度科技 311
       - CN_油管+TG+8度科技 312
       - CN_油管+TG+8度科技 313
@@ -4846,7 +3699,6 @@ proxy-groups:
       - CN_油管+TG+8度科技 339
       - CN_油管+TG+8度科技 340
       - CN_油管+TG+8度科技 341
-      - CN_油管 TG 8度科技 24
       - CN_油管+TG+8度科技 342
       - CN_油管+TG+8度科技 343
       - CN_油管+TG+8度科技 344
@@ -4869,7 +3721,6 @@ proxy-groups:
       - CN_油管+TG+8度科技 361
       - CN_油管+TG+8度科技 362
       - CN_油管+TG+8度科技 363
-      - CN_油管 TG 8度科技 25
       - CN_油管+TG+8度科技 364
       - CN_油管+TG+8度科技 365
       - CN_油管+TG+8度科技 366
@@ -4915,117 +3766,6 @@ proxy-groups:
       - CN_油管+TG+8度科技 406
       - CN_油管+TG+8度科技 407
       - CN_油管+TG+8度科技 408
-      - CN_油管+TG+8度科技 409
-      - CN_油管+TG+8度科技 410
-      - CN_油管 TG 8度科技 26
-      - CN_油管+TG+8度科技 411
-      - CN_油管+TG+8度科技 412
-      - CN_油管+TG+8度科技 413
-      - CN_油管+TG+8度科技 414
-      - CN_油管+TG+8度科技 415
-      - CN_油管+TG+8度科技 416
-      - CN_油管+TG+8度科技 417
-      - CN_油管+TG+8度科技 418
-      - CN_油管+TG+8度科技 419
-      - CN_油管+TG+8度科技 420
-      - CN_油管+TG+8度科技 421
-      - CN_油管+TG+8度科技 422
-      - CN_油管+TG+8度科技 423
-      - CN_油管+TG+8度科技 424
-      - CN_油管+TG+8度科技 425
-      - CN_油管+TG+8度科技 426
-      - CN_油管+TG+8度科技 427
-      - CN_油管+TG+8度科技 428
-      - CN_油管+TG+8度科技 429
-      - CN_油管+TG+8度科技 430
-      - CN_油管+TG+8度科技 431
-      - CN_油管+TG+8度科技 432
-      - CN_油管+TG+8度科技 433
-      - CN_油管+TG+8度科技 434
-      - CN_油管+TG+8度科技 435
-      - CN_油管+TG+8度科技 436
-      - CN_油管+TG+8度科技 437
-      - CN_油管+TG+8度科技 438
-      - CN_油管+TG+8度科技 439
-      - CN_油管+TG+8度科技 440
-      - CN_油管+TG+8度科技 441
-      - CN_油管+TG+8度科技 442
-      - CN_油管+TG+8度科技 443
-      - CN_油管+TG+8度科技 444
-      - CN_油管+TG+8度科技 445
-      - CN_油管+TG+8度科技 446
-      - CN_油管+TG+8度科技 447
-      - CN_油管+TG+8度科技 448
-      - CN_油管+TG+8度科技 449
-      - CN_油管+TG+8度科技 450
-      - CN_油管+TG+8度科技 451
-      - CN_油管+TG+8度科技 452
-      - CN_油管+TG+8度科技 453
-      - CN_油管+TG+8度科技 454
-      - CN_油管+TG+8度科技 455
-      - CN_油管+TG+8度科技 456
-      - CN_油管+TG+8度科技 457
-      - CN_油管+TG+8度科技 458
-      - CN_油管+TG+8度科技 459
-      - CN_油管+TG+8度科技 460
-      - CN_油管+TG+8度科技 461
-      - CN_油管+TG+8度科技 462
-      - CN_油管+TG+8度科技 463
-      - CN_油管+TG+8度科技 464
-      - CN_油管+TG+8度科技 465
-      - CN_油管+TG+8度科技 466
-      - CN_油管+TG+8度科技 467
-      - CN_油管+TG+8度科技 468
-      - CN_油管+TG+8度科技 469
-      - CN_油管+TG+8度科技 470
-      - CN_油管+TG+8度科技 471
-      - CN_油管+TG+8度科技 472
-      - CN_油管+TG+8度科技 473
-      - CN_油管+TG+8度科技 474
-      - CN_油管+TG+8度科技 475
-      - CN_油管+TG+8度科技 476
-      - CN_油管+TG+8度科技 477
-      - CN_油管+TG+8度科技 478
-      - CN_油管+TG+8度科技 479
-      - CN_油管+TG+8度科技 480
-      - CN_油管+TG+8度科技 481
-      - CN_油管+TG+8度科技 482
-      - CN_油管+TG+8度科技 483
-      - CN_油管+TG+8度科技 484
-      - CN_油管+TG+8度科技 485
-      - CN_油管+TG+8度科技 486
-      - CN_油管+TG+8度科技 487
-      - CN_油管+TG+8度科技 488
-      - CN_油管+TG+8度科技 489
-      - CN_油管+TG+8度科技 490
-      - CN_油管+TG+8度科技 491
-      - CN_油管+TG+8度科技 492
-      - CN_油管+TG+8度科技 493
-      - CN_油管+TG+8度科技 494
-      - CN_油管+TG+8度科技 495
-      - CN_油管+TG+8度科技 496
-      - CN_油管+TG+8度科技 497
-      - CN_油管+TG+8度科技 498
-      - CN_油管+TG+8度科技 499
-      - CN_油管+TG+8度科技 500
-      - CN_油管+TG+8度科技 501
-      - CN_油管+TG+8度科技 502
-      - CN_油管+TG+8度科技 503
-      - CN_油管+TG+8度科技 504
-      - CN_油管+TG+8度科技 505
-      - CN_油管+TG+8度科技 506
-      - CN_油管+TG+8度科技 507
-      - CN_油管+TG+8度科技 508
-      - CN_油管+TG+8度科技 509
-      - CN_油管+TG+8度科技 510
-      - CN_油管+TG+8度科技 511
-      - CN_油管+TG+8度科技 512
-      - CN_油管+TG+8度科技 513
-      - CN_油管+TG+8度科技 514
-      - CN_油管+TG+8度科技 515
-      - CN_油管+TG+8度科技 516
-      - CN_油管+TG+8度科技 517
-      - CN_油管+TG+8度科技 518
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
