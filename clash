@@ -5,431 +5,895 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 油管 TG 8度科技, server: hk25.advancedvectorextensions.com, port: 34165, type: ss, cipher: rc4-md5, password: i9RSaH, udp: true}
-  - {name: 油管 TG 8度科技 2, server: hk28.advancedvectorextensions.com, port: 34165, type: ss, cipher: rc4-md5, password: i9RSaH, udp: true}
-  - {name: 油管 TG 8度科技 3, server: 104.16.42.170, port: 2053, type: vmess, uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /eisasqa, ws-headers: {Host: foxus.fovi.tk}, udp: true}
-  - {name: 油管 TG 8度科技 4, server: 104.16.162.16, port: 2053, type: vmess, uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /eisasqa, ws-headers: {Host: foxus.fovi.tk}, udp: true}
-  - {name: SG_9050 @WangCai_1, server: 103.172.116.10, port: 9050, type: ss, cipher: aes-256-cfb, password: FG5ddLsMPbV5CutE, udp: true}
-  - {name: 油管 TG 8度科技 5, server: kr2.qingyun123.xyz, port: 10050, type: trojan, password: f7ff045b-5aa3-435c-94ec-a473f6b080ea, sni: kr2.qingyun123.xyz, skip-cert-verify: true, udp: true}
-  - {name: SG_9020 @WangCai_1, server: 103.172.116.10, port: 9020, type: ss, cipher: aes-256-cfb, password: BNmAXXxAHYpTRdzu, udp: true}
-  - {name: SG_9019 @WangCai_1, server: 103.172.116.6, port: 9019, type: ss, cipher: aes-256-cfb, password: GA9KzeEgvfxNrgmM, udp: true}
-  - {name: SG_9060 @WangCai_1, server: 103.172.116.6, port: 9060, type: ss, cipher: aes-256-cfb, password: ueLXVkvh4hckhErQ, udp: true}
-  - {name: SG_9033 @WangCai_1, server: 103.172.116.5, port: 9033, type: ss, cipher: aes-256-cfb, password: UTJA57ypk2XKQpnm, udp: true}
-  - {name: SG_9038 @WangCai_1, server: 103.172.116.10, port: 9038, type: ss, cipher: aes-256-cfb, password: gYCYXfkUQEs2TaJQ, udp: true}
-  - {name: SG_9084 @WangCai_1, server: 103.172.116.6, port: 9084, type: ss, cipher: aes-256-cfb, password: c3NtHJ5ujV2tGDfj, udp: true}
-  - {name: SG_9007 @WangCai_1, server: 103.172.116.6, port: 9007, type: ss, cipher: aes-256-cfb, password: kSPmvwdFzGMMW5pY, udp: true}
-  - {name: SG_9026 @WangCai_1, server: 103.172.116.6, port: 9026, type: ss, cipher: aes-256-cfb, password: QWDDvVE9npNurQfA, udp: true}
-  - {name: SG_9064 @WangCai_1, server: 103.172.116.6, port: 9064, type: ss, cipher: aes-256-cfb, password: cp8pRSUAyLhTfVWH, udp: true}
-  - {name: SG_9024 @WangCai_1, server: 103.172.116.10, port: 9024, type: ss, cipher: aes-256-cfb, password: BejrQvtu9sqUeNuZ, udp: true}
-  - {name: SG_9031 @WangCai_1, server: 103.172.116.6, port: 9031, type: ss, cipher: aes-256-cfb, password: BwcAUZk8hUFAkDGN, udp: true}
-  - {name: SG_9033 @WangCai_1 2, server: 103.172.116.6, port: 9033, type: ss, cipher: aes-256-cfb, password: UTJA57ypk2XKQpnm, udp: true}
-  - {name: SG_9040 @WangCai_1, server: 103.172.116.5, port: 9040, type: ss, cipher: aes-256-cfb, password: p9z5BVADH2YFs3MN, udp: true}
-  - {name: SG_9037 @WangCai_1, server: 103.172.116.10, port: 9037, type: ss, cipher: aes-256-cfb, password: TN2YqghxeFDKZfLU, udp: true}
-  - {name: SG_9014 @WangCai_1, server: 103.172.116.10, port: 9014, type: ss, cipher: aes-256-cfb, password: KnJGad3FqTvjqbaX, udp: true}
-  - {name: SG_9079 @WangCai_1, server: 103.172.116.10, port: 9079, type: ss, cipher: aes-256-cfb, password: TPqX8edgbAURcAMb, udp: true}
-  - {name: 油管 TG 8度科技 6, server: kr2.qingyun123.xyz, port: 10050, type: trojan, password: f7ff045b-5aa3-435c-94ec-a473f6b080ea, sni: kr2.qingyun123.xyz, skip-cert-verify: true, udp: true}
-  - {name: SG_9015 @WangCai_1, server: 103.172.116.10, port: 9015, type: ss, cipher: aes-256-cfb, password: ZpNDDKRu9MagNvaf, udp: true}
-  - {name: SG_9011 @WangCai_1, server: 103.172.116.6, port: 9011, type: ss, cipher: aes-256-cfb, password: M3t2ZEQcMGRWBjRa, udp: true}
-  - {name: SG_9088 @WangCai_1, server: 103.172.116.6, port: 9088, type: ss, cipher: aes-256-cfb, password: f8npKgNzdkss2ytn, udp: true}
-  - {name: SG_9053 @WangCai_1, server: 103.172.116.10, port: 9053, type: ss, cipher: aes-256-cfb, password: SBM7R883jBmnqe6C, udp: true}
-  - {name: SG_9025 @WangCai_1, server: 103.172.116.10, port: 9025, type: ss, cipher: aes-256-cfb, password: XPtzA9sCug3SPR4c, udp: true}
-  - {name: SG_9088 @WangCai_1 2, server: 103.172.116.10, port: 9088, type: ss, cipher: aes-256-cfb, password: f8npKgNzdkss2ytn, udp: true}
-  - {name: SG_9064 @WangCai_1 2, server: 103.172.116.5, port: 9064, type: ss, cipher: aes-256-cfb, password: cp8pRSUAyLhTfVWH, udp: true}
-  - {name: SG_9000 @WangCai_1, server: 103.172.116.6, port: 9000, type: ss, cipher: aes-256-cfb, password: a3GFYt36Sm82Vys9, udp: true}
-  - {name: SG_9025 @WangCai_1 2, server: 103.172.116.6, port: 9025, type: ss, cipher: aes-256-cfb, password: XPtzA9sCug3SPR4c, udp: true}
-  - {name: SG_9040 @WangCai_1 2, server: 103.172.116.6, port: 9040, type: ss, cipher: aes-256-cfb, password: p9z5BVADH2YFs3MN, udp: true}
-  - {name: SG_9024 @WangCai_1 2, server: 103.172.116.5, port: 9024, type: ss, cipher: aes-256-cfb, password: BejrQvtu9sqUeNuZ, udp: true}
-  - {name: SG_9000 @WangCai_1 2, server: 103.172.116.5, port: 9000, type: ss, cipher: aes-256-cfb, password: a3GFYt36Sm82Vys9, udp: true}
-  - {name: SG_9020 @WangCai_1 2, server: 103.172.116.6, port: 9020, type: ss, cipher: aes-256-cfb, password: BNmAXXxAHYpTRdzu, udp: true}
-  - {name: SG_9015 @WangCai_1 2, server: 103.172.116.5, port: 9015, type: ss, cipher: aes-256-cfb, password: ZpNDDKRu9MagNvaf, udp: true}
-  - {name: SG_9060 @WangCai_1 2, server: 103.172.116.10, port: 9060, type: ss, cipher: aes-256-cfb, password: ueLXVkvh4hckhErQ, udp: true}
-  - {name: SG_9073 @WangCai_1, server: 103.172.116.5, port: 9073, type: ss, cipher: aes-256-cfb, password: daFYagqDdBdA6VTX, udp: true}
-  - {name: SG_9056 @WangCai_1, server: 103.172.116.10, port: 9056, type: ss, cipher: aes-256-cfb, password: rNBfNuuANFCAk7KB, udp: true}
-  - {name: SG_9007 @WangCai_1 2, server: 103.172.116.5, port: 9007, type: ss, cipher: aes-256-cfb, password: kSPmvwdFzGMMW5pY, udp: true}
-  - {name: SG_9093 @WangCai_1, server: 103.172.116.6, port: 9093, type: ss, cipher: aes-256-cfb, password: wfLC2y7rzZyCmuyt, udp: true}
-  - {name: SG_9098 @WangCai_1, server: 103.172.116.6, port: 9098, type: ss, cipher: aes-256-cfb, password: aLpQtfEZe445QyHk, udp: true}
-  - {name: SG_9014 @WangCai_1 2, server: 103.172.116.5, port: 9014, type: ss, cipher: aes-256-cfb, password: KnJGad3FqTvjqbaX, udp: true}
-  - {name: SG_9003 @WangCai_1, server: 103.172.116.6, port: 9003, type: ss, cipher: aes-256-cfb, password: JdmRK9gMEqFgs8nP, udp: true}
-  - {name: SG_9033 @WangCai_1 3, server: 103.172.116.10, port: 9033, type: ss, cipher: aes-256-cfb, password: UTJA57ypk2XKQpnm, udp: true}
-  - {name: SG_9046 @WangCai_1, server: 103.172.116.10, port: 9046, type: ss, cipher: aes-256-cfb, password: NvS8N4Vf8qAGPSCL, udp: true}
-  - {name: SG_9037 @WangCai_1 2, server: 103.172.116.6, port: 9037, type: ss, cipher: aes-256-cfb, password: TN2YqghxeFDKZfLU, udp: true}
-  - {name: SG_9045 @WangCai_1, server: 103.172.116.10, port: 9045, type: ss, cipher: aes-256-cfb, password: Lp27rqyJq72bZsqX, udp: true}
-  - {name: SG_9064 @WangCai_1 3, server: 103.172.116.10, port: 9064, type: ss, cipher: aes-256-cfb, password: cp8pRSUAyLhTfVWH, udp: true}
-  - {name: SG_9042 @WangCai_1, server: 103.172.116.6, port: 9042, type: ss, cipher: aes-256-cfb, password: S7KwUu7yBy58S3Ga, udp: true}
-  - {name: SG_9084 @WangCai_1 2, server: 103.172.116.10, port: 9084, type: ss, cipher: aes-256-cfb, password: c3NtHJ5ujV2tGDfj, udp: true}
-  - {name: SG_9032 @WangCai_1, server: 103.172.116.5, port: 9032, type: ss, cipher: aes-256-cfb, password: UWZQeLRWnkqgkseq, udp: true}
-  - {name: SG_9084 @WangCai_1 3, server: 103.172.116.5, port: 9084, type: ss, cipher: aes-256-cfb, password: c3NtHJ5ujV2tGDfj, udp: true}
-  - {name: SG_9073 @WangCai_1 2, server: 103.172.116.6, port: 9073, type: ss, cipher: aes-256-cfb, password: daFYagqDdBdA6VTX, udp: true}
-  - {name: SG_9014 @WangCai_1 3, server: 103.172.116.6, port: 9014, type: ss, cipher: aes-256-cfb, password: KnJGad3FqTvjqbaX, udp: true}
-  - {name: SG_9079 @WangCai_1 2, server: 103.172.116.6, port: 9079, type: ss, cipher: aes-256-cfb, password: TPqX8edgbAURcAMb, udp: true}
-  - {name: SG_9003 @WangCai_1 2, server: 103.172.116.5, port: 9003, type: ss, cipher: aes-256-cfb, password: JdmRK9gMEqFgs8nP, udp: true}
-  - {name: SG_9094 @WangCai_1, server: 103.172.116.6, port: 9094, type: ss, cipher: aes-256-cfb, password: rpgbNnU9rDDU4aWZ, udp: true}
-  - {name: SG_9094 @WangCai_1 2, server: 103.172.116.10, port: 9094, type: ss, cipher: aes-256-cfb, password: rpgbNnU9rDDU4aWZ, udp: true}
-  - {name: SG_9059 @WangCai_1, server: 103.172.116.5, port: 9059, type: ss, cipher: aes-256-cfb, password: 9XwYyZsK8SNzQDtY, udp: true}
-  - {name: SG_9003 @WangCai_1 3, server: 103.172.116.10, port: 9003, type: ss, cipher: aes-256-cfb, password: JdmRK9gMEqFgs8nP, udp: true}
-  - {name: SG_9042 @WangCai_1 2, server: 103.172.116.10, port: 9042, type: ss, cipher: aes-256-cfb, password: S7KwUu7yBy58S3Ga, udp: true}
-  - {name: SG_9038 @WangCai_1 2, server: 103.172.116.6, port: 9038, type: ss, cipher: aes-256-cfb, password: gYCYXfkUQEs2TaJQ, udp: true}
-  - {name: SG_9093 @WangCai_1 2, server: 103.172.116.5, port: 9093, type: ss, cipher: aes-256-cfb, password: wfLC2y7rzZyCmuyt, udp: true}
-  - {name: SG_9056 @WangCai_1 2, server: 103.172.116.5, port: 9056, type: ss, cipher: aes-256-cfb, password: rNBfNuuANFCAk7KB, udp: true}
-  - {name: KR_10064+@WangCai_1, server: 180.163.62.91, port: 10064, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: SG_9043 @WangCai_1, server: 103.172.116.6, port: 9043, type: ss, cipher: aes-256-cfb, password: HSZuyJQcWe8dxNdF, udp: true}
-  - {name: SG_9041 @WangCai_1, server: 103.172.116.5, port: 9041, type: ss, cipher: aes-256-cfb, password: U6qnYRhfyDmn8sgn, udp: true}
-  - {name: SG_9040 @WangCai_1 3, server: 103.172.116.10, port: 9040, type: ss, cipher: aes-256-cfb, password: p9z5BVADH2YFs3MN, udp: true}
-  - {name: SG_9053 @WangCai_1 2, server: 103.172.116.6, port: 9053, type: ss, cipher: aes-256-cfb, password: SBM7R883jBmnqe6C, udp: true}
-  - {name: SG_9018 @WangCai_1, server: 103.172.116.5, port: 9018, type: ss, cipher: aes-256-cfb, password: fG2artUmHfNT2cX7, udp: true}
-  - {name: SG_9005 @WangCai_1, server: 103.172.116.10, port: 9005, type: ss, cipher: aes-256-cfb, password: ZET59LF6DvCC8KVt, udp: true}
-  - {name: SG_9019 @WangCai_1 2, server: 103.172.116.5, port: 9019, type: ss, cipher: aes-256-cfb, password: GA9KzeEgvfxNrgmM, udp: true}
-  - {name: SG_9011 @WangCai_1 2, server: 103.172.116.5, port: 9011, type: ss, cipher: aes-256-cfb, password: M3t2ZEQcMGRWBjRa, udp: true}
-  - {name: SG_9007 @WangCai_1 3, server: 103.172.116.10, port: 9007, type: ss, cipher: aes-256-cfb, password: kSPmvwdFzGMMW5pY, udp: true}
-  - {name: SG_9057 @WangCai_1, server: 103.172.116.5, port: 9057, type: ss, cipher: aes-256-cfb, password: wjTugX3ZtHMB9c3Z, udp: true}
-  - {name: SG_9097 @WangCai_1, server: 103.172.116.6, port: 9097, type: ss, cipher: aes-256-cfb, password: Sn5B7jTqr76aCJT8, udp: true}
-  - {name: SG_9026 @WangCai_1 2, server: 103.172.116.5, port: 9026, type: ss, cipher: aes-256-cfb, password: QWDDvVE9npNurQfA, udp: true}
-  - {name: SG_9073 @WangCai_1 3, server: 103.172.116.10, port: 9073, type: ss, cipher: aes-256-cfb, password: daFYagqDdBdA6VTX, udp: true}
-  - {name: SG_9043 @WangCai_1 2, server: 103.172.116.10, port: 9043, type: ss, cipher: aes-256-cfb, password: HSZuyJQcWe8dxNdF, udp: true}
-  - {name: SG_9050 @WangCai_1 2, server: 103.172.116.6, port: 9050, type: ss, cipher: aes-256-cfb, password: FG5ddLsMPbV5CutE, udp: true}
-  - {name: SG_9094 @WangCai_1 3, server: 103.172.116.5, port: 9094, type: ss, cipher: aes-256-cfb, password: rpgbNnU9rDDU4aWZ, udp: true}
-  - {name: SG_9088 @WangCai_1 3, server: 103.172.116.5, port: 9088, type: ss, cipher: aes-256-cfb, password: f8npKgNzdkss2ytn, udp: true}
-  - {name: SG_9053 @WangCai_1 3, server: 103.172.116.5, port: 9053, type: ss, cipher: aes-256-cfb, password: SBM7R883jBmnqe6C, udp: true}
-  - {name: SG_9019 @WangCai_1 3, server: 103.172.116.10, port: 9019, type: ss, cipher: aes-256-cfb, password: GA9KzeEgvfxNrgmM, udp: true}
-  - {name: SG_9006 @WangCai_1, server: 103.172.116.10, port: 9006, type: ss, cipher: aes-256-cfb, password: FAdUvMJUq5vDgKEq, udp: true}
-  - {name: SG_9041 @WangCai_1 2, server: 103.172.116.6, port: 9041, type: ss, cipher: aes-256-cfb, password: U6qnYRhfyDmn8sgn, udp: true}
-  - {name: SG_9079 @WangCai_1 3, server: 103.172.116.5, port: 9079, type: ss, cipher: aes-256-cfb, password: TPqX8edgbAURcAMb, udp: true}
-  - {name: SG_9043 @WangCai_1 3, server: 103.172.116.5, port: 9043, type: ss, cipher: aes-256-cfb, password: HSZuyJQcWe8dxNdF, udp: true}
-  - {name: SG_9027 @WangCai_1, server: 103.172.116.10, port: 9027, type: ss, cipher: aes-256-cfb, password: EXN3S3eQpjE7EJu8, udp: true}
-  - {name: SG_9006 @WangCai_1 2, server: 103.172.116.6, port: 9006, type: ss, cipher: aes-256-cfb, password: FAdUvMJUq5vDgKEq, udp: true}
-  - {name: SG_9008 @WangCai_1, server: 103.172.116.5, port: 9008, type: ss, cipher: aes-256-cfb, password: y9VURyNzJWNRYEGQ, udp: true}
-  - {name: SG_9011 @WangCai_1 3, server: 103.172.116.10, port: 9011, type: ss, cipher: aes-256-cfb, password: M3t2ZEQcMGRWBjRa, udp: true}
-  - {name: SG_9001 @WangCai_1, server: 103.172.116.10, port: 9001, type: ss, cipher: aes-256-cfb, password: UkXRsXvR6buDMG2Y, udp: true}
-  - {name: SG_9056 @WangCai_1 3, server: 103.172.116.6, port: 9056, type: ss, cipher: aes-256-cfb, password: rNBfNuuANFCAk7KB, udp: true}
-  - {name: SG_9042 @WangCai_1 3, server: 103.172.116.5, port: 9042, type: ss, cipher: aes-256-cfb, password: S7KwUu7yBy58S3Ga, udp: true}
-  - {name: SG_9000 @WangCai_1 3, server: 103.172.116.10, port: 9000, type: ss, cipher: aes-256-cfb, password: a3GFYt36Sm82Vys9, udp: true}
-  - {name: SG_9008 @WangCai_1 2, server: 103.172.116.10, port: 9008, type: ss, cipher: aes-256-cfb, password: y9VURyNzJWNRYEGQ, udp: true}
-  - {name: SG_9057 @WangCai_1 2, server: 103.172.116.10, port: 9057, type: ss, cipher: aes-256-cfb, password: wjTugX3ZtHMB9c3Z, udp: true}
-  - {name: SG_9070 @WangCai_1, server: 103.172.116.6, port: 9070, type: ss, cipher: aes-256-cfb, password: bf7v334KKDV3YDhH, udp: true}
-  - {name: SG_9045 @WangCai_1 2, server: 103.172.116.5, port: 9045, type: ss, cipher: aes-256-cfb, password: Lp27rqyJq72bZsqX, udp: true}
+  - {name: SG_油管 TG 8度科技, server: n.cloudoo.xyz, port: 4007, type: vmess, uuid: cda618d9-81f4-47b1-9081-694883d6da62, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /upload, ws-headers: {Host: n.cloudoo.xyz}, udp: true}
+  - {name: HK_油管 TG 8度科技, server: hk20.holiganfan.com, port: 10088, type: trojan, password: 4e9dac0d-ae86-45e8-af61-668ce5825d61, sni: hk20.holiganfan.com, skip-cert-verify: true, udp: true}
+  - {name: CN_油管 TG 8度科技, server: 101.67.8.63, port: 62107, type: vmess, uuid: a4d45d8e-6375-4df1-986e-cd63f35b36c1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN_油管 TG 8度科技 2, server: 101.67.8.63, port: 63109, type: vmess, uuid: a4d45d8e-6375-4df1-986e-cd63f35b36c1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN_油管 TG 8度科技 3, server: gz.bgp.rx.naiun.pw, port: 45239, type: vmess, uuid: 36acb25d-cb74-4fa9-aa66-9d87c99c0216, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: gz.bgp.rx.naiun.pw}, udp: true}
+  - {name: CN_油管 TG 8度科技 4, server: 183.240.181.34, port: 28011, type: vmess, uuid: 80d662b7-ea01-34ef-b5c3-84b83dbd6bf7, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: CN_油管 TG 8度科技 5, server: 101.67.8.63, port: 62105, type: vmess, uuid: a4d45d8e-6375-4df1-986e-cd63f35b36c1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN_油管 TG 8度科技 6, server: 183.240.181.34, port: 28016, type: vmess, uuid: 80d662b7-ea01-34ef-b5c3-84b83dbd6bf7, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: CN_油管 TG 8度科技 7, server: 101.67.8.63, port: 62104, type: vmess, uuid: a4d45d8e-6375-4df1-986e-cd63f35b36c1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN_油管 TG 8度科技 8, server: 101.67.8.63, port: 62110, type: vmess, uuid: a4d45d8e-6375-4df1-986e-cd63f35b36c1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN_油管 TG 8度科技 9, server: 183.240.181.34, port: 28018, type: vmess, uuid: 80d662b7-ea01-34ef-b5c3-84b83dbd6bf7, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: CN_油管 TG 8度科技 10, server: 183.240.181.34, port: 28034, type: vmess, uuid: 80d662b7-ea01-34ef-b5c3-84b83dbd6bf7, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: CN_油管 TG 8度科技 11, server: 183.240.181.34, port: 28032, type: vmess, uuid: 80d662b7-ea01-34ef-b5c3-84b83dbd6bf7, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: CN_油管 TG 8度科技 12, server: 101.67.8.63, port: 62112, type: vmess, uuid: a4d45d8e-6375-4df1-986e-cd63f35b36c1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN_油管 TG 8度科技 13, server: gz.bgp.rx.naiun.pw, port: 45394, type: vmess, uuid: 36acb25d-cb74-4fa9-aa66-9d87c99c0216, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: gz.bgp.rx.naiun.pw}, udp: true}
+  - {name: CN_油管 TG 8度科技 14, server: 183.240.181.34, port: 28021, type: vmess, uuid: 80d662b7-ea01-34ef-b5c3-84b83dbd6bf7, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: CN_油管 TG 8度科技 15, server: 101.67.8.63, port: 55121, type: vmess, uuid: a4d45d8e-6375-4df1-986e-cd63f35b36c1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN_油管 TG 8度科技 16, server: 183.240.181.34, port: 28020, type: vmess, uuid: 80d662b7-ea01-34ef-b5c3-84b83dbd6bf7, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: CN_油管 TG 8度科技 17, server: 183.240.181.34, port: 28037, type: vmess, uuid: 80d662b7-ea01-34ef-b5c3-84b83dbd6bf7, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: CN_油管 TG 8度科技 18, server: gz.bgp.rx.naiun.pw, port: 45194, type: vmess, uuid: 36acb25d-cb74-4fa9-aa66-9d87c99c0216, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: gz.bgp.rx.naiun.pw}, udp: true}
+  - {name: CN_油管+TG+8度科技, server: gz.bgp.rx.naiun.pw, port: 45144, type: ss, cipher: chacha20-ietf-poly1305, password: 36acb25d-cb74-4fa9-aa66-9d87c99c0216, udp: true}
+  - {name: CN_油管 TG 8度科技 19, server: 43.154.87.207, port: 24821, type: vmess, uuid: 357000f2-e4a9-4d35-8248-58ab72b7a0eb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN_油管 TG 8度科技 20, server: 183.240.181.34, port: 10231, type: vmess, uuid: 80d662b7-ea01-34ef-b5c3-84b83dbd6bf7, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: CN_油管+TG+8度科技 2, server: gz.bgp.rx.naiun.pw, port: 45240, type: ss, cipher: chacha20-ietf-poly1305, password: 36acb25d-cb74-4fa9-aa66-9d87c99c0216, udp: true}
+  - {name: CN_油管 TG 8度科技 21, server: 183.240.181.34, port: 28017, type: vmess, uuid: 80d662b7-ea01-34ef-b5c3-84b83dbd6bf7, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: CN_油管 TG 8度科技 22, server: 101.67.8.63, port: 62109, type: vmess, uuid: a4d45d8e-6375-4df1-986e-cd63f35b36c1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN_油管 TG 8度科技 23, server: 183.240.181.34, port: 28005, type: vmess, uuid: 80d662b7-ea01-34ef-b5c3-84b83dbd6bf7, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: US_油管 TG 8度科技, server: linodemx0303.moonfree.top, port: 443, type: vmess, uuid: aa5dd703-195d-4682-8c35-ea0083ea1a74, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: linodemx0303.moonfree.top}, udp: true}
+  - {name: CN_油管 TG 8度科技 24, server: hz.bgp.rx.naiun.pw, port: 45194, type: vmess, uuid: 36acb25d-cb74-4fa9-aa66-9d87c99c0216, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: hz.bgp.rx.naiun.pw}, udp: true}
+  - {name: TW_油管 TG 8度科技, server: tw1.qingyun123.xyz, port: 10050, type: trojan, password: 64f24836-8e3b-4104-bc53-a4c6b16cbbe2, sni: tw1.qingyun123.xyz, skip-cert-verify: true, udp: true}
+  - {name: HK_油管 TG 8度科技 2, server: 13.70.61.248, port: 21568, type: vmess, uuid: 4e70526f-3e97-49c2-8576-e08b730e0c03, alterId: 80, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: JP_油管 TG 8度科技, server: 45.142.166.163, port: 38763, type: vmess, uuid: 44e3c1d4-8773-45b3-fbf0-0e3770d489d5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: KR_油管 TG 8度科技, server: 146.56.41.3, port: 8888, type: vmess, uuid: c23c242f-3705-4bfa-be9e-887bb43ce501, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN_油管 TG 8度科技 25, server: 101.67.8.63, port: 62106, type: vmess, uuid: a4d45d8e-6375-4df1-986e-cd63f35b36c1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN_油管 TG 8度科技 26, server: 183.240.181.34, port: 6002, type: vmess, uuid: 80d662b7-ea01-34ef-b5c3-84b83dbd6bf7, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: CN_油管+TG+8度科技 3, server: hz.bgp.rx.naiun.pw, port: 45183, type: ss, cipher: chacha20-ietf-poly1305, password: 36acb25d-cb74-4fa9-aa66-9d87c99c0216, udp: true}
+  - {name: CN_油管 TG 8度科技 27, server: 183.240.181.34, port: 6003, type: vmess, uuid: 80d662b7-ea01-34ef-b5c3-84b83dbd6bf7, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: 油管 TG 8度科技, server: 104.16.162.16, port: 2053, type: vmess, uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /eisasqa, ws-headers: {Host: foxus.fovi.tk}, udp: true}
+  - {name: CN_油管+TG+8度科技 4, server: gz.bgp.rx.naiun.pw, port: 45251, type: ss, cipher: chacha20-ietf-poly1305, password: 36acb25d-cb74-4fa9-aa66-9d87c99c0216, udp: true}
+  - {name: CN_油管 TG 8度科技 28, server: 101.67.8.63, port: 62113, type: vmess, uuid: a4d45d8e-6375-4df1-986e-cd63f35b36c1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN_油管 TG 8度科技 29, server: hz.bgp.rx.naiun.pw, port: 45394, type: vmess, uuid: 36acb25d-cb74-4fa9-aa66-9d87c99c0216, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: hz.bgp.rx.naiun.pw}, udp: true}
+  - {name: CN_油管 TG 8度科技 30, server: 101.67.8.63, port: 62111, type: vmess, uuid: a4d45d8e-6375-4df1-986e-cd63f35b36c1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN_油管+TG+8度科技 5, server: hz.bgp.rx.naiun.pw, port: 45144, type: ss, cipher: chacha20-ietf-poly1305, password: 36acb25d-cb74-4fa9-aa66-9d87c99c0216, udp: true}
+  - {name: US_油管 TG 8度科技 2, server: 45.142.158.72, port: 56482, type: vmess, uuid: a1c5d3bd-0a35-4c53-ba48-a14fa148eda2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: NL_油管+TG+8度科技, server: 213.183.59.218, port: 9042, type: ss, cipher: aes-256-cfb, password: S7KwUu7yBy58S3Ga, udp: true}
+  - {name: HK_油管 TG 8度科技 3, server: hk21.holiganfan.com, port: 10088, type: trojan, password: 4e9dac0d-ae86-45e8-af61-668ce5825d61, sni: hk21.holiganfan.com, skip-cert-verify: true, udp: true}
+  - {name: SG_油管 TG 8度科技 2, server: n.cloudoo.xyz, port: 4005, type: vmess, uuid: cda618d9-81f4-47b1-9081-694883d6da62, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /upload, ws-headers: {Host: n.cloudoo.xyz}, udp: true}
+  - {name: HK_油管 TG 8度科技 4, server: node.relay.az.naiun.pw, port: 25082, type: vmess, uuid: 36acb25d-cb74-4fa9-aa66-9d87c99c0216, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: node.free.usa.naiun.pw}, udp: true}
+  - {name: SG_油管 TG 8度科技 3, server: 43.133.207.68, port: 12424, type: vmess, uuid: a331a7a7-11db-403a-c8d3-8e4c790c4e8a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: NL_油管+TG+8度科技 2, server: 213.183.59.209, port: 9045, type: ss, cipher: aes-256-cfb, password: Lp27rqyJq72bZsqX, udp: true}
+  - {name: NL_油管+TG+8度科技 3, server: 213.183.59.185, port: 9060, type: ss, cipher: aes-256-cfb, password: ueLXVkvh4hckhErQ, udp: true}
+  - {name: NL_油管+TG+8度科技 4, server: 213.183.59.185, port: 9020, type: ss, cipher: aes-256-cfb, password: BNmAXXxAHYpTRdzu, udp: true}
+  - {name: NL_油管+TG+8度科技 5, server: 213.183.59.185, port: 9006, type: ss, cipher: aes-256-cfb, password: FAdUvMJUq5vDgKEq, udp: true}
+  - {name: CN_油管 TG 8度科技 31, server: 183.240.181.34, port: 35120, type: vmess, uuid: 80d662b7-ea01-34ef-b5c3-84b83dbd6bf7, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: NL_油管+TG+8度科技 6, server: 213.183.59.218, port: 9025, type: ss, cipher: aes-256-cfb, password: XPtzA9sCug3SPR4c, udp: true}
+  - {name: NL_油管+TG+8度科技 7, server: 213.183.59.229, port: 9020, type: ss, cipher: aes-256-cfb, password: BNmAXXxAHYpTRdzu, udp: true}
+  - {name: CN_油管 TG 8度科技 32, server: gz.bgp.rx.naiun.pw, port: 45250, type: vmess, uuid: 36acb25d-cb74-4fa9-aa66-9d87c99c0216, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: gz.bgp.rx.naiun.pw}, udp: true}
+  - {name: NL_油管+TG+8度科技 8, server: 213.183.59.209, port: 9053, type: ss, cipher: aes-256-cfb, password: SBM7R883jBmnqe6C, udp: true}
+  - {name: NL_油管+TG+8度科技 9, server: 213.183.59.229, port: 9011, type: ss, cipher: aes-256-cfb, password: M3t2ZEQcMGRWBjRa, udp: true}
+  - {name: NL_油管+TG+8度科技 10, server: 213.183.59.231, port: 9098, type: ss, cipher: aes-256-cfb, password: aLpQtfEZe445QyHk, udp: true}
+  - {name: NL_油管+TG+8度科技 11, server: 213.183.59.231, port: 9007, type: ss, cipher: aes-256-cfb, password: kSPmvwdFzGMMW5pY, udp: true}
+  - {name: NL_油管+TG+8度科技 12, server: 213.183.59.209, port: 9006, type: ss, cipher: aes-256-cfb, password: FAdUvMJUq5vDgKEq, udp: true}
+  - {name: NL_油管+TG+8度科技 13, server: 213.183.59.209, port: 9020, type: ss, cipher: aes-256-cfb, password: BNmAXXxAHYpTRdzu, udp: true}
+  - {name: CN_油管 TG 8度科技 33, server: 183.240.181.34, port: 28061, type: vmess, uuid: 80d662b7-ea01-34ef-b5c3-84b83dbd6bf7, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: NL_油管+TG+8度科技 14, server: 213.183.59.231, port: 9056, type: ss, cipher: aes-256-cfb, password: rNBfNuuANFCAk7KB, udp: true}
+  - {name: NL_油管+TG+8度科技 15, server: 213.183.59.231, port: 9079, type: ss, cipher: aes-256-cfb, password: TPqX8edgbAURcAMb, udp: true}
+  - {name: NL_油管+TG+8度科技 16, server: 213.183.59.229, port: 9042, type: ss, cipher: aes-256-cfb, password: S7KwUu7yBy58S3Ga, udp: true}
+  - {name: NL_油管+TG+8度科技 17, server: 213.183.59.231, port: 9014, type: ss, cipher: aes-256-cfb, password: KnJGad3FqTvjqbaX, udp: true}
+  - {name: NL_油管+TG+8度科技 18, server: 213.183.59.229, port: 9073, type: ss, cipher: aes-256-cfb, password: daFYagqDdBdA6VTX, udp: true}
+  - {name: NL_油管+TG+8度科技 19, server: 213.183.59.209, port: 9088, type: ss, cipher: aes-256-cfb, password: f8npKgNzdkss2ytn, udp: true}
+  - {name: NL_油管+TG+8度科技 20, server: 213.183.59.229, port: 9053, type: ss, cipher: aes-256-cfb, password: SBM7R883jBmnqe6C, udp: true}
+  - {name: CN_油管 TG 8度科技 34, server: 101.67.8.63, port: 62108, type: vmess, uuid: a4d45d8e-6375-4df1-986e-cd63f35b36c1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: NL_油管+TG+8度科技 21, server: 213.183.59.209, port: 9019, type: ss, cipher: aes-256-cfb, password: GA9KzeEgvfxNrgmM, udp: true}
+  - {name: NL_油管+TG+8度科技 22, server: 213.183.59.218, port: 9019, type: ss, cipher: aes-256-cfb, password: GA9KzeEgvfxNrgmM, udp: true}
+  - {name: NL_油管+TG+8度科技 23, server: 213.183.59.229, port: 9040, type: ss, cipher: aes-256-cfb, password: p9z5BVADH2YFs3MN, udp: true}
+  - {name: NL_油管+TG+8度科技 24, server: 213.183.59.229, port: 9038, type: ss, cipher: aes-256-cfb, password: gYCYXfkUQEs2TaJQ, udp: true}
+  - {name: CN_油管+TG+8度科技 6, server: gz.bgp.rx.naiun.pw, port: 45190, type: ss, cipher: chacha20-ietf-poly1305, password: 36acb25d-cb74-4fa9-aa66-9d87c99c0216, udp: true}
+  - {name: NL_油管+TG+8度科技 25, server: 213.183.59.218, port: 9094, type: ss, cipher: aes-256-cfb, password: rpgbNnU9rDDU4aWZ, udp: true}
+  - {name: NL_油管+TG+8度科技 26, server: 213.183.59.231, port: 9020, type: ss, cipher: aes-256-cfb, password: BNmAXXxAHYpTRdzu, udp: true}
+  - {name: NL_油管+TG+8度科技 27, server: 213.183.59.209, port: 9000, type: ss, cipher: aes-256-cfb, password: a3GFYt36Sm82Vys9, udp: true}
+  - {name: NL_油管+TG+8度科技 28, server: 213.183.59.229, port: 9015, type: ss, cipher: aes-256-cfb, password: ZpNDDKRu9MagNvaf, udp: true}
+  - {name: NL_油管+TG+8度科技 29, server: 213.183.59.209, port: 9050, type: ss, cipher: aes-256-cfb, password: FG5ddLsMPbV5CutE, udp: true}
+  - {name: NL_油管+TG+8度科技 30, server: 213.183.59.229, port: 9043, type: ss, cipher: aes-256-cfb, password: HSZuyJQcWe8dxNdF, udp: true}
+  - {name: NL_油管+TG+8度科技 31, server: 213.183.59.229, port: 9019, type: ss, cipher: aes-256-cfb, password: GA9KzeEgvfxNrgmM, udp: true}
+  - {name: NL_油管+TG+8度科技 32, server: 213.183.59.229, port: 9045, type: ss, cipher: aes-256-cfb, password: Lp27rqyJq72bZsqX, udp: true}
+  - {name: NL_油管+TG+8度科技 33, server: 213.183.59.218, port: 9032, type: ss, cipher: aes-256-cfb, password: UWZQeLRWnkqgkseq, udp: true}
+  - {name: NL_油管+TG+8度科技 34, server: 213.183.59.229, port: 9027, type: ss, cipher: aes-256-cfb, password: EXN3S3eQpjE7EJu8, udp: true}
+  - {name: US_油管 TG 8度科技 3, server: 104.243.17.101, port: 10516, type: vmess, uuid: e95decf7-0649-4246-a9b2-41080dd45f9d, alterId: 63, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: NL_油管+TG+8度科技 35, server: 213.183.59.209, port: 9008, type: ss, cipher: aes-256-cfb, password: y9VURyNzJWNRYEGQ, udp: true}
+  - {name: NL_油管+TG+8度科技 36, server: 213.183.59.209, port: 9015, type: ss, cipher: aes-256-cfb, password: ZpNDDKRu9MagNvaf, udp: true}
+  - {name: NL_油管+TG+8度科技 37, server: 213.183.59.231, port: 9018, type: ss, cipher: aes-256-cfb, password: fG2artUmHfNT2cX7, udp: true}
+  - {name: NL_油管+TG+8度科技 38, server: 213.183.59.229, port: 9007, type: ss, cipher: aes-256-cfb, password: kSPmvwdFzGMMW5pY, udp: true}
+  - {name: NL_油管+TG+8度科技 39, server: 213.183.59.231, port: 9060, type: ss, cipher: aes-256-cfb, password: ueLXVkvh4hckhErQ, udp: true}
+  - {name: NL_油管+TG+8度科技 40, server: 213.183.59.231, port: 9084, type: ss, cipher: aes-256-cfb, password: c3NtHJ5ujV2tGDfj, udp: true}
+  - {name: NL_油管+TG+8度科技 41, server: 213.183.59.231, port: 9000, type: ss, cipher: aes-256-cfb, password: a3GFYt36Sm82Vys9, udp: true}
+  - {name: NL_油管+TG+8度科技 42, server: 213.183.59.209, port: 9057, type: ss, cipher: aes-256-cfb, password: wjTugX3ZtHMB9c3Z, udp: true}
+  - {name: NL_油管+TG+8度科技 43, server: 213.183.59.209, port: 9070, type: ss, cipher: aes-256-cfb, password: bf7v334KKDV3YDhH, udp: true}
+  - {name: NL_油管+TG+8度科技 44, server: 213.183.59.229, port: 9001, type: ss, cipher: aes-256-cfb, password: UkXRsXvR6buDMG2Y, udp: true}
+  - {name: NL_油管+TG+8度科技 45, server: 213.183.59.209, port: 9093, type: ss, cipher: aes-256-cfb, password: wfLC2y7rzZyCmuyt, udp: true}
+  - {name: NL_油管+TG+8度科技 46, server: 213.183.59.229, port: 9097, type: ss, cipher: aes-256-cfb, password: Sn5B7jTqr76aCJT8, udp: true}
+  - {name: KR_油管 TG 8度科技 2, server: 45.141.137.6, port: 8888, type: vmess, uuid: 2754a483-879a-4e74-a687-a499fd148ef9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: NL_油管+TG+8度科技 47, server: 213.183.59.229, port: 9018, type: ss, cipher: aes-256-cfb, password: fG2artUmHfNT2cX7, udp: true}
+  - {name: NL_油管+TG+8度科技 48, server: 213.183.59.209, port: 9043, type: ss, cipher: aes-256-cfb, password: HSZuyJQcWe8dxNdF, udp: true}
+  - {name: NL_油管+TG+8度科技 49, server: 213.183.59.231, port: 9025, type: ss, cipher: aes-256-cfb, password: XPtzA9sCug3SPR4c, udp: true}
+  - {name: NL_油管+TG+8度科技 50, server: 213.183.59.231, port: 9045, type: ss, cipher: aes-256-cfb, password: Lp27rqyJq72bZsqX, udp: true}
+  - {name: NL_油管+TG+8度科技 51, server: 213.183.59.185, port: 9019, type: ss, cipher: aes-256-cfb, password: GA9KzeEgvfxNrgmM, udp: true}
+  - {name: NL_油管+TG+8度科技 52, server: 213.183.59.218, port: 9027, type: ss, cipher: aes-256-cfb, password: EXN3S3eQpjE7EJu8, udp: true}
+  - {name: NL_油管+TG+8度科技 53, server: 213.183.59.185, port: 9084, type: ss, cipher: aes-256-cfb, password: c3NtHJ5ujV2tGDfj, udp: true}
+  - {name: NL_油管+TG+8度科技 54, server: 213.183.59.209, port: 9007, type: ss, cipher: aes-256-cfb, password: kSPmvwdFzGMMW5pY, udp: true}
+  - {name: US_油管 TG 8度科技 4, server: 216.240.140.240, port: 36381, type: vmess, uuid: 8fd08113-5422-40fb-b762-923a83fd089a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: NL_油管+TG+8度科技 55, server: 213.183.59.209, port: 9018, type: ss, cipher: aes-256-cfb, password: fG2artUmHfNT2cX7, udp: true}
+  - {name: NL_油管+TG+8度科技 56, server: 213.183.59.231, port: 9031, type: ss, cipher: aes-256-cfb, password: BwcAUZk8hUFAkDGN, udp: true}
+  - {name: NL_油管+TG+8度科技 57, server: 213.183.59.209, port: 9038, type: ss, cipher: aes-256-cfb, password: gYCYXfkUQEs2TaJQ, udp: true}
+  - {name: NL_油管+TG+8度科技 58, server: 213.183.59.209, port: 9097, type: ss, cipher: aes-256-cfb, password: Sn5B7jTqr76aCJT8, udp: true}
+  - {name: NL_油管+TG+8度科技 59, server: 213.183.59.218, port: 9088, type: ss, cipher: aes-256-cfb, password: f8npKgNzdkss2ytn, udp: true}
+  - {name: NL_油管+TG+8度科技 60, server: 213.183.59.218, port: 9097, type: ss, cipher: aes-256-cfb, password: Sn5B7jTqr76aCJT8, udp: true}
+  - {name: NL_油管+TG+8度科技 61, server: 213.183.59.229, port: 9010, type: ss, cipher: aes-256-cfb, password: f63gg8EruDnUrmz4, udp: true}
+  - {name: CN_油管 TG 8度科技 35, server: gz.bgp.rx.naiun.pw, port: 45149, type: vmess, uuid: 36acb25d-cb74-4fa9-aa66-9d87c99c0216, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: gz.bgp.rx.naiun.pw}, udp: true}
+  - {name: NL_油管+TG+8度科技 62, server: 213.183.59.231, port: 9008, type: ss, cipher: aes-256-cfb, password: y9VURyNzJWNRYEGQ, udp: true}
+  - {name: NL_油管+TG+8度科技 63, server: 213.183.59.231, port: 9043, type: ss, cipher: aes-256-cfb, password: HSZuyJQcWe8dxNdF, udp: true}
+  - {name: NL_油管+TG+8度科技 64, server: 213.183.59.231, port: 9041, type: ss, cipher: aes-256-cfb, password: U6qnYRhfyDmn8sgn, udp: true}
+  - {name: NL_油管+TG+8度科技 65, server: 213.183.59.229, port: 9005, type: ss, cipher: aes-256-cfb, password: ZET59LF6DvCC8KVt, udp: true}
+  - {name: NL_油管+TG+8度科技 66, server: 213.183.59.231, port: 9093, type: ss, cipher: aes-256-cfb, password: wfLC2y7rzZyCmuyt, udp: true}
+  - {name: NL_油管+TG+8度科技 67, server: 213.183.59.209, port: 9003, type: ss, cipher: aes-256-cfb, password: JdmRK9gMEqFgs8nP, udp: true}
+  - {name: NL_油管+TG+8度科技 68, server: 213.183.59.231, port: 9033, type: ss, cipher: aes-256-cfb, password: UTJA57ypk2XKQpnm, udp: true}
+  - {name: NL_油管+TG+8度科技 69, server: 213.183.59.229, port: 9084, type: ss, cipher: aes-256-cfb, password: c3NtHJ5ujV2tGDfj, udp: true}
+  - {name: NL_油管+TG+8度科技 70, server: 213.183.59.229, port: 9032, type: ss, cipher: aes-256-cfb, password: UWZQeLRWnkqgkseq, udp: true}
+  - {name: CN_油管+TG+8度科技 7, server: gz.bgp.rx.naiun.pw, port: 45392, type: ss, cipher: chacha20-ietf-poly1305, password: 36acb25d-cb74-4fa9-aa66-9d87c99c0216, udp: true}
+  - {name: CN_油管 TG 8度科技 36, server: mg01.nfeng6.pp.ua, port: 63078, type: vmess, uuid: ba22a02b-4178-39a7-b748-4d0c03b9a674, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /t.me/nfeng6, ws-headers: {Host: mg01.nfeng6.pp.ua}, udp: true}
+  - {name: NL_油管+TG+8度科技 71, server: 213.183.59.231, port: 9027, type: ss, cipher: aes-256-cfb, password: EXN3S3eQpjE7EJu8, udp: true}
+  - {name: NL_油管+TG+8度科技 72, server: 213.183.59.231, port: 9057, type: ss, cipher: aes-256-cfb, password: wjTugX3ZtHMB9c3Z, udp: true}
+  - {name: NL_油管+TG+8度科技 73, server: 213.183.59.229, port: 9088, type: ss, cipher: aes-256-cfb, password: f8npKgNzdkss2ytn, udp: true}
+  - {name: 油管 TG 8度科技 2, server: 104.19.3.31, port: 443, type: vmess, uuid: 9e6ceeff-2546-3690-ac00-6fcdf31dec94, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /chaugg, ws-headers: {Host: v2fly.samrt.website}, udp: true}
+  - {name: NL_油管+TG+8度科技 74, server: 213.183.59.209, port: 9011, type: ss, cipher: aes-256-cfb, password: M3t2ZEQcMGRWBjRa, udp: true}
+  - {name: NL_油管+TG+8度科技 75, server: 213.183.59.185, port: 9073, type: ss, cipher: aes-256-cfb, password: daFYagqDdBdA6VTX, udp: true}
+  - {name: NL_油管+TG+8度科技 76, server: 213.183.59.231, port: 9037, type: ss, cipher: aes-256-cfb, password: TN2YqghxeFDKZfLU, udp: true}
+  - {name: NL_油管+TG+8度科技 77, server: 213.183.59.231, port: 9064, type: ss, cipher: aes-256-cfb, password: cp8pRSUAyLhTfVWH, udp: true}
+  - {name: NL_油管+TG+8度科技 78, server: 213.183.59.229, port: 9025, type: ss, cipher: aes-256-cfb, password: XPtzA9sCug3SPR4c, udp: true}
+  - {name: NL_油管+TG+8度科技 79, server: 213.183.59.185, port: 9007, type: ss, cipher: aes-256-cfb, password: kSPmvwdFzGMMW5pY, udp: true}
+  - {name: CN_油管 TG 8度科技 37, server: 183.240.181.34, port: 35121, type: vmess, uuid: 80d662b7-ea01-34ef-b5c3-84b83dbd6bf7, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: CN_油管 TG 8度科技 38, server: gz.bgp.rx.naiun.pw, port: 45184, type: vmess, uuid: 36acb25d-cb74-4fa9-aa66-9d87c99c0216, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: gz.bgp.rx.naiun.pw}, udp: true}
+  - {name: NL_油管+TG+8度科技 80, server: 213.183.59.218, port: 9008, type: ss, cipher: aes-256-cfb, password: y9VURyNzJWNRYEGQ, udp: true}
+  - {name: NL_油管+TG+8度科技 81, server: 213.183.59.229, port: 9014, type: ss, cipher: aes-256-cfb, password: KnJGad3FqTvjqbaX, udp: true}
+  - {name: NL_油管+TG+8度科技 82, server: 213.183.59.229, port: 9037, type: ss, cipher: aes-256-cfb, password: TN2YqghxeFDKZfLU, udp: true}
+  - {name: NL_油管+TG+8度科技 83, server: 213.183.59.229, port: 9050, type: ss, cipher: aes-256-cfb, password: FG5ddLsMPbV5CutE, udp: true}
+  - {name: NL_油管+TG+8度科技 84, server: 213.183.59.218, port: 9037, type: ss, cipher: aes-256-cfb, password: TN2YqghxeFDKZfLU, udp: true}
+  - {name: NL_油管+TG+8度科技 85, server: 213.183.59.218, port: 9001, type: ss, cipher: aes-256-cfb, password: UkXRsXvR6buDMG2Y, udp: true}
+  - {name: NL_油管+TG+8度科技 86, server: 213.183.59.209, port: 9027, type: ss, cipher: aes-256-cfb, password: EXN3S3eQpjE7EJu8, udp: true}
+  - {name: NL_油管+TG+8度科技 87, server: 213.183.59.209, port: 9094, type: ss, cipher: aes-256-cfb, password: rpgbNnU9rDDU4aWZ, udp: true}
+  - {name: NL_油管+TG+8度科技 88, server: 213.183.59.229, port: 9024, type: ss, cipher: aes-256-cfb, password: BejrQvtu9sqUeNuZ, udp: true}
+  - {name: NL_油管+TG+8度科技 89, server: 213.183.59.209, port: 9084, type: ss, cipher: aes-256-cfb, password: c3NtHJ5ujV2tGDfj, udp: true}
+  - {name: NL_油管+TG+8度科技 90, server: 213.183.59.185, port: 9008, type: ss, cipher: aes-256-cfb, password: y9VURyNzJWNRYEGQ, udp: true}
+  - {name: NL_油管+TG+8度科技 91, server: 213.183.59.229, port: 9003, type: ss, cipher: aes-256-cfb, password: JdmRK9gMEqFgs8nP, udp: true}
+  - {name: NL_油管+TG+8度科技 92, server: 213.183.59.209, port: 9064, type: ss, cipher: aes-256-cfb, password: cp8pRSUAyLhTfVWH, udp: true}
+  - {name: NL_油管+TG+8度科技 93, server: 213.183.59.185, port: 9093, type: ss, cipher: aes-256-cfb, password: wfLC2y7rzZyCmuyt, udp: true}
+  - {name: NL_油管+TG+8度科技 94, server: 213.183.59.231, port: 9046, type: ss, cipher: aes-256-cfb, password: NvS8N4Vf8qAGPSCL, udp: true}
+  - {name: NL_油管+TG+8度科技 95, server: 213.183.59.229, port: 9060, type: ss, cipher: aes-256-cfb, password: ueLXVkvh4hckhErQ, udp: true}
+  - {name: CN_油管+TG+8度科技 8, server: 14.29.124.168, port: 25283, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: NL_油管+TG+8度科技 96, server: 213.183.59.229, port: 9056, type: ss, cipher: aes-256-cfb, password: rNBfNuuANFCAk7KB, udp: true}
+  - {name: NL_油管+TG+8度科技 97, server: 213.183.59.229, port: 9064, type: ss, cipher: aes-256-cfb, password: cp8pRSUAyLhTfVWH, udp: true}
+  - {name: NL_油管+TG+8度科技 98, server: 213.183.59.229, port: 9079, type: ss, cipher: aes-256-cfb, password: TPqX8edgbAURcAMb, udp: true}
+  - {name: NL_油管+TG+8度科技 99, server: 213.183.59.185, port: 9053, type: ss, cipher: aes-256-cfb, password: SBM7R883jBmnqe6C, udp: true}
+  - {name: NL_油管+TG+8度科技 100, server: 213.183.59.185, port: 9018, type: ss, cipher: aes-256-cfb, password: fG2artUmHfNT2cX7, udp: true}
+  - {name: CN_油管+TG+8度科技 9, server: 14.29.124.168, port: 25286, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_油管+TG+8度科技 10, server: 14.29.124.168, port: 25295, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: NL_油管+TG+8度科技 101, server: 213.183.59.209, port: 9098, type: ss, cipher: aes-256-cfb, password: aLpQtfEZe445QyHk, udp: true}
+  - {name: NL_油管+TG+8度科技 102, server: 213.183.59.218, port: 9057, type: ss, cipher: aes-256-cfb, password: wjTugX3ZtHMB9c3Z, udp: true}
+  - {name: CN_油管+TG+8度科技 11, server: 14.29.124.168, port: 25296, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_油管+TG+8度科技 12, server: 14.29.124.168, port: 25217, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_油管+TG+8度科技 13, server: 14.29.124.168, port: 25210, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: NL_油管+TG+8度科技 103, server: 213.183.59.218, port: 9038, type: ss, cipher: aes-256-cfb, password: gYCYXfkUQEs2TaJQ, udp: true}
+  - {name: NL_油管+TG+8度科技 104, server: 213.183.59.229, port: 9059, type: ss, cipher: aes-256-cfb, password: 9XwYyZsK8SNzQDtY, udp: true}
+  - {name: NL_油管+TG+8度科技 105, server: 213.183.59.229, port: 9008, type: ss, cipher: aes-256-cfb, password: y9VURyNzJWNRYEGQ, udp: true}
+  - {name: NL_油管+TG+8度科技 106, server: 213.183.59.231, port: 9073, type: ss, cipher: aes-256-cfb, password: daFYagqDdBdA6VTX, udp: true}
+  - {name: NL_油管+TG+8度科技 107, server: 213.183.59.218, port: 9014, type: ss, cipher: aes-256-cfb, password: KnJGad3FqTvjqbaX, udp: true}
+  - {name: CN_油管+TG+8度科技 14, server: 14.29.124.168, port: 25267, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: NL_油管+TG+8度科技 108, server: 213.183.59.231, port: 9006, type: ss, cipher: aes-256-cfb, password: FAdUvMJUq5vDgKEq, udp: true}
+  - {name: CN_油管+TG+8度科技 15, server: 14.29.124.168, port: 25219, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: NL_油管+TG+8度科技 109, server: 213.183.59.209, port: 9046, type: ss, cipher: aes-256-cfb, password: NvS8N4Vf8qAGPSCL, udp: true}
+  - {name: NL_油管+TG+8度科技 110, server: 213.183.59.209, port: 9079, type: ss, cipher: aes-256-cfb, password: TPqX8edgbAURcAMb, udp: true}
+  - {name: NL_油管+TG+8度科技 111, server: 213.183.59.185, port: 9032, type: ss, cipher: aes-256-cfb, password: UWZQeLRWnkqgkseq, udp: true}
+  - {name: NL_油管+TG+8度科技 112, server: 213.183.59.218, port: 9007, type: ss, cipher: aes-256-cfb, password: kSPmvwdFzGMMW5pY, udp: true}
+  - {name: CN_油管+TG+8度科技 16, server: 14.29.124.168, port: 25252, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_油管+TG+8度科技 17, server: 14.29.124.168, port: 25233, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: NL_油管+TG+8度科技 113, server: 213.183.59.231, port: 9088, type: ss, cipher: aes-256-cfb, password: f8npKgNzdkss2ytn, udp: true}
+  - {name: NL_油管+TG+8度科技 114, server: 213.183.59.231, port: 9097, type: ss, cipher: aes-256-cfb, password: Sn5B7jTqr76aCJT8, udp: true}
+  - {name: CN_油管+TG+8度科技 18, server: 14.29.124.168, port: 25268, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: NL_油管+TG+8度科技 115, server: 213.183.59.185, port: 9050, type: ss, cipher: aes-256-cfb, password: FG5ddLsMPbV5CutE, udp: true}
+  - {name: NL_油管+TG+8度科技 116, server: 213.183.59.185, port: 9005, type: ss, cipher: aes-256-cfb, password: ZET59LF6DvCC8KVt, udp: true}
+  - {name: NL_油管+TG+8度科技 117, server: 213.183.59.185, port: 9097, type: ss, cipher: aes-256-cfb, password: Sn5B7jTqr76aCJT8, udp: true}
+  - {name: NL_油管+TG+8度科技 118, server: 213.183.59.209, port: 9041, type: ss, cipher: aes-256-cfb, password: U6qnYRhfyDmn8sgn, udp: true}
+  - {name: CN_油管+TG+8度科技 19, server: 14.29.124.168, port: 25218, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: NL_油管+TG+8度科技 119, server: 213.183.59.231, port: 9005, type: ss, cipher: aes-256-cfb, password: ZET59LF6DvCC8KVt, udp: true}
+  - {name: NL_油管+TG+8度科技 120, server: 213.183.59.185, port: 9001, type: ss, cipher: aes-256-cfb, password: UkXRsXvR6buDMG2Y, udp: true}
+  - {name: NL_油管+TG+8度科技 121, server: 213.183.59.218, port: 9059, type: ss, cipher: aes-256-cfb, password: 9XwYyZsK8SNzQDtY, udp: true}
+  - {name: NL_油管+TG+8度科技 122, server: 213.183.59.218, port: 9033, type: ss, cipher: aes-256-cfb, password: UTJA57ypk2XKQpnm, udp: true}
+  - {name: NL_油管+TG+8度科技 123, server: 213.183.59.229, port: 9070, type: ss, cipher: aes-256-cfb, password: bf7v334KKDV3YDhH, udp: true}
+  - {name: CN_油管+TG+8度科技 20, server: 14.29.124.168, port: 25220, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: US_油管 TG 8度科技 5, server: 150.230.249.169, port: 8888, type: vmess, uuid: f836d00e-73e0-4eb5-a0ac-18a8e9ee61ef, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN_油管+TG+8度科技 21, server: 14.29.124.168, port: 25270, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: NL_油管+TG+8度科技 124, server: 213.183.59.231, port: 9042, type: ss, cipher: aes-256-cfb, password: S7KwUu7yBy58S3Ga, udp: true}
+  - {name: NL_油管+TG+8度科技 125, server: 213.183.59.185, port: 9003, type: ss, cipher: aes-256-cfb, password: JdmRK9gMEqFgs8nP, udp: true}
+  - {name: NL_油管+TG+8度科技 126, server: 213.183.59.185, port: 9088, type: ss, cipher: aes-256-cfb, password: f8npKgNzdkss2ytn, udp: true}
+  - {name: NL_油管+TG+8度科技 127, server: 213.183.59.218, port: 9046, type: ss, cipher: aes-256-cfb, password: NvS8N4Vf8qAGPSCL, udp: true}
+  - {name: NL_油管+TG+8度科技 128, server: 213.183.59.209, port: 9040, type: ss, cipher: aes-256-cfb, password: p9z5BVADH2YFs3MN, udp: true}
+  - {name: NL_油管+TG+8度科技 129, server: 213.183.59.209, port: 9031, type: ss, cipher: aes-256-cfb, password: BwcAUZk8hUFAkDGN, udp: true}
+  - {name: NL_油管+TG+8度科技 130, server: 213.183.59.185, port: 9033, type: ss, cipher: aes-256-cfb, password: UTJA57ypk2XKQpnm, udp: true}
+  - {name: NL_油管+TG+8度科技 131, server: 213.183.59.229, port: 9031, type: ss, cipher: aes-256-cfb, password: BwcAUZk8hUFAkDGN, udp: true}
+  - {name: NL_油管+TG+8度科技 132, server: 213.183.59.218, port: 9018, type: ss, cipher: aes-256-cfb, password: fG2artUmHfNT2cX7, udp: true}
+  - {name: NL_油管+TG+8度科技 133, server: 213.183.59.218, port: 9031, type: ss, cipher: aes-256-cfb, password: BwcAUZk8hUFAkDGN, udp: true}
+  - {name: NL_油管+TG+8度科技 134, server: 213.183.59.231, port: 9094, type: ss, cipher: aes-256-cfb, password: rpgbNnU9rDDU4aWZ, udp: true}
+  - {name: NL_油管+TG+8度科技 135, server: 213.183.59.218, port: 9084, type: ss, cipher: aes-256-cfb, password: c3NtHJ5ujV2tGDfj, udp: true}
+  - {name: NL_油管+TG+8度科技 136, server: 213.183.59.185, port: 9010, type: ss, cipher: aes-256-cfb, password: f63gg8EruDnUrmz4, udp: true}
+  - {name: NL_油管+TG+8度科技 137, server: 213.183.59.218, port: 9010, type: ss, cipher: aes-256-cfb, password: f63gg8EruDnUrmz4, udp: true}
+  - {name: NL_油管+TG+8度科技 138, server: 213.183.59.209, port: 9025, type: ss, cipher: aes-256-cfb, password: XPtzA9sCug3SPR4c, udp: true}
+  - {name: NL_油管+TG+8度科技 139, server: 213.183.59.185, port: 9026, type: ss, cipher: aes-256-cfb, password: QWDDvVE9npNurQfA, udp: true}
+  - {name: NL_油管+TG+8度科技 140, server: 213.183.59.209, port: 9060, type: ss, cipher: aes-256-cfb, password: ueLXVkvh4hckhErQ, udp: true}
+  - {name: NL_油管+TG+8度科技 141, server: 213.183.59.218, port: 9005, type: ss, cipher: aes-256-cfb, password: ZET59LF6DvCC8KVt, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
+      - SG_油管 TG 8度科技
+      - HK_油管 TG 8度科技
+      - CN_油管 TG 8度科技
+      - CN_油管 TG 8度科技 2
+      - CN_油管 TG 8度科技 3
+      - CN_油管 TG 8度科技 4
+      - CN_油管 TG 8度科技 5
+      - CN_油管 TG 8度科技 6
+      - CN_油管 TG 8度科技 7
+      - CN_油管 TG 8度科技 8
+      - CN_油管 TG 8度科技 9
+      - CN_油管 TG 8度科技 10
+      - CN_油管 TG 8度科技 11
+      - CN_油管 TG 8度科技 12
+      - CN_油管 TG 8度科技 13
+      - CN_油管 TG 8度科技 14
+      - CN_油管 TG 8度科技 15
+      - CN_油管 TG 8度科技 16
+      - CN_油管 TG 8度科技 17
+      - CN_油管 TG 8度科技 18
+      - CN_油管+TG+8度科技
+      - CN_油管 TG 8度科技 19
+      - CN_油管 TG 8度科技 20
+      - CN_油管+TG+8度科技 2
+      - CN_油管 TG 8度科技 21
+      - CN_油管 TG 8度科技 22
+      - CN_油管 TG 8度科技 23
+      - US_油管 TG 8度科技
+      - CN_油管 TG 8度科技 24
+      - TW_油管 TG 8度科技
+      - HK_油管 TG 8度科技 2
+      - JP_油管 TG 8度科技
+      - KR_油管 TG 8度科技
+      - CN_油管 TG 8度科技 25
+      - CN_油管 TG 8度科技 26
+      - CN_油管+TG+8度科技 3
+      - CN_油管 TG 8度科技 27
       - 油管 TG 8度科技
+      - CN_油管+TG+8度科技 4
+      - CN_油管 TG 8度科技 28
+      - CN_油管 TG 8度科技 29
+      - CN_油管 TG 8度科技 30
+      - CN_油管+TG+8度科技 5
+      - US_油管 TG 8度科技 2
+      - NL_油管+TG+8度科技
+      - HK_油管 TG 8度科技 3
+      - SG_油管 TG 8度科技 2
+      - HK_油管 TG 8度科技 4
+      - SG_油管 TG 8度科技 3
+      - NL_油管+TG+8度科技 2
+      - NL_油管+TG+8度科技 3
+      - NL_油管+TG+8度科技 4
+      - NL_油管+TG+8度科技 5
+      - CN_油管 TG 8度科技 31
+      - NL_油管+TG+8度科技 6
+      - NL_油管+TG+8度科技 7
+      - CN_油管 TG 8度科技 32
+      - NL_油管+TG+8度科技 8
+      - NL_油管+TG+8度科技 9
+      - NL_油管+TG+8度科技 10
+      - NL_油管+TG+8度科技 11
+      - NL_油管+TG+8度科技 12
+      - NL_油管+TG+8度科技 13
+      - CN_油管 TG 8度科技 33
+      - NL_油管+TG+8度科技 14
+      - NL_油管+TG+8度科技 15
+      - NL_油管+TG+8度科技 16
+      - NL_油管+TG+8度科技 17
+      - NL_油管+TG+8度科技 18
+      - NL_油管+TG+8度科技 19
+      - NL_油管+TG+8度科技 20
+      - CN_油管 TG 8度科技 34
+      - NL_油管+TG+8度科技 21
+      - NL_油管+TG+8度科技 22
+      - NL_油管+TG+8度科技 23
+      - NL_油管+TG+8度科技 24
+      - CN_油管+TG+8度科技 6
+      - NL_油管+TG+8度科技 25
+      - NL_油管+TG+8度科技 26
+      - NL_油管+TG+8度科技 27
+      - NL_油管+TG+8度科技 28
+      - NL_油管+TG+8度科技 29
+      - NL_油管+TG+8度科技 30
+      - NL_油管+TG+8度科技 31
+      - NL_油管+TG+8度科技 32
+      - NL_油管+TG+8度科技 33
+      - NL_油管+TG+8度科技 34
+      - US_油管 TG 8度科技 3
+      - NL_油管+TG+8度科技 35
+      - NL_油管+TG+8度科技 36
+      - NL_油管+TG+8度科技 37
+      - NL_油管+TG+8度科技 38
+      - NL_油管+TG+8度科技 39
+      - NL_油管+TG+8度科技 40
+      - NL_油管+TG+8度科技 41
+      - NL_油管+TG+8度科技 42
+      - NL_油管+TG+8度科技 43
+      - NL_油管+TG+8度科技 44
+      - NL_油管+TG+8度科技 45
+      - NL_油管+TG+8度科技 46
+      - KR_油管 TG 8度科技 2
+      - NL_油管+TG+8度科技 47
+      - NL_油管+TG+8度科技 48
+      - NL_油管+TG+8度科技 49
+      - NL_油管+TG+8度科技 50
+      - NL_油管+TG+8度科技 51
+      - NL_油管+TG+8度科技 52
+      - NL_油管+TG+8度科技 53
+      - NL_油管+TG+8度科技 54
+      - US_油管 TG 8度科技 4
+      - NL_油管+TG+8度科技 55
+      - NL_油管+TG+8度科技 56
+      - NL_油管+TG+8度科技 57
+      - NL_油管+TG+8度科技 58
+      - NL_油管+TG+8度科技 59
+      - NL_油管+TG+8度科技 60
+      - NL_油管+TG+8度科技 61
+      - CN_油管 TG 8度科技 35
+      - NL_油管+TG+8度科技 62
+      - NL_油管+TG+8度科技 63
+      - NL_油管+TG+8度科技 64
+      - NL_油管+TG+8度科技 65
+      - NL_油管+TG+8度科技 66
+      - NL_油管+TG+8度科技 67
+      - NL_油管+TG+8度科技 68
+      - NL_油管+TG+8度科技 69
+      - NL_油管+TG+8度科技 70
+      - CN_油管+TG+8度科技 7
+      - CN_油管 TG 8度科技 36
+      - NL_油管+TG+8度科技 71
+      - NL_油管+TG+8度科技 72
+      - NL_油管+TG+8度科技 73
       - 油管 TG 8度科技 2
-      - 油管 TG 8度科技 3
-      - 油管 TG 8度科技 4
-      - SG_9050 @WangCai_1
-      - 油管 TG 8度科技 5
-      - SG_9020 @WangCai_1
-      - SG_9019 @WangCai_1
-      - SG_9060 @WangCai_1
-      - SG_9033 @WangCai_1
-      - SG_9038 @WangCai_1
-      - SG_9084 @WangCai_1
-      - SG_9007 @WangCai_1
-      - SG_9026 @WangCai_1
-      - SG_9064 @WangCai_1
-      - SG_9024 @WangCai_1
-      - SG_9031 @WangCai_1
-      - SG_9033 @WangCai_1 2
-      - SG_9040 @WangCai_1
-      - SG_9037 @WangCai_1
-      - SG_9014 @WangCai_1
-      - SG_9079 @WangCai_1
-      - 油管 TG 8度科技 6
-      - SG_9015 @WangCai_1
-      - SG_9011 @WangCai_1
-      - SG_9088 @WangCai_1
-      - SG_9053 @WangCai_1
-      - SG_9025 @WangCai_1
-      - SG_9088 @WangCai_1 2
-      - SG_9064 @WangCai_1 2
-      - SG_9000 @WangCai_1
-      - SG_9025 @WangCai_1 2
-      - SG_9040 @WangCai_1 2
-      - SG_9024 @WangCai_1 2
-      - SG_9000 @WangCai_1 2
-      - SG_9020 @WangCai_1 2
-      - SG_9015 @WangCai_1 2
-      - SG_9060 @WangCai_1 2
-      - SG_9073 @WangCai_1
-      - SG_9056 @WangCai_1
-      - SG_9007 @WangCai_1 2
-      - SG_9093 @WangCai_1
-      - SG_9098 @WangCai_1
-      - SG_9014 @WangCai_1 2
-      - SG_9003 @WangCai_1
-      - SG_9033 @WangCai_1 3
-      - SG_9046 @WangCai_1
-      - SG_9037 @WangCai_1 2
-      - SG_9045 @WangCai_1
-      - SG_9064 @WangCai_1 3
-      - SG_9042 @WangCai_1
-      - SG_9084 @WangCai_1 2
-      - SG_9032 @WangCai_1
-      - SG_9084 @WangCai_1 3
-      - SG_9073 @WangCai_1 2
-      - SG_9014 @WangCai_1 3
-      - SG_9079 @WangCai_1 2
-      - SG_9003 @WangCai_1 2
-      - SG_9094 @WangCai_1
-      - SG_9094 @WangCai_1 2
-      - SG_9059 @WangCai_1
-      - SG_9003 @WangCai_1 3
-      - SG_9042 @WangCai_1 2
-      - SG_9038 @WangCai_1 2
-      - SG_9093 @WangCai_1 2
-      - SG_9056 @WangCai_1 2
-      - KR_10064+@WangCai_1
-      - SG_9043 @WangCai_1
-      - SG_9041 @WangCai_1
-      - SG_9040 @WangCai_1 3
-      - SG_9053 @WangCai_1 2
-      - SG_9018 @WangCai_1
-      - SG_9005 @WangCai_1
-      - SG_9019 @WangCai_1 2
-      - SG_9011 @WangCai_1 2
-      - SG_9007 @WangCai_1 3
-      - SG_9057 @WangCai_1
-      - SG_9097 @WangCai_1
-      - SG_9026 @WangCai_1 2
-      - SG_9073 @WangCai_1 3
-      - SG_9043 @WangCai_1 2
-      - SG_9050 @WangCai_1 2
-      - SG_9094 @WangCai_1 3
-      - SG_9088 @WangCai_1 3
-      - SG_9053 @WangCai_1 3
-      - SG_9019 @WangCai_1 3
-      - SG_9006 @WangCai_1
-      - SG_9041 @WangCai_1 2
-      - SG_9079 @WangCai_1 3
-      - SG_9043 @WangCai_1 3
-      - SG_9027 @WangCai_1
-      - SG_9006 @WangCai_1 2
-      - SG_9008 @WangCai_1
-      - SG_9011 @WangCai_1 3
-      - SG_9001 @WangCai_1
-      - SG_9056 @WangCai_1 3
-      - SG_9042 @WangCai_1 3
-      - SG_9000 @WangCai_1 3
-      - SG_9008 @WangCai_1 2
-      - SG_9057 @WangCai_1 2
-      - SG_9070 @WangCai_1
-      - SG_9045 @WangCai_1 2
+      - NL_油管+TG+8度科技 74
+      - NL_油管+TG+8度科技 75
+      - NL_油管+TG+8度科技 76
+      - NL_油管+TG+8度科技 77
+      - NL_油管+TG+8度科技 78
+      - NL_油管+TG+8度科技 79
+      - CN_油管 TG 8度科技 37
+      - CN_油管 TG 8度科技 38
+      - NL_油管+TG+8度科技 80
+      - NL_油管+TG+8度科技 81
+      - NL_油管+TG+8度科技 82
+      - NL_油管+TG+8度科技 83
+      - NL_油管+TG+8度科技 84
+      - NL_油管+TG+8度科技 85
+      - NL_油管+TG+8度科技 86
+      - NL_油管+TG+8度科技 87
+      - NL_油管+TG+8度科技 88
+      - NL_油管+TG+8度科技 89
+      - NL_油管+TG+8度科技 90
+      - NL_油管+TG+8度科技 91
+      - NL_油管+TG+8度科技 92
+      - NL_油管+TG+8度科技 93
+      - NL_油管+TG+8度科技 94
+      - NL_油管+TG+8度科技 95
+      - CN_油管+TG+8度科技 8
+      - NL_油管+TG+8度科技 96
+      - NL_油管+TG+8度科技 97
+      - NL_油管+TG+8度科技 98
+      - NL_油管+TG+8度科技 99
+      - NL_油管+TG+8度科技 100
+      - CN_油管+TG+8度科技 9
+      - CN_油管+TG+8度科技 10
+      - NL_油管+TG+8度科技 101
+      - NL_油管+TG+8度科技 102
+      - CN_油管+TG+8度科技 11
+      - CN_油管+TG+8度科技 12
+      - CN_油管+TG+8度科技 13
+      - NL_油管+TG+8度科技 103
+      - NL_油管+TG+8度科技 104
+      - NL_油管+TG+8度科技 105
+      - NL_油管+TG+8度科技 106
+      - NL_油管+TG+8度科技 107
+      - CN_油管+TG+8度科技 14
+      - NL_油管+TG+8度科技 108
+      - CN_油管+TG+8度科技 15
+      - NL_油管+TG+8度科技 109
+      - NL_油管+TG+8度科技 110
+      - NL_油管+TG+8度科技 111
+      - NL_油管+TG+8度科技 112
+      - CN_油管+TG+8度科技 16
+      - CN_油管+TG+8度科技 17
+      - NL_油管+TG+8度科技 113
+      - NL_油管+TG+8度科技 114
+      - CN_油管+TG+8度科技 18
+      - NL_油管+TG+8度科技 115
+      - NL_油管+TG+8度科技 116
+      - NL_油管+TG+8度科技 117
+      - NL_油管+TG+8度科技 118
+      - CN_油管+TG+8度科技 19
+      - NL_油管+TG+8度科技 119
+      - NL_油管+TG+8度科技 120
+      - NL_油管+TG+8度科技 121
+      - NL_油管+TG+8度科技 122
+      - NL_油管+TG+8度科技 123
+      - CN_油管+TG+8度科技 20
+      - US_油管 TG 8度科技 5
+      - CN_油管+TG+8度科技 21
+      - NL_油管+TG+8度科技 124
+      - NL_油管+TG+8度科技 125
+      - NL_油管+TG+8度科技 126
+      - NL_油管+TG+8度科技 127
+      - NL_油管+TG+8度科技 128
+      - NL_油管+TG+8度科技 129
+      - NL_油管+TG+8度科技 130
+      - NL_油管+TG+8度科技 131
+      - NL_油管+TG+8度科技 132
+      - NL_油管+TG+8度科技 133
+      - NL_油管+TG+8度科技 134
+      - NL_油管+TG+8度科技 135
+      - NL_油管+TG+8度科技 136
+      - NL_油管+TG+8度科技 137
+      - NL_油管+TG+8度科技 138
+      - NL_油管+TG+8度科技 139
+      - NL_油管+TG+8度科技 140
+      - NL_油管+TG+8度科技 141
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
+      - SG_油管 TG 8度科技
+      - HK_油管 TG 8度科技
+      - CN_油管 TG 8度科技
+      - CN_油管 TG 8度科技 2
+      - CN_油管 TG 8度科技 3
+      - CN_油管 TG 8度科技 4
+      - CN_油管 TG 8度科技 5
+      - CN_油管 TG 8度科技 6
+      - CN_油管 TG 8度科技 7
+      - CN_油管 TG 8度科技 8
+      - CN_油管 TG 8度科技 9
+      - CN_油管 TG 8度科技 10
+      - CN_油管 TG 8度科技 11
+      - CN_油管 TG 8度科技 12
+      - CN_油管 TG 8度科技 13
+      - CN_油管 TG 8度科技 14
+      - CN_油管 TG 8度科技 15
+      - CN_油管 TG 8度科技 16
+      - CN_油管 TG 8度科技 17
+      - CN_油管 TG 8度科技 18
+      - CN_油管+TG+8度科技
+      - CN_油管 TG 8度科技 19
+      - CN_油管 TG 8度科技 20
+      - CN_油管+TG+8度科技 2
+      - CN_油管 TG 8度科技 21
+      - CN_油管 TG 8度科技 22
+      - CN_油管 TG 8度科技 23
+      - US_油管 TG 8度科技
+      - CN_油管 TG 8度科技 24
+      - TW_油管 TG 8度科技
+      - HK_油管 TG 8度科技 2
+      - JP_油管 TG 8度科技
+      - KR_油管 TG 8度科技
+      - CN_油管 TG 8度科技 25
+      - CN_油管 TG 8度科技 26
+      - CN_油管+TG+8度科技 3
+      - CN_油管 TG 8度科技 27
       - 油管 TG 8度科技
+      - CN_油管+TG+8度科技 4
+      - CN_油管 TG 8度科技 28
+      - CN_油管 TG 8度科技 29
+      - CN_油管 TG 8度科技 30
+      - CN_油管+TG+8度科技 5
+      - US_油管 TG 8度科技 2
+      - NL_油管+TG+8度科技
+      - HK_油管 TG 8度科技 3
+      - SG_油管 TG 8度科技 2
+      - HK_油管 TG 8度科技 4
+      - SG_油管 TG 8度科技 3
+      - NL_油管+TG+8度科技 2
+      - NL_油管+TG+8度科技 3
+      - NL_油管+TG+8度科技 4
+      - NL_油管+TG+8度科技 5
+      - CN_油管 TG 8度科技 31
+      - NL_油管+TG+8度科技 6
+      - NL_油管+TG+8度科技 7
+      - CN_油管 TG 8度科技 32
+      - NL_油管+TG+8度科技 8
+      - NL_油管+TG+8度科技 9
+      - NL_油管+TG+8度科技 10
+      - NL_油管+TG+8度科技 11
+      - NL_油管+TG+8度科技 12
+      - NL_油管+TG+8度科技 13
+      - CN_油管 TG 8度科技 33
+      - NL_油管+TG+8度科技 14
+      - NL_油管+TG+8度科技 15
+      - NL_油管+TG+8度科技 16
+      - NL_油管+TG+8度科技 17
+      - NL_油管+TG+8度科技 18
+      - NL_油管+TG+8度科技 19
+      - NL_油管+TG+8度科技 20
+      - CN_油管 TG 8度科技 34
+      - NL_油管+TG+8度科技 21
+      - NL_油管+TG+8度科技 22
+      - NL_油管+TG+8度科技 23
+      - NL_油管+TG+8度科技 24
+      - CN_油管+TG+8度科技 6
+      - NL_油管+TG+8度科技 25
+      - NL_油管+TG+8度科技 26
+      - NL_油管+TG+8度科技 27
+      - NL_油管+TG+8度科技 28
+      - NL_油管+TG+8度科技 29
+      - NL_油管+TG+8度科技 30
+      - NL_油管+TG+8度科技 31
+      - NL_油管+TG+8度科技 32
+      - NL_油管+TG+8度科技 33
+      - NL_油管+TG+8度科技 34
+      - US_油管 TG 8度科技 3
+      - NL_油管+TG+8度科技 35
+      - NL_油管+TG+8度科技 36
+      - NL_油管+TG+8度科技 37
+      - NL_油管+TG+8度科技 38
+      - NL_油管+TG+8度科技 39
+      - NL_油管+TG+8度科技 40
+      - NL_油管+TG+8度科技 41
+      - NL_油管+TG+8度科技 42
+      - NL_油管+TG+8度科技 43
+      - NL_油管+TG+8度科技 44
+      - NL_油管+TG+8度科技 45
+      - NL_油管+TG+8度科技 46
+      - KR_油管 TG 8度科技 2
+      - NL_油管+TG+8度科技 47
+      - NL_油管+TG+8度科技 48
+      - NL_油管+TG+8度科技 49
+      - NL_油管+TG+8度科技 50
+      - NL_油管+TG+8度科技 51
+      - NL_油管+TG+8度科技 52
+      - NL_油管+TG+8度科技 53
+      - NL_油管+TG+8度科技 54
+      - US_油管 TG 8度科技 4
+      - NL_油管+TG+8度科技 55
+      - NL_油管+TG+8度科技 56
+      - NL_油管+TG+8度科技 57
+      - NL_油管+TG+8度科技 58
+      - NL_油管+TG+8度科技 59
+      - NL_油管+TG+8度科技 60
+      - NL_油管+TG+8度科技 61
+      - CN_油管 TG 8度科技 35
+      - NL_油管+TG+8度科技 62
+      - NL_油管+TG+8度科技 63
+      - NL_油管+TG+8度科技 64
+      - NL_油管+TG+8度科技 65
+      - NL_油管+TG+8度科技 66
+      - NL_油管+TG+8度科技 67
+      - NL_油管+TG+8度科技 68
+      - NL_油管+TG+8度科技 69
+      - NL_油管+TG+8度科技 70
+      - CN_油管+TG+8度科技 7
+      - CN_油管 TG 8度科技 36
+      - NL_油管+TG+8度科技 71
+      - NL_油管+TG+8度科技 72
+      - NL_油管+TG+8度科技 73
       - 油管 TG 8度科技 2
-      - 油管 TG 8度科技 3
-      - 油管 TG 8度科技 4
-      - SG_9050 @WangCai_1
-      - 油管 TG 8度科技 5
-      - SG_9020 @WangCai_1
-      - SG_9019 @WangCai_1
-      - SG_9060 @WangCai_1
-      - SG_9033 @WangCai_1
-      - SG_9038 @WangCai_1
-      - SG_9084 @WangCai_1
-      - SG_9007 @WangCai_1
-      - SG_9026 @WangCai_1
-      - SG_9064 @WangCai_1
-      - SG_9024 @WangCai_1
-      - SG_9031 @WangCai_1
-      - SG_9033 @WangCai_1 2
-      - SG_9040 @WangCai_1
-      - SG_9037 @WangCai_1
-      - SG_9014 @WangCai_1
-      - SG_9079 @WangCai_1
-      - 油管 TG 8度科技 6
-      - SG_9015 @WangCai_1
-      - SG_9011 @WangCai_1
-      - SG_9088 @WangCai_1
-      - SG_9053 @WangCai_1
-      - SG_9025 @WangCai_1
-      - SG_9088 @WangCai_1 2
-      - SG_9064 @WangCai_1 2
-      - SG_9000 @WangCai_1
-      - SG_9025 @WangCai_1 2
-      - SG_9040 @WangCai_1 2
-      - SG_9024 @WangCai_1 2
-      - SG_9000 @WangCai_1 2
-      - SG_9020 @WangCai_1 2
-      - SG_9015 @WangCai_1 2
-      - SG_9060 @WangCai_1 2
-      - SG_9073 @WangCai_1
-      - SG_9056 @WangCai_1
-      - SG_9007 @WangCai_1 2
-      - SG_9093 @WangCai_1
-      - SG_9098 @WangCai_1
-      - SG_9014 @WangCai_1 2
-      - SG_9003 @WangCai_1
-      - SG_9033 @WangCai_1 3
-      - SG_9046 @WangCai_1
-      - SG_9037 @WangCai_1 2
-      - SG_9045 @WangCai_1
-      - SG_9064 @WangCai_1 3
-      - SG_9042 @WangCai_1
-      - SG_9084 @WangCai_1 2
-      - SG_9032 @WangCai_1
-      - SG_9084 @WangCai_1 3
-      - SG_9073 @WangCai_1 2
-      - SG_9014 @WangCai_1 3
-      - SG_9079 @WangCai_1 2
-      - SG_9003 @WangCai_1 2
-      - SG_9094 @WangCai_1
-      - SG_9094 @WangCai_1 2
-      - SG_9059 @WangCai_1
-      - SG_9003 @WangCai_1 3
-      - SG_9042 @WangCai_1 2
-      - SG_9038 @WangCai_1 2
-      - SG_9093 @WangCai_1 2
-      - SG_9056 @WangCai_1 2
-      - KR_10064+@WangCai_1
-      - SG_9043 @WangCai_1
-      - SG_9041 @WangCai_1
-      - SG_9040 @WangCai_1 3
-      - SG_9053 @WangCai_1 2
-      - SG_9018 @WangCai_1
-      - SG_9005 @WangCai_1
-      - SG_9019 @WangCai_1 2
-      - SG_9011 @WangCai_1 2
-      - SG_9007 @WangCai_1 3
-      - SG_9057 @WangCai_1
-      - SG_9097 @WangCai_1
-      - SG_9026 @WangCai_1 2
-      - SG_9073 @WangCai_1 3
-      - SG_9043 @WangCai_1 2
-      - SG_9050 @WangCai_1 2
-      - SG_9094 @WangCai_1 3
-      - SG_9088 @WangCai_1 3
-      - SG_9053 @WangCai_1 3
-      - SG_9019 @WangCai_1 3
-      - SG_9006 @WangCai_1
-      - SG_9041 @WangCai_1 2
-      - SG_9079 @WangCai_1 3
-      - SG_9043 @WangCai_1 3
-      - SG_9027 @WangCai_1
-      - SG_9006 @WangCai_1 2
-      - SG_9008 @WangCai_1
-      - SG_9011 @WangCai_1 3
-      - SG_9001 @WangCai_1
-      - SG_9056 @WangCai_1 3
-      - SG_9042 @WangCai_1 3
-      - SG_9000 @WangCai_1 3
-      - SG_9008 @WangCai_1 2
-      - SG_9057 @WangCai_1 2
-      - SG_9070 @WangCai_1
-      - SG_9045 @WangCai_1 2
+      - NL_油管+TG+8度科技 74
+      - NL_油管+TG+8度科技 75
+      - NL_油管+TG+8度科技 76
+      - NL_油管+TG+8度科技 77
+      - NL_油管+TG+8度科技 78
+      - NL_油管+TG+8度科技 79
+      - CN_油管 TG 8度科技 37
+      - CN_油管 TG 8度科技 38
+      - NL_油管+TG+8度科技 80
+      - NL_油管+TG+8度科技 81
+      - NL_油管+TG+8度科技 82
+      - NL_油管+TG+8度科技 83
+      - NL_油管+TG+8度科技 84
+      - NL_油管+TG+8度科技 85
+      - NL_油管+TG+8度科技 86
+      - NL_油管+TG+8度科技 87
+      - NL_油管+TG+8度科技 88
+      - NL_油管+TG+8度科技 89
+      - NL_油管+TG+8度科技 90
+      - NL_油管+TG+8度科技 91
+      - NL_油管+TG+8度科技 92
+      - NL_油管+TG+8度科技 93
+      - NL_油管+TG+8度科技 94
+      - NL_油管+TG+8度科技 95
+      - CN_油管+TG+8度科技 8
+      - NL_油管+TG+8度科技 96
+      - NL_油管+TG+8度科技 97
+      - NL_油管+TG+8度科技 98
+      - NL_油管+TG+8度科技 99
+      - NL_油管+TG+8度科技 100
+      - CN_油管+TG+8度科技 9
+      - CN_油管+TG+8度科技 10
+      - NL_油管+TG+8度科技 101
+      - NL_油管+TG+8度科技 102
+      - CN_油管+TG+8度科技 11
+      - CN_油管+TG+8度科技 12
+      - CN_油管+TG+8度科技 13
+      - NL_油管+TG+8度科技 103
+      - NL_油管+TG+8度科技 104
+      - NL_油管+TG+8度科技 105
+      - NL_油管+TG+8度科技 106
+      - NL_油管+TG+8度科技 107
+      - CN_油管+TG+8度科技 14
+      - NL_油管+TG+8度科技 108
+      - CN_油管+TG+8度科技 15
+      - NL_油管+TG+8度科技 109
+      - NL_油管+TG+8度科技 110
+      - NL_油管+TG+8度科技 111
+      - NL_油管+TG+8度科技 112
+      - CN_油管+TG+8度科技 16
+      - CN_油管+TG+8度科技 17
+      - NL_油管+TG+8度科技 113
+      - NL_油管+TG+8度科技 114
+      - CN_油管+TG+8度科技 18
+      - NL_油管+TG+8度科技 115
+      - NL_油管+TG+8度科技 116
+      - NL_油管+TG+8度科技 117
+      - NL_油管+TG+8度科技 118
+      - CN_油管+TG+8度科技 19
+      - NL_油管+TG+8度科技 119
+      - NL_油管+TG+8度科技 120
+      - NL_油管+TG+8度科技 121
+      - NL_油管+TG+8度科技 122
+      - NL_油管+TG+8度科技 123
+      - CN_油管+TG+8度科技 20
+      - US_油管 TG 8度科技 5
+      - CN_油管+TG+8度科技 21
+      - NL_油管+TG+8度科技 124
+      - NL_油管+TG+8度科技 125
+      - NL_油管+TG+8度科技 126
+      - NL_油管+TG+8度科技 127
+      - NL_油管+TG+8度科技 128
+      - NL_油管+TG+8度科技 129
+      - NL_油管+TG+8度科技 130
+      - NL_油管+TG+8度科技 131
+      - NL_油管+TG+8度科技 132
+      - NL_油管+TG+8度科技 133
+      - NL_油管+TG+8度科技 134
+      - NL_油管+TG+8度科技 135
+      - NL_油管+TG+8度科技 136
+      - NL_油管+TG+8度科技 137
+      - NL_油管+TG+8度科技 138
+      - NL_油管+TG+8度科技 139
+      - NL_油管+TG+8度科技 140
+      - NL_油管+TG+8度科技 141
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - SG_油管 TG 8度科技
+      - HK_油管 TG 8度科技
+      - CN_油管 TG 8度科技
+      - CN_油管 TG 8度科技 2
+      - CN_油管 TG 8度科技 3
+      - CN_油管 TG 8度科技 4
+      - CN_油管 TG 8度科技 5
+      - CN_油管 TG 8度科技 6
+      - CN_油管 TG 8度科技 7
+      - CN_油管 TG 8度科技 8
+      - CN_油管 TG 8度科技 9
+      - CN_油管 TG 8度科技 10
+      - CN_油管 TG 8度科技 11
+      - CN_油管 TG 8度科技 12
+      - CN_油管 TG 8度科技 13
+      - CN_油管 TG 8度科技 14
+      - CN_油管 TG 8度科技 15
+      - CN_油管 TG 8度科技 16
+      - CN_油管 TG 8度科技 17
+      - CN_油管 TG 8度科技 18
+      - CN_油管+TG+8度科技
+      - CN_油管 TG 8度科技 19
+      - CN_油管 TG 8度科技 20
+      - CN_油管+TG+8度科技 2
+      - CN_油管 TG 8度科技 21
+      - CN_油管 TG 8度科技 22
+      - CN_油管 TG 8度科技 23
+      - US_油管 TG 8度科技
+      - CN_油管 TG 8度科技 24
+      - TW_油管 TG 8度科技
+      - HK_油管 TG 8度科技 2
+      - JP_油管 TG 8度科技
+      - KR_油管 TG 8度科技
+      - CN_油管 TG 8度科技 25
+      - CN_油管 TG 8度科技 26
+      - CN_油管+TG+8度科技 3
+      - CN_油管 TG 8度科技 27
       - 油管 TG 8度科技
+      - CN_油管+TG+8度科技 4
+      - CN_油管 TG 8度科技 28
+      - CN_油管 TG 8度科技 29
+      - CN_油管 TG 8度科技 30
+      - CN_油管+TG+8度科技 5
+      - US_油管 TG 8度科技 2
+      - NL_油管+TG+8度科技
+      - HK_油管 TG 8度科技 3
+      - SG_油管 TG 8度科技 2
+      - HK_油管 TG 8度科技 4
+      - SG_油管 TG 8度科技 3
+      - NL_油管+TG+8度科技 2
+      - NL_油管+TG+8度科技 3
+      - NL_油管+TG+8度科技 4
+      - NL_油管+TG+8度科技 5
+      - CN_油管 TG 8度科技 31
+      - NL_油管+TG+8度科技 6
+      - NL_油管+TG+8度科技 7
+      - CN_油管 TG 8度科技 32
+      - NL_油管+TG+8度科技 8
+      - NL_油管+TG+8度科技 9
+      - NL_油管+TG+8度科技 10
+      - NL_油管+TG+8度科技 11
+      - NL_油管+TG+8度科技 12
+      - NL_油管+TG+8度科技 13
+      - CN_油管 TG 8度科技 33
+      - NL_油管+TG+8度科技 14
+      - NL_油管+TG+8度科技 15
+      - NL_油管+TG+8度科技 16
+      - NL_油管+TG+8度科技 17
+      - NL_油管+TG+8度科技 18
+      - NL_油管+TG+8度科技 19
+      - NL_油管+TG+8度科技 20
+      - CN_油管 TG 8度科技 34
+      - NL_油管+TG+8度科技 21
+      - NL_油管+TG+8度科技 22
+      - NL_油管+TG+8度科技 23
+      - NL_油管+TG+8度科技 24
+      - CN_油管+TG+8度科技 6
+      - NL_油管+TG+8度科技 25
+      - NL_油管+TG+8度科技 26
+      - NL_油管+TG+8度科技 27
+      - NL_油管+TG+8度科技 28
+      - NL_油管+TG+8度科技 29
+      - NL_油管+TG+8度科技 30
+      - NL_油管+TG+8度科技 31
+      - NL_油管+TG+8度科技 32
+      - NL_油管+TG+8度科技 33
+      - NL_油管+TG+8度科技 34
+      - US_油管 TG 8度科技 3
+      - NL_油管+TG+8度科技 35
+      - NL_油管+TG+8度科技 36
+      - NL_油管+TG+8度科技 37
+      - NL_油管+TG+8度科技 38
+      - NL_油管+TG+8度科技 39
+      - NL_油管+TG+8度科技 40
+      - NL_油管+TG+8度科技 41
+      - NL_油管+TG+8度科技 42
+      - NL_油管+TG+8度科技 43
+      - NL_油管+TG+8度科技 44
+      - NL_油管+TG+8度科技 45
+      - NL_油管+TG+8度科技 46
+      - KR_油管 TG 8度科技 2
+      - NL_油管+TG+8度科技 47
+      - NL_油管+TG+8度科技 48
+      - NL_油管+TG+8度科技 49
+      - NL_油管+TG+8度科技 50
+      - NL_油管+TG+8度科技 51
+      - NL_油管+TG+8度科技 52
+      - NL_油管+TG+8度科技 53
+      - NL_油管+TG+8度科技 54
+      - US_油管 TG 8度科技 4
+      - NL_油管+TG+8度科技 55
+      - NL_油管+TG+8度科技 56
+      - NL_油管+TG+8度科技 57
+      - NL_油管+TG+8度科技 58
+      - NL_油管+TG+8度科技 59
+      - NL_油管+TG+8度科技 60
+      - NL_油管+TG+8度科技 61
+      - CN_油管 TG 8度科技 35
+      - NL_油管+TG+8度科技 62
+      - NL_油管+TG+8度科技 63
+      - NL_油管+TG+8度科技 64
+      - NL_油管+TG+8度科技 65
+      - NL_油管+TG+8度科技 66
+      - NL_油管+TG+8度科技 67
+      - NL_油管+TG+8度科技 68
+      - NL_油管+TG+8度科技 69
+      - NL_油管+TG+8度科技 70
+      - CN_油管+TG+8度科技 7
+      - CN_油管 TG 8度科技 36
+      - NL_油管+TG+8度科技 71
+      - NL_油管+TG+8度科技 72
+      - NL_油管+TG+8度科技 73
       - 油管 TG 8度科技 2
-      - 油管 TG 8度科技 3
-      - 油管 TG 8度科技 4
-      - SG_9050 @WangCai_1
-      - 油管 TG 8度科技 5
-      - SG_9020 @WangCai_1
-      - SG_9019 @WangCai_1
-      - SG_9060 @WangCai_1
-      - SG_9033 @WangCai_1
-      - SG_9038 @WangCai_1
-      - SG_9084 @WangCai_1
-      - SG_9007 @WangCai_1
-      - SG_9026 @WangCai_1
-      - SG_9064 @WangCai_1
-      - SG_9024 @WangCai_1
-      - SG_9031 @WangCai_1
-      - SG_9033 @WangCai_1 2
-      - SG_9040 @WangCai_1
-      - SG_9037 @WangCai_1
-      - SG_9014 @WangCai_1
-      - SG_9079 @WangCai_1
-      - 油管 TG 8度科技 6
-      - SG_9015 @WangCai_1
-      - SG_9011 @WangCai_1
-      - SG_9088 @WangCai_1
-      - SG_9053 @WangCai_1
-      - SG_9025 @WangCai_1
-      - SG_9088 @WangCai_1 2
-      - SG_9064 @WangCai_1 2
-      - SG_9000 @WangCai_1
-      - SG_9025 @WangCai_1 2
-      - SG_9040 @WangCai_1 2
-      - SG_9024 @WangCai_1 2
-      - SG_9000 @WangCai_1 2
-      - SG_9020 @WangCai_1 2
-      - SG_9015 @WangCai_1 2
-      - SG_9060 @WangCai_1 2
-      - SG_9073 @WangCai_1
-      - SG_9056 @WangCai_1
-      - SG_9007 @WangCai_1 2
-      - SG_9093 @WangCai_1
-      - SG_9098 @WangCai_1
-      - SG_9014 @WangCai_1 2
-      - SG_9003 @WangCai_1
-      - SG_9033 @WangCai_1 3
-      - SG_9046 @WangCai_1
-      - SG_9037 @WangCai_1 2
-      - SG_9045 @WangCai_1
-      - SG_9064 @WangCai_1 3
-      - SG_9042 @WangCai_1
-      - SG_9084 @WangCai_1 2
-      - SG_9032 @WangCai_1
-      - SG_9084 @WangCai_1 3
-      - SG_9073 @WangCai_1 2
-      - SG_9014 @WangCai_1 3
-      - SG_9079 @WangCai_1 2
-      - SG_9003 @WangCai_1 2
-      - SG_9094 @WangCai_1
-      - SG_9094 @WangCai_1 2
-      - SG_9059 @WangCai_1
-      - SG_9003 @WangCai_1 3
-      - SG_9042 @WangCai_1 2
-      - SG_9038 @WangCai_1 2
-      - SG_9093 @WangCai_1 2
-      - SG_9056 @WangCai_1 2
-      - KR_10064+@WangCai_1
-      - SG_9043 @WangCai_1
-      - SG_9041 @WangCai_1
-      - SG_9040 @WangCai_1 3
-      - SG_9053 @WangCai_1 2
-      - SG_9018 @WangCai_1
-      - SG_9005 @WangCai_1
-      - SG_9019 @WangCai_1 2
-      - SG_9011 @WangCai_1 2
-      - SG_9007 @WangCai_1 3
-      - SG_9057 @WangCai_1
-      - SG_9097 @WangCai_1
-      - SG_9026 @WangCai_1 2
-      - SG_9073 @WangCai_1 3
-      - SG_9043 @WangCai_1 2
-      - SG_9050 @WangCai_1 2
-      - SG_9094 @WangCai_1 3
-      - SG_9088 @WangCai_1 3
-      - SG_9053 @WangCai_1 3
-      - SG_9019 @WangCai_1 3
-      - SG_9006 @WangCai_1
-      - SG_9041 @WangCai_1 2
-      - SG_9079 @WangCai_1 3
-      - SG_9043 @WangCai_1 3
-      - SG_9027 @WangCai_1
-      - SG_9006 @WangCai_1 2
-      - SG_9008 @WangCai_1
-      - SG_9011 @WangCai_1 3
-      - SG_9001 @WangCai_1
-      - SG_9056 @WangCai_1 3
-      - SG_9042 @WangCai_1 3
-      - SG_9000 @WangCai_1 3
-      - SG_9008 @WangCai_1 2
-      - SG_9057 @WangCai_1 2
-      - SG_9070 @WangCai_1
-      - SG_9045 @WangCai_1 2
+      - NL_油管+TG+8度科技 74
+      - NL_油管+TG+8度科技 75
+      - NL_油管+TG+8度科技 76
+      - NL_油管+TG+8度科技 77
+      - NL_油管+TG+8度科技 78
+      - NL_油管+TG+8度科技 79
+      - CN_油管 TG 8度科技 37
+      - CN_油管 TG 8度科技 38
+      - NL_油管+TG+8度科技 80
+      - NL_油管+TG+8度科技 81
+      - NL_油管+TG+8度科技 82
+      - NL_油管+TG+8度科技 83
+      - NL_油管+TG+8度科技 84
+      - NL_油管+TG+8度科技 85
+      - NL_油管+TG+8度科技 86
+      - NL_油管+TG+8度科技 87
+      - NL_油管+TG+8度科技 88
+      - NL_油管+TG+8度科技 89
+      - NL_油管+TG+8度科技 90
+      - NL_油管+TG+8度科技 91
+      - NL_油管+TG+8度科技 92
+      - NL_油管+TG+8度科技 93
+      - NL_油管+TG+8度科技 94
+      - NL_油管+TG+8度科技 95
+      - CN_油管+TG+8度科技 8
+      - NL_油管+TG+8度科技 96
+      - NL_油管+TG+8度科技 97
+      - NL_油管+TG+8度科技 98
+      - NL_油管+TG+8度科技 99
+      - NL_油管+TG+8度科技 100
+      - CN_油管+TG+8度科技 9
+      - CN_油管+TG+8度科技 10
+      - NL_油管+TG+8度科技 101
+      - NL_油管+TG+8度科技 102
+      - CN_油管+TG+8度科技 11
+      - CN_油管+TG+8度科技 12
+      - CN_油管+TG+8度科技 13
+      - NL_油管+TG+8度科技 103
+      - NL_油管+TG+8度科技 104
+      - NL_油管+TG+8度科技 105
+      - NL_油管+TG+8度科技 106
+      - NL_油管+TG+8度科技 107
+      - CN_油管+TG+8度科技 14
+      - NL_油管+TG+8度科技 108
+      - CN_油管+TG+8度科技 15
+      - NL_油管+TG+8度科技 109
+      - NL_油管+TG+8度科技 110
+      - NL_油管+TG+8度科技 111
+      - NL_油管+TG+8度科技 112
+      - CN_油管+TG+8度科技 16
+      - CN_油管+TG+8度科技 17
+      - NL_油管+TG+8度科技 113
+      - NL_油管+TG+8度科技 114
+      - CN_油管+TG+8度科技 18
+      - NL_油管+TG+8度科技 115
+      - NL_油管+TG+8度科技 116
+      - NL_油管+TG+8度科技 117
+      - NL_油管+TG+8度科技 118
+      - CN_油管+TG+8度科技 19
+      - NL_油管+TG+8度科技 119
+      - NL_油管+TG+8度科技 120
+      - NL_油管+TG+8度科技 121
+      - NL_油管+TG+8度科技 122
+      - NL_油管+TG+8度科技 123
+      - CN_油管+TG+8度科技 20
+      - US_油管 TG 8度科技 5
+      - CN_油管+TG+8度科技 21
+      - NL_油管+TG+8度科技 124
+      - NL_油管+TG+8度科技 125
+      - NL_油管+TG+8度科技 126
+      - NL_油管+TG+8度科技 127
+      - NL_油管+TG+8度科技 128
+      - NL_油管+TG+8度科技 129
+      - NL_油管+TG+8度科技 130
+      - NL_油管+TG+8度科技 131
+      - NL_油管+TG+8度科技 132
+      - NL_油管+TG+8度科技 133
+      - NL_油管+TG+8度科技 134
+      - NL_油管+TG+8度科技 135
+      - NL_油管+TG+8度科技 136
+      - NL_油管+TG+8度科技 137
+      - NL_油管+TG+8度科技 138
+      - NL_油管+TG+8度科技 139
+      - NL_油管+TG+8度科技 140
+      - NL_油管+TG+8度科技 141
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -448,108 +912,224 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - SG_油管 TG 8度科技
+      - HK_油管 TG 8度科技
+      - CN_油管 TG 8度科技
+      - CN_油管 TG 8度科技 2
+      - CN_油管 TG 8度科技 3
+      - CN_油管 TG 8度科技 4
+      - CN_油管 TG 8度科技 5
+      - CN_油管 TG 8度科技 6
+      - CN_油管 TG 8度科技 7
+      - CN_油管 TG 8度科技 8
+      - CN_油管 TG 8度科技 9
+      - CN_油管 TG 8度科技 10
+      - CN_油管 TG 8度科技 11
+      - CN_油管 TG 8度科技 12
+      - CN_油管 TG 8度科技 13
+      - CN_油管 TG 8度科技 14
+      - CN_油管 TG 8度科技 15
+      - CN_油管 TG 8度科技 16
+      - CN_油管 TG 8度科技 17
+      - CN_油管 TG 8度科技 18
+      - CN_油管+TG+8度科技
+      - CN_油管 TG 8度科技 19
+      - CN_油管 TG 8度科技 20
+      - CN_油管+TG+8度科技 2
+      - CN_油管 TG 8度科技 21
+      - CN_油管 TG 8度科技 22
+      - CN_油管 TG 8度科技 23
+      - US_油管 TG 8度科技
+      - CN_油管 TG 8度科技 24
+      - TW_油管 TG 8度科技
+      - HK_油管 TG 8度科技 2
+      - JP_油管 TG 8度科技
+      - KR_油管 TG 8度科技
+      - CN_油管 TG 8度科技 25
+      - CN_油管 TG 8度科技 26
+      - CN_油管+TG+8度科技 3
+      - CN_油管 TG 8度科技 27
       - 油管 TG 8度科技
+      - CN_油管+TG+8度科技 4
+      - CN_油管 TG 8度科技 28
+      - CN_油管 TG 8度科技 29
+      - CN_油管 TG 8度科技 30
+      - CN_油管+TG+8度科技 5
+      - US_油管 TG 8度科技 2
+      - NL_油管+TG+8度科技
+      - HK_油管 TG 8度科技 3
+      - SG_油管 TG 8度科技 2
+      - HK_油管 TG 8度科技 4
+      - SG_油管 TG 8度科技 3
+      - NL_油管+TG+8度科技 2
+      - NL_油管+TG+8度科技 3
+      - NL_油管+TG+8度科技 4
+      - NL_油管+TG+8度科技 5
+      - CN_油管 TG 8度科技 31
+      - NL_油管+TG+8度科技 6
+      - NL_油管+TG+8度科技 7
+      - CN_油管 TG 8度科技 32
+      - NL_油管+TG+8度科技 8
+      - NL_油管+TG+8度科技 9
+      - NL_油管+TG+8度科技 10
+      - NL_油管+TG+8度科技 11
+      - NL_油管+TG+8度科技 12
+      - NL_油管+TG+8度科技 13
+      - CN_油管 TG 8度科技 33
+      - NL_油管+TG+8度科技 14
+      - NL_油管+TG+8度科技 15
+      - NL_油管+TG+8度科技 16
+      - NL_油管+TG+8度科技 17
+      - NL_油管+TG+8度科技 18
+      - NL_油管+TG+8度科技 19
+      - NL_油管+TG+8度科技 20
+      - CN_油管 TG 8度科技 34
+      - NL_油管+TG+8度科技 21
+      - NL_油管+TG+8度科技 22
+      - NL_油管+TG+8度科技 23
+      - NL_油管+TG+8度科技 24
+      - CN_油管+TG+8度科技 6
+      - NL_油管+TG+8度科技 25
+      - NL_油管+TG+8度科技 26
+      - NL_油管+TG+8度科技 27
+      - NL_油管+TG+8度科技 28
+      - NL_油管+TG+8度科技 29
+      - NL_油管+TG+8度科技 30
+      - NL_油管+TG+8度科技 31
+      - NL_油管+TG+8度科技 32
+      - NL_油管+TG+8度科技 33
+      - NL_油管+TG+8度科技 34
+      - US_油管 TG 8度科技 3
+      - NL_油管+TG+8度科技 35
+      - NL_油管+TG+8度科技 36
+      - NL_油管+TG+8度科技 37
+      - NL_油管+TG+8度科技 38
+      - NL_油管+TG+8度科技 39
+      - NL_油管+TG+8度科技 40
+      - NL_油管+TG+8度科技 41
+      - NL_油管+TG+8度科技 42
+      - NL_油管+TG+8度科技 43
+      - NL_油管+TG+8度科技 44
+      - NL_油管+TG+8度科技 45
+      - NL_油管+TG+8度科技 46
+      - KR_油管 TG 8度科技 2
+      - NL_油管+TG+8度科技 47
+      - NL_油管+TG+8度科技 48
+      - NL_油管+TG+8度科技 49
+      - NL_油管+TG+8度科技 50
+      - NL_油管+TG+8度科技 51
+      - NL_油管+TG+8度科技 52
+      - NL_油管+TG+8度科技 53
+      - NL_油管+TG+8度科技 54
+      - US_油管 TG 8度科技 4
+      - NL_油管+TG+8度科技 55
+      - NL_油管+TG+8度科技 56
+      - NL_油管+TG+8度科技 57
+      - NL_油管+TG+8度科技 58
+      - NL_油管+TG+8度科技 59
+      - NL_油管+TG+8度科技 60
+      - NL_油管+TG+8度科技 61
+      - CN_油管 TG 8度科技 35
+      - NL_油管+TG+8度科技 62
+      - NL_油管+TG+8度科技 63
+      - NL_油管+TG+8度科技 64
+      - NL_油管+TG+8度科技 65
+      - NL_油管+TG+8度科技 66
+      - NL_油管+TG+8度科技 67
+      - NL_油管+TG+8度科技 68
+      - NL_油管+TG+8度科技 69
+      - NL_油管+TG+8度科技 70
+      - CN_油管+TG+8度科技 7
+      - CN_油管 TG 8度科技 36
+      - NL_油管+TG+8度科技 71
+      - NL_油管+TG+8度科技 72
+      - NL_油管+TG+8度科技 73
       - 油管 TG 8度科技 2
-      - 油管 TG 8度科技 3
-      - 油管 TG 8度科技 4
-      - SG_9050 @WangCai_1
-      - 油管 TG 8度科技 5
-      - SG_9020 @WangCai_1
-      - SG_9019 @WangCai_1
-      - SG_9060 @WangCai_1
-      - SG_9033 @WangCai_1
-      - SG_9038 @WangCai_1
-      - SG_9084 @WangCai_1
-      - SG_9007 @WangCai_1
-      - SG_9026 @WangCai_1
-      - SG_9064 @WangCai_1
-      - SG_9024 @WangCai_1
-      - SG_9031 @WangCai_1
-      - SG_9033 @WangCai_1 2
-      - SG_9040 @WangCai_1
-      - SG_9037 @WangCai_1
-      - SG_9014 @WangCai_1
-      - SG_9079 @WangCai_1
-      - 油管 TG 8度科技 6
-      - SG_9015 @WangCai_1
-      - SG_9011 @WangCai_1
-      - SG_9088 @WangCai_1
-      - SG_9053 @WangCai_1
-      - SG_9025 @WangCai_1
-      - SG_9088 @WangCai_1 2
-      - SG_9064 @WangCai_1 2
-      - SG_9000 @WangCai_1
-      - SG_9025 @WangCai_1 2
-      - SG_9040 @WangCai_1 2
-      - SG_9024 @WangCai_1 2
-      - SG_9000 @WangCai_1 2
-      - SG_9020 @WangCai_1 2
-      - SG_9015 @WangCai_1 2
-      - SG_9060 @WangCai_1 2
-      - SG_9073 @WangCai_1
-      - SG_9056 @WangCai_1
-      - SG_9007 @WangCai_1 2
-      - SG_9093 @WangCai_1
-      - SG_9098 @WangCai_1
-      - SG_9014 @WangCai_1 2
-      - SG_9003 @WangCai_1
-      - SG_9033 @WangCai_1 3
-      - SG_9046 @WangCai_1
-      - SG_9037 @WangCai_1 2
-      - SG_9045 @WangCai_1
-      - SG_9064 @WangCai_1 3
-      - SG_9042 @WangCai_1
-      - SG_9084 @WangCai_1 2
-      - SG_9032 @WangCai_1
-      - SG_9084 @WangCai_1 3
-      - SG_9073 @WangCai_1 2
-      - SG_9014 @WangCai_1 3
-      - SG_9079 @WangCai_1 2
-      - SG_9003 @WangCai_1 2
-      - SG_9094 @WangCai_1
-      - SG_9094 @WangCai_1 2
-      - SG_9059 @WangCai_1
-      - SG_9003 @WangCai_1 3
-      - SG_9042 @WangCai_1 2
-      - SG_9038 @WangCai_1 2
-      - SG_9093 @WangCai_1 2
-      - SG_9056 @WangCai_1 2
-      - KR_10064+@WangCai_1
-      - SG_9043 @WangCai_1
-      - SG_9041 @WangCai_1
-      - SG_9040 @WangCai_1 3
-      - SG_9053 @WangCai_1 2
-      - SG_9018 @WangCai_1
-      - SG_9005 @WangCai_1
-      - SG_9019 @WangCai_1 2
-      - SG_9011 @WangCai_1 2
-      - SG_9007 @WangCai_1 3
-      - SG_9057 @WangCai_1
-      - SG_9097 @WangCai_1
-      - SG_9026 @WangCai_1 2
-      - SG_9073 @WangCai_1 3
-      - SG_9043 @WangCai_1 2
-      - SG_9050 @WangCai_1 2
-      - SG_9094 @WangCai_1 3
-      - SG_9088 @WangCai_1 3
-      - SG_9053 @WangCai_1 3
-      - SG_9019 @WangCai_1 3
-      - SG_9006 @WangCai_1
-      - SG_9041 @WangCai_1 2
-      - SG_9079 @WangCai_1 3
-      - SG_9043 @WangCai_1 3
-      - SG_9027 @WangCai_1
-      - SG_9006 @WangCai_1 2
-      - SG_9008 @WangCai_1
-      - SG_9011 @WangCai_1 3
-      - SG_9001 @WangCai_1
-      - SG_9056 @WangCai_1 3
-      - SG_9042 @WangCai_1 3
-      - SG_9000 @WangCai_1 3
-      - SG_9008 @WangCai_1 2
-      - SG_9057 @WangCai_1 2
-      - SG_9070 @WangCai_1
-      - SG_9045 @WangCai_1 2
+      - NL_油管+TG+8度科技 74
+      - NL_油管+TG+8度科技 75
+      - NL_油管+TG+8度科技 76
+      - NL_油管+TG+8度科技 77
+      - NL_油管+TG+8度科技 78
+      - NL_油管+TG+8度科技 79
+      - CN_油管 TG 8度科技 37
+      - CN_油管 TG 8度科技 38
+      - NL_油管+TG+8度科技 80
+      - NL_油管+TG+8度科技 81
+      - NL_油管+TG+8度科技 82
+      - NL_油管+TG+8度科技 83
+      - NL_油管+TG+8度科技 84
+      - NL_油管+TG+8度科技 85
+      - NL_油管+TG+8度科技 86
+      - NL_油管+TG+8度科技 87
+      - NL_油管+TG+8度科技 88
+      - NL_油管+TG+8度科技 89
+      - NL_油管+TG+8度科技 90
+      - NL_油管+TG+8度科技 91
+      - NL_油管+TG+8度科技 92
+      - NL_油管+TG+8度科技 93
+      - NL_油管+TG+8度科技 94
+      - NL_油管+TG+8度科技 95
+      - CN_油管+TG+8度科技 8
+      - NL_油管+TG+8度科技 96
+      - NL_油管+TG+8度科技 97
+      - NL_油管+TG+8度科技 98
+      - NL_油管+TG+8度科技 99
+      - NL_油管+TG+8度科技 100
+      - CN_油管+TG+8度科技 9
+      - CN_油管+TG+8度科技 10
+      - NL_油管+TG+8度科技 101
+      - NL_油管+TG+8度科技 102
+      - CN_油管+TG+8度科技 11
+      - CN_油管+TG+8度科技 12
+      - CN_油管+TG+8度科技 13
+      - NL_油管+TG+8度科技 103
+      - NL_油管+TG+8度科技 104
+      - NL_油管+TG+8度科技 105
+      - NL_油管+TG+8度科技 106
+      - NL_油管+TG+8度科技 107
+      - CN_油管+TG+8度科技 14
+      - NL_油管+TG+8度科技 108
+      - CN_油管+TG+8度科技 15
+      - NL_油管+TG+8度科技 109
+      - NL_油管+TG+8度科技 110
+      - NL_油管+TG+8度科技 111
+      - NL_油管+TG+8度科技 112
+      - CN_油管+TG+8度科技 16
+      - CN_油管+TG+8度科技 17
+      - NL_油管+TG+8度科技 113
+      - NL_油管+TG+8度科技 114
+      - CN_油管+TG+8度科技 18
+      - NL_油管+TG+8度科技 115
+      - NL_油管+TG+8度科技 116
+      - NL_油管+TG+8度科技 117
+      - NL_油管+TG+8度科技 118
+      - CN_油管+TG+8度科技 19
+      - NL_油管+TG+8度科技 119
+      - NL_油管+TG+8度科技 120
+      - NL_油管+TG+8度科技 121
+      - NL_油管+TG+8度科技 122
+      - NL_油管+TG+8度科技 123
+      - CN_油管+TG+8度科技 20
+      - US_油管 TG 8度科技 5
+      - CN_油管+TG+8度科技 21
+      - NL_油管+TG+8度科技 124
+      - NL_油管+TG+8度科技 125
+      - NL_油管+TG+8度科技 126
+      - NL_油管+TG+8度科技 127
+      - NL_油管+TG+8度科技 128
+      - NL_油管+TG+8度科技 129
+      - NL_油管+TG+8度科技 130
+      - NL_油管+TG+8度科技 131
+      - NL_油管+TG+8度科技 132
+      - NL_油管+TG+8度科技 133
+      - NL_油管+TG+8度科技 134
+      - NL_油管+TG+8度科技 135
+      - NL_油管+TG+8度科技 136
+      - NL_油管+TG+8度科技 137
+      - NL_油管+TG+8度科技 138
+      - NL_油管+TG+8度科技 139
+      - NL_油管+TG+8度科技 140
+      - NL_油管+TG+8度科技 141
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -560,323 +1140,671 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
+      - SG_油管 TG 8度科技
+      - HK_油管 TG 8度科技
+      - CN_油管 TG 8度科技
+      - CN_油管 TG 8度科技 2
+      - CN_油管 TG 8度科技 3
+      - CN_油管 TG 8度科技 4
+      - CN_油管 TG 8度科技 5
+      - CN_油管 TG 8度科技 6
+      - CN_油管 TG 8度科技 7
+      - CN_油管 TG 8度科技 8
+      - CN_油管 TG 8度科技 9
+      - CN_油管 TG 8度科技 10
+      - CN_油管 TG 8度科技 11
+      - CN_油管 TG 8度科技 12
+      - CN_油管 TG 8度科技 13
+      - CN_油管 TG 8度科技 14
+      - CN_油管 TG 8度科技 15
+      - CN_油管 TG 8度科技 16
+      - CN_油管 TG 8度科技 17
+      - CN_油管 TG 8度科技 18
+      - CN_油管+TG+8度科技
+      - CN_油管 TG 8度科技 19
+      - CN_油管 TG 8度科技 20
+      - CN_油管+TG+8度科技 2
+      - CN_油管 TG 8度科技 21
+      - CN_油管 TG 8度科技 22
+      - CN_油管 TG 8度科技 23
+      - US_油管 TG 8度科技
+      - CN_油管 TG 8度科技 24
+      - TW_油管 TG 8度科技
+      - HK_油管 TG 8度科技 2
+      - JP_油管 TG 8度科技
+      - KR_油管 TG 8度科技
+      - CN_油管 TG 8度科技 25
+      - CN_油管 TG 8度科技 26
+      - CN_油管+TG+8度科技 3
+      - CN_油管 TG 8度科技 27
       - 油管 TG 8度科技
+      - CN_油管+TG+8度科技 4
+      - CN_油管 TG 8度科技 28
+      - CN_油管 TG 8度科技 29
+      - CN_油管 TG 8度科技 30
+      - CN_油管+TG+8度科技 5
+      - US_油管 TG 8度科技 2
+      - NL_油管+TG+8度科技
+      - HK_油管 TG 8度科技 3
+      - SG_油管 TG 8度科技 2
+      - HK_油管 TG 8度科技 4
+      - SG_油管 TG 8度科技 3
+      - NL_油管+TG+8度科技 2
+      - NL_油管+TG+8度科技 3
+      - NL_油管+TG+8度科技 4
+      - NL_油管+TG+8度科技 5
+      - CN_油管 TG 8度科技 31
+      - NL_油管+TG+8度科技 6
+      - NL_油管+TG+8度科技 7
+      - CN_油管 TG 8度科技 32
+      - NL_油管+TG+8度科技 8
+      - NL_油管+TG+8度科技 9
+      - NL_油管+TG+8度科技 10
+      - NL_油管+TG+8度科技 11
+      - NL_油管+TG+8度科技 12
+      - NL_油管+TG+8度科技 13
+      - CN_油管 TG 8度科技 33
+      - NL_油管+TG+8度科技 14
+      - NL_油管+TG+8度科技 15
+      - NL_油管+TG+8度科技 16
+      - NL_油管+TG+8度科技 17
+      - NL_油管+TG+8度科技 18
+      - NL_油管+TG+8度科技 19
+      - NL_油管+TG+8度科技 20
+      - CN_油管 TG 8度科技 34
+      - NL_油管+TG+8度科技 21
+      - NL_油管+TG+8度科技 22
+      - NL_油管+TG+8度科技 23
+      - NL_油管+TG+8度科技 24
+      - CN_油管+TG+8度科技 6
+      - NL_油管+TG+8度科技 25
+      - NL_油管+TG+8度科技 26
+      - NL_油管+TG+8度科技 27
+      - NL_油管+TG+8度科技 28
+      - NL_油管+TG+8度科技 29
+      - NL_油管+TG+8度科技 30
+      - NL_油管+TG+8度科技 31
+      - NL_油管+TG+8度科技 32
+      - NL_油管+TG+8度科技 33
+      - NL_油管+TG+8度科技 34
+      - US_油管 TG 8度科技 3
+      - NL_油管+TG+8度科技 35
+      - NL_油管+TG+8度科技 36
+      - NL_油管+TG+8度科技 37
+      - NL_油管+TG+8度科技 38
+      - NL_油管+TG+8度科技 39
+      - NL_油管+TG+8度科技 40
+      - NL_油管+TG+8度科技 41
+      - NL_油管+TG+8度科技 42
+      - NL_油管+TG+8度科技 43
+      - NL_油管+TG+8度科技 44
+      - NL_油管+TG+8度科技 45
+      - NL_油管+TG+8度科技 46
+      - KR_油管 TG 8度科技 2
+      - NL_油管+TG+8度科技 47
+      - NL_油管+TG+8度科技 48
+      - NL_油管+TG+8度科技 49
+      - NL_油管+TG+8度科技 50
+      - NL_油管+TG+8度科技 51
+      - NL_油管+TG+8度科技 52
+      - NL_油管+TG+8度科技 53
+      - NL_油管+TG+8度科技 54
+      - US_油管 TG 8度科技 4
+      - NL_油管+TG+8度科技 55
+      - NL_油管+TG+8度科技 56
+      - NL_油管+TG+8度科技 57
+      - NL_油管+TG+8度科技 58
+      - NL_油管+TG+8度科技 59
+      - NL_油管+TG+8度科技 60
+      - NL_油管+TG+8度科技 61
+      - CN_油管 TG 8度科技 35
+      - NL_油管+TG+8度科技 62
+      - NL_油管+TG+8度科技 63
+      - NL_油管+TG+8度科技 64
+      - NL_油管+TG+8度科技 65
+      - NL_油管+TG+8度科技 66
+      - NL_油管+TG+8度科技 67
+      - NL_油管+TG+8度科技 68
+      - NL_油管+TG+8度科技 69
+      - NL_油管+TG+8度科技 70
+      - CN_油管+TG+8度科技 7
+      - CN_油管 TG 8度科技 36
+      - NL_油管+TG+8度科技 71
+      - NL_油管+TG+8度科技 72
+      - NL_油管+TG+8度科技 73
       - 油管 TG 8度科技 2
-      - 油管 TG 8度科技 3
-      - 油管 TG 8度科技 4
-      - SG_9050 @WangCai_1
-      - 油管 TG 8度科技 5
-      - SG_9020 @WangCai_1
-      - SG_9019 @WangCai_1
-      - SG_9060 @WangCai_1
-      - SG_9033 @WangCai_1
-      - SG_9038 @WangCai_1
-      - SG_9084 @WangCai_1
-      - SG_9007 @WangCai_1
-      - SG_9026 @WangCai_1
-      - SG_9064 @WangCai_1
-      - SG_9024 @WangCai_1
-      - SG_9031 @WangCai_1
-      - SG_9033 @WangCai_1 2
-      - SG_9040 @WangCai_1
-      - SG_9037 @WangCai_1
-      - SG_9014 @WangCai_1
-      - SG_9079 @WangCai_1
-      - 油管 TG 8度科技 6
-      - SG_9015 @WangCai_1
-      - SG_9011 @WangCai_1
-      - SG_9088 @WangCai_1
-      - SG_9053 @WangCai_1
-      - SG_9025 @WangCai_1
-      - SG_9088 @WangCai_1 2
-      - SG_9064 @WangCai_1 2
-      - SG_9000 @WangCai_1
-      - SG_9025 @WangCai_1 2
-      - SG_9040 @WangCai_1 2
-      - SG_9024 @WangCai_1 2
-      - SG_9000 @WangCai_1 2
-      - SG_9020 @WangCai_1 2
-      - SG_9015 @WangCai_1 2
-      - SG_9060 @WangCai_1 2
-      - SG_9073 @WangCai_1
-      - SG_9056 @WangCai_1
-      - SG_9007 @WangCai_1 2
-      - SG_9093 @WangCai_1
-      - SG_9098 @WangCai_1
-      - SG_9014 @WangCai_1 2
-      - SG_9003 @WangCai_1
-      - SG_9033 @WangCai_1 3
-      - SG_9046 @WangCai_1
-      - SG_9037 @WangCai_1 2
-      - SG_9045 @WangCai_1
-      - SG_9064 @WangCai_1 3
-      - SG_9042 @WangCai_1
-      - SG_9084 @WangCai_1 2
-      - SG_9032 @WangCai_1
-      - SG_9084 @WangCai_1 3
-      - SG_9073 @WangCai_1 2
-      - SG_9014 @WangCai_1 3
-      - SG_9079 @WangCai_1 2
-      - SG_9003 @WangCai_1 2
-      - SG_9094 @WangCai_1
-      - SG_9094 @WangCai_1 2
-      - SG_9059 @WangCai_1
-      - SG_9003 @WangCai_1 3
-      - SG_9042 @WangCai_1 2
-      - SG_9038 @WangCai_1 2
-      - SG_9093 @WangCai_1 2
-      - SG_9056 @WangCai_1 2
-      - KR_10064+@WangCai_1
-      - SG_9043 @WangCai_1
-      - SG_9041 @WangCai_1
-      - SG_9040 @WangCai_1 3
-      - SG_9053 @WangCai_1 2
-      - SG_9018 @WangCai_1
-      - SG_9005 @WangCai_1
-      - SG_9019 @WangCai_1 2
-      - SG_9011 @WangCai_1 2
-      - SG_9007 @WangCai_1 3
-      - SG_9057 @WangCai_1
-      - SG_9097 @WangCai_1
-      - SG_9026 @WangCai_1 2
-      - SG_9073 @WangCai_1 3
-      - SG_9043 @WangCai_1 2
-      - SG_9050 @WangCai_1 2
-      - SG_9094 @WangCai_1 3
-      - SG_9088 @WangCai_1 3
-      - SG_9053 @WangCai_1 3
-      - SG_9019 @WangCai_1 3
-      - SG_9006 @WangCai_1
-      - SG_9041 @WangCai_1 2
-      - SG_9079 @WangCai_1 3
-      - SG_9043 @WangCai_1 3
-      - SG_9027 @WangCai_1
-      - SG_9006 @WangCai_1 2
-      - SG_9008 @WangCai_1
-      - SG_9011 @WangCai_1 3
-      - SG_9001 @WangCai_1
-      - SG_9056 @WangCai_1 3
-      - SG_9042 @WangCai_1 3
-      - SG_9000 @WangCai_1 3
-      - SG_9008 @WangCai_1 2
-      - SG_9057 @WangCai_1 2
-      - SG_9070 @WangCai_1
-      - SG_9045 @WangCai_1 2
+      - NL_油管+TG+8度科技 74
+      - NL_油管+TG+8度科技 75
+      - NL_油管+TG+8度科技 76
+      - NL_油管+TG+8度科技 77
+      - NL_油管+TG+8度科技 78
+      - NL_油管+TG+8度科技 79
+      - CN_油管 TG 8度科技 37
+      - CN_油管 TG 8度科技 38
+      - NL_油管+TG+8度科技 80
+      - NL_油管+TG+8度科技 81
+      - NL_油管+TG+8度科技 82
+      - NL_油管+TG+8度科技 83
+      - NL_油管+TG+8度科技 84
+      - NL_油管+TG+8度科技 85
+      - NL_油管+TG+8度科技 86
+      - NL_油管+TG+8度科技 87
+      - NL_油管+TG+8度科技 88
+      - NL_油管+TG+8度科技 89
+      - NL_油管+TG+8度科技 90
+      - NL_油管+TG+8度科技 91
+      - NL_油管+TG+8度科技 92
+      - NL_油管+TG+8度科技 93
+      - NL_油管+TG+8度科技 94
+      - NL_油管+TG+8度科技 95
+      - CN_油管+TG+8度科技 8
+      - NL_油管+TG+8度科技 96
+      - NL_油管+TG+8度科技 97
+      - NL_油管+TG+8度科技 98
+      - NL_油管+TG+8度科技 99
+      - NL_油管+TG+8度科技 100
+      - CN_油管+TG+8度科技 9
+      - CN_油管+TG+8度科技 10
+      - NL_油管+TG+8度科技 101
+      - NL_油管+TG+8度科技 102
+      - CN_油管+TG+8度科技 11
+      - CN_油管+TG+8度科技 12
+      - CN_油管+TG+8度科技 13
+      - NL_油管+TG+8度科技 103
+      - NL_油管+TG+8度科技 104
+      - NL_油管+TG+8度科技 105
+      - NL_油管+TG+8度科技 106
+      - NL_油管+TG+8度科技 107
+      - CN_油管+TG+8度科技 14
+      - NL_油管+TG+8度科技 108
+      - CN_油管+TG+8度科技 15
+      - NL_油管+TG+8度科技 109
+      - NL_油管+TG+8度科技 110
+      - NL_油管+TG+8度科技 111
+      - NL_油管+TG+8度科技 112
+      - CN_油管+TG+8度科技 16
+      - CN_油管+TG+8度科技 17
+      - NL_油管+TG+8度科技 113
+      - NL_油管+TG+8度科技 114
+      - CN_油管+TG+8度科技 18
+      - NL_油管+TG+8度科技 115
+      - NL_油管+TG+8度科技 116
+      - NL_油管+TG+8度科技 117
+      - NL_油管+TG+8度科技 118
+      - CN_油管+TG+8度科技 19
+      - NL_油管+TG+8度科技 119
+      - NL_油管+TG+8度科技 120
+      - NL_油管+TG+8度科技 121
+      - NL_油管+TG+8度科技 122
+      - NL_油管+TG+8度科技 123
+      - CN_油管+TG+8度科技 20
+      - US_油管 TG 8度科技 5
+      - CN_油管+TG+8度科技 21
+      - NL_油管+TG+8度科技 124
+      - NL_油管+TG+8度科技 125
+      - NL_油管+TG+8度科技 126
+      - NL_油管+TG+8度科技 127
+      - NL_油管+TG+8度科技 128
+      - NL_油管+TG+8度科技 129
+      - NL_油管+TG+8度科技 130
+      - NL_油管+TG+8度科技 131
+      - NL_油管+TG+8度科技 132
+      - NL_油管+TG+8度科技 133
+      - NL_油管+TG+8度科技 134
+      - NL_油管+TG+8度科技 135
+      - NL_油管+TG+8度科技 136
+      - NL_油管+TG+8度科技 137
+      - NL_油管+TG+8度科技 138
+      - NL_油管+TG+8度科技 139
+      - NL_油管+TG+8度科技 140
+      - NL_油管+TG+8度科技 141
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
+      - SG_油管 TG 8度科技
+      - HK_油管 TG 8度科技
+      - CN_油管 TG 8度科技
+      - CN_油管 TG 8度科技 2
+      - CN_油管 TG 8度科技 3
+      - CN_油管 TG 8度科技 4
+      - CN_油管 TG 8度科技 5
+      - CN_油管 TG 8度科技 6
+      - CN_油管 TG 8度科技 7
+      - CN_油管 TG 8度科技 8
+      - CN_油管 TG 8度科技 9
+      - CN_油管 TG 8度科技 10
+      - CN_油管 TG 8度科技 11
+      - CN_油管 TG 8度科技 12
+      - CN_油管 TG 8度科技 13
+      - CN_油管 TG 8度科技 14
+      - CN_油管 TG 8度科技 15
+      - CN_油管 TG 8度科技 16
+      - CN_油管 TG 8度科技 17
+      - CN_油管 TG 8度科技 18
+      - CN_油管+TG+8度科技
+      - CN_油管 TG 8度科技 19
+      - CN_油管 TG 8度科技 20
+      - CN_油管+TG+8度科技 2
+      - CN_油管 TG 8度科技 21
+      - CN_油管 TG 8度科技 22
+      - CN_油管 TG 8度科技 23
+      - US_油管 TG 8度科技
+      - CN_油管 TG 8度科技 24
+      - TW_油管 TG 8度科技
+      - HK_油管 TG 8度科技 2
+      - JP_油管 TG 8度科技
+      - KR_油管 TG 8度科技
+      - CN_油管 TG 8度科技 25
+      - CN_油管 TG 8度科技 26
+      - CN_油管+TG+8度科技 3
+      - CN_油管 TG 8度科技 27
       - 油管 TG 8度科技
+      - CN_油管+TG+8度科技 4
+      - CN_油管 TG 8度科技 28
+      - CN_油管 TG 8度科技 29
+      - CN_油管 TG 8度科技 30
+      - CN_油管+TG+8度科技 5
+      - US_油管 TG 8度科技 2
+      - NL_油管+TG+8度科技
+      - HK_油管 TG 8度科技 3
+      - SG_油管 TG 8度科技 2
+      - HK_油管 TG 8度科技 4
+      - SG_油管 TG 8度科技 3
+      - NL_油管+TG+8度科技 2
+      - NL_油管+TG+8度科技 3
+      - NL_油管+TG+8度科技 4
+      - NL_油管+TG+8度科技 5
+      - CN_油管 TG 8度科技 31
+      - NL_油管+TG+8度科技 6
+      - NL_油管+TG+8度科技 7
+      - CN_油管 TG 8度科技 32
+      - NL_油管+TG+8度科技 8
+      - NL_油管+TG+8度科技 9
+      - NL_油管+TG+8度科技 10
+      - NL_油管+TG+8度科技 11
+      - NL_油管+TG+8度科技 12
+      - NL_油管+TG+8度科技 13
+      - CN_油管 TG 8度科技 33
+      - NL_油管+TG+8度科技 14
+      - NL_油管+TG+8度科技 15
+      - NL_油管+TG+8度科技 16
+      - NL_油管+TG+8度科技 17
+      - NL_油管+TG+8度科技 18
+      - NL_油管+TG+8度科技 19
+      - NL_油管+TG+8度科技 20
+      - CN_油管 TG 8度科技 34
+      - NL_油管+TG+8度科技 21
+      - NL_油管+TG+8度科技 22
+      - NL_油管+TG+8度科技 23
+      - NL_油管+TG+8度科技 24
+      - CN_油管+TG+8度科技 6
+      - NL_油管+TG+8度科技 25
+      - NL_油管+TG+8度科技 26
+      - NL_油管+TG+8度科技 27
+      - NL_油管+TG+8度科技 28
+      - NL_油管+TG+8度科技 29
+      - NL_油管+TG+8度科技 30
+      - NL_油管+TG+8度科技 31
+      - NL_油管+TG+8度科技 32
+      - NL_油管+TG+8度科技 33
+      - NL_油管+TG+8度科技 34
+      - US_油管 TG 8度科技 3
+      - NL_油管+TG+8度科技 35
+      - NL_油管+TG+8度科技 36
+      - NL_油管+TG+8度科技 37
+      - NL_油管+TG+8度科技 38
+      - NL_油管+TG+8度科技 39
+      - NL_油管+TG+8度科技 40
+      - NL_油管+TG+8度科技 41
+      - NL_油管+TG+8度科技 42
+      - NL_油管+TG+8度科技 43
+      - NL_油管+TG+8度科技 44
+      - NL_油管+TG+8度科技 45
+      - NL_油管+TG+8度科技 46
+      - KR_油管 TG 8度科技 2
+      - NL_油管+TG+8度科技 47
+      - NL_油管+TG+8度科技 48
+      - NL_油管+TG+8度科技 49
+      - NL_油管+TG+8度科技 50
+      - NL_油管+TG+8度科技 51
+      - NL_油管+TG+8度科技 52
+      - NL_油管+TG+8度科技 53
+      - NL_油管+TG+8度科技 54
+      - US_油管 TG 8度科技 4
+      - NL_油管+TG+8度科技 55
+      - NL_油管+TG+8度科技 56
+      - NL_油管+TG+8度科技 57
+      - NL_油管+TG+8度科技 58
+      - NL_油管+TG+8度科技 59
+      - NL_油管+TG+8度科技 60
+      - NL_油管+TG+8度科技 61
+      - CN_油管 TG 8度科技 35
+      - NL_油管+TG+8度科技 62
+      - NL_油管+TG+8度科技 63
+      - NL_油管+TG+8度科技 64
+      - NL_油管+TG+8度科技 65
+      - NL_油管+TG+8度科技 66
+      - NL_油管+TG+8度科技 67
+      - NL_油管+TG+8度科技 68
+      - NL_油管+TG+8度科技 69
+      - NL_油管+TG+8度科技 70
+      - CN_油管+TG+8度科技 7
+      - CN_油管 TG 8度科技 36
+      - NL_油管+TG+8度科技 71
+      - NL_油管+TG+8度科技 72
+      - NL_油管+TG+8度科技 73
       - 油管 TG 8度科技 2
-      - 油管 TG 8度科技 3
-      - 油管 TG 8度科技 4
-      - SG_9050 @WangCai_1
-      - 油管 TG 8度科技 5
-      - SG_9020 @WangCai_1
-      - SG_9019 @WangCai_1
-      - SG_9060 @WangCai_1
-      - SG_9033 @WangCai_1
-      - SG_9038 @WangCai_1
-      - SG_9084 @WangCai_1
-      - SG_9007 @WangCai_1
-      - SG_9026 @WangCai_1
-      - SG_9064 @WangCai_1
-      - SG_9024 @WangCai_1
-      - SG_9031 @WangCai_1
-      - SG_9033 @WangCai_1 2
-      - SG_9040 @WangCai_1
-      - SG_9037 @WangCai_1
-      - SG_9014 @WangCai_1
-      - SG_9079 @WangCai_1
-      - 油管 TG 8度科技 6
-      - SG_9015 @WangCai_1
-      - SG_9011 @WangCai_1
-      - SG_9088 @WangCai_1
-      - SG_9053 @WangCai_1
-      - SG_9025 @WangCai_1
-      - SG_9088 @WangCai_1 2
-      - SG_9064 @WangCai_1 2
-      - SG_9000 @WangCai_1
-      - SG_9025 @WangCai_1 2
-      - SG_9040 @WangCai_1 2
-      - SG_9024 @WangCai_1 2
-      - SG_9000 @WangCai_1 2
-      - SG_9020 @WangCai_1 2
-      - SG_9015 @WangCai_1 2
-      - SG_9060 @WangCai_1 2
-      - SG_9073 @WangCai_1
-      - SG_9056 @WangCai_1
-      - SG_9007 @WangCai_1 2
-      - SG_9093 @WangCai_1
-      - SG_9098 @WangCai_1
-      - SG_9014 @WangCai_1 2
-      - SG_9003 @WangCai_1
-      - SG_9033 @WangCai_1 3
-      - SG_9046 @WangCai_1
-      - SG_9037 @WangCai_1 2
-      - SG_9045 @WangCai_1
-      - SG_9064 @WangCai_1 3
-      - SG_9042 @WangCai_1
-      - SG_9084 @WangCai_1 2
-      - SG_9032 @WangCai_1
-      - SG_9084 @WangCai_1 3
-      - SG_9073 @WangCai_1 2
-      - SG_9014 @WangCai_1 3
-      - SG_9079 @WangCai_1 2
-      - SG_9003 @WangCai_1 2
-      - SG_9094 @WangCai_1
-      - SG_9094 @WangCai_1 2
-      - SG_9059 @WangCai_1
-      - SG_9003 @WangCai_1 3
-      - SG_9042 @WangCai_1 2
-      - SG_9038 @WangCai_1 2
-      - SG_9093 @WangCai_1 2
-      - SG_9056 @WangCai_1 2
-      - KR_10064+@WangCai_1
-      - SG_9043 @WangCai_1
-      - SG_9041 @WangCai_1
-      - SG_9040 @WangCai_1 3
-      - SG_9053 @WangCai_1 2
-      - SG_9018 @WangCai_1
-      - SG_9005 @WangCai_1
-      - SG_9019 @WangCai_1 2
-      - SG_9011 @WangCai_1 2
-      - SG_9007 @WangCai_1 3
-      - SG_9057 @WangCai_1
-      - SG_9097 @WangCai_1
-      - SG_9026 @WangCai_1 2
-      - SG_9073 @WangCai_1 3
-      - SG_9043 @WangCai_1 2
-      - SG_9050 @WangCai_1 2
-      - SG_9094 @WangCai_1 3
-      - SG_9088 @WangCai_1 3
-      - SG_9053 @WangCai_1 3
-      - SG_9019 @WangCai_1 3
-      - SG_9006 @WangCai_1
-      - SG_9041 @WangCai_1 2
-      - SG_9079 @WangCai_1 3
-      - SG_9043 @WangCai_1 3
-      - SG_9027 @WangCai_1
-      - SG_9006 @WangCai_1 2
-      - SG_9008 @WangCai_1
-      - SG_9011 @WangCai_1 3
-      - SG_9001 @WangCai_1
-      - SG_9056 @WangCai_1 3
-      - SG_9042 @WangCai_1 3
-      - SG_9000 @WangCai_1 3
-      - SG_9008 @WangCai_1 2
-      - SG_9057 @WangCai_1 2
-      - SG_9070 @WangCai_1
-      - SG_9045 @WangCai_1 2
+      - NL_油管+TG+8度科技 74
+      - NL_油管+TG+8度科技 75
+      - NL_油管+TG+8度科技 76
+      - NL_油管+TG+8度科技 77
+      - NL_油管+TG+8度科技 78
+      - NL_油管+TG+8度科技 79
+      - CN_油管 TG 8度科技 37
+      - CN_油管 TG 8度科技 38
+      - NL_油管+TG+8度科技 80
+      - NL_油管+TG+8度科技 81
+      - NL_油管+TG+8度科技 82
+      - NL_油管+TG+8度科技 83
+      - NL_油管+TG+8度科技 84
+      - NL_油管+TG+8度科技 85
+      - NL_油管+TG+8度科技 86
+      - NL_油管+TG+8度科技 87
+      - NL_油管+TG+8度科技 88
+      - NL_油管+TG+8度科技 89
+      - NL_油管+TG+8度科技 90
+      - NL_油管+TG+8度科技 91
+      - NL_油管+TG+8度科技 92
+      - NL_油管+TG+8度科技 93
+      - NL_油管+TG+8度科技 94
+      - NL_油管+TG+8度科技 95
+      - CN_油管+TG+8度科技 8
+      - NL_油管+TG+8度科技 96
+      - NL_油管+TG+8度科技 97
+      - NL_油管+TG+8度科技 98
+      - NL_油管+TG+8度科技 99
+      - NL_油管+TG+8度科技 100
+      - CN_油管+TG+8度科技 9
+      - CN_油管+TG+8度科技 10
+      - NL_油管+TG+8度科技 101
+      - NL_油管+TG+8度科技 102
+      - CN_油管+TG+8度科技 11
+      - CN_油管+TG+8度科技 12
+      - CN_油管+TG+8度科技 13
+      - NL_油管+TG+8度科技 103
+      - NL_油管+TG+8度科技 104
+      - NL_油管+TG+8度科技 105
+      - NL_油管+TG+8度科技 106
+      - NL_油管+TG+8度科技 107
+      - CN_油管+TG+8度科技 14
+      - NL_油管+TG+8度科技 108
+      - CN_油管+TG+8度科技 15
+      - NL_油管+TG+8度科技 109
+      - NL_油管+TG+8度科技 110
+      - NL_油管+TG+8度科技 111
+      - NL_油管+TG+8度科技 112
+      - CN_油管+TG+8度科技 16
+      - CN_油管+TG+8度科技 17
+      - NL_油管+TG+8度科技 113
+      - NL_油管+TG+8度科技 114
+      - CN_油管+TG+8度科技 18
+      - NL_油管+TG+8度科技 115
+      - NL_油管+TG+8度科技 116
+      - NL_油管+TG+8度科技 117
+      - NL_油管+TG+8度科技 118
+      - CN_油管+TG+8度科技 19
+      - NL_油管+TG+8度科技 119
+      - NL_油管+TG+8度科技 120
+      - NL_油管+TG+8度科技 121
+      - NL_油管+TG+8度科技 122
+      - NL_油管+TG+8度科技 123
+      - CN_油管+TG+8度科技 20
+      - US_油管 TG 8度科技 5
+      - CN_油管+TG+8度科技 21
+      - NL_油管+TG+8度科技 124
+      - NL_油管+TG+8度科技 125
+      - NL_油管+TG+8度科技 126
+      - NL_油管+TG+8度科技 127
+      - NL_油管+TG+8度科技 128
+      - NL_油管+TG+8度科技 129
+      - NL_油管+TG+8度科技 130
+      - NL_油管+TG+8度科技 131
+      - NL_油管+TG+8度科技 132
+      - NL_油管+TG+8度科技 133
+      - NL_油管+TG+8度科技 134
+      - NL_油管+TG+8度科技 135
+      - NL_油管+TG+8度科技 136
+      - NL_油管+TG+8度科技 137
+      - NL_油管+TG+8度科技 138
+      - NL_油管+TG+8度科技 139
+      - NL_油管+TG+8度科技 140
+      - NL_油管+TG+8度科技 141
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - SG_油管 TG 8度科技
+      - HK_油管 TG 8度科技
+      - CN_油管 TG 8度科技
+      - CN_油管 TG 8度科技 2
+      - CN_油管 TG 8度科技 3
+      - CN_油管 TG 8度科技 4
+      - CN_油管 TG 8度科技 5
+      - CN_油管 TG 8度科技 6
+      - CN_油管 TG 8度科技 7
+      - CN_油管 TG 8度科技 8
+      - CN_油管 TG 8度科技 9
+      - CN_油管 TG 8度科技 10
+      - CN_油管 TG 8度科技 11
+      - CN_油管 TG 8度科技 12
+      - CN_油管 TG 8度科技 13
+      - CN_油管 TG 8度科技 14
+      - CN_油管 TG 8度科技 15
+      - CN_油管 TG 8度科技 16
+      - CN_油管 TG 8度科技 17
+      - CN_油管 TG 8度科技 18
+      - CN_油管+TG+8度科技
+      - CN_油管 TG 8度科技 19
+      - CN_油管 TG 8度科技 20
+      - CN_油管+TG+8度科技 2
+      - CN_油管 TG 8度科技 21
+      - CN_油管 TG 8度科技 22
+      - CN_油管 TG 8度科技 23
+      - US_油管 TG 8度科技
+      - CN_油管 TG 8度科技 24
+      - TW_油管 TG 8度科技
+      - HK_油管 TG 8度科技 2
+      - JP_油管 TG 8度科技
+      - KR_油管 TG 8度科技
+      - CN_油管 TG 8度科技 25
+      - CN_油管 TG 8度科技 26
+      - CN_油管+TG+8度科技 3
+      - CN_油管 TG 8度科技 27
       - 油管 TG 8度科技
+      - CN_油管+TG+8度科技 4
+      - CN_油管 TG 8度科技 28
+      - CN_油管 TG 8度科技 29
+      - CN_油管 TG 8度科技 30
+      - CN_油管+TG+8度科技 5
+      - US_油管 TG 8度科技 2
+      - NL_油管+TG+8度科技
+      - HK_油管 TG 8度科技 3
+      - SG_油管 TG 8度科技 2
+      - HK_油管 TG 8度科技 4
+      - SG_油管 TG 8度科技 3
+      - NL_油管+TG+8度科技 2
+      - NL_油管+TG+8度科技 3
+      - NL_油管+TG+8度科技 4
+      - NL_油管+TG+8度科技 5
+      - CN_油管 TG 8度科技 31
+      - NL_油管+TG+8度科技 6
+      - NL_油管+TG+8度科技 7
+      - CN_油管 TG 8度科技 32
+      - NL_油管+TG+8度科技 8
+      - NL_油管+TG+8度科技 9
+      - NL_油管+TG+8度科技 10
+      - NL_油管+TG+8度科技 11
+      - NL_油管+TG+8度科技 12
+      - NL_油管+TG+8度科技 13
+      - CN_油管 TG 8度科技 33
+      - NL_油管+TG+8度科技 14
+      - NL_油管+TG+8度科技 15
+      - NL_油管+TG+8度科技 16
+      - NL_油管+TG+8度科技 17
+      - NL_油管+TG+8度科技 18
+      - NL_油管+TG+8度科技 19
+      - NL_油管+TG+8度科技 20
+      - CN_油管 TG 8度科技 34
+      - NL_油管+TG+8度科技 21
+      - NL_油管+TG+8度科技 22
+      - NL_油管+TG+8度科技 23
+      - NL_油管+TG+8度科技 24
+      - CN_油管+TG+8度科技 6
+      - NL_油管+TG+8度科技 25
+      - NL_油管+TG+8度科技 26
+      - NL_油管+TG+8度科技 27
+      - NL_油管+TG+8度科技 28
+      - NL_油管+TG+8度科技 29
+      - NL_油管+TG+8度科技 30
+      - NL_油管+TG+8度科技 31
+      - NL_油管+TG+8度科技 32
+      - NL_油管+TG+8度科技 33
+      - NL_油管+TG+8度科技 34
+      - US_油管 TG 8度科技 3
+      - NL_油管+TG+8度科技 35
+      - NL_油管+TG+8度科技 36
+      - NL_油管+TG+8度科技 37
+      - NL_油管+TG+8度科技 38
+      - NL_油管+TG+8度科技 39
+      - NL_油管+TG+8度科技 40
+      - NL_油管+TG+8度科技 41
+      - NL_油管+TG+8度科技 42
+      - NL_油管+TG+8度科技 43
+      - NL_油管+TG+8度科技 44
+      - NL_油管+TG+8度科技 45
+      - NL_油管+TG+8度科技 46
+      - KR_油管 TG 8度科技 2
+      - NL_油管+TG+8度科技 47
+      - NL_油管+TG+8度科技 48
+      - NL_油管+TG+8度科技 49
+      - NL_油管+TG+8度科技 50
+      - NL_油管+TG+8度科技 51
+      - NL_油管+TG+8度科技 52
+      - NL_油管+TG+8度科技 53
+      - NL_油管+TG+8度科技 54
+      - US_油管 TG 8度科技 4
+      - NL_油管+TG+8度科技 55
+      - NL_油管+TG+8度科技 56
+      - NL_油管+TG+8度科技 57
+      - NL_油管+TG+8度科技 58
+      - NL_油管+TG+8度科技 59
+      - NL_油管+TG+8度科技 60
+      - NL_油管+TG+8度科技 61
+      - CN_油管 TG 8度科技 35
+      - NL_油管+TG+8度科技 62
+      - NL_油管+TG+8度科技 63
+      - NL_油管+TG+8度科技 64
+      - NL_油管+TG+8度科技 65
+      - NL_油管+TG+8度科技 66
+      - NL_油管+TG+8度科技 67
+      - NL_油管+TG+8度科技 68
+      - NL_油管+TG+8度科技 69
+      - NL_油管+TG+8度科技 70
+      - CN_油管+TG+8度科技 7
+      - CN_油管 TG 8度科技 36
+      - NL_油管+TG+8度科技 71
+      - NL_油管+TG+8度科技 72
+      - NL_油管+TG+8度科技 73
       - 油管 TG 8度科技 2
-      - 油管 TG 8度科技 3
-      - 油管 TG 8度科技 4
-      - SG_9050 @WangCai_1
-      - 油管 TG 8度科技 5
-      - SG_9020 @WangCai_1
-      - SG_9019 @WangCai_1
-      - SG_9060 @WangCai_1
-      - SG_9033 @WangCai_1
-      - SG_9038 @WangCai_1
-      - SG_9084 @WangCai_1
-      - SG_9007 @WangCai_1
-      - SG_9026 @WangCai_1
-      - SG_9064 @WangCai_1
-      - SG_9024 @WangCai_1
-      - SG_9031 @WangCai_1
-      - SG_9033 @WangCai_1 2
-      - SG_9040 @WangCai_1
-      - SG_9037 @WangCai_1
-      - SG_9014 @WangCai_1
-      - SG_9079 @WangCai_1
-      - 油管 TG 8度科技 6
-      - SG_9015 @WangCai_1
-      - SG_9011 @WangCai_1
-      - SG_9088 @WangCai_1
-      - SG_9053 @WangCai_1
-      - SG_9025 @WangCai_1
-      - SG_9088 @WangCai_1 2
-      - SG_9064 @WangCai_1 2
-      - SG_9000 @WangCai_1
-      - SG_9025 @WangCai_1 2
-      - SG_9040 @WangCai_1 2
-      - SG_9024 @WangCai_1 2
-      - SG_9000 @WangCai_1 2
-      - SG_9020 @WangCai_1 2
-      - SG_9015 @WangCai_1 2
-      - SG_9060 @WangCai_1 2
-      - SG_9073 @WangCai_1
-      - SG_9056 @WangCai_1
-      - SG_9007 @WangCai_1 2
-      - SG_9093 @WangCai_1
-      - SG_9098 @WangCai_1
-      - SG_9014 @WangCai_1 2
-      - SG_9003 @WangCai_1
-      - SG_9033 @WangCai_1 3
-      - SG_9046 @WangCai_1
-      - SG_9037 @WangCai_1 2
-      - SG_9045 @WangCai_1
-      - SG_9064 @WangCai_1 3
-      - SG_9042 @WangCai_1
-      - SG_9084 @WangCai_1 2
-      - SG_9032 @WangCai_1
-      - SG_9084 @WangCai_1 3
-      - SG_9073 @WangCai_1 2
-      - SG_9014 @WangCai_1 3
-      - SG_9079 @WangCai_1 2
-      - SG_9003 @WangCai_1 2
-      - SG_9094 @WangCai_1
-      - SG_9094 @WangCai_1 2
-      - SG_9059 @WangCai_1
-      - SG_9003 @WangCai_1 3
-      - SG_9042 @WangCai_1 2
-      - SG_9038 @WangCai_1 2
-      - SG_9093 @WangCai_1 2
-      - SG_9056 @WangCai_1 2
-      - KR_10064+@WangCai_1
-      - SG_9043 @WangCai_1
-      - SG_9041 @WangCai_1
-      - SG_9040 @WangCai_1 3
-      - SG_9053 @WangCai_1 2
-      - SG_9018 @WangCai_1
-      - SG_9005 @WangCai_1
-      - SG_9019 @WangCai_1 2
-      - SG_9011 @WangCai_1 2
-      - SG_9007 @WangCai_1 3
-      - SG_9057 @WangCai_1
-      - SG_9097 @WangCai_1
-      - SG_9026 @WangCai_1 2
-      - SG_9073 @WangCai_1 3
-      - SG_9043 @WangCai_1 2
-      - SG_9050 @WangCai_1 2
-      - SG_9094 @WangCai_1 3
-      - SG_9088 @WangCai_1 3
-      - SG_9053 @WangCai_1 3
-      - SG_9019 @WangCai_1 3
-      - SG_9006 @WangCai_1
-      - SG_9041 @WangCai_1 2
-      - SG_9079 @WangCai_1 3
-      - SG_9043 @WangCai_1 3
-      - SG_9027 @WangCai_1
-      - SG_9006 @WangCai_1 2
-      - SG_9008 @WangCai_1
-      - SG_9011 @WangCai_1 3
-      - SG_9001 @WangCai_1
-      - SG_9056 @WangCai_1 3
-      - SG_9042 @WangCai_1 3
-      - SG_9000 @WangCai_1 3
-      - SG_9008 @WangCai_1 2
-      - SG_9057 @WangCai_1 2
-      - SG_9070 @WangCai_1
-      - SG_9045 @WangCai_1 2
+      - NL_油管+TG+8度科技 74
+      - NL_油管+TG+8度科技 75
+      - NL_油管+TG+8度科技 76
+      - NL_油管+TG+8度科技 77
+      - NL_油管+TG+8度科技 78
+      - NL_油管+TG+8度科技 79
+      - CN_油管 TG 8度科技 37
+      - CN_油管 TG 8度科技 38
+      - NL_油管+TG+8度科技 80
+      - NL_油管+TG+8度科技 81
+      - NL_油管+TG+8度科技 82
+      - NL_油管+TG+8度科技 83
+      - NL_油管+TG+8度科技 84
+      - NL_油管+TG+8度科技 85
+      - NL_油管+TG+8度科技 86
+      - NL_油管+TG+8度科技 87
+      - NL_油管+TG+8度科技 88
+      - NL_油管+TG+8度科技 89
+      - NL_油管+TG+8度科技 90
+      - NL_油管+TG+8度科技 91
+      - NL_油管+TG+8度科技 92
+      - NL_油管+TG+8度科技 93
+      - NL_油管+TG+8度科技 94
+      - NL_油管+TG+8度科技 95
+      - CN_油管+TG+8度科技 8
+      - NL_油管+TG+8度科技 96
+      - NL_油管+TG+8度科技 97
+      - NL_油管+TG+8度科技 98
+      - NL_油管+TG+8度科技 99
+      - NL_油管+TG+8度科技 100
+      - CN_油管+TG+8度科技 9
+      - CN_油管+TG+8度科技 10
+      - NL_油管+TG+8度科技 101
+      - NL_油管+TG+8度科技 102
+      - CN_油管+TG+8度科技 11
+      - CN_油管+TG+8度科技 12
+      - CN_油管+TG+8度科技 13
+      - NL_油管+TG+8度科技 103
+      - NL_油管+TG+8度科技 104
+      - NL_油管+TG+8度科技 105
+      - NL_油管+TG+8度科技 106
+      - NL_油管+TG+8度科技 107
+      - CN_油管+TG+8度科技 14
+      - NL_油管+TG+8度科技 108
+      - CN_油管+TG+8度科技 15
+      - NL_油管+TG+8度科技 109
+      - NL_油管+TG+8度科技 110
+      - NL_油管+TG+8度科技 111
+      - NL_油管+TG+8度科技 112
+      - CN_油管+TG+8度科技 16
+      - CN_油管+TG+8度科技 17
+      - NL_油管+TG+8度科技 113
+      - NL_油管+TG+8度科技 114
+      - CN_油管+TG+8度科技 18
+      - NL_油管+TG+8度科技 115
+      - NL_油管+TG+8度科技 116
+      - NL_油管+TG+8度科技 117
+      - NL_油管+TG+8度科技 118
+      - CN_油管+TG+8度科技 19
+      - NL_油管+TG+8度科技 119
+      - NL_油管+TG+8度科技 120
+      - NL_油管+TG+8度科技 121
+      - NL_油管+TG+8度科技 122
+      - NL_油管+TG+8度科技 123
+      - CN_油管+TG+8度科技 20
+      - US_油管 TG 8度科技 5
+      - CN_油管+TG+8度科技 21
+      - NL_油管+TG+8度科技 124
+      - NL_油管+TG+8度科技 125
+      - NL_油管+TG+8度科技 126
+      - NL_油管+TG+8度科技 127
+      - NL_油管+TG+8度科技 128
+      - NL_油管+TG+8度科技 129
+      - NL_油管+TG+8度科技 130
+      - NL_油管+TG+8度科技 131
+      - NL_油管+TG+8度科技 132
+      - NL_油管+TG+8度科技 133
+      - NL_油管+TG+8度科技 134
+      - NL_油管+TG+8度科技 135
+      - NL_油管+TG+8度科技 136
+      - NL_油管+TG+8度科技 137
+      - NL_油管+TG+8度科技 138
+      - NL_油管+TG+8度科技 139
+      - NL_油管+TG+8度科技 140
+      - NL_油管+TG+8度科技 141
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -892,108 +1820,224 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - SG_油管 TG 8度科技
+      - HK_油管 TG 8度科技
+      - CN_油管 TG 8度科技
+      - CN_油管 TG 8度科技 2
+      - CN_油管 TG 8度科技 3
+      - CN_油管 TG 8度科技 4
+      - CN_油管 TG 8度科技 5
+      - CN_油管 TG 8度科技 6
+      - CN_油管 TG 8度科技 7
+      - CN_油管 TG 8度科技 8
+      - CN_油管 TG 8度科技 9
+      - CN_油管 TG 8度科技 10
+      - CN_油管 TG 8度科技 11
+      - CN_油管 TG 8度科技 12
+      - CN_油管 TG 8度科技 13
+      - CN_油管 TG 8度科技 14
+      - CN_油管 TG 8度科技 15
+      - CN_油管 TG 8度科技 16
+      - CN_油管 TG 8度科技 17
+      - CN_油管 TG 8度科技 18
+      - CN_油管+TG+8度科技
+      - CN_油管 TG 8度科技 19
+      - CN_油管 TG 8度科技 20
+      - CN_油管+TG+8度科技 2
+      - CN_油管 TG 8度科技 21
+      - CN_油管 TG 8度科技 22
+      - CN_油管 TG 8度科技 23
+      - US_油管 TG 8度科技
+      - CN_油管 TG 8度科技 24
+      - TW_油管 TG 8度科技
+      - HK_油管 TG 8度科技 2
+      - JP_油管 TG 8度科技
+      - KR_油管 TG 8度科技
+      - CN_油管 TG 8度科技 25
+      - CN_油管 TG 8度科技 26
+      - CN_油管+TG+8度科技 3
+      - CN_油管 TG 8度科技 27
       - 油管 TG 8度科技
+      - CN_油管+TG+8度科技 4
+      - CN_油管 TG 8度科技 28
+      - CN_油管 TG 8度科技 29
+      - CN_油管 TG 8度科技 30
+      - CN_油管+TG+8度科技 5
+      - US_油管 TG 8度科技 2
+      - NL_油管+TG+8度科技
+      - HK_油管 TG 8度科技 3
+      - SG_油管 TG 8度科技 2
+      - HK_油管 TG 8度科技 4
+      - SG_油管 TG 8度科技 3
+      - NL_油管+TG+8度科技 2
+      - NL_油管+TG+8度科技 3
+      - NL_油管+TG+8度科技 4
+      - NL_油管+TG+8度科技 5
+      - CN_油管 TG 8度科技 31
+      - NL_油管+TG+8度科技 6
+      - NL_油管+TG+8度科技 7
+      - CN_油管 TG 8度科技 32
+      - NL_油管+TG+8度科技 8
+      - NL_油管+TG+8度科技 9
+      - NL_油管+TG+8度科技 10
+      - NL_油管+TG+8度科技 11
+      - NL_油管+TG+8度科技 12
+      - NL_油管+TG+8度科技 13
+      - CN_油管 TG 8度科技 33
+      - NL_油管+TG+8度科技 14
+      - NL_油管+TG+8度科技 15
+      - NL_油管+TG+8度科技 16
+      - NL_油管+TG+8度科技 17
+      - NL_油管+TG+8度科技 18
+      - NL_油管+TG+8度科技 19
+      - NL_油管+TG+8度科技 20
+      - CN_油管 TG 8度科技 34
+      - NL_油管+TG+8度科技 21
+      - NL_油管+TG+8度科技 22
+      - NL_油管+TG+8度科技 23
+      - NL_油管+TG+8度科技 24
+      - CN_油管+TG+8度科技 6
+      - NL_油管+TG+8度科技 25
+      - NL_油管+TG+8度科技 26
+      - NL_油管+TG+8度科技 27
+      - NL_油管+TG+8度科技 28
+      - NL_油管+TG+8度科技 29
+      - NL_油管+TG+8度科技 30
+      - NL_油管+TG+8度科技 31
+      - NL_油管+TG+8度科技 32
+      - NL_油管+TG+8度科技 33
+      - NL_油管+TG+8度科技 34
+      - US_油管 TG 8度科技 3
+      - NL_油管+TG+8度科技 35
+      - NL_油管+TG+8度科技 36
+      - NL_油管+TG+8度科技 37
+      - NL_油管+TG+8度科技 38
+      - NL_油管+TG+8度科技 39
+      - NL_油管+TG+8度科技 40
+      - NL_油管+TG+8度科技 41
+      - NL_油管+TG+8度科技 42
+      - NL_油管+TG+8度科技 43
+      - NL_油管+TG+8度科技 44
+      - NL_油管+TG+8度科技 45
+      - NL_油管+TG+8度科技 46
+      - KR_油管 TG 8度科技 2
+      - NL_油管+TG+8度科技 47
+      - NL_油管+TG+8度科技 48
+      - NL_油管+TG+8度科技 49
+      - NL_油管+TG+8度科技 50
+      - NL_油管+TG+8度科技 51
+      - NL_油管+TG+8度科技 52
+      - NL_油管+TG+8度科技 53
+      - NL_油管+TG+8度科技 54
+      - US_油管 TG 8度科技 4
+      - NL_油管+TG+8度科技 55
+      - NL_油管+TG+8度科技 56
+      - NL_油管+TG+8度科技 57
+      - NL_油管+TG+8度科技 58
+      - NL_油管+TG+8度科技 59
+      - NL_油管+TG+8度科技 60
+      - NL_油管+TG+8度科技 61
+      - CN_油管 TG 8度科技 35
+      - NL_油管+TG+8度科技 62
+      - NL_油管+TG+8度科技 63
+      - NL_油管+TG+8度科技 64
+      - NL_油管+TG+8度科技 65
+      - NL_油管+TG+8度科技 66
+      - NL_油管+TG+8度科技 67
+      - NL_油管+TG+8度科技 68
+      - NL_油管+TG+8度科技 69
+      - NL_油管+TG+8度科技 70
+      - CN_油管+TG+8度科技 7
+      - CN_油管 TG 8度科技 36
+      - NL_油管+TG+8度科技 71
+      - NL_油管+TG+8度科技 72
+      - NL_油管+TG+8度科技 73
       - 油管 TG 8度科技 2
-      - 油管 TG 8度科技 3
-      - 油管 TG 8度科技 4
-      - SG_9050 @WangCai_1
-      - 油管 TG 8度科技 5
-      - SG_9020 @WangCai_1
-      - SG_9019 @WangCai_1
-      - SG_9060 @WangCai_1
-      - SG_9033 @WangCai_1
-      - SG_9038 @WangCai_1
-      - SG_9084 @WangCai_1
-      - SG_9007 @WangCai_1
-      - SG_9026 @WangCai_1
-      - SG_9064 @WangCai_1
-      - SG_9024 @WangCai_1
-      - SG_9031 @WangCai_1
-      - SG_9033 @WangCai_1 2
-      - SG_9040 @WangCai_1
-      - SG_9037 @WangCai_1
-      - SG_9014 @WangCai_1
-      - SG_9079 @WangCai_1
-      - 油管 TG 8度科技 6
-      - SG_9015 @WangCai_1
-      - SG_9011 @WangCai_1
-      - SG_9088 @WangCai_1
-      - SG_9053 @WangCai_1
-      - SG_9025 @WangCai_1
-      - SG_9088 @WangCai_1 2
-      - SG_9064 @WangCai_1 2
-      - SG_9000 @WangCai_1
-      - SG_9025 @WangCai_1 2
-      - SG_9040 @WangCai_1 2
-      - SG_9024 @WangCai_1 2
-      - SG_9000 @WangCai_1 2
-      - SG_9020 @WangCai_1 2
-      - SG_9015 @WangCai_1 2
-      - SG_9060 @WangCai_1 2
-      - SG_9073 @WangCai_1
-      - SG_9056 @WangCai_1
-      - SG_9007 @WangCai_1 2
-      - SG_9093 @WangCai_1
-      - SG_9098 @WangCai_1
-      - SG_9014 @WangCai_1 2
-      - SG_9003 @WangCai_1
-      - SG_9033 @WangCai_1 3
-      - SG_9046 @WangCai_1
-      - SG_9037 @WangCai_1 2
-      - SG_9045 @WangCai_1
-      - SG_9064 @WangCai_1 3
-      - SG_9042 @WangCai_1
-      - SG_9084 @WangCai_1 2
-      - SG_9032 @WangCai_1
-      - SG_9084 @WangCai_1 3
-      - SG_9073 @WangCai_1 2
-      - SG_9014 @WangCai_1 3
-      - SG_9079 @WangCai_1 2
-      - SG_9003 @WangCai_1 2
-      - SG_9094 @WangCai_1
-      - SG_9094 @WangCai_1 2
-      - SG_9059 @WangCai_1
-      - SG_9003 @WangCai_1 3
-      - SG_9042 @WangCai_1 2
-      - SG_9038 @WangCai_1 2
-      - SG_9093 @WangCai_1 2
-      - SG_9056 @WangCai_1 2
-      - KR_10064+@WangCai_1
-      - SG_9043 @WangCai_1
-      - SG_9041 @WangCai_1
-      - SG_9040 @WangCai_1 3
-      - SG_9053 @WangCai_1 2
-      - SG_9018 @WangCai_1
-      - SG_9005 @WangCai_1
-      - SG_9019 @WangCai_1 2
-      - SG_9011 @WangCai_1 2
-      - SG_9007 @WangCai_1 3
-      - SG_9057 @WangCai_1
-      - SG_9097 @WangCai_1
-      - SG_9026 @WangCai_1 2
-      - SG_9073 @WangCai_1 3
-      - SG_9043 @WangCai_1 2
-      - SG_9050 @WangCai_1 2
-      - SG_9094 @WangCai_1 3
-      - SG_9088 @WangCai_1 3
-      - SG_9053 @WangCai_1 3
-      - SG_9019 @WangCai_1 3
-      - SG_9006 @WangCai_1
-      - SG_9041 @WangCai_1 2
-      - SG_9079 @WangCai_1 3
-      - SG_9043 @WangCai_1 3
-      - SG_9027 @WangCai_1
-      - SG_9006 @WangCai_1 2
-      - SG_9008 @WangCai_1
-      - SG_9011 @WangCai_1 3
-      - SG_9001 @WangCai_1
-      - SG_9056 @WangCai_1 3
-      - SG_9042 @WangCai_1 3
-      - SG_9000 @WangCai_1 3
-      - SG_9008 @WangCai_1 2
-      - SG_9057 @WangCai_1 2
-      - SG_9070 @WangCai_1
-      - SG_9045 @WangCai_1 2
+      - NL_油管+TG+8度科技 74
+      - NL_油管+TG+8度科技 75
+      - NL_油管+TG+8度科技 76
+      - NL_油管+TG+8度科技 77
+      - NL_油管+TG+8度科技 78
+      - NL_油管+TG+8度科技 79
+      - CN_油管 TG 8度科技 37
+      - CN_油管 TG 8度科技 38
+      - NL_油管+TG+8度科技 80
+      - NL_油管+TG+8度科技 81
+      - NL_油管+TG+8度科技 82
+      - NL_油管+TG+8度科技 83
+      - NL_油管+TG+8度科技 84
+      - NL_油管+TG+8度科技 85
+      - NL_油管+TG+8度科技 86
+      - NL_油管+TG+8度科技 87
+      - NL_油管+TG+8度科技 88
+      - NL_油管+TG+8度科技 89
+      - NL_油管+TG+8度科技 90
+      - NL_油管+TG+8度科技 91
+      - NL_油管+TG+8度科技 92
+      - NL_油管+TG+8度科技 93
+      - NL_油管+TG+8度科技 94
+      - NL_油管+TG+8度科技 95
+      - CN_油管+TG+8度科技 8
+      - NL_油管+TG+8度科技 96
+      - NL_油管+TG+8度科技 97
+      - NL_油管+TG+8度科技 98
+      - NL_油管+TG+8度科技 99
+      - NL_油管+TG+8度科技 100
+      - CN_油管+TG+8度科技 9
+      - CN_油管+TG+8度科技 10
+      - NL_油管+TG+8度科技 101
+      - NL_油管+TG+8度科技 102
+      - CN_油管+TG+8度科技 11
+      - CN_油管+TG+8度科技 12
+      - CN_油管+TG+8度科技 13
+      - NL_油管+TG+8度科技 103
+      - NL_油管+TG+8度科技 104
+      - NL_油管+TG+8度科技 105
+      - NL_油管+TG+8度科技 106
+      - NL_油管+TG+8度科技 107
+      - CN_油管+TG+8度科技 14
+      - NL_油管+TG+8度科技 108
+      - CN_油管+TG+8度科技 15
+      - NL_油管+TG+8度科技 109
+      - NL_油管+TG+8度科技 110
+      - NL_油管+TG+8度科技 111
+      - NL_油管+TG+8度科技 112
+      - CN_油管+TG+8度科技 16
+      - CN_油管+TG+8度科技 17
+      - NL_油管+TG+8度科技 113
+      - NL_油管+TG+8度科技 114
+      - CN_油管+TG+8度科技 18
+      - NL_油管+TG+8度科技 115
+      - NL_油管+TG+8度科技 116
+      - NL_油管+TG+8度科技 117
+      - NL_油管+TG+8度科技 118
+      - CN_油管+TG+8度科技 19
+      - NL_油管+TG+8度科技 119
+      - NL_油管+TG+8度科技 120
+      - NL_油管+TG+8度科技 121
+      - NL_油管+TG+8度科技 122
+      - NL_油管+TG+8度科技 123
+      - CN_油管+TG+8度科技 20
+      - US_油管 TG 8度科技 5
+      - CN_油管+TG+8度科技 21
+      - NL_油管+TG+8度科技 124
+      - NL_油管+TG+8度科技 125
+      - NL_油管+TG+8度科技 126
+      - NL_油管+TG+8度科技 127
+      - NL_油管+TG+8度科技 128
+      - NL_油管+TG+8度科技 129
+      - NL_油管+TG+8度科技 130
+      - NL_油管+TG+8度科技 131
+      - NL_油管+TG+8度科技 132
+      - NL_油管+TG+8度科技 133
+      - NL_油管+TG+8度科技 134
+      - NL_油管+TG+8度科技 135
+      - NL_油管+TG+8度科技 136
+      - NL_油管+TG+8度科技 137
+      - NL_油管+TG+8度科技 138
+      - NL_油管+TG+8度科技 139
+      - NL_油管+TG+8度科技 140
+      - NL_油管+TG+8度科技 141
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
