@@ -5,279 +5,1219 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: HK_油管 TG 8度科技, server: hk20.holiganfan.com, port: 10088, type: trojan, password: 4e9dac0d-ae86-45e8-af61-668ce5825d61, sni: hk20.holiganfan.com, skip-cert-verify: true, udp: true}
-  - {name: US_1212 |31.31Mb, server: kr2.qingyun123.xyz, port: 10050, type: trojan, password: f8a85c2f-3ba2-4645-a894-dd5d4c1ff308, sni: kr2.qingyun123.xyz, skip-cert-verify: true, udp: true}
-  - {name: 「加入会员解锁流媒体」x5, server: v2.emovpn.xyz, port: 1251, type: vmess, uuid: 060e5bcc-eb40-4ac2-a6d1-749b526bea2d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: pull.free.video.10010.com}, udp: true}
-  - {name: 美国-BGP-N, server: ultimate-stack.atomwan.link, port: 11005, type: ss, cipher: chacha20-ietf-poly1305, password: 9680e06a-fd10-4381-b796-8f305e09b08f, udp: true}
-  - {name: 「🇸🇬」EMO+|+龙鳞果+x5+2, server: cs.bgp.01.211129.xyz, port: 59952, type: ss, cipher: chacha20-ietf-poly1305, password: 6a3f3374-485c-4a5d-a58c-fdc0bc85b377, udp: true}
-  - {name: 「加入会员解锁流媒体」x5 4, server: v2.emovpn.xyz, port: 1251, type: vmess, uuid: 2424c529-ef96-499c-923e-ae1e5d6d9984, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: pull.free.video.10010.com}, udp: true}
-  - {name: 「🇸🇬」EMO+|+龙鳞果+x5+3, server: cs.bgp.01.211129.xyz, port: 59952, type: ss, cipher: chacha20-ietf-poly1305, password: 6bdd9b72-3d2d-4421-9690-445d608dc5d7, udp: true}
-  - {name: 俄罗斯-BGP, server: ultimate-stack.atomwan.link, port: 11017, type: ss, cipher: chacha20-ietf-poly1305, password: 9680e06a-fd10-4381-b796-8f305e09b08f, udp: true}
-  - {name: KR_油管 TG 8度科技, server: 146.56.41.3, port: 8888, type: vmess, uuid: c23c242f-3705-4bfa-be9e-887bb43ce501, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 「🇸🇬」EMO+|+龙鳞果+x5+5, server: cs.bgp.01.211129.xyz, port: 59952, type: ss, cipher: chacha20-ietf-poly1305, password: 9e0a0f63-58b2-423b-9561-cd9cc035386c, udp: true}
-  - {name: _609 | 2.60Mb, server: 34.96.129.107, port: 11451, type: vmess, uuid: d3c6e1b7-7d09-4cd6-9ab6-3a8b448b6f50, alterId: 4, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国-BGP-K, server: ultimate-stack.atomwan.link, port: 11000, type: ss, cipher: chacha20-ietf-poly1305, password: 9680e06a-fd10-4381-b796-8f305e09b08f, udp: true}
-  - {name: US_油管 TG 8度科技, server: linodemx0303.moonfree.top, port: 443, type: vmess, uuid: aa5dd703-195d-4682-8c35-ea0083ea1a74, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: linodemx0303.moonfree.top}, udp: true}
-  - {name: CN_1015 |16.84Mb, server: gzydv2.baidupi.xyz, port: 27740, type: vmess, uuid: 86c4f0a9-4a19-3156-b012-6631ec8296ea, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /videos, ws-headers: {Host: sga4.baidupi.best}, udp: true}
-  - {name: US_油管 TG 8度科技 2, server: 104.243.17.101, port: 10516, type: vmess, uuid: e95decf7-0649-4246-a9b2-41080dd45f9d, alterId: 63, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 油管 TG 8度科技, server: 104.16.162.16, port: 2053, type: vmess, uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /eisasqa, ws-headers: {Host: foxus.fovi.tk}, udp: true}
-  - {name: 「加入会员解锁流媒体」x5 2, server: v2.emovpn.xyz, port: 1251, type: vmess, uuid: 6a3f3374-485c-4a5d-a58c-fdc0bc85b377, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: pull.free.video.10010.com}, udp: true}
-  - {name: BG_746+|+4.01Mb, server: 213.183.63.221, port: 9053, type: ss, cipher: aes-256-cfb, password: SBM7R883jBmnqe6C, udp: true}
-  - {name: _18+|+8.06Mb, server: 213.183.59.185, port: 9001, type: ss, cipher: aes-256-cfb, password: UkXRsXvR6buDMG2Y, udp: true}
-  - {name: NL_油管+TG+8度科技, server: 213.183.59.218, port: 9032, type: ss, cipher: aes-256-cfb, password: UWZQeLRWnkqgkseq, udp: true}
-  - {name: _526+|+0.16Mb, server: 213.183.59.231, port: 9043, type: ss, cipher: aes-256-cfb, password: HSZuyJQcWe8dxNdF, udp: true}
-  - {name: BG_740+|+8.06Mb, server: 213.183.63.221, port: 9079, type: ss, cipher: aes-256-cfb, password: TPqX8edgbAURcAMb, udp: true}
-  - {name: BG_726+|+6.87Mb, server: 213.183.63.221, port: 9093, type: ss, cipher: aes-256-cfb, password: wfLC2y7rzZyCmuyt, udp: true}
-  - {name: BG_729+|+6.35Mb, server: 213.183.63.221, port: 9060, type: ss, cipher: aes-256-cfb, password: ueLXVkvh4hckhErQ, udp: true}
-  - {name: _12+|+6.97Mb, server: 213.183.59.185, port: 9088, type: ss, cipher: aes-256-cfb, password: f8npKgNzdkss2ytn, udp: true}
-  - {name: 「加入会员解锁流媒体」x5 3, server: v2.emovpn.xyz, port: 1251, type: vmess, uuid: 6bdd9b72-3d2d-4421-9690-445d608dc5d7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: pull.free.video.10010.com}, udp: true}
-  - {name: 香港_TGatnodesharing_1_664, server: 13.70.61.248, port: 21568, type: vmess, uuid: 4e70526f-3e97-49c2-8576-e08b730e0c03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _10, server: 213.183.59.209, port: 9040, type: ss, cipher: aes-256-cfb, password: p9z5BVADH2YFs3MN, udp: true}
-  - {name: 油管 TG 8度科技 2, server: 104.19.3.31, port: 443, type: vmess, uuid: 9e6ceeff-2546-3690-ac00-6fcdf31dec94, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /chaugg, ws-headers: {Host: v2fly.samrt.website}, udp: true}
-  - {name: BG_734+|+2.85Mb, server: 213.183.63.221, port: 9003, type: ss, cipher: aes-256-cfb, password: JdmRK9gMEqFgs8nP, udp: true}
-  - {name: BG_759+|+6.79Mb, server: 213.183.63.221, port: 9025, type: ss, cipher: aes-256-cfb, password: XPtzA9sCug3SPR4c, udp: true}
-  - {name: _574+|+4.70Mb, server: 213.183.59.185, port: 9006, type: ss, cipher: aes-256-cfb, password: FAdUvMJUq5vDgKEq, udp: true}
-  - {name: _559, server: 213.183.59.218, port: 9019, type: ss, cipher: aes-256-cfb, password: GA9KzeEgvfxNrgmM, udp: true}
-  - {name: NL_油管+TG+8度科技 2, server: 213.183.59.209, port: 9088, type: ss, cipher: aes-256-cfb, password: f8npKgNzdkss2ytn, udp: true}
-  - {name: 「加入会员解锁流媒体」x5 5, server: v2.emovpn.xyz, port: 1251, type: vmess, uuid: 9e0a0f63-58b2-423b-9561-cd9cc035386c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: pull.free.video.10010.com}, udp: true}
-  - {name: BG_724+|+5.69Mb, server: 213.183.63.221, port: 9001, type: ss, cipher: aes-256-cfb, password: UkXRsXvR6buDMG2Y, udp: true}
-  - {name: _536+|+1.99Mb, server: 213.183.59.185, port: 9019, type: ss, cipher: aes-256-cfb, password: GA9KzeEgvfxNrgmM, udp: true}
-  - {name: BG_722+|+3.71Mb, server: 213.183.63.221, port: 9011, type: ss, cipher: aes-256-cfb, password: M3t2ZEQcMGRWBjRa, udp: true}
-  - {name: CN_854+|+8.96Mb, server: 14.29.124.168, port: 25235, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: _474+|+7.55Mb, server: 14.29.124.168, port: 25286, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_843+|27.95Mb, server: 14.29.124.168, port: 25218, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_858+|+7.66Mb, server: 14.29.124.168, port: 25266, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: _36+|+9.36Mb, server: 14.29.124.168, port: 25296, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_853+|10.61Mb, server: 14.29.124.168, port: 25295, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_855+|+7.34Mb, server: 14.29.124.168, port: 25279, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_862+|+3.40Mb, server: 180.163.62.91, port: 22209, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_860+|66.31Mb, server: 14.29.124.168, port: 31054, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: _15+|10.15Mb, server: 14.29.124.168, port: 25220, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: _34+|+2.83Mb, server: 213.183.59.218, port: 9038, type: ss, cipher: aes-256-cfb, password: gYCYXfkUQEs2TaJQ, udp: true}
-  - {name: CN_850+|16.30Mb, server: 14.29.124.168, port: 25231, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: _21+|34.42Mb, server: 14.29.124.168, port: 25268, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: _30+|+8.05Mb, server: 14.29.124.168, port: 25219, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: _25+|11.23Mb, server: 14.29.124.168, port: 25252, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_油管 TG 8度科技, server: 43.154.87.207, port: 24821, type: vmess, uuid: 357000f2-e4a9-4d35-8248-58ab72b7a0eb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _24+|12.36Mb, server: 14.29.124.168, port: 25233, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: _32+|15.31Mb, server: 14.29.124.168, port: 25267, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: _610 | 0.34Mb, server: 146.56.41.3, port: 8888, type: vmess, uuid: c23c242f-3705-4bfa-be9e-887bb43ce501, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: NL_油管+TG+8度科技 3, server: 213.183.59.231, port: 9093, type: ss, cipher: aes-256-cfb, password: wfLC2y7rzZyCmuyt, udp: true}
-  - {name: BG_762+|11.17Mb, server: 213.183.63.221, port: 9046, type: ss, cipher: aes-256-cfb, password: NvS8N4Vf8qAGPSCL, udp: true}
-  - {name: NL_油管+TG+8度科技 4, server: 213.183.59.231, port: 9027, type: ss, cipher: aes-256-cfb, password: EXN3S3eQpjE7EJu8, udp: true}
-  - {name: 美国_TGatnodesharing_26_649 |12.20Mb, server: 104.243.17.101, port: 10516, type: vmess, uuid: e95decf7-0649-4246-a9b2-41080dd45f9d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _548+|+5.55Mb, server: 213.183.59.231, port: 9018, type: ss, cipher: aes-256-cfb, password: fG2artUmHfNT2cX7, udp: true}
-  - {name: _35+|12.39Mb, server: 14.29.124.168, port: 25217, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: 「🇸🇬」EMO+|+金灵子+x5, server: n25.emovpn.xyz, port: 1258, type: ss, cipher: chacha20-ietf-poly1305, password: 060e5bcc-eb40-4ac2-a6d1-749b526bea2d, udp: true}
+  - {name: 新加坡02, server: 00178641680d4f73a85ff60e4cd27628sa.jkcloud.xyz, port: 6700, type: ss, cipher: chacha20-ietf-poly1305, password: b178b802-057a-463a-9782-d2de0a708787, udp: true}
+  - {name: 购买QQ352530340_2, server: 7f98cedf-c70b-48e4-b7ec-4c2394ced310.404sx.com, port: 21001, type: ss, cipher: chacha20-ietf-poly1305, password: b3b56f48-a48a-46b6-b462-54ca0b626f21, udp: true}
+  - {name: SGP+CM_A/04+x0_3, server: 8388adc0-1548-43b5-9a4e-c1fbccb4dd61.404sx.com, port: 61004, type: ss, cipher: chacha20-ietf-poly1305, password: b3b56f48-a48a-46b6-b462-54ca0b626f21, udp: true}
+  - {name: HKG+CM_B/04+x0_3, server: 7f98cedf-c70b-48e4-b7ec-4c2394ced310.404sx.com, port: 21004, type: ss, cipher: chacha20-ietf-poly1305, password: b3b56f48-a48a-46b6-b462-54ca0b626f21, udp: true}
+  - {name: SGP+CM_B/02+x0_3, server: 7f98cedf-c70b-48e4-b7ec-4c2394ced310.404sx.com, port: 61002, type: ss, cipher: chacha20-ietf-poly1305, password: b3b56f48-a48a-46b6-b462-54ca0b626f21, udp: true}
+  - {name: JPN+CM_A/01+x0_3, server: 8388adc0-1548-43b5-9a4e-c1fbccb4dd61.404sx.com, port: 11001, type: ss, cipher: chacha20-ietf-poly1305, password: b3b56f48-a48a-46b6-b462-54ca0b626f21, udp: true}
+  - {name: JPN+CM_A/04+x0_3, server: 8388adc0-1548-43b5-9a4e-c1fbccb4dd61.404sx.com, port: 11004, type: ss, cipher: chacha20-ietf-poly1305, password: b3b56f48-a48a-46b6-b462-54ca0b626f21, udp: true}
+  - {name: 公众号：光头院长_1, server: 8388adc0-1548-43b5-9a4e-c1fbccb4dd61.404sx.com, port: 21001, type: ss, cipher: chacha20-ietf-poly1305, password: b3b56f48-a48a-46b6-b462-54ca0b626f21, udp: true}
+  - {name: JPN+CN2/03+x0_3, server: f074f635-439e-4eb5-8d62-b3369bd7264d.404sx.com, port: 11003, type: ss, cipher: chacha20-ietf-poly1305, password: b3b56f48-a48a-46b6-b462-54ca0b626f21, udp: true}
+  - {name: 卢森堡, server: 00178641680d4f73a85ff60e4cd27628sa.jkcloud.xyz, port: 6398, type: ss, cipher: chacha20-ietf-poly1305, password: b178b802-057a-463a-9782-d2de0a708787, udp: true}
+  - {name: HKG+CN2/08+x0_3, server: f074f635-439e-4eb5-8d62-b3369bd7264d.404sx.com, port: 21008, type: ss, cipher: chacha20-ietf-poly1305, password: b3b56f48-a48a-46b6-b462-54ca0b626f21, udp: true}
+  - {name: HKG+CM_A/10+x0_3, server: 8388adc0-1548-43b5-9a4e-c1fbccb4dd61.404sx.com, port: 21010, type: ss, cipher: chacha20-ietf-poly1305, password: b3b56f48-a48a-46b6-b462-54ca0b626f21, udp: true}
+  - {name: 美国04, server: 56c918c15a09403d93c037772a69dwd.jkcloud.xyz, port: 6270, type: ss, cipher: chacha20-ietf-poly1305, password: b178b802-057a-463a-9782-d2de0a708787, udp: true}
+  - {name: SGP+CM_A/01+x0_3, server: 8388adc0-1548-43b5-9a4e-c1fbccb4dd61.404sx.com, port: 61001, type: ss, cipher: chacha20-ietf-poly1305, password: b3b56f48-a48a-46b6-b462-54ca0b626f21, udp: true}
+  - {name: JPN+CM_A/02+x0_3, server: 8388adc0-1548-43b5-9a4e-c1fbccb4dd61.404sx.com, port: 11002, type: ss, cipher: chacha20-ietf-poly1305, password: b3b56f48-a48a-46b6-b462-54ca0b626f21, udp: true}
+  - {name: HKG+CM_A/07+x0_3, server: 8388adc0-1548-43b5-9a4e-c1fbccb4dd61.404sx.com, port: 21007, type: ss, cipher: chacha20-ietf-poly1305, password: b3b56f48-a48a-46b6-b462-54ca0b626f21, udp: true}
+  - {name: HKG+CM_A/03+x0_3, server: 8388adc0-1548-43b5-9a4e-c1fbccb4dd61.404sx.com, port: 21003, type: ss, cipher: chacha20-ietf-poly1305, password: b3b56f48-a48a-46b6-b462-54ca0b626f21, udp: true}
+  - {name: JPN+CM_B/05+x0_3, server: 7f98cedf-c70b-48e4-b7ec-4c2394ced310.404sx.com, port: 11005, type: ss, cipher: chacha20-ietf-poly1305, password: b3b56f48-a48a-46b6-b462-54ca0b626f21, udp: true}
+  - {name: 韩国02, server: 56c918c15a09403d93c037772a69dwd.jkcloud.xyz, port: 6599, type: ss, cipher: chacha20-ietf-poly1305, password: b178b802-057a-463a-9782-d2de0a708787, udp: true}
+  - {name: JPN+CM_A/05+x0_3, server: 8388adc0-1548-43b5-9a4e-c1fbccb4dd61.404sx.com, port: 11005, type: ss, cipher: chacha20-ietf-poly1305, password: b3b56f48-a48a-46b6-b462-54ca0b626f21, udp: true}
+  - {name: JPN+CM_B/01+x0_3, server: 7f98cedf-c70b-48e4-b7ec-4c2394ced310.404sx.com, port: 11001, type: ss, cipher: chacha20-ietf-poly1305, password: b3b56f48-a48a-46b6-b462-54ca0b626f21, udp: true}
+  - {name: 美国06, server: 00178641680d4f73a85ff60e4cd27628sa.jkcloud.xyz, port: 6385, type: ss, cipher: chacha20-ietf-poly1305, password: b178b802-057a-463a-9782-d2de0a708787, udp: true}
+  - {name: JPN+CN2/04+x0_3, server: f074f635-439e-4eb5-8d62-b3369bd7264d.404sx.com, port: 11004, type: ss, cipher: chacha20-ietf-poly1305, password: b3b56f48-a48a-46b6-b462-54ca0b626f21, udp: true}
+  - {name: HKG+CM_B/08+x0_3, server: 7f98cedf-c70b-48e4-b7ec-4c2394ced310.404sx.com, port: 21008, type: ss, cipher: chacha20-ietf-poly1305, password: b3b56f48-a48a-46b6-b462-54ca0b626f21, udp: true}
+  - {name: 美国07, server: 56c918c15a09403d93c037772a69dwd.jkcloud.xyz, port: 6385, type: ss, cipher: chacha20-ietf-poly1305, password: b178b802-057a-463a-9782-d2de0a708787, udp: true}
+  - {name: JPN+CM_B/04+x0_3, server: 7f98cedf-c70b-48e4-b7ec-4c2394ced310.404sx.com, port: 11004, type: ss, cipher: chacha20-ietf-poly1305, password: b3b56f48-a48a-46b6-b462-54ca0b626f21, udp: true}
+  - {name: JPN+CN2/02+x0_3, server: f074f635-439e-4eb5-8d62-b3369bd7264d.404sx.com, port: 11002, type: ss, cipher: chacha20-ietf-poly1305, password: b3b56f48-a48a-46b6-b462-54ca0b626f21, udp: true}
+  - {name: JPN+CM_B/02+x0_3, server: 7f98cedf-c70b-48e4-b7ec-4c2394ced310.404sx.com, port: 11002, type: ss, cipher: chacha20-ietf-poly1305, password: b3b56f48-a48a-46b6-b462-54ca0b626f21, udp: true}
+  - {name: SGP+CM_A/05+x0_3, server: 8388adc0-1548-43b5-9a4e-c1fbccb4dd61.404sx.com, port: 61005, type: ss, cipher: chacha20-ietf-poly1305, password: b3b56f48-a48a-46b6-b462-54ca0b626f21, udp: true}
+  - {name: HKG+CM_A/05+x0_3, server: 8388adc0-1548-43b5-9a4e-c1fbccb4dd61.404sx.com, port: 21005, type: ss, cipher: chacha20-ietf-poly1305, password: b3b56f48-a48a-46b6-b462-54ca0b626f21, udp: true}
+  - {name: HKG+CM_B/03+x0_3, server: 7f98cedf-c70b-48e4-b7ec-4c2394ced310.404sx.com, port: 21003, type: ss, cipher: chacha20-ietf-poly1305, password: b3b56f48-a48a-46b6-b462-54ca0b626f21, udp: true}
+  - {name: HKG+CM_A/06+x0_3, server: 8388adc0-1548-43b5-9a4e-c1fbccb4dd61.404sx.com, port: 21006, type: ss, cipher: chacha20-ietf-poly1305, password: b3b56f48-a48a-46b6-b462-54ca0b626f21, udp: true}
+  - {name: JPN+CM_A/03+x0_3, server: 8388adc0-1548-43b5-9a4e-c1fbccb4dd61.404sx.com, port: 11003, type: ss, cipher: chacha20-ietf-poly1305, password: b3b56f48-a48a-46b6-b462-54ca0b626f21, udp: true}
+  - {name: 美国08, server: 00178641680d4f73a85ff60e4cd27628sa.jkcloud.xyz, port: 6394, type: ss, cipher: chacha20-ietf-poly1305, password: b178b802-057a-463a-9782-d2de0a708787, udp: true}
+  - {name: HKG+CM_A/04+x0_3, server: 8388adc0-1548-43b5-9a4e-c1fbccb4dd61.404sx.com, port: 21004, type: ss, cipher: chacha20-ietf-poly1305, password: b3b56f48-a48a-46b6-b462-54ca0b626f21, udp: true}
+  - {name: JPN+CM_B/03+x0_3, server: 7f98cedf-c70b-48e4-b7ec-4c2394ced310.404sx.com, port: 11003, type: ss, cipher: chacha20-ietf-poly1305, password: b3b56f48-a48a-46b6-b462-54ca0b626f21, udp: true}
+  - {name: HKG CN2/06 x0_3, server: f074f635-439e-4eb5-8d62-b3369bd7264d.404sx.com, port: 21006, type: ss, cipher: chacha20-ietf-poly1305, password: b3b56f48-a48a-46b6-b462-54ca0b626f21, udp: true}
+  - {name: 韩国04, server: 00178641680d4f73a85ff60e4cd27628sa.jkcloud.xyz, port: 6592, type: ss, cipher: chacha20-ietf-poly1305, password: b178b802-057a-463a-9782-d2de0a708787, udp: true}
+  - {name: 韩国03, server: 02b8176c05bf44698ab04428526a213e.jkcloud.xyz, port: 6592, type: ss, cipher: chacha20-ietf-poly1305, password: b178b802-057a-463a-9782-d2de0a708787, udp: true}
+  - {name: SGP+CM_A/03+x0_3, server: 8388adc0-1548-43b5-9a4e-c1fbccb4dd61.404sx.com, port: 61003, type: ss, cipher: chacha20-ietf-poly1305, password: b3b56f48-a48a-46b6-b462-54ca0b626f21, udp: true}
+  - {name: AA-V2ray-HK-HGC, server: cdn-cn.nekocloud.cn, port: 19083, type: vmess, uuid: bb4950f2-3762-3479-a909-8fb58a1b1090, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /dahjwuh, ws-headers: {Host: cdn-cn.nekocloud.cn}, udp: true}
+  - {name: AA-V2ray-HK-HKBN.02, server: cdn-cn.nekocloud.cn, port: 19092, type: vmess, uuid: bb4950f2-3762-3479-a909-8fb58a1b1090, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /dahjwuh, ws-headers: {Host: cdn-cn.nekocloud.cn}, udp: true}
+  - {name: AA-V2ray-TW-HiNet.01, server: cdn-cn.nekocloud.cn, port: 19046, type: vmess, uuid: bb4950f2-3762-3479-a909-8fb58a1b1090, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /catnet, ws-headers: {Host: cdn-cn.nekocloud.cn}, udp: true}
+  - {name: AA-V2ray-HK-HKT.02, server: cdn-cn.nekocloud.cn, port: 19040, type: vmess, uuid: bb4950f2-3762-3479-a909-8fb58a1b1090, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /dahjwuh, ws-headers: {Host: cdn-cn.nekocloud.cn}, udp: true}
+  - {name: AA-V2ray-HK-NTT.01, server: cdn-cn.nekocloud.cn, port: 19084, type: vmess, uuid: bb4950f2-3762-3479-a909-8fb58a1b1090, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /dahjwuh, ws-headers: {Host: cdn-cn.nekocloud.cn}, udp: true}
+  - {name: AA-V2ray-HK-HKT.01, server: cdn-cn.nekocloud.cn, port: 19094, type: vmess, uuid: bb4950f2-3762-3479-a909-8fb58a1b1090, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /dahjwuh, ws-headers: {Host: cdn-cn.nekocloud.cn}, udp: true}
+  - {name: AA-V2ray-JP-NTT.03, server: cdn-cn.nekocloud.cn, port: 19055, type: vmess, uuid: bb4950f2-3762-3479-a909-8fb58a1b1090, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /catnet, ws-headers: {Host: cdn-cn.nekocloud.cn}, udp: true}
+  - {name: AA-V2ray-TW-HiNet.02, server: cdn-cn.nekocloud.cn, port: 19047, type: vmess, uuid: bb4950f2-3762-3479-a909-8fb58a1b1090, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /dahjwuh, ws-headers: {Host: cdn-cn.nekocloud.cn}, udp: true}
+  - {name: AA-V2ray-HK-HKBN, server: cdn-cn.nekocloud.cn, port: 19085, type: vmess, uuid: bb4950f2-3762-3479-a909-8fb58a1b1090, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /dahjwuh, ws-headers: {Host: cdn-cn.nekocloud.cn}, udp: true}
+  - {name: AA-V2ray-JP-NTT.02, server: cdn-cn.nekocloud.cn, port: 10006, type: vmess, uuid: bb4950f2-3762-3479-a909-8fb58a1b1090, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /catnet, ws-headers: {Host: cdn-cn.nekocloud.cn}, udp: true}
+  - {name: AA-V2ray-VN【越南】, server: cdn-cn.nekocloud.cn, port: 10007, type: vmess, uuid: bb4950f2-3762-3479-a909-8fb58a1b1090, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /dahjwuh, ws-headers: {Host: cdn-cn.nekocloud.cn}, udp: true}
+  - {name: AA-V2ray-TW-HiNet.05, server: cdn-cn.nekocloud.cn, port: 19045, type: vmess, uuid: bb4950f2-3762-3479-a909-8fb58a1b1090, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /catnet, ws-headers: {Host: cdn-cn.nekocloud.cn}, udp: true}
+  - {name: AA-V2ray-TW-HiNet.04, server: cdn-cn.nekocloud.cn, port: 19038, type: vmess, uuid: bb4950f2-3762-3479-a909-8fb58a1b1090, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /catnet, ws-headers: {Host: cdn-cn.nekocloud.cn}, udp: true}
+  - {name: AA-V2ray-US-HE.04, server: cdn-cn.nekocloud.cn, port: 19095, type: vmess, uuid: bb4950f2-3762-3479-a909-8fb58a1b1090, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /catnet, ws-headers: {Host: cdn-cn.nekocloud.cn}, udp: true}
+  - {name: AA-V2ray-TW-HiNet.03, server: cdn-cn.nekocloud.cn, port: 19048, type: vmess, uuid: bb4950f2-3762-3479-a909-8fb58a1b1090, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /catnet, ws-headers: {Host: cdn-cn.nekocloud.cn}, udp: true}
+  - {name: AA-V2ray-US-HE.01, server: cdn-cn.nekocloud.cn, port: 10002, type: vmess, uuid: bb4950f2-3762-3479-a909-8fb58a1b1090, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /catnet, ws-headers: {Host: cdn-cn.nekocloud.cn}, udp: true}
+  - {name: AA-V2ray-JP-NTT.01, server: cdn-cn.nekocloud.cn, port: 19050, type: vmess, uuid: bb4950f2-3762-3479-a909-8fb58a1b1090, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /catnet, ws-headers: {Host: cdn-cn.nekocloud.cn}, udp: true}
+  - {name: THE WORLD, server: cloudflare.xrenblog.com, port: 443, type: vmess, uuid: a8910831-f56b-4ac4-c68f-e4dd83f71e60, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /sakura/, ws-headers: {Host: v4.xrenblog.com}, udp: true}
+  - {name: AA-V2ray-US-HE.03, server: cdn-cn.nekocloud.cn, port: 19029, type: vmess, uuid: bb4950f2-3762-3479-a909-8fb58a1b1090, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /catnet, ws-headers: {Host: cdn-cn.nekocloud.cn}, udp: true}
+  - {name: AA-V2ray-US-Philadelphia, server: cdn-cn.nekocloud.cn, port: 19016, type: vmess, uuid: bb4950f2-3762-3479-a909-8fb58a1b1090, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: cdn-cn.nekocloud.cn}, udp: true}
+  - {name: AA-V2ray-RU-Selectel, server: cdn-cn.nekocloud.cn, port: 19080, type: vmess, uuid: bb4950f2-3762-3479-a909-8fb58a1b1090, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /dahjwuh, ws-headers: {Host: cdn-cn.nekocloud.cn}, udp: true}
+  - {name: _HK_香港->🇰🇷_KR_韩国, server: zhuzhu12.com, port: 33893, type: vmess, uuid: 9c31a43c-11f7-34b7-bc1f-dfb08f831599, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /zz, ws-headers: {Host: korea2.zhuzhu12.com}, udp: true}
+  - {name: B-美国_BGP_流媒体_标准1_22, server: zzlt.flyss.link, port: 10021, type: ss, cipher: aes-256-gcm, password: 197bff19-7a22-479d-9025-90ca916e4bc1, udp: true}
+  - {name: A-日本_BGP_流媒体_高级1_10, server: gzyd.flyss.link, port: 10009, type: ss, cipher: aes-256-gcm, password: 197bff19-7a22-479d-9025-90ca916e4bc1, udp: true}
+  - {name: B-香港_HKT_流媒体_标准2_19, server: zzlt.flyss.link, port: 10018, type: ss, cipher: aes-256-gcm, password: 197bff19-7a22-479d-9025-90ca916e4bc1, udp: true}
+  - {name: A-台湾_HINET_流媒体_高级1_8, server: gzyd.flyss.link, port: 10007, type: ss, cipher: aes-256-gcm, password: 197bff19-7a22-479d-9025-90ca916e4bc1, udp: true}
+  - {name: B-美国_Cogent_流媒体_标准1_24, server: zzlt.flyss.link, port: 10023, type: ss, cipher: aes-256-gcm, password: 197bff19-7a22-479d-9025-90ca916e4bc1, udp: true}
+  - {name: A-香港_BGP_流媒体_高级2_5, server: gzyd.flyss.link, port: 10004, type: ss, cipher: aes-256-gcm, password: 197bff19-7a22-479d-9025-90ca916e4bc1, udp: true}
+  - {name: A-美国_BGP_流媒体_高级1_6, server: gzyd.flyss.link, port: 10005, type: ss, cipher: aes-256-gcm, password: 197bff19-7a22-479d-9025-90ca916e4bc1, udp: true}
+  - {name: B-日本_BGP_流媒体_标准2_21, server: zzlt.flyss.link, port: 10020, type: ss, cipher: aes-256-gcm, password: 197bff19-7a22-479d-9025-90ca916e4bc1, udp: true}
+  - {name: B-美国_Cogent_流媒体_标准2_25, server: zzlt.flyss.link, port: 10024, type: ss, cipher: aes-256-gcm, password: 197bff19-7a22-479d-9025-90ca916e4bc1, udp: true}
+  - {name: B-美国_BGP_流媒体_标准2_23, server: zzlt.flyss.link, port: 10022, type: ss, cipher: aes-256-gcm, password: 197bff19-7a22-479d-9025-90ca916e4bc1, udp: true}
+  - {name: B-日本_BGP_流媒体_标准1_20, server: zzlt.flyss.link, port: 10019, type: ss, cipher: aes-256-gcm, password: 197bff19-7a22-479d-9025-90ca916e4bc1, udp: true}
+  - {name: A-香港_BGP_流媒体_高级1_4, server: gzyd.flyss.link, port: 10003, type: ss, cipher: aes-256-gcm, password: 197bff19-7a22-479d-9025-90ca916e4bc1, udp: true}
+  - {name: A-台湾_HINET_流媒体_高级2_9, server: gzyd.flyss.link, port: 10008, type: ss, cipher: aes-256-gcm, password: 197bff19-7a22-479d-9025-90ca916e4bc1, udp: true}
+  - {name: B-香港_HGC_流媒体_标准1_14, server: zzlt.flyss.link, port: 10013, type: ss, cipher: aes-256-gcm, password: 197bff19-7a22-479d-9025-90ca916e4bc1, udp: true}
+  - {name: A-英国_GCP_流媒体_高级1_12, server: gzyd.flyss.link, port: 10027, type: ss, cipher: aes-256-gcm, password: 197bff19-7a22-479d-9025-90ca916e4bc1, udp: true}
+  - {name: B-香港_HKT_流媒体_标准1_18, server: zzlt.flyss.link, port: 10017, type: ss, cipher: aes-256-gcm, password: 197bff19-7a22-479d-9025-90ca916e4bc1, udp: true}
+  - {name: B-香港_HGC_流媒体_标准2_15, server: zzlt.flyss.link, port: 10014, type: ss, cipher: aes-256-gcm, password: 197bff19-7a22-479d-9025-90ca916e4bc1, udp: true}
+  - {name: A-日本_BGP_流媒体_高级2_11, server: gzyd.flyss.link, port: 10010, type: ss, cipher: aes-256-gcm, password: 197bff19-7a22-479d-9025-90ca916e4bc1, udp: true}
+  - {name: A-美国_BGP_流媒体_高级2_7, server: gzyd.flyss.link, port: 10006, type: ss, cipher: aes-256-gcm, password: 197bff19-7a22-479d-9025-90ca916e4bc1, udp: true}
+  - {name: _CA_加拿大, server: 134.195.198.252, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
+  - {name: 每次使用前请更新节点_1, server: zzlt.flyss.link, port: 10030, type: ss, cipher: aes-256-gcm, password: 197bff19-7a22-479d-9025-90ca916e4bc1, udp: true}
+  - {name: _CA_加拿大 2, server: 134.195.198.252, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: CH_9001+@WangCai_1+(1), server: 185.126.116.124, port: 9001, type: ss, cipher: aes-256-cfb, password: UkXRsXvR6buDMG2Y, udp: true}
+  - {name: BG_9001+@WangCai_1+(2), server: 213.183.63.219, port: 9001, type: ss, cipher: aes-256-cfb, password: UkXRsXvR6buDMG2Y, udp: true}
+  - {name: BG_9094+@WangCai_1+(2), server: 213.183.63.219, port: 9094, type: ss, cipher: aes-256-cfb, password: rpgbNnU9rDDU4aWZ, udp: true}
+  - {name: CH_9056+@WangCai_1, server: 185.126.116.117, port: 9056, type: ss, cipher: aes-256-cfb, password: rNBfNuuANFCAk7KB, udp: true}
+  - {name: BG_9043+@WangCai_1, server: 213.183.63.217, port: 9043, type: ss, cipher: aes-256-cfb, password: HSZuyJQcWe8dxNdF, udp: true}
+  - {name: BG_9019+@WangCai_1, server: 213.183.63.217, port: 9019, type: ss, cipher: aes-256-cfb, password: GA9KzeEgvfxNrgmM, udp: true}
+  - {name: BG_9050+@WangCai_1+(2), server: 213.183.63.219, port: 9050, type: ss, cipher: aes-256-cfb, password: FG5ddLsMPbV5CutE, udp: true}
+  - {name: BG_9060+@WangCai_1, server: 213.183.63.217, port: 9060, type: ss, cipher: aes-256-cfb, password: ueLXVkvh4hckhErQ, udp: true}
+  - {name: BG_9043+@WangCai_1+(2), server: 213.183.63.219, port: 9043, type: ss, cipher: aes-256-cfb, password: HSZuyJQcWe8dxNdF, udp: true}
+  - {name: CH_9003+@WangCai_1+(1), server: 185.126.116.124, port: 9003, type: ss, cipher: aes-256-cfb, password: JdmRK9gMEqFgs8nP, udp: true}
+  - {name: CH_9020+@WangCai_1+(1), server: 185.126.116.124, port: 9020, type: ss, cipher: aes-256-cfb, password: BNmAXXxAHYpTRdzu, udp: true}
+  - {name: CH_9056+@WangCai_1+(1), server: 185.126.116.124, port: 9056, type: ss, cipher: aes-256-cfb, password: rNBfNuuANFCAk7KB, udp: true}
+  - {name: BG_9015+@WangCai_1+(2), server: 213.183.63.219, port: 9015, type: ss, cipher: aes-256-cfb, password: ZpNDDKRu9MagNvaf, udp: true}
+  - {name: CH_9000+@WangCai_1+(1), server: 185.126.116.124, port: 9000, type: ss, cipher: aes-256-cfb, password: a3GFYt36Sm82Vys9, udp: true}
+  - {name: BG_9056+@WangCai_1+(2), server: 213.183.63.219, port: 9056, type: ss, cipher: aes-256-cfb, password: rNBfNuuANFCAk7KB, udp: true}
+  - {name: CH_9057+@WangCai_1+(1), server: 185.126.116.124, port: 9057, type: ss, cipher: aes-256-cfb, password: wjTugX3ZtHMB9c3Z, udp: true}
+  - {name: BG_9070+@WangCai_1, server: 213.183.63.217, port: 9070, type: ss, cipher: aes-256-cfb, password: bf7v334KKDV3YDhH, udp: true}
+  - {name: BG_9079+@WangCai_1+(2), server: 213.183.63.219, port: 9079, type: ss, cipher: aes-256-cfb, password: TPqX8edgbAURcAMb, udp: true}
+  - {name: BG_9020+@WangCai_1, server: 213.183.63.217, port: 9020, type: ss, cipher: aes-256-cfb, password: BNmAXXxAHYpTRdzu, udp: true}
+  - {name: BG_9037+@WangCai_1+(2), server: 213.183.63.219, port: 9037, type: ss, cipher: aes-256-cfb, password: TN2YqghxeFDKZfLU, udp: true}
+  - {name: BG_9079+@WangCai_1, server: 213.183.63.217, port: 9079, type: ss, cipher: aes-256-cfb, password: TPqX8edgbAURcAMb, udp: true}
+  - {name: BG_9038+@WangCai_1, server: 213.183.63.217, port: 9038, type: ss, cipher: aes-256-cfb, password: gYCYXfkUQEs2TaJQ, udp: true}
+  - {name: CH_9005+@WangCai_1+(1), server: 185.126.116.124, port: 9005, type: ss, cipher: aes-256-cfb, password: ZET59LF6DvCC8KVt, udp: true}
+  - {name: BG_9045+@WangCai_1+(1), server: 213.183.63.219, port: 9045, type: ss, cipher: aes-256-cfb, password: Lp27rqyJq72bZsqX, udp: true}
+  - {name: CH_9032+@WangCai_1, server: 185.126.116.117, port: 9032, type: ss, cipher: aes-256-cfb, password: UWZQeLRWnkqgkseq, udp: true}
+  - {name: -英国-节点池筛选0406-14, server: 152.89.210.84, port: 9026, type: ss, cipher: aes-256-cfb, password: QWDDvVE9npNurQfA, udp: true}
+  - {name: BG_9027+@WangCai_1, server: 213.183.63.217, port: 9027, type: ss, cipher: aes-256-cfb, password: EXN3S3eQpjE7EJu8, udp: true}
+  - {name: -保加利亚-节点池筛选0406-15, server: 213.183.63.219, port: 9088, type: ss, cipher: aes-256-cfb, password: f8npKgNzdkss2ytn, udp: true}
+  - {name: -英国-节点池筛选0406-24, server: 152.89.210.84, port: 9037, type: ss, cipher: aes-256-cfb, password: TN2YqghxeFDKZfLU, udp: true}
+  - {name: BG_9033+@WangCai_1, server: 213.183.63.217, port: 9033, type: ss, cipher: aes-256-cfb, password: UTJA57ypk2XKQpnm, udp: true}
+  - {name: CH_9041+@WangCai_1+(1), server: 185.126.116.124, port: 9041, type: ss, cipher: aes-256-cfb, password: U6qnYRhfyDmn8sgn, udp: true}
+  - {name: BG_9000+@WangCai_1+(2), server: 213.183.63.219, port: 9000, type: ss, cipher: aes-256-cfb, password: a3GFYt36Sm82Vys9, udp: true}
+  - {name: -英国-节点池筛选0406-23, server: 152.89.210.84, port: 9008, type: ss, cipher: aes-256-cfb, password: y9VURyNzJWNRYEGQ, udp: true}
+  - {name: CH_9060+@WangCai_1+(1), server: 185.126.116.124, port: 9060, type: ss, cipher: aes-256-cfb, password: ueLXVkvh4hckhErQ, udp: true}
+  - {name: BG_9059+@WangCai_1+(2), server: 213.183.63.219, port: 9059, type: ss, cipher: aes-256-cfb, password: 9XwYyZsK8SNzQDtY, udp: true}
+  - {name: BG_9014+@WangCai_1, server: 213.183.63.217, port: 9014, type: ss, cipher: aes-256-cfb, password: KnJGad3FqTvjqbaX, udp: true}
+  - {name: BG_9084+@WangCai_1, server: 213.183.63.217, port: 9084, type: ss, cipher: aes-256-cfb, password: c3NtHJ5ujV2tGDfj, udp: true}
+  - {name: -保加利亚-节点池筛选0406-11, server: 213.183.63.219, port: 9026, type: ss, cipher: aes-256-cfb, password: QWDDvVE9npNurQfA, udp: true}
+  - {name: BG_9033+@WangCai_1+(2), server: 213.183.63.219, port: 9033, type: ss, cipher: aes-256-cfb, password: UTJA57ypk2XKQpnm, udp: true}
+  - {name: CH_9040+@WangCai_1+(1), server: 185.126.116.124, port: 9040, type: ss, cipher: aes-256-cfb, password: p9z5BVADH2YFs3MN, udp: true}
+  - {name: BG_9003+@WangCai_1+(2), server: 213.183.63.219, port: 9003, type: ss, cipher: aes-256-cfb, password: JdmRK9gMEqFgs8nP, udp: true}
+  - {name: BG_9010+@WangCai_1, server: 213.183.63.217, port: 9010, type: ss, cipher: aes-256-cfb, password: f63gg8EruDnUrmz4, udp: true}
+  - {name: BG_9019+@WangCai_1+(2), server: 213.183.63.219, port: 9019, type: ss, cipher: aes-256-cfb, password: GA9KzeEgvfxNrgmM, udp: true}
+  - {name: CH_9015+@WangCai_1+(1), server: 185.126.116.124, port: 9015, type: ss, cipher: aes-256-cfb, password: ZpNDDKRu9MagNvaf, udp: true}
+  - {name: BG_9064+@WangCai_1, server: 213.183.63.217, port: 9064, type: ss, cipher: aes-256-cfb, password: cp8pRSUAyLhTfVWH, udp: true}
+  - {name: CH_9026+@WangCai_1+(1), server: 185.126.116.124, port: 9026, type: ss, cipher: aes-256-cfb, password: QWDDvVE9npNurQfA, udp: true}
+  - {name: CH_9064+@WangCai_1+(1), server: 185.126.116.124, port: 9064, type: ss, cipher: aes-256-cfb, password: cp8pRSUAyLhTfVWH, udp: true}
+  - {name: BG_9006+@WangCai_1+(2), server: 213.183.63.219, port: 9006, type: ss, cipher: aes-256-cfb, password: FAdUvMJUq5vDgKEq, udp: true}
+  - {name: BG_9018+@WangCai_1+(2), server: 213.183.63.219, port: 9018, type: ss, cipher: aes-256-cfb, password: fG2artUmHfNT2cX7, udp: true}
+  - {name: BG_9042+@WangCai_1, server: 213.183.63.217, port: 9042, type: ss, cipher: aes-256-cfb, password: S7KwUu7yBy58S3Ga, udp: true}
+  - {name: BG_9093+@WangCai_1, server: 213.183.63.217, port: 9093, type: ss, cipher: aes-256-cfb, password: wfLC2y7rzZyCmuyt, udp: true}
+  - {name: BG_9070+@WangCai_1+(2), server: 213.183.63.219, port: 9070, type: ss, cipher: aes-256-cfb, password: bf7v334KKDV3YDhH, udp: true}
+  - {name: CH_9008+@WangCai_1+(1), server: 185.126.116.124, port: 9008, type: ss, cipher: aes-256-cfb, password: y9VURyNzJWNRYEGQ, udp: true}
+  - {name: GB_9020+@WangCai_1, server: 185.167.117.171, port: 9020, type: ss, cipher: aes-256-cfb, password: BNmAXXxAHYpTRdzu, udp: true}
+  - {name: BG_9008+@WangCai_1, server: 213.183.63.217, port: 9008, type: ss, cipher: aes-256-cfb, password: y9VURyNzJWNRYEGQ, udp: true}
+  - {name: BG_9098+@WangCai_1+(2), server: 213.183.63.219, port: 9098, type: ss, cipher: aes-256-cfb, password: aLpQtfEZe445QyHk, udp: true}
+  - {name: CH_9007+@WangCai_1+(1), server: 185.126.116.124, port: 9007, type: ss, cipher: aes-256-cfb, password: kSPmvwdFzGMMW5pY, udp: true}
+  - {name: -保加利亚-节点池筛选0406-13, server: 213.183.63.217, port: 9098, type: ss, cipher: aes-256-cfb, password: aLpQtfEZe445QyHk, udp: true}
+  - {name: -保加利亚-节点池筛选0406-9, server: 213.183.63.219, port: 9060, type: ss, cipher: aes-256-cfb, password: ueLXVkvh4hckhErQ, udp: true}
+  - {name: CH_9031+@WangCai_1+(1), server: 185.126.116.124, port: 9031, type: ss, cipher: aes-256-cfb, password: BwcAUZk8hUFAkDGN, udp: true}
+  - {name: BG_9093+@WangCai_1+(2), server: 213.183.63.219, port: 9093, type: ss, cipher: aes-256-cfb, password: wfLC2y7rzZyCmuyt, udp: true}
+  - {name: BG_9018+@WangCai_1, server: 213.183.63.217, port: 9018, type: ss, cipher: aes-256-cfb, password: fG2artUmHfNT2cX7, udp: true}
+  - {name: CH_9019+@WangCai_1+(1), server: 185.126.116.124, port: 9019, type: ss, cipher: aes-256-cfb, password: GA9KzeEgvfxNrgmM, udp: true}
+  - {name: BG_9005+@WangCai_1, server: 213.183.63.217, port: 9005, type: ss, cipher: aes-256-cfb, password: ZET59LF6DvCC8KVt, udp: true}
+  - {name: CH_9024+@WangCai_1+(1), server: 185.126.116.124, port: 9024, type: ss, cipher: aes-256-cfb, password: BejrQvtu9sqUeNuZ, udp: true}
+  - {name: BG_9015+@WangCai_1, server: 213.183.63.217, port: 9015, type: ss, cipher: aes-256-cfb, password: ZpNDDKRu9MagNvaf, udp: true}
+  - {name: BG_9031+@WangCai_1+(2), server: 213.183.63.219, port: 9031, type: ss, cipher: aes-256-cfb, password: BwcAUZk8hUFAkDGN, udp: true}
+  - {name: CH_9033+@WangCai_1, server: 185.126.116.117, port: 9033, type: ss, cipher: aes-256-cfb, password: UTJA57ypk2XKQpnm, udp: true}
+  - {name: CH_9045+@WangCai_1, server: 185.126.116.117, port: 9045, type: ss, cipher: aes-256-cfb, password: Lp27rqyJq72bZsqX, udp: true}
+  - {name: CH_9097+@WangCai_1+(1), server: 185.126.116.124, port: 9097, type: ss, cipher: aes-256-cfb, password: Sn5B7jTqr76aCJT8, udp: true}
+  - {name: CH_9098+@WangCai_1, server: 185.126.116.117, port: 9098, type: ss, cipher: aes-256-cfb, password: aLpQtfEZe445QyHk, udp: true}
+  - {name: SG_9014+@WangCai_1+(2), server: 103.172.116.7, port: 9014, type: ss, cipher: aes-256-cfb, password: KnJGad3FqTvjqbaX, udp: true}
+  - {name: NL_9050+@WangCai_1+(2), server: 213.183.59.218, port: 9050, type: ss, cipher: aes-256-cfb, password: FG5ddLsMPbV5CutE, udp: true}
+  - {name: BG_9005+@WangCai_1+(2), server: 213.183.63.219, port: 9005, type: ss, cipher: aes-256-cfb, password: ZET59LF6DvCC8KVt, udp: true}
+  - {name: BG_9053+@WangCai_1, server: 213.183.63.217, port: 9053, type: ss, cipher: aes-256-cfb, password: SBM7R883jBmnqe6C, udp: true}
+  - {name: BG_9059+@WangCai_1, server: 213.183.63.217, port: 9059, type: ss, cipher: aes-256-cfb, password: 9XwYyZsK8SNzQDtY, udp: true}
+  - {name: BG_9064+@WangCai_1+(2), server: 213.183.63.219, port: 9064, type: ss, cipher: aes-256-cfb, password: cp8pRSUAyLhTfVWH, udp: true}
+  - {name: CH_9040+@WangCai_1, server: 185.126.116.117, port: 9040, type: ss, cipher: aes-256-cfb, password: p9z5BVADH2YFs3MN, udp: true}
+  - {name: -英国-节点池筛选0406-16, server: 152.89.210.84, port: 9038, type: ss, cipher: aes-256-cfb, password: gYCYXfkUQEs2TaJQ, udp: true}
+  - {name: CH_9010+@WangCai_1+(1), server: 185.126.116.124, port: 9010, type: ss, cipher: aes-256-cfb, password: f63gg8EruDnUrmz4, udp: true}
+  - {name: CH_9088+@WangCai_1+(1), server: 185.126.116.124, port: 9088, type: ss, cipher: aes-256-cfb, password: f8npKgNzdkss2ytn, udp: true}
+  - {name: BG_9020+@WangCai_1+(2), server: 213.183.63.219, port: 9020, type: ss, cipher: aes-256-cfb, password: BNmAXXxAHYpTRdzu, udp: true}
+  - {name: SG_9025+@WangCai_1+(2), server: 103.172.116.7, port: 9025, type: ss, cipher: aes-256-cfb, password: XPtzA9sCug3SPR4c, udp: true}
+  - {name: CH_9094+@WangCai_1+(1), server: 185.126.116.124, port: 9094, type: ss, cipher: aes-256-cfb, password: rpgbNnU9rDDU4aWZ, udp: true}
+  - {name: BG_9008+@WangCai_1+(2), server: 213.183.63.219, port: 9008, type: ss, cipher: aes-256-cfb, password: y9VURyNzJWNRYEGQ, udp: true}
+  - {name: BG_9024+@WangCai_1, server: 213.183.63.217, port: 9024, type: ss, cipher: aes-256-cfb, password: BejrQvtu9sqUeNuZ, udp: true}
+  - {name: BG_9073+@WangCai_1, server: 213.183.63.217, port: 9073, type: ss, cipher: aes-256-cfb, password: daFYagqDdBdA6VTX, udp: true}
+  - {name: -保加利亚-节点池筛选0406-18, server: 213.183.63.219, port: 9084, type: ss, cipher: aes-256-cfb, password: c3NtHJ5ujV2tGDfj, udp: true}
+  - {name: -保加利亚-节点池筛选0406-6, server: 213.183.63.219, port: 9053, type: ss, cipher: aes-256-cfb, password: SBM7R883jBmnqe6C, udp: true}
+  - {name: SG_9000+@WangCai_1+(2), server: 103.172.116.7, port: 9000, type: ss, cipher: aes-256-cfb, password: a3GFYt36Sm82Vys9, udp: true}
+  - {name: BG_9046+@WangCai_1, server: 213.183.63.217, port: 9046, type: ss, cipher: aes-256-cfb, password: NvS8N4Vf8qAGPSCL, udp: true}
+  - {name: -保加利亚-节点池筛选0406-5, server: 213.183.63.219, port: 9024, type: ss, cipher: aes-256-cfb, password: BejrQvtu9sqUeNuZ, udp: true}
+  - {name: CH_9042+@WangCai_1, server: 185.126.116.117, port: 9042, type: ss, cipher: aes-256-cfb, password: S7KwUu7yBy58S3Ga, udp: true}
+  - {name: BG_9007+@WangCai_1, server: 213.183.63.217, port: 9007, type: ss, cipher: aes-256-cfb, password: kSPmvwdFzGMMW5pY, udp: true}
+  - {name: BG_9094+@WangCai_1, server: 213.183.63.217, port: 9094, type: ss, cipher: aes-256-cfb, password: rpgbNnU9rDDU4aWZ, udp: true}
+  - {name: CH_9024+@WangCai_1, server: 185.126.116.117, port: 9024, type: ss, cipher: aes-256-cfb, password: BejrQvtu9sqUeNuZ, udp: true}
+  - {name: NL_9011+@WangCai_1+(2), server: 213.183.59.218, port: 9011, type: ss, cipher: aes-256-cfb, password: M3t2ZEQcMGRWBjRa, udp: true}
+  - {name: CH_9027+@WangCai_1+(1), server: 185.126.116.124, port: 9027, type: ss, cipher: aes-256-cfb, password: EXN3S3eQpjE7EJu8, udp: true}
+  - {name: SG_9015+@WangCai_1+(2), server: 103.172.116.7, port: 9015, type: ss, cipher: aes-256-cfb, password: ZpNDDKRu9MagNvaf, udp: true}
+  - {name: CH_9043+@WangCai_1, server: 185.126.116.117, port: 9043, type: ss, cipher: aes-256-cfb, password: HSZuyJQcWe8dxNdF, udp: true}
+  - {name: CH_9079+@WangCai_1, server: 185.126.116.117, port: 9079, type: ss, cipher: aes-256-cfb, password: TPqX8edgbAURcAMb, udp: true}
+  - {name: CH_9011+@WangCai_1+(1), server: 185.126.116.124, port: 9011, type: ss, cipher: aes-256-cfb, password: M3t2ZEQcMGRWBjRa, udp: true}
+  - {name: CH_9050+@WangCai_1+(1), server: 185.126.116.124, port: 9050, type: ss, cipher: aes-256-cfb, password: FG5ddLsMPbV5CutE, udp: true}
+  - {name: SG_9007+@WangCai_1+(2), server: 103.172.116.7, port: 9007, type: ss, cipher: aes-256-cfb, password: kSPmvwdFzGMMW5pY, udp: true}
+  - {name: SG_9024+@WangCai_1+(2), server: 103.172.116.7, port: 9024, type: ss, cipher: aes-256-cfb, password: BejrQvtu9sqUeNuZ, udp: true}
+  - {name: CH_9093+@WangCai_1+(1), server: 185.126.116.124, port: 9093, type: ss, cipher: aes-256-cfb, password: wfLC2y7rzZyCmuyt, udp: true}
+  - {name: BG_9006+@WangCai_1, server: 213.183.63.217, port: 9006, type: ss, cipher: aes-256-cfb, password: FAdUvMJUq5vDgKEq, udp: true}
+  - {name: CH_9043+@WangCai_1+(1), server: 185.126.116.124, port: 9043, type: ss, cipher: aes-256-cfb, password: HSZuyJQcWe8dxNdF, udp: true}
+  - {name: CH_9038+@WangCai_1+(1), server: 185.126.116.124, port: 9038, type: ss, cipher: aes-256-cfb, password: gYCYXfkUQEs2TaJQ, udp: true}
+  - {name: CH_9060+@WangCai_1, server: 185.126.116.117, port: 9060, type: ss, cipher: aes-256-cfb, password: ueLXVkvh4hckhErQ, udp: true}
+  - {name: SG_9094+@WangCai_1+(2), server: 103.172.116.7, port: 9094, type: ss, cipher: aes-256-cfb, password: rpgbNnU9rDDU4aWZ, udp: true}
+  - {name: BG_9026+@WangCai_1, server: 213.183.63.217, port: 9026, type: ss, cipher: aes-256-cfb, password: QWDDvVE9npNurQfA, udp: true}
+  - {name: CH_9046+@WangCai_1+(1), server: 185.126.116.124, port: 9046, type: ss, cipher: aes-256-cfb, password: NvS8N4Vf8qAGPSCL, udp: true}
+  - {name: BG_9073+@WangCai_1+(2), server: 213.183.63.219, port: 9073, type: ss, cipher: aes-256-cfb, password: daFYagqDdBdA6VTX, udp: true}
+  - {name: SG_9041+@WangCai_1+(2), server: 103.172.116.7, port: 9041, type: ss, cipher: aes-256-cfb, password: U6qnYRhfyDmn8sgn, udp: true}
+  - {name: CH_9032+@WangCai_1+(1), server: 185.126.116.124, port: 9032, type: ss, cipher: aes-256-cfb, password: UWZQeLRWnkqgkseq, udp: true}
+  - {name: SG_9043+@WangCai_1+(2), server: 103.172.116.7, port: 9043, type: ss, cipher: aes-256-cfb, password: HSZuyJQcWe8dxNdF, udp: true}
+  - {name: CH_9018+@WangCai_1+(1), server: 185.126.116.124, port: 9018, type: ss, cipher: aes-256-cfb, password: fG2artUmHfNT2cX7, udp: true}
+  - {name: CH_9053+@WangCai_1, server: 185.126.116.117, port: 9053, type: ss, cipher: aes-256-cfb, password: SBM7R883jBmnqe6C, udp: true}
+  - {name: SG_9031+@WangCai_1+(2), server: 103.172.116.7, port: 9031, type: ss, cipher: aes-256-cfb, password: BwcAUZk8hUFAkDGN, udp: true}
+  - {name: -保加利亚-节点池筛选0406-21, server: 213.183.63.219, port: 9027, type: ss, cipher: aes-256-cfb, password: EXN3S3eQpjE7EJu8, udp: true}
+  - {name: CH_9010+@WangCai_1, server: 185.126.116.117, port: 9010, type: ss, cipher: aes-256-cfb, password: f63gg8EruDnUrmz4, udp: true}
+  - {name: CH_9037+@WangCai_1, server: 185.126.116.117, port: 9037, type: ss, cipher: aes-256-cfb, password: TN2YqghxeFDKZfLU, udp: true}
+  - {name: SG_9037+@WangCai_1+(2), server: 103.172.116.7, port: 9037, type: ss, cipher: aes-256-cfb, password: TN2YqghxeFDKZfLU, udp: true}
+  - {name: BG_9007+@WangCai_1+(2), server: 213.183.63.219, port: 9007, type: ss, cipher: aes-256-cfb, password: kSPmvwdFzGMMW5pY, udp: true}
+  - {name: CH_9050+@WangCai_1, server: 185.126.116.117, port: 9050, type: ss, cipher: aes-256-cfb, password: FG5ddLsMPbV5CutE, udp: true}
+  - {name: CH_9084+@WangCai_1+(1), server: 185.126.116.124, port: 9084, type: ss, cipher: aes-256-cfb, password: c3NtHJ5ujV2tGDfj, udp: true}
+  - {name: SG_9003+@WangCai_1+(2), server: 103.172.116.7, port: 9003, type: ss, cipher: aes-256-cfb, password: JdmRK9gMEqFgs8nP, udp: true}
+  - {name: BG_9056+@WangCai_1+(1), server: 213.183.63.218, port: 9056, type: ss, cipher: aes-256-cfb, password: rNBfNuuANFCAk7KB, udp: true}
+  - {name: CH_9070+@WangCai_1+(1), server: 185.126.116.124, port: 9070, type: ss, cipher: aes-256-cfb, password: bf7v334KKDV3YDhH, udp: true}
+  - {name: CH_9053+@WangCai_1+(1), server: 185.126.116.124, port: 9053, type: ss, cipher: aes-256-cfb, password: SBM7R883jBmnqe6C, udp: true}
+  - {name: CH_9037+@WangCai_1+(1), server: 185.126.116.124, port: 9037, type: ss, cipher: aes-256-cfb, password: TN2YqghxeFDKZfLU, udp: true}
+  - {name: BG_9042+@WangCai_1+(1), server: 213.183.63.218, port: 9042, type: ss, cipher: aes-256-cfb, password: S7KwUu7yBy58S3Ga, udp: true}
+  - {name: SG_9042+@WangCai_1+(2), server: 103.172.116.7, port: 9042, type: ss, cipher: aes-256-cfb, password: S7KwUu7yBy58S3Ga, udp: true}
+  - {name: BG_9007+@WangCai_1+(1), server: 213.183.63.218, port: 9007, type: ss, cipher: aes-256-cfb, password: kSPmvwdFzGMMW5pY, udp: true}
+  - {name: -保加利亚-节点池筛选0406-2, server: 213.183.63.219, port: 9032, type: ss, cipher: aes-256-cfb, password: UWZQeLRWnkqgkseq, udp: true}
+  - {name: -保加利亚-节点池筛选0406-19, server: 213.183.63.219, port: 9014, type: ss, cipher: aes-256-cfb, password: KnJGad3FqTvjqbaX, udp: true}
+  - {name: SG_9006+@WangCai_1+(2), server: 103.172.116.7, port: 9006, type: ss, cipher: aes-256-cfb, password: FAdUvMJUq5vDgKEq, udp: true}
+  - {name: SG_9084+@WangCai_1+(2), server: 103.172.116.7, port: 9084, type: ss, cipher: aes-256-cfb, password: c3NtHJ5ujV2tGDfj, udp: true}
+  - {name: CH_9070+@WangCai_1, server: 185.126.116.117, port: 9070, type: ss, cipher: aes-256-cfb, password: bf7v334KKDV3YDhH, udp: true}
+  - {name: BG_9031+@WangCai_1, server: 213.183.63.217, port: 9031, type: ss, cipher: aes-256-cfb, password: BwcAUZk8hUFAkDGN, udp: true}
+  - {name: SG_9040+@WangCai_1+(2), server: 103.172.116.7, port: 9040, type: ss, cipher: aes-256-cfb, password: p9z5BVADH2YFs3MN, udp: true}
+  - {name: CH_9045+@WangCai_1+(1), server: 185.126.116.124, port: 9045, type: ss, cipher: aes-256-cfb, password: Lp27rqyJq72bZsqX, udp: true}
+  - {name: GB_9093+@WangCai_1, server: 185.167.117.171, port: 9093, type: ss, cipher: aes-256-cfb, password: wfLC2y7rzZyCmuyt, udp: true}
+  - {name: SG_9057+@WangCai_1+(2), server: 103.172.116.7, port: 9057, type: ss, cipher: aes-256-cfb, password: wjTugX3ZtHMB9c3Z, udp: true}
+  - {name: CH_9033+@WangCai_1+(1), server: 185.126.116.124, port: 9033, type: ss, cipher: aes-256-cfb, password: UTJA57ypk2XKQpnm, udp: true}
+  - {name: GB_9079+@WangCai_1, server: 185.167.117.171, port: 9079, type: ss, cipher: aes-256-cfb, password: TPqX8edgbAURcAMb, udp: true}
+  - {name: NL_9045+@WangCai_1+(2), server: 213.183.59.218, port: 9045, type: ss, cipher: aes-256-cfb, password: Lp27rqyJq72bZsqX, udp: true}
+  - {name: CH_9025+@WangCai_1+(1), server: 185.126.116.124, port: 9025, type: ss, cipher: aes-256-cfb, password: XPtzA9sCug3SPR4c, udp: true}
+  - {name: BG_9025+@WangCai_1+(1), server: 213.183.63.218, port: 9025, type: ss, cipher: aes-256-cfb, password: XPtzA9sCug3SPR4c, udp: true}
+  - {name: CH_9094+@WangCai_1, server: 185.126.116.117, port: 9094, type: ss, cipher: aes-256-cfb, password: rpgbNnU9rDDU4aWZ, udp: true}
+  - {name: SG_9038+@WangCai_1+(2), server: 103.172.116.7, port: 9038, type: ss, cipher: aes-256-cfb, password: gYCYXfkUQEs2TaJQ, udp: true}
+  - {name: BG_9006+@WangCai_1+(1), server: 213.183.63.218, port: 9006, type: ss, cipher: aes-256-cfb, password: FAdUvMJUq5vDgKEq, udp: true}
+  - {name: BG_9084+@WangCai_1+(1), server: 213.183.63.218, port: 9084, type: ss, cipher: aes-256-cfb, password: c3NtHJ5ujV2tGDfj, udp: true}
+  - {name: CH_9014+@WangCai_1+(1), server: 185.126.116.124, port: 9014, type: ss, cipher: aes-256-cfb, password: KnJGad3FqTvjqbaX, udp: true}
+  - {name: -英国-节点池筛选0406-17, server: 152.89.210.84, port: 9041, type: ss, cipher: aes-256-cfb, password: U6qnYRhfyDmn8sgn, udp: true}
+  - {name: BG_9059+@WangCai_1+(1), server: 213.183.63.218, port: 9059, type: ss, cipher: aes-256-cfb, password: 9XwYyZsK8SNzQDtY, udp: true}
+  - {name: CH_9073+@WangCai_1+(1), server: 185.126.116.124, port: 9073, type: ss, cipher: aes-256-cfb, password: daFYagqDdBdA6VTX, udp: true}
+  - {name: BG_9040+@WangCai_1+(1), server: 213.183.63.218, port: 9040, type: ss, cipher: aes-256-cfb, password: p9z5BVADH2YFs3MN, udp: true}
+  - {name: BG_9050+@WangCai_1, server: 213.183.63.217, port: 9050, type: ss, cipher: aes-256-cfb, password: FG5ddLsMPbV5CutE, udp: true}
+  - {name: BG_9015+@WangCai_1+(1), server: 213.183.63.218, port: 9015, type: ss, cipher: aes-256-cfb, password: ZpNDDKRu9MagNvaf, udp: true}
+  - {name: -保加利亚-节点池筛选0406-22, server: 213.183.63.219, port: 9057, type: ss, cipher: aes-256-cfb, password: wjTugX3ZtHMB9c3Z, udp: true}
+  - {name: BG_9031+@WangCai_1+(1), server: 213.183.63.218, port: 9031, type: ss, cipher: aes-256-cfb, password: BwcAUZk8hUFAkDGN, udp: true}
+  - {name: BG_9088+@WangCai_1, server: 213.183.63.217, port: 9088, type: ss, cipher: aes-256-cfb, password: f8npKgNzdkss2ytn, udp: true}
+  - {name: GB_9032+@WangCai_1, server: 185.167.117.171, port: 9032, type: ss, cipher: aes-256-cfb, password: UWZQeLRWnkqgkseq, udp: true}
+  - {name: BG_9025+@WangCai_1+(2), server: 213.183.63.219, port: 9025, type: ss, cipher: aes-256-cfb, password: XPtzA9sCug3SPR4c, udp: true}
+  - {name: CH_9006+@WangCai_1+(1), server: 185.126.116.124, port: 9006, type: ss, cipher: aes-256-cfb, password: FAdUvMJUq5vDgKEq, udp: true}
+  - {name: GB_9045+@WangCai_1, server: 185.167.117.171, port: 9045, type: ss, cipher: aes-256-cfb, password: Lp27rqyJq72bZsqX, udp: true}
+  - {name: BG_9024+@WangCai_1+(1), server: 213.183.63.218, port: 9024, type: ss, cipher: aes-256-cfb, password: BejrQvtu9sqUeNuZ, udp: true}
+  - {name: CH_9059+@WangCai_1+(1), server: 185.126.116.124, port: 9059, type: ss, cipher: aes-256-cfb, password: 9XwYyZsK8SNzQDtY, udp: true}
+  - {name: GB_9056+@WangCai_1, server: 185.167.117.171, port: 9056, type: ss, cipher: aes-256-cfb, password: rNBfNuuANFCAk7KB, udp: true}
+  - {name: BG_9027+@WangCai_1+(1), server: 213.183.63.218, port: 9027, type: ss, cipher: aes-256-cfb, password: EXN3S3eQpjE7EJu8, udp: true}
+  - {name: BG_9032+@WangCai_1+(1), server: 213.183.63.218, port: 9032, type: ss, cipher: aes-256-cfb, password: UWZQeLRWnkqgkseq, udp: true}
+  - {name: BG_9094+@WangCai_1+(1), server: 213.183.63.218, port: 9094, type: ss, cipher: aes-256-cfb, password: rpgbNnU9rDDU4aWZ, udp: true}
+  - {name: CH_9006+@WangCai_1, server: 185.126.116.117, port: 9006, type: ss, cipher: aes-256-cfb, password: FAdUvMJUq5vDgKEq, udp: true}
+  - {name: CH_9093+@WangCai_1, server: 185.126.116.117, port: 9093, type: ss, cipher: aes-256-cfb, password: wfLC2y7rzZyCmuyt, udp: true}
+  - {name: -保加利亚-节点池筛选0406-12, server: 213.183.63.219, port: 9042, type: ss, cipher: aes-256-cfb, password: S7KwUu7yBy58S3Ga, udp: true}
+  - {name: SG_9059+@WangCai_1+(2), server: 103.172.116.7, port: 9059, type: ss, cipher: aes-256-cfb, password: 9XwYyZsK8SNzQDtY, udp: true}
+  - {name: BG_9003+@WangCai_1+(1), server: 213.183.63.218, port: 9003, type: ss, cipher: aes-256-cfb, password: JdmRK9gMEqFgs8nP, udp: true}
+  - {name: CH_9025+@WangCai_1, server: 185.126.116.117, port: 9025, type: ss, cipher: aes-256-cfb, password: XPtzA9sCug3SPR4c, udp: true}
+  - {name: GB_9024+@WangCai_1, server: 185.167.117.171, port: 9024, type: ss, cipher: aes-256-cfb, password: BejrQvtu9sqUeNuZ, udp: true}
+  - {name: BG_9073+@WangCai_1+(1), server: 213.183.63.218, port: 9073, type: ss, cipher: aes-256-cfb, password: daFYagqDdBdA6VTX, udp: true}
+  - {name: SG_9060+@WangCai_1+(2), server: 103.172.116.7, port: 9060, type: ss, cipher: aes-256-cfb, password: ueLXVkvh4hckhErQ, udp: true}
+  - {name: BG_9005+@WangCai_1+(1), server: 213.183.63.218, port: 9005, type: ss, cipher: aes-256-cfb, password: ZET59LF6DvCC8KVt, udp: true}
+  - {name: GB_9097+@WangCai_1, server: 185.167.117.171, port: 9097, type: ss, cipher: aes-256-cfb, password: Sn5B7jTqr76aCJT8, udp: true}
+  - {name: SG_9064+@WangCai_1+(2), server: 103.172.116.7, port: 9064, type: ss, cipher: aes-256-cfb, password: cp8pRSUAyLhTfVWH, udp: true}
+  - {name: GB_9084+@WangCai_1, server: 185.167.117.171, port: 9084, type: ss, cipher: aes-256-cfb, password: c3NtHJ5ujV2tGDfj, udp: true}
+  - {name: CH_9088+@WangCai_1, server: 185.126.116.117, port: 9088, type: ss, cipher: aes-256-cfb, password: f8npKgNzdkss2ytn, udp: true}
+  - {name: BG_9041+@WangCai_1+(2), server: 213.183.63.219, port: 9041, type: ss, cipher: aes-256-cfb, password: U6qnYRhfyDmn8sgn, udp: true}
+  - {name: GB_9060+@WangCai_1, server: 185.167.117.171, port: 9060, type: ss, cipher: aes-256-cfb, password: ueLXVkvh4hckhErQ, udp: true}
+  - {name: GB_9070+@WangCai_1, server: 185.167.117.171, port: 9070, type: ss, cipher: aes-256-cfb, password: bf7v334KKDV3YDhH, udp: true}
+  - {name: GB_9094+@WangCai_1, server: 185.167.117.171, port: 9094, type: ss, cipher: aes-256-cfb, password: rpgbNnU9rDDU4aWZ, udp: true}
+  - {name: GB_9019+@WangCai_1, server: 185.167.117.171, port: 9019, type: ss, cipher: aes-256-cfb, password: GA9KzeEgvfxNrgmM, udp: true}
+  - {name: BG_9045+@WangCai_1, server: 213.183.63.218, port: 9045, type: ss, cipher: aes-256-cfb, password: Lp27rqyJq72bZsqX, udp: true}
+  - {name: GB_9057+@WangCai_1, server: 185.167.117.171, port: 9057, type: ss, cipher: aes-256-cfb, password: wjTugX3ZtHMB9c3Z, udp: true}
+  - {name: NL_9000+@WangCai_1+(2), server: 213.183.59.218, port: 9000, type: ss, cipher: aes-256-cfb, password: a3GFYt36Sm82Vys9, udp: true}
+  - {name: BG_9040+@WangCai_1+(2), server: 213.183.63.219, port: 9040, type: ss, cipher: aes-256-cfb, password: p9z5BVADH2YFs3MN, udp: true}
+  - {name: BG_9057+@WangCai_1+(1), server: 213.183.63.218, port: 9057, type: ss, cipher: aes-256-cfb, password: wjTugX3ZtHMB9c3Z, udp: true}
+  - {name: 香港 04 | 直连, server: hk04.00000000-0000-0000-0000-000000000000.00000000-0000-0000-0000-000000000000.yiyuan.cyou, port: 443, type: trojan, password: 13adc05c-74aa-46b7-aa3a-70235fce0b91, sni: hk04.00000000-0000-0000-0000-000000000000.00000000-0000-0000-0000-000000000000.yiyuan.cyou, skip-cert-verify: true, udp: true}
+  - {name: 香港 04 | 广港 IEPL, server: zz01.00000000-0000-0000-0000-000000000000.00000000-0000-0000-0000-000000000000.yiyuan.cyou, port: 10714, type: trojan, password: 13adc05c-74aa-46b7-aa3a-70235fce0b91, sni: zz01.00000000-0000-0000-0000-000000000000.00000000-0000-0000-0000-000000000000.yiyuan.cyou, skip-cert-verify: true, udp: true}
+  - {name: JP 02 Premium Access Point, server: zz02.00000000-0000-0000-0000-000000000000.00000000-0000-0000-0000-000000000000.yiyuan.cyou, port: 10722, type: trojan, password: 13adc05c-74aa-46b7-aa3a-70235fce0b91, sni: zz02.00000000-0000-0000-0000-000000000000.00000000-0000-0000-0000-000000000000.yiyuan.cyou, skip-cert-verify: true, udp: true}
+  - {name: 加群 @yyjc_group，签到每月送50G流量, server: hk01.00000000-0000-0000-0000-000000000000.00000000-0000-0000-0000-000000000000.yiyuan.cyou, port: 443, type: trojan, password: 13adc05c-74aa-46b7-aa3a-70235fce0b91, sni: hk01.00000000-0000-0000-0000-000000000000.00000000-0000-0000-0000-000000000000.yiyuan.cyou, skip-cert-verify: true, udp: true}
+  - {name: 香港 03 | 直连, server: hk03.00000000-0000-0000-0000-000000000000.00000000-0000-0000-0000-000000000000.yiyuan.cyou, port: 443, type: trojan, password: 13adc05c-74aa-46b7-aa3a-70235fce0b91, sni: hk03.00000000-0000-0000-0000-000000000000.00000000-0000-0000-0000-000000000000.yiyuan.cyou, skip-cert-verify: true, udp: true}
+  - {name: 本站提供虚假的 广港 IEPL, server: hk02.00000000-0000-0000-0000-000000000000.00000000-0000-0000-0000-000000000000.yiyuan.cyou, port: 443, type: trojan, password: 13adc05c-74aa-46b7-aa3a-70235fce0b91, sni: hk02.00000000-0000-0000-0000-000000000000.00000000-0000-0000-0000-000000000000.yiyuan.cyou, skip-cert-verify: true, udp: true}
+  - {name: 日本 02 | 直连, server: jp02.00000000-0000-0000-0000-000000000000.00000000-0000-0000-0000-000000000000.yiyuan.cyou, port: 443, type: trojan, password: 13adc05c-74aa-46b7-aa3a-70235fce0b91, sni: jp02.00000000-0000-0000-0000-000000000000.00000000-0000-0000-0000-000000000000.yiyuan.cyou, skip-cert-verify: true, udp: true}
+  - {name: 香港 02 | 广港 IEPL, server: zz01.00000000-0000-0000-0000-000000000000.00000000-0000-0000-0000-000000000000.yiyuan.cyou, port: 10712, type: trojan, password: 13adc05c-74aa-46b7-aa3a-70235fce0b91, sni: zz01.00000000-0000-0000-0000-000000000000.00000000-0000-0000-0000-000000000000.yiyuan.cyou, skip-cert-verify: true, udp: true}
+  - {name: SG 01 Premium Access Point, server: zz02.00000000-0000-0000-0000-000000000000.00000000-0000-0000-0000-000000000000.yiyuan.cyou, port: 10731, type: trojan, password: 13adc05c-74aa-46b7-aa3a-70235fce0b91, sni: zz02.00000000-0000-0000-0000-000000000000.00000000-0000-0000-0000-000000000000.yiyuan.cyou, skip-cert-verify: true, udp: true}
+  - {name: 香港 01 | 广港 IEPL, server: zz01.00000000-0000-0000-0000-000000000000.00000000-0000-0000-0000-000000000000.yiyuan.cyou, port: 10711, type: trojan, password: 13adc05c-74aa-46b7-aa3a-70235fce0b91, sni: zz01.00000000-0000-0000-0000-000000000000.00000000-0000-0000-0000-000000000000.yiyuan.cyou, skip-cert-verify: true, udp: true}
+  - {name: US 01 Premium Access Point, server: zz02.00000000-0000-0000-0000-000000000000.00000000-0000-0000-0000-000000000000.yiyuan.cyou, port: 10741, type: trojan, password: 13adc05c-74aa-46b7-aa3a-70235fce0b91, sni: zz02.00000000-0000-0000-0000-000000000000.00000000-0000-0000-0000-000000000000.yiyuan.cyou, skip-cert-verify: true, udp: true}
+  - {name: "%微软云 香港 5Gbps", server: 13.70.16.197, port: 33507, type: trojan, password: 5b192068-f80d-497a-aad0-7a52af7ef4df, skip-cert-verify: true, udp: true}
+  - {name: 日本 01 | 直连, server: jp01.00000000-0000-0000-0000-000000000000.00000000-0000-0000-0000-000000000000.yiyuan.cyou, port: 443, type: trojan, password: 13adc05c-74aa-46b7-aa3a-70235fce0b91, sni: jp01.00000000-0000-0000-0000-000000000000.00000000-0000-0000-0000-000000000000.yiyuan.cyou, skip-cert-verify: true, udp: true}
+  - {name: 香港 03 | 广港 IEPL, server: zz01.00000000-0000-0000-0000-000000000000.00000000-0000-0000-0000-000000000000.yiyuan.cyou, port: 10713, type: trojan, password: 13adc05c-74aa-46b7-aa3a-70235fce0b91, sni: zz01.00000000-0000-0000-0000-000000000000.00000000-0000-0000-0000-000000000000.yiyuan.cyou, skip-cert-verify: true, udp: true}
+  - {name: 日本 03 | 直连, server: jp03.00000000-0000-0000-0000-000000000000.00000000-0000-0000-0000-000000000000.yiyuan.cyou, port: 443, type: trojan, password: 13adc05c-74aa-46b7-aa3a-70235fce0b91, sni: jp03.00000000-0000-0000-0000-000000000000.00000000-0000-0000-0000-000000000000.yiyuan.cyou, skip-cert-verify: true, udp: true}
+  - {name: JP 01 Premium Access Point, server: zz02.00000000-0000-0000-0000-000000000000.00000000-0000-0000-0000-000000000000.yiyuan.cyou, port: 10721, type: trojan, password: 13adc05c-74aa-46b7-aa3a-70235fce0b91, sni: zz02.00000000-0000-0000-0000-000000000000.00000000-0000-0000-0000-000000000000.yiyuan.cyou, skip-cert-verify: true, udp: true}
+  - {name: 韩国 01 | 直连, server: kr01.00000000-0000-0000-0000-000000000000.00000000-0000-0000-0000-000000000000.yiyuan.cyou, port: 443, type: trojan, password: 13adc05c-74aa-46b7-aa3a-70235fce0b91, sni: kr01.00000000-0000-0000-0000-000000000000.00000000-0000-0000-0000-000000000000.yiyuan.cyou, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - HK_油管 TG 8度科技
-      - US_1212 |31.31Mb
-      - 「加入会员解锁流媒体」x5
-      - 美国-BGP-N
-      - 「🇸🇬」EMO+|+龙鳞果+x5+2
-      - 「加入会员解锁流媒体」x5 4
-      - 「🇸🇬」EMO+|+龙鳞果+x5+3
-      - 俄罗斯-BGP
-      - KR_油管 TG 8度科技
-      - 「🇸🇬」EMO+|+龙鳞果+x5+5
-      - _609 | 2.60Mb
-      - 美国-BGP-K
-      - US_油管 TG 8度科技
-      - CN_1015 |16.84Mb
-      - US_油管 TG 8度科技 2
-      - 油管 TG 8度科技
-      - 「加入会员解锁流媒体」x5 2
-      - BG_746+|+4.01Mb
-      - _18+|+8.06Mb
-      - NL_油管+TG+8度科技
-      - _526+|+0.16Mb
-      - BG_740+|+8.06Mb
-      - BG_726+|+6.87Mb
-      - BG_729+|+6.35Mb
-      - _12+|+6.97Mb
-      - 「加入会员解锁流媒体」x5 3
-      - 香港_TGatnodesharing_1_664
-      - _10
-      - 油管 TG 8度科技 2
-      - BG_734+|+2.85Mb
-      - BG_759+|+6.79Mb
-      - _574+|+4.70Mb
-      - _559
-      - NL_油管+TG+8度科技 2
-      - 「加入会员解锁流媒体」x5 5
-      - BG_724+|+5.69Mb
-      - _536+|+1.99Mb
-      - BG_722+|+3.71Mb
-      - CN_854+|+8.96Mb
-      - _474+|+7.55Mb
-      - CN_843+|27.95Mb
-      - CN_858+|+7.66Mb
-      - _36+|+9.36Mb
-      - CN_853+|10.61Mb
-      - CN_855+|+7.34Mb
-      - CN_862+|+3.40Mb
-      - CN_860+|66.31Mb
-      - _15+|10.15Mb
-      - _34+|+2.83Mb
-      - CN_850+|16.30Mb
-      - _21+|34.42Mb
-      - _30+|+8.05Mb
-      - _25+|11.23Mb
-      - CN_油管 TG 8度科技
-      - _24+|12.36Mb
-      - _32+|15.31Mb
-      - _610 | 0.34Mb
-      - NL_油管+TG+8度科技 3
-      - BG_762+|11.17Mb
-      - NL_油管+TG+8度科技 4
-      - 美国_TGatnodesharing_26_649 |12.20Mb
-      - _548+|+5.55Mb
-      - _35+|12.39Mb
-      - 「🇸🇬」EMO+|+金灵子+x5
+      - 新加坡02
+      - 购买QQ352530340_2
+      - SGP+CM_A/04+x0_3
+      - HKG+CM_B/04+x0_3
+      - SGP+CM_B/02+x0_3
+      - JPN+CM_A/01+x0_3
+      - JPN+CM_A/04+x0_3
+      - 公众号：光头院长_1
+      - JPN+CN2/03+x0_3
+      - 卢森堡
+      - HKG+CN2/08+x0_3
+      - HKG+CM_A/10+x0_3
+      - 美国04
+      - SGP+CM_A/01+x0_3
+      - JPN+CM_A/02+x0_3
+      - HKG+CM_A/07+x0_3
+      - HKG+CM_A/03+x0_3
+      - JPN+CM_B/05+x0_3
+      - 韩国02
+      - JPN+CM_A/05+x0_3
+      - JPN+CM_B/01+x0_3
+      - 美国06
+      - JPN+CN2/04+x0_3
+      - HKG+CM_B/08+x0_3
+      - 美国07
+      - JPN+CM_B/04+x0_3
+      - JPN+CN2/02+x0_3
+      - JPN+CM_B/02+x0_3
+      - SGP+CM_A/05+x0_3
+      - HKG+CM_A/05+x0_3
+      - HKG+CM_B/03+x0_3
+      - HKG+CM_A/06+x0_3
+      - JPN+CM_A/03+x0_3
+      - 美国08
+      - HKG+CM_A/04+x0_3
+      - JPN+CM_B/03+x0_3
+      - HKG CN2/06 x0_3
+      - 韩国04
+      - 韩国03
+      - SGP+CM_A/03+x0_3
+      - AA-V2ray-HK-HGC
+      - AA-V2ray-HK-HKBN.02
+      - AA-V2ray-TW-HiNet.01
+      - AA-V2ray-HK-HKT.02
+      - AA-V2ray-HK-NTT.01
+      - AA-V2ray-HK-HKT.01
+      - AA-V2ray-JP-NTT.03
+      - AA-V2ray-TW-HiNet.02
+      - AA-V2ray-HK-HKBN
+      - AA-V2ray-JP-NTT.02
+      - AA-V2ray-VN【越南】
+      - AA-V2ray-TW-HiNet.05
+      - AA-V2ray-TW-HiNet.04
+      - AA-V2ray-US-HE.04
+      - AA-V2ray-TW-HiNet.03
+      - AA-V2ray-US-HE.01
+      - AA-V2ray-JP-NTT.01
+      - THE WORLD
+      - AA-V2ray-US-HE.03
+      - AA-V2ray-US-Philadelphia
+      - AA-V2ray-RU-Selectel
+      - _HK_香港->🇰🇷_KR_韩国
+      - B-美国_BGP_流媒体_标准1_22
+      - A-日本_BGP_流媒体_高级1_10
+      - B-香港_HKT_流媒体_标准2_19
+      - A-台湾_HINET_流媒体_高级1_8
+      - B-美国_Cogent_流媒体_标准1_24
+      - A-香港_BGP_流媒体_高级2_5
+      - A-美国_BGP_流媒体_高级1_6
+      - B-日本_BGP_流媒体_标准2_21
+      - B-美国_Cogent_流媒体_标准2_25
+      - B-美国_BGP_流媒体_标准2_23
+      - B-日本_BGP_流媒体_标准1_20
+      - A-香港_BGP_流媒体_高级1_4
+      - A-台湾_HINET_流媒体_高级2_9
+      - B-香港_HGC_流媒体_标准1_14
+      - A-英国_GCP_流媒体_高级1_12
+      - B-香港_HKT_流媒体_标准1_18
+      - B-香港_HGC_流媒体_标准2_15
+      - A-日本_BGP_流媒体_高级2_11
+      - A-美国_BGP_流媒体_高级2_7
+      - _CA_加拿大
+      - 每次使用前请更新节点_1
+      - _CA_加拿大 2
+      - CH_9001+@WangCai_1+(1)
+      - BG_9001+@WangCai_1+(2)
+      - BG_9094+@WangCai_1+(2)
+      - CH_9056+@WangCai_1
+      - BG_9043+@WangCai_1
+      - BG_9019+@WangCai_1
+      - BG_9050+@WangCai_1+(2)
+      - BG_9060+@WangCai_1
+      - BG_9043+@WangCai_1+(2)
+      - CH_9003+@WangCai_1+(1)
+      - CH_9020+@WangCai_1+(1)
+      - CH_9056+@WangCai_1+(1)
+      - BG_9015+@WangCai_1+(2)
+      - CH_9000+@WangCai_1+(1)
+      - BG_9056+@WangCai_1+(2)
+      - CH_9057+@WangCai_1+(1)
+      - BG_9070+@WangCai_1
+      - BG_9079+@WangCai_1+(2)
+      - BG_9020+@WangCai_1
+      - BG_9037+@WangCai_1+(2)
+      - BG_9079+@WangCai_1
+      - BG_9038+@WangCai_1
+      - CH_9005+@WangCai_1+(1)
+      - BG_9045+@WangCai_1+(1)
+      - CH_9032+@WangCai_1
+      - -英国-节点池筛选0406-14
+      - BG_9027+@WangCai_1
+      - -保加利亚-节点池筛选0406-15
+      - -英国-节点池筛选0406-24
+      - BG_9033+@WangCai_1
+      - CH_9041+@WangCai_1+(1)
+      - BG_9000+@WangCai_1+(2)
+      - -英国-节点池筛选0406-23
+      - CH_9060+@WangCai_1+(1)
+      - BG_9059+@WangCai_1+(2)
+      - BG_9014+@WangCai_1
+      - BG_9084+@WangCai_1
+      - -保加利亚-节点池筛选0406-11
+      - BG_9033+@WangCai_1+(2)
+      - CH_9040+@WangCai_1+(1)
+      - BG_9003+@WangCai_1+(2)
+      - BG_9010+@WangCai_1
+      - BG_9019+@WangCai_1+(2)
+      - CH_9015+@WangCai_1+(1)
+      - BG_9064+@WangCai_1
+      - CH_9026+@WangCai_1+(1)
+      - CH_9064+@WangCai_1+(1)
+      - BG_9006+@WangCai_1+(2)
+      - BG_9018+@WangCai_1+(2)
+      - BG_9042+@WangCai_1
+      - BG_9093+@WangCai_1
+      - BG_9070+@WangCai_1+(2)
+      - CH_9008+@WangCai_1+(1)
+      - GB_9020+@WangCai_1
+      - BG_9008+@WangCai_1
+      - BG_9098+@WangCai_1+(2)
+      - CH_9007+@WangCai_1+(1)
+      - -保加利亚-节点池筛选0406-13
+      - -保加利亚-节点池筛选0406-9
+      - CH_9031+@WangCai_1+(1)
+      - BG_9093+@WangCai_1+(2)
+      - BG_9018+@WangCai_1
+      - CH_9019+@WangCai_1+(1)
+      - BG_9005+@WangCai_1
+      - CH_9024+@WangCai_1+(1)
+      - BG_9015+@WangCai_1
+      - BG_9031+@WangCai_1+(2)
+      - CH_9033+@WangCai_1
+      - CH_9045+@WangCai_1
+      - CH_9097+@WangCai_1+(1)
+      - CH_9098+@WangCai_1
+      - SG_9014+@WangCai_1+(2)
+      - NL_9050+@WangCai_1+(2)
+      - BG_9005+@WangCai_1+(2)
+      - BG_9053+@WangCai_1
+      - BG_9059+@WangCai_1
+      - BG_9064+@WangCai_1+(2)
+      - CH_9040+@WangCai_1
+      - -英国-节点池筛选0406-16
+      - CH_9010+@WangCai_1+(1)
+      - CH_9088+@WangCai_1+(1)
+      - BG_9020+@WangCai_1+(2)
+      - SG_9025+@WangCai_1+(2)
+      - CH_9094+@WangCai_1+(1)
+      - BG_9008+@WangCai_1+(2)
+      - BG_9024+@WangCai_1
+      - BG_9073+@WangCai_1
+      - -保加利亚-节点池筛选0406-18
+      - -保加利亚-节点池筛选0406-6
+      - SG_9000+@WangCai_1+(2)
+      - BG_9046+@WangCai_1
+      - -保加利亚-节点池筛选0406-5
+      - CH_9042+@WangCai_1
+      - BG_9007+@WangCai_1
+      - BG_9094+@WangCai_1
+      - CH_9024+@WangCai_1
+      - NL_9011+@WangCai_1+(2)
+      - CH_9027+@WangCai_1+(1)
+      - SG_9015+@WangCai_1+(2)
+      - CH_9043+@WangCai_1
+      - CH_9079+@WangCai_1
+      - CH_9011+@WangCai_1+(1)
+      - CH_9050+@WangCai_1+(1)
+      - SG_9007+@WangCai_1+(2)
+      - SG_9024+@WangCai_1+(2)
+      - CH_9093+@WangCai_1+(1)
+      - BG_9006+@WangCai_1
+      - CH_9043+@WangCai_1+(1)
+      - CH_9038+@WangCai_1+(1)
+      - CH_9060+@WangCai_1
+      - SG_9094+@WangCai_1+(2)
+      - BG_9026+@WangCai_1
+      - CH_9046+@WangCai_1+(1)
+      - BG_9073+@WangCai_1+(2)
+      - SG_9041+@WangCai_1+(2)
+      - CH_9032+@WangCai_1+(1)
+      - SG_9043+@WangCai_1+(2)
+      - CH_9018+@WangCai_1+(1)
+      - CH_9053+@WangCai_1
+      - SG_9031+@WangCai_1+(2)
+      - -保加利亚-节点池筛选0406-21
+      - CH_9010+@WangCai_1
+      - CH_9037+@WangCai_1
+      - SG_9037+@WangCai_1+(2)
+      - BG_9007+@WangCai_1+(2)
+      - CH_9050+@WangCai_1
+      - CH_9084+@WangCai_1+(1)
+      - SG_9003+@WangCai_1+(2)
+      - BG_9056+@WangCai_1+(1)
+      - CH_9070+@WangCai_1+(1)
+      - CH_9053+@WangCai_1+(1)
+      - CH_9037+@WangCai_1+(1)
+      - BG_9042+@WangCai_1+(1)
+      - SG_9042+@WangCai_1+(2)
+      - BG_9007+@WangCai_1+(1)
+      - -保加利亚-节点池筛选0406-2
+      - -保加利亚-节点池筛选0406-19
+      - SG_9006+@WangCai_1+(2)
+      - SG_9084+@WangCai_1+(2)
+      - CH_9070+@WangCai_1
+      - BG_9031+@WangCai_1
+      - SG_9040+@WangCai_1+(2)
+      - CH_9045+@WangCai_1+(1)
+      - GB_9093+@WangCai_1
+      - SG_9057+@WangCai_1+(2)
+      - CH_9033+@WangCai_1+(1)
+      - GB_9079+@WangCai_1
+      - NL_9045+@WangCai_1+(2)
+      - CH_9025+@WangCai_1+(1)
+      - BG_9025+@WangCai_1+(1)
+      - CH_9094+@WangCai_1
+      - SG_9038+@WangCai_1+(2)
+      - BG_9006+@WangCai_1+(1)
+      - BG_9084+@WangCai_1+(1)
+      - CH_9014+@WangCai_1+(1)
+      - -英国-节点池筛选0406-17
+      - BG_9059+@WangCai_1+(1)
+      - CH_9073+@WangCai_1+(1)
+      - BG_9040+@WangCai_1+(1)
+      - BG_9050+@WangCai_1
+      - BG_9015+@WangCai_1+(1)
+      - -保加利亚-节点池筛选0406-22
+      - BG_9031+@WangCai_1+(1)
+      - BG_9088+@WangCai_1
+      - GB_9032+@WangCai_1
+      - BG_9025+@WangCai_1+(2)
+      - CH_9006+@WangCai_1+(1)
+      - GB_9045+@WangCai_1
+      - BG_9024+@WangCai_1+(1)
+      - CH_9059+@WangCai_1+(1)
+      - GB_9056+@WangCai_1
+      - BG_9027+@WangCai_1+(1)
+      - BG_9032+@WangCai_1+(1)
+      - BG_9094+@WangCai_1+(1)
+      - CH_9006+@WangCai_1
+      - CH_9093+@WangCai_1
+      - -保加利亚-节点池筛选0406-12
+      - SG_9059+@WangCai_1+(2)
+      - BG_9003+@WangCai_1+(1)
+      - CH_9025+@WangCai_1
+      - GB_9024+@WangCai_1
+      - BG_9073+@WangCai_1+(1)
+      - SG_9060+@WangCai_1+(2)
+      - BG_9005+@WangCai_1+(1)
+      - GB_9097+@WangCai_1
+      - SG_9064+@WangCai_1+(2)
+      - GB_9084+@WangCai_1
+      - CH_9088+@WangCai_1
+      - BG_9041+@WangCai_1+(2)
+      - GB_9060+@WangCai_1
+      - GB_9070+@WangCai_1
+      - GB_9094+@WangCai_1
+      - GB_9019+@WangCai_1
+      - BG_9045+@WangCai_1
+      - GB_9057+@WangCai_1
+      - NL_9000+@WangCai_1+(2)
+      - BG_9040+@WangCai_1+(2)
+      - BG_9057+@WangCai_1+(1)
+      - 香港 04 | 直连
+      - 香港 04 | 广港 IEPL
+      - JP 02 Premium Access Point
+      - 加群 @yyjc_group，签到每月送50G流量
+      - 香港 03 | 直连
+      - 本站提供虚假的 广港 IEPL
+      - 日本 02 | 直连
+      - 香港 02 | 广港 IEPL
+      - SG 01 Premium Access Point
+      - 香港 01 | 广港 IEPL
+      - US 01 Premium Access Point
+      - "%微软云 香港 5Gbps"
+      - 日本 01 | 直连
+      - 香港 03 | 广港 IEPL
+      - 日本 03 | 直连
+      - JP 01 Premium Access Point
+      - 韩国 01 | 直连
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - HK_油管 TG 8度科技
-      - US_1212 |31.31Mb
-      - 「加入会员解锁流媒体」x5
-      - 美国-BGP-N
-      - 「🇸🇬」EMO+|+龙鳞果+x5+2
-      - 「加入会员解锁流媒体」x5 4
-      - 「🇸🇬」EMO+|+龙鳞果+x5+3
-      - 俄罗斯-BGP
-      - KR_油管 TG 8度科技
-      - 「🇸🇬」EMO+|+龙鳞果+x5+5
-      - _609 | 2.60Mb
-      - 美国-BGP-K
-      - US_油管 TG 8度科技
-      - CN_1015 |16.84Mb
-      - US_油管 TG 8度科技 2
-      - 油管 TG 8度科技
-      - 「加入会员解锁流媒体」x5 2
-      - BG_746+|+4.01Mb
-      - _18+|+8.06Mb
-      - NL_油管+TG+8度科技
-      - _526+|+0.16Mb
-      - BG_740+|+8.06Mb
-      - BG_726+|+6.87Mb
-      - BG_729+|+6.35Mb
-      - _12+|+6.97Mb
-      - 「加入会员解锁流媒体」x5 3
-      - 香港_TGatnodesharing_1_664
-      - _10
-      - 油管 TG 8度科技 2
-      - BG_734+|+2.85Mb
-      - BG_759+|+6.79Mb
-      - _574+|+4.70Mb
-      - _559
-      - NL_油管+TG+8度科技 2
-      - 「加入会员解锁流媒体」x5 5
-      - BG_724+|+5.69Mb
-      - _536+|+1.99Mb
-      - BG_722+|+3.71Mb
-      - CN_854+|+8.96Mb
-      - _474+|+7.55Mb
-      - CN_843+|27.95Mb
-      - CN_858+|+7.66Mb
-      - _36+|+9.36Mb
-      - CN_853+|10.61Mb
-      - CN_855+|+7.34Mb
-      - CN_862+|+3.40Mb
-      - CN_860+|66.31Mb
-      - _15+|10.15Mb
-      - _34+|+2.83Mb
-      - CN_850+|16.30Mb
-      - _21+|34.42Mb
-      - _30+|+8.05Mb
-      - _25+|11.23Mb
-      - CN_油管 TG 8度科技
-      - _24+|12.36Mb
-      - _32+|15.31Mb
-      - _610 | 0.34Mb
-      - NL_油管+TG+8度科技 3
-      - BG_762+|11.17Mb
-      - NL_油管+TG+8度科技 4
-      - 美国_TGatnodesharing_26_649 |12.20Mb
-      - _548+|+5.55Mb
-      - _35+|12.39Mb
-      - 「🇸🇬」EMO+|+金灵子+x5
+      - 新加坡02
+      - 购买QQ352530340_2
+      - SGP+CM_A/04+x0_3
+      - HKG+CM_B/04+x0_3
+      - SGP+CM_B/02+x0_3
+      - JPN+CM_A/01+x0_3
+      - JPN+CM_A/04+x0_3
+      - 公众号：光头院长_1
+      - JPN+CN2/03+x0_3
+      - 卢森堡
+      - HKG+CN2/08+x0_3
+      - HKG+CM_A/10+x0_3
+      - 美国04
+      - SGP+CM_A/01+x0_3
+      - JPN+CM_A/02+x0_3
+      - HKG+CM_A/07+x0_3
+      - HKG+CM_A/03+x0_3
+      - JPN+CM_B/05+x0_3
+      - 韩国02
+      - JPN+CM_A/05+x0_3
+      - JPN+CM_B/01+x0_3
+      - 美国06
+      - JPN+CN2/04+x0_3
+      - HKG+CM_B/08+x0_3
+      - 美国07
+      - JPN+CM_B/04+x0_3
+      - JPN+CN2/02+x0_3
+      - JPN+CM_B/02+x0_3
+      - SGP+CM_A/05+x0_3
+      - HKG+CM_A/05+x0_3
+      - HKG+CM_B/03+x0_3
+      - HKG+CM_A/06+x0_3
+      - JPN+CM_A/03+x0_3
+      - 美国08
+      - HKG+CM_A/04+x0_3
+      - JPN+CM_B/03+x0_3
+      - HKG CN2/06 x0_3
+      - 韩国04
+      - 韩国03
+      - SGP+CM_A/03+x0_3
+      - AA-V2ray-HK-HGC
+      - AA-V2ray-HK-HKBN.02
+      - AA-V2ray-TW-HiNet.01
+      - AA-V2ray-HK-HKT.02
+      - AA-V2ray-HK-NTT.01
+      - AA-V2ray-HK-HKT.01
+      - AA-V2ray-JP-NTT.03
+      - AA-V2ray-TW-HiNet.02
+      - AA-V2ray-HK-HKBN
+      - AA-V2ray-JP-NTT.02
+      - AA-V2ray-VN【越南】
+      - AA-V2ray-TW-HiNet.05
+      - AA-V2ray-TW-HiNet.04
+      - AA-V2ray-US-HE.04
+      - AA-V2ray-TW-HiNet.03
+      - AA-V2ray-US-HE.01
+      - AA-V2ray-JP-NTT.01
+      - THE WORLD
+      - AA-V2ray-US-HE.03
+      - AA-V2ray-US-Philadelphia
+      - AA-V2ray-RU-Selectel
+      - _HK_香港->🇰🇷_KR_韩国
+      - B-美国_BGP_流媒体_标准1_22
+      - A-日本_BGP_流媒体_高级1_10
+      - B-香港_HKT_流媒体_标准2_19
+      - A-台湾_HINET_流媒体_高级1_8
+      - B-美国_Cogent_流媒体_标准1_24
+      - A-香港_BGP_流媒体_高级2_5
+      - A-美国_BGP_流媒体_高级1_6
+      - B-日本_BGP_流媒体_标准2_21
+      - B-美国_Cogent_流媒体_标准2_25
+      - B-美国_BGP_流媒体_标准2_23
+      - B-日本_BGP_流媒体_标准1_20
+      - A-香港_BGP_流媒体_高级1_4
+      - A-台湾_HINET_流媒体_高级2_9
+      - B-香港_HGC_流媒体_标准1_14
+      - A-英国_GCP_流媒体_高级1_12
+      - B-香港_HKT_流媒体_标准1_18
+      - B-香港_HGC_流媒体_标准2_15
+      - A-日本_BGP_流媒体_高级2_11
+      - A-美国_BGP_流媒体_高级2_7
+      - _CA_加拿大
+      - 每次使用前请更新节点_1
+      - _CA_加拿大 2
+      - CH_9001+@WangCai_1+(1)
+      - BG_9001+@WangCai_1+(2)
+      - BG_9094+@WangCai_1+(2)
+      - CH_9056+@WangCai_1
+      - BG_9043+@WangCai_1
+      - BG_9019+@WangCai_1
+      - BG_9050+@WangCai_1+(2)
+      - BG_9060+@WangCai_1
+      - BG_9043+@WangCai_1+(2)
+      - CH_9003+@WangCai_1+(1)
+      - CH_9020+@WangCai_1+(1)
+      - CH_9056+@WangCai_1+(1)
+      - BG_9015+@WangCai_1+(2)
+      - CH_9000+@WangCai_1+(1)
+      - BG_9056+@WangCai_1+(2)
+      - CH_9057+@WangCai_1+(1)
+      - BG_9070+@WangCai_1
+      - BG_9079+@WangCai_1+(2)
+      - BG_9020+@WangCai_1
+      - BG_9037+@WangCai_1+(2)
+      - BG_9079+@WangCai_1
+      - BG_9038+@WangCai_1
+      - CH_9005+@WangCai_1+(1)
+      - BG_9045+@WangCai_1+(1)
+      - CH_9032+@WangCai_1
+      - -英国-节点池筛选0406-14
+      - BG_9027+@WangCai_1
+      - -保加利亚-节点池筛选0406-15
+      - -英国-节点池筛选0406-24
+      - BG_9033+@WangCai_1
+      - CH_9041+@WangCai_1+(1)
+      - BG_9000+@WangCai_1+(2)
+      - -英国-节点池筛选0406-23
+      - CH_9060+@WangCai_1+(1)
+      - BG_9059+@WangCai_1+(2)
+      - BG_9014+@WangCai_1
+      - BG_9084+@WangCai_1
+      - -保加利亚-节点池筛选0406-11
+      - BG_9033+@WangCai_1+(2)
+      - CH_9040+@WangCai_1+(1)
+      - BG_9003+@WangCai_1+(2)
+      - BG_9010+@WangCai_1
+      - BG_9019+@WangCai_1+(2)
+      - CH_9015+@WangCai_1+(1)
+      - BG_9064+@WangCai_1
+      - CH_9026+@WangCai_1+(1)
+      - CH_9064+@WangCai_1+(1)
+      - BG_9006+@WangCai_1+(2)
+      - BG_9018+@WangCai_1+(2)
+      - BG_9042+@WangCai_1
+      - BG_9093+@WangCai_1
+      - BG_9070+@WangCai_1+(2)
+      - CH_9008+@WangCai_1+(1)
+      - GB_9020+@WangCai_1
+      - BG_9008+@WangCai_1
+      - BG_9098+@WangCai_1+(2)
+      - CH_9007+@WangCai_1+(1)
+      - -保加利亚-节点池筛选0406-13
+      - -保加利亚-节点池筛选0406-9
+      - CH_9031+@WangCai_1+(1)
+      - BG_9093+@WangCai_1+(2)
+      - BG_9018+@WangCai_1
+      - CH_9019+@WangCai_1+(1)
+      - BG_9005+@WangCai_1
+      - CH_9024+@WangCai_1+(1)
+      - BG_9015+@WangCai_1
+      - BG_9031+@WangCai_1+(2)
+      - CH_9033+@WangCai_1
+      - CH_9045+@WangCai_1
+      - CH_9097+@WangCai_1+(1)
+      - CH_9098+@WangCai_1
+      - SG_9014+@WangCai_1+(2)
+      - NL_9050+@WangCai_1+(2)
+      - BG_9005+@WangCai_1+(2)
+      - BG_9053+@WangCai_1
+      - BG_9059+@WangCai_1
+      - BG_9064+@WangCai_1+(2)
+      - CH_9040+@WangCai_1
+      - -英国-节点池筛选0406-16
+      - CH_9010+@WangCai_1+(1)
+      - CH_9088+@WangCai_1+(1)
+      - BG_9020+@WangCai_1+(2)
+      - SG_9025+@WangCai_1+(2)
+      - CH_9094+@WangCai_1+(1)
+      - BG_9008+@WangCai_1+(2)
+      - BG_9024+@WangCai_1
+      - BG_9073+@WangCai_1
+      - -保加利亚-节点池筛选0406-18
+      - -保加利亚-节点池筛选0406-6
+      - SG_9000+@WangCai_1+(2)
+      - BG_9046+@WangCai_1
+      - -保加利亚-节点池筛选0406-5
+      - CH_9042+@WangCai_1
+      - BG_9007+@WangCai_1
+      - BG_9094+@WangCai_1
+      - CH_9024+@WangCai_1
+      - NL_9011+@WangCai_1+(2)
+      - CH_9027+@WangCai_1+(1)
+      - SG_9015+@WangCai_1+(2)
+      - CH_9043+@WangCai_1
+      - CH_9079+@WangCai_1
+      - CH_9011+@WangCai_1+(1)
+      - CH_9050+@WangCai_1+(1)
+      - SG_9007+@WangCai_1+(2)
+      - SG_9024+@WangCai_1+(2)
+      - CH_9093+@WangCai_1+(1)
+      - BG_9006+@WangCai_1
+      - CH_9043+@WangCai_1+(1)
+      - CH_9038+@WangCai_1+(1)
+      - CH_9060+@WangCai_1
+      - SG_9094+@WangCai_1+(2)
+      - BG_9026+@WangCai_1
+      - CH_9046+@WangCai_1+(1)
+      - BG_9073+@WangCai_1+(2)
+      - SG_9041+@WangCai_1+(2)
+      - CH_9032+@WangCai_1+(1)
+      - SG_9043+@WangCai_1+(2)
+      - CH_9018+@WangCai_1+(1)
+      - CH_9053+@WangCai_1
+      - SG_9031+@WangCai_1+(2)
+      - -保加利亚-节点池筛选0406-21
+      - CH_9010+@WangCai_1
+      - CH_9037+@WangCai_1
+      - SG_9037+@WangCai_1+(2)
+      - BG_9007+@WangCai_1+(2)
+      - CH_9050+@WangCai_1
+      - CH_9084+@WangCai_1+(1)
+      - SG_9003+@WangCai_1+(2)
+      - BG_9056+@WangCai_1+(1)
+      - CH_9070+@WangCai_1+(1)
+      - CH_9053+@WangCai_1+(1)
+      - CH_9037+@WangCai_1+(1)
+      - BG_9042+@WangCai_1+(1)
+      - SG_9042+@WangCai_1+(2)
+      - BG_9007+@WangCai_1+(1)
+      - -保加利亚-节点池筛选0406-2
+      - -保加利亚-节点池筛选0406-19
+      - SG_9006+@WangCai_1+(2)
+      - SG_9084+@WangCai_1+(2)
+      - CH_9070+@WangCai_1
+      - BG_9031+@WangCai_1
+      - SG_9040+@WangCai_1+(2)
+      - CH_9045+@WangCai_1+(1)
+      - GB_9093+@WangCai_1
+      - SG_9057+@WangCai_1+(2)
+      - CH_9033+@WangCai_1+(1)
+      - GB_9079+@WangCai_1
+      - NL_9045+@WangCai_1+(2)
+      - CH_9025+@WangCai_1+(1)
+      - BG_9025+@WangCai_1+(1)
+      - CH_9094+@WangCai_1
+      - SG_9038+@WangCai_1+(2)
+      - BG_9006+@WangCai_1+(1)
+      - BG_9084+@WangCai_1+(1)
+      - CH_9014+@WangCai_1+(1)
+      - -英国-节点池筛选0406-17
+      - BG_9059+@WangCai_1+(1)
+      - CH_9073+@WangCai_1+(1)
+      - BG_9040+@WangCai_1+(1)
+      - BG_9050+@WangCai_1
+      - BG_9015+@WangCai_1+(1)
+      - -保加利亚-节点池筛选0406-22
+      - BG_9031+@WangCai_1+(1)
+      - BG_9088+@WangCai_1
+      - GB_9032+@WangCai_1
+      - BG_9025+@WangCai_1+(2)
+      - CH_9006+@WangCai_1+(1)
+      - GB_9045+@WangCai_1
+      - BG_9024+@WangCai_1+(1)
+      - CH_9059+@WangCai_1+(1)
+      - GB_9056+@WangCai_1
+      - BG_9027+@WangCai_1+(1)
+      - BG_9032+@WangCai_1+(1)
+      - BG_9094+@WangCai_1+(1)
+      - CH_9006+@WangCai_1
+      - CH_9093+@WangCai_1
+      - -保加利亚-节点池筛选0406-12
+      - SG_9059+@WangCai_1+(2)
+      - BG_9003+@WangCai_1+(1)
+      - CH_9025+@WangCai_1
+      - GB_9024+@WangCai_1
+      - BG_9073+@WangCai_1+(1)
+      - SG_9060+@WangCai_1+(2)
+      - BG_9005+@WangCai_1+(1)
+      - GB_9097+@WangCai_1
+      - SG_9064+@WangCai_1+(2)
+      - GB_9084+@WangCai_1
+      - CH_9088+@WangCai_1
+      - BG_9041+@WangCai_1+(2)
+      - GB_9060+@WangCai_1
+      - GB_9070+@WangCai_1
+      - GB_9094+@WangCai_1
+      - GB_9019+@WangCai_1
+      - BG_9045+@WangCai_1
+      - GB_9057+@WangCai_1
+      - NL_9000+@WangCai_1+(2)
+      - BG_9040+@WangCai_1+(2)
+      - BG_9057+@WangCai_1+(1)
+      - 香港 04 | 直连
+      - 香港 04 | 广港 IEPL
+      - JP 02 Premium Access Point
+      - 加群 @yyjc_group，签到每月送50G流量
+      - 香港 03 | 直连
+      - 本站提供虚假的 广港 IEPL
+      - 日本 02 | 直连
+      - 香港 02 | 广港 IEPL
+      - SG 01 Premium Access Point
+      - 香港 01 | 广港 IEPL
+      - US 01 Premium Access Point
+      - "%微软云 香港 5Gbps"
+      - 日本 01 | 直连
+      - 香港 03 | 广港 IEPL
+      - 日本 03 | 直连
+      - JP 01 Premium Access Point
+      - 韩国 01 | 直连
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - HK_油管 TG 8度科技
-      - US_1212 |31.31Mb
-      - 「加入会员解锁流媒体」x5
-      - 美国-BGP-N
-      - 「🇸🇬」EMO+|+龙鳞果+x5+2
-      - 「加入会员解锁流媒体」x5 4
-      - 「🇸🇬」EMO+|+龙鳞果+x5+3
-      - 俄罗斯-BGP
-      - KR_油管 TG 8度科技
-      - 「🇸🇬」EMO+|+龙鳞果+x5+5
-      - _609 | 2.60Mb
-      - 美国-BGP-K
-      - US_油管 TG 8度科技
-      - CN_1015 |16.84Mb
-      - US_油管 TG 8度科技 2
-      - 油管 TG 8度科技
-      - 「加入会员解锁流媒体」x5 2
-      - BG_746+|+4.01Mb
-      - _18+|+8.06Mb
-      - NL_油管+TG+8度科技
-      - _526+|+0.16Mb
-      - BG_740+|+8.06Mb
-      - BG_726+|+6.87Mb
-      - BG_729+|+6.35Mb
-      - _12+|+6.97Mb
-      - 「加入会员解锁流媒体」x5 3
-      - 香港_TGatnodesharing_1_664
-      - _10
-      - 油管 TG 8度科技 2
-      - BG_734+|+2.85Mb
-      - BG_759+|+6.79Mb
-      - _574+|+4.70Mb
-      - _559
-      - NL_油管+TG+8度科技 2
-      - 「加入会员解锁流媒体」x5 5
-      - BG_724+|+5.69Mb
-      - _536+|+1.99Mb
-      - BG_722+|+3.71Mb
-      - CN_854+|+8.96Mb
-      - _474+|+7.55Mb
-      - CN_843+|27.95Mb
-      - CN_858+|+7.66Mb
-      - _36+|+9.36Mb
-      - CN_853+|10.61Mb
-      - CN_855+|+7.34Mb
-      - CN_862+|+3.40Mb
-      - CN_860+|66.31Mb
-      - _15+|10.15Mb
-      - _34+|+2.83Mb
-      - CN_850+|16.30Mb
-      - _21+|34.42Mb
-      - _30+|+8.05Mb
-      - _25+|11.23Mb
-      - CN_油管 TG 8度科技
-      - _24+|12.36Mb
-      - _32+|15.31Mb
-      - _610 | 0.34Mb
-      - NL_油管+TG+8度科技 3
-      - BG_762+|11.17Mb
-      - NL_油管+TG+8度科技 4
-      - 美国_TGatnodesharing_26_649 |12.20Mb
-      - _548+|+5.55Mb
-      - _35+|12.39Mb
-      - 「🇸🇬」EMO+|+金灵子+x5
+      - 新加坡02
+      - 购买QQ352530340_2
+      - SGP+CM_A/04+x0_3
+      - HKG+CM_B/04+x0_3
+      - SGP+CM_B/02+x0_3
+      - JPN+CM_A/01+x0_3
+      - JPN+CM_A/04+x0_3
+      - 公众号：光头院长_1
+      - JPN+CN2/03+x0_3
+      - 卢森堡
+      - HKG+CN2/08+x0_3
+      - HKG+CM_A/10+x0_3
+      - 美国04
+      - SGP+CM_A/01+x0_3
+      - JPN+CM_A/02+x0_3
+      - HKG+CM_A/07+x0_3
+      - HKG+CM_A/03+x0_3
+      - JPN+CM_B/05+x0_3
+      - 韩国02
+      - JPN+CM_A/05+x0_3
+      - JPN+CM_B/01+x0_3
+      - 美国06
+      - JPN+CN2/04+x0_3
+      - HKG+CM_B/08+x0_3
+      - 美国07
+      - JPN+CM_B/04+x0_3
+      - JPN+CN2/02+x0_3
+      - JPN+CM_B/02+x0_3
+      - SGP+CM_A/05+x0_3
+      - HKG+CM_A/05+x0_3
+      - HKG+CM_B/03+x0_3
+      - HKG+CM_A/06+x0_3
+      - JPN+CM_A/03+x0_3
+      - 美国08
+      - HKG+CM_A/04+x0_3
+      - JPN+CM_B/03+x0_3
+      - HKG CN2/06 x0_3
+      - 韩国04
+      - 韩国03
+      - SGP+CM_A/03+x0_3
+      - AA-V2ray-HK-HGC
+      - AA-V2ray-HK-HKBN.02
+      - AA-V2ray-TW-HiNet.01
+      - AA-V2ray-HK-HKT.02
+      - AA-V2ray-HK-NTT.01
+      - AA-V2ray-HK-HKT.01
+      - AA-V2ray-JP-NTT.03
+      - AA-V2ray-TW-HiNet.02
+      - AA-V2ray-HK-HKBN
+      - AA-V2ray-JP-NTT.02
+      - AA-V2ray-VN【越南】
+      - AA-V2ray-TW-HiNet.05
+      - AA-V2ray-TW-HiNet.04
+      - AA-V2ray-US-HE.04
+      - AA-V2ray-TW-HiNet.03
+      - AA-V2ray-US-HE.01
+      - AA-V2ray-JP-NTT.01
+      - THE WORLD
+      - AA-V2ray-US-HE.03
+      - AA-V2ray-US-Philadelphia
+      - AA-V2ray-RU-Selectel
+      - _HK_香港->🇰🇷_KR_韩国
+      - B-美国_BGP_流媒体_标准1_22
+      - A-日本_BGP_流媒体_高级1_10
+      - B-香港_HKT_流媒体_标准2_19
+      - A-台湾_HINET_流媒体_高级1_8
+      - B-美国_Cogent_流媒体_标准1_24
+      - A-香港_BGP_流媒体_高级2_5
+      - A-美国_BGP_流媒体_高级1_6
+      - B-日本_BGP_流媒体_标准2_21
+      - B-美国_Cogent_流媒体_标准2_25
+      - B-美国_BGP_流媒体_标准2_23
+      - B-日本_BGP_流媒体_标准1_20
+      - A-香港_BGP_流媒体_高级1_4
+      - A-台湾_HINET_流媒体_高级2_9
+      - B-香港_HGC_流媒体_标准1_14
+      - A-英国_GCP_流媒体_高级1_12
+      - B-香港_HKT_流媒体_标准1_18
+      - B-香港_HGC_流媒体_标准2_15
+      - A-日本_BGP_流媒体_高级2_11
+      - A-美国_BGP_流媒体_高级2_7
+      - _CA_加拿大
+      - 每次使用前请更新节点_1
+      - _CA_加拿大 2
+      - CH_9001+@WangCai_1+(1)
+      - BG_9001+@WangCai_1+(2)
+      - BG_9094+@WangCai_1+(2)
+      - CH_9056+@WangCai_1
+      - BG_9043+@WangCai_1
+      - BG_9019+@WangCai_1
+      - BG_9050+@WangCai_1+(2)
+      - BG_9060+@WangCai_1
+      - BG_9043+@WangCai_1+(2)
+      - CH_9003+@WangCai_1+(1)
+      - CH_9020+@WangCai_1+(1)
+      - CH_9056+@WangCai_1+(1)
+      - BG_9015+@WangCai_1+(2)
+      - CH_9000+@WangCai_1+(1)
+      - BG_9056+@WangCai_1+(2)
+      - CH_9057+@WangCai_1+(1)
+      - BG_9070+@WangCai_1
+      - BG_9079+@WangCai_1+(2)
+      - BG_9020+@WangCai_1
+      - BG_9037+@WangCai_1+(2)
+      - BG_9079+@WangCai_1
+      - BG_9038+@WangCai_1
+      - CH_9005+@WangCai_1+(1)
+      - BG_9045+@WangCai_1+(1)
+      - CH_9032+@WangCai_1
+      - -英国-节点池筛选0406-14
+      - BG_9027+@WangCai_1
+      - -保加利亚-节点池筛选0406-15
+      - -英国-节点池筛选0406-24
+      - BG_9033+@WangCai_1
+      - CH_9041+@WangCai_1+(1)
+      - BG_9000+@WangCai_1+(2)
+      - -英国-节点池筛选0406-23
+      - CH_9060+@WangCai_1+(1)
+      - BG_9059+@WangCai_1+(2)
+      - BG_9014+@WangCai_1
+      - BG_9084+@WangCai_1
+      - -保加利亚-节点池筛选0406-11
+      - BG_9033+@WangCai_1+(2)
+      - CH_9040+@WangCai_1+(1)
+      - BG_9003+@WangCai_1+(2)
+      - BG_9010+@WangCai_1
+      - BG_9019+@WangCai_1+(2)
+      - CH_9015+@WangCai_1+(1)
+      - BG_9064+@WangCai_1
+      - CH_9026+@WangCai_1+(1)
+      - CH_9064+@WangCai_1+(1)
+      - BG_9006+@WangCai_1+(2)
+      - BG_9018+@WangCai_1+(2)
+      - BG_9042+@WangCai_1
+      - BG_9093+@WangCai_1
+      - BG_9070+@WangCai_1+(2)
+      - CH_9008+@WangCai_1+(1)
+      - GB_9020+@WangCai_1
+      - BG_9008+@WangCai_1
+      - BG_9098+@WangCai_1+(2)
+      - CH_9007+@WangCai_1+(1)
+      - -保加利亚-节点池筛选0406-13
+      - -保加利亚-节点池筛选0406-9
+      - CH_9031+@WangCai_1+(1)
+      - BG_9093+@WangCai_1+(2)
+      - BG_9018+@WangCai_1
+      - CH_9019+@WangCai_1+(1)
+      - BG_9005+@WangCai_1
+      - CH_9024+@WangCai_1+(1)
+      - BG_9015+@WangCai_1
+      - BG_9031+@WangCai_1+(2)
+      - CH_9033+@WangCai_1
+      - CH_9045+@WangCai_1
+      - CH_9097+@WangCai_1+(1)
+      - CH_9098+@WangCai_1
+      - SG_9014+@WangCai_1+(2)
+      - NL_9050+@WangCai_1+(2)
+      - BG_9005+@WangCai_1+(2)
+      - BG_9053+@WangCai_1
+      - BG_9059+@WangCai_1
+      - BG_9064+@WangCai_1+(2)
+      - CH_9040+@WangCai_1
+      - -英国-节点池筛选0406-16
+      - CH_9010+@WangCai_1+(1)
+      - CH_9088+@WangCai_1+(1)
+      - BG_9020+@WangCai_1+(2)
+      - SG_9025+@WangCai_1+(2)
+      - CH_9094+@WangCai_1+(1)
+      - BG_9008+@WangCai_1+(2)
+      - BG_9024+@WangCai_1
+      - BG_9073+@WangCai_1
+      - -保加利亚-节点池筛选0406-18
+      - -保加利亚-节点池筛选0406-6
+      - SG_9000+@WangCai_1+(2)
+      - BG_9046+@WangCai_1
+      - -保加利亚-节点池筛选0406-5
+      - CH_9042+@WangCai_1
+      - BG_9007+@WangCai_1
+      - BG_9094+@WangCai_1
+      - CH_9024+@WangCai_1
+      - NL_9011+@WangCai_1+(2)
+      - CH_9027+@WangCai_1+(1)
+      - SG_9015+@WangCai_1+(2)
+      - CH_9043+@WangCai_1
+      - CH_9079+@WangCai_1
+      - CH_9011+@WangCai_1+(1)
+      - CH_9050+@WangCai_1+(1)
+      - SG_9007+@WangCai_1+(2)
+      - SG_9024+@WangCai_1+(2)
+      - CH_9093+@WangCai_1+(1)
+      - BG_9006+@WangCai_1
+      - CH_9043+@WangCai_1+(1)
+      - CH_9038+@WangCai_1+(1)
+      - CH_9060+@WangCai_1
+      - SG_9094+@WangCai_1+(2)
+      - BG_9026+@WangCai_1
+      - CH_9046+@WangCai_1+(1)
+      - BG_9073+@WangCai_1+(2)
+      - SG_9041+@WangCai_1+(2)
+      - CH_9032+@WangCai_1+(1)
+      - SG_9043+@WangCai_1+(2)
+      - CH_9018+@WangCai_1+(1)
+      - CH_9053+@WangCai_1
+      - SG_9031+@WangCai_1+(2)
+      - -保加利亚-节点池筛选0406-21
+      - CH_9010+@WangCai_1
+      - CH_9037+@WangCai_1
+      - SG_9037+@WangCai_1+(2)
+      - BG_9007+@WangCai_1+(2)
+      - CH_9050+@WangCai_1
+      - CH_9084+@WangCai_1+(1)
+      - SG_9003+@WangCai_1+(2)
+      - BG_9056+@WangCai_1+(1)
+      - CH_9070+@WangCai_1+(1)
+      - CH_9053+@WangCai_1+(1)
+      - CH_9037+@WangCai_1+(1)
+      - BG_9042+@WangCai_1+(1)
+      - SG_9042+@WangCai_1+(2)
+      - BG_9007+@WangCai_1+(1)
+      - -保加利亚-节点池筛选0406-2
+      - -保加利亚-节点池筛选0406-19
+      - SG_9006+@WangCai_1+(2)
+      - SG_9084+@WangCai_1+(2)
+      - CH_9070+@WangCai_1
+      - BG_9031+@WangCai_1
+      - SG_9040+@WangCai_1+(2)
+      - CH_9045+@WangCai_1+(1)
+      - GB_9093+@WangCai_1
+      - SG_9057+@WangCai_1+(2)
+      - CH_9033+@WangCai_1+(1)
+      - GB_9079+@WangCai_1
+      - NL_9045+@WangCai_1+(2)
+      - CH_9025+@WangCai_1+(1)
+      - BG_9025+@WangCai_1+(1)
+      - CH_9094+@WangCai_1
+      - SG_9038+@WangCai_1+(2)
+      - BG_9006+@WangCai_1+(1)
+      - BG_9084+@WangCai_1+(1)
+      - CH_9014+@WangCai_1+(1)
+      - -英国-节点池筛选0406-17
+      - BG_9059+@WangCai_1+(1)
+      - CH_9073+@WangCai_1+(1)
+      - BG_9040+@WangCai_1+(1)
+      - BG_9050+@WangCai_1
+      - BG_9015+@WangCai_1+(1)
+      - -保加利亚-节点池筛选0406-22
+      - BG_9031+@WangCai_1+(1)
+      - BG_9088+@WangCai_1
+      - GB_9032+@WangCai_1
+      - BG_9025+@WangCai_1+(2)
+      - CH_9006+@WangCai_1+(1)
+      - GB_9045+@WangCai_1
+      - BG_9024+@WangCai_1+(1)
+      - CH_9059+@WangCai_1+(1)
+      - GB_9056+@WangCai_1
+      - BG_9027+@WangCai_1+(1)
+      - BG_9032+@WangCai_1+(1)
+      - BG_9094+@WangCai_1+(1)
+      - CH_9006+@WangCai_1
+      - CH_9093+@WangCai_1
+      - -保加利亚-节点池筛选0406-12
+      - SG_9059+@WangCai_1+(2)
+      - BG_9003+@WangCai_1+(1)
+      - CH_9025+@WangCai_1
+      - GB_9024+@WangCai_1
+      - BG_9073+@WangCai_1+(1)
+      - SG_9060+@WangCai_1+(2)
+      - BG_9005+@WangCai_1+(1)
+      - GB_9097+@WangCai_1
+      - SG_9064+@WangCai_1+(2)
+      - GB_9084+@WangCai_1
+      - CH_9088+@WangCai_1
+      - BG_9041+@WangCai_1+(2)
+      - GB_9060+@WangCai_1
+      - GB_9070+@WangCai_1
+      - GB_9094+@WangCai_1
+      - GB_9019+@WangCai_1
+      - BG_9045+@WangCai_1
+      - GB_9057+@WangCai_1
+      - NL_9000+@WangCai_1+(2)
+      - BG_9040+@WangCai_1+(2)
+      - BG_9057+@WangCai_1+(1)
+      - 香港 04 | 直连
+      - 香港 04 | 广港 IEPL
+      - JP 02 Premium Access Point
+      - 加群 @yyjc_group，签到每月送50G流量
+      - 香港 03 | 直连
+      - 本站提供虚假的 广港 IEPL
+      - 日本 02 | 直连
+      - 香港 02 | 广港 IEPL
+      - SG 01 Premium Access Point
+      - 香港 01 | 广港 IEPL
+      - US 01 Premium Access Point
+      - "%微软云 香港 5Gbps"
+      - 日本 01 | 直连
+      - 香港 03 | 广港 IEPL
+      - 日本 03 | 直连
+      - JP 01 Premium Access Point
+      - 韩国 01 | 直连
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -296,284 +1236,1245 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - HK_油管 TG 8度科技
-      - US_1212 |31.31Mb
-      - 「加入会员解锁流媒体」x5
-      - 美国-BGP-N
-      - 「🇸🇬」EMO+|+龙鳞果+x5+2
-      - 「加入会员解锁流媒体」x5 4
-      - 「🇸🇬」EMO+|+龙鳞果+x5+3
-      - 俄罗斯-BGP
-      - KR_油管 TG 8度科技
-      - 「🇸🇬」EMO+|+龙鳞果+x5+5
-      - _609 | 2.60Mb
-      - 美国-BGP-K
-      - US_油管 TG 8度科技
-      - CN_1015 |16.84Mb
-      - US_油管 TG 8度科技 2
-      - 油管 TG 8度科技
-      - 「加入会员解锁流媒体」x5 2
-      - BG_746+|+4.01Mb
-      - _18+|+8.06Mb
-      - NL_油管+TG+8度科技
-      - _526+|+0.16Mb
-      - BG_740+|+8.06Mb
-      - BG_726+|+6.87Mb
-      - BG_729+|+6.35Mb
-      - _12+|+6.97Mb
-      - 「加入会员解锁流媒体」x5 3
-      - 香港_TGatnodesharing_1_664
-      - _10
-      - 油管 TG 8度科技 2
-      - BG_734+|+2.85Mb
-      - BG_759+|+6.79Mb
-      - _574+|+4.70Mb
-      - _559
-      - NL_油管+TG+8度科技 2
-      - 「加入会员解锁流媒体」x5 5
-      - BG_724+|+5.69Mb
-      - _536+|+1.99Mb
-      - BG_722+|+3.71Mb
-      - CN_854+|+8.96Mb
-      - _474+|+7.55Mb
-      - CN_843+|27.95Mb
-      - CN_858+|+7.66Mb
-      - _36+|+9.36Mb
-      - CN_853+|10.61Mb
-      - CN_855+|+7.34Mb
-      - CN_862+|+3.40Mb
-      - CN_860+|66.31Mb
-      - _15+|10.15Mb
-      - _34+|+2.83Mb
-      - CN_850+|16.30Mb
-      - _21+|34.42Mb
-      - _30+|+8.05Mb
-      - _25+|11.23Mb
-      - CN_油管 TG 8度科技
-      - _24+|12.36Mb
-      - _32+|15.31Mb
-      - _610 | 0.34Mb
-      - NL_油管+TG+8度科技 3
-      - BG_762+|11.17Mb
-      - NL_油管+TG+8度科技 4
-      - 美国_TGatnodesharing_26_649 |12.20Mb
-      - _548+|+5.55Mb
-      - _35+|12.39Mb
-      - 「🇸🇬」EMO+|+金灵子+x5
+      - 新加坡02
+      - 购买QQ352530340_2
+      - SGP+CM_A/04+x0_3
+      - HKG+CM_B/04+x0_3
+      - SGP+CM_B/02+x0_3
+      - JPN+CM_A/01+x0_3
+      - JPN+CM_A/04+x0_3
+      - 公众号：光头院长_1
+      - JPN+CN2/03+x0_3
+      - 卢森堡
+      - HKG+CN2/08+x0_3
+      - HKG+CM_A/10+x0_3
+      - 美国04
+      - SGP+CM_A/01+x0_3
+      - JPN+CM_A/02+x0_3
+      - HKG+CM_A/07+x0_3
+      - HKG+CM_A/03+x0_3
+      - JPN+CM_B/05+x0_3
+      - 韩国02
+      - JPN+CM_A/05+x0_3
+      - JPN+CM_B/01+x0_3
+      - 美国06
+      - JPN+CN2/04+x0_3
+      - HKG+CM_B/08+x0_3
+      - 美国07
+      - JPN+CM_B/04+x0_3
+      - JPN+CN2/02+x0_3
+      - JPN+CM_B/02+x0_3
+      - SGP+CM_A/05+x0_3
+      - HKG+CM_A/05+x0_3
+      - HKG+CM_B/03+x0_3
+      - HKG+CM_A/06+x0_3
+      - JPN+CM_A/03+x0_3
+      - 美国08
+      - HKG+CM_A/04+x0_3
+      - JPN+CM_B/03+x0_3
+      - HKG CN2/06 x0_3
+      - 韩国04
+      - 韩国03
+      - SGP+CM_A/03+x0_3
+      - AA-V2ray-HK-HGC
+      - AA-V2ray-HK-HKBN.02
+      - AA-V2ray-TW-HiNet.01
+      - AA-V2ray-HK-HKT.02
+      - AA-V2ray-HK-NTT.01
+      - AA-V2ray-HK-HKT.01
+      - AA-V2ray-JP-NTT.03
+      - AA-V2ray-TW-HiNet.02
+      - AA-V2ray-HK-HKBN
+      - AA-V2ray-JP-NTT.02
+      - AA-V2ray-VN【越南】
+      - AA-V2ray-TW-HiNet.05
+      - AA-V2ray-TW-HiNet.04
+      - AA-V2ray-US-HE.04
+      - AA-V2ray-TW-HiNet.03
+      - AA-V2ray-US-HE.01
+      - AA-V2ray-JP-NTT.01
+      - THE WORLD
+      - AA-V2ray-US-HE.03
+      - AA-V2ray-US-Philadelphia
+      - AA-V2ray-RU-Selectel
+      - _HK_香港->🇰🇷_KR_韩国
+      - B-美国_BGP_流媒体_标准1_22
+      - A-日本_BGP_流媒体_高级1_10
+      - B-香港_HKT_流媒体_标准2_19
+      - A-台湾_HINET_流媒体_高级1_8
+      - B-美国_Cogent_流媒体_标准1_24
+      - A-香港_BGP_流媒体_高级2_5
+      - A-美国_BGP_流媒体_高级1_6
+      - B-日本_BGP_流媒体_标准2_21
+      - B-美国_Cogent_流媒体_标准2_25
+      - B-美国_BGP_流媒体_标准2_23
+      - B-日本_BGP_流媒体_标准1_20
+      - A-香港_BGP_流媒体_高级1_4
+      - A-台湾_HINET_流媒体_高级2_9
+      - B-香港_HGC_流媒体_标准1_14
+      - A-英国_GCP_流媒体_高级1_12
+      - B-香港_HKT_流媒体_标准1_18
+      - B-香港_HGC_流媒体_标准2_15
+      - A-日本_BGP_流媒体_高级2_11
+      - A-美国_BGP_流媒体_高级2_7
+      - _CA_加拿大
+      - 每次使用前请更新节点_1
+      - _CA_加拿大 2
+      - CH_9001+@WangCai_1+(1)
+      - BG_9001+@WangCai_1+(2)
+      - BG_9094+@WangCai_1+(2)
+      - CH_9056+@WangCai_1
+      - BG_9043+@WangCai_1
+      - BG_9019+@WangCai_1
+      - BG_9050+@WangCai_1+(2)
+      - BG_9060+@WangCai_1
+      - BG_9043+@WangCai_1+(2)
+      - CH_9003+@WangCai_1+(1)
+      - CH_9020+@WangCai_1+(1)
+      - CH_9056+@WangCai_1+(1)
+      - BG_9015+@WangCai_1+(2)
+      - CH_9000+@WangCai_1+(1)
+      - BG_9056+@WangCai_1+(2)
+      - CH_9057+@WangCai_1+(1)
+      - BG_9070+@WangCai_1
+      - BG_9079+@WangCai_1+(2)
+      - BG_9020+@WangCai_1
+      - BG_9037+@WangCai_1+(2)
+      - BG_9079+@WangCai_1
+      - BG_9038+@WangCai_1
+      - CH_9005+@WangCai_1+(1)
+      - BG_9045+@WangCai_1+(1)
+      - CH_9032+@WangCai_1
+      - -英国-节点池筛选0406-14
+      - BG_9027+@WangCai_1
+      - -保加利亚-节点池筛选0406-15
+      - -英国-节点池筛选0406-24
+      - BG_9033+@WangCai_1
+      - CH_9041+@WangCai_1+(1)
+      - BG_9000+@WangCai_1+(2)
+      - -英国-节点池筛选0406-23
+      - CH_9060+@WangCai_1+(1)
+      - BG_9059+@WangCai_1+(2)
+      - BG_9014+@WangCai_1
+      - BG_9084+@WangCai_1
+      - -保加利亚-节点池筛选0406-11
+      - BG_9033+@WangCai_1+(2)
+      - CH_9040+@WangCai_1+(1)
+      - BG_9003+@WangCai_1+(2)
+      - BG_9010+@WangCai_1
+      - BG_9019+@WangCai_1+(2)
+      - CH_9015+@WangCai_1+(1)
+      - BG_9064+@WangCai_1
+      - CH_9026+@WangCai_1+(1)
+      - CH_9064+@WangCai_1+(1)
+      - BG_9006+@WangCai_1+(2)
+      - BG_9018+@WangCai_1+(2)
+      - BG_9042+@WangCai_1
+      - BG_9093+@WangCai_1
+      - BG_9070+@WangCai_1+(2)
+      - CH_9008+@WangCai_1+(1)
+      - GB_9020+@WangCai_1
+      - BG_9008+@WangCai_1
+      - BG_9098+@WangCai_1+(2)
+      - CH_9007+@WangCai_1+(1)
+      - -保加利亚-节点池筛选0406-13
+      - -保加利亚-节点池筛选0406-9
+      - CH_9031+@WangCai_1+(1)
+      - BG_9093+@WangCai_1+(2)
+      - BG_9018+@WangCai_1
+      - CH_9019+@WangCai_1+(1)
+      - BG_9005+@WangCai_1
+      - CH_9024+@WangCai_1+(1)
+      - BG_9015+@WangCai_1
+      - BG_9031+@WangCai_1+(2)
+      - CH_9033+@WangCai_1
+      - CH_9045+@WangCai_1
+      - CH_9097+@WangCai_1+(1)
+      - CH_9098+@WangCai_1
+      - SG_9014+@WangCai_1+(2)
+      - NL_9050+@WangCai_1+(2)
+      - BG_9005+@WangCai_1+(2)
+      - BG_9053+@WangCai_1
+      - BG_9059+@WangCai_1
+      - BG_9064+@WangCai_1+(2)
+      - CH_9040+@WangCai_1
+      - -英国-节点池筛选0406-16
+      - CH_9010+@WangCai_1+(1)
+      - CH_9088+@WangCai_1+(1)
+      - BG_9020+@WangCai_1+(2)
+      - SG_9025+@WangCai_1+(2)
+      - CH_9094+@WangCai_1+(1)
+      - BG_9008+@WangCai_1+(2)
+      - BG_9024+@WangCai_1
+      - BG_9073+@WangCai_1
+      - -保加利亚-节点池筛选0406-18
+      - -保加利亚-节点池筛选0406-6
+      - SG_9000+@WangCai_1+(2)
+      - BG_9046+@WangCai_1
+      - -保加利亚-节点池筛选0406-5
+      - CH_9042+@WangCai_1
+      - BG_9007+@WangCai_1
+      - BG_9094+@WangCai_1
+      - CH_9024+@WangCai_1
+      - NL_9011+@WangCai_1+(2)
+      - CH_9027+@WangCai_1+(1)
+      - SG_9015+@WangCai_1+(2)
+      - CH_9043+@WangCai_1
+      - CH_9079+@WangCai_1
+      - CH_9011+@WangCai_1+(1)
+      - CH_9050+@WangCai_1+(1)
+      - SG_9007+@WangCai_1+(2)
+      - SG_9024+@WangCai_1+(2)
+      - CH_9093+@WangCai_1+(1)
+      - BG_9006+@WangCai_1
+      - CH_9043+@WangCai_1+(1)
+      - CH_9038+@WangCai_1+(1)
+      - CH_9060+@WangCai_1
+      - SG_9094+@WangCai_1+(2)
+      - BG_9026+@WangCai_1
+      - CH_9046+@WangCai_1+(1)
+      - BG_9073+@WangCai_1+(2)
+      - SG_9041+@WangCai_1+(2)
+      - CH_9032+@WangCai_1+(1)
+      - SG_9043+@WangCai_1+(2)
+      - CH_9018+@WangCai_1+(1)
+      - CH_9053+@WangCai_1
+      - SG_9031+@WangCai_1+(2)
+      - -保加利亚-节点池筛选0406-21
+      - CH_9010+@WangCai_1
+      - CH_9037+@WangCai_1
+      - SG_9037+@WangCai_1+(2)
+      - BG_9007+@WangCai_1+(2)
+      - CH_9050+@WangCai_1
+      - CH_9084+@WangCai_1+(1)
+      - SG_9003+@WangCai_1+(2)
+      - BG_9056+@WangCai_1+(1)
+      - CH_9070+@WangCai_1+(1)
+      - CH_9053+@WangCai_1+(1)
+      - CH_9037+@WangCai_1+(1)
+      - BG_9042+@WangCai_1+(1)
+      - SG_9042+@WangCai_1+(2)
+      - BG_9007+@WangCai_1+(1)
+      - -保加利亚-节点池筛选0406-2
+      - -保加利亚-节点池筛选0406-19
+      - SG_9006+@WangCai_1+(2)
+      - SG_9084+@WangCai_1+(2)
+      - CH_9070+@WangCai_1
+      - BG_9031+@WangCai_1
+      - SG_9040+@WangCai_1+(2)
+      - CH_9045+@WangCai_1+(1)
+      - GB_9093+@WangCai_1
+      - SG_9057+@WangCai_1+(2)
+      - CH_9033+@WangCai_1+(1)
+      - GB_9079+@WangCai_1
+      - NL_9045+@WangCai_1+(2)
+      - CH_9025+@WangCai_1+(1)
+      - BG_9025+@WangCai_1+(1)
+      - CH_9094+@WangCai_1
+      - SG_9038+@WangCai_1+(2)
+      - BG_9006+@WangCai_1+(1)
+      - BG_9084+@WangCai_1+(1)
+      - CH_9014+@WangCai_1+(1)
+      - -英国-节点池筛选0406-17
+      - BG_9059+@WangCai_1+(1)
+      - CH_9073+@WangCai_1+(1)
+      - BG_9040+@WangCai_1+(1)
+      - BG_9050+@WangCai_1
+      - BG_9015+@WangCai_1+(1)
+      - -保加利亚-节点池筛选0406-22
+      - BG_9031+@WangCai_1+(1)
+      - BG_9088+@WangCai_1
+      - GB_9032+@WangCai_1
+      - BG_9025+@WangCai_1+(2)
+      - CH_9006+@WangCai_1+(1)
+      - GB_9045+@WangCai_1
+      - BG_9024+@WangCai_1+(1)
+      - CH_9059+@WangCai_1+(1)
+      - GB_9056+@WangCai_1
+      - BG_9027+@WangCai_1+(1)
+      - BG_9032+@WangCai_1+(1)
+      - BG_9094+@WangCai_1+(1)
+      - CH_9006+@WangCai_1
+      - CH_9093+@WangCai_1
+      - -保加利亚-节点池筛选0406-12
+      - SG_9059+@WangCai_1+(2)
+      - BG_9003+@WangCai_1+(1)
+      - CH_9025+@WangCai_1
+      - GB_9024+@WangCai_1
+      - BG_9073+@WangCai_1+(1)
+      - SG_9060+@WangCai_1+(2)
+      - BG_9005+@WangCai_1+(1)
+      - GB_9097+@WangCai_1
+      - SG_9064+@WangCai_1+(2)
+      - GB_9084+@WangCai_1
+      - CH_9088+@WangCai_1
+      - BG_9041+@WangCai_1+(2)
+      - GB_9060+@WangCai_1
+      - GB_9070+@WangCai_1
+      - GB_9094+@WangCai_1
+      - GB_9019+@WangCai_1
+      - BG_9045+@WangCai_1
+      - GB_9057+@WangCai_1
+      - NL_9000+@WangCai_1+(2)
+      - BG_9040+@WangCai_1+(2)
+      - BG_9057+@WangCai_1+(1)
+      - 香港 04 | 直连
+      - 香港 04 | 广港 IEPL
+      - JP 02 Premium Access Point
+      - 加群 @yyjc_group，签到每月送50G流量
+      - 香港 03 | 直连
+      - 本站提供虚假的 广港 IEPL
+      - 日本 02 | 直连
+      - 香港 02 | 广港 IEPL
+      - SG 01 Premium Access Point
+      - 香港 01 | 广港 IEPL
+      - US 01 Premium Access Point
+      - "%微软云 香港 5Gbps"
+      - 日本 01 | 直连
+      - 香港 03 | 广港 IEPL
+      - 日本 03 | 直连
+      - JP 01 Premium Access Point
+      - 韩国 01 | 直连
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 香港_TGatnodesharing_1_664
+      - AA-V2ray-HK-HGC
+      - AA-V2ray-HK-HKBN.02
+      - AA-V2ray-HK-HKT.02
+      - AA-V2ray-HK-HKT.01
+      - AA-V2ray-HK-HKBN
+      - _HK_香港->🇰🇷_KR_韩国
+      - B-香港_HKT_流媒体_标准2_19
+      - A-台湾_HINET_流媒体_高级1_8
+      - A-香港_BGP_流媒体_高级2_5
+      - A-香港_BGP_流媒体_高级1_4
+      - A-台湾_HINET_流媒体_高级2_9
+      - B-香港_HGC_流媒体_标准1_14
+      - B-香港_HKT_流媒体_标准1_18
+      - B-香港_HGC_流媒体_标准2_15
+      - 香港 04 | 直连
+      - 香港 04 | 广港 IEPL
+      - 香港 03 | 直连
+      - 本站提供虚假的 广港 IEPL
+      - 香港 02 | 广港 IEPL
+      - 香港 01 | 广港 IEPL
+      - "%微软云 香港 5Gbps"
+      - 香港 03 | 广港 IEPL
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - HK_油管 TG 8度科技
-      - US_1212 |31.31Mb
-      - 「加入会员解锁流媒体」x5
-      - 美国-BGP-N
-      - 「🇸🇬」EMO+|+龙鳞果+x5+2
-      - 「加入会员解锁流媒体」x5 4
-      - 「🇸🇬」EMO+|+龙鳞果+x5+3
-      - 俄罗斯-BGP
-      - KR_油管 TG 8度科技
-      - 「🇸🇬」EMO+|+龙鳞果+x5+5
-      - _609 | 2.60Mb
-      - 美国-BGP-K
-      - US_油管 TG 8度科技
-      - CN_1015 |16.84Mb
-      - US_油管 TG 8度科技 2
-      - 油管 TG 8度科技
-      - 「加入会员解锁流媒体」x5 2
-      - BG_746+|+4.01Mb
-      - _18+|+8.06Mb
-      - NL_油管+TG+8度科技
-      - _526+|+0.16Mb
-      - BG_740+|+8.06Mb
-      - BG_726+|+6.87Mb
-      - BG_729+|+6.35Mb
-      - _12+|+6.97Mb
-      - 「加入会员解锁流媒体」x5 3
-      - 香港_TGatnodesharing_1_664
-      - _10
-      - 油管 TG 8度科技 2
-      - BG_734+|+2.85Mb
-      - BG_759+|+6.79Mb
-      - _574+|+4.70Mb
-      - _559
-      - NL_油管+TG+8度科技 2
-      - 「加入会员解锁流媒体」x5 5
-      - BG_724+|+5.69Mb
-      - _536+|+1.99Mb
-      - BG_722+|+3.71Mb
-      - CN_854+|+8.96Mb
-      - _474+|+7.55Mb
-      - CN_843+|27.95Mb
-      - CN_858+|+7.66Mb
-      - _36+|+9.36Mb
-      - CN_853+|10.61Mb
-      - CN_855+|+7.34Mb
-      - CN_862+|+3.40Mb
-      - CN_860+|66.31Mb
-      - _15+|10.15Mb
-      - _34+|+2.83Mb
-      - CN_850+|16.30Mb
-      - _21+|34.42Mb
-      - _30+|+8.05Mb
-      - _25+|11.23Mb
-      - CN_油管 TG 8度科技
-      - _24+|12.36Mb
-      - _32+|15.31Mb
-      - _610 | 0.34Mb
-      - NL_油管+TG+8度科技 3
-      - BG_762+|11.17Mb
-      - NL_油管+TG+8度科技 4
-      - 美国_TGatnodesharing_26_649 |12.20Mb
-      - _548+|+5.55Mb
-      - _35+|12.39Mb
-      - 「🇸🇬」EMO+|+金灵子+x5
+      - 新加坡02
+      - 购买QQ352530340_2
+      - SGP+CM_A/04+x0_3
+      - HKG+CM_B/04+x0_3
+      - SGP+CM_B/02+x0_3
+      - JPN+CM_A/01+x0_3
+      - JPN+CM_A/04+x0_3
+      - 公众号：光头院长_1
+      - JPN+CN2/03+x0_3
+      - 卢森堡
+      - HKG+CN2/08+x0_3
+      - HKG+CM_A/10+x0_3
+      - 美国04
+      - SGP+CM_A/01+x0_3
+      - JPN+CM_A/02+x0_3
+      - HKG+CM_A/07+x0_3
+      - HKG+CM_A/03+x0_3
+      - JPN+CM_B/05+x0_3
+      - 韩国02
+      - JPN+CM_A/05+x0_3
+      - JPN+CM_B/01+x0_3
+      - 美国06
+      - JPN+CN2/04+x0_3
+      - HKG+CM_B/08+x0_3
+      - 美国07
+      - JPN+CM_B/04+x0_3
+      - JPN+CN2/02+x0_3
+      - JPN+CM_B/02+x0_3
+      - SGP+CM_A/05+x0_3
+      - HKG+CM_A/05+x0_3
+      - HKG+CM_B/03+x0_3
+      - HKG+CM_A/06+x0_3
+      - JPN+CM_A/03+x0_3
+      - 美国08
+      - HKG+CM_A/04+x0_3
+      - JPN+CM_B/03+x0_3
+      - HKG CN2/06 x0_3
+      - 韩国04
+      - 韩国03
+      - SGP+CM_A/03+x0_3
+      - AA-V2ray-HK-HGC
+      - AA-V2ray-HK-HKBN.02
+      - AA-V2ray-TW-HiNet.01
+      - AA-V2ray-HK-HKT.02
+      - AA-V2ray-HK-NTT.01
+      - AA-V2ray-HK-HKT.01
+      - AA-V2ray-JP-NTT.03
+      - AA-V2ray-TW-HiNet.02
+      - AA-V2ray-HK-HKBN
+      - AA-V2ray-JP-NTT.02
+      - AA-V2ray-VN【越南】
+      - AA-V2ray-TW-HiNet.05
+      - AA-V2ray-TW-HiNet.04
+      - AA-V2ray-US-HE.04
+      - AA-V2ray-TW-HiNet.03
+      - AA-V2ray-US-HE.01
+      - AA-V2ray-JP-NTT.01
+      - THE WORLD
+      - AA-V2ray-US-HE.03
+      - AA-V2ray-US-Philadelphia
+      - AA-V2ray-RU-Selectel
+      - _HK_香港->🇰🇷_KR_韩国
+      - B-美国_BGP_流媒体_标准1_22
+      - A-日本_BGP_流媒体_高级1_10
+      - B-香港_HKT_流媒体_标准2_19
+      - A-台湾_HINET_流媒体_高级1_8
+      - B-美国_Cogent_流媒体_标准1_24
+      - A-香港_BGP_流媒体_高级2_5
+      - A-美国_BGP_流媒体_高级1_6
+      - B-日本_BGP_流媒体_标准2_21
+      - B-美国_Cogent_流媒体_标准2_25
+      - B-美国_BGP_流媒体_标准2_23
+      - B-日本_BGP_流媒体_标准1_20
+      - A-香港_BGP_流媒体_高级1_4
+      - A-台湾_HINET_流媒体_高级2_9
+      - B-香港_HGC_流媒体_标准1_14
+      - A-英国_GCP_流媒体_高级1_12
+      - B-香港_HKT_流媒体_标准1_18
+      - B-香港_HGC_流媒体_标准2_15
+      - A-日本_BGP_流媒体_高级2_11
+      - A-美国_BGP_流媒体_高级2_7
+      - _CA_加拿大
+      - 每次使用前请更新节点_1
+      - _CA_加拿大 2
+      - CH_9001+@WangCai_1+(1)
+      - BG_9001+@WangCai_1+(2)
+      - BG_9094+@WangCai_1+(2)
+      - CH_9056+@WangCai_1
+      - BG_9043+@WangCai_1
+      - BG_9019+@WangCai_1
+      - BG_9050+@WangCai_1+(2)
+      - BG_9060+@WangCai_1
+      - BG_9043+@WangCai_1+(2)
+      - CH_9003+@WangCai_1+(1)
+      - CH_9020+@WangCai_1+(1)
+      - CH_9056+@WangCai_1+(1)
+      - BG_9015+@WangCai_1+(2)
+      - CH_9000+@WangCai_1+(1)
+      - BG_9056+@WangCai_1+(2)
+      - CH_9057+@WangCai_1+(1)
+      - BG_9070+@WangCai_1
+      - BG_9079+@WangCai_1+(2)
+      - BG_9020+@WangCai_1
+      - BG_9037+@WangCai_1+(2)
+      - BG_9079+@WangCai_1
+      - BG_9038+@WangCai_1
+      - CH_9005+@WangCai_1+(1)
+      - BG_9045+@WangCai_1+(1)
+      - CH_9032+@WangCai_1
+      - -英国-节点池筛选0406-14
+      - BG_9027+@WangCai_1
+      - -保加利亚-节点池筛选0406-15
+      - -英国-节点池筛选0406-24
+      - BG_9033+@WangCai_1
+      - CH_9041+@WangCai_1+(1)
+      - BG_9000+@WangCai_1+(2)
+      - -英国-节点池筛选0406-23
+      - CH_9060+@WangCai_1+(1)
+      - BG_9059+@WangCai_1+(2)
+      - BG_9014+@WangCai_1
+      - BG_9084+@WangCai_1
+      - -保加利亚-节点池筛选0406-11
+      - BG_9033+@WangCai_1+(2)
+      - CH_9040+@WangCai_1+(1)
+      - BG_9003+@WangCai_1+(2)
+      - BG_9010+@WangCai_1
+      - BG_9019+@WangCai_1+(2)
+      - CH_9015+@WangCai_1+(1)
+      - BG_9064+@WangCai_1
+      - CH_9026+@WangCai_1+(1)
+      - CH_9064+@WangCai_1+(1)
+      - BG_9006+@WangCai_1+(2)
+      - BG_9018+@WangCai_1+(2)
+      - BG_9042+@WangCai_1
+      - BG_9093+@WangCai_1
+      - BG_9070+@WangCai_1+(2)
+      - CH_9008+@WangCai_1+(1)
+      - GB_9020+@WangCai_1
+      - BG_9008+@WangCai_1
+      - BG_9098+@WangCai_1+(2)
+      - CH_9007+@WangCai_1+(1)
+      - -保加利亚-节点池筛选0406-13
+      - -保加利亚-节点池筛选0406-9
+      - CH_9031+@WangCai_1+(1)
+      - BG_9093+@WangCai_1+(2)
+      - BG_9018+@WangCai_1
+      - CH_9019+@WangCai_1+(1)
+      - BG_9005+@WangCai_1
+      - CH_9024+@WangCai_1+(1)
+      - BG_9015+@WangCai_1
+      - BG_9031+@WangCai_1+(2)
+      - CH_9033+@WangCai_1
+      - CH_9045+@WangCai_1
+      - CH_9097+@WangCai_1+(1)
+      - CH_9098+@WangCai_1
+      - SG_9014+@WangCai_1+(2)
+      - NL_9050+@WangCai_1+(2)
+      - BG_9005+@WangCai_1+(2)
+      - BG_9053+@WangCai_1
+      - BG_9059+@WangCai_1
+      - BG_9064+@WangCai_1+(2)
+      - CH_9040+@WangCai_1
+      - -英国-节点池筛选0406-16
+      - CH_9010+@WangCai_1+(1)
+      - CH_9088+@WangCai_1+(1)
+      - BG_9020+@WangCai_1+(2)
+      - SG_9025+@WangCai_1+(2)
+      - CH_9094+@WangCai_1+(1)
+      - BG_9008+@WangCai_1+(2)
+      - BG_9024+@WangCai_1
+      - BG_9073+@WangCai_1
+      - -保加利亚-节点池筛选0406-18
+      - -保加利亚-节点池筛选0406-6
+      - SG_9000+@WangCai_1+(2)
+      - BG_9046+@WangCai_1
+      - -保加利亚-节点池筛选0406-5
+      - CH_9042+@WangCai_1
+      - BG_9007+@WangCai_1
+      - BG_9094+@WangCai_1
+      - CH_9024+@WangCai_1
+      - NL_9011+@WangCai_1+(2)
+      - CH_9027+@WangCai_1+(1)
+      - SG_9015+@WangCai_1+(2)
+      - CH_9043+@WangCai_1
+      - CH_9079+@WangCai_1
+      - CH_9011+@WangCai_1+(1)
+      - CH_9050+@WangCai_1+(1)
+      - SG_9007+@WangCai_1+(2)
+      - SG_9024+@WangCai_1+(2)
+      - CH_9093+@WangCai_1+(1)
+      - BG_9006+@WangCai_1
+      - CH_9043+@WangCai_1+(1)
+      - CH_9038+@WangCai_1+(1)
+      - CH_9060+@WangCai_1
+      - SG_9094+@WangCai_1+(2)
+      - BG_9026+@WangCai_1
+      - CH_9046+@WangCai_1+(1)
+      - BG_9073+@WangCai_1+(2)
+      - SG_9041+@WangCai_1+(2)
+      - CH_9032+@WangCai_1+(1)
+      - SG_9043+@WangCai_1+(2)
+      - CH_9018+@WangCai_1+(1)
+      - CH_9053+@WangCai_1
+      - SG_9031+@WangCai_1+(2)
+      - -保加利亚-节点池筛选0406-21
+      - CH_9010+@WangCai_1
+      - CH_9037+@WangCai_1
+      - SG_9037+@WangCai_1+(2)
+      - BG_9007+@WangCai_1+(2)
+      - CH_9050+@WangCai_1
+      - CH_9084+@WangCai_1+(1)
+      - SG_9003+@WangCai_1+(2)
+      - BG_9056+@WangCai_1+(1)
+      - CH_9070+@WangCai_1+(1)
+      - CH_9053+@WangCai_1+(1)
+      - CH_9037+@WangCai_1+(1)
+      - BG_9042+@WangCai_1+(1)
+      - SG_9042+@WangCai_1+(2)
+      - BG_9007+@WangCai_1+(1)
+      - -保加利亚-节点池筛选0406-2
+      - -保加利亚-节点池筛选0406-19
+      - SG_9006+@WangCai_1+(2)
+      - SG_9084+@WangCai_1+(2)
+      - CH_9070+@WangCai_1
+      - BG_9031+@WangCai_1
+      - SG_9040+@WangCai_1+(2)
+      - CH_9045+@WangCai_1+(1)
+      - GB_9093+@WangCai_1
+      - SG_9057+@WangCai_1+(2)
+      - CH_9033+@WangCai_1+(1)
+      - GB_9079+@WangCai_1
+      - NL_9045+@WangCai_1+(2)
+      - CH_9025+@WangCai_1+(1)
+      - BG_9025+@WangCai_1+(1)
+      - CH_9094+@WangCai_1
+      - SG_9038+@WangCai_1+(2)
+      - BG_9006+@WangCai_1+(1)
+      - BG_9084+@WangCai_1+(1)
+      - CH_9014+@WangCai_1+(1)
+      - -英国-节点池筛选0406-17
+      - BG_9059+@WangCai_1+(1)
+      - CH_9073+@WangCai_1+(1)
+      - BG_9040+@WangCai_1+(1)
+      - BG_9050+@WangCai_1
+      - BG_9015+@WangCai_1+(1)
+      - -保加利亚-节点池筛选0406-22
+      - BG_9031+@WangCai_1+(1)
+      - BG_9088+@WangCai_1
+      - GB_9032+@WangCai_1
+      - BG_9025+@WangCai_1+(2)
+      - CH_9006+@WangCai_1+(1)
+      - GB_9045+@WangCai_1
+      - BG_9024+@WangCai_1+(1)
+      - CH_9059+@WangCai_1+(1)
+      - GB_9056+@WangCai_1
+      - BG_9027+@WangCai_1+(1)
+      - BG_9032+@WangCai_1+(1)
+      - BG_9094+@WangCai_1+(1)
+      - CH_9006+@WangCai_1
+      - CH_9093+@WangCai_1
+      - -保加利亚-节点池筛选0406-12
+      - SG_9059+@WangCai_1+(2)
+      - BG_9003+@WangCai_1+(1)
+      - CH_9025+@WangCai_1
+      - GB_9024+@WangCai_1
+      - BG_9073+@WangCai_1+(1)
+      - SG_9060+@WangCai_1+(2)
+      - BG_9005+@WangCai_1+(1)
+      - GB_9097+@WangCai_1
+      - SG_9064+@WangCai_1+(2)
+      - GB_9084+@WangCai_1
+      - CH_9088+@WangCai_1
+      - BG_9041+@WangCai_1+(2)
+      - GB_9060+@WangCai_1
+      - GB_9070+@WangCai_1
+      - GB_9094+@WangCai_1
+      - GB_9019+@WangCai_1
+      - BG_9045+@WangCai_1
+      - GB_9057+@WangCai_1
+      - NL_9000+@WangCai_1+(2)
+      - BG_9040+@WangCai_1+(2)
+      - BG_9057+@WangCai_1+(1)
+      - 香港 04 | 直连
+      - 香港 04 | 广港 IEPL
+      - JP 02 Premium Access Point
+      - 加群 @yyjc_group，签到每月送50G流量
+      - 香港 03 | 直连
+      - 本站提供虚假的 广港 IEPL
+      - 日本 02 | 直连
+      - 香港 02 | 广港 IEPL
+      - SG 01 Premium Access Point
+      - 香港 01 | 广港 IEPL
+      - US 01 Premium Access Point
+      - "%微软云 香港 5Gbps"
+      - 日本 01 | 直连
+      - 香港 03 | 广港 IEPL
+      - 日本 03 | 直连
+      - JP 01 Premium Access Point
+      - 韩国 01 | 直连
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - HK_油管 TG 8度科技
-      - US_1212 |31.31Mb
-      - 「加入会员解锁流媒体」x5
-      - 美国-BGP-N
-      - 「🇸🇬」EMO+|+龙鳞果+x5+2
-      - 「加入会员解锁流媒体」x5 4
-      - 「🇸🇬」EMO+|+龙鳞果+x5+3
-      - 俄罗斯-BGP
-      - KR_油管 TG 8度科技
-      - 「🇸🇬」EMO+|+龙鳞果+x5+5
-      - _609 | 2.60Mb
-      - 美国-BGP-K
-      - US_油管 TG 8度科技
-      - CN_1015 |16.84Mb
-      - US_油管 TG 8度科技 2
-      - 油管 TG 8度科技
-      - 「加入会员解锁流媒体」x5 2
-      - BG_746+|+4.01Mb
-      - _18+|+8.06Mb
-      - NL_油管+TG+8度科技
-      - _526+|+0.16Mb
-      - BG_740+|+8.06Mb
-      - BG_726+|+6.87Mb
-      - BG_729+|+6.35Mb
-      - _12+|+6.97Mb
-      - 「加入会员解锁流媒体」x5 3
-      - 香港_TGatnodesharing_1_664
-      - _10
-      - 油管 TG 8度科技 2
-      - BG_734+|+2.85Mb
-      - BG_759+|+6.79Mb
-      - _574+|+4.70Mb
-      - _559
-      - NL_油管+TG+8度科技 2
-      - 「加入会员解锁流媒体」x5 5
-      - BG_724+|+5.69Mb
-      - _536+|+1.99Mb
-      - BG_722+|+3.71Mb
-      - CN_854+|+8.96Mb
-      - _474+|+7.55Mb
-      - CN_843+|27.95Mb
-      - CN_858+|+7.66Mb
-      - _36+|+9.36Mb
-      - CN_853+|10.61Mb
-      - CN_855+|+7.34Mb
-      - CN_862+|+3.40Mb
-      - CN_860+|66.31Mb
-      - _15+|10.15Mb
-      - _34+|+2.83Mb
-      - CN_850+|16.30Mb
-      - _21+|34.42Mb
-      - _30+|+8.05Mb
-      - _25+|11.23Mb
-      - CN_油管 TG 8度科技
-      - _24+|12.36Mb
-      - _32+|15.31Mb
-      - _610 | 0.34Mb
-      - NL_油管+TG+8度科技 3
-      - BG_762+|11.17Mb
-      - NL_油管+TG+8度科技 4
-      - 美国_TGatnodesharing_26_649 |12.20Mb
-      - _548+|+5.55Mb
-      - _35+|12.39Mb
-      - 「🇸🇬」EMO+|+金灵子+x5
+      - 新加坡02
+      - 购买QQ352530340_2
+      - SGP+CM_A/04+x0_3
+      - HKG+CM_B/04+x0_3
+      - SGP+CM_B/02+x0_3
+      - JPN+CM_A/01+x0_3
+      - JPN+CM_A/04+x0_3
+      - 公众号：光头院长_1
+      - JPN+CN2/03+x0_3
+      - 卢森堡
+      - HKG+CN2/08+x0_3
+      - HKG+CM_A/10+x0_3
+      - 美国04
+      - SGP+CM_A/01+x0_3
+      - JPN+CM_A/02+x0_3
+      - HKG+CM_A/07+x0_3
+      - HKG+CM_A/03+x0_3
+      - JPN+CM_B/05+x0_3
+      - 韩国02
+      - JPN+CM_A/05+x0_3
+      - JPN+CM_B/01+x0_3
+      - 美国06
+      - JPN+CN2/04+x0_3
+      - HKG+CM_B/08+x0_3
+      - 美国07
+      - JPN+CM_B/04+x0_3
+      - JPN+CN2/02+x0_3
+      - JPN+CM_B/02+x0_3
+      - SGP+CM_A/05+x0_3
+      - HKG+CM_A/05+x0_3
+      - HKG+CM_B/03+x0_3
+      - HKG+CM_A/06+x0_3
+      - JPN+CM_A/03+x0_3
+      - 美国08
+      - HKG+CM_A/04+x0_3
+      - JPN+CM_B/03+x0_3
+      - HKG CN2/06 x0_3
+      - 韩国04
+      - 韩国03
+      - SGP+CM_A/03+x0_3
+      - AA-V2ray-HK-HGC
+      - AA-V2ray-HK-HKBN.02
+      - AA-V2ray-TW-HiNet.01
+      - AA-V2ray-HK-HKT.02
+      - AA-V2ray-HK-NTT.01
+      - AA-V2ray-HK-HKT.01
+      - AA-V2ray-JP-NTT.03
+      - AA-V2ray-TW-HiNet.02
+      - AA-V2ray-HK-HKBN
+      - AA-V2ray-JP-NTT.02
+      - AA-V2ray-VN【越南】
+      - AA-V2ray-TW-HiNet.05
+      - AA-V2ray-TW-HiNet.04
+      - AA-V2ray-US-HE.04
+      - AA-V2ray-TW-HiNet.03
+      - AA-V2ray-US-HE.01
+      - AA-V2ray-JP-NTT.01
+      - THE WORLD
+      - AA-V2ray-US-HE.03
+      - AA-V2ray-US-Philadelphia
+      - AA-V2ray-RU-Selectel
+      - _HK_香港->🇰🇷_KR_韩国
+      - B-美国_BGP_流媒体_标准1_22
+      - A-日本_BGP_流媒体_高级1_10
+      - B-香港_HKT_流媒体_标准2_19
+      - A-台湾_HINET_流媒体_高级1_8
+      - B-美国_Cogent_流媒体_标准1_24
+      - A-香港_BGP_流媒体_高级2_5
+      - A-美国_BGP_流媒体_高级1_6
+      - B-日本_BGP_流媒体_标准2_21
+      - B-美国_Cogent_流媒体_标准2_25
+      - B-美国_BGP_流媒体_标准2_23
+      - B-日本_BGP_流媒体_标准1_20
+      - A-香港_BGP_流媒体_高级1_4
+      - A-台湾_HINET_流媒体_高级2_9
+      - B-香港_HGC_流媒体_标准1_14
+      - A-英国_GCP_流媒体_高级1_12
+      - B-香港_HKT_流媒体_标准1_18
+      - B-香港_HGC_流媒体_标准2_15
+      - A-日本_BGP_流媒体_高级2_11
+      - A-美国_BGP_流媒体_高级2_7
+      - _CA_加拿大
+      - 每次使用前请更新节点_1
+      - _CA_加拿大 2
+      - CH_9001+@WangCai_1+(1)
+      - BG_9001+@WangCai_1+(2)
+      - BG_9094+@WangCai_1+(2)
+      - CH_9056+@WangCai_1
+      - BG_9043+@WangCai_1
+      - BG_9019+@WangCai_1
+      - BG_9050+@WangCai_1+(2)
+      - BG_9060+@WangCai_1
+      - BG_9043+@WangCai_1+(2)
+      - CH_9003+@WangCai_1+(1)
+      - CH_9020+@WangCai_1+(1)
+      - CH_9056+@WangCai_1+(1)
+      - BG_9015+@WangCai_1+(2)
+      - CH_9000+@WangCai_1+(1)
+      - BG_9056+@WangCai_1+(2)
+      - CH_9057+@WangCai_1+(1)
+      - BG_9070+@WangCai_1
+      - BG_9079+@WangCai_1+(2)
+      - BG_9020+@WangCai_1
+      - BG_9037+@WangCai_1+(2)
+      - BG_9079+@WangCai_1
+      - BG_9038+@WangCai_1
+      - CH_9005+@WangCai_1+(1)
+      - BG_9045+@WangCai_1+(1)
+      - CH_9032+@WangCai_1
+      - -英国-节点池筛选0406-14
+      - BG_9027+@WangCai_1
+      - -保加利亚-节点池筛选0406-15
+      - -英国-节点池筛选0406-24
+      - BG_9033+@WangCai_1
+      - CH_9041+@WangCai_1+(1)
+      - BG_9000+@WangCai_1+(2)
+      - -英国-节点池筛选0406-23
+      - CH_9060+@WangCai_1+(1)
+      - BG_9059+@WangCai_1+(2)
+      - BG_9014+@WangCai_1
+      - BG_9084+@WangCai_1
+      - -保加利亚-节点池筛选0406-11
+      - BG_9033+@WangCai_1+(2)
+      - CH_9040+@WangCai_1+(1)
+      - BG_9003+@WangCai_1+(2)
+      - BG_9010+@WangCai_1
+      - BG_9019+@WangCai_1+(2)
+      - CH_9015+@WangCai_1+(1)
+      - BG_9064+@WangCai_1
+      - CH_9026+@WangCai_1+(1)
+      - CH_9064+@WangCai_1+(1)
+      - BG_9006+@WangCai_1+(2)
+      - BG_9018+@WangCai_1+(2)
+      - BG_9042+@WangCai_1
+      - BG_9093+@WangCai_1
+      - BG_9070+@WangCai_1+(2)
+      - CH_9008+@WangCai_1+(1)
+      - GB_9020+@WangCai_1
+      - BG_9008+@WangCai_1
+      - BG_9098+@WangCai_1+(2)
+      - CH_9007+@WangCai_1+(1)
+      - -保加利亚-节点池筛选0406-13
+      - -保加利亚-节点池筛选0406-9
+      - CH_9031+@WangCai_1+(1)
+      - BG_9093+@WangCai_1+(2)
+      - BG_9018+@WangCai_1
+      - CH_9019+@WangCai_1+(1)
+      - BG_9005+@WangCai_1
+      - CH_9024+@WangCai_1+(1)
+      - BG_9015+@WangCai_1
+      - BG_9031+@WangCai_1+(2)
+      - CH_9033+@WangCai_1
+      - CH_9045+@WangCai_1
+      - CH_9097+@WangCai_1+(1)
+      - CH_9098+@WangCai_1
+      - SG_9014+@WangCai_1+(2)
+      - NL_9050+@WangCai_1+(2)
+      - BG_9005+@WangCai_1+(2)
+      - BG_9053+@WangCai_1
+      - BG_9059+@WangCai_1
+      - BG_9064+@WangCai_1+(2)
+      - CH_9040+@WangCai_1
+      - -英国-节点池筛选0406-16
+      - CH_9010+@WangCai_1+(1)
+      - CH_9088+@WangCai_1+(1)
+      - BG_9020+@WangCai_1+(2)
+      - SG_9025+@WangCai_1+(2)
+      - CH_9094+@WangCai_1+(1)
+      - BG_9008+@WangCai_1+(2)
+      - BG_9024+@WangCai_1
+      - BG_9073+@WangCai_1
+      - -保加利亚-节点池筛选0406-18
+      - -保加利亚-节点池筛选0406-6
+      - SG_9000+@WangCai_1+(2)
+      - BG_9046+@WangCai_1
+      - -保加利亚-节点池筛选0406-5
+      - CH_9042+@WangCai_1
+      - BG_9007+@WangCai_1
+      - BG_9094+@WangCai_1
+      - CH_9024+@WangCai_1
+      - NL_9011+@WangCai_1+(2)
+      - CH_9027+@WangCai_1+(1)
+      - SG_9015+@WangCai_1+(2)
+      - CH_9043+@WangCai_1
+      - CH_9079+@WangCai_1
+      - CH_9011+@WangCai_1+(1)
+      - CH_9050+@WangCai_1+(1)
+      - SG_9007+@WangCai_1+(2)
+      - SG_9024+@WangCai_1+(2)
+      - CH_9093+@WangCai_1+(1)
+      - BG_9006+@WangCai_1
+      - CH_9043+@WangCai_1+(1)
+      - CH_9038+@WangCai_1+(1)
+      - CH_9060+@WangCai_1
+      - SG_9094+@WangCai_1+(2)
+      - BG_9026+@WangCai_1
+      - CH_9046+@WangCai_1+(1)
+      - BG_9073+@WangCai_1+(2)
+      - SG_9041+@WangCai_1+(2)
+      - CH_9032+@WangCai_1+(1)
+      - SG_9043+@WangCai_1+(2)
+      - CH_9018+@WangCai_1+(1)
+      - CH_9053+@WangCai_1
+      - SG_9031+@WangCai_1+(2)
+      - -保加利亚-节点池筛选0406-21
+      - CH_9010+@WangCai_1
+      - CH_9037+@WangCai_1
+      - SG_9037+@WangCai_1+(2)
+      - BG_9007+@WangCai_1+(2)
+      - CH_9050+@WangCai_1
+      - CH_9084+@WangCai_1+(1)
+      - SG_9003+@WangCai_1+(2)
+      - BG_9056+@WangCai_1+(1)
+      - CH_9070+@WangCai_1+(1)
+      - CH_9053+@WangCai_1+(1)
+      - CH_9037+@WangCai_1+(1)
+      - BG_9042+@WangCai_1+(1)
+      - SG_9042+@WangCai_1+(2)
+      - BG_9007+@WangCai_1+(1)
+      - -保加利亚-节点池筛选0406-2
+      - -保加利亚-节点池筛选0406-19
+      - SG_9006+@WangCai_1+(2)
+      - SG_9084+@WangCai_1+(2)
+      - CH_9070+@WangCai_1
+      - BG_9031+@WangCai_1
+      - SG_9040+@WangCai_1+(2)
+      - CH_9045+@WangCai_1+(1)
+      - GB_9093+@WangCai_1
+      - SG_9057+@WangCai_1+(2)
+      - CH_9033+@WangCai_1+(1)
+      - GB_9079+@WangCai_1
+      - NL_9045+@WangCai_1+(2)
+      - CH_9025+@WangCai_1+(1)
+      - BG_9025+@WangCai_1+(1)
+      - CH_9094+@WangCai_1
+      - SG_9038+@WangCai_1+(2)
+      - BG_9006+@WangCai_1+(1)
+      - BG_9084+@WangCai_1+(1)
+      - CH_9014+@WangCai_1+(1)
+      - -英国-节点池筛选0406-17
+      - BG_9059+@WangCai_1+(1)
+      - CH_9073+@WangCai_1+(1)
+      - BG_9040+@WangCai_1+(1)
+      - BG_9050+@WangCai_1
+      - BG_9015+@WangCai_1+(1)
+      - -保加利亚-节点池筛选0406-22
+      - BG_9031+@WangCai_1+(1)
+      - BG_9088+@WangCai_1
+      - GB_9032+@WangCai_1
+      - BG_9025+@WangCai_1+(2)
+      - CH_9006+@WangCai_1+(1)
+      - GB_9045+@WangCai_1
+      - BG_9024+@WangCai_1+(1)
+      - CH_9059+@WangCai_1+(1)
+      - GB_9056+@WangCai_1
+      - BG_9027+@WangCai_1+(1)
+      - BG_9032+@WangCai_1+(1)
+      - BG_9094+@WangCai_1+(1)
+      - CH_9006+@WangCai_1
+      - CH_9093+@WangCai_1
+      - -保加利亚-节点池筛选0406-12
+      - SG_9059+@WangCai_1+(2)
+      - BG_9003+@WangCai_1+(1)
+      - CH_9025+@WangCai_1
+      - GB_9024+@WangCai_1
+      - BG_9073+@WangCai_1+(1)
+      - SG_9060+@WangCai_1+(2)
+      - BG_9005+@WangCai_1+(1)
+      - GB_9097+@WangCai_1
+      - SG_9064+@WangCai_1+(2)
+      - GB_9084+@WangCai_1
+      - CH_9088+@WangCai_1
+      - BG_9041+@WangCai_1+(2)
+      - GB_9060+@WangCai_1
+      - GB_9070+@WangCai_1
+      - GB_9094+@WangCai_1
+      - GB_9019+@WangCai_1
+      - BG_9045+@WangCai_1
+      - GB_9057+@WangCai_1
+      - NL_9000+@WangCai_1+(2)
+      - BG_9040+@WangCai_1+(2)
+      - BG_9057+@WangCai_1+(1)
+      - 香港 04 | 直连
+      - 香港 04 | 广港 IEPL
+      - JP 02 Premium Access Point
+      - 加群 @yyjc_group，签到每月送50G流量
+      - 香港 03 | 直连
+      - 本站提供虚假的 广港 IEPL
+      - 日本 02 | 直连
+      - 香港 02 | 广港 IEPL
+      - SG 01 Premium Access Point
+      - 香港 01 | 广港 IEPL
+      - US 01 Premium Access Point
+      - "%微软云 香港 5Gbps"
+      - 日本 01 | 直连
+      - 香港 03 | 广港 IEPL
+      - 日本 03 | 直连
+      - JP 01 Premium Access Point
+      - 韩国 01 | 直连
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - HK_油管 TG 8度科技
-      - US_1212 |31.31Mb
-      - 「加入会员解锁流媒体」x5
-      - 美国-BGP-N
-      - 「🇸🇬」EMO+|+龙鳞果+x5+2
-      - 「加入会员解锁流媒体」x5 4
-      - 「🇸🇬」EMO+|+龙鳞果+x5+3
-      - 俄罗斯-BGP
-      - KR_油管 TG 8度科技
-      - 「🇸🇬」EMO+|+龙鳞果+x5+5
-      - _609 | 2.60Mb
-      - 美国-BGP-K
-      - US_油管 TG 8度科技
-      - CN_1015 |16.84Mb
-      - US_油管 TG 8度科技 2
-      - 油管 TG 8度科技
-      - 「加入会员解锁流媒体」x5 2
-      - BG_746+|+4.01Mb
-      - _18+|+8.06Mb
-      - NL_油管+TG+8度科技
-      - _526+|+0.16Mb
-      - BG_740+|+8.06Mb
-      - BG_726+|+6.87Mb
-      - BG_729+|+6.35Mb
-      - _12+|+6.97Mb
-      - 「加入会员解锁流媒体」x5 3
-      - 香港_TGatnodesharing_1_664
-      - _10
-      - 油管 TG 8度科技 2
-      - BG_734+|+2.85Mb
-      - BG_759+|+6.79Mb
-      - _574+|+4.70Mb
-      - _559
-      - NL_油管+TG+8度科技 2
-      - 「加入会员解锁流媒体」x5 5
-      - BG_724+|+5.69Mb
-      - _536+|+1.99Mb
-      - BG_722+|+3.71Mb
-      - CN_854+|+8.96Mb
-      - _474+|+7.55Mb
-      - CN_843+|27.95Mb
-      - CN_858+|+7.66Mb
-      - _36+|+9.36Mb
-      - CN_853+|10.61Mb
-      - CN_855+|+7.34Mb
-      - CN_862+|+3.40Mb
-      - CN_860+|66.31Mb
-      - _15+|10.15Mb
-      - _34+|+2.83Mb
-      - CN_850+|16.30Mb
-      - _21+|34.42Mb
-      - _30+|+8.05Mb
-      - _25+|11.23Mb
-      - CN_油管 TG 8度科技
-      - _24+|12.36Mb
-      - _32+|15.31Mb
-      - _610 | 0.34Mb
-      - NL_油管+TG+8度科技 3
-      - BG_762+|11.17Mb
-      - NL_油管+TG+8度科技 4
-      - 美国_TGatnodesharing_26_649 |12.20Mb
-      - _548+|+5.55Mb
-      - _35+|12.39Mb
-      - 「🇸🇬」EMO+|+金灵子+x5
+      - 新加坡02
+      - 购买QQ352530340_2
+      - SGP+CM_A/04+x0_3
+      - HKG+CM_B/04+x0_3
+      - SGP+CM_B/02+x0_3
+      - JPN+CM_A/01+x0_3
+      - JPN+CM_A/04+x0_3
+      - 公众号：光头院长_1
+      - JPN+CN2/03+x0_3
+      - 卢森堡
+      - HKG+CN2/08+x0_3
+      - HKG+CM_A/10+x0_3
+      - 美国04
+      - SGP+CM_A/01+x0_3
+      - JPN+CM_A/02+x0_3
+      - HKG+CM_A/07+x0_3
+      - HKG+CM_A/03+x0_3
+      - JPN+CM_B/05+x0_3
+      - 韩国02
+      - JPN+CM_A/05+x0_3
+      - JPN+CM_B/01+x0_3
+      - 美国06
+      - JPN+CN2/04+x0_3
+      - HKG+CM_B/08+x0_3
+      - 美国07
+      - JPN+CM_B/04+x0_3
+      - JPN+CN2/02+x0_3
+      - JPN+CM_B/02+x0_3
+      - SGP+CM_A/05+x0_3
+      - HKG+CM_A/05+x0_3
+      - HKG+CM_B/03+x0_3
+      - HKG+CM_A/06+x0_3
+      - JPN+CM_A/03+x0_3
+      - 美国08
+      - HKG+CM_A/04+x0_3
+      - JPN+CM_B/03+x0_3
+      - HKG CN2/06 x0_3
+      - 韩国04
+      - 韩国03
+      - SGP+CM_A/03+x0_3
+      - AA-V2ray-HK-HGC
+      - AA-V2ray-HK-HKBN.02
+      - AA-V2ray-TW-HiNet.01
+      - AA-V2ray-HK-HKT.02
+      - AA-V2ray-HK-NTT.01
+      - AA-V2ray-HK-HKT.01
+      - AA-V2ray-JP-NTT.03
+      - AA-V2ray-TW-HiNet.02
+      - AA-V2ray-HK-HKBN
+      - AA-V2ray-JP-NTT.02
+      - AA-V2ray-VN【越南】
+      - AA-V2ray-TW-HiNet.05
+      - AA-V2ray-TW-HiNet.04
+      - AA-V2ray-US-HE.04
+      - AA-V2ray-TW-HiNet.03
+      - AA-V2ray-US-HE.01
+      - AA-V2ray-JP-NTT.01
+      - THE WORLD
+      - AA-V2ray-US-HE.03
+      - AA-V2ray-US-Philadelphia
+      - AA-V2ray-RU-Selectel
+      - _HK_香港->🇰🇷_KR_韩国
+      - B-美国_BGP_流媒体_标准1_22
+      - A-日本_BGP_流媒体_高级1_10
+      - B-香港_HKT_流媒体_标准2_19
+      - A-台湾_HINET_流媒体_高级1_8
+      - B-美国_Cogent_流媒体_标准1_24
+      - A-香港_BGP_流媒体_高级2_5
+      - A-美国_BGP_流媒体_高级1_6
+      - B-日本_BGP_流媒体_标准2_21
+      - B-美国_Cogent_流媒体_标准2_25
+      - B-美国_BGP_流媒体_标准2_23
+      - B-日本_BGP_流媒体_标准1_20
+      - A-香港_BGP_流媒体_高级1_4
+      - A-台湾_HINET_流媒体_高级2_9
+      - B-香港_HGC_流媒体_标准1_14
+      - A-英国_GCP_流媒体_高级1_12
+      - B-香港_HKT_流媒体_标准1_18
+      - B-香港_HGC_流媒体_标准2_15
+      - A-日本_BGP_流媒体_高级2_11
+      - A-美国_BGP_流媒体_高级2_7
+      - _CA_加拿大
+      - 每次使用前请更新节点_1
+      - _CA_加拿大 2
+      - CH_9001+@WangCai_1+(1)
+      - BG_9001+@WangCai_1+(2)
+      - BG_9094+@WangCai_1+(2)
+      - CH_9056+@WangCai_1
+      - BG_9043+@WangCai_1
+      - BG_9019+@WangCai_1
+      - BG_9050+@WangCai_1+(2)
+      - BG_9060+@WangCai_1
+      - BG_9043+@WangCai_1+(2)
+      - CH_9003+@WangCai_1+(1)
+      - CH_9020+@WangCai_1+(1)
+      - CH_9056+@WangCai_1+(1)
+      - BG_9015+@WangCai_1+(2)
+      - CH_9000+@WangCai_1+(1)
+      - BG_9056+@WangCai_1+(2)
+      - CH_9057+@WangCai_1+(1)
+      - BG_9070+@WangCai_1
+      - BG_9079+@WangCai_1+(2)
+      - BG_9020+@WangCai_1
+      - BG_9037+@WangCai_1+(2)
+      - BG_9079+@WangCai_1
+      - BG_9038+@WangCai_1
+      - CH_9005+@WangCai_1+(1)
+      - BG_9045+@WangCai_1+(1)
+      - CH_9032+@WangCai_1
+      - -英国-节点池筛选0406-14
+      - BG_9027+@WangCai_1
+      - -保加利亚-节点池筛选0406-15
+      - -英国-节点池筛选0406-24
+      - BG_9033+@WangCai_1
+      - CH_9041+@WangCai_1+(1)
+      - BG_9000+@WangCai_1+(2)
+      - -英国-节点池筛选0406-23
+      - CH_9060+@WangCai_1+(1)
+      - BG_9059+@WangCai_1+(2)
+      - BG_9014+@WangCai_1
+      - BG_9084+@WangCai_1
+      - -保加利亚-节点池筛选0406-11
+      - BG_9033+@WangCai_1+(2)
+      - CH_9040+@WangCai_1+(1)
+      - BG_9003+@WangCai_1+(2)
+      - BG_9010+@WangCai_1
+      - BG_9019+@WangCai_1+(2)
+      - CH_9015+@WangCai_1+(1)
+      - BG_9064+@WangCai_1
+      - CH_9026+@WangCai_1+(1)
+      - CH_9064+@WangCai_1+(1)
+      - BG_9006+@WangCai_1+(2)
+      - BG_9018+@WangCai_1+(2)
+      - BG_9042+@WangCai_1
+      - BG_9093+@WangCai_1
+      - BG_9070+@WangCai_1+(2)
+      - CH_9008+@WangCai_1+(1)
+      - GB_9020+@WangCai_1
+      - BG_9008+@WangCai_1
+      - BG_9098+@WangCai_1+(2)
+      - CH_9007+@WangCai_1+(1)
+      - -保加利亚-节点池筛选0406-13
+      - -保加利亚-节点池筛选0406-9
+      - CH_9031+@WangCai_1+(1)
+      - BG_9093+@WangCai_1+(2)
+      - BG_9018+@WangCai_1
+      - CH_9019+@WangCai_1+(1)
+      - BG_9005+@WangCai_1
+      - CH_9024+@WangCai_1+(1)
+      - BG_9015+@WangCai_1
+      - BG_9031+@WangCai_1+(2)
+      - CH_9033+@WangCai_1
+      - CH_9045+@WangCai_1
+      - CH_9097+@WangCai_1+(1)
+      - CH_9098+@WangCai_1
+      - SG_9014+@WangCai_1+(2)
+      - NL_9050+@WangCai_1+(2)
+      - BG_9005+@WangCai_1+(2)
+      - BG_9053+@WangCai_1
+      - BG_9059+@WangCai_1
+      - BG_9064+@WangCai_1+(2)
+      - CH_9040+@WangCai_1
+      - -英国-节点池筛选0406-16
+      - CH_9010+@WangCai_1+(1)
+      - CH_9088+@WangCai_1+(1)
+      - BG_9020+@WangCai_1+(2)
+      - SG_9025+@WangCai_1+(2)
+      - CH_9094+@WangCai_1+(1)
+      - BG_9008+@WangCai_1+(2)
+      - BG_9024+@WangCai_1
+      - BG_9073+@WangCai_1
+      - -保加利亚-节点池筛选0406-18
+      - -保加利亚-节点池筛选0406-6
+      - SG_9000+@WangCai_1+(2)
+      - BG_9046+@WangCai_1
+      - -保加利亚-节点池筛选0406-5
+      - CH_9042+@WangCai_1
+      - BG_9007+@WangCai_1
+      - BG_9094+@WangCai_1
+      - CH_9024+@WangCai_1
+      - NL_9011+@WangCai_1+(2)
+      - CH_9027+@WangCai_1+(1)
+      - SG_9015+@WangCai_1+(2)
+      - CH_9043+@WangCai_1
+      - CH_9079+@WangCai_1
+      - CH_9011+@WangCai_1+(1)
+      - CH_9050+@WangCai_1+(1)
+      - SG_9007+@WangCai_1+(2)
+      - SG_9024+@WangCai_1+(2)
+      - CH_9093+@WangCai_1+(1)
+      - BG_9006+@WangCai_1
+      - CH_9043+@WangCai_1+(1)
+      - CH_9038+@WangCai_1+(1)
+      - CH_9060+@WangCai_1
+      - SG_9094+@WangCai_1+(2)
+      - BG_9026+@WangCai_1
+      - CH_9046+@WangCai_1+(1)
+      - BG_9073+@WangCai_1+(2)
+      - SG_9041+@WangCai_1+(2)
+      - CH_9032+@WangCai_1+(1)
+      - SG_9043+@WangCai_1+(2)
+      - CH_9018+@WangCai_1+(1)
+      - CH_9053+@WangCai_1
+      - SG_9031+@WangCai_1+(2)
+      - -保加利亚-节点池筛选0406-21
+      - CH_9010+@WangCai_1
+      - CH_9037+@WangCai_1
+      - SG_9037+@WangCai_1+(2)
+      - BG_9007+@WangCai_1+(2)
+      - CH_9050+@WangCai_1
+      - CH_9084+@WangCai_1+(1)
+      - SG_9003+@WangCai_1+(2)
+      - BG_9056+@WangCai_1+(1)
+      - CH_9070+@WangCai_1+(1)
+      - CH_9053+@WangCai_1+(1)
+      - CH_9037+@WangCai_1+(1)
+      - BG_9042+@WangCai_1+(1)
+      - SG_9042+@WangCai_1+(2)
+      - BG_9007+@WangCai_1+(1)
+      - -保加利亚-节点池筛选0406-2
+      - -保加利亚-节点池筛选0406-19
+      - SG_9006+@WangCai_1+(2)
+      - SG_9084+@WangCai_1+(2)
+      - CH_9070+@WangCai_1
+      - BG_9031+@WangCai_1
+      - SG_9040+@WangCai_1+(2)
+      - CH_9045+@WangCai_1+(1)
+      - GB_9093+@WangCai_1
+      - SG_9057+@WangCai_1+(2)
+      - CH_9033+@WangCai_1+(1)
+      - GB_9079+@WangCai_1
+      - NL_9045+@WangCai_1+(2)
+      - CH_9025+@WangCai_1+(1)
+      - BG_9025+@WangCai_1+(1)
+      - CH_9094+@WangCai_1
+      - SG_9038+@WangCai_1+(2)
+      - BG_9006+@WangCai_1+(1)
+      - BG_9084+@WangCai_1+(1)
+      - CH_9014+@WangCai_1+(1)
+      - -英国-节点池筛选0406-17
+      - BG_9059+@WangCai_1+(1)
+      - CH_9073+@WangCai_1+(1)
+      - BG_9040+@WangCai_1+(1)
+      - BG_9050+@WangCai_1
+      - BG_9015+@WangCai_1+(1)
+      - -保加利亚-节点池筛选0406-22
+      - BG_9031+@WangCai_1+(1)
+      - BG_9088+@WangCai_1
+      - GB_9032+@WangCai_1
+      - BG_9025+@WangCai_1+(2)
+      - CH_9006+@WangCai_1+(1)
+      - GB_9045+@WangCai_1
+      - BG_9024+@WangCai_1+(1)
+      - CH_9059+@WangCai_1+(1)
+      - GB_9056+@WangCai_1
+      - BG_9027+@WangCai_1+(1)
+      - BG_9032+@WangCai_1+(1)
+      - BG_9094+@WangCai_1+(1)
+      - CH_9006+@WangCai_1
+      - CH_9093+@WangCai_1
+      - -保加利亚-节点池筛选0406-12
+      - SG_9059+@WangCai_1+(2)
+      - BG_9003+@WangCai_1+(1)
+      - CH_9025+@WangCai_1
+      - GB_9024+@WangCai_1
+      - BG_9073+@WangCai_1+(1)
+      - SG_9060+@WangCai_1+(2)
+      - BG_9005+@WangCai_1+(1)
+      - GB_9097+@WangCai_1
+      - SG_9064+@WangCai_1+(2)
+      - GB_9084+@WangCai_1
+      - CH_9088+@WangCai_1
+      - BG_9041+@WangCai_1+(2)
+      - GB_9060+@WangCai_1
+      - GB_9070+@WangCai_1
+      - GB_9094+@WangCai_1
+      - GB_9019+@WangCai_1
+      - BG_9045+@WangCai_1
+      - GB_9057+@WangCai_1
+      - NL_9000+@WangCai_1+(2)
+      - BG_9040+@WangCai_1+(2)
+      - BG_9057+@WangCai_1+(1)
+      - 香港 04 | 直连
+      - 香港 04 | 广港 IEPL
+      - JP 02 Premium Access Point
+      - 加群 @yyjc_group，签到每月送50G流量
+      - 香港 03 | 直连
+      - 本站提供虚假的 广港 IEPL
+      - 日本 02 | 直连
+      - 香港 02 | 广港 IEPL
+      - SG 01 Premium Access Point
+      - 香港 01 | 广港 IEPL
+      - US 01 Premium Access Point
+      - "%微软云 香港 5Gbps"
+      - 日本 01 | 直连
+      - 香港 03 | 广港 IEPL
+      - 日本 03 | 直连
+      - JP 01 Premium Access Point
+      - 韩国 01 | 直连
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -589,70 +2490,305 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - HK_油管 TG 8度科技
-      - US_1212 |31.31Mb
-      - 「加入会员解锁流媒体」x5
-      - 美国-BGP-N
-      - 「🇸🇬」EMO+|+龙鳞果+x5+2
-      - 「加入会员解锁流媒体」x5 4
-      - 「🇸🇬」EMO+|+龙鳞果+x5+3
-      - 俄罗斯-BGP
-      - KR_油管 TG 8度科技
-      - 「🇸🇬」EMO+|+龙鳞果+x5+5
-      - _609 | 2.60Mb
-      - 美国-BGP-K
-      - US_油管 TG 8度科技
-      - CN_1015 |16.84Mb
-      - US_油管 TG 8度科技 2
-      - 油管 TG 8度科技
-      - 「加入会员解锁流媒体」x5 2
-      - BG_746+|+4.01Mb
-      - _18+|+8.06Mb
-      - NL_油管+TG+8度科技
-      - _526+|+0.16Mb
-      - BG_740+|+8.06Mb
-      - BG_726+|+6.87Mb
-      - BG_729+|+6.35Mb
-      - _12+|+6.97Mb
-      - 「加入会员解锁流媒体」x5 3
-      - 香港_TGatnodesharing_1_664
-      - _10
-      - 油管 TG 8度科技 2
-      - BG_734+|+2.85Mb
-      - BG_759+|+6.79Mb
-      - _574+|+4.70Mb
-      - _559
-      - NL_油管+TG+8度科技 2
-      - 「加入会员解锁流媒体」x5 5
-      - BG_724+|+5.69Mb
-      - _536+|+1.99Mb
-      - BG_722+|+3.71Mb
-      - CN_854+|+8.96Mb
-      - _474+|+7.55Mb
-      - CN_843+|27.95Mb
-      - CN_858+|+7.66Mb
-      - _36+|+9.36Mb
-      - CN_853+|10.61Mb
-      - CN_855+|+7.34Mb
-      - CN_862+|+3.40Mb
-      - CN_860+|66.31Mb
-      - _15+|10.15Mb
-      - _34+|+2.83Mb
-      - CN_850+|16.30Mb
-      - _21+|34.42Mb
-      - _30+|+8.05Mb
-      - _25+|11.23Mb
-      - CN_油管 TG 8度科技
-      - _24+|12.36Mb
-      - _32+|15.31Mb
-      - _610 | 0.34Mb
-      - NL_油管+TG+8度科技 3
-      - BG_762+|11.17Mb
-      - NL_油管+TG+8度科技 4
-      - 美国_TGatnodesharing_26_649 |12.20Mb
-      - _548+|+5.55Mb
-      - _35+|12.39Mb
-      - 「🇸🇬」EMO+|+金灵子+x5
+      - 新加坡02
+      - 购买QQ352530340_2
+      - SGP+CM_A/04+x0_3
+      - HKG+CM_B/04+x0_3
+      - SGP+CM_B/02+x0_3
+      - JPN+CM_A/01+x0_3
+      - JPN+CM_A/04+x0_3
+      - 公众号：光头院长_1
+      - JPN+CN2/03+x0_3
+      - 卢森堡
+      - HKG+CN2/08+x0_3
+      - HKG+CM_A/10+x0_3
+      - 美国04
+      - SGP+CM_A/01+x0_3
+      - JPN+CM_A/02+x0_3
+      - HKG+CM_A/07+x0_3
+      - HKG+CM_A/03+x0_3
+      - JPN+CM_B/05+x0_3
+      - 韩国02
+      - JPN+CM_A/05+x0_3
+      - JPN+CM_B/01+x0_3
+      - 美国06
+      - JPN+CN2/04+x0_3
+      - HKG+CM_B/08+x0_3
+      - 美国07
+      - JPN+CM_B/04+x0_3
+      - JPN+CN2/02+x0_3
+      - JPN+CM_B/02+x0_3
+      - SGP+CM_A/05+x0_3
+      - HKG+CM_A/05+x0_3
+      - HKG+CM_B/03+x0_3
+      - HKG+CM_A/06+x0_3
+      - JPN+CM_A/03+x0_3
+      - 美国08
+      - HKG+CM_A/04+x0_3
+      - JPN+CM_B/03+x0_3
+      - HKG CN2/06 x0_3
+      - 韩国04
+      - 韩国03
+      - SGP+CM_A/03+x0_3
+      - AA-V2ray-HK-HGC
+      - AA-V2ray-HK-HKBN.02
+      - AA-V2ray-TW-HiNet.01
+      - AA-V2ray-HK-HKT.02
+      - AA-V2ray-HK-NTT.01
+      - AA-V2ray-HK-HKT.01
+      - AA-V2ray-JP-NTT.03
+      - AA-V2ray-TW-HiNet.02
+      - AA-V2ray-HK-HKBN
+      - AA-V2ray-JP-NTT.02
+      - AA-V2ray-VN【越南】
+      - AA-V2ray-TW-HiNet.05
+      - AA-V2ray-TW-HiNet.04
+      - AA-V2ray-US-HE.04
+      - AA-V2ray-TW-HiNet.03
+      - AA-V2ray-US-HE.01
+      - AA-V2ray-JP-NTT.01
+      - THE WORLD
+      - AA-V2ray-US-HE.03
+      - AA-V2ray-US-Philadelphia
+      - AA-V2ray-RU-Selectel
+      - _HK_香港->🇰🇷_KR_韩国
+      - B-美国_BGP_流媒体_标准1_22
+      - A-日本_BGP_流媒体_高级1_10
+      - B-香港_HKT_流媒体_标准2_19
+      - A-台湾_HINET_流媒体_高级1_8
+      - B-美国_Cogent_流媒体_标准1_24
+      - A-香港_BGP_流媒体_高级2_5
+      - A-美国_BGP_流媒体_高级1_6
+      - B-日本_BGP_流媒体_标准2_21
+      - B-美国_Cogent_流媒体_标准2_25
+      - B-美国_BGP_流媒体_标准2_23
+      - B-日本_BGP_流媒体_标准1_20
+      - A-香港_BGP_流媒体_高级1_4
+      - A-台湾_HINET_流媒体_高级2_9
+      - B-香港_HGC_流媒体_标准1_14
+      - A-英国_GCP_流媒体_高级1_12
+      - B-香港_HKT_流媒体_标准1_18
+      - B-香港_HGC_流媒体_标准2_15
+      - A-日本_BGP_流媒体_高级2_11
+      - A-美国_BGP_流媒体_高级2_7
+      - _CA_加拿大
+      - 每次使用前请更新节点_1
+      - _CA_加拿大 2
+      - CH_9001+@WangCai_1+(1)
+      - BG_9001+@WangCai_1+(2)
+      - BG_9094+@WangCai_1+(2)
+      - CH_9056+@WangCai_1
+      - BG_9043+@WangCai_1
+      - BG_9019+@WangCai_1
+      - BG_9050+@WangCai_1+(2)
+      - BG_9060+@WangCai_1
+      - BG_9043+@WangCai_1+(2)
+      - CH_9003+@WangCai_1+(1)
+      - CH_9020+@WangCai_1+(1)
+      - CH_9056+@WangCai_1+(1)
+      - BG_9015+@WangCai_1+(2)
+      - CH_9000+@WangCai_1+(1)
+      - BG_9056+@WangCai_1+(2)
+      - CH_9057+@WangCai_1+(1)
+      - BG_9070+@WangCai_1
+      - BG_9079+@WangCai_1+(2)
+      - BG_9020+@WangCai_1
+      - BG_9037+@WangCai_1+(2)
+      - BG_9079+@WangCai_1
+      - BG_9038+@WangCai_1
+      - CH_9005+@WangCai_1+(1)
+      - BG_9045+@WangCai_1+(1)
+      - CH_9032+@WangCai_1
+      - -英国-节点池筛选0406-14
+      - BG_9027+@WangCai_1
+      - -保加利亚-节点池筛选0406-15
+      - -英国-节点池筛选0406-24
+      - BG_9033+@WangCai_1
+      - CH_9041+@WangCai_1+(1)
+      - BG_9000+@WangCai_1+(2)
+      - -英国-节点池筛选0406-23
+      - CH_9060+@WangCai_1+(1)
+      - BG_9059+@WangCai_1+(2)
+      - BG_9014+@WangCai_1
+      - BG_9084+@WangCai_1
+      - -保加利亚-节点池筛选0406-11
+      - BG_9033+@WangCai_1+(2)
+      - CH_9040+@WangCai_1+(1)
+      - BG_9003+@WangCai_1+(2)
+      - BG_9010+@WangCai_1
+      - BG_9019+@WangCai_1+(2)
+      - CH_9015+@WangCai_1+(1)
+      - BG_9064+@WangCai_1
+      - CH_9026+@WangCai_1+(1)
+      - CH_9064+@WangCai_1+(1)
+      - BG_9006+@WangCai_1+(2)
+      - BG_9018+@WangCai_1+(2)
+      - BG_9042+@WangCai_1
+      - BG_9093+@WangCai_1
+      - BG_9070+@WangCai_1+(2)
+      - CH_9008+@WangCai_1+(1)
+      - GB_9020+@WangCai_1
+      - BG_9008+@WangCai_1
+      - BG_9098+@WangCai_1+(2)
+      - CH_9007+@WangCai_1+(1)
+      - -保加利亚-节点池筛选0406-13
+      - -保加利亚-节点池筛选0406-9
+      - CH_9031+@WangCai_1+(1)
+      - BG_9093+@WangCai_1+(2)
+      - BG_9018+@WangCai_1
+      - CH_9019+@WangCai_1+(1)
+      - BG_9005+@WangCai_1
+      - CH_9024+@WangCai_1+(1)
+      - BG_9015+@WangCai_1
+      - BG_9031+@WangCai_1+(2)
+      - CH_9033+@WangCai_1
+      - CH_9045+@WangCai_1
+      - CH_9097+@WangCai_1+(1)
+      - CH_9098+@WangCai_1
+      - SG_9014+@WangCai_1+(2)
+      - NL_9050+@WangCai_1+(2)
+      - BG_9005+@WangCai_1+(2)
+      - BG_9053+@WangCai_1
+      - BG_9059+@WangCai_1
+      - BG_9064+@WangCai_1+(2)
+      - CH_9040+@WangCai_1
+      - -英国-节点池筛选0406-16
+      - CH_9010+@WangCai_1+(1)
+      - CH_9088+@WangCai_1+(1)
+      - BG_9020+@WangCai_1+(2)
+      - SG_9025+@WangCai_1+(2)
+      - CH_9094+@WangCai_1+(1)
+      - BG_9008+@WangCai_1+(2)
+      - BG_9024+@WangCai_1
+      - BG_9073+@WangCai_1
+      - -保加利亚-节点池筛选0406-18
+      - -保加利亚-节点池筛选0406-6
+      - SG_9000+@WangCai_1+(2)
+      - BG_9046+@WangCai_1
+      - -保加利亚-节点池筛选0406-5
+      - CH_9042+@WangCai_1
+      - BG_9007+@WangCai_1
+      - BG_9094+@WangCai_1
+      - CH_9024+@WangCai_1
+      - NL_9011+@WangCai_1+(2)
+      - CH_9027+@WangCai_1+(1)
+      - SG_9015+@WangCai_1+(2)
+      - CH_9043+@WangCai_1
+      - CH_9079+@WangCai_1
+      - CH_9011+@WangCai_1+(1)
+      - CH_9050+@WangCai_1+(1)
+      - SG_9007+@WangCai_1+(2)
+      - SG_9024+@WangCai_1+(2)
+      - CH_9093+@WangCai_1+(1)
+      - BG_9006+@WangCai_1
+      - CH_9043+@WangCai_1+(1)
+      - CH_9038+@WangCai_1+(1)
+      - CH_9060+@WangCai_1
+      - SG_9094+@WangCai_1+(2)
+      - BG_9026+@WangCai_1
+      - CH_9046+@WangCai_1+(1)
+      - BG_9073+@WangCai_1+(2)
+      - SG_9041+@WangCai_1+(2)
+      - CH_9032+@WangCai_1+(1)
+      - SG_9043+@WangCai_1+(2)
+      - CH_9018+@WangCai_1+(1)
+      - CH_9053+@WangCai_1
+      - SG_9031+@WangCai_1+(2)
+      - -保加利亚-节点池筛选0406-21
+      - CH_9010+@WangCai_1
+      - CH_9037+@WangCai_1
+      - SG_9037+@WangCai_1+(2)
+      - BG_9007+@WangCai_1+(2)
+      - CH_9050+@WangCai_1
+      - CH_9084+@WangCai_1+(1)
+      - SG_9003+@WangCai_1+(2)
+      - BG_9056+@WangCai_1+(1)
+      - CH_9070+@WangCai_1+(1)
+      - CH_9053+@WangCai_1+(1)
+      - CH_9037+@WangCai_1+(1)
+      - BG_9042+@WangCai_1+(1)
+      - SG_9042+@WangCai_1+(2)
+      - BG_9007+@WangCai_1+(1)
+      - -保加利亚-节点池筛选0406-2
+      - -保加利亚-节点池筛选0406-19
+      - SG_9006+@WangCai_1+(2)
+      - SG_9084+@WangCai_1+(2)
+      - CH_9070+@WangCai_1
+      - BG_9031+@WangCai_1
+      - SG_9040+@WangCai_1+(2)
+      - CH_9045+@WangCai_1+(1)
+      - GB_9093+@WangCai_1
+      - SG_9057+@WangCai_1+(2)
+      - CH_9033+@WangCai_1+(1)
+      - GB_9079+@WangCai_1
+      - NL_9045+@WangCai_1+(2)
+      - CH_9025+@WangCai_1+(1)
+      - BG_9025+@WangCai_1+(1)
+      - CH_9094+@WangCai_1
+      - SG_9038+@WangCai_1+(2)
+      - BG_9006+@WangCai_1+(1)
+      - BG_9084+@WangCai_1+(1)
+      - CH_9014+@WangCai_1+(1)
+      - -英国-节点池筛选0406-17
+      - BG_9059+@WangCai_1+(1)
+      - CH_9073+@WangCai_1+(1)
+      - BG_9040+@WangCai_1+(1)
+      - BG_9050+@WangCai_1
+      - BG_9015+@WangCai_1+(1)
+      - -保加利亚-节点池筛选0406-22
+      - BG_9031+@WangCai_1+(1)
+      - BG_9088+@WangCai_1
+      - GB_9032+@WangCai_1
+      - BG_9025+@WangCai_1+(2)
+      - CH_9006+@WangCai_1+(1)
+      - GB_9045+@WangCai_1
+      - BG_9024+@WangCai_1+(1)
+      - CH_9059+@WangCai_1+(1)
+      - GB_9056+@WangCai_1
+      - BG_9027+@WangCai_1+(1)
+      - BG_9032+@WangCai_1+(1)
+      - BG_9094+@WangCai_1+(1)
+      - CH_9006+@WangCai_1
+      - CH_9093+@WangCai_1
+      - -保加利亚-节点池筛选0406-12
+      - SG_9059+@WangCai_1+(2)
+      - BG_9003+@WangCai_1+(1)
+      - CH_9025+@WangCai_1
+      - GB_9024+@WangCai_1
+      - BG_9073+@WangCai_1+(1)
+      - SG_9060+@WangCai_1+(2)
+      - BG_9005+@WangCai_1+(1)
+      - GB_9097+@WangCai_1
+      - SG_9064+@WangCai_1+(2)
+      - GB_9084+@WangCai_1
+      - CH_9088+@WangCai_1
+      - BG_9041+@WangCai_1+(2)
+      - GB_9060+@WangCai_1
+      - GB_9070+@WangCai_1
+      - GB_9094+@WangCai_1
+      - GB_9019+@WangCai_1
+      - BG_9045+@WangCai_1
+      - GB_9057+@WangCai_1
+      - NL_9000+@WangCai_1+(2)
+      - BG_9040+@WangCai_1+(2)
+      - BG_9057+@WangCai_1+(1)
+      - 香港 04 | 直连
+      - 香港 04 | 广港 IEPL
+      - JP 02 Premium Access Point
+      - 加群 @yyjc_group，签到每月送50G流量
+      - 香港 03 | 直连
+      - 本站提供虚假的 广港 IEPL
+      - 日本 02 | 直连
+      - 香港 02 | 广港 IEPL
+      - SG 01 Premium Access Point
+      - 香港 01 | 广港 IEPL
+      - US 01 Premium Access Point
+      - "%微软云 香港 5Gbps"
+      - 日本 01 | 直连
+      - 香港 03 | 广港 IEPL
+      - 日本 03 | 直连
+      - JP 01 Premium Access Point
+      - 韩国 01 | 直连
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
