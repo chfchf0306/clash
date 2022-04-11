@@ -5,1275 +5,307 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: CN, server: 14.29.124.168, port: 25266, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: HK, server: hkcmi.745937508.xyz, port: 51693, type: vmess, uuid: 5d5f96d0-5d45-4860-915d-c1fbb16f4384, alterId: 20, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /andre, ws-headers: {Host: hkcmi.745937508.xyz}, udp: true}
-  - {name: _US_美国, server: 169.197.143.157, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: CN 2, server: az.hk01.paopaocloud.cyou, port: 10009, type: vmess, uuid: 29b6360a-0ddf-31db-8d22-a1d2398debee, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: az.hk01.paopaocloud.cyou}, udp: true}
-  - {name: _KR_韩国, server: 158.247.205.108, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: _US_美国 2, server: 169.197.143.157, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: _US_美国 3, server: 169.197.143.157, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: _US_美国 4, server: 169.197.143.157, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: _US_美国 5, server: 169.197.143.157, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: vpnpool-香港, server: 119.147.2.245, port: 58803, type: trojan, password: 246e1d4c-ac18-35cc-8f55-0b70bee0da56, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇨🇳CN-🇭🇰HK_502, server: 119.147.2.245, port: 58804, type: trojan, password: 246e1d4c-ac18-35cc-8f55-0b70bee0da56, skip-cert-verify: true, udp: true}
+  - {name: "❶香港 A4 [H]", server: transit01.balala2016.xyz, port: 10080, type: vmess, uuid: e3121cd0-b493-11ec-8a78-69c637e5ed92, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hk18, ws-headers: {Host: transit01.balala2016.xyz}, udp: true}
+  - {name: ❷香港 12, server: hk12.balala2016.xyz, port: 10080, type: vmess, uuid: e3121cd0-b493-11ec-8a78-69c637e5ed92, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /balala, ws-headers: {Host: hk12.balala2016.xyz}, udp: true}
+  - {name: vpnpool-SG, server: 119.147.2.245, port: 58807, type: trojan, password: 246e1d4c-ac18-35cc-8f55-0b70bee0da56, skip-cert-verify: true, udp: true}
+  - {name: vpnpool-SG 2, server: 119.147.2.245, port: 58808, type: trojan, password: 246e1d4c-ac18-35cc-8f55-0b70bee0da56, skip-cert-verify: true, udp: true}
+  - {name: HK(TG/atyzcloud)_1, server: gy.sharecentrepro.tk, port: 13397, type: trojan, password: d3b04e55-f2ae-4500-b317-e23946dde463, sni: gy.sharecentrepro.tk, skip-cert-verify: true, udp: true}
+  - {name: "❶香港 B4 [H]", server: transit01.balala2016.xyz, port: 10080, type: vmess, uuid: e3121cd0-b493-11ec-8a78-69c637e5ed92, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /balala, ws-headers: {Host: transit01.balala2016.xyz}, udp: true}
+  - {name: ❷香港 51, server: hk51.balala2016.xyz, port: 10080, type: vmess, uuid: e3121cd0-b493-11ec-8a78-69c637e5ed92, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hk51, ws-headers: {Host: hk51.balala2016.xyz}, udp: true}
+  - {name: "❶新加坡 02 [M]", server: js01.balala2016.xyz, port: 20086, type: vmess, uuid: e3121cd0-b493-11ec-8a78-69c637e5ed92, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /sg02, ws-headers: {Host: js01.balala2016.xyz}, udp: true}
+  - {name: vpnpool-VN-dip, server: 119.147.2.245, port: 58831, type: trojan, password: 246e1d4c-ac18-35cc-8f55-0b70bee0da56, skip-cert-verify: true, udp: true}
+  - {name: "❶日本 03 [转]", server: transit01.balala2016.xyz, port: 80, type: vmess, uuid: e3121cd0-b493-11ec-8a78-69c637e5ed92, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jp01, ws-headers: {Host: transit01.balala2016.xyz}, udp: true}
+  - {name: Relay_🇨🇳CN-🏁ZZ_499, server: 119.147.2.245, port: 58829, type: trojan, password: 246e1d4c-ac18-35cc-8f55-0b70bee0da56, skip-cert-verify: true, udp: true}
+  - {name: "❶香港 B1 [推荐]", server: js01.balala2016.xyz, port: 20086, type: vmess, uuid: e3121cd0-b493-11ec-8a78-69c637e5ed92, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /balala, ws-headers: {Host: js01.balala2016.xyz}, udp: true}
+  - {name: vpnpool-TH-dip, server: 119.147.2.245, port: 58825, type: trojan, password: 246e1d4c-ac18-35cc-8f55-0b70bee0da56, skip-cert-verify: true, udp: true}
+  - {name: "❶香港 B2 [推荐]", server: js02.balala2016.xyz, port: 20086, type: vmess, uuid: e3121cd0-b493-11ec-8a78-69c637e5ed92, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /balala, ws-headers: {Host: js02.balala2016.xyz}, udp: true}
+  - {name: "❶香港 B3 [推荐]", server: js03.balala2016.xyz, port: 20086, type: vmess, uuid: e3121cd0-b493-11ec-8a78-69c637e5ed92, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /balala, ws-headers: {Host: js03.balala2016.xyz}, udp: true}
+  - {name: vpnpool-TH-dip 2, server: 119.147.2.245, port: 58830, type: trojan, password: 246e1d4c-ac18-35cc-8f55-0b70bee0da56, skip-cert-verify: true, udp: true}
+  - {name: 台湾02丨原生IP丨, server: fs.keaiyun.xyz, port: 55155, type: vmess, uuid: 8d2afe1b-0b96-3390-9258-36ff22e0d023, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: www.baidu.com}, udp: true}
+  - {name: "❶台湾 02 [推荐]", server: js02.balala2016.xyz, port: 20086, type: vmess, uuid: e3121cd0-b493-11ec-8a78-69c637e5ed92, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /tw01, ws-headers: {Host: js02.balala2016.xyz}, udp: true}
+  - {name: "❶香港 A3 [推荐]", server: js03.balala2016.xyz, port: 20086, type: vmess, uuid: e3121cd0-b493-11ec-8a78-69c637e5ed92, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hk18, ws-headers: {Host: js03.balala2016.xyz}, udp: true}
+  - {name: "❶香港 03 [BGP]", server: hk03.balala2016.xyz, port: 80, type: vmess, uuid: e3121cd0-b493-11ec-8a78-69c637e5ed92, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /balala, ws-headers: {Host: hk03.balala2016.xyz}, udp: true}
+  - {name: "❶日本 01 [M]", server: js01.balala2016.xyz, port: 20086, type: vmess, uuid: e3121cd0-b493-11ec-8a78-69c637e5ed92, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jp01, ws-headers: {Host: js01.balala2016.xyz}, udp: true}
+  - {name: "❶香港 A1 [推荐]", server: js01.balala2016.xyz, port: 20086, type: vmess, uuid: e3121cd0-b493-11ec-8a78-69c637e5ed92, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hk18, ws-headers: {Host: js01.balala2016.xyz}, udp: true}
+  - {name: Relay_🇨🇳CN-🇰🇷KR_501, server: 119.147.2.245, port: 58809, type: trojan, password: 246e1d4c-ac18-35cc-8f55-0b70bee0da56, skip-cert-verify: true, udp: true}
+  - {name: "❶香港 A2 [推荐]", server: js02.balala2016.xyz, port: 20086, type: vmess, uuid: e3121cd0-b493-11ec-8a78-69c637e5ed92, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hk18, ws-headers: {Host: js02.balala2016.xyz}, udp: true}
+  - {name: "❷香港 C3 [推荐]", server: js03.balala2016.xyz, port: 20086, type: vmess, uuid: e3121cd0-b493-11ec-8a78-69c637e5ed92, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hk51, ws-headers: {Host: js03.balala2016.xyz}, udp: true}
+  - {name: "❷香港 C2 [推荐]", server: js02.balala2016.xyz, port: 20086, type: vmess, uuid: e3121cd0-b493-11ec-8a78-69c637e5ed92, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hk51, ws-headers: {Host: js02.balala2016.xyz}, udp: true}
+  - {name: "❷韩国 [转]", server: transit01.balala2016.xyz, port: 10080, type: vmess, uuid: e3121cd0-b493-11ec-8a78-69c637e5ed92, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /kr01, ws-headers: {Host: transit01.balala2016.xyz}, udp: true}
+  - {name: vpnpool-US, server: 119.147.2.245, port: 58817, type: trojan, password: 246e1d4c-ac18-35cc-8f55-0b70bee0da56, skip-cert-verify: true, udp: true}
+  - {name: CN, server: fs.keaiyun.xyz, port: 48517, type: vmess, uuid: 8d2afe1b-0b96-3390-9258-36ff22e0d023, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: www.baidu.com}, udp: true}
+  - {name: Relay_🇨🇳CN-🇮🇳IN_500, server: 119.147.2.245, port: 58812, type: trojan, password: 246e1d4c-ac18-35cc-8f55-0b70bee0da56, skip-cert-verify: true, udp: true}
+  - {name: "❶香港 02 [BGP]", server: hk02.balala2016.xyz, port: 80, type: vmess, uuid: e3121cd0-b493-11ec-8a78-69c637e5ed92, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /balala, ws-headers: {Host: hk02.balala2016.xyz}, udp: true}
+  - {name: vpnpool-US-dip, server: 119.147.2.245, port: 58816, type: trojan, password: 246e1d4c-ac18-35cc-8f55-0b70bee0da56, skip-cert-verify: true, udp: true}
+  - {name: vpnpool-RU, server: 119.147.2.245, port: 58828, type: trojan, password: 246e1d4c-ac18-35cc-8f55-0b70bee0da56, skip-cert-verify: true, udp: true}
+  - {name: "❶美国 02 [转]", server: transit01.balala2016.xyz, port: 10080, type: vmess, uuid: e3121cd0-b493-11ec-8a78-69c637e5ed92, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /us02, ws-headers: {Host: transit01.balala2016.xyz}, udp: true}
+  - {name: vpnpool-ID-dip, server: 119.147.2.245, port: 58824, type: trojan, password: 246e1d4c-ac18-35cc-8f55-0b70bee0da56, skip-cert-verify: true, udp: true}
+  - {name: vpnpool-KR, server: 119.147.2.245, port: 58810, type: trojan, password: 246e1d4c-ac18-35cc-8f55-0b70bee0da56, skip-cert-verify: true, udp: true}
+  - {name: 俄罗斯原生1-负载均衡-解锁流媒体, server: ru1.lolvps.xyz, port: 40040, type: vmess, uuid: 2b8e4fc6-0112-4b26-8c17-1bfef9a3ff99, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /6129CFHR, ws-headers: {Host: ru1.lolvps.xyz}, udp: true}
+  - {name: "❷荷兰 [M]", server: js01.balala2016.xyz, port: 10080, type: vmess, uuid: e3121cd0-b493-11ec-8a78-69c637e5ed92, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /nl01, ws-headers: {Host: js01.balala2016.xyz}, udp: true}
+  - {name: ❶香港 18, server: hk18.balala2016.xyz, port: 10080, type: vmess, uuid: e3121cd0-b493-11ec-8a78-69c637e5ed92, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hk18, ws-headers: {Host: hk18.balala2016.xyz}, udp: true}
+  - {name: 新加坡4, server: fs.keaiyun.xyz, port: 48550, type: vmess, uuid: 8d2afe1b-0b96-3390-9258-36ff22e0d023, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: www.baidu.com}, udp: true}
+  - {name: Pool_🇹🇼TW_1673, server: 211.72.35.153, port: 3389, type: trojan, password: cd39f62aed7b90f6, skip-cert-verify: true, udp: true}
+  - {name: vpnpool-US-dip 2, server: 119.147.2.245, port: 58832, type: trojan, password: 246e1d4c-ac18-35cc-8f55-0b70bee0da56, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇨🇳CN-🇺🇸US_503, server: 119.147.2.245, port: 58818, type: trojan, password: 246e1d4c-ac18-35cc-8f55-0b70bee0da56, skip-cert-verify: true, udp: true}
+  - {name: CN 2, server: fs.keaiyun.xyz, port: 48552, type: vmess, uuid: 8d2afe1b-0b96-3390-9258-36ff22e0d023, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: www.baidu.com}, udp: true}
+  - {name: vpnpool-IN, server: 119.147.2.245, port: 58811, type: trojan, password: 246e1d4c-ac18-35cc-8f55-0b70bee0da56, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇨🇳CN-🇭🇰HK_498, server: 119.147.2.245, port: 58819, type: trojan, password: 246e1d4c-ac18-35cc-8f55-0b70bee0da56, skip-cert-verify: true, udp: true}
+  - {name: "❷法国 [转]", server: transit01.balala2016.xyz, port: 10080, type: vmess, uuid: e3121cd0-b493-11ec-8a78-69c637e5ed92, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /fr01, ws-headers: {Host: transit01.balala2016.xyz}, udp: true}
+  - {name: vpnpool-VN-dip 2, server: 119.147.2.245, port: 58814, type: trojan, password: 246e1d4c-ac18-35cc-8f55-0b70bee0da56, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇨🇳CN-🇷🇴RO_504, server: 119.147.2.245, port: 58806, type: trojan, password: 246e1d4c-ac18-35cc-8f55-0b70bee0da56, skip-cert-verify: true, udp: true}
+  - {name: CN 3, server: cn1.iepl.starlink.st, port: 50600, type: ss, cipher: aes-128-gcm, password: ced52354-bec2-4209-9121-b57d3dfb59e9, udp: true}
+  - {name: vpnpool-香港 2, server: 119.147.2.245, port: 58802, type: trojan, password: 246e1d4c-ac18-35cc-8f55-0b70bee0da56, skip-cert-verify: true, udp: true}
+  - {name: "❶台湾 03 [推荐]", server: transit01.balala2016.xyz, port: 10080, type: vmess, uuid: e3121cd0-b493-11ec-8a78-69c637e5ed92, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /tw01, ws-headers: {Host: transit01.balala2016.xyz}, udp: true}
+  - {name: Pool_🇹🇼TW_1674, server: 211.72.35.153, port: 3389, type: trojan, password: 22e7ebb2dc8ab524, skip-cert-verify: true, udp: true}
+  - {name: Relay_🏁ZZ-🇹🇼TW_4724, server: 5.44.249.43, port: 3389, type: trojan, password: cd39f62aed7b90f6, skip-cert-verify: true, udp: true}
+  - {name: RU1(IEPL)+-+负载均衡专线, server: cn1.iepl.starlink.st, port: 50700, type: ss, cipher: aes-128-gcm, password: ced52354-bec2-4209-9121-b57d3dfb59e9, udp: true}
+  - {name: _BG_保加利亚, server: 213.183.63.217, port: 9059, type: ss, cipher: aes-256-cfb, password: 9XwYyZsK8SNzQDtY, udp: true}
+  - {name: "❷英国 [转]", server: transit01.balala2016.xyz, port: 10080, type: vmess, uuid: e3121cd0-b493-11ec-8a78-69c637e5ed92, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /uk01, ws-headers: {Host: transit01.balala2016.xyz}, udp: true}
+  - {name: "❶新加坡 03 [H]", server: transit01.balala2016.xyz, port: 10080, type: vmess, uuid: e3121cd0-b493-11ec-8a78-69c637e5ed92, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /sg02, ws-headers: {Host: transit01.balala2016.xyz}, udp: true}
+  - {name: CN 4, server: 14.29.124.168, port: 25238, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN 5, server: 14.29.124.168, port: 25235, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN 6, server: cn1.iepl.starlink.st, port: 50500, type: ss, cipher: aes-128-gcm, password: ced52354-bec2-4209-9121-b57d3dfb59e9, udp: true}
+  - {name: CN 7, server: 14.29.124.168, port: 25270, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN 8, server: 14.29.124.168, port: 25217, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN 9, server: 14.29.124.168, port: 25279, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN 10, server: cn1.iepl.starlink.st, port: 50300, type: ss, cipher: aes-128-gcm, password: ced52354-bec2-4209-9121-b57d3dfb59e9, udp: true}
   - {name: KR, server: hgmf.speedcncnforward2.tk, port: 80, type: trojan, password: da0ea9bc-0dc1-4714-820f-44e87692930f, sni: hgmf.speedcncnforward2.tk, skip-cert-verify: true, udp: true}
-  - {name: KR 2, server: 0326kr.fans8.xyz, port: 443, type: vmess, uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c, alterId: 2, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ray, ws-headers: {Host: 0326kr.fans8.xyz}, udp: true}
-  - {name: _US_美国 6, server: 169.197.143.157, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: KR 3, server: jgw3.gaox.ml, port: 443, type: trojan, password: a1718180-d616-4b71-9bb6-3e96ba20f921, sni: jgw3.gaox.ml, skip-cert-verify: true, udp: true}
-  - {name: CN 3, server: fs.keaiyun.xyz, port: 48517, type: vmess, uuid: 8d2afe1b-0b96-3390-9258-36ff22e0d023, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: KR 4, server: 158.247.203.40, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: CN 4, server: cmjm.senlinss.link, port: 21129, type: vmess, uuid: 79bd1d4c-d5df-3f44-b01b-77209cdf1342, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: cmjm.senlinss.link}, udp: true}
-  - {name: _US_美国 7, server: 38.68.134.190, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: _KR_韩国 2, server: 158.247.224.123, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: _US_美国 8, server: 169.197.143.157, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: _US_美国 9, server: 169.197.143.157, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: US, server: 142.202.48.17, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: KR 5, server: 158.247.224.123, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: _US_美国 10, server: 169.197.143.157, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: _US_美国 11, server: 167.88.63.11, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: CN 5, server: gy.sharecentrepro.tk, port: 11451, type: trojan, password: sharecentretest, sni: gy.sharecentrepro.tk, skip-cert-verify: true, udp: true}
-  - {name: _US_美国->🇫🇷_FR_法国, server: fri.ncugo.cf, port: 443, type: vmess, uuid: de0eb598-2cea-43a0-c5fe-77335fb07a35, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: fri.ncugo.cf}, udp: true}
-  - {name: JP, server: 139.162.122.205, port: 3845, type: vmess, uuid: 76d5c6e3-c74c-3406-b9e8-9859d0a71c56, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: default_name, server: v2ray.788644.xyz, port: 443, type: vmess, uuid: 000fe881-b655-4212-b804-b00f9970d5aa, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /happy, ws-headers: {Host: v2ray.788644.xyz}, udp: true}
-  - {name: KR 6, server: 141.164.52.21, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: JP 2, server: 139.162.122.205, port: 3845, type: vmess, uuid: 76d5c6e3-c74c-3406-b9e8-9859d0a71c56, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: US 2, server: 38.75.137.71, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: AU, server: 172.105.254.242, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: AU 2, server: 172.105.254.242, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: US 3, server: 38.68.134.190, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: US 4, server: v2ray.ifuckgfw.ga, port: 8443, type: vmess, uuid: f40c594a-b3c3-11ec-876b-5254001b7b42, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /yUxLk70F/, ws-headers: {Host: v2ray.ifuckgfw.ga}, udp: true}
-  - {name: US 5, server: 38.68.134.190, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: KR 7, server: 141.164.52.21, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: US 6, server: 38.68.134.190, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: CN 6, server: ah.yd01.paopaocloud.cyou, port: 10025, type: vmess, uuid: 29b6360a-0ddf-31db-8d22-a1d2398debee, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: ah.yd01.paopaocloud.cyou}, udp: true}
-  - {name: US 7, server: 38.75.137.71, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: _US_美国 12, server: 169.197.143.157, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: KR 8, server: kor1.lolvps.xyz, port: 40030, type: vmess, uuid: 77005b76-6917-4e2a-815c-d06b2bfa0bed, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /DYUSC0AP, ws-headers: {Host: kor1.lolvps.xyz}, udp: true}
-  - {name: US 8, server: 142.202.48.52, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: CN 7, server: bgpv2.kmcyun.com, port: 13303, type: vmess, uuid: e84af26c-31ed-3b49-979c-8c26ee290e28, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /websocket, ws-headers: {Host: www.icloud.com}, udp: true}
-  - {name: CN 8, server: in-v1.sdgdn.com, port: 50301, type: vmess, uuid: b1478e24-4916-3abe-8f17-15931012ecbe, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: in-v1.sdgdn.com}, udp: true}
-  - {name: _US_美国 13, server: 169.197.143.157, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US 9, server: 167.88.63.117, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: SG, server: 139.162.24.50, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: US 10, server: v2ray.ifuckgfw.ga, port: 8443, type: vmess, uuid: ea53a296-b3c3-11ec-876b-5254001b7b42, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /yUxLk70F/, ws-headers: {Host: v2ray.ifuckgfw.ga}, udp: true}
-  - {name: US 11, server: 38.91.100.134, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: CN 9, server: mg01.nfeng6.pp.ua, port: 63078, type: vmess, uuid: ba22a02b-4178-39a7-b748-4d0c03b9a674, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /t.me/nfeng6, ws-headers: {Host: mg01.nfeng6.pp.ua}, udp: true}
-  - {name: CA, server: 198.57.27.218, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: US 12, server: app.ssfree.ru, port: 443, type: vmess, uuid: 47aa161e-b8e7-11ec-a265-000017022008, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /getweather, ws-headers: {Host: app.ssfree.ru}, udp: true}
-  - {name: US 13, server: 142.202.48.105, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: US 14, server: 38.68.135.19, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: GB, server: 152.89.210.105, port: 9007, type: ss, cipher: aes-256-cfb, password: kSPmvwdFzGMMW5pY, udp: true}
-  - {name: US 15, server: 167.88.61.50, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: AU 3, server: 172.105.254.242, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: GB 2, server: rknc.xrenblog.com, port: 18888, type: vmess, uuid: 0febc8e5-8463-440f-961a-6ea09d429d1c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /xrenblog, ws-headers: {Host: rknc.xrenblog.com}, udp: true}
-  - {name: CN 10, server: fs.keaiyun.xyz, port: 55154, type: vmess, uuid: 8d2afe1b-0b96-3390-9258-36ff22e0d023, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: US 16, server: 167.88.61.50, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: AU 4, server: 172.105.254.242, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: HK 2, server: hkmf2.speedcncnforward3.tk, port: 80, type: trojan, password: da0ea9bc-0dc1-4714-820f-44e87692930f, sni: hkmf2.speedcncnforward3.tk, skip-cert-verify: true, udp: true}
-  - {name: KR 9, server: 158.247.199.253, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: KR 10, server: hgmf.speedcncnforward2.tk, port: 80, type: trojan, password: eb40a3f4-3b04-4a1c-993d-d71b44fee92c, sni: hgmf.speedcncnforward2.tk, skip-cert-verify: true, udp: true}
-  - {name: US 17, server: 142.202.48.52, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: JP 3, server: ss-node-1.gfwairport.net, port: 50001, type: ss, cipher: chacha20-ietf-poly1305, password: 94663697-512d-47fe-ad13-14984e1ebffa, udp: true}
-  - {name: CN 11, server: fs.keaiyun.xyz, port: 55156, type: vmess, uuid: 8d2afe1b-0b96-3390-9258-36ff22e0d023, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: HK 3, server: 0326hk01.fans8.xyz, port: 443, type: vmess, uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c, alterId: 2, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ray, ws-headers: {Host: 0326hk01.fans8.xyz}, udp: true}
-  - {name: US 18, server: 167.88.63.82, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: US 19, server: 167.88.61.50, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: KR 11, server: 146.56.99.245, port: 25135, type: vmess, uuid: 5893f7e5-9695-45af-f65e-bd2958ba93fa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: US 20, server: 142.202.48.14, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: HK 4, server: 165.154.225.231, port: 443, type: vmess, uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c, alterId: 2, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ray, ws-headers: {Host: 330hk02.fans8.xyz}, udp: true}
-  - {name: US 21, server: 142.202.48.14, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: HK 5, server: hkmf2.speedcncnforward3.tk, port: 80, type: trojan, password: eb40a3f4-3b04-4a1c-993d-d71b44fee92c, sni: hkmf2.speedcncnforward3.tk, skip-cert-verify: true, udp: true}
-  - {name: CN 12, server: az.hk01.paopaocloud.cyou, port: 10012, type: vmess, uuid: 29b6360a-0ddf-31db-8d22-a1d2398debee, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: az.hk01.paopaocloud.cyou}, udp: true}
-  - {name: GB 3, server: 152.89.210.105, port: 9019, type: ss, cipher: aes-256-cfb, password: GA9KzeEgvfxNrgmM, udp: true}
-  - {name: US 22, server: 142.202.48.14, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: HK 6, server: hkmf1.speedcncnforward2.tk, port: 80, type: trojan, password: da0ea9bc-0dc1-4714-820f-44e87692930f, sni: hkmf1.speedcncnforward2.tk, skip-cert-verify: true, udp: true}
-  - {name: _US_美国 14, server: 38.68.134.190, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: AU 5, server: 172.105.176.149, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: SG 2, server: 139.162.24.50, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: CN 13, server: 14.29.124.168, port: 25235, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN 14, server: ah.yd01.paopaocloud.cyou, port: 10034, type: vmess, uuid: 29b6360a-0ddf-31db-8d22-a1d2398debee, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: ah.yd01.paopaocloud.cyou}, udp: true}
-  - {name: AU 6, server: 172.105.254.242, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: KR 12, server: 141.164.52.21, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: AU 7, server: 172.105.254.242, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: CN 15, server: gy.sharecentrepro.tk, port: 34148, type: trojan, password: sharecentrepro, sni: gy.sharecentrepro.tk, skip-cert-verify: true, udp: true}
-  - {name: _SG_新加坡, server: sg1.31vpn.com, port: 443, type: vmess, uuid: dce4c472-6f3f-4c45-80e5-cbfe5ecad7ee, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /fastssh/bddasdf/624e71635ed8e/, ws-headers: {Host: sg1.31vpn.com}, udp: true}
-  - {name: FR, server: 149.202.82.172, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: US 23, server: 142.202.48.105, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: US 24, server: 38.68.134.190, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: CN 16, server: gz.yd01.paopaocloud.cyou, port: 10027, type: vmess, uuid: 29b6360a-0ddf-31db-8d22-a1d2398debee, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: gz.yd01.paopaocloud.cyou}, udp: true}
-  - {name: CA 2, server: 198.57.27.218, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: HK 7, server: 330hk02.fans8.xyz, port: 443, type: vmess, uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c, alterId: 2, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ray, ws-headers: {Host: 330hk02.fans8.xyz}, udp: true}
-  - {name: _US_美国 15, server: 169.197.142.216, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: KR 13, server: 141.164.56.250, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: US 25, server: 207.246.94.28, port: 42383, type: vmess, uuid: 4773dfdc-9c85-4873-8720-ce8cf5f74f7c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: FR 2, server: 149.202.82.172, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: AU 8, server: 172.105.254.242, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: US 26, server: 38.68.134.190, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: US 27, server: 38.91.100.134, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: AU 9, server: 172.105.254.242, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: US 28, server: 38.75.136.117, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: CN 17, server: ah.yd01.paopaocloud.cyou, port: 10011, type: vmess, uuid: 29b6360a-0ddf-31db-8d22-a1d2398debee, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: ah.yd01.paopaocloud.cyou}, udp: true}
-  - {name: _US_美国 16, server: 169.197.143.157, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: CN 18, server: cn1.iepl.starlink.st, port: 50600, type: ss, cipher: aes-128-gcm, password: ced52354-bec2-4209-9121-b57d3dfb59e9, udp: true}
-  - {name: AU 10, server: 172.105.254.242, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: _HK_香港, server: 20.205.131.172, port: 10125, type: vmess, uuid: 83ae9f04-47f0-4e34-9a1c-9c2e5161f586, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: vn.mumi.bid}, udp: true}
-  - {name: CN 19, server: jm.yd02.paopaocloud.cyou, port: 15622, type: vmess, uuid: 29b6360a-0ddf-31db-8d22-a1d2398debee, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: jm.yd02.paopaocloud.cyou}, udp: true}
-  - {name: US 29, server: 167.88.61.50, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: _US_美国 17, server: 169.197.143.157, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: US 30, server: 38.68.134.190, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: FR 3, server: 149.202.82.172, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: 103.172.116.7:9019, server: 103.172.116.7, port: 9019, type: ss, cipher: aes-256-cfb, password: GA9KzeEgvfxNrgmM, udp: true}
-  - {name: KR 14, server: 141.164.52.21, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: _IN_印度, server: 192.46.208.153, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: KR 15, server: 141.164.52.21, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: US 31, server: v2ray.ifuckgfw.ga, port: 8443, type: vmess, uuid: ef20236c-b3c3-11ec-876b-5254001b7b42, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /yUxLk70F/, ws-headers: {Host: v2ray.ifuckgfw.ga}, udp: true}
-  - {name: _KR_韩国 3, server: 158.247.209.92, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: IN, server: 45.79.121.166, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: US 32, server: 38.75.137.71, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: CN 20, server: gy.sharecentrepro.tk, port: 54939, type: trojan, password: sharecentre, sni: gy.sharecentrepro.tk, skip-cert-verify: true, udp: true}
-  - {name: US 33, server: 167.88.61.50, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: US 34, server: 142.202.48.74, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US 35, server: 38.68.134.190, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: _US_美国 18, server: 169.197.143.157, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: US 36, server: 38.68.134.190, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: FR 4, server: 149.202.82.172, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: _US_美国 19, server: 169.197.142.216, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: US 37, server: 142.202.48.17, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: US 38, server: 142.202.48.14, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: KR 16, server: 141.164.52.21, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: US 39, server: 167.88.63.11, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: 103.172.116.8:9011, server: 103.172.116.8, port: 9011, type: ss, cipher: aes-256-cfb, password: M3t2ZEQcMGRWBjRa, udp: true}
-  - {name: KR 17, server: 158.247.224.123, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: _US_美国 20, server: 169.197.143.157, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: KR 18, server: 158.247.205.87, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: US 40, server: 38.75.137.71, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: AU 11, server: 172.105.254.242, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: CN 21, server: bgpv2.kmcyun.com, port: 13004, type: vmess, uuid: e84af26c-31ed-3b49-979c-8c26ee290e28, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /websocket, ws-headers: {Host: www.icloud.com}, udp: true}
-  - {name: AU 12, server: 172.105.254.242, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: CN 22, server: ah.yd01.paopaocloud.cyou, port: 10042, type: vmess, uuid: 29b6360a-0ddf-31db-8d22-a1d2398debee, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: ah.yd01.paopaocloud.cyou}, udp: true}
-  - {name: KR 19, server: 141.164.47.208, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: KR 20, server: 158.247.205.108, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US 41, server: 38.68.134.69, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: KR 21, server: 158.247.224.123, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: KR 22, server: 158.247.199.253, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: CN 23, server: fkgfw-prod.i.sxl.cn, port: 443, type: ss, cipher: aes-256-cfb, password: E4DNMf73kHPrd8Qq7aqGPf7f, udp: true}
-  - {name: CN 24, server: bgpv2.kmcyun.com, port: 13304, type: vmess, uuid: e84af26c-31ed-3b49-979c-8c26ee290e28, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /websocket, ws-headers: {Host: www.icloud.com}, udp: true}
-  - {name: FR 5, server: 149.202.82.172, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: KR 23, server: 158.247.199.253, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: CN 25, server: az.hk01.paopaocloud.cyou, port: 10031, type: vmess, uuid: 29b6360a-0ddf-31db-8d22-a1d2398debee, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: az.hk01.paopaocloud.cyou}, udp: true}
-  - {name: AU 13, server: 172.105.254.242, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: AU 14, server: 172.105.254.242, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: KR 24, server: 141.164.52.21, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: AU 15, server: 172.105.254.242, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: _US_美国 21, server: 169.197.142.216, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: US 42, server: 142.202.48.52, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: US 43, server: v2ray.ifuckgfw.ga, port: 8443, type: vmess, uuid: ecb634c2-b3c3-11ec-876b-5254001b7b42, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /yUxLk70F/, ws-headers: {Host: v2ray.ifuckgfw.ga}, udp: true}
-  - {name: CN 26, server: az.hk01.paopaocloud.cyou, port: 10038, type: vmess, uuid: 29b6360a-0ddf-31db-8d22-a1d2398debee, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: az.hk01.paopaocloud.cyou}, udp: true}
-  - {name: CN 27, server: bgpv2.kmcyun.com, port: 13003, type: vmess, uuid: e84af26c-31ed-3b49-979c-8c26ee290e28, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /websocket, ws-headers: {Host: www.icloud.com}, udp: true}
-  - {name: KR 25, server: 158.247.205.87, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: AU 16, server: 172.105.254.242, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US 44, server: 142.202.48.74, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: KR 26, server: 141.164.52.21, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: US 45, server: 38.68.135.19, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: SG 3, server: eu.licom.ga, port: 60001, type: trojan, password: f81e990e-1283-48f9-9eff-acacad6fb661, sni: eu.licom.ga, skip-cert-verify: true, udp: true}
-  - {name: 103.172.116.9:9042, server: 103.172.116.9, port: 9042, type: ss, cipher: aes-256-cfb, password: S7KwUu7yBy58S3Ga, udp: true}
-  - {name: _US_美国 22, server: 169.197.143.157, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: CN 28, server: 14.29.124.168, port: 25219, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: US 46, server: 167.88.63.64, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: JP 4, server: jp3.lolvps.xyz, port: 30032, type: vmess, uuid: a4ca5bcd-b869-40d1-a22b-ffedde600ac3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /HQMVPI9Y, ws-headers: {Host: jp3.lolvps.xyz}, udp: true}
-  - {name: US 47, server: 38.68.135.19, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: US 48, server: node.zxcairport.xyz, port: 443, type: vmess, uuid: 7b198651-f526-44b5-a156-6badfe346dbf, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: us2.zxcairport.xyz}, udp: true}
-  - {name: US 49, server: 142.202.48.52, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: US 50, server: 38.75.137.71, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: CN 29, server: 14.29.124.168, port: 25233, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN 30, server: 14.29.124.168, port: 25293, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN 31, server: 14.29.124.168, port: 25268, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: TW, server: 34.80.198.210, port: 50895, type: vmess, uuid: 3cade6c5-4516-490f-89bc-3913e3478c12, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 34.80.198.210}, udp: true}
-  - {name: CN 32, server: cn1.iepl.starlink.st, port: 50500, type: ss, cipher: aes-128-gcm, password: ced52354-bec2-4209-9121-b57d3dfb59e9, udp: true}
-  - {name: CN 33, server: bgpv2.kmcyun.com, port: 13302, type: vmess, uuid: e84af26c-31ed-3b49-979c-8c26ee290e28, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /websocket, ws-headers: {Host: www.icloud.com}, udp: true}
-  - {name: RO, server: 62.216.91.232, port: 9027, type: ss, cipher: aes-256-cfb, password: EXN3S3eQpjE7EJu8, udp: true}
-  - {name: TW 2, server: 330tw.fans8.xyz, port: 443, type: vmess, uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c, alterId: 2, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ray, ws-headers: {Host: 330tw.fans8.xyz}, udp: true}
-  - {name: CN 34, server: 14.29.124.168, port: 25252, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN 35, server: fs.keaiyun.xyz, port: 48552, type: vmess, uuid: 8d2afe1b-0b96-3390-9258-36ff22e0d023, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: SG 4, server: 139.162.24.50, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: CN 36, server: 14.29.124.168, port: 25217, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN 37, server: 14.29.124.168, port: 25267, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN 38, server: 14.29.124.168, port: 25297, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: KR 27, server: 141.164.52.21, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: CN 39, server: 14.29.124.168, port: 25279, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN 40, server: 14.29.124.168, port: 25286, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN 41, server: 14.29.124.168, port: 25259, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: HK 8, server: hkmf1.speedcncnforward2.tk, port: 80, type: trojan, password: eb40a3f4-3b04-4a1c-993d-d71b44fee92c, sni: hkmf1.speedcncnforward2.tk, skip-cert-verify: true, udp: true}
-  - {name: KR 28, server: 141.164.52.21, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: CN 42, server: 14.29.124.168, port: 25295, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN 43, server: 14.29.124.168, port: 25222, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN 44, server: az.hk01.paopaocloud.cyou, port: 10025, type: vmess, uuid: 29b6360a-0ddf-31db-8d22-a1d2398debee, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: az.hk01.paopaocloud.cyou}, udp: true}
-  - {name: CN 45, server: 14.29.124.168, port: 25245, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: _US_美国 23, server: 169.197.143.157, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: CN 46, server: 14.29.124.168, port: 25294, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN 47, server: 14.29.124.168, port: 25289, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: KR 29, server: 158.247.203.40, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: KR 30, server: 141.164.52.21, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: KR 31, server: 158.247.224.123, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: CN 48, server: cn1.iepl.starlink.st, port: 50400, type: ss, cipher: aes-128-gcm, password: ced52354-bec2-4209-9121-b57d3dfb59e9, udp: true}
-  - {name: KR 32, server: 141.164.42.236, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: KR 33, server: kor3.lolvps.xyz, port: 40034, type: vmess, uuid: ad470e66-6851-45bb-bc8d-c2f5f7b0e361, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /AQFLW40C, ws-headers: {Host: kor3.lolvps.xyz}, udp: true}
-  - {name: KR 34, server: 141.164.42.236, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: _US_美国 24, server: 169.197.143.157, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: US 51, server: 207.246.94.28, port: 42383, type: vmess, uuid: 4773dfdc-9c85-4873-8720-ce8cf5f74f7c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: US 52, server: 38.75.137.71, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: JP 5, server: 139.162.122.205, port: 3845, type: vmess, uuid: 76d5c6e3-c74c-3406-b9e8-9859d0a71c56, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: KR 35, server: 141.164.52.21, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US 53, server: 38.68.134.69, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: CN 49, server: az.hk01.paopaocloud.cyou, port: 10018, type: vmess, uuid: 29b6360a-0ddf-31db-8d22-a1d2398debee, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: az.hk01.paopaocloud.cyou}, udp: true}
-  - {name: FR 6, server: 149.202.82.172, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: FR 7, server: 149.202.82.172, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: AU 17, server: 172.105.254.242, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: CN 50, server: gz.yd01.paopaocloud.cyou, port: 10009, type: vmess, uuid: 29b6360a-0ddf-31db-8d22-a1d2398debee, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: gz.yd01.paopaocloud.cyou}, udp: true}
-  - {name: KR 36, server: 141.164.52.21, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: CN 51, server: 14.29.124.168, port: 25247, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: _US_美国 25, server: 169.197.143.157, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: KR 37, server: 158.247.199.253, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: CN 52, server: 14.29.124.168, port: 25238, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN 53, server: ah.yd01.paopaocloud.cyou, port: 10041, type: vmess, uuid: 29b6360a-0ddf-31db-8d22-a1d2398debee, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: ah.yd01.paopaocloud.cyou}, udp: true}
-  - {name: KR 38, server: 141.164.52.21, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: CN 54, server: 14.29.124.168, port: 25220, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: US 54, server: 38.75.137.71, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: AU 18, server: 172.105.254.242, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: US 55, server: 38.75.137.71, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: US 56, server: 38.68.134.190, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: US 57, server: 167.88.61.50, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: KR 39, server: 141.164.52.21, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: FR 8, server: 149.202.82.172, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: KR 40, server: 141.164.52.21, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: CN 55, server: 14.29.124.168, port: 25296, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN 56, server: cn1.iepl.starlink.st, port: 50300, type: ss, cipher: aes-128-gcm, password: ced52354-bec2-4209-9121-b57d3dfb59e9, udp: true}
-  - {name: TW 3, server: 34.80.198.210, port: 46137, type: vmess, uuid: 77ff090a-e711-4af8-8538-67fa2ab3f3d1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: KR 41, server: 141.164.52.21, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: US 58, server: cloudflare.xrenblog.com, port: 443, type: vmess, uuid: a8910831-f56b-4ac4-c68f-e4dd83f71e60, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /sakura/, ws-headers: {Host: v4.xrenblog.com}, udp: true}
-  - {name: AU 19, server: 172.105.254.242, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: AU 20, server: 172.105.254.242, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: KR 42, server: 141.164.52.21, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: _US_美国 26, server: 142.202.48.17, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: FR 9, server: 149.202.82.172, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: US 59, server: 38.68.134.190, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: US 60, server: 169.197.142.99, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: AU 21, server: 172.105.254.242, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: CN 57, server: bgpv2.kmcyun.com, port: 13301, type: vmess, uuid: e84af26c-31ed-3b49-979c-8c26ee290e28, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /websocket, ws-headers: {Host: www.icloud.com}, udp: true}
-  - {name: KR 43, server: 141.164.52.21, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: US 61, server: 38.75.137.71, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: US 62, server: 167.88.63.82, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: US 63, server: 38.107.226.159, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: HK 9, server: 165.154.225.176, port: 443, type: vmess, uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c, alterId: 2, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ray, ws-headers: {Host: 0326hk01.fans8.xyz}, udp: true}
-  - {name: KR 44, server: 158.247.203.40, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: CA 3, server: 198.57.27.113, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: US 64, server: 167.88.61.50, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 103.172.116.8:9010, server: 103.172.116.8, port: 9010, type: ss, cipher: aes-256-cfb, password: f63gg8EruDnUrmz4, udp: true}
-  - {name: KR 45, server: 158.247.224.3, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: US 65, server: 38.68.134.69, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: AU 22, server: 172.105.254.242, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: CN 58, server: 14.29.124.168, port: 25241, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: AU 23, server: 172.105.254.242, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: US 66, server: 38.68.134.190, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: AU 24, server: 172.105.254.242, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: AU 25, server: 172.105.254.242, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: US 67, server: 38.68.134.190, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: KR 46, server: 141.164.52.21, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: CN 59, server: 180.163.62.91, port: 10065, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN 60, server: 14.29.124.168, port: 25271, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: SG 5, server: 139.162.24.50, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: _CA_加拿大, server: 134.195.198.252, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: US 68, server: 167.88.63.82, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: AU 26, server: 172.105.254.242, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: CA 4, server: 198.57.27.218, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: CN 61, server: gy.sharecentrepro.tk, port: 14514, type: trojan, password: NWGdxI6dQo, sni: gy.sharecentrepro.tk, skip-cert-verify: true, udp: true}
-  - {name: _US_美国 27, server: 169.197.143.157, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: KR 47, server: 141.164.52.21, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: CN 62, server: 14.29.124.168, port: 25270, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: FR 10, server: 149.202.82.172, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: KR 48, server: 141.164.52.21, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: CN 63, server: 14.29.124.168, port: 25231, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: KR 49, server: 158.247.206.19, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: KR 50, server: 141.164.52.21, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: KR 51, server: 141.164.52.21, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: US 69, server: 169.197.142.99, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: FR 11, server: 149.202.82.172, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: _US_美国 28, server: sjc.xrenblog.com, port: 18888, type: vmess, uuid: 0febc8e5-8463-440f-961a-6ea09d429d1c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /xrenblog, ws-headers: {Host: sjc.xrenblog.com}, udp: true}
-  - {name: CN 64, server: bgpv2.kmcyun.com, port: 13002, type: vmess, uuid: e84af26c-31ed-3b49-979c-8c26ee290e28, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /websocket, ws-headers: {Host: www.icloud.com}, udp: true}
-  - {name: _US_美国 29, server: 169.197.143.157, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: GB 4, server: 152.89.210.105, port: 9024, type: ss, cipher: aes-256-cfb, password: BejrQvtu9sqUeNuZ, udp: true}
-  - {name: _US_美国 30, server: 169.197.142.99, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: US 70, server: 38.68.135.19, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: US 71, server: 167.88.61.50, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: KR 52, server: 141.164.47.208, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: CN 65, server: 14.29.124.168, port: 25287, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: _US_美国 31, server: 169.197.142.99, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: 103.172.116.8:9037, server: 103.172.116.8, port: 9037, type: ss, cipher: aes-256-cfb, password: TN2YqghxeFDKZfLU, udp: true}
-  - {name: KR 53, server: 158.247.205.87, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: US 72, server: 142.202.48.17, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: CN 66, server: az.hk01.paopaocloud.cyou, port: 10034, type: vmess, uuid: 29b6360a-0ddf-31db-8d22-a1d2398debee, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: az.hk01.paopaocloud.cyou}, udp: true}
-  - {name: KR 54, server: 141.164.52.21, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: CN 67, server: 14.29.124.168, port: 25283, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: US 73, server: us1.31vpn.com, port: 80, type: vmess, uuid: bb4b9e95-c9ff-411c-9a47-483570e169aa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /fastssh/remaoqi/624ca41d72e6d/, ws-headers: {Host: us1.31vpn.com}, udp: true}
-  - {name: _KR_韩国 4, server: 158.247.209.92, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: US 74, server: jgwcc1.gaox.ml, port: 443, type: trojan, password: 7118b5f4-0ea4-4c11-be7f-11471cb91e4a, sni: jgwcc1.gaox.ml, skip-cert-verify: true, udp: true}
-  - {name: AU 27, server: 172.105.254.242, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: US 75, server: 167.88.63.117, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: US 76, server: 38.68.134.69, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: CN 11, server: 14.29.124.168, port: 25271, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: _BG_保加利亚 2, server: 213.183.63.217, port: 9001, type: ss, cipher: aes-256-cfb, password: UkXRsXvR6buDMG2Y, udp: true}
+  - {name: CN 12, server: 14.29.124.168, port: 25220, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
+      - vpnpool-香港
+      - Relay_🇨🇳CN-🇭🇰HK_502
+      - ❶香港 A4 [H]
+      - ❷香港 12
+      - vpnpool-SG
+      - vpnpool-SG 2
+      - HK(TG/atyzcloud)_1
+      - ❶香港 B4 [H]
+      - ❷香港 51
+      - ❶新加坡 02 [M]
+      - vpnpool-VN-dip
+      - ❶日本 03 [转]
+      - Relay_🇨🇳CN-🏁ZZ_499
+      - ❶香港 B1 [推荐]
+      - vpnpool-TH-dip
+      - ❶香港 B2 [推荐]
+      - ❶香港 B3 [推荐]
+      - vpnpool-TH-dip 2
+      - 台湾02丨原生IP丨
+      - ❶台湾 02 [推荐]
+      - ❶香港 A3 [推荐]
+      - ❶香港 03 [BGP]
+      - ❶日本 01 [M]
+      - ❶香港 A1 [推荐]
+      - Relay_🇨🇳CN-🇰🇷KR_501
+      - ❶香港 A2 [推荐]
+      - ❷香港 C3 [推荐]
+      - ❷香港 C2 [推荐]
+      - ❷韩国 [转]
+      - vpnpool-US
       - CN
-      - HK
-      - _US_美国
+      - Relay_🇨🇳CN-🇮🇳IN_500
+      - ❶香港 02 [BGP]
+      - vpnpool-US-dip
+      - vpnpool-RU
+      - ❶美国 02 [转]
+      - vpnpool-ID-dip
+      - vpnpool-KR
+      - 俄罗斯原生1-负载均衡-解锁流媒体
+      - ❷荷兰 [M]
+      - ❶香港 18
+      - 新加坡4
+      - Pool_🇹🇼TW_1673
+      - vpnpool-US-dip 2
+      - Relay_🇨🇳CN-🇺🇸US_503
       - CN 2
-      - _KR_韩国
-      - _US_美国 2
-      - _US_美国 3
-      - _US_美国 4
-      - _US_美国 5
-      - KR
-      - KR 2
-      - _US_美国 6
-      - KR 3
+      - vpnpool-IN
+      - Relay_🇨🇳CN-🇭🇰HK_498
+      - ❷法国 [转]
+      - vpnpool-VN-dip 2
+      - Relay_🇨🇳CN-🇷🇴RO_504
       - CN 3
-      - KR 4
+      - vpnpool-香港 2
+      - ❶台湾 03 [推荐]
+      - Pool_🇹🇼TW_1674
+      - Relay_🏁ZZ-🇹🇼TW_4724
+      - RU1(IEPL)+-+负载均衡专线
+      - _BG_保加利亚
+      - ❷英国 [转]
+      - ❶新加坡 03 [H]
       - CN 4
-      - _US_美国 7
-      - _KR_韩国 2
-      - _US_美国 8
-      - _US_美国 9
-      - US
-      - KR 5
-      - _US_美国 10
-      - _US_美国 11
       - CN 5
-      - _US_美国->🇫🇷_FR_法国
-      - JP
-      - default_name
-      - KR 6
-      - JP 2
-      - US 2
-      - AU
-      - AU 2
-      - US 3
-      - US 4
-      - US 5
-      - KR 7
-      - US 6
       - CN 6
-      - US 7
-      - _US_美国 12
-      - KR 8
-      - US 8
       - CN 7
       - CN 8
-      - _US_美国 13
-      - US 9
-      - SG
-      - US 10
-      - US 11
       - CN 9
-      - CA
-      - US 12
-      - US 13
-      - US 14
-      - GB
-      - US 15
-      - AU 3
-      - GB 2
       - CN 10
-      - US 16
-      - AU 4
-      - HK 2
-      - KR 9
-      - KR 10
-      - US 17
-      - JP 3
+      - KR
       - CN 11
-      - HK 3
-      - US 18
-      - US 19
-      - KR 11
-      - US 20
-      - HK 4
-      - US 21
-      - HK 5
+      - _BG_保加利亚 2
       - CN 12
-      - GB 3
-      - US 22
-      - HK 6
-      - _US_美国 14
-      - AU 5
-      - SG 2
-      - CN 13
-      - CN 14
-      - AU 6
-      - KR 12
-      - AU 7
-      - CN 15
-      - _SG_新加坡
-      - FR
-      - US 23
-      - US 24
-      - CN 16
-      - CA 2
-      - HK 7
-      - _US_美国 15
-      - KR 13
-      - US 25
-      - FR 2
-      - AU 8
-      - US 26
-      - US 27
-      - AU 9
-      - US 28
-      - CN 17
-      - _US_美国 16
-      - CN 18
-      - AU 10
-      - _HK_香港
-      - CN 19
-      - US 29
-      - _US_美国 17
-      - US 30
-      - FR 3
-      - 103.172.116.7:9019
-      - KR 14
-      - _IN_印度
-      - KR 15
-      - US 31
-      - _KR_韩国 3
-      - IN
-      - US 32
-      - CN 20
-      - US 33
-      - US 34
-      - US 35
-      - _US_美国 18
-      - US 36
-      - FR 4
-      - _US_美国 19
-      - US 37
-      - US 38
-      - KR 16
-      - US 39
-      - 103.172.116.8:9011
-      - KR 17
-      - _US_美国 20
-      - KR 18
-      - US 40
-      - AU 11
-      - CN 21
-      - AU 12
-      - CN 22
-      - KR 19
-      - KR 20
-      - US 41
-      - KR 21
-      - KR 22
-      - CN 23
-      - CN 24
-      - FR 5
-      - KR 23
-      - CN 25
-      - AU 13
-      - AU 14
-      - KR 24
-      - AU 15
-      - _US_美国 21
-      - US 42
-      - US 43
-      - CN 26
-      - CN 27
-      - KR 25
-      - AU 16
-      - US 44
-      - KR 26
-      - US 45
-      - SG 3
-      - 103.172.116.9:9042
-      - _US_美国 22
-      - CN 28
-      - US 46
-      - JP 4
-      - US 47
-      - US 48
-      - US 49
-      - US 50
-      - CN 29
-      - CN 30
-      - CN 31
-      - TW
-      - CN 32
-      - CN 33
-      - RO
-      - TW 2
-      - CN 34
-      - CN 35
-      - SG 4
-      - CN 36
-      - CN 37
-      - CN 38
-      - KR 27
-      - CN 39
-      - CN 40
-      - CN 41
-      - HK 8
-      - KR 28
-      - CN 42
-      - CN 43
-      - CN 44
-      - CN 45
-      - _US_美国 23
-      - CN 46
-      - CN 47
-      - KR 29
-      - KR 30
-      - KR 31
-      - CN 48
-      - KR 32
-      - KR 33
-      - KR 34
-      - _US_美国 24
-      - US 51
-      - US 52
-      - JP 5
-      - KR 35
-      - US 53
-      - CN 49
-      - FR 6
-      - FR 7
-      - AU 17
-      - CN 50
-      - KR 36
-      - CN 51
-      - _US_美国 25
-      - KR 37
-      - CN 52
-      - CN 53
-      - KR 38
-      - CN 54
-      - US 54
-      - AU 18
-      - US 55
-      - US 56
-      - US 57
-      - KR 39
-      - FR 8
-      - KR 40
-      - CN 55
-      - CN 56
-      - TW 3
-      - KR 41
-      - US 58
-      - AU 19
-      - AU 20
-      - KR 42
-      - _US_美国 26
-      - FR 9
-      - US 59
-      - US 60
-      - AU 21
-      - CN 57
-      - KR 43
-      - US 61
-      - US 62
-      - US 63
-      - HK 9
-      - KR 44
-      - CA 3
-      - US 64
-      - 103.172.116.8:9010
-      - KR 45
-      - US 65
-      - AU 22
-      - CN 58
-      - AU 23
-      - US 66
-      - AU 24
-      - AU 25
-      - US 67
-      - KR 46
-      - CN 59
-      - CN 60
-      - SG 5
-      - _CA_加拿大
-      - US 68
-      - AU 26
-      - CA 4
-      - CN 61
-      - _US_美国 27
-      - KR 47
-      - CN 62
-      - FR 10
-      - KR 48
-      - CN 63
-      - KR 49
-      - KR 50
-      - KR 51
-      - US 69
-      - FR 11
-      - _US_美国 28
-      - CN 64
-      - _US_美国 29
-      - GB 4
-      - _US_美国 30
-      - US 70
-      - US 71
-      - KR 52
-      - CN 65
-      - _US_美国 31
-      - 103.172.116.8:9037
-      - KR 53
-      - US 72
-      - CN 66
-      - KR 54
-      - CN 67
-      - US 73
-      - _KR_韩国 4
-      - US 74
-      - AU 27
-      - US 75
-      - US 76
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
+      - vpnpool-香港
+      - Relay_🇨🇳CN-🇭🇰HK_502
+      - ❶香港 A4 [H]
+      - ❷香港 12
+      - vpnpool-SG
+      - vpnpool-SG 2
+      - HK(TG/atyzcloud)_1
+      - ❶香港 B4 [H]
+      - ❷香港 51
+      - ❶新加坡 02 [M]
+      - vpnpool-VN-dip
+      - ❶日本 03 [转]
+      - Relay_🇨🇳CN-🏁ZZ_499
+      - ❶香港 B1 [推荐]
+      - vpnpool-TH-dip
+      - ❶香港 B2 [推荐]
+      - ❶香港 B3 [推荐]
+      - vpnpool-TH-dip 2
+      - 台湾02丨原生IP丨
+      - ❶台湾 02 [推荐]
+      - ❶香港 A3 [推荐]
+      - ❶香港 03 [BGP]
+      - ❶日本 01 [M]
+      - ❶香港 A1 [推荐]
+      - Relay_🇨🇳CN-🇰🇷KR_501
+      - ❶香港 A2 [推荐]
+      - ❷香港 C3 [推荐]
+      - ❷香港 C2 [推荐]
+      - ❷韩国 [转]
+      - vpnpool-US
       - CN
-      - HK
-      - _US_美国
+      - Relay_🇨🇳CN-🇮🇳IN_500
+      - ❶香港 02 [BGP]
+      - vpnpool-US-dip
+      - vpnpool-RU
+      - ❶美国 02 [转]
+      - vpnpool-ID-dip
+      - vpnpool-KR
+      - 俄罗斯原生1-负载均衡-解锁流媒体
+      - ❷荷兰 [M]
+      - ❶香港 18
+      - 新加坡4
+      - Pool_🇹🇼TW_1673
+      - vpnpool-US-dip 2
+      - Relay_🇨🇳CN-🇺🇸US_503
       - CN 2
-      - _KR_韩国
-      - _US_美国 2
-      - _US_美国 3
-      - _US_美国 4
-      - _US_美国 5
-      - KR
-      - KR 2
-      - _US_美国 6
-      - KR 3
+      - vpnpool-IN
+      - Relay_🇨🇳CN-🇭🇰HK_498
+      - ❷法国 [转]
+      - vpnpool-VN-dip 2
+      - Relay_🇨🇳CN-🇷🇴RO_504
       - CN 3
-      - KR 4
+      - vpnpool-香港 2
+      - ❶台湾 03 [推荐]
+      - Pool_🇹🇼TW_1674
+      - Relay_🏁ZZ-🇹🇼TW_4724
+      - RU1(IEPL)+-+负载均衡专线
+      - _BG_保加利亚
+      - ❷英国 [转]
+      - ❶新加坡 03 [H]
       - CN 4
-      - _US_美国 7
-      - _KR_韩国 2
-      - _US_美国 8
-      - _US_美国 9
-      - US
-      - KR 5
-      - _US_美国 10
-      - _US_美国 11
       - CN 5
-      - _US_美国->🇫🇷_FR_法国
-      - JP
-      - default_name
-      - KR 6
-      - JP 2
-      - US 2
-      - AU
-      - AU 2
-      - US 3
-      - US 4
-      - US 5
-      - KR 7
-      - US 6
       - CN 6
-      - US 7
-      - _US_美国 12
-      - KR 8
-      - US 8
       - CN 7
       - CN 8
-      - _US_美国 13
-      - US 9
-      - SG
-      - US 10
-      - US 11
       - CN 9
-      - CA
-      - US 12
-      - US 13
-      - US 14
-      - GB
-      - US 15
-      - AU 3
-      - GB 2
       - CN 10
-      - US 16
-      - AU 4
-      - HK 2
-      - KR 9
-      - KR 10
-      - US 17
-      - JP 3
+      - KR
       - CN 11
-      - HK 3
-      - US 18
-      - US 19
-      - KR 11
-      - US 20
-      - HK 4
-      - US 21
-      - HK 5
+      - _BG_保加利亚 2
       - CN 12
-      - GB 3
-      - US 22
-      - HK 6
-      - _US_美国 14
-      - AU 5
-      - SG 2
-      - CN 13
-      - CN 14
-      - AU 6
-      - KR 12
-      - AU 7
-      - CN 15
-      - _SG_新加坡
-      - FR
-      - US 23
-      - US 24
-      - CN 16
-      - CA 2
-      - HK 7
-      - _US_美国 15
-      - KR 13
-      - US 25
-      - FR 2
-      - AU 8
-      - US 26
-      - US 27
-      - AU 9
-      - US 28
-      - CN 17
-      - _US_美国 16
-      - CN 18
-      - AU 10
-      - _HK_香港
-      - CN 19
-      - US 29
-      - _US_美国 17
-      - US 30
-      - FR 3
-      - 103.172.116.7:9019
-      - KR 14
-      - _IN_印度
-      - KR 15
-      - US 31
-      - _KR_韩国 3
-      - IN
-      - US 32
-      - CN 20
-      - US 33
-      - US 34
-      - US 35
-      - _US_美国 18
-      - US 36
-      - FR 4
-      - _US_美国 19
-      - US 37
-      - US 38
-      - KR 16
-      - US 39
-      - 103.172.116.8:9011
-      - KR 17
-      - _US_美国 20
-      - KR 18
-      - US 40
-      - AU 11
-      - CN 21
-      - AU 12
-      - CN 22
-      - KR 19
-      - KR 20
-      - US 41
-      - KR 21
-      - KR 22
-      - CN 23
-      - CN 24
-      - FR 5
-      - KR 23
-      - CN 25
-      - AU 13
-      - AU 14
-      - KR 24
-      - AU 15
-      - _US_美国 21
-      - US 42
-      - US 43
-      - CN 26
-      - CN 27
-      - KR 25
-      - AU 16
-      - US 44
-      - KR 26
-      - US 45
-      - SG 3
-      - 103.172.116.9:9042
-      - _US_美国 22
-      - CN 28
-      - US 46
-      - JP 4
-      - US 47
-      - US 48
-      - US 49
-      - US 50
-      - CN 29
-      - CN 30
-      - CN 31
-      - TW
-      - CN 32
-      - CN 33
-      - RO
-      - TW 2
-      - CN 34
-      - CN 35
-      - SG 4
-      - CN 36
-      - CN 37
-      - CN 38
-      - KR 27
-      - CN 39
-      - CN 40
-      - CN 41
-      - HK 8
-      - KR 28
-      - CN 42
-      - CN 43
-      - CN 44
-      - CN 45
-      - _US_美国 23
-      - CN 46
-      - CN 47
-      - KR 29
-      - KR 30
-      - KR 31
-      - CN 48
-      - KR 32
-      - KR 33
-      - KR 34
-      - _US_美国 24
-      - US 51
-      - US 52
-      - JP 5
-      - KR 35
-      - US 53
-      - CN 49
-      - FR 6
-      - FR 7
-      - AU 17
-      - CN 50
-      - KR 36
-      - CN 51
-      - _US_美国 25
-      - KR 37
-      - CN 52
-      - CN 53
-      - KR 38
-      - CN 54
-      - US 54
-      - AU 18
-      - US 55
-      - US 56
-      - US 57
-      - KR 39
-      - FR 8
-      - KR 40
-      - CN 55
-      - CN 56
-      - TW 3
-      - KR 41
-      - US 58
-      - AU 19
-      - AU 20
-      - KR 42
-      - _US_美国 26
-      - FR 9
-      - US 59
-      - US 60
-      - AU 21
-      - CN 57
-      - KR 43
-      - US 61
-      - US 62
-      - US 63
-      - HK 9
-      - KR 44
-      - CA 3
-      - US 64
-      - 103.172.116.8:9010
-      - KR 45
-      - US 65
-      - AU 22
-      - CN 58
-      - AU 23
-      - US 66
-      - AU 24
-      - AU 25
-      - US 67
-      - KR 46
-      - CN 59
-      - CN 60
-      - SG 5
-      - _CA_加拿大
-      - US 68
-      - AU 26
-      - CA 4
-      - CN 61
-      - _US_美国 27
-      - KR 47
-      - CN 62
-      - FR 10
-      - KR 48
-      - CN 63
-      - KR 49
-      - KR 50
-      - KR 51
-      - US 69
-      - FR 11
-      - _US_美国 28
-      - CN 64
-      - _US_美国 29
-      - GB 4
-      - _US_美国 30
-      - US 70
-      - US 71
-      - KR 52
-      - CN 65
-      - _US_美国 31
-      - 103.172.116.8:9037
-      - KR 53
-      - US 72
-      - CN 66
-      - KR 54
-      - CN 67
-      - US 73
-      - _KR_韩国 4
-      - US 74
-      - AU 27
-      - US 75
-      - US 76
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - vpnpool-香港
+      - Relay_🇨🇳CN-🇭🇰HK_502
+      - ❶香港 A4 [H]
+      - ❷香港 12
+      - vpnpool-SG
+      - vpnpool-SG 2
+      - HK(TG/atyzcloud)_1
+      - ❶香港 B4 [H]
+      - ❷香港 51
+      - ❶新加坡 02 [M]
+      - vpnpool-VN-dip
+      - ❶日本 03 [转]
+      - Relay_🇨🇳CN-🏁ZZ_499
+      - ❶香港 B1 [推荐]
+      - vpnpool-TH-dip
+      - ❶香港 B2 [推荐]
+      - ❶香港 B3 [推荐]
+      - vpnpool-TH-dip 2
+      - 台湾02丨原生IP丨
+      - ❶台湾 02 [推荐]
+      - ❶香港 A3 [推荐]
+      - ❶香港 03 [BGP]
+      - ❶日本 01 [M]
+      - ❶香港 A1 [推荐]
+      - Relay_🇨🇳CN-🇰🇷KR_501
+      - ❶香港 A2 [推荐]
+      - ❷香港 C3 [推荐]
+      - ❷香港 C2 [推荐]
+      - ❷韩国 [转]
+      - vpnpool-US
       - CN
-      - HK
-      - _US_美国
+      - Relay_🇨🇳CN-🇮🇳IN_500
+      - ❶香港 02 [BGP]
+      - vpnpool-US-dip
+      - vpnpool-RU
+      - ❶美国 02 [转]
+      - vpnpool-ID-dip
+      - vpnpool-KR
+      - 俄罗斯原生1-负载均衡-解锁流媒体
+      - ❷荷兰 [M]
+      - ❶香港 18
+      - 新加坡4
+      - Pool_🇹🇼TW_1673
+      - vpnpool-US-dip 2
+      - Relay_🇨🇳CN-🇺🇸US_503
       - CN 2
-      - _KR_韩国
-      - _US_美国 2
-      - _US_美国 3
-      - _US_美国 4
-      - _US_美国 5
-      - KR
-      - KR 2
-      - _US_美国 6
-      - KR 3
+      - vpnpool-IN
+      - Relay_🇨🇳CN-🇭🇰HK_498
+      - ❷法国 [转]
+      - vpnpool-VN-dip 2
+      - Relay_🇨🇳CN-🇷🇴RO_504
       - CN 3
-      - KR 4
+      - vpnpool-香港 2
+      - ❶台湾 03 [推荐]
+      - Pool_🇹🇼TW_1674
+      - Relay_🏁ZZ-🇹🇼TW_4724
+      - RU1(IEPL)+-+负载均衡专线
+      - _BG_保加利亚
+      - ❷英国 [转]
+      - ❶新加坡 03 [H]
       - CN 4
-      - _US_美国 7
-      - _KR_韩国 2
-      - _US_美国 8
-      - _US_美国 9
-      - US
-      - KR 5
-      - _US_美国 10
-      - _US_美国 11
       - CN 5
-      - _US_美国->🇫🇷_FR_法国
-      - JP
-      - default_name
-      - KR 6
-      - JP 2
-      - US 2
-      - AU
-      - AU 2
-      - US 3
-      - US 4
-      - US 5
-      - KR 7
-      - US 6
       - CN 6
-      - US 7
-      - _US_美国 12
-      - KR 8
-      - US 8
       - CN 7
       - CN 8
-      - _US_美国 13
-      - US 9
-      - SG
-      - US 10
-      - US 11
       - CN 9
-      - CA
-      - US 12
-      - US 13
-      - US 14
-      - GB
-      - US 15
-      - AU 3
-      - GB 2
       - CN 10
-      - US 16
-      - AU 4
-      - HK 2
-      - KR 9
-      - KR 10
-      - US 17
-      - JP 3
+      - KR
       - CN 11
-      - HK 3
-      - US 18
-      - US 19
-      - KR 11
-      - US 20
-      - HK 4
-      - US 21
-      - HK 5
+      - _BG_保加利亚 2
       - CN 12
-      - GB 3
-      - US 22
-      - HK 6
-      - _US_美国 14
-      - AU 5
-      - SG 2
-      - CN 13
-      - CN 14
-      - AU 6
-      - KR 12
-      - AU 7
-      - CN 15
-      - _SG_新加坡
-      - FR
-      - US 23
-      - US 24
-      - CN 16
-      - CA 2
-      - HK 7
-      - _US_美国 15
-      - KR 13
-      - US 25
-      - FR 2
-      - AU 8
-      - US 26
-      - US 27
-      - AU 9
-      - US 28
-      - CN 17
-      - _US_美国 16
-      - CN 18
-      - AU 10
-      - _HK_香港
-      - CN 19
-      - US 29
-      - _US_美国 17
-      - US 30
-      - FR 3
-      - 103.172.116.7:9019
-      - KR 14
-      - _IN_印度
-      - KR 15
-      - US 31
-      - _KR_韩国 3
-      - IN
-      - US 32
-      - CN 20
-      - US 33
-      - US 34
-      - US 35
-      - _US_美国 18
-      - US 36
-      - FR 4
-      - _US_美国 19
-      - US 37
-      - US 38
-      - KR 16
-      - US 39
-      - 103.172.116.8:9011
-      - KR 17
-      - _US_美国 20
-      - KR 18
-      - US 40
-      - AU 11
-      - CN 21
-      - AU 12
-      - CN 22
-      - KR 19
-      - KR 20
-      - US 41
-      - KR 21
-      - KR 22
-      - CN 23
-      - CN 24
-      - FR 5
-      - KR 23
-      - CN 25
-      - AU 13
-      - AU 14
-      - KR 24
-      - AU 15
-      - _US_美国 21
-      - US 42
-      - US 43
-      - CN 26
-      - CN 27
-      - KR 25
-      - AU 16
-      - US 44
-      - KR 26
-      - US 45
-      - SG 3
-      - 103.172.116.9:9042
-      - _US_美国 22
-      - CN 28
-      - US 46
-      - JP 4
-      - US 47
-      - US 48
-      - US 49
-      - US 50
-      - CN 29
-      - CN 30
-      - CN 31
-      - TW
-      - CN 32
-      - CN 33
-      - RO
-      - TW 2
-      - CN 34
-      - CN 35
-      - SG 4
-      - CN 36
-      - CN 37
-      - CN 38
-      - KR 27
-      - CN 39
-      - CN 40
-      - CN 41
-      - HK 8
-      - KR 28
-      - CN 42
-      - CN 43
-      - CN 44
-      - CN 45
-      - _US_美国 23
-      - CN 46
-      - CN 47
-      - KR 29
-      - KR 30
-      - KR 31
-      - CN 48
-      - KR 32
-      - KR 33
-      - KR 34
-      - _US_美国 24
-      - US 51
-      - US 52
-      - JP 5
-      - KR 35
-      - US 53
-      - CN 49
-      - FR 6
-      - FR 7
-      - AU 17
-      - CN 50
-      - KR 36
-      - CN 51
-      - _US_美国 25
-      - KR 37
-      - CN 52
-      - CN 53
-      - KR 38
-      - CN 54
-      - US 54
-      - AU 18
-      - US 55
-      - US 56
-      - US 57
-      - KR 39
-      - FR 8
-      - KR 40
-      - CN 55
-      - CN 56
-      - TW 3
-      - KR 41
-      - US 58
-      - AU 19
-      - AU 20
-      - KR 42
-      - _US_美国 26
-      - FR 9
-      - US 59
-      - US 60
-      - AU 21
-      - CN 57
-      - KR 43
-      - US 61
-      - US 62
-      - US 63
-      - HK 9
-      - KR 44
-      - CA 3
-      - US 64
-      - 103.172.116.8:9010
-      - KR 45
-      - US 65
-      - AU 22
-      - CN 58
-      - AU 23
-      - US 66
-      - AU 24
-      - AU 25
-      - US 67
-      - KR 46
-      - CN 59
-      - CN 60
-      - SG 5
-      - _CA_加拿大
-      - US 68
-      - AU 26
-      - CA 4
-      - CN 61
-      - _US_美国 27
-      - KR 47
-      - CN 62
-      - FR 10
-      - KR 48
-      - CN 63
-      - KR 49
-      - KR 50
-      - KR 51
-      - US 69
-      - FR 11
-      - _US_美国 28
-      - CN 64
-      - _US_美国 29
-      - GB 4
-      - _US_美国 30
-      - US 70
-      - US 71
-      - KR 52
-      - CN 65
-      - _US_美国 31
-      - 103.172.116.8:9037
-      - KR 53
-      - US 72
-      - CN 66
-      - KR 54
-      - CN 67
-      - US 73
-      - _KR_韩国 4
-      - US 74
-      - AU 27
-      - US 75
-      - US 76
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -1292,1280 +324,331 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - vpnpool-香港
+      - Relay_🇨🇳CN-🇭🇰HK_502
+      - ❶香港 A4 [H]
+      - ❷香港 12
+      - vpnpool-SG
+      - vpnpool-SG 2
+      - HK(TG/atyzcloud)_1
+      - ❶香港 B4 [H]
+      - ❷香港 51
+      - ❶新加坡 02 [M]
+      - vpnpool-VN-dip
+      - ❶日本 03 [转]
+      - Relay_🇨🇳CN-🏁ZZ_499
+      - ❶香港 B1 [推荐]
+      - vpnpool-TH-dip
+      - ❶香港 B2 [推荐]
+      - ❶香港 B3 [推荐]
+      - vpnpool-TH-dip 2
+      - 台湾02丨原生IP丨
+      - ❶台湾 02 [推荐]
+      - ❶香港 A3 [推荐]
+      - ❶香港 03 [BGP]
+      - ❶日本 01 [M]
+      - ❶香港 A1 [推荐]
+      - Relay_🇨🇳CN-🇰🇷KR_501
+      - ❶香港 A2 [推荐]
+      - ❷香港 C3 [推荐]
+      - ❷香港 C2 [推荐]
+      - ❷韩国 [转]
+      - vpnpool-US
       - CN
-      - HK
-      - _US_美国
+      - Relay_🇨🇳CN-🇮🇳IN_500
+      - ❶香港 02 [BGP]
+      - vpnpool-US-dip
+      - vpnpool-RU
+      - ❶美国 02 [转]
+      - vpnpool-ID-dip
+      - vpnpool-KR
+      - 俄罗斯原生1-负载均衡-解锁流媒体
+      - ❷荷兰 [M]
+      - ❶香港 18
+      - 新加坡4
+      - Pool_🇹🇼TW_1673
+      - vpnpool-US-dip 2
+      - Relay_🇨🇳CN-🇺🇸US_503
       - CN 2
-      - _KR_韩国
-      - _US_美国 2
-      - _US_美国 3
-      - _US_美国 4
-      - _US_美国 5
-      - KR
-      - KR 2
-      - _US_美国 6
-      - KR 3
+      - vpnpool-IN
+      - Relay_🇨🇳CN-🇭🇰HK_498
+      - ❷法国 [转]
+      - vpnpool-VN-dip 2
+      - Relay_🇨🇳CN-🇷🇴RO_504
       - CN 3
-      - KR 4
+      - vpnpool-香港 2
+      - ❶台湾 03 [推荐]
+      - Pool_🇹🇼TW_1674
+      - Relay_🏁ZZ-🇹🇼TW_4724
+      - RU1(IEPL)+-+负载均衡专线
+      - _BG_保加利亚
+      - ❷英国 [转]
+      - ❶新加坡 03 [H]
       - CN 4
-      - _US_美国 7
-      - _KR_韩国 2
-      - _US_美国 8
-      - _US_美国 9
-      - US
-      - KR 5
-      - _US_美国 10
-      - _US_美国 11
       - CN 5
-      - _US_美国->🇫🇷_FR_法国
-      - JP
-      - default_name
-      - KR 6
-      - JP 2
-      - US 2
-      - AU
-      - AU 2
-      - US 3
-      - US 4
-      - US 5
-      - KR 7
-      - US 6
       - CN 6
-      - US 7
-      - _US_美国 12
-      - KR 8
-      - US 8
       - CN 7
       - CN 8
-      - _US_美国 13
-      - US 9
-      - SG
-      - US 10
-      - US 11
       - CN 9
-      - CA
-      - US 12
-      - US 13
-      - US 14
-      - GB
-      - US 15
-      - AU 3
-      - GB 2
       - CN 10
-      - US 16
-      - AU 4
-      - HK 2
-      - KR 9
-      - KR 10
-      - US 17
-      - JP 3
+      - KR
       - CN 11
-      - HK 3
-      - US 18
-      - US 19
-      - KR 11
-      - US 20
-      - HK 4
-      - US 21
-      - HK 5
+      - _BG_保加利亚 2
       - CN 12
-      - GB 3
-      - US 22
-      - HK 6
-      - _US_美国 14
-      - AU 5
-      - SG 2
-      - CN 13
-      - CN 14
-      - AU 6
-      - KR 12
-      - AU 7
-      - CN 15
-      - _SG_新加坡
-      - FR
-      - US 23
-      - US 24
-      - CN 16
-      - CA 2
-      - HK 7
-      - _US_美国 15
-      - KR 13
-      - US 25
-      - FR 2
-      - AU 8
-      - US 26
-      - US 27
-      - AU 9
-      - US 28
-      - CN 17
-      - _US_美国 16
-      - CN 18
-      - AU 10
-      - _HK_香港
-      - CN 19
-      - US 29
-      - _US_美国 17
-      - US 30
-      - FR 3
-      - 103.172.116.7:9019
-      - KR 14
-      - _IN_印度
-      - KR 15
-      - US 31
-      - _KR_韩国 3
-      - IN
-      - US 32
-      - CN 20
-      - US 33
-      - US 34
-      - US 35
-      - _US_美国 18
-      - US 36
-      - FR 4
-      - _US_美国 19
-      - US 37
-      - US 38
-      - KR 16
-      - US 39
-      - 103.172.116.8:9011
-      - KR 17
-      - _US_美国 20
-      - KR 18
-      - US 40
-      - AU 11
-      - CN 21
-      - AU 12
-      - CN 22
-      - KR 19
-      - KR 20
-      - US 41
-      - KR 21
-      - KR 22
-      - CN 23
-      - CN 24
-      - FR 5
-      - KR 23
-      - CN 25
-      - AU 13
-      - AU 14
-      - KR 24
-      - AU 15
-      - _US_美国 21
-      - US 42
-      - US 43
-      - CN 26
-      - CN 27
-      - KR 25
-      - AU 16
-      - US 44
-      - KR 26
-      - US 45
-      - SG 3
-      - 103.172.116.9:9042
-      - _US_美国 22
-      - CN 28
-      - US 46
-      - JP 4
-      - US 47
-      - US 48
-      - US 49
-      - US 50
-      - CN 29
-      - CN 30
-      - CN 31
-      - TW
-      - CN 32
-      - CN 33
-      - RO
-      - TW 2
-      - CN 34
-      - CN 35
-      - SG 4
-      - CN 36
-      - CN 37
-      - CN 38
-      - KR 27
-      - CN 39
-      - CN 40
-      - CN 41
-      - HK 8
-      - KR 28
-      - CN 42
-      - CN 43
-      - CN 44
-      - CN 45
-      - _US_美国 23
-      - CN 46
-      - CN 47
-      - KR 29
-      - KR 30
-      - KR 31
-      - CN 48
-      - KR 32
-      - KR 33
-      - KR 34
-      - _US_美国 24
-      - US 51
-      - US 52
-      - JP 5
-      - KR 35
-      - US 53
-      - CN 49
-      - FR 6
-      - FR 7
-      - AU 17
-      - CN 50
-      - KR 36
-      - CN 51
-      - _US_美国 25
-      - KR 37
-      - CN 52
-      - CN 53
-      - KR 38
-      - CN 54
-      - US 54
-      - AU 18
-      - US 55
-      - US 56
-      - US 57
-      - KR 39
-      - FR 8
-      - KR 40
-      - CN 55
-      - CN 56
-      - TW 3
-      - KR 41
-      - US 58
-      - AU 19
-      - AU 20
-      - KR 42
-      - _US_美国 26
-      - FR 9
-      - US 59
-      - US 60
-      - AU 21
-      - CN 57
-      - KR 43
-      - US 61
-      - US 62
-      - US 63
-      - HK 9
-      - KR 44
-      - CA 3
-      - US 64
-      - 103.172.116.8:9010
-      - KR 45
-      - US 65
-      - AU 22
-      - CN 58
-      - AU 23
-      - US 66
-      - AU 24
-      - AU 25
-      - US 67
-      - KR 46
-      - CN 59
-      - CN 60
-      - SG 5
-      - _CA_加拿大
-      - US 68
-      - AU 26
-      - CA 4
-      - CN 61
-      - _US_美国 27
-      - KR 47
-      - CN 62
-      - FR 10
-      - KR 48
-      - CN 63
-      - KR 49
-      - KR 50
-      - KR 51
-      - US 69
-      - FR 11
-      - _US_美国 28
-      - CN 64
-      - _US_美国 29
-      - GB 4
-      - _US_美国 30
-      - US 70
-      - US 71
-      - KR 52
-      - CN 65
-      - _US_美国 31
-      - 103.172.116.8:9037
-      - KR 53
-      - US 72
-      - CN 66
-      - KR 54
-      - CN 67
-      - US 73
-      - _KR_韩国 4
-      - US 74
-      - AU 27
-      - US 75
-      - US 76
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - _HK_香港
+      - vpnpool-香港
+      - ❶香港 A4 [H]
+      - ❷香港 12
+      - ❶香港 B4 [H]
+      - ❷香港 51
+      - ❶香港 B1 [推荐]
+      - ❶香港 B2 [推荐]
+      - ❶香港 B3 [推荐]
+      - 台湾02丨原生IP丨
+      - ❶台湾 02 [推荐]
+      - ❶香港 A3 [推荐]
+      - ❶香港 03 [BGP]
+      - ❶香港 A1 [推荐]
+      - ❶香港 A2 [推荐]
+      - ❷香港 C3 [推荐]
+      - ❷香港 C2 [推荐]
+      - ❶香港 02 [BGP]
+      - ❶香港 18
+      - vpnpool-香港 2
+      - ❶台湾 03 [推荐]
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
+      - vpnpool-香港
+      - Relay_🇨🇳CN-🇭🇰HK_502
+      - ❶香港 A4 [H]
+      - ❷香港 12
+      - vpnpool-SG
+      - vpnpool-SG 2
+      - HK(TG/atyzcloud)_1
+      - ❶香港 B4 [H]
+      - ❷香港 51
+      - ❶新加坡 02 [M]
+      - vpnpool-VN-dip
+      - ❶日本 03 [转]
+      - Relay_🇨🇳CN-🏁ZZ_499
+      - ❶香港 B1 [推荐]
+      - vpnpool-TH-dip
+      - ❶香港 B2 [推荐]
+      - ❶香港 B3 [推荐]
+      - vpnpool-TH-dip 2
+      - 台湾02丨原生IP丨
+      - ❶台湾 02 [推荐]
+      - ❶香港 A3 [推荐]
+      - ❶香港 03 [BGP]
+      - ❶日本 01 [M]
+      - ❶香港 A1 [推荐]
+      - Relay_🇨🇳CN-🇰🇷KR_501
+      - ❶香港 A2 [推荐]
+      - ❷香港 C3 [推荐]
+      - ❷香港 C2 [推荐]
+      - ❷韩国 [转]
+      - vpnpool-US
       - CN
-      - HK
-      - _US_美国
+      - Relay_🇨🇳CN-🇮🇳IN_500
+      - ❶香港 02 [BGP]
+      - vpnpool-US-dip
+      - vpnpool-RU
+      - ❶美国 02 [转]
+      - vpnpool-ID-dip
+      - vpnpool-KR
+      - 俄罗斯原生1-负载均衡-解锁流媒体
+      - ❷荷兰 [M]
+      - ❶香港 18
+      - 新加坡4
+      - Pool_🇹🇼TW_1673
+      - vpnpool-US-dip 2
+      - Relay_🇨🇳CN-🇺🇸US_503
       - CN 2
-      - _KR_韩国
-      - _US_美国 2
-      - _US_美国 3
-      - _US_美国 4
-      - _US_美国 5
-      - KR
-      - KR 2
-      - _US_美国 6
-      - KR 3
+      - vpnpool-IN
+      - Relay_🇨🇳CN-🇭🇰HK_498
+      - ❷法国 [转]
+      - vpnpool-VN-dip 2
+      - Relay_🇨🇳CN-🇷🇴RO_504
       - CN 3
-      - KR 4
+      - vpnpool-香港 2
+      - ❶台湾 03 [推荐]
+      - Pool_🇹🇼TW_1674
+      - Relay_🏁ZZ-🇹🇼TW_4724
+      - RU1(IEPL)+-+负载均衡专线
+      - _BG_保加利亚
+      - ❷英国 [转]
+      - ❶新加坡 03 [H]
       - CN 4
-      - _US_美国 7
-      - _KR_韩国 2
-      - _US_美国 8
-      - _US_美国 9
-      - US
-      - KR 5
-      - _US_美国 10
-      - _US_美国 11
       - CN 5
-      - _US_美国->🇫🇷_FR_法国
-      - JP
-      - default_name
-      - KR 6
-      - JP 2
-      - US 2
-      - AU
-      - AU 2
-      - US 3
-      - US 4
-      - US 5
-      - KR 7
-      - US 6
       - CN 6
-      - US 7
-      - _US_美国 12
-      - KR 8
-      - US 8
       - CN 7
       - CN 8
-      - _US_美国 13
-      - US 9
-      - SG
-      - US 10
-      - US 11
       - CN 9
-      - CA
-      - US 12
-      - US 13
-      - US 14
-      - GB
-      - US 15
-      - AU 3
-      - GB 2
       - CN 10
-      - US 16
-      - AU 4
-      - HK 2
-      - KR 9
-      - KR 10
-      - US 17
-      - JP 3
+      - KR
       - CN 11
-      - HK 3
-      - US 18
-      - US 19
-      - KR 11
-      - US 20
-      - HK 4
-      - US 21
-      - HK 5
+      - _BG_保加利亚 2
       - CN 12
-      - GB 3
-      - US 22
-      - HK 6
-      - _US_美国 14
-      - AU 5
-      - SG 2
-      - CN 13
-      - CN 14
-      - AU 6
-      - KR 12
-      - AU 7
-      - CN 15
-      - _SG_新加坡
-      - FR
-      - US 23
-      - US 24
-      - CN 16
-      - CA 2
-      - HK 7
-      - _US_美国 15
-      - KR 13
-      - US 25
-      - FR 2
-      - AU 8
-      - US 26
-      - US 27
-      - AU 9
-      - US 28
-      - CN 17
-      - _US_美国 16
-      - CN 18
-      - AU 10
-      - _HK_香港
-      - CN 19
-      - US 29
-      - _US_美国 17
-      - US 30
-      - FR 3
-      - 103.172.116.7:9019
-      - KR 14
-      - _IN_印度
-      - KR 15
-      - US 31
-      - _KR_韩国 3
-      - IN
-      - US 32
-      - CN 20
-      - US 33
-      - US 34
-      - US 35
-      - _US_美国 18
-      - US 36
-      - FR 4
-      - _US_美国 19
-      - US 37
-      - US 38
-      - KR 16
-      - US 39
-      - 103.172.116.8:9011
-      - KR 17
-      - _US_美国 20
-      - KR 18
-      - US 40
-      - AU 11
-      - CN 21
-      - AU 12
-      - CN 22
-      - KR 19
-      - KR 20
-      - US 41
-      - KR 21
-      - KR 22
-      - CN 23
-      - CN 24
-      - FR 5
-      - KR 23
-      - CN 25
-      - AU 13
-      - AU 14
-      - KR 24
-      - AU 15
-      - _US_美国 21
-      - US 42
-      - US 43
-      - CN 26
-      - CN 27
-      - KR 25
-      - AU 16
-      - US 44
-      - KR 26
-      - US 45
-      - SG 3
-      - 103.172.116.9:9042
-      - _US_美国 22
-      - CN 28
-      - US 46
-      - JP 4
-      - US 47
-      - US 48
-      - US 49
-      - US 50
-      - CN 29
-      - CN 30
-      - CN 31
-      - TW
-      - CN 32
-      - CN 33
-      - RO
-      - TW 2
-      - CN 34
-      - CN 35
-      - SG 4
-      - CN 36
-      - CN 37
-      - CN 38
-      - KR 27
-      - CN 39
-      - CN 40
-      - CN 41
-      - HK 8
-      - KR 28
-      - CN 42
-      - CN 43
-      - CN 44
-      - CN 45
-      - _US_美国 23
-      - CN 46
-      - CN 47
-      - KR 29
-      - KR 30
-      - KR 31
-      - CN 48
-      - KR 32
-      - KR 33
-      - KR 34
-      - _US_美国 24
-      - US 51
-      - US 52
-      - JP 5
-      - KR 35
-      - US 53
-      - CN 49
-      - FR 6
-      - FR 7
-      - AU 17
-      - CN 50
-      - KR 36
-      - CN 51
-      - _US_美国 25
-      - KR 37
-      - CN 52
-      - CN 53
-      - KR 38
-      - CN 54
-      - US 54
-      - AU 18
-      - US 55
-      - US 56
-      - US 57
-      - KR 39
-      - FR 8
-      - KR 40
-      - CN 55
-      - CN 56
-      - TW 3
-      - KR 41
-      - US 58
-      - AU 19
-      - AU 20
-      - KR 42
-      - _US_美国 26
-      - FR 9
-      - US 59
-      - US 60
-      - AU 21
-      - CN 57
-      - KR 43
-      - US 61
-      - US 62
-      - US 63
-      - HK 9
-      - KR 44
-      - CA 3
-      - US 64
-      - 103.172.116.8:9010
-      - KR 45
-      - US 65
-      - AU 22
-      - CN 58
-      - AU 23
-      - US 66
-      - AU 24
-      - AU 25
-      - US 67
-      - KR 46
-      - CN 59
-      - CN 60
-      - SG 5
-      - _CA_加拿大
-      - US 68
-      - AU 26
-      - CA 4
-      - CN 61
-      - _US_美国 27
-      - KR 47
-      - CN 62
-      - FR 10
-      - KR 48
-      - CN 63
-      - KR 49
-      - KR 50
-      - KR 51
-      - US 69
-      - FR 11
-      - _US_美国 28
-      - CN 64
-      - _US_美国 29
-      - GB 4
-      - _US_美国 30
-      - US 70
-      - US 71
-      - KR 52
-      - CN 65
-      - _US_美国 31
-      - 103.172.116.8:9037
-      - KR 53
-      - US 72
-      - CN 66
-      - KR 54
-      - CN 67
-      - US 73
-      - _KR_韩国 4
-      - US 74
-      - AU 27
-      - US 75
-      - US 76
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
+      - vpnpool-香港
+      - Relay_🇨🇳CN-🇭🇰HK_502
+      - ❶香港 A4 [H]
+      - ❷香港 12
+      - vpnpool-SG
+      - vpnpool-SG 2
+      - HK(TG/atyzcloud)_1
+      - ❶香港 B4 [H]
+      - ❷香港 51
+      - ❶新加坡 02 [M]
+      - vpnpool-VN-dip
+      - ❶日本 03 [转]
+      - Relay_🇨🇳CN-🏁ZZ_499
+      - ❶香港 B1 [推荐]
+      - vpnpool-TH-dip
+      - ❶香港 B2 [推荐]
+      - ❶香港 B3 [推荐]
+      - vpnpool-TH-dip 2
+      - 台湾02丨原生IP丨
+      - ❶台湾 02 [推荐]
+      - ❶香港 A3 [推荐]
+      - ❶香港 03 [BGP]
+      - ❶日本 01 [M]
+      - ❶香港 A1 [推荐]
+      - Relay_🇨🇳CN-🇰🇷KR_501
+      - ❶香港 A2 [推荐]
+      - ❷香港 C3 [推荐]
+      - ❷香港 C2 [推荐]
+      - ❷韩国 [转]
+      - vpnpool-US
       - CN
-      - HK
-      - _US_美国
+      - Relay_🇨🇳CN-🇮🇳IN_500
+      - ❶香港 02 [BGP]
+      - vpnpool-US-dip
+      - vpnpool-RU
+      - ❶美国 02 [转]
+      - vpnpool-ID-dip
+      - vpnpool-KR
+      - 俄罗斯原生1-负载均衡-解锁流媒体
+      - ❷荷兰 [M]
+      - ❶香港 18
+      - 新加坡4
+      - Pool_🇹🇼TW_1673
+      - vpnpool-US-dip 2
+      - Relay_🇨🇳CN-🇺🇸US_503
       - CN 2
-      - _KR_韩国
-      - _US_美国 2
-      - _US_美国 3
-      - _US_美国 4
-      - _US_美国 5
-      - KR
-      - KR 2
-      - _US_美国 6
-      - KR 3
+      - vpnpool-IN
+      - Relay_🇨🇳CN-🇭🇰HK_498
+      - ❷法国 [转]
+      - vpnpool-VN-dip 2
+      - Relay_🇨🇳CN-🇷🇴RO_504
       - CN 3
-      - KR 4
+      - vpnpool-香港 2
+      - ❶台湾 03 [推荐]
+      - Pool_🇹🇼TW_1674
+      - Relay_🏁ZZ-🇹🇼TW_4724
+      - RU1(IEPL)+-+负载均衡专线
+      - _BG_保加利亚
+      - ❷英国 [转]
+      - ❶新加坡 03 [H]
       - CN 4
-      - _US_美国 7
-      - _KR_韩国 2
-      - _US_美国 8
-      - _US_美国 9
-      - US
-      - KR 5
-      - _US_美国 10
-      - _US_美国 11
       - CN 5
-      - _US_美国->🇫🇷_FR_法国
-      - JP
-      - default_name
-      - KR 6
-      - JP 2
-      - US 2
-      - AU
-      - AU 2
-      - US 3
-      - US 4
-      - US 5
-      - KR 7
-      - US 6
       - CN 6
-      - US 7
-      - _US_美国 12
-      - KR 8
-      - US 8
       - CN 7
       - CN 8
-      - _US_美国 13
-      - US 9
-      - SG
-      - US 10
-      - US 11
       - CN 9
-      - CA
-      - US 12
-      - US 13
-      - US 14
-      - GB
-      - US 15
-      - AU 3
-      - GB 2
       - CN 10
-      - US 16
-      - AU 4
-      - HK 2
-      - KR 9
-      - KR 10
-      - US 17
-      - JP 3
+      - KR
       - CN 11
-      - HK 3
-      - US 18
-      - US 19
-      - KR 11
-      - US 20
-      - HK 4
-      - US 21
-      - HK 5
+      - _BG_保加利亚 2
       - CN 12
-      - GB 3
-      - US 22
-      - HK 6
-      - _US_美国 14
-      - AU 5
-      - SG 2
-      - CN 13
-      - CN 14
-      - AU 6
-      - KR 12
-      - AU 7
-      - CN 15
-      - _SG_新加坡
-      - FR
-      - US 23
-      - US 24
-      - CN 16
-      - CA 2
-      - HK 7
-      - _US_美国 15
-      - KR 13
-      - US 25
-      - FR 2
-      - AU 8
-      - US 26
-      - US 27
-      - AU 9
-      - US 28
-      - CN 17
-      - _US_美国 16
-      - CN 18
-      - AU 10
-      - _HK_香港
-      - CN 19
-      - US 29
-      - _US_美国 17
-      - US 30
-      - FR 3
-      - 103.172.116.7:9019
-      - KR 14
-      - _IN_印度
-      - KR 15
-      - US 31
-      - _KR_韩国 3
-      - IN
-      - US 32
-      - CN 20
-      - US 33
-      - US 34
-      - US 35
-      - _US_美国 18
-      - US 36
-      - FR 4
-      - _US_美国 19
-      - US 37
-      - US 38
-      - KR 16
-      - US 39
-      - 103.172.116.8:9011
-      - KR 17
-      - _US_美国 20
-      - KR 18
-      - US 40
-      - AU 11
-      - CN 21
-      - AU 12
-      - CN 22
-      - KR 19
-      - KR 20
-      - US 41
-      - KR 21
-      - KR 22
-      - CN 23
-      - CN 24
-      - FR 5
-      - KR 23
-      - CN 25
-      - AU 13
-      - AU 14
-      - KR 24
-      - AU 15
-      - _US_美国 21
-      - US 42
-      - US 43
-      - CN 26
-      - CN 27
-      - KR 25
-      - AU 16
-      - US 44
-      - KR 26
-      - US 45
-      - SG 3
-      - 103.172.116.9:9042
-      - _US_美国 22
-      - CN 28
-      - US 46
-      - JP 4
-      - US 47
-      - US 48
-      - US 49
-      - US 50
-      - CN 29
-      - CN 30
-      - CN 31
-      - TW
-      - CN 32
-      - CN 33
-      - RO
-      - TW 2
-      - CN 34
-      - CN 35
-      - SG 4
-      - CN 36
-      - CN 37
-      - CN 38
-      - KR 27
-      - CN 39
-      - CN 40
-      - CN 41
-      - HK 8
-      - KR 28
-      - CN 42
-      - CN 43
-      - CN 44
-      - CN 45
-      - _US_美国 23
-      - CN 46
-      - CN 47
-      - KR 29
-      - KR 30
-      - KR 31
-      - CN 48
-      - KR 32
-      - KR 33
-      - KR 34
-      - _US_美国 24
-      - US 51
-      - US 52
-      - JP 5
-      - KR 35
-      - US 53
-      - CN 49
-      - FR 6
-      - FR 7
-      - AU 17
-      - CN 50
-      - KR 36
-      - CN 51
-      - _US_美国 25
-      - KR 37
-      - CN 52
-      - CN 53
-      - KR 38
-      - CN 54
-      - US 54
-      - AU 18
-      - US 55
-      - US 56
-      - US 57
-      - KR 39
-      - FR 8
-      - KR 40
-      - CN 55
-      - CN 56
-      - TW 3
-      - KR 41
-      - US 58
-      - AU 19
-      - AU 20
-      - KR 42
-      - _US_美国 26
-      - FR 9
-      - US 59
-      - US 60
-      - AU 21
-      - CN 57
-      - KR 43
-      - US 61
-      - US 62
-      - US 63
-      - HK 9
-      - KR 44
-      - CA 3
-      - US 64
-      - 103.172.116.8:9010
-      - KR 45
-      - US 65
-      - AU 22
-      - CN 58
-      - AU 23
-      - US 66
-      - AU 24
-      - AU 25
-      - US 67
-      - KR 46
-      - CN 59
-      - CN 60
-      - SG 5
-      - _CA_加拿大
-      - US 68
-      - AU 26
-      - CA 4
-      - CN 61
-      - _US_美国 27
-      - KR 47
-      - CN 62
-      - FR 10
-      - KR 48
-      - CN 63
-      - KR 49
-      - KR 50
-      - KR 51
-      - US 69
-      - FR 11
-      - _US_美国 28
-      - CN 64
-      - _US_美国 29
-      - GB 4
-      - _US_美国 30
-      - US 70
-      - US 71
-      - KR 52
-      - CN 65
-      - _US_美国 31
-      - 103.172.116.8:9037
-      - KR 53
-      - US 72
-      - CN 66
-      - KR 54
-      - CN 67
-      - US 73
-      - _KR_韩国 4
-      - US 74
-      - AU 27
-      - US 75
-      - US 76
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - vpnpool-香港
+      - Relay_🇨🇳CN-🇭🇰HK_502
+      - ❶香港 A4 [H]
+      - ❷香港 12
+      - vpnpool-SG
+      - vpnpool-SG 2
+      - HK(TG/atyzcloud)_1
+      - ❶香港 B4 [H]
+      - ❷香港 51
+      - ❶新加坡 02 [M]
+      - vpnpool-VN-dip
+      - ❶日本 03 [转]
+      - Relay_🇨🇳CN-🏁ZZ_499
+      - ❶香港 B1 [推荐]
+      - vpnpool-TH-dip
+      - ❶香港 B2 [推荐]
+      - ❶香港 B3 [推荐]
+      - vpnpool-TH-dip 2
+      - 台湾02丨原生IP丨
+      - ❶台湾 02 [推荐]
+      - ❶香港 A3 [推荐]
+      - ❶香港 03 [BGP]
+      - ❶日本 01 [M]
+      - ❶香港 A1 [推荐]
+      - Relay_🇨🇳CN-🇰🇷KR_501
+      - ❶香港 A2 [推荐]
+      - ❷香港 C3 [推荐]
+      - ❷香港 C2 [推荐]
+      - ❷韩国 [转]
+      - vpnpool-US
       - CN
-      - HK
-      - _US_美国
+      - Relay_🇨🇳CN-🇮🇳IN_500
+      - ❶香港 02 [BGP]
+      - vpnpool-US-dip
+      - vpnpool-RU
+      - ❶美国 02 [转]
+      - vpnpool-ID-dip
+      - vpnpool-KR
+      - 俄罗斯原生1-负载均衡-解锁流媒体
+      - ❷荷兰 [M]
+      - ❶香港 18
+      - 新加坡4
+      - Pool_🇹🇼TW_1673
+      - vpnpool-US-dip 2
+      - Relay_🇨🇳CN-🇺🇸US_503
       - CN 2
-      - _KR_韩国
-      - _US_美国 2
-      - _US_美国 3
-      - _US_美国 4
-      - _US_美国 5
-      - KR
-      - KR 2
-      - _US_美国 6
-      - KR 3
+      - vpnpool-IN
+      - Relay_🇨🇳CN-🇭🇰HK_498
+      - ❷法国 [转]
+      - vpnpool-VN-dip 2
+      - Relay_🇨🇳CN-🇷🇴RO_504
       - CN 3
-      - KR 4
+      - vpnpool-香港 2
+      - ❶台湾 03 [推荐]
+      - Pool_🇹🇼TW_1674
+      - Relay_🏁ZZ-🇹🇼TW_4724
+      - RU1(IEPL)+-+负载均衡专线
+      - _BG_保加利亚
+      - ❷英国 [转]
+      - ❶新加坡 03 [H]
       - CN 4
-      - _US_美国 7
-      - _KR_韩国 2
-      - _US_美国 8
-      - _US_美国 9
-      - US
-      - KR 5
-      - _US_美国 10
-      - _US_美国 11
       - CN 5
-      - _US_美国->🇫🇷_FR_法国
-      - JP
-      - default_name
-      - KR 6
-      - JP 2
-      - US 2
-      - AU
-      - AU 2
-      - US 3
-      - US 4
-      - US 5
-      - KR 7
-      - US 6
       - CN 6
-      - US 7
-      - _US_美国 12
-      - KR 8
-      - US 8
       - CN 7
       - CN 8
-      - _US_美国 13
-      - US 9
-      - SG
-      - US 10
-      - US 11
       - CN 9
-      - CA
-      - US 12
-      - US 13
-      - US 14
-      - GB
-      - US 15
-      - AU 3
-      - GB 2
       - CN 10
-      - US 16
-      - AU 4
-      - HK 2
-      - KR 9
-      - KR 10
-      - US 17
-      - JP 3
+      - KR
       - CN 11
-      - HK 3
-      - US 18
-      - US 19
-      - KR 11
-      - US 20
-      - HK 4
-      - US 21
-      - HK 5
+      - _BG_保加利亚 2
       - CN 12
-      - GB 3
-      - US 22
-      - HK 6
-      - _US_美国 14
-      - AU 5
-      - SG 2
-      - CN 13
-      - CN 14
-      - AU 6
-      - KR 12
-      - AU 7
-      - CN 15
-      - _SG_新加坡
-      - FR
-      - US 23
-      - US 24
-      - CN 16
-      - CA 2
-      - HK 7
-      - _US_美国 15
-      - KR 13
-      - US 25
-      - FR 2
-      - AU 8
-      - US 26
-      - US 27
-      - AU 9
-      - US 28
-      - CN 17
-      - _US_美国 16
-      - CN 18
-      - AU 10
-      - _HK_香港
-      - CN 19
-      - US 29
-      - _US_美国 17
-      - US 30
-      - FR 3
-      - 103.172.116.7:9019
-      - KR 14
-      - _IN_印度
-      - KR 15
-      - US 31
-      - _KR_韩国 3
-      - IN
-      - US 32
-      - CN 20
-      - US 33
-      - US 34
-      - US 35
-      - _US_美国 18
-      - US 36
-      - FR 4
-      - _US_美国 19
-      - US 37
-      - US 38
-      - KR 16
-      - US 39
-      - 103.172.116.8:9011
-      - KR 17
-      - _US_美国 20
-      - KR 18
-      - US 40
-      - AU 11
-      - CN 21
-      - AU 12
-      - CN 22
-      - KR 19
-      - KR 20
-      - US 41
-      - KR 21
-      - KR 22
-      - CN 23
-      - CN 24
-      - FR 5
-      - KR 23
-      - CN 25
-      - AU 13
-      - AU 14
-      - KR 24
-      - AU 15
-      - _US_美国 21
-      - US 42
-      - US 43
-      - CN 26
-      - CN 27
-      - KR 25
-      - AU 16
-      - US 44
-      - KR 26
-      - US 45
-      - SG 3
-      - 103.172.116.9:9042
-      - _US_美国 22
-      - CN 28
-      - US 46
-      - JP 4
-      - US 47
-      - US 48
-      - US 49
-      - US 50
-      - CN 29
-      - CN 30
-      - CN 31
-      - TW
-      - CN 32
-      - CN 33
-      - RO
-      - TW 2
-      - CN 34
-      - CN 35
-      - SG 4
-      - CN 36
-      - CN 37
-      - CN 38
-      - KR 27
-      - CN 39
-      - CN 40
-      - CN 41
-      - HK 8
-      - KR 28
-      - CN 42
-      - CN 43
-      - CN 44
-      - CN 45
-      - _US_美国 23
-      - CN 46
-      - CN 47
-      - KR 29
-      - KR 30
-      - KR 31
-      - CN 48
-      - KR 32
-      - KR 33
-      - KR 34
-      - _US_美国 24
-      - US 51
-      - US 52
-      - JP 5
-      - KR 35
-      - US 53
-      - CN 49
-      - FR 6
-      - FR 7
-      - AU 17
-      - CN 50
-      - KR 36
-      - CN 51
-      - _US_美国 25
-      - KR 37
-      - CN 52
-      - CN 53
-      - KR 38
-      - CN 54
-      - US 54
-      - AU 18
-      - US 55
-      - US 56
-      - US 57
-      - KR 39
-      - FR 8
-      - KR 40
-      - CN 55
-      - CN 56
-      - TW 3
-      - KR 41
-      - US 58
-      - AU 19
-      - AU 20
-      - KR 42
-      - _US_美国 26
-      - FR 9
-      - US 59
-      - US 60
-      - AU 21
-      - CN 57
-      - KR 43
-      - US 61
-      - US 62
-      - US 63
-      - HK 9
-      - KR 44
-      - CA 3
-      - US 64
-      - 103.172.116.8:9010
-      - KR 45
-      - US 65
-      - AU 22
-      - CN 58
-      - AU 23
-      - US 66
-      - AU 24
-      - AU 25
-      - US 67
-      - KR 46
-      - CN 59
-      - CN 60
-      - SG 5
-      - _CA_加拿大
-      - US 68
-      - AU 26
-      - CA 4
-      - CN 61
-      - _US_美国 27
-      - KR 47
-      - CN 62
-      - FR 10
-      - KR 48
-      - CN 63
-      - KR 49
-      - KR 50
-      - KR 51
-      - US 69
-      - FR 11
-      - _US_美国 28
-      - CN 64
-      - _US_美国 29
-      - GB 4
-      - _US_美国 30
-      - US 70
-      - US 71
-      - KR 52
-      - CN 65
-      - _US_美国 31
-      - 103.172.116.8:9037
-      - KR 53
-      - US 72
-      - CN 66
-      - KR 54
-      - CN 67
-      - US 73
-      - _KR_韩国 4
-      - US 74
-      - AU 27
-      - US 75
-      - US 76
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -2581,319 +664,77 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - vpnpool-香港
+      - Relay_🇨🇳CN-🇭🇰HK_502
+      - ❶香港 A4 [H]
+      - ❷香港 12
+      - vpnpool-SG
+      - vpnpool-SG 2
+      - HK(TG/atyzcloud)_1
+      - ❶香港 B4 [H]
+      - ❷香港 51
+      - ❶新加坡 02 [M]
+      - vpnpool-VN-dip
+      - ❶日本 03 [转]
+      - Relay_🇨🇳CN-🏁ZZ_499
+      - ❶香港 B1 [推荐]
+      - vpnpool-TH-dip
+      - ❶香港 B2 [推荐]
+      - ❶香港 B3 [推荐]
+      - vpnpool-TH-dip 2
+      - 台湾02丨原生IP丨
+      - ❶台湾 02 [推荐]
+      - ❶香港 A3 [推荐]
+      - ❶香港 03 [BGP]
+      - ❶日本 01 [M]
+      - ❶香港 A1 [推荐]
+      - Relay_🇨🇳CN-🇰🇷KR_501
+      - ❶香港 A2 [推荐]
+      - ❷香港 C3 [推荐]
+      - ❷香港 C2 [推荐]
+      - ❷韩国 [转]
+      - vpnpool-US
       - CN
-      - HK
-      - _US_美国
+      - Relay_🇨🇳CN-🇮🇳IN_500
+      - ❶香港 02 [BGP]
+      - vpnpool-US-dip
+      - vpnpool-RU
+      - ❶美国 02 [转]
+      - vpnpool-ID-dip
+      - vpnpool-KR
+      - 俄罗斯原生1-负载均衡-解锁流媒体
+      - ❷荷兰 [M]
+      - ❶香港 18
+      - 新加坡4
+      - Pool_🇹🇼TW_1673
+      - vpnpool-US-dip 2
+      - Relay_🇨🇳CN-🇺🇸US_503
       - CN 2
-      - _KR_韩国
-      - _US_美国 2
-      - _US_美国 3
-      - _US_美国 4
-      - _US_美国 5
-      - KR
-      - KR 2
-      - _US_美国 6
-      - KR 3
+      - vpnpool-IN
+      - Relay_🇨🇳CN-🇭🇰HK_498
+      - ❷法国 [转]
+      - vpnpool-VN-dip 2
+      - Relay_🇨🇳CN-🇷🇴RO_504
       - CN 3
-      - KR 4
+      - vpnpool-香港 2
+      - ❶台湾 03 [推荐]
+      - Pool_🇹🇼TW_1674
+      - Relay_🏁ZZ-🇹🇼TW_4724
+      - RU1(IEPL)+-+负载均衡专线
+      - _BG_保加利亚
+      - ❷英国 [转]
+      - ❶新加坡 03 [H]
       - CN 4
-      - _US_美国 7
-      - _KR_韩国 2
-      - _US_美国 8
-      - _US_美国 9
-      - US
-      - KR 5
-      - _US_美国 10
-      - _US_美国 11
       - CN 5
-      - _US_美国->🇫🇷_FR_法国
-      - JP
-      - default_name
-      - KR 6
-      - JP 2
-      - US 2
-      - AU
-      - AU 2
-      - US 3
-      - US 4
-      - US 5
-      - KR 7
-      - US 6
       - CN 6
-      - US 7
-      - _US_美国 12
-      - KR 8
-      - US 8
       - CN 7
       - CN 8
-      - _US_美国 13
-      - US 9
-      - SG
-      - US 10
-      - US 11
       - CN 9
-      - CA
-      - US 12
-      - US 13
-      - US 14
-      - GB
-      - US 15
-      - AU 3
-      - GB 2
       - CN 10
-      - US 16
-      - AU 4
-      - HK 2
-      - KR 9
-      - KR 10
-      - US 17
-      - JP 3
+      - KR
       - CN 11
-      - HK 3
-      - US 18
-      - US 19
-      - KR 11
-      - US 20
-      - HK 4
-      - US 21
-      - HK 5
+      - _BG_保加利亚 2
       - CN 12
-      - GB 3
-      - US 22
-      - HK 6
-      - _US_美国 14
-      - AU 5
-      - SG 2
-      - CN 13
-      - CN 14
-      - AU 6
-      - KR 12
-      - AU 7
-      - CN 15
-      - _SG_新加坡
-      - FR
-      - US 23
-      - US 24
-      - CN 16
-      - CA 2
-      - HK 7
-      - _US_美国 15
-      - KR 13
-      - US 25
-      - FR 2
-      - AU 8
-      - US 26
-      - US 27
-      - AU 9
-      - US 28
-      - CN 17
-      - _US_美国 16
-      - CN 18
-      - AU 10
-      - _HK_香港
-      - CN 19
-      - US 29
-      - _US_美国 17
-      - US 30
-      - FR 3
-      - 103.172.116.7:9019
-      - KR 14
-      - _IN_印度
-      - KR 15
-      - US 31
-      - _KR_韩国 3
-      - IN
-      - US 32
-      - CN 20
-      - US 33
-      - US 34
-      - US 35
-      - _US_美国 18
-      - US 36
-      - FR 4
-      - _US_美国 19
-      - US 37
-      - US 38
-      - KR 16
-      - US 39
-      - 103.172.116.8:9011
-      - KR 17
-      - _US_美国 20
-      - KR 18
-      - US 40
-      - AU 11
-      - CN 21
-      - AU 12
-      - CN 22
-      - KR 19
-      - KR 20
-      - US 41
-      - KR 21
-      - KR 22
-      - CN 23
-      - CN 24
-      - FR 5
-      - KR 23
-      - CN 25
-      - AU 13
-      - AU 14
-      - KR 24
-      - AU 15
-      - _US_美国 21
-      - US 42
-      - US 43
-      - CN 26
-      - CN 27
-      - KR 25
-      - AU 16
-      - US 44
-      - KR 26
-      - US 45
-      - SG 3
-      - 103.172.116.9:9042
-      - _US_美国 22
-      - CN 28
-      - US 46
-      - JP 4
-      - US 47
-      - US 48
-      - US 49
-      - US 50
-      - CN 29
-      - CN 30
-      - CN 31
-      - TW
-      - CN 32
-      - CN 33
-      - RO
-      - TW 2
-      - CN 34
-      - CN 35
-      - SG 4
-      - CN 36
-      - CN 37
-      - CN 38
-      - KR 27
-      - CN 39
-      - CN 40
-      - CN 41
-      - HK 8
-      - KR 28
-      - CN 42
-      - CN 43
-      - CN 44
-      - CN 45
-      - _US_美国 23
-      - CN 46
-      - CN 47
-      - KR 29
-      - KR 30
-      - KR 31
-      - CN 48
-      - KR 32
-      - KR 33
-      - KR 34
-      - _US_美国 24
-      - US 51
-      - US 52
-      - JP 5
-      - KR 35
-      - US 53
-      - CN 49
-      - FR 6
-      - FR 7
-      - AU 17
-      - CN 50
-      - KR 36
-      - CN 51
-      - _US_美国 25
-      - KR 37
-      - CN 52
-      - CN 53
-      - KR 38
-      - CN 54
-      - US 54
-      - AU 18
-      - US 55
-      - US 56
-      - US 57
-      - KR 39
-      - FR 8
-      - KR 40
-      - CN 55
-      - CN 56
-      - TW 3
-      - KR 41
-      - US 58
-      - AU 19
-      - AU 20
-      - KR 42
-      - _US_美国 26
-      - FR 9
-      - US 59
-      - US 60
-      - AU 21
-      - CN 57
-      - KR 43
-      - US 61
-      - US 62
-      - US 63
-      - HK 9
-      - KR 44
-      - CA 3
-      - US 64
-      - 103.172.116.8:9010
-      - KR 45
-      - US 65
-      - AU 22
-      - CN 58
-      - AU 23
-      - US 66
-      - AU 24
-      - AU 25
-      - US 67
-      - KR 46
-      - CN 59
-      - CN 60
-      - SG 5
-      - _CA_加拿大
-      - US 68
-      - AU 26
-      - CA 4
-      - CN 61
-      - _US_美国 27
-      - KR 47
-      - CN 62
-      - FR 10
-      - KR 48
-      - CN 63
-      - KR 49
-      - KR 50
-      - KR 51
-      - US 69
-      - FR 11
-      - _US_美国 28
-      - CN 64
-      - _US_美国 29
-      - GB 4
-      - _US_美国 30
-      - US 70
-      - US 71
-      - KR 52
-      - CN 65
-      - _US_美国 31
-      - 103.172.116.8:9037
-      - KR 53
-      - US 72
-      - CN 66
-      - KR 54
-      - CN 67
-      - US 73
-      - _KR_韩国 4
-      - US 74
-      - AU 27
-      - US 75
-      - US 76
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
