@@ -5,307 +5,419 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: vpnpool-香港, server: 119.147.2.245, port: 58803, type: trojan, password: 246e1d4c-ac18-35cc-8f55-0b70bee0da56, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇨🇳CN-🇭🇰HK_502, server: 119.147.2.245, port: 58804, type: trojan, password: 246e1d4c-ac18-35cc-8f55-0b70bee0da56, skip-cert-verify: true, udp: true}
-  - {name: "❶香港 A4 [H]", server: transit01.balala2016.xyz, port: 10080, type: vmess, uuid: e3121cd0-b493-11ec-8a78-69c637e5ed92, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hk18, ws-headers: {Host: transit01.balala2016.xyz}, udp: true}
-  - {name: ❷香港 12, server: hk12.balala2016.xyz, port: 10080, type: vmess, uuid: e3121cd0-b493-11ec-8a78-69c637e5ed92, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /balala, ws-headers: {Host: hk12.balala2016.xyz}, udp: true}
-  - {name: vpnpool-SG, server: 119.147.2.245, port: 58807, type: trojan, password: 246e1d4c-ac18-35cc-8f55-0b70bee0da56, skip-cert-verify: true, udp: true}
-  - {name: vpnpool-SG 2, server: 119.147.2.245, port: 58808, type: trojan, password: 246e1d4c-ac18-35cc-8f55-0b70bee0da56, skip-cert-verify: true, udp: true}
-  - {name: HK(TG/atyzcloud)_1, server: gy.sharecentrepro.tk, port: 13397, type: trojan, password: d3b04e55-f2ae-4500-b317-e23946dde463, sni: gy.sharecentrepro.tk, skip-cert-verify: true, udp: true}
-  - {name: "❶香港 B4 [H]", server: transit01.balala2016.xyz, port: 10080, type: vmess, uuid: e3121cd0-b493-11ec-8a78-69c637e5ed92, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /balala, ws-headers: {Host: transit01.balala2016.xyz}, udp: true}
-  - {name: ❷香港 51, server: hk51.balala2016.xyz, port: 10080, type: vmess, uuid: e3121cd0-b493-11ec-8a78-69c637e5ed92, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hk51, ws-headers: {Host: hk51.balala2016.xyz}, udp: true}
-  - {name: "❶新加坡 02 [M]", server: js01.balala2016.xyz, port: 20086, type: vmess, uuid: e3121cd0-b493-11ec-8a78-69c637e5ed92, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /sg02, ws-headers: {Host: js01.balala2016.xyz}, udp: true}
-  - {name: vpnpool-VN-dip, server: 119.147.2.245, port: 58831, type: trojan, password: 246e1d4c-ac18-35cc-8f55-0b70bee0da56, skip-cert-verify: true, udp: true}
-  - {name: "❶日本 03 [转]", server: transit01.balala2016.xyz, port: 80, type: vmess, uuid: e3121cd0-b493-11ec-8a78-69c637e5ed92, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jp01, ws-headers: {Host: transit01.balala2016.xyz}, udp: true}
-  - {name: Relay_🇨🇳CN-🏁ZZ_499, server: 119.147.2.245, port: 58829, type: trojan, password: 246e1d4c-ac18-35cc-8f55-0b70bee0da56, skip-cert-verify: true, udp: true}
-  - {name: "❶香港 B1 [推荐]", server: js01.balala2016.xyz, port: 20086, type: vmess, uuid: e3121cd0-b493-11ec-8a78-69c637e5ed92, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /balala, ws-headers: {Host: js01.balala2016.xyz}, udp: true}
-  - {name: vpnpool-TH-dip, server: 119.147.2.245, port: 58825, type: trojan, password: 246e1d4c-ac18-35cc-8f55-0b70bee0da56, skip-cert-verify: true, udp: true}
-  - {name: "❶香港 B2 [推荐]", server: js02.balala2016.xyz, port: 20086, type: vmess, uuid: e3121cd0-b493-11ec-8a78-69c637e5ed92, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /balala, ws-headers: {Host: js02.balala2016.xyz}, udp: true}
-  - {name: "❶香港 B3 [推荐]", server: js03.balala2016.xyz, port: 20086, type: vmess, uuid: e3121cd0-b493-11ec-8a78-69c637e5ed92, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /balala, ws-headers: {Host: js03.balala2016.xyz}, udp: true}
-  - {name: vpnpool-TH-dip 2, server: 119.147.2.245, port: 58830, type: trojan, password: 246e1d4c-ac18-35cc-8f55-0b70bee0da56, skip-cert-verify: true, udp: true}
-  - {name: 台湾02丨原生IP丨, server: fs.keaiyun.xyz, port: 55155, type: vmess, uuid: 8d2afe1b-0b96-3390-9258-36ff22e0d023, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: "❶台湾 02 [推荐]", server: js02.balala2016.xyz, port: 20086, type: vmess, uuid: e3121cd0-b493-11ec-8a78-69c637e5ed92, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /tw01, ws-headers: {Host: js02.balala2016.xyz}, udp: true}
-  - {name: "❶香港 A3 [推荐]", server: js03.balala2016.xyz, port: 20086, type: vmess, uuid: e3121cd0-b493-11ec-8a78-69c637e5ed92, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hk18, ws-headers: {Host: js03.balala2016.xyz}, udp: true}
-  - {name: "❶香港 03 [BGP]", server: hk03.balala2016.xyz, port: 80, type: vmess, uuid: e3121cd0-b493-11ec-8a78-69c637e5ed92, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /balala, ws-headers: {Host: hk03.balala2016.xyz}, udp: true}
-  - {name: "❶日本 01 [M]", server: js01.balala2016.xyz, port: 20086, type: vmess, uuid: e3121cd0-b493-11ec-8a78-69c637e5ed92, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jp01, ws-headers: {Host: js01.balala2016.xyz}, udp: true}
-  - {name: "❶香港 A1 [推荐]", server: js01.balala2016.xyz, port: 20086, type: vmess, uuid: e3121cd0-b493-11ec-8a78-69c637e5ed92, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hk18, ws-headers: {Host: js01.balala2016.xyz}, udp: true}
-  - {name: Relay_🇨🇳CN-🇰🇷KR_501, server: 119.147.2.245, port: 58809, type: trojan, password: 246e1d4c-ac18-35cc-8f55-0b70bee0da56, skip-cert-verify: true, udp: true}
-  - {name: "❶香港 A2 [推荐]", server: js02.balala2016.xyz, port: 20086, type: vmess, uuid: e3121cd0-b493-11ec-8a78-69c637e5ed92, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hk18, ws-headers: {Host: js02.balala2016.xyz}, udp: true}
-  - {name: "❷香港 C3 [推荐]", server: js03.balala2016.xyz, port: 20086, type: vmess, uuid: e3121cd0-b493-11ec-8a78-69c637e5ed92, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hk51, ws-headers: {Host: js03.balala2016.xyz}, udp: true}
-  - {name: "❷香港 C2 [推荐]", server: js02.balala2016.xyz, port: 20086, type: vmess, uuid: e3121cd0-b493-11ec-8a78-69c637e5ed92, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hk51, ws-headers: {Host: js02.balala2016.xyz}, udp: true}
-  - {name: "❷韩国 [转]", server: transit01.balala2016.xyz, port: 10080, type: vmess, uuid: e3121cd0-b493-11ec-8a78-69c637e5ed92, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /kr01, ws-headers: {Host: transit01.balala2016.xyz}, udp: true}
-  - {name: vpnpool-US, server: 119.147.2.245, port: 58817, type: trojan, password: 246e1d4c-ac18-35cc-8f55-0b70bee0da56, skip-cert-verify: true, udp: true}
-  - {name: CN, server: fs.keaiyun.xyz, port: 48517, type: vmess, uuid: 8d2afe1b-0b96-3390-9258-36ff22e0d023, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: Relay_🇨🇳CN-🇮🇳IN_500, server: 119.147.2.245, port: 58812, type: trojan, password: 246e1d4c-ac18-35cc-8f55-0b70bee0da56, skip-cert-verify: true, udp: true}
-  - {name: "❶香港 02 [BGP]", server: hk02.balala2016.xyz, port: 80, type: vmess, uuid: e3121cd0-b493-11ec-8a78-69c637e5ed92, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /balala, ws-headers: {Host: hk02.balala2016.xyz}, udp: true}
-  - {name: vpnpool-US-dip, server: 119.147.2.245, port: 58816, type: trojan, password: 246e1d4c-ac18-35cc-8f55-0b70bee0da56, skip-cert-verify: true, udp: true}
-  - {name: vpnpool-RU, server: 119.147.2.245, port: 58828, type: trojan, password: 246e1d4c-ac18-35cc-8f55-0b70bee0da56, skip-cert-verify: true, udp: true}
-  - {name: "❶美国 02 [转]", server: transit01.balala2016.xyz, port: 10080, type: vmess, uuid: e3121cd0-b493-11ec-8a78-69c637e5ed92, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /us02, ws-headers: {Host: transit01.balala2016.xyz}, udp: true}
-  - {name: vpnpool-ID-dip, server: 119.147.2.245, port: 58824, type: trojan, password: 246e1d4c-ac18-35cc-8f55-0b70bee0da56, skip-cert-verify: true, udp: true}
-  - {name: vpnpool-KR, server: 119.147.2.245, port: 58810, type: trojan, password: 246e1d4c-ac18-35cc-8f55-0b70bee0da56, skip-cert-verify: true, udp: true}
-  - {name: 俄罗斯原生1-负载均衡-解锁流媒体, server: ru1.lolvps.xyz, port: 40040, type: vmess, uuid: 2b8e4fc6-0112-4b26-8c17-1bfef9a3ff99, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /6129CFHR, ws-headers: {Host: ru1.lolvps.xyz}, udp: true}
-  - {name: "❷荷兰 [M]", server: js01.balala2016.xyz, port: 10080, type: vmess, uuid: e3121cd0-b493-11ec-8a78-69c637e5ed92, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /nl01, ws-headers: {Host: js01.balala2016.xyz}, udp: true}
-  - {name: ❶香港 18, server: hk18.balala2016.xyz, port: 10080, type: vmess, uuid: e3121cd0-b493-11ec-8a78-69c637e5ed92, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hk18, ws-headers: {Host: hk18.balala2016.xyz}, udp: true}
-  - {name: 新加坡4, server: fs.keaiyun.xyz, port: 48550, type: vmess, uuid: 8d2afe1b-0b96-3390-9258-36ff22e0d023, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: Pool_🇹🇼TW_1673, server: 211.72.35.153, port: 3389, type: trojan, password: cd39f62aed7b90f6, skip-cert-verify: true, udp: true}
-  - {name: vpnpool-US-dip 2, server: 119.147.2.245, port: 58832, type: trojan, password: 246e1d4c-ac18-35cc-8f55-0b70bee0da56, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇨🇳CN-🇺🇸US_503, server: 119.147.2.245, port: 58818, type: trojan, password: 246e1d4c-ac18-35cc-8f55-0b70bee0da56, skip-cert-verify: true, udp: true}
-  - {name: CN 2, server: fs.keaiyun.xyz, port: 48552, type: vmess, uuid: 8d2afe1b-0b96-3390-9258-36ff22e0d023, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: vpnpool-IN, server: 119.147.2.245, port: 58811, type: trojan, password: 246e1d4c-ac18-35cc-8f55-0b70bee0da56, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇨🇳CN-🇭🇰HK_498, server: 119.147.2.245, port: 58819, type: trojan, password: 246e1d4c-ac18-35cc-8f55-0b70bee0da56, skip-cert-verify: true, udp: true}
-  - {name: "❷法国 [转]", server: transit01.balala2016.xyz, port: 10080, type: vmess, uuid: e3121cd0-b493-11ec-8a78-69c637e5ed92, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /fr01, ws-headers: {Host: transit01.balala2016.xyz}, udp: true}
-  - {name: vpnpool-VN-dip 2, server: 119.147.2.245, port: 58814, type: trojan, password: 246e1d4c-ac18-35cc-8f55-0b70bee0da56, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇨🇳CN-🇷🇴RO_504, server: 119.147.2.245, port: 58806, type: trojan, password: 246e1d4c-ac18-35cc-8f55-0b70bee0da56, skip-cert-verify: true, udp: true}
-  - {name: CN 3, server: cn1.iepl.starlink.st, port: 50600, type: ss, cipher: aes-128-gcm, password: ced52354-bec2-4209-9121-b57d3dfb59e9, udp: true}
-  - {name: vpnpool-香港 2, server: 119.147.2.245, port: 58802, type: trojan, password: 246e1d4c-ac18-35cc-8f55-0b70bee0da56, skip-cert-verify: true, udp: true}
-  - {name: "❶台湾 03 [推荐]", server: transit01.balala2016.xyz, port: 10080, type: vmess, uuid: e3121cd0-b493-11ec-8a78-69c637e5ed92, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /tw01, ws-headers: {Host: transit01.balala2016.xyz}, udp: true}
-  - {name: Pool_🇹🇼TW_1674, server: 211.72.35.153, port: 3389, type: trojan, password: 22e7ebb2dc8ab524, skip-cert-verify: true, udp: true}
-  - {name: Relay_🏁ZZ-🇹🇼TW_4724, server: 5.44.249.43, port: 3389, type: trojan, password: cd39f62aed7b90f6, skip-cert-verify: true, udp: true}
-  - {name: RU1(IEPL)+-+负载均衡专线, server: cn1.iepl.starlink.st, port: 50700, type: ss, cipher: aes-128-gcm, password: ced52354-bec2-4209-9121-b57d3dfb59e9, udp: true}
-  - {name: _BG_保加利亚, server: 213.183.63.217, port: 9059, type: ss, cipher: aes-256-cfb, password: 9XwYyZsK8SNzQDtY, udp: true}
-  - {name: "❷英国 [转]", server: transit01.balala2016.xyz, port: 10080, type: vmess, uuid: e3121cd0-b493-11ec-8a78-69c637e5ed92, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /uk01, ws-headers: {Host: transit01.balala2016.xyz}, udp: true}
-  - {name: "❶新加坡 03 [H]", server: transit01.balala2016.xyz, port: 10080, type: vmess, uuid: e3121cd0-b493-11ec-8a78-69c637e5ed92, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /sg02, ws-headers: {Host: transit01.balala2016.xyz}, udp: true}
-  - {name: CN 4, server: 14.29.124.168, port: 25238, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN 5, server: 14.29.124.168, port: 25235, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN 6, server: cn1.iepl.starlink.st, port: 50500, type: ss, cipher: aes-128-gcm, password: ced52354-bec2-4209-9121-b57d3dfb59e9, udp: true}
-  - {name: CN 7, server: 14.29.124.168, port: 25270, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN 8, server: 14.29.124.168, port: 25217, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN 9, server: 14.29.124.168, port: 25279, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN 10, server: cn1.iepl.starlink.st, port: 50300, type: ss, cipher: aes-128-gcm, password: ced52354-bec2-4209-9121-b57d3dfb59e9, udp: true}
-  - {name: KR, server: hgmf.speedcncnforward2.tk, port: 80, type: trojan, password: da0ea9bc-0dc1-4714-820f-44e87692930f, sni: hgmf.speedcncnforward2.tk, skip-cert-verify: true, udp: true}
-  - {name: CN 11, server: 14.29.124.168, port: 25271, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: _BG_保加利亚 2, server: 213.183.63.217, port: 9001, type: ss, cipher: aes-256-cfb, password: UkXRsXvR6buDMG2Y, udp: true}
-  - {name: CN 12, server: 14.29.124.168, port: 25220, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN, server: in02.dns2333.xyz, port: 63087, type: vmess, uuid: 982227b6-fb48-3c17-b44f-b41daa88afab, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /mugua, ws-headers: {Host: sg-balancer.tencent.best}, udp: true}
+  - {name: CN 2, server: in05.dns2333.xyz, port: 63062, type: vmess, uuid: 982227b6-fb48-3c17-b44f-b41daa88afab, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: nl01-cdn.tencent.best}, udp: true}
+  - {name: CN 3, server: in05.dns2333.xyz, port: 63077, type: vmess, uuid: 982227b6-fb48-3c17-b44f-b41daa88afab, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: pl01-cdn.myn0des.com}, udp: true}
+  - {name: US, server: v2ray.788644.xyz, port: 443, type: vmess, uuid: 000fe881-b655-4212-b804-b00f9970d5aa, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /happy, ws-headers: {Host: v2ray.788644.xyz}, udp: true}
+  - {name: US 2, server: v4.ssrsub.com, port: 8443, type: vmess, uuid: b7c70df3-f92f-4800-a8e1-67e6dc833256, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ssrsub, ws-headers: {Host: v4.ssrsub.com}, udp: true}
+  - {name: CN 4, server: in05.dns2333.xyz, port: 63062, type: vmess, uuid: 982227b6-fb48-3c17-b44f-b41daa88afab, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: nl01-cdn.tencent.best}, udp: true}
+  - {name: IR, server: irancell.android-club.ir, port: 80, type: vmess, uuid: e2c5779c-76b1-4077-d829-9c7c31ef1a28, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /apiws, ws-headers: {Host: irancell.android-club.ir}, udp: true}
+  - {name: US 3, server: hk4.fdns.unino.tech, port: 443, type: vmess, uuid: eb90ad94-9b20-4075-af26-e8e17ff12258, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: hk4.fdns.unino.tech}, udp: true}
+  - {name: US 4, server: hk4.fdns.unino.tech, port: 443, type: vmess, uuid: eb90ad94-9b20-4075-af26-e8e17ff12258, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: hk4.fdns.unino.tech}, udp: true}
+  - {name: US 5, server: 45.77.126.179, port: 57745, type: vmess, uuid: e8b99f3e-bc07-11ec-bc51-560003f2ac4d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /SfqyKoZu/, ws-headers: {Host: 45.77.126.179}, udp: true}
+  - {name: US 6, server: www.zhangss.xyz, port: 59627, type: vmess, uuid: 7cb9b8c1-ddc8-4bdc-b365-d8b73aafa0ec, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: www.zhangss.xyz}, udp: true}
+  - {name: US 7, server: 45.77.126.179, port: 57745, type: vmess, uuid: e8b99f3e-bc07-11ec-bc51-560003f2ac4d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /SfqyKoZu/, ws-headers: {Host: 45.77.126.179}, udp: true}
+  - {name: US 8, server: 140.82.22.122, port: 37572, type: vmess, uuid: 81e3f426-bc02-11ec-b4df-560003f2aa40, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /qgbdnHwN/, ws-headers: {Host: 140.82.22.122}, udp: true}
+  - {name: "", server: oz.moonfree.top, port: 443, type: vmess, uuid: 861e9cd0-cd1d-4f8c-b7d9-b47409dda333, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: oz.moonfree.top}, udp: true}
+  - {name: CN 5, server: fs.keaiyun.xyz, port: 48520, type: vmess, uuid: 0aebc864-b680-3ff9-ba91-27479c658201, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: fs.keaiyun.xyz}, udp: true}
+  - {name: CN 6, server: fs.keaiyun.xyz, port: 48520, type: vmess, uuid: 0aebc864-b680-3ff9-ba91-27479c658201, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: www.baidu.com}, udp: true}
+  - {name: TW, server: 330tw.fans8.xyz, port: 443, type: vmess, uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c, alterId: 2, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ray, ws-headers: {Host: 330tw.fans8.xyz}, udp: true}
+  - {name: RU, server: 331tw.fans8.xyz, port: 443, type: vmess, uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c, alterId: 2, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ray, ws-headers: {Host: 331tw.fans8.xyz}, udp: true}
+  - {name: CN 7, server: in01.dns2333.xyz, port: 63028, type: vmess, uuid: 982227b6-fb48-3c17-b44f-b41daa88afab, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: mugua-tr01.covid19.rip}, udp: true}
+  - {name: CN 8, server: in01.dns2333.xyz, port: 63028, type: vmess, uuid: 982227b6-fb48-3c17-b44f-b41daa88afab, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: mugua-tr01.covid19.rip}, udp: true}
+  - {name: US 9, server: hk4.fdns.unino.tech, port: 443, type: vmess, uuid: eb90ad94-9b20-4075-af26-e8e17ff12258, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: hk4.fdns.unino.tech}, udp: true}
+  - {name: HK, server: 13.75.70.197, port: 80, type: vmess, uuid: e1bc1a4f-a077-3241-b6ef-26ce6d4c0b54, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: 13.75.70.197}, udp: true}
+  - {name: CN 9, server: fs.keaiyun.xyz, port: 48550, type: vmess, uuid: 0aebc864-b680-3ff9-ba91-27479c658201, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: www.baidu.com}, udp: true}
+  - {name: CN 10, server: in05.dns2333.xyz, port: 63021, type: vmess, uuid: e701a942-fba5-3381-b15e-2838689b9c23, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: uk01-cdn.airport-v2.com}, udp: true}
+  - {name: CN 11, server: sh.cu.01.211129.xyz, port: 20838, type: ss, cipher: aes-256-gcm, password: 413f2e36-0038-48e4-963a-a38c0007ef24, udp: true}
+  - {name: CN 12, server: sh.cu.01.211129.xyz, port: 54277, type: ss, cipher: aes-256-gcm, password: 413f2e36-0038-48e4-963a-a38c0007ef24, udp: true}
+  - {name: HK 2, server: azpf.okzdns.com, port: 26277, type: ss, cipher: aes-256-gcm, password: 413f2e36-0038-48e4-963a-a38c0007ef24, udp: true}
+  - {name: US 10, server: us.456url.com, port: 10088, type: ss, cipher: chacha20-ietf-poly1305, password: 319ae623-dd6d-46af-9ead-ac8cb78a1dc0, udp: true}
+  - {name: US 11, server: us.456url.com, port: 10089, type: ss, cipher: chacha20-ietf-poly1305, password: 319ae623-dd6d-46af-9ead-ac8cb78a1dc0, udp: true}
+  - {name: US 12, server: us.456url.com, port: 10088, type: ss, cipher: chacha20-ietf-poly1305, password: 319ae623-dd6d-46af-9ead-ac8cb78a1dc0, udp: true}
+  - {name: US 13, server: us.456url.com, port: 10089, type: ss, cipher: chacha20-ietf-poly1305, password: 319ae623-dd6d-46af-9ead-ac8cb78a1dc0, udp: true}
+  - {name: CN 13, server: cn1.iepl.starlink.st, port: 50400, type: ss, cipher: aes-128-gcm, password: 82f947e0-79e5-4d87-a964-113b4f881865, udp: true}
+  - {name: CN 14, server: cn1.iepl.starlink.st, port: 50500, type: ss, cipher: aes-128-gcm, password: 82f947e0-79e5-4d87-a964-113b4f881865, udp: true}
+  - {name: CN 15, server: cn1.iepl.starlink.st, port: 50300, type: ss, cipher: aes-128-gcm, password: 82f947e0-79e5-4d87-a964-113b4f881865, udp: true}
+  - {name: CN 16, server: cn1.iepl.starlink.st, port: 50600, type: ss, cipher: aes-128-gcm, password: 82f947e0-79e5-4d87-a964-113b4f881865, udp: true}
+  - {name: CN 17, server: cn1.iepl.starlink.st, port: 50700, type: ss, cipher: aes-128-gcm, password: 82f947e0-79e5-4d87-a964-113b4f881865, udp: true}
+  - {name: CN 18, server: zz03.00000000-0000-0000-0000-000000000000.00000000-0000-0000-0000-000000000000.yiyuan.cyou, port: 10722, type: trojan, password: 5de8dcaa-2747-4221-9bff-afc0272b3fc4, sni: zz03.00000000-0000-0000-0000-000000000000.00000000-0000-0000-0000-000000000000.yiyuan.cyou, skip-cert-verify: true, udp: true}
+  - {name: CN 19, server: zz03.00000000-0000-0000-0000-000000000000.00000000-0000-0000-0000-000000000000.yiyuan.cyou, port: 10724, type: trojan, password: 5de8dcaa-2747-4221-9bff-afc0272b3fc4, sni: zz03.00000000-0000-0000-0000-000000000000.00000000-0000-0000-0000-000000000000.yiyuan.cyou, skip-cert-verify: true, udp: true}
+  - {name: CN 20, server: zz03.00000000-0000-0000-0000-000000000000.00000000-0000-0000-0000-000000000000.yiyuan.cyou, port: 10726, type: trojan, password: 5de8dcaa-2747-4221-9bff-afc0272b3fc4, sni: zz03.00000000-0000-0000-0000-000000000000.00000000-0000-0000-0000-000000000000.yiyuan.cyou, skip-cert-verify: true, udp: true}
+  - {name: US 14, server: jp02.00000000-0000-0000-0000-000000000000.00000000-0000-0000-0000-000000000000.yiyuan.cyou, port: 443, type: trojan, password: 5de8dcaa-2747-4221-9bff-afc0272b3fc4, sni: jp02.00000000-0000-0000-0000-000000000000.00000000-0000-0000-0000-000000000000.yiyuan.cyou, skip-cert-verify: true, udp: true}
+  - {name: US 15, server: jp04.00000000-0000-0000-0000-000000000000.00000000-0000-0000-0000-000000000000.yiyuan.cyou, port: 443, type: trojan, password: 5de8dcaa-2747-4221-9bff-afc0272b3fc4, sni: jp04.00000000-0000-0000-0000-000000000000.00000000-0000-0000-0000-000000000000.yiyuan.cyou, skip-cert-verify: true, udp: true}
+  - {name: HK 3, server: hk04.00000000-0000-0000-0000-000000000000.00000000-0000-0000-0000-000000000000.yiyuan.cyou, port: 443, type: trojan, password: 5de8dcaa-2747-4221-9bff-afc0272b3fc4, sni: hk04.00000000-0000-0000-0000-000000000000.00000000-0000-0000-0000-000000000000.yiyuan.cyou, skip-cert-verify: true, udp: true}
+  - {name: RU 2, server: russia.okzdns.com, port: 33306, type: trojan, password: 413f2e36-0038-48e4-963a-a38c0007ef24, sni: russia.okzdns.com, skip-cert-verify: true, udp: true}
+  - {name: RU 3, server: russia.okzdns.com, port: 33306, type: trojan, password: 413f2e36-0038-48e4-963a-a38c0007ef24, sni: russia.okzdns.com, skip-cert-verify: true, udp: true}
+  - {name: HK 4, server: cn-hk-az-2.okss.us, port: 50003, type: trojan, password: 413f2e36-0038-48e4-963a-a38c0007ef24, sni: cn-hk-az-2.okss.us, skip-cert-verify: true, udp: true}
+  - {name: HK 5, server: azhk-pf.okzdns.com, port: 50003, type: trojan, password: 413f2e36-0038-48e4-963a-a38c0007ef24, sni: azhk-pf.okzdns.com, skip-cert-verify: true, udp: true}
+  - {name: HK 6, server: azhk-pf.okzdns.com, port: 50003, type: trojan, password: 413f2e36-0038-48e4-963a-a38c0007ef24, sni: azhk-pf.okzdns.com, skip-cert-verify: true, udp: true}
+  - {name: GB, server: a2.okz2.com, port: 50001, type: trojan, password: 413f2e36-0038-48e4-963a-a38c0007ef24, sni: a2.okz2.com, skip-cert-verify: true, udp: true}
+  - {name: HK 7, server: azhk-pf.okzdns.com, port: 50011, type: trojan, password: 413f2e36-0038-48e4-963a-a38c0007ef24, sni: azhk-pf.okzdns.com, skip-cert-verify: true, udp: true}
+  - {name: GB 2, server: us-sp.okzdns.com, port: 50001, type: trojan, password: 413f2e36-0038-48e4-963a-a38c0007ef24, sni: us-sp.okzdns.com, skip-cert-verify: true, udp: true}
+  - {name: CN 21, server: whcu.cwcsrsyby.xyz, port: 19987, type: trojan, password: 413f2e36-0038-48e4-963a-a38c0007ef24, sni: whcu.cwcsrsyby.xyz, skip-cert-verify: true, udp: true}
+  - {name: CN 22, server: whcu.cwcsrsyby.xyz, port: 27308, type: trojan, password: 413f2e36-0038-48e4-963a-a38c0007ef24, sni: whcu.cwcsrsyby.xyz, skip-cert-verify: true, udp: true}
+  - {name: CN 23, server: whcu.cwcsrsyby.xyz, port: 58331, type: trojan, password: 413f2e36-0038-48e4-963a-a38c0007ef24, sni: whcu.cwcsrsyby.xyz, skip-cert-verify: true, udp: true}
+  - {name: CN 24, server: whcu.cwcsrsyby.xyz, port: 42136, type: trojan, password: 413f2e36-0038-48e4-963a-a38c0007ef24, sni: whcu.cwcsrsyby.xyz, skip-cert-verify: true, udp: true}
+  - {name: CN 25, server: whcu.cwcsrsyby.xyz, port: 30139, type: trojan, password: 413f2e36-0038-48e4-963a-a38c0007ef24, sni: whcu.cwcsrsyby.xyz, skip-cert-verify: true, udp: true}
+  - {name: CN 26, server: whcu.cwcsrsyby.xyz, port: 38029, type: trojan, password: 413f2e36-0038-48e4-963a-a38c0007ef24, sni: whcu.cwcsrsyby.xyz, skip-cert-verify: true, udp: true}
+  - {name: CN 27, server: whcu.cwcsrsyby.xyz, port: 34448, type: trojan, password: 413f2e36-0038-48e4-963a-a38c0007ef24, sni: whcu.cwcsrsyby.xyz, skip-cert-verify: true, udp: true}
+  - {name: TW 2, server: tw1.okzdns.com, port: 45000, type: trojan, password: 413f2e36-0038-48e4-963a-a38c0007ef24, sni: tw1.okzdns.com, skip-cert-verify: true, udp: true}
+  - {name: HK 8, server: azhk-pf.okzdns.com, port: 50012, type: trojan, password: 413f2e36-0038-48e4-963a-a38c0007ef24, sni: azhk-pf.okzdns.com, skip-cert-verify: true, udp: true}
+  - {name: HK 9, server: azhk-pf.okzdns.com, port: 50012, type: trojan, password: 413f2e36-0038-48e4-963a-a38c0007ef24, sni: azhk-pf.okzdns.com, skip-cert-verify: true, udp: true}
+  - {name: HK 10, server: azhk-pf.okzdns.com, port: 50002, type: trojan, password: 413f2e36-0038-48e4-963a-a38c0007ef24, sni: azhk-pf.okzdns.com, skip-cert-verify: true, udp: true}
+  - {name: HK 11, server: azhk-pf.okzdns.com, port: 50002, type: trojan, password: 413f2e36-0038-48e4-963a-a38c0007ef24, sni: azhk-pf.okzdns.com, skip-cert-verify: true, udp: true}
+  - {name: HK 12, server: azhk-pf.okzdns.com, port: 50002, type: trojan, password: 413f2e36-0038-48e4-963a-a38c0007ef24, sni: azhk-pf.okzdns.com, skip-cert-verify: true, udp: true}
+  - {name: HK 13, server: azhk-pf.okzdns.com, port: 50002, type: trojan, password: 413f2e36-0038-48e4-963a-a38c0007ef24, sni: azhk-pf.okzdns.com, skip-cert-verify: true, udp: true}
+  - {name: HK 14, server: azpf.okzdns.com, port: 39424, type: trojan, password: 413f2e36-0038-48e4-963a-a38c0007ef24, sni: azpf.okzdns.com, skip-cert-verify: true, udp: true}
+  - {name: HK 15, server: azhk-pf.okzdns.com, port: 50007, type: trojan, password: 413f2e36-0038-48e4-963a-a38c0007ef24, sni: azhk-pf.okzdns.com, skip-cert-verify: true, udp: true}
+  - {name: HK 16, server: azhk-pf.okzdns.com, port: 50007, type: trojan, password: 413f2e36-0038-48e4-963a-a38c0007ef24, sni: azhk-pf.okzdns.com, skip-cert-verify: true, udp: true}
+  - {name: HK 17, server: azhk-pf.okzdns.com, port: 50008, type: trojan, password: 413f2e36-0038-48e4-963a-a38c0007ef24, sni: azhk-pf.okzdns.com, skip-cert-verify: true, udp: true}
+  - {name: HK 18, server: azhk-pf.okzdns.com, port: 50008, type: trojan, password: 413f2e36-0038-48e4-963a-a38c0007ef24, sni: azhk-pf.okzdns.com, skip-cert-verify: true, udp: true}
+  - {name: US 16, server: us.456url.com, port: 10086, type: trojan, password: 319ae623-dd6d-46af-9ead-ac8cb78a1dc0, sni: us.456url.com, skip-cert-verify: true, udp: true}
+  - {name: US 17, server: us.456url.com, port: 10087, type: trojan, password: 319ae623-dd6d-46af-9ead-ac8cb78a1dc0, sni: us.456url.com, skip-cert-verify: true, udp: true}
+  - {name: US 18, server: us.456url.com, port: 10086, type: trojan, password: 319ae623-dd6d-46af-9ead-ac8cb78a1dc0, sni: us.456url.com, skip-cert-verify: true, udp: true}
+  - {name: US 19, server: us.456url.com, port: 10087, type: trojan, password: 319ae623-dd6d-46af-9ead-ac8cb78a1dc0, sni: us.456url.com, skip-cert-verify: true, udp: true}
+  - {name: US 20, server: kr2.qingyun123.xyz, port: 10050, type: trojan, password: 32ba9f2a-0a02-42aa-9e1c-040bc9813f12, sni: kr2.qingyun123.xyz, skip-cert-verify: true, udp: true}
+  - {name: KR, server: jgw4.gaox.ml, port: 443, type: trojan, password: b7e0e71f-070c-437a-9826-6e23caeb0307, sni: jgw4.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: US 21, server: nfus.qingyun123.xyz, port: 10050, type: trojan, password: bdc418fa-8124-40af-b932-ed9a3282961b, sni: nfus.qingyun123.xyz, skip-cert-verify: true, udp: true}
+  - {name: JP, server: nfjp1.qingyun123.xyz, port: 10000, type: trojan, password: 32ba9f2a-0a02-42aa-9e1c-040bc9813f12, sni: nfjp1.qingyun123.xyz, skip-cert-verify: true, udp: true}
+  - {name: HK 19, server: hknf2.qingyun123.xyz, port: 10070, type: trojan, password: bdc418fa-8124-40af-b932-ed9a3282961b, sni: hknf2.qingyun123.xyz, skip-cert-verify: true, udp: true}
+  - {name: CN 28, server: zz03.00000000-0000-0000-0000-000000000000.00000000-0000-0000-0000-000000000000.yiyuan.cyou, port: 10726, type: trojan, password: 214bb2d0-7309-4649-a398-0fbf7ac387fa, sni: zz03.00000000-0000-0000-0000-000000000000.00000000-0000-0000-0000-000000000000.yiyuan.cyou, skip-cert-verify: true, udp: true}
+  - {name: JP 2, server: jp06.00000000-0000-0000-0000-000000000000.00000000-0000-0000-0000-000000000000.yiyuan.cyou, port: 443, type: trojan, password: 214bb2d0-7309-4649-a398-0fbf7ac387fa, sni: jp06.00000000-0000-0000-0000-000000000000.00000000-0000-0000-0000-000000000000.yiyuan.cyou, skip-cert-verify: true, udp: true}
+  - {name: US 22, server: jp02.00000000-0000-0000-0000-000000000000.00000000-0000-0000-0000-000000000000.yiyuan.cyou, port: 443, type: trojan, password: 214bb2d0-7309-4649-a398-0fbf7ac387fa, sni: jp02.00000000-0000-0000-0000-000000000000.00000000-0000-0000-0000-000000000000.yiyuan.cyou, skip-cert-verify: true, udp: true}
+  - {name: CN 29, server: v2-node45.mimemi-9mih.com, port: 13131, type: ssr, cipher: aes-256-ctr, password: mimemi, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 9525:QxHsQf, obfs-param: hk2sch70d9e9525.wns.windows.com, udp: true}
+  - {name: CN 30, server: v2-node71.mimemi-9mih.com, port: 13143, type: ssr, cipher: aes-256-ctr, password: mimemi, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 9525:QxHsQf, obfs-param: hk2sch70d9e9525.wns.windows.com, udp: true}
+  - {name: CN 31, server: v3-node72.mimemi-9mih.com, port: 7106, type: ssr, cipher: aes-256-ctr, password: mimemi, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 9525:QxHsQf, obfs-param: hk2sch70d9e9525.wns.windows.com, udp: true}
+  - {name: CN 32, server: v3-node99.mimemi-y7ez.com, port: 7001, type: ssr, cipher: aes-256-ctr, password: mimemi, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 9525:QxHsQf, obfs-param: hk2sch70d9e9525.wns.windows.com, udp: true}
+  - {name: CN 33, server: v3-node34.mimemi-y7ez.com, port: 13135, type: ssr, cipher: aes-256-ctr, password: mimemi, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 9525:QxHsQf, obfs-param: hk2sch70d9e9525.wns.windows.com, udp: true}
+  - {name: CN 34, server: v3-node28.mimemi-y7ez.com, port: 13116, type: ssr, cipher: aes-256-ctr, password: mimemi, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 9525:QxHsQf, obfs-param: hk2sch70d9e9525.wns.windows.com, udp: true}
+  - {name: CN 35, server: v3-node27.mimemi-9mih.com, port: 13141, type: ssr, cipher: aes-256-ctr, password: mimemi, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 9525:QxHsQf, obfs-param: hk2sch70d9e9525.wns.windows.com, udp: true}
+  - {name: CN 36, server: v3-node29.mimemi-y7ez.com, port: 13139, type: ssr, cipher: aes-256-ctr, password: mimemi, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 9525:QxHsQf, obfs-param: hk2sch70d9e9525.wns.windows.com, udp: true}
+  - {name: CN 37, server: v3-node60.mimemi-y7ez.com, port: 13124, type: ssr, cipher: aes-256-ctr, password: mimemi, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 9525:QxHsQf, obfs-param: hk2sch70d9e9525.wns.windows.com, udp: true}
+  - {name: CN 38, server: v3-node102.mimemi-y7ez.com, port: 13129, type: ssr, cipher: aes-256-ctr, password: mimemi, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 9525:QxHsQf, obfs-param: hk2sch70d9e9525.wns.windows.com, udp: true}
+  - {name: CN 39, server: v4-node74.mimemi-9mih.com, port: 13401, type: ssr, cipher: aes-256-ctr, password: mimemi, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 9525:QxHsQf, obfs-param: hk2sch70d9e9525.wns.windows.com, udp: true}
+  - {name: CN 40, server: v4-node90.mimemi-y7ez.com, port: 7201, type: ssr, cipher: aes-256-ctr, password: mimemi, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 9525:QxHsQf, obfs-param: hk2sch70d9e9525.wns.windows.com, udp: true}
+  - {name: CN 41, server: v4-node68.mimemi-9mih.com, port: 7102, type: ssr, cipher: aes-256-ctr, password: mimemi, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 9525:QxHsQf, obfs-param: hk2sch70d9e9525.wns.windows.com, udp: true}
+  - {name: CN 42, server: v4-node67.mimemi-9mih.com, port: 7104, type: ssr, cipher: aes-256-ctr, password: mimemi, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 9525:QxHsQf, obfs-param: hk2sch70d9e9525.wns.windows.com, udp: true}
+  - {name: CN 43, server: v4-node85.mimemi-9mih.com, port: 7015, type: ssr, cipher: aes-256-ctr, password: mimemi, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 9525:QxHsQf, obfs-param: hk2sch70d9e9525.wns.windows.com, udp: true}
+  - {name: CN 44, server: v4-node9.mimemi-9mih.com, port: 13109, type: ssr, cipher: aes-256-ctr, password: mimemi, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 9525:QxHsQf, obfs-param: hk2sch70d9e9525.wns.windows.com, udp: true}
+  - {name: CN 45, server: v4-node66.mimemi-9mih.com, port: 13114, type: ssr, cipher: aes-256-ctr, password: mimemi, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 9525:QxHsQf, obfs-param: hk2sch70d9e9525.wns.windows.com, udp: true}
+  - {name: CN 46, server: v4-node47.mimemi-9mih.com, port: 13107, type: ssr, cipher: aes-256-ctr, password: mimemi, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 9525:QxHsQf, obfs-param: hk2sch70d9e9525.wns.windows.com, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - vpnpool-香港
-      - Relay_🇨🇳CN-🇭🇰HK_502
-      - ❶香港 A4 [H]
-      - ❷香港 12
-      - vpnpool-SG
-      - vpnpool-SG 2
-      - HK(TG/atyzcloud)_1
-      - ❶香港 B4 [H]
-      - ❷香港 51
-      - ❶新加坡 02 [M]
-      - vpnpool-VN-dip
-      - ❶日本 03 [转]
-      - Relay_🇨🇳CN-🏁ZZ_499
-      - ❶香港 B1 [推荐]
-      - vpnpool-TH-dip
-      - ❶香港 B2 [推荐]
-      - ❶香港 B3 [推荐]
-      - vpnpool-TH-dip 2
-      - 台湾02丨原生IP丨
-      - ❶台湾 02 [推荐]
-      - ❶香港 A3 [推荐]
-      - ❶香港 03 [BGP]
-      - ❶日本 01 [M]
-      - ❶香港 A1 [推荐]
-      - Relay_🇨🇳CN-🇰🇷KR_501
-      - ❶香港 A2 [推荐]
-      - ❷香港 C3 [推荐]
-      - ❷香港 C2 [推荐]
-      - ❷韩国 [转]
-      - vpnpool-US
       - CN
-      - Relay_🇨🇳CN-🇮🇳IN_500
-      - ❶香港 02 [BGP]
-      - vpnpool-US-dip
-      - vpnpool-RU
-      - ❶美国 02 [转]
-      - vpnpool-ID-dip
-      - vpnpool-KR
-      - 俄罗斯原生1-负载均衡-解锁流媒体
-      - ❷荷兰 [M]
-      - ❶香港 18
-      - 新加坡4
-      - Pool_🇹🇼TW_1673
-      - vpnpool-US-dip 2
-      - Relay_🇨🇳CN-🇺🇸US_503
       - CN 2
-      - vpnpool-IN
-      - Relay_🇨🇳CN-🇭🇰HK_498
-      - ❷法国 [转]
-      - vpnpool-VN-dip 2
-      - Relay_🇨🇳CN-🇷🇴RO_504
       - CN 3
-      - vpnpool-香港 2
-      - ❶台湾 03 [推荐]
-      - Pool_🇹🇼TW_1674
-      - Relay_🏁ZZ-🇹🇼TW_4724
-      - RU1(IEPL)+-+负载均衡专线
-      - _BG_保加利亚
-      - ❷英国 [转]
-      - ❶新加坡 03 [H]
+      - US
+      - US 2
       - CN 4
+      - IR
+      - US 3
+      - US 4
+      - US 5
+      - US 6
+      - US 7
+      - US 8
+      - ""
       - CN 5
       - CN 6
+      - TW
+      - RU
       - CN 7
       - CN 8
+      - US 9
+      - HK
       - CN 9
       - CN 10
-      - KR
       - CN 11
-      - _BG_保加利亚 2
       - CN 12
+      - HK 2
+      - US 10
+      - US 11
+      - US 12
+      - US 13
+      - CN 13
+      - CN 14
+      - CN 15
+      - CN 16
+      - CN 17
+      - CN 18
+      - CN 19
+      - CN 20
+      - US 14
+      - US 15
+      - HK 3
+      - RU 2
+      - RU 3
+      - HK 4
+      - HK 5
+      - HK 6
+      - GB
+      - HK 7
+      - GB 2
+      - CN 21
+      - CN 22
+      - CN 23
+      - CN 24
+      - CN 25
+      - CN 26
+      - CN 27
+      - TW 2
+      - HK 8
+      - HK 9
+      - HK 10
+      - HK 11
+      - HK 12
+      - HK 13
+      - HK 14
+      - HK 15
+      - HK 16
+      - HK 17
+      - HK 18
+      - US 16
+      - US 17
+      - US 18
+      - US 19
+      - US 20
+      - KR
+      - US 21
+      - JP
+      - HK 19
+      - CN 28
+      - JP 2
+      - US 22
+      - CN 29
+      - CN 30
+      - CN 31
+      - CN 32
+      - CN 33
+      - CN 34
+      - CN 35
+      - CN 36
+      - CN 37
+      - CN 38
+      - CN 39
+      - CN 40
+      - CN 41
+      - CN 42
+      - CN 43
+      - CN 44
+      - CN 45
+      - CN 46
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - vpnpool-香港
-      - Relay_🇨🇳CN-🇭🇰HK_502
-      - ❶香港 A4 [H]
-      - ❷香港 12
-      - vpnpool-SG
-      - vpnpool-SG 2
-      - HK(TG/atyzcloud)_1
-      - ❶香港 B4 [H]
-      - ❷香港 51
-      - ❶新加坡 02 [M]
-      - vpnpool-VN-dip
-      - ❶日本 03 [转]
-      - Relay_🇨🇳CN-🏁ZZ_499
-      - ❶香港 B1 [推荐]
-      - vpnpool-TH-dip
-      - ❶香港 B2 [推荐]
-      - ❶香港 B3 [推荐]
-      - vpnpool-TH-dip 2
-      - 台湾02丨原生IP丨
-      - ❶台湾 02 [推荐]
-      - ❶香港 A3 [推荐]
-      - ❶香港 03 [BGP]
-      - ❶日本 01 [M]
-      - ❶香港 A1 [推荐]
-      - Relay_🇨🇳CN-🇰🇷KR_501
-      - ❶香港 A2 [推荐]
-      - ❷香港 C3 [推荐]
-      - ❷香港 C2 [推荐]
-      - ❷韩国 [转]
-      - vpnpool-US
       - CN
-      - Relay_🇨🇳CN-🇮🇳IN_500
-      - ❶香港 02 [BGP]
-      - vpnpool-US-dip
-      - vpnpool-RU
-      - ❶美国 02 [转]
-      - vpnpool-ID-dip
-      - vpnpool-KR
-      - 俄罗斯原生1-负载均衡-解锁流媒体
-      - ❷荷兰 [M]
-      - ❶香港 18
-      - 新加坡4
-      - Pool_🇹🇼TW_1673
-      - vpnpool-US-dip 2
-      - Relay_🇨🇳CN-🇺🇸US_503
       - CN 2
-      - vpnpool-IN
-      - Relay_🇨🇳CN-🇭🇰HK_498
-      - ❷法国 [转]
-      - vpnpool-VN-dip 2
-      - Relay_🇨🇳CN-🇷🇴RO_504
       - CN 3
-      - vpnpool-香港 2
-      - ❶台湾 03 [推荐]
-      - Pool_🇹🇼TW_1674
-      - Relay_🏁ZZ-🇹🇼TW_4724
-      - RU1(IEPL)+-+负载均衡专线
-      - _BG_保加利亚
-      - ❷英国 [转]
-      - ❶新加坡 03 [H]
+      - US
+      - US 2
       - CN 4
+      - IR
+      - US 3
+      - US 4
+      - US 5
+      - US 6
+      - US 7
+      - US 8
+      - ""
       - CN 5
       - CN 6
+      - TW
+      - RU
       - CN 7
       - CN 8
+      - US 9
+      - HK
       - CN 9
       - CN 10
-      - KR
       - CN 11
-      - _BG_保加利亚 2
       - CN 12
+      - HK 2
+      - US 10
+      - US 11
+      - US 12
+      - US 13
+      - CN 13
+      - CN 14
+      - CN 15
+      - CN 16
+      - CN 17
+      - CN 18
+      - CN 19
+      - CN 20
+      - US 14
+      - US 15
+      - HK 3
+      - RU 2
+      - RU 3
+      - HK 4
+      - HK 5
+      - HK 6
+      - GB
+      - HK 7
+      - GB 2
+      - CN 21
+      - CN 22
+      - CN 23
+      - CN 24
+      - CN 25
+      - CN 26
+      - CN 27
+      - TW 2
+      - HK 8
+      - HK 9
+      - HK 10
+      - HK 11
+      - HK 12
+      - HK 13
+      - HK 14
+      - HK 15
+      - HK 16
+      - HK 17
+      - HK 18
+      - US 16
+      - US 17
+      - US 18
+      - US 19
+      - US 20
+      - KR
+      - US 21
+      - JP
+      - HK 19
+      - CN 28
+      - JP 2
+      - US 22
+      - CN 29
+      - CN 30
+      - CN 31
+      - CN 32
+      - CN 33
+      - CN 34
+      - CN 35
+      - CN 36
+      - CN 37
+      - CN 38
+      - CN 39
+      - CN 40
+      - CN 41
+      - CN 42
+      - CN 43
+      - CN 44
+      - CN 45
+      - CN 46
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - vpnpool-香港
-      - Relay_🇨🇳CN-🇭🇰HK_502
-      - ❶香港 A4 [H]
-      - ❷香港 12
-      - vpnpool-SG
-      - vpnpool-SG 2
-      - HK(TG/atyzcloud)_1
-      - ❶香港 B4 [H]
-      - ❷香港 51
-      - ❶新加坡 02 [M]
-      - vpnpool-VN-dip
-      - ❶日本 03 [转]
-      - Relay_🇨🇳CN-🏁ZZ_499
-      - ❶香港 B1 [推荐]
-      - vpnpool-TH-dip
-      - ❶香港 B2 [推荐]
-      - ❶香港 B3 [推荐]
-      - vpnpool-TH-dip 2
-      - 台湾02丨原生IP丨
-      - ❶台湾 02 [推荐]
-      - ❶香港 A3 [推荐]
-      - ❶香港 03 [BGP]
-      - ❶日本 01 [M]
-      - ❶香港 A1 [推荐]
-      - Relay_🇨🇳CN-🇰🇷KR_501
-      - ❶香港 A2 [推荐]
-      - ❷香港 C3 [推荐]
-      - ❷香港 C2 [推荐]
-      - ❷韩国 [转]
-      - vpnpool-US
       - CN
-      - Relay_🇨🇳CN-🇮🇳IN_500
-      - ❶香港 02 [BGP]
-      - vpnpool-US-dip
-      - vpnpool-RU
-      - ❶美国 02 [转]
-      - vpnpool-ID-dip
-      - vpnpool-KR
-      - 俄罗斯原生1-负载均衡-解锁流媒体
-      - ❷荷兰 [M]
-      - ❶香港 18
-      - 新加坡4
-      - Pool_🇹🇼TW_1673
-      - vpnpool-US-dip 2
-      - Relay_🇨🇳CN-🇺🇸US_503
       - CN 2
-      - vpnpool-IN
-      - Relay_🇨🇳CN-🇭🇰HK_498
-      - ❷法国 [转]
-      - vpnpool-VN-dip 2
-      - Relay_🇨🇳CN-🇷🇴RO_504
       - CN 3
-      - vpnpool-香港 2
-      - ❶台湾 03 [推荐]
-      - Pool_🇹🇼TW_1674
-      - Relay_🏁ZZ-🇹🇼TW_4724
-      - RU1(IEPL)+-+负载均衡专线
-      - _BG_保加利亚
-      - ❷英国 [转]
-      - ❶新加坡 03 [H]
+      - US
+      - US 2
       - CN 4
+      - IR
+      - US 3
+      - US 4
+      - US 5
+      - US 6
+      - US 7
+      - US 8
+      - ""
       - CN 5
       - CN 6
+      - TW
+      - RU
       - CN 7
       - CN 8
+      - US 9
+      - HK
       - CN 9
       - CN 10
-      - KR
       - CN 11
-      - _BG_保加利亚 2
       - CN 12
+      - HK 2
+      - US 10
+      - US 11
+      - US 12
+      - US 13
+      - CN 13
+      - CN 14
+      - CN 15
+      - CN 16
+      - CN 17
+      - CN 18
+      - CN 19
+      - CN 20
+      - US 14
+      - US 15
+      - HK 3
+      - RU 2
+      - RU 3
+      - HK 4
+      - HK 5
+      - HK 6
+      - GB
+      - HK 7
+      - GB 2
+      - CN 21
+      - CN 22
+      - CN 23
+      - CN 24
+      - CN 25
+      - CN 26
+      - CN 27
+      - TW 2
+      - HK 8
+      - HK 9
+      - HK 10
+      - HK 11
+      - HK 12
+      - HK 13
+      - HK 14
+      - HK 15
+      - HK 16
+      - HK 17
+      - HK 18
+      - US 16
+      - US 17
+      - US 18
+      - US 19
+      - US 20
+      - KR
+      - US 21
+      - JP
+      - HK 19
+      - CN 28
+      - JP 2
+      - US 22
+      - CN 29
+      - CN 30
+      - CN 31
+      - CN 32
+      - CN 33
+      - CN 34
+      - CN 35
+      - CN 36
+      - CN 37
+      - CN 38
+      - CN 39
+      - CN 40
+      - CN 41
+      - CN 42
+      - CN 43
+      - CN 44
+      - CN 45
+      - CN 46
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -324,331 +436,423 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - vpnpool-香港
-      - Relay_🇨🇳CN-🇭🇰HK_502
-      - ❶香港 A4 [H]
-      - ❷香港 12
-      - vpnpool-SG
-      - vpnpool-SG 2
-      - HK(TG/atyzcloud)_1
-      - ❶香港 B4 [H]
-      - ❷香港 51
-      - ❶新加坡 02 [M]
-      - vpnpool-VN-dip
-      - ❶日本 03 [转]
-      - Relay_🇨🇳CN-🏁ZZ_499
-      - ❶香港 B1 [推荐]
-      - vpnpool-TH-dip
-      - ❶香港 B2 [推荐]
-      - ❶香港 B3 [推荐]
-      - vpnpool-TH-dip 2
-      - 台湾02丨原生IP丨
-      - ❶台湾 02 [推荐]
-      - ❶香港 A3 [推荐]
-      - ❶香港 03 [BGP]
-      - ❶日本 01 [M]
-      - ❶香港 A1 [推荐]
-      - Relay_🇨🇳CN-🇰🇷KR_501
-      - ❶香港 A2 [推荐]
-      - ❷香港 C3 [推荐]
-      - ❷香港 C2 [推荐]
-      - ❷韩国 [转]
-      - vpnpool-US
       - CN
-      - Relay_🇨🇳CN-🇮🇳IN_500
-      - ❶香港 02 [BGP]
-      - vpnpool-US-dip
-      - vpnpool-RU
-      - ❶美国 02 [转]
-      - vpnpool-ID-dip
-      - vpnpool-KR
-      - 俄罗斯原生1-负载均衡-解锁流媒体
-      - ❷荷兰 [M]
-      - ❶香港 18
-      - 新加坡4
-      - Pool_🇹🇼TW_1673
-      - vpnpool-US-dip 2
-      - Relay_🇨🇳CN-🇺🇸US_503
       - CN 2
-      - vpnpool-IN
-      - Relay_🇨🇳CN-🇭🇰HK_498
-      - ❷法国 [转]
-      - vpnpool-VN-dip 2
-      - Relay_🇨🇳CN-🇷🇴RO_504
       - CN 3
-      - vpnpool-香港 2
-      - ❶台湾 03 [推荐]
-      - Pool_🇹🇼TW_1674
-      - Relay_🏁ZZ-🇹🇼TW_4724
-      - RU1(IEPL)+-+负载均衡专线
-      - _BG_保加利亚
-      - ❷英国 [转]
-      - ❶新加坡 03 [H]
+      - US
+      - US 2
       - CN 4
+      - IR
+      - US 3
+      - US 4
+      - US 5
+      - US 6
+      - US 7
+      - US 8
+      - ""
       - CN 5
       - CN 6
+      - TW
+      - RU
       - CN 7
       - CN 8
+      - US 9
+      - HK
       - CN 9
       - CN 10
-      - KR
       - CN 11
-      - _BG_保加利亚 2
       - CN 12
+      - HK 2
+      - US 10
+      - US 11
+      - US 12
+      - US 13
+      - CN 13
+      - CN 14
+      - CN 15
+      - CN 16
+      - CN 17
+      - CN 18
+      - CN 19
+      - CN 20
+      - US 14
+      - US 15
+      - HK 3
+      - RU 2
+      - RU 3
+      - HK 4
+      - HK 5
+      - HK 6
+      - GB
+      - HK 7
+      - GB 2
+      - CN 21
+      - CN 22
+      - CN 23
+      - CN 24
+      - CN 25
+      - CN 26
+      - CN 27
+      - TW 2
+      - HK 8
+      - HK 9
+      - HK 10
+      - HK 11
+      - HK 12
+      - HK 13
+      - HK 14
+      - HK 15
+      - HK 16
+      - HK 17
+      - HK 18
+      - US 16
+      - US 17
+      - US 18
+      - US 19
+      - US 20
+      - KR
+      - US 21
+      - JP
+      - HK 19
+      - CN 28
+      - JP 2
+      - US 22
+      - CN 29
+      - CN 30
+      - CN 31
+      - CN 32
+      - CN 33
+      - CN 34
+      - CN 35
+      - CN 36
+      - CN 37
+      - CN 38
+      - CN 39
+      - CN 40
+      - CN 41
+      - CN 42
+      - CN 43
+      - CN 44
+      - CN 45
+      - CN 46
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - vpnpool-香港
-      - ❶香港 A4 [H]
-      - ❷香港 12
-      - ❶香港 B4 [H]
-      - ❷香港 51
-      - ❶香港 B1 [推荐]
-      - ❶香港 B2 [推荐]
-      - ❶香港 B3 [推荐]
-      - 台湾02丨原生IP丨
-      - ❶台湾 02 [推荐]
-      - ❶香港 A3 [推荐]
-      - ❶香港 03 [BGP]
-      - ❶香港 A1 [推荐]
-      - ❶香港 A2 [推荐]
-      - ❷香港 C3 [推荐]
-      - ❷香港 C2 [推荐]
-      - ❶香港 02 [BGP]
-      - ❶香港 18
-      - vpnpool-香港 2
-      - ❶台湾 03 [推荐]
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - vpnpool-香港
-      - Relay_🇨🇳CN-🇭🇰HK_502
-      - ❶香港 A4 [H]
-      - ❷香港 12
-      - vpnpool-SG
-      - vpnpool-SG 2
-      - HK(TG/atyzcloud)_1
-      - ❶香港 B4 [H]
-      - ❷香港 51
-      - ❶新加坡 02 [M]
-      - vpnpool-VN-dip
-      - ❶日本 03 [转]
-      - Relay_🇨🇳CN-🏁ZZ_499
-      - ❶香港 B1 [推荐]
-      - vpnpool-TH-dip
-      - ❶香港 B2 [推荐]
-      - ❶香港 B3 [推荐]
-      - vpnpool-TH-dip 2
-      - 台湾02丨原生IP丨
-      - ❶台湾 02 [推荐]
-      - ❶香港 A3 [推荐]
-      - ❶香港 03 [BGP]
-      - ❶日本 01 [M]
-      - ❶香港 A1 [推荐]
-      - Relay_🇨🇳CN-🇰🇷KR_501
-      - ❶香港 A2 [推荐]
-      - ❷香港 C3 [推荐]
-      - ❷香港 C2 [推荐]
-      - ❷韩国 [转]
-      - vpnpool-US
       - CN
-      - Relay_🇨🇳CN-🇮🇳IN_500
-      - ❶香港 02 [BGP]
-      - vpnpool-US-dip
-      - vpnpool-RU
-      - ❶美国 02 [转]
-      - vpnpool-ID-dip
-      - vpnpool-KR
-      - 俄罗斯原生1-负载均衡-解锁流媒体
-      - ❷荷兰 [M]
-      - ❶香港 18
-      - 新加坡4
-      - Pool_🇹🇼TW_1673
-      - vpnpool-US-dip 2
-      - Relay_🇨🇳CN-🇺🇸US_503
       - CN 2
-      - vpnpool-IN
-      - Relay_🇨🇳CN-🇭🇰HK_498
-      - ❷法国 [转]
-      - vpnpool-VN-dip 2
-      - Relay_🇨🇳CN-🇷🇴RO_504
       - CN 3
-      - vpnpool-香港 2
-      - ❶台湾 03 [推荐]
-      - Pool_🇹🇼TW_1674
-      - Relay_🏁ZZ-🇹🇼TW_4724
-      - RU1(IEPL)+-+负载均衡专线
-      - _BG_保加利亚
-      - ❷英国 [转]
-      - ❶新加坡 03 [H]
+      - US
+      - US 2
       - CN 4
+      - IR
+      - US 3
+      - US 4
+      - US 5
+      - US 6
+      - US 7
+      - US 8
+      - ""
       - CN 5
       - CN 6
+      - TW
+      - RU
       - CN 7
       - CN 8
+      - US 9
+      - HK
       - CN 9
       - CN 10
-      - KR
       - CN 11
-      - _BG_保加利亚 2
       - CN 12
+      - HK 2
+      - US 10
+      - US 11
+      - US 12
+      - US 13
+      - CN 13
+      - CN 14
+      - CN 15
+      - CN 16
+      - CN 17
+      - CN 18
+      - CN 19
+      - CN 20
+      - US 14
+      - US 15
+      - HK 3
+      - RU 2
+      - RU 3
+      - HK 4
+      - HK 5
+      - HK 6
+      - GB
+      - HK 7
+      - GB 2
+      - CN 21
+      - CN 22
+      - CN 23
+      - CN 24
+      - CN 25
+      - CN 26
+      - CN 27
+      - TW 2
+      - HK 8
+      - HK 9
+      - HK 10
+      - HK 11
+      - HK 12
+      - HK 13
+      - HK 14
+      - HK 15
+      - HK 16
+      - HK 17
+      - HK 18
+      - US 16
+      - US 17
+      - US 18
+      - US 19
+      - US 20
+      - KR
+      - US 21
+      - JP
+      - HK 19
+      - CN 28
+      - JP 2
+      - US 22
+      - CN 29
+      - CN 30
+      - CN 31
+      - CN 32
+      - CN 33
+      - CN 34
+      - CN 35
+      - CN 36
+      - CN 37
+      - CN 38
+      - CN 39
+      - CN 40
+      - CN 41
+      - CN 42
+      - CN 43
+      - CN 44
+      - CN 45
+      - CN 46
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - vpnpool-香港
-      - Relay_🇨🇳CN-🇭🇰HK_502
-      - ❶香港 A4 [H]
-      - ❷香港 12
-      - vpnpool-SG
-      - vpnpool-SG 2
-      - HK(TG/atyzcloud)_1
-      - ❶香港 B4 [H]
-      - ❷香港 51
-      - ❶新加坡 02 [M]
-      - vpnpool-VN-dip
-      - ❶日本 03 [转]
-      - Relay_🇨🇳CN-🏁ZZ_499
-      - ❶香港 B1 [推荐]
-      - vpnpool-TH-dip
-      - ❶香港 B2 [推荐]
-      - ❶香港 B3 [推荐]
-      - vpnpool-TH-dip 2
-      - 台湾02丨原生IP丨
-      - ❶台湾 02 [推荐]
-      - ❶香港 A3 [推荐]
-      - ❶香港 03 [BGP]
-      - ❶日本 01 [M]
-      - ❶香港 A1 [推荐]
-      - Relay_🇨🇳CN-🇰🇷KR_501
-      - ❶香港 A2 [推荐]
-      - ❷香港 C3 [推荐]
-      - ❷香港 C2 [推荐]
-      - ❷韩国 [转]
-      - vpnpool-US
       - CN
-      - Relay_🇨🇳CN-🇮🇳IN_500
-      - ❶香港 02 [BGP]
-      - vpnpool-US-dip
-      - vpnpool-RU
-      - ❶美国 02 [转]
-      - vpnpool-ID-dip
-      - vpnpool-KR
-      - 俄罗斯原生1-负载均衡-解锁流媒体
-      - ❷荷兰 [M]
-      - ❶香港 18
-      - 新加坡4
-      - Pool_🇹🇼TW_1673
-      - vpnpool-US-dip 2
-      - Relay_🇨🇳CN-🇺🇸US_503
       - CN 2
-      - vpnpool-IN
-      - Relay_🇨🇳CN-🇭🇰HK_498
-      - ❷法国 [转]
-      - vpnpool-VN-dip 2
-      - Relay_🇨🇳CN-🇷🇴RO_504
       - CN 3
-      - vpnpool-香港 2
-      - ❶台湾 03 [推荐]
-      - Pool_🇹🇼TW_1674
-      - Relay_🏁ZZ-🇹🇼TW_4724
-      - RU1(IEPL)+-+负载均衡专线
-      - _BG_保加利亚
-      - ❷英国 [转]
-      - ❶新加坡 03 [H]
+      - US
+      - US 2
       - CN 4
+      - IR
+      - US 3
+      - US 4
+      - US 5
+      - US 6
+      - US 7
+      - US 8
+      - ""
       - CN 5
       - CN 6
+      - TW
+      - RU
       - CN 7
       - CN 8
+      - US 9
+      - HK
       - CN 9
       - CN 10
-      - KR
       - CN 11
-      - _BG_保加利亚 2
       - CN 12
+      - HK 2
+      - US 10
+      - US 11
+      - US 12
+      - US 13
+      - CN 13
+      - CN 14
+      - CN 15
+      - CN 16
+      - CN 17
+      - CN 18
+      - CN 19
+      - CN 20
+      - US 14
+      - US 15
+      - HK 3
+      - RU 2
+      - RU 3
+      - HK 4
+      - HK 5
+      - HK 6
+      - GB
+      - HK 7
+      - GB 2
+      - CN 21
+      - CN 22
+      - CN 23
+      - CN 24
+      - CN 25
+      - CN 26
+      - CN 27
+      - TW 2
+      - HK 8
+      - HK 9
+      - HK 10
+      - HK 11
+      - HK 12
+      - HK 13
+      - HK 14
+      - HK 15
+      - HK 16
+      - HK 17
+      - HK 18
+      - US 16
+      - US 17
+      - US 18
+      - US 19
+      - US 20
+      - KR
+      - US 21
+      - JP
+      - HK 19
+      - CN 28
+      - JP 2
+      - US 22
+      - CN 29
+      - CN 30
+      - CN 31
+      - CN 32
+      - CN 33
+      - CN 34
+      - CN 35
+      - CN 36
+      - CN 37
+      - CN 38
+      - CN 39
+      - CN 40
+      - CN 41
+      - CN 42
+      - CN 43
+      - CN 44
+      - CN 45
+      - CN 46
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - vpnpool-香港
-      - Relay_🇨🇳CN-🇭🇰HK_502
-      - ❶香港 A4 [H]
-      - ❷香港 12
-      - vpnpool-SG
-      - vpnpool-SG 2
-      - HK(TG/atyzcloud)_1
-      - ❶香港 B4 [H]
-      - ❷香港 51
-      - ❶新加坡 02 [M]
-      - vpnpool-VN-dip
-      - ❶日本 03 [转]
-      - Relay_🇨🇳CN-🏁ZZ_499
-      - ❶香港 B1 [推荐]
-      - vpnpool-TH-dip
-      - ❶香港 B2 [推荐]
-      - ❶香港 B3 [推荐]
-      - vpnpool-TH-dip 2
-      - 台湾02丨原生IP丨
-      - ❶台湾 02 [推荐]
-      - ❶香港 A3 [推荐]
-      - ❶香港 03 [BGP]
-      - ❶日本 01 [M]
-      - ❶香港 A1 [推荐]
-      - Relay_🇨🇳CN-🇰🇷KR_501
-      - ❶香港 A2 [推荐]
-      - ❷香港 C3 [推荐]
-      - ❷香港 C2 [推荐]
-      - ❷韩国 [转]
-      - vpnpool-US
       - CN
-      - Relay_🇨🇳CN-🇮🇳IN_500
-      - ❶香港 02 [BGP]
-      - vpnpool-US-dip
-      - vpnpool-RU
-      - ❶美国 02 [转]
-      - vpnpool-ID-dip
-      - vpnpool-KR
-      - 俄罗斯原生1-负载均衡-解锁流媒体
-      - ❷荷兰 [M]
-      - ❶香港 18
-      - 新加坡4
-      - Pool_🇹🇼TW_1673
-      - vpnpool-US-dip 2
-      - Relay_🇨🇳CN-🇺🇸US_503
       - CN 2
-      - vpnpool-IN
-      - Relay_🇨🇳CN-🇭🇰HK_498
-      - ❷法国 [转]
-      - vpnpool-VN-dip 2
-      - Relay_🇨🇳CN-🇷🇴RO_504
       - CN 3
-      - vpnpool-香港 2
-      - ❶台湾 03 [推荐]
-      - Pool_🇹🇼TW_1674
-      - Relay_🏁ZZ-🇹🇼TW_4724
-      - RU1(IEPL)+-+负载均衡专线
-      - _BG_保加利亚
-      - ❷英国 [转]
-      - ❶新加坡 03 [H]
+      - US
+      - US 2
       - CN 4
+      - IR
+      - US 3
+      - US 4
+      - US 5
+      - US 6
+      - US 7
+      - US 8
+      - ""
       - CN 5
       - CN 6
+      - TW
+      - RU
       - CN 7
       - CN 8
+      - US 9
+      - HK
       - CN 9
       - CN 10
-      - KR
       - CN 11
-      - _BG_保加利亚 2
       - CN 12
+      - HK 2
+      - US 10
+      - US 11
+      - US 12
+      - US 13
+      - CN 13
+      - CN 14
+      - CN 15
+      - CN 16
+      - CN 17
+      - CN 18
+      - CN 19
+      - CN 20
+      - US 14
+      - US 15
+      - HK 3
+      - RU 2
+      - RU 3
+      - HK 4
+      - HK 5
+      - HK 6
+      - GB
+      - HK 7
+      - GB 2
+      - CN 21
+      - CN 22
+      - CN 23
+      - CN 24
+      - CN 25
+      - CN 26
+      - CN 27
+      - TW 2
+      - HK 8
+      - HK 9
+      - HK 10
+      - HK 11
+      - HK 12
+      - HK 13
+      - HK 14
+      - HK 15
+      - HK 16
+      - HK 17
+      - HK 18
+      - US 16
+      - US 17
+      - US 18
+      - US 19
+      - US 20
+      - KR
+      - US 21
+      - JP
+      - HK 19
+      - CN 28
+      - JP 2
+      - US 22
+      - CN 29
+      - CN 30
+      - CN 31
+      - CN 32
+      - CN 33
+      - CN 34
+      - CN 35
+      - CN 36
+      - CN 37
+      - CN 38
+      - CN 39
+      - CN 40
+      - CN 41
+      - CN 42
+      - CN 43
+      - CN 44
+      - CN 45
+      - CN 46
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -664,77 +868,105 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - vpnpool-香港
-      - Relay_🇨🇳CN-🇭🇰HK_502
-      - ❶香港 A4 [H]
-      - ❷香港 12
-      - vpnpool-SG
-      - vpnpool-SG 2
-      - HK(TG/atyzcloud)_1
-      - ❶香港 B4 [H]
-      - ❷香港 51
-      - ❶新加坡 02 [M]
-      - vpnpool-VN-dip
-      - ❶日本 03 [转]
-      - Relay_🇨🇳CN-🏁ZZ_499
-      - ❶香港 B1 [推荐]
-      - vpnpool-TH-dip
-      - ❶香港 B2 [推荐]
-      - ❶香港 B3 [推荐]
-      - vpnpool-TH-dip 2
-      - 台湾02丨原生IP丨
-      - ❶台湾 02 [推荐]
-      - ❶香港 A3 [推荐]
-      - ❶香港 03 [BGP]
-      - ❶日本 01 [M]
-      - ❶香港 A1 [推荐]
-      - Relay_🇨🇳CN-🇰🇷KR_501
-      - ❶香港 A2 [推荐]
-      - ❷香港 C3 [推荐]
-      - ❷香港 C2 [推荐]
-      - ❷韩国 [转]
-      - vpnpool-US
       - CN
-      - Relay_🇨🇳CN-🇮🇳IN_500
-      - ❶香港 02 [BGP]
-      - vpnpool-US-dip
-      - vpnpool-RU
-      - ❶美国 02 [转]
-      - vpnpool-ID-dip
-      - vpnpool-KR
-      - 俄罗斯原生1-负载均衡-解锁流媒体
-      - ❷荷兰 [M]
-      - ❶香港 18
-      - 新加坡4
-      - Pool_🇹🇼TW_1673
-      - vpnpool-US-dip 2
-      - Relay_🇨🇳CN-🇺🇸US_503
       - CN 2
-      - vpnpool-IN
-      - Relay_🇨🇳CN-🇭🇰HK_498
-      - ❷法国 [转]
-      - vpnpool-VN-dip 2
-      - Relay_🇨🇳CN-🇷🇴RO_504
       - CN 3
-      - vpnpool-香港 2
-      - ❶台湾 03 [推荐]
-      - Pool_🇹🇼TW_1674
-      - Relay_🏁ZZ-🇹🇼TW_4724
-      - RU1(IEPL)+-+负载均衡专线
-      - _BG_保加利亚
-      - ❷英国 [转]
-      - ❶新加坡 03 [H]
+      - US
+      - US 2
       - CN 4
+      - IR
+      - US 3
+      - US 4
+      - US 5
+      - US 6
+      - US 7
+      - US 8
+      - ""
       - CN 5
       - CN 6
+      - TW
+      - RU
       - CN 7
       - CN 8
+      - US 9
+      - HK
       - CN 9
       - CN 10
-      - KR
       - CN 11
-      - _BG_保加利亚 2
       - CN 12
+      - HK 2
+      - US 10
+      - US 11
+      - US 12
+      - US 13
+      - CN 13
+      - CN 14
+      - CN 15
+      - CN 16
+      - CN 17
+      - CN 18
+      - CN 19
+      - CN 20
+      - US 14
+      - US 15
+      - HK 3
+      - RU 2
+      - RU 3
+      - HK 4
+      - HK 5
+      - HK 6
+      - GB
+      - HK 7
+      - GB 2
+      - CN 21
+      - CN 22
+      - CN 23
+      - CN 24
+      - CN 25
+      - CN 26
+      - CN 27
+      - TW 2
+      - HK 8
+      - HK 9
+      - HK 10
+      - HK 11
+      - HK 12
+      - HK 13
+      - HK 14
+      - HK 15
+      - HK 16
+      - HK 17
+      - HK 18
+      - US 16
+      - US 17
+      - US 18
+      - US 19
+      - US 20
+      - KR
+      - US 21
+      - JP
+      - HK 19
+      - CN 28
+      - JP 2
+      - US 22
+      - CN 29
+      - CN 30
+      - CN 31
+      - CN 32
+      - CN 33
+      - CN 34
+      - CN 35
+      - CN 36
+      - CN 37
+      - CN 38
+      - CN 39
+      - CN 40
+      - CN 41
+      - CN 42
+      - CN 43
+      - CN 44
+      - CN 45
+      - CN 46
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
