@@ -5,287 +5,199 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: US_8du.shop, server: vpna1.herokuapp.com, port: 443, type: vmess, uuid: 8ccdfb2e-e039-47f9-a460-8ca6183d701c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ray, ws-headers: {Host: vpna1.herokuapp.com}, udp: true}
-  - {name: 8du.shop, server: v5.ssrsub.com, port: 8443, type: vmess, uuid: b7c70df3-f92f-4800-a8e1-67e6dc833256, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ssrsub, ws-headers: {Host: v5.ssrsub.com}, udp: true}
-  - {name: 8du.shop 2, server: hax.hax01.tk, port: 443, type: vmess, uuid: e2e073ce-c1d4-43ed-89f5-ca978507548a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: hax.hax01.tk}, udp: true}
-  - {name: US_8du.shop 2, server: 45.66.157.162, port: 12388, type: vmess, uuid: 6bb71b78-b299-11ec-9211-00163c76ea30, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /cYkKjbF7/, ws-headers: {Host: 45.66.157.162}, udp: true}
-  - {name: US_8du.shop 3, server: wsclash1.free4444.xyz, port: 10019, type: vmess, uuid: b6124e52-b4bc-11ec-8937-00163cdcde4a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /PnlgSf7a/, ws-headers: {Host: wsclash1.free4444.xyz}, udp: true}
-  - {name: US_8du.shop 4, server: 88.218.94.22, port: 29988, type: vmess, uuid: e020b92c-b4ee-11ec-a479-00163c4358f0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /x6UiVPhJ/, ws-headers: {Host: wsclash2.free4444.xyz}, udp: true}
-  - {name: US_8du.shop 5, server: 85.209.159.105, port: 10011, type: vmess, uuid: 8d36810e-b0b3-11ec-80b8-00163c3fe0cd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /2U4LiB6X/, ws-headers: {Host: 85.209.159.105}, udp: true}
-  - {name: CN_8du.shop, server: gy-node.csccdd.xyz, port: 20356, type: vmess, uuid: 380640bb-201f-4903-9aab-a6418bc40563, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: gy-node.csccdd.xyz}, udp: true}
-  - {name: US_8du.shop 6, server: hax2.hax01.ml, port: 443, type: vmess, uuid: 25af03c3-27ff-4c14-c142-ad7694ec42f9, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: hax2.hax01.ml}, udp: true}
-  - {name: CN_8du.shop 2, server: cn1.relay.iepl.pw, port: 50400, type: ss, cipher: aes-128-gcm, password: 0f77db87-854c-428c-a725-c56f548fcc1a, udp: true}
-  - {name: CN_8du.shop 3, server: cn1.relay.iepl.pw, port: 50300, type: ss, cipher: aes-128-gcm, password: 0f77db87-854c-428c-a725-c56f548fcc1a, udp: true}
-  - {name: PL_8du.shop, server: 217.30.10.67, port: 9097, type: ss, cipher: aes-256-cfb, password: Sn5B7jTqr76aCJT8, udp: true}
-  - {name: AU_8du.shop, server: 185.167.116.253, port: 9057, type: ss, cipher: aes-256-cfb, password: wjTugX3ZtHMB9c3Z, udp: true}
-  - {name: PL_8du.shop 2, server: 217.30.10.67, port: 9094, type: ss, cipher: aes-256-cfb, password: rpgbNnU9rDDU4aWZ, udp: true}
-  - {name: AU_8du.shop 2, server: 185.167.116.253, port: 9026, type: ss, cipher: aes-256-cfb, password: QWDDvVE9npNurQfA, udp: true}
-  - {name: GB_8du.shop, server: 152.89.210.84, port: 9060, type: ss, cipher: aes-256-cfb, password: ueLXVkvh4hckhErQ, udp: true}
-  - {name: AU_8du.shop 3, server: 185.167.116.253, port: 9073, type: ss, cipher: aes-256-cfb, password: daFYagqDdBdA6VTX, udp: true}
-  - {name: PL_8du.shop 3, server: 217.30.10.64, port: 9084, type: ss, cipher: aes-256-cfb, password: c3NtHJ5ujV2tGDfj, udp: true}
-  - {name: AU_8du.shop 4, server: 185.167.116.252, port: 9064, type: ss, cipher: aes-256-cfb, password: cp8pRSUAyLhTfVWH, udp: true}
-  - {name: PL_8du.shop 4, server: 217.30.10.65, port: 9046, type: ss, cipher: aes-256-cfb, password: NvS8N4Vf8qAGPSCL, udp: true}
-  - {name: PL_8du.shop 5, server: 217.30.10.64, port: 9020, type: ss, cipher: aes-256-cfb, password: BNmAXXxAHYpTRdzu, udp: true}
-  - {name: PL_8du.shop 6, server: 217.30.10.67, port: 9040, type: ss, cipher: aes-256-cfb, password: p9z5BVADH2YFs3MN, udp: true}
-  - {name: CN_8du.shop 4, server: cn1.relay.iepl.pw, port: 50700, type: ss, cipher: aes-128-gcm, password: 0f77db87-854c-428c-a725-c56f548fcc1a, udp: true}
-  - {name: PL_8du.shop 7, server: 217.30.10.65, port: 9037, type: ss, cipher: aes-256-cfb, password: TN2YqghxeFDKZfLU, udp: true}
-  - {name: PL_8du.shop 8, server: 217.30.10.65, port: 9027, type: ss, cipher: aes-256-cfb, password: EXN3S3eQpjE7EJu8, udp: true}
-  - {name: AU_8du.shop 5, server: 185.167.116.253, port: 9040, type: ss, cipher: aes-256-cfb, password: p9z5BVADH2YFs3MN, udp: true}
-  - {name: PL_8du.shop 9, server: 217.30.10.67, port: 9006, type: ss, cipher: aes-256-cfb, password: FAdUvMJUq5vDgKEq, udp: true}
-  - {name: PL_8du.shop 10, server: 217.30.10.65, port: 9014, type: ss, cipher: aes-256-cfb, password: KnJGad3FqTvjqbaX, udp: true}
-  - {name: PL_8du.shop 11, server: 217.30.10.65, port: 9026, type: ss, cipher: aes-256-cfb, password: QWDDvVE9npNurQfA, udp: true}
-  - {name: PL_8du.shop 12, server: 217.30.10.68, port: 9097, type: ss, cipher: aes-256-cfb, password: Sn5B7jTqr76aCJT8, udp: true}
-  - {name: AU_8du.shop 6, server: 185.167.116.253, port: 9064, type: ss, cipher: aes-256-cfb, password: cp8pRSUAyLhTfVWH, udp: true}
-  - {name: AU_8du.shop 7, server: 185.167.116.253, port: 9079, type: ss, cipher: aes-256-cfb, password: TPqX8edgbAURcAMb, udp: true}
-  - {name: PL_8du.shop 13, server: 217.30.10.67, port: 9060, type: ss, cipher: aes-256-cfb, password: ueLXVkvh4hckhErQ, udp: true}
-  - {name: PL_8du.shop 14, server: 217.30.10.64, port: 9073, type: ss, cipher: aes-256-cfb, password: daFYagqDdBdA6VTX, udp: true}
-  - {name: CN_8du.shop 5, server: hk-s-route.teacher2060.com, port: 603, type: ss, cipher: chacha20-ietf-poly1305, password: oq7Hsx00G4, udp: true}
-  - {name: PL_8du.shop 15, server: 217.30.10.68, port: 9001, type: ss, cipher: aes-256-cfb, password: UkXRsXvR6buDMG2Y, udp: true}
-  - {name: PL_8du.shop 16, server: 217.30.10.67, port: 9046, type: ss, cipher: aes-256-cfb, password: NvS8N4Vf8qAGPSCL, udp: true}
-  - {name: PL_8du.shop 17, server: 217.30.10.64, port: 9008, type: ss, cipher: aes-256-cfb, password: y9VURyNzJWNRYEGQ, udp: true}
-  - {name: CN_8du.shop 6, server: jp-s-route.teacher2060.com, port: 601, type: ss, cipher: chacha20-ietf-poly1305, password: oq7Hsx00G4, udp: true}
-  - {name: AU_8du.shop 8, server: 185.167.116.253, port: 9046, type: ss, cipher: aes-256-cfb, password: NvS8N4Vf8qAGPSCL, udp: true}
-  - {name: PL_8du.shop 18, server: 217.30.10.65, port: 9059, type: ss, cipher: aes-256-cfb, password: 9XwYyZsK8SNzQDtY, udp: true}
-  - {name: PL_8du.shop 19, server: 217.30.10.64, port: 9041, type: ss, cipher: aes-256-cfb, password: U6qnYRhfyDmn8sgn, udp: true}
-  - {name: PL_8du.shop 20, server: 217.30.10.68, port: 9027, type: ss, cipher: aes-256-cfb, password: EXN3S3eQpjE7EJu8, udp: true}
-  - {name: PL_8du.shop 21, server: 217.30.10.65, port: 9043, type: ss, cipher: aes-256-cfb, password: HSZuyJQcWe8dxNdF, udp: true}
-  - {name: PL_8du.shop 22, server: 217.30.10.67, port: 9019, type: ss, cipher: aes-256-cfb, password: GA9KzeEgvfxNrgmM, udp: true}
-  - {name: CN_8du.shop 7, server: 14.29.124.168, port: 25231, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: PL_8du.shop 23, server: 217.30.10.65, port: 9040, type: ss, cipher: aes-256-cfb, password: p9z5BVADH2YFs3MN, udp: true}
-  - {name: PL_8du.shop 24, server: 217.30.10.65, port: 9064, type: ss, cipher: aes-256-cfb, password: cp8pRSUAyLhTfVWH, udp: true}
-  - {name: PL_8du.shop 25, server: 217.30.10.65, port: 9053, type: ss, cipher: aes-256-cfb, password: SBM7R883jBmnqe6C, udp: true}
-  - {name: PL_8du.shop 26, server: 217.30.10.65, port: 9045, type: ss, cipher: aes-256-cfb, password: Lp27rqyJq72bZsqX, udp: true}
-  - {name: PL_8du.shop 27, server: 217.30.10.67, port: 9038, type: ss, cipher: aes-256-cfb, password: gYCYXfkUQEs2TaJQ, udp: true}
-  - {name: PL_8du.shop 28, server: 217.30.10.64, port: 9097, type: ss, cipher: aes-256-cfb, password: Sn5B7jTqr76aCJT8, udp: true}
-  - {name: CN_8du.shop 8, server: cn1.relay.iepl.pw, port: 50200, type: ss, cipher: aes-128-gcm, password: 0f77db87-854c-428c-a725-c56f548fcc1a, udp: true}
-  - {name: GB_8du.shop 2, server: 185.167.117.171, port: 9003, type: ss, cipher: aes-256-cfb, password: JdmRK9gMEqFgs8nP, udp: true}
-  - {name: PL_8du.shop 29, server: 217.30.10.65, port: 9006, type: ss, cipher: aes-256-cfb, password: FAdUvMJUq5vDgKEq, udp: true}
-  - {name: PL_8du.shop 30, server: 217.30.10.64, port: 9050, type: ss, cipher: aes-256-cfb, password: FG5ddLsMPbV5CutE, udp: true}
-  - {name: PL_8du.shop 31, server: 217.30.10.68, port: 9093, type: ss, cipher: aes-256-cfb, password: wfLC2y7rzZyCmuyt, udp: true}
-  - {name: PL_8du.shop 32, server: 217.30.10.65, port: 9073, type: ss, cipher: aes-256-cfb, password: daFYagqDdBdA6VTX, udp: true}
-  - {name: PL_8du.shop 33, server: 217.30.10.65, port: 9033, type: ss, cipher: aes-256-cfb, password: UTJA57ypk2XKQpnm, udp: true}
-  - {name: NL_8du.shop, server: 213.183.51.172, port: 9020, type: ss, cipher: aes-256-cfb, password: BNmAXXxAHYpTRdzu, udp: true}
-  - {name: PL_8du.shop 34, server: 217.30.10.65, port: 9050, type: ss, cipher: aes-256-cfb, password: FG5ddLsMPbV5CutE, udp: true}
-  - {name: PL_8du.shop 35, server: 217.30.10.68, port: 9019, type: ss, cipher: aes-256-cfb, password: GA9KzeEgvfxNrgmM, udp: true}
-  - {name: PL_8du.shop 36, server: 217.30.10.67, port: 9041, type: ss, cipher: aes-256-cfb, password: U6qnYRhfyDmn8sgn, udp: true}
-  - {name: PL_8du.shop 37, server: 217.30.10.68, port: 9005, type: ss, cipher: aes-256-cfb, password: ZET59LF6DvCC8KVt, udp: true}
-  - {name: PL_8du.shop 38, server: 217.30.10.65, port: 9007, type: ss, cipher: aes-256-cfb, password: kSPmvwdFzGMMW5pY, udp: true}
-  - {name: PL_8du.shop 39, server: 217.30.10.65, port: 9001, type: ss, cipher: aes-256-cfb, password: UkXRsXvR6buDMG2Y, udp: true}
-  - {name: PL_8du.shop 40, server: 217.30.10.68, port: 9070, type: ss, cipher: aes-256-cfb, password: bf7v334KKDV3YDhH, udp: true}
-  - {name: PL_8du.shop 41, server: 217.30.10.67, port: 9088, type: ss, cipher: aes-256-cfb, password: f8npKgNzdkss2ytn, udp: true}
-  - {name: PL_8du.shop 42, server: 217.30.10.65, port: 9008, type: ss, cipher: aes-256-cfb, password: y9VURyNzJWNRYEGQ, udp: true}
-  - {name: CN_8du.shop 9, server: 14.29.124.168, port: 25256, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: PL_8du.shop 43, server: 217.30.10.67, port: 9026, type: ss, cipher: aes-256-cfb, password: QWDDvVE9npNurQfA, udp: true}
-  - {name: US_8du.shop 7, server: 45.66.157.193, port: 34567, type: ss, cipher: aes-256-gcm, password: dongtaiwang.com, udp: true}
-  - {name: PL_8du.shop 44, server: 217.30.10.64, port: 9025, type: ss, cipher: aes-256-cfb, password: XPtzA9sCug3SPR4c, udp: true}
-  - {name: CN_8du.shop 10, server: 14.29.124.168, port: 25238, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_8du.shop 11, server: 14.29.124.168, port: 25218, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_8du.shop 12, server: 14.29.124.168, port: 25266, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_8du.shop 13, server: 14.29.124.168, port: 25270, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_8du.shop 14, server: 14.29.124.168, port: 25210, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_8du.shop 15, server: sg-s-route.teacher2060.com, port: 602, type: ss, cipher: chacha20-ietf-poly1305, password: oq7Hsx00G4, udp: true}
-  - {name: PL_8du.shop 45, server: 217.30.10.65, port: 9018, type: ss, cipher: aes-256-cfb, password: fG2artUmHfNT2cX7, udp: true}
-  - {name: PL_8du.shop 46, server: 217.30.10.67, port: 9084, type: ss, cipher: aes-256-cfb, password: c3NtHJ5ujV2tGDfj, udp: true}
-  - {name: PL_8du.shop 47, server: 217.30.10.68, port: 9098, type: ss, cipher: aes-256-cfb, password: aLpQtfEZe445QyHk, udp: true}
-  - {name: CN_8du.shop 16, server: 14.29.124.168, port: 25286, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_8du.shop 17, server: 14.29.124.168, port: 25295, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_8du.shop 18, server: 14.29.124.168, port: 25247, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_8du.shop 19, server: 14.29.124.168, port: 25294, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: PL_8du.shop 48, server: 217.30.10.67, port: 9018, type: ss, cipher: aes-256-cfb, password: fG2artUmHfNT2cX7, udp: true}
-  - {name: PL_8du.shop 49, server: 217.30.10.64, port: 9056, type: ss, cipher: aes-256-cfb, password: rNBfNuuANFCAk7KB, udp: true}
-  - {name: PL_8du.shop 50, server: 217.30.10.65, port: 9025, type: ss, cipher: aes-256-cfb, password: XPtzA9sCug3SPR4c, udp: true}
-  - {name: CN_8du.shop 20, server: 14.29.124.168, port: 25220, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_8du.shop 21, server: 14.29.124.168, port: 25252, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: PL_8du.shop 51, server: 217.30.10.67, port: 9056, type: ss, cipher: aes-256-cfb, password: rNBfNuuANFCAk7KB, udp: true}
-  - {name: PL_8du.shop 52, server: 217.30.10.67, port: 9011, type: ss, cipher: aes-256-cfb, password: M3t2ZEQcMGRWBjRa, udp: true}
-  - {name: CN_8du.shop 22, server: 14.29.124.168, port: 25289, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: PL_8du.shop 53, server: 217.30.10.66, port: 9094, type: ss, cipher: aes-256-cfb, password: rpgbNnU9rDDU4aWZ, udp: true}
-  - {name: PL_8du.shop 54, server: 217.30.10.65, port: 9020, type: ss, cipher: aes-256-cfb, password: BNmAXXxAHYpTRdzu, udp: true}
-  - {name: PL_8du.shop 55, server: 217.30.10.67, port: 9043, type: ss, cipher: aes-256-cfb, password: HSZuyJQcWe8dxNdF, udp: true}
-  - {name: PL_8du.shop 56, server: 217.30.10.65, port: 9097, type: ss, cipher: aes-256-cfb, password: Sn5B7jTqr76aCJT8, udp: true}
-  - {name: CN_8du.shop 23, server: 14.29.124.168, port: 25297, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: PL_8du.shop 57, server: 217.30.10.67, port: 9059, type: ss, cipher: aes-256-cfb, password: 9XwYyZsK8SNzQDtY, udp: true}
-  - {name: PL_8du.shop 58, server: 217.30.10.64, port: 9064, type: ss, cipher: aes-256-cfb, password: cp8pRSUAyLhTfVWH, udp: true}
-  - {name: NL_8du.shop 2, server: 213.183.51.172, port: 9070, type: ss, cipher: aes-256-cfb, password: bf7v334KKDV3YDhH, udp: true}
-  - {name: PL_8du.shop 59, server: 217.30.10.65, port: 9005, type: ss, cipher: aes-256-cfb, password: ZET59LF6DvCC8KVt, udp: true}
-  - {name: CN_8du.shop 24, server: 14.29.124.168, port: 25230, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_8du.shop 25, server: 14.29.124.168, port: 25296, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: PL_8du.shop 60, server: 217.30.10.64, port: 9057, type: ss, cipher: aes-256-cfb, password: wjTugX3ZtHMB9c3Z, udp: true}
-  - {name: PL_8du.shop 61, server: 217.30.10.68, port: 9020, type: ss, cipher: aes-256-cfb, password: BNmAXXxAHYpTRdzu, udp: true}
-  - {name: PL_8du.shop 62, server: 217.30.10.68, port: 9031, type: ss, cipher: aes-256-cfb, password: BwcAUZk8hUFAkDGN, udp: true}
-  - {name: PL_8du.shop 63, server: 217.30.10.68, port: 9041, type: ss, cipher: aes-256-cfb, password: U6qnYRhfyDmn8sgn, udp: true}
-  - {name: CN_8du.shop 26, server: 14.29.124.168, port: 25279, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: AU_8du.shop 9, server: 185.167.116.253, port: 9006, type: ss, cipher: aes-256-cfb, password: FAdUvMJUq5vDgKEq, udp: true}
-  - {name: CN_8du.shop 27, server: cn1.relay.iepl.pw, port: 50500, type: ss, cipher: aes-128-gcm, password: 0f77db87-854c-428c-a725-c56f548fcc1a, udp: true}
-  - {name: PL_8du.shop 64, server: 217.30.10.68, port: 9042, type: ss, cipher: aes-256-cfb, password: S7KwUu7yBy58S3Ga, udp: true}
-  - {name: PL_8du.shop 65, server: 217.30.10.64, port: 9018, type: ss, cipher: aes-256-cfb, password: fG2artUmHfNT2cX7, udp: true}
-  - {name: PL_8du.shop 66, server: 217.30.10.64, port: 9070, type: ss, cipher: aes-256-cfb, password: bf7v334KKDV3YDhH, udp: true}
-  - {name: PL_8du.shop 67, server: 217.30.10.65, port: 9003, type: ss, cipher: aes-256-cfb, password: JdmRK9gMEqFgs8nP, udp: true}
-  - {name: PL_8du.shop 68, server: 217.30.10.68, port: 9025, type: ss, cipher: aes-256-cfb, password: XPtzA9sCug3SPR4c, udp: true}
-  - {name: GB_8du.shop 3, server: 185.167.117.171, port: 9050, type: ss, cipher: aes-256-cfb, password: FG5ddLsMPbV5CutE, udp: true}
-  - {name: US_8du.shop 8, server: 45.66.157.212, port: 10077, type: ss, cipher: aes-256-gcm, password: dongtaiwang.com, udp: true}
-  - {name: CN_8du.shop 28, server: 14.29.124.168, port: 25287, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_8du.shop 29, server: 113.31.155.165, port: 3389, type: trojan, password: a170b44c2dfac9e6, skip-cert-verify: true, udp: true}
-  - {name: CN_8du.shop 30, server: 113.31.109.30, port: 3389, type: trojan, password: a170b44c2dfac9e6, skip-cert-verify: true, udp: true}
-  - {name: CN_8du.shop 31, server: 116.129.253.134, port: 3389, type: trojan, password: a170b44c2dfac9e6, skip-cert-verify: true, udp: true}
-  - {name: CN_8du.shop 32, server: 120.232.192.250, port: 3385, type: trojan, password: a170b44c2dfac9e6, skip-cert-verify: true, udp: true}
-  - {name: CN_8du.shop 33, server: 106.75.233.91, port: 3389, type: trojan, password: a170b44c2dfac9e6, skip-cert-verify: true, udp: true}
-  - {name: CN_8du.shop 34, server: 106.75.154.24, port: 3389, type: trojan, password: a170b44c2dfac9e6, skip-cert-verify: true, udp: true}
-  - {name: CN_8du.shop 35, server: 116.129.253.201, port: 3389, type: trojan, password: a170b44c2dfac9e6, skip-cert-verify: true, udp: true}
-  - {name: CN_8du.shop 36, server: 120.232.192.250, port: 3384, type: trojan, password: a170b44c2dfac9e6, skip-cert-verify: true, udp: true}
-  - {name: CN_8du.shop 37, server: cm-jm.okvpn.xyz, port: 20000, type: trojan, password: 912ebb9f-7c7a-4ee2-b9c9-5c2a87280c2e, sni: cm-jm.okvpn.xyz, skip-cert-verify: true, udp: true}
-  - {name: CN_8du.shop 38, server: cm-jm.okvpn.xyz, port: 20000, type: trojan, password: d679ee4e-1535-4ad8-a63f-ebc2dd5e2ae2, sni: cm-jm.okvpn.xyz, skip-cert-verify: true, udp: true}
-  - {name: CN_8du.shop 39, server: 120.232.192.250, port: 3383, type: trojan, password: a170b44c2dfac9e6, skip-cert-verify: true, udp: true}
-  - {name: CN_8du.shop 40, server: 123.59.87.29, port: 3389, type: trojan, password: a170b44c2dfac9e6, skip-cert-verify: true, udp: true}
-  - {name: CN_8du.shop 41, server: 106.75.168.104, port: 3389, type: trojan, password: a170b44c2dfac9e6, skip-cert-verify: true, udp: true}
-  - {name: JP_8du.shop, server: jgwdb3.gaox.ml, port: 443, type: trojan, password: 8d2d5953-d649-4034-94f2-72f2df2623da, sni: jgwdb3.gaox.ml, skip-cert-verify: true, udp: true}
-  - {name: US_8du.shop 9, server: trojan1.free4444.xyz, port: 443, type: trojan, password: dongtaiwang.com, sni: trojan1.free4444.xyz, skip-cert-verify: true, udp: true}
-  - {name: AU_8du.shop 10, server: jgwxn4.gaox.ml, port: 443, type: trojan, password: e8c1ab3c-89b3-4933-92df-682e6dce7819, sni: jgwxn4.gaox.ml, skip-cert-verify: true, udp: true}
-  - {name: CN_8du.shop 42, server: 116.129.254.47, port: 3389, type: trojan, password: a170b44c2dfac9e6, skip-cert-verify: true, udp: true}
-  - {name: CN_8du.shop 43, server: 120.132.50.158, port: 3389, type: trojan, password: a170b44c2dfac9e6, skip-cert-verify: true, udp: true}
-  - {name: US_8du.shop 10, server: fhcamd2.gaox.ml, port: 443, type: trojan, password: dbf9bf9c-2c3f-474a-8031-d4c00666a989, sni: fhcamd2.gaox.ml, skip-cert-verify: true, udp: true}
-  - {name: CN_8du.shop 44, server: cm-jm.okvpn.xyz, port: 20006, type: trojan, password: d679ee4e-1535-4ad8-a63f-ebc2dd5e2ae2, sni: cm-jm.okvpn.xyz, skip-cert-verify: true, udp: true}
-  - {name: CN_8du.shop 45, server: 116.129.253.187, port: 3389, type: trojan, password: a170b44c2dfac9e6, skip-cert-verify: true, udp: true}
-  - {name: CN_8du.shop 46, server: s1.upyun.online, port: 12340, type: trojan, password: 316b40c0-0dab-4ea1-9666-ac1658b033b2, sni: s1.upyun.online, skip-cert-verify: true, udp: true}
-  - {name: CN_8du.shop 47, server: 116.129.253.130, port: 3389, type: trojan, password: a170b44c2dfac9e6, skip-cert-verify: true, udp: true}
-  - {name: CN_8du.shop 48, server: 116.129.254.29, port: 3389, type: trojan, password: a170b44c2dfac9e6, skip-cert-verify: true, udp: true}
-  - {name: US_8du.shop 11, server: ai1.susenl.com, port: 10030, type: trojan, password: c4b65d4c-ca53-328b-a4f2-4d8bc4b912b0, sni: ai1.susenl.com, skip-cert-verify: true, udp: true}
-  - {name: CN_8du.shop 49, server: 117.50.106.86, port: 3389, type: trojan, password: a170b44c2dfac9e6, skip-cert-verify: true, udp: true}
-  - {name: CN_8du.shop 50, server: 116.129.253.227, port: 3389, type: trojan, password: a170b44c2dfac9e6, skip-cert-verify: true, udp: true}
-  - {name: US_8du.shop 12, server: jgwcc3.gaox.ml, port: 443, type: trojan, password: b291d129-ee55-4801-a9b8-b5316e5c37b7, sni: jgwcc3.gaox.ml, skip-cert-verify: true, udp: true}
-  - {name: CN_8du.shop 51, server: 117.50.106.86, port: 3389, type: trojan, password: edf497f40f71aeeb, skip-cert-verify: true, udp: true}
-  - {name: US_8du.shop 13, server: misaka1433.tk, port: 443, type: trojan, password: YcQgIbGZNNd1PwsF, sni: misaka1433.tk, skip-cert-verify: true, udp: true}
-  - {name: TW_8du.shop, server: 60.249.3.125, port: 3389, type: trojan, password: a170b44c2dfac9e6, skip-cert-verify: true, udp: true}
-  - {name: CN_8du.shop 52, server: cm-jm.okvpn.xyz, port: 20005, type: trojan, password: d679ee4e-1535-4ad8-a63f-ebc2dd5e2ae2, sni: cm-jm.okvpn.xyz, skip-cert-verify: true, udp: true}
-  - {name: CN_8du.shop 53, server: 116.129.253.177, port: 3389, type: trojan, password: a170b44c2dfac9e6, skip-cert-verify: true, udp: true}
-  - {name: TW_8du.shop 2, server: 211.72.35.153, port: 3389, type: trojan, password: a170b44c2dfac9e6, skip-cert-verify: true, udp: true}
-  - {name: CN_8du.shop 54, server: 123.59.72.193, port: 3389, type: trojan, password: a170b44c2dfac9e6, skip-cert-verify: true, udp: true}
-  - {name: CN_8du.shop 55, server: 116.129.253.191, port: 3389, type: trojan, password: a170b44c2dfac9e6, skip-cert-verify: true, udp: true}
+  - {name: VN_8du.shop, server: vn05v2.datapn.net, port: 80, type: vmess, uuid: 2c7489bd-6968-4105-8f56-83ceb1590e7b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /datapn, ws-headers: {Host: livestream2.tv360.vn}, udp: true}
+  - {name: US_8du.shop, server: 1chuan.top, port: 443, type: vmess, uuid: fa8f90e0-2fae-4b05-df7a-ea325bc517d8, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /evo, ws-headers: {Host: 1chuan.top}, udp: true}
+  - {name: US_8du.shop 2, server: aead.tls.sksupersususu.dnsfree.top, port: 80, type: vmess, uuid: d90e37ac-54b7-4fd6-b85d-dba96ea976d4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: tiebapic.baidu.com}, udp: true}
+  - {name: VN_8du.shop 2, server: vn07v2.datapn.net, port: 80, type: vmess, uuid: ec388efd-bb3e-4b1f-a609-3cf835ede039, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /datapn, ws-headers: {Host: livestream2.tv360.vn}, udp: true}
+  - {name: CN_8du.shop, server: 1.0-hk.a.bp2022.top, port: 13324, type: vmess, uuid: 292c8c43-5234-4987-8466-b3b233533971, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN_8du.shop 2, server: activity.huawei.daanyht.com, port: 12301, type: ss, cipher: aes-128-gcm, password: e71ba33b-ba0c-4ffb-96ff-f1cf99e7d7d3, udp: true}
+  - {name: CN_8du.shop 3, server: activity.huawei.daanyht.com, port: 12310, type: ss, cipher: aes-128-gcm, password: e71ba33b-ba0c-4ffb-96ff-f1cf99e7d7d3, udp: true}
+  - {name: CN_8du.shop 4, server: activity.huawei.daanyht.com, port: 12323, type: ss, cipher: aes-128-gcm, password: e71ba33b-ba0c-4ffb-96ff-f1cf99e7d7d3, udp: true}
+  - {name: CN_8du.shop 5, server: activity.huawei.daanyht.com, port: 12727, type: ss, cipher: aes-128-gcm, password: e71ba33b-ba0c-4ffb-96ff-f1cf99e7d7d3, udp: true}
+  - {name: CN_8du.shop 6, server: activity.huawei.daanyht.com, port: 12726, type: ss, cipher: aes-128-gcm, password: e71ba33b-ba0c-4ffb-96ff-f1cf99e7d7d3, udp: true}
+  - {name: CN_8du.shop 7, server: activity.huawei.daanyht.com, port: 12001, type: ss, cipher: aes-128-gcm, password: e71ba33b-ba0c-4ffb-96ff-f1cf99e7d7d3, udp: true}
+  - {name: CN_8du.shop 8, server: activity.huawei.daanyht.com, port: 12402, type: ss, cipher: aes-128-gcm, password: e71ba33b-ba0c-4ffb-96ff-f1cf99e7d7d3, udp: true}
+  - {name: CN_8du.shop 9, server: activity.huawei.daanyht.com, port: 12316, type: ss, cipher: aes-128-gcm, password: e71ba33b-ba0c-4ffb-96ff-f1cf99e7d7d3, udp: true}
+  - {name: CN_8du.shop 10, server: activity.huawei.daanyht.com, port: 12730, type: ss, cipher: aes-128-gcm, password: e71ba33b-ba0c-4ffb-96ff-f1cf99e7d7d3, udp: true}
+  - {name: CN_8du.shop 11, server: activity.huawei.daanyht.com, port: 12401, type: ss, cipher: aes-128-gcm, password: e71ba33b-ba0c-4ffb-96ff-f1cf99e7d7d3, udp: true}
+  - {name: CN_8du.shop 12, server: inspurcloud.api.xjshihuifang.com, port: 12266, type: ss, cipher: aes-128-gcm, password: e71ba33b-ba0c-4ffb-96ff-f1cf99e7d7d3, udp: true}
+  - {name: CN_8du.shop 13, server: activity.huawei.daanyht.com, port: 12322, type: ss, cipher: aes-128-gcm, password: e71ba33b-ba0c-4ffb-96ff-f1cf99e7d7d3, udp: true}
+  - {name: CN_8du.shop 14, server: inspurcloud.api.xjshihuifang.com, port: 12630, type: ss, cipher: aes-128-gcm, password: e71ba33b-ba0c-4ffb-96ff-f1cf99e7d7d3, udp: true}
+  - {name: CN_8du.shop 15, server: activity.huawei.daanyht.com, port: 12303, type: ss, cipher: aes-128-gcm, password: e71ba33b-ba0c-4ffb-96ff-f1cf99e7d7d3, udp: true}
+  - {name: CN_8du.shop 16, server: inspurcloud.api.xjshihuifang.com, port: 12653, type: ss, cipher: aes-128-gcm, password: e71ba33b-ba0c-4ffb-96ff-f1cf99e7d7d3, udp: true}
+  - {name: CN_8du.shop 17, server: activity.huawei.daanyht.com, port: 12707, type: ss, cipher: aes-128-gcm, password: e71ba33b-ba0c-4ffb-96ff-f1cf99e7d7d3, udp: true}
+  - {name: CN_8du.shop 18, server: activity.huawei.daanyht.com, port: 12027, type: ss, cipher: aes-128-gcm, password: e71ba33b-ba0c-4ffb-96ff-f1cf99e7d7d3, udp: true}
+  - {name: CN_8du.shop 19, server: activity.huawei.daanyht.com, port: 12416, type: ss, cipher: aes-128-gcm, password: e71ba33b-ba0c-4ffb-96ff-f1cf99e7d7d3, udp: true}
+  - {name: CN_8du.shop 20, server: inspurcloud.api.xjshihuifang.com, port: 12652, type: ss, cipher: aes-128-gcm, password: e71ba33b-ba0c-4ffb-96ff-f1cf99e7d7d3, udp: true}
+  - {name: CN_8du.shop 21, server: activity.huawei.daanyht.com, port: 12716, type: ss, cipher: aes-128-gcm, password: e71ba33b-ba0c-4ffb-96ff-f1cf99e7d7d3, udp: true}
+  - {name: CN_8du.shop 22, server: inspurcloud.api.xjshihuifang.com, port: 12470, type: ss, cipher: aes-128-gcm, password: e71ba33b-ba0c-4ffb-96ff-f1cf99e7d7d3, udp: true}
+  - {name: CN_8du.shop 23, server: inspurcloud.api.xjshihuifang.com, port: 12622, type: ss, cipher: aes-128-gcm, password: e71ba33b-ba0c-4ffb-96ff-f1cf99e7d7d3, udp: true}
+  - {name: CN_8du.shop 24, server: asusjobhr.0064.shuyue521.com, port: 13022, type: ss, cipher: aes-128-gcm, password: e71ba33b-ba0c-4ffb-96ff-f1cf99e7d7d3, udp: true}
+  - {name: CN_8du.shop 25, server: activity.huawei.daanyht.com, port: 12325, type: ss, cipher: aes-128-gcm, password: e71ba33b-ba0c-4ffb-96ff-f1cf99e7d7d3, udp: true}
+  - {name: CN_8du.shop 26, server: activity.huawei.daanyht.com, port: 12032, type: ss, cipher: aes-128-gcm, password: e71ba33b-ba0c-4ffb-96ff-f1cf99e7d7d3, udp: true}
+  - {name: CN_8du.shop 27, server: inspurcloud.api.xjshihuifang.com, port: 12610, type: ss, cipher: aes-128-gcm, password: e71ba33b-ba0c-4ffb-96ff-f1cf99e7d7d3, udp: true}
+  - {name: CN_8du.shop 28, server: activity.huawei.daanyht.com, port: 12415, type: ss, cipher: aes-128-gcm, password: e71ba33b-ba0c-4ffb-96ff-f1cf99e7d7d3, udp: true}
+  - {name: CN_8du.shop 29, server: asusjobhr.0064.shuyue521.com, port: 12317, type: ss, cipher: aes-128-gcm, password: e71ba33b-ba0c-4ffb-96ff-f1cf99e7d7d3, udp: true}
+  - {name: CN_8du.shop 30, server: asusjobhr.0064.shuyue521.com, port: 13010, type: ss, cipher: aes-128-gcm, password: e71ba33b-ba0c-4ffb-96ff-f1cf99e7d7d3, udp: true}
+  - {name: CN_8du.shop 31, server: activity.huawei.daanyht.com, port: 12606, type: ss, cipher: aes-128-gcm, password: e71ba33b-ba0c-4ffb-96ff-f1cf99e7d7d3, udp: true}
+  - {name: CN_8du.shop 32, server: inspurcloud.api.xjshihuifang.com, port: 12034, type: ss, cipher: aes-128-gcm, password: e71ba33b-ba0c-4ffb-96ff-f1cf99e7d7d3, udp: true}
+  - {name: CN_8du.shop 33, server: activity.huawei.daanyht.com, port: 12003, type: ss, cipher: aes-128-gcm, password: e71ba33b-ba0c-4ffb-96ff-f1cf99e7d7d3, udp: true}
+  - {name: CN_8du.shop 34, server: asusjobhr.0064.shuyue521.com, port: 12705, type: ss, cipher: aes-128-gcm, password: e71ba33b-ba0c-4ffb-96ff-f1cf99e7d7d3, udp: true}
+  - {name: CN_8du.shop 35, server: activity.huawei.daanyht.com, port: 12722, type: ss, cipher: aes-128-gcm, password: e71ba33b-ba0c-4ffb-96ff-f1cf99e7d7d3, udp: true}
+  - {name: CN_8du.shop 36, server: asusjobhr.0064.shuyue521.com, port: 13000, type: ss, cipher: aes-128-gcm, password: e71ba33b-ba0c-4ffb-96ff-f1cf99e7d7d3, udp: true}
+  - {name: CN_8du.shop 37, server: activity.huawei.daanyht.com, port: 12300, type: ss, cipher: aes-128-gcm, password: e71ba33b-ba0c-4ffb-96ff-f1cf99e7d7d3, udp: true}
+  - {name: CN_8du.shop 38, server: activity.huawei.daanyht.com, port: 12007, type: ss, cipher: aes-128-gcm, password: e71ba33b-ba0c-4ffb-96ff-f1cf99e7d7d3, udp: true}
+  - {name: CN_8du.shop 39, server: activity.huawei.daanyht.com, port: 12723, type: ss, cipher: aes-128-gcm, password: e71ba33b-ba0c-4ffb-96ff-f1cf99e7d7d3, udp: true}
+  - {name: CN_8du.shop 40, server: activity.huawei.daanyht.com, port: 12305, type: ss, cipher: aes-128-gcm, password: e71ba33b-ba0c-4ffb-96ff-f1cf99e7d7d3, udp: true}
+  - {name: CN_8du.shop 41, server: activity.huawei.daanyht.com, port: 12031, type: ss, cipher: aes-128-gcm, password: e71ba33b-ba0c-4ffb-96ff-f1cf99e7d7d3, udp: true}
+  - {name: CN_8du.shop 42, server: asusjobhr.0064.shuyue521.com, port: 12706, type: ss, cipher: aes-128-gcm, password: e71ba33b-ba0c-4ffb-96ff-f1cf99e7d7d3, udp: true}
+  - {name: CN_8du.shop 43, server: inspurcloud.api.xjshihuifang.com, port: 12608, type: ss, cipher: aes-128-gcm, password: e71ba33b-ba0c-4ffb-96ff-f1cf99e7d7d3, udp: true}
+  - {name: CN_8du.shop 44, server: inspurcloud.api.xjshihuifang.com, port: 12708, type: ss, cipher: aes-128-gcm, password: e71ba33b-ba0c-4ffb-96ff-f1cf99e7d7d3, udp: true}
+  - {name: CN_8du.shop 45, server: activity.huawei.daanyht.com, port: 12418, type: ss, cipher: aes-128-gcm, password: e71ba33b-ba0c-4ffb-96ff-f1cf99e7d7d3, udp: true}
+  - {name: CN_8du.shop 46, server: activity.huawei.daanyht.com, port: 12720, type: ss, cipher: aes-128-gcm, password: e71ba33b-ba0c-4ffb-96ff-f1cf99e7d7d3, udp: true}
+  - {name: CN_8du.shop 47, server: inspurcloud.api.xjshihuifang.com, port: 12641, type: ss, cipher: aes-128-gcm, password: e71ba33b-ba0c-4ffb-96ff-f1cf99e7d7d3, udp: true}
+  - {name: CN_8du.shop 48, server: asusjobhr.0064.shuyue521.com, port: 13013, type: ss, cipher: aes-128-gcm, password: e71ba33b-ba0c-4ffb-96ff-f1cf99e7d7d3, udp: true}
+  - {name: CN_8du.shop 49, server: inspurcloud.api.xjshihuifang.com, port: 12611, type: ss, cipher: aes-128-gcm, password: e71ba33b-ba0c-4ffb-96ff-f1cf99e7d7d3, udp: true}
+  - {name: CN_8du.shop 50, server: activity.huawei.daanyht.com, port: 12412, type: ss, cipher: aes-128-gcm, password: e71ba33b-ba0c-4ffb-96ff-f1cf99e7d7d3, udp: true}
+  - {name: CN_8du.shop 51, server: inspurcloud.api.xjshihuifang.com, port: 12629, type: ss, cipher: aes-128-gcm, password: e71ba33b-ba0c-4ffb-96ff-f1cf99e7d7d3, udp: true}
+  - {name: CN_8du.shop 52, server: inspurcloud.api.xjshihuifang.com, port: 12635, type: ss, cipher: aes-128-gcm, password: e71ba33b-ba0c-4ffb-96ff-f1cf99e7d7d3, udp: true}
+  - {name: CN_8du.shop 53, server: activity.huawei.daanyht.com, port: 12314, type: ss, cipher: aes-128-gcm, password: e71ba33b-ba0c-4ffb-96ff-f1cf99e7d7d3, udp: true}
+  - {name: CN_8du.shop 54, server: activity.huawei.daanyht.com, port: 12023, type: ss, cipher: aes-128-gcm, password: e71ba33b-ba0c-4ffb-96ff-f1cf99e7d7d3, udp: true}
+  - {name: CN_8du.shop 55, server: asusjobhr.0064.shuyue521.com, port: 13016, type: ss, cipher: aes-128-gcm, password: e71ba33b-ba0c-4ffb-96ff-f1cf99e7d7d3, udp: true}
+  - {name: CN_8du.shop 56, server: activity.huawei.daanyht.com, port: 12728, type: ss, cipher: aes-128-gcm, password: e71ba33b-ba0c-4ffb-96ff-f1cf99e7d7d3, udp: true}
+  - {name: CN_8du.shop 57, server: inspurcloud.api.xjshihuifang.com, port: 12651, type: ss, cipher: aes-128-gcm, password: e71ba33b-ba0c-4ffb-96ff-f1cf99e7d7d3, udp: true}
+  - {name: CN_8du.shop 58, server: asusjobhr.0064.shuyue521.com, port: 12719, type: ss, cipher: aes-128-gcm, password: e71ba33b-ba0c-4ffb-96ff-f1cf99e7d7d3, udp: true}
+  - {name: CN_8du.shop 59, server: activity.huawei.daanyht.com, port: 12729, type: ss, cipher: aes-128-gcm, password: e71ba33b-ba0c-4ffb-96ff-f1cf99e7d7d3, udp: true}
+  - {name: CN_8du.shop 60, server: activity.huawei.daanyht.com, port: 12326, type: ss, cipher: aes-128-gcm, password: e71ba33b-ba0c-4ffb-96ff-f1cf99e7d7d3, udp: true}
+  - {name: CN_8du.shop 61, server: inspurcloud.api.xjshihuifang.com, port: 12613, type: ss, cipher: aes-128-gcm, password: e71ba33b-ba0c-4ffb-96ff-f1cf99e7d7d3, udp: true}
+  - {name: CN_8du.shop 62, server: inspurcloud.api.xjshihuifang.com, port: 12703, type: ss, cipher: aes-128-gcm, password: e71ba33b-ba0c-4ffb-96ff-f1cf99e7d7d3, udp: true}
+  - {name: CN_8du.shop 63, server: inspurcloud.api.xjshihuifang.com, port: 12640, type: ss, cipher: aes-128-gcm, password: e71ba33b-ba0c-4ffb-96ff-f1cf99e7d7d3, udp: true}
+  - {name: CN_8du.shop 64, server: asusjobhr.0064.shuyue521.com, port: 13001, type: ss, cipher: aes-128-gcm, password: e71ba33b-ba0c-4ffb-96ff-f1cf99e7d7d3, udp: true}
+  - {name: CN_8du.shop 65, server: activity.huawei.daanyht.com, port: 12026, type: ss, cipher: aes-128-gcm, password: e71ba33b-ba0c-4ffb-96ff-f1cf99e7d7d3, udp: true}
+  - {name: CN_8du.shop 66, server: inspurcloud.api.xjshihuifang.com, port: 12615, type: ss, cipher: aes-128-gcm, password: e71ba33b-ba0c-4ffb-96ff-f1cf99e7d7d3, udp: true}
+  - {name: CN_8du.shop 67, server: activity.huawei.daanyht.com, port: 12304, type: ss, cipher: aes-128-gcm, password: e71ba33b-ba0c-4ffb-96ff-f1cf99e7d7d3, udp: true}
+  - {name: CN_8du.shop 68, server: asusjobhr.0064.shuyue521.com, port: 12327, type: ss, cipher: aes-128-gcm, password: e71ba33b-ba0c-4ffb-96ff-f1cf99e7d7d3, udp: true}
+  - {name: CN_8du.shop 69, server: activity.huawei.daanyht.com, port: 12110, type: ss, cipher: aes-128-gcm, password: e71ba33b-ba0c-4ffb-96ff-f1cf99e7d7d3, udp: true}
+  - {name: CN_8du.shop 70, server: activity.huawei.daanyht.com, port: 12413, type: ss, cipher: aes-128-gcm, password: e71ba33b-ba0c-4ffb-96ff-f1cf99e7d7d3, udp: true}
+  - {name: CN_8du.shop 71, server: inspurcloud.api.xjshihuifang.com, port: 12600, type: ss, cipher: aes-128-gcm, password: e71ba33b-ba0c-4ffb-96ff-f1cf99e7d7d3, udp: true}
+  - {name: CN_8du.shop 72, server: asusjobhr.0064.shuyue521.com, port: 13007, type: ss, cipher: aes-128-gcm, password: e71ba33b-ba0c-4ffb-96ff-f1cf99e7d7d3, udp: true}
+  - {name: CN_8du.shop 73, server: activity.huawei.daanyht.com, port: 12009, type: ss, cipher: aes-128-gcm, password: e71ba33b-ba0c-4ffb-96ff-f1cf99e7d7d3, udp: true}
+  - {name: CN_8du.shop 74, server: activity.huawei.daanyht.com, port: 12306, type: ss, cipher: aes-128-gcm, password: e71ba33b-ba0c-4ffb-96ff-f1cf99e7d7d3, udp: true}
+  - {name: CN_8du.shop 75, server: asusjobhr.0064.shuyue521.com, port: 13021, type: ss, cipher: aes-128-gcm, password: e71ba33b-ba0c-4ffb-96ff-f1cf99e7d7d3, udp: true}
+  - {name: CN_8du.shop 76, server: inspurcloud.api.xjshihuifang.com, port: 12628, type: ss, cipher: aes-128-gcm, password: e71ba33b-ba0c-4ffb-96ff-f1cf99e7d7d3, udp: true}
+  - {name: CN_8du.shop 77, server: activity.huawei.daanyht.com, port: 12020, type: ss, cipher: aes-128-gcm, password: e71ba33b-ba0c-4ffb-96ff-f1cf99e7d7d3, udp: true}
+  - {name: CN_8du.shop 78, server: asusjobhr.0064.shuyue521.com, port: 13019, type: ss, cipher: aes-128-gcm, password: e71ba33b-ba0c-4ffb-96ff-f1cf99e7d7d3, udp: true}
+  - {name: CN_8du.shop 79, server: asusjobhr.0064.shuyue521.com, port: 12320, type: ss, cipher: aes-128-gcm, password: e71ba33b-ba0c-4ffb-96ff-f1cf99e7d7d3, udp: true}
+  - {name: CN_8du.shop 80, server: inspurcloud.api.xjshihuifang.com, port: 12619, type: ss, cipher: aes-128-gcm, password: e71ba33b-ba0c-4ffb-96ff-f1cf99e7d7d3, udp: true}
+  - {name: CN_8du.shop 81, server: activity.huawei.daanyht.com, port: 12701, type: ss, cipher: aes-128-gcm, password: e71ba33b-ba0c-4ffb-96ff-f1cf99e7d7d3, udp: true}
+  - {name: CN_8du.shop 82, server: inspurcloud.api.xjshihuifang.com, port: 12645, type: ss, cipher: aes-128-gcm, password: e71ba33b-ba0c-4ffb-96ff-f1cf99e7d7d3, udp: true}
+  - {name: CN_8du.shop 83, server: inspurcloud.api.xjshihuifang.com, port: 12633, type: ss, cipher: aes-128-gcm, password: e71ba33b-ba0c-4ffb-96ff-f1cf99e7d7d3, udp: true}
+  - {name: CN_8du.shop 84, server: activity.huawei.daanyht.com, port: 12400, type: ss, cipher: aes-128-gcm, password: e71ba33b-ba0c-4ffb-96ff-f1cf99e7d7d3, udp: true}
+  - {name: CN_8du.shop 85, server: activity.huawei.daanyht.com, port: 12417, type: ss, cipher: aes-128-gcm, password: e71ba33b-ba0c-4ffb-96ff-f1cf99e7d7d3, udp: true}
+  - {name: CN_8du.shop 86, server: activity.huawei.daanyht.com, port: 12308, type: ss, cipher: aes-128-gcm, password: e71ba33b-ba0c-4ffb-96ff-f1cf99e7d7d3, udp: true}
+  - {name: CN_8du.shop 87, server: asusjobhr.0064.shuyue521.com, port: 13014, type: ss, cipher: aes-128-gcm, password: e71ba33b-ba0c-4ffb-96ff-f1cf99e7d7d3, udp: true}
+  - {name: CN_8du.shop 88, server: inspurcloud.api.xjshihuifang.com, port: 12609, type: ss, cipher: aes-128-gcm, password: e71ba33b-ba0c-4ffb-96ff-f1cf99e7d7d3, udp: true}
+  - {name: CN_8du.shop 89, server: inspurcloud.api.xjshihuifang.com, port: 12649, type: ss, cipher: aes-128-gcm, password: e71ba33b-ba0c-4ffb-96ff-f1cf99e7d7d3, udp: true}
+  - {name: CN_8du.shop 90, server: activity.huawei.daanyht.com, port: 13031, type: ss, cipher: aes-128-gcm, password: e71ba33b-ba0c-4ffb-96ff-f1cf99e7d7d3, udp: true}
+  - {name: CN_8du.shop 91, server: activity.huawei.daanyht.com, port: 12302, type: ss, cipher: aes-128-gcm, password: e71ba33b-ba0c-4ffb-96ff-f1cf99e7d7d3, udp: true}
+  - {name: CN_8du.shop 92, server: inspurcloud.api.xjshihuifang.com, port: 12648, type: ss, cipher: aes-128-gcm, password: e71ba33b-ba0c-4ffb-96ff-f1cf99e7d7d3, udp: true}
+  - {name: CN_8du.shop 93, server: asusjobhr.0064.shuyue521.com, port: 12800, type: ss, cipher: aes-128-gcm, password: e71ba33b-ba0c-4ffb-96ff-f1cf99e7d7d3, udp: true}
+  - {name: CN_8du.shop 94, server: inspurcloud.api.xjshihuifang.com, port: 12710, type: ss, cipher: aes-128-gcm, password: e71ba33b-ba0c-4ffb-96ff-f1cf99e7d7d3, udp: true}
+  - {name: CN_8du.shop 95, server: activity.huawei.daanyht.com, port: 12004, type: ss, cipher: aes-128-gcm, password: e71ba33b-ba0c-4ffb-96ff-f1cf99e7d7d3, udp: true}
+  - {name: CN_8du.shop 96, server: activity.huawei.daanyht.com, port: 12111, type: ss, cipher: aes-128-gcm, password: e71ba33b-ba0c-4ffb-96ff-f1cf99e7d7d3, udp: true}
+  - {name: CN_8du.shop 97, server: asusjobhr.0064.shuyue521.com, port: 12011, type: ss, cipher: aes-128-gcm, password: e71ba33b-ba0c-4ffb-96ff-f1cf99e7d7d3, udp: true}
+  - {name: CN_8du.shop 98, server: inspurcloud.api.xjshihuifang.com, port: 12603, type: ss, cipher: aes-128-gcm, password: e71ba33b-ba0c-4ffb-96ff-f1cf99e7d7d3, udp: true}
+  - {name: CN_8du.shop 99, server: inspurcloud.api.xjshihuifang.com, port: 12718, type: ss, cipher: aes-128-gcm, password: e71ba33b-ba0c-4ffb-96ff-f1cf99e7d7d3, udp: true}
+  - {name: CN_8du.shop 100, server: activity.huawei.daanyht.com, port: 12307, type: ss, cipher: aes-128-gcm, password: e71ba33b-ba0c-4ffb-96ff-f1cf99e7d7d3, udp: true}
+  - {name: CN_8du.shop 101, server: asusjobhr.0064.shuyue521.com, port: 12018, type: ss, cipher: aes-128-gcm, password: e71ba33b-ba0c-4ffb-96ff-f1cf99e7d7d3, udp: true}
+  - {name: CN_8du.shop 102, server: activity.huawei.daanyht.com, port: 12324, type: ss, cipher: aes-128-gcm, password: e71ba33b-ba0c-4ffb-96ff-f1cf99e7d7d3, udp: true}
+  - {name: CN_8du.shop 103, server: activity.huawei.daanyht.com, port: 12005, type: ss, cipher: aes-128-gcm, password: e71ba33b-ba0c-4ffb-96ff-f1cf99e7d7d3, udp: true}
+  - {name: CN_8du.shop 104, server: activity.huawei.daanyht.com, port: 50227, type: ss, cipher: aes-128-gcm, password: e71ba33b-ba0c-4ffb-96ff-f1cf99e7d7d3, udp: true}
+  - {name: CN_8du.shop 105, server: activity.huawei.daanyht.com, port: 12006, type: ss, cipher: aes-128-gcm, password: e71ba33b-ba0c-4ffb-96ff-f1cf99e7d7d3, udp: true}
+  - {name: CN_8du.shop 106, server: inspurcloud.api.xjshihuifang.com, port: 12617, type: ss, cipher: aes-128-gcm, password: e71ba33b-ba0c-4ffb-96ff-f1cf99e7d7d3, udp: true}
+  - {name: CN_8du.shop 107, server: inspurcloud.api.xjshihuifang.com, port: 12623, type: ss, cipher: aes-128-gcm, password: e71ba33b-ba0c-4ffb-96ff-f1cf99e7d7d3, udp: true}
+  - {name: CN_8du.shop 108, server: activity.huawei.daanyht.com, port: 12024, type: ss, cipher: aes-128-gcm, password: e71ba33b-ba0c-4ffb-96ff-f1cf99e7d7d3, udp: true}
+  - {name: CN_8du.shop 109, server: asusjobhr.0064.shuyue521.com, port: 13023, type: ss, cipher: aes-128-gcm, password: e71ba33b-ba0c-4ffb-96ff-f1cf99e7d7d3, udp: true}
+  - {name: CN_8du.shop 110, server: asusjobhr.0064.shuyue521.com, port: 12016, type: ss, cipher: aes-128-gcm, password: e71ba33b-ba0c-4ffb-96ff-f1cf99e7d7d3, udp: true}
+  - {name: CN_8du.shop 111, server: inspurcloud.api.xjshihuifang.com, port: 12261, type: ss, cipher: aes-128-gcm, password: e71ba33b-ba0c-4ffb-96ff-f1cf99e7d7d3, udp: true}
+  - {name: CN_8du.shop 112, server: asusjobhr.0064.shuyue521.com, port: 13020, type: ss, cipher: aes-128-gcm, password: e71ba33b-ba0c-4ffb-96ff-f1cf99e7d7d3, udp: true}
+  - {name: CN_8du.shop 113, server: activity.huawei.daanyht.com, port: 12309, type: ss, cipher: aes-128-gcm, password: e71ba33b-ba0c-4ffb-96ff-f1cf99e7d7d3, udp: true}
+  - {name: CN_8du.shop 114, server: inspurcloud.api.xjshihuifang.com, port: 12646, type: ss, cipher: aes-128-gcm, password: e71ba33b-ba0c-4ffb-96ff-f1cf99e7d7d3, udp: true}
+  - {name: CN_8du.shop 115, server: activity.huawei.daanyht.com, port: 12404, type: ss, cipher: aes-128-gcm, password: e71ba33b-ba0c-4ffb-96ff-f1cf99e7d7d3, udp: true}
+  - {name: CN_8du.shop 116, server: activity.huawei.daanyht.com, port: 12414, type: ss, cipher: aes-128-gcm, password: e71ba33b-ba0c-4ffb-96ff-f1cf99e7d7d3, udp: true}
+  - {name: CN_8du.shop 117, server: activity.huawei.daanyht.com, port: 12605, type: ss, cipher: aes-128-gcm, password: e71ba33b-ba0c-4ffb-96ff-f1cf99e7d7d3, udp: true}
+  - {name: CN_8du.shop 118, server: inspurcloud.api.xjshihuifang.com, port: 12650, type: ss, cipher: aes-128-gcm, password: e71ba33b-ba0c-4ffb-96ff-f1cf99e7d7d3, udp: true}
+  - {name: CN_8du.shop 119, server: inspurcloud.api.xjshihuifang.com, port: 12631, type: ss, cipher: aes-128-gcm, password: e71ba33b-ba0c-4ffb-96ff-f1cf99e7d7d3, udp: true}
+  - {name: CN_8du.shop 120, server: activity.huawei.daanyht.com, port: 12406, type: ss, cipher: aes-128-gcm, password: e71ba33b-ba0c-4ffb-96ff-f1cf99e7d7d3, udp: true}
+  - {name: CN_8du.shop 121, server: activity.huawei.daanyht.com, port: 12002, type: ss, cipher: aes-128-gcm, password: e71ba33b-ba0c-4ffb-96ff-f1cf99e7d7d3, udp: true}
+  - {name: CN_8du.shop 122, server: activity.huawei.daanyht.com, port: 12008, type: ss, cipher: aes-128-gcm, password: e71ba33b-ba0c-4ffb-96ff-f1cf99e7d7d3, udp: true}
+  - {name: CN_8du.shop 123, server: activity.huawei.daanyht.com, port: 12700, type: ss, cipher: aes-128-gcm, password: e71ba33b-ba0c-4ffb-96ff-f1cf99e7d7d3, udp: true}
+  - {name: CN_8du.shop 124, server: inspurcloud.api.xjshihuifang.com, port: 12618, type: ss, cipher: aes-128-gcm, password: e71ba33b-ba0c-4ffb-96ff-f1cf99e7d7d3, udp: true}
+  - {name: CN_8du.shop 125, server: asusjobhr.0064.shuyue521.com, port: 12015, type: ss, cipher: aes-128-gcm, password: e71ba33b-ba0c-4ffb-96ff-f1cf99e7d7d3, udp: true}
+  - {name: CN_8du.shop 126, server: asusjobhr.0064.shuyue521.com, port: 10140, type: ss, cipher: aes-128-gcm, password: e71ba33b-ba0c-4ffb-96ff-f1cf99e7d7d3, udp: true}
+  - {name: CN_8du.shop 127, server: activity.huawei.daanyht.com, port: 12033, type: ss, cipher: aes-128-gcm, password: e71ba33b-ba0c-4ffb-96ff-f1cf99e7d7d3, udp: true}
+  - {name: CN_8du.shop 128, server: asusjobhr.0064.shuyue521.com, port: 13008, type: ss, cipher: aes-128-gcm, password: e71ba33b-ba0c-4ffb-96ff-f1cf99e7d7d3, udp: true}
+  - {name: CN_8du.shop 129, server: inspurcloud.api.xjshihuifang.com, port: 12625, type: ss, cipher: aes-128-gcm, password: e71ba33b-ba0c-4ffb-96ff-f1cf99e7d7d3, udp: true}
+  - {name: CN_8du.shop 130, server: asusjobhr.0064.shuyue521.com, port: 13005, type: ss, cipher: aes-128-gcm, password: e71ba33b-ba0c-4ffb-96ff-f1cf99e7d7d3, udp: true}
+  - {name: CN_8du.shop 131, server: inspurcloud.api.xjshihuifang.com, port: 12621, type: ss, cipher: aes-128-gcm, password: e71ba33b-ba0c-4ffb-96ff-f1cf99e7d7d3, udp: true}
+  - {name: CN_8du.shop 132, server: asusjobhr.0064.shuyue521.com, port: 13004, type: ss, cipher: aes-128-gcm, password: e71ba33b-ba0c-4ffb-96ff-f1cf99e7d7d3, udp: true}
+  - {name: CN_8du.shop 133, server: inspurcloud.api.xjshihuifang.com, port: 12717, type: ss, cipher: aes-128-gcm, password: e71ba33b-ba0c-4ffb-96ff-f1cf99e7d7d3, udp: true}
+  - {name: CN_8du.shop 134, server: asusjobhr.0064.shuyue521.com, port: 12013, type: ss, cipher: aes-128-gcm, password: e71ba33b-ba0c-4ffb-96ff-f1cf99e7d7d3, udp: true}
+  - {name: CN_8du.shop 135, server: asusjobhr.0064.shuyue521.com, port: 12017, type: ss, cipher: aes-128-gcm, password: e71ba33b-ba0c-4ffb-96ff-f1cf99e7d7d3, udp: true}
+  - {name: CN_8du.shop 136, server: asusjobhr.0064.shuyue521.com, port: 13100, type: ss, cipher: aes-128-gcm, password: e71ba33b-ba0c-4ffb-96ff-f1cf99e7d7d3, udp: true}
+  - {name: CN_8du.shop 137, server: inspurcloud.api.xjshihuifang.com, port: 12642, type: ss, cipher: aes-128-gcm, password: e71ba33b-ba0c-4ffb-96ff-f1cf99e7d7d3, udp: true}
+  - {name: CN_8du.shop 138, server: inspurcloud.api.xjshihuifang.com, port: 12655, type: ss, cipher: aes-128-gcm, password: e71ba33b-ba0c-4ffb-96ff-f1cf99e7d7d3, udp: true}
+  - {name: CN_8du.shop 139, server: activity.huawei.daanyht.com, port: 12311, type: ss, cipher: aes-128-gcm, password: e71ba33b-ba0c-4ffb-96ff-f1cf99e7d7d3, udp: true}
+  - {name: CN_8du.shop 140, server: activity.huawei.daanyht.com, port: 12000, type: ss, cipher: aes-128-gcm, password: e71ba33b-ba0c-4ffb-96ff-f1cf99e7d7d3, udp: true}
+  - {name: CN_8du.shop 141, server: asusjobhr.0064.shuyue521.com, port: 12019, type: ss, cipher: aes-128-gcm, password: e71ba33b-ba0c-4ffb-96ff-f1cf99e7d7d3, udp: true}
+  - {name: CN_8du.shop 142, server: 14.29.124.168, port: 25279, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_8du.shop 143, server: asusjobhr.0064.shuyue521.com, port: 12715, type: ss, cipher: aes-128-gcm, password: e71ba33b-ba0c-4ffb-96ff-f1cf99e7d7d3, udp: true}
+  - {name: CN_8du.shop 144, server: asusjobhr.0064.shuyue521.com, port: 12720, type: ss, cipher: aes-128-gcm, password: e71ba33b-ba0c-4ffb-96ff-f1cf99e7d7d3, udp: true}
+  - {name: CN_8du.shop 145, server: activity.huawei.daanyht.com, port: 12313, type: ss, cipher: aes-128-gcm, password: e71ba33b-ba0c-4ffb-96ff-f1cf99e7d7d3, udp: true}
+  - {name: CN_8du.shop 146, server: activity.huawei.daanyht.com, port: 12419, type: ss, cipher: aes-128-gcm, password: e71ba33b-ba0c-4ffb-96ff-f1cf99e7d7d3, udp: true}
+  - {name: US_8du.shop 3, server: superjapan1111.dnsfree.top, port: 12390, type: trojan, password: d90e37ac-54b7-4fd6-b85d-dba96ea976d4, sni: superjapan1111.dnsfree.top, skip-cert-verify: true, udp: true}
+  - {name: HK_8du.shop, server: pro.tls.hongkongaz.dnsfree.top, port: 55097, type: trojan, password: d90e37ac-54b7-4fd6-b85d-dba96ea976d4, sni: pro.tls.hongkongaz.dnsfree.top, skip-cert-verify: true, udp: true}
+  - {name: US_8du.shop 4, server: superjapan1111.dnsfree.top, port: 12389, type: trojan, password: d90e37ac-54b7-4fd6-b85d-dba96ea976d4, sni: superjapan1111.dnsfree.top, skip-cert-verify: true, udp: true}
+  - {name: US_8du.shop 5, server: superjapan1111.dnsfree.top, port: 12387, type: trojan, password: d90e37ac-54b7-4fd6-b85d-dba96ea976d4, sni: superjapan1111.dnsfree.top, skip-cert-verify: true, udp: true}
+  - {name: US_8du.shop 6, server: superjapan1111.dnsfree.top, port: 12388, type: trojan, password: d90e37ac-54b7-4fd6-b85d-dba96ea976d4, sni: superjapan1111.dnsfree.top, skip-cert-verify: true, udp: true}
+  - {name: VN_8du.shop 3, server: vn01v2.datapn.net, port: 443, type: trojan, password: 2c7489bd-6968-4105-8f56-83ceb1590e7b, sni: vn01v2.datapn.net, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
+      - VN_8du.shop
       - US_8du.shop
-      - 8du.shop
-      - 8du.shop 2
       - US_8du.shop 2
-      - US_8du.shop 3
-      - US_8du.shop 4
-      - US_8du.shop 5
+      - VN_8du.shop 2
       - CN_8du.shop
-      - US_8du.shop 6
       - CN_8du.shop 2
       - CN_8du.shop 3
-      - PL_8du.shop
-      - AU_8du.shop
-      - PL_8du.shop 2
-      - AU_8du.shop 2
-      - GB_8du.shop
-      - AU_8du.shop 3
-      - PL_8du.shop 3
-      - AU_8du.shop 4
-      - PL_8du.shop 4
-      - PL_8du.shop 5
-      - PL_8du.shop 6
       - CN_8du.shop 4
-      - PL_8du.shop 7
-      - PL_8du.shop 8
-      - AU_8du.shop 5
-      - PL_8du.shop 9
-      - PL_8du.shop 10
-      - PL_8du.shop 11
-      - PL_8du.shop 12
-      - AU_8du.shop 6
-      - AU_8du.shop 7
-      - PL_8du.shop 13
-      - PL_8du.shop 14
       - CN_8du.shop 5
-      - PL_8du.shop 15
-      - PL_8du.shop 16
-      - PL_8du.shop 17
       - CN_8du.shop 6
-      - AU_8du.shop 8
-      - PL_8du.shop 18
-      - PL_8du.shop 19
-      - PL_8du.shop 20
-      - PL_8du.shop 21
-      - PL_8du.shop 22
       - CN_8du.shop 7
-      - PL_8du.shop 23
-      - PL_8du.shop 24
-      - PL_8du.shop 25
-      - PL_8du.shop 26
-      - PL_8du.shop 27
-      - PL_8du.shop 28
       - CN_8du.shop 8
-      - GB_8du.shop 2
-      - PL_8du.shop 29
-      - PL_8du.shop 30
-      - PL_8du.shop 31
-      - PL_8du.shop 32
-      - PL_8du.shop 33
-      - NL_8du.shop
-      - PL_8du.shop 34
-      - PL_8du.shop 35
-      - PL_8du.shop 36
-      - PL_8du.shop 37
-      - PL_8du.shop 38
-      - PL_8du.shop 39
-      - PL_8du.shop 40
-      - PL_8du.shop 41
-      - PL_8du.shop 42
       - CN_8du.shop 9
-      - PL_8du.shop 43
-      - US_8du.shop 7
-      - PL_8du.shop 44
       - CN_8du.shop 10
       - CN_8du.shop 11
       - CN_8du.shop 12
       - CN_8du.shop 13
       - CN_8du.shop 14
       - CN_8du.shop 15
-      - PL_8du.shop 45
-      - PL_8du.shop 46
-      - PL_8du.shop 47
       - CN_8du.shop 16
       - CN_8du.shop 17
       - CN_8du.shop 18
       - CN_8du.shop 19
-      - PL_8du.shop 48
-      - PL_8du.shop 49
-      - PL_8du.shop 50
       - CN_8du.shop 20
       - CN_8du.shop 21
-      - PL_8du.shop 51
-      - PL_8du.shop 52
       - CN_8du.shop 22
-      - PL_8du.shop 53
-      - PL_8du.shop 54
-      - PL_8du.shop 55
-      - PL_8du.shop 56
       - CN_8du.shop 23
-      - PL_8du.shop 57
-      - PL_8du.shop 58
-      - NL_8du.shop 2
-      - PL_8du.shop 59
       - CN_8du.shop 24
       - CN_8du.shop 25
-      - PL_8du.shop 60
-      - PL_8du.shop 61
-      - PL_8du.shop 62
-      - PL_8du.shop 63
       - CN_8du.shop 26
-      - AU_8du.shop 9
       - CN_8du.shop 27
-      - PL_8du.shop 64
-      - PL_8du.shop 65
-      - PL_8du.shop 66
-      - PL_8du.shop 67
-      - PL_8du.shop 68
-      - GB_8du.shop 3
-      - US_8du.shop 8
       - CN_8du.shop 28
       - CN_8du.shop 29
       - CN_8du.shop 30
@@ -300,153 +212,153 @@ proxy-groups:
       - CN_8du.shop 39
       - CN_8du.shop 40
       - CN_8du.shop 41
-      - JP_8du.shop
-      - US_8du.shop 9
-      - AU_8du.shop 10
       - CN_8du.shop 42
       - CN_8du.shop 43
-      - US_8du.shop 10
       - CN_8du.shop 44
       - CN_8du.shop 45
       - CN_8du.shop 46
       - CN_8du.shop 47
       - CN_8du.shop 48
-      - US_8du.shop 11
       - CN_8du.shop 49
       - CN_8du.shop 50
-      - US_8du.shop 12
       - CN_8du.shop 51
-      - US_8du.shop 13
-      - TW_8du.shop
       - CN_8du.shop 52
       - CN_8du.shop 53
-      - TW_8du.shop 2
       - CN_8du.shop 54
       - CN_8du.shop 55
+      - CN_8du.shop 56
+      - CN_8du.shop 57
+      - CN_8du.shop 58
+      - CN_8du.shop 59
+      - CN_8du.shop 60
+      - CN_8du.shop 61
+      - CN_8du.shop 62
+      - CN_8du.shop 63
+      - CN_8du.shop 64
+      - CN_8du.shop 65
+      - CN_8du.shop 66
+      - CN_8du.shop 67
+      - CN_8du.shop 68
+      - CN_8du.shop 69
+      - CN_8du.shop 70
+      - CN_8du.shop 71
+      - CN_8du.shop 72
+      - CN_8du.shop 73
+      - CN_8du.shop 74
+      - CN_8du.shop 75
+      - CN_8du.shop 76
+      - CN_8du.shop 77
+      - CN_8du.shop 78
+      - CN_8du.shop 79
+      - CN_8du.shop 80
+      - CN_8du.shop 81
+      - CN_8du.shop 82
+      - CN_8du.shop 83
+      - CN_8du.shop 84
+      - CN_8du.shop 85
+      - CN_8du.shop 86
+      - CN_8du.shop 87
+      - CN_8du.shop 88
+      - CN_8du.shop 89
+      - CN_8du.shop 90
+      - CN_8du.shop 91
+      - CN_8du.shop 92
+      - CN_8du.shop 93
+      - CN_8du.shop 94
+      - CN_8du.shop 95
+      - CN_8du.shop 96
+      - CN_8du.shop 97
+      - CN_8du.shop 98
+      - CN_8du.shop 99
+      - CN_8du.shop 100
+      - CN_8du.shop 101
+      - CN_8du.shop 102
+      - CN_8du.shop 103
+      - CN_8du.shop 104
+      - CN_8du.shop 105
+      - CN_8du.shop 106
+      - CN_8du.shop 107
+      - CN_8du.shop 108
+      - CN_8du.shop 109
+      - CN_8du.shop 110
+      - CN_8du.shop 111
+      - CN_8du.shop 112
+      - CN_8du.shop 113
+      - CN_8du.shop 114
+      - CN_8du.shop 115
+      - CN_8du.shop 116
+      - CN_8du.shop 117
+      - CN_8du.shop 118
+      - CN_8du.shop 119
+      - CN_8du.shop 120
+      - CN_8du.shop 121
+      - CN_8du.shop 122
+      - CN_8du.shop 123
+      - CN_8du.shop 124
+      - CN_8du.shop 125
+      - CN_8du.shop 126
+      - CN_8du.shop 127
+      - CN_8du.shop 128
+      - CN_8du.shop 129
+      - CN_8du.shop 130
+      - CN_8du.shop 131
+      - CN_8du.shop 132
+      - CN_8du.shop 133
+      - CN_8du.shop 134
+      - CN_8du.shop 135
+      - CN_8du.shop 136
+      - CN_8du.shop 137
+      - CN_8du.shop 138
+      - CN_8du.shop 139
+      - CN_8du.shop 140
+      - CN_8du.shop 141
+      - CN_8du.shop 142
+      - CN_8du.shop 143
+      - CN_8du.shop 144
+      - CN_8du.shop 145
+      - CN_8du.shop 146
+      - US_8du.shop 3
+      - HK_8du.shop
+      - US_8du.shop 4
+      - US_8du.shop 5
+      - US_8du.shop 6
+      - VN_8du.shop 3
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
+      - VN_8du.shop
       - US_8du.shop
-      - 8du.shop
-      - 8du.shop 2
       - US_8du.shop 2
-      - US_8du.shop 3
-      - US_8du.shop 4
-      - US_8du.shop 5
+      - VN_8du.shop 2
       - CN_8du.shop
-      - US_8du.shop 6
       - CN_8du.shop 2
       - CN_8du.shop 3
-      - PL_8du.shop
-      - AU_8du.shop
-      - PL_8du.shop 2
-      - AU_8du.shop 2
-      - GB_8du.shop
-      - AU_8du.shop 3
-      - PL_8du.shop 3
-      - AU_8du.shop 4
-      - PL_8du.shop 4
-      - PL_8du.shop 5
-      - PL_8du.shop 6
       - CN_8du.shop 4
-      - PL_8du.shop 7
-      - PL_8du.shop 8
-      - AU_8du.shop 5
-      - PL_8du.shop 9
-      - PL_8du.shop 10
-      - PL_8du.shop 11
-      - PL_8du.shop 12
-      - AU_8du.shop 6
-      - AU_8du.shop 7
-      - PL_8du.shop 13
-      - PL_8du.shop 14
       - CN_8du.shop 5
-      - PL_8du.shop 15
-      - PL_8du.shop 16
-      - PL_8du.shop 17
       - CN_8du.shop 6
-      - AU_8du.shop 8
-      - PL_8du.shop 18
-      - PL_8du.shop 19
-      - PL_8du.shop 20
-      - PL_8du.shop 21
-      - PL_8du.shop 22
       - CN_8du.shop 7
-      - PL_8du.shop 23
-      - PL_8du.shop 24
-      - PL_8du.shop 25
-      - PL_8du.shop 26
-      - PL_8du.shop 27
-      - PL_8du.shop 28
       - CN_8du.shop 8
-      - GB_8du.shop 2
-      - PL_8du.shop 29
-      - PL_8du.shop 30
-      - PL_8du.shop 31
-      - PL_8du.shop 32
-      - PL_8du.shop 33
-      - NL_8du.shop
-      - PL_8du.shop 34
-      - PL_8du.shop 35
-      - PL_8du.shop 36
-      - PL_8du.shop 37
-      - PL_8du.shop 38
-      - PL_8du.shop 39
-      - PL_8du.shop 40
-      - PL_8du.shop 41
-      - PL_8du.shop 42
       - CN_8du.shop 9
-      - PL_8du.shop 43
-      - US_8du.shop 7
-      - PL_8du.shop 44
       - CN_8du.shop 10
       - CN_8du.shop 11
       - CN_8du.shop 12
       - CN_8du.shop 13
       - CN_8du.shop 14
       - CN_8du.shop 15
-      - PL_8du.shop 45
-      - PL_8du.shop 46
-      - PL_8du.shop 47
       - CN_8du.shop 16
       - CN_8du.shop 17
       - CN_8du.shop 18
       - CN_8du.shop 19
-      - PL_8du.shop 48
-      - PL_8du.shop 49
-      - PL_8du.shop 50
       - CN_8du.shop 20
       - CN_8du.shop 21
-      - PL_8du.shop 51
-      - PL_8du.shop 52
       - CN_8du.shop 22
-      - PL_8du.shop 53
-      - PL_8du.shop 54
-      - PL_8du.shop 55
-      - PL_8du.shop 56
       - CN_8du.shop 23
-      - PL_8du.shop 57
-      - PL_8du.shop 58
-      - NL_8du.shop 2
-      - PL_8du.shop 59
       - CN_8du.shop 24
       - CN_8du.shop 25
-      - PL_8du.shop 60
-      - PL_8du.shop 61
-      - PL_8du.shop 62
-      - PL_8du.shop 63
       - CN_8du.shop 26
-      - AU_8du.shop 9
       - CN_8du.shop 27
-      - PL_8du.shop 64
-      - PL_8du.shop 65
-      - PL_8du.shop 66
-      - PL_8du.shop 67
-      - PL_8du.shop 68
-      - GB_8du.shop 3
-      - US_8du.shop 8
       - CN_8du.shop 28
       - CN_8du.shop 29
       - CN_8du.shop 30
@@ -461,154 +373,154 @@ proxy-groups:
       - CN_8du.shop 39
       - CN_8du.shop 40
       - CN_8du.shop 41
-      - JP_8du.shop
-      - US_8du.shop 9
-      - AU_8du.shop 10
       - CN_8du.shop 42
       - CN_8du.shop 43
-      - US_8du.shop 10
       - CN_8du.shop 44
       - CN_8du.shop 45
       - CN_8du.shop 46
       - CN_8du.shop 47
       - CN_8du.shop 48
-      - US_8du.shop 11
       - CN_8du.shop 49
       - CN_8du.shop 50
-      - US_8du.shop 12
       - CN_8du.shop 51
-      - US_8du.shop 13
-      - TW_8du.shop
       - CN_8du.shop 52
       - CN_8du.shop 53
-      - TW_8du.shop 2
       - CN_8du.shop 54
       - CN_8du.shop 55
+      - CN_8du.shop 56
+      - CN_8du.shop 57
+      - CN_8du.shop 58
+      - CN_8du.shop 59
+      - CN_8du.shop 60
+      - CN_8du.shop 61
+      - CN_8du.shop 62
+      - CN_8du.shop 63
+      - CN_8du.shop 64
+      - CN_8du.shop 65
+      - CN_8du.shop 66
+      - CN_8du.shop 67
+      - CN_8du.shop 68
+      - CN_8du.shop 69
+      - CN_8du.shop 70
+      - CN_8du.shop 71
+      - CN_8du.shop 72
+      - CN_8du.shop 73
+      - CN_8du.shop 74
+      - CN_8du.shop 75
+      - CN_8du.shop 76
+      - CN_8du.shop 77
+      - CN_8du.shop 78
+      - CN_8du.shop 79
+      - CN_8du.shop 80
+      - CN_8du.shop 81
+      - CN_8du.shop 82
+      - CN_8du.shop 83
+      - CN_8du.shop 84
+      - CN_8du.shop 85
+      - CN_8du.shop 86
+      - CN_8du.shop 87
+      - CN_8du.shop 88
+      - CN_8du.shop 89
+      - CN_8du.shop 90
+      - CN_8du.shop 91
+      - CN_8du.shop 92
+      - CN_8du.shop 93
+      - CN_8du.shop 94
+      - CN_8du.shop 95
+      - CN_8du.shop 96
+      - CN_8du.shop 97
+      - CN_8du.shop 98
+      - CN_8du.shop 99
+      - CN_8du.shop 100
+      - CN_8du.shop 101
+      - CN_8du.shop 102
+      - CN_8du.shop 103
+      - CN_8du.shop 104
+      - CN_8du.shop 105
+      - CN_8du.shop 106
+      - CN_8du.shop 107
+      - CN_8du.shop 108
+      - CN_8du.shop 109
+      - CN_8du.shop 110
+      - CN_8du.shop 111
+      - CN_8du.shop 112
+      - CN_8du.shop 113
+      - CN_8du.shop 114
+      - CN_8du.shop 115
+      - CN_8du.shop 116
+      - CN_8du.shop 117
+      - CN_8du.shop 118
+      - CN_8du.shop 119
+      - CN_8du.shop 120
+      - CN_8du.shop 121
+      - CN_8du.shop 122
+      - CN_8du.shop 123
+      - CN_8du.shop 124
+      - CN_8du.shop 125
+      - CN_8du.shop 126
+      - CN_8du.shop 127
+      - CN_8du.shop 128
+      - CN_8du.shop 129
+      - CN_8du.shop 130
+      - CN_8du.shop 131
+      - CN_8du.shop 132
+      - CN_8du.shop 133
+      - CN_8du.shop 134
+      - CN_8du.shop 135
+      - CN_8du.shop 136
+      - CN_8du.shop 137
+      - CN_8du.shop 138
+      - CN_8du.shop 139
+      - CN_8du.shop 140
+      - CN_8du.shop 141
+      - CN_8du.shop 142
+      - CN_8du.shop 143
+      - CN_8du.shop 144
+      - CN_8du.shop 145
+      - CN_8du.shop 146
+      - US_8du.shop 3
+      - HK_8du.shop
+      - US_8du.shop 4
+      - US_8du.shop 5
+      - US_8du.shop 6
+      - VN_8du.shop 3
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - VN_8du.shop
       - US_8du.shop
-      - 8du.shop
-      - 8du.shop 2
       - US_8du.shop 2
-      - US_8du.shop 3
-      - US_8du.shop 4
-      - US_8du.shop 5
+      - VN_8du.shop 2
       - CN_8du.shop
-      - US_8du.shop 6
       - CN_8du.shop 2
       - CN_8du.shop 3
-      - PL_8du.shop
-      - AU_8du.shop
-      - PL_8du.shop 2
-      - AU_8du.shop 2
-      - GB_8du.shop
-      - AU_8du.shop 3
-      - PL_8du.shop 3
-      - AU_8du.shop 4
-      - PL_8du.shop 4
-      - PL_8du.shop 5
-      - PL_8du.shop 6
       - CN_8du.shop 4
-      - PL_8du.shop 7
-      - PL_8du.shop 8
-      - AU_8du.shop 5
-      - PL_8du.shop 9
-      - PL_8du.shop 10
-      - PL_8du.shop 11
-      - PL_8du.shop 12
-      - AU_8du.shop 6
-      - AU_8du.shop 7
-      - PL_8du.shop 13
-      - PL_8du.shop 14
       - CN_8du.shop 5
-      - PL_8du.shop 15
-      - PL_8du.shop 16
-      - PL_8du.shop 17
       - CN_8du.shop 6
-      - AU_8du.shop 8
-      - PL_8du.shop 18
-      - PL_8du.shop 19
-      - PL_8du.shop 20
-      - PL_8du.shop 21
-      - PL_8du.shop 22
       - CN_8du.shop 7
-      - PL_8du.shop 23
-      - PL_8du.shop 24
-      - PL_8du.shop 25
-      - PL_8du.shop 26
-      - PL_8du.shop 27
-      - PL_8du.shop 28
       - CN_8du.shop 8
-      - GB_8du.shop 2
-      - PL_8du.shop 29
-      - PL_8du.shop 30
-      - PL_8du.shop 31
-      - PL_8du.shop 32
-      - PL_8du.shop 33
-      - NL_8du.shop
-      - PL_8du.shop 34
-      - PL_8du.shop 35
-      - PL_8du.shop 36
-      - PL_8du.shop 37
-      - PL_8du.shop 38
-      - PL_8du.shop 39
-      - PL_8du.shop 40
-      - PL_8du.shop 41
-      - PL_8du.shop 42
       - CN_8du.shop 9
-      - PL_8du.shop 43
-      - US_8du.shop 7
-      - PL_8du.shop 44
       - CN_8du.shop 10
       - CN_8du.shop 11
       - CN_8du.shop 12
       - CN_8du.shop 13
       - CN_8du.shop 14
       - CN_8du.shop 15
-      - PL_8du.shop 45
-      - PL_8du.shop 46
-      - PL_8du.shop 47
       - CN_8du.shop 16
       - CN_8du.shop 17
       - CN_8du.shop 18
       - CN_8du.shop 19
-      - PL_8du.shop 48
-      - PL_8du.shop 49
-      - PL_8du.shop 50
       - CN_8du.shop 20
       - CN_8du.shop 21
-      - PL_8du.shop 51
-      - PL_8du.shop 52
       - CN_8du.shop 22
-      - PL_8du.shop 53
-      - PL_8du.shop 54
-      - PL_8du.shop 55
-      - PL_8du.shop 56
       - CN_8du.shop 23
-      - PL_8du.shop 57
-      - PL_8du.shop 58
-      - NL_8du.shop 2
-      - PL_8du.shop 59
       - CN_8du.shop 24
       - CN_8du.shop 25
-      - PL_8du.shop 60
-      - PL_8du.shop 61
-      - PL_8du.shop 62
-      - PL_8du.shop 63
       - CN_8du.shop 26
-      - AU_8du.shop 9
       - CN_8du.shop 27
-      - PL_8du.shop 64
-      - PL_8du.shop 65
-      - PL_8du.shop 66
-      - PL_8du.shop 67
-      - PL_8du.shop 68
-      - GB_8du.shop 3
-      - US_8du.shop 8
       - CN_8du.shop 28
       - CN_8du.shop 29
       - CN_8du.shop 30
@@ -623,29 +535,117 @@ proxy-groups:
       - CN_8du.shop 39
       - CN_8du.shop 40
       - CN_8du.shop 41
-      - JP_8du.shop
-      - US_8du.shop 9
-      - AU_8du.shop 10
       - CN_8du.shop 42
       - CN_8du.shop 43
-      - US_8du.shop 10
       - CN_8du.shop 44
       - CN_8du.shop 45
       - CN_8du.shop 46
       - CN_8du.shop 47
       - CN_8du.shop 48
-      - US_8du.shop 11
       - CN_8du.shop 49
       - CN_8du.shop 50
-      - US_8du.shop 12
       - CN_8du.shop 51
-      - US_8du.shop 13
-      - TW_8du.shop
       - CN_8du.shop 52
       - CN_8du.shop 53
-      - TW_8du.shop 2
       - CN_8du.shop 54
       - CN_8du.shop 55
+      - CN_8du.shop 56
+      - CN_8du.shop 57
+      - CN_8du.shop 58
+      - CN_8du.shop 59
+      - CN_8du.shop 60
+      - CN_8du.shop 61
+      - CN_8du.shop 62
+      - CN_8du.shop 63
+      - CN_8du.shop 64
+      - CN_8du.shop 65
+      - CN_8du.shop 66
+      - CN_8du.shop 67
+      - CN_8du.shop 68
+      - CN_8du.shop 69
+      - CN_8du.shop 70
+      - CN_8du.shop 71
+      - CN_8du.shop 72
+      - CN_8du.shop 73
+      - CN_8du.shop 74
+      - CN_8du.shop 75
+      - CN_8du.shop 76
+      - CN_8du.shop 77
+      - CN_8du.shop 78
+      - CN_8du.shop 79
+      - CN_8du.shop 80
+      - CN_8du.shop 81
+      - CN_8du.shop 82
+      - CN_8du.shop 83
+      - CN_8du.shop 84
+      - CN_8du.shop 85
+      - CN_8du.shop 86
+      - CN_8du.shop 87
+      - CN_8du.shop 88
+      - CN_8du.shop 89
+      - CN_8du.shop 90
+      - CN_8du.shop 91
+      - CN_8du.shop 92
+      - CN_8du.shop 93
+      - CN_8du.shop 94
+      - CN_8du.shop 95
+      - CN_8du.shop 96
+      - CN_8du.shop 97
+      - CN_8du.shop 98
+      - CN_8du.shop 99
+      - CN_8du.shop 100
+      - CN_8du.shop 101
+      - CN_8du.shop 102
+      - CN_8du.shop 103
+      - CN_8du.shop 104
+      - CN_8du.shop 105
+      - CN_8du.shop 106
+      - CN_8du.shop 107
+      - CN_8du.shop 108
+      - CN_8du.shop 109
+      - CN_8du.shop 110
+      - CN_8du.shop 111
+      - CN_8du.shop 112
+      - CN_8du.shop 113
+      - CN_8du.shop 114
+      - CN_8du.shop 115
+      - CN_8du.shop 116
+      - CN_8du.shop 117
+      - CN_8du.shop 118
+      - CN_8du.shop 119
+      - CN_8du.shop 120
+      - CN_8du.shop 121
+      - CN_8du.shop 122
+      - CN_8du.shop 123
+      - CN_8du.shop 124
+      - CN_8du.shop 125
+      - CN_8du.shop 126
+      - CN_8du.shop 127
+      - CN_8du.shop 128
+      - CN_8du.shop 129
+      - CN_8du.shop 130
+      - CN_8du.shop 131
+      - CN_8du.shop 132
+      - CN_8du.shop 133
+      - CN_8du.shop 134
+      - CN_8du.shop 135
+      - CN_8du.shop 136
+      - CN_8du.shop 137
+      - CN_8du.shop 138
+      - CN_8du.shop 139
+      - CN_8du.shop 140
+      - CN_8du.shop 141
+      - CN_8du.shop 142
+      - CN_8du.shop 143
+      - CN_8du.shop 144
+      - CN_8du.shop 145
+      - CN_8du.shop 146
+      - US_8du.shop 3
+      - HK_8du.shop
+      - US_8du.shop 4
+      - US_8du.shop 5
+      - US_8du.shop 6
+      - VN_8du.shop 3
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -664,125 +664,37 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - VN_8du.shop
       - US_8du.shop
-      - 8du.shop
-      - 8du.shop 2
       - US_8du.shop 2
-      - US_8du.shop 3
-      - US_8du.shop 4
-      - US_8du.shop 5
+      - VN_8du.shop 2
       - CN_8du.shop
-      - US_8du.shop 6
       - CN_8du.shop 2
       - CN_8du.shop 3
-      - PL_8du.shop
-      - AU_8du.shop
-      - PL_8du.shop 2
-      - AU_8du.shop 2
-      - GB_8du.shop
-      - AU_8du.shop 3
-      - PL_8du.shop 3
-      - AU_8du.shop 4
-      - PL_8du.shop 4
-      - PL_8du.shop 5
-      - PL_8du.shop 6
       - CN_8du.shop 4
-      - PL_8du.shop 7
-      - PL_8du.shop 8
-      - AU_8du.shop 5
-      - PL_8du.shop 9
-      - PL_8du.shop 10
-      - PL_8du.shop 11
-      - PL_8du.shop 12
-      - AU_8du.shop 6
-      - AU_8du.shop 7
-      - PL_8du.shop 13
-      - PL_8du.shop 14
       - CN_8du.shop 5
-      - PL_8du.shop 15
-      - PL_8du.shop 16
-      - PL_8du.shop 17
       - CN_8du.shop 6
-      - AU_8du.shop 8
-      - PL_8du.shop 18
-      - PL_8du.shop 19
-      - PL_8du.shop 20
-      - PL_8du.shop 21
-      - PL_8du.shop 22
       - CN_8du.shop 7
-      - PL_8du.shop 23
-      - PL_8du.shop 24
-      - PL_8du.shop 25
-      - PL_8du.shop 26
-      - PL_8du.shop 27
-      - PL_8du.shop 28
       - CN_8du.shop 8
-      - GB_8du.shop 2
-      - PL_8du.shop 29
-      - PL_8du.shop 30
-      - PL_8du.shop 31
-      - PL_8du.shop 32
-      - PL_8du.shop 33
-      - NL_8du.shop
-      - PL_8du.shop 34
-      - PL_8du.shop 35
-      - PL_8du.shop 36
-      - PL_8du.shop 37
-      - PL_8du.shop 38
-      - PL_8du.shop 39
-      - PL_8du.shop 40
-      - PL_8du.shop 41
-      - PL_8du.shop 42
       - CN_8du.shop 9
-      - PL_8du.shop 43
-      - US_8du.shop 7
-      - PL_8du.shop 44
       - CN_8du.shop 10
       - CN_8du.shop 11
       - CN_8du.shop 12
       - CN_8du.shop 13
       - CN_8du.shop 14
       - CN_8du.shop 15
-      - PL_8du.shop 45
-      - PL_8du.shop 46
-      - PL_8du.shop 47
       - CN_8du.shop 16
       - CN_8du.shop 17
       - CN_8du.shop 18
       - CN_8du.shop 19
-      - PL_8du.shop 48
-      - PL_8du.shop 49
-      - PL_8du.shop 50
       - CN_8du.shop 20
       - CN_8du.shop 21
-      - PL_8du.shop 51
-      - PL_8du.shop 52
       - CN_8du.shop 22
-      - PL_8du.shop 53
-      - PL_8du.shop 54
-      - PL_8du.shop 55
-      - PL_8du.shop 56
       - CN_8du.shop 23
-      - PL_8du.shop 57
-      - PL_8du.shop 58
-      - NL_8du.shop 2
-      - PL_8du.shop 59
       - CN_8du.shop 24
       - CN_8du.shop 25
-      - PL_8du.shop 60
-      - PL_8du.shop 61
-      - PL_8du.shop 62
-      - PL_8du.shop 63
       - CN_8du.shop 26
-      - AU_8du.shop 9
       - CN_8du.shop 27
-      - PL_8du.shop 64
-      - PL_8du.shop 65
-      - PL_8du.shop 66
-      - PL_8du.shop 67
-      - PL_8du.shop 68
-      - GB_8du.shop 3
-      - US_8du.shop 8
       - CN_8du.shop 28
       - CN_8du.shop 29
       - CN_8du.shop 30
@@ -797,29 +709,117 @@ proxy-groups:
       - CN_8du.shop 39
       - CN_8du.shop 40
       - CN_8du.shop 41
-      - JP_8du.shop
-      - US_8du.shop 9
-      - AU_8du.shop 10
       - CN_8du.shop 42
       - CN_8du.shop 43
-      - US_8du.shop 10
       - CN_8du.shop 44
       - CN_8du.shop 45
       - CN_8du.shop 46
       - CN_8du.shop 47
       - CN_8du.shop 48
-      - US_8du.shop 11
       - CN_8du.shop 49
       - CN_8du.shop 50
-      - US_8du.shop 12
       - CN_8du.shop 51
-      - US_8du.shop 13
-      - TW_8du.shop
       - CN_8du.shop 52
       - CN_8du.shop 53
-      - TW_8du.shop 2
       - CN_8du.shop 54
       - CN_8du.shop 55
+      - CN_8du.shop 56
+      - CN_8du.shop 57
+      - CN_8du.shop 58
+      - CN_8du.shop 59
+      - CN_8du.shop 60
+      - CN_8du.shop 61
+      - CN_8du.shop 62
+      - CN_8du.shop 63
+      - CN_8du.shop 64
+      - CN_8du.shop 65
+      - CN_8du.shop 66
+      - CN_8du.shop 67
+      - CN_8du.shop 68
+      - CN_8du.shop 69
+      - CN_8du.shop 70
+      - CN_8du.shop 71
+      - CN_8du.shop 72
+      - CN_8du.shop 73
+      - CN_8du.shop 74
+      - CN_8du.shop 75
+      - CN_8du.shop 76
+      - CN_8du.shop 77
+      - CN_8du.shop 78
+      - CN_8du.shop 79
+      - CN_8du.shop 80
+      - CN_8du.shop 81
+      - CN_8du.shop 82
+      - CN_8du.shop 83
+      - CN_8du.shop 84
+      - CN_8du.shop 85
+      - CN_8du.shop 86
+      - CN_8du.shop 87
+      - CN_8du.shop 88
+      - CN_8du.shop 89
+      - CN_8du.shop 90
+      - CN_8du.shop 91
+      - CN_8du.shop 92
+      - CN_8du.shop 93
+      - CN_8du.shop 94
+      - CN_8du.shop 95
+      - CN_8du.shop 96
+      - CN_8du.shop 97
+      - CN_8du.shop 98
+      - CN_8du.shop 99
+      - CN_8du.shop 100
+      - CN_8du.shop 101
+      - CN_8du.shop 102
+      - CN_8du.shop 103
+      - CN_8du.shop 104
+      - CN_8du.shop 105
+      - CN_8du.shop 106
+      - CN_8du.shop 107
+      - CN_8du.shop 108
+      - CN_8du.shop 109
+      - CN_8du.shop 110
+      - CN_8du.shop 111
+      - CN_8du.shop 112
+      - CN_8du.shop 113
+      - CN_8du.shop 114
+      - CN_8du.shop 115
+      - CN_8du.shop 116
+      - CN_8du.shop 117
+      - CN_8du.shop 118
+      - CN_8du.shop 119
+      - CN_8du.shop 120
+      - CN_8du.shop 121
+      - CN_8du.shop 122
+      - CN_8du.shop 123
+      - CN_8du.shop 124
+      - CN_8du.shop 125
+      - CN_8du.shop 126
+      - CN_8du.shop 127
+      - CN_8du.shop 128
+      - CN_8du.shop 129
+      - CN_8du.shop 130
+      - CN_8du.shop 131
+      - CN_8du.shop 132
+      - CN_8du.shop 133
+      - CN_8du.shop 134
+      - CN_8du.shop 135
+      - CN_8du.shop 136
+      - CN_8du.shop 137
+      - CN_8du.shop 138
+      - CN_8du.shop 139
+      - CN_8du.shop 140
+      - CN_8du.shop 141
+      - CN_8du.shop 142
+      - CN_8du.shop 143
+      - CN_8du.shop 144
+      - CN_8du.shop 145
+      - CN_8du.shop 146
+      - US_8du.shop 3
+      - HK_8du.shop
+      - US_8du.shop 4
+      - US_8du.shop 5
+      - US_8du.shop 6
+      - VN_8du.shop 3
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -830,125 +830,37 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
+      - VN_8du.shop
       - US_8du.shop
-      - 8du.shop
-      - 8du.shop 2
       - US_8du.shop 2
-      - US_8du.shop 3
-      - US_8du.shop 4
-      - US_8du.shop 5
+      - VN_8du.shop 2
       - CN_8du.shop
-      - US_8du.shop 6
       - CN_8du.shop 2
       - CN_8du.shop 3
-      - PL_8du.shop
-      - AU_8du.shop
-      - PL_8du.shop 2
-      - AU_8du.shop 2
-      - GB_8du.shop
-      - AU_8du.shop 3
-      - PL_8du.shop 3
-      - AU_8du.shop 4
-      - PL_8du.shop 4
-      - PL_8du.shop 5
-      - PL_8du.shop 6
       - CN_8du.shop 4
-      - PL_8du.shop 7
-      - PL_8du.shop 8
-      - AU_8du.shop 5
-      - PL_8du.shop 9
-      - PL_8du.shop 10
-      - PL_8du.shop 11
-      - PL_8du.shop 12
-      - AU_8du.shop 6
-      - AU_8du.shop 7
-      - PL_8du.shop 13
-      - PL_8du.shop 14
       - CN_8du.shop 5
-      - PL_8du.shop 15
-      - PL_8du.shop 16
-      - PL_8du.shop 17
       - CN_8du.shop 6
-      - AU_8du.shop 8
-      - PL_8du.shop 18
-      - PL_8du.shop 19
-      - PL_8du.shop 20
-      - PL_8du.shop 21
-      - PL_8du.shop 22
       - CN_8du.shop 7
-      - PL_8du.shop 23
-      - PL_8du.shop 24
-      - PL_8du.shop 25
-      - PL_8du.shop 26
-      - PL_8du.shop 27
-      - PL_8du.shop 28
       - CN_8du.shop 8
-      - GB_8du.shop 2
-      - PL_8du.shop 29
-      - PL_8du.shop 30
-      - PL_8du.shop 31
-      - PL_8du.shop 32
-      - PL_8du.shop 33
-      - NL_8du.shop
-      - PL_8du.shop 34
-      - PL_8du.shop 35
-      - PL_8du.shop 36
-      - PL_8du.shop 37
-      - PL_8du.shop 38
-      - PL_8du.shop 39
-      - PL_8du.shop 40
-      - PL_8du.shop 41
-      - PL_8du.shop 42
       - CN_8du.shop 9
-      - PL_8du.shop 43
-      - US_8du.shop 7
-      - PL_8du.shop 44
       - CN_8du.shop 10
       - CN_8du.shop 11
       - CN_8du.shop 12
       - CN_8du.shop 13
       - CN_8du.shop 14
       - CN_8du.shop 15
-      - PL_8du.shop 45
-      - PL_8du.shop 46
-      - PL_8du.shop 47
       - CN_8du.shop 16
       - CN_8du.shop 17
       - CN_8du.shop 18
       - CN_8du.shop 19
-      - PL_8du.shop 48
-      - PL_8du.shop 49
-      - PL_8du.shop 50
       - CN_8du.shop 20
       - CN_8du.shop 21
-      - PL_8du.shop 51
-      - PL_8du.shop 52
       - CN_8du.shop 22
-      - PL_8du.shop 53
-      - PL_8du.shop 54
-      - PL_8du.shop 55
-      - PL_8du.shop 56
       - CN_8du.shop 23
-      - PL_8du.shop 57
-      - PL_8du.shop 58
-      - NL_8du.shop 2
-      - PL_8du.shop 59
       - CN_8du.shop 24
       - CN_8du.shop 25
-      - PL_8du.shop 60
-      - PL_8du.shop 61
-      - PL_8du.shop 62
-      - PL_8du.shop 63
       - CN_8du.shop 26
-      - AU_8du.shop 9
       - CN_8du.shop 27
-      - PL_8du.shop 64
-      - PL_8du.shop 65
-      - PL_8du.shop 66
-      - PL_8du.shop 67
-      - PL_8du.shop 68
-      - GB_8du.shop 3
-      - US_8du.shop 8
       - CN_8du.shop 28
       - CN_8du.shop 29
       - CN_8du.shop 30
@@ -963,153 +875,153 @@ proxy-groups:
       - CN_8du.shop 39
       - CN_8du.shop 40
       - CN_8du.shop 41
-      - JP_8du.shop
-      - US_8du.shop 9
-      - AU_8du.shop 10
       - CN_8du.shop 42
       - CN_8du.shop 43
-      - US_8du.shop 10
       - CN_8du.shop 44
       - CN_8du.shop 45
       - CN_8du.shop 46
       - CN_8du.shop 47
       - CN_8du.shop 48
-      - US_8du.shop 11
       - CN_8du.shop 49
       - CN_8du.shop 50
-      - US_8du.shop 12
       - CN_8du.shop 51
-      - US_8du.shop 13
-      - TW_8du.shop
       - CN_8du.shop 52
       - CN_8du.shop 53
-      - TW_8du.shop 2
       - CN_8du.shop 54
       - CN_8du.shop 55
+      - CN_8du.shop 56
+      - CN_8du.shop 57
+      - CN_8du.shop 58
+      - CN_8du.shop 59
+      - CN_8du.shop 60
+      - CN_8du.shop 61
+      - CN_8du.shop 62
+      - CN_8du.shop 63
+      - CN_8du.shop 64
+      - CN_8du.shop 65
+      - CN_8du.shop 66
+      - CN_8du.shop 67
+      - CN_8du.shop 68
+      - CN_8du.shop 69
+      - CN_8du.shop 70
+      - CN_8du.shop 71
+      - CN_8du.shop 72
+      - CN_8du.shop 73
+      - CN_8du.shop 74
+      - CN_8du.shop 75
+      - CN_8du.shop 76
+      - CN_8du.shop 77
+      - CN_8du.shop 78
+      - CN_8du.shop 79
+      - CN_8du.shop 80
+      - CN_8du.shop 81
+      - CN_8du.shop 82
+      - CN_8du.shop 83
+      - CN_8du.shop 84
+      - CN_8du.shop 85
+      - CN_8du.shop 86
+      - CN_8du.shop 87
+      - CN_8du.shop 88
+      - CN_8du.shop 89
+      - CN_8du.shop 90
+      - CN_8du.shop 91
+      - CN_8du.shop 92
+      - CN_8du.shop 93
+      - CN_8du.shop 94
+      - CN_8du.shop 95
+      - CN_8du.shop 96
+      - CN_8du.shop 97
+      - CN_8du.shop 98
+      - CN_8du.shop 99
+      - CN_8du.shop 100
+      - CN_8du.shop 101
+      - CN_8du.shop 102
+      - CN_8du.shop 103
+      - CN_8du.shop 104
+      - CN_8du.shop 105
+      - CN_8du.shop 106
+      - CN_8du.shop 107
+      - CN_8du.shop 108
+      - CN_8du.shop 109
+      - CN_8du.shop 110
+      - CN_8du.shop 111
+      - CN_8du.shop 112
+      - CN_8du.shop 113
+      - CN_8du.shop 114
+      - CN_8du.shop 115
+      - CN_8du.shop 116
+      - CN_8du.shop 117
+      - CN_8du.shop 118
+      - CN_8du.shop 119
+      - CN_8du.shop 120
+      - CN_8du.shop 121
+      - CN_8du.shop 122
+      - CN_8du.shop 123
+      - CN_8du.shop 124
+      - CN_8du.shop 125
+      - CN_8du.shop 126
+      - CN_8du.shop 127
+      - CN_8du.shop 128
+      - CN_8du.shop 129
+      - CN_8du.shop 130
+      - CN_8du.shop 131
+      - CN_8du.shop 132
+      - CN_8du.shop 133
+      - CN_8du.shop 134
+      - CN_8du.shop 135
+      - CN_8du.shop 136
+      - CN_8du.shop 137
+      - CN_8du.shop 138
+      - CN_8du.shop 139
+      - CN_8du.shop 140
+      - CN_8du.shop 141
+      - CN_8du.shop 142
+      - CN_8du.shop 143
+      - CN_8du.shop 144
+      - CN_8du.shop 145
+      - CN_8du.shop 146
+      - US_8du.shop 3
+      - HK_8du.shop
+      - US_8du.shop 4
+      - US_8du.shop 5
+      - US_8du.shop 6
+      - VN_8du.shop 3
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
+      - VN_8du.shop
       - US_8du.shop
-      - 8du.shop
-      - 8du.shop 2
       - US_8du.shop 2
-      - US_8du.shop 3
-      - US_8du.shop 4
-      - US_8du.shop 5
+      - VN_8du.shop 2
       - CN_8du.shop
-      - US_8du.shop 6
       - CN_8du.shop 2
       - CN_8du.shop 3
-      - PL_8du.shop
-      - AU_8du.shop
-      - PL_8du.shop 2
-      - AU_8du.shop 2
-      - GB_8du.shop
-      - AU_8du.shop 3
-      - PL_8du.shop 3
-      - AU_8du.shop 4
-      - PL_8du.shop 4
-      - PL_8du.shop 5
-      - PL_8du.shop 6
       - CN_8du.shop 4
-      - PL_8du.shop 7
-      - PL_8du.shop 8
-      - AU_8du.shop 5
-      - PL_8du.shop 9
-      - PL_8du.shop 10
-      - PL_8du.shop 11
-      - PL_8du.shop 12
-      - AU_8du.shop 6
-      - AU_8du.shop 7
-      - PL_8du.shop 13
-      - PL_8du.shop 14
       - CN_8du.shop 5
-      - PL_8du.shop 15
-      - PL_8du.shop 16
-      - PL_8du.shop 17
       - CN_8du.shop 6
-      - AU_8du.shop 8
-      - PL_8du.shop 18
-      - PL_8du.shop 19
-      - PL_8du.shop 20
-      - PL_8du.shop 21
-      - PL_8du.shop 22
       - CN_8du.shop 7
-      - PL_8du.shop 23
-      - PL_8du.shop 24
-      - PL_8du.shop 25
-      - PL_8du.shop 26
-      - PL_8du.shop 27
-      - PL_8du.shop 28
       - CN_8du.shop 8
-      - GB_8du.shop 2
-      - PL_8du.shop 29
-      - PL_8du.shop 30
-      - PL_8du.shop 31
-      - PL_8du.shop 32
-      - PL_8du.shop 33
-      - NL_8du.shop
-      - PL_8du.shop 34
-      - PL_8du.shop 35
-      - PL_8du.shop 36
-      - PL_8du.shop 37
-      - PL_8du.shop 38
-      - PL_8du.shop 39
-      - PL_8du.shop 40
-      - PL_8du.shop 41
-      - PL_8du.shop 42
       - CN_8du.shop 9
-      - PL_8du.shop 43
-      - US_8du.shop 7
-      - PL_8du.shop 44
       - CN_8du.shop 10
       - CN_8du.shop 11
       - CN_8du.shop 12
       - CN_8du.shop 13
       - CN_8du.shop 14
       - CN_8du.shop 15
-      - PL_8du.shop 45
-      - PL_8du.shop 46
-      - PL_8du.shop 47
       - CN_8du.shop 16
       - CN_8du.shop 17
       - CN_8du.shop 18
       - CN_8du.shop 19
-      - PL_8du.shop 48
-      - PL_8du.shop 49
-      - PL_8du.shop 50
       - CN_8du.shop 20
       - CN_8du.shop 21
-      - PL_8du.shop 51
-      - PL_8du.shop 52
       - CN_8du.shop 22
-      - PL_8du.shop 53
-      - PL_8du.shop 54
-      - PL_8du.shop 55
-      - PL_8du.shop 56
       - CN_8du.shop 23
-      - PL_8du.shop 57
-      - PL_8du.shop 58
-      - NL_8du.shop 2
-      - PL_8du.shop 59
       - CN_8du.shop 24
       - CN_8du.shop 25
-      - PL_8du.shop 60
-      - PL_8du.shop 61
-      - PL_8du.shop 62
-      - PL_8du.shop 63
       - CN_8du.shop 26
-      - AU_8du.shop 9
       - CN_8du.shop 27
-      - PL_8du.shop 64
-      - PL_8du.shop 65
-      - PL_8du.shop 66
-      - PL_8du.shop 67
-      - PL_8du.shop 68
-      - GB_8du.shop 3
-      - US_8du.shop 8
       - CN_8du.shop 28
       - CN_8du.shop 29
       - CN_8du.shop 30
@@ -1124,154 +1036,154 @@ proxy-groups:
       - CN_8du.shop 39
       - CN_8du.shop 40
       - CN_8du.shop 41
-      - JP_8du.shop
-      - US_8du.shop 9
-      - AU_8du.shop 10
       - CN_8du.shop 42
       - CN_8du.shop 43
-      - US_8du.shop 10
       - CN_8du.shop 44
       - CN_8du.shop 45
       - CN_8du.shop 46
       - CN_8du.shop 47
       - CN_8du.shop 48
-      - US_8du.shop 11
       - CN_8du.shop 49
       - CN_8du.shop 50
-      - US_8du.shop 12
       - CN_8du.shop 51
-      - US_8du.shop 13
-      - TW_8du.shop
       - CN_8du.shop 52
       - CN_8du.shop 53
-      - TW_8du.shop 2
       - CN_8du.shop 54
       - CN_8du.shop 55
+      - CN_8du.shop 56
+      - CN_8du.shop 57
+      - CN_8du.shop 58
+      - CN_8du.shop 59
+      - CN_8du.shop 60
+      - CN_8du.shop 61
+      - CN_8du.shop 62
+      - CN_8du.shop 63
+      - CN_8du.shop 64
+      - CN_8du.shop 65
+      - CN_8du.shop 66
+      - CN_8du.shop 67
+      - CN_8du.shop 68
+      - CN_8du.shop 69
+      - CN_8du.shop 70
+      - CN_8du.shop 71
+      - CN_8du.shop 72
+      - CN_8du.shop 73
+      - CN_8du.shop 74
+      - CN_8du.shop 75
+      - CN_8du.shop 76
+      - CN_8du.shop 77
+      - CN_8du.shop 78
+      - CN_8du.shop 79
+      - CN_8du.shop 80
+      - CN_8du.shop 81
+      - CN_8du.shop 82
+      - CN_8du.shop 83
+      - CN_8du.shop 84
+      - CN_8du.shop 85
+      - CN_8du.shop 86
+      - CN_8du.shop 87
+      - CN_8du.shop 88
+      - CN_8du.shop 89
+      - CN_8du.shop 90
+      - CN_8du.shop 91
+      - CN_8du.shop 92
+      - CN_8du.shop 93
+      - CN_8du.shop 94
+      - CN_8du.shop 95
+      - CN_8du.shop 96
+      - CN_8du.shop 97
+      - CN_8du.shop 98
+      - CN_8du.shop 99
+      - CN_8du.shop 100
+      - CN_8du.shop 101
+      - CN_8du.shop 102
+      - CN_8du.shop 103
+      - CN_8du.shop 104
+      - CN_8du.shop 105
+      - CN_8du.shop 106
+      - CN_8du.shop 107
+      - CN_8du.shop 108
+      - CN_8du.shop 109
+      - CN_8du.shop 110
+      - CN_8du.shop 111
+      - CN_8du.shop 112
+      - CN_8du.shop 113
+      - CN_8du.shop 114
+      - CN_8du.shop 115
+      - CN_8du.shop 116
+      - CN_8du.shop 117
+      - CN_8du.shop 118
+      - CN_8du.shop 119
+      - CN_8du.shop 120
+      - CN_8du.shop 121
+      - CN_8du.shop 122
+      - CN_8du.shop 123
+      - CN_8du.shop 124
+      - CN_8du.shop 125
+      - CN_8du.shop 126
+      - CN_8du.shop 127
+      - CN_8du.shop 128
+      - CN_8du.shop 129
+      - CN_8du.shop 130
+      - CN_8du.shop 131
+      - CN_8du.shop 132
+      - CN_8du.shop 133
+      - CN_8du.shop 134
+      - CN_8du.shop 135
+      - CN_8du.shop 136
+      - CN_8du.shop 137
+      - CN_8du.shop 138
+      - CN_8du.shop 139
+      - CN_8du.shop 140
+      - CN_8du.shop 141
+      - CN_8du.shop 142
+      - CN_8du.shop 143
+      - CN_8du.shop 144
+      - CN_8du.shop 145
+      - CN_8du.shop 146
+      - US_8du.shop 3
+      - HK_8du.shop
+      - US_8du.shop 4
+      - US_8du.shop 5
+      - US_8du.shop 6
+      - VN_8du.shop 3
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - VN_8du.shop
       - US_8du.shop
-      - 8du.shop
-      - 8du.shop 2
       - US_8du.shop 2
-      - US_8du.shop 3
-      - US_8du.shop 4
-      - US_8du.shop 5
+      - VN_8du.shop 2
       - CN_8du.shop
-      - US_8du.shop 6
       - CN_8du.shop 2
       - CN_8du.shop 3
-      - PL_8du.shop
-      - AU_8du.shop
-      - PL_8du.shop 2
-      - AU_8du.shop 2
-      - GB_8du.shop
-      - AU_8du.shop 3
-      - PL_8du.shop 3
-      - AU_8du.shop 4
-      - PL_8du.shop 4
-      - PL_8du.shop 5
-      - PL_8du.shop 6
       - CN_8du.shop 4
-      - PL_8du.shop 7
-      - PL_8du.shop 8
-      - AU_8du.shop 5
-      - PL_8du.shop 9
-      - PL_8du.shop 10
-      - PL_8du.shop 11
-      - PL_8du.shop 12
-      - AU_8du.shop 6
-      - AU_8du.shop 7
-      - PL_8du.shop 13
-      - PL_8du.shop 14
       - CN_8du.shop 5
-      - PL_8du.shop 15
-      - PL_8du.shop 16
-      - PL_8du.shop 17
       - CN_8du.shop 6
-      - AU_8du.shop 8
-      - PL_8du.shop 18
-      - PL_8du.shop 19
-      - PL_8du.shop 20
-      - PL_8du.shop 21
-      - PL_8du.shop 22
       - CN_8du.shop 7
-      - PL_8du.shop 23
-      - PL_8du.shop 24
-      - PL_8du.shop 25
-      - PL_8du.shop 26
-      - PL_8du.shop 27
-      - PL_8du.shop 28
       - CN_8du.shop 8
-      - GB_8du.shop 2
-      - PL_8du.shop 29
-      - PL_8du.shop 30
-      - PL_8du.shop 31
-      - PL_8du.shop 32
-      - PL_8du.shop 33
-      - NL_8du.shop
-      - PL_8du.shop 34
-      - PL_8du.shop 35
-      - PL_8du.shop 36
-      - PL_8du.shop 37
-      - PL_8du.shop 38
-      - PL_8du.shop 39
-      - PL_8du.shop 40
-      - PL_8du.shop 41
-      - PL_8du.shop 42
       - CN_8du.shop 9
-      - PL_8du.shop 43
-      - US_8du.shop 7
-      - PL_8du.shop 44
       - CN_8du.shop 10
       - CN_8du.shop 11
       - CN_8du.shop 12
       - CN_8du.shop 13
       - CN_8du.shop 14
       - CN_8du.shop 15
-      - PL_8du.shop 45
-      - PL_8du.shop 46
-      - PL_8du.shop 47
       - CN_8du.shop 16
       - CN_8du.shop 17
       - CN_8du.shop 18
       - CN_8du.shop 19
-      - PL_8du.shop 48
-      - PL_8du.shop 49
-      - PL_8du.shop 50
       - CN_8du.shop 20
       - CN_8du.shop 21
-      - PL_8du.shop 51
-      - PL_8du.shop 52
       - CN_8du.shop 22
-      - PL_8du.shop 53
-      - PL_8du.shop 54
-      - PL_8du.shop 55
-      - PL_8du.shop 56
       - CN_8du.shop 23
-      - PL_8du.shop 57
-      - PL_8du.shop 58
-      - NL_8du.shop 2
-      - PL_8du.shop 59
       - CN_8du.shop 24
       - CN_8du.shop 25
-      - PL_8du.shop 60
-      - PL_8du.shop 61
-      - PL_8du.shop 62
-      - PL_8du.shop 63
       - CN_8du.shop 26
-      - AU_8du.shop 9
       - CN_8du.shop 27
-      - PL_8du.shop 64
-      - PL_8du.shop 65
-      - PL_8du.shop 66
-      - PL_8du.shop 67
-      - PL_8du.shop 68
-      - GB_8du.shop 3
-      - US_8du.shop 8
       - CN_8du.shop 28
       - CN_8du.shop 29
       - CN_8du.shop 30
@@ -1286,29 +1198,117 @@ proxy-groups:
       - CN_8du.shop 39
       - CN_8du.shop 40
       - CN_8du.shop 41
-      - JP_8du.shop
-      - US_8du.shop 9
-      - AU_8du.shop 10
       - CN_8du.shop 42
       - CN_8du.shop 43
-      - US_8du.shop 10
       - CN_8du.shop 44
       - CN_8du.shop 45
       - CN_8du.shop 46
       - CN_8du.shop 47
       - CN_8du.shop 48
-      - US_8du.shop 11
       - CN_8du.shop 49
       - CN_8du.shop 50
-      - US_8du.shop 12
       - CN_8du.shop 51
-      - US_8du.shop 13
-      - TW_8du.shop
       - CN_8du.shop 52
       - CN_8du.shop 53
-      - TW_8du.shop 2
       - CN_8du.shop 54
       - CN_8du.shop 55
+      - CN_8du.shop 56
+      - CN_8du.shop 57
+      - CN_8du.shop 58
+      - CN_8du.shop 59
+      - CN_8du.shop 60
+      - CN_8du.shop 61
+      - CN_8du.shop 62
+      - CN_8du.shop 63
+      - CN_8du.shop 64
+      - CN_8du.shop 65
+      - CN_8du.shop 66
+      - CN_8du.shop 67
+      - CN_8du.shop 68
+      - CN_8du.shop 69
+      - CN_8du.shop 70
+      - CN_8du.shop 71
+      - CN_8du.shop 72
+      - CN_8du.shop 73
+      - CN_8du.shop 74
+      - CN_8du.shop 75
+      - CN_8du.shop 76
+      - CN_8du.shop 77
+      - CN_8du.shop 78
+      - CN_8du.shop 79
+      - CN_8du.shop 80
+      - CN_8du.shop 81
+      - CN_8du.shop 82
+      - CN_8du.shop 83
+      - CN_8du.shop 84
+      - CN_8du.shop 85
+      - CN_8du.shop 86
+      - CN_8du.shop 87
+      - CN_8du.shop 88
+      - CN_8du.shop 89
+      - CN_8du.shop 90
+      - CN_8du.shop 91
+      - CN_8du.shop 92
+      - CN_8du.shop 93
+      - CN_8du.shop 94
+      - CN_8du.shop 95
+      - CN_8du.shop 96
+      - CN_8du.shop 97
+      - CN_8du.shop 98
+      - CN_8du.shop 99
+      - CN_8du.shop 100
+      - CN_8du.shop 101
+      - CN_8du.shop 102
+      - CN_8du.shop 103
+      - CN_8du.shop 104
+      - CN_8du.shop 105
+      - CN_8du.shop 106
+      - CN_8du.shop 107
+      - CN_8du.shop 108
+      - CN_8du.shop 109
+      - CN_8du.shop 110
+      - CN_8du.shop 111
+      - CN_8du.shop 112
+      - CN_8du.shop 113
+      - CN_8du.shop 114
+      - CN_8du.shop 115
+      - CN_8du.shop 116
+      - CN_8du.shop 117
+      - CN_8du.shop 118
+      - CN_8du.shop 119
+      - CN_8du.shop 120
+      - CN_8du.shop 121
+      - CN_8du.shop 122
+      - CN_8du.shop 123
+      - CN_8du.shop 124
+      - CN_8du.shop 125
+      - CN_8du.shop 126
+      - CN_8du.shop 127
+      - CN_8du.shop 128
+      - CN_8du.shop 129
+      - CN_8du.shop 130
+      - CN_8du.shop 131
+      - CN_8du.shop 132
+      - CN_8du.shop 133
+      - CN_8du.shop 134
+      - CN_8du.shop 135
+      - CN_8du.shop 136
+      - CN_8du.shop 137
+      - CN_8du.shop 138
+      - CN_8du.shop 139
+      - CN_8du.shop 140
+      - CN_8du.shop 141
+      - CN_8du.shop 142
+      - CN_8du.shop 143
+      - CN_8du.shop 144
+      - CN_8du.shop 145
+      - CN_8du.shop 146
+      - US_8du.shop 3
+      - HK_8du.shop
+      - US_8du.shop 4
+      - US_8du.shop 5
+      - US_8du.shop 6
+      - VN_8du.shop 3
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -1324,125 +1324,37 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - VN_8du.shop
       - US_8du.shop
-      - 8du.shop
-      - 8du.shop 2
       - US_8du.shop 2
-      - US_8du.shop 3
-      - US_8du.shop 4
-      - US_8du.shop 5
+      - VN_8du.shop 2
       - CN_8du.shop
-      - US_8du.shop 6
       - CN_8du.shop 2
       - CN_8du.shop 3
-      - PL_8du.shop
-      - AU_8du.shop
-      - PL_8du.shop 2
-      - AU_8du.shop 2
-      - GB_8du.shop
-      - AU_8du.shop 3
-      - PL_8du.shop 3
-      - AU_8du.shop 4
-      - PL_8du.shop 4
-      - PL_8du.shop 5
-      - PL_8du.shop 6
       - CN_8du.shop 4
-      - PL_8du.shop 7
-      - PL_8du.shop 8
-      - AU_8du.shop 5
-      - PL_8du.shop 9
-      - PL_8du.shop 10
-      - PL_8du.shop 11
-      - PL_8du.shop 12
-      - AU_8du.shop 6
-      - AU_8du.shop 7
-      - PL_8du.shop 13
-      - PL_8du.shop 14
       - CN_8du.shop 5
-      - PL_8du.shop 15
-      - PL_8du.shop 16
-      - PL_8du.shop 17
       - CN_8du.shop 6
-      - AU_8du.shop 8
-      - PL_8du.shop 18
-      - PL_8du.shop 19
-      - PL_8du.shop 20
-      - PL_8du.shop 21
-      - PL_8du.shop 22
       - CN_8du.shop 7
-      - PL_8du.shop 23
-      - PL_8du.shop 24
-      - PL_8du.shop 25
-      - PL_8du.shop 26
-      - PL_8du.shop 27
-      - PL_8du.shop 28
       - CN_8du.shop 8
-      - GB_8du.shop 2
-      - PL_8du.shop 29
-      - PL_8du.shop 30
-      - PL_8du.shop 31
-      - PL_8du.shop 32
-      - PL_8du.shop 33
-      - NL_8du.shop
-      - PL_8du.shop 34
-      - PL_8du.shop 35
-      - PL_8du.shop 36
-      - PL_8du.shop 37
-      - PL_8du.shop 38
-      - PL_8du.shop 39
-      - PL_8du.shop 40
-      - PL_8du.shop 41
-      - PL_8du.shop 42
       - CN_8du.shop 9
-      - PL_8du.shop 43
-      - US_8du.shop 7
-      - PL_8du.shop 44
       - CN_8du.shop 10
       - CN_8du.shop 11
       - CN_8du.shop 12
       - CN_8du.shop 13
       - CN_8du.shop 14
       - CN_8du.shop 15
-      - PL_8du.shop 45
-      - PL_8du.shop 46
-      - PL_8du.shop 47
       - CN_8du.shop 16
       - CN_8du.shop 17
       - CN_8du.shop 18
       - CN_8du.shop 19
-      - PL_8du.shop 48
-      - PL_8du.shop 49
-      - PL_8du.shop 50
       - CN_8du.shop 20
       - CN_8du.shop 21
-      - PL_8du.shop 51
-      - PL_8du.shop 52
       - CN_8du.shop 22
-      - PL_8du.shop 53
-      - PL_8du.shop 54
-      - PL_8du.shop 55
-      - PL_8du.shop 56
       - CN_8du.shop 23
-      - PL_8du.shop 57
-      - PL_8du.shop 58
-      - NL_8du.shop 2
-      - PL_8du.shop 59
       - CN_8du.shop 24
       - CN_8du.shop 25
-      - PL_8du.shop 60
-      - PL_8du.shop 61
-      - PL_8du.shop 62
-      - PL_8du.shop 63
       - CN_8du.shop 26
-      - AU_8du.shop 9
       - CN_8du.shop 27
-      - PL_8du.shop 64
-      - PL_8du.shop 65
-      - PL_8du.shop 66
-      - PL_8du.shop 67
-      - PL_8du.shop 68
-      - GB_8du.shop 3
-      - US_8du.shop 8
       - CN_8du.shop 28
       - CN_8du.shop 29
       - CN_8du.shop 30
@@ -1457,29 +1369,117 @@ proxy-groups:
       - CN_8du.shop 39
       - CN_8du.shop 40
       - CN_8du.shop 41
-      - JP_8du.shop
-      - US_8du.shop 9
-      - AU_8du.shop 10
       - CN_8du.shop 42
       - CN_8du.shop 43
-      - US_8du.shop 10
       - CN_8du.shop 44
       - CN_8du.shop 45
       - CN_8du.shop 46
       - CN_8du.shop 47
       - CN_8du.shop 48
-      - US_8du.shop 11
       - CN_8du.shop 49
       - CN_8du.shop 50
-      - US_8du.shop 12
       - CN_8du.shop 51
-      - US_8du.shop 13
-      - TW_8du.shop
       - CN_8du.shop 52
       - CN_8du.shop 53
-      - TW_8du.shop 2
       - CN_8du.shop 54
       - CN_8du.shop 55
+      - CN_8du.shop 56
+      - CN_8du.shop 57
+      - CN_8du.shop 58
+      - CN_8du.shop 59
+      - CN_8du.shop 60
+      - CN_8du.shop 61
+      - CN_8du.shop 62
+      - CN_8du.shop 63
+      - CN_8du.shop 64
+      - CN_8du.shop 65
+      - CN_8du.shop 66
+      - CN_8du.shop 67
+      - CN_8du.shop 68
+      - CN_8du.shop 69
+      - CN_8du.shop 70
+      - CN_8du.shop 71
+      - CN_8du.shop 72
+      - CN_8du.shop 73
+      - CN_8du.shop 74
+      - CN_8du.shop 75
+      - CN_8du.shop 76
+      - CN_8du.shop 77
+      - CN_8du.shop 78
+      - CN_8du.shop 79
+      - CN_8du.shop 80
+      - CN_8du.shop 81
+      - CN_8du.shop 82
+      - CN_8du.shop 83
+      - CN_8du.shop 84
+      - CN_8du.shop 85
+      - CN_8du.shop 86
+      - CN_8du.shop 87
+      - CN_8du.shop 88
+      - CN_8du.shop 89
+      - CN_8du.shop 90
+      - CN_8du.shop 91
+      - CN_8du.shop 92
+      - CN_8du.shop 93
+      - CN_8du.shop 94
+      - CN_8du.shop 95
+      - CN_8du.shop 96
+      - CN_8du.shop 97
+      - CN_8du.shop 98
+      - CN_8du.shop 99
+      - CN_8du.shop 100
+      - CN_8du.shop 101
+      - CN_8du.shop 102
+      - CN_8du.shop 103
+      - CN_8du.shop 104
+      - CN_8du.shop 105
+      - CN_8du.shop 106
+      - CN_8du.shop 107
+      - CN_8du.shop 108
+      - CN_8du.shop 109
+      - CN_8du.shop 110
+      - CN_8du.shop 111
+      - CN_8du.shop 112
+      - CN_8du.shop 113
+      - CN_8du.shop 114
+      - CN_8du.shop 115
+      - CN_8du.shop 116
+      - CN_8du.shop 117
+      - CN_8du.shop 118
+      - CN_8du.shop 119
+      - CN_8du.shop 120
+      - CN_8du.shop 121
+      - CN_8du.shop 122
+      - CN_8du.shop 123
+      - CN_8du.shop 124
+      - CN_8du.shop 125
+      - CN_8du.shop 126
+      - CN_8du.shop 127
+      - CN_8du.shop 128
+      - CN_8du.shop 129
+      - CN_8du.shop 130
+      - CN_8du.shop 131
+      - CN_8du.shop 132
+      - CN_8du.shop 133
+      - CN_8du.shop 134
+      - CN_8du.shop 135
+      - CN_8du.shop 136
+      - CN_8du.shop 137
+      - CN_8du.shop 138
+      - CN_8du.shop 139
+      - CN_8du.shop 140
+      - CN_8du.shop 141
+      - CN_8du.shop 142
+      - CN_8du.shop 143
+      - CN_8du.shop 144
+      - CN_8du.shop 145
+      - CN_8du.shop 146
+      - US_8du.shop 3
+      - HK_8du.shop
+      - US_8du.shop 4
+      - US_8du.shop 5
+      - US_8du.shop 6
+      - VN_8du.shop 3
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
