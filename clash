@@ -5,79 +5,50 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: US_8du.shop, server: azjpf2s.likiv2.xyz, port: 443, type: vmess, uuid: 1b8892ec-3373-45e1-83a2-b9d1f7c4ba93, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /azjpf2s, ws-headers: {Host: azjpf2s.likiv2.xyz}, udp: true}
-  - {name: US_8du.shop 2, server: bvus.xsus.xyz, port: 443, type: vmess, uuid: 1b8892ec-3373-45e1-83a2-b9d1f7c4ba93, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /xsus, ws-headers: {Host: bvus.xsus.xyz}, udp: true}
-  - {name: CN_8du.shop, server: hk1.aead.ml, port: 10401, type: ss, cipher: aes-128-gcm, password: 4234aaad-2022-426d-991b-608960beae60, udp: true}
-  - {name: CN_8du.shop 2, server: bgpddns.rentidnf.com, port: 58009, type: ss, cipher: chacha20-ietf-poly1305, password: cd783990-631e-4aef-8a3a-fdc90f0391b0, udp: true}
-  - {name: CN_8du.shop 3, server: bgpddns.rentidnf.com, port: 58000, type: ss, cipher: chacha20-ietf-poly1305, password: cd783990-631e-4aef-8a3a-fdc90f0391b0, udp: true}
-  - {name: CN_8du.shop 4, server: cmzhuyun.baiyun.pw, port: 5002, type: ss, cipher: aes-256-gcm, password: 70011e3a-a09e-40b7-b0b9-632b3dc270a2, udp: true}
-  - {name: CN_8du.shop 5, server: bgpddns.rentidnf.com, port: 58015, type: ss, cipher: chacha20-ietf-poly1305, password: cd783990-631e-4aef-8a3a-fdc90f0391b0, udp: true}
-  - {name: CN_8du.shop 6, server: bgpddns.rentidnf.com, port: 58042, type: ss, cipher: chacha20-ietf-poly1305, password: cd783990-631e-4aef-8a3a-fdc90f0391b0, udp: true}
-  - {name: CN_8du.shop 7, server: bgpddns.rentidnf.com, port: 58001, type: ss, cipher: chacha20-ietf-poly1305, password: cd783990-631e-4aef-8a3a-fdc90f0391b0, udp: true}
-  - {name: CN_8du.shop 8, server: bgpddns.rentidnf.com, port: 58010, type: ss, cipher: chacha20-ietf-poly1305, password: cd783990-631e-4aef-8a3a-fdc90f0391b0, udp: true}
-  - {name: CN_8du.shop 9, server: bgpddns.rentidnf.com, port: 58011, type: ss, cipher: chacha20-ietf-poly1305, password: cd783990-631e-4aef-8a3a-fdc90f0391b0, udp: true}
-  - {name: CN_8du.shop 10, server: bgpddns.rentidnf.com, port: 58039, type: ss, cipher: chacha20-ietf-poly1305, password: cd783990-631e-4aef-8a3a-fdc90f0391b0, udp: true}
-  - {name: CN_8du.shop 11, server: bgpddns.rentidnf.com, port: 58019, type: ss, cipher: chacha20-ietf-poly1305, password: cd783990-631e-4aef-8a3a-fdc90f0391b0, udp: true}
-  - {name: CN_8du.shop 12, server: bgpddns.rentidnf.com, port: 58036, type: ss, cipher: chacha20-ietf-poly1305, password: cd783990-631e-4aef-8a3a-fdc90f0391b0, udp: true}
-  - {name: CN_8du.shop 13, server: bgpddns.rentidnf.com, port: 58017, type: ss, cipher: chacha20-ietf-poly1305, password: cd783990-631e-4aef-8a3a-fdc90f0391b0, udp: true}
-  - {name: CN_8du.shop 14, server: bgpddns.rentidnf.com, port: 58021, type: ss, cipher: chacha20-ietf-poly1305, password: cd783990-631e-4aef-8a3a-fdc90f0391b0, udp: true}
-  - {name: CN_8du.shop 15, server: bgpddns.rentidnf.com, port: 58026, type: ss, cipher: chacha20-ietf-poly1305, password: cd783990-631e-4aef-8a3a-fdc90f0391b0, udp: true}
-  - {name: CN_8du.shop 16, server: bgpddns.rentidnf.com, port: 58032, type: ss, cipher: chacha20-ietf-poly1305, password: cd783990-631e-4aef-8a3a-fdc90f0391b0, udp: true}
-  - {name: CN_8du.shop 17, server: bgpddns.rentidnf.com, port: 58040, type: ss, cipher: chacha20-ietf-poly1305, password: cd783990-631e-4aef-8a3a-fdc90f0391b0, udp: true}
-  - {name: CN_8du.shop 18, server: bgpddns.rentidnf.com, port: 58004, type: ss, cipher: chacha20-ietf-poly1305, password: cd783990-631e-4aef-8a3a-fdc90f0391b0, udp: true}
-  - {name: CN_8du.shop 19, server: bgpddns.rentidnf.com, port: 58008, type: ss, cipher: chacha20-ietf-poly1305, password: cd783990-631e-4aef-8a3a-fdc90f0391b0, udp: true}
-  - {name: CN_8du.shop 20, server: bgpddns.rentidnf.com, port: 58044, type: ss, cipher: chacha20-ietf-poly1305, password: cd783990-631e-4aef-8a3a-fdc90f0391b0, udp: true}
-  - {name: CN_8du.shop 21, server: bgpddns.rentidnf.com, port: 58027, type: ss, cipher: chacha20-ietf-poly1305, password: cd783990-631e-4aef-8a3a-fdc90f0391b0, udp: true}
-  - {name: CN_8du.shop 22, server: bgpddns.rentidnf.com, port: 58005, type: ss, cipher: chacha20-ietf-poly1305, password: cd783990-631e-4aef-8a3a-fdc90f0391b0, udp: true}
-  - {name: CN_8du.shop 23, server: bgpddns.rentidnf.com, port: 58006, type: ss, cipher: chacha20-ietf-poly1305, password: cd783990-631e-4aef-8a3a-fdc90f0391b0, udp: true}
-  - {name: CN_8du.shop 24, server: bgpddns.rentidnf.com, port: 58043, type: ss, cipher: chacha20-ietf-poly1305, password: cd783990-631e-4aef-8a3a-fdc90f0391b0, udp: true}
-  - {name: CN_8du.shop 25, server: bgpddns.rentidnf.com, port: 58031, type: ss, cipher: chacha20-ietf-poly1305, password: cd783990-631e-4aef-8a3a-fdc90f0391b0, udp: true}
-  - {name: CN_8du.shop 26, server: bgpddns.rentidnf.com, port: 58012, type: ss, cipher: chacha20-ietf-poly1305, password: cd783990-631e-4aef-8a3a-fdc90f0391b0, udp: true}
-  - {name: CN_8du.shop 27, server: bgpddns.rentidnf.com, port: 58016, type: ss, cipher: chacha20-ietf-poly1305, password: cd783990-631e-4aef-8a3a-fdc90f0391b0, udp: true}
-  - {name: CN_8du.shop 28, server: bgpddns.rentidnf.com, port: 58013, type: ss, cipher: chacha20-ietf-poly1305, password: cd783990-631e-4aef-8a3a-fdc90f0391b0, udp: true}
-  - {name: CN_8du.shop 29, server: hk2.aead.ml, port: 10402, type: ss, cipher: aes-128-gcm, password: 4234aaad-2022-426d-991b-608960beae60, udp: true}
-  - {name: CN_8du.shop 30, server: bgpddns.rentidnf.com, port: 58014, type: ss, cipher: chacha20-ietf-poly1305, password: cd783990-631e-4aef-8a3a-fdc90f0391b0, udp: true}
-  - {name: CN_8du.shop 31, server: 14.29.124.168, port: 25279, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_8du.shop 32, server: bgpddns.rentidnf.com, port: 58029, type: ss, cipher: chacha20-ietf-poly1305, password: cd783990-631e-4aef-8a3a-fdc90f0391b0, udp: true}
-  - {name: CN_8du.shop 33, server: bgpddns.rentidnf.com, port: 58030, type: ss, cipher: chacha20-ietf-poly1305, password: cd783990-631e-4aef-8a3a-fdc90f0391b0, udp: true}
-  - {name: CN_8du.shop 34, server: 120.232.192.250, port: 3384, type: trojan, password: f6f2072a2e4cfc91, skip-cert-verify: true, udp: true}
-  - {name: US_8du.shop 3, server: rbmf.speedcncnforward3.tk, port: 10004, type: trojan, password: 24a69c36-af9b-4fe8-aa1e-f98dff810af8, sni: rbmf.speedcncnforward3.tk, skip-cert-verify: true, udp: true}
-  - {name: CN_8du.shop 35, server: 106.75.154.24, port: 3389, type: trojan, password: c3c448da2363a6f7, skip-cert-verify: true, udp: true}
-  - {name: CN_8du.shop 36, server: 120.132.50.158, port: 3389, type: trojan, password: f6f2072a2e4cfc91, skip-cert-verify: true, udp: true}
-  - {name: CN_8du.shop 37, server: 123.59.87.29, port: 3389, type: trojan, password: f6f2072a2e4cfc91, skip-cert-verify: true, udp: true}
-  - {name: CN_8du.shop 38, server: 123.59.72.193, port: 3389, type: trojan, password: f6f2072a2e4cfc91, skip-cert-verify: true, udp: true}
-  - {name: CN_8du.shop 39, server: 116.129.254.29, port: 3389, type: trojan, password: f6f2072a2e4cfc91, skip-cert-verify: true, udp: true}
-  - {name: US_8du.shop 4, server: kr1.qingyun123.xyz, port: 10050, type: trojan, password: 869d7217-8ad4-4265-be69-5a848afadebf, sni: kr1.qingyun123.xyz, skip-cert-verify: true, udp: true}
-  - {name: CN_8du.shop 40, server: 113.31.155.165, port: 3389, type: trojan, password: c3c448da2363a6f7, skip-cert-verify: true, udp: true}
-  - {name: CN_8du.shop 41, server: 106.75.233.91, port: 3389, type: trojan, password: c3c448da2363a6f7, skip-cert-verify: true, udp: true}
-  - {name: US_8du.shop 5, server: 20.239.56.22, port: 38443, type: trojan, password: a0dac702-8ab0-40e7-a8a1-1dd7d8fb65e0, skip-cert-verify: true, udp: true}
-  - {name: CN_8du.shop 42, server: 116.129.253.201, port: 3389, type: trojan, password: c3c448da2363a6f7, skip-cert-verify: true, udp: true}
-  - {name: CN_8du.shop 43, server: gzcm.relay02.insnow.xyz, port: 19912, type: trojan, password: 9a057015-6dfb-4b57-9f69-877423598741, sni: gzcm.relay02.insnow.xyz, skip-cert-verify: true, udp: true}
-  - {name: CN_8du.shop 44, server: 113.31.155.165, port: 3389, type: trojan, password: f6f2072a2e4cfc91, skip-cert-verify: true, udp: true}
-  - {name: CN_8du.shop 45, server: 120.232.192.250, port: 3383, type: trojan, password: f6f2072a2e4cfc91, skip-cert-verify: true, udp: true}
-  - {name: CN_8du.shop 46, server: 120.232.192.250, port: 3382, type: trojan, password: c3c448da2363a6f7, skip-cert-verify: true, udp: true}
-  - {name: CN_8du.shop 47, server: 106.75.154.24, port: 3389, type: trojan, password: f6f2072a2e4cfc91, skip-cert-verify: true, udp: true}
-  - {name: CN_8du.shop 48, server: 116.129.253.245, port: 3389, type: trojan, password: f6f2072a2e4cfc91, skip-cert-verify: true, udp: true}
-  - {name: CN_8du.shop 49, server: 113.31.109.30, port: 3389, type: trojan, password: f6f2072a2e4cfc91, skip-cert-verify: true, udp: true}
-  - {name: CN_8du.shop 50, server: 120.232.192.250, port: 3382, type: trojan, password: f6f2072a2e4cfc91, skip-cert-verify: true, udp: true}
-  - {name: HK_8du.shop, server: 20.205.98.64, port: 38443, type: trojan, password: a0dac702-8ab0-40e7-a8a1-1dd7d8fb65e0, skip-cert-verify: true, udp: true}
-  - {name: TW_8du.shop, server: 60.249.3.125, port: 3389, type: trojan, password: c3c448da2363a6f7, skip-cert-verify: true, udp: true}
-  - {name: TW_8du.shop 2, server: 211.72.35.153, port: 3389, type: trojan, password: f6f2072a2e4cfc91, skip-cert-verify: true, udp: true}
-  - {name: CN_8du.shop 51, server: 106.75.168.104, port: 3389, type: trojan, password: f6f2072a2e4cfc91, skip-cert-verify: true, udp: true}
-  - {name: TW_8du.shop 3, server: 60.249.3.229, port: 3389, type: trojan, password: f6f2072a2e4cfc91, skip-cert-verify: true, udp: true}
-  - {name: CN_8du.shop 52, server: 120.232.192.250, port: 3385, type: trojan, password: c3c448da2363a6f7, skip-cert-verify: true, udp: true}
-  - {name: CN_8du.shop 53, server: 120.232.192.250, port: 3389, type: trojan, password: f6f2072a2e4cfc91, skip-cert-verify: true, udp: true}
-  - {name: CN_8du.shop 54, server: 117.50.106.86, port: 3389, type: trojan, password: f6f2072a2e4cfc91, skip-cert-verify: true, udp: true}
-  - {name: CN_8du.shop 55, server: 120.232.192.250, port: 3389, type: trojan, password: c3c448da2363a6f7, skip-cert-verify: true, udp: true}
-  - {name: CN_8du.shop 56, server: 106.75.233.91, port: 3389, type: trojan, password: f6f2072a2e4cfc91, skip-cert-verify: true, udp: true}
+  - {name: HK_8du.shop, server: hkt.zhongyun.xyz, port: 43312, type: vmess, uuid: 2eae0876-b17f-4f57-af38-c138668db626, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /c, ws-headers: {Host: hkt.zhongyun.xyz}, udp: true}
+  - {name: CN_8du.shop, server: guangzhou.kuli888.xyz, port: 52101, type: trojan, password: 7193174d-2dfe-3def-ac2d-6a811a0ff6e1, sni: guangzhou.kuli888.xyz, skip-cert-verify: true, udp: true}
+  - {name: CN_8du.shop 2, server: v3hgc02.kuli888.xyz, port: 52032, type: trojan, password: 7193174d-2dfe-3def-ac2d-6a811a0ff6e1, sni: v3hgc02.kuli888.xyz, skip-cert-verify: true, udp: true}
+  - {name: CN_8du.shop 3, server: hk05lt.kuli888.xyz, port: 11163, type: trojan, password: 7193174d-2dfe-3def-ac2d-6a811a0ff6e1, sni: hk05lt.kuli888.xyz, skip-cert-verify: true, udp: true}
+  - {name: CN_8du.shop 4, server: tw2506.cloudmatrix.xyz, port: 2506, type: vmess, uuid: a992be42-bed4-3037-8788-9e860cd635d3, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: CN_8du.shop 5, server: sg2603.cloudmatrix.xyz, port: 2603, type: vmess, uuid: 479a9dbc-b896-3fc7-8f68-c26c92f3ae2a, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: CN_8du.shop 6, server: tw2505.cloudmatrix.xyz, port: 2505, type: vmess, uuid: a992be42-bed4-3037-8788-9e860cd635d3, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: CN_8du.shop 7, server: jp21301.cloudmatrix.xyz, port: 21301, type: vmess, uuid: a992be42-bed4-3037-8788-9e860cd635d3, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: CN_8du.shop 8, server: hk2702.cloudmatrix.xyz, port: 2702, type: vmess, uuid: 479a9dbc-b896-3fc7-8f68-c26c92f3ae2a, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: CN_8du.shop 9, server: hnt.stashbox.best, port: 50050, type: vmess, uuid: 65aa9fbd-4185-47ee-80be-34721dee1ff0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: hnt.stashbox.best}, udp: true}
+  - {name: CN_8du.shop 10, server: hk2704.cloudmatrix.xyz, port: 2704, type: vmess, uuid: a992be42-bed4-3037-8788-9e860cd635d3, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: CN_8du.shop 11, server: hk2702.cloudmatrix.xyz, port: 2702, type: vmess, uuid: a992be42-bed4-3037-8788-9e860cd635d3, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: US_8du.shop, server: 104.25.234.170, port: 443, type: vmess, uuid: f78db9ae-24c2-4a83-9d96-e8def79d0379, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /Support-Putin-Kill-all-Ukrainians_vws, ws-headers: {Host: jp02.884899.cf}, udp: true}
+  - {name: CN_8du.shop 12, server: fkgfw-prod.i.sxl.cn, port: 443, type: ss, cipher: aes-256-cfb, password: E4DNMf73kHPrd8Qq7aqGPf7f, udp: true}
+  - {name: CN_8du.shop 13, server: hk21202.cloudmatrix.xyz, port: 21202, type: vmess, uuid: a992be42-bed4-3037-8788-9e860cd635d3, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: CN_8du.shop 14, server: hk21202.cloudmatrix.xyz, port: 21202, type: vmess, uuid: 479a9dbc-b896-3fc7-8f68-c26c92f3ae2a, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: CN_8du.shop 15, server: us2406.cloudmatrix.xyz, port: 2406, type: vmess, uuid: a992be42-bed4-3037-8788-9e860cd635d3, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: US_8du.shop 2, server: fhcarm2.gaox.ml, port: 443, type: trojan, password: f39bd244-f5fe-415c-8b98-a1e5250bf178, sni: fhcarm2.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: CN_8du.shop 16, server: sg2603.cloudmatrix.xyz, port: 2603, type: vmess, uuid: a992be42-bed4-3037-8788-9e860cd635d3, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: GB_8du.shop, server: jgwld1.gaox.ml, port: 443, type: trojan, password: 02e653c9-7c93-46a9-999d-11834bd0c577, sni: jgwld1.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: CN_8du.shop 17, server: ru21701.cloudmatrix.xyz, port: 21701, type: vmess, uuid: a992be42-bed4-3037-8788-9e860cd635d3, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: JP_8du.shop, server: shaobo.monster, port: 14474, type: vmess, uuid: 2ccd2b01-2fe3-4226-ced8-96e901a85aaf, alterId: 23, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: shaobo.monster}, udp: true}
+  - {name: CN_8du.shop 18, server: sg2604.cloudmatrix.xyz, port: 2604, type: vmess, uuid: a992be42-bed4-3037-8788-9e860cd635d3, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: CN_8du.shop 19, server: sg21102.cloudmatrix.xyz, port: 21102, type: vmess, uuid: a992be42-bed4-3037-8788-9e860cd635d3, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: CN_8du.shop 20, server: tw2504.cloudmatrix.xyz, port: 2504, type: vmess, uuid: 479a9dbc-b896-3fc7-8f68-c26c92f3ae2a, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: CN_8du.shop 21, server: tw2504.cloudmatrix.xyz, port: 2504, type: vmess, uuid: a992be42-bed4-3037-8788-9e860cd635d3, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: CN_8du.shop 22, server: uk2901.cloudmatrix.xyz, port: 2901, type: vmess, uuid: a992be42-bed4-3037-8788-9e860cd635d3, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: CN_8du.shop 23, server: us24055.cloudmatrix.xyz, port: 24055, type: vmess, uuid: a992be42-bed4-3037-8788-9e860cd635d3, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: CN_8du.shop 24, server: hk2704.cloudmatrix.xyz, port: 2704, type: vmess, uuid: 479a9dbc-b896-3fc7-8f68-c26c92f3ae2a, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: CN_8du.shop 25, server: 14.29.124.168, port: 25252, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_8du.shop 26, server: us24052.cloudmatrix.xyz, port: 24052, type: vmess, uuid: a992be42-bed4-3037-8788-9e860cd635d3, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: CN_8du.shop 27, server: sg21101.cloudmatrix.xyz, port: 21101, type: vmess, uuid: a992be42-bed4-3037-8788-9e860cd635d3, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: CN_8du.shop 28, server: jp2802.cloudmatrix.xyz, port: 2802, type: vmess, uuid: a992be42-bed4-3037-8788-9e860cd635d3, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: CN_8du.shop 29, server: 14.29.124.168, port: 25287, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: US_8du.shop 3, server: us1.qingyun123.xyz, port: 10050, type: trojan, password: 869d7217-8ad4-4265-be69-5a848afadebf, sni: us1.qingyun123.xyz, skip-cert-verify: true, udp: true}
+  - {name: CN_8du.shop 30, server: sg21101.cloudmatrix.xyz, port: 21101, type: vmess, uuid: 479a9dbc-b896-3fc7-8f68-c26c92f3ae2a, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: CN_8du.shop 31, server: hk2703.cloudmatrix.xyz, port: 2703, type: vmess, uuid: a992be42-bed4-3037-8788-9e860cd635d3, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: t.me/vpnhat}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - US_8du.shop
-      - US_8du.shop 2
+      - HK_8du.shop
       - CN_8du.shop
       - CN_8du.shop 2
       - CN_8du.shop 3
@@ -89,12 +60,16 @@ proxy-groups:
       - CN_8du.shop 9
       - CN_8du.shop 10
       - CN_8du.shop 11
+      - US_8du.shop
       - CN_8du.shop 12
       - CN_8du.shop 13
       - CN_8du.shop 14
       - CN_8du.shop 15
+      - US_8du.shop 2
       - CN_8du.shop 16
+      - GB_8du.shop
       - CN_8du.shop 17
+      - JP_8du.shop
       - CN_8du.shop 18
       - CN_8du.shop 19
       - CN_8du.shop 20
@@ -107,47 +82,15 @@ proxy-groups:
       - CN_8du.shop 27
       - CN_8du.shop 28
       - CN_8du.shop 29
+      - US_8du.shop 3
       - CN_8du.shop 30
       - CN_8du.shop 31
-      - CN_8du.shop 32
-      - CN_8du.shop 33
-      - CN_8du.shop 34
-      - US_8du.shop 3
-      - CN_8du.shop 35
-      - CN_8du.shop 36
-      - CN_8du.shop 37
-      - CN_8du.shop 38
-      - CN_8du.shop 39
-      - US_8du.shop 4
-      - CN_8du.shop 40
-      - CN_8du.shop 41
-      - US_8du.shop 5
-      - CN_8du.shop 42
-      - CN_8du.shop 43
-      - CN_8du.shop 44
-      - CN_8du.shop 45
-      - CN_8du.shop 46
-      - CN_8du.shop 47
-      - CN_8du.shop 48
-      - CN_8du.shop 49
-      - CN_8du.shop 50
-      - HK_8du.shop
-      - TW_8du.shop
-      - TW_8du.shop 2
-      - CN_8du.shop 51
-      - TW_8du.shop 3
-      - CN_8du.shop 52
-      - CN_8du.shop 53
-      - CN_8du.shop 54
-      - CN_8du.shop 55
-      - CN_8du.shop 56
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - US_8du.shop
-      - US_8du.shop 2
+      - HK_8du.shop
       - CN_8du.shop
       - CN_8du.shop 2
       - CN_8du.shop 3
@@ -159,12 +102,16 @@ proxy-groups:
       - CN_8du.shop 9
       - CN_8du.shop 10
       - CN_8du.shop 11
+      - US_8du.shop
       - CN_8du.shop 12
       - CN_8du.shop 13
       - CN_8du.shop 14
       - CN_8du.shop 15
+      - US_8du.shop 2
       - CN_8du.shop 16
+      - GB_8du.shop
       - CN_8du.shop 17
+      - JP_8du.shop
       - CN_8du.shop 18
       - CN_8du.shop 19
       - CN_8du.shop 20
@@ -177,48 +124,16 @@ proxy-groups:
       - CN_8du.shop 27
       - CN_8du.shop 28
       - CN_8du.shop 29
+      - US_8du.shop 3
       - CN_8du.shop 30
       - CN_8du.shop 31
-      - CN_8du.shop 32
-      - CN_8du.shop 33
-      - CN_8du.shop 34
-      - US_8du.shop 3
-      - CN_8du.shop 35
-      - CN_8du.shop 36
-      - CN_8du.shop 37
-      - CN_8du.shop 38
-      - CN_8du.shop 39
-      - US_8du.shop 4
-      - CN_8du.shop 40
-      - CN_8du.shop 41
-      - US_8du.shop 5
-      - CN_8du.shop 42
-      - CN_8du.shop 43
-      - CN_8du.shop 44
-      - CN_8du.shop 45
-      - CN_8du.shop 46
-      - CN_8du.shop 47
-      - CN_8du.shop 48
-      - CN_8du.shop 49
-      - CN_8du.shop 50
-      - HK_8du.shop
-      - TW_8du.shop
-      - TW_8du.shop 2
-      - CN_8du.shop 51
-      - TW_8du.shop 3
-      - CN_8du.shop 52
-      - CN_8du.shop 53
-      - CN_8du.shop 54
-      - CN_8du.shop 55
-      - CN_8du.shop 56
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - US_8du.shop
-      - US_8du.shop 2
+      - HK_8du.shop
       - CN_8du.shop
       - CN_8du.shop 2
       - CN_8du.shop 3
@@ -230,12 +145,16 @@ proxy-groups:
       - CN_8du.shop 9
       - CN_8du.shop 10
       - CN_8du.shop 11
+      - US_8du.shop
       - CN_8du.shop 12
       - CN_8du.shop 13
       - CN_8du.shop 14
       - CN_8du.shop 15
+      - US_8du.shop 2
       - CN_8du.shop 16
+      - GB_8du.shop
       - CN_8du.shop 17
+      - JP_8du.shop
       - CN_8du.shop 18
       - CN_8du.shop 19
       - CN_8du.shop 20
@@ -248,40 +167,9 @@ proxy-groups:
       - CN_8du.shop 27
       - CN_8du.shop 28
       - CN_8du.shop 29
+      - US_8du.shop 3
       - CN_8du.shop 30
       - CN_8du.shop 31
-      - CN_8du.shop 32
-      - CN_8du.shop 33
-      - CN_8du.shop 34
-      - US_8du.shop 3
-      - CN_8du.shop 35
-      - CN_8du.shop 36
-      - CN_8du.shop 37
-      - CN_8du.shop 38
-      - CN_8du.shop 39
-      - US_8du.shop 4
-      - CN_8du.shop 40
-      - CN_8du.shop 41
-      - US_8du.shop 5
-      - CN_8du.shop 42
-      - CN_8du.shop 43
-      - CN_8du.shop 44
-      - CN_8du.shop 45
-      - CN_8du.shop 46
-      - CN_8du.shop 47
-      - CN_8du.shop 48
-      - CN_8du.shop 49
-      - CN_8du.shop 50
-      - HK_8du.shop
-      - TW_8du.shop
-      - TW_8du.shop 2
-      - CN_8du.shop 51
-      - TW_8du.shop 3
-      - CN_8du.shop 52
-      - CN_8du.shop 53
-      - CN_8du.shop 54
-      - CN_8du.shop 55
-      - CN_8du.shop 56
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -300,8 +188,7 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - US_8du.shop
-      - US_8du.shop 2
+      - HK_8du.shop
       - CN_8du.shop
       - CN_8du.shop 2
       - CN_8du.shop 3
@@ -313,12 +200,16 @@ proxy-groups:
       - CN_8du.shop 9
       - CN_8du.shop 10
       - CN_8du.shop 11
+      - US_8du.shop
       - CN_8du.shop 12
       - CN_8du.shop 13
       - CN_8du.shop 14
       - CN_8du.shop 15
+      - US_8du.shop 2
       - CN_8du.shop 16
+      - GB_8du.shop
       - CN_8du.shop 17
+      - JP_8du.shop
       - CN_8du.shop 18
       - CN_8du.shop 19
       - CN_8du.shop 20
@@ -331,40 +222,9 @@ proxy-groups:
       - CN_8du.shop 27
       - CN_8du.shop 28
       - CN_8du.shop 29
+      - US_8du.shop 3
       - CN_8du.shop 30
       - CN_8du.shop 31
-      - CN_8du.shop 32
-      - CN_8du.shop 33
-      - CN_8du.shop 34
-      - US_8du.shop 3
-      - CN_8du.shop 35
-      - CN_8du.shop 36
-      - CN_8du.shop 37
-      - CN_8du.shop 38
-      - CN_8du.shop 39
-      - US_8du.shop 4
-      - CN_8du.shop 40
-      - CN_8du.shop 41
-      - US_8du.shop 5
-      - CN_8du.shop 42
-      - CN_8du.shop 43
-      - CN_8du.shop 44
-      - CN_8du.shop 45
-      - CN_8du.shop 46
-      - CN_8du.shop 47
-      - CN_8du.shop 48
-      - CN_8du.shop 49
-      - CN_8du.shop 50
-      - HK_8du.shop
-      - TW_8du.shop
-      - TW_8du.shop 2
-      - CN_8du.shop 51
-      - TW_8du.shop 3
-      - CN_8du.shop 52
-      - CN_8du.shop 53
-      - CN_8du.shop 54
-      - CN_8du.shop 55
-      - CN_8du.shop 56
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -375,8 +235,7 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - US_8du.shop
-      - US_8du.shop 2
+      - HK_8du.shop
       - CN_8du.shop
       - CN_8du.shop 2
       - CN_8du.shop 3
@@ -388,12 +247,16 @@ proxy-groups:
       - CN_8du.shop 9
       - CN_8du.shop 10
       - CN_8du.shop 11
+      - US_8du.shop
       - CN_8du.shop 12
       - CN_8du.shop 13
       - CN_8du.shop 14
       - CN_8du.shop 15
+      - US_8du.shop 2
       - CN_8du.shop 16
+      - GB_8du.shop
       - CN_8du.shop 17
+      - JP_8du.shop
       - CN_8du.shop 18
       - CN_8du.shop 19
       - CN_8du.shop 20
@@ -406,47 +269,15 @@ proxy-groups:
       - CN_8du.shop 27
       - CN_8du.shop 28
       - CN_8du.shop 29
+      - US_8du.shop 3
       - CN_8du.shop 30
       - CN_8du.shop 31
-      - CN_8du.shop 32
-      - CN_8du.shop 33
-      - CN_8du.shop 34
-      - US_8du.shop 3
-      - CN_8du.shop 35
-      - CN_8du.shop 36
-      - CN_8du.shop 37
-      - CN_8du.shop 38
-      - CN_8du.shop 39
-      - US_8du.shop 4
-      - CN_8du.shop 40
-      - CN_8du.shop 41
-      - US_8du.shop 5
-      - CN_8du.shop 42
-      - CN_8du.shop 43
-      - CN_8du.shop 44
-      - CN_8du.shop 45
-      - CN_8du.shop 46
-      - CN_8du.shop 47
-      - CN_8du.shop 48
-      - CN_8du.shop 49
-      - CN_8du.shop 50
-      - HK_8du.shop
-      - TW_8du.shop
-      - TW_8du.shop 2
-      - CN_8du.shop 51
-      - TW_8du.shop 3
-      - CN_8du.shop 52
-      - CN_8du.shop 53
-      - CN_8du.shop 54
-      - CN_8du.shop 55
-      - CN_8du.shop 56
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - US_8du.shop
-      - US_8du.shop 2
+      - HK_8du.shop
       - CN_8du.shop
       - CN_8du.shop 2
       - CN_8du.shop 3
@@ -458,12 +289,16 @@ proxy-groups:
       - CN_8du.shop 9
       - CN_8du.shop 10
       - CN_8du.shop 11
+      - US_8du.shop
       - CN_8du.shop 12
       - CN_8du.shop 13
       - CN_8du.shop 14
       - CN_8du.shop 15
+      - US_8du.shop 2
       - CN_8du.shop 16
+      - GB_8du.shop
       - CN_8du.shop 17
+      - JP_8du.shop
       - CN_8du.shop 18
       - CN_8du.shop 19
       - CN_8du.shop 20
@@ -476,48 +311,16 @@ proxy-groups:
       - CN_8du.shop 27
       - CN_8du.shop 28
       - CN_8du.shop 29
+      - US_8du.shop 3
       - CN_8du.shop 30
       - CN_8du.shop 31
-      - CN_8du.shop 32
-      - CN_8du.shop 33
-      - CN_8du.shop 34
-      - US_8du.shop 3
-      - CN_8du.shop 35
-      - CN_8du.shop 36
-      - CN_8du.shop 37
-      - CN_8du.shop 38
-      - CN_8du.shop 39
-      - US_8du.shop 4
-      - CN_8du.shop 40
-      - CN_8du.shop 41
-      - US_8du.shop 5
-      - CN_8du.shop 42
-      - CN_8du.shop 43
-      - CN_8du.shop 44
-      - CN_8du.shop 45
-      - CN_8du.shop 46
-      - CN_8du.shop 47
-      - CN_8du.shop 48
-      - CN_8du.shop 49
-      - CN_8du.shop 50
-      - HK_8du.shop
-      - TW_8du.shop
-      - TW_8du.shop 2
-      - CN_8du.shop 51
-      - TW_8du.shop 3
-      - CN_8du.shop 52
-      - CN_8du.shop 53
-      - CN_8du.shop 54
-      - CN_8du.shop 55
-      - CN_8du.shop 56
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - US_8du.shop
-      - US_8du.shop 2
+      - HK_8du.shop
       - CN_8du.shop
       - CN_8du.shop 2
       - CN_8du.shop 3
@@ -529,12 +332,16 @@ proxy-groups:
       - CN_8du.shop 9
       - CN_8du.shop 10
       - CN_8du.shop 11
+      - US_8du.shop
       - CN_8du.shop 12
       - CN_8du.shop 13
       - CN_8du.shop 14
       - CN_8du.shop 15
+      - US_8du.shop 2
       - CN_8du.shop 16
+      - GB_8du.shop
       - CN_8du.shop 17
+      - JP_8du.shop
       - CN_8du.shop 18
       - CN_8du.shop 19
       - CN_8du.shop 20
@@ -547,40 +354,9 @@ proxy-groups:
       - CN_8du.shop 27
       - CN_8du.shop 28
       - CN_8du.shop 29
+      - US_8du.shop 3
       - CN_8du.shop 30
       - CN_8du.shop 31
-      - CN_8du.shop 32
-      - CN_8du.shop 33
-      - CN_8du.shop 34
-      - US_8du.shop 3
-      - CN_8du.shop 35
-      - CN_8du.shop 36
-      - CN_8du.shop 37
-      - CN_8du.shop 38
-      - CN_8du.shop 39
-      - US_8du.shop 4
-      - CN_8du.shop 40
-      - CN_8du.shop 41
-      - US_8du.shop 5
-      - CN_8du.shop 42
-      - CN_8du.shop 43
-      - CN_8du.shop 44
-      - CN_8du.shop 45
-      - CN_8du.shop 46
-      - CN_8du.shop 47
-      - CN_8du.shop 48
-      - CN_8du.shop 49
-      - CN_8du.shop 50
-      - HK_8du.shop
-      - TW_8du.shop
-      - TW_8du.shop 2
-      - CN_8du.shop 51
-      - TW_8du.shop 3
-      - CN_8du.shop 52
-      - CN_8du.shop 53
-      - CN_8du.shop 54
-      - CN_8du.shop 55
-      - CN_8du.shop 56
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -596,8 +372,7 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - US_8du.shop
-      - US_8du.shop 2
+      - HK_8du.shop
       - CN_8du.shop
       - CN_8du.shop 2
       - CN_8du.shop 3
@@ -609,12 +384,16 @@ proxy-groups:
       - CN_8du.shop 9
       - CN_8du.shop 10
       - CN_8du.shop 11
+      - US_8du.shop
       - CN_8du.shop 12
       - CN_8du.shop 13
       - CN_8du.shop 14
       - CN_8du.shop 15
+      - US_8du.shop 2
       - CN_8du.shop 16
+      - GB_8du.shop
       - CN_8du.shop 17
+      - JP_8du.shop
       - CN_8du.shop 18
       - CN_8du.shop 19
       - CN_8du.shop 20
@@ -627,40 +406,9 @@ proxy-groups:
       - CN_8du.shop 27
       - CN_8du.shop 28
       - CN_8du.shop 29
+      - US_8du.shop 3
       - CN_8du.shop 30
       - CN_8du.shop 31
-      - CN_8du.shop 32
-      - CN_8du.shop 33
-      - CN_8du.shop 34
-      - US_8du.shop 3
-      - CN_8du.shop 35
-      - CN_8du.shop 36
-      - CN_8du.shop 37
-      - CN_8du.shop 38
-      - CN_8du.shop 39
-      - US_8du.shop 4
-      - CN_8du.shop 40
-      - CN_8du.shop 41
-      - US_8du.shop 5
-      - CN_8du.shop 42
-      - CN_8du.shop 43
-      - CN_8du.shop 44
-      - CN_8du.shop 45
-      - CN_8du.shop 46
-      - CN_8du.shop 47
-      - CN_8du.shop 48
-      - CN_8du.shop 49
-      - CN_8du.shop 50
-      - HK_8du.shop
-      - TW_8du.shop
-      - TW_8du.shop 2
-      - CN_8du.shop 51
-      - TW_8du.shop 3
-      - CN_8du.shop 52
-      - CN_8du.shop 53
-      - CN_8du.shop 54
-      - CN_8du.shop 55
-      - CN_8du.shop 56
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
