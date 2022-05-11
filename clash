@@ -5,515 +5,1159 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 8度商店：8du.shop, server: 20.205.11.55, port: 60045, type: vmess, uuid: 9d7fb490-f159-3b56-8e8a-614c45c299d1, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 20.205.11.55}, udp: true}
-  - {name: 8度商店：8du.shop 2, server: juzi-iplc001.ddns-oink.xyz, port: 40175, type: vmess, uuid: 4a11fe77-f1a7-35b0-a535-4762d2f9ac2b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jz666666, ws-headers: {Host: juzi-iplc001.ddns-oink.xyz}, udp: true}
-  - {name: 8度商店：8du.shop 3, server: juzi-iplc001.ddns-oink.xyz, port: 40121, type: vmess, uuid: 4a11fe77-f1a7-35b0-a535-4762d2f9ac2b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jz666666, ws-headers: {Host: juzi-iplc001.ddns-oink.xyz}, udp: true}
-  - {name: 8度商店：8du.shop 4, server: jzdjd-01.ddns-oink.xyz, port: 40268, type: vmess, uuid: 4a11fe77-f1a7-35b0-a535-4762d2f9ac2b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jz666666, ws-headers: {Host: jzdjd-01.ddns-oink.xyz}, udp: true}
-  - {name: 8度商店：8du.shop 5, server: juzi-iplc001.ddns-oink.xyz, port: 40204, type: vmess, uuid: 4a11fe77-f1a7-35b0-a535-4762d2f9ac2b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jz666666, ws-headers: {Host: juzi-iplc001.ddns-oink.xyz}, udp: true}
-  - {name: 8度商店：8du.shop 6, server: juzi-iplc001.ddns-oink.xyz, port: 40306, type: vmess, uuid: 4a11fe77-f1a7-35b0-a535-4762d2f9ac2b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jz666666, ws-headers: {Host: juzi-iplc001.ddns-oink.xyz}, udp: true}
-  - {name: 8度商店：8du.shop 7, server: shanghai-cn2-01.ddns-oink.xyz, port: 40101, type: vmess, uuid: 4a11fe77-f1a7-35b0-a535-4762d2f9ac2b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jz666666, ws-headers: {Host: shanghai-cn2-01.ddns-oink.xyz}, udp: true}
-  - {name: 8度商店：8du.shop 8, server: fliplc.getxlx.com, port: 59942, type: vmess, uuid: 3a9e460c-2f70-3688-9602-ad67a1f5efbe, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 8度商店：8du.shop 9, server: juzi-iplc001.ddns-oink.xyz, port: 40123, type: vmess, uuid: 4a11fe77-f1a7-35b0-a535-4762d2f9ac2b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jz666666, ws-headers: {Host: juzi-iplc001.ddns-oink.xyz}, udp: true}
-  - {name: 8度商店：8du.shop 10, server: 116.129.254.33, port: 63087, type: vmess, uuid: 49a0585b-6abe-3e62-ae2e-aacf364d88c0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /mugua, ws-headers: {Host: t.me/vpnhat}, udp: true}
-  - {name: 8度商店：8du.shop 11, server: 20.205.125.236, port: 20004, type: vmess, uuid: 9d7fb490-f159-3b56-8e8a-614c45c299d1, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 20.205.125.236}, udp: true}
-  - {name: 8度商店：8du.shop 12, server: juzi-iplc001.ddns-oink.xyz, port: 40133, type: vmess, uuid: 4a11fe77-f1a7-35b0-a535-4762d2f9ac2b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jz666666, ws-headers: {Host: juzi-iplc001.ddns-oink.xyz}, udp: true}
-  - {name: 8度商店：8du.shop 13, server: jzyjxcn2.ddns-oink.xyz, port: 40171, type: vmess, uuid: 4a11fe77-f1a7-35b0-a535-4762d2f9ac2b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jz666666, ws-headers: {Host: jzyjxcn2.ddns-oink.xyz}, udp: true}
-  - {name: 8度商店：8du.shop 14, server: shanghai-cn2-01.ddns-oink.xyz, port: 40103, type: vmess, uuid: 4a11fe77-f1a7-35b0-a535-4762d2f9ac2b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jz666666, ws-headers: {Host: shanghai-cn2-01.ddns-oink.xyz}, udp: true}
-  - {name: 8度商店：8du.shop 15, server: juzi-iplc001.ddns-oink.xyz, port: 40173, type: vmess, uuid: 4a11fe77-f1a7-35b0-a535-4762d2f9ac2b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jz666666, ws-headers: {Host: juzi-iplc001.ddns-oink.xyz}, udp: true}
-  - {name: 8度商店：8du.shop 16, server: fliplc.getxlx.com, port: 59944, type: vmess, uuid: 3a9e460c-2f70-3688-9602-ad67a1f5efbe, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 8度商店：8du.shop 17, server: 20.205.125.236, port: 60026, type: vmess, uuid: 9d7fb490-f159-3b56-8e8a-614c45c299d1, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 20.205.125.236}, udp: true}
-  - {name: 8度商店：8du.shop 18, server: cdn-cn.nekocloud.cn, port: 19040, type: vmess, uuid: c1e94a4a-ba05-3ef9-ab0e-1148539af86b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /dahjwuh, ws-headers: {Host: cdn-cn.nekocloud.cn}, udp: true}
-  - {name: 8度商店：8du.shop 19, server: fliplc.getxlx.com, port: 59943, type: vmess, uuid: 3a9e460c-2f70-3688-9602-ad67a1f5efbe, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 8度商店：8du.shop 20, server: yygd-rb-02.ddns-oink.xyz, port: 40107, type: vmess, uuid: 4a11fe77-f1a7-35b0-a535-4762d2f9ac2b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jz666666, ws-headers: {Host: yygd-rb-02.ddns-oink.xyz}, udp: true}
-  - {name: 8度商店：8du.shop 21, server: fliplc.getxlx.com, port: 59952, type: vmess, uuid: 3a9e460c-2f70-3688-9602-ad67a1f5efbe, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 8度商店：8du.shop 22, server: 2.7.1.fuckppppp.today, port: 50002, type: vmess, uuid: 0f62bb1b-dd16-3bb2-a435-c13e068b0955, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 8度商店：8du.shop 23, server: yygd-rb-02.ddns-oink.xyz, port: 40041, type: vmess, uuid: 4a11fe77-f1a7-35b0-a535-4762d2f9ac2b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jz666666, ws-headers: {Host: yygd-rb-02.ddns-oink.xyz}, udp: true}
-  - {name: 8度商店：8du.shop 24, server: 1.v2tk.tk, port: 443, type: vmess, uuid: f0e10fe1-b01d-4ecc-9fcc-550badc7d1f8, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /upload, ws-headers: {Host: 1.v2tk.tk}, udp: true}
-  - {name: 8度商店：8du.shop 25, server: 20.205.11.55, port: 60042, type: vmess, uuid: 9d7fb490-f159-3b56-8e8a-614c45c299d1, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 20.205.11.55}, udp: true}
-  - {name: 8度商店：8du.shop 26, server: 159.27.115.21, port: 63069, type: vmess, uuid: 49a0585b-6abe-3e62-ae2e-aacf364d88c0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 159.27.115.21}, udp: true}
-  - {name: 8度商店：8du.shop 27, server: 20.205.125.236, port: 60012, type: vmess, uuid: 9d7fb490-f159-3b56-8e8a-614c45c299d1, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 20.205.125.236}, udp: true}
-  - {name: 8度商店：8du.shop 28, server: fliplc.getxlx.com, port: 59931, type: vmess, uuid: 3a9e460c-2f70-3688-9602-ad67a1f5efbe, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 8度商店：8du.shop 29, server: fliplc.getxlx.com, port: 59950, type: vmess, uuid: 3a9e460c-2f70-3688-9602-ad67a1f5efbe, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 8度商店：8du.shop 30, server: 134.195.196.205, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: 8度商店：8du.shop 31, server: 120.232.82.139, port: 63078, type: vmess, uuid: 49a0585b-6abe-3e62-ae2e-aacf364d88c0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 120.232.82.139}, udp: true}
-  - {name: 8度商店：8du.shop 32, server: juzi-iplc001.ddns-oink.xyz, port: 40218, type: vmess, uuid: 4a11fe77-f1a7-35b0-a535-4762d2f9ac2b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jz666666, ws-headers: {Host: juzi-iplc001.ddns-oink.xyz}, udp: true}
-  - {name: 8度商店：8du.shop 33, server: 120.240.168.118, port: 63086, type: vmess, uuid: 49a0585b-6abe-3e62-ae2e-aacf364d88c0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /mugua, ws-headers: {Host: t.me/vpnhat}, udp: true}
-  - {name: 8度商店：8du.shop 34, server: 3.v2tk.tk, port: 443, type: vmess, uuid: f0e10fe1-b01d-4ecc-9fcc-550badc7d1f8, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /upload, ws-headers: {Host: 3.v2tk.tk}, udp: true}
-  - {name: 8度商店：8du.shop 35, server: juzi-iplc001.ddns-oink.xyz, port: 40217, type: vmess, uuid: 4a11fe77-f1a7-35b0-a535-4762d2f9ac2b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jz666666, ws-headers: {Host: juzi-iplc001.ddns-oink.xyz}, udp: true}
-  - {name: 8度商店：8du.shop 36, server: word.14.1.fuckword.club, port: 48861, type: vmess, uuid: 0f62bb1b-dd16-3bb2-a435-c13e068b0955, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 8度商店：8du.shop 37, server: fliplc.getxlx.com, port: 59932, type: vmess, uuid: 3a9e460c-2f70-3688-9602-ad67a1f5efbe, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 8度商店：8du.shop 38, server: 120.240.168.118, port: 63078, type: vmess, uuid: 49a0585b-6abe-3e62-ae2e-aacf364d88c0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 120.240.168.118}, udp: true}
-  - {name: 8度商店：8du.shop 39, server: 120.240.168.118, port: 63051, type: vmess, uuid: 49a0585b-6abe-3e62-ae2e-aacf364d88c0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /hls, ws-headers: {Host: t.me/vpnhat}, udp: true}
-  - {name: 8度商店：8du.shop 40, server: 134.195.196.205, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: 8度商店：8du.shop 41, server: 116.129.254.65, port: 63004, type: vmess, uuid: 49a0585b-6abe-3e62-ae2e-aacf364d88c0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 116.129.254.65}, udp: true}
-  - {name: 8度商店：8du.shop 42, server: 20.205.11.55, port: 60046, type: vmess, uuid: 9d7fb490-f159-3b56-8e8a-614c45c299d1, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 20.205.11.55}, udp: true}
-  - {name: 8度商店：8du.shop 43, server: 116.129.254.33, port: 63086, type: vmess, uuid: 49a0585b-6abe-3e62-ae2e-aacf364d88c0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /mugua, ws-headers: {Host: t.me/vpnhat}, udp: true}
-  - {name: 8度商店：8du.shop 44, server: 20.205.125.236, port: 60018, type: vmess, uuid: 9d7fb490-f159-3b56-8e8a-614c45c299d1, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 20.205.125.236}, udp: true}
-  - {name: 8度商店：8du.shop 45, server: 134.195.196.205, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: 8度商店：8du.shop 46, server: 116.129.254.33, port: 63004, type: vmess, uuid: 49a0585b-6abe-3e62-ae2e-aacf364d88c0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 116.129.254.33}, udp: true}
-  - {name: 8度商店：8du.shop 47, server: 183.232.56.108, port: 63051, type: vmess, uuid: 49a0585b-6abe-3e62-ae2e-aacf364d88c0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /hls, ws-headers: {Host: t.me/vpnhat}, udp: true}
-  - {name: 8度商店：8du.shop 48, server: 159.27.115.21, port: 63086, type: vmess, uuid: 49a0585b-6abe-3e62-ae2e-aacf364d88c0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /mugua, ws-headers: {Host: t.me/vpnhat}, udp: true}
-  - {name: 8度商店：8du.shop 49, server: 134.195.196.205, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 8度商店：8du.shop 50, server: 120.240.168.118, port: 63014, type: vmess, uuid: 49a0585b-6abe-3e62-ae2e-aacf364d88c0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /mg, ws-headers: {Host: t.me/vpnhat}, udp: true}
-  - {name: 8度商店：8du.shop 51, server: 120.240.168.118, port: 63004, type: vmess, uuid: 49a0585b-6abe-3e62-ae2e-aacf364d88c0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 120.240.168.118}, udp: true}
-  - {name: 8度商店：8du.shop 52, server: 134.195.196.205, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: 8度商店：8du.shop 53, server: fr.node.qchwnd.moe, port: 44612, type: trojan, password: cfaa1d87-16c9-45f2-8ca1-833badb6b790, sni: fr.node.qchwnd.moe, skip-cert-verify: true, udp: true}
-  - {name: 8度商店：8du.shop 54, server: 134.195.196.205, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: 8度商店：8du.shop 55, server: 202.64.1.102, port: 553, type: vmess, uuid: 30ef0f29-da14-349d-9c49-728d5adc4ba8, alterId: 8, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 8度商店：8du.shop 56, server: 120.232.82.139, port: 63069, type: vmess, uuid: 49a0585b-6abe-3e62-ae2e-aacf364d88c0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 120.232.82.139}, udp: true}
-  - {name: 8度商店：8du.shop 57, server: 134.195.196.205, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: 8度商店：8du.shop 58, server: fliplc.getxlx.com, port: 59941, type: vmess, uuid: 3a9e460c-2f70-3688-9602-ad67a1f5efbe, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 8度商店：8du.shop 59, server: 20.205.125.236, port: 60041, type: vmess, uuid: 9d7fb490-f159-3b56-8e8a-614c45c299d1, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 20.205.125.236}, udp: true}
-  - {name: 8度商店：8du.shop 60, server: 4.hk.zz.xxxxx.x-t-fuckword.network, port: 36676, type: vmess, uuid: 0f62bb1b-dd16-3bb2-a435-c13e068b0955, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 8度商店：8du.shop 61, server: 134.195.196.205, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: 8度商店：8du.shop 62, server: 134.195.196.205, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: 8度商店：8du.shop 63, server: 172.99.190.35, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: 8度商店：8du.shop 64, server: 120.240.168.118, port: 63069, type: vmess, uuid: 49a0585b-6abe-3e62-ae2e-aacf364d88c0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 120.240.168.118}, udp: true}
-  - {name: 8度商店：8du.shop 65, server: ocikr.node.qchwnd.moe, port: 44600, type: trojan, password: cfaa1d87-16c9-45f2-8ca1-833badb6b790, sni: ocikr.node.qchwnd.moe, skip-cert-verify: true, udp: true}
-  - {name: 8度商店：8du.shop 66, server: 152.69.204.149, port: 50503, type: vmess, uuid: 11b8a8c2-3548-4424-88f8-26cde886230a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 8度商店：8du.shop 67, server: 134.195.196.205, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: 8度商店：8du.shop 68, server: 183.232.56.108, port: 63041, type: vmess, uuid: 49a0585b-6abe-3e62-ae2e-aacf364d88c0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /mg, ws-headers: {Host: t.me/vpnhat}, udp: true}
-  - {name: 8度商店：8du.shop 69, server: 2.game.speed.zz.001.oooooooooo.icu, port: 53945, type: vmess, uuid: 0f62bb1b-dd16-3bb2-a435-c13e068b0955, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 8度商店：8du.shop 70, server: 134.195.196.205, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 8度商店：8du.shop 71, server: 172.99.190.35, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 8度商店：8du.shop 72, server: 134.195.196.205, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: 8度商店：8du.shop 73, server: jzdjd-01.ddns-oink.xyz, port: 40269, type: vmess, uuid: 4a11fe77-f1a7-35b0-a535-4762d2f9ac2b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jz666666, ws-headers: {Host: jzdjd-01.ddns-oink.xyz}, udp: true}
-  - {name: 8度商店：8du.shop 74, server: 116.129.254.65, port: 63014, type: vmess, uuid: 49a0585b-6abe-3e62-ae2e-aacf364d88c0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /mg, ws-headers: {Host: t.me/vpnhat}, udp: true}
-  - {name: 8度商店：8du.shop 75, server: 172.99.190.35, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 8度商店：8du.shop 76, server: 183.232.56.108, port: 63086, type: vmess, uuid: 49a0585b-6abe-3e62-ae2e-aacf364d88c0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /mugua, ws-headers: {Host: t.me/vpnhat}, udp: true}
-  - {name: 8度商店：8du.shop 77, server: 116.129.254.33, port: 63069, type: vmess, uuid: 49a0585b-6abe-3e62-ae2e-aacf364d88c0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 116.129.254.33}, udp: true}
-  - {name: 8度商店：8du.shop 78, server: 134.195.196.205, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: 8度商店：8du.shop 79, server: 134.195.196.205, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: 8度商店：8du.shop 80, server: yygd-rb-02.ddns-oink.xyz, port: 40109, type: vmess, uuid: 4a11fe77-f1a7-35b0-a535-4762d2f9ac2b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jz666666, ws-headers: {Host: yygd-rb-02.ddns-oink.xyz}, udp: true}
-  - {name: 8度商店：8du.shop 81, server: 134.195.196.205, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: 8度商店：8du.shop 82, server: 120.240.168.118, port: 63087, type: vmess, uuid: 49a0585b-6abe-3e62-ae2e-aacf364d88c0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /mugua, ws-headers: {Host: t.me/vpnhat}, udp: true}
-  - {name: 8度商店：8du.shop 83, server: 116.129.254.33, port: 63078, type: vmess, uuid: 49a0585b-6abe-3e62-ae2e-aacf364d88c0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 116.129.254.33}, udp: true}
-  - {name: 8度商店：8du.shop 84, server: 134.195.196.205, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: 8度商店：8du.shop 85, server: 134.195.196.205, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: 8度商店：8du.shop 86, server: 120.232.82.139, port: 63086, type: vmess, uuid: 49a0585b-6abe-3e62-ae2e-aacf364d88c0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /mugua, ws-headers: {Host: t.me/vpnhat}, udp: true}
-  - {name: 8度商店：8du.shop 87, server: 120.232.82.139, port: 63051, type: vmess, uuid: 49a0585b-6abe-3e62-ae2e-aacf364d88c0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /hls, ws-headers: {Host: t.me/vpnhat}, udp: true}
-  - {name: 8度商店：8du.shop 88, server: 116.129.254.33, port: 63051, type: vmess, uuid: 49a0585b-6abe-3e62-ae2e-aacf364d88c0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /hls, ws-headers: {Host: t.me/vpnhat}, udp: true}
-  - {name: 8度商店：8du.shop 89, server: jzyjxcn2.ddns-oink.xyz, port: 40113, type: vmess, uuid: 4a11fe77-f1a7-35b0-a535-4762d2f9ac2b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jz666666, ws-headers: {Host: jzyjxcn2.ddns-oink.xyz}, udp: true}
-  - {name: 8度商店：8du.shop 90, server: 159.27.115.21, port: 63078, type: vmess, uuid: 49a0585b-6abe-3e62-ae2e-aacf364d88c0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 159.27.115.21}, udp: true}
-  - {name: 8度商店：8du.shop 91, server: 112.64.53.217, port: 63069, type: vmess, uuid: 49a0585b-6abe-3e62-ae2e-aacf364d88c0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 112.64.53.217}, udp: true}
-  - {name: 8度商店：8du.shop 92, server: 2.sg.zz.xxxxx.x-t-fuckword.network, port: 60301, type: vmess, uuid: 0f62bb1b-dd16-3bb2-a435-c13e068b0955, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 8度商店：8du.shop 93, server: 159.27.115.21, port: 63051, type: vmess, uuid: 49a0585b-6abe-3e62-ae2e-aacf364d88c0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /hls, ws-headers: {Host: t.me/vpnhat}, udp: true}
-  - {name: 8度商店：8du.shop 94, server: 172.99.190.35, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: 8度商店：8du.shop 95, server: word.2.fuckword.club, port: 36678, type: vmess, uuid: 0f62bb1b-dd16-3bb2-a435-c13e068b0955, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 8度商店：8du.shop 96, server: shanghai-01.ddns-oink.xyz, port: 40291, type: vmess, uuid: 4a11fe77-f1a7-35b0-a535-4762d2f9ac2b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jz666666, ws-headers: {Host: shanghai-01.ddns-oink.xyz}, udp: true}
-  - {name: 8度商店：8du.shop 97, server: 159.27.115.21, port: 63087, type: vmess, uuid: 49a0585b-6abe-3e62-ae2e-aacf364d88c0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /mugua, ws-headers: {Host: t.me/vpnhat}, udp: true}
-  - {name: 8度商店：8du.shop 98, server: 198.57.27.225, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: 8度商店：8du.shop 99, server: 116.129.254.65, port: 63051, type: vmess, uuid: 49a0585b-6abe-3e62-ae2e-aacf364d88c0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /hls, ws-headers: {Host: t.me/vpnhat}, udp: true}
-  - {name: 8度商店：8du.shop 100, server: 120.232.82.139, port: 63087, type: vmess, uuid: 49a0585b-6abe-3e62-ae2e-aacf364d88c0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /mugua, ws-headers: {Host: t.me/vpnhat}, udp: true}
-  - {name: 8度商店：8du.shop 101, server: 112.64.53.217, port: 63087, type: vmess, uuid: 49a0585b-6abe-3e62-ae2e-aacf364d88c0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /mugua, ws-headers: {Host: t.me/vpnhat}, udp: true}
-  - {name: 8度商店：8du.shop 102, server: 172.99.190.35, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: 8度商店：8du.shop 103, server: xa.ex306.buzz, port: 443, type: vmess, uuid: E725D31D-BBBF-3330-7A40-C92DEEA3B1CF, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ray, ws-headers: {Host: xa.ex306.buzz}, udp: true}
-  - {name: 8度商店：8du.shop 104, server: 116.129.254.65, port: 63087, type: vmess, uuid: 49a0585b-6abe-3e62-ae2e-aacf364d88c0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /mugua, ws-headers: {Host: t.me/vpnhat}, udp: true}
-  - {name: 8度商店：8du.shop 105, server: 172.99.190.35, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 8度商店：8du.shop 106, server: 1.hk.zz.xxxxx.x-t-fuckword.network, port: 36672, type: vmess, uuid: 0f62bb1b-dd16-3bb2-a435-c13e068b0955, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 8度商店：8du.shop 107, server: 134.195.196.205, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: 8度商店：8du.shop 108, server: 198.57.27.225, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: 8度商店：8du.shop 109, server: 183.232.56.108, port: 63069, type: vmess, uuid: 49a0585b-6abe-3e62-ae2e-aacf364d88c0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 183.232.56.108}, udp: true}
-  - {name: 8度商店：8du.shop 110, server: 112.64.53.217, port: 63086, type: vmess, uuid: 49a0585b-6abe-3e62-ae2e-aacf364d88c0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /mugua, ws-headers: {Host: t.me/vpnhat}, udp: true}
-  - {name: 8度商店：8du.shop 111, server: jgwdj2.gaox.ml, port: 443, type: trojan, password: 86231db5-96d0-4271-9977-cae3a0cba614, sni: jgwdj2.gaox.ml, skip-cert-verify: true, udp: true}
-  - {name: 8度商店：8du.shop 112, server: juzi-iplc001.ddns-oink.xyz, port: 40202, type: vmess, uuid: 4a11fe77-f1a7-35b0-a535-4762d2f9ac2b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jz666666, ws-headers: {Host: juzi-iplc001.ddns-oink.xyz}, udp: true}
-  - {name: 8度商店：8du.shop 113, server: 20.205.11.55, port: 60044, type: vmess, uuid: 9d7fb490-f159-3b56-8e8a-614c45c299d1, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 20.205.11.55}, udp: true}
-  - {name: 8度商店：8du.shop 114, server: 116.129.254.65, port: 63078, type: vmess, uuid: 49a0585b-6abe-3e62-ae2e-aacf364d88c0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 116.129.254.65}, udp: true}
-  - {name: 8度商店：8du.shop 115, server: 223.166.129.29, port: 63087, type: vmess, uuid: 49a0585b-6abe-3e62-ae2e-aacf364d88c0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /mugua, ws-headers: {Host: t.me/vpnhat}, udp: true}
-  - {name: 8度商店：8du.shop 116, server: 112.64.53.217, port: 63014, type: vmess, uuid: 49a0585b-6abe-3e62-ae2e-aacf364d88c0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /mg, ws-headers: {Host: t.me/vpnhat}, udp: true}
-  - {name: 8度商店：8du.shop 117, server: 223.166.129.29, port: 63086, type: vmess, uuid: 49a0585b-6abe-3e62-ae2e-aacf364d88c0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /mugua, ws-headers: {Host: t.me/vpnhat}, udp: true}
-  - {name: 8度商店：8du.shop 118, server: 172.99.190.35, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 8度商店：8du.shop 119, server: 198.57.27.225, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: 8度商店：8du.shop 120, server: 112.64.53.217, port: 63078, type: vmess, uuid: 49a0585b-6abe-3e62-ae2e-aacf364d88c0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 112.64.53.217}, udp: true}
-  - {name: 8度商店：8du.shop 121, server: 183.232.56.108, port: 63004, type: vmess, uuid: 49a0585b-6abe-3e62-ae2e-aacf364d88c0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 183.232.56.108}, udp: true}
-  - {name: 8度商店：8du.shop 122, server: 198.57.27.225, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: 8度商店：8du.shop 123, server: 183.232.56.108, port: 63078, type: vmess, uuid: 49a0585b-6abe-3e62-ae2e-aacf364d88c0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 183.232.56.108}, udp: true}
+  - {name: _商店：8du.shop, server: fs.keaiyun.top, port: 55156, type: vmess, uuid: 6bdb5616-d0ca-3638-8a96-5a70b8ca27a5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _商店：8du.shop 2, server: kr-direct-cdn.node001.xyz, port: 2086, type: vmess, uuid: a1f3e867-8f8d-3763-bb80-21da561e6714, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /mg, ws-headers: {Host: /t.me/mengge88888888}, udp: true}
+  - {name: _商店：8du.shop 3, server: fs.keaiyun.top, port: 55154, type: vmess, uuid: 6bdb5616-d0ca-3638-8a96-5a70b8ca27a5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _商店：8du.shop 4, server: fs.keaiyun.top, port: 55155, type: vmess, uuid: 6bdb5616-d0ca-3638-8a96-5a70b8ca27a5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _商店：8du.shop 5, server: fs.keaiyun.top, port: 48519, type: vmess, uuid: 6bdb5616-d0ca-3638-8a96-5a70b8ca27a5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _商店：8du.shop 6, server: fs.keaiyun.top, port: 48517, type: vmess, uuid: 6bdb5616-d0ca-3638-8a96-5a70b8ca27a5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _商店：8du.shop 7, server: c69s5.jamjams.net, port: 8288, type: vmess, uuid: 614ee3a3-90ad-4239-8eb0-1661daba6c2a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _商店：8du.shop 8, server: fs.keaiyun.top, port: 48521, type: vmess, uuid: 6bdb5616-d0ca-3638-8a96-5a70b8ca27a5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _商店：8du.shop 9, server: fs.keaiyun.top, port: 55154, type: vmess, uuid: 6bdb5616-d0ca-3638-8a96-5a70b8ca27a5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _商店：8du.shop 10, server: fs.keaiyun.top, port: 55155, type: vmess, uuid: 6bdb5616-d0ca-3638-8a96-5a70b8ca27a5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _商店：8du.shop 11, server: fs.keaiyun.top, port: 48519, type: vmess, uuid: 6bdb5616-d0ca-3638-8a96-5a70b8ca27a5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _商店：8du.shop 12, server: fs.keaiyun.top, port: 48517, type: vmess, uuid: 6bdb5616-d0ca-3638-8a96-5a70b8ca27a5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _商店：8du.shop 13, server: c69s5.jamjams.net, port: 8288, type: vmess, uuid: 614ee3a3-90ad-4239-8eb0-1661daba6c2a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _商店：8du.shop 14, server: fs.keaiyun.top, port: 48521, type: vmess, uuid: 6bdb5616-d0ca-3638-8a96-5a70b8ca27a5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: US_9102 @WangCai_1, server: 38.91.100.150, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: US_9102 @WangCai_1 2, server: 169.197.141.109, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: US_9101 @WangCai_1, server: 169.197.141.15, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: US_9101 @WangCai_1 2, server: 38.91.100.150, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: US_8888 @WangCai_1, server: 38.91.100.150, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: US_8888 @WangCai_1 2, server: 169.197.141.109, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: US_8882 @WangCai_1, server: 38.91.100.150, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: US_8882 @WangCai_1 2, server: 169.197.141.15, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: US_8881 @WangCai_1, server: 38.91.100.150, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: US_8881 @WangCai_1 2, server: 169.197.141.109, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: US_8119 @WangCai_1, server: 38.91.100.150, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: US_8118 @WangCai_1, server: 169.197.141.15, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: US_8118 @WangCai_1 2, server: 38.91.100.150, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: US_8091 @WangCai_1, server: 169.197.141.15, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: US_8090 @WangCai_1, server: 169.197.141.109, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: US_8080 @WangCai_1, server: 169.197.141.109, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: US_8009 @WangCai_1, server: 169.197.141.15, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: US_8009 @WangCai_1 2, server: 38.91.100.150, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: US_8008 @WangCai_1, server: 38.91.100.150, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: US_8008 @WangCai_1 2, server: 169.197.141.109, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: US_8000 @WangCai_1, server: 169.197.141.109, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: US_7307 @WangCai_1, server: 38.91.100.150, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: US_7306 @WangCai_1, server: 169.197.141.109, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: US_7002 @WangCai_1, server: 169.197.141.15, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: US_7002 @WangCai_1 2, server: 169.197.141.33, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: US_7001 @WangCai_1, server: 38.91.100.150, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: US_7001 @WangCai_1 2, server: 169.197.141.15, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: US_7001 @WangCai_1 3, server: 169.197.141.109, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: US_6679 @WangCai_1, server: 38.91.100.150, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: US_6679 @WangCai_1 2, server: 169.197.141.15, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: US_6379 @WangCai_1, server: 38.91.100.150, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
+  - {name: US_5601 @WangCai_1, server: 169.197.141.15, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: US_5601 @WangCai_1 2, server: 169.197.141.109, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: US_5600 @WangCai_1, server: 38.91.100.150, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: US_5600 @WangCai_1 2, server: 169.197.141.33, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: US_5500 @WangCai_1, server: 38.91.100.150, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: US_5500 @WangCai_1 2, server: 169.197.141.15, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: US_5500 @WangCai_1 3, server: 169.197.141.109, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: US_5004 @WangCai_1, server: 38.91.100.150, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: US_5004 @WangCai_1 2, server: 169.197.141.109, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: US_5003 @WangCai_1, server: 38.91.100.150, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: US_5003 @WangCai_1 2, server: 169.197.141.15, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: US_5001 @WangCai_1, server: 169.197.141.33, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: US_5000 @WangCai_1, server: 169.197.141.15, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: US_5000 @WangCai_1 2, server: 38.91.100.150, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: US_3306 @WangCai_1, server: 38.91.100.150, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: US_3306 @WangCai_1 2, server: 169.197.141.15, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: US_3306 @WangCai_1 3, server: 169.197.141.109, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: US_2376 @WangCai_1, server: 38.91.100.150, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: US_2375 @WangCai_1, server: 169.197.141.15, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: US_2375 @WangCai_1 2, server: 38.91.100.150, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: US_2375 @WangCai_1 3, server: 169.197.141.109, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: US_0443 @WangCai_1, server: 38.91.100.150, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: _US_美国, server: 38.114.114.67, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: _US_美国 2, server: 167.88.63.60, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: _US_美国 3, server: 167.88.63.60, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: _US_美国 4, server: 38.114.114.67, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: _US_美国 5, server: 167.88.63.59, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: _US_美国 6, server: 38.114.114.67, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: _US_美国 7, server: 38.114.114.67, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: ‌‌🇨🇦CA_9102 @WangCai_1, server: 134.195.196.206, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: ‌‌🇨🇦CA_9102 @WangCai_1 2, server: 134.195.196.6, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: ‌‌🇨🇦CA_9102 @WangCai_1 3, server: 134.195.196.133, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: ‌‌🇨🇦CA_9101 @WangCai_1, server: 134.195.196.133, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: ‌‌🇨🇦CA_9101 @WangCai_1 2, server: 134.195.196.206, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: ‌‌🇨🇦CA_9101 @WangCai_1 3, server: 134.195.196.6, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: ‌‌🇨🇦CA_9101 @WangCai_1 4, server: 134.195.196.41, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: ‌‌🇨🇦CA_9101 @WangCai_1 5, server: 134.195.196.19, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: ‌‌🇨🇦CA_8888 @WangCai_1, server: 134.195.196.19, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: ‌‌🇨🇦CA_8888 @WangCai_1 2, server: 134.195.196.41, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: ‌‌🇨🇦CA_8888 @WangCai_1 3, server: 134.195.196.133, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: ‌‌🇨🇦CA_8888 @WangCai_1 4, server: 134.195.196.206, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: ‌‌🇨🇦CA_8888 @WangCai_1 5, server: 134.195.196.64, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: ‌‌🇨🇦CA_8882 @WangCai_1, server: 134.195.196.41, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: ‌‌🇨🇦CA_8882 @WangCai_1 2, server: 134.195.196.206, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: ‌‌🇨🇦CA_8882 @WangCai_1 3, server: 134.195.196.64, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: ‌‌🇨🇦CA_8882 @WangCai_1 4, server: 134.195.196.19, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: ‌‌🇨🇦CA_8882 @WangCai_1 5, server: 134.195.196.133, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: ‌‌🇨🇦CA_8881 @WangCai_1, server: 134.195.196.41, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: ‌‌🇨🇦CA_8881 @WangCai_1 2, server: 134.195.196.64, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: ‌‌🇨🇦CA_8881 @WangCai_1 3, server: 134.195.196.133, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: ‌‌🇨🇦CA_8881 @WangCai_1 4, server: 134.195.196.206, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: ‌‌🇨🇦CA_8119 @WangCai_1, server: 134.195.196.41, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: ‌‌🇨🇦CA_8119 @WangCai_1 2, server: 134.195.196.19, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: ‌‌🇨🇦CA_8119 @WangCai_1 3, server: 134.195.196.206, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: ‌‌🇨🇦CA_8119 @WangCai_1 4, server: 134.195.196.64, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: ‌‌🇨🇦CA_8119 @WangCai_1 5, server: 134.195.196.6, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: ‌‌🇨🇦CA_8118 @WangCai_1, server: 134.195.196.206, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: ‌‌🇨🇦CA_8118 @WangCai_1 2, server: 134.195.196.19, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: ‌‌🇨🇦CA_8118 @WangCai_1 3, server: 134.195.196.6, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: ‌‌🇨🇦CA_8091 @WangCai_1, server: 134.195.196.41, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: ‌‌🇨🇦CA_8091 @WangCai_1 2, server: 134.195.196.19, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: ‌‌🇨🇦CA_8091 @WangCai_1 3, server: 134.195.196.206, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: ‌‌🇨🇦CA_8091 @WangCai_1 4, server: 134.195.196.64, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: ‌‌🇨🇦CA_8091 @WangCai_1 5, server: 134.195.196.16, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: ‌‌🇨🇦CA_8090 @WangCai_1, server: 134.195.196.16, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: ‌‌🇨🇦CA_8090 @WangCai_1 2, server: 134.195.196.64, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: ‌‌🇨🇦CA_8090 @WangCai_1 3, server: 134.195.196.41, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: ‌‌🇨🇦CA_8080 @WangCai_1, server: 134.195.196.41, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: ‌‌🇨🇦CA_8080 @WangCai_1 2, server: 134.195.196.206, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: ‌‌🇨🇦CA_8080 @WangCai_1 3, server: 134.195.196.6, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: ‌‌🇨🇦CA_8080 @WangCai_1 4, server: 134.195.196.64, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: ‌‌🇨🇦CA_8009 @WangCai_1, server: 134.195.196.64, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: ‌‌🇨🇦CA_8009 @WangCai_1 2, server: 134.195.196.41, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: ‌‌🇨🇦CA_8008 @WangCai_1, server: 134.195.196.206, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: ‌‌🇨🇦CA_8008 @WangCai_1 2, server: 134.195.196.6, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: ‌‌🇨🇦CA_8008 @WangCai_1 3, server: 134.195.196.64, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: ‌‌🇨🇦CA_8008 @WangCai_1 4, server: 134.195.196.133, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: ‌‌🇨🇦CA_8008 @WangCai_1 5, server: 134.195.196.16, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: ‌‌🇨🇦CA_8008 @WangCai_1 6, server: 134.195.196.41, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: ‌‌🇨🇦CA_8008 @WangCai_1 7, server: 134.195.196.19, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: ‌‌🇨🇦CA_8000 @WangCai_1, server: 134.195.196.206, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: ‌‌🇨🇦CA_8000 @WangCai_1 2, server: 134.195.196.133, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: ‌‌🇨🇦CA_8000 @WangCai_1 3, server: 134.195.196.41, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: ‌‌🇨🇦CA_8000 @WangCai_1 4, server: 134.195.196.16, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: ‌‌🇨🇦CA_7307 @WangCai_1, server: 134.195.196.206, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: ‌‌🇨🇦CA_7307 @WangCai_1 2, server: 134.195.196.64, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: ‌‌🇨🇦CA_7307 @WangCai_1 3, server: 134.195.196.19, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: ‌‌🇨🇦CA_7306 @WangCai_1, server: 134.195.196.19, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: ‌‌🇨🇦CA_7306 @WangCai_1 2, server: 134.195.196.64, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: ‌‌🇨🇦CA_7306 @WangCai_1 3, server: 134.195.196.16, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: ‌‌🇨🇦CA_7002 @WangCai_1, server: 134.195.196.64, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: ‌‌🇨🇦CA_7002 @WangCai_1 2, server: 134.195.196.206, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: ‌‌🇨🇦CA_7002 @WangCai_1 3, server: 134.195.196.6, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: ‌‌🇨🇦CA_7002 @WangCai_1 4, server: 134.195.196.133, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: ‌‌🇨🇦CA_7002 @WangCai_1 5, server: 134.195.196.19, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: ‌‌🇨🇦CA_7002 @WangCai_1 6, server: 134.195.196.16, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: ‌‌🇨🇦CA_7002 @WangCai_1 7, server: 134.195.196.41, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: ‌‌🇨🇦CA_7001 @WangCai_1, server: 134.195.196.206, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: ‌‌🇨🇦CA_7001 @WangCai_1 2, server: 134.195.196.133, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: ‌‌🇨🇦CA_7001 @WangCai_1 3, server: 134.195.196.6, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: ‌‌🇨🇦CA_7001 @WangCai_1 4, server: 134.195.196.64, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: ‌‌🇨🇦CA_7001 @WangCai_1 5, server: 134.195.196.16, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: ‌‌🇨🇦CA_7001 @WangCai_1 6, server: 134.195.196.41, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: ‌‌🇨🇦CA_7001 @WangCai_1 7, server: 134.195.196.19, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: ‌‌🇨🇦CA_6697 @WangCai_1, server: 134.195.196.206, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: ‌‌🇨🇦CA_6697 @WangCai_1 2, server: 134.195.196.6, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: ‌‌🇨🇦CA_6697 @WangCai_1 3, server: 134.195.196.19, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: ‌‌🇨🇦CA_6697 @WangCai_1 4, server: 134.195.196.133, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: ‌‌🇨🇦CA_6697 @WangCai_1 5, server: 134.195.196.64, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: ‌‌🇨🇦CA_6679 @WangCai_1, server: 134.195.196.133, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: ‌‌🇨🇦CA_6679 @WangCai_1 2, server: 134.195.196.19, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: ‌‌🇨🇦CA_6679 @WangCai_1 3, server: 134.195.196.206, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: ‌‌🇨🇦CA_6679 @WangCai_1 4, server: 134.195.196.16, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: ‌‌🇨🇦CA_6379 @WangCai_1, server: 134.195.196.206, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
+  - {name: ‌‌🇨🇦CA_6379 @WangCai_1 2, server: 134.195.196.41, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
+  - {name: ‌‌🇨🇦CA_6379 @WangCai_1 3, server: 134.195.196.6, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
+  - {name: ‌‌🇨🇦CA_6379 @WangCai_1 4, server: 134.195.196.133, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
+  - {name: ‌‌🇨🇦CA_6379 @WangCai_1 5, server: 134.195.196.19, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
+  - {name: ‌‌🇨🇦CA_6379 @WangCai_1 6, server: 134.195.196.16, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
+  - {name: ‌‌🇨🇦CA_5601 @WangCai_1, server: 134.195.196.41, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: ‌‌🇨🇦CA_5601 @WangCai_1 2, server: 134.195.196.16, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: ‌‌🇨🇦CA_5600 @WangCai_1, server: 134.195.196.64, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: ‌‌🇨🇦CA_5600 @WangCai_1 2, server: 134.195.196.133, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: ‌‌🇨🇦CA_5600 @WangCai_1 3, server: 134.195.196.16, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: ‌‌🇨🇦CA_5600 @WangCai_1 4, server: 134.195.196.19, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: ‌‌🇨🇦CA_5600 @WangCai_1 5, server: 134.195.196.206, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: ‌‌🇨🇦CA_5500 @WangCai_1, server: 134.195.196.64, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: ‌‌🇨🇦CA_5500 @WangCai_1 2, server: 134.195.196.206, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: ‌‌🇨🇦CA_5500 @WangCai_1 3, server: 134.195.196.6, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: ‌‌🇨🇦CA_5500 @WangCai_1 4, server: 134.195.196.19, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: ‌‌🇨🇦CA_5004 @WangCai_1, server: 134.195.196.41, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: ‌‌🇨🇦CA_5004 @WangCai_1 2, server: 134.195.196.19, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: ‌‌🇨🇦CA_5004 @WangCai_1 3, server: 134.195.196.6, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: ‌‌🇨🇦CA_5004 @WangCai_1 4, server: 134.195.196.206, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: ‌‌🇨🇦CA_5004 @WangCai_1 5, server: 134.195.196.16, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: ‌‌🇨🇦CA_5004 @WangCai_1 6, server: 134.195.196.64, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: ‌‌🇨🇦CA_5004 @WangCai_1 7, server: 134.195.196.133, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: ‌‌🇨🇦CA_5003 @WangCai_1, server: 134.195.196.19, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: ‌‌🇨🇦CA_5003 @WangCai_1 2, server: 134.195.196.206, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: ‌‌🇨🇦CA_5003 @WangCai_1 3, server: 134.195.196.133, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: ‌‌🇨🇦CA_5001 @WangCai_1, server: 134.195.196.206, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: ‌‌🇨🇦CA_5001 @WangCai_1 2, server: 134.195.196.6, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: ‌‌🇨🇦CA_5001 @WangCai_1 3, server: 134.195.196.19, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: ‌‌🇨🇦CA_5000 @WangCai_1, server: 134.195.196.41, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: ‌‌🇨🇦CA_5000 @WangCai_1 2, server: 134.195.196.206, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: ‌‌🇨🇦CA_5000 @WangCai_1 3, server: 134.195.196.64, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: ‌‌🇨🇦CA_5000 @WangCai_1 4, server: 134.195.196.133, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: ‌‌🇨🇦CA_3389 @WangCai_1, server: 134.195.196.19, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: ‌‌🇨🇦CA_3306 @WangCai_1, server: 134.195.196.6, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: ‌‌🇨🇦CA_3306 @WangCai_1 2, server: 134.195.196.41, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: ‌‌🇨🇦CA_3306 @WangCai_1 3, server: 134.195.196.133, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: ‌‌🇨🇦CA_2376 @WangCai_1, server: 134.195.196.6, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: ‌‌🇨🇦CA_2376 @WangCai_1 2, server: 134.195.196.206, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: ‌‌🇨🇦CA_2376 @WangCai_1 3, server: 134.195.196.19, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: ‌‌🇨🇦CA_2375 @WangCai_1, server: 134.195.196.6, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: ‌‌🇨🇦CA_2375 @WangCai_1 2, server: 134.195.196.19, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: ‌‌🇨🇦CA_0443 @WangCai_1, server: 134.195.196.64, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: ‌‌🇨🇦CA_0443 @WangCai_1 2, server: 134.195.196.19, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: ‌‌🇨🇦CA_0443 @WangCai_1 3, server: 134.195.196.206, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: ‌‌🇨🇦CA_0443 @WangCai_1 4, server: 134.195.196.133, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: ‌‌🇨🇦CA_0443 @WangCai_1 5, server: 134.195.196.6, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: _商店：8du.shop 15, server: cn1.relay.iepl.pw, port: 50200, type: ss, cipher: aes-128-gcm, password: 379a0a11-3468-4eb5-b0d3-490e06459d9a, udp: true}
+  - {name: _商店：8du.shop 16, server: cn1.relay.iepl.pw, port: 50500, type: ss, cipher: aes-128-gcm, password: 379a0a11-3468-4eb5-b0d3-490e06459d9a, udp: true}
+  - {name: _商店：8du.shop 17, server: cn1.relay.iepl.pw, port: 50700, type: ss, cipher: aes-128-gcm, password: 379a0a11-3468-4eb5-b0d3-490e06459d9a, udp: true}
+  - {name: _商店：8du.shop 18, server: cn1.relay.iepl.pw, port: 50400, type: ss, cipher: aes-128-gcm, password: 379a0a11-3468-4eb5-b0d3-490e06459d9a, udp: true}
+  - {name: _商店：8du.shop 19, server: cn1.relay.iepl.pw, port: 50300, type: ss, cipher: aes-128-gcm, password: 379a0a11-3468-4eb5-b0d3-490e06459d9a, udp: true}
+  - {name: _商店：8du.shop 20, server: 139.219.9.138, port: 19811, type: ss, cipher: chacha20-ietf-poly1305, password: 72b8aca3-ddcc-4c84-980a-98e853b3b10c, udp: true}
+  - {name: _商店：8du.shop 21, server: 152.89.210.105, port: 9032, type: ss, cipher: aes-256-cfb, password: UWZQeLRWnkqgkseq, udp: true}
+  - {name: _商店：8du.shop 22, server: 198.57.27.225, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: _商店：8du.shop 23, server: cn1.relay.iepl.pw, port: 50200, type: ss, cipher: aes-128-gcm, password: 379a0a11-3468-4eb5-b0d3-490e06459d9a, udp: true}
+  - {name: _商店：8du.shop 24, server: cn1.relay.iepl.pw, port: 50500, type: ss, cipher: aes-128-gcm, password: 379a0a11-3468-4eb5-b0d3-490e06459d9a, udp: true}
+  - {name: _商店：8du.shop 25, server: cn1.relay.iepl.pw, port: 50700, type: ss, cipher: aes-128-gcm, password: 379a0a11-3468-4eb5-b0d3-490e06459d9a, udp: true}
+  - {name: _商店：8du.shop 26, server: cn1.relay.iepl.pw, port: 50400, type: ss, cipher: aes-128-gcm, password: 379a0a11-3468-4eb5-b0d3-490e06459d9a, udp: true}
+  - {name: _商店：8du.shop 27, server: cn1.relay.iepl.pw, port: 50300, type: ss, cipher: aes-128-gcm, password: 379a0a11-3468-4eb5-b0d3-490e06459d9a, udp: true}
+  - {name: _商店：8du.shop 28, server: 139.219.9.138, port: 19811, type: ss, cipher: chacha20-ietf-poly1305, password: 72b8aca3-ddcc-4c84-980a-98e853b3b10c, udp: true}
+  - {name: _商店：8du.shop 29, server: 152.89.210.105, port: 9032, type: ss, cipher: aes-256-cfb, password: UWZQeLRWnkqgkseq, udp: true}
+  - {name: _商店：8du.shop 30, server: 198.57.27.225, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: _商店：8du.shop 31, server: lt.yhy520.xyz, port: 58831, type: trojan, password: 17afa1ae-78c3-3dbc-9522-f4e69e274707, sni: lt.yhy520.xyz, skip-cert-verify: true, udp: true}
+  - {name: _商店：8du.shop 32, server: lt.yhy520.xyz, port: 58831, type: trojan, password: 43684d6c-8d9a-3ab5-b6d2-3d6017733358, sni: lt.yhy520.xyz, skip-cert-verify: true, udp: true}
+  - {name: _商店：8du.shop 33, server: dx.yhy520.xyz, port: 58814, type: trojan, password: 43684d6c-8d9a-3ab5-b6d2-3d6017733358, sni: dx.yhy520.xyz, skip-cert-verify: true, udp: true}
+  - {name: _商店：8du.shop 34, server: dx.yhy520.xyz, port: 58814, type: trojan, password: 17afa1ae-78c3-3dbc-9522-f4e69e274707, sni: dx.yhy520.xyz, skip-cert-verify: true, udp: true}
+  - {name: _商店：8du.shop 35, server: lt.yhy520.xyz, port: 58829, type: trojan, password: 17afa1ae-78c3-3dbc-9522-f4e69e274707, sni: lt.yhy520.xyz, skip-cert-verify: true, udp: true}
+  - {name: _商店：8du.shop 36, server: lt.yhy520.xyz, port: 58829, type: trojan, password: 43684d6c-8d9a-3ab5-b6d2-3d6017733358, sni: lt.yhy520.xyz, skip-cert-verify: true, udp: true}
+  - {name: _商店：8du.shop 37, server: dx.yhy520.xyz, port: 58824, type: trojan, password: 17afa1ae-78c3-3dbc-9522-f4e69e274707, sni: dx.yhy520.xyz, skip-cert-verify: true, udp: true}
+  - {name: _商店：8du.shop 38, server: dx.yhy520.xyz, port: 58824, type: trojan, password: 43684d6c-8d9a-3ab5-b6d2-3d6017733358, sni: dx.yhy520.xyz, skip-cert-verify: true, udp: true}
+  - {name: _商店：8du.shop 39, server: lt.yhy520.xyz, port: 58812, type: trojan, password: 43684d6c-8d9a-3ab5-b6d2-3d6017733358, sni: lt.yhy520.xyz, skip-cert-verify: true, udp: true}
+  - {name: _商店：8du.shop 40, server: lt.yhy520.xyz, port: 58812, type: trojan, password: 17afa1ae-78c3-3dbc-9522-f4e69e274707, sni: lt.yhy520.xyz, skip-cert-verify: true, udp: true}
+  - {name: _商店：8du.shop 41, server: dx.yhy520.xyz, port: 58811, type: trojan, password: 43684d6c-8d9a-3ab5-b6d2-3d6017733358, sni: dx.yhy520.xyz, skip-cert-verify: true, udp: true}
+  - {name: _商店：8du.shop 42, server: dx.yhy520.xyz, port: 58811, type: trojan, password: 17afa1ae-78c3-3dbc-9522-f4e69e274707, sni: dx.yhy520.xyz, skip-cert-verify: true, udp: true}
+  - {name: _商店：8du.shop 43, server: dx.yhy520.xyz, port: 58807, type: trojan, password: 43684d6c-8d9a-3ab5-b6d2-3d6017733358, sni: dx.yhy520.xyz, skip-cert-verify: true, udp: true}
+  - {name: _商店：8du.shop 44, server: dx.yhy520.xyz, port: 58807, type: trojan, password: 17afa1ae-78c3-3dbc-9522-f4e69e274707, sni: dx.yhy520.xyz, skip-cert-verify: true, udp: true}
+  - {name: _商店：8du.shop 45, server: lt.yhy520.xyz, port: 58808, type: trojan, password: 17afa1ae-78c3-3dbc-9522-f4e69e274707, sni: lt.yhy520.xyz, skip-cert-verify: true, udp: true}
+  - {name: _商店：8du.shop 46, server: lt.yhy520.xyz, port: 58808, type: trojan, password: 43684d6c-8d9a-3ab5-b6d2-3d6017733358, sni: lt.yhy520.xyz, skip-cert-verify: true, udp: true}
+  - {name: _商店：8du.shop 47, server: lt.yhy520.xyz, port: 58802, type: trojan, password: 17afa1ae-78c3-3dbc-9522-f4e69e274707, sni: lt.yhy520.xyz, skip-cert-verify: true, udp: true}
+  - {name: _商店：8du.shop 48, server: lt.yhy520.xyz, port: 58802, type: trojan, password: 43684d6c-8d9a-3ab5-b6d2-3d6017733358, sni: lt.yhy520.xyz, skip-cert-verify: true, udp: true}
+  - {name: _商店：8du.shop 49, server: dx.yhy520.xyz, port: 58804, type: trojan, password: 17afa1ae-78c3-3dbc-9522-f4e69e274707, sni: dx.yhy520.xyz, skip-cert-verify: true, udp: true}
+  - {name: _商店：8du.shop 50, server: dx.yhy520.xyz, port: 58804, type: trojan, password: 43684d6c-8d9a-3ab5-b6d2-3d6017733358, sni: dx.yhy520.xyz, skip-cert-verify: true, udp: true}
+  - {name: _商店：8du.shop 51, server: dx.yhy520.xyz, port: 58803, type: trojan, password: 17afa1ae-78c3-3dbc-9522-f4e69e274707, sni: dx.yhy520.xyz, skip-cert-verify: true, udp: true}
+  - {name: _商店：8du.shop 52, server: dx.yhy520.xyz, port: 58803, type: trojan, password: 43684d6c-8d9a-3ab5-b6d2-3d6017733358, sni: dx.yhy520.xyz, skip-cert-verify: true, udp: true}
+  - {name: _商店：8du.shop 53, server: lt.yhy520.xyz, port: 58819, type: trojan, password: 17afa1ae-78c3-3dbc-9522-f4e69e274707, sni: lt.yhy520.xyz, skip-cert-verify: true, udp: true}
+  - {name: _商店：8du.shop 54, server: lt.yhy520.xyz, port: 58819, type: trojan, password: 43684d6c-8d9a-3ab5-b6d2-3d6017733358, sni: lt.yhy520.xyz, skip-cert-verify: true, udp: true}
+  - {name: _商店：8du.shop 55, server: lt.yhy520.xyz, port: 58820, type: trojan, password: 43684d6c-8d9a-3ab5-b6d2-3d6017733358, sni: lt.yhy520.xyz, skip-cert-verify: true, udp: true}
+  - {name: _商店：8du.shop 56, server: lt.yhy520.xyz, port: 58820, type: trojan, password: 17afa1ae-78c3-3dbc-9522-f4e69e274707, sni: lt.yhy520.xyz, skip-cert-verify: true, udp: true}
+  - {name: _商店：8du.shop 57, server: dx.yhy520.xyz, port: 58801, type: trojan, password: 43684d6c-8d9a-3ab5-b6d2-3d6017733358, sni: dx.yhy520.xyz, skip-cert-verify: true, udp: true}
+  - {name: _商店：8du.shop 58, server: dx.yhy520.xyz, port: 58801, type: trojan, password: 17afa1ae-78c3-3dbc-9522-f4e69e274707, sni: dx.yhy520.xyz, skip-cert-verify: true, udp: true}
+  - {name: _商店：8du.shop 59, server: lt.yhy520.xyz, port: 58830, type: trojan, password: 43684d6c-8d9a-3ab5-b6d2-3d6017733358, sni: lt.yhy520.xyz, skip-cert-verify: true, udp: true}
+  - {name: _商店：8du.shop 60, server: lt.yhy520.xyz, port: 58830, type: trojan, password: 17afa1ae-78c3-3dbc-9522-f4e69e274707, sni: lt.yhy520.xyz, skip-cert-verify: true, udp: true}
+  - {name: _商店：8du.shop 61, server: dx.yhy520.xyz, port: 58825, type: trojan, password: 17afa1ae-78c3-3dbc-9522-f4e69e274707, sni: dx.yhy520.xyz, skip-cert-verify: true, udp: true}
+  - {name: _商店：8du.shop 62, server: dx.yhy520.xyz, port: 58825, type: trojan, password: 43684d6c-8d9a-3ab5-b6d2-3d6017733358, sni: dx.yhy520.xyz, skip-cert-verify: true, udp: true}
+  - {name: _商店：8du.shop 63, server: lt.yhy520.xyz, port: 58827, type: trojan, password: 43684d6c-8d9a-3ab5-b6d2-3d6017733358, sni: lt.yhy520.xyz, skip-cert-verify: true, udp: true}
+  - {name: _商店：8du.shop 64, server: dx.yhy520.xyz, port: 58821, type: trojan, password: 17afa1ae-78c3-3dbc-9522-f4e69e274707, sni: dx.yhy520.xyz, skip-cert-verify: true, udp: true}
+  - {name: _商店：8du.shop 65, server: dx.yhy520.xyz, port: 58821, type: trojan, password: 43684d6c-8d9a-3ab5-b6d2-3d6017733358, sni: dx.yhy520.xyz, skip-cert-verify: true, udp: true}
+  - {name: _商店：8du.shop 66, server: lt.yhy520.xyz, port: 58806, type: trojan, password: 17afa1ae-78c3-3dbc-9522-f4e69e274707, sni: lt.yhy520.xyz, skip-cert-verify: true, udp: true}
+  - {name: _商店：8du.shop 67, server: lt.yhy520.xyz, port: 58806, type: trojan, password: 43684d6c-8d9a-3ab5-b6d2-3d6017733358, sni: lt.yhy520.xyz, skip-cert-verify: true, udp: true}
+  - {name: _商店：8du.shop 68, server: dx.yhy520.xyz, port: 58805, type: trojan, password: 43684d6c-8d9a-3ab5-b6d2-3d6017733358, sni: dx.yhy520.xyz, skip-cert-verify: true, udp: true}
+  - {name: _商店：8du.shop 69, server: dx.yhy520.xyz, port: 58805, type: trojan, password: 17afa1ae-78c3-3dbc-9522-f4e69e274707, sni: dx.yhy520.xyz, skip-cert-verify: true, udp: true}
+  - {name: _商店：8du.shop 70, server: dx.yhy520.xyz, port: 58817, type: trojan, password: 17afa1ae-78c3-3dbc-9522-f4e69e274707, sni: dx.yhy520.xyz, skip-cert-verify: true, udp: true}
+  - {name: _商店：8du.shop 71, server: dx.yhy520.xyz, port: 58817, type: trojan, password: 43684d6c-8d9a-3ab5-b6d2-3d6017733358, sni: dx.yhy520.xyz, skip-cert-verify: true, udp: true}
+  - {name: _商店：8du.shop 72, server: lt.yhy520.xyz, port: 58832, type: trojan, password: 17afa1ae-78c3-3dbc-9522-f4e69e274707, sni: lt.yhy520.xyz, skip-cert-verify: true, udp: true}
+  - {name: _商店：8du.shop 73, server: lt.yhy520.xyz, port: 58832, type: trojan, password: 43684d6c-8d9a-3ab5-b6d2-3d6017733358, sni: lt.yhy520.xyz, skip-cert-verify: true, udp: true}
+  - {name: _商店：8du.shop 74, server: dx.yhy520.xyz, port: 58816, type: trojan, password: 43684d6c-8d9a-3ab5-b6d2-3d6017733358, sni: dx.yhy520.xyz, skip-cert-verify: true, udp: true}
+  - {name: _商店：8du.shop 75, server: dx.yhy520.xyz, port: 58816, type: trojan, password: 17afa1ae-78c3-3dbc-9522-f4e69e274707, sni: dx.yhy520.xyz, skip-cert-verify: true, udp: true}
+  - {name: _商店：8du.shop 76, server: lt.yhy520.xyz, port: 58810, type: trojan, password: 43684d6c-8d9a-3ab5-b6d2-3d6017733358, sni: lt.yhy520.xyz, skip-cert-verify: true, udp: true}
+  - {name: _商店：8du.shop 77, server: lt.yhy520.xyz, port: 58810, type: trojan, password: 17afa1ae-78c3-3dbc-9522-f4e69e274707, sni: lt.yhy520.xyz, skip-cert-verify: true, udp: true}
+  - {name: _商店：8du.shop 78, server: dx.yhy520.xyz, port: 58809, type: trojan, password: 17afa1ae-78c3-3dbc-9522-f4e69e274707, sni: dx.yhy520.xyz, skip-cert-verify: true, udp: true}
+  - {name: _商店：8du.shop 79, server: dx.yhy520.xyz, port: 58809, type: trojan, password: 43684d6c-8d9a-3ab5-b6d2-3d6017733358, sni: dx.yhy520.xyz, skip-cert-verify: true, udp: true}
+  - {name: _商店：8du.shop 80, server: lt.yhy520.xyz, port: 58813, type: trojan, password: 17afa1ae-78c3-3dbc-9522-f4e69e274707, sni: lt.yhy520.xyz, skip-cert-verify: true, udp: true}
+  - {name: _商店：8du.shop 81, server: lt.yhy520.xyz, port: 58813, type: trojan, password: 43684d6c-8d9a-3ab5-b6d2-3d6017733358, sni: lt.yhy520.xyz, skip-cert-verify: true, udp: true}
+  - {name: _商店：8du.shop 82, server: dx.yhy520.xyz, port: 58828, type: trojan, password: 17afa1ae-78c3-3dbc-9522-f4e69e274707, sni: dx.yhy520.xyz, skip-cert-verify: true, udp: true}
+  - {name: _商店：8du.shop 83, server: dx.yhy520.xyz, port: 58828, type: trojan, password: 43684d6c-8d9a-3ab5-b6d2-3d6017733358, sni: dx.yhy520.xyz, skip-cert-verify: true, udp: true}
+  - {name: _商店：8du.shop 84, server: hncu.relay.qchwnd.moe, port: 44613, type: trojan, password: cfaa1d87-16c9-45f2-8ca1-833badb6b790, sni: hncu.relay.qchwnd.moe, skip-cert-verify: true, udp: true}
+  - {name: _商店：8du.shop 85, server: ru.node.qchwnd.moe, port: 44606, type: trojan, password: cfaa1d87-16c9-45f2-8ca1-833badb6b790, sni: ru.node.qchwnd.moe, skip-cert-verify: true, udp: true}
+  - {name: _商店：8du.shop 86, server: hncu.relay.qchwnd.moe, port: 44606, type: trojan, password: cfaa1d87-16c9-45f2-8ca1-833badb6b790, sni: hncu.relay.qchwnd.moe, skip-cert-verify: true, udp: true}
+  - {name: _商店：8du.shop 87, server: hncu.relay.qchwnd.moe, port: 44616, type: trojan, password: cfaa1d87-16c9-45f2-8ca1-833badb6b790, sni: hncu.relay.qchwnd.moe, skip-cert-verify: true, udp: true}
+  - {name: _商店：8du.shop 88, server: jgwhdlb3.gaox.ml, port: 443, type: trojan, password: 006baa3f-4bc3-4915-b60d-c8c5dae11a11, sni: jgwhdlb3.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: _商店：8du.shop 89, server: ru.node.qchwnd.moe, port: 44606, type: trojan, password: cfaa1d87-16c9-45f2-8ca1-833badb6b790, sni: ru.node.qchwnd.moe, skip-cert-verify: true, udp: true}
+  - {name: _商店：8du.shop 90, server: hncu.relay.qchwnd.moe, port: 44606, type: trojan, password: cfaa1d87-16c9-45f2-8ca1-833badb6b790, sni: hncu.relay.qchwnd.moe, skip-cert-verify: true, udp: true}
+  - {name: _商店：8du.shop 91, server: hncu.relay.qchwnd.moe, port: 44616, type: trojan, password: cfaa1d87-16c9-45f2-8ca1-833badb6b790, sni: hncu.relay.qchwnd.moe, skip-cert-verify: true, udp: true}
+  - {name: _商店：8du.shop 92, server: jgwhdlb3.gaox.ml, port: 443, type: trojan, password: 006baa3f-4bc3-4915-b60d-c8c5dae11a11, sni: jgwhdlb3.gaox.ml, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 8度商店：8du.shop
-      - 8度商店：8du.shop 2
-      - 8度商店：8du.shop 3
-      - 8度商店：8du.shop 4
-      - 8度商店：8du.shop 5
-      - 8度商店：8du.shop 6
-      - 8度商店：8du.shop 7
-      - 8度商店：8du.shop 8
-      - 8度商店：8du.shop 9
-      - 8度商店：8du.shop 10
-      - 8度商店：8du.shop 11
-      - 8度商店：8du.shop 12
-      - 8度商店：8du.shop 13
-      - 8度商店：8du.shop 14
-      - 8度商店：8du.shop 15
-      - 8度商店：8du.shop 16
-      - 8度商店：8du.shop 17
-      - 8度商店：8du.shop 18
-      - 8度商店：8du.shop 19
-      - 8度商店：8du.shop 20
-      - 8度商店：8du.shop 21
-      - 8度商店：8du.shop 22
-      - 8度商店：8du.shop 23
-      - 8度商店：8du.shop 24
-      - 8度商店：8du.shop 25
-      - 8度商店：8du.shop 26
-      - 8度商店：8du.shop 27
-      - 8度商店：8du.shop 28
-      - 8度商店：8du.shop 29
-      - 8度商店：8du.shop 30
-      - 8度商店：8du.shop 31
-      - 8度商店：8du.shop 32
-      - 8度商店：8du.shop 33
-      - 8度商店：8du.shop 34
-      - 8度商店：8du.shop 35
-      - 8度商店：8du.shop 36
-      - 8度商店：8du.shop 37
-      - 8度商店：8du.shop 38
-      - 8度商店：8du.shop 39
-      - 8度商店：8du.shop 40
-      - 8度商店：8du.shop 41
-      - 8度商店：8du.shop 42
-      - 8度商店：8du.shop 43
-      - 8度商店：8du.shop 44
-      - 8度商店：8du.shop 45
-      - 8度商店：8du.shop 46
-      - 8度商店：8du.shop 47
-      - 8度商店：8du.shop 48
-      - 8度商店：8du.shop 49
-      - 8度商店：8du.shop 50
-      - 8度商店：8du.shop 51
-      - 8度商店：8du.shop 52
-      - 8度商店：8du.shop 53
-      - 8度商店：8du.shop 54
-      - 8度商店：8du.shop 55
-      - 8度商店：8du.shop 56
-      - 8度商店：8du.shop 57
-      - 8度商店：8du.shop 58
-      - 8度商店：8du.shop 59
-      - 8度商店：8du.shop 60
-      - 8度商店：8du.shop 61
-      - 8度商店：8du.shop 62
-      - 8度商店：8du.shop 63
-      - 8度商店：8du.shop 64
-      - 8度商店：8du.shop 65
-      - 8度商店：8du.shop 66
-      - 8度商店：8du.shop 67
-      - 8度商店：8du.shop 68
-      - 8度商店：8du.shop 69
-      - 8度商店：8du.shop 70
-      - 8度商店：8du.shop 71
-      - 8度商店：8du.shop 72
-      - 8度商店：8du.shop 73
-      - 8度商店：8du.shop 74
-      - 8度商店：8du.shop 75
-      - 8度商店：8du.shop 76
-      - 8度商店：8du.shop 77
-      - 8度商店：8du.shop 78
-      - 8度商店：8du.shop 79
-      - 8度商店：8du.shop 80
-      - 8度商店：8du.shop 81
-      - 8度商店：8du.shop 82
-      - 8度商店：8du.shop 83
-      - 8度商店：8du.shop 84
-      - 8度商店：8du.shop 85
-      - 8度商店：8du.shop 86
-      - 8度商店：8du.shop 87
-      - 8度商店：8du.shop 88
-      - 8度商店：8du.shop 89
-      - 8度商店：8du.shop 90
-      - 8度商店：8du.shop 91
-      - 8度商店：8du.shop 92
-      - 8度商店：8du.shop 93
-      - 8度商店：8du.shop 94
-      - 8度商店：8du.shop 95
-      - 8度商店：8du.shop 96
-      - 8度商店：8du.shop 97
-      - 8度商店：8du.shop 98
-      - 8度商店：8du.shop 99
-      - 8度商店：8du.shop 100
-      - 8度商店：8du.shop 101
-      - 8度商店：8du.shop 102
-      - 8度商店：8du.shop 103
-      - 8度商店：8du.shop 104
-      - 8度商店：8du.shop 105
-      - 8度商店：8du.shop 106
-      - 8度商店：8du.shop 107
-      - 8度商店：8du.shop 108
-      - 8度商店：8du.shop 109
-      - 8度商店：8du.shop 110
-      - 8度商店：8du.shop 111
-      - 8度商店：8du.shop 112
-      - 8度商店：8du.shop 113
-      - 8度商店：8du.shop 114
-      - 8度商店：8du.shop 115
-      - 8度商店：8du.shop 116
-      - 8度商店：8du.shop 117
-      - 8度商店：8du.shop 118
-      - 8度商店：8du.shop 119
-      - 8度商店：8du.shop 120
-      - 8度商店：8du.shop 121
-      - 8度商店：8du.shop 122
-      - 8度商店：8du.shop 123
+      - _商店：8du.shop
+      - _商店：8du.shop 2
+      - _商店：8du.shop 3
+      - _商店：8du.shop 4
+      - _商店：8du.shop 5
+      - _商店：8du.shop 6
+      - _商店：8du.shop 7
+      - _商店：8du.shop 8
+      - _商店：8du.shop 9
+      - _商店：8du.shop 10
+      - _商店：8du.shop 11
+      - _商店：8du.shop 12
+      - _商店：8du.shop 13
+      - _商店：8du.shop 14
+      - US_9102 @WangCai_1
+      - US_9102 @WangCai_1 2
+      - US_9101 @WangCai_1
+      - US_9101 @WangCai_1 2
+      - US_8888 @WangCai_1
+      - US_8888 @WangCai_1 2
+      - US_8882 @WangCai_1
+      - US_8882 @WangCai_1 2
+      - US_8881 @WangCai_1
+      - US_8881 @WangCai_1 2
+      - US_8119 @WangCai_1
+      - US_8118 @WangCai_1
+      - US_8118 @WangCai_1 2
+      - US_8091 @WangCai_1
+      - US_8090 @WangCai_1
+      - US_8080 @WangCai_1
+      - US_8009 @WangCai_1
+      - US_8009 @WangCai_1 2
+      - US_8008 @WangCai_1
+      - US_8008 @WangCai_1 2
+      - US_8000 @WangCai_1
+      - US_7307 @WangCai_1
+      - US_7306 @WangCai_1
+      - US_7002 @WangCai_1
+      - US_7002 @WangCai_1 2
+      - US_7001 @WangCai_1
+      - US_7001 @WangCai_1 2
+      - US_7001 @WangCai_1 3
+      - US_6679 @WangCai_1
+      - US_6679 @WangCai_1 2
+      - US_6379 @WangCai_1
+      - US_5601 @WangCai_1
+      - US_5601 @WangCai_1 2
+      - US_5600 @WangCai_1
+      - US_5600 @WangCai_1 2
+      - US_5500 @WangCai_1
+      - US_5500 @WangCai_1 2
+      - US_5500 @WangCai_1 3
+      - US_5004 @WangCai_1
+      - US_5004 @WangCai_1 2
+      - US_5003 @WangCai_1
+      - US_5003 @WangCai_1 2
+      - US_5001 @WangCai_1
+      - US_5000 @WangCai_1
+      - US_5000 @WangCai_1 2
+      - US_3306 @WangCai_1
+      - US_3306 @WangCai_1 2
+      - US_3306 @WangCai_1 3
+      - US_2376 @WangCai_1
+      - US_2375 @WangCai_1
+      - US_2375 @WangCai_1 2
+      - US_2375 @WangCai_1 3
+      - US_0443 @WangCai_1
+      - _US_美国
+      - _US_美国 2
+      - _US_美国 3
+      - _US_美国 4
+      - _US_美国 5
+      - _US_美国 6
+      - _US_美国 7
+      - ‌‌🇨🇦CA_9102 @WangCai_1
+      - ‌‌🇨🇦CA_9102 @WangCai_1 2
+      - ‌‌🇨🇦CA_9102 @WangCai_1 3
+      - ‌‌🇨🇦CA_9101 @WangCai_1
+      - ‌‌🇨🇦CA_9101 @WangCai_1 2
+      - ‌‌🇨🇦CA_9101 @WangCai_1 3
+      - ‌‌🇨🇦CA_9101 @WangCai_1 4
+      - ‌‌🇨🇦CA_9101 @WangCai_1 5
+      - ‌‌🇨🇦CA_8888 @WangCai_1
+      - ‌‌🇨🇦CA_8888 @WangCai_1 2
+      - ‌‌🇨🇦CA_8888 @WangCai_1 3
+      - ‌‌🇨🇦CA_8888 @WangCai_1 4
+      - ‌‌🇨🇦CA_8888 @WangCai_1 5
+      - ‌‌🇨🇦CA_8882 @WangCai_1
+      - ‌‌🇨🇦CA_8882 @WangCai_1 2
+      - ‌‌🇨🇦CA_8882 @WangCai_1 3
+      - ‌‌🇨🇦CA_8882 @WangCai_1 4
+      - ‌‌🇨🇦CA_8882 @WangCai_1 5
+      - ‌‌🇨🇦CA_8881 @WangCai_1
+      - ‌‌🇨🇦CA_8881 @WangCai_1 2
+      - ‌‌🇨🇦CA_8881 @WangCai_1 3
+      - ‌‌🇨🇦CA_8881 @WangCai_1 4
+      - ‌‌🇨🇦CA_8119 @WangCai_1
+      - ‌‌🇨🇦CA_8119 @WangCai_1 2
+      - ‌‌🇨🇦CA_8119 @WangCai_1 3
+      - ‌‌🇨🇦CA_8119 @WangCai_1 4
+      - ‌‌🇨🇦CA_8119 @WangCai_1 5
+      - ‌‌🇨🇦CA_8118 @WangCai_1
+      - ‌‌🇨🇦CA_8118 @WangCai_1 2
+      - ‌‌🇨🇦CA_8118 @WangCai_1 3
+      - ‌‌🇨🇦CA_8091 @WangCai_1
+      - ‌‌🇨🇦CA_8091 @WangCai_1 2
+      - ‌‌🇨🇦CA_8091 @WangCai_1 3
+      - ‌‌🇨🇦CA_8091 @WangCai_1 4
+      - ‌‌🇨🇦CA_8091 @WangCai_1 5
+      - ‌‌🇨🇦CA_8090 @WangCai_1
+      - ‌‌🇨🇦CA_8090 @WangCai_1 2
+      - ‌‌🇨🇦CA_8090 @WangCai_1 3
+      - ‌‌🇨🇦CA_8080 @WangCai_1
+      - ‌‌🇨🇦CA_8080 @WangCai_1 2
+      - ‌‌🇨🇦CA_8080 @WangCai_1 3
+      - ‌‌🇨🇦CA_8080 @WangCai_1 4
+      - ‌‌🇨🇦CA_8009 @WangCai_1
+      - ‌‌🇨🇦CA_8009 @WangCai_1 2
+      - ‌‌🇨🇦CA_8008 @WangCai_1
+      - ‌‌🇨🇦CA_8008 @WangCai_1 2
+      - ‌‌🇨🇦CA_8008 @WangCai_1 3
+      - ‌‌🇨🇦CA_8008 @WangCai_1 4
+      - ‌‌🇨🇦CA_8008 @WangCai_1 5
+      - ‌‌🇨🇦CA_8008 @WangCai_1 6
+      - ‌‌🇨🇦CA_8008 @WangCai_1 7
+      - ‌‌🇨🇦CA_8000 @WangCai_1
+      - ‌‌🇨🇦CA_8000 @WangCai_1 2
+      - ‌‌🇨🇦CA_8000 @WangCai_1 3
+      - ‌‌🇨🇦CA_8000 @WangCai_1 4
+      - ‌‌🇨🇦CA_7307 @WangCai_1
+      - ‌‌🇨🇦CA_7307 @WangCai_1 2
+      - ‌‌🇨🇦CA_7307 @WangCai_1 3
+      - ‌‌🇨🇦CA_7306 @WangCai_1
+      - ‌‌🇨🇦CA_7306 @WangCai_1 2
+      - ‌‌🇨🇦CA_7306 @WangCai_1 3
+      - ‌‌🇨🇦CA_7002 @WangCai_1
+      - ‌‌🇨🇦CA_7002 @WangCai_1 2
+      - ‌‌🇨🇦CA_7002 @WangCai_1 3
+      - ‌‌🇨🇦CA_7002 @WangCai_1 4
+      - ‌‌🇨🇦CA_7002 @WangCai_1 5
+      - ‌‌🇨🇦CA_7002 @WangCai_1 6
+      - ‌‌🇨🇦CA_7002 @WangCai_1 7
+      - ‌‌🇨🇦CA_7001 @WangCai_1
+      - ‌‌🇨🇦CA_7001 @WangCai_1 2
+      - ‌‌🇨🇦CA_7001 @WangCai_1 3
+      - ‌‌🇨🇦CA_7001 @WangCai_1 4
+      - ‌‌🇨🇦CA_7001 @WangCai_1 5
+      - ‌‌🇨🇦CA_7001 @WangCai_1 6
+      - ‌‌🇨🇦CA_7001 @WangCai_1 7
+      - ‌‌🇨🇦CA_6697 @WangCai_1
+      - ‌‌🇨🇦CA_6697 @WangCai_1 2
+      - ‌‌🇨🇦CA_6697 @WangCai_1 3
+      - ‌‌🇨🇦CA_6697 @WangCai_1 4
+      - ‌‌🇨🇦CA_6697 @WangCai_1 5
+      - ‌‌🇨🇦CA_6679 @WangCai_1
+      - ‌‌🇨🇦CA_6679 @WangCai_1 2
+      - ‌‌🇨🇦CA_6679 @WangCai_1 3
+      - ‌‌🇨🇦CA_6679 @WangCai_1 4
+      - ‌‌🇨🇦CA_6379 @WangCai_1
+      - ‌‌🇨🇦CA_6379 @WangCai_1 2
+      - ‌‌🇨🇦CA_6379 @WangCai_1 3
+      - ‌‌🇨🇦CA_6379 @WangCai_1 4
+      - ‌‌🇨🇦CA_6379 @WangCai_1 5
+      - ‌‌🇨🇦CA_6379 @WangCai_1 6
+      - ‌‌🇨🇦CA_5601 @WangCai_1
+      - ‌‌🇨🇦CA_5601 @WangCai_1 2
+      - ‌‌🇨🇦CA_5600 @WangCai_1
+      - ‌‌🇨🇦CA_5600 @WangCai_1 2
+      - ‌‌🇨🇦CA_5600 @WangCai_1 3
+      - ‌‌🇨🇦CA_5600 @WangCai_1 4
+      - ‌‌🇨🇦CA_5600 @WangCai_1 5
+      - ‌‌🇨🇦CA_5500 @WangCai_1
+      - ‌‌🇨🇦CA_5500 @WangCai_1 2
+      - ‌‌🇨🇦CA_5500 @WangCai_1 3
+      - ‌‌🇨🇦CA_5500 @WangCai_1 4
+      - ‌‌🇨🇦CA_5004 @WangCai_1
+      - ‌‌🇨🇦CA_5004 @WangCai_1 2
+      - ‌‌🇨🇦CA_5004 @WangCai_1 3
+      - ‌‌🇨🇦CA_5004 @WangCai_1 4
+      - ‌‌🇨🇦CA_5004 @WangCai_1 5
+      - ‌‌🇨🇦CA_5004 @WangCai_1 6
+      - ‌‌🇨🇦CA_5004 @WangCai_1 7
+      - ‌‌🇨🇦CA_5003 @WangCai_1
+      - ‌‌🇨🇦CA_5003 @WangCai_1 2
+      - ‌‌🇨🇦CA_5003 @WangCai_1 3
+      - ‌‌🇨🇦CA_5001 @WangCai_1
+      - ‌‌🇨🇦CA_5001 @WangCai_1 2
+      - ‌‌🇨🇦CA_5001 @WangCai_1 3
+      - ‌‌🇨🇦CA_5000 @WangCai_1
+      - ‌‌🇨🇦CA_5000 @WangCai_1 2
+      - ‌‌🇨🇦CA_5000 @WangCai_1 3
+      - ‌‌🇨🇦CA_5000 @WangCai_1 4
+      - ‌‌🇨🇦CA_3389 @WangCai_1
+      - ‌‌🇨🇦CA_3306 @WangCai_1
+      - ‌‌🇨🇦CA_3306 @WangCai_1 2
+      - ‌‌🇨🇦CA_3306 @WangCai_1 3
+      - ‌‌🇨🇦CA_2376 @WangCai_1
+      - ‌‌🇨🇦CA_2376 @WangCai_1 2
+      - ‌‌🇨🇦CA_2376 @WangCai_1 3
+      - ‌‌🇨🇦CA_2375 @WangCai_1
+      - ‌‌🇨🇦CA_2375 @WangCai_1 2
+      - ‌‌🇨🇦CA_0443 @WangCai_1
+      - ‌‌🇨🇦CA_0443 @WangCai_1 2
+      - ‌‌🇨🇦CA_0443 @WangCai_1 3
+      - ‌‌🇨🇦CA_0443 @WangCai_1 4
+      - ‌‌🇨🇦CA_0443 @WangCai_1 5
+      - _商店：8du.shop 15
+      - _商店：8du.shop 16
+      - _商店：8du.shop 17
+      - _商店：8du.shop 18
+      - _商店：8du.shop 19
+      - _商店：8du.shop 20
+      - _商店：8du.shop 21
+      - _商店：8du.shop 22
+      - _商店：8du.shop 23
+      - _商店：8du.shop 24
+      - _商店：8du.shop 25
+      - _商店：8du.shop 26
+      - _商店：8du.shop 27
+      - _商店：8du.shop 28
+      - _商店：8du.shop 29
+      - _商店：8du.shop 30
+      - _商店：8du.shop 31
+      - _商店：8du.shop 32
+      - _商店：8du.shop 33
+      - _商店：8du.shop 34
+      - _商店：8du.shop 35
+      - _商店：8du.shop 36
+      - _商店：8du.shop 37
+      - _商店：8du.shop 38
+      - _商店：8du.shop 39
+      - _商店：8du.shop 40
+      - _商店：8du.shop 41
+      - _商店：8du.shop 42
+      - _商店：8du.shop 43
+      - _商店：8du.shop 44
+      - _商店：8du.shop 45
+      - _商店：8du.shop 46
+      - _商店：8du.shop 47
+      - _商店：8du.shop 48
+      - _商店：8du.shop 49
+      - _商店：8du.shop 50
+      - _商店：8du.shop 51
+      - _商店：8du.shop 52
+      - _商店：8du.shop 53
+      - _商店：8du.shop 54
+      - _商店：8du.shop 55
+      - _商店：8du.shop 56
+      - _商店：8du.shop 57
+      - _商店：8du.shop 58
+      - _商店：8du.shop 59
+      - _商店：8du.shop 60
+      - _商店：8du.shop 61
+      - _商店：8du.shop 62
+      - _商店：8du.shop 63
+      - _商店：8du.shop 64
+      - _商店：8du.shop 65
+      - _商店：8du.shop 66
+      - _商店：8du.shop 67
+      - _商店：8du.shop 68
+      - _商店：8du.shop 69
+      - _商店：8du.shop 70
+      - _商店：8du.shop 71
+      - _商店：8du.shop 72
+      - _商店：8du.shop 73
+      - _商店：8du.shop 74
+      - _商店：8du.shop 75
+      - _商店：8du.shop 76
+      - _商店：8du.shop 77
+      - _商店：8du.shop 78
+      - _商店：8du.shop 79
+      - _商店：8du.shop 80
+      - _商店：8du.shop 81
+      - _商店：8du.shop 82
+      - _商店：8du.shop 83
+      - _商店：8du.shop 84
+      - _商店：8du.shop 85
+      - _商店：8du.shop 86
+      - _商店：8du.shop 87
+      - _商店：8du.shop 88
+      - _商店：8du.shop 89
+      - _商店：8du.shop 90
+      - _商店：8du.shop 91
+      - _商店：8du.shop 92
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 8度商店：8du.shop
-      - 8度商店：8du.shop 2
-      - 8度商店：8du.shop 3
-      - 8度商店：8du.shop 4
-      - 8度商店：8du.shop 5
-      - 8度商店：8du.shop 6
-      - 8度商店：8du.shop 7
-      - 8度商店：8du.shop 8
-      - 8度商店：8du.shop 9
-      - 8度商店：8du.shop 10
-      - 8度商店：8du.shop 11
-      - 8度商店：8du.shop 12
-      - 8度商店：8du.shop 13
-      - 8度商店：8du.shop 14
-      - 8度商店：8du.shop 15
-      - 8度商店：8du.shop 16
-      - 8度商店：8du.shop 17
-      - 8度商店：8du.shop 18
-      - 8度商店：8du.shop 19
-      - 8度商店：8du.shop 20
-      - 8度商店：8du.shop 21
-      - 8度商店：8du.shop 22
-      - 8度商店：8du.shop 23
-      - 8度商店：8du.shop 24
-      - 8度商店：8du.shop 25
-      - 8度商店：8du.shop 26
-      - 8度商店：8du.shop 27
-      - 8度商店：8du.shop 28
-      - 8度商店：8du.shop 29
-      - 8度商店：8du.shop 30
-      - 8度商店：8du.shop 31
-      - 8度商店：8du.shop 32
-      - 8度商店：8du.shop 33
-      - 8度商店：8du.shop 34
-      - 8度商店：8du.shop 35
-      - 8度商店：8du.shop 36
-      - 8度商店：8du.shop 37
-      - 8度商店：8du.shop 38
-      - 8度商店：8du.shop 39
-      - 8度商店：8du.shop 40
-      - 8度商店：8du.shop 41
-      - 8度商店：8du.shop 42
-      - 8度商店：8du.shop 43
-      - 8度商店：8du.shop 44
-      - 8度商店：8du.shop 45
-      - 8度商店：8du.shop 46
-      - 8度商店：8du.shop 47
-      - 8度商店：8du.shop 48
-      - 8度商店：8du.shop 49
-      - 8度商店：8du.shop 50
-      - 8度商店：8du.shop 51
-      - 8度商店：8du.shop 52
-      - 8度商店：8du.shop 53
-      - 8度商店：8du.shop 54
-      - 8度商店：8du.shop 55
-      - 8度商店：8du.shop 56
-      - 8度商店：8du.shop 57
-      - 8度商店：8du.shop 58
-      - 8度商店：8du.shop 59
-      - 8度商店：8du.shop 60
-      - 8度商店：8du.shop 61
-      - 8度商店：8du.shop 62
-      - 8度商店：8du.shop 63
-      - 8度商店：8du.shop 64
-      - 8度商店：8du.shop 65
-      - 8度商店：8du.shop 66
-      - 8度商店：8du.shop 67
-      - 8度商店：8du.shop 68
-      - 8度商店：8du.shop 69
-      - 8度商店：8du.shop 70
-      - 8度商店：8du.shop 71
-      - 8度商店：8du.shop 72
-      - 8度商店：8du.shop 73
-      - 8度商店：8du.shop 74
-      - 8度商店：8du.shop 75
-      - 8度商店：8du.shop 76
-      - 8度商店：8du.shop 77
-      - 8度商店：8du.shop 78
-      - 8度商店：8du.shop 79
-      - 8度商店：8du.shop 80
-      - 8度商店：8du.shop 81
-      - 8度商店：8du.shop 82
-      - 8度商店：8du.shop 83
-      - 8度商店：8du.shop 84
-      - 8度商店：8du.shop 85
-      - 8度商店：8du.shop 86
-      - 8度商店：8du.shop 87
-      - 8度商店：8du.shop 88
-      - 8度商店：8du.shop 89
-      - 8度商店：8du.shop 90
-      - 8度商店：8du.shop 91
-      - 8度商店：8du.shop 92
-      - 8度商店：8du.shop 93
-      - 8度商店：8du.shop 94
-      - 8度商店：8du.shop 95
-      - 8度商店：8du.shop 96
-      - 8度商店：8du.shop 97
-      - 8度商店：8du.shop 98
-      - 8度商店：8du.shop 99
-      - 8度商店：8du.shop 100
-      - 8度商店：8du.shop 101
-      - 8度商店：8du.shop 102
-      - 8度商店：8du.shop 103
-      - 8度商店：8du.shop 104
-      - 8度商店：8du.shop 105
-      - 8度商店：8du.shop 106
-      - 8度商店：8du.shop 107
-      - 8度商店：8du.shop 108
-      - 8度商店：8du.shop 109
-      - 8度商店：8du.shop 110
-      - 8度商店：8du.shop 111
-      - 8度商店：8du.shop 112
-      - 8度商店：8du.shop 113
-      - 8度商店：8du.shop 114
-      - 8度商店：8du.shop 115
-      - 8度商店：8du.shop 116
-      - 8度商店：8du.shop 117
-      - 8度商店：8du.shop 118
-      - 8度商店：8du.shop 119
-      - 8度商店：8du.shop 120
-      - 8度商店：8du.shop 121
-      - 8度商店：8du.shop 122
-      - 8度商店：8du.shop 123
+      - _商店：8du.shop
+      - _商店：8du.shop 2
+      - _商店：8du.shop 3
+      - _商店：8du.shop 4
+      - _商店：8du.shop 5
+      - _商店：8du.shop 6
+      - _商店：8du.shop 7
+      - _商店：8du.shop 8
+      - _商店：8du.shop 9
+      - _商店：8du.shop 10
+      - _商店：8du.shop 11
+      - _商店：8du.shop 12
+      - _商店：8du.shop 13
+      - _商店：8du.shop 14
+      - US_9102 @WangCai_1
+      - US_9102 @WangCai_1 2
+      - US_9101 @WangCai_1
+      - US_9101 @WangCai_1 2
+      - US_8888 @WangCai_1
+      - US_8888 @WangCai_1 2
+      - US_8882 @WangCai_1
+      - US_8882 @WangCai_1 2
+      - US_8881 @WangCai_1
+      - US_8881 @WangCai_1 2
+      - US_8119 @WangCai_1
+      - US_8118 @WangCai_1
+      - US_8118 @WangCai_1 2
+      - US_8091 @WangCai_1
+      - US_8090 @WangCai_1
+      - US_8080 @WangCai_1
+      - US_8009 @WangCai_1
+      - US_8009 @WangCai_1 2
+      - US_8008 @WangCai_1
+      - US_8008 @WangCai_1 2
+      - US_8000 @WangCai_1
+      - US_7307 @WangCai_1
+      - US_7306 @WangCai_1
+      - US_7002 @WangCai_1
+      - US_7002 @WangCai_1 2
+      - US_7001 @WangCai_1
+      - US_7001 @WangCai_1 2
+      - US_7001 @WangCai_1 3
+      - US_6679 @WangCai_1
+      - US_6679 @WangCai_1 2
+      - US_6379 @WangCai_1
+      - US_5601 @WangCai_1
+      - US_5601 @WangCai_1 2
+      - US_5600 @WangCai_1
+      - US_5600 @WangCai_1 2
+      - US_5500 @WangCai_1
+      - US_5500 @WangCai_1 2
+      - US_5500 @WangCai_1 3
+      - US_5004 @WangCai_1
+      - US_5004 @WangCai_1 2
+      - US_5003 @WangCai_1
+      - US_5003 @WangCai_1 2
+      - US_5001 @WangCai_1
+      - US_5000 @WangCai_1
+      - US_5000 @WangCai_1 2
+      - US_3306 @WangCai_1
+      - US_3306 @WangCai_1 2
+      - US_3306 @WangCai_1 3
+      - US_2376 @WangCai_1
+      - US_2375 @WangCai_1
+      - US_2375 @WangCai_1 2
+      - US_2375 @WangCai_1 3
+      - US_0443 @WangCai_1
+      - _US_美国
+      - _US_美国 2
+      - _US_美国 3
+      - _US_美国 4
+      - _US_美国 5
+      - _US_美国 6
+      - _US_美国 7
+      - ‌‌🇨🇦CA_9102 @WangCai_1
+      - ‌‌🇨🇦CA_9102 @WangCai_1 2
+      - ‌‌🇨🇦CA_9102 @WangCai_1 3
+      - ‌‌🇨🇦CA_9101 @WangCai_1
+      - ‌‌🇨🇦CA_9101 @WangCai_1 2
+      - ‌‌🇨🇦CA_9101 @WangCai_1 3
+      - ‌‌🇨🇦CA_9101 @WangCai_1 4
+      - ‌‌🇨🇦CA_9101 @WangCai_1 5
+      - ‌‌🇨🇦CA_8888 @WangCai_1
+      - ‌‌🇨🇦CA_8888 @WangCai_1 2
+      - ‌‌🇨🇦CA_8888 @WangCai_1 3
+      - ‌‌🇨🇦CA_8888 @WangCai_1 4
+      - ‌‌🇨🇦CA_8888 @WangCai_1 5
+      - ‌‌🇨🇦CA_8882 @WangCai_1
+      - ‌‌🇨🇦CA_8882 @WangCai_1 2
+      - ‌‌🇨🇦CA_8882 @WangCai_1 3
+      - ‌‌🇨🇦CA_8882 @WangCai_1 4
+      - ‌‌🇨🇦CA_8882 @WangCai_1 5
+      - ‌‌🇨🇦CA_8881 @WangCai_1
+      - ‌‌🇨🇦CA_8881 @WangCai_1 2
+      - ‌‌🇨🇦CA_8881 @WangCai_1 3
+      - ‌‌🇨🇦CA_8881 @WangCai_1 4
+      - ‌‌🇨🇦CA_8119 @WangCai_1
+      - ‌‌🇨🇦CA_8119 @WangCai_1 2
+      - ‌‌🇨🇦CA_8119 @WangCai_1 3
+      - ‌‌🇨🇦CA_8119 @WangCai_1 4
+      - ‌‌🇨🇦CA_8119 @WangCai_1 5
+      - ‌‌🇨🇦CA_8118 @WangCai_1
+      - ‌‌🇨🇦CA_8118 @WangCai_1 2
+      - ‌‌🇨🇦CA_8118 @WangCai_1 3
+      - ‌‌🇨🇦CA_8091 @WangCai_1
+      - ‌‌🇨🇦CA_8091 @WangCai_1 2
+      - ‌‌🇨🇦CA_8091 @WangCai_1 3
+      - ‌‌🇨🇦CA_8091 @WangCai_1 4
+      - ‌‌🇨🇦CA_8091 @WangCai_1 5
+      - ‌‌🇨🇦CA_8090 @WangCai_1
+      - ‌‌🇨🇦CA_8090 @WangCai_1 2
+      - ‌‌🇨🇦CA_8090 @WangCai_1 3
+      - ‌‌🇨🇦CA_8080 @WangCai_1
+      - ‌‌🇨🇦CA_8080 @WangCai_1 2
+      - ‌‌🇨🇦CA_8080 @WangCai_1 3
+      - ‌‌🇨🇦CA_8080 @WangCai_1 4
+      - ‌‌🇨🇦CA_8009 @WangCai_1
+      - ‌‌🇨🇦CA_8009 @WangCai_1 2
+      - ‌‌🇨🇦CA_8008 @WangCai_1
+      - ‌‌🇨🇦CA_8008 @WangCai_1 2
+      - ‌‌🇨🇦CA_8008 @WangCai_1 3
+      - ‌‌🇨🇦CA_8008 @WangCai_1 4
+      - ‌‌🇨🇦CA_8008 @WangCai_1 5
+      - ‌‌🇨🇦CA_8008 @WangCai_1 6
+      - ‌‌🇨🇦CA_8008 @WangCai_1 7
+      - ‌‌🇨🇦CA_8000 @WangCai_1
+      - ‌‌🇨🇦CA_8000 @WangCai_1 2
+      - ‌‌🇨🇦CA_8000 @WangCai_1 3
+      - ‌‌🇨🇦CA_8000 @WangCai_1 4
+      - ‌‌🇨🇦CA_7307 @WangCai_1
+      - ‌‌🇨🇦CA_7307 @WangCai_1 2
+      - ‌‌🇨🇦CA_7307 @WangCai_1 3
+      - ‌‌🇨🇦CA_7306 @WangCai_1
+      - ‌‌🇨🇦CA_7306 @WangCai_1 2
+      - ‌‌🇨🇦CA_7306 @WangCai_1 3
+      - ‌‌🇨🇦CA_7002 @WangCai_1
+      - ‌‌🇨🇦CA_7002 @WangCai_1 2
+      - ‌‌🇨🇦CA_7002 @WangCai_1 3
+      - ‌‌🇨🇦CA_7002 @WangCai_1 4
+      - ‌‌🇨🇦CA_7002 @WangCai_1 5
+      - ‌‌🇨🇦CA_7002 @WangCai_1 6
+      - ‌‌🇨🇦CA_7002 @WangCai_1 7
+      - ‌‌🇨🇦CA_7001 @WangCai_1
+      - ‌‌🇨🇦CA_7001 @WangCai_1 2
+      - ‌‌🇨🇦CA_7001 @WangCai_1 3
+      - ‌‌🇨🇦CA_7001 @WangCai_1 4
+      - ‌‌🇨🇦CA_7001 @WangCai_1 5
+      - ‌‌🇨🇦CA_7001 @WangCai_1 6
+      - ‌‌🇨🇦CA_7001 @WangCai_1 7
+      - ‌‌🇨🇦CA_6697 @WangCai_1
+      - ‌‌🇨🇦CA_6697 @WangCai_1 2
+      - ‌‌🇨🇦CA_6697 @WangCai_1 3
+      - ‌‌🇨🇦CA_6697 @WangCai_1 4
+      - ‌‌🇨🇦CA_6697 @WangCai_1 5
+      - ‌‌🇨🇦CA_6679 @WangCai_1
+      - ‌‌🇨🇦CA_6679 @WangCai_1 2
+      - ‌‌🇨🇦CA_6679 @WangCai_1 3
+      - ‌‌🇨🇦CA_6679 @WangCai_1 4
+      - ‌‌🇨🇦CA_6379 @WangCai_1
+      - ‌‌🇨🇦CA_6379 @WangCai_1 2
+      - ‌‌🇨🇦CA_6379 @WangCai_1 3
+      - ‌‌🇨🇦CA_6379 @WangCai_1 4
+      - ‌‌🇨🇦CA_6379 @WangCai_1 5
+      - ‌‌🇨🇦CA_6379 @WangCai_1 6
+      - ‌‌🇨🇦CA_5601 @WangCai_1
+      - ‌‌🇨🇦CA_5601 @WangCai_1 2
+      - ‌‌🇨🇦CA_5600 @WangCai_1
+      - ‌‌🇨🇦CA_5600 @WangCai_1 2
+      - ‌‌🇨🇦CA_5600 @WangCai_1 3
+      - ‌‌🇨🇦CA_5600 @WangCai_1 4
+      - ‌‌🇨🇦CA_5600 @WangCai_1 5
+      - ‌‌🇨🇦CA_5500 @WangCai_1
+      - ‌‌🇨🇦CA_5500 @WangCai_1 2
+      - ‌‌🇨🇦CA_5500 @WangCai_1 3
+      - ‌‌🇨🇦CA_5500 @WangCai_1 4
+      - ‌‌🇨🇦CA_5004 @WangCai_1
+      - ‌‌🇨🇦CA_5004 @WangCai_1 2
+      - ‌‌🇨🇦CA_5004 @WangCai_1 3
+      - ‌‌🇨🇦CA_5004 @WangCai_1 4
+      - ‌‌🇨🇦CA_5004 @WangCai_1 5
+      - ‌‌🇨🇦CA_5004 @WangCai_1 6
+      - ‌‌🇨🇦CA_5004 @WangCai_1 7
+      - ‌‌🇨🇦CA_5003 @WangCai_1
+      - ‌‌🇨🇦CA_5003 @WangCai_1 2
+      - ‌‌🇨🇦CA_5003 @WangCai_1 3
+      - ‌‌🇨🇦CA_5001 @WangCai_1
+      - ‌‌🇨🇦CA_5001 @WangCai_1 2
+      - ‌‌🇨🇦CA_5001 @WangCai_1 3
+      - ‌‌🇨🇦CA_5000 @WangCai_1
+      - ‌‌🇨🇦CA_5000 @WangCai_1 2
+      - ‌‌🇨🇦CA_5000 @WangCai_1 3
+      - ‌‌🇨🇦CA_5000 @WangCai_1 4
+      - ‌‌🇨🇦CA_3389 @WangCai_1
+      - ‌‌🇨🇦CA_3306 @WangCai_1
+      - ‌‌🇨🇦CA_3306 @WangCai_1 2
+      - ‌‌🇨🇦CA_3306 @WangCai_1 3
+      - ‌‌🇨🇦CA_2376 @WangCai_1
+      - ‌‌🇨🇦CA_2376 @WangCai_1 2
+      - ‌‌🇨🇦CA_2376 @WangCai_1 3
+      - ‌‌🇨🇦CA_2375 @WangCai_1
+      - ‌‌🇨🇦CA_2375 @WangCai_1 2
+      - ‌‌🇨🇦CA_0443 @WangCai_1
+      - ‌‌🇨🇦CA_0443 @WangCai_1 2
+      - ‌‌🇨🇦CA_0443 @WangCai_1 3
+      - ‌‌🇨🇦CA_0443 @WangCai_1 4
+      - ‌‌🇨🇦CA_0443 @WangCai_1 5
+      - _商店：8du.shop 15
+      - _商店：8du.shop 16
+      - _商店：8du.shop 17
+      - _商店：8du.shop 18
+      - _商店：8du.shop 19
+      - _商店：8du.shop 20
+      - _商店：8du.shop 21
+      - _商店：8du.shop 22
+      - _商店：8du.shop 23
+      - _商店：8du.shop 24
+      - _商店：8du.shop 25
+      - _商店：8du.shop 26
+      - _商店：8du.shop 27
+      - _商店：8du.shop 28
+      - _商店：8du.shop 29
+      - _商店：8du.shop 30
+      - _商店：8du.shop 31
+      - _商店：8du.shop 32
+      - _商店：8du.shop 33
+      - _商店：8du.shop 34
+      - _商店：8du.shop 35
+      - _商店：8du.shop 36
+      - _商店：8du.shop 37
+      - _商店：8du.shop 38
+      - _商店：8du.shop 39
+      - _商店：8du.shop 40
+      - _商店：8du.shop 41
+      - _商店：8du.shop 42
+      - _商店：8du.shop 43
+      - _商店：8du.shop 44
+      - _商店：8du.shop 45
+      - _商店：8du.shop 46
+      - _商店：8du.shop 47
+      - _商店：8du.shop 48
+      - _商店：8du.shop 49
+      - _商店：8du.shop 50
+      - _商店：8du.shop 51
+      - _商店：8du.shop 52
+      - _商店：8du.shop 53
+      - _商店：8du.shop 54
+      - _商店：8du.shop 55
+      - _商店：8du.shop 56
+      - _商店：8du.shop 57
+      - _商店：8du.shop 58
+      - _商店：8du.shop 59
+      - _商店：8du.shop 60
+      - _商店：8du.shop 61
+      - _商店：8du.shop 62
+      - _商店：8du.shop 63
+      - _商店：8du.shop 64
+      - _商店：8du.shop 65
+      - _商店：8du.shop 66
+      - _商店：8du.shop 67
+      - _商店：8du.shop 68
+      - _商店：8du.shop 69
+      - _商店：8du.shop 70
+      - _商店：8du.shop 71
+      - _商店：8du.shop 72
+      - _商店：8du.shop 73
+      - _商店：8du.shop 74
+      - _商店：8du.shop 75
+      - _商店：8du.shop 76
+      - _商店：8du.shop 77
+      - _商店：8du.shop 78
+      - _商店：8du.shop 79
+      - _商店：8du.shop 80
+      - _商店：8du.shop 81
+      - _商店：8du.shop 82
+      - _商店：8du.shop 83
+      - _商店：8du.shop 84
+      - _商店：8du.shop 85
+      - _商店：8du.shop 86
+      - _商店：8du.shop 87
+      - _商店：8du.shop 88
+      - _商店：8du.shop 89
+      - _商店：8du.shop 90
+      - _商店：8du.shop 91
+      - _商店：8du.shop 92
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 8度商店：8du.shop
-      - 8度商店：8du.shop 2
-      - 8度商店：8du.shop 3
-      - 8度商店：8du.shop 4
-      - 8度商店：8du.shop 5
-      - 8度商店：8du.shop 6
-      - 8度商店：8du.shop 7
-      - 8度商店：8du.shop 8
-      - 8度商店：8du.shop 9
-      - 8度商店：8du.shop 10
-      - 8度商店：8du.shop 11
-      - 8度商店：8du.shop 12
-      - 8度商店：8du.shop 13
-      - 8度商店：8du.shop 14
-      - 8度商店：8du.shop 15
-      - 8度商店：8du.shop 16
-      - 8度商店：8du.shop 17
-      - 8度商店：8du.shop 18
-      - 8度商店：8du.shop 19
-      - 8度商店：8du.shop 20
-      - 8度商店：8du.shop 21
-      - 8度商店：8du.shop 22
-      - 8度商店：8du.shop 23
-      - 8度商店：8du.shop 24
-      - 8度商店：8du.shop 25
-      - 8度商店：8du.shop 26
-      - 8度商店：8du.shop 27
-      - 8度商店：8du.shop 28
-      - 8度商店：8du.shop 29
-      - 8度商店：8du.shop 30
-      - 8度商店：8du.shop 31
-      - 8度商店：8du.shop 32
-      - 8度商店：8du.shop 33
-      - 8度商店：8du.shop 34
-      - 8度商店：8du.shop 35
-      - 8度商店：8du.shop 36
-      - 8度商店：8du.shop 37
-      - 8度商店：8du.shop 38
-      - 8度商店：8du.shop 39
-      - 8度商店：8du.shop 40
-      - 8度商店：8du.shop 41
-      - 8度商店：8du.shop 42
-      - 8度商店：8du.shop 43
-      - 8度商店：8du.shop 44
-      - 8度商店：8du.shop 45
-      - 8度商店：8du.shop 46
-      - 8度商店：8du.shop 47
-      - 8度商店：8du.shop 48
-      - 8度商店：8du.shop 49
-      - 8度商店：8du.shop 50
-      - 8度商店：8du.shop 51
-      - 8度商店：8du.shop 52
-      - 8度商店：8du.shop 53
-      - 8度商店：8du.shop 54
-      - 8度商店：8du.shop 55
-      - 8度商店：8du.shop 56
-      - 8度商店：8du.shop 57
-      - 8度商店：8du.shop 58
-      - 8度商店：8du.shop 59
-      - 8度商店：8du.shop 60
-      - 8度商店：8du.shop 61
-      - 8度商店：8du.shop 62
-      - 8度商店：8du.shop 63
-      - 8度商店：8du.shop 64
-      - 8度商店：8du.shop 65
-      - 8度商店：8du.shop 66
-      - 8度商店：8du.shop 67
-      - 8度商店：8du.shop 68
-      - 8度商店：8du.shop 69
-      - 8度商店：8du.shop 70
-      - 8度商店：8du.shop 71
-      - 8度商店：8du.shop 72
-      - 8度商店：8du.shop 73
-      - 8度商店：8du.shop 74
-      - 8度商店：8du.shop 75
-      - 8度商店：8du.shop 76
-      - 8度商店：8du.shop 77
-      - 8度商店：8du.shop 78
-      - 8度商店：8du.shop 79
-      - 8度商店：8du.shop 80
-      - 8度商店：8du.shop 81
-      - 8度商店：8du.shop 82
-      - 8度商店：8du.shop 83
-      - 8度商店：8du.shop 84
-      - 8度商店：8du.shop 85
-      - 8度商店：8du.shop 86
-      - 8度商店：8du.shop 87
-      - 8度商店：8du.shop 88
-      - 8度商店：8du.shop 89
-      - 8度商店：8du.shop 90
-      - 8度商店：8du.shop 91
-      - 8度商店：8du.shop 92
-      - 8度商店：8du.shop 93
-      - 8度商店：8du.shop 94
-      - 8度商店：8du.shop 95
-      - 8度商店：8du.shop 96
-      - 8度商店：8du.shop 97
-      - 8度商店：8du.shop 98
-      - 8度商店：8du.shop 99
-      - 8度商店：8du.shop 100
-      - 8度商店：8du.shop 101
-      - 8度商店：8du.shop 102
-      - 8度商店：8du.shop 103
-      - 8度商店：8du.shop 104
-      - 8度商店：8du.shop 105
-      - 8度商店：8du.shop 106
-      - 8度商店：8du.shop 107
-      - 8度商店：8du.shop 108
-      - 8度商店：8du.shop 109
-      - 8度商店：8du.shop 110
-      - 8度商店：8du.shop 111
-      - 8度商店：8du.shop 112
-      - 8度商店：8du.shop 113
-      - 8度商店：8du.shop 114
-      - 8度商店：8du.shop 115
-      - 8度商店：8du.shop 116
-      - 8度商店：8du.shop 117
-      - 8度商店：8du.shop 118
-      - 8度商店：8du.shop 119
-      - 8度商店：8du.shop 120
-      - 8度商店：8du.shop 121
-      - 8度商店：8du.shop 122
-      - 8度商店：8du.shop 123
+      - _商店：8du.shop
+      - _商店：8du.shop 2
+      - _商店：8du.shop 3
+      - _商店：8du.shop 4
+      - _商店：8du.shop 5
+      - _商店：8du.shop 6
+      - _商店：8du.shop 7
+      - _商店：8du.shop 8
+      - _商店：8du.shop 9
+      - _商店：8du.shop 10
+      - _商店：8du.shop 11
+      - _商店：8du.shop 12
+      - _商店：8du.shop 13
+      - _商店：8du.shop 14
+      - US_9102 @WangCai_1
+      - US_9102 @WangCai_1 2
+      - US_9101 @WangCai_1
+      - US_9101 @WangCai_1 2
+      - US_8888 @WangCai_1
+      - US_8888 @WangCai_1 2
+      - US_8882 @WangCai_1
+      - US_8882 @WangCai_1 2
+      - US_8881 @WangCai_1
+      - US_8881 @WangCai_1 2
+      - US_8119 @WangCai_1
+      - US_8118 @WangCai_1
+      - US_8118 @WangCai_1 2
+      - US_8091 @WangCai_1
+      - US_8090 @WangCai_1
+      - US_8080 @WangCai_1
+      - US_8009 @WangCai_1
+      - US_8009 @WangCai_1 2
+      - US_8008 @WangCai_1
+      - US_8008 @WangCai_1 2
+      - US_8000 @WangCai_1
+      - US_7307 @WangCai_1
+      - US_7306 @WangCai_1
+      - US_7002 @WangCai_1
+      - US_7002 @WangCai_1 2
+      - US_7001 @WangCai_1
+      - US_7001 @WangCai_1 2
+      - US_7001 @WangCai_1 3
+      - US_6679 @WangCai_1
+      - US_6679 @WangCai_1 2
+      - US_6379 @WangCai_1
+      - US_5601 @WangCai_1
+      - US_5601 @WangCai_1 2
+      - US_5600 @WangCai_1
+      - US_5600 @WangCai_1 2
+      - US_5500 @WangCai_1
+      - US_5500 @WangCai_1 2
+      - US_5500 @WangCai_1 3
+      - US_5004 @WangCai_1
+      - US_5004 @WangCai_1 2
+      - US_5003 @WangCai_1
+      - US_5003 @WangCai_1 2
+      - US_5001 @WangCai_1
+      - US_5000 @WangCai_1
+      - US_5000 @WangCai_1 2
+      - US_3306 @WangCai_1
+      - US_3306 @WangCai_1 2
+      - US_3306 @WangCai_1 3
+      - US_2376 @WangCai_1
+      - US_2375 @WangCai_1
+      - US_2375 @WangCai_1 2
+      - US_2375 @WangCai_1 3
+      - US_0443 @WangCai_1
+      - _US_美国
+      - _US_美国 2
+      - _US_美国 3
+      - _US_美国 4
+      - _US_美国 5
+      - _US_美国 6
+      - _US_美国 7
+      - ‌‌🇨🇦CA_9102 @WangCai_1
+      - ‌‌🇨🇦CA_9102 @WangCai_1 2
+      - ‌‌🇨🇦CA_9102 @WangCai_1 3
+      - ‌‌🇨🇦CA_9101 @WangCai_1
+      - ‌‌🇨🇦CA_9101 @WangCai_1 2
+      - ‌‌🇨🇦CA_9101 @WangCai_1 3
+      - ‌‌🇨🇦CA_9101 @WangCai_1 4
+      - ‌‌🇨🇦CA_9101 @WangCai_1 5
+      - ‌‌🇨🇦CA_8888 @WangCai_1
+      - ‌‌🇨🇦CA_8888 @WangCai_1 2
+      - ‌‌🇨🇦CA_8888 @WangCai_1 3
+      - ‌‌🇨🇦CA_8888 @WangCai_1 4
+      - ‌‌🇨🇦CA_8888 @WangCai_1 5
+      - ‌‌🇨🇦CA_8882 @WangCai_1
+      - ‌‌🇨🇦CA_8882 @WangCai_1 2
+      - ‌‌🇨🇦CA_8882 @WangCai_1 3
+      - ‌‌🇨🇦CA_8882 @WangCai_1 4
+      - ‌‌🇨🇦CA_8882 @WangCai_1 5
+      - ‌‌🇨🇦CA_8881 @WangCai_1
+      - ‌‌🇨🇦CA_8881 @WangCai_1 2
+      - ‌‌🇨🇦CA_8881 @WangCai_1 3
+      - ‌‌🇨🇦CA_8881 @WangCai_1 4
+      - ‌‌🇨🇦CA_8119 @WangCai_1
+      - ‌‌🇨🇦CA_8119 @WangCai_1 2
+      - ‌‌🇨🇦CA_8119 @WangCai_1 3
+      - ‌‌🇨🇦CA_8119 @WangCai_1 4
+      - ‌‌🇨🇦CA_8119 @WangCai_1 5
+      - ‌‌🇨🇦CA_8118 @WangCai_1
+      - ‌‌🇨🇦CA_8118 @WangCai_1 2
+      - ‌‌🇨🇦CA_8118 @WangCai_1 3
+      - ‌‌🇨🇦CA_8091 @WangCai_1
+      - ‌‌🇨🇦CA_8091 @WangCai_1 2
+      - ‌‌🇨🇦CA_8091 @WangCai_1 3
+      - ‌‌🇨🇦CA_8091 @WangCai_1 4
+      - ‌‌🇨🇦CA_8091 @WangCai_1 5
+      - ‌‌🇨🇦CA_8090 @WangCai_1
+      - ‌‌🇨🇦CA_8090 @WangCai_1 2
+      - ‌‌🇨🇦CA_8090 @WangCai_1 3
+      - ‌‌🇨🇦CA_8080 @WangCai_1
+      - ‌‌🇨🇦CA_8080 @WangCai_1 2
+      - ‌‌🇨🇦CA_8080 @WangCai_1 3
+      - ‌‌🇨🇦CA_8080 @WangCai_1 4
+      - ‌‌🇨🇦CA_8009 @WangCai_1
+      - ‌‌🇨🇦CA_8009 @WangCai_1 2
+      - ‌‌🇨🇦CA_8008 @WangCai_1
+      - ‌‌🇨🇦CA_8008 @WangCai_1 2
+      - ‌‌🇨🇦CA_8008 @WangCai_1 3
+      - ‌‌🇨🇦CA_8008 @WangCai_1 4
+      - ‌‌🇨🇦CA_8008 @WangCai_1 5
+      - ‌‌🇨🇦CA_8008 @WangCai_1 6
+      - ‌‌🇨🇦CA_8008 @WangCai_1 7
+      - ‌‌🇨🇦CA_8000 @WangCai_1
+      - ‌‌🇨🇦CA_8000 @WangCai_1 2
+      - ‌‌🇨🇦CA_8000 @WangCai_1 3
+      - ‌‌🇨🇦CA_8000 @WangCai_1 4
+      - ‌‌🇨🇦CA_7307 @WangCai_1
+      - ‌‌🇨🇦CA_7307 @WangCai_1 2
+      - ‌‌🇨🇦CA_7307 @WangCai_1 3
+      - ‌‌🇨🇦CA_7306 @WangCai_1
+      - ‌‌🇨🇦CA_7306 @WangCai_1 2
+      - ‌‌🇨🇦CA_7306 @WangCai_1 3
+      - ‌‌🇨🇦CA_7002 @WangCai_1
+      - ‌‌🇨🇦CA_7002 @WangCai_1 2
+      - ‌‌🇨🇦CA_7002 @WangCai_1 3
+      - ‌‌🇨🇦CA_7002 @WangCai_1 4
+      - ‌‌🇨🇦CA_7002 @WangCai_1 5
+      - ‌‌🇨🇦CA_7002 @WangCai_1 6
+      - ‌‌🇨🇦CA_7002 @WangCai_1 7
+      - ‌‌🇨🇦CA_7001 @WangCai_1
+      - ‌‌🇨🇦CA_7001 @WangCai_1 2
+      - ‌‌🇨🇦CA_7001 @WangCai_1 3
+      - ‌‌🇨🇦CA_7001 @WangCai_1 4
+      - ‌‌🇨🇦CA_7001 @WangCai_1 5
+      - ‌‌🇨🇦CA_7001 @WangCai_1 6
+      - ‌‌🇨🇦CA_7001 @WangCai_1 7
+      - ‌‌🇨🇦CA_6697 @WangCai_1
+      - ‌‌🇨🇦CA_6697 @WangCai_1 2
+      - ‌‌🇨🇦CA_6697 @WangCai_1 3
+      - ‌‌🇨🇦CA_6697 @WangCai_1 4
+      - ‌‌🇨🇦CA_6697 @WangCai_1 5
+      - ‌‌🇨🇦CA_6679 @WangCai_1
+      - ‌‌🇨🇦CA_6679 @WangCai_1 2
+      - ‌‌🇨🇦CA_6679 @WangCai_1 3
+      - ‌‌🇨🇦CA_6679 @WangCai_1 4
+      - ‌‌🇨🇦CA_6379 @WangCai_1
+      - ‌‌🇨🇦CA_6379 @WangCai_1 2
+      - ‌‌🇨🇦CA_6379 @WangCai_1 3
+      - ‌‌🇨🇦CA_6379 @WangCai_1 4
+      - ‌‌🇨🇦CA_6379 @WangCai_1 5
+      - ‌‌🇨🇦CA_6379 @WangCai_1 6
+      - ‌‌🇨🇦CA_5601 @WangCai_1
+      - ‌‌🇨🇦CA_5601 @WangCai_1 2
+      - ‌‌🇨🇦CA_5600 @WangCai_1
+      - ‌‌🇨🇦CA_5600 @WangCai_1 2
+      - ‌‌🇨🇦CA_5600 @WangCai_1 3
+      - ‌‌🇨🇦CA_5600 @WangCai_1 4
+      - ‌‌🇨🇦CA_5600 @WangCai_1 5
+      - ‌‌🇨🇦CA_5500 @WangCai_1
+      - ‌‌🇨🇦CA_5500 @WangCai_1 2
+      - ‌‌🇨🇦CA_5500 @WangCai_1 3
+      - ‌‌🇨🇦CA_5500 @WangCai_1 4
+      - ‌‌🇨🇦CA_5004 @WangCai_1
+      - ‌‌🇨🇦CA_5004 @WangCai_1 2
+      - ‌‌🇨🇦CA_5004 @WangCai_1 3
+      - ‌‌🇨🇦CA_5004 @WangCai_1 4
+      - ‌‌🇨🇦CA_5004 @WangCai_1 5
+      - ‌‌🇨🇦CA_5004 @WangCai_1 6
+      - ‌‌🇨🇦CA_5004 @WangCai_1 7
+      - ‌‌🇨🇦CA_5003 @WangCai_1
+      - ‌‌🇨🇦CA_5003 @WangCai_1 2
+      - ‌‌🇨🇦CA_5003 @WangCai_1 3
+      - ‌‌🇨🇦CA_5001 @WangCai_1
+      - ‌‌🇨🇦CA_5001 @WangCai_1 2
+      - ‌‌🇨🇦CA_5001 @WangCai_1 3
+      - ‌‌🇨🇦CA_5000 @WangCai_1
+      - ‌‌🇨🇦CA_5000 @WangCai_1 2
+      - ‌‌🇨🇦CA_5000 @WangCai_1 3
+      - ‌‌🇨🇦CA_5000 @WangCai_1 4
+      - ‌‌🇨🇦CA_3389 @WangCai_1
+      - ‌‌🇨🇦CA_3306 @WangCai_1
+      - ‌‌🇨🇦CA_3306 @WangCai_1 2
+      - ‌‌🇨🇦CA_3306 @WangCai_1 3
+      - ‌‌🇨🇦CA_2376 @WangCai_1
+      - ‌‌🇨🇦CA_2376 @WangCai_1 2
+      - ‌‌🇨🇦CA_2376 @WangCai_1 3
+      - ‌‌🇨🇦CA_2375 @WangCai_1
+      - ‌‌🇨🇦CA_2375 @WangCai_1 2
+      - ‌‌🇨🇦CA_0443 @WangCai_1
+      - ‌‌🇨🇦CA_0443 @WangCai_1 2
+      - ‌‌🇨🇦CA_0443 @WangCai_1 3
+      - ‌‌🇨🇦CA_0443 @WangCai_1 4
+      - ‌‌🇨🇦CA_0443 @WangCai_1 5
+      - _商店：8du.shop 15
+      - _商店：8du.shop 16
+      - _商店：8du.shop 17
+      - _商店：8du.shop 18
+      - _商店：8du.shop 19
+      - _商店：8du.shop 20
+      - _商店：8du.shop 21
+      - _商店：8du.shop 22
+      - _商店：8du.shop 23
+      - _商店：8du.shop 24
+      - _商店：8du.shop 25
+      - _商店：8du.shop 26
+      - _商店：8du.shop 27
+      - _商店：8du.shop 28
+      - _商店：8du.shop 29
+      - _商店：8du.shop 30
+      - _商店：8du.shop 31
+      - _商店：8du.shop 32
+      - _商店：8du.shop 33
+      - _商店：8du.shop 34
+      - _商店：8du.shop 35
+      - _商店：8du.shop 36
+      - _商店：8du.shop 37
+      - _商店：8du.shop 38
+      - _商店：8du.shop 39
+      - _商店：8du.shop 40
+      - _商店：8du.shop 41
+      - _商店：8du.shop 42
+      - _商店：8du.shop 43
+      - _商店：8du.shop 44
+      - _商店：8du.shop 45
+      - _商店：8du.shop 46
+      - _商店：8du.shop 47
+      - _商店：8du.shop 48
+      - _商店：8du.shop 49
+      - _商店：8du.shop 50
+      - _商店：8du.shop 51
+      - _商店：8du.shop 52
+      - _商店：8du.shop 53
+      - _商店：8du.shop 54
+      - _商店：8du.shop 55
+      - _商店：8du.shop 56
+      - _商店：8du.shop 57
+      - _商店：8du.shop 58
+      - _商店：8du.shop 59
+      - _商店：8du.shop 60
+      - _商店：8du.shop 61
+      - _商店：8du.shop 62
+      - _商店：8du.shop 63
+      - _商店：8du.shop 64
+      - _商店：8du.shop 65
+      - _商店：8du.shop 66
+      - _商店：8du.shop 67
+      - _商店：8du.shop 68
+      - _商店：8du.shop 69
+      - _商店：8du.shop 70
+      - _商店：8du.shop 71
+      - _商店：8du.shop 72
+      - _商店：8du.shop 73
+      - _商店：8du.shop 74
+      - _商店：8du.shop 75
+      - _商店：8du.shop 76
+      - _商店：8du.shop 77
+      - _商店：8du.shop 78
+      - _商店：8du.shop 79
+      - _商店：8du.shop 80
+      - _商店：8du.shop 81
+      - _商店：8du.shop 82
+      - _商店：8du.shop 83
+      - _商店：8du.shop 84
+      - _商店：8du.shop 85
+      - _商店：8du.shop 86
+      - _商店：8du.shop 87
+      - _商店：8du.shop 88
+      - _商店：8du.shop 89
+      - _商店：8du.shop 90
+      - _商店：8du.shop 91
+      - _商店：8du.shop 92
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -532,129 +1176,290 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 8度商店：8du.shop
-      - 8度商店：8du.shop 2
-      - 8度商店：8du.shop 3
-      - 8度商店：8du.shop 4
-      - 8度商店：8du.shop 5
-      - 8度商店：8du.shop 6
-      - 8度商店：8du.shop 7
-      - 8度商店：8du.shop 8
-      - 8度商店：8du.shop 9
-      - 8度商店：8du.shop 10
-      - 8度商店：8du.shop 11
-      - 8度商店：8du.shop 12
-      - 8度商店：8du.shop 13
-      - 8度商店：8du.shop 14
-      - 8度商店：8du.shop 15
-      - 8度商店：8du.shop 16
-      - 8度商店：8du.shop 17
-      - 8度商店：8du.shop 18
-      - 8度商店：8du.shop 19
-      - 8度商店：8du.shop 20
-      - 8度商店：8du.shop 21
-      - 8度商店：8du.shop 22
-      - 8度商店：8du.shop 23
-      - 8度商店：8du.shop 24
-      - 8度商店：8du.shop 25
-      - 8度商店：8du.shop 26
-      - 8度商店：8du.shop 27
-      - 8度商店：8du.shop 28
-      - 8度商店：8du.shop 29
-      - 8度商店：8du.shop 30
-      - 8度商店：8du.shop 31
-      - 8度商店：8du.shop 32
-      - 8度商店：8du.shop 33
-      - 8度商店：8du.shop 34
-      - 8度商店：8du.shop 35
-      - 8度商店：8du.shop 36
-      - 8度商店：8du.shop 37
-      - 8度商店：8du.shop 38
-      - 8度商店：8du.shop 39
-      - 8度商店：8du.shop 40
-      - 8度商店：8du.shop 41
-      - 8度商店：8du.shop 42
-      - 8度商店：8du.shop 43
-      - 8度商店：8du.shop 44
-      - 8度商店：8du.shop 45
-      - 8度商店：8du.shop 46
-      - 8度商店：8du.shop 47
-      - 8度商店：8du.shop 48
-      - 8度商店：8du.shop 49
-      - 8度商店：8du.shop 50
-      - 8度商店：8du.shop 51
-      - 8度商店：8du.shop 52
-      - 8度商店：8du.shop 53
-      - 8度商店：8du.shop 54
-      - 8度商店：8du.shop 55
-      - 8度商店：8du.shop 56
-      - 8度商店：8du.shop 57
-      - 8度商店：8du.shop 58
-      - 8度商店：8du.shop 59
-      - 8度商店：8du.shop 60
-      - 8度商店：8du.shop 61
-      - 8度商店：8du.shop 62
-      - 8度商店：8du.shop 63
-      - 8度商店：8du.shop 64
-      - 8度商店：8du.shop 65
-      - 8度商店：8du.shop 66
-      - 8度商店：8du.shop 67
-      - 8度商店：8du.shop 68
-      - 8度商店：8du.shop 69
-      - 8度商店：8du.shop 70
-      - 8度商店：8du.shop 71
-      - 8度商店：8du.shop 72
-      - 8度商店：8du.shop 73
-      - 8度商店：8du.shop 74
-      - 8度商店：8du.shop 75
-      - 8度商店：8du.shop 76
-      - 8度商店：8du.shop 77
-      - 8度商店：8du.shop 78
-      - 8度商店：8du.shop 79
-      - 8度商店：8du.shop 80
-      - 8度商店：8du.shop 81
-      - 8度商店：8du.shop 82
-      - 8度商店：8du.shop 83
-      - 8度商店：8du.shop 84
-      - 8度商店：8du.shop 85
-      - 8度商店：8du.shop 86
-      - 8度商店：8du.shop 87
-      - 8度商店：8du.shop 88
-      - 8度商店：8du.shop 89
-      - 8度商店：8du.shop 90
-      - 8度商店：8du.shop 91
-      - 8度商店：8du.shop 92
-      - 8度商店：8du.shop 93
-      - 8度商店：8du.shop 94
-      - 8度商店：8du.shop 95
-      - 8度商店：8du.shop 96
-      - 8度商店：8du.shop 97
-      - 8度商店：8du.shop 98
-      - 8度商店：8du.shop 99
-      - 8度商店：8du.shop 100
-      - 8度商店：8du.shop 101
-      - 8度商店：8du.shop 102
-      - 8度商店：8du.shop 103
-      - 8度商店：8du.shop 104
-      - 8度商店：8du.shop 105
-      - 8度商店：8du.shop 106
-      - 8度商店：8du.shop 107
-      - 8度商店：8du.shop 108
-      - 8度商店：8du.shop 109
-      - 8度商店：8du.shop 110
-      - 8度商店：8du.shop 111
-      - 8度商店：8du.shop 112
-      - 8度商店：8du.shop 113
-      - 8度商店：8du.shop 114
-      - 8度商店：8du.shop 115
-      - 8度商店：8du.shop 116
-      - 8度商店：8du.shop 117
-      - 8度商店：8du.shop 118
-      - 8度商店：8du.shop 119
-      - 8度商店：8du.shop 120
-      - 8度商店：8du.shop 121
-      - 8度商店：8du.shop 122
-      - 8度商店：8du.shop 123
+      - _商店：8du.shop
+      - _商店：8du.shop 2
+      - _商店：8du.shop 3
+      - _商店：8du.shop 4
+      - _商店：8du.shop 5
+      - _商店：8du.shop 6
+      - _商店：8du.shop 7
+      - _商店：8du.shop 8
+      - _商店：8du.shop 9
+      - _商店：8du.shop 10
+      - _商店：8du.shop 11
+      - _商店：8du.shop 12
+      - _商店：8du.shop 13
+      - _商店：8du.shop 14
+      - US_9102 @WangCai_1
+      - US_9102 @WangCai_1 2
+      - US_9101 @WangCai_1
+      - US_9101 @WangCai_1 2
+      - US_8888 @WangCai_1
+      - US_8888 @WangCai_1 2
+      - US_8882 @WangCai_1
+      - US_8882 @WangCai_1 2
+      - US_8881 @WangCai_1
+      - US_8881 @WangCai_1 2
+      - US_8119 @WangCai_1
+      - US_8118 @WangCai_1
+      - US_8118 @WangCai_1 2
+      - US_8091 @WangCai_1
+      - US_8090 @WangCai_1
+      - US_8080 @WangCai_1
+      - US_8009 @WangCai_1
+      - US_8009 @WangCai_1 2
+      - US_8008 @WangCai_1
+      - US_8008 @WangCai_1 2
+      - US_8000 @WangCai_1
+      - US_7307 @WangCai_1
+      - US_7306 @WangCai_1
+      - US_7002 @WangCai_1
+      - US_7002 @WangCai_1 2
+      - US_7001 @WangCai_1
+      - US_7001 @WangCai_1 2
+      - US_7001 @WangCai_1 3
+      - US_6679 @WangCai_1
+      - US_6679 @WangCai_1 2
+      - US_6379 @WangCai_1
+      - US_5601 @WangCai_1
+      - US_5601 @WangCai_1 2
+      - US_5600 @WangCai_1
+      - US_5600 @WangCai_1 2
+      - US_5500 @WangCai_1
+      - US_5500 @WangCai_1 2
+      - US_5500 @WangCai_1 3
+      - US_5004 @WangCai_1
+      - US_5004 @WangCai_1 2
+      - US_5003 @WangCai_1
+      - US_5003 @WangCai_1 2
+      - US_5001 @WangCai_1
+      - US_5000 @WangCai_1
+      - US_5000 @WangCai_1 2
+      - US_3306 @WangCai_1
+      - US_3306 @WangCai_1 2
+      - US_3306 @WangCai_1 3
+      - US_2376 @WangCai_1
+      - US_2375 @WangCai_1
+      - US_2375 @WangCai_1 2
+      - US_2375 @WangCai_1 3
+      - US_0443 @WangCai_1
+      - _US_美国
+      - _US_美国 2
+      - _US_美国 3
+      - _US_美国 4
+      - _US_美国 5
+      - _US_美国 6
+      - _US_美国 7
+      - ‌‌🇨🇦CA_9102 @WangCai_1
+      - ‌‌🇨🇦CA_9102 @WangCai_1 2
+      - ‌‌🇨🇦CA_9102 @WangCai_1 3
+      - ‌‌🇨🇦CA_9101 @WangCai_1
+      - ‌‌🇨🇦CA_9101 @WangCai_1 2
+      - ‌‌🇨🇦CA_9101 @WangCai_1 3
+      - ‌‌🇨🇦CA_9101 @WangCai_1 4
+      - ‌‌🇨🇦CA_9101 @WangCai_1 5
+      - ‌‌🇨🇦CA_8888 @WangCai_1
+      - ‌‌🇨🇦CA_8888 @WangCai_1 2
+      - ‌‌🇨🇦CA_8888 @WangCai_1 3
+      - ‌‌🇨🇦CA_8888 @WangCai_1 4
+      - ‌‌🇨🇦CA_8888 @WangCai_1 5
+      - ‌‌🇨🇦CA_8882 @WangCai_1
+      - ‌‌🇨🇦CA_8882 @WangCai_1 2
+      - ‌‌🇨🇦CA_8882 @WangCai_1 3
+      - ‌‌🇨🇦CA_8882 @WangCai_1 4
+      - ‌‌🇨🇦CA_8882 @WangCai_1 5
+      - ‌‌🇨🇦CA_8881 @WangCai_1
+      - ‌‌🇨🇦CA_8881 @WangCai_1 2
+      - ‌‌🇨🇦CA_8881 @WangCai_1 3
+      - ‌‌🇨🇦CA_8881 @WangCai_1 4
+      - ‌‌🇨🇦CA_8119 @WangCai_1
+      - ‌‌🇨🇦CA_8119 @WangCai_1 2
+      - ‌‌🇨🇦CA_8119 @WangCai_1 3
+      - ‌‌🇨🇦CA_8119 @WangCai_1 4
+      - ‌‌🇨🇦CA_8119 @WangCai_1 5
+      - ‌‌🇨🇦CA_8118 @WangCai_1
+      - ‌‌🇨🇦CA_8118 @WangCai_1 2
+      - ‌‌🇨🇦CA_8118 @WangCai_1 3
+      - ‌‌🇨🇦CA_8091 @WangCai_1
+      - ‌‌🇨🇦CA_8091 @WangCai_1 2
+      - ‌‌🇨🇦CA_8091 @WangCai_1 3
+      - ‌‌🇨🇦CA_8091 @WangCai_1 4
+      - ‌‌🇨🇦CA_8091 @WangCai_1 5
+      - ‌‌🇨🇦CA_8090 @WangCai_1
+      - ‌‌🇨🇦CA_8090 @WangCai_1 2
+      - ‌‌🇨🇦CA_8090 @WangCai_1 3
+      - ‌‌🇨🇦CA_8080 @WangCai_1
+      - ‌‌🇨🇦CA_8080 @WangCai_1 2
+      - ‌‌🇨🇦CA_8080 @WangCai_1 3
+      - ‌‌🇨🇦CA_8080 @WangCai_1 4
+      - ‌‌🇨🇦CA_8009 @WangCai_1
+      - ‌‌🇨🇦CA_8009 @WangCai_1 2
+      - ‌‌🇨🇦CA_8008 @WangCai_1
+      - ‌‌🇨🇦CA_8008 @WangCai_1 2
+      - ‌‌🇨🇦CA_8008 @WangCai_1 3
+      - ‌‌🇨🇦CA_8008 @WangCai_1 4
+      - ‌‌🇨🇦CA_8008 @WangCai_1 5
+      - ‌‌🇨🇦CA_8008 @WangCai_1 6
+      - ‌‌🇨🇦CA_8008 @WangCai_1 7
+      - ‌‌🇨🇦CA_8000 @WangCai_1
+      - ‌‌🇨🇦CA_8000 @WangCai_1 2
+      - ‌‌🇨🇦CA_8000 @WangCai_1 3
+      - ‌‌🇨🇦CA_8000 @WangCai_1 4
+      - ‌‌🇨🇦CA_7307 @WangCai_1
+      - ‌‌🇨🇦CA_7307 @WangCai_1 2
+      - ‌‌🇨🇦CA_7307 @WangCai_1 3
+      - ‌‌🇨🇦CA_7306 @WangCai_1
+      - ‌‌🇨🇦CA_7306 @WangCai_1 2
+      - ‌‌🇨🇦CA_7306 @WangCai_1 3
+      - ‌‌🇨🇦CA_7002 @WangCai_1
+      - ‌‌🇨🇦CA_7002 @WangCai_1 2
+      - ‌‌🇨🇦CA_7002 @WangCai_1 3
+      - ‌‌🇨🇦CA_7002 @WangCai_1 4
+      - ‌‌🇨🇦CA_7002 @WangCai_1 5
+      - ‌‌🇨🇦CA_7002 @WangCai_1 6
+      - ‌‌🇨🇦CA_7002 @WangCai_1 7
+      - ‌‌🇨🇦CA_7001 @WangCai_1
+      - ‌‌🇨🇦CA_7001 @WangCai_1 2
+      - ‌‌🇨🇦CA_7001 @WangCai_1 3
+      - ‌‌🇨🇦CA_7001 @WangCai_1 4
+      - ‌‌🇨🇦CA_7001 @WangCai_1 5
+      - ‌‌🇨🇦CA_7001 @WangCai_1 6
+      - ‌‌🇨🇦CA_7001 @WangCai_1 7
+      - ‌‌🇨🇦CA_6697 @WangCai_1
+      - ‌‌🇨🇦CA_6697 @WangCai_1 2
+      - ‌‌🇨🇦CA_6697 @WangCai_1 3
+      - ‌‌🇨🇦CA_6697 @WangCai_1 4
+      - ‌‌🇨🇦CA_6697 @WangCai_1 5
+      - ‌‌🇨🇦CA_6679 @WangCai_1
+      - ‌‌🇨🇦CA_6679 @WangCai_1 2
+      - ‌‌🇨🇦CA_6679 @WangCai_1 3
+      - ‌‌🇨🇦CA_6679 @WangCai_1 4
+      - ‌‌🇨🇦CA_6379 @WangCai_1
+      - ‌‌🇨🇦CA_6379 @WangCai_1 2
+      - ‌‌🇨🇦CA_6379 @WangCai_1 3
+      - ‌‌🇨🇦CA_6379 @WangCai_1 4
+      - ‌‌🇨🇦CA_6379 @WangCai_1 5
+      - ‌‌🇨🇦CA_6379 @WangCai_1 6
+      - ‌‌🇨🇦CA_5601 @WangCai_1
+      - ‌‌🇨🇦CA_5601 @WangCai_1 2
+      - ‌‌🇨🇦CA_5600 @WangCai_1
+      - ‌‌🇨🇦CA_5600 @WangCai_1 2
+      - ‌‌🇨🇦CA_5600 @WangCai_1 3
+      - ‌‌🇨🇦CA_5600 @WangCai_1 4
+      - ‌‌🇨🇦CA_5600 @WangCai_1 5
+      - ‌‌🇨🇦CA_5500 @WangCai_1
+      - ‌‌🇨🇦CA_5500 @WangCai_1 2
+      - ‌‌🇨🇦CA_5500 @WangCai_1 3
+      - ‌‌🇨🇦CA_5500 @WangCai_1 4
+      - ‌‌🇨🇦CA_5004 @WangCai_1
+      - ‌‌🇨🇦CA_5004 @WangCai_1 2
+      - ‌‌🇨🇦CA_5004 @WangCai_1 3
+      - ‌‌🇨🇦CA_5004 @WangCai_1 4
+      - ‌‌🇨🇦CA_5004 @WangCai_1 5
+      - ‌‌🇨🇦CA_5004 @WangCai_1 6
+      - ‌‌🇨🇦CA_5004 @WangCai_1 7
+      - ‌‌🇨🇦CA_5003 @WangCai_1
+      - ‌‌🇨🇦CA_5003 @WangCai_1 2
+      - ‌‌🇨🇦CA_5003 @WangCai_1 3
+      - ‌‌🇨🇦CA_5001 @WangCai_1
+      - ‌‌🇨🇦CA_5001 @WangCai_1 2
+      - ‌‌🇨🇦CA_5001 @WangCai_1 3
+      - ‌‌🇨🇦CA_5000 @WangCai_1
+      - ‌‌🇨🇦CA_5000 @WangCai_1 2
+      - ‌‌🇨🇦CA_5000 @WangCai_1 3
+      - ‌‌🇨🇦CA_5000 @WangCai_1 4
+      - ‌‌🇨🇦CA_3389 @WangCai_1
+      - ‌‌🇨🇦CA_3306 @WangCai_1
+      - ‌‌🇨🇦CA_3306 @WangCai_1 2
+      - ‌‌🇨🇦CA_3306 @WangCai_1 3
+      - ‌‌🇨🇦CA_2376 @WangCai_1
+      - ‌‌🇨🇦CA_2376 @WangCai_1 2
+      - ‌‌🇨🇦CA_2376 @WangCai_1 3
+      - ‌‌🇨🇦CA_2375 @WangCai_1
+      - ‌‌🇨🇦CA_2375 @WangCai_1 2
+      - ‌‌🇨🇦CA_0443 @WangCai_1
+      - ‌‌🇨🇦CA_0443 @WangCai_1 2
+      - ‌‌🇨🇦CA_0443 @WangCai_1 3
+      - ‌‌🇨🇦CA_0443 @WangCai_1 4
+      - ‌‌🇨🇦CA_0443 @WangCai_1 5
+      - _商店：8du.shop 15
+      - _商店：8du.shop 16
+      - _商店：8du.shop 17
+      - _商店：8du.shop 18
+      - _商店：8du.shop 19
+      - _商店：8du.shop 20
+      - _商店：8du.shop 21
+      - _商店：8du.shop 22
+      - _商店：8du.shop 23
+      - _商店：8du.shop 24
+      - _商店：8du.shop 25
+      - _商店：8du.shop 26
+      - _商店：8du.shop 27
+      - _商店：8du.shop 28
+      - _商店：8du.shop 29
+      - _商店：8du.shop 30
+      - _商店：8du.shop 31
+      - _商店：8du.shop 32
+      - _商店：8du.shop 33
+      - _商店：8du.shop 34
+      - _商店：8du.shop 35
+      - _商店：8du.shop 36
+      - _商店：8du.shop 37
+      - _商店：8du.shop 38
+      - _商店：8du.shop 39
+      - _商店：8du.shop 40
+      - _商店：8du.shop 41
+      - _商店：8du.shop 42
+      - _商店：8du.shop 43
+      - _商店：8du.shop 44
+      - _商店：8du.shop 45
+      - _商店：8du.shop 46
+      - _商店：8du.shop 47
+      - _商店：8du.shop 48
+      - _商店：8du.shop 49
+      - _商店：8du.shop 50
+      - _商店：8du.shop 51
+      - _商店：8du.shop 52
+      - _商店：8du.shop 53
+      - _商店：8du.shop 54
+      - _商店：8du.shop 55
+      - _商店：8du.shop 56
+      - _商店：8du.shop 57
+      - _商店：8du.shop 58
+      - _商店：8du.shop 59
+      - _商店：8du.shop 60
+      - _商店：8du.shop 61
+      - _商店：8du.shop 62
+      - _商店：8du.shop 63
+      - _商店：8du.shop 64
+      - _商店：8du.shop 65
+      - _商店：8du.shop 66
+      - _商店：8du.shop 67
+      - _商店：8du.shop 68
+      - _商店：8du.shop 69
+      - _商店：8du.shop 70
+      - _商店：8du.shop 71
+      - _商店：8du.shop 72
+      - _商店：8du.shop 73
+      - _商店：8du.shop 74
+      - _商店：8du.shop 75
+      - _商店：8du.shop 76
+      - _商店：8du.shop 77
+      - _商店：8du.shop 78
+      - _商店：8du.shop 79
+      - _商店：8du.shop 80
+      - _商店：8du.shop 81
+      - _商店：8du.shop 82
+      - _商店：8du.shop 83
+      - _商店：8du.shop 84
+      - _商店：8du.shop 85
+      - _商店：8du.shop 86
+      - _商店：8du.shop 87
+      - _商店：8du.shop 88
+      - _商店：8du.shop 89
+      - _商店：8du.shop 90
+      - _商店：8du.shop 91
+      - _商店：8du.shop 92
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -665,386 +1470,869 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 8度商店：8du.shop
-      - 8度商店：8du.shop 2
-      - 8度商店：8du.shop 3
-      - 8度商店：8du.shop 4
-      - 8度商店：8du.shop 5
-      - 8度商店：8du.shop 6
-      - 8度商店：8du.shop 7
-      - 8度商店：8du.shop 8
-      - 8度商店：8du.shop 9
-      - 8度商店：8du.shop 10
-      - 8度商店：8du.shop 11
-      - 8度商店：8du.shop 12
-      - 8度商店：8du.shop 13
-      - 8度商店：8du.shop 14
-      - 8度商店：8du.shop 15
-      - 8度商店：8du.shop 16
-      - 8度商店：8du.shop 17
-      - 8度商店：8du.shop 18
-      - 8度商店：8du.shop 19
-      - 8度商店：8du.shop 20
-      - 8度商店：8du.shop 21
-      - 8度商店：8du.shop 22
-      - 8度商店：8du.shop 23
-      - 8度商店：8du.shop 24
-      - 8度商店：8du.shop 25
-      - 8度商店：8du.shop 26
-      - 8度商店：8du.shop 27
-      - 8度商店：8du.shop 28
-      - 8度商店：8du.shop 29
-      - 8度商店：8du.shop 30
-      - 8度商店：8du.shop 31
-      - 8度商店：8du.shop 32
-      - 8度商店：8du.shop 33
-      - 8度商店：8du.shop 34
-      - 8度商店：8du.shop 35
-      - 8度商店：8du.shop 36
-      - 8度商店：8du.shop 37
-      - 8度商店：8du.shop 38
-      - 8度商店：8du.shop 39
-      - 8度商店：8du.shop 40
-      - 8度商店：8du.shop 41
-      - 8度商店：8du.shop 42
-      - 8度商店：8du.shop 43
-      - 8度商店：8du.shop 44
-      - 8度商店：8du.shop 45
-      - 8度商店：8du.shop 46
-      - 8度商店：8du.shop 47
-      - 8度商店：8du.shop 48
-      - 8度商店：8du.shop 49
-      - 8度商店：8du.shop 50
-      - 8度商店：8du.shop 51
-      - 8度商店：8du.shop 52
-      - 8度商店：8du.shop 53
-      - 8度商店：8du.shop 54
-      - 8度商店：8du.shop 55
-      - 8度商店：8du.shop 56
-      - 8度商店：8du.shop 57
-      - 8度商店：8du.shop 58
-      - 8度商店：8du.shop 59
-      - 8度商店：8du.shop 60
-      - 8度商店：8du.shop 61
-      - 8度商店：8du.shop 62
-      - 8度商店：8du.shop 63
-      - 8度商店：8du.shop 64
-      - 8度商店：8du.shop 65
-      - 8度商店：8du.shop 66
-      - 8度商店：8du.shop 67
-      - 8度商店：8du.shop 68
-      - 8度商店：8du.shop 69
-      - 8度商店：8du.shop 70
-      - 8度商店：8du.shop 71
-      - 8度商店：8du.shop 72
-      - 8度商店：8du.shop 73
-      - 8度商店：8du.shop 74
-      - 8度商店：8du.shop 75
-      - 8度商店：8du.shop 76
-      - 8度商店：8du.shop 77
-      - 8度商店：8du.shop 78
-      - 8度商店：8du.shop 79
-      - 8度商店：8du.shop 80
-      - 8度商店：8du.shop 81
-      - 8度商店：8du.shop 82
-      - 8度商店：8du.shop 83
-      - 8度商店：8du.shop 84
-      - 8度商店：8du.shop 85
-      - 8度商店：8du.shop 86
-      - 8度商店：8du.shop 87
-      - 8度商店：8du.shop 88
-      - 8度商店：8du.shop 89
-      - 8度商店：8du.shop 90
-      - 8度商店：8du.shop 91
-      - 8度商店：8du.shop 92
-      - 8度商店：8du.shop 93
-      - 8度商店：8du.shop 94
-      - 8度商店：8du.shop 95
-      - 8度商店：8du.shop 96
-      - 8度商店：8du.shop 97
-      - 8度商店：8du.shop 98
-      - 8度商店：8du.shop 99
-      - 8度商店：8du.shop 100
-      - 8度商店：8du.shop 101
-      - 8度商店：8du.shop 102
-      - 8度商店：8du.shop 103
-      - 8度商店：8du.shop 104
-      - 8度商店：8du.shop 105
-      - 8度商店：8du.shop 106
-      - 8度商店：8du.shop 107
-      - 8度商店：8du.shop 108
-      - 8度商店：8du.shop 109
-      - 8度商店：8du.shop 110
-      - 8度商店：8du.shop 111
-      - 8度商店：8du.shop 112
-      - 8度商店：8du.shop 113
-      - 8度商店：8du.shop 114
-      - 8度商店：8du.shop 115
-      - 8度商店：8du.shop 116
-      - 8度商店：8du.shop 117
-      - 8度商店：8du.shop 118
-      - 8度商店：8du.shop 119
-      - 8度商店：8du.shop 120
-      - 8度商店：8du.shop 121
-      - 8度商店：8du.shop 122
-      - 8度商店：8du.shop 123
+      - _商店：8du.shop
+      - _商店：8du.shop 2
+      - _商店：8du.shop 3
+      - _商店：8du.shop 4
+      - _商店：8du.shop 5
+      - _商店：8du.shop 6
+      - _商店：8du.shop 7
+      - _商店：8du.shop 8
+      - _商店：8du.shop 9
+      - _商店：8du.shop 10
+      - _商店：8du.shop 11
+      - _商店：8du.shop 12
+      - _商店：8du.shop 13
+      - _商店：8du.shop 14
+      - US_9102 @WangCai_1
+      - US_9102 @WangCai_1 2
+      - US_9101 @WangCai_1
+      - US_9101 @WangCai_1 2
+      - US_8888 @WangCai_1
+      - US_8888 @WangCai_1 2
+      - US_8882 @WangCai_1
+      - US_8882 @WangCai_1 2
+      - US_8881 @WangCai_1
+      - US_8881 @WangCai_1 2
+      - US_8119 @WangCai_1
+      - US_8118 @WangCai_1
+      - US_8118 @WangCai_1 2
+      - US_8091 @WangCai_1
+      - US_8090 @WangCai_1
+      - US_8080 @WangCai_1
+      - US_8009 @WangCai_1
+      - US_8009 @WangCai_1 2
+      - US_8008 @WangCai_1
+      - US_8008 @WangCai_1 2
+      - US_8000 @WangCai_1
+      - US_7307 @WangCai_1
+      - US_7306 @WangCai_1
+      - US_7002 @WangCai_1
+      - US_7002 @WangCai_1 2
+      - US_7001 @WangCai_1
+      - US_7001 @WangCai_1 2
+      - US_7001 @WangCai_1 3
+      - US_6679 @WangCai_1
+      - US_6679 @WangCai_1 2
+      - US_6379 @WangCai_1
+      - US_5601 @WangCai_1
+      - US_5601 @WangCai_1 2
+      - US_5600 @WangCai_1
+      - US_5600 @WangCai_1 2
+      - US_5500 @WangCai_1
+      - US_5500 @WangCai_1 2
+      - US_5500 @WangCai_1 3
+      - US_5004 @WangCai_1
+      - US_5004 @WangCai_1 2
+      - US_5003 @WangCai_1
+      - US_5003 @WangCai_1 2
+      - US_5001 @WangCai_1
+      - US_5000 @WangCai_1
+      - US_5000 @WangCai_1 2
+      - US_3306 @WangCai_1
+      - US_3306 @WangCai_1 2
+      - US_3306 @WangCai_1 3
+      - US_2376 @WangCai_1
+      - US_2375 @WangCai_1
+      - US_2375 @WangCai_1 2
+      - US_2375 @WangCai_1 3
+      - US_0443 @WangCai_1
+      - _US_美国
+      - _US_美国 2
+      - _US_美国 3
+      - _US_美国 4
+      - _US_美国 5
+      - _US_美国 6
+      - _US_美国 7
+      - ‌‌🇨🇦CA_9102 @WangCai_1
+      - ‌‌🇨🇦CA_9102 @WangCai_1 2
+      - ‌‌🇨🇦CA_9102 @WangCai_1 3
+      - ‌‌🇨🇦CA_9101 @WangCai_1
+      - ‌‌🇨🇦CA_9101 @WangCai_1 2
+      - ‌‌🇨🇦CA_9101 @WangCai_1 3
+      - ‌‌🇨🇦CA_9101 @WangCai_1 4
+      - ‌‌🇨🇦CA_9101 @WangCai_1 5
+      - ‌‌🇨🇦CA_8888 @WangCai_1
+      - ‌‌🇨🇦CA_8888 @WangCai_1 2
+      - ‌‌🇨🇦CA_8888 @WangCai_1 3
+      - ‌‌🇨🇦CA_8888 @WangCai_1 4
+      - ‌‌🇨🇦CA_8888 @WangCai_1 5
+      - ‌‌🇨🇦CA_8882 @WangCai_1
+      - ‌‌🇨🇦CA_8882 @WangCai_1 2
+      - ‌‌🇨🇦CA_8882 @WangCai_1 3
+      - ‌‌🇨🇦CA_8882 @WangCai_1 4
+      - ‌‌🇨🇦CA_8882 @WangCai_1 5
+      - ‌‌🇨🇦CA_8881 @WangCai_1
+      - ‌‌🇨🇦CA_8881 @WangCai_1 2
+      - ‌‌🇨🇦CA_8881 @WangCai_1 3
+      - ‌‌🇨🇦CA_8881 @WangCai_1 4
+      - ‌‌🇨🇦CA_8119 @WangCai_1
+      - ‌‌🇨🇦CA_8119 @WangCai_1 2
+      - ‌‌🇨🇦CA_8119 @WangCai_1 3
+      - ‌‌🇨🇦CA_8119 @WangCai_1 4
+      - ‌‌🇨🇦CA_8119 @WangCai_1 5
+      - ‌‌🇨🇦CA_8118 @WangCai_1
+      - ‌‌🇨🇦CA_8118 @WangCai_1 2
+      - ‌‌🇨🇦CA_8118 @WangCai_1 3
+      - ‌‌🇨🇦CA_8091 @WangCai_1
+      - ‌‌🇨🇦CA_8091 @WangCai_1 2
+      - ‌‌🇨🇦CA_8091 @WangCai_1 3
+      - ‌‌🇨🇦CA_8091 @WangCai_1 4
+      - ‌‌🇨🇦CA_8091 @WangCai_1 5
+      - ‌‌🇨🇦CA_8090 @WangCai_1
+      - ‌‌🇨🇦CA_8090 @WangCai_1 2
+      - ‌‌🇨🇦CA_8090 @WangCai_1 3
+      - ‌‌🇨🇦CA_8080 @WangCai_1
+      - ‌‌🇨🇦CA_8080 @WangCai_1 2
+      - ‌‌🇨🇦CA_8080 @WangCai_1 3
+      - ‌‌🇨🇦CA_8080 @WangCai_1 4
+      - ‌‌🇨🇦CA_8009 @WangCai_1
+      - ‌‌🇨🇦CA_8009 @WangCai_1 2
+      - ‌‌🇨🇦CA_8008 @WangCai_1
+      - ‌‌🇨🇦CA_8008 @WangCai_1 2
+      - ‌‌🇨🇦CA_8008 @WangCai_1 3
+      - ‌‌🇨🇦CA_8008 @WangCai_1 4
+      - ‌‌🇨🇦CA_8008 @WangCai_1 5
+      - ‌‌🇨🇦CA_8008 @WangCai_1 6
+      - ‌‌🇨🇦CA_8008 @WangCai_1 7
+      - ‌‌🇨🇦CA_8000 @WangCai_1
+      - ‌‌🇨🇦CA_8000 @WangCai_1 2
+      - ‌‌🇨🇦CA_8000 @WangCai_1 3
+      - ‌‌🇨🇦CA_8000 @WangCai_1 4
+      - ‌‌🇨🇦CA_7307 @WangCai_1
+      - ‌‌🇨🇦CA_7307 @WangCai_1 2
+      - ‌‌🇨🇦CA_7307 @WangCai_1 3
+      - ‌‌🇨🇦CA_7306 @WangCai_1
+      - ‌‌🇨🇦CA_7306 @WangCai_1 2
+      - ‌‌🇨🇦CA_7306 @WangCai_1 3
+      - ‌‌🇨🇦CA_7002 @WangCai_1
+      - ‌‌🇨🇦CA_7002 @WangCai_1 2
+      - ‌‌🇨🇦CA_7002 @WangCai_1 3
+      - ‌‌🇨🇦CA_7002 @WangCai_1 4
+      - ‌‌🇨🇦CA_7002 @WangCai_1 5
+      - ‌‌🇨🇦CA_7002 @WangCai_1 6
+      - ‌‌🇨🇦CA_7002 @WangCai_1 7
+      - ‌‌🇨🇦CA_7001 @WangCai_1
+      - ‌‌🇨🇦CA_7001 @WangCai_1 2
+      - ‌‌🇨🇦CA_7001 @WangCai_1 3
+      - ‌‌🇨🇦CA_7001 @WangCai_1 4
+      - ‌‌🇨🇦CA_7001 @WangCai_1 5
+      - ‌‌🇨🇦CA_7001 @WangCai_1 6
+      - ‌‌🇨🇦CA_7001 @WangCai_1 7
+      - ‌‌🇨🇦CA_6697 @WangCai_1
+      - ‌‌🇨🇦CA_6697 @WangCai_1 2
+      - ‌‌🇨🇦CA_6697 @WangCai_1 3
+      - ‌‌🇨🇦CA_6697 @WangCai_1 4
+      - ‌‌🇨🇦CA_6697 @WangCai_1 5
+      - ‌‌🇨🇦CA_6679 @WangCai_1
+      - ‌‌🇨🇦CA_6679 @WangCai_1 2
+      - ‌‌🇨🇦CA_6679 @WangCai_1 3
+      - ‌‌🇨🇦CA_6679 @WangCai_1 4
+      - ‌‌🇨🇦CA_6379 @WangCai_1
+      - ‌‌🇨🇦CA_6379 @WangCai_1 2
+      - ‌‌🇨🇦CA_6379 @WangCai_1 3
+      - ‌‌🇨🇦CA_6379 @WangCai_1 4
+      - ‌‌🇨🇦CA_6379 @WangCai_1 5
+      - ‌‌🇨🇦CA_6379 @WangCai_1 6
+      - ‌‌🇨🇦CA_5601 @WangCai_1
+      - ‌‌🇨🇦CA_5601 @WangCai_1 2
+      - ‌‌🇨🇦CA_5600 @WangCai_1
+      - ‌‌🇨🇦CA_5600 @WangCai_1 2
+      - ‌‌🇨🇦CA_5600 @WangCai_1 3
+      - ‌‌🇨🇦CA_5600 @WangCai_1 4
+      - ‌‌🇨🇦CA_5600 @WangCai_1 5
+      - ‌‌🇨🇦CA_5500 @WangCai_1
+      - ‌‌🇨🇦CA_5500 @WangCai_1 2
+      - ‌‌🇨🇦CA_5500 @WangCai_1 3
+      - ‌‌🇨🇦CA_5500 @WangCai_1 4
+      - ‌‌🇨🇦CA_5004 @WangCai_1
+      - ‌‌🇨🇦CA_5004 @WangCai_1 2
+      - ‌‌🇨🇦CA_5004 @WangCai_1 3
+      - ‌‌🇨🇦CA_5004 @WangCai_1 4
+      - ‌‌🇨🇦CA_5004 @WangCai_1 5
+      - ‌‌🇨🇦CA_5004 @WangCai_1 6
+      - ‌‌🇨🇦CA_5004 @WangCai_1 7
+      - ‌‌🇨🇦CA_5003 @WangCai_1
+      - ‌‌🇨🇦CA_5003 @WangCai_1 2
+      - ‌‌🇨🇦CA_5003 @WangCai_1 3
+      - ‌‌🇨🇦CA_5001 @WangCai_1
+      - ‌‌🇨🇦CA_5001 @WangCai_1 2
+      - ‌‌🇨🇦CA_5001 @WangCai_1 3
+      - ‌‌🇨🇦CA_5000 @WangCai_1
+      - ‌‌🇨🇦CA_5000 @WangCai_1 2
+      - ‌‌🇨🇦CA_5000 @WangCai_1 3
+      - ‌‌🇨🇦CA_5000 @WangCai_1 4
+      - ‌‌🇨🇦CA_3389 @WangCai_1
+      - ‌‌🇨🇦CA_3306 @WangCai_1
+      - ‌‌🇨🇦CA_3306 @WangCai_1 2
+      - ‌‌🇨🇦CA_3306 @WangCai_1 3
+      - ‌‌🇨🇦CA_2376 @WangCai_1
+      - ‌‌🇨🇦CA_2376 @WangCai_1 2
+      - ‌‌🇨🇦CA_2376 @WangCai_1 3
+      - ‌‌🇨🇦CA_2375 @WangCai_1
+      - ‌‌🇨🇦CA_2375 @WangCai_1 2
+      - ‌‌🇨🇦CA_0443 @WangCai_1
+      - ‌‌🇨🇦CA_0443 @WangCai_1 2
+      - ‌‌🇨🇦CA_0443 @WangCai_1 3
+      - ‌‌🇨🇦CA_0443 @WangCai_1 4
+      - ‌‌🇨🇦CA_0443 @WangCai_1 5
+      - _商店：8du.shop 15
+      - _商店：8du.shop 16
+      - _商店：8du.shop 17
+      - _商店：8du.shop 18
+      - _商店：8du.shop 19
+      - _商店：8du.shop 20
+      - _商店：8du.shop 21
+      - _商店：8du.shop 22
+      - _商店：8du.shop 23
+      - _商店：8du.shop 24
+      - _商店：8du.shop 25
+      - _商店：8du.shop 26
+      - _商店：8du.shop 27
+      - _商店：8du.shop 28
+      - _商店：8du.shop 29
+      - _商店：8du.shop 30
+      - _商店：8du.shop 31
+      - _商店：8du.shop 32
+      - _商店：8du.shop 33
+      - _商店：8du.shop 34
+      - _商店：8du.shop 35
+      - _商店：8du.shop 36
+      - _商店：8du.shop 37
+      - _商店：8du.shop 38
+      - _商店：8du.shop 39
+      - _商店：8du.shop 40
+      - _商店：8du.shop 41
+      - _商店：8du.shop 42
+      - _商店：8du.shop 43
+      - _商店：8du.shop 44
+      - _商店：8du.shop 45
+      - _商店：8du.shop 46
+      - _商店：8du.shop 47
+      - _商店：8du.shop 48
+      - _商店：8du.shop 49
+      - _商店：8du.shop 50
+      - _商店：8du.shop 51
+      - _商店：8du.shop 52
+      - _商店：8du.shop 53
+      - _商店：8du.shop 54
+      - _商店：8du.shop 55
+      - _商店：8du.shop 56
+      - _商店：8du.shop 57
+      - _商店：8du.shop 58
+      - _商店：8du.shop 59
+      - _商店：8du.shop 60
+      - _商店：8du.shop 61
+      - _商店：8du.shop 62
+      - _商店：8du.shop 63
+      - _商店：8du.shop 64
+      - _商店：8du.shop 65
+      - _商店：8du.shop 66
+      - _商店：8du.shop 67
+      - _商店：8du.shop 68
+      - _商店：8du.shop 69
+      - _商店：8du.shop 70
+      - _商店：8du.shop 71
+      - _商店：8du.shop 72
+      - _商店：8du.shop 73
+      - _商店：8du.shop 74
+      - _商店：8du.shop 75
+      - _商店：8du.shop 76
+      - _商店：8du.shop 77
+      - _商店：8du.shop 78
+      - _商店：8du.shop 79
+      - _商店：8du.shop 80
+      - _商店：8du.shop 81
+      - _商店：8du.shop 82
+      - _商店：8du.shop 83
+      - _商店：8du.shop 84
+      - _商店：8du.shop 85
+      - _商店：8du.shop 86
+      - _商店：8du.shop 87
+      - _商店：8du.shop 88
+      - _商店：8du.shop 89
+      - _商店：8du.shop 90
+      - _商店：8du.shop 91
+      - _商店：8du.shop 92
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 8度商店：8du.shop
-      - 8度商店：8du.shop 2
-      - 8度商店：8du.shop 3
-      - 8度商店：8du.shop 4
-      - 8度商店：8du.shop 5
-      - 8度商店：8du.shop 6
-      - 8度商店：8du.shop 7
-      - 8度商店：8du.shop 8
-      - 8度商店：8du.shop 9
-      - 8度商店：8du.shop 10
-      - 8度商店：8du.shop 11
-      - 8度商店：8du.shop 12
-      - 8度商店：8du.shop 13
-      - 8度商店：8du.shop 14
-      - 8度商店：8du.shop 15
-      - 8度商店：8du.shop 16
-      - 8度商店：8du.shop 17
-      - 8度商店：8du.shop 18
-      - 8度商店：8du.shop 19
-      - 8度商店：8du.shop 20
-      - 8度商店：8du.shop 21
-      - 8度商店：8du.shop 22
-      - 8度商店：8du.shop 23
-      - 8度商店：8du.shop 24
-      - 8度商店：8du.shop 25
-      - 8度商店：8du.shop 26
-      - 8度商店：8du.shop 27
-      - 8度商店：8du.shop 28
-      - 8度商店：8du.shop 29
-      - 8度商店：8du.shop 30
-      - 8度商店：8du.shop 31
-      - 8度商店：8du.shop 32
-      - 8度商店：8du.shop 33
-      - 8度商店：8du.shop 34
-      - 8度商店：8du.shop 35
-      - 8度商店：8du.shop 36
-      - 8度商店：8du.shop 37
-      - 8度商店：8du.shop 38
-      - 8度商店：8du.shop 39
-      - 8度商店：8du.shop 40
-      - 8度商店：8du.shop 41
-      - 8度商店：8du.shop 42
-      - 8度商店：8du.shop 43
-      - 8度商店：8du.shop 44
-      - 8度商店：8du.shop 45
-      - 8度商店：8du.shop 46
-      - 8度商店：8du.shop 47
-      - 8度商店：8du.shop 48
-      - 8度商店：8du.shop 49
-      - 8度商店：8du.shop 50
-      - 8度商店：8du.shop 51
-      - 8度商店：8du.shop 52
-      - 8度商店：8du.shop 53
-      - 8度商店：8du.shop 54
-      - 8度商店：8du.shop 55
-      - 8度商店：8du.shop 56
-      - 8度商店：8du.shop 57
-      - 8度商店：8du.shop 58
-      - 8度商店：8du.shop 59
-      - 8度商店：8du.shop 60
-      - 8度商店：8du.shop 61
-      - 8度商店：8du.shop 62
-      - 8度商店：8du.shop 63
-      - 8度商店：8du.shop 64
-      - 8度商店：8du.shop 65
-      - 8度商店：8du.shop 66
-      - 8度商店：8du.shop 67
-      - 8度商店：8du.shop 68
-      - 8度商店：8du.shop 69
-      - 8度商店：8du.shop 70
-      - 8度商店：8du.shop 71
-      - 8度商店：8du.shop 72
-      - 8度商店：8du.shop 73
-      - 8度商店：8du.shop 74
-      - 8度商店：8du.shop 75
-      - 8度商店：8du.shop 76
-      - 8度商店：8du.shop 77
-      - 8度商店：8du.shop 78
-      - 8度商店：8du.shop 79
-      - 8度商店：8du.shop 80
-      - 8度商店：8du.shop 81
-      - 8度商店：8du.shop 82
-      - 8度商店：8du.shop 83
-      - 8度商店：8du.shop 84
-      - 8度商店：8du.shop 85
-      - 8度商店：8du.shop 86
-      - 8度商店：8du.shop 87
-      - 8度商店：8du.shop 88
-      - 8度商店：8du.shop 89
-      - 8度商店：8du.shop 90
-      - 8度商店：8du.shop 91
-      - 8度商店：8du.shop 92
-      - 8度商店：8du.shop 93
-      - 8度商店：8du.shop 94
-      - 8度商店：8du.shop 95
-      - 8度商店：8du.shop 96
-      - 8度商店：8du.shop 97
-      - 8度商店：8du.shop 98
-      - 8度商店：8du.shop 99
-      - 8度商店：8du.shop 100
-      - 8度商店：8du.shop 101
-      - 8度商店：8du.shop 102
-      - 8度商店：8du.shop 103
-      - 8度商店：8du.shop 104
-      - 8度商店：8du.shop 105
-      - 8度商店：8du.shop 106
-      - 8度商店：8du.shop 107
-      - 8度商店：8du.shop 108
-      - 8度商店：8du.shop 109
-      - 8度商店：8du.shop 110
-      - 8度商店：8du.shop 111
-      - 8度商店：8du.shop 112
-      - 8度商店：8du.shop 113
-      - 8度商店：8du.shop 114
-      - 8度商店：8du.shop 115
-      - 8度商店：8du.shop 116
-      - 8度商店：8du.shop 117
-      - 8度商店：8du.shop 118
-      - 8度商店：8du.shop 119
-      - 8度商店：8du.shop 120
-      - 8度商店：8du.shop 121
-      - 8度商店：8du.shop 122
-      - 8度商店：8du.shop 123
+      - _商店：8du.shop
+      - _商店：8du.shop 2
+      - _商店：8du.shop 3
+      - _商店：8du.shop 4
+      - _商店：8du.shop 5
+      - _商店：8du.shop 6
+      - _商店：8du.shop 7
+      - _商店：8du.shop 8
+      - _商店：8du.shop 9
+      - _商店：8du.shop 10
+      - _商店：8du.shop 11
+      - _商店：8du.shop 12
+      - _商店：8du.shop 13
+      - _商店：8du.shop 14
+      - US_9102 @WangCai_1
+      - US_9102 @WangCai_1 2
+      - US_9101 @WangCai_1
+      - US_9101 @WangCai_1 2
+      - US_8888 @WangCai_1
+      - US_8888 @WangCai_1 2
+      - US_8882 @WangCai_1
+      - US_8882 @WangCai_1 2
+      - US_8881 @WangCai_1
+      - US_8881 @WangCai_1 2
+      - US_8119 @WangCai_1
+      - US_8118 @WangCai_1
+      - US_8118 @WangCai_1 2
+      - US_8091 @WangCai_1
+      - US_8090 @WangCai_1
+      - US_8080 @WangCai_1
+      - US_8009 @WangCai_1
+      - US_8009 @WangCai_1 2
+      - US_8008 @WangCai_1
+      - US_8008 @WangCai_1 2
+      - US_8000 @WangCai_1
+      - US_7307 @WangCai_1
+      - US_7306 @WangCai_1
+      - US_7002 @WangCai_1
+      - US_7002 @WangCai_1 2
+      - US_7001 @WangCai_1
+      - US_7001 @WangCai_1 2
+      - US_7001 @WangCai_1 3
+      - US_6679 @WangCai_1
+      - US_6679 @WangCai_1 2
+      - US_6379 @WangCai_1
+      - US_5601 @WangCai_1
+      - US_5601 @WangCai_1 2
+      - US_5600 @WangCai_1
+      - US_5600 @WangCai_1 2
+      - US_5500 @WangCai_1
+      - US_5500 @WangCai_1 2
+      - US_5500 @WangCai_1 3
+      - US_5004 @WangCai_1
+      - US_5004 @WangCai_1 2
+      - US_5003 @WangCai_1
+      - US_5003 @WangCai_1 2
+      - US_5001 @WangCai_1
+      - US_5000 @WangCai_1
+      - US_5000 @WangCai_1 2
+      - US_3306 @WangCai_1
+      - US_3306 @WangCai_1 2
+      - US_3306 @WangCai_1 3
+      - US_2376 @WangCai_1
+      - US_2375 @WangCai_1
+      - US_2375 @WangCai_1 2
+      - US_2375 @WangCai_1 3
+      - US_0443 @WangCai_1
+      - _US_美国
+      - _US_美国 2
+      - _US_美国 3
+      - _US_美国 4
+      - _US_美国 5
+      - _US_美国 6
+      - _US_美国 7
+      - ‌‌🇨🇦CA_9102 @WangCai_1
+      - ‌‌🇨🇦CA_9102 @WangCai_1 2
+      - ‌‌🇨🇦CA_9102 @WangCai_1 3
+      - ‌‌🇨🇦CA_9101 @WangCai_1
+      - ‌‌🇨🇦CA_9101 @WangCai_1 2
+      - ‌‌🇨🇦CA_9101 @WangCai_1 3
+      - ‌‌🇨🇦CA_9101 @WangCai_1 4
+      - ‌‌🇨🇦CA_9101 @WangCai_1 5
+      - ‌‌🇨🇦CA_8888 @WangCai_1
+      - ‌‌🇨🇦CA_8888 @WangCai_1 2
+      - ‌‌🇨🇦CA_8888 @WangCai_1 3
+      - ‌‌🇨🇦CA_8888 @WangCai_1 4
+      - ‌‌🇨🇦CA_8888 @WangCai_1 5
+      - ‌‌🇨🇦CA_8882 @WangCai_1
+      - ‌‌🇨🇦CA_8882 @WangCai_1 2
+      - ‌‌🇨🇦CA_8882 @WangCai_1 3
+      - ‌‌🇨🇦CA_8882 @WangCai_1 4
+      - ‌‌🇨🇦CA_8882 @WangCai_1 5
+      - ‌‌🇨🇦CA_8881 @WangCai_1
+      - ‌‌🇨🇦CA_8881 @WangCai_1 2
+      - ‌‌🇨🇦CA_8881 @WangCai_1 3
+      - ‌‌🇨🇦CA_8881 @WangCai_1 4
+      - ‌‌🇨🇦CA_8119 @WangCai_1
+      - ‌‌🇨🇦CA_8119 @WangCai_1 2
+      - ‌‌🇨🇦CA_8119 @WangCai_1 3
+      - ‌‌🇨🇦CA_8119 @WangCai_1 4
+      - ‌‌🇨🇦CA_8119 @WangCai_1 5
+      - ‌‌🇨🇦CA_8118 @WangCai_1
+      - ‌‌🇨🇦CA_8118 @WangCai_1 2
+      - ‌‌🇨🇦CA_8118 @WangCai_1 3
+      - ‌‌🇨🇦CA_8091 @WangCai_1
+      - ‌‌🇨🇦CA_8091 @WangCai_1 2
+      - ‌‌🇨🇦CA_8091 @WangCai_1 3
+      - ‌‌🇨🇦CA_8091 @WangCai_1 4
+      - ‌‌🇨🇦CA_8091 @WangCai_1 5
+      - ‌‌🇨🇦CA_8090 @WangCai_1
+      - ‌‌🇨🇦CA_8090 @WangCai_1 2
+      - ‌‌🇨🇦CA_8090 @WangCai_1 3
+      - ‌‌🇨🇦CA_8080 @WangCai_1
+      - ‌‌🇨🇦CA_8080 @WangCai_1 2
+      - ‌‌🇨🇦CA_8080 @WangCai_1 3
+      - ‌‌🇨🇦CA_8080 @WangCai_1 4
+      - ‌‌🇨🇦CA_8009 @WangCai_1
+      - ‌‌🇨🇦CA_8009 @WangCai_1 2
+      - ‌‌🇨🇦CA_8008 @WangCai_1
+      - ‌‌🇨🇦CA_8008 @WangCai_1 2
+      - ‌‌🇨🇦CA_8008 @WangCai_1 3
+      - ‌‌🇨🇦CA_8008 @WangCai_1 4
+      - ‌‌🇨🇦CA_8008 @WangCai_1 5
+      - ‌‌🇨🇦CA_8008 @WangCai_1 6
+      - ‌‌🇨🇦CA_8008 @WangCai_1 7
+      - ‌‌🇨🇦CA_8000 @WangCai_1
+      - ‌‌🇨🇦CA_8000 @WangCai_1 2
+      - ‌‌🇨🇦CA_8000 @WangCai_1 3
+      - ‌‌🇨🇦CA_8000 @WangCai_1 4
+      - ‌‌🇨🇦CA_7307 @WangCai_1
+      - ‌‌🇨🇦CA_7307 @WangCai_1 2
+      - ‌‌🇨🇦CA_7307 @WangCai_1 3
+      - ‌‌🇨🇦CA_7306 @WangCai_1
+      - ‌‌🇨🇦CA_7306 @WangCai_1 2
+      - ‌‌🇨🇦CA_7306 @WangCai_1 3
+      - ‌‌🇨🇦CA_7002 @WangCai_1
+      - ‌‌🇨🇦CA_7002 @WangCai_1 2
+      - ‌‌🇨🇦CA_7002 @WangCai_1 3
+      - ‌‌🇨🇦CA_7002 @WangCai_1 4
+      - ‌‌🇨🇦CA_7002 @WangCai_1 5
+      - ‌‌🇨🇦CA_7002 @WangCai_1 6
+      - ‌‌🇨🇦CA_7002 @WangCai_1 7
+      - ‌‌🇨🇦CA_7001 @WangCai_1
+      - ‌‌🇨🇦CA_7001 @WangCai_1 2
+      - ‌‌🇨🇦CA_7001 @WangCai_1 3
+      - ‌‌🇨🇦CA_7001 @WangCai_1 4
+      - ‌‌🇨🇦CA_7001 @WangCai_1 5
+      - ‌‌🇨🇦CA_7001 @WangCai_1 6
+      - ‌‌🇨🇦CA_7001 @WangCai_1 7
+      - ‌‌🇨🇦CA_6697 @WangCai_1
+      - ‌‌🇨🇦CA_6697 @WangCai_1 2
+      - ‌‌🇨🇦CA_6697 @WangCai_1 3
+      - ‌‌🇨🇦CA_6697 @WangCai_1 4
+      - ‌‌🇨🇦CA_6697 @WangCai_1 5
+      - ‌‌🇨🇦CA_6679 @WangCai_1
+      - ‌‌🇨🇦CA_6679 @WangCai_1 2
+      - ‌‌🇨🇦CA_6679 @WangCai_1 3
+      - ‌‌🇨🇦CA_6679 @WangCai_1 4
+      - ‌‌🇨🇦CA_6379 @WangCai_1
+      - ‌‌🇨🇦CA_6379 @WangCai_1 2
+      - ‌‌🇨🇦CA_6379 @WangCai_1 3
+      - ‌‌🇨🇦CA_6379 @WangCai_1 4
+      - ‌‌🇨🇦CA_6379 @WangCai_1 5
+      - ‌‌🇨🇦CA_6379 @WangCai_1 6
+      - ‌‌🇨🇦CA_5601 @WangCai_1
+      - ‌‌🇨🇦CA_5601 @WangCai_1 2
+      - ‌‌🇨🇦CA_5600 @WangCai_1
+      - ‌‌🇨🇦CA_5600 @WangCai_1 2
+      - ‌‌🇨🇦CA_5600 @WangCai_1 3
+      - ‌‌🇨🇦CA_5600 @WangCai_1 4
+      - ‌‌🇨🇦CA_5600 @WangCai_1 5
+      - ‌‌🇨🇦CA_5500 @WangCai_1
+      - ‌‌🇨🇦CA_5500 @WangCai_1 2
+      - ‌‌🇨🇦CA_5500 @WangCai_1 3
+      - ‌‌🇨🇦CA_5500 @WangCai_1 4
+      - ‌‌🇨🇦CA_5004 @WangCai_1
+      - ‌‌🇨🇦CA_5004 @WangCai_1 2
+      - ‌‌🇨🇦CA_5004 @WangCai_1 3
+      - ‌‌🇨🇦CA_5004 @WangCai_1 4
+      - ‌‌🇨🇦CA_5004 @WangCai_1 5
+      - ‌‌🇨🇦CA_5004 @WangCai_1 6
+      - ‌‌🇨🇦CA_5004 @WangCai_1 7
+      - ‌‌🇨🇦CA_5003 @WangCai_1
+      - ‌‌🇨🇦CA_5003 @WangCai_1 2
+      - ‌‌🇨🇦CA_5003 @WangCai_1 3
+      - ‌‌🇨🇦CA_5001 @WangCai_1
+      - ‌‌🇨🇦CA_5001 @WangCai_1 2
+      - ‌‌🇨🇦CA_5001 @WangCai_1 3
+      - ‌‌🇨🇦CA_5000 @WangCai_1
+      - ‌‌🇨🇦CA_5000 @WangCai_1 2
+      - ‌‌🇨🇦CA_5000 @WangCai_1 3
+      - ‌‌🇨🇦CA_5000 @WangCai_1 4
+      - ‌‌🇨🇦CA_3389 @WangCai_1
+      - ‌‌🇨🇦CA_3306 @WangCai_1
+      - ‌‌🇨🇦CA_3306 @WangCai_1 2
+      - ‌‌🇨🇦CA_3306 @WangCai_1 3
+      - ‌‌🇨🇦CA_2376 @WangCai_1
+      - ‌‌🇨🇦CA_2376 @WangCai_1 2
+      - ‌‌🇨🇦CA_2376 @WangCai_1 3
+      - ‌‌🇨🇦CA_2375 @WangCai_1
+      - ‌‌🇨🇦CA_2375 @WangCai_1 2
+      - ‌‌🇨🇦CA_0443 @WangCai_1
+      - ‌‌🇨🇦CA_0443 @WangCai_1 2
+      - ‌‌🇨🇦CA_0443 @WangCai_1 3
+      - ‌‌🇨🇦CA_0443 @WangCai_1 4
+      - ‌‌🇨🇦CA_0443 @WangCai_1 5
+      - _商店：8du.shop 15
+      - _商店：8du.shop 16
+      - _商店：8du.shop 17
+      - _商店：8du.shop 18
+      - _商店：8du.shop 19
+      - _商店：8du.shop 20
+      - _商店：8du.shop 21
+      - _商店：8du.shop 22
+      - _商店：8du.shop 23
+      - _商店：8du.shop 24
+      - _商店：8du.shop 25
+      - _商店：8du.shop 26
+      - _商店：8du.shop 27
+      - _商店：8du.shop 28
+      - _商店：8du.shop 29
+      - _商店：8du.shop 30
+      - _商店：8du.shop 31
+      - _商店：8du.shop 32
+      - _商店：8du.shop 33
+      - _商店：8du.shop 34
+      - _商店：8du.shop 35
+      - _商店：8du.shop 36
+      - _商店：8du.shop 37
+      - _商店：8du.shop 38
+      - _商店：8du.shop 39
+      - _商店：8du.shop 40
+      - _商店：8du.shop 41
+      - _商店：8du.shop 42
+      - _商店：8du.shop 43
+      - _商店：8du.shop 44
+      - _商店：8du.shop 45
+      - _商店：8du.shop 46
+      - _商店：8du.shop 47
+      - _商店：8du.shop 48
+      - _商店：8du.shop 49
+      - _商店：8du.shop 50
+      - _商店：8du.shop 51
+      - _商店：8du.shop 52
+      - _商店：8du.shop 53
+      - _商店：8du.shop 54
+      - _商店：8du.shop 55
+      - _商店：8du.shop 56
+      - _商店：8du.shop 57
+      - _商店：8du.shop 58
+      - _商店：8du.shop 59
+      - _商店：8du.shop 60
+      - _商店：8du.shop 61
+      - _商店：8du.shop 62
+      - _商店：8du.shop 63
+      - _商店：8du.shop 64
+      - _商店：8du.shop 65
+      - _商店：8du.shop 66
+      - _商店：8du.shop 67
+      - _商店：8du.shop 68
+      - _商店：8du.shop 69
+      - _商店：8du.shop 70
+      - _商店：8du.shop 71
+      - _商店：8du.shop 72
+      - _商店：8du.shop 73
+      - _商店：8du.shop 74
+      - _商店：8du.shop 75
+      - _商店：8du.shop 76
+      - _商店：8du.shop 77
+      - _商店：8du.shop 78
+      - _商店：8du.shop 79
+      - _商店：8du.shop 80
+      - _商店：8du.shop 81
+      - _商店：8du.shop 82
+      - _商店：8du.shop 83
+      - _商店：8du.shop 84
+      - _商店：8du.shop 85
+      - _商店：8du.shop 86
+      - _商店：8du.shop 87
+      - _商店：8du.shop 88
+      - _商店：8du.shop 89
+      - _商店：8du.shop 90
+      - _商店：8du.shop 91
+      - _商店：8du.shop 92
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 8度商店：8du.shop
-      - 8度商店：8du.shop 2
-      - 8度商店：8du.shop 3
-      - 8度商店：8du.shop 4
-      - 8度商店：8du.shop 5
-      - 8度商店：8du.shop 6
-      - 8度商店：8du.shop 7
-      - 8度商店：8du.shop 8
-      - 8度商店：8du.shop 9
-      - 8度商店：8du.shop 10
-      - 8度商店：8du.shop 11
-      - 8度商店：8du.shop 12
-      - 8度商店：8du.shop 13
-      - 8度商店：8du.shop 14
-      - 8度商店：8du.shop 15
-      - 8度商店：8du.shop 16
-      - 8度商店：8du.shop 17
-      - 8度商店：8du.shop 18
-      - 8度商店：8du.shop 19
-      - 8度商店：8du.shop 20
-      - 8度商店：8du.shop 21
-      - 8度商店：8du.shop 22
-      - 8度商店：8du.shop 23
-      - 8度商店：8du.shop 24
-      - 8度商店：8du.shop 25
-      - 8度商店：8du.shop 26
-      - 8度商店：8du.shop 27
-      - 8度商店：8du.shop 28
-      - 8度商店：8du.shop 29
-      - 8度商店：8du.shop 30
-      - 8度商店：8du.shop 31
-      - 8度商店：8du.shop 32
-      - 8度商店：8du.shop 33
-      - 8度商店：8du.shop 34
-      - 8度商店：8du.shop 35
-      - 8度商店：8du.shop 36
-      - 8度商店：8du.shop 37
-      - 8度商店：8du.shop 38
-      - 8度商店：8du.shop 39
-      - 8度商店：8du.shop 40
-      - 8度商店：8du.shop 41
-      - 8度商店：8du.shop 42
-      - 8度商店：8du.shop 43
-      - 8度商店：8du.shop 44
-      - 8度商店：8du.shop 45
-      - 8度商店：8du.shop 46
-      - 8度商店：8du.shop 47
-      - 8度商店：8du.shop 48
-      - 8度商店：8du.shop 49
-      - 8度商店：8du.shop 50
-      - 8度商店：8du.shop 51
-      - 8度商店：8du.shop 52
-      - 8度商店：8du.shop 53
-      - 8度商店：8du.shop 54
-      - 8度商店：8du.shop 55
-      - 8度商店：8du.shop 56
-      - 8度商店：8du.shop 57
-      - 8度商店：8du.shop 58
-      - 8度商店：8du.shop 59
-      - 8度商店：8du.shop 60
-      - 8度商店：8du.shop 61
-      - 8度商店：8du.shop 62
-      - 8度商店：8du.shop 63
-      - 8度商店：8du.shop 64
-      - 8度商店：8du.shop 65
-      - 8度商店：8du.shop 66
-      - 8度商店：8du.shop 67
-      - 8度商店：8du.shop 68
-      - 8度商店：8du.shop 69
-      - 8度商店：8du.shop 70
-      - 8度商店：8du.shop 71
-      - 8度商店：8du.shop 72
-      - 8度商店：8du.shop 73
-      - 8度商店：8du.shop 74
-      - 8度商店：8du.shop 75
-      - 8度商店：8du.shop 76
-      - 8度商店：8du.shop 77
-      - 8度商店：8du.shop 78
-      - 8度商店：8du.shop 79
-      - 8度商店：8du.shop 80
-      - 8度商店：8du.shop 81
-      - 8度商店：8du.shop 82
-      - 8度商店：8du.shop 83
-      - 8度商店：8du.shop 84
-      - 8度商店：8du.shop 85
-      - 8度商店：8du.shop 86
-      - 8度商店：8du.shop 87
-      - 8度商店：8du.shop 88
-      - 8度商店：8du.shop 89
-      - 8度商店：8du.shop 90
-      - 8度商店：8du.shop 91
-      - 8度商店：8du.shop 92
-      - 8度商店：8du.shop 93
-      - 8度商店：8du.shop 94
-      - 8度商店：8du.shop 95
-      - 8度商店：8du.shop 96
-      - 8度商店：8du.shop 97
-      - 8度商店：8du.shop 98
-      - 8度商店：8du.shop 99
-      - 8度商店：8du.shop 100
-      - 8度商店：8du.shop 101
-      - 8度商店：8du.shop 102
-      - 8度商店：8du.shop 103
-      - 8度商店：8du.shop 104
-      - 8度商店：8du.shop 105
-      - 8度商店：8du.shop 106
-      - 8度商店：8du.shop 107
-      - 8度商店：8du.shop 108
-      - 8度商店：8du.shop 109
-      - 8度商店：8du.shop 110
-      - 8度商店：8du.shop 111
-      - 8度商店：8du.shop 112
-      - 8度商店：8du.shop 113
-      - 8度商店：8du.shop 114
-      - 8度商店：8du.shop 115
-      - 8度商店：8du.shop 116
-      - 8度商店：8du.shop 117
-      - 8度商店：8du.shop 118
-      - 8度商店：8du.shop 119
-      - 8度商店：8du.shop 120
-      - 8度商店：8du.shop 121
-      - 8度商店：8du.shop 122
-      - 8度商店：8du.shop 123
+      - _商店：8du.shop
+      - _商店：8du.shop 2
+      - _商店：8du.shop 3
+      - _商店：8du.shop 4
+      - _商店：8du.shop 5
+      - _商店：8du.shop 6
+      - _商店：8du.shop 7
+      - _商店：8du.shop 8
+      - _商店：8du.shop 9
+      - _商店：8du.shop 10
+      - _商店：8du.shop 11
+      - _商店：8du.shop 12
+      - _商店：8du.shop 13
+      - _商店：8du.shop 14
+      - US_9102 @WangCai_1
+      - US_9102 @WangCai_1 2
+      - US_9101 @WangCai_1
+      - US_9101 @WangCai_1 2
+      - US_8888 @WangCai_1
+      - US_8888 @WangCai_1 2
+      - US_8882 @WangCai_1
+      - US_8882 @WangCai_1 2
+      - US_8881 @WangCai_1
+      - US_8881 @WangCai_1 2
+      - US_8119 @WangCai_1
+      - US_8118 @WangCai_1
+      - US_8118 @WangCai_1 2
+      - US_8091 @WangCai_1
+      - US_8090 @WangCai_1
+      - US_8080 @WangCai_1
+      - US_8009 @WangCai_1
+      - US_8009 @WangCai_1 2
+      - US_8008 @WangCai_1
+      - US_8008 @WangCai_1 2
+      - US_8000 @WangCai_1
+      - US_7307 @WangCai_1
+      - US_7306 @WangCai_1
+      - US_7002 @WangCai_1
+      - US_7002 @WangCai_1 2
+      - US_7001 @WangCai_1
+      - US_7001 @WangCai_1 2
+      - US_7001 @WangCai_1 3
+      - US_6679 @WangCai_1
+      - US_6679 @WangCai_1 2
+      - US_6379 @WangCai_1
+      - US_5601 @WangCai_1
+      - US_5601 @WangCai_1 2
+      - US_5600 @WangCai_1
+      - US_5600 @WangCai_1 2
+      - US_5500 @WangCai_1
+      - US_5500 @WangCai_1 2
+      - US_5500 @WangCai_1 3
+      - US_5004 @WangCai_1
+      - US_5004 @WangCai_1 2
+      - US_5003 @WangCai_1
+      - US_5003 @WangCai_1 2
+      - US_5001 @WangCai_1
+      - US_5000 @WangCai_1
+      - US_5000 @WangCai_1 2
+      - US_3306 @WangCai_1
+      - US_3306 @WangCai_1 2
+      - US_3306 @WangCai_1 3
+      - US_2376 @WangCai_1
+      - US_2375 @WangCai_1
+      - US_2375 @WangCai_1 2
+      - US_2375 @WangCai_1 3
+      - US_0443 @WangCai_1
+      - _US_美国
+      - _US_美国 2
+      - _US_美国 3
+      - _US_美国 4
+      - _US_美国 5
+      - _US_美国 6
+      - _US_美国 7
+      - ‌‌🇨🇦CA_9102 @WangCai_1
+      - ‌‌🇨🇦CA_9102 @WangCai_1 2
+      - ‌‌🇨🇦CA_9102 @WangCai_1 3
+      - ‌‌🇨🇦CA_9101 @WangCai_1
+      - ‌‌🇨🇦CA_9101 @WangCai_1 2
+      - ‌‌🇨🇦CA_9101 @WangCai_1 3
+      - ‌‌🇨🇦CA_9101 @WangCai_1 4
+      - ‌‌🇨🇦CA_9101 @WangCai_1 5
+      - ‌‌🇨🇦CA_8888 @WangCai_1
+      - ‌‌🇨🇦CA_8888 @WangCai_1 2
+      - ‌‌🇨🇦CA_8888 @WangCai_1 3
+      - ‌‌🇨🇦CA_8888 @WangCai_1 4
+      - ‌‌🇨🇦CA_8888 @WangCai_1 5
+      - ‌‌🇨🇦CA_8882 @WangCai_1
+      - ‌‌🇨🇦CA_8882 @WangCai_1 2
+      - ‌‌🇨🇦CA_8882 @WangCai_1 3
+      - ‌‌🇨🇦CA_8882 @WangCai_1 4
+      - ‌‌🇨🇦CA_8882 @WangCai_1 5
+      - ‌‌🇨🇦CA_8881 @WangCai_1
+      - ‌‌🇨🇦CA_8881 @WangCai_1 2
+      - ‌‌🇨🇦CA_8881 @WangCai_1 3
+      - ‌‌🇨🇦CA_8881 @WangCai_1 4
+      - ‌‌🇨🇦CA_8119 @WangCai_1
+      - ‌‌🇨🇦CA_8119 @WangCai_1 2
+      - ‌‌🇨🇦CA_8119 @WangCai_1 3
+      - ‌‌🇨🇦CA_8119 @WangCai_1 4
+      - ‌‌🇨🇦CA_8119 @WangCai_1 5
+      - ‌‌🇨🇦CA_8118 @WangCai_1
+      - ‌‌🇨🇦CA_8118 @WangCai_1 2
+      - ‌‌🇨🇦CA_8118 @WangCai_1 3
+      - ‌‌🇨🇦CA_8091 @WangCai_1
+      - ‌‌🇨🇦CA_8091 @WangCai_1 2
+      - ‌‌🇨🇦CA_8091 @WangCai_1 3
+      - ‌‌🇨🇦CA_8091 @WangCai_1 4
+      - ‌‌🇨🇦CA_8091 @WangCai_1 5
+      - ‌‌🇨🇦CA_8090 @WangCai_1
+      - ‌‌🇨🇦CA_8090 @WangCai_1 2
+      - ‌‌🇨🇦CA_8090 @WangCai_1 3
+      - ‌‌🇨🇦CA_8080 @WangCai_1
+      - ‌‌🇨🇦CA_8080 @WangCai_1 2
+      - ‌‌🇨🇦CA_8080 @WangCai_1 3
+      - ‌‌🇨🇦CA_8080 @WangCai_1 4
+      - ‌‌🇨🇦CA_8009 @WangCai_1
+      - ‌‌🇨🇦CA_8009 @WangCai_1 2
+      - ‌‌🇨🇦CA_8008 @WangCai_1
+      - ‌‌🇨🇦CA_8008 @WangCai_1 2
+      - ‌‌🇨🇦CA_8008 @WangCai_1 3
+      - ‌‌🇨🇦CA_8008 @WangCai_1 4
+      - ‌‌🇨🇦CA_8008 @WangCai_1 5
+      - ‌‌🇨🇦CA_8008 @WangCai_1 6
+      - ‌‌🇨🇦CA_8008 @WangCai_1 7
+      - ‌‌🇨🇦CA_8000 @WangCai_1
+      - ‌‌🇨🇦CA_8000 @WangCai_1 2
+      - ‌‌🇨🇦CA_8000 @WangCai_1 3
+      - ‌‌🇨🇦CA_8000 @WangCai_1 4
+      - ‌‌🇨🇦CA_7307 @WangCai_1
+      - ‌‌🇨🇦CA_7307 @WangCai_1 2
+      - ‌‌🇨🇦CA_7307 @WangCai_1 3
+      - ‌‌🇨🇦CA_7306 @WangCai_1
+      - ‌‌🇨🇦CA_7306 @WangCai_1 2
+      - ‌‌🇨🇦CA_7306 @WangCai_1 3
+      - ‌‌🇨🇦CA_7002 @WangCai_1
+      - ‌‌🇨🇦CA_7002 @WangCai_1 2
+      - ‌‌🇨🇦CA_7002 @WangCai_1 3
+      - ‌‌🇨🇦CA_7002 @WangCai_1 4
+      - ‌‌🇨🇦CA_7002 @WangCai_1 5
+      - ‌‌🇨🇦CA_7002 @WangCai_1 6
+      - ‌‌🇨🇦CA_7002 @WangCai_1 7
+      - ‌‌🇨🇦CA_7001 @WangCai_1
+      - ‌‌🇨🇦CA_7001 @WangCai_1 2
+      - ‌‌🇨🇦CA_7001 @WangCai_1 3
+      - ‌‌🇨🇦CA_7001 @WangCai_1 4
+      - ‌‌🇨🇦CA_7001 @WangCai_1 5
+      - ‌‌🇨🇦CA_7001 @WangCai_1 6
+      - ‌‌🇨🇦CA_7001 @WangCai_1 7
+      - ‌‌🇨🇦CA_6697 @WangCai_1
+      - ‌‌🇨🇦CA_6697 @WangCai_1 2
+      - ‌‌🇨🇦CA_6697 @WangCai_1 3
+      - ‌‌🇨🇦CA_6697 @WangCai_1 4
+      - ‌‌🇨🇦CA_6697 @WangCai_1 5
+      - ‌‌🇨🇦CA_6679 @WangCai_1
+      - ‌‌🇨🇦CA_6679 @WangCai_1 2
+      - ‌‌🇨🇦CA_6679 @WangCai_1 3
+      - ‌‌🇨🇦CA_6679 @WangCai_1 4
+      - ‌‌🇨🇦CA_6379 @WangCai_1
+      - ‌‌🇨🇦CA_6379 @WangCai_1 2
+      - ‌‌🇨🇦CA_6379 @WangCai_1 3
+      - ‌‌🇨🇦CA_6379 @WangCai_1 4
+      - ‌‌🇨🇦CA_6379 @WangCai_1 5
+      - ‌‌🇨🇦CA_6379 @WangCai_1 6
+      - ‌‌🇨🇦CA_5601 @WangCai_1
+      - ‌‌🇨🇦CA_5601 @WangCai_1 2
+      - ‌‌🇨🇦CA_5600 @WangCai_1
+      - ‌‌🇨🇦CA_5600 @WangCai_1 2
+      - ‌‌🇨🇦CA_5600 @WangCai_1 3
+      - ‌‌🇨🇦CA_5600 @WangCai_1 4
+      - ‌‌🇨🇦CA_5600 @WangCai_1 5
+      - ‌‌🇨🇦CA_5500 @WangCai_1
+      - ‌‌🇨🇦CA_5500 @WangCai_1 2
+      - ‌‌🇨🇦CA_5500 @WangCai_1 3
+      - ‌‌🇨🇦CA_5500 @WangCai_1 4
+      - ‌‌🇨🇦CA_5004 @WangCai_1
+      - ‌‌🇨🇦CA_5004 @WangCai_1 2
+      - ‌‌🇨🇦CA_5004 @WangCai_1 3
+      - ‌‌🇨🇦CA_5004 @WangCai_1 4
+      - ‌‌🇨🇦CA_5004 @WangCai_1 5
+      - ‌‌🇨🇦CA_5004 @WangCai_1 6
+      - ‌‌🇨🇦CA_5004 @WangCai_1 7
+      - ‌‌🇨🇦CA_5003 @WangCai_1
+      - ‌‌🇨🇦CA_5003 @WangCai_1 2
+      - ‌‌🇨🇦CA_5003 @WangCai_1 3
+      - ‌‌🇨🇦CA_5001 @WangCai_1
+      - ‌‌🇨🇦CA_5001 @WangCai_1 2
+      - ‌‌🇨🇦CA_5001 @WangCai_1 3
+      - ‌‌🇨🇦CA_5000 @WangCai_1
+      - ‌‌🇨🇦CA_5000 @WangCai_1 2
+      - ‌‌🇨🇦CA_5000 @WangCai_1 3
+      - ‌‌🇨🇦CA_5000 @WangCai_1 4
+      - ‌‌🇨🇦CA_3389 @WangCai_1
+      - ‌‌🇨🇦CA_3306 @WangCai_1
+      - ‌‌🇨🇦CA_3306 @WangCai_1 2
+      - ‌‌🇨🇦CA_3306 @WangCai_1 3
+      - ‌‌🇨🇦CA_2376 @WangCai_1
+      - ‌‌🇨🇦CA_2376 @WangCai_1 2
+      - ‌‌🇨🇦CA_2376 @WangCai_1 3
+      - ‌‌🇨🇦CA_2375 @WangCai_1
+      - ‌‌🇨🇦CA_2375 @WangCai_1 2
+      - ‌‌🇨🇦CA_0443 @WangCai_1
+      - ‌‌🇨🇦CA_0443 @WangCai_1 2
+      - ‌‌🇨🇦CA_0443 @WangCai_1 3
+      - ‌‌🇨🇦CA_0443 @WangCai_1 4
+      - ‌‌🇨🇦CA_0443 @WangCai_1 5
+      - _商店：8du.shop 15
+      - _商店：8du.shop 16
+      - _商店：8du.shop 17
+      - _商店：8du.shop 18
+      - _商店：8du.shop 19
+      - _商店：8du.shop 20
+      - _商店：8du.shop 21
+      - _商店：8du.shop 22
+      - _商店：8du.shop 23
+      - _商店：8du.shop 24
+      - _商店：8du.shop 25
+      - _商店：8du.shop 26
+      - _商店：8du.shop 27
+      - _商店：8du.shop 28
+      - _商店：8du.shop 29
+      - _商店：8du.shop 30
+      - _商店：8du.shop 31
+      - _商店：8du.shop 32
+      - _商店：8du.shop 33
+      - _商店：8du.shop 34
+      - _商店：8du.shop 35
+      - _商店：8du.shop 36
+      - _商店：8du.shop 37
+      - _商店：8du.shop 38
+      - _商店：8du.shop 39
+      - _商店：8du.shop 40
+      - _商店：8du.shop 41
+      - _商店：8du.shop 42
+      - _商店：8du.shop 43
+      - _商店：8du.shop 44
+      - _商店：8du.shop 45
+      - _商店：8du.shop 46
+      - _商店：8du.shop 47
+      - _商店：8du.shop 48
+      - _商店：8du.shop 49
+      - _商店：8du.shop 50
+      - _商店：8du.shop 51
+      - _商店：8du.shop 52
+      - _商店：8du.shop 53
+      - _商店：8du.shop 54
+      - _商店：8du.shop 55
+      - _商店：8du.shop 56
+      - _商店：8du.shop 57
+      - _商店：8du.shop 58
+      - _商店：8du.shop 59
+      - _商店：8du.shop 60
+      - _商店：8du.shop 61
+      - _商店：8du.shop 62
+      - _商店：8du.shop 63
+      - _商店：8du.shop 64
+      - _商店：8du.shop 65
+      - _商店：8du.shop 66
+      - _商店：8du.shop 67
+      - _商店：8du.shop 68
+      - _商店：8du.shop 69
+      - _商店：8du.shop 70
+      - _商店：8du.shop 71
+      - _商店：8du.shop 72
+      - _商店：8du.shop 73
+      - _商店：8du.shop 74
+      - _商店：8du.shop 75
+      - _商店：8du.shop 76
+      - _商店：8du.shop 77
+      - _商店：8du.shop 78
+      - _商店：8du.shop 79
+      - _商店：8du.shop 80
+      - _商店：8du.shop 81
+      - _商店：8du.shop 82
+      - _商店：8du.shop 83
+      - _商店：8du.shop 84
+      - _商店：8du.shop 85
+      - _商店：8du.shop 86
+      - _商店：8du.shop 87
+      - _商店：8du.shop 88
+      - _商店：8du.shop 89
+      - _商店：8du.shop 90
+      - _商店：8du.shop 91
+      - _商店：8du.shop 92
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -1060,129 +2348,290 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 8度商店：8du.shop
-      - 8度商店：8du.shop 2
-      - 8度商店：8du.shop 3
-      - 8度商店：8du.shop 4
-      - 8度商店：8du.shop 5
-      - 8度商店：8du.shop 6
-      - 8度商店：8du.shop 7
-      - 8度商店：8du.shop 8
-      - 8度商店：8du.shop 9
-      - 8度商店：8du.shop 10
-      - 8度商店：8du.shop 11
-      - 8度商店：8du.shop 12
-      - 8度商店：8du.shop 13
-      - 8度商店：8du.shop 14
-      - 8度商店：8du.shop 15
-      - 8度商店：8du.shop 16
-      - 8度商店：8du.shop 17
-      - 8度商店：8du.shop 18
-      - 8度商店：8du.shop 19
-      - 8度商店：8du.shop 20
-      - 8度商店：8du.shop 21
-      - 8度商店：8du.shop 22
-      - 8度商店：8du.shop 23
-      - 8度商店：8du.shop 24
-      - 8度商店：8du.shop 25
-      - 8度商店：8du.shop 26
-      - 8度商店：8du.shop 27
-      - 8度商店：8du.shop 28
-      - 8度商店：8du.shop 29
-      - 8度商店：8du.shop 30
-      - 8度商店：8du.shop 31
-      - 8度商店：8du.shop 32
-      - 8度商店：8du.shop 33
-      - 8度商店：8du.shop 34
-      - 8度商店：8du.shop 35
-      - 8度商店：8du.shop 36
-      - 8度商店：8du.shop 37
-      - 8度商店：8du.shop 38
-      - 8度商店：8du.shop 39
-      - 8度商店：8du.shop 40
-      - 8度商店：8du.shop 41
-      - 8度商店：8du.shop 42
-      - 8度商店：8du.shop 43
-      - 8度商店：8du.shop 44
-      - 8度商店：8du.shop 45
-      - 8度商店：8du.shop 46
-      - 8度商店：8du.shop 47
-      - 8度商店：8du.shop 48
-      - 8度商店：8du.shop 49
-      - 8度商店：8du.shop 50
-      - 8度商店：8du.shop 51
-      - 8度商店：8du.shop 52
-      - 8度商店：8du.shop 53
-      - 8度商店：8du.shop 54
-      - 8度商店：8du.shop 55
-      - 8度商店：8du.shop 56
-      - 8度商店：8du.shop 57
-      - 8度商店：8du.shop 58
-      - 8度商店：8du.shop 59
-      - 8度商店：8du.shop 60
-      - 8度商店：8du.shop 61
-      - 8度商店：8du.shop 62
-      - 8度商店：8du.shop 63
-      - 8度商店：8du.shop 64
-      - 8度商店：8du.shop 65
-      - 8度商店：8du.shop 66
-      - 8度商店：8du.shop 67
-      - 8度商店：8du.shop 68
-      - 8度商店：8du.shop 69
-      - 8度商店：8du.shop 70
-      - 8度商店：8du.shop 71
-      - 8度商店：8du.shop 72
-      - 8度商店：8du.shop 73
-      - 8度商店：8du.shop 74
-      - 8度商店：8du.shop 75
-      - 8度商店：8du.shop 76
-      - 8度商店：8du.shop 77
-      - 8度商店：8du.shop 78
-      - 8度商店：8du.shop 79
-      - 8度商店：8du.shop 80
-      - 8度商店：8du.shop 81
-      - 8度商店：8du.shop 82
-      - 8度商店：8du.shop 83
-      - 8度商店：8du.shop 84
-      - 8度商店：8du.shop 85
-      - 8度商店：8du.shop 86
-      - 8度商店：8du.shop 87
-      - 8度商店：8du.shop 88
-      - 8度商店：8du.shop 89
-      - 8度商店：8du.shop 90
-      - 8度商店：8du.shop 91
-      - 8度商店：8du.shop 92
-      - 8度商店：8du.shop 93
-      - 8度商店：8du.shop 94
-      - 8度商店：8du.shop 95
-      - 8度商店：8du.shop 96
-      - 8度商店：8du.shop 97
-      - 8度商店：8du.shop 98
-      - 8度商店：8du.shop 99
-      - 8度商店：8du.shop 100
-      - 8度商店：8du.shop 101
-      - 8度商店：8du.shop 102
-      - 8度商店：8du.shop 103
-      - 8度商店：8du.shop 104
-      - 8度商店：8du.shop 105
-      - 8度商店：8du.shop 106
-      - 8度商店：8du.shop 107
-      - 8度商店：8du.shop 108
-      - 8度商店：8du.shop 109
-      - 8度商店：8du.shop 110
-      - 8度商店：8du.shop 111
-      - 8度商店：8du.shop 112
-      - 8度商店：8du.shop 113
-      - 8度商店：8du.shop 114
-      - 8度商店：8du.shop 115
-      - 8度商店：8du.shop 116
-      - 8度商店：8du.shop 117
-      - 8度商店：8du.shop 118
-      - 8度商店：8du.shop 119
-      - 8度商店：8du.shop 120
-      - 8度商店：8du.shop 121
-      - 8度商店：8du.shop 122
-      - 8度商店：8du.shop 123
+      - _商店：8du.shop
+      - _商店：8du.shop 2
+      - _商店：8du.shop 3
+      - _商店：8du.shop 4
+      - _商店：8du.shop 5
+      - _商店：8du.shop 6
+      - _商店：8du.shop 7
+      - _商店：8du.shop 8
+      - _商店：8du.shop 9
+      - _商店：8du.shop 10
+      - _商店：8du.shop 11
+      - _商店：8du.shop 12
+      - _商店：8du.shop 13
+      - _商店：8du.shop 14
+      - US_9102 @WangCai_1
+      - US_9102 @WangCai_1 2
+      - US_9101 @WangCai_1
+      - US_9101 @WangCai_1 2
+      - US_8888 @WangCai_1
+      - US_8888 @WangCai_1 2
+      - US_8882 @WangCai_1
+      - US_8882 @WangCai_1 2
+      - US_8881 @WangCai_1
+      - US_8881 @WangCai_1 2
+      - US_8119 @WangCai_1
+      - US_8118 @WangCai_1
+      - US_8118 @WangCai_1 2
+      - US_8091 @WangCai_1
+      - US_8090 @WangCai_1
+      - US_8080 @WangCai_1
+      - US_8009 @WangCai_1
+      - US_8009 @WangCai_1 2
+      - US_8008 @WangCai_1
+      - US_8008 @WangCai_1 2
+      - US_8000 @WangCai_1
+      - US_7307 @WangCai_1
+      - US_7306 @WangCai_1
+      - US_7002 @WangCai_1
+      - US_7002 @WangCai_1 2
+      - US_7001 @WangCai_1
+      - US_7001 @WangCai_1 2
+      - US_7001 @WangCai_1 3
+      - US_6679 @WangCai_1
+      - US_6679 @WangCai_1 2
+      - US_6379 @WangCai_1
+      - US_5601 @WangCai_1
+      - US_5601 @WangCai_1 2
+      - US_5600 @WangCai_1
+      - US_5600 @WangCai_1 2
+      - US_5500 @WangCai_1
+      - US_5500 @WangCai_1 2
+      - US_5500 @WangCai_1 3
+      - US_5004 @WangCai_1
+      - US_5004 @WangCai_1 2
+      - US_5003 @WangCai_1
+      - US_5003 @WangCai_1 2
+      - US_5001 @WangCai_1
+      - US_5000 @WangCai_1
+      - US_5000 @WangCai_1 2
+      - US_3306 @WangCai_1
+      - US_3306 @WangCai_1 2
+      - US_3306 @WangCai_1 3
+      - US_2376 @WangCai_1
+      - US_2375 @WangCai_1
+      - US_2375 @WangCai_1 2
+      - US_2375 @WangCai_1 3
+      - US_0443 @WangCai_1
+      - _US_美国
+      - _US_美国 2
+      - _US_美国 3
+      - _US_美国 4
+      - _US_美国 5
+      - _US_美国 6
+      - _US_美国 7
+      - ‌‌🇨🇦CA_9102 @WangCai_1
+      - ‌‌🇨🇦CA_9102 @WangCai_1 2
+      - ‌‌🇨🇦CA_9102 @WangCai_1 3
+      - ‌‌🇨🇦CA_9101 @WangCai_1
+      - ‌‌🇨🇦CA_9101 @WangCai_1 2
+      - ‌‌🇨🇦CA_9101 @WangCai_1 3
+      - ‌‌🇨🇦CA_9101 @WangCai_1 4
+      - ‌‌🇨🇦CA_9101 @WangCai_1 5
+      - ‌‌🇨🇦CA_8888 @WangCai_1
+      - ‌‌🇨🇦CA_8888 @WangCai_1 2
+      - ‌‌🇨🇦CA_8888 @WangCai_1 3
+      - ‌‌🇨🇦CA_8888 @WangCai_1 4
+      - ‌‌🇨🇦CA_8888 @WangCai_1 5
+      - ‌‌🇨🇦CA_8882 @WangCai_1
+      - ‌‌🇨🇦CA_8882 @WangCai_1 2
+      - ‌‌🇨🇦CA_8882 @WangCai_1 3
+      - ‌‌🇨🇦CA_8882 @WangCai_1 4
+      - ‌‌🇨🇦CA_8882 @WangCai_1 5
+      - ‌‌🇨🇦CA_8881 @WangCai_1
+      - ‌‌🇨🇦CA_8881 @WangCai_1 2
+      - ‌‌🇨🇦CA_8881 @WangCai_1 3
+      - ‌‌🇨🇦CA_8881 @WangCai_1 4
+      - ‌‌🇨🇦CA_8119 @WangCai_1
+      - ‌‌🇨🇦CA_8119 @WangCai_1 2
+      - ‌‌🇨🇦CA_8119 @WangCai_1 3
+      - ‌‌🇨🇦CA_8119 @WangCai_1 4
+      - ‌‌🇨🇦CA_8119 @WangCai_1 5
+      - ‌‌🇨🇦CA_8118 @WangCai_1
+      - ‌‌🇨🇦CA_8118 @WangCai_1 2
+      - ‌‌🇨🇦CA_8118 @WangCai_1 3
+      - ‌‌🇨🇦CA_8091 @WangCai_1
+      - ‌‌🇨🇦CA_8091 @WangCai_1 2
+      - ‌‌🇨🇦CA_8091 @WangCai_1 3
+      - ‌‌🇨🇦CA_8091 @WangCai_1 4
+      - ‌‌🇨🇦CA_8091 @WangCai_1 5
+      - ‌‌🇨🇦CA_8090 @WangCai_1
+      - ‌‌🇨🇦CA_8090 @WangCai_1 2
+      - ‌‌🇨🇦CA_8090 @WangCai_1 3
+      - ‌‌🇨🇦CA_8080 @WangCai_1
+      - ‌‌🇨🇦CA_8080 @WangCai_1 2
+      - ‌‌🇨🇦CA_8080 @WangCai_1 3
+      - ‌‌🇨🇦CA_8080 @WangCai_1 4
+      - ‌‌🇨🇦CA_8009 @WangCai_1
+      - ‌‌🇨🇦CA_8009 @WangCai_1 2
+      - ‌‌🇨🇦CA_8008 @WangCai_1
+      - ‌‌🇨🇦CA_8008 @WangCai_1 2
+      - ‌‌🇨🇦CA_8008 @WangCai_1 3
+      - ‌‌🇨🇦CA_8008 @WangCai_1 4
+      - ‌‌🇨🇦CA_8008 @WangCai_1 5
+      - ‌‌🇨🇦CA_8008 @WangCai_1 6
+      - ‌‌🇨🇦CA_8008 @WangCai_1 7
+      - ‌‌🇨🇦CA_8000 @WangCai_1
+      - ‌‌🇨🇦CA_8000 @WangCai_1 2
+      - ‌‌🇨🇦CA_8000 @WangCai_1 3
+      - ‌‌🇨🇦CA_8000 @WangCai_1 4
+      - ‌‌🇨🇦CA_7307 @WangCai_1
+      - ‌‌🇨🇦CA_7307 @WangCai_1 2
+      - ‌‌🇨🇦CA_7307 @WangCai_1 3
+      - ‌‌🇨🇦CA_7306 @WangCai_1
+      - ‌‌🇨🇦CA_7306 @WangCai_1 2
+      - ‌‌🇨🇦CA_7306 @WangCai_1 3
+      - ‌‌🇨🇦CA_7002 @WangCai_1
+      - ‌‌🇨🇦CA_7002 @WangCai_1 2
+      - ‌‌🇨🇦CA_7002 @WangCai_1 3
+      - ‌‌🇨🇦CA_7002 @WangCai_1 4
+      - ‌‌🇨🇦CA_7002 @WangCai_1 5
+      - ‌‌🇨🇦CA_7002 @WangCai_1 6
+      - ‌‌🇨🇦CA_7002 @WangCai_1 7
+      - ‌‌🇨🇦CA_7001 @WangCai_1
+      - ‌‌🇨🇦CA_7001 @WangCai_1 2
+      - ‌‌🇨🇦CA_7001 @WangCai_1 3
+      - ‌‌🇨🇦CA_7001 @WangCai_1 4
+      - ‌‌🇨🇦CA_7001 @WangCai_1 5
+      - ‌‌🇨🇦CA_7001 @WangCai_1 6
+      - ‌‌🇨🇦CA_7001 @WangCai_1 7
+      - ‌‌🇨🇦CA_6697 @WangCai_1
+      - ‌‌🇨🇦CA_6697 @WangCai_1 2
+      - ‌‌🇨🇦CA_6697 @WangCai_1 3
+      - ‌‌🇨🇦CA_6697 @WangCai_1 4
+      - ‌‌🇨🇦CA_6697 @WangCai_1 5
+      - ‌‌🇨🇦CA_6679 @WangCai_1
+      - ‌‌🇨🇦CA_6679 @WangCai_1 2
+      - ‌‌🇨🇦CA_6679 @WangCai_1 3
+      - ‌‌🇨🇦CA_6679 @WangCai_1 4
+      - ‌‌🇨🇦CA_6379 @WangCai_1
+      - ‌‌🇨🇦CA_6379 @WangCai_1 2
+      - ‌‌🇨🇦CA_6379 @WangCai_1 3
+      - ‌‌🇨🇦CA_6379 @WangCai_1 4
+      - ‌‌🇨🇦CA_6379 @WangCai_1 5
+      - ‌‌🇨🇦CA_6379 @WangCai_1 6
+      - ‌‌🇨🇦CA_5601 @WangCai_1
+      - ‌‌🇨🇦CA_5601 @WangCai_1 2
+      - ‌‌🇨🇦CA_5600 @WangCai_1
+      - ‌‌🇨🇦CA_5600 @WangCai_1 2
+      - ‌‌🇨🇦CA_5600 @WangCai_1 3
+      - ‌‌🇨🇦CA_5600 @WangCai_1 4
+      - ‌‌🇨🇦CA_5600 @WangCai_1 5
+      - ‌‌🇨🇦CA_5500 @WangCai_1
+      - ‌‌🇨🇦CA_5500 @WangCai_1 2
+      - ‌‌🇨🇦CA_5500 @WangCai_1 3
+      - ‌‌🇨🇦CA_5500 @WangCai_1 4
+      - ‌‌🇨🇦CA_5004 @WangCai_1
+      - ‌‌🇨🇦CA_5004 @WangCai_1 2
+      - ‌‌🇨🇦CA_5004 @WangCai_1 3
+      - ‌‌🇨🇦CA_5004 @WangCai_1 4
+      - ‌‌🇨🇦CA_5004 @WangCai_1 5
+      - ‌‌🇨🇦CA_5004 @WangCai_1 6
+      - ‌‌🇨🇦CA_5004 @WangCai_1 7
+      - ‌‌🇨🇦CA_5003 @WangCai_1
+      - ‌‌🇨🇦CA_5003 @WangCai_1 2
+      - ‌‌🇨🇦CA_5003 @WangCai_1 3
+      - ‌‌🇨🇦CA_5001 @WangCai_1
+      - ‌‌🇨🇦CA_5001 @WangCai_1 2
+      - ‌‌🇨🇦CA_5001 @WangCai_1 3
+      - ‌‌🇨🇦CA_5000 @WangCai_1
+      - ‌‌🇨🇦CA_5000 @WangCai_1 2
+      - ‌‌🇨🇦CA_5000 @WangCai_1 3
+      - ‌‌🇨🇦CA_5000 @WangCai_1 4
+      - ‌‌🇨🇦CA_3389 @WangCai_1
+      - ‌‌🇨🇦CA_3306 @WangCai_1
+      - ‌‌🇨🇦CA_3306 @WangCai_1 2
+      - ‌‌🇨🇦CA_3306 @WangCai_1 3
+      - ‌‌🇨🇦CA_2376 @WangCai_1
+      - ‌‌🇨🇦CA_2376 @WangCai_1 2
+      - ‌‌🇨🇦CA_2376 @WangCai_1 3
+      - ‌‌🇨🇦CA_2375 @WangCai_1
+      - ‌‌🇨🇦CA_2375 @WangCai_1 2
+      - ‌‌🇨🇦CA_0443 @WangCai_1
+      - ‌‌🇨🇦CA_0443 @WangCai_1 2
+      - ‌‌🇨🇦CA_0443 @WangCai_1 3
+      - ‌‌🇨🇦CA_0443 @WangCai_1 4
+      - ‌‌🇨🇦CA_0443 @WangCai_1 5
+      - _商店：8du.shop 15
+      - _商店：8du.shop 16
+      - _商店：8du.shop 17
+      - _商店：8du.shop 18
+      - _商店：8du.shop 19
+      - _商店：8du.shop 20
+      - _商店：8du.shop 21
+      - _商店：8du.shop 22
+      - _商店：8du.shop 23
+      - _商店：8du.shop 24
+      - _商店：8du.shop 25
+      - _商店：8du.shop 26
+      - _商店：8du.shop 27
+      - _商店：8du.shop 28
+      - _商店：8du.shop 29
+      - _商店：8du.shop 30
+      - _商店：8du.shop 31
+      - _商店：8du.shop 32
+      - _商店：8du.shop 33
+      - _商店：8du.shop 34
+      - _商店：8du.shop 35
+      - _商店：8du.shop 36
+      - _商店：8du.shop 37
+      - _商店：8du.shop 38
+      - _商店：8du.shop 39
+      - _商店：8du.shop 40
+      - _商店：8du.shop 41
+      - _商店：8du.shop 42
+      - _商店：8du.shop 43
+      - _商店：8du.shop 44
+      - _商店：8du.shop 45
+      - _商店：8du.shop 46
+      - _商店：8du.shop 47
+      - _商店：8du.shop 48
+      - _商店：8du.shop 49
+      - _商店：8du.shop 50
+      - _商店：8du.shop 51
+      - _商店：8du.shop 52
+      - _商店：8du.shop 53
+      - _商店：8du.shop 54
+      - _商店：8du.shop 55
+      - _商店：8du.shop 56
+      - _商店：8du.shop 57
+      - _商店：8du.shop 58
+      - _商店：8du.shop 59
+      - _商店：8du.shop 60
+      - _商店：8du.shop 61
+      - _商店：8du.shop 62
+      - _商店：8du.shop 63
+      - _商店：8du.shop 64
+      - _商店：8du.shop 65
+      - _商店：8du.shop 66
+      - _商店：8du.shop 67
+      - _商店：8du.shop 68
+      - _商店：8du.shop 69
+      - _商店：8du.shop 70
+      - _商店：8du.shop 71
+      - _商店：8du.shop 72
+      - _商店：8du.shop 73
+      - _商店：8du.shop 74
+      - _商店：8du.shop 75
+      - _商店：8du.shop 76
+      - _商店：8du.shop 77
+      - _商店：8du.shop 78
+      - _商店：8du.shop 79
+      - _商店：8du.shop 80
+      - _商店：8du.shop 81
+      - _商店：8du.shop 82
+      - _商店：8du.shop 83
+      - _商店：8du.shop 84
+      - _商店：8du.shop 85
+      - _商店：8du.shop 86
+      - _商店：8du.shop 87
+      - _商店：8du.shop 88
+      - _商店：8du.shop 89
+      - _商店：8du.shop 90
+      - _商店：8du.shop 91
+      - _商店：8du.shop 92
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
